@@ -1,0 +1,99 @@
+category: app-admin
+conflicts: []
+name: sudo
+requires:
+- 
+  category: dev-libs
+  name: libgcrypt
+  
+  version: ""
+- 
+  category: dev-libs
+  name: openssl
+  
+  version: ""
+- 
+  category: sys-auth
+  name: pambase
+  
+  version: ""
+- 
+  category: sec-policy
+  name: selinux-sudo
+  
+  version: ""
+- 
+  category: net-nds
+  name: openldap
+  
+  version: 2.1.30-r1
+- 
+  category: dev-libs
+  name: cyrus-sasl
+  
+  version: ""
+- 
+  category: sys-libs
+  name: pam
+  
+  version: ""
+- 
+  category: sys-auth
+  name: sssd
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libressl
+  
+  version: ""
+- 
+  category: app-misc
+  name: editor-wrapper
+  
+  version: "3"
+- 
+  category: virtual
+  name: editor
+  
+  version: ""
+- 
+  category: virtual
+  name: mta
+  
+  version: ""
+- 
+  category: net-nds
+  name: openldap
+  
+  version: ""
+- 
+  category: sys-auth
+  name: skey
+  
+  version: 1.1.5-r1
+- 
+  category: dev-lang
+  name: perl
+  
+  version: ""
+- 
+  category: sys-libs
+  name: zlib
+  
+  version: ""
+use_flags:
+- gcrypt
+- ldap
+- libressl
+- nls
+- offensive
+- pam
+- sasl
+- +secure-path
+- selinux
+- +sendmail
+- skey
+- sssd
+- system-digest
+version: 1.8.29-r2
