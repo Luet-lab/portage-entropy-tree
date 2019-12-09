@@ -3,10 +3,15 @@ conflicts: []
 name: wesnoth
 requires:
 - 
-  category: dev-libs
-  name: boost
+  category: x11-libs
+  name: cairo
   
-  version: "1.50"
+  version: 1.10.0
+- 
+  category: dev-libs
+  name: fribidi
+  
+  version: ""
 - 
   category: media-libs
   name: libsdl2
@@ -14,12 +19,7 @@ requires:
   version: 2.0.4
 - 
   category: dev-libs
-  name: openssl
-  
-  version: ""
-- 
-  category: sys-libs
-  name: readline
+  name: glib
   
   version: ""
 - 
@@ -28,10 +28,20 @@ requires:
   
   version: 2.0.0
 - 
-  category: media-libs
-  name: sdl2-ttf
+  category: x11-libs
+  name: pango
   
-  version: 2.0.12
+  version: 1.22.0
+- 
+  category: dev-libs
+  name: openssl
+  
+  version: ""
+- 
+  category: media-libs
+  name: sdl2-image
+  
+  version: 2.0.0
 - 
   category: media-libs
   name: libvorbis
@@ -44,24 +54,9 @@ requires:
   version: ""
 - 
   category: dev-libs
-  name: fribidi
+  name: boost
   
-  version: ""
-- 
-  category: dev-libs
-  name: glib
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libressl
-  
-  version: ""
-- 
-  category: x11-libs
-  name: cairo
-  
-  version: 1.10.0
+  version: "1.50"
 - 
   category: media-libs
   name: fontconfig
@@ -69,14 +64,19 @@ requires:
   version: 2.4.1
 - 
   category: media-libs
-  name: sdl2-image
+  name: sdl2-ttf
   
-  version: 2.0.0
+  version: 2.0.12
 - 
-  category: x11-libs
-  name: pango
+  category: sys-libs
+  name: readline
   
-  version: 1.22.0
+  version: ""
+- 
+  category: dev-libs
+  name: libressl
+  
+  version: ""
 use_flags:
 - dbus
 - dedicated

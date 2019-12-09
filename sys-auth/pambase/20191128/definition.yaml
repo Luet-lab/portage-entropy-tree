@@ -3,8 +3,23 @@ conflicts: []
 name: pambase
 requires:
 - 
+  category: sys-auth
+  name: pam_passwdqc
+  
+  version: ""
+- 
   category: sys-libs
-  name: libcap
+  name: pam
+  
+  version: ""
+- 
+  category: sys-auth
+  name: elogind
+  
+  version: ""
+- 
+  category: sys-auth
+  name: pam_mktemp
   
   version: ""
 - 
@@ -29,27 +44,12 @@ requires:
   version: ""
 - 
   category: sys-auth
-  name: elogind
-  
-  version: ""
-- 
-  category: sys-auth
-  name: pam_passwdqc
+  name: pam_krb5
   
   version: ""
 - 
   category: sys-libs
-  name: pam
-  
-  version: ""
-- 
-  category: sys-auth
-  name: pam_mktemp
-  
-  version: ""
-- 
-  category: sys-auth
-  name: pam_krb5
+  name: libcap
   
   version: ""
 use_flags:

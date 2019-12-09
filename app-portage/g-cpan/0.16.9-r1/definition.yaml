@@ -3,13 +3,23 @@ conflicts: []
 name: g-cpan
 requires:
 - 
+  category: virtual
+  name: perl-File-Path
+  
+  version: ""
+- 
   category: dev-perl
-  name: Shell-EnvImporter
+  name: Log-Agent
   
   version: ""
 - 
   category: virtual
-  name: perl-Term-ANSIColor
+  name: perl-IO
+  
+  version: ""
+- 
+  category: dev-perl
+  name: Shell-EnvImporter
   
   version: ""
 - 
@@ -19,27 +29,7 @@ requires:
   version: "0.60"
 - 
   category: virtual
-  name: perl-File-Path
-  
-  version: ""
-- 
-  category: virtual
   name: perl-File-Spec
-  
-  version: ""
-- 
-  category: virtual
-  name: perl-IO
-  
-  version: ""
-- 
-  category: sys-apps
-  name: portage
-  
-  version: 2.0.0
-- 
-  category: dev-perl
-  name: Log-Agent
   
   version: ""
 - 
@@ -47,6 +37,16 @@ requires:
   name: perl-Memoize
   
   version: ""
+- 
+  category: virtual
+  name: perl-Term-ANSIColor
+  
+  version: ""
+- 
+  category: sys-apps
+  name: portage
+  
+  version: 2.0.0
 use_flags:
 - test
 version: 0.16.9-r1

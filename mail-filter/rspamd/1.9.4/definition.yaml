@@ -3,11 +3,6 @@ conflicts: []
 name: rspamd
 requires:
 - 
-  category: dev-libs
-  name: libpcre[jit=]
-  
-  version: ""
-- 
   category: dev-util
   name: ragel
   
@@ -18,8 +13,8 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  name: libressl
+  category: dev-lang
+  name: luajit
   
   version: ""
 - 
@@ -29,17 +24,22 @@ requires:
   version: ""
 - 
   category: dev-libs
+  name: libpcre[jit=]
+  
+  version: ""
+- 
+  category: dev-libs
   name: icu
   
   version: ""
 - 
   category: dev-libs
-  name: libevent
+  name: libressl
   
   version: ""
 - 
-  category: net-libs
-  name: libnsl
+  category: dev-libs
+  name: jemalloc
   
   version: ""
 - 
@@ -49,22 +49,7 @@ requires:
   version: ""
 - 
   category: dev-libs
-  name: jemalloc
-  
-  version: ""
-- 
-  category: dev-lang
-  name: luajit
-  
-  version: ""
-- 
-  category: dev-libs
-  name: openssl
-  
-  version: ""
-- 
-  category: dev-db
-  name: sqlite
+  name: libevent
   
   version: ""
 - 
@@ -73,8 +58,23 @@ requires:
   
   version: ""
 - 
+  category: dev-db
+  name: sqlite
+  
+  version: ""
+- 
   category: media-libs
   name: gd
+  
+  version: ""
+- 
+  category: dev-libs
+  name: openssl
+  
+  version: ""
+- 
+  category: net-libs
+  name: libnsl
   
   version: ""
 use_flags:

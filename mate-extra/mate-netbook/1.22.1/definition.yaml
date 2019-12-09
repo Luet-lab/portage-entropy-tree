@@ -3,6 +3,11 @@ conflicts: []
 name: mate-netbook
 requires:
 - 
+  category: mate-base
+  name: mate-panel
+  
+  version: 1.17.0
+- 
   category: x11-libs
   name: libwnck
   
@@ -10,6 +15,11 @@ requires:
 - 
   category: x11-libs
   name: libXtst
+  
+  version: ""
+- 
+  category: virtual
+  name: libintl
   
   version: ""
 - 
@@ -37,16 +47,6 @@ requires:
   name: cairo
   
   version: ""
-- 
-  category: virtual
-  name: libintl
-  
-  version: ""
-- 
-  category: mate-base
-  name: mate-panel
-  
-  version: 1.17.0
 use_flags:
 - ""
 version: 1.22.1

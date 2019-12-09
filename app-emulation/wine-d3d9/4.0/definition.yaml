@@ -8,8 +8,48 @@ conflicts:
 name: wine-d3d9
 requires:
 - 
+  category: media-sound
+  name: pulseaudio
+  
+  version: ""
+- 
+  category: sys-auth
+  name: rtkit
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXrandr
+  
+  version: ""
+- 
   category: media-libs
-  name: mesa
+  name: gstreamer
+  
+  version: ""
+- 
+  category: media-sound
+  name: mpg123
+  
+  version: 1.5.0
+- 
+  category: net-fs
+  name: samba[netapi(+),]
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libX11
+  
+  version: ""
+- 
+  category: virtual
+  name: libudev
+  
+  version: ""
+- 
+  category: app-emulation
+  name: vkd3d
   
   version: ""
 - 
@@ -18,8 +58,78 @@ requires:
   
   version: ""
 - 
+  category: media-libs
+  name: lcms
+  
+  version: ""
+- 
   category: virtual
-  name: opencl
+  name: opengl
+  
+  version: ""
+- 
+  category: dev-lang
+  name: perl
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXcursor
+  
+  version: ""
+- 
+  category: media-libs
+  name: openal
+  
+  version: ""
+- 
+  category: media-libs
+  name: vulkan-loader
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXcomposite
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXext
+  
+  version: ""
+- 
+  category: media-libs
+  name: mesa
+  
+  version: "13"
+- 
+  category: media-libs
+  name: libv4l
+  
+  version: ""
+- 
+  category: app-emulation
+  name: wine-gecko
+  
+  version: ""
+- 
+  category: sys-fs
+  name: udisks
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXi
+  
+  version: ""
+- 
+  category: sys-devel
+  name: gettext
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libxml2
   
   version: ""
 - 
@@ -29,72 +139,37 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: libXi
-  
-  version: ""
-- 
-  category: virtual
-  name: jpeg
-  
-  version: ""
-- 
-  category: media-libs
-  name: mesa
-  
-  version: "13"
-- 
-  category: dev-lang
-  name: perl
-  
-  version: ""
-- 
-  category: x11-libs
   name: libXxf86vm
   
   version: ""
-- 
-  category: dev-libs
-  name: libxml2
-  
-  version: ""
-- 
-  category: sec-policy
-  name: selinux-wine
-  
-  version: ""
-- 
-  category: net-libs
-  name: libcapi
-  
-  version: ""
-- 
-  category: media-sound
-  name: mpg123
-  
-  version: 1.5.0
 - 
   category: dev-db
   name: unixODBC
   
   version: ""
 - 
-  category: net-libs
-  name: libpcap
+  category: net-fs
+  name: samba
   
-  version: ""
+  version: 3.0.25
 - 
-  category: net-libs
-  name: gnutls
+  category: sec-policy
+  name: selinux-wine
   
   version: ""
 - 
   category: media-libs
-  name: freetype
+  name: mesa
   
-  version: 2.0.0
+  version: ""
+- 
+  category: virtual
+  name: glu
+  
+  version: ""
 - 
   category: x11-libs
-  name: libX11
+  name: libXinerama
   
   version: ""
 - 
@@ -103,13 +178,23 @@ requires:
   
   version: ""
 - 
-  category: virtual
-  name: opengl
+  category: net-libs
+  name: libpcap
   
   version: ""
 - 
-  category: media-sound
-  name: pulseaudio
+  category: media-libs
+  name: libgphoto2
+  
+  version: ""
+- 
+  category: sys-libs
+  name: ncurses
+  
+  version: "5.2"
+- 
+  category: virtual
+  name: opencl
   
   version: ""
 - 
@@ -123,23 +208,43 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
-  name: ncurses
+  category: net-libs
+  name: gnutls
   
-  version: "5.2"
+  version: ""
 - 
   category: media-libs
-  name: openal
+  name: freetype
+  
+  version: 2.0.0
+- 
+  category: app-eselect
+  name: eselect-wine
+  
+  version: "0.3"
+- 
+  category: games-emulation
+  name: dosbox
+  
+  version: 0.74_p20160629
+- 
+  category: dev-perl
+  name: XML-Simple
   
   version: ""
 - 
-  category: app-emulation
-  name: vkd3d
+  category: net-print
+  name: cups
   
   version: ""
 - 
-  category: x11-libs
-  name: libXinerama
+  category: media-sound
+  name: gsm
+  
+  version: ""
+- 
+  category: net-nds
+  name: openldap
   
   version: ""
 - 
@@ -149,117 +254,22 @@ requires:
   version: ""
 - 
   category: media-libs
-  name: alsa-lib
+  name: libpng
   
   version: ""
-- 
-  category: sys-auth
-  name: rtkit
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXcursor
-  
-  version: ""
-- 
-  category: net-fs
-  name: samba[netapi(+),]
-  
-  version: ""
-- 
-  category: virtual
-  name: glu
-  
-  version: ""
-- 
-  category: media-libs
-  name: libv4l
-  
-  version: ""
-- 
-  category: app-eselect
-  name: eselect-wine
-  
-  version: "0.3"
 - 
   category: app-emulation
   name: wine-mono
   
   version: ""
 - 
-  category: net-fs
-  name: samba
-  
-  version: 3.0.25
-- 
-  category: x11-libs
-  name: libXext
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXrandr
-  
-  version: ""
-- 
   category: media-libs
-  name: libgphoto2
+  name: alsa-lib
   
   version: ""
 - 
-  category: media-libs
-  name: libpng
-  
-  version: ""
-- 
-  category: sys-apps
-  name: dbus
-  
-  version: ""
-- 
-  category: media-libs
-  name: vulkan-loader
-  
-  version: ""
-- 
-  category: media-plugins
-  name: gst-plugins-meta
-  
-  version: ""
-- 
-  category: games-emulation
-  name: dosbox
-  
-  version: 0.74_p20160629
-- 
-  category: app-emulation
-  name: wine-gecko
-  
-  version: ""
-- 
-  category: sys-fs
-  name: udisks
-  
-  version: ""
-- 
-  category: media-sound
-  name: gsm
-  
-  version: ""
-- 
-  category: virtual
-  name: libudev
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXcomposite
-  
-  version: ""
-- 
-  category: dev-perl
-  name: XML-Simple
+  category: net-libs
+  name: libcapi
   
   version: ""
 - 
@@ -268,33 +278,23 @@ requires:
   
   version: ""
 - 
-  category: media-libs
-  name: gstreamer
-  
-  version: ""
-- 
-  category: media-libs
-  name: lcms
-  
-  version: ""
-- 
-  category: net-nds
-  name: openldap
-  
-  version: ""
-- 
-  category: net-print
-  name: cups
-  
-  version: ""
-- 
-  category: sys-devel
-  name: gettext
+  category: media-plugins
+  name: gst-plugins-meta
   
   version: ""
 - 
   category: media-libs
   name: libsdl2
+  
+  version: ""
+- 
+  category: virtual
+  name: jpeg
+  
+  version: ""
+- 
+  category: sys-apps
+  name: dbus
   
   version: ""
 use_flags:

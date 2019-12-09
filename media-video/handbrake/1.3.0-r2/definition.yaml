@@ -4,42 +4,7 @@ name: handbrake
 requires:
 - 
   category: media-libs
-  name: nv-codec-headers
-  
-  version: ""
-- 
-  category: media-video
-  name: libav
-  
-  version: "12.2"
-- 
-  category: media-libs
-  name: gst-plugins-good
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libgudev
-  
-  version: ""
-- 
-  category: media-libs
-  name: a52dec
-  
-  version: ""
-- 
-  category: media-libs
-  name: libbluray
-  
-  version: "1.0"
-- 
-  category: media-libs
-  name: libsamplerate
-  
-  version: ""
-- 
-  category: media-libs
-  name: libvorbis
+  name: libdvdnav
   
   version: ""
 - 
@@ -49,77 +14,7 @@ requires:
   version: "1.8"
 - 
   category: media-libs
-  name: opus
-  
-  version: ""
-- 
-  category: sys-libs
-  name: zlib
-  
-  version: ""
-- 
-  category: x11-libs
-  name: gdk-pixbuf
-  
-  version: ""
-- 
-  category: media-libs
-  name: libass
-  
-  version: ""
-- 
-  category: media-libs
-  name: x265
-  
-  version: "3.2"
-- 
-  category: x11-libs
-  name: libnotify
-  
-  version: ""
-- 
-  category: media-libs
-  name: gstreamer
-  
-  version: ""
-- 
-  category: x11-libs
-  name: cairo
-  
-  version: ""
-- 
-  category: media-sound
-  name: lame
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libxml2
-  
-  version: ""
-- 
-  category: media-libs
-  name: speex
-  
-  version: ""
-- 
-  category: media-libs
-  name: gst-plugins-base
-  
-  version: ""
-- 
-  category: media-libs
-  name: gst-plugins-bad
-  
-  version: ""
-- 
-  category: media-plugins
-  name: gst-plugins-a52dec
-  
-  version: ""
-- 
-  category: dev-libs
-  name: glib
+  name: nv-codec-headers
   
   version: ""
 - 
@@ -128,28 +23,13 @@ requires:
   
   version: ""
 - 
-  category: media-libs
-  name: x264
+  category: dev-libs
+  name: jansson
   
   version: ""
 - 
   category: media-libs
-  name: libdvdnav
-  
-  version: ""
-- 
-  category: media-libs
-  name: libdvdread
-  
-  version: ""
-- 
-  category: media-plugins
-  name: gst-plugins-libav
-  
-  version: ""
-- 
-  category: app-arch
-  name: xz-utils
+  name: gst-plugins-base
   
   version: ""
 - 
@@ -159,12 +39,92 @@ requires:
   version: "3.10"
 - 
   category: media-libs
+  name: x265
+  
+  version: "3.2"
+- 
+  category: dev-libs
+  name: glib
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libgudev
+  
+  version: ""
+- 
+  category: x11-libs
+  name: cairo
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libnotify
+  
+  version: ""
+- 
+  category: media-libs
+  name: speex
+  
+  version: ""
+- 
+  category: media-libs
+  name: libbluray
+  
+  version: "1.0"
+- 
+  category: media-libs
+  name: libdvdread
+  
+  version: ""
+- 
+  category: sys-libs
+  name: zlib
+  
+  version: ""
+- 
+  category: media-libs
+  name: gst-plugins-bad
+  
+  version: ""
+- 
+  category: media-libs
+  name: gst-plugins-ugly
+  
+  version: ""
+- 
+  category: media-libs
   name: fdk-aac
   
   version: ""
 - 
   category: media-libs
-  name: libtheora
+  name: a52dec
+  
+  version: ""
+- 
+  category: media-libs
+  name: libass
+  
+  version: ""
+- 
+  category: media-libs
+  name: opus
+  
+  version: ""
+- 
+  category: media-libs
+  name: x264
+  
+  version: ""
+- 
+  category: media-video
+  name: libav
+  
+  version: "12.2"
+- 
+  category: media-libs
+  name: gstreamer
   
   version: ""
 - 
@@ -173,18 +133,63 @@ requires:
   
   version: 0.5.1
 - 
-  category: media-video
-  name: ffmpeg
-  
-  version: 4.2.1
-- 
   category: media-libs
-  name: gst-plugins-ugly
+  name: libtheora
+  
+  version: ""
+- 
+  category: media-plugins
+  name: gst-plugins-libav
   
   version: ""
 - 
   category: media-plugins
   name: gst-plugins-x264
+  
+  version: ""
+- 
+  category: app-arch
+  name: xz-utils
+  
+  version: ""
+- 
+  category: media-libs
+  name: libsamplerate
+  
+  version: ""
+- 
+  category: media-sound
+  name: lame
+  
+  version: ""
+- 
+  category: media-libs
+  name: gst-plugins-good
+  
+  version: ""
+- 
+  category: x11-libs
+  name: gdk-pixbuf
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libxml2
+  
+  version: ""
+- 
+  category: media-libs
+  name: libvorbis
+  
+  version: ""
+- 
+  category: media-video
+  name: ffmpeg
+  
+  version: 4.2.1
+- 
+  category: media-plugins
+  name: gst-plugins-a52dec
   
   version: ""
 - 
@@ -195,11 +200,6 @@ requires:
 - 
   category: dev-libs
   name: dbus-glib
-  
-  version: ""
-- 
-  category: dev-libs
-  name: jansson
   
   version: ""
 use_flags:

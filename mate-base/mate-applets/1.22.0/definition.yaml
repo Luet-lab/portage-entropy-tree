@@ -8,80 +8,15 @@ conflicts:
 name: mate-applets
 requires:
 - 
-  category: dev-libs
-  name: glib
-  
-  version: "2.50"
-- 
-  category: dev-libs
-  name: libxml2
-  
-  version: "2.5"
-- 
-  category: dev-python
-  name: pygobject
-  
-  version: ""
-- 
-  category: gnome-base
-  name: libgtop
-  
-  version: 2.12.0
-- 
   category: gnome-extra
   name: gucharmap
   
   version: "3.0"
 - 
-  category: sys-apps
-  name: dbus
+  category: mate-base
+  name: mate-panel
   
-  version: 1.1.2
-- 
-  category: virtual
-  name: libintl
-  
-  version: ""
-- 
-  category: sys-auth
-  name: polkit
-  
-  version: "0.97"
-- 
-  category: sys-power
-  name: upower
-  
-  version: 0.9.23
-- 
-  category: dev-libs
-  name: atk
-  
-  version: ""
-- 
-  category: net-wireless
-  name: wireless-tools
-  
-  version: 28_pre9
-- 
-  category: x11-libs
-  name: gdk-pixbuf
-  
-  version: ""
-- 
-  category: x11-libs
-  name: gtksourceview
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libwnck
-  
-  version: "3.0"
-- 
-  category: x11-libs
-  name: pango
-  
-  version: ""
+  version: 1.17.0
 - 
   category: mate-base
   name: mate-settings-daemon
@@ -89,22 +24,12 @@ requires:
   version: "1.6"
 - 
   category: dev-libs
-  name: dbus-glib
+  name: libxml2
   
-  version: "0.74"
+  version: "2.5"
 - 
-  category: dev-libs
-  name: libmateweather
-  
-  version: 1.17.0
-- 
-  category: mate-base
-  name: mate-panel
-  
-  version: 1.17.0
-- 
-  category: sys-power
-  name: cpupower
+  category: x11-libs
+  name: gdk-pixbuf
   
   version: ""
 - 
@@ -118,10 +43,85 @@ requires:
   
   version: "0.7"
 - 
+  category: virtual
+  name: libintl
+  
+  version: ""
+- 
+  category: dev-libs
+  name: glib
+  
+  version: "2.50"
+- 
+  category: dev-python
+  name: pygobject
+  
+  version: ""
+- 
+  category: gnome-base
+  name: libgtop
+  
+  version: 2.12.0
+- 
+  category: sys-apps
+  name: dbus
+  
+  version: 1.1.2
+- 
+  category: x11-libs
+  name: gtksourceview
+  
+  version: ""
+- 
   category: x11-libs
   name: libX11
   
   version: ""
+- 
+  category: x11-libs
+  name: libwnck
+  
+  version: "3.0"
+- 
+  category: x11-libs
+  name: pango
+  
+  version: ""
+- 
+  category: dev-libs
+  name: atk
+  
+  version: ""
+- 
+  category: dev-libs
+  name: dbus-glib
+  
+  version: "0.74"
+- 
+  category: dev-libs
+  name: libmateweather
+  
+  version: 1.17.0
+- 
+  category: net-wireless
+  name: wireless-tools
+  
+  version: 28_pre9
+- 
+  category: sys-power
+  name: cpupower
+  
+  version: ""
+- 
+  category: sys-auth
+  name: polkit
+  
+  version: "0.97"
+- 
+  category: sys-power
+  name: upower
+  
+  version: 0.9.23
 use_flags:
 - X
 - ipv6

@@ -3,8 +3,18 @@ conflicts: []
 name: urbanterror
 requires:
 - 
-  category: virtual
-  name: jpeg
+  category: net-misc
+  name: curl
+  
+  version: ""
+- 
+  category: sys-libs
+  name: zlib
+  
+  version: ""
+- 
+  category: media-libs
+  name: libsdl2
   
   version: ""
 - 
@@ -18,18 +28,8 @@ requires:
   
   version: ""
 - 
-  category: net-misc
-  name: curl
-  
-  version: ""
-- 
-  category: games-fps
-  name: urbanterror-data
-  
-  version: 4.3.4
-- 
-  category: media-libs
-  name: libsdl2
+  category: virtual
+  name: jpeg
   
   version: ""
 - 
@@ -43,10 +43,10 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
-  name: zlib
+  category: games-fps
+  name: urbanterror-data
   
-  version: ""
+  version: 4.3.4
 use_flags:
 - +altgamma
 - +client

@@ -8,13 +8,23 @@ conflicts:
 name: marco
 requires:
 - 
+  category: dev-libs
+  name: glib
+  
+  version: "2.50"
+- 
+  category: gnome-base
+  name: libgtop
+  
+  version: "2"
+- 
   category: x11-libs
-  name: pango-1.2[X]
+  name: cairo
   
   version: ""
 - 
   category: x11-libs
-  name: libSM
+  name: gdk-pixbuf
   
   version: ""
 - 
@@ -24,67 +34,12 @@ requires:
   version: "0.3"
 - 
   category: x11-libs
-  name: libXcursor
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXpresent
-  
-  version: ""
-- 
-  category: x11-libs
-  name: startup-notification
-  
-  version: "0.7"
-- 
-  category: x11-libs
-  name: gdk-pixbuf
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXinerama
-  
-  version: ""
-- 
-  category: dev-libs
-  name: atk
-  
-  version: ""
-- 
-  category: gnome-base
-  name: libgtop
-  
-  version: "2"
-- 
-  category: x11-libs
-  name: gtk+
-  
-  version: "3.22"
-- 
-  category: x11-libs
-  name: libICE
-  
-  version: ""
-- 
-  category: x11-libs
   name: libXdamage
   
   version: ""
 - 
   category: x11-libs
-  name: libXext
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXfixes
-  
-  version: ""
-- 
-  category: gnome-extra
-  name: zenity
+  name: libXinerama
   
   version: ""
 - 
@@ -94,9 +49,39 @@ requires:
   version: 1.20.0
 - 
   category: dev-libs
-  name: glib
+  name: atk
   
-  version: "2.50"
+  version: ""
+- 
+  category: x11-libs
+  name: libICE
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libSM
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXcursor
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXext
+  
+  version: ""
+- 
+  category: x11-libs
+  name: startup-notification
+  
+  version: "0.7"
+- 
+  category: gnome-extra
+  name: zenity
+  
+  version: ""
 - 
   category: media-libs
   name: libcanberra
@@ -104,9 +89,24 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: cairo
+  name: pango-1.2[X]
   
   version: ""
+- 
+  category: x11-libs
+  name: libXpresent
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXrender
+  
+  version: ""
+- 
+  category: x11-libs
+  name: gtk+
+  
+  version: "3.22"
 - 
   category: x11-libs
   name: libX11
@@ -114,12 +114,12 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: libXrandr
+  name: libXfixes
   
   version: ""
 - 
   category: x11-libs
-  name: libXrender
+  name: libXrandr
   
   version: ""
 - 

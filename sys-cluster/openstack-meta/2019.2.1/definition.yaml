@@ -3,6 +3,11 @@ conflicts: []
 name: openstack-meta
 requires:
 - 
+  category: sys-cluster
+  name: placement
+  
+  version: 2.0.0
+- 
   category: sys-auth
   name: keystone
   
@@ -37,11 +42,6 @@ requires:
   name: heat
   
   version: 13.0.0
-- 
-  category: sys-cluster
-  name: placement
-  
-  version: 2.0.0
 use_flags:
 - cinder
 - glance

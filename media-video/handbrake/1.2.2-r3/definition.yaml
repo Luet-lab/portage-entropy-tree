@@ -3,8 +3,58 @@ conflicts: []
 name: handbrake
 requires:
 - 
+  category: x11-libs
+  name: gtk+
+  
+  version: "3.10"
+- 
+  category: media-libs
+  name: libbluray
+  
+  version: "1.0"
+- 
+  category: media-libs
+  name: libvorbis
+  
+  version: ""
+- 
+  category: media-sound
+  name: lame
+  
+  version: ""
+- 
+  category: dev-libs
+  name: dbus-glib
+  
+  version: ""
+- 
+  category: media-plugins
+  name: gst-plugins-libav
+  
+  version: ""
+- 
+  category: media-libs
+  name: speex
+  
+  version: ""
+- 
+  category: dev-libs
+  name: jansson
+  
+  version: ""
+- 
+  category: media-libs
+  name: libdvdread
+  
+  version: ""
+- 
   category: media-libs
   name: libvpx
+  
+  version: ""
+- 
+  category: media-libs
+  name: nv-codec-headers
   
   version: ""
 - 
@@ -14,9 +64,9 @@ requires:
   version: ""
 - 
   category: media-video
-  name: ffmpeg
+  name: libav
   
-  version: "4.1"
+  version: "12.2"
 - 
   category: dev-libs
   name: glib
@@ -28,18 +78,13 @@ requires:
   
   version: ""
 - 
-  category: media-libs
-  name: fdk-aac
+  category: media-video
+  name: ffmpeg
   
-  version: ""
+  version: "4.1"
 - 
   category: media-libs
-  name: libtheora
-  
-  version: ""
-- 
-  category: media-libs
-  name: libvorbis
+  name: gst-plugins-base
   
   version: ""
 - 
@@ -48,38 +93,13 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
-  name: pango
+  category: media-libs
+  name: gst-plugins-ugly
   
   version: ""
 - 
   category: media-libs
-  name: libdvdread
-  
-  version: ""
-- 
-  category: media-libs
-  name: libsamplerate
-  
-  version: ""
-- 
-  category: media-libs
-  name: gstreamer
-  
-  version: ""
-- 
-  category: media-libs
-  name: gst-plugins-bad
-  
-  version: ""
-- 
-  category: media-plugins
-  name: gst-plugins-a52dec
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libgudev
+  name: fdk-aac
   
   version: ""
 - 
@@ -99,17 +119,12 @@ requires:
   version: ""
 - 
   category: media-libs
-  name: opus
-  
-  version: ""
-- 
-  category: media-sound
-  name: lame
+  name: libtheora
   
   version: ""
 - 
   category: media-libs
-  name: gst-plugins-base
+  name: gstreamer
   
   version: ""
 - 
@@ -118,43 +133,28 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  name: jansson
+  category: x11-libs
+  name: pango
   
   version: ""
-- 
-  category: media-libs
-  name: libbluray
-  
-  version: "1.0"
 - 
   category: sys-libs
   name: zlib
   
   version: ""
 - 
-  category: x11-libs
-  name: gdk-pixbuf
+  category: media-plugins
+  name: gst-plugins-a52dec
   
   version: ""
 - 
   category: media-libs
-  name: libass
+  name: libsamplerate
   
   version: ""
 - 
-  category: media-video
-  name: libav
-  
-  version: "12.2"
-- 
-  category: media-libs
-  name: gst-plugins-ugly
-  
-  version: ""
-- 
-  category: dev-libs
-  name: dbus-glib
+  category: media-plugins
+  name: gst-plugins-x264
   
   version: ""
 - 
@@ -164,29 +164,29 @@ requires:
   version: ""
 - 
   category: media-libs
-  name: speex
+  name: libass
   
   version: ""
 - 
   category: media-libs
-  name: nv-codec-headers
+  name: opus
   
   version: ""
 - 
-  category: media-plugins
-  name: gst-plugins-libav
+  category: media-libs
+  name: gst-plugins-bad
   
   version: ""
 - 
-  category: media-plugins
-  name: gst-plugins-x264
+  category: dev-libs
+  name: libgudev
   
   version: ""
 - 
   category: x11-libs
-  name: gtk+
+  name: gdk-pixbuf
   
-  version: "3.10"
+  version: ""
 use_flags:
 - +fdk
 - gstreamer

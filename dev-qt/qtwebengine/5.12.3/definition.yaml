@@ -3,23 +3,78 @@ conflicts: []
 name: qtwebengine
 requires:
 - 
+  category: dev-libs
+  name: nss
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXext
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXrender
+  
+  version: ""
+- 
+  category: dev-qt
+  name: qtdeclarative
+  
+  version: 5.12.3
+- 
+  category: media-libs
+  name: fontconfig
+  
+  version: ""
+- 
   category: media-libs
   name: opus
   
   version: ""
 - 
   category: x11-libs
-  name: libXdamage
+  name: libdrm
+  
+  version: ""
+- 
+  category: app-arch
+  name: snappy
+  
+  version: ""
+- 
+  category: media-libs
+  name: libpng
+  
+  version: ""
+- 
+  category: media-libs
+  name: libwebp
+  
+  version: ""
+- 
+  category: sys-libs
+  name: zlib
   
   version: ""
 - 
   category: x11-libs
-  name: libXrandr
+  name: libXfixes
   
   version: ""
 - 
-  category: media-video
-  name: ffmpeg
+  category: dev-libs
+  name: icu
+  
+  version: "60.2"
+- 
+  category: virtual
+  name: libudev
+  
+  version: ""
+- 
+  category: dev-libs
+  name: nspr
   
   version: ""
 - 
@@ -28,8 +83,18 @@ requires:
   
   version: 5.12.3
 - 
+  category: dev-qt
+  name: qtnetwork
+  
+  version: 5.12.3
+- 
+  category: dev-libs
+  name: libxml2
+  
+  version: ""
+- 
   category: media-libs
-  name: harfbuzz
+  name: lcms
   
   version: ""
 - 
@@ -43,8 +108,43 @@ requires:
   
   version: ""
 - 
-  category: virtual
-  name: libudev
+  category: x11-libs
+  name: libXcursor
+  
+  version: ""
+- 
+  category: dev-qt
+  name: designer
+  
+  version: 5.12.3
+- 
+  category: x11-libs
+  name: libXdamage
+  
+  version: ""
+- 
+  category: dev-libs
+  name: expat
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libevent
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libxslt
+  
+  version: ""
+- 
+  category: dev-libs
+  name: re2
+  
+  version: ""
+- 
+  category: sys-apps
+  name: dbus
   
   version: ""
 - 
@@ -58,38 +158,8 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
-  name: libXext
-  
-  version: ""
-- 
-  category: app-arch
-  name: snappy
-  
-  version: ""
-- 
   category: media-libs
-  name: freetype
-  
-  version: ""
-- 
-  category: media-libs
-  name: libwebp
-  
-  version: ""
-- 
-  category: sys-apps
-  name: dbus
-  
-  version: ""
-- 
-  category: media-libs
-  name: libjpeg-turbo
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXrender
+  name: alsa-lib
   
   version: ""
 - 
@@ -98,33 +168,23 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  name: nspr
+  category: media-video
+  name: ffmpeg
   
   version: ""
 - 
   category: dev-libs
-  name: nss
+  name: glib
   
   version: ""
 - 
   category: dev-qt
-  name: qtcore
+  name: qtprintsupport
   
   version: 5.12.3
 - 
   category: media-libs
-  name: lcms
-  
-  version: ""
-- 
-  category: dev-qt
-  name: qtwebchannel
-  
-  version: 5.12.3
-- 
-  category: x11-libs
-  name: libXfixes
+  name: libjpeg-turbo
   
   version: ""
 - 
@@ -133,13 +193,8 @@ requires:
   
   version: ""
 - 
-  category: media-libs
-  name: alsa-lib
-  
-  version: ""
-- 
   category: x11-libs
-  name: libXcursor
+  name: libXrandr
   
   version: ""
 - 
@@ -149,32 +204,17 @@ requires:
   version: ""
 - 
   category: dev-qt
-  name: designer
-  
-  version: 5.12.3
-- 
-  category: dev-qt
   name: qtpositioning
   
   version: 5.12.3
 - 
-  category: dev-libs
-  name: glib
-  
-  version: ""
-- 
   category: dev-qt
-  name: qtdeclarative
+  name: qtwebchannel
   
   version: 5.12.3
 - 
-  category: dev-libs
-  name: libevent
-  
-  version: ""
-- 
-  category: media-libs
-  name: fontconfig
+  category: sys-apps
+  name: pciutils
   
   version: ""
 - 
@@ -183,63 +223,23 @@ requires:
   
   version: 5.12.3
 - 
-  category: x11-libs
-  name: libXtst
-  
-  version: ""
-- 
   category: dev-qt
-  name: qtnetwork
+  name: qtcore
   
   version: 5.12.3
 - 
-  category: dev-libs
-  name: expat
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libxml2
+  category: media-libs
+  name: freetype
   
   version: ""
 - 
   category: media-libs
-  name: libpng
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libxslt
+  name: harfbuzz
   
   version: ""
 - 
   category: x11-libs
-  name: libdrm
-  
-  version: ""
-- 
-  category: dev-libs
-  name: icu
-  
-  version: "60.2"
-- 
-  category: dev-qt
-  name: qtprintsupport
-  
-  version: 5.12.3
-- 
-  category: dev-libs
-  name: re2
-  
-  version: ""
-- 
-  category: sys-apps
-  name: pciutils
-  
-  version: ""
-- 
-  category: sys-libs
-  name: zlib
+  name: libXtst
   
   version: ""
 use_flags:

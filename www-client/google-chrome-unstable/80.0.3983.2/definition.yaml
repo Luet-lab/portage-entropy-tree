@@ -3,8 +3,28 @@ conflicts: []
 name: google-chrome-unstable
 requires:
 - 
-  category: app-accessibility
-  name: at-spi2-atk
+  category: sys-libs
+  name: libcap
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXcursor
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXi
+  
+  version: ""
+- 
+  category: x11-libs
+  name: pango
+  
+  version: ""
+- 
+  category: net-print
+  name: cups
   
   version: ""
 - 
@@ -19,12 +39,52 @@ requires:
   version: ""
 - 
   category: x11-libs
+  name: libXtst
+  
+  version: ""
+- 
+  category: dev-libs
+  name: expat
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libX11
+  
+  version: 1.5.0
+- 
+  category: x11-libs
+  name: libXfixes
+  
+  version: ""
+- 
+  category: x11-misc
+  name: xdg-utils
+  
+  version: ""
+- 
+  category: app-accessibility
+  name: at-spi2-atk
+  
+  version: ""
+- 
+  category: x11-libs
+  name: gdk-pixbuf
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXext
+  
+  version: ""
+- 
+  category: x11-libs
   name: libxcb
   
   version: ""
 - 
-  category: sys-apps
-  name: dbus
+  category: dev-libs
+  name: nspr
   
   version: ""
 - 
@@ -33,8 +93,33 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
-  name: libcap
+  category: x11-libs
+  name: libXcomposite
+  
+  version: ""
+- 
+  category: media-libs
+  name: alsa-lib
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXdamage
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXrandr
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXScrnSaver
+  
+  version: ""
+- 
+  category: media-libs
+  name: fontconfig
   
   version: ""
 - 
@@ -43,18 +128,8 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
-  name: libXfixes
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXi
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXrandr
+  category: app-arch
+  name: bzip2
   
   version: ""
 - 
@@ -68,63 +143,8 @@ requires:
   
   version: "3.26"
 - 
-  category: media-libs
-  name: fontconfig
-  
-  version: ""
-- 
-  category: net-print
-  name: cups
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXcursor
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXext
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXtst
-  
-  version: ""
-- 
-  category: x11-libs
-  name: pango
-  
-  version: ""
-- 
-  category: sec-policy
-  name: selinux-chromium
-  
-  version: ""
-- 
-  category: app-arch
-  name: bzip2
-  
-  version: ""
-- 
-  category: dev-libs
-  name: nspr
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXcomposite
-  
-  version: ""
-- 
-  category: dev-libs
-  name: expat
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXdamage
+  category: sys-apps
+  name: dbus
   
   version: ""
 - 
@@ -133,13 +153,8 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
-  name: libXScrnSaver
-  
-  version: ""
-- 
-  category: x11-misc
-  name: xdg-utils
+  category: sec-policy
+  name: selinux-chromium
   
   version: ""
 - 
@@ -147,21 +162,6 @@ requires:
   name: ca-certificates
   
   version: ""
-- 
-  category: media-libs
-  name: alsa-lib
-  
-  version: ""
-- 
-  category: x11-libs
-  name: gdk-pixbuf
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libX11
-  
-  version: 1.5.0
 use_flags:
 - selinux
 version: 80.0.3983.2

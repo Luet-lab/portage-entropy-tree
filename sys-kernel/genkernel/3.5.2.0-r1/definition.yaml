@@ -8,6 +8,16 @@ conflicts:
 name: genkernel
 requires:
 - 
+  category: sys-libs
+  name: libselinux
+  
+  version: ""
+- 
+  category: sys-fs
+  name: cryptsetup
+  
+  version: ""
+- 
   category: app-arch
   name: cpio
   
@@ -30,16 +40,6 @@ requires:
 - 
   category: sys-fs
   name: e2fsprogs
-  
-  version: ""
-- 
-  category: sys-libs
-  name: libselinux
-  
-  version: ""
-- 
-  category: sys-fs
-  name: cryptsetup
   
   version: ""
 use_flags:

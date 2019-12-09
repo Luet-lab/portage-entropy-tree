@@ -4,6 +4,11 @@ name: l7-filter-userspace-0.12_beta1-r1
 requires:
 - 
   category: net-libs
+  name: libnetfilter_conntrack
+  
+  version: 0.0.100
+- 
+  category: net-libs
   name: libnetfilter_queue
   
   version: 1.0.0
@@ -17,11 +22,6 @@ requires:
   name: l7-protocols
   
   version: ""
-- 
-  category: net-libs
-  name: libnetfilter_conntrack
-  
-  version: 0.0.100
 use_flags:
 - ""
 version: ""

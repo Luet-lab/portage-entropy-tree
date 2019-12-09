@@ -3,13 +3,13 @@ conflicts: []
 name: libprojectm
 requires:
 - 
-  category: media-libs
-  name: mesa
+  category: dev-qt
+  name: qtcore
   
   version: ""
 - 
-  category: media-libs
-  name: mesa[X(+)]
+  category: dev-qt
+  name: qtgui
   
   version: ""
 - 
@@ -18,8 +18,13 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
-  name: zlib
+  category: dev-qt
+  name: qtopengl
+  
+  version: ""
+- 
+  category: media-sound
+  name: pulseaudio
   
   version: ""
 - 
@@ -33,23 +38,18 @@ requires:
   
   version: ""
 - 
-  category: dev-qt
-  name: qtcore
+  category: media-libs
+  name: mesa[X(+)]
   
   version: ""
 - 
-  category: dev-qt
-  name: qtgui
+  category: media-libs
+  name: mesa
   
   version: ""
 - 
-  category: dev-qt
-  name: qtopengl
-  
-  version: ""
-- 
-  category: media-sound
-  name: pulseaudio
+  category: sys-libs
+  name: zlib
   
   version: ""
 use_flags:

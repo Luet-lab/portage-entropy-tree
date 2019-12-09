@@ -3,13 +3,18 @@ conflicts: []
 name: tellico
 requires:
 - 
+  category: media-libs
+  name: libv4l
+  
+  version: 0.8.3
+- 
   category: dev-libs
   name: libxml2
   
   version: ""
 - 
   category: dev-libs
-  name: libcdio
+  name: libxslt
   
   version: ""
 - 
@@ -19,34 +24,29 @@ requires:
   version: ""
 - 
   category: media-libs
-  name: taglib
-  
-  version: "1.5"
-- 
-  category: media-libs
   name: exempi
   
   version: "2"
 - 
   category: dev-libs
-  name: libxslt
+  name: yaz
   
-  version: ""
+  version: "2"
 - 
   category: dev-perl
   name: Text-BibTeX
   
   version: 0.780.0-r1
 - 
-  category: media-libs
-  name: libv4l
-  
-  version: 0.8.3
-- 
   category: dev-libs
-  name: yaz
+  name: libcdio
   
-  version: "2"
+  version: ""
+- 
+  category: media-libs
+  name: taglib
+  
+  version: "1.5"
 use_flags:
 - cddb
 - discid

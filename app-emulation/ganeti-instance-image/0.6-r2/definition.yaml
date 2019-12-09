@@ -3,6 +3,11 @@ conflicts: []
 name: ganeti-instance-image
 requires:
 - 
+  category: app-emulation
+  name: qemu
+  
+  version: ""
+- 
   category: sys-apps
   name: util-linux
   
@@ -27,11 +32,6 @@ requires:
   name: ganeti
   
   version: 2.15.2-r7
-- 
-  category: app-emulation
-  name: qemu
-  
-  version: ""
 use_flags:
 - ""
 version: 0.6-r2

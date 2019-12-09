@@ -3,8 +3,13 @@ conflicts: []
 name: gkrellm
 requires:
 - 
-  category: virtual
-  name: libintl
+  category: x11-libs
+  name: libSM
+  
+  version: ""
+- 
+  category: dev-libs
+  name: glib
   
   version: ""
 - 
@@ -14,17 +19,7 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: gtk+
-  
-  version: ""
-- 
-  category: x11-libs
-  name: pango
-  
-  version: ""
-- 
-  category: sys-apps
-  name: lm-sensors
+  name: libICE
   
   version: ""
 - 
@@ -34,17 +29,32 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: libSM
-  
-  version: ""
-- 
-  category: x11-libs
   name: libX11
   
   version: ""
 - 
-  category: dev-libs
-  name: glib
+  category: x11-libs
+  name: pango
+  
+  version: ""
+- 
+  category: app-admin
+  name: hddtemp
+  
+  version: ""
+- 
+  category: x11-libs
+  name: gdk-pixbuf
+  
+  version: ""
+- 
+  category: virtual
+  name: libintl
+  
+  version: ""
+- 
+  category: x11-libs
+  name: gtk+
   
   version: ""
 - 
@@ -58,18 +68,8 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
-  name: gdk-pixbuf
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libICE
-  
-  version: ""
-- 
-  category: app-admin
-  name: hddtemp
+  category: sys-apps
+  name: lm-sensors
   
   version: ""
 use_flags:

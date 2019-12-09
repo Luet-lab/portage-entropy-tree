@@ -8,13 +8,58 @@ conflicts:
 name: dovecot
 requires:
 - 
+  category: dev-libs
+  name: libressl
+  
+  version: ""
+- 
+  category: sys-libs
+  name: zlib
+  
+  version: ""
+- 
+  category: sec-policy
+  name: selinux-dovecot
+  
+  version: ""
+- 
+  category: dev-libs
+  name: expat
+  
+  version: ""
+- 
+  category: acct-group
+  name: mail
+  
+  version: ""
+- 
   category: acct-user
-  name: dovenull
+  name: dovecot
+  
+  version: ""
+- 
+  category: virtual
+  name: libiconv
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libsodium
+  
+  version: ""
+- 
+  category: app-arch
+  name: bzip2
   
   version: ""
 - 
   category: app-arch
   name: xz-utils
+  
+  version: ""
+- 
+  category: app-arch
+  name: lz4
   
   version: ""
 - 
@@ -28,78 +73,13 @@ requires:
   
   version: ""
 - 
-  category: net-nds
-  name: openldap
-  
-  version: ""
-- 
-  category: dev-libs
-  name: openssl
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libressl
-  
-  version: ""
-- 
-  category: sys-apps
-  name: tcp-wrappers
-  
-  version: ""
-- 
-  category: dev-cpp
-  name: clucene
-  
-  version: "2.3"
-- 
-  category: sys-libs
-  name: pam
-  
-  version: ""
-- 
-  category: app-text
-  name: libexttextcat
-  
-  version: ""
-- 
-  category: sys-libs
-  name: zlib
-  
-  version: ""
-- 
-  category: acct-group
-  name: dovenull
-  
-  version: ""
-- 
-  category: app-arch
-  name: bzip2
-  
-  version: ""
-- 
   category: sys-libs
   name: libcap
   
   version: ""
 - 
-  category: sec-policy
-  name: selinux-dovecot
-  
-  version: ""
-- 
-  category: acct-group
-  name: mail
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libsodium
-  
-  version: ""
-- 
-  category: virtual
-  name: krb5
+  category: net-nds
+  name: openldap
   
   version: ""
 - 
@@ -108,8 +88,8 @@ requires:
   
   version: ""
 - 
-  category: virtual
-  name: libiconv
+  category: net-mail
+  name: vpopmail
   
   version: ""
 - 
@@ -118,13 +98,8 @@ requires:
   
   version: ""
 - 
-  category: acct-group
-  name: dovecot
-  
-  version: ""
-- 
-  category: acct-user
-  name: dovecot
+  category: virtual
+  name: krb5
   
   version: ""
 - 
@@ -133,8 +108,18 @@ requires:
   
   version: ""
 - 
-  category: app-arch
-  name: lz4
+  category: dev-cpp
+  name: clucene
+  
+  version: "2.3"
+- 
+  category: sys-apps
+  name: tcp-wrappers
+  
+  version: ""
+- 
+  category: acct-group
+  name: dovecot
   
   version: ""
 - 
@@ -143,13 +128,28 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  name: expat
+  category: acct-group
+  name: dovenull
   
   version: ""
 - 
-  category: net-mail
-  name: vpopmail
+  category: sys-libs
+  name: pam
+  
+  version: ""
+- 
+  category: dev-libs
+  name: openssl
+  
+  version: ""
+- 
+  category: app-text
+  name: libexttextcat
+  
+  version: ""
+- 
+  category: acct-user
+  name: dovenull
   
   version: ""
 use_flags:

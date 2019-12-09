@@ -3,6 +3,36 @@ conflicts: []
 name: gegl
 requires:
 - 
+  category: media-libs
+  name: babl
+  
+  version: 0.1.12
+- 
+  category: x11-libs
+  name: cairo
+  
+  version: ""
+- 
+  category: media-video
+  name: ffmpeg
+  
+  version: ""
+- 
+  category: media-libs
+  name: libopenraw
+  
+  version: 0.0.9
+- 
+  category: media-libs
+  name: libsdl
+  
+  version: ""
+- 
+  category: media-video
+  name: libav
+  
+  version: ""
+- 
   category: virtual
   name: jpeg
   
@@ -14,32 +44,12 @@ requires:
   version: "2.2"
 - 
   category: media-libs
-  name: openexr
+  name: lensfun
   
-  version: ""
+  version: 0.2.5
 - 
   category: media-libs
-  name: libsdl
-  
-  version: ""
-- 
-  category: dev-libs
-  name: glib
-  
-  version: "2.36"
-- 
-  category: sys-libs
-  name: zlib
-  
-  version: ""
-- 
-  category: x11-libs
-  name: cairo
-  
-  version: ""
-- 
-  category: media-video
-  name: libav
+  name: openexr
   
   version: ""
 - 
@@ -53,18 +63,33 @@ requires:
   
   version: ""
 - 
-  category: media-libs
-  name: libopenraw
+  category: dev-libs
+  name: glib
   
-  version: 0.0.9
+  version: "2.36"
 - 
-  category: media-libs
-  name: babl
+  category: sys-libs
+  name: zlib
   
-  version: 0.1.12
+  version: ""
 - 
-  category: media-video
-  name: ffmpeg
+  category: gnome-base
+  name: librsvg
+  
+  version: "2.14"
+- 
+  category: dev-libs
+  name: json-glib
+  
+  version: ""
+- 
+  category: x11-libs
+  name: gdk-pixbuf
+  
+  version: "2.18"
+- 
+  category: x11-libs
+  name: pango
   
   version: ""
 - 
@@ -78,35 +103,10 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
-  name: pango
-  
-  version: ""
-- 
   category: sci-libs
   name: umfpack
   
   version: ""
-- 
-  category: dev-libs
-  name: json-glib
-  
-  version: ""
-- 
-  category: x11-libs
-  name: gdk-pixbuf
-  
-  version: "2.18"
-- 
-  category: media-libs
-  name: lensfun
-  
-  version: 0.2.5
-- 
-  category: gnome-base
-  name: librsvg
-  
-  version: "2.14"
 use_flags:
 - cairo
 - cpu_flags_x86_mmx

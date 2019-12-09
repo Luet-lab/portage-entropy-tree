@@ -3,6 +3,11 @@ conflicts: []
 name: btrbk
 requires:
 - 
+  category: sys-fs
+  name: btrfs-progs
+  
+  version: "4.12"
+- 
   category: dev-lang
   name: perl
   
@@ -17,11 +22,6 @@ requires:
   name: pv
   
   version: ""
-- 
-  category: sys-fs
-  name: btrfs-progs
-  
-  version: "4.12"
 use_flags:
 - +pv
 - +doc

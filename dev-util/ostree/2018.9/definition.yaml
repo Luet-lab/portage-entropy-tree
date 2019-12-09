@@ -4,12 +4,7 @@ name: ostree
 requires:
 - 
   category: dev-libs
-  name: libassuan
-  
-  version: ""
-- 
-  category: sys-apps
-  name: util-linux
+  name: openssl
   
   version: ""
 - 
@@ -18,13 +13,13 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
-  name: zlib
+  category: sys-boot
+  name: grub
   
   version: ""
 - 
-  category: sys-boot
-  name: grub
+  category: sys-libs
+  name: libselinux
   
   version: ""
 - 
@@ -34,12 +29,22 @@ requires:
   version: ""
 - 
   category: dev-libs
-  name: glib
+  name: libgpg-error
   
   version: ""
 - 
-  category: dev-libs
-  name: openssl
+  category: net-dns
+  name: avahi
+  
+  version: ""
+- 
+  category: sys-apps
+  name: util-linux
+  
+  version: ""
+- 
+  category: net-libs
+  name: gnutls
   
   version: ""
 - 
@@ -48,8 +53,13 @@ requires:
   
   version: ""
 - 
-  category: app-arch
-  name: xz-utils
+  category: dev-libs
+  name: glib
+  
+  version: ""
+- 
+  category: sys-libs
+  name: zlib
   
   version: ""
 - 
@@ -63,23 +73,13 @@ requires:
   
   version: ""
 - 
+  category: app-arch
+  name: xz-utils
+  
+  version: ""
+- 
   category: dev-libs
-  name: libgpg-error
-  
-  version: ""
-- 
-  category: net-libs
-  name: gnutls
-  
-  version: ""
-- 
-  category: sys-libs
-  name: libselinux
-  
-  version: ""
-- 
-  category: net-dns
-  name: avahi
+  name: libassuan
   
   version: ""
 use_flags:

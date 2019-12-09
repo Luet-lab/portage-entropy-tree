@@ -4,21 +4,26 @@ name: umurmur
 requires:
 - 
   category: dev-libs
-  name: libconfig
+  name: nettle
   
   version: ""
 - 
-  category: net-libs
-  name: gnutls
+  category: dev-libs
+  name: libressl
   
-  version: 3.0.0
+  version: ""
+- 
+  category: acct-group
+  name: murmur
+  
+  version: ""
 - 
   category: dev-libs
   name: openssl
   
   version: ""
 - 
-  category: acct-group
+  category: acct-user
   name: murmur
   
   version: ""
@@ -29,22 +34,17 @@ requires:
   version: 1.0.0_rc2
 - 
   category: dev-libs
-  name: nettle
+  name: libconfig
   
   version: ""
 - 
   category: net-libs
+  name: gnutls
+  
+  version: 3.0.0
+- 
+  category: net-libs
   name: mbedtls
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libressl
-  
-  version: ""
-- 
-  category: acct-user
-  name: murmur
   
   version: ""
 use_flags:

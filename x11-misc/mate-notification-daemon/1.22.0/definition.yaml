@@ -2,7 +2,7 @@ category: x11-misc
 conflicts:
 - 
   category: x11-misc
-  name: notification-daemon
+  name: notify-osd
   
   version: ""
 - 
@@ -12,7 +12,7 @@ conflicts:
   version: ""
 - 
   category: x11-misc
-  name: notify-osd
+  name: notification-daemon
   
   version: ""
 name: mate-notification-daemon
@@ -23,10 +23,15 @@ requires:
   
   version: "0.4"
 - 
-  category: x11-libs
-  name: cairo
+  category: dev-libs
+  name: dbus-glib
   
-  version: ""
+  version: "0.78"
+- 
+  category: x11-libs
+  name: libnotify
+  
+  version: "0.7"
 - 
   category: x11-libs
   name: gdk-pixbuf
@@ -34,24 +39,19 @@ requires:
   version: "2.22"
 - 
   category: x11-libs
-  name: libnotify
+  name: gtk+
   
-  version: "0.7"
+  version: "3.22"
 - 
   category: dev-libs
-  name: dbus-glib
+  name: atk
   
-  version: "0.78"
+  version: ""
 - 
   category: dev-libs
   name: glib
   
   version: "2.50"
-- 
-  category: x11-libs
-  name: libwnck
-  
-  version: "3"
 - 
   category: sys-apps
   name: dbus
@@ -59,12 +59,17 @@ requires:
   version: "1"
 - 
   category: x11-libs
-  name: libX11
+  name: cairo
   
   version: ""
 - 
-  category: dev-libs
-  name: atk
+  category: x11-libs
+  name: libwnck
+  
+  version: "3"
+- 
+  category: x11-libs
+  name: libX11
   
   version: ""
 - 
@@ -72,11 +77,6 @@ requires:
   name: libintl
   
   version: ""
-- 
-  category: x11-libs
-  name: gtk+
-  
-  version: "3.22"
 use_flags:
 - ""
 version: 1.22.0

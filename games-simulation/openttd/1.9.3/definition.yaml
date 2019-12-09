@@ -4,12 +4,7 @@ name: openttd
 requires:
 - 
   category: dev-libs
-  name: icu-layoutex
-  
-  version: ""
-- 
-  category: dev-libs
-  name: icu-le-hb
+  name: lzo
   
   version: ""
 - 
@@ -19,7 +14,12 @@ requires:
   version: ""
 - 
   category: media-libs
-  name: freetype
+  name: libsdl[sound,X,video]
+  
+  version: ""
+- 
+  category: media-libs
+  name: fontconfig
   
   version: ""
 - 
@@ -28,8 +28,8 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  name: lzo
+  category: media-libs
+  name: freetype
   
   version: ""
 - 
@@ -38,8 +38,13 @@ requires:
   
   version: ""
 - 
-  category: media-libs
-  name: libsdl[sound,X,video]
+  category: dev-libs
+  name: icu-layoutex
+  
+  version: ""
+- 
+  category: dev-libs
+  name: icu-le-hb
   
   version: ""
 - 
@@ -47,11 +52,6 @@ requires:
   name: icu
   
   version: "58.1"
-- 
-  category: media-libs
-  name: fontconfig
-  
-  version: ""
 use_flags:
 - aplaymidi
 - debug

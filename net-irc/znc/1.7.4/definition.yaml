@@ -3,6 +3,16 @@ conflicts: []
 name: znc
 requires:
 - 
+  category: dev-lang
+  name: perl
+  
+  version: "5.10"
+- 
+  category: dev-libs
+  name: cyrus-sasl
+  
+  version: "2"
+- 
   category: dev-libs
   name: openssl
   
@@ -32,16 +42,6 @@ requires:
   name: boost
   
   version: ""
-- 
-  category: dev-lang
-  name: perl
-  
-  version: "5.10"
-- 
-  category: dev-libs
-  name: cyrus-sasl
-  
-  version: "2"
 use_flags:
 - +ipv6
 - +icu

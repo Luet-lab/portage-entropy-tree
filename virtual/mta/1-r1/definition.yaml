@@ -4,7 +4,7 @@ name: mta
 requires:
 - 
   category: mail-mta
-  name: courier
+  name: msmtp
   
   version: ""
 - 
@@ -14,12 +14,12 @@ requires:
   version: ""
 - 
   category: mail-mta
-  name: exim
+  name: netqmail
   
   version: ""
 - 
   category: mail-mta
-  name: netqmail
+  name: sendmail
   
   version: ""
 - 
@@ -29,12 +29,17 @@ mailer
   version: ""
 - 
   category: mail-mta
-  name: msmtp
+  name: courier
   
   version: ""
 - 
   category: mail-mta
-  name: sendmail
+  name: exim
+  
+  version: ""
+- 
+  category: mail-mta
+  name: postfix
   
   version: ""
 - 
@@ -45,11 +50,6 @@ mailer
 - 
   category: mail-mta
   name: ssmtp
-  
-  version: ""
-- 
-  category: mail-mta
-  name: postfix
   
   version: ""
 version: 1-r1

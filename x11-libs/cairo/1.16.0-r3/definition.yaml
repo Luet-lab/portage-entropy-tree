@@ -3,15 +3,10 @@ conflicts: []
 name: cairo
 requires:
 - 
-  category: sys-libs
-  name: binutils-libs
-  
-  version: ""
-- 
   category: x11-libs
-  name: libXrender
+  name: pixman
   
-  version: 0.9.8
+  version: 0.32.4
 - 
   category: dev-libs
   name: lzo
@@ -23,25 +18,15 @@ requires:
   
   version: 1.6.10
 - 
-  category: media-libs
-  name: mesa-9.1.6[egl,X(+),]
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libX11
-  
-  version: 1.6.2
-- 
   category: sys-libs
   name: zlib
   
   version: 1.2.8-r1
 - 
-  category: x11-libs
-  name: pixman
+  category: media-libs
+  name: mesa
   
-  version: 0.32.4
+  version: 9.1.6
 - 
   category: dev-libs
   name: glib
@@ -49,29 +34,44 @@ requires:
   version: 2.34.3
 - 
   category: x11-libs
-  name: libXext
+  name: libXrender
   
-  version: 1.3.2
-- 
-  category: x11-libs
-  name: libxcb
-  
-  version: 1.9.1
+  version: 0.9.8
 - 
   category: media-libs
   name: fontconfig
   
   version: 2.10.92
 - 
+  category: x11-libs
+  name: libX11
+  
+  version: 1.6.2
+- 
+  category: x11-libs
+  name: libxcb
+  
+  version: 1.9.1
+- 
+  category: x11-libs
+  name: libXext
+  
+  version: 1.3.2
+- 
+  category: sys-libs
+  name: binutils-libs
+  
+  version: ""
+- 
+  category: media-libs
+  name: mesa-9.1.6[egl,X(+),]
+  
+  version: ""
+- 
   category: media-libs
   name: freetype
   
   version: 2.5.0.1
-- 
-  category: media-libs
-  name: mesa
-  
-  version: 9.1.6
 use_flags:
 - X
 - aqua

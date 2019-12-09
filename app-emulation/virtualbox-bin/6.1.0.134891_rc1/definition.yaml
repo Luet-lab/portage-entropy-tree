@@ -1,30 +1,25 @@
 category: app-emulation
 conflicts:
 - 
-  category: app-emulation
-  name: virtualbox-additions
+  category: '!app-emulation'
+  name: virtualbox
   
   version: ""
 - 
-  category: '!app-emulation'
-  name: virtualbox
+  category: app-emulation
+  name: virtualbox-additions
   
   version: ""
 name: virtualbox-bin
 requires:
 - 
-  category: media-libs
-  name: fontconfig
-  
-  version: ""
-- 
-  category: media-libs
-  name: libpng
+  category: x11-libs
+  name: libXfixes
   
   version: ""
 - 
   category: x11-libs
-  name: libXfixes
+  name: libXi
   
   version: ""
 - 
@@ -34,42 +29,17 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: libXrender
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXmu
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXdmcp
-  
-  version: ""
-- 
-  category: dev-libs
-  name: glib
-  
-  version: ""
-- 
-  category: x11-libs
   name: libX11
   
   version: ""
 - 
   category: x11-libs
-  name: libXau
+  name: libSM
   
   version: ""
 - 
   category: media-libs
-  name: freetype
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXft
+  name: libpng
   
   version: ""
 - 
@@ -78,8 +48,23 @@ requires:
   
   version: ""
 - 
-  category: sys-fs
-  name: lvm2
+  category: x11-libs
+  name: libXt
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXdmcp
+  
+  version: ""
+- 
+  category: media-libs
+  name: freetype
+  
+  version: ""
+- 
+  category: dev-libs
+  name: glib
   
   version: ""
 - 
@@ -99,7 +84,7 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: libXi
+  name: libXrender
   
   version: ""
 - 
@@ -113,23 +98,38 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
-  name: libXt
-  
-  version: ""
-- 
   category: app-emulation
   name: virtualbox-modules
   
   version: ""
 - 
   category: x11-libs
-  name: libICE
+  name: libXmu
+  
+  version: ""
+- 
+  category: sys-fs
+  name: lvm2
+  
+  version: ""
+- 
+  category: media-libs
+  name: fontconfig
   
   version: ""
 - 
   category: x11-libs
-  name: libSM
+  name: libXft
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXau
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libICE
   
   version: ""
 use_flags:

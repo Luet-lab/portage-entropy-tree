@@ -3,10 +3,10 @@ conflicts: []
 name: duc
 requires:
 - 
-  category: media-libs
-  name: glfw
+  category: x11-libs
+  name: pango[X]
   
-  version: "3.0"
+  version: ""
 - 
   category: sys-libs
   name: ncurses
@@ -14,7 +14,7 @@ requires:
   version: ""
 - 
   category: dev-db
-  name: tokyocabinet
+  name: sqlite
   
   version: ""
 - 
@@ -24,17 +24,7 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: pango
-  
-  version: ""
-- 
-  category: x11-libs
   name: cairo[X]
-  
-  version: ""
-- 
-  category: x11-libs
-  name: pango[X]
   
   version: ""
 - 
@@ -43,13 +33,23 @@ requires:
   
   version: ""
 - 
+  category: media-libs
+  name: glfw
+  
+  version: "3.0"
+- 
   category: dev-libs
   name: leveldb
   
   version: ""
 - 
   category: dev-db
-  name: sqlite
+  name: tokyocabinet
+  
+  version: ""
+- 
+  category: x11-libs
+  name: pango
   
   version: ""
 use_flags:

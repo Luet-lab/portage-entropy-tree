@@ -3,20 +3,40 @@ conflicts: []
 name: gmic
 requires:
 - 
-  category: sci-libs
-  name: fftw
+  category: virtual
+  name: jpeg
   
   version: ""
 - 
-  category: dev-qt
-  name: qtgui
+  category: media-libs
+  name: libpng
   
-  version: 5.2.0
+  version: ""
 - 
-  category: dev-qt
-  name: qtnetwork
+  category: x11-libs
+  name: libXext
   
-  version: 5.2.0
+  version: ""
+- 
+  category: media-gfx
+  name: gimp
+  
+  version: 2.8.0
+- 
+  category: media-gfx
+  name: graphicsmagick
+  
+  version: ""
+- 
+  category: media-libs
+  name: opencv
+  
+  version: 2.3.1a-r1
+- 
+  category: media-libs
+  name: openexr
+  
+  version: ""
 - 
   category: media-libs
   name: tiff
@@ -28,18 +48,33 @@ requires:
   
   version: ""
 - 
-  category: media-libs
-  name: opencv
+  category: dev-qt
+  name: qtgui
   
-  version: 2.3.1a-r1
+  version: 5.2.0
 - 
-  category: x11-libs
-  name: libX11
+  category: sys-libs
+  name: zlib
   
   version: ""
 - 
+  category: dev-qt
+  name: qtcore
+  
+  version: 5.2.0
+- 
+  category: media-libs
+  name: ilmbase
+  
+  version: ""
+- 
+  category: dev-qt
+  name: qtwidgets
+  
+  version: 5.2.0
+- 
   category: x11-libs
-  name: libXext
+  name: libX11
   
   version: ""
 - 
@@ -48,50 +83,15 @@ requires:
   
   version: ""
 - 
-  category: media-gfx
-  name: gimp
+  category: sci-libs
+  name: fftw
   
-  version: 2.8.0
+  version: ""
 - 
   category: dev-qt
-  name: qtcore
+  name: qtnetwork
   
   version: 5.2.0
-- 
-  category: dev-qt
-  name: qtwidgets
-  
-  version: 5.2.0
-- 
-  category: virtual
-  name: jpeg
-  
-  version: ""
-- 
-  category: media-libs
-  name: ilmbase
-  
-  version: ""
-- 
-  category: media-libs
-  name: libpng
-  
-  version: ""
-- 
-  category: media-gfx
-  name: graphicsmagick
-  
-  version: ""
-- 
-  category: media-libs
-  name: openexr
-  
-  version: ""
-- 
-  category: sys-libs
-  name: zlib
-  
-  version: ""
 use_flags:
 - +cli
 - curl

@@ -3,55 +3,10 @@ conflicts: []
 name: gegl
 requires:
 - 
-  category: dev-libs
-  name: glib
-  
-  version: "2.44"
-- 
-  category: x11-libs
-  name: gdk-pixbuf
-  
-  version: "2.32"
-- 
-  category: dev-libs
-  name: gobject-introspection
-  
-  version: "1.32"
-- 
-  category: media-libs
-  name: openexr
-  
-  version: 2.2.0
-- 
-  category: media-libs
-  name: tiff
-  
-  version: "4"
-- 
-  category: media-libs
-  name: libv4l
-  
-  version: 1.0.1
-- 
-  category: dev-libs
-  name: json-glib
-  
-  version: ""
-- 
   category: media-video
   name: libav
   
   version: ""
-- 
-  category: media-video
-  name: ffmpeg
-  
-  version: ""
-- 
-  category: media-libs
-  name: lensfun
-  
-  version: 0.2.5
 - 
   category: media-libs
   name: libsdl
@@ -63,10 +18,35 @@ requires:
   
   version: 2.40.6
 - 
-  category: media-libs
-  name: libpng
+  category: sci-libs
+  name: umfpack
   
-  version: 1.6.0
+  version: ""
+- 
+  category: media-libs
+  name: libwebp
+  
+  version: 0.5.0
+- 
+  category: x11-libs
+  name: pango
+  
+  version: ""
+- 
+  category: media-video
+  name: ffmpeg
+  
+  version: ""
+- 
+  category: media-libs
+  name: openexr
+  
+  version: 2.2.0
+- 
+  category: media-libs
+  name: tiff
+  
+  version: "4"
 - 
   category: virtual
   name: jpeg
@@ -74,14 +54,9 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: pango
+  name: cairo
   
-  version: ""
-- 
-  category: media-libs
-  name: lcms
-  
-  version: "2.8"
+  version: 1.12.2
 - 
   category: app-text
   name: poppler
@@ -93,30 +68,55 @@ requires:
   
   version: 0.15.4
 - 
+  category: sys-libs
+  name: zlib
+  
+  version: 1.2.0
+- 
+  category: x11-libs
+  name: gdk-pixbuf
+  
+  version: "2.32"
+- 
+  category: dev-libs
+  name: json-glib
+  
+  version: ""
+- 
   category: media-libs
   name: babl
   
   version: 0.1.62
 - 
-  category: x11-libs
-  name: cairo
+  category: media-libs
+  name: libpng
   
-  version: 1.12.2
+  version: 1.6.0
 - 
-  category: sci-libs
-  name: umfpack
+  category: dev-libs
+  name: gobject-introspection
   
-  version: ""
+  version: "1.32"
 - 
   category: media-libs
-  name: libwebp
+  name: lcms
   
-  version: 0.5.0
+  version: "2.8"
 - 
-  category: sys-libs
-  name: zlib
+  category: media-libs
+  name: lensfun
   
-  version: 1.2.0
+  version: 0.2.5
+- 
+  category: media-libs
+  name: libv4l
+  
+  version: 1.0.1
+- 
+  category: dev-libs
+  name: glib
+  
+  version: "2.44"
 use_flags:
 - cairo
 - cpu_flags_x86_mmx

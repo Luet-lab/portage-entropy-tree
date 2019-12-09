@@ -3,6 +3,16 @@ conflicts: []
 name: xfce4-volumed-pulse
 requires:
 - 
+  category: xfce-base
+  name: xfconf
+  
+  version: "4.8"
+- 
+  category: x11-libs
+  name: libnotify
+  
+  version: ""
+- 
   category: dev-libs
   name: glib
   
@@ -22,16 +32,6 @@ requires:
   name: gtk+
   
   version: "3.20"
-- 
-  category: xfce-base
-  name: xfconf
-  
-  version: "4.8"
-- 
-  category: x11-libs
-  name: libnotify
-  
-  version: ""
 use_flags:
 - libnotify
 version: 0.2.3

@@ -9,14 +9,19 @@ requires:
   version: "2.1"
 - 
   category: dev-python
-  name: autobahn
-  
-  version: 0.16.0
-- 
-  category: dev-python
   name: sqlalchemy
   
   version: "0.8"
+- 
+  category: dev-python
+  name: future
+  
+  version: ""
+- 
+  category: dev-python
+  name: python-dateutil
+  
+  version: "1.5"
 - 
   category: dev-util
   name: buildbot-worker
@@ -24,22 +29,7 @@ requires:
   version: 1.1.2
 - 
   category: dev-python
-  name: pyopenssl
-  
-  version: 16.0.0
-- 
-  category: dev-python
-  name: sqlalchemy-migrate
-  
-  version: "0.9"
-- 
-  category: dev-python
-  name: python-dateutil
-  
-  version: "1.5"
-- 
-  category: dev-python
-  name: pyjwt
+  name: idna
   
   version: ""
 - 
@@ -49,9 +39,14 @@ requires:
   version: ""
 - 
   category: dev-python
-  name: twisted
+  name: autobahn
   
-  version: 17.9.0
+  version: 0.16.0
+- 
+  category: dev-python
+  name: txaio
+  
+  version: 2.2.2
 - 
   category: dev-python
   name: zope-interface
@@ -59,7 +54,12 @@ requires:
   version: 4.1.1
 - 
   category: dev-python
-  name: idna
+  name: twisted
+  
+  version: 17.9.0
+- 
+  category: dev-python
+  name: pyjwt
   
   version: ""
 - 
@@ -74,14 +74,14 @@ requires:
   version: 2.2.0
 - 
   category: dev-python
-  name: future
+  name: sqlalchemy-migrate
   
-  version: ""
+  version: "0.9"
 - 
   category: dev-python
-  name: txaio
+  name: pyopenssl
   
-  version: 2.2.2
+  version: 16.0.0
 use_flags:
 - crypt
 - docker

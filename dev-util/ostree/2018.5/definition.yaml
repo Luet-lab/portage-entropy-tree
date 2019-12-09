@@ -3,13 +3,48 @@ conflicts: []
 name: ostree
 requires:
 - 
-  category: app-crypt
-  name: gpgme
+  category: sys-boot
+  name: grub
   
   version: ""
 - 
   category: dev-libs
-  name: libgpg-error
+  name: libassuan
+  
+  version: ""
+- 
+  category: net-misc
+  name: curl
+  
+  version: ""
+- 
+  category: sys-libs
+  name: zlib
+  
+  version: ""
+- 
+  category: net-libs
+  name: libsoup
+  
+  version: ""
+- 
+  category: app-arch
+  name: xz-utils
+  
+  version: ""
+- 
+  category: dev-libs
+  name: openssl
+  
+  version: ""
+- 
+  category: sys-libs
+  name: libselinux
+  
+  version: ""
+- 
+  category: sys-apps
+  name: systemd
   
   version: ""
 - 
@@ -23,13 +58,8 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  name: libassuan
-  
-  version: ""
-- 
-  category: sys-apps
-  name: util-linux
+  category: sys-fs
+  name: fuse
   
   version: ""
 - 
@@ -38,48 +68,18 @@ requires:
   
   version: ""
 - 
-  category: app-arch
-  name: xz-utils
-  
-  version: ""
-- 
-  category: net-misc
-  name: curl
-  
-  version: ""
-- 
-  category: sys-fs
-  name: fuse
-  
-  version: ""
-- 
-  category: sys-libs
-  name: zlib
-  
-  version: ""
-- 
-  category: sys-apps
-  name: systemd
+  category: app-crypt
+  name: gpgme
   
   version: ""
 - 
   category: dev-libs
-  name: openssl
+  name: libgpg-error
   
   version: ""
 - 
-  category: sys-boot
-  name: grub
-  
-  version: ""
-- 
-  category: sys-libs
-  name: libselinux
-  
-  version: ""
-- 
-  category: net-libs
-  name: libsoup
+  category: sys-apps
+  name: util-linux
   
   version: ""
 use_flags:

@@ -3,6 +3,16 @@ conflicts: []
 name: centerim
 requires:
 - 
+  category: dev-libs
+  name: libsigc++
+  
+  version: 2.2.0
+- 
+  category: sys-devel
+  name: gettext
+  
+  version: ""
+- 
   category: sys-libs
   name: ncurses
   
@@ -17,16 +27,6 @@ requires:
   name: glib
   
   version: 2.16.0
-- 
-  category: dev-libs
-  name: libsigc++
-  
-  version: 2.2.0
-- 
-  category: sys-devel
-  name: gettext
-  
-  version: ""
 use_flags:
 - debug
 - nls

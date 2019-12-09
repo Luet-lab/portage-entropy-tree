@@ -1,20 +1,65 @@
 category: app-emulation
 conflicts:
 - 
-  category: app-emulation
-  name: virtualbox-additions
+  category: '!app-emulation'
+  name: virtualbox
   
   version: ""
 - 
-  category: '!app-emulation'
-  name: virtualbox
+  category: app-emulation
+  name: virtualbox-additions
   
   version: ""
 name: virtualbox-bin
 requires:
 - 
+  category: dev-libs
+  name: glib
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXft
+  
+  version: ""
+- 
+  category: dev-libs
+  name: expat
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXrender
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXmu
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXdmcp
+  
+  version: ""
+- 
+  category: app-emulation
+  name: virtualbox-modules
+  
+  version: ""
+- 
   category: media-libs
-  name: libpng
+  name: libsdl[X]
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXfixes
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXi
   
   version: ""
 - 
@@ -24,17 +69,17 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: libXau
+  name: libX11
   
   version: ""
 - 
   category: x11-libs
-  name: libICE
+  name: libXt
   
   version: ""
 - 
   category: x11-libs
-  name: libXdmcp
+  name: libSM
   
   version: ""
 - 
@@ -49,7 +94,17 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: libXft
+  name: libXext
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libICE
+  
+  version: ""
+- 
+  category: media-libs
+  name: libpng
   
   version: ""
 - 
@@ -59,7 +114,7 @@ requires:
   version: ""
 - 
   category: dev-libs
-  name: expat
+  name: libxml2
   
   version: ""
 - 
@@ -69,67 +124,12 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: libX11
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXmu
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXext
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXfixes
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXi
-  
-  version: ""
-- 
-  category: app-emulation
-  name: virtualbox-modules
-  
-  version: ""
-- 
-  category: dev-libs
-  name: glib
+  name: libXau
   
   version: ""
 - 
   category: media-libs
   name: fontconfig
-  
-  version: ""
-- 
-  category: media-libs
-  name: libsdl[X]
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXrender
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libxml2
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXt
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libSM
   
   version: ""
 use_flags:

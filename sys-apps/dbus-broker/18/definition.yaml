@@ -3,6 +3,16 @@ conflicts: []
 name: dbus-broker
 requires:
 - 
+  category: sys-apps
+  name: systemd
+  
+  version: "230"
+- 
+  category: sys-libs
+  name: libselinux
+  
+  version: ""
+- 
   category: sys-process
   name: audit
   
@@ -17,16 +27,6 @@ requires:
   name: expat
   
   version: "2.2"
-- 
-  category: sys-apps
-  name: systemd
-  
-  version: "230"
-- 
-  category: sys-libs
-  name: libselinux
-  
-  version: ""
 use_flags:
 - audit
 - doc

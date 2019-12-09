@@ -2,16 +2,21 @@ category: net-misc
 conflicts:
 - 
   category: net-misc
-  name: ntp
+  name: openntpd
   
   version: ""
 - 
   category: net-misc
-  name: openntpd
+  name: ntp
   
   version: ""
 name: ntpsec
 requires:
+- 
+  category: sci-visualization
+  name: gnuplot
+  
+  version: ""
 - 
   category: sys-libs
   name: libcap
@@ -20,11 +25,6 @@ requires:
 - 
   category: dev-python
   name: psutil
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libbsd
   
   version: ""
 - 
@@ -38,8 +38,8 @@ requires:
   
   version: ""
 - 
-  category: sci-visualization
-  name: gnuplot
+  category: dev-libs
+  name: libbsd
   
   version: ""
 - 

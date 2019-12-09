@@ -9,6 +9,16 @@ name: zsh
 requires:
 - 
   category: sys-libs
+  name: libcap
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libpcre
+  
+  version: "3.9"
+- 
+  category: sys-libs
   name: gdbm
   
   version: ""
@@ -22,16 +32,6 @@ requires:
   name: ncurses
   
   version: 5.7-r4
-- 
-  category: sys-libs
-  name: libcap
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libpcre
-  
-  version: "3.9"
 use_flags:
 - caps
 - debug

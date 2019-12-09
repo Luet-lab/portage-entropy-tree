@@ -3,6 +3,11 @@ conflicts: []
 name: mate-menus
 requires:
 - 
+  category: dev-libs
+  name: glib
+  
+  version: "2.50"
+- 
   category: virtual
   name: libintl
   
@@ -12,11 +17,6 @@ requires:
   name: gobject-introspection
   
   version: 0.6.7
-- 
-  category: dev-libs
-  name: glib
-  
-  version: "2.50"
 use_flags:
 - debug
 - +introspection

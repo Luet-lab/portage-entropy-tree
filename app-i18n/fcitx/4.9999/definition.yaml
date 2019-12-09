@@ -3,8 +3,13 @@ conflicts: []
 name: fcitx
 requires:
 - 
+  category: virtual
+  name: libiconv
+  
+  version: ""
+- 
   category: x11-libs
-  name: libX11
+  name: libXrender
   
   version: ""
 - 
@@ -13,23 +18,18 @@ requires:
   
   version: ""
 - 
+  category: x11-libs
+  name: libXext
+  
+  version: ""
+- 
   category: app-text
   name: enchant
   
   version: ""
 - 
-  category: dev-libs
-  name: gobject-introspection
-  
-  version: ""
-- 
-  category: dev-libs
-  name: glib
-  
-  version: ""
-- 
-  category: virtual
-  name: libiconv
+  category: x11-libs
+  name: libxkbfile
   
   version: ""
 - 
@@ -43,6 +43,16 @@ requires:
   
   version: ""
 - 
+  category: x11-libs
+  name: libXinerama
+  
+  version: ""
+- 
+  category: media-libs
+  name: fontconfig
+  
+  version: ""
+- 
   category: dev-lang
   name: lua
   
@@ -53,28 +63,13 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
-  name: util-linux
+  category: app-i18n
+  name: opencc
   
   version: ""
 - 
-  category: x11-libs
-  name: libXfixes
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXinerama
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXrender
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXext
+  category: app-text
+  name: iso-codes
   
   version: ""
 - 
@@ -84,12 +79,17 @@ requires:
   version: ""
 - 
   category: dev-libs
-  name: libxml2
+  name: glib
   
   version: ""
 - 
   category: sys-apps
   name: dbus
+  
+  version: ""
+- 
+  category: sys-apps
+  name: util-linux
   
   version: ""
 - 
@@ -104,22 +104,22 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: libxkbfile
+  name: libX11
   
   version: ""
 - 
-  category: media-libs
-  name: fontconfig
+  category: x11-libs
+  name: libXfixes
   
   version: ""
 - 
-  category: app-i18n
-  name: opencc
+  category: dev-libs
+  name: gobject-introspection
   
   version: ""
 - 
-  category: app-text
-  name: iso-codes
+  category: dev-libs
+  name: libxml2
   
   version: ""
 use_flags:

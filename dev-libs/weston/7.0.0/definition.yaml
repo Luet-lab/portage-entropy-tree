@@ -4,47 +4,37 @@ name: weston
 requires:
 - 
   category: dev-libs
-  name: libinput
-  
-  version: 0.8.0
-- 
-  category: dev-libs
   name: wayland-protocols
   
   version: "1.18"
 - 
-  category: media-libs
-  name: lcms
+  category: sys-auth
+  name: pambase
   
   version: ""
 - 
   category: x11-libs
-  name: libdrm
+  name: libxcb
   
-  version: 2.4.68
+  version: "1.9"
 - 
-  category: media-video
-  name: pipewire
-  
-  version: "0.2"
-- 
-  category: media-libs
-  name: gst-plugins-base
+  category: x11-libs
+  name: libXcursor
   
   version: ""
 - 
-  category: sys-apps
-  name: systemd
+  category: media-libs
+  name: mesa
   
-  version: "209"
+  version: ""
 - 
-  category: dev-libs
-  name: wayland
+  category: x11-base
+  name: xorg-server
   
-  version: 1.17.0
+  version: ""
 - 
   category: media-libs
-  name: libpng
+  name: libwebp
   
   version: ""
 - 
@@ -53,8 +43,38 @@ requires:
   
   version: ""
 - 
-  category: sys-auth
-  name: pambase
+  category: x11-libs
+  name: pango
+  
+  version: ""
+- 
+  category: media-libs
+  name: libpng
+  
+  version: ""
+- 
+  category: x11-libs
+  name: cairo
+  
+  version: 1.11.3
+- 
+  category: x11-libs
+  name: libdrm
+  
+  version: 2.4.68
+- 
+  category: virtual
+  name: udev
+  
+  version: "136"
+- 
+  category: x11-libs
+  name: cairo
+  
+  version: ""
+- 
+  category: media-libs
+  name: lcms
   
   version: ""
 - 
@@ -68,33 +88,28 @@ requires:
   
   version: 0.5.0
 - 
-  category: media-libs
-  name: mesa
-  
-  version: "17.1"
-- 
   category: net-misc
   name: freerdp
   
   version: 2.0.0_rc2
 - 
-  category: x11-base
-  name: xorg-server
+  category: dev-libs
+  name: wayland
   
-  version: ""
-- 
-  category: x11-libs
-  name: libXcursor
-  
-  version: ""
+  version: 1.17.0
 - 
   category: x11-misc
   name: colord
   
   version: 0.1.27
 - 
+  category: media-video
+  name: pipewire
+  
+  version: "0.2"
+- 
   category: media-libs
-  name: mesa
+  name: gst-plugins-base
   
   version: ""
 - 
@@ -103,30 +118,30 @@ requires:
   
   version: "1.6"
 - 
+  category: sys-apps
+  name: systemd
+  
+  version: "209"
+- 
   category: x11-libs
   name: libX11
   
   version: ""
 - 
+  category: dev-libs
+  name: libinput
+  
+  version: 0.8.0
+- 
+  category: media-libs
+  name: mesa
+  
+  version: "17.1"
+- 
   category: media-libs
   name: gstreamer
   
   version: ""
-- 
-  category: x11-libs
-  name: cairo
-  
-  version: ""
-- 
-  category: media-libs
-  name: libwebp
-  
-  version: ""
-- 
-  category: x11-libs
-  name: cairo
-  
-  version: 1.11.3
 - 
   category: x11-libs
   name: pixman
@@ -137,21 +152,6 @@ requires:
   name: mtdev
   
   version: 1.1.0
-- 
-  category: virtual
-  name: udev
-  
-  version: "136"
-- 
-  category: x11-libs
-  name: pango
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libxcb
-  
-  version: "1.9"
 use_flags:
 - colord
 - +desktop

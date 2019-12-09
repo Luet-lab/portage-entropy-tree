@@ -3,6 +3,16 @@ conflicts: []
 name: pshs
 requires:
 - 
+  category: net-libs
+  name: miniupnpc
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libevent
+  
+  version: "2"
+- 
   category: sys-apps
   name: file
   
@@ -27,16 +37,6 @@ requires:
   name: libressl
   
   version: ""
-- 
-  category: net-libs
-  name: miniupnpc
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libevent
-  
-  version: "2"
 use_flags:
 - libressl
 - +magic

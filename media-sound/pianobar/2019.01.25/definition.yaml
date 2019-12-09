@@ -3,6 +3,11 @@ conflicts: []
 name: pianobar
 requires:
 - 
+  category: media-libs
+  name: libao
+  
+  version: ""
+- 
   category: net-misc
   name: curl
   
@@ -27,11 +32,6 @@ requires:
   name: ffmpeg
   
   version: "3.1"
-- 
-  category: media-libs
-  name: libao
-  
-  version: ""
 use_flags:
 - libav
 - static-libs

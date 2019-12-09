@@ -3,28 +3,38 @@ conflicts: []
 name: libblockdev
 requires:
 - 
-  category: dev-libs
-  name: glib
+  category: sys-fs
+  name: lvm2
   
-  version: 2.42.2
+  version: ""
+- 
+  category: sys-fs
+  name: dmraid
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libyaml
+  
+  version: ""
 - 
   category: dev-libs
   name: libbytesize
   
   version: ""
 - 
+  category: sys-apps
+  name: util-linux
+  
+  version: "2.27"
+- 
+  category: dev-libs
+  name: nss
+  
+  version: 3.18.0
+- 
   category: dev-libs
   name: volume_key
-  
-  version: ""
-- 
-  category: sys-fs
-  name: cryptsetup
-  
-  version: 1.6.7
-- 
-  category: sys-fs
-  name: dmraid
   
   version: ""
 - 
@@ -34,34 +44,24 @@ requires:
   version: ""
 - 
   category: dev-libs
-  name: libyaml
+  name: glib
   
-  version: ""
+  version: 2.42.2
 - 
   category: sys-apps
   name: kmod
   
   version: "19"
 - 
-  category: sys-apps
-  name: util-linux
-  
-  version: "2.27"
-- 
   category: sys-block
   name: parted
   
   version: "3.1"
 - 
-  category: dev-libs
-  name: nss
-  
-  version: 3.18.0
-- 
   category: sys-fs
-  name: lvm2
+  name: cryptsetup
   
-  version: ""
+  version: 1.6.7
 use_flags:
 - bcache
 - +cryptsetup

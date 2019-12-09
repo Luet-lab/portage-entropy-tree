@@ -3,16 +3,6 @@ conflicts: []
 name: parted
 requires:
 - 
-  category: sys-fs
-  name: lvm2
-  
-  version: 2.02.45
-- 
-  category: sys-libs
-  name: readline
-  
-  version: "5.2"
-- 
   category: sys-libs
   name: ncurses
   
@@ -32,6 +22,16 @@ requires:
   name: e2fsprogs
   
   version: "1.27"
+- 
+  category: sys-fs
+  name: lvm2
+  
+  version: 2.02.45
+- 
+  category: sys-libs
+  name: readline
+  
+  version: "5.2"
 use_flags:
 - +debug
 - device-mapper

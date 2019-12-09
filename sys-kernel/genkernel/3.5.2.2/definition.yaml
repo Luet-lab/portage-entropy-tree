@@ -8,11 +8,6 @@ conflicts:
 name: genkernel
 requires:
 - 
-  category: sys-apps
-  name: util-linux[static-libs(+)]
-  
-  version: ""
-- 
   category: sys-kernel
   name: linux-firmware
   
@@ -42,6 +37,11 @@ requires:
   name: pax-utils
   
   version: 1.2.2
+- 
+  category: sys-apps
+  name: util-linux[static-libs(+)]
+  
+  version: ""
 use_flags:
 - cryptsetup
 - ibm

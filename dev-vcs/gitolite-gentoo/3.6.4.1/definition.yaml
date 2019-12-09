@@ -8,20 +8,20 @@ conflicts:
 name: gitolite-gentoo
 requires:
 - 
-  category: dev-perl
-  name: Net-SSH-AuthorizedKeysFile
+  category: virtual
+  name: perl-File-Path
   
-  version: "0.17"
+  version: ""
 - 
   category: virtual
   name: perl-File-Temp
   
   version: ""
 - 
-  category: dev-vcs
-  name: git
+  category: dev-perl
+  name: Net-SSH-AuthorizedKeysFile
   
-  version: 1.6.6
+  version: "0.17"
 - 
   category: app-vim
   name: gitolite-syntax
@@ -43,10 +43,10 @@ requires:
   
   version: ""
 - 
-  category: virtual
-  name: perl-File-Path
+  category: dev-vcs
+  name: git
   
-  version: ""
+  version: 1.6.6
 use_flags:
 - selinux
 - tools

@@ -4,7 +4,7 @@ name: wpa_supplicant
 requires:
 - 
   category: dev-qt
-  name: qtwidgets
+  name: qtsvg
   
   version: ""
 - 
@@ -14,12 +14,27 @@ requires:
   version: ""
 - 
   category: dev-qt
-  name: qtsvg
+  name: qtwidgets
   
   version: ""
 - 
   category: sys-libs
-  name: readline
+  name: ncurses
+  
+  version: ""
+- 
+  category: net-wireless
+  name: crda
+  
+  version: ""
+- 
+  category: sys-apps
+  name: pcsc-lite
+  
+  version: ""
+- 
+  category: dev-qt
+  name: qtgui
   
   version: ""
 - 
@@ -28,18 +43,13 @@ requires:
   
   version: 1.0.2k
 - 
-  category: sec-policy
-  name: selinux-networkmanager
+  category: dev-libs
+  name: libressl
   
   version: ""
 - 
   category: sys-apps
   name: dbus
-  
-  version: ""
-- 
-  category: sys-apps
-  name: pcsc-lite
   
   version: ""
 - 
@@ -53,23 +63,13 @@ requires:
   
   version: ""
 - 
-  category: dev-qt
-  name: qtgui
-  
-  version: ""
-- 
   category: sys-libs
-  name: ncurses
+  name: readline
   
   version: ""
 - 
-  category: dev-libs
-  name: libressl
-  
-  version: ""
-- 
-  category: net-wireless
-  name: crda
+  category: sec-policy
+  name: selinux-networkmanager
   
   version: ""
 use_flags:

@@ -3,16 +3,6 @@ conflicts: []
 name: lirc
 requires:
 - 
-  category: media-libs
-  name: portaudio
-  
-  version: "18"
-- 
-  category: dev-python
-  name: pyyaml
-  
-  version: "5"
-- 
   category: dev-embedded
   name: libftdi
   
@@ -24,12 +14,12 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: libICE
+  name: libSM
   
   version: ""
 - 
   category: x11-libs
-  name: libSM
+  name: libX11
   
   version: ""
 - 
@@ -48,13 +38,18 @@ requires:
   
   version: ""
 - 
+  category: dev-python
+  name: pyyaml
+  
+  version: "5"
+- 
   category: sys-apps
   name: systemd
   
   version: ""
 - 
   category: x11-libs
-  name: libX11
+  name: libICE
   
   version: ""
 - 
@@ -62,6 +57,11 @@ requires:
   name: pygobject
   
   version: ""
+- 
+  category: media-libs
+  name: portaudio
+  
+  version: "18"
 use_flags:
 - audio
 - +devinput

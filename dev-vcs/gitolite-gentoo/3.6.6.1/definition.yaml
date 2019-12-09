@@ -8,28 +8,23 @@ conflicts:
 name: gitolite-gentoo
 requires:
 - 
-  category: dev-vcs
-  name: git
-  
-  version: 1.6.6
-- 
-  category: app-vim
-  name: gitolite-syntax
-  
-  version: ""
-- 
   category: dev-perl
   name: Net-SSH-AuthorizedKeysFile
   
   version: "0.17"
 - 
   category: virtual
-  name: perl-File-Temp
+  name: perl-File-Path
   
   version: ""
 - 
   category: virtual
-  name: perl-File-Path
+  name: perl-File-Temp
+  
+  version: ""
+- 
+  category: app-vim
+  name: gitolite-syntax
   
   version: ""
 - 
@@ -38,13 +33,18 @@ requires:
   
   version: ""
 - 
-  category: dev-perl
-  name: JSON
+  category: dev-lang
+  name: perl
   
   version: ""
 - 
-  category: dev-lang
-  name: perl
+  category: dev-vcs
+  name: git
+  
+  version: 1.6.6
+- 
+  category: dev-perl
+  name: JSON
   
   version: ""
 use_flags:

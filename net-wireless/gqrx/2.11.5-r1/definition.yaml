@@ -3,6 +3,11 @@ conflicts: []
 name: gqrx
 requires:
 - 
+  category: net-wireless
+  name: gr-osmosdr
+  
+  version: 0.1.0
+- 
   category: dev-libs
   name: boost
   
@@ -14,7 +19,12 @@ requires:
   version: ""
 - 
   category: dev-qt
-  name: qtnetwork
+  name: qtgui
+  
+  version: ""
+- 
+  category: media-sound
+  name: pulseaudio
   
   version: ""
 - 
@@ -28,13 +38,8 @@ requires:
   
   version: 3.7_rc
 - 
-  category: net-wireless
-  name: gr-osmosdr
-  
-  version: 0.1.0
-- 
   category: dev-qt
-  name: qtgui
+  name: qtnetwork
   
   version: ""
 - 
@@ -45,11 +50,6 @@ requires:
 - 
   category: dev-qt
   name: qtwidgets
-  
-  version: ""
-- 
-  category: media-sound
-  name: pulseaudio
   
   version: ""
 use_flags:

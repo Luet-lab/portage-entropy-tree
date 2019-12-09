@@ -3,30 +3,20 @@ conflicts: []
 name: audacious-plugins
 requires:
 - 
-  category: virtual
-  name: ffmpeg
-  
-  version: 0.7.3
-- 
-  category: media-sound
-  name: fluidsynth
+  category: dev-libs
+  name: dbus-glib
   
   version: ""
+- 
+  category: net-libs
+  name: neon
+  
+  version: 0.26.4
 - 
   category: media-libs
   name: libmms
   
   version: "0.3"
-- 
-  category: x11-libs
-  name: gtk+
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXcomposite
-  
-  version: ""
 - 
   category: dev-qt
   name: qtcore
@@ -34,42 +24,52 @@ requires:
   version: ""
 - 
   category: dev-qt
-  name: qtmultimedia
-  
-  version: ""
-- 
-  category: media-libs
-  name: alsa-lib
-  
-  version: 1.0.16
-- 
-  category: dev-qt
   name: qtopengl
   
   version: ""
 - 
+  category: media-libs
+  name: libsndfile
+  
+  version: 1.0.17-r1
+- 
+  category: app-arch
+  name: unzip
+  
+  version: ""
+- 
   category: dev-libs
-  name: libxml2
+  name: glib
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libcdio-paranoia
   
   version: ""
 - 
   category: media-libs
-  name: adplug
+  name: flac
+  
+  version: 1.2.1-r1
+- 
+  category: media-libs
+  name: bio2jack
+  
+  version: "0.4"
+- 
+  category: media-sound
+  name: mpg123
+  
+  version: 1.12.1
+- 
+  category: x11-libs
+  name: libnotify
   
   version: ""
 - 
-  category: media-libs
-  name: libcddb
-  
-  version: 1.2.1
-- 
-  category: media-libs
-  name: libsdl2
-  
-  version: ""
-- 
-  category: media-libs
-  name: soxr
+  category: dev-qt
+  name: qtgui
   
   version: ""
 - 
@@ -84,47 +84,27 @@ requires:
   version: "1"
 - 
   category: media-libs
-  name: flac
+  name: libcddb
   
-  version: 1.2.1-r1
+  version: 1.2.1
+- 
+  category: media-libs
+  name: libcue
+  
+  version: ""
 - 
   category: virtual
-  name: jack
+  name: ffmpeg
   
-  version: ""
-- 
-  category: media-sound
-  name: lame
-  
-  version: ""
-- 
-  category: net-misc
-  name: curl
-  
-  version: ""
-- 
-  category: media-libs
-  name: libsndfile
-  
-  version: 1.0.17-r1
-- 
-  category: media-libs
-  name: libogg
-  
-  version: 1.1.3
+  version: 0.7.3
 - 
   category: media-libs
   name: libvorbis
   
-  version: 1.2.0
+  version: "1.0"
 - 
-  category: dev-libs
-  name: dbus-glib
-  
-  version: ""
-- 
-  category: dev-libs
-  name: glib
+  category: media-libs
+  name: soxr
   
   version: ""
 - 
@@ -133,58 +113,13 @@ requires:
   
   version: ""
 - 
-  category: dev-qt
-  name: qtwidgets
-  
-  version: ""
-- 
-  category: media-libs
-  name: libcue
-  
-  version: ""
-- 
-  category: net-libs
-  name: neon
-  
-  version: 0.26.4
-- 
-  category: x11-libs
-  name: libnotify
-  
-  version: ""
-- 
-  category: media-libs
-  name: libsamplerate
+  category: media-sound
+  name: fluidsynth
   
   version: ""
 - 
   category: media-sound
-  name: pulseaudio
-  
-  version: 0.9.3
-- 
-  category: dev-qt
-  name: qtgui
-  
-  version: ""
-- 
-  category: media-libs
-  name: faad2
-  
-  version: "2.7"
-- 
-  category: dev-libs
-  name: libcdio-paranoia
-  
-  version: ""
-- 
-  category: media-libs
-  name: libvorbis
-  
-  version: "1.0"
-- 
-  category: app-misc
-  name: lirc
+  name: lame
   
   version: ""
 - 
@@ -194,27 +129,42 @@ requires:
   version: ""
 - 
   category: media-sound
-  name: mpg123
+  name: wavpack
   
-  version: 1.12.1
+  version: 4.50.1-r1
 - 
-  category: app-arch
-  name: unzip
+  category: dev-libs
+  name: libxml2
   
   version: ""
 - 
   category: media-libs
-  name: libbs2b
+  name: adplug
+  
+  version: ""
+- 
+  category: media-sound
+  name: pulseaudio
+  
+  version: 0.9.3
+- 
+  category: dev-qt
+  name: qtwidgets
   
   version: ""
 - 
   category: media-libs
-  name: bio2jack
+  name: libogg
   
-  version: "0.4"
+  version: 1.1.3
 - 
   category: x11-libs
   name: libXrender
+  
+  version: ""
+- 
+  category: net-misc
+  name: curl
   
   version: ""
 - 
@@ -223,10 +173,60 @@ requires:
   
   version: 1.0.0
 - 
-  category: media-sound
-  name: wavpack
+  category: media-libs
+  name: libvorbis
   
-  version: 4.50.1-r1
+  version: 1.2.0
+- 
+  category: media-libs
+  name: libsdl2
+  
+  version: ""
+- 
+  category: media-libs
+  name: faad2
+  
+  version: "2.7"
+- 
+  category: virtual
+  name: jack
+  
+  version: ""
+- 
+  category: media-libs
+  name: libsamplerate
+  
+  version: ""
+- 
+  category: app-misc
+  name: lirc
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXcomposite
+  
+  version: ""
+- 
+  category: dev-qt
+  name: qtmultimedia
+  
+  version: ""
+- 
+  category: media-libs
+  name: alsa-lib
+  
+  version: 1.0.16
+- 
+  category: media-libs
+  name: libbs2b
+  
+  version: ""
+- 
+  category: x11-libs
+  name: gtk+
+  
+  version: ""
 use_flags:
 - aac
 - adplug
