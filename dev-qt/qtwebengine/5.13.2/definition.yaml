@@ -3,28 +3,18 @@ conflicts: []
 name: qtwebengine
 requires:
 - 
-  category: media-libs
-  name: alsa-lib
+  category: media-sound
+  name: pulseaudio
   
   version: ""
-- 
-  category: dev-qt
-  name: qtgui
-  
-  version: 5.13.2
-- 
-  category: dev-qt
-  name: qtnetwork
-  
-  version: 5.13.2
 - 
   category: dev-libs
-  name: libevent
+  name: libxslt
   
   version: ""
 - 
   category: media-libs
-  name: harfbuzz
+  name: lcms
   
   version: ""
 - 
@@ -34,42 +24,32 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: libXdamage
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXi
+  name: libX11
   
   version: ""
 - 
   category: dev-qt
-  name: designer
-  
-  version: 5.13.2
-- 
-  category: dev-qt
-  name: qtprintsupport
+  name: qtwebchannel
   
   version: 5.13.2
 - 
   category: dev-libs
-  name: libxslt
+  name: libxml2
   
   version: ""
 - 
-  category: dev-libs
-  name: re2
+  category: sys-apps
+  name: dbus
   
   version: ""
 - 
-  category: media-libs
-  name: libvpx
+  category: sys-apps
+  name: pciutils
   
-  version: "1.5"
+  version: ""
 - 
-  category: media-sound
-  name: pulseaudio
+  category: app-arch
+  name: snappy
   
   version: ""
 - 
@@ -79,62 +59,17 @@ requires:
   version: ""
 - 
   category: dev-qt
-  name: qtpositioning
-  
-  version: 5.13.2
-- 
-  category: dev-qt
-  name: qtwebchannel
-  
-  version: 5.13.2
-- 
-  category: media-libs
-  name: lcms
-  
-  version: ""
-- 
-  category: media-libs
-  name: libwebp
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libdrm
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXScrnSaver
-  
-  version: ""
-- 
-  category: dev-qt
-  name: qtwidgets
-  
-  version: 5.13.2
-- 
-  category: dev-qt
   name: qtdeclarative
   
   version: 5.13.2
 - 
-  category: media-libs
-  name: mesa[egl,X(+)]
+  category: dev-qt
+  name: qtprintsupport
   
-  version: ""
+  version: 5.13.2
 - 
-  category: media-libs
-  name: opus
-  
-  version: ""
-- 
-  category: sys-libs
-  name: zlib
-  
-  version: ""
-- 
-  category: virtual
-  name: libudev
+  category: x11-libs
+  name: libXcomposite
   
   version: ""
 - 
@@ -148,28 +83,43 @@ requires:
   
   version: ""
 - 
-  category: app-arch
-  name: snappy
+  category: dev-libs
+  name: icu
+  
+  version: "60.2"
+- 
+  category: x11-libs
+  name: libXi
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXScrnSaver
   
   version: ""
 - 
   category: dev-libs
-  name: expat
+  name: libevent
   
   version: ""
 - 
-  category: sys-apps
-  name: pciutils
+  category: media-libs
+  name: fontconfig
   
   version: ""
 - 
-  category: x11-libs
-  name: libXext
+  category: media-libs
+  name: mesa[egl,X(+)]
   
   version: ""
 - 
-  category: x11-libs
-  name: libXfixes
+  category: media-libs
+  name: opus
+  
+  version: ""
+- 
+  category: media-libs
+  name: freetype
   
   version: ""
 - 
@@ -178,8 +128,18 @@ requires:
   
   version: ""
 - 
+  category: dev-qt
+  name: qtwidgets
+  
+  version: 5.13.2
+- 
+  category: virtual
+  name: libudev
+  
+  version: ""
+- 
   category: x11-libs
-  name: libX11
+  name: libXfixes
   
   version: ""
 - 
@@ -193,35 +153,25 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  name: libxml2
+  category: dev-qt
+  name: qtgui
+  
+  version: 5.13.2
+- 
+  category: dev-qt
+  name: qtnetwork
+  
+  version: 5.13.2
+- 
+  category: sys-libs
+  name: zlib
   
   version: ""
 - 
-  category: media-libs
-  name: fontconfig
+  category: dev-qt
+  name: designer
   
-  version: ""
-- 
-  category: media-libs
-  name: libpng
-  
-  version: ""
-- 
-  category: sys-apps
-  name: dbus
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXcomposite
-  
-  version: ""
-- 
-  category: dev-libs
-  name: glib
-  
-  version: ""
+  version: 5.13.2
 - 
   category: dev-qt
   name: qtcore
@@ -229,7 +179,27 @@ requires:
   version: 5.13.2
 - 
   category: media-libs
-  name: freetype
+  name: harfbuzz
+  
+  version: ""
+- 
+  category: media-libs
+  name: libvpx
+  
+  version: "1.5"
+- 
+  category: media-libs
+  name: libwebp
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXdamage
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXext
   
   version: ""
 - 
@@ -238,10 +208,40 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  name: icu
+  category: dev-qt
+  name: qtpositioning
   
-  version: "60.2"
+  version: 5.13.2
+- 
+  category: dev-libs
+  name: re2
+  
+  version: ""
+- 
+  category: media-libs
+  name: libpng
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libdrm
+  
+  version: ""
+- 
+  category: dev-libs
+  name: glib
+  
+  version: ""
+- 
+  category: dev-libs
+  name: expat
+  
+  version: ""
+- 
+  category: media-libs
+  name: alsa-lib
+  
+  version: ""
 use_flags:
 - alsa
 - bindist

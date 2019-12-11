@@ -3,8 +3,8 @@ conflicts: []
 name: gmic
 requires:
 - 
-  category: virtual
-  name: jpeg
+  category: media-libs
+  name: openexr
   
   version: ""
 - 
@@ -14,17 +14,12 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: libXext
+  name: libX11
   
   version: ""
 - 
-  category: media-gfx
-  name: gimp
-  
-  version: 2.8.0
-- 
-  category: media-gfx
-  name: graphicsmagick
+  category: x11-libs
+  name: libXext
   
   version: ""
 - 
@@ -34,17 +29,7 @@ requires:
   version: 2.3.1a-r1
 - 
   category: media-libs
-  name: openexr
-  
-  version: ""
-- 
-  category: media-libs
-  name: tiff
-  
-  version: ""
-- 
-  category: net-misc
-  name: curl
+  name: ilmbase
   
   version: ""
 - 
@@ -53,33 +38,53 @@ requires:
   
   version: 5.2.0
 - 
-  category: sys-libs
-  name: zlib
+  category: media-video
+  name: ffmpeg
   
   version: ""
+- 
+  category: media-gfx
+  name: gimp
+  
+  version: 2.8.0
 - 
   category: dev-qt
   name: qtcore
   
   version: 5.2.0
 - 
-  category: media-libs
-  name: ilmbase
+  category: dev-qt
+  name: qtnetwork
   
-  version: ""
+  version: 5.2.0
 - 
   category: dev-qt
   name: qtwidgets
   
   version: 5.2.0
 - 
-  category: x11-libs
-  name: libX11
+  category: media-gfx
+  name: graphicsmagick
   
   version: ""
 - 
-  category: media-video
-  name: ffmpeg
+  category: virtual
+  name: jpeg
+  
+  version: ""
+- 
+  category: media-libs
+  name: tiff
+  
+  version: ""
+- 
+  category: sys-libs
+  name: zlib
+  
+  version: ""
+- 
+  category: net-misc
+  name: curl
   
   version: ""
 - 
@@ -87,11 +92,6 @@ requires:
   name: fftw
   
   version: ""
-- 
-  category: dev-qt
-  name: qtnetwork
-  
-  version: 5.2.0
 use_flags:
 - +cli
 - curl

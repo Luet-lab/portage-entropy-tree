@@ -3,16 +3,6 @@ conflicts: []
 name: libblockdev
 requires:
 - 
-  category: sys-apps
-  name: kmod
-  
-  version: "19"
-- 
-  category: sys-block
-  name: parted
-  
-  version: "3.1"
-- 
   category: dev-libs
   name: volume_key
   
@@ -23,8 +13,8 @@ requires:
   
   version: 1.6.7
 - 
-  category: dev-libs
-  name: libyaml
+  category: sys-fs
+  name: dmraid
   
   version: ""
 - 
@@ -48,6 +38,16 @@ requires:
   
   version: "2.27"
 - 
+  category: sys-block
+  name: parted
+  
+  version: "3.1"
+- 
+  category: sys-apps
+  name: kmod
+  
+  version: "19"
+- 
   category: dev-libs
   name: nss
   
@@ -58,8 +58,8 @@ requires:
   
   version: ""
 - 
-  category: sys-fs
-  name: dmraid
+  category: dev-libs
+  name: libyaml
   
   version: ""
 use_flags:

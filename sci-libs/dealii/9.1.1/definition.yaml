@@ -3,18 +3,13 @@ conflicts: []
 name: dealii
 requires:
 - 
+  category: app-arch
+  name: bzip2
+  
+  version: ""
+- 
   category: sci-libs
   name: adolc
-  
-  version: ""
-- 
-  category: media-libs
-  name: assimp
-  
-  version: ""
-- 
-  category: sci-libs
-  name: gmsh
   
   version: ""
 - 
@@ -33,13 +28,8 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  name: boost
-  
-  version: ""
-- 
-  category: sys-libs
-  name: zlib
+  category: dev-cpp
+  name: muParser
   
   version: ""
 - 
@@ -49,12 +39,27 @@ requires:
   version: ""
 - 
   category: dev-cpp
-  name: muParser
+  name: tbb
   
   version: ""
 - 
   category: sci-libs
-  name: nanoflann
+  name: trilinos
+  
+  version: ""
+- 
+  category: dev-libs
+  name: boost
+  
+  version: ""
+- 
+  category: sci-libs
+  name: gmsh
+  
+  version: ""
+- 
+  category: sci-libs
+  name: p4est
   
   version: ""
 - 
@@ -64,32 +69,12 @@ requires:
   version: ""
 - 
   category: sci-libs
-  name: scalapack
+  name: umfpack
   
   version: ""
 - 
   category: sci-libs
   name: sundials
-  
-  version: ""
-- 
-  category: dev-cpp
-  name: tbb
-  
-  version: ""
-- 
-  category: app-arch
-  name: bzip2
-  
-  version: ""
-- 
-  category: sci-libs
-  name: p4est
-  
-  version: ""
-- 
-  category: sci-libs
-  name: umfpack
   
   version: ""
 - 
@@ -99,17 +84,12 @@ requires:
   version: "0.4"
 - 
   category: sci-libs
-  name: trilinos
+  name: arpack[mpi=]
   
   version: ""
 - 
-  category: sci-libs
-  name: parmetis
-  
-  version: "4"
-- 
-  category: sci-mathematics
-  name: slepc[mpi=]
+  category: dev-util
+  name: nvidia-cuda-sdk
   
   version: ""
 - 
@@ -123,13 +103,33 @@ requires:
   
   version: ""
 - 
-  category: sci-libs
-  name: arpack[mpi=]
+  category: sci-mathematics
+  name: slepc[mpi=]
   
   version: ""
 - 
-  category: dev-util
-  name: nvidia-cuda-sdk
+  category: sys-libs
+  name: zlib
+  
+  version: ""
+- 
+  category: media-libs
+  name: assimp
+  
+  version: ""
+- 
+  category: sci-libs
+  name: parmetis
+  
+  version: "4"
+- 
+  category: sci-libs
+  name: nanoflann
+  
+  version: ""
+- 
+  category: sci-libs
+  name: scalapack
   
   version: ""
 use_flags:

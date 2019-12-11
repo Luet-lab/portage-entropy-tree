@@ -3,18 +3,33 @@ conflicts: []
 name: mhwaveedit
 requires:
 - 
-  category: media-sound
-  name: sox
-  
-  version: ""
-- 
   category: x11-libs
   name: gtk+
   
   version: ""
 - 
+  category: virtual
+  name: jack
+  
+  version: ""
+- 
+  category: media-sound
+  name: pulseaudio
+  
+  version: ""
+- 
   category: x11-libs
   name: pango
+  
+  version: ""
+- 
+  category: media-libs
+  name: libsndfile
+  
+  version: ""
+- 
+  category: media-libs
+  name: libsdl
   
   version: ""
 - 
@@ -34,24 +49,9 @@ requires:
   version: ""
 - 
   category: media-sound
-  name: pulseaudio
+  name: sox
   
-  version: 0.9.10
-- 
-  category: media-libs
-  name: libsndfile
-  
-  version: 1.0.10
-- 
-  category: media-libs
-  name: libsdl
-  
-  version: 1.2.3
-- 
-  category: media-sound
-  name: jack-audio-connection-kit
-  
-  version: "0.98"
+  version: ""
 use_flags:
 - alsa
 - jack

@@ -3,6 +3,16 @@ conflicts: []
 name: rescan-scsi-bus
 requires:
 - 
+  category: sys-apps
+  name: sg3_utils
+  
+  version: "1.24"
+- 
+  category: sys-apps
+  name: sg3_utils
+  
+  version: "1.44"
+- 
   category: app-admin
   name: killproc
   
@@ -17,14 +27,4 @@ requires:
   name: bash
   
   version: ""
-- 
-  category: sys-apps
-  name: sg3_utils
-  
-  version: "1.24"
-- 
-  category: sys-apps
-  name: sg3_utils
-  
-  version: "1.44"
 version: 1.57-r1

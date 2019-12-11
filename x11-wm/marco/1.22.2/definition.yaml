@@ -9,22 +9,37 @@ name: marco
 requires:
 - 
   category: x11-libs
-  name: startup-notification
+  name: cairo
   
-  version: "0.7"
+  version: ""
+- 
+  category: x11-libs
+  name: gdk-pixbuf
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXfixes
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXpresent
+  
+  version: ""
 - 
   category: x11-libs
   name: libXinerama
   
   version: ""
 - 
-  category: mate-base
-  name: mate-desktop
+  category: gnome-base
+  name: libgtop
   
-  version: 1.20.0
+  version: "2"
 - 
-  category: dev-libs
-  name: atk
+  category: x11-libs
+  name: libICE
   
   version: ""
 - 
@@ -32,6 +47,16 @@ requires:
   name: libX11
   
   version: ""
+- 
+  category: x11-libs
+  name: libXext
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXcomposite
+  
+  version: "0.3"
 - 
   category: x11-libs
   name: libXcursor
@@ -44,32 +69,12 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: cairo
-  
-  version: ""
-- 
-  category: x11-libs
-  name: pango-1.2[X]
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libICE
-  
-  version: ""
-- 
-  category: virtual
-  name: libintl
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXpresent
-  
-  version: ""
-- 
-  category: x11-libs
   name: libXrandr
+  
+  version: ""
+- 
+  category: dev-libs
+  name: atk
   
   version: ""
 - 
@@ -79,42 +84,7 @@ requires:
   version: "2.50"
 - 
   category: x11-libs
-  name: gdk-pixbuf
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXcomposite
-  
-  version: "0.3"
-- 
-  category: x11-libs
-  name: libXext
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXfixes
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXrender
-  
-  version: ""
-- 
-  category: gnome-extra
-  name: zenity
-  
-  version: ""
-- 
-  category: gnome-base
-  name: libgtop
-  
-  version: "2"
-- 
-  category: media-libs
-  name: libcanberra
+  name: pango-1.2[X]
   
   version: ""
 - 
@@ -124,7 +94,37 @@ requires:
   version: "3.22"
 - 
   category: x11-libs
+  name: libXrender
+  
+  version: ""
+- 
+  category: x11-libs
+  name: startup-notification
+  
+  version: "0.7"
+- 
+  category: mate-base
+  name: mate-desktop
+  
+  version: 1.20.0
+- 
+  category: media-libs
+  name: libcanberra
+  
+  version: ""
+- 
+  category: x11-libs
   name: libSM
+  
+  version: ""
+- 
+  category: virtual
+  name: libintl
+  
+  version: ""
+- 
+  category: gnome-extra
+  name: zenity
   
   version: ""
 use_flags:

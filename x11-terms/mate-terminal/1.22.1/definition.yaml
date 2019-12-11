@@ -3,6 +3,16 @@ conflicts: []
 name: mate-terminal
 requires:
 - 
+  category: x11-libs
+  name: libX11
+  
+  version: ""
+- 
+  category: x11-libs
+  name: gtk+
+  
+  version: "3.22"
+- 
   category: mate-base
   name: mate-desktop
   
@@ -24,14 +34,14 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: libX11
+  name: pango
   
   version: ""
 - 
   category: x11-libs
-  name: pango
+  name: vte
   
-  version: ""
+  version: "0.48"
 - 
   category: dev-libs
   name: atk
@@ -47,16 +57,6 @@ requires:
   name: gdk-pixbuf
   
   version: ""
-- 
-  category: x11-libs
-  name: gtk+
-  
-  version: "3.22"
-- 
-  category: x11-libs
-  name: vte
-  
-  version: "0.48"
 use_flags:
 - ""
 version: 1.22.1

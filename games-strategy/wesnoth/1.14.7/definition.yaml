@@ -4,39 +4,14 @@ name: wesnoth
 requires:
 - 
   category: media-libs
-  name: fontconfig
-  
-  version: 2.4.1
-- 
-  category: media-libs
-  name: sdl2-image
-  
-  version: 2.0.0
-- 
-  category: media-libs
   name: sdl2-mixer
   
   version: 2.0.0
 - 
-  category: media-libs
-  name: libvorbis
+  category: sys-libs
+  name: readline
   
   version: ""
-- 
-  category: x11-libs
-  name: pango
-  
-  version: 1.22.0
-- 
-  category: dev-libs
-  name: boost
-  
-  version: "1.50"
-- 
-  category: media-libs
-  name: libsdl2
-  
-  version: 2.0.4
 - 
   category: dev-libs
   name: libressl
@@ -48,8 +23,18 @@ requires:
   
   version: 2.0.12
 - 
-  category: sys-libs
-  name: readline
+  category: media-libs
+  name: libvorbis
+  
+  version: ""
+- 
+  category: dev-libs
+  name: fribidi
+  
+  version: ""
+- 
+  category: dev-libs
+  name: openssl
   
   version: ""
 - 
@@ -63,20 +48,35 @@ requires:
   
   version: 1.10.0
 - 
-  category: dev-libs
-  name: fribidi
+  category: media-libs
+  name: libsdl2
   
-  version: ""
+  version: 2.0.4
 - 
-  category: dev-libs
-  name: openssl
+  category: media-libs
+  name: fontconfig
   
-  version: ""
+  version: 2.4.1
+- 
+  category: media-libs
+  name: sdl2-image
+  
+  version: 2.0.0
+- 
+  category: x11-libs
+  name: pango
+  
+  version: 1.22.0
 - 
   category: sys-apps
   name: dbus
   
   version: ""
+- 
+  category: dev-libs
+  name: boost
+  
+  version: "1.50"
 use_flags:
 - dbus
 - dedicated

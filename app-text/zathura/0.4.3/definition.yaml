@@ -8,13 +8,18 @@ requires:
   
   version: 0.3.2
 - 
-  category: sys-apps
-  name: file
+  category: x11-libs
+  name: cairo[X]
   
   version: ""
 - 
-  category: sys-libs
-  name: libseccomp
+  category: x11-libs
+  name: gtk+
+  
+  version: "3.22"
+- 
+  category: sys-apps
+  name: file
   
   version: ""
 - 
@@ -38,15 +43,10 @@ requires:
   
   version: 0.19.8
 - 
-  category: x11-libs
-  name: cairo[X]
+  category: sys-libs
+  name: libseccomp
   
   version: ""
-- 
-  category: x11-libs
-  name: gtk+
-  
-  version: "3.22"
 use_flags:
 - doc
 - +magic

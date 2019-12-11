@@ -4,92 +4,17 @@ name: claws-mail
 requires:
 - 
   category: x11-libs
-  name: cairo
+  name: gtk+
+  
+  version: "2.24"
+- 
+  category: sys-apps
+  name: dbus
   
   version: ""
 - 
-  category: x11-libs
-  name: pango
-  
-  version: ""
-- 
-  category: dev-libs
-  name: gumbo
-  
-  version: "0.10"
-- 
-  category: dev-lang
-  name: perl
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libxml2
-  
-  version: ""
-- 
-  category: sys-libs
-  name: zlib
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libical
-  
-  version: 2.0.0
-- 
-  category: net-nds
-  name: openldap
-  
-  version: 2.0.7
-- 
-  category: x11-libs
-  name: libSM
-  
-  version: ""
-- 
-  category: dev-libs
-  name: dbus-glib
-  
-  version: "0.60"
-- 
-  category: media-libs
-  name: fontconfig
-  
-  version: ""
-- 
-  category: app-text
-  name: poppler
-  
-  version: ""
-- 
-  category: x11-libs
-  name: startup-notification
-  
-  version: ""
-- 
-  category: dev-util
-  name: valgrind
-  
-  version: ""
-- 
-  category: x11-misc
-  name: shared-mime-info
-  
-  version: ""
-- 
-  category: app-arch
-  name: libarchive
-  
-  version: ""
-- 
-  category: net-libs
-  name: libetpan
-  
-  version: "0.57"
-- 
-  category: x11-libs
-  name: libnotify
+  category: www-client
+  name: dillo
   
   version: ""
 - 
@@ -98,15 +23,100 @@ requires:
   
   version: ""
 - 
+  category: app-text
+  name: ghostscript-gpl
+  
+  version: ""
+- 
+  category: dev-libs
+  name: gumbo
+  
+  version: "0.10"
+- 
+  category: dev-libs
+  name: glib
+  
+  version: ""
+- 
+  category: dev-libs
+  name: nettle
+  
+  version: ""
+- 
+  category: x11-libs
+  name: cairo
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libX11
+  
+  version: ""
+- 
+  category: dev-libs
+  name: dbus-glib
+  
+  version: "0.60"
+- 
   category: app-pda
   name: jpilot
   
   version: "0.99"
 - 
-  category: app-misc
-  name: mime-types
+  category: gnome-base
+  name: librsvg
+  
+  version: 2.40.5
+- 
+  category: net-misc
+  name: networkmanager
   
   version: ""
+- 
+  category: app-text
+  name: poppler
+  
+  version: ""
+- 
+  category: app-text
+  name: enchant
+  
+  version: 1.0.0
+- 
+  category: dev-libs
+  name: libxml2
+  
+  version: ""
+- 
+  category: mail-filter
+  name: bogofilter
+  
+  version: ""
+- 
+  category: net-misc
+  name: curl
+  
+  version: ""
+- 
+  category: media-libs
+  name: libcanberra
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libindicate
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libnotify
+  
+  version: ""
+- 
+  category: dev-python
+  name: pygtk
+  
+  version: 2.10.3
 - 
   category: app-antivirus
   name: clamav
@@ -118,115 +128,105 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  name: libgdata
-  
-  version: 0.17.2
-- 
-  category: net-libs
-  name: gnutls
-  
-  version: "3.0"
-- 
-  category: net-misc
-  name: curl
-  
-  version: ""
-- 
-  category: x11-libs
-  name: gtk+
-  
-  version: "2.24"
-- 
-  category: app-text
-  name: enchant
-  
-  version: 1.0.0
-- 
-  category: net-misc
-  name: networkmanager
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libindicate
-  
-  version: ""
-- 
-  category: app-text
-  name: ghostscript-gpl
-  
-  version: ""
-- 
-  category: dev-libs
-  name: nettle
-  
-  version: ""
-- 
   category: net-misc
   name: curl
   
   version: 7.9.7
 - 
   category: dev-libs
-  name: glib
+  name: libical
   
-  version: "2.36"
+  version: 2.0.0
 - 
   category: dev-libs
   name: glib
   
-  version: ""
-- 
-  category: www-client
-  name: dillo
-  
-  version: ""
+  version: "2.36"
 - 
   category: sys-devel
   name: gettext
   
   version: "0.18"
 - 
-  category: media-libs
-  name: libcanberra
-  
-  version: ""
-- 
   category: app-crypt
   name: gpgme
   
   version: 1.0.0
+- 
+  category: x11-misc
+  name: shared-mime-info
+  
+  version: ""
+- 
+  category: dev-util
+  name: valgrind
+  
+  version: ""
 - 
   category: net-mail
   name: ytnef
   
   version: ""
 - 
+  category: sys-libs
+  name: zlib
+  
+  version: ""
+- 
+  category: app-arch
+  name: libarchive
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libgdata
+  
+  version: 0.17.2
+- 
+  category: net-libs
+  name: libetpan
+  
+  version: "0.57"
+- 
+  category: net-nds
+  name: openldap
+  
+  version: 2.0.7
+- 
+  category: media-libs
+  name: fontconfig
+  
+  version: ""
+- 
+  category: app-misc
+  name: mime-types
+  
+  version: ""
+- 
+  category: dev-lang
+  name: perl
+  
+  version: ""
+- 
   category: x11-libs
-  name: libX11
+  name: pango
   
   version: ""
 - 
-  category: mail-filter
-  name: bogofilter
+  category: net-libs
+  name: gnutls
+  
+  version: "3.0"
+- 
+  category: x11-libs
+  name: libSM
   
   version: ""
 - 
-  category: sys-apps
-  name: dbus
+  category: x11-libs
+  name: startup-notification
   
   version: ""
-- 
-  category: gnome-base
-  name: librsvg
-  
-  version: 2.40.5
-- 
-  category: dev-python
-  name: pygtk
-  
-  version: 2.10.3
 use_flags:
 - archive
 - bogofilter

@@ -9,12 +9,12 @@ name: cups
 requires:
 - 
   category: virtual
-  name: libusb
+  name: krb5
   
-  version: ""
+  version: 0-r1
 - 
-  category: x11-misc
-  name: xdg-utils
+  category: virtual
+  name: libusb
   
   version: ""
 - 
@@ -33,13 +33,18 @@ requires:
   
   version: ""
 - 
-  category: virtual
-  name: krb5
+  category: net-libs
+  name: gnutls
   
-  version: 0-r1
+  version: 2.12.23-r6
 - 
   category: sys-apps
   name: systemd
+  
+  version: ""
+- 
+  category: sys-libs
+  name: zlib
   
   version: ""
 - 
@@ -53,33 +58,28 @@ requires:
   
   version: ""
 - 
-  category: net-dns
-  name: avahi
-  
-  version: 0.6.31-r2
-- 
-  category: net-libs
-  name: gnutls
-  
-  version: 2.12.23-r6
-- 
-  category: acct-group
-  name: lp
-  
-  version: ""
-- 
   category: app-text
   name: libpaper
   
   version: ""
 - 
-  category: sys-libs
-  name: zlib
+  category: sys-apps
+  name: attr
   
   version: ""
 - 
-  category: sys-apps
-  name: attr
+  category: x11-misc
+  name: xdg-utils
+  
+  version: ""
+- 
+  category: net-dns
+  name: avahi
+  
+  version: 0.6.31-r2
+- 
+  category: acct-group
+  name: lp
   
   version: ""
 use_flags:

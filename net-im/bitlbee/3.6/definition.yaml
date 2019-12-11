@@ -3,8 +3,13 @@ conflicts: []
 name: bitlbee
 requires:
 - 
-  category: dev-libs
-  name: libressl
+  category: net-libs
+  name: libotr
+  
+  version: "4"
+- 
+  category: net-libs
+  name: gnutls
   
   version: ""
 - 
@@ -18,23 +23,8 @@ requires:
   
   version: "2.16"
 - 
-  category: net-im
-  name: pidgin
-  
-  version: ""
-- 
   category: dev-libs
   name: libevent
-  
-  version: ""
-- 
-  category: net-libs
-  name: libotr
-  
-  version: "4"
-- 
-  category: net-libs
-  name: gnutls
   
   version: ""
 - 
@@ -43,8 +33,18 @@ requires:
   
   version: ""
 - 
+  category: dev-libs
+  name: libressl
+  
+  version: ""
+- 
   category: sys-apps
   name: xinetd
+  
+  version: ""
+- 
+  category: net-im
+  name: pidgin
   
   version: ""
 use_flags:

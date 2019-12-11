@@ -1,0 +1,8 @@
+steps:
+- emerge =${PACKAGE_CATEGORY}/${PACKAGE_NAME}-${PACKAGE_VERSION}
+requires:
+- category: "layer"
+  version:  ">=0.1"
+  name:     "core-desktop-build"
+includes:
+- /usr/portage/packages/.*

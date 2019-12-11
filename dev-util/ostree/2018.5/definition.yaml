@@ -3,13 +3,13 @@ conflicts: []
 name: ostree
 requires:
 - 
-  category: sys-boot
-  name: grub
+  category: net-dns
+  name: avahi
   
   version: ""
 - 
-  category: dev-libs
-  name: libassuan
+  category: sys-libs
+  name: libselinux
   
   version: ""
 - 
@@ -18,8 +18,28 @@ requires:
   
   version: ""
 - 
+  category: sys-fs
+  name: fuse
+  
+  version: ""
+- 
   category: sys-libs
   name: zlib
+  
+  version: ""
+- 
+  category: sys-apps
+  name: systemd
+  
+  version: ""
+- 
+  category: dev-libs
+  name: glib
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libgpg-error
   
   version: ""
 - 
@@ -33,53 +53,33 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  name: openssl
-  
-  version: ""
-- 
-  category: sys-libs
-  name: libselinux
-  
-  version: ""
-- 
-  category: sys-apps
-  name: systemd
-  
-  version: ""
-- 
-  category: app-arch
-  name: libarchive
-  
-  version: ""
-- 
-  category: dev-libs
-  name: glib
-  
-  version: ""
-- 
-  category: sys-fs
-  name: fuse
-  
-  version: ""
-- 
-  category: net-dns
-  name: avahi
-  
-  version: ""
-- 
   category: app-crypt
   name: gpgme
   
   version: ""
 - 
   category: dev-libs
-  name: libgpg-error
+  name: libassuan
+  
+  version: ""
+- 
+  category: dev-libs
+  name: openssl
   
   version: ""
 - 
   category: sys-apps
   name: util-linux
+  
+  version: ""
+- 
+  category: sys-boot
+  name: grub
+  
+  version: ""
+- 
+  category: app-arch
+  name: libarchive
   
   version: ""
 use_flags:

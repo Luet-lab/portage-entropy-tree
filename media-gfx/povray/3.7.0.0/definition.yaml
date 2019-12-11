@@ -3,8 +3,18 @@ conflicts: []
 name: povray
 requires:
 - 
-  category: sci-libs
-  name: mkl
+  category: dev-libs
+  name: boost
+  
+  version: 1.50.0
+- 
+  category: media-libs
+  name: libpng
+  
+  version: ""
+- 
+  category: virtual
+  name: jpeg
   
   version: ""
 - 
@@ -18,8 +28,13 @@ requires:
   
   version: ""
 - 
-  category: virtual
-  name: jpeg
+  category: sys-libs
+  name: zlib
+  
+  version: ""
+- 
+  category: sci-libs
+  name: mkl
   
   version: ""
 - 
@@ -30,21 +45,6 @@ requires:
 - 
   category: media-libs
   name: libsdl
-  
-  version: ""
-- 
-  category: dev-libs
-  name: boost
-  
-  version: 1.50.0
-- 
-  category: media-libs
-  name: libpng
-  
-  version: ""
-- 
-  category: sys-libs
-  name: zlib
   
   version: ""
 use_flags:

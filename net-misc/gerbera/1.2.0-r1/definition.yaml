@@ -8,23 +8,13 @@ conflicts:
 name: gerbera
 requires:
 - 
-  category: net-libs
-  name: libupnp
-  
-  version: 1.8.3
-- 
   category: dev-db
   name: sqlite
   
   version: "3"
 - 
-  category: dev-lang
-  name: duktape
-  
-  version: ""
-- 
-  category: media-gfx
-  name: exiv2
+  category: net-misc
+  name: curl
   
   version: ""
 - 
@@ -32,26 +22,6 @@ requires:
   name: libav
   
   version: "10"
-- 
-  category: media-video
-  name: ffmpeg
-  
-  version: "2.2"
-- 
-  category: virtual
-  name: libiconv
-  
-  version: ""
-- 
-  category: media-libs
-  name: libexif
-  
-  version: ""
-- 
-  category: net-misc
-  name: curl
-  
-  version: ""
 - 
   category: net-misc
   name: youtube-dl
@@ -63,8 +33,53 @@ requires:
   
   version: ""
 - 
+  category: net-libs
+  name: libupnp
+  
+  version: 1.8.3
+- 
   category: dev-libs
   name: expat
+  
+  version: ""
+- 
+  category: dev-lang
+  name: duktape
+  
+  version: ""
+- 
+  category: media-gfx
+  name: exiv2
+  
+  version: ""
+- 
+  category: sys-apps
+  name: util-linux
+  
+  version: ""
+- 
+  category: media-libs
+  name: libexif
+  
+  version: ""
+- 
+  category: media-video
+  name: ffmpeg
+  
+  version: "2.2"
+- 
+  category: media-video
+  name: ffmpegthumbnailer
+  
+  version: ""
+- 
+  category: sys-libs
+  name: zlib
+  
+  version: ""
+- 
+  category: virtual
+  name: libiconv
   
   version: ""
 - 
@@ -74,29 +89,14 @@ requires:
   version: ""
 - 
   category: media-libs
-  name: lastfmlib
-  
-  version: "0.4"
-- 
-  category: media-libs
   name: taglib
   
   version: "1.11"
 - 
-  category: media-video
-  name: ffmpegthumbnailer
+  category: media-libs
+  name: lastfmlib
   
-  version: ""
-- 
-  category: sys-apps
-  name: util-linux
-  
-  version: ""
-- 
-  category: sys-libs
-  name: zlib
-  
-  version: ""
+  version: "0.4"
 use_flags:
 - curl
 - debug

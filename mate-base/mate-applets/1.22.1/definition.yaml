@@ -8,35 +8,40 @@ conflicts:
 name: mate-applets
 requires:
 - 
-  category: dev-libs
-  name: libmateweather
-  
-  version: 1.17.0
-- 
-  category: gnome-base
-  name: libgtop
-  
-  version: 2.12.0
-- 
-  category: x11-libs
-  name: libnotify
-  
-  version: "0.7"
-- 
   category: sys-power
   name: upower
   
   version: 0.9.23
 - 
+  category: mate-base
+  name: mate-settings-daemon
+  
+  version: "1.6"
+- 
   category: dev-libs
-  name: atk
+  name: libmateweather
+  
+  version: 1.17.0
+- 
+  category: dev-libs
+  name: libxml2
+  
+  version: "2.5"
+- 
+  category: gnome-extra
+  name: gucharmap
+  
+  version: "3.0"
+- 
+  category: virtual
+  name: libintl
   
   version: ""
 - 
   category: dev-libs
-  name: glib
+  name: dbus-glib
   
-  version: "2.50"
+  version: "0.74"
 - 
   category: sys-apps
   name: dbus
@@ -53,35 +58,25 @@ requires:
   
   version: "3.0"
 - 
-  category: x11-libs
-  name: pango
-  
-  version: ""
-- 
   category: sys-auth
   name: polkit
   
   version: "0.97"
 - 
+  category: gnome-base
+  name: libgtop
+  
+  version: 2.12.0
+- 
   category: mate-base
-  name: mate-settings-daemon
+  name: mate-panel
   
-  version: "1.6"
+  version: 1.17.0
 - 
-  category: dev-libs
-  name: dbus-glib
+  category: x11-libs
+  name: libnotify
   
-  version: "0.74"
-- 
-  category: gnome-extra
-  name: gucharmap
-  
-  version: "3.0"
-- 
-  category: net-wireless
-  name: wireless-tools
-  
-  version: 28_pre9
+  version: "0.7"
 - 
   category: sys-power
   name: cpupower
@@ -103,20 +98,25 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  name: libxml2
-  
-  version: "2.5"
-- 
-  category: mate-base
-  name: mate-panel
-  
-  version: 1.17.0
-- 
-  category: virtual
-  name: libintl
+  category: x11-libs
+  name: pango
   
   version: ""
+- 
+  category: dev-libs
+  name: atk
+  
+  version: ""
+- 
+  category: dev-libs
+  name: glib
+  
+  version: "2.50"
+- 
+  category: net-wireless
+  name: wireless-tools
+  
+  version: 28_pre9
 use_flags:
 - X
 - ipv6

@@ -3,6 +3,11 @@ conflicts: []
 name: p4est
 requires:
 - 
+  category: virtual
+  name: mpi[romio=]
+  
+  version: ""
+- 
   category: sci-libs
   name: libsc-2.0[mpi=,openmp=,romio=,static-libs=,threads=]
   
@@ -25,11 +30,6 @@ requires:
 - 
   category: virtual
   name: lapack
-  
-  version: ""
-- 
-  category: virtual
-  name: mpi[romio=]
   
   version: ""
 use_flags:

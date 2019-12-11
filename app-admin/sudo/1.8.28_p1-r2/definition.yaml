@@ -3,23 +3,28 @@ conflicts: []
 name: sudo
 requires:
 - 
-  category: sys-auth
-  name: skey
-  
-  version: 1.1.5-r1
-- 
-  category: app-misc
-  name: editor-wrapper
-  
-  version: "3"
-- 
-  category: sys-auth
-  name: pambase
+  category: sys-libs
+  name: zlib
   
   version: ""
 - 
-  category: sys-libs
-  name: zlib
+  category: dev-libs
+  name: cyrus-sasl
+  
+  version: ""
+- 
+  category: net-nds
+  name: openldap
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libgcrypt
+  
+  version: ""
+- 
+  category: virtual
+  name: mta
   
   version: ""
 - 
@@ -28,8 +33,8 @@ requires:
   
   version: 2.1.30-r1
 - 
-  category: dev-libs
-  name: cyrus-sasl
+  category: sys-libs
+  name: pam
   
   version: ""
 - 
@@ -43,13 +48,8 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  name: openssl
-  
-  version: ""
-- 
   category: virtual
-  name: mta
+  name: editor
   
   version: ""
 - 
@@ -58,28 +58,28 @@ requires:
   
   version: ""
 - 
-  category: net-nds
-  name: openldap
+  category: app-misc
+  name: editor-wrapper
   
-  version: ""
-- 
-  category: sys-libs
-  name: pam
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libgcrypt
-  
-  version: ""
-- 
-  category: virtual
-  name: editor
-  
-  version: ""
+  version: "3"
 - 
   category: dev-lang
   name: perl
+  
+  version: ""
+- 
+  category: sys-auth
+  name: pambase
+  
+  version: ""
+- 
+  category: sys-auth
+  name: skey
+  
+  version: 1.1.5-r1
+- 
+  category: dev-libs
+  name: openssl
   
   version: ""
 use_flags:

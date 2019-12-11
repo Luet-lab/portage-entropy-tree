@@ -18,15 +18,25 @@ requires:
   
   version: 4.2.9-r1
 - 
+  category: virtual
+  name: opencl
+  
+  version: ""
+- 
   category: sci-libs
   name: fftw
   
   version: ""
 - 
-  category: sys-apps
-  name: hwloc
+  category: virtual
+  name: lapack
   
-  version: "2"
+  version: ""
+- 
+  category: sci-libs
+  name: mkl
+  
+  version: ""
 - 
   category: virtual
   name: mpi
@@ -43,20 +53,10 @@ requires:
   
   version: ""
 - 
-  category: virtual
-  name: opencl
+  category: sys-apps
+  name: hwloc
   
-  version: ""
-- 
-  category: virtual
-  name: lapack
-  
-  version: ""
-- 
-  category: sci-libs
-  name: mkl
-  
-  version: ""
+  version: "2"
 use_flags:
 - X
 - blas

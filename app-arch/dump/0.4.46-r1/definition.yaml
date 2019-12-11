@@ -3,18 +3,28 @@ conflicts: []
 name: dump
 requires:
 - 
+  category: sys-fs
+  name: e2fsprogs
+  
+  version: "1.27"
+- 
+  category: sys-libs
+  name: zlib
+  
+  version: 1.1.4
+- 
   category: dev-libs
-  name: lzo
+  name: openssl
   
   version: ""
 - 
-  category: dev-db
-  name: sqlite
+  category: sys-libs
+  name: readline
   
   version: ""
 - 
-  category: dev-libs
-  name: libressl
+  category: sys-libs
+  name: ncurses
   
   version: ""
 - 
@@ -33,28 +43,18 @@ requires:
   
   version: 1.0.2
 - 
-  category: sys-libs
-  name: readline
+  category: dev-libs
+  name: lzo
   
   version: ""
 - 
-  category: sys-libs
-  name: ncurses
+  category: dev-db
+  name: sqlite
   
   version: ""
-- 
-  category: sys-fs
-  name: e2fsprogs
-  
-  version: "1.27"
-- 
-  category: sys-libs
-  name: zlib
-  
-  version: 1.1.4
 - 
   category: dev-libs
-  name: openssl
+  name: libressl
   
   version: ""
 use_flags:

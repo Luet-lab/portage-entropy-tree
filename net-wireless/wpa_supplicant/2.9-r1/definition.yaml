@@ -3,13 +3,13 @@ conflicts: []
 name: wpa_supplicant
 requires:
 - 
-  category: dev-qt
-  name: qtsvg
+  category: sys-apps
+  name: dbus
   
   version: ""
 - 
-  category: dev-libs
-  name: libnl
+  category: dev-qt
+  name: qtgui
   
   version: ""
 - 
@@ -18,8 +18,28 @@ requires:
   
   version: ""
 - 
+  category: dev-libs
+  name: openssl
+  
+  version: 1.0.2k
+- 
+  category: net-libs
+  name: libpcap
+  
+  version: ""
+- 
   category: sys-libs
-  name: ncurses
+  name: readline
+  
+  version: ""
+- 
+  category: sec-policy
+  name: selinux-networkmanager
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libnl
   
   version: ""
 - 
@@ -34,42 +54,22 @@ requires:
   version: ""
 - 
   category: dev-qt
-  name: qtgui
-  
-  version: ""
-- 
-  category: dev-libs
-  name: openssl
-  
-  version: 1.0.2k
-- 
-  category: dev-libs
-  name: libressl
-  
-  version: ""
-- 
-  category: sys-apps
-  name: dbus
-  
-  version: ""
-- 
-  category: net-libs
-  name: libpcap
-  
-  version: ""
-- 
-  category: dev-qt
   name: qtcore
   
   version: ""
 - 
-  category: sys-libs
-  name: readline
+  category: dev-qt
+  name: qtsvg
   
   version: ""
 - 
-  category: sec-policy
-  name: selinux-networkmanager
+  category: sys-libs
+  name: ncurses
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libressl
   
   version: ""
 use_flags:

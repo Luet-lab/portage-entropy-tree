@@ -3,6 +3,11 @@ conflicts: []
 name: cpuminer-opt
 requires:
 - 
+  category: net-misc
+  name: curl
+  
+  version: "7.15"
+- 
   category: dev-libs
   name: openssl
   
@@ -22,11 +27,6 @@ requires:
   name: jansson
   
   version: ""
-- 
-  category: net-misc
-  name: curl
-  
-  version: "7.15"
 use_flags:
 - cpu_flags_x86_sse2
 - curl

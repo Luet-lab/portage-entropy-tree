@@ -3,40 +3,15 @@ conflicts: []
 name: fcitx-libpinyin
 requires:
 - 
-  category: virtual
-  name: libintl
-  
-  version: ""
-- 
   category: app-i18n
   name: fcitx-qt5
   
   version: "1.1"
 - 
   category: dev-qt
-  name: qtgui
+  name: qtcore
   
   version: "5.7"
-- 
-  category: dev-qt
-  name: qtwidgets
-  
-  version: "5.7"
-- 
-  category: app-i18n
-  name: fcitx
-  
-  version: 4.2.9
-- 
-  category: app-i18n
-  name: libpinyin
-  
-  version: 2.1.0
-- 
-  category: sys-apps
-  name: dbus
-  
-  version: ""
 - 
   category: dev-qt
   name: qtnetwork
@@ -48,20 +23,45 @@ requires:
   
   version: "5.7"
 - 
+  category: dev-qt
+  name: qtwidgets
+  
+  version: "5.7"
+- 
   category: dev-libs
   name: glib
   
   version: ""
 - 
-  category: dev-qt
-  name: qtcore
+  category: app-i18n
+  name: libpinyin
   
-  version: "5.7"
+  version: 2.1.0
+- 
+  category: sys-apps
+  name: dbus
+  
+  version: ""
+- 
+  category: virtual
+  name: libintl
+  
+  version: ""
 - 
   category: dev-qt
   name: qtdbus
   
   version: "5.7"
+- 
+  category: dev-qt
+  name: qtgui
+  
+  version: "5.7"
+- 
+  category: app-i18n
+  name: fcitx
+  
+  version: 4.2.9
 use_flags:
 - dictionary-manager
 version: 0.5.3

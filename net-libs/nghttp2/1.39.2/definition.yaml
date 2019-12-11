@@ -4,9 +4,9 @@ name: nghttp2
 requires:
 - 
   category: dev-libs
-  name: openssl
+  name: libressl
   
-  version: 1.0.2
+  version: ""
 - 
   category: dev-libs
   name: jansson
@@ -18,20 +18,10 @@ requires:
   
   version: "4.15"
 - 
-  category: net-dns
-  name: c-ares
-  
-  version: ""
-- 
   category: dev-libs
-  name: libressl
+  name: openssl
   
-  version: ""
-- 
-  category: dev-libs
-  name: boost
-  
-  version: ""
+  version: 1.0.2
 - 
   category: dev-libs
   name: jemalloc
@@ -43,10 +33,20 @@ requires:
   
   version: 1.2.3
 - 
+  category: net-dns
+  name: c-ares
+  
+  version: ""
+- 
   category: dev-libs
   name: libxml2
   
   version: 2.7.7
+- 
+  category: dev-libs
+  name: boost
+  
+  version: ""
 use_flags:
 - cxx
 - debug

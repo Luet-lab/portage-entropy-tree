@@ -3,6 +3,16 @@ conflicts: []
 name: iwd
 requires:
 - 
+  category: net-wireless
+  name: wireless-regdb
+  
+  version: ""
+- 
+  category: sys-apps
+  name: dbus
+  
+  version: ""
+- 
   category: sys-libs
   name: readline
   
@@ -17,16 +27,6 @@ requires:
   name: ell
   
   version: "0.23"
-- 
-  category: net-wireless
-  name: wireless-regdb
-  
-  version: ""
-- 
-  category: sys-apps
-  name: dbus
-  
-  version: ""
 use_flags:
 - +client
 - +crda

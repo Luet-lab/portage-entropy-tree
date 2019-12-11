@@ -3,23 +3,38 @@ conflicts: []
 name: pcl
 requires:
 - 
+  category: dev-libs
+  name: boost
+  
+  version: ""
+- 
+  category: dev-cpp
+  name: eigen
+  
+  version: ""
+- 
   category: media-libs
   name: freeglut
   
   version: ""
 - 
+  category: sci-libs
+  name: flann
+  
+  version: 1.7.1
+- 
+  category: virtual
+  name: opengl
+  
+  version: ""
+- 
   category: dev-libs
-  name: OpenNI
+  name: OpenNI2
   
   version: ""
 - 
   category: dev-qt
-  name: qtgui
-  
-  version: ""
-- 
-  category: dev-qt
-  name: qtconcurrent
+  name: qtcore
   
   version: ""
 - 
@@ -33,33 +48,8 @@ requires:
   
   version: "4"
 - 
-  category: sci-libs
-  name: flann
-  
-  version: 1.7.1
-- 
-  category: dev-libs
-  name: boost
-  
-  version: ""
-- 
-  category: virtual
-  name: opengl
-  
-  version: ""
-- 
-  category: sci-libs
-  name: vtk
-  
-  version: "5.6"
-- 
-  category: dev-cpp
-  name: eigen
-  
-  version: ""
-- 
-  category: media-libs
-  name: libpng
+  category: net-libs
+  name: libpcap
   
   version: ""
 - 
@@ -69,7 +59,7 @@ requires:
   version: ""
 - 
   category: dev-qt
-  name: qtcore
+  name: qtgui
   
   version: ""
 - 
@@ -78,13 +68,23 @@ requires:
   
   version: ""
 - 
+  category: sci-libs
+  name: vtk
+  
+  version: "5.6"
+- 
   category: dev-libs
-  name: OpenNI2
+  name: OpenNI
   
   version: ""
 - 
-  category: net-libs
-  name: libpcap
+  category: media-libs
+  name: libpng
+  
+  version: ""
+- 
+  category: dev-qt
+  name: qtconcurrent
   
   version: ""
 use_flags:

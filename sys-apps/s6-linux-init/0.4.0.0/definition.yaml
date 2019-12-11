@@ -4,6 +4,11 @@ name: s6-linux-init
 requires:
 - 
   category: sys-apps
+  name: s6
+  
+  version: 2.7.1.0
+- 
+  category: sys-apps
   name: s6-linux-utils
   
   version: 2.4.0.2
@@ -22,11 +27,6 @@ requires:
   name: execline
   
   version: 2.3.0.4
-- 
-  category: sys-apps
-  name: s6
-  
-  version: 2.7.1.0
 use_flags:
 - static
 version: 0.4.0.0

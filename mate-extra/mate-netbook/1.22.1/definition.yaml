@@ -3,10 +3,10 @@ conflicts: []
 name: mate-netbook
 requires:
 - 
-  category: mate-base
-  name: mate-panel
+  category: dev-libs
+  name: glib
   
-  version: 1.17.0
+  version: "2.50"
 - 
   category: x11-libs
   name: libwnck
@@ -18,15 +18,20 @@ requires:
   
   version: ""
 - 
+  category: x11-libs
+  name: cairo
+  
+  version: ""
+- 
   category: virtual
   name: libintl
   
   version: ""
 - 
-  category: dev-libs
-  name: glib
+  category: mate-base
+  name: mate-panel
   
-  version: "2.50"
+  version: 1.17.0
 - 
   category: x11-libs
   name: gtk+
@@ -40,11 +45,6 @@ requires:
 - 
   category: x11-libs
   name: libX11
-  
-  version: ""
-- 
-  category: x11-libs
-  name: cairo
   
   version: ""
 use_flags:

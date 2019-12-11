@@ -3,93 +3,28 @@ conflicts: []
 name: audacious-plugins-4.0_beta1
 requires:
 - 
-  category: virtual
-  name: ffmpeg
-  
-  version: 0.7.3
-- 
   category: media-libs
-  name: libvorbis
+  name: alsa-lib
   
-  version: "1.0"
-- 
-  category: media-libs
-  name: bio2jack
-  
-  version: "0.4"
-- 
-  category: x11-libs
-  name: libnotify
-  
-  version: ""
-- 
-  category: dev-qt
-  name: qtmultimedia
-  
-  version: ""
-- 
-  category: media-libs
-  name: soxr
-  
-  version: ""
+  version: 1.0.16
 - 
   category: dev-libs
-  name: libxml2
+  name: libcdio
   
   version: ""
-- 
-  category: media-libs
-  name: faad2
-  
-  version: "2.7"
-- 
-  category: media-libs
-  name: libogg
-  
-  version: 1.1.3
-- 
-  category: media-libs
-  name: libvorbis
-  
-  version: 1.2.0
-- 
-  category: media-libs
-  name: libcue
-  
-  version: ""
-- 
-  category: net-misc
-  name: curl
-  
-  version: ""
-- 
-  category: media-libs
-  name: libsdl2
-  
-  version: ""
-- 
-  category: app-arch
-  name: unzip
-  
-  version: ""
-- 
-  category: media-libs
-  name: libcddb
-  
-  version: 1.2.1
 - 
   category: media-sound
-  name: mpg123
-  
-  version: 1.12.1
-- 
-  category: dev-libs
-  name: glib
+  name: fluidsynth
   
   version: ""
 - 
-  category: app-misc
-  name: lirc
+  category: net-libs
+  name: neon
+  
+  version: 0.26.4
+- 
+  category: virtual
+  name: jack
   
   version: ""
 - 
@@ -98,18 +33,53 @@ requires:
   
   version: 1.0.0
 - 
-  category: media-sound
-  name: wavpack
+  category: media-libs
+  name: adplug
   
-  version: 4.50.1-r1
+  version: ""
 - 
-  category: net-libs
-  name: neon
+  category: dev-qt
+  name: qtwidgets
   
-  version: 0.26.4
+  version: ""
 - 
   category: media-libs
-  name: libmodplug
+  name: ampache_browser
+  
+  version: "1"
+- 
+  category: dev-libs
+  name: libcdio-paranoia
+  
+  version: ""
+- 
+  category: media-libs
+  name: libcddb
+  
+  version: 1.2.1
+- 
+  category: virtual
+  name: ffmpeg
+  
+  version: 0.7.3
+- 
+  category: media-libs
+  name: libsamplerate
+  
+  version: ""
+- 
+  category: app-arch
+  name: unzip
+  
+  version: ""
+- 
+  category: dev-qt
+  name: qtgui
+  
+  version: ""
+- 
+  category: media-libs
+  name: libcue
   
   version: ""
 - 
@@ -123,33 +93,13 @@ requires:
   
   version: "0.3"
 - 
-  category: media-libs
-  name: alsa-lib
-  
-  version: 1.0.16
-- 
-  category: media-libs
-  name: ampache_browser
-  
-  version: "1"
-- 
-  category: dev-libs
-  name: libcdio
-  
-  version: ""
-- 
-  category: virtual
-  name: jack
-  
-  version: ""
-- 
   category: dev-qt
   name: qtopengl
   
   version: ""
 - 
-  category: media-sound
-  name: audacious
+  category: dev-libs
+  name: dbus-glib
   
   version: ""
 - 
@@ -158,43 +108,98 @@ requires:
   
   version: ""
 - 
-  category: media-sound
-  name: pulseaudio
+  category: media-libs
+  name: libvorbis
   
-  version: 0.9.3
-- 
-  category: dev-libs
-  name: dbus-glib
-  
-  version: ""
-- 
-  category: dev-qt
-  name: qtgui
-  
-  version: ""
+  version: "1.0"
 - 
   category: media-libs
-  name: adplug
+  name: bio2jack
   
-  version: ""
-- 
-  category: dev-libs
-  name: libcdio-paranoia
-  
-  version: ""
-- 
-  category: media-sound
-  name: fluidsynth
-  
-  version: ""
+  version: "0.4"
 - 
   category: media-sound
   name: lame
   
   version: ""
 - 
+  category: app-misc
+  name: lirc
+  
+  version: ""
+- 
   category: media-libs
-  name: libsamplerate
+  name: libvorbis
+  
+  version: 1.2.0
+- 
+  category: dev-qt
+  name: qtcore
+  
+  version: ""
+- 
+  category: media-libs
+  name: libmodplug
+  
+  version: ""
+- 
+  category: media-sound
+  name: mpg123
+  
+  version: 1.12.1
+- 
+  category: net-misc
+  name: curl
+  
+  version: ""
+- 
+  category: media-libs
+  name: libsdl2
+  
+  version: ""
+- 
+  category: media-libs
+  name: soxr
+  
+  version: ""
+- 
+  category: media-sound
+  name: wavpack
+  
+  version: 4.50.1-r1
+- 
+  category: media-sound
+  name: audacious
+  
+  version: ""
+- 
+  category: media-libs
+  name: libogg
+  
+  version: 1.1.3
+- 
+  category: x11-libs
+  name: libnotify
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libxml2
+  
+  version: ""
+- 
+  category: media-libs
+  name: faad2
+  
+  version: "2.7"
+- 
+  category: media-sound
+  name: pulseaudio
+  
+  version: 0.9.3
+- 
+  category: dev-qt
+  name: qtmultimedia
   
   version: ""
 - 
@@ -203,13 +208,8 @@ requires:
   
   version: 1.0.17-r1
 - 
-  category: dev-qt
-  name: qtcore
-  
-  version: ""
-- 
-  category: dev-qt
-  name: qtwidgets
+  category: dev-libs
+  name: glib
   
   version: ""
 use_flags:

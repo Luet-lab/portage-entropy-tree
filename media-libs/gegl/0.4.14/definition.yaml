@@ -3,10 +3,25 @@ conflicts: []
 name: gegl
 requires:
 - 
-  category: media-libs
-  name: libpng
+  category: sys-libs
+  name: zlib
   
-  version: 1.6.0
+  version: 1.2.0
+- 
+  category: dev-libs
+  name: json-glib
+  
+  version: ""
+- 
+  category: media-libs
+  name: babl
+  
+  version: 0.1.62
+- 
+  category: media-libs
+  name: libraw
+  
+  version: 0.15.4
 - 
   category: media-video
   name: ffmpeg
@@ -23,33 +38,8 @@ requires:
   
   version: 2.2.0
 - 
-  category: dev-libs
-  name: glib
-  
-  version: "2.44"
-- 
-  category: dev-libs
-  name: gobject-introspection
-  
-  version: "1.32"
-- 
-  category: media-libs
-  name: libraw
-  
-  version: 0.15.4
-- 
   category: media-libs
   name: libsdl
-  
-  version: 1.2.0
-- 
-  category: media-libs
-  name: libv4l
-  
-  version: 1.0.1
-- 
-  category: sys-libs
-  name: zlib
   
   version: 1.2.0
 - 
@@ -57,16 +47,6 @@ requires:
   name: librsvg
   
   version: 2.40.6
-- 
-  category: media-libs
-  name: babl
-  
-  version: 0.1.62
-- 
-  category: x11-libs
-  name: gdk-pixbuf
-  
-  version: "2.32"
 - 
   category: x11-libs
   name: pango
@@ -84,19 +64,29 @@ requires:
   version: ""
 - 
   category: media-libs
+  name: libv4l
+  
+  version: 1.0.1
+- 
+  category: media-libs
+  name: libpng
+  
+  version: 1.6.0
+- 
+  category: media-libs
   name: lcms
   
   version: "2.8"
 - 
-  category: dev-libs
-  name: json-glib
+  category: media-libs
+  name: libwebp
   
-  version: ""
+  version: 0.5.0
 - 
-  category: virtual
-  name: jpeg
+  category: dev-libs
+  name: gobject-introspection
   
-  version: ""
+  version: "1.32"
 - 
   category: app-text
   name: poppler
@@ -113,10 +103,20 @@ requires:
   
   version: ""
 - 
-  category: media-libs
-  name: libwebp
+  category: dev-libs
+  name: glib
   
-  version: 0.5.0
+  version: "2.44"
+- 
+  category: virtual
+  name: jpeg
+  
+  version: ""
+- 
+  category: x11-libs
+  name: gdk-pixbuf
+  
+  version: "2.32"
 use_flags:
 - cairo
 - cpu_flags_x86_mmx

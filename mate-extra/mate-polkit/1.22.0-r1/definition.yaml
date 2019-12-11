@@ -3,6 +3,16 @@ conflicts: []
 name: mate-polkit
 requires:
 - 
+  category: dev-libs
+  name: glib
+  
+  version: "2.50"
+- 
+  category: sys-auth
+  name: polkit
+  
+  version: "0.102"
+- 
   category: x11-libs
   name: gdk-pixbuf
   
@@ -27,16 +37,6 @@ requires:
   name: accountsservice
   
   version: ""
-- 
-  category: dev-libs
-  name: glib
-  
-  version: "2.50"
-- 
-  category: sys-auth
-  name: polkit
-  
-  version: "0.102"
 use_flags:
 - accountsservice
 - appindicator

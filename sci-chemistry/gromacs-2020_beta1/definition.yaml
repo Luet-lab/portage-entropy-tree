@@ -3,33 +3,13 @@ conflicts: []
 name: gromacs-2020_beta1
 requires:
 - 
+  category: dev-util
+  name: nvidia-cuda-toolkit
+  
+  version: 6.5.14
+- 
   category: sys-apps
   name: hwloc
-  
-  version: ""
-- 
-  category: sci-libs
-  name: mkl
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libX11
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libSM
-  
-  version: ""
-- 
-  category: virtual
-  name: blas
-  
-  version: ""
-- 
-  category: sci-libs
-  name: fftw
   
   version: ""
 - 
@@ -48,18 +28,38 @@ requires:
   
   version: ""
 - 
-  category: dev-util
-  name: nvidia-cuda-toolkit
+  category: virtual
+  name: blas
   
-  version: 6.5.14
+  version: ""
 - 
   category: virtual
   name: opencl
   
   version: ""
 - 
+  category: sci-libs
+  name: fftw
+  
+  version: ""
+- 
   category: virtual
   name: lapack
+  
+  version: ""
+- 
+  category: sci-libs
+  name: mkl
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libX11
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libSM
   
   version: ""
 use_flags:

@@ -3,38 +3,33 @@ conflicts: []
 name: gegl
 requires:
 - 
-  category: media-libs
-  name: babl
+  category: dev-libs
+  name: gobject-introspection
   
-  version: 0.1.12
+  version: "1.32"
 - 
   category: x11-libs
-  name: cairo
+  name: gdk-pixbuf
+  
+  version: "2.18"
+- 
+  category: x11-libs
+  name: pango
   
   version: ""
-- 
-  category: media-video
-  name: ffmpeg
-  
-  version: ""
-- 
-  category: media-libs
-  name: libopenraw
-  
-  version: 0.0.9
 - 
   category: media-libs
   name: libsdl
   
   version: ""
 - 
+  category: media-libs
+  name: babl
+  
+  version: 0.1.12
+- 
   category: media-video
   name: libav
-  
-  version: ""
-- 
-  category: virtual
-  name: jpeg
   
   version: ""
 - 
@@ -48,8 +43,8 @@ requires:
   
   version: 0.2.5
 - 
-  category: media-libs
-  name: openexr
+  category: sci-libs
+  name: umfpack
   
   version: ""
 - 
@@ -58,20 +53,40 @@ requires:
   
   version: 1.0.1
 - 
-  category: media-libs
-  name: libwebp
+  category: media-video
+  name: ffmpeg
   
   version: ""
 - 
-  category: dev-libs
-  name: glib
+  category: virtual
+  name: jpeg
   
-  version: "2.36"
+  version: ""
 - 
   category: sys-libs
   name: zlib
   
   version: ""
+- 
+  category: x11-libs
+  name: cairo
+  
+  version: ""
+- 
+  category: media-libs
+  name: openexr
+  
+  version: ""
+- 
+  category: media-libs
+  name: libpng
+  
+  version: ""
+- 
+  category: media-libs
+  name: libopenraw
+  
+  version: 0.0.9
 - 
   category: gnome-base
   name: librsvg
@@ -79,32 +94,17 @@ requires:
   version: "2.14"
 - 
   category: dev-libs
+  name: glib
+  
+  version: "2.36"
+- 
+  category: dev-libs
   name: json-glib
   
   version: ""
 - 
-  category: x11-libs
-  name: gdk-pixbuf
-  
-  version: "2.18"
-- 
-  category: x11-libs
-  name: pango
-  
-  version: ""
-- 
-  category: dev-libs
-  name: gobject-introspection
-  
-  version: "1.32"
-- 
   category: media-libs
-  name: libpng
-  
-  version: ""
-- 
-  category: sci-libs
-  name: umfpack
+  name: libwebp
   
   version: ""
 use_flags:

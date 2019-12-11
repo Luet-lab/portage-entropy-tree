@@ -3,15 +3,15 @@ conflicts: []
 name: zathura
 requires:
 - 
-  category: x11-libs
-  name: cairo[X]
+  category: dev-libs
+  name: girara
   
-  version: ""
+  version: 0.3.3
 - 
-  category: x11-libs
-  name: gtk+
+  category: sys-devel
+  name: gettext
   
-  version: "3.22"
+  version: 0.19.8
 - 
   category: sys-libs
   name: libseccomp
@@ -28,10 +28,15 @@ requires:
   
   version: "2.50"
 - 
-  category: sys-devel
-  name: gettext
+  category: x11-libs
+  name: cairo[X]
   
-  version: 0.19.8
+  version: ""
+- 
+  category: x11-libs
+  name: gtk+
+  
+  version: "3.22"
 - 
   category: sys-apps
   name: file
@@ -42,11 +47,6 @@ requires:
   name: texlive-core
   
   version: ""
-- 
-  category: dev-libs
-  name: girara
-  
-  version: 0.3.3
 use_flags:
 - doc
 - +magic

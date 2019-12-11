@@ -3,6 +3,16 @@ conflicts: []
 name: s6-networking
 requires:
 - 
+  category: dev-lang
+  name: execline
+  
+  version: 2.5.0.1
+- 
+  category: sys-apps
+  name: s6
+  
+  version: 2.7.2.0
+- 
   category: net-dns
   name: s6-dns
   
@@ -17,16 +27,6 @@ requires:
   name: libressl
   
   version: 2.6.5
-- 
-  category: dev-lang
-  name: execline
-  
-  version: 2.5.0.1
-- 
-  category: sys-apps
-  name: s6
-  
-  version: 2.7.2.0
 use_flags:
 - ssl
 - static

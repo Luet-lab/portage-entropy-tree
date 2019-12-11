@@ -3,6 +3,31 @@ conflicts: []
 name: diradm
 requires:
 - 
+  category: net-nds
+  name: openldap
+  
+  version: "2.3"
+- 
+  category: sys-apps
+  name: grep
+  
+  version: ""
+- 
+  category: virtual
+  name: perl-MIME-Base64
+  
+  version: ""
+- 
+  category: net-fs
+  name: samba
+  
+  version: 3.0.6
+- 
+  category: sys-apps
+  name: gawk
+  
+  version: ""
+- 
   category: sys-apps
   name: coreutils
   
@@ -13,13 +38,13 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
-  name: sed
+  category: app-shells
+  name: bash
   
   version: ""
 - 
-  category: virtual
-  name: perl-MIME-Base64
+  category: sys-apps
+  name: sed
   
   version: ""
 - 
@@ -27,31 +52,6 @@ requires:
   name: Crypt-SmbHash
   
   version: ""
-- 
-  category: net-nds
-  name: openldap
-  
-  version: "2.3"
-- 
-  category: sys-apps
-  name: gawk
-  
-  version: ""
-- 
-  category: sys-apps
-  name: grep
-  
-  version: ""
-- 
-  category: app-shells
-  name: bash
-  
-  version: ""
-- 
-  category: net-fs
-  name: samba
-  
-  version: 3.0.6
 use_flags:
 - automount
 - irixpasswd

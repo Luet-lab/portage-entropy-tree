@@ -3,6 +3,11 @@ conflicts: []
 name: xf86-video-nouveau
 requires:
 - 
+  category: virtual
+  name: libudev
+  
+  version: ""
+- 
   category: x11-libs
   name: libdrm-2.4.60[video_cards_nouveau]
   
@@ -12,11 +17,6 @@ requires:
   name: libpciaccess
   
   version: "0.10"
-- 
-  category: virtual
-  name: libudev
-  
-  version: ""
 use_flags:
 - ""
 version: 1.0.16

@@ -8,13 +8,18 @@ conflicts:
 name: wine-staging
 requires:
 - 
-  category: media-sound
-  name: gsm
+  category: net-print
+  name: cups
   
   version: ""
 - 
-  category: net-nds
-  name: openldap
+  category: virtual
+  name: glu
+  
+  version: ""
+- 
+  category: media-sound
+  name: pulseaudio
   
   version: ""
 - 
@@ -23,8 +28,48 @@ requires:
   
   version: ""
 - 
-  category: sys-fs
-  name: udisks
+  category: x11-libs
+  name: libXinerama
+  
+  version: ""
+- 
+  category: games-emulation
+  name: dosbox
+  
+  version: 0.74_p20160629
+- 
+  category: media-libs
+  name: libv4l
+  
+  version: ""
+- 
+  category: dev-perl
+  name: XML-Simple
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXcursor
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXrandr
+  
+  version: ""
+- 
+  category: net-libs
+  name: libcapi
+  
+  version: ""
+- 
+  category: net-nds
+  name: openldap
+  
+  version: ""
+- 
+  category: virtual
+  name: libudev
   
   version: ""
 - 
@@ -33,20 +78,85 @@ requires:
   
   version: ""
 - 
-  category: app-emulation
-  name: vkd3d
+  category: media-libs
+  name: gstreamer
+  
+  version: ""
+- 
+  category: sys-devel
+  name: gettext
   
   version: ""
 - 
   category: app-emulation
-  name: wine-desktop-common
+  name: wine-gecko
   
   version: ""
 - 
-  category: net-libs
-  name: libpcap
+  category: dev-lang
+  name: perl
   
   version: ""
+- 
+  category: dev-libs
+  name: libxslt
+  
+  version: ""
+- 
+  category: sec-policy
+  name: selinux-wine
+  
+  version: ""
+- 
+  category: app-eselect
+  name: eselect-wine
+  
+  version: "0.3"
+- 
+  category: net-fs
+  name: samba
+  
+  version: 3.0.25
+- 
+  category: x11-libs
+  name: libXxf86vm
+  
+  version: ""
+- 
+  category: media-libs
+  name: openal
+  
+  version: ""
+- 
+  category: virtual
+  name: opencl
+  
+  version: ""
+- 
+  category: media-libs
+  name: freetype
+  
+  version: 2.0.0
+- 
+  category: x11-libs
+  name: libva[X,]
+  
+  version: ""
+- 
+  category: app-emulation
+  name: wine-mono
+  
+  version: ""
+- 
+  category: dev-db
+  name: unixODBC
+  
+  version: ""
+- 
+  category: media-libs
+  name: mesa
+  
+  version: "13"
 - 
   category: media-libs
   name: libsdl2
@@ -58,13 +168,18 @@ requires:
   
   version: ""
 - 
-  category: app-emulation
-  name: wine-mono
+  category: sys-apps
+  name: dbus
   
   version: ""
 - 
-  category: dev-perl
-  name: XML-Simple
+  category: x11-libs
+  name: libXfixes
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXi
   
   version: ""
 - 
@@ -73,48 +188,23 @@ requires:
   
   version: ""
 - 
+  category: media-libs
+  name: lcms
+  
+  version: ""
+- 
   category: virtual
-  name: krb5
+  name: opengl
   
   version: ""
 - 
-  category: media-libs
-  name: libpng
-  
-  version: ""
-- 
-  category: media-sound
-  name: pulseaudio
-  
-  version: ""
-- 
-  category: dev-db
-  name: unixODBC
-  
-  version: ""
-- 
-  category: media-libs
-  name: openal
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libxml2
+  category: app-emulation
+  name: vkd3d
   
   version: ""
 - 
   category: x11-libs
-  name: libXcursor
-  
-  version: ""
-- 
-  category: media-libs
-  name: fontconfig
-  
-  version: ""
-- 
-  category: media-plugins
-  name: gst-plugins-meta
+  name: libXext
   
   version: ""
 - 
@@ -124,77 +214,32 @@ requires:
   version: "5.2"
 - 
   category: x11-libs
-  name: libXrandr
-  
-  version: ""
-- 
-  category: virtual
-  name: glu
-  
-  version: ""
-- 
-  category: sys-apps
-  name: attr
-  
-  version: ""
-- 
-  category: media-libs
-  name: freetype
-  
-  version: 2.0.0
-- 
-  category: x11-libs
   name: libXcomposite
   
   version: ""
 - 
   category: app-emulation
-  name: wine-gecko
+  name: wine-desktop-common
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libxml2
+  
+  version: ""
+- 
+  category: sys-fs
+  name: udisks
   
   version: ""
 - 
   category: media-libs
-  name: mesa
-  
-  version: "13"
-- 
-  category: virtual
-  name: libudev
+  name: fontconfig
   
   version: ""
 - 
-  category: games-emulation
-  name: dosbox
-  
-  version: 0.74_p20160629
-- 
-  category: x11-libs
-  name: libXxf86vm
-  
-  version: ""
-- 
-  category: net-print
-  name: cups
-  
-  version: ""
-- 
-  category: virtual
-  name: opencl
-  
-  version: ""
-- 
-  category: virtual
-  name: opengl
-  
-  version: ""
-- 
-  category: media-libs
-  name: vulkan-loader
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXfixes
+  category: media-sound
+  name: gsm
   
   version: ""
 - 
@@ -203,63 +248,33 @@ requires:
   
   version: ""
 - 
-  category: media-libs
-  name: lcms
+  category: sys-apps
+  name: attr
   
   version: ""
 - 
-  category: x11-libs
-  name: libXext
+  category: dev-libs
+  name: glib
   
   version: ""
 - 
-  category: sys-devel
-  name: gettext
+  category: app-emulation
+  name: faudio
   
   version: ""
 - 
-  category: x11-libs
-  name: libXinerama
+  category: virtual
+  name: krb5
   
   version: ""
 - 
-  category: net-fs
-  name: samba[netapi(+),]
+  category: media-plugins
+  name: gst-plugins-meta
   
   version: ""
 - 
   category: media-gfx
   name: sane-backends
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libxslt
-  
-  version: ""
-- 
-  category: dev-lang
-  name: perl
-  
-  version: ""
-- 
-  category: sys-auth
-  name: rtkit
-  
-  version: ""
-- 
-  category: app-eselect
-  name: eselect-wine
-  
-  version: "0.3"
-- 
-  category: net-libs
-  name: libcapi
-  
-  version: ""
-- 
-  category: media-libs
-  name: gstreamer
   
   version: ""
 - 
@@ -273,43 +288,28 @@ requires:
   
   version: ""
 - 
-  category: media-libs
-  name: libv4l
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libva[X,]
-  
-  version: ""
-- 
   category: net-fs
-  name: samba
-  
-  version: 3.0.25
-- 
-  category: x11-libs
-  name: libXi
+  name: samba[netapi(+),]
   
   version: ""
 - 
-  category: app-emulation
-  name: faudio
+  category: net-libs
+  name: libpcap
   
   version: ""
 - 
-  category: dev-libs
-  name: glib
+  category: media-libs
+  name: libpng
   
   version: ""
 - 
-  category: sys-apps
-  name: dbus
+  category: media-libs
+  name: vulkan-loader
   
   version: ""
 - 
-  category: sec-policy
-  name: selinux-wine
+  category: sys-auth
+  name: rtkit
   
   version: ""
 use_flags:

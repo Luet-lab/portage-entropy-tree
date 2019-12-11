@@ -8,48 +8,23 @@ conflicts:
 name: dovecot
 requires:
 - 
+  category: dev-cpp
+  name: clucene
+  
+  version: "2.3"
+- 
+  category: sys-libs
+  name: libcap
+  
+  version: ""
+- 
   category: app-arch
-  name: xz-utils
-  
-  version: ""
-- 
-  category: app-text
-  name: libexttextcat
-  
-  version: ""
-- 
-  category: dev-libs
-  name: icu
-  
-  version: ""
-- 
-  category: acct-user
-  name: dovecot
+  name: lz4
   
   version: ""
 - 
   category: sec-policy
   name: selinux-dovecot
-  
-  version: ""
-- 
-  category: dev-db
-  name: sqlite
-  
-  version: ""
-- 
-  category: acct-group
-  name: dovecot
-  
-  version: ""
-- 
-  category: acct-user
-  name: dovenull
-  
-  version: ""
-- 
-  category: virtual
-  name: krb5
   
   version: ""
 - 
@@ -63,18 +38,103 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  name: libsodium
+  category: sys-apps
+  name: tcp-wrappers
+  
+  version: ""
+- 
+  category: net-mail
+  name: vpopmail
   
   version: ""
 - 
   category: sys-libs
-  name: libcap
+  name: zlib
+  
+  version: ""
+- 
+  category: dev-lang
+  name: lua
+  
+  version: ""
+- 
+  category: dev-libs
+  name: icu
+  
+  version: ""
+- 
+  category: virtual
+  name: libiconv
+  
+  version: ""
+- 
+  category: net-mail
+  name: mailbase
+  
+  version: ""
+- 
+  category: acct-group
+  name: mail
+  
+  version: ""
+- 
+  category: app-text
+  name: libexttextcat
+  
+  version: ""
+- 
+  category: acct-group
+  name: dovecot
+  
+  version: ""
+- 
+  category: dev-libs
+  name: expat
   
   version: ""
 - 
   category: dev-db
   name: mysql-connector-c
+  
+  version: ""
+- 
+  category: dev-db
+  name: sqlite
+  
+  version: ""
+- 
+  category: acct-group
+  name: dovenull
+  
+  version: ""
+- 
+  category: acct-user
+  name: dovenull
+  
+  version: ""
+- 
+  category: virtual
+  name: krb5
+  
+  version: ""
+- 
+  category: acct-user
+  name: dovecot
+  
+  version: ""
+- 
+  category: net-nds
+  name: openldap
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libsodium
+  
+  version: ""
+- 
+  category: app-arch
+  name: xz-utils
   
   version: ""
 - 
@@ -88,68 +148,8 @@ requires:
   
   version: ""
 - 
-  category: net-mail
-  name: vpopmail
-  
-  version: ""
-- 
-  category: net-mail
-  name: mailbase
-  
-  version: ""
-- 
   category: app-arch
   name: bzip2
-  
-  version: ""
-- 
-  category: dev-libs
-  name: expat
-  
-  version: ""
-- 
-  category: sys-apps
-  name: tcp-wrappers
-  
-  version: ""
-- 
-  category: dev-cpp
-  name: clucene
-  
-  version: "2.3"
-- 
-  category: app-arch
-  name: lz4
-  
-  version: ""
-- 
-  category: sys-libs
-  name: zlib
-  
-  version: ""
-- 
-  category: virtual
-  name: libiconv
-  
-  version: ""
-- 
-  category: net-nds
-  name: openldap
-  
-  version: ""
-- 
-  category: dev-lang
-  name: lua
-  
-  version: ""
-- 
-  category: acct-group
-  name: mail
-  
-  version: ""
-- 
-  category: acct-group
-  name: dovenull
   
   version: ""
 use_flags:

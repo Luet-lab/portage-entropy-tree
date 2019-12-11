@@ -8,38 +8,13 @@ conflicts:
 name: dovecot
 requires:
 - 
-  category: dev-libs
-  name: libressl
+  category: dev-lang
+  name: lua
   
   version: ""
 - 
-  category: sys-libs
-  name: zlib
-  
-  version: ""
-- 
-  category: sec-policy
-  name: selinux-dovecot
-  
-  version: ""
-- 
-  category: dev-libs
-  name: expat
-  
-  version: ""
-- 
-  category: acct-group
-  name: mail
-  
-  version: ""
-- 
-  category: acct-user
-  name: dovecot
-  
-  version: ""
-- 
-  category: virtual
-  name: libiconv
+  category: net-misc
+  name: curl
   
   version: ""
 - 
@@ -53,8 +28,8 @@ requires:
   
   version: ""
 - 
-  category: app-arch
-  name: xz-utils
+  category: sys-libs
+  name: libcap
   
   version: ""
 - 
@@ -63,33 +38,28 @@ requires:
   
   version: ""
 - 
-  category: dev-db
-  name: mysql-connector-c
+  category: sys-libs
+  name: pam
   
   version: ""
 - 
-  category: net-mail
-  name: mailbase
+  category: sec-policy
+  name: selinux-dovecot
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libressl
+  
+  version: ""
+- 
+  category: sys-apps
+  name: tcp-wrappers
   
   version: ""
 - 
   category: sys-libs
-  name: libcap
-  
-  version: ""
-- 
-  category: net-nds
-  name: openldap
-  
-  version: ""
-- 
-  category: dev-db
-  name: sqlite
-  
-  version: ""
-- 
-  category: net-mail
-  name: vpopmail
+  name: zlib
   
   version: ""
 - 
@@ -98,43 +68,13 @@ requires:
   
   version: ""
 - 
-  category: virtual
-  name: krb5
+  category: net-mail
+  name: mailbase
   
   version: ""
 - 
-  category: dev-lang
-  name: lua
-  
-  version: ""
-- 
-  category: dev-cpp
-  name: clucene
-  
-  version: "2.3"
-- 
-  category: sys-apps
-  name: tcp-wrappers
-  
-  version: ""
-- 
-  category: acct-group
-  name: dovecot
-  
-  version: ""
-- 
-  category: net-misc
-  name: curl
-  
-  version: ""
-- 
-  category: acct-group
-  name: dovenull
-  
-  version: ""
-- 
-  category: sys-libs
-  name: pam
+  category: app-arch
+  name: xz-utils
   
   version: ""
 - 
@@ -143,12 +83,72 @@ requires:
   
   version: ""
 - 
+  category: net-mail
+  name: vpopmail
+  
+  version: ""
+- 
+  category: acct-user
+  name: dovecot
+  
+  version: ""
+- 
+  category: acct-user
+  name: dovenull
+  
+  version: ""
+- 
+  category: virtual
+  name: libiconv
+  
+  version: ""
+- 
+  category: acct-group
+  name: dovecot
+  
+  version: ""
+- 
   category: app-text
   name: libexttextcat
   
   version: ""
 - 
-  category: acct-user
+  category: virtual
+  name: krb5
+  
+  version: ""
+- 
+  category: net-nds
+  name: openldap
+  
+  version: ""
+- 
+  category: dev-cpp
+  name: clucene
+  
+  version: "2.3"
+- 
+  category: dev-db
+  name: mysql-connector-c
+  
+  version: ""
+- 
+  category: dev-libs
+  name: expat
+  
+  version: ""
+- 
+  category: dev-db
+  name: sqlite
+  
+  version: ""
+- 
+  category: acct-group
+  name: mail
+  
+  version: ""
+- 
+  category: acct-group
   name: dovenull
   
   version: ""

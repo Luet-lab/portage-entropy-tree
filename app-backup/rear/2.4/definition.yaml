@@ -3,8 +3,23 @@ conflicts: []
 name: rear
 requires:
 - 
+  category: sys-apps
+  name: iproute2
+  
+  version: ""
+- 
+  category: sys-apps
+  name: sed
+  
+  version: ""
+- 
   category: sys-block
   name: parted
+  
+  version: ""
+- 
+  category: dev-libs
+  name: openssl
   
   version: ""
 - 
@@ -18,33 +33,8 @@ requires:
   
   version: ""
 - 
-  category: net-fs
-  name: nfs-utils
-  
-  version: ""
-- 
   category: sys-apps
-  name: iproute2
-  
-  version: ""
-- 
-  category: sys-apps
-  name: lsb-release
-  
-  version: ""
-- 
-  category: sys-apps
-  name: sed
-  
-  version: ""
-- 
-  category: sys-boot
-  name: syslinux
-  
-  version: ""
-- 
-  category: dev-libs
-  name: openssl
+  name: gawk
   
   version: ""
 - 
@@ -59,17 +49,27 @@ requires:
   version: ""
 - 
   category: sys-apps
-  name: gawk
+  name: lsb-release
   
   version: ""
 - 
-  category: sys-apps
-  name: util-linux
+  category: sys-boot
+  name: syslinux
   
   version: ""
 - 
   category: virtual
   name: cdrtools
+  
+  version: ""
+- 
+  category: net-fs
+  name: nfs-utils
+  
+  version: ""
+- 
+  category: sys-apps
+  name: util-linux
   
   version: ""
 use_flags:

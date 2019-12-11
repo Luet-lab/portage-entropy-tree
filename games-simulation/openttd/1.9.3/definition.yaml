@@ -4,27 +4,12 @@ name: openttd
 requires:
 - 
   category: dev-libs
-  name: lzo
+  name: icu
   
-  version: ""
-- 
-  category: media-libs
-  name: libpng
-  
-  version: ""
-- 
-  category: media-libs
-  name: libsdl[sound,X,video]
-  
-  version: ""
+  version: "58.1"
 - 
   category: media-libs
   name: fontconfig
-  
-  version: ""
-- 
-  category: sys-libs
-  name: zlib
   
   version: ""
 - 
@@ -33,8 +18,18 @@ requires:
   
   version: ""
 - 
-  category: virtual
-  name: libiconv
+  category: sys-libs
+  name: zlib
+  
+  version: ""
+- 
+  category: dev-libs
+  name: lzo
+  
+  version: ""
+- 
+  category: media-libs
+  name: libsdl[sound,X,video]
   
   version: ""
 - 
@@ -43,15 +38,20 @@ requires:
   
   version: ""
 - 
+  category: media-libs
+  name: libpng
+  
+  version: ""
+- 
   category: dev-libs
   name: icu-le-hb
   
   version: ""
 - 
-  category: dev-libs
-  name: icu
+  category: virtual
+  name: libiconv
   
-  version: "58.1"
+  version: ""
 use_flags:
 - aplaymidi
 - debug

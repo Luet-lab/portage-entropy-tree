@@ -7,16 +7,26 @@ conflicts:
   version: ""
 - 
   category: net-misc
-  name: arping
+  name: rarpd
   
   version: ""
 - 
   category: net-misc
-  name: rarpd
+  name: arping
   
   version: ""
 name: iputils
 requires:
+- 
+  category: dev-libs
+  name: nettle
+  
+  version: ""
+- 
+  category: dev-libs
+  name: openssl
+  
+  version: ""
 - 
   category: sys-libs
   name: libcap
@@ -34,22 +44,12 @@ requires:
   version: ""
 - 
   category: dev-libs
-  name: openssl
+  name: libressl
   
   version: ""
 - 
   category: sys-devel
   name: gettext
-  
-  version: ""
-- 
-  category: dev-libs
-  name: nettle
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libressl
   
   version: ""
 use_flags:

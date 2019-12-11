@@ -4,6 +4,11 @@ name: libsemanage
 requires:
 - 
   category: sys-libs
+  name: libsepol
+  
+  version: "2.9"
+- 
+  category: sys-libs
   name: libselinux
   
   version: "2.9"
@@ -17,11 +22,6 @@ requires:
   name: ustr
   
   version: 1.0.4-r2
-- 
-  category: sys-libs
-  name: libsepol
-  
-  version: "2.9"
 use_flags:
 - python
 version: "2.9"

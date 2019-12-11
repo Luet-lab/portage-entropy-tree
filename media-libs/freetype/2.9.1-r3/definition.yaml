@@ -3,6 +3,16 @@ conflicts: []
 name: freetype
 requires:
 - 
+  category: sys-libs
+  name: zlib
+  
+  version: 1.2.8-r1
+- 
+  category: app-arch
+  name: bzip2
+  
+  version: 1.0.6-r4
+- 
   category: media-libs
   name: harfbuzz
   
@@ -27,16 +37,6 @@ requires:
   name: libXdmcp
   
   version: 1.1.1-r1
-- 
-  category: sys-libs
-  name: zlib
-  
-  version: 1.2.8-r1
-- 
-  category: app-arch
-  name: bzip2
-  
-  version: 1.0.6-r4
 use_flags:
 - X
 - +adobe-cff

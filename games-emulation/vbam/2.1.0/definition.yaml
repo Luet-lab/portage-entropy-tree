@@ -3,8 +3,18 @@ conflicts: []
 name: vbam
 requires:
 - 
+  category: media-video
+  name: ffmpeg-3*
+  
+  version: ""
+- 
   category: media-libs
   name: libsdl2
+  
+  version: ""
+- 
+  category: sys-libs
+  name: zlib
   
   version: ""
 - 
@@ -15,11 +25,6 @@ requires:
 - 
   category: virtual
   name: opengl
-  
-  version: ""
-- 
-  category: virtual
-  name: libintl
   
   version: ""
 - 
@@ -43,18 +48,13 @@ requires:
   
   version: "2.0"
 - 
-  category: sys-libs
-  name: zlib
-  
-  version: ""
-- 
-  category: media-video
-  name: ffmpeg-3*
-  
-  version: ""
-- 
   category: app-misc
   name: lirc
+  
+  version: ""
+- 
+  category: virtual
+  name: libintl
   
   version: ""
 use_flags:

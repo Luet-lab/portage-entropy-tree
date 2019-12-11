@@ -3,28 +3,43 @@ conflicts: []
 name: wlroots
 requires:
 - 
-  category: sys-apps
-  name: systemd
+  category: dev-libs
+  name: libinput
   
-  version: "237"
-- 
-  category: x11-libs
-  name: libxcb
-  
-  version: ""
+  version: 1.9.0
 - 
   category: dev-libs
   name: wayland
   
   version: 1.17.0
 - 
-  category: x11-libs
-  name: libdrm
+  category: virtual
+  name: libudev
+  
+  version: ""
+- 
+  category: sys-auth
+  name: elogind
+  
+  version: "237"
+- 
+  category: media-video
+  name: ffmpeg
+  
+  version: ""
+- 
+  category: media-libs
+  name: mesa
   
   version: ""
 - 
   category: x11-libs
   name: xcb-util-wm
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libxcb
   
   version: ""
 - 
@@ -34,37 +49,7 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: xcb-util-image
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libinput
-  
-  version: 1.9.0
-- 
-  category: media-libs
-  name: mesa
-  
-  version: ""
-- 
-  category: x11-libs
-  name: pixman
-  
-  version: ""
-- 
-  category: net-misc
-  name: freerdp
-  
-  version: ""
-- 
-  category: media-video
-  name: ffmpeg
-  
-  version: ""
-- 
-  category: virtual
-  name: libudev
+  name: libdrm
   
   version: ""
 - 
@@ -73,10 +58,25 @@ requires:
   
   version: ""
 - 
-  category: sys-auth
-  name: elogind
+  category: net-misc
+  name: freerdp
+  
+  version: ""
+- 
+  category: sys-apps
+  name: systemd
   
   version: "237"
+- 
+  category: x11-libs
+  name: xcb-util-image
+  
+  version: ""
+- 
+  category: x11-libs
+  name: pixman
+  
+  version: ""
 use_flags:
 - elogind
 - icccm

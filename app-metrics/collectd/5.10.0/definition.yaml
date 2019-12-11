@@ -3,28 +3,18 @@ conflicts: []
 name: collectd
 requires:
 - 
-  category: sys-fs
-  name: lvm2
-  
-  version: ""
-- 
   category: sys-power
   name: nut
   
   version: 2.7.2-r2
 - 
-  category: sys-fs
-  name: owfs
+  category: dev-libs
+  name: librdkafka
   
-  version: "3.1"
+  version: 0.9.0.99
 - 
-  category: app-emulation
-  name: xen-tools
-  
-  version: ""
-- 
-  category: dev-lang
-  name: perl
+  category: virtual
+  name: logger
   
   version: ""
 - 
@@ -33,18 +23,13 @@ requires:
   
   version: ""
 - 
-  category: dev-lang
-  name: lua
+  category: net-libs
+  name: rabbitmq-c
   
   version: ""
 - 
   category: net-libs
-  name: libmnl
-  
-  version: ""
-- 
-  category: net-libs
-  name: librouteros
+  name: libpcap
   
   version: ""
 - 
@@ -54,72 +39,12 @@ requires:
   version: ""
 - 
   category: dev-libs
-  name: libxml2
+  name: protobuf-c
   
-  version: ""
-- 
-  category: sys-libs
-  name: openipmi
-  
-  version: 2.0.16-r1
-- 
-  category: dev-libs
-  name: libmodbus
-  
-  version: ""
-- 
-  category: dev-db
-  name: oracle-instantclient-basic
-  
-  version: ""
-- 
-  category: dev-libs
-  name: mongo-c-driver
-  
-  version: 1.8.2
-- 
-  category: virtual
-  name: jre
-  
-  version: "1.6"
-- 
-  category: net-libs
-  name: rabbitmq-c
-  
-  version: ""
-- 
-  category: sys-cluster
-  name: ganglia
-  
-  version: ""
-- 
-  category: dev-libs
-  name: hiredis
-  
-  version: ""
-- 
-  category: sci-libs
-  name: libsigrok
-  
-  version: "0.4"
-- 
-  category: net-libs
-  name: libmicrohttpd
-  
-  version: ""
-- 
-  category: net-libs
-  name: libpcap
-  
-  version: ""
-- 
-  category: sci-geosciences
-  name: gpsd
-  
-  version: ""
+  version: 1.2.1-r1
 - 
   category: app-emulation
-  name: libvirt
+  name: xen-tools
   
   version: ""
 - 
@@ -128,8 +53,58 @@ requires:
   
   version: ""
 - 
+  category: dev-lang
+  name: perl
+  
+  version: ""
+- 
+  category: sys-cluster
+  name: ganglia
+  
+  version: ""
+- 
+  category: sys-fs
+  name: lvm2
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libmemcached
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libmodbus
+  
+  version: ""
+- 
+  category: app-misc
+  name: mosquitto
+  
+  version: ""
+- 
   category: net-libs
-  name: liboping
+  name: libmnl
+  
+  version: ""
+- 
+  category: sys-fs
+  name: owfs
+  
+  version: "3.1"
+- 
+  category: app-emulation
+  name: libvirt
+  
+  version: ""
+- 
+  category: virtual
+  name: jre
+  
+  version: "1.6"
+- 
+  category: sec-policy
+  name: selinux-collectd
   
   version: ""
 - 
@@ -138,13 +113,48 @@ requires:
   
   version: ""
 - 
-  category: net-firewall
-  name: iptables
+  category: x11-libs
+  name: libnotify
   
-  version: 1.4.13
+  version: ""
 - 
-  category: app-misc
-  name: mosquitto
+  category: net-libs
+  name: liboping
+  
+  version: ""
+- 
+  category: dev-db
+  name: postgresql
+  
+  version: ""
+- 
+  category: sys-apps
+  name: lm-sensors
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libatasmart
+  
+  version: ""
+- 
+  category: www-servers
+  name: varnish
+  
+  version: ""
+- 
+  category: dev-lang
+  name: lua
+  
+  version: ""
+- 
+  category: dev-libs
+  name: mongo-c-driver
+  
+  version: 1.8.2
+- 
+  category: sys-libs
+  name: libstatgrab
   
   version: ""
 - 
@@ -154,12 +164,57 @@ requires:
   version: ""
 - 
   category: dev-db
-  name: postgresql
+  name: oracle-instantclient-basic
   
   version: ""
 - 
   category: dev-libs
-  name: libatasmart
+  name: hiredis
+  
+  version: ""
+- 
+  category: net-analyzer
+  name: rrdtool
+  
+  version: ""
+- 
+  category: net-libs
+  name: libmicrohttpd
+  
+  version: ""
+- 
+  category: net-misc
+  name: curl
+  
+  version: ""
+- 
+  category: sys-libs
+  name: openipmi
+  
+  version: 2.0.16-r1
+- 
+  category: net-firewall
+  name: iptables
+  
+  version: 1.4.13
+- 
+  category: net-libs
+  name: libesmtp
+  
+  version: ""
+- 
+  category: net-libs
+  name: librouteros
+  
+  version: ""
+- 
+  category: sci-libs
+  name: libsigrok
+  
+  version: "0.4"
+- 
+  category: net-analyzer
+  name: net-snmp
   
   version: ""
 - 
@@ -173,38 +228,13 @@ requires:
   
   version: ""
 - 
-  category: net-analyzer
-  name: net-snmp
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libnotify
-  
-  version: ""
-- 
-  category: net-analyzer
-  name: rrdtool
-  
-  version: ""
-- 
-  category: sys-apps
-  name: lm-sensors
+  category: sys-fs
+  name: xfsprogs
   
   version: ""
 - 
   category: dev-libs
-  name: librdkafka
-  
-  version: 0.9.0.99
-- 
-  category: sys-libs
-  name: libstatgrab
-  
-  version: ""
-- 
-  category: net-misc
-  name: curl
+  name: libxml2
   
   version: ""
 - 
@@ -213,38 +243,8 @@ requires:
   
   version: ""
 - 
-  category: net-libs
-  name: libesmtp
-  
-  version: ""
-- 
-  category: www-servers
-  name: varnish
-  
-  version: ""
-- 
-  category: dev-libs
-  name: protobuf-c
-  
-  version: 1.2.1-r1
-- 
-  category: virtual
-  name: logger
-  
-  version: ""
-- 
-  category: sec-policy
-  name: selinux-collectd
-  
-  version: ""
-- 
-  category: sys-fs
-  name: xfsprogs
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libmemcached
+  category: sci-geosciences
+  name: gpsd
   
   version: ""
 use_flags:
