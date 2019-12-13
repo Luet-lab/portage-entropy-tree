@@ -7,7 +7,12 @@ conflicts:
   version: ""
 - 
   category: sys-fabric
-  name: srptools
+  name: ibacm
+  
+  version: ""
+- 
+  category: sys-fabric
+  name: libibmad
   
   version: ""
 - 
@@ -17,7 +22,17 @@ conflicts:
   version: ""
 - 
   category: sys-fabric
-  name: libnes
+  name: librdmacm
+  
+  version: ""
+- 
+  category: sys-fabric
+  name: libibumad
+  
+  version: ""
+- 
+  category: sys-fabric
+  name: libmthca
   
   version: ""
 - 
@@ -27,12 +42,12 @@ conflicts:
   version: ""
 - 
   category: sys-fabric
-  name: infiniband-diags
+  name: srptools
   
   version: ""
 - 
   category: sys-fabric
-  name: libibumad
+  name: infiniband-diags
   
   version: ""
 - 
@@ -47,32 +62,17 @@ conflicts:
   version: ""
 - 
   category: sys-fabric
-  name: libmlx4
-  
-  version: ""
-- 
-  category: sys-fabric
-  name: librdmacm
-  
-  version: ""
-- 
-  category: sys-fabric
-  name: libibmad
-  
-  version: ""
-- 
-  category: sys-fabric
   name: libcxgb4
   
   version: ""
 - 
   category: sys-fabric
-  name: libmthca
+  name: libmlx4
   
   version: ""
 - 
   category: sys-fabric
-  name: ibacm
+  name: libnes
   
   version: ""
 name: rdma-core
@@ -83,13 +83,13 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
-  name: systemd
+  category: dev-libs
+  name: libnl
   
   version: ""
 - 
-  category: dev-libs
-  name: libnl
+  category: sys-apps
+  name: systemd
   
   version: ""
 - 

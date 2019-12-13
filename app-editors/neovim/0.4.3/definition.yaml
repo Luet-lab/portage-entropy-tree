@@ -3,13 +3,18 @@ conflicts: []
 name: neovim
 requires:
 - 
-  category: dev-lua
-  name: lpeg[luajit=]
+  category: dev-libs
+  name: msgpack
   
   version: ""
 - 
   category: dev-lua
-  name: LuaBitOp
+  name: luv[luajit=]
+  
+  version: ""
+- 
+  category: dev-lang
+  name: luajit
   
   version: ""
 - 
@@ -18,13 +23,18 @@ requires:
   
   version: ""
 - 
+  category: dev-libs
+  name: unibilium
+  
+  version: 2.0.0
+- 
   category: app-eselect
   name: eselect-vi
   
   version: ""
 - 
   category: dev-libs
-  name: msgpack
+  name: libuv
   
   version: ""
 - 
@@ -34,7 +44,7 @@ requires:
   version: 0.1.2
 - 
   category: dev-lua
-  name: luv[luajit=]
+  name: lpeg[luajit=]
   
   version: ""
 - 
@@ -49,22 +59,12 @@ requires:
   version: ""
 - 
   category: dev-lang
-  name: luajit
-  
-  version: ""
-- 
-  category: dev-lang
   name: lua
   
   version: ""
 - 
-  category: dev-libs
-  name: unibilium
-  
-  version: 2.0.0
-- 
-  category: dev-libs
-  name: libuv
+  category: dev-lua
+  name: LuaBitOp
   
   version: ""
 use_flags:

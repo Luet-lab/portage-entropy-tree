@@ -3,35 +3,20 @@ conflicts: []
 name: exaile
 requires:
 - 
+  category: dev-python
+  name: pygobject
+  
+  version: 3.13.2
+- 
   category: media-libs
   name: gst-plugins-base
   
   version: "1.6"
 - 
-  category: x11-libs
-  name: libnotify
+  category: media-libs
+  name: gst-plugins-good
   
-  version: "0.7"
-- 
-  category: dev-python
-  name: pylast
-  
-  version: ""
-- 
-  category: dev-python
-  name: dbus-python
-  
-  version: ""
-- 
-  category: dev-python
-  name: pycairo
-  
-  version: ""
-- 
-  category: dev-python
-  name: pygobject
-  
-  version: 3.13.2
+  version: "1.4"
 - 
   category: media-libs
   name: mutagen
@@ -49,11 +34,6 @@ requires:
   version: "3.10"
 - 
   category: dev-python
-  name: cddb-py
-  
-  version: ""
-- 
-  category: dev-python
   name: bsddb3
   
   version: ""
@@ -63,10 +43,30 @@ requires:
   
   version: ""
 - 
-  category: media-libs
-  name: gst-plugins-good
+  category: dev-python
+  name: pylast
   
-  version: "1.4"
+  version: ""
+- 
+  category: dev-python
+  name: cddb-py
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libnotify
+  
+  version: "0.7"
+- 
+  category: dev-python
+  name: dbus-python
+  
+  version: ""
+- 
+  category: dev-python
+  name: pycairo
+  
+  version: ""
 use_flags:
 - cddb
 - libnotify

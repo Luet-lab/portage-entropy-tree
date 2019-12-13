@@ -4,32 +4,37 @@ name: salt
 requires:
 - 
   category: dev-python
-  name: requests
-  
-  version: 1.0.0
-- 
-  category: www-servers
-  name: tornado
-  
-  version: "5.0"
-- 
-  category: dev-python
-  name: libnacl
-  
-  version: 1.0.0
-- 
-  category: dev-python
-  name: pycryptodome
+  name: mysql-python
   
   version: ""
 - 
   category: dev-python
-  name: pymongo
+  name: pyzmq
+  
+  version: 2.2.0
+- 
+  category: dev-python
+  name: keyring
   
   version: ""
 - 
   category: dev-python
-  name: libnacl
+  name: mako
+  
+  version: ""
+- 
+  category: sec-policy
+  name: selinux-salt
+  
+  version: ""
+- 
+  category: dev-python
+  name: timelib
+  
+  version: ""
+- 
+  category: sys-apps
+  name: pciutils
   
   version: ""
 - 
@@ -44,52 +49,42 @@ requires:
   version: 0.6.0
 - 
   category: dev-python
-  name: keyring
+  name: pymongo
   
   version: ""
 - 
   category: dev-python
-  name: yappi
+  name: redis-py
   
   version: ""
 - 
   category: dev-python
-  name: pyzmq
+  name: msgpack
   
-  version: 2.2.0
+  version: "0.3"
 - 
   category: dev-python
-  name: cherrypy
+  name: libcloud
   
-  version: 3.2.2
+  version: 0.14.0
 - 
   category: dev-python
-  name: timelib
+  name: libvirt-python
+  
+  version: ""
+- 
+  category: dev-libs
+  name: openssl
+  
+  version: ""
+- 
+  category: app-vim
+  name: salt-vim
   
   version: ""
 - 
   category: dev-python
-  name: mako
-  
-  version: ""
-- 
-  category: dev-python
-  name: mysql-python
-  
-  version: ""
-- 
-  category: sec-policy
-  name: selinux-salt
-  
-  version: ""
-- 
-  category: dev-python
-  name: python-gnupg
-  
-  version: ""
-- 
-  category: dev-python
-  name: pyyaml
+  name: libnacl
   
   version: ""
 - 
@@ -98,13 +93,18 @@ requires:
   
   version: ""
 - 
-  category: dev-python
-  name: libcloud
+  category: virtual
+  name: python-futures
   
-  version: 0.14.0
+  version: ""
 - 
   category: dev-python
-  name: redis-py
+  name: libnacl
+  
+  version: 1.0.0
+- 
+  category: dev-python
+  name: pycryptodome
   
   version: ""
 - 
@@ -114,9 +114,44 @@ requires:
   version: 2.17.0
 - 
   category: dev-python
+  name: python-neutronclient
+  
+  version: 2.3.6
+- 
+  category: dev-python
+  name: jinja
+  
+  version: ""
+- 
+  category: www-servers
+  name: tornado
+  
+  version: 4.2.1
+- 
+  category: dev-python
+  name: yappi
+  
+  version: ""
+- 
+  category: dev-python
+  name: pyyaml
+  
+  version: ""
+- 
+  category: dev-python
+  name: requests
+  
+  version: 1.0.0
+- 
+  category: dev-python
   name: setuptools
   
   version: ""
+- 
+  category: www-servers
+  name: tornado
+  
+  version: "5.0"
 - 
   category: dev-python
   name: python-ldap
@@ -128,53 +163,18 @@ requires:
   
   version: 1.1.7
 - 
+  category: dev-python
+  name: cherrypy
+  
+  version: 3.2.2
+- 
   category: sys-apps
   name: portage
   
   version: ""
 - 
-  category: app-vim
-  name: salt-vim
-  
-  version: ""
-- 
-  category: dev-libs
-  name: openssl
-  
-  version: ""
-- 
   category: dev-python
-  name: python-neutronclient
-  
-  version: 2.3.6
-- 
-  category: sys-apps
-  name: pciutils
-  
-  version: ""
-- 
-  category: dev-python
-  name: jinja
-  
-  version: ""
-- 
-  category: dev-python
-  name: msgpack
-  
-  version: "0.3"
-- 
-  category: www-servers
-  name: tornado
-  
-  version: 4.2.1
-- 
-  category: virtual
-  name: python-futures
-  
-  version: ""
-- 
-  category: dev-python
-  name: libvirt-python
+  name: python-gnupg
   
   version: ""
 use_flags:

@@ -8,8 +8,28 @@ requires:
   
   version: "237"
 - 
-  category: x11-base
-  name: xorg-server
+  category: x11-libs
+  name: xcb-util-wm
+  
+  version: ""
+- 
+  category: media-libs
+  name: mesa
+  
+  version: ""
+- 
+  category: virtual
+  name: libudev
+  
+  version: ""
+- 
+  category: sys-apps
+  name: systemd
+  
+  version: "237"
+- 
+  category: x11-libs
+  name: xcb-util-image
   
   version: ""
 - 
@@ -28,43 +48,18 @@ requires:
   
   version: ""
 - 
-  category: virtual
-  name: libudev
-  
-  version: ""
-- 
   category: x11-libs
   name: pixman
   
   version: ""
 - 
   category: x11-libs
-  name: xcb-util-wm
-  
-  version: ""
-- 
-  category: x11-libs
-  name: xcb-util-image
-  
-  version: ""
-- 
-  category: media-libs
-  name: mesa
-  
-  version: ""
-- 
-  category: dev-libs
-  name: wayland
-  
-  version: 1.17.0
-- 
-  category: sys-apps
-  name: systemd
-  
-  version: "237"
-- 
-  category: x11-libs
   name: libxcb
+  
+  version: ""
+- 
+  category: x11-base
+  name: xorg-server
   
   version: ""
 - 
@@ -77,6 +72,11 @@ requires:
   name: libinput
   
   version: 1.9.0
+- 
+  category: dev-libs
+  name: wayland
+  
+  version: 1.17.0
 use_flags:
 - elogind
 - icccm

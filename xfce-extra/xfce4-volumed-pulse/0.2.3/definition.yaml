@@ -3,6 +3,11 @@ conflicts: []
 name: xfce4-volumed-pulse
 requires:
 - 
+  category: x11-libs
+  name: gtk+
+  
+  version: "3.20"
+- 
   category: xfce-base
   name: xfconf
   
@@ -27,11 +32,6 @@ requires:
   name: pulseaudio
   
   version: 0.9.19
-- 
-  category: x11-libs
-  name: gtk+
-  
-  version: "3.20"
 use_flags:
 - libnotify
 version: 0.2.3

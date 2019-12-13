@@ -3,6 +3,16 @@ conflicts: []
 name: s6-linux-init
 requires:
 - 
+  category: sys-apps
+  name: s6-portable-utils
+  
+  version: 2.2.1.1
+- 
+  category: dev-libs
+  name: skalibs
+  
+  version: 2.6.0.0
+- 
   category: dev-lang
   name: execline
   
@@ -17,16 +27,6 @@ requires:
   name: s6-linux-utils
   
   version: 2.4.0.0
-- 
-  category: sys-apps
-  name: s6-portable-utils
-  
-  version: 2.2.1.1
-- 
-  category: dev-libs
-  name: skalibs
-  
-  version: 2.6.0.0
 use_flags:
 - static
 version: 0.3.1.1

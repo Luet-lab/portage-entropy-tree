@@ -8,18 +8,23 @@ conflicts:
 name: iproute2
 requires:
 - 
+  category: sys-libs
+  name: db
+  
+  version: ""
+- 
   category: net-dialup
   name: linux-atm
   
   version: ""
 - 
-  category: dev-libs
-  name: libbsd
+  category: sys-libs
+  name: libselinux
   
   version: ""
 - 
-  category: net-libs
-  name: libmnl
+  category: dev-libs
+  name: libbsd
   
   version: ""
 - 
@@ -33,18 +38,13 @@ requires:
   
   version: 1.4.20
 - 
+  category: net-libs
+  name: libmnl
+  
+  version: ""
+- 
   category: sys-libs
   name: libcap
-  
-  version: ""
-- 
-  category: sys-libs
-  name: db
-  
-  version: ""
-- 
-  category: sys-libs
-  name: libselinux
   
   version: ""
 use_flags:

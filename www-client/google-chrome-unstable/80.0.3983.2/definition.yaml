@@ -3,8 +3,8 @@ conflicts: []
 name: google-chrome-unstable
 requires:
 - 
-  category: app-accessibility
-  name: at-spi2-atk
+  category: app-arch
+  name: bzip2
   
   version: ""
 - 
@@ -13,48 +13,18 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
-  name: gtk+
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXcursor
-  
-  version: ""
-- 
-  category: sec-policy
-  name: selinux-chromium
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXtst
-  
-  version: ""
-- 
   category: dev-libs
-  name: glib
+  name: nss
+  
+  version: "3.26"
+- 
+  category: x11-libs
+  name: libXcomposite
   
   version: ""
 - 
   category: x11-libs
-  name: cairo
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXfixes
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXrandr
-  
-  version: ""
-- 
-  category: media-libs
-  name: fontconfig
+  name: libxcb
   
   version: ""
 - 
@@ -64,7 +34,32 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: libXi
+  name: libXcursor
+  
+  version: ""
+- 
+  category: net-print
+  name: cups
+  
+  version: ""
+- 
+  category: sys-apps
+  name: dbus
+  
+  version: ""
+- 
+  category: x11-libs
+  name: gdk-pixbuf
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXtst
+  
+  version: ""
+- 
+  category: x11-libs
+  name: cairo
   
   version: ""
 - 
@@ -74,52 +69,42 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: libXScrnSaver
+  name: libXext
   
   version: ""
 - 
-  category: x11-libs
-  name: libxcb
-  
-  version: ""
-- 
-  category: x11-libs
-  name: pango
+  category: app-accessibility
+  name: at-spi2-atk
   
   version: ""
 - 
   category: dev-libs
-  name: nss
+  name: expat
   
-  version: "3.26"
+  version: ""
+- 
+  category: dev-libs
+  name: glib
+  
+  version: ""
 - 
   category: media-libs
-  name: freetype
+  name: alsa-lib
+  
+  version: ""
+- 
+  category: media-libs
+  name: fontconfig
   
   version: ""
 - 
   category: x11-libs
-  name: libX11
-  
-  version: 1.5.0
-- 
-  category: x11-libs
-  name: gdk-pixbuf
+  name: libXfixes
   
   version: ""
 - 
   category: x11-libs
-  name: libXcomposite
-  
-  version: ""
-- 
-  category: x11-misc
-  name: xdg-utils
-  
-  version: ""
-- 
-  category: sys-apps
-  name: dbus
+  name: libXScrnSaver
   
   version: ""
 - 
@@ -129,27 +114,17 @@ requires:
   version: ""
 - 
   category: media-libs
-  name: alsa-lib
-  
-  version: ""
-- 
-  category: net-print
-  name: cups
+  name: freetype
   
   version: ""
 - 
   category: x11-libs
-  name: libXext
+  name: libXi
   
   version: ""
 - 
   category: x11-libs
-  name: libXrender
-  
-  version: ""
-- 
-  category: app-arch
-  name: bzip2
+  name: pango
   
   version: ""
 - 
@@ -158,8 +133,33 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  name: expat
+  category: x11-libs
+  name: libX11
+  
+  version: 1.5.0
+- 
+  category: x11-misc
+  name: xdg-utils
+  
+  version: ""
+- 
+  category: sec-policy
+  name: selinux-chromium
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXrandr
+  
+  version: ""
+- 
+  category: x11-libs
+  name: gtk+
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXrender
   
   version: ""
 use_flags:

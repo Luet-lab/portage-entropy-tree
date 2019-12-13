@@ -1,8 +1,8 @@
 category: net-fs
 conflicts:
 - 
-  category: net-libs
-  name: libnfsidmap
+  category: net-nds
+  name: portmap
   
   version: ""
 - 
@@ -11,25 +11,15 @@ conflicts:
   
   version: 0.13.9
 - 
-  category: net-nds
-  name: portmap
+  category: net-libs
+  name: libnfsidmap
   
   version: ""
 name: nfs-utils
 requires:
 - 
-  category: sys-libs
-  name: e2fsprogs-libs
-  
-  version: ""
-- 
-  category: dev-db
-  name: sqlite
-  
-  version: "3.3"
-- 
-  category: net-nds
-  name: openldap
+  category: dev-libs
+  name: libxml2
   
   version: ""
 - 
@@ -43,26 +33,6 @@ requires:
   
   version: ""
 - 
-  category: sys-fs
-  name: lvm2
-  
-  version: ""
-- 
-  category: sec-policy
-  name: selinux-rpcbind
-  
-  version: ""
-- 
-  category: net-nds
-  name: rpcbind
-  
-  version: 0.2.4
-- 
-  category: app-crypt
-  name: mit-krb5
-  
-  version: ""
-- 
   category: sys-apps
   name: tcp-wrappers
   
@@ -73,13 +43,28 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  name: libxml2
+  category: dev-db
+  name: sqlite
+  
+  version: "3.3"
+- 
+  category: app-crypt
+  name: mit-krb5
   
   version: ""
 - 
-  category: sys-libs
-  name: libcap
+  category: sec-policy
+  name: selinux-rpcbind
+  
+  version: ""
+- 
+  category: net-libs
+  name: libtirpc
+  
+  version: ""
+- 
+  category: net-nds
+  name: openldap
   
   version: ""
 - 
@@ -93,10 +78,25 @@ requires:
   
   version: 0.2.4-r1
 - 
-  category: net-libs
-  name: libtirpc
+  category: sys-fs
+  name: lvm2
   
   version: ""
+- 
+  category: sys-libs
+  name: e2fsprogs-libs
+  
+  version: ""
+- 
+  category: sys-libs
+  name: libcap
+  
+  version: ""
+- 
+  category: net-nds
+  name: rpcbind
+  
+  version: 0.2.4
 use_flags:
 - caps
 - ipv6

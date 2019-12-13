@@ -1,6 +1,11 @@
 category: sys-apps
 conflicts:
 - 
+  category: <sys-apps
+  name: systemd
+  
+  version: 216-r3
+- 
   category: sys-apps
   name: module-init-tools
   
@@ -15,23 +20,8 @@ conflicts:
   name: openrc
   
   version: 0.13.8
-- 
-  category: <sys-apps
-  name: systemd
-  
-  version: 216-r3
 name: kmod
 requires:
-- 
-  category: dev-libs
-  name: libressl
-  
-  version: ""
-- 
-  category: sys-libs
-  name: zlib
-  
-  version: 1.2.6
 - 
   category: app-arch
   name: xz-utils
@@ -42,6 +32,16 @@ requires:
   name: openssl
   
   version: 1.1.0
+- 
+  category: dev-libs
+  name: libressl
+  
+  version: ""
+- 
+  category: sys-libs
+  name: zlib
+  
+  version: 1.2.6
 use_flags:
 - debug
 - doc

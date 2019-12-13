@@ -8,10 +8,15 @@ requires:
   
   version: ""
 - 
-  category: dev-util
-  name: nvidia-cuda-toolkit
+  category: virtual
+  name: opencl
   
-  version: 4.2.9-r1
+  version: ""
+- 
+  category: sys-apps
+  name: hwloc
+  
+  version: "2"
 - 
   category: sci-libs
   name: mkl
@@ -28,33 +33,28 @@ requires:
   
   version: ""
 - 
+  category: x11-libs
+  name: libICE
+  
+  version: ""
+- 
   category: virtual
   name: blas
   
   version: ""
 - 
-  category: virtual
-  name: opencl
+  category: dev-util
+  name: nvidia-cuda-toolkit
   
-  version: ""
+  version: 4.2.9-r1
 - 
   category: sci-libs
   name: fftw
   
   version: ""
 - 
-  category: sys-apps
-  name: hwloc
-  
-  version: "2"
-- 
   category: virtual
   name: lapack
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libICE
   
   version: ""
 use_flags:

@@ -1,8 +1,8 @@
 category: net-misc
 conflicts:
 - 
-  category: net-analyzer
-  name: traceroute
+  category: net-misc
+  name: arping
   
   version: ""
 - 
@@ -11,12 +11,17 @@ conflicts:
   
   version: ""
 - 
-  category: net-misc
-  name: arping
+  category: net-analyzer
+  name: traceroute
   
   version: ""
 name: iputils
 requires:
+- 
+  category: dev-libs
+  name: libgcrypt
+  
+  version: ""
 - 
   category: dev-libs
   name: nettle
@@ -25,6 +30,11 @@ requires:
 - 
   category: dev-libs
   name: openssl
+  
+  version: ""
+- 
+  category: sys-devel
+  name: gettext
   
   version: ""
 - 
@@ -39,17 +49,7 @@ requires:
   version: ""
 - 
   category: dev-libs
-  name: libgcrypt
-  
-  version: ""
-- 
-  category: dev-libs
   name: libressl
-  
-  version: ""
-- 
-  category: sys-devel
-  name: gettext
   
   version: ""
 use_flags:

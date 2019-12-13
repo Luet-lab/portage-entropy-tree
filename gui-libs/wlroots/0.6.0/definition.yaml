@@ -3,15 +3,20 @@ conflicts: []
 name: wlroots
 requires:
 - 
-  category: dev-libs
-  name: libinput
+  category: media-libs
+  name: mesa
   
-  version: 1.9.0
+  version: ""
 - 
-  category: dev-libs
-  name: wayland
+  category: sys-apps
+  name: systemd
   
-  version: 1.17.0
+  version: "237"
+- 
+  category: media-video
+  name: ffmpeg
+  
+  version: ""
 - 
   category: virtual
   name: libudev
@@ -23,35 +28,20 @@ requires:
   
   version: "237"
 - 
-  category: media-video
-  name: ffmpeg
-  
-  version: ""
-- 
-  category: media-libs
-  name: mesa
-  
-  version: ""
-- 
   category: x11-libs
   name: xcb-util-wm
   
   version: ""
 - 
   category: x11-libs
-  name: libxcb
+  name: xcb-util-image
   
   version: ""
 - 
-  category: x11-base
-  name: xorg-server
+  category: dev-libs
+  name: wayland
   
-  version: ""
-- 
-  category: x11-libs
-  name: libdrm
-  
-  version: ""
+  version: 1.17.0
 - 
   category: x11-libs
   name: libxkbcommon
@@ -63,18 +53,28 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
-  name: systemd
+  category: x11-base
+  name: xorg-server
   
-  version: "237"
+  version: ""
+- 
+  category: dev-libs
+  name: libinput
+  
+  version: 1.9.0
 - 
   category: x11-libs
-  name: xcb-util-image
+  name: libdrm
   
   version: ""
 - 
   category: x11-libs
   name: pixman
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libxcb
   
   version: ""
 use_flags:

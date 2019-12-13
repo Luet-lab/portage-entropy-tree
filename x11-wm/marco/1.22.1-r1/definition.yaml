@@ -8,18 +8,28 @@ conflicts:
 name: marco
 requires:
 - 
-  category: dev-libs
-  name: atk
+  category: gnome-base
+  name: libgtop
+  
+  version: "2"
+- 
+  category: x11-libs
+  name: cairo
   
   version: ""
 - 
   category: x11-libs
-  name: libSM
+  name: pango-1.2[X]
   
   version: ""
 - 
   category: x11-libs
-  name: libXdamage
+  name: libXcursor
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXfixes
   
   version: ""
 - 
@@ -29,27 +39,17 @@ requires:
   version: "0.7"
 - 
   category: x11-libs
-  name: gdk-pixbuf
+  name: libXinerama
   
   version: ""
 - 
-  category: x11-libs
-  name: gtk+
-  
-  version: "3.22"
-- 
-  category: x11-libs
-  name: libXfixes
+  category: gnome-extra
+  name: zenity
   
   version: ""
 - 
-  category: x11-libs
-  name: libXrandr
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXrender
+  category: media-libs
+  name: libcanberra
   
   version: ""
 - 
@@ -63,43 +63,8 @@ requires:
   
   version: ""
 - 
-  category: virtual
-  name: libintl
-  
-  version: ""
-- 
-  category: dev-libs
-  name: glib
-  
-  version: "2.50"
-- 
-  category: gnome-base
-  name: libgtop
-  
-  version: "2"
-- 
-  category: media-libs
-  name: libcanberra
-  
-  version: ""
-- 
   category: x11-libs
-  name: pango-1.2[X]
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libICE
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXinerama
-  
-  version: ""
-- 
-  category: gnome-extra
-  name: zenity
+  name: libXpresent
   
   version: ""
 - 
@@ -109,22 +74,57 @@ requires:
   version: 1.20.0
 - 
   category: x11-libs
-  name: cairo
-  
-  version: ""
-- 
-  category: x11-libs
   name: libXcomposite
   
   version: "0.3"
 - 
   category: x11-libs
-  name: libXcursor
+  name: libXdamage
+  
+  version: ""
+- 
+  category: dev-libs
+  name: atk
+  
+  version: ""
+- 
+  category: dev-libs
+  name: glib
+  
+  version: "2.50"
+- 
+  category: x11-libs
+  name: gdk-pixbuf
   
   version: ""
 - 
   category: x11-libs
-  name: libXpresent
+  name: gtk+
+  
+  version: "3.22"
+- 
+  category: x11-libs
+  name: libICE
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libSM
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXrandr
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXrender
+  
+  version: ""
+- 
+  category: virtual
+  name: libintl
   
   version: ""
 use_flags:

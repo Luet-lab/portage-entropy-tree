@@ -4,19 +4,54 @@ name: weston
 requires:
 - 
   category: x11-libs
-  name: libdrm
+  name: libX11
   
-  version: 2.4.68
+  version: ""
 - 
   category: x11-libs
-  name: libxkbcommon
+  name: cairo
   
-  version: 0.5.0
+  version: ""
+- 
+  category: dev-libs
+  name: wayland-protocols
+  
+  version: "1.18"
+- 
+  category: media-libs
+  name: lcms
+  
+  version: ""
 - 
   category: sys-libs
   name: mtdev
   
   version: 1.1.0
+- 
+  category: x11-libs
+  name: libdrm
+  
+  version: 2.4.68
+- 
+  category: x11-misc
+  name: colord
+  
+  version: 0.1.27
+- 
+  category: sys-auth
+  name: pambase
+  
+  version: ""
+- 
+  category: x11-misc
+  name: xkeyboard-config
+  
+  version: ""
+- 
+  category: sys-apps
+  name: systemd
+  
+  version: "209"
 - 
   category: x11-base
   name: xorg-server
@@ -24,89 +59,14 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: cairo
+  name: libXcursor
   
   version: ""
-- 
-  category: virtual
-  name: jpeg
-  
-  version: ""
-- 
-  category: x11-libs
-  name: pixman
-  
-  version: 0.25.2
-- 
-  category: sys-auth
-  name: pambase
-  
-  version: ""
-- 
-  category: x11-libs
-  name: pango
-  
-  version: ""
-- 
-  category: media-libs
-  name: mesa
-  
-  version: ""
-- 
-  category: sys-apps
-  name: dbus
-  
-  version: "1.6"
-- 
-  category: media-libs
-  name: lcms
-  
-  version: ""
-- 
-  category: x11-libs
-  name: cairo
-  
-  version: 1.11.3
-- 
-  category: sys-apps
-  name: systemd
-  
-  version: "209"
-- 
-  category: dev-libs
-  name: libinput
-  
-  version: 0.8.0
-- 
-  category: media-libs
-  name: libwebp
-  
-  version: ""
-- 
-  category: media-video
-  name: pipewire
-  
-  version: "0.2"
-- 
-  category: dev-libs
-  name: wayland
-  
-  version: 1.17.0
-- 
-  category: virtual
-  name: udev
-  
-  version: "136"
 - 
   category: media-libs
   name: mesa
   
   version: "17.1"
-- 
-  category: net-misc
-  name: freerdp
-  
-  version: 2.0.0_rc2
 - 
   category: media-libs
   name: gstreamer
@@ -118,40 +78,80 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  name: wayland-protocols
-  
-  version: "1.18"
-- 
-  category: x11-misc
-  name: colord
-  
-  version: 0.1.27
-- 
   category: x11-libs
-  name: libX11
+  name: pango
   
   version: ""
+- 
+  category: net-misc
+  name: freerdp
+  
+  version: 2.0.0_rc2
+- 
+  category: sys-apps
+  name: dbus
+  
+  version: "1.6"
+- 
+  category: dev-libs
+  name: libinput
+  
+  version: 0.8.0
+- 
+  category: virtual
+  name: jpeg
+  
+  version: ""
+- 
+  category: virtual
+  name: udev
+  
+  version: "136"
 - 
   category: media-libs
-  name: libpng
+  name: libwebp
   
   version: ""
 - 
-  category: x11-misc
-  name: xkeyboard-config
+  category: x11-libs
+  name: pixman
+  
+  version: 0.25.2
+- 
+  category: media-libs
+  name: mesa
   
   version: ""
+- 
+  category: dev-libs
+  name: wayland
+  
+  version: 1.17.0
+- 
+  category: x11-libs
+  name: cairo
+  
+  version: 1.11.3
 - 
   category: x11-libs
   name: libxcb
   
   version: "1.9"
 - 
-  category: x11-libs
-  name: libXcursor
+  category: media-libs
+  name: libpng
   
   version: ""
+- 
+  category: x11-libs
+  name: libxkbcommon
+  
+  version: 0.5.0
+- 
+  category: media-video
+  name: pipewire
+  
+  version: "0.2"
 use_flags:
 - colord
 - +desktop

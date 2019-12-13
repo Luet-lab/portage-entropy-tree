@@ -3,13 +3,13 @@ conflicts: []
 name: sway
 requires:
 - 
-  category: dev-libs
-  name: libinput
+  category: gui-libs
+  name: wlroots
   
-  version: 1.6.0
+  version: 0.7.0
 - 
   category: x11-libs
-  name: libxkbcommon
+  name: pixman
   
   version: ""
 - 
@@ -18,43 +18,13 @@ requires:
   
   version: "239"
 - 
-  category: x11-libs
-  name: pango
-  
-  version: ""
-- 
-  category: x11-libs
-  name: pixman
-  
-  version: ""
-- 
   category: gui-apps
-  name: swayidle
+  name: swaybg
   
   version: ""
-- 
-  category: dev-libs
-  name: json-c
-  
-  version: "0.13"
 - 
   category: gui-apps
   name: swaylock
-  
-  version: ""
-- 
-  category: x11-libs
-  name: cairo
-  
-  version: ""
-- 
-  category: x11-libs
-  name: gdk-pixbuf
-  
-  version: ""
-- 
-  category: gui-apps
-  name: swaybg
   
   version: ""
 - 
@@ -68,8 +38,23 @@ requires:
   
   version: ""
 - 
-  category: x11-misc
-  name: xkeyboard-config
+  category: x11-libs
+  name: cairo
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libxkbcommon
+  
+  version: ""
+- 
+  category: x11-libs
+  name: gdk-pixbuf
+  
+  version: ""
+- 
+  category: gui-apps
+  name: swayidle
   
   version: ""
 - 
@@ -78,15 +63,30 @@ requires:
   
   version: ""
 - 
+  category: x11-libs
+  name: pango
+  
+  version: ""
+- 
+  category: x11-misc
+  name: xkeyboard-config
+  
+  version: ""
+- 
+  category: dev-libs
+  name: json-c
+  
+  version: "0.13"
+- 
+  category: dev-libs
+  name: libinput
+  
+  version: 1.6.0
+- 
   category: dev-libs
   name: wayland
   
   version: ""
-- 
-  category: gui-libs
-  name: wlroots
-  
-  version: 0.7.0
 use_flags:
 - elogind
 - fish-completion

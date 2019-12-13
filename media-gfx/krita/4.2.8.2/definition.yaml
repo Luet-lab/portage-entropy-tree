@@ -3,43 +3,43 @@ conflicts: []
 name: krita
 requires:
 - 
+  category: dev-python
+  name: sip
+  
+  version: ""
+- 
+  category: dev-qt
+  name: qtconcurrent
+  
+  version: 5.12.3
+- 
+  category: kde-frameworks
+  name: kcrash
+  
+  version: 5.60.0
+- 
+  category: kde-frameworks
+  name: ki18n
+  
+  version: 5.60.0
+- 
+  category: media-gfx
+  name: exiv2
+  
+  version: ""
+- 
+  category: dev-qt
+  name: qtmultimedia
+  
+  version: 5.12.3
+- 
   category: dev-qt
   name: qtprintsupport
   
   version: 5.12.3
 - 
-  category: kde-frameworks
-  name: kconfig
-  
-  version: 5.60.0
-- 
-  category: kde-frameworks
-  name: kitemviews
-  
-  version: 5.60.0
-- 
-  category: sci-libs
-  name: gsl
-  
-  version: ""
-- 
-  category: media-libs
-  name: libheif
-  
-  version: ""
-- 
-  category: media-libs
-  name: ilmbase
-  
-  version: ""
-- 
-  category: media-libs
-  name: libraw
-  
-  version: ""
-- 
   category: dev-qt
-  name: qtgui
+  name: qtwidgets
   
   version: 5.12.3
 - 
@@ -49,19 +49,14 @@ requires:
   version: 5.60.0
 - 
   category: kde-frameworks
-  name: kcoreaddons
+  name: kwidgetsaddons
   
   version: 5.60.0
 - 
   category: kde-frameworks
-  name: kitemmodels
+  name: kwindowsystem
   
   version: 5.60.0
-- 
-  category: media-libs
-  name: lcms
-  
-  version: ""
 - 
   category: x11-libs
   name: libX11
@@ -73,18 +68,23 @@ requires:
   
   version: ""
 - 
-  category: dev-qt
-  name: qtdbus
+  category: media-libs
+  name: openexr
   
-  version: 5.12.3
+  version: ""
 - 
-  category: dev-qt
-  name: qtxml
+  category: dev-python
+  name: PyQt5
   
-  version: 5.12.3
+  version: ""
 - 
   category: kde-frameworks
-  name: kcrash
+  name: karchive
+  
+  version: 5.60.0
+- 
+  category: kde-frameworks
+  name: kitemmodels
   
   version: 5.60.0
 - 
@@ -94,69 +94,29 @@ requires:
   version: 5.60.0
 - 
   category: media-libs
-  name: openexr
-  
-  version: ""
-- 
-  category: dev-libs
-  name: boost
-  
-  version: ""
-- 
-  category: dev-python
-  name: PyQt5
-  
-  version: ""
-- 
-  category: dev-qt
-  name: qtnetwork
-  
-  version: 5.12.3
-- 
-  category: kde-frameworks
-  name: kwidgetsaddons
-  
-  version: 5.60.0
-- 
-  category: virtual
-  name: opengl
-  
-  version: ""
-- 
-  category: dev-python
-  name: sip
-  
-  version: ""
-- 
-  category: kde-frameworks
-  name: kwindowsystem
-  
-  version: 5.60.0
-- 
-  category: x11-libs
-  name: libXi
-  
-  version: ""
-- 
-  category: virtual
-  name: jpeg
-  
-  version: ""
-- 
-  category: app-text
-  name: poppler
+  name: lcms
   
   version: ""
 - 
   category: media-libs
-  name: tiff
+  name: opencolorio
   
   version: ""
 - 
-  category: dev-qt
-  name: qtmultimedia
+  category: sci-libs
+  name: fftw
   
-  version: 5.12.3
+  version: ""
+- 
+  category: media-libs
+  name: libheif
+  
+  version: ""
+- 
+  category: media-libs
+  name: libraw
+  
+  version: ""
 - 
   category: dev-libs
   name: quazip
@@ -174,22 +134,47 @@ requires:
   version: 5.12.3
 - 
   category: kde-frameworks
-  name: kguiaddons
+  name: kcoreaddons
   
   version: 5.60.0
+- 
+  category: kde-frameworks
+  name: kitemviews
+  
+  version: 5.60.0
+- 
+  category: sys-libs
+  name: zlib
+  
+  version: ""
+- 
+  category: virtual
+  name: opengl
+  
+  version: ""
+- 
+  category: app-text
+  name: poppler
+  
+  version: ""
+- 
+  category: media-libs
+  name: tiff
+  
+  version: ""
+- 
+  category: dev-qt
+  name: qtdbus
+  
+  version: 5.12.3
 - 
   category: kde-frameworks
   name: kiconthemes
   
   version: 5.60.0
 - 
-  category: media-gfx
-  name: exiv2
-  
-  version: ""
-- 
-  category: sci-libs
-  name: fftw
+  category: dev-libs
+  name: boost
   
   version: ""
 - 
@@ -198,18 +183,8 @@ requires:
   
   version: 5.12.3
 - 
-  category: dev-qt
-  name: qtwidgets
-  
-  version: 5.12.3
-- 
   category: kde-frameworks
-  name: karchive
-  
-  version: 5.60.0
-- 
-  category: kde-frameworks
-  name: ki18n
+  name: kguiaddons
   
   version: 5.60.0
 - 
@@ -218,20 +193,45 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
-  name: zlib
+  category: virtual
+  name: jpeg
   
   version: ""
 - 
   category: media-libs
-  name: opencolorio
+  name: ilmbase
   
   version: ""
 - 
   category: dev-qt
-  name: qtconcurrent
+  name: qtgui
   
   version: 5.12.3
+- 
+  category: dev-qt
+  name: qtnetwork
+  
+  version: 5.12.3
+- 
+  category: dev-qt
+  name: qtxml
+  
+  version: 5.12.3
+- 
+  category: kde-frameworks
+  name: kconfig
+  
+  version: 5.60.0
+- 
+  category: x11-libs
+  name: libXi
+  
+  version: ""
+- 
+  category: sci-libs
+  name: gsl
+  
+  version: ""
 use_flags:
 - color-management
 - fftw

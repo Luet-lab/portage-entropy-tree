@@ -3,43 +3,33 @@ conflicts: []
 name: qtwebengine
 requires:
 - 
-  category: dev-libs
-  name: expat
+  category: media-libs
+  name: libvpx
+  
+  version: "1.5"
+- 
+  category: x11-libs
+  name: libX11
   
   version: ""
+- 
+  category: dev-qt
+  name: qtpositioning
+  
+  version: 5.12.5
 - 
   category: dev-libs
   name: libxslt
   
   version: ""
 - 
-  category: sys-apps
-  name: dbus
+  category: media-libs
+  name: harfbuzz
   
   version: ""
 - 
-  category: sys-apps
-  name: pciutils
-  
-  version: ""
-- 
-  category: dev-qt
-  name: qtdeclarative
-  
-  version: 5.12.5
-- 
-  category: dev-qt
-  name: qtnetwork
-  
-  version: 5.12.5
-- 
-  category: dev-libs
-  name: libevent
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXcursor
+  category: media-libs
+  name: libpng
   
   version: ""
 - 
@@ -48,18 +38,33 @@ requires:
   
   version: ""
 - 
-  category: dev-qt
-  name: qtcore
+  category: dev-libs
+  name: expat
   
-  version: 5.12.5
+  version: ""
+- 
+  category: x11-libs
+  name: libXrender
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXtst
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXi
+  
+  version: ""
 - 
   category: dev-qt
-  name: qtwebchannel
+  name: qtwidgets
   
   version: 5.12.5
 - 
   category: dev-libs
-  name: re2
+  name: libxml2
   
   version: ""
 - 
@@ -74,37 +79,12 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: libXfixes
-  
-  version: ""
-- 
-  category: dev-qt
-  name: qtwidgets
-  
-  version: 5.12.5
-- 
-  category: dev-libs
-  name: nspr
-  
-  version: ""
-- 
-  category: media-libs
-  name: libpng
-  
-  version: ""
-- 
-  category: virtual
-  name: libudev
-  
-  version: ""
-- 
-  category: x11-libs
   name: libXdamage
   
   version: ""
 - 
   category: x11-libs
-  name: libXScrnSaver
+  name: libXfixes
   
   version: ""
 - 
@@ -113,78 +93,23 @@ requires:
   
   version: ""
 - 
-  category: app-arch
-  name: snappy
-  
-  version: ""
-- 
-  category: media-libs
-  name: libjpeg-turbo
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libdrm
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXtst
-  
-  version: ""
-- 
-  category: dev-libs
-  name: icu
-  
-  version: "60.2"
-- 
   category: dev-qt
-  name: qtprintsupport
+  name: designer
   
   version: 5.12.5
 - 
-  category: media-libs
-  name: opus
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXi
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXrandr
-  
-  version: ""
-- 
-  category: media-video
-  name: ffmpeg
-  
-  version: ""
-- 
-  category: media-libs
-  name: harfbuzz
-  
-  version: ""
-- 
   category: dev-qt
-  name: qtpositioning
+  name: qtnetwork
   
   version: 5.12.5
 - 
-  category: media-libs
-  name: lcms
+  category: sys-apps
+  name: dbus
   
   version: ""
 - 
-  category: media-libs
-  name: libvpx
-  
-  version: "1.5"
-- 
-  category: media-libs
-  name: mesa[egl,X(+)]
+  category: sys-apps
+  name: pciutils
   
   version: ""
 - 
@@ -194,7 +119,17 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: libX11
+  name: libXrandr
+  
+  version: ""
+- 
+  category: dev-libs
+  name: icu
+  
+  version: "60.2"
+- 
+  category: app-arch
+  name: snappy
   
   version: ""
 - 
@@ -204,17 +139,22 @@ requires:
   version: ""
 - 
   category: dev-libs
-  name: libxml2
+  name: re2
   
   version: ""
 - 
   category: media-libs
-  name: fontconfig
+  name: opus
   
   version: ""
 - 
   category: media-libs
-  name: freetype
+  name: mesa[egl,X(+)]
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libdrm
   
   version: ""
 - 
@@ -224,17 +164,42 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: libXrender
+  name: libXScrnSaver
   
   version: ""
 - 
   category: dev-qt
-  name: designer
+  name: qtdeclarative
   
   version: 5.12.5
 - 
+  category: dev-libs
+  name: libevent
+  
+  version: ""
+- 
+  category: media-libs
+  name: fontconfig
+  
+  version: ""
+- 
+  category: media-libs
+  name: libjpeg-turbo
+  
+  version: ""
+- 
   category: media-sound
   name: pulseaudio
+  
+  version: ""
+- 
+  category: media-video
+  name: ffmpeg
+  
+  version: ""
+- 
+  category: dev-libs
+  name: nspr
   
   version: ""
 - 
@@ -242,6 +207,41 @@ requires:
   name: qtgui
   
   version: 5.12.5
+- 
+  category: media-libs
+  name: lcms
+  
+  version: ""
+- 
+  category: virtual
+  name: libudev
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXcursor
+  
+  version: ""
+- 
+  category: dev-qt
+  name: qtcore
+  
+  version: 5.12.5
+- 
+  category: dev-qt
+  name: qtprintsupport
+  
+  version: 5.12.5
+- 
+  category: dev-qt
+  name: qtwebchannel
+  
+  version: 5.12.5
+- 
+  category: media-libs
+  name: freetype
+  
+  version: ""
 use_flags:
 - alsa
 - bindist

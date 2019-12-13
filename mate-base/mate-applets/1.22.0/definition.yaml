@@ -8,13 +8,58 @@ conflicts:
 name: mate-applets
 requires:
 - 
+  category: dev-python
+  name: pygobject
+  
+  version: ""
+- 
+  category: x11-libs
+  name: gdk-pixbuf
+  
+  version: ""
+- 
+  category: x11-libs
+  name: gtk+
+  
+  version: "3.22"
+- 
+  category: x11-libs
+  name: gtksourceview
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libwnck
+  
+  version: "3.0"
+- 
+  category: virtual
+  name: libintl
+  
+  version: ""
+- 
+  category: dev-libs
+  name: dbus-glib
+  
+  version: "0.74"
+- 
   category: gnome-extra
   name: gucharmap
   
   version: "3.0"
 - 
-  category: x11-libs
-  name: gdk-pixbuf
+  category: mate-base
+  name: mate-settings-daemon
+  
+  version: "1.6"
+- 
+  category: mate-base
+  name: mate-panel
+  
+  version: 1.17.0
+- 
+  category: sys-power
+  name: cpupower
   
   version: ""
 - 
@@ -28,18 +73,13 @@ requires:
   
   version: ""
 - 
-  category: sys-power
-  name: upower
+  category: sys-auth
+  name: polkit
   
-  version: 0.9.23
+  version: "0.97"
 - 
   category: dev-libs
-  name: libmateweather
-  
-  version: 1.17.0
-- 
-  category: dev-python
-  name: pygobject
+  name: atk
   
   version: ""
 - 
@@ -48,10 +88,10 @@ requires:
   
   version: 2.12.0
 - 
-  category: mate-base
-  name: mate-panel
+  category: dev-libs
+  name: libxml2
   
-  version: 1.17.0
+  version: "2.5"
 - 
   category: net-wireless
   name: wireless-tools
@@ -64,24 +104,14 @@ requires:
   version: 1.1.2
 - 
   category: x11-libs
-  name: gtksourceview
-  
-  version: ""
-- 
-  category: x11-libs
   name: libnotify
   
   version: "0.7"
 - 
-  category: dev-libs
-  name: atk
+  category: sys-power
+  name: upower
   
-  version: ""
-- 
-  category: mate-base
-  name: mate-settings-daemon
-  
-  version: "1.6"
+  version: 0.9.23
 - 
   category: dev-libs
   name: glib
@@ -89,39 +119,9 @@ requires:
   version: "2.50"
 - 
   category: dev-libs
-  name: libxml2
+  name: libmateweather
   
-  version: "2.5"
-- 
-  category: sys-power
-  name: cpupower
-  
-  version: ""
-- 
-  category: x11-libs
-  name: gtk+
-  
-  version: "3.22"
-- 
-  category: x11-libs
-  name: libwnck
-  
-  version: "3.0"
-- 
-  category: virtual
-  name: libintl
-  
-  version: ""
-- 
-  category: sys-auth
-  name: polkit
-  
-  version: "0.97"
-- 
-  category: dev-libs
-  name: dbus-glib
-  
-  version: "0.74"
+  version: 1.17.0
 use_flags:
 - X
 - ipv6

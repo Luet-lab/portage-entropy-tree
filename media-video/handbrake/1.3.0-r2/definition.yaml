@@ -3,13 +3,18 @@ conflicts: []
 name: handbrake
 requires:
 - 
-  category: dev-libs
-  name: dbus-glib
+  category: media-libs
+  name: libvpx
+  
+  version: "1.8"
+- 
+  category: media-plugins
+  name: gst-plugins-libav
   
   version: ""
 - 
-  category: x11-libs
-  name: libnotify
+  category: media-libs
+  name: fdk-aac
   
   version: ""
 - 
@@ -18,13 +23,18 @@ requires:
   
   version: "3.2"
 - 
-  category: dev-libs
-  name: jansson
+  category: media-libs
+  name: libdvdnav
   
   version: ""
 - 
   category: media-libs
-  name: libtheora
+  name: nv-codec-headers
+  
+  version: ""
+- 
+  category: media-libs
+  name: gst-plugins-base
   
   version: ""
 - 
@@ -34,22 +44,42 @@ requires:
   version: ""
 - 
   category: media-libs
-  name: nv-codec-headers
+  name: gst-plugins-ugly
   
   version: ""
 - 
-  category: media-plugins
-  name: gst-plugins-x264
+  category: media-libs
+  name: dav1d
+  
+  version: 0.5.1
+- 
+  category: sys-libs
+  name: zlib
   
   version: ""
 - 
   category: dev-libs
-  name: glib
+  name: libgudev
   
   version: ""
 - 
-  category: x11-libs
-  name: pango
+  category: media-libs
+  name: x264
+  
+  version: ""
+- 
+  category: media-video
+  name: libav
+  
+  version: "12.2"
+- 
+  category: media-plugins
+  name: gst-plugins-gdkpixbuf
+  
+  version: ""
+- 
+  category: app-arch
+  name: xz-utils
   
   version: ""
 - 
@@ -59,7 +89,52 @@ requires:
   version: ""
 - 
   category: media-libs
+  name: libass
+  
+  version: ""
+- 
+  category: media-libs
+  name: libdvdread
+  
+  version: ""
+- 
+  category: media-libs
+  name: opus
+  
+  version: ""
+- 
+  category: dev-libs
+  name: glib
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libnotify
+  
+  version: ""
+- 
+  category: x11-libs
+  name: gtk+
+  
+  version: "3.10"
+- 
+  category: x11-libs
+  name: gdk-pixbuf
+  
+  version: ""
+- 
+  category: x11-libs
+  name: pango
+  
+  version: ""
+- 
+  category: media-libs
   name: libsamplerate
+  
+  version: ""
+- 
+  category: media-libs
+  name: libtheora
   
   version: ""
 - 
@@ -68,23 +143,18 @@ requires:
   
   version: ""
 - 
-  category: media-video
-  name: ffmpeg
-  
-  version: 4.2.1
-- 
-  category: x11-libs
-  name: gtk+
-  
-  version: "3.10"
-- 
-  category: dev-libs
-  name: libgudev
+  category: media-libs
+  name: gstreamer
   
   version: ""
 - 
-  category: app-arch
-  name: xz-utils
+  category: media-plugins
+  name: gst-plugins-a52dec
+  
+  version: ""
+- 
+  category: dev-libs
+  name: jansson
   
   version: ""
 - 
@@ -94,27 +164,17 @@ requires:
   version: ""
 - 
   category: media-libs
-  name: libdvdnav
+  name: libbluray
+  
+  version: "1.0"
+- 
+  category: x11-libs
+  name: cairo
   
   version: ""
 - 
-  category: media-video
-  name: libav
-  
-  version: "12.2"
-- 
-  category: media-libs
-  name: gst-plugins-base
-  
-  version: ""
-- 
-  category: media-libs
-  name: fdk-aac
-  
-  version: ""
-- 
-  category: media-plugins
-  name: gst-plugins-gdkpixbuf
+  category: dev-libs
+  name: dbus-glib
   
   version: ""
 - 
@@ -123,83 +183,23 @@ requires:
   
   version: ""
 - 
-  category: media-libs
-  name: libbluray
-  
-  version: "1.0"
-- 
-  category: media-libs
-  name: libdvdread
+  category: media-sound
+  name: lame
   
   version: ""
 - 
-  category: media-libs
-  name: libass
+  category: media-video
+  name: ffmpeg
   
-  version: ""
-- 
-  category: media-libs
-  name: opus
-  
-  version: ""
-- 
-  category: media-plugins
-  name: gst-plugins-libav
-  
-  version: ""
-- 
-  category: media-libs
-  name: libvpx
-  
-  version: "1.8"
-- 
-  category: media-libs
-  name: x264
-  
-  version: ""
-- 
-  category: sys-libs
-  name: zlib
-  
-  version: ""
+  version: 4.2.1
 - 
   category: media-libs
   name: gst-plugins-good
   
   version: ""
 - 
-  category: media-libs
-  name: gst-plugins-ugly
-  
-  version: ""
-- 
   category: media-plugins
-  name: gst-plugins-a52dec
-  
-  version: ""
-- 
-  category: x11-libs
-  name: cairo
-  
-  version: ""
-- 
-  category: x11-libs
-  name: gdk-pixbuf
-  
-  version: ""
-- 
-  category: media-libs
-  name: dav1d
-  
-  version: 0.5.1
-- 
-  category: media-sound
-  name: lame
-  
-  version: ""
-- 
-  category: media-libs
-  name: gstreamer
+  name: gst-plugins-x264
   
   version: ""
 use_flags:

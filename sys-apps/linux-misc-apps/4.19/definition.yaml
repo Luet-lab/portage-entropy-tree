@@ -1,17 +1,27 @@
 category: sys-apps
 conflicts:
 - 
-  category: sys-power
-  name: pmtools
-  
-  version: ""
-- 
   category: net-misc
   name: usbip
   
   version: ""
+- 
+  category: sys-power
+  name: pmtools
+  
+  version: ""
 name: linux-misc-apps
 requires:
+- 
+  category: sys-kernel
+  name: linux-headers
+  
+  version: ""
+- 
+  category: sys-apps
+  name: tcp-wrappers
+  
+  version: ""
 - 
   category: virtual
   name: libudev
@@ -27,16 +37,6 @@ requires:
   name: glib
   
   version: "2.6"
-- 
-  category: sys-kernel
-  name: linux-headers
-  
-  version: ""
-- 
-  category: sys-apps
-  name: tcp-wrappers
-  
-  version: ""
 use_flags:
 - static-libs
 - tcpd

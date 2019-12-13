@@ -3,68 +3,13 @@ conflicts: []
 name: git
 requires:
 - 
-  category: dev-perl
-  name: MediaWiki-API
-  
-  version: ""
-- 
-  category: dev-perl
-  name: libwww-perl
-  
-  version: ""
-- 
-  category: net-misc
-  name: curl
-  
-  version: ""
-- 
-  category: dev-libs
-  name: expat
-  
-  version: ""
-- 
-  category: dev-perl
-  name: DBI
-  
-  version: ""
-- 
-  category: dev-perl
-  name: DateTime-Format-ISO8601
-  
-  version: ""
-- 
-  category: dev-libs
-  name: openssl
-  
-  version: ""
-- 
-  category: dev-lang
-  name: perl
-  
-  version: ""
-- 
-  category: dev-perl
-  name: CGI
-  
-  version: ""
-- 
-  category: dev-perl
-  name: HTML-Tree
-  
-  version: ""
-- 
-  category: dev-vcs
-  name: subversion
-  
-  version: ""
-- 
   category: dev-libs
   name: libpcre
   
   version: ""
 - 
   category: dev-lang
-  name: tk
+  name: perl
   
   version: ""
 - 
@@ -74,17 +19,32 @@ requires:
   version: ""
 - 
   category: dev-perl
-  name: MailTools
+  name: HTML-Tree
   
   version: ""
 - 
-  category: sys-libs
-  name: zlib
+  category: app-crypt
+  name: libsecret
   
   version: ""
 - 
-  category: virtual
-  name: emacs
+  category: dev-perl
+  name: DBD-SQLite
+  
+  version: ""
+- 
+  category: dev-perl
+  name: DateTime-Format-ISO8601
+  
+  version: ""
+- 
+  category: dev-perl
+  name: MediaWiki-API
+  
+  version: ""
+- 
+  category: net-misc
+  name: curl
   
   version: ""
 - 
@@ -94,12 +54,42 @@ requires:
   version: ""
 - 
   category: dev-perl
-  name: Authen-SASL
+  name: CGI
   
   version: ""
 - 
-  category: app-text
-  name: highlight
+  category: dev-perl
+  name: TermReadKey
+  
+  version: ""
+- 
+  category: dev-libs
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libressl
+  
+  version: ""
+- 
+  category: dev-vcs
+  name: subversion
+  
+  version: ""
+- 
+  category: dev-lang
+  name: tk
+  
+  version: ""
+- 
+  category: dev-libs
+  name: expat
+  
+  version: ""
+- 
+  category: virtual
+  name: libiconv
   
   version: ""
 - 
@@ -114,27 +104,37 @@ requires:
   version: ""
 - 
   category: dev-perl
-  name: TermReadKey
-  
-  version: ""
-- 
-  category: app-crypt
-  name: libsecret
-  
-  version: ""
-- 
-  category: virtual
-  name: libiconv
+  name: MailTools
   
   version: ""
 - 
   category: dev-perl
-  name: DBD-SQLite
+  name: Authen-SASL
   
   version: ""
 - 
-  category: dev-libs
-  name: libressl
+  category: app-text
+  name: highlight
+  
+  version: ""
+- 
+  category: dev-perl
+  name: DBI
+  
+  version: ""
+- 
+  category: dev-perl
+  name: libwww-perl
+  
+  version: ""
+- 
+  category: sys-libs
+  name: zlib
+  
+  version: ""
+- 
+  category: virtual
+  name: emacs
   
   version: ""
 use_flags:
@@ -155,7 +155,7 @@ use_flags:
 - +pcre-jit
 - perforce
 - +perl
-- ppcsha1
+- +ppcsha1
 - tk
 - +threads
 - +webdav

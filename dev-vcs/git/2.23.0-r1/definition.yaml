@@ -3,43 +3,13 @@ conflicts: []
 name: git
 requires:
 - 
+  category: app-crypt
+  name: libsecret
+  
+  version: ""
+- 
   category: dev-libs
   name: libressl
-  
-  version: ""
-- 
-  category: virtual
-  name: libiconv
-  
-  version: ""
-- 
-  category: dev-libs
-  name: expat
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libpcre2[jit(+)]
-  
-  version: ""
-- 
-  category: dev-perl
-  name: CGI
-  
-  version: ""
-- 
-  category: dev-perl
-  name: MediaWiki-API
-  
-  version: ""
-- 
-  category: dev-lang
-  name: perl
-  
-  version: ""
-- 
-  category: app-crypt
-  name: gnupg
   
   version: ""
 - 
@@ -49,27 +19,27 @@ requires:
   version: ""
 - 
   category: dev-perl
-  name: DBI
-  
-  version: ""
-- 
-  category: dev-perl
-  name: DBD-SQLite
-  
-  version: ""
-- 
-  category: dev-perl
-  name: HTML-Tree
+  name: CGI
   
   version: ""
 - 
   category: dev-vcs
-  name: subversion
+  name: cvsps
+  
+  version: "2.1"
+- 
+  category: dev-perl
+  name: libwww-perl
   
   version: ""
 - 
-  category: virtual
-  name: emacs
+  category: net-misc
+  name: curl
+  
+  version: ""
+- 
+  category: app-crypt
+  name: gnupg
   
   version: ""
 - 
@@ -83,18 +53,23 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
-  name: zlib
+  category: dev-perl
+  name: DateTime-Format-ISO8601
   
   version: ""
 - 
   category: dev-libs
-  name: libpcre
+  name: openssl
   
   version: ""
 - 
-  category: net-misc
-  name: curl
+  category: virtual
+  name: emacs
+  
+  version: ""
+- 
+  category: virtual
+  name: libiconv
   
   version: ""
 - 
@@ -103,18 +78,23 @@ requires:
   
   version: ""
 - 
-  category: dev-perl
-  name: DateTime-Format-ISO8601
+  category: sys-libs
+  name: zlib
+  
+  version: ""
+- 
+  category: dev-vcs
+  name: subversion
   
   version: ""
 - 
   category: dev-perl
-  name: libwww-perl
+  name: DBD-SQLite
   
   version: ""
 - 
-  category: app-crypt
-  name: libsecret
+  category: dev-perl
+  name: HTML-Tree
   
   version: ""
 - 
@@ -124,14 +104,34 @@ requires:
   version: ""
 - 
   category: dev-libs
-  name: openssl
+  name: expat
   
   version: ""
 - 
-  category: dev-vcs
-  name: cvsps
+  category: dev-perl
+  name: DBI
   
-  version: "2.1"
+  version: ""
+- 
+  category: dev-libs
+  name: libpcre2[jit(+)]
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libpcre
+  
+  version: ""
+- 
+  category: dev-lang
+  name: perl
+  
+  version: ""
+- 
+  category: dev-perl
+  name: MediaWiki-API
+  
+  version: ""
 - 
   category: dev-perl
   name: TermReadKey
@@ -155,7 +155,7 @@ use_flags:
 - +pcre-jit
 - perforce
 - +perl
-- ppcsha1
+- +ppcsha1
 - tk
 - +threads
 - +webdav

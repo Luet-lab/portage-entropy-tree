@@ -3,6 +3,16 @@ conflicts: []
 name: qt3d
 requires:
 - 
+  category: media-libs
+  name: assimp
+  
+  version: 4.0.0
+- 
+  category: dev-qt
+  name: qtdeclarative-5.12.3[gles2=]
+  
+  version: ""
+- 
   category: dev-qt
   name: qtconcurrent
   
@@ -22,16 +32,6 @@ requires:
   name: qtnetwork
   
   version: 5.12.3
-- 
-  category: media-libs
-  name: assimp
-  
-  version: 4.0.0
-- 
-  category: dev-qt
-  name: qtdeclarative-5.12.3[gles2=]
-  
-  version: ""
 use_flags:
 - gles2
 - qml

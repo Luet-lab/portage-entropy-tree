@@ -8,6 +8,11 @@ conflicts:
 name: engrampa
 requires:
 - 
+  category: sys-apps
+  name: file
+  
+  version: ""
+- 
   category: dev-libs
   name: glib
   
@@ -17,26 +22,6 @@ requires:
   name: json-glib
   
   version: "0.14"
-- 
-  category: x11-libs
-  name: gdk-pixbuf
-  
-  version: ""
-- 
-  category: sys-apps
-  name: file
-  
-  version: ""
-- 
-  category: app-admin
-  name: packagekit-base
-  
-  version: ""
-- 
-  category: virtual
-  name: libintl
-  
-  version: ""
 - 
   category: x11-libs
   name: gtk+
@@ -52,6 +37,21 @@ requires:
   name: caja
   
   version: 1.17.1
+- 
+  category: app-admin
+  name: packagekit-base
+  
+  version: ""
+- 
+  category: virtual
+  name: libintl
+  
+  version: ""
+- 
+  category: x11-libs
+  name: gdk-pixbuf
+  
+  version: ""
 use_flags:
 - caja
 - magic

@@ -4,17 +4,7 @@ name: cryptsetup
 requires:
 - 
   category: dev-libs
-  name: nettle
-  
-  version: "2.4"
-- 
-  category: dev-libs
   name: libpwquality
-  
-  version: ""
-- 
-  category: dev-libs
-  name: popt[static-libs(+)]
   
   version: ""
 - 
@@ -24,7 +14,27 @@ requires:
   version: ""
 - 
   category: dev-libs
-  name: nettle-2.4[static-libs(+)]
+  name: libressl
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libpwquality[static-libs(+)]
+  
+  version: ""
+- 
+  category: sys-fs
+  name: lvm2[static-libs(+)]
+  
+  version: ""
+- 
+  category: virtual
+  name: libudev[static-libs(-)]
+  
+  version: ""
+- 
+  category: dev-libs
+  name: popt[static-libs(+)]
   
   version: ""
 - 
@@ -34,19 +44,39 @@ requires:
   version: ""
 - 
   category: dev-libs
-  name: libressl
-  
-  version: ""
-- 
-  category: sys-fs
-  name: lvm2[static-libs(+)]
+  name: libgpg-error
   
   version: ""
 - 
   category: dev-libs
-  name: popt
+  name: nettle
+  
+  version: "2.4"
+- 
+  category: virtual
+  name: libudev
   
   version: ""
+- 
+  category: dev-libs
+  name: json-c
+  
+  version: ""
+- 
+  category: sys-apps
+  name: util-linux-2.31-r1[static-libs(+)]
+  
+  version: ""
+- 
+  category: dev-libs
+  name: nettle-2.4[static-libs(+)]
+  
+  version: ""
+- 
+  category: sys-apps
+  name: util-linux
+  
+  version: 2.31-r1
 - 
   category: sys-fs
   name: lvm2
@@ -58,43 +88,13 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  name: libpwquality[static-libs(+)]
-  
-  version: ""
-- 
-  category: virtual
-  name: libudev[static-libs(-)]
-  
-  version: ""
-- 
-  category: sys-apps
-  name: util-linux-2.31-r1[static-libs(+)]
-  
-  version: ""
-- 
   category: app-crypt
   name: argon2
   
   version: ""
 - 
   category: dev-libs
-  name: libgpg-error
-  
-  version: ""
-- 
-  category: sys-apps
-  name: util-linux
-  
-  version: 2.31-r1
-- 
-  category: virtual
-  name: libudev
-  
-  version: ""
-- 
-  category: dev-libs
-  name: json-c
+  name: popt
   
   version: ""
 use_flags:

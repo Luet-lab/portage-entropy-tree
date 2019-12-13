@@ -3,8 +3,13 @@ conflicts: []
 name: gnuplot
 requires:
 - 
-  category: x11-libs
-  name: gtk+
+  category: dev-qt
+  name: qtcore
+  
+  version: ""
+- 
+  category: dev-qt
+  name: qtprintsupport
   
   version: ""
 - 
@@ -13,20 +18,45 @@ requires:
   
   version: ""
 - 
+  category: x11-libs
+  name: cairo
+  
+  version: ""
+- 
+  category: x11-libs
+  name: pango
+  
+  version: ""
+- 
+  category: media-libs
+  name: gd
+  
+  version: 2.0.35-r3
+- 
+  category: dev-tex
+  name: pgf
+  
+  version: ""
+- 
+  category: media-libs
+  name: libggi
+  
+  version: ""
+- 
+  category: dev-qt
+  name: qtgui
+  
+  version: ""
+- 
+  category: x11-libs
+  name: gtk+
+  
+  version: ""
+- 
   category: dev-texlive
   name: texlive-latexrecommended
   
   version: 2008-r2
-- 
-  category: dev-qt
-  name: qtcore
-  
-  version: ""
-- 
-  category: sci-libs
-  name: libcerf
-  
-  version: ""
 - 
   category: dev-qt
   name: qtwidgets
@@ -43,48 +73,8 @@ requires:
   
   version: ""
 - 
-  category: media-libs
-  name: gd
-  
-  version: 2.0.35-r3
-- 
-  category: media-libs
-  name: libggi
-  
-  version: ""
-- 
-  category: dev-qt
-  name: qtgui
-  
-  version: ""
-- 
-  category: dev-qt
-  name: qtnetwork
-  
-  version: ""
-- 
-  category: dev-qt
-  name: qtprintsupport
-  
-  version: ""
-- 
   category: dev-qt
   name: qtsvg
-  
-  version: ""
-- 
-  category: x11-libs
-  name: cairo
-  
-  version: ""
-- 
-  category: virtual
-  name: latex-base
-  
-  version: ""
-- 
-  category: dev-lang
-  name: lua
   
   version: ""
 - 
@@ -93,18 +83,28 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
-  name: pango
+  category: sci-libs
+  name: libcerf
   
   version: ""
 - 
-  category: dev-tex
-  name: pgf
+  category: virtual
+  name: latex-base
   
   version: ""
 - 
   category: media-libs
   name: libcaca
+  
+  version: ""
+- 
+  category: dev-lang
+  name: lua
+  
+  version: ""
+- 
+  category: dev-qt
+  name: qtnetwork
   
   version: ""
 use_flags:

@@ -3,13 +3,13 @@ conflicts: []
 name: libprojectm
 requires:
 - 
-  category: sys-libs
-  name: zlib
+  category: media-libs
+  name: mesa[X(+)]
   
   version: ""
 - 
-  category: media-libs
-  name: mesa
+  category: dev-qt
+  name: qtcore
   
   version: ""
 - 
@@ -20,6 +20,21 @@ requires:
 - 
   category: dev-qt
   name: qtopengl
+  
+  version: ""
+- 
+  category: sys-libs
+  name: zlib
+  
+  version: ""
+- 
+  category: media-libs
+  name: glm
+  
+  version: ""
+- 
+  category: dev-qt
+  name: qtgui
   
   version: ""
 - 
@@ -34,22 +49,7 @@ requires:
   version: 2.0.5
 - 
   category: media-libs
-  name: glm
-  
-  version: ""
-- 
-  category: media-libs
-  name: mesa[X(+)]
-  
-  version: ""
-- 
-  category: dev-qt
-  name: qtcore
-  
-  version: ""
-- 
-  category: dev-qt
-  name: qtgui
+  name: mesa
   
   version: ""
 use_flags:

@@ -4,12 +4,12 @@ name: sudo
 requires:
 - 
   category: sys-libs
-  name: zlib
+  name: pam
   
   version: ""
 - 
-  category: dev-libs
-  name: cyrus-sasl
+  category: sys-libs
+  name: zlib
   
   version: ""
 - 
@@ -19,12 +19,22 @@ requires:
   version: ""
 - 
   category: dev-libs
-  name: libgcrypt
+  name: libressl
   
   version: ""
 - 
-  category: virtual
-  name: mta
+  category: dev-lang
+  name: perl
+  
+  version: ""
+- 
+  category: sys-auth
+  name: pambase
+  
+  version: ""
+- 
+  category: sec-policy
+  name: selinux-sudo
   
   version: ""
 - 
@@ -33,8 +43,8 @@ requires:
   
   version: 2.1.30-r1
 - 
-  category: sys-libs
-  name: pam
+  category: dev-libs
+  name: cyrus-sasl
   
   version: ""
 - 
@@ -44,7 +54,7 @@ requires:
   version: ""
 - 
   category: dev-libs
-  name: libressl
+  name: libgcrypt
   
   version: ""
 - 
@@ -53,23 +63,8 @@ requires:
   
   version: ""
 - 
-  category: sec-policy
-  name: selinux-sudo
-  
-  version: ""
-- 
-  category: app-misc
-  name: editor-wrapper
-  
-  version: "3"
-- 
-  category: dev-lang
-  name: perl
-  
-  version: ""
-- 
-  category: sys-auth
-  name: pambase
+  category: virtual
+  name: mta
   
   version: ""
 - 
@@ -82,6 +77,11 @@ requires:
   name: openssl
   
   version: ""
+- 
+  category: app-misc
+  name: editor-wrapper
+  
+  version: "3"
 use_flags:
 - gcrypt
 - ldap

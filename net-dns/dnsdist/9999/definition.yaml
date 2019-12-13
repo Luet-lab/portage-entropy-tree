@@ -4,27 +4,17 @@ name: dnsdist
 requires:
 - 
   category: dev-libs
-  name: libedit
-  
-  version: ""
-- 
-  category: dev-libs
   name: protobuf
   
   version: "3"
-- 
-  category: dev-libs
-  name: re2
-  
-  version: ""
 - 
   category: net-analyzer
   name: net-snmp
   
   version: ""
 - 
-  category: sys-apps
-  name: systemd
+  category: dev-libs
+  name: libsodium
   
   version: ""
 - 
@@ -33,8 +23,8 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  name: openssl
+  category: sys-apps
+  name: systemd
   
   version: ""
 - 
@@ -42,6 +32,21 @@ requires:
   name: boost
   
   version: "1.35"
+- 
+  category: dev-libs
+  name: libedit
+  
+  version: ""
+- 
+  category: dev-lang
+  name: lua
+  
+  version: "5.1"
+- 
+  category: dev-libs
+  name: openssl
+  
+  version: ""
 - 
   category: dev-libs
   name: fstrm
@@ -53,13 +58,8 @@ requires:
   
   version: ""
 - 
-  category: dev-lang
-  name: lua
-  
-  version: "5.1"
-- 
   category: dev-libs
-  name: libsodium
+  name: re2
   
   version: ""
 use_flags:

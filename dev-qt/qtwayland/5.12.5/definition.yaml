@@ -4,6 +4,11 @@ name: qtwayland
 requires:
 - 
   category: x11-libs
+  name: libxkbcommon
+  
+  version: 0.2.0
+- 
+  category: x11-libs
   name: libX11
   
   version: ""
@@ -37,11 +42,6 @@ requires:
   name: mesa
   
   version: ""
-- 
-  category: x11-libs
-  name: libxkbcommon
-  
-  version: 0.2.0
 use_flags:
 - +libinput
 - xcomposite

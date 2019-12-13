@@ -8,8 +8,23 @@ conflicts:
 name: boinc
 requires:
 - 
-  category: dev-db
-  name: sqlite
+  category: net-misc
+  name: curl[curl_ssl_gnutls(-)=,curl_ssl_libressl(-)=,-curl_ssl_nss(-),curl_ssl_openssl(-)=,-curl_ssl_axtls(-),-curl_ssl_cyassl(-)]
+  
+  version: ""
+- 
+  category: sys-apps
+  name: util-linux
+  
+  version: ""
+- 
+  category: virtual
+  name: jpeg
+  
+  version: ""
+- 
+  category: x11-libs
+  name: gtk+
   
   version: ""
 - 
@@ -18,8 +33,13 @@ requires:
   
   version: ""
 - 
-  category: virtual
-  name: jpeg
+  category: x11-libs
+  name: libnotify
+  
+  version: "0.7"
+- 
+  category: x11-libs
+  name: wxGTK
   
   version: ""
 - 
@@ -38,33 +58,13 @@ requires:
   
   version: "180.22"
 - 
-  category: net-misc
-  name: curl[curl_ssl_gnutls(-)=,curl_ssl_libressl(-)=,-curl_ssl_nss(-),curl_ssl_openssl(-)=,-curl_ssl_axtls(-),-curl_ssl_cyassl(-)]
-  
-  version: ""
-- 
-  category: sys-apps
-  name: util-linux
-  
-  version: ""
-- 
-  category: x11-libs
-  name: gtk+
-  
-  version: ""
-- 
   category: sys-libs
   name: zlib
   
   version: ""
 - 
-  category: x11-libs
-  name: libnotify
-  
-  version: "0.7"
-- 
-  category: x11-libs
-  name: wxGTK
+  category: dev-db
+  name: sqlite
   
   version: ""
 use_flags:

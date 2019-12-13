@@ -3,11 +3,6 @@ conflicts: []
 name: libcacard
 requires:
 - 
-  category: sys-apps
-  name: pcsc-lite
-  
-  version: "1.8"
-- 
   category: dev-libs
   name: nss
   
@@ -17,6 +12,11 @@ requires:
   name: glib
   
   version: "2.22"
+- 
+  category: sys-apps
+  name: pcsc-lite
+  
+  version: "1.8"
 use_flags:
 - +passthrough
 - static-libs

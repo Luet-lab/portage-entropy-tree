@@ -3,8 +3,13 @@ conflicts: []
 name: git
 requires:
 - 
+  category: dev-libs
+  name: libressl
+  
+  version: ""
+- 
   category: dev-perl
-  name: CGI
+  name: MailTools
   
   version: ""
 - 
@@ -14,17 +19,32 @@ requires:
   version: ""
 - 
   category: dev-perl
-  name: HTML-Tree
-  
-  version: ""
-- 
-  category: sys-libs
-  name: zlib
+  name: MediaWiki-API
   
   version: ""
 - 
   category: app-crypt
-  name: gnupg
+  name: libsecret
+  
+  version: ""
+- 
+  category: dev-vcs
+  name: cvsps
+  
+  version: "2.1"
+- 
+  category: dev-vcs
+  name: subversion
+  
+  version: ""
+- 
+  category: dev-libs
+  name: expat
+  
+  version: ""
+- 
+  category: dev-lang
+  name: tk
   
   version: ""
 - 
@@ -34,32 +54,27 @@ requires:
   version: ""
 - 
   category: dev-perl
-  name: DBI
+  name: CGI
   
   version: ""
 - 
   category: dev-perl
-  name: MailTools
-  
-  version: ""
-- 
-  category: dev-lang
-  name: tk
+  name: libwww-perl
   
   version: ""
 - 
   category: dev-libs
-  name: libressl
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libpcre2[jit(+)]
+  name: libpcre
   
   version: ""
 - 
   category: virtual
-  name: libiconv
+  name: emacs
+  
+  version: ""
+- 
+  category: app-crypt
+  name: gnupg
   
   version: ""
 - 
@@ -68,53 +83,8 @@ requires:
   
   version: ""
 - 
-  category: dev-perl
-  name: DBD-SQLite
-  
-  version: ""
-- 
-  category: dev-libs
-  name: openssl
-  
-  version: ""
-- 
-  category: net-misc
-  name: curl
-  
-  version: ""
-- 
-  category: dev-libs
-  name: expat
-  
-  version: ""
-- 
-  category: dev-vcs
-  name: cvsps
-  
-  version: "2.1"
-- 
-  category: virtual
-  name: emacs
-  
-  version: ""
-- 
-  category: dev-vcs
-  name: subversion
-  
-  version: ""
-- 
-  category: app-crypt
-  name: libsecret
-  
-  version: ""
-- 
-  category: dev-perl
-  name: MediaWiki-API
-  
-  version: ""
-- 
-  category: dev-perl
-  name: libwww-perl
+  category: app-text
+  name: highlight
   
   version: ""
 - 
@@ -124,17 +94,47 @@ requires:
   version: ""
 - 
   category: dev-libs
-  name: libpcre
-  
-  version: ""
-- 
-  category: app-text
-  name: highlight
+  name: openssl
   
   version: ""
 - 
   category: dev-lang
   name: perl
+  
+  version: ""
+- 
+  category: net-misc
+  name: curl
+  
+  version: ""
+- 
+  category: virtual
+  name: libiconv
+  
+  version: ""
+- 
+  category: sys-libs
+  name: zlib
+  
+  version: ""
+- 
+  category: dev-perl
+  name: DBD-SQLite
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libpcre2[jit(+)]
+  
+  version: ""
+- 
+  category: dev-perl
+  name: DBI
+  
+  version: ""
+- 
+  category: dev-perl
+  name: HTML-Tree
   
   version: ""
 use_flags:
@@ -155,7 +155,7 @@ use_flags:
 - +pcre-jit
 - perforce
 - +perl
-- ppcsha1
+- +ppcsha1
 - tk
 - +threads
 - +webdav

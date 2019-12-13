@@ -3,6 +3,11 @@ conflicts: []
 name: gqrx
 requires:
 - 
+  category: media-libs
+  name: portaudio
+  
+  version: ""
+- 
   category: net-wireless
   name: gr-osmosdr
   
@@ -24,22 +29,12 @@ requires:
   version: ""
 - 
   category: dev-qt
-  name: qtsvg
+  name: qtnetwork
   
   version: ""
-- 
-  category: media-sound
-  name: pulseaudio
-  
-  version: ""
-- 
-  category: net-wireless
-  name: gnuradio
-  
-  version: 3.7_rc
 - 
   category: dev-qt
-  name: qtnetwork
+  name: qtsvg
   
   version: ""
 - 
@@ -48,8 +43,13 @@ requires:
   
   version: ""
 - 
-  category: media-libs
-  name: portaudio
+  category: net-wireless
+  name: gnuradio
+  
+  version: 3.7_rc
+- 
+  category: media-sound
+  name: pulseaudio
   
   version: ""
 use_flags:

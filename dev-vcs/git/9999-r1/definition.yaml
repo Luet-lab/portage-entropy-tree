@@ -3,13 +3,13 @@ conflicts: []
 name: git
 requires:
 - 
-  category: dev-lang
-  name: perl
+  category: dev-libs
+  name: openssl
   
   version: ""
 - 
-  category: dev-lang
-  name: tk
+  category: dev-libs
+  name: libressl
   
   version: ""
 - 
@@ -18,8 +18,28 @@ requires:
   
   version: ""
 - 
-  category: app-text
-  name: highlight
+  category: dev-perl
+  name: MailTools
+  
+  version: ""
+- 
+  category: dev-perl
+  name: DBD-SQLite
+  
+  version: ""
+- 
+  category: dev-perl
+  name: MediaWiki-API
+  
+  version: ""
+- 
+  category: dev-vcs
+  name: subversion
+  
+  version: ""
+- 
+  category: dev-lang
+  name: tk
   
   version: ""
 - 
@@ -29,12 +49,17 @@ requires:
   version: "2.1"
 - 
   category: dev-perl
-  name: TermReadKey
+  name: DBI
   
   version: ""
 - 
-  category: dev-libs
-  name: libpcre
+  category: dev-perl
+  name: HTML-Tree
+  
+  version: ""
+- 
+  category: app-text
+  name: highlight
   
   version: ""
 - 
@@ -43,8 +68,13 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  name: expat
+  category: virtual
+  name: emacs
+  
+  version: ""
+- 
+  category: app-crypt
+  name: gnupg
   
   version: ""
 - 
@@ -58,18 +88,28 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  name: libressl
+  category: dev-lang
+  name: perl
   
   version: ""
 - 
-  category: dev-perl
-  name: HTML-Tree
+  category: sys-libs
+  name: zlib
   
   version: ""
 - 
   category: dev-perl
   name: Error
+  
+  version: ""
+- 
+  category: app-crypt
+  name: libsecret
+  
+  version: ""
+- 
+  category: dev-libs
+  name: expat
   
   version: ""
 - 
@@ -79,37 +119,7 @@ requires:
   version: ""
 - 
   category: dev-libs
-  name: openssl
-  
-  version: ""
-- 
-  category: sys-libs
-  name: zlib
-  
-  version: ""
-- 
-  category: dev-libs
   name: libpcre2[jit(+)]
-  
-  version: ""
-- 
-  category: dev-perl
-  name: DBD-SQLite
-  
-  version: ""
-- 
-  category: app-crypt
-  name: gnupg
-  
-  version: ""
-- 
-  category: dev-perl
-  name: MailTools
-  
-  version: ""
-- 
-  category: dev-perl
-  name: DBI
   
   version: ""
 - 
@@ -118,23 +128,13 @@ requires:
   
   version: ""
 - 
-  category: dev-vcs
-  name: subversion
-  
-  version: ""
-- 
-  category: app-crypt
-  name: libsecret
-  
-  version: ""
-- 
-  category: virtual
-  name: emacs
-  
-  version: ""
-- 
   category: dev-perl
-  name: MediaWiki-API
+  name: TermReadKey
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libpcre
   
   version: ""
 use_flags:
@@ -155,7 +155,7 @@ use_flags:
 - +pcre-jit
 - perforce
 - +perl
-- ppcsha1
+- +ppcsha1
 - tk
 - +threads
 - +webdav

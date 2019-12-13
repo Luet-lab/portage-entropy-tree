@@ -3,6 +3,11 @@ conflicts: []
 name: wmbattery
 requires:
 - 
+  category: sys-apps
+  name: apmd
+  
+  version: ""
+- 
   category: x11-libs
   name: libX11
   
@@ -22,11 +27,6 @@ requires:
   name: upower
   
   version: 0.9.23
-- 
-  category: sys-apps
-  name: apmd
-  
-  version: ""
 use_flags:
 - apm
 - +upower

@@ -3,8 +3,18 @@ conflicts: []
 name: libblockdev
 requires:
 - 
-  category: virtual
-  name: udev
+  category: sys-apps
+  name: kmod
+  
+  version: "19"
+- 
+  category: sys-fs
+  name: cryptsetup
+  
+  version: 1.6.7
+- 
+  category: sys-fs
+  name: dmraid
   
   version: ""
 - 
@@ -24,21 +34,6 @@ requires:
   version: ""
 - 
   category: sys-apps
-  name: kmod
-  
-  version: "19"
-- 
-  category: dev-libs
-  name: volume_key
-  
-  version: ""
-- 
-  category: sys-fs
-  name: dmraid
-  
-  version: ""
-- 
-  category: sys-apps
   name: util-linux
   
   version: "2.27"
@@ -53,13 +48,18 @@ requires:
   
   version: 3.18.0
 - 
-  category: sys-fs
-  name: cryptsetup
+  category: dev-libs
+  name: volume_key
   
-  version: 1.6.7
+  version: ""
 - 
   category: sys-fs
   name: lvm2
+  
+  version: ""
+- 
+  category: virtual
+  name: udev
   
   version: ""
 use_flags:

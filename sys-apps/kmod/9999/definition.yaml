@@ -2,6 +2,11 @@ category: sys-apps
 conflicts:
 - 
   category: sys-apps
+  name: module-init-tools
+  
+  version: ""
+- 
+  category: sys-apps
   name: modutils
   
   version: ""
@@ -15,13 +20,13 @@ conflicts:
   name: systemd
   
   version: 216-r3
-- 
-  category: sys-apps
-  name: module-init-tools
-  
-  version: ""
 name: kmod
 requires:
+- 
+  category: sys-libs
+  name: zlib
+  
+  version: 1.2.6
 - 
   category: app-arch
   name: xz-utils
@@ -37,11 +42,6 @@ requires:
   name: libressl
   
   version: ""
-- 
-  category: sys-libs
-  name: zlib
-  
-  version: 1.2.6
 use_flags:
 - debug
 - doc

@@ -2,14 +2,14 @@ category: app-admin
 conflicts:
 - 
   category: ~dev-python
-  name: pbr
+  name: oslo-messaging
   
-  version: 2.1.0
+  version: 9.0.0
 - 
   category: ~dev-python
   name: sqlalchemy
   
-  version: 1.1.5
+  version: 1.1.6
 - 
   category: ~dev-python
   name: pymysql
@@ -19,17 +19,22 @@ conflicts:
   category: ~dev-python
   name: sqlalchemy
   
+  version: 1.1.5
+- 
+  category: ~dev-python
+  name: pbr
+  
+  version: 2.1.0
+- 
+  category: ~dev-python
+  name: eventlet
+  
+  version: 0.25.0
+- 
+  category: ~dev-python
+  name: sqlalchemy
+  
   version: 1.1.7
-- 
-  category: ~dev-python
-  name: oslo-messaging
-  
-  version: 9.0.0
-- 
-  category: ~dev-python
-  name: retrying
-  
-  version: 1.3.0
 - 
   category: ~dev-python
   name: sqlalchemy
@@ -42,66 +47,11 @@ conflicts:
   version: 0.23.0
 - 
   category: ~dev-python
-  name: eventlet
+  name: retrying
   
-  version: 0.25.0
-- 
-  category: ~dev-python
-  name: sqlalchemy
-  
-  version: 1.1.6
+  version: 1.3.0
 name: glance
 requires:
-- 
-  category: dev-python
-  name: routes
-  
-  version: 2.3.1
-- 
-  category: dev-python
-  name: paste
-  
-  version: 2.0.2
-- 
-  category: dev-python
-  name: defusedxml
-  
-  version: 0.5.0
-- 
-  category: dev-python
-  name: pymysql
-  
-  version: 0.7.6
-- 
-  category: dev-python
-  name: pastedeploy
-  
-  version: 1.5.0
-- 
-  category: dev-python
-  name: oslo-context
-  
-  version: 2.19.2
-- 
-  category: dev-python
-  name: six
-  
-  version: 1.10.0
-- 
-  category: dev-python
-  name: cryptography
-  
-  version: "2.1"
-- 
-  category: dev-python
-  name: sqlalchemy
-  
-  version: 1.0.10
-- 
-  category: dev-python
-  name: keystonemiddleware
-  
-  version: 4.17.0
 - 
   category: dev-python
   name: cursive
@@ -109,9 +59,94 @@ requires:
   version: 0.2.1
 - 
   category: dev-python
+  name: python-sqlparse
+  
+  version: 0.2.2
+- 
+  category: dev-python
+  name: cryptography
+  
+  version: "2.1"
+- 
+  category: dev-python
+  name: castellan
+  
+  version: 0.17.0
+- 
+  category: dev-python
+  name: paste
+  
+  version: 2.0.2
+- 
+  category: dev-python
+  name: oslo-log
+  
+  version: 3.36.0
+- 
+  category: dev-python
   name: oslo-messaging
   
   version: 5.29.0
+- 
+  category: dev-python
+  name: iso8601
+  
+  version: 0.1.11
+- 
+  category: dev-python
+  name: WSME
+  
+  version: 0.8.0
+- 
+  category: dev-python
+  name: oslo-db
+  
+  version: 4.27.0
+- 
+  category: dev-python
+  name: oslo-policy
+  
+  version: 1.30.0
+- 
+  category: dev-python
+  name: psycopg
+  
+  version: 2.5.0
+- 
+  category: dev-python
+  name: eventlet
+  
+  version: 0.22.0
+- 
+  category: dev-python
+  name: oslo-upgradecheck
+  
+  version: 0.1.0
+- 
+  category: dev-python
+  name: futurist
+  
+  version: 1.2.0
+- 
+  category: dev-python
+  name: keystonemiddleware
+  
+  version: 4.17.0
+- 
+  category: dev-python
+  name: taskflow
+  
+  version: 2.16.0
+- 
+  category: dev-python
+  name: webob
+  
+  version: 1.8.1
+- 
+  category: dev-python
+  name: httplib2
+  
+  version: 0.9.1
 - 
   category: dev-python
   name: oslo-utils
@@ -124,84 +159,49 @@ requires:
   version: 3.4.0
 - 
   category: dev-python
-  name: pyopenssl
-  
-  version: 17.1.0
-- 
-  category: dev-python
-  name: oslo-middleware
-  
-  version: 3.31.0
-- 
-  category: dev-python
-  name: glance_store
-  
-  version: 1.0.0
-- 
-  category: dev-python
-  name: eventlet
-  
-  version: 0.22.0
-- 
-  category: dev-python
-  name: httplib2
-  
-  version: 0.9.1
-- 
-  category: dev-python
-  name: castellan
-  
-  version: 0.17.0
-- 
-  category: dev-python
-  name: webob
-  
-  version: 1.8.1
-- 
-  category: dev-python
-  name: oslo-config
-  
-  version: 5.2.0
-- 
-  category: dev-python
-  name: iso8601
-  
-  version: 0.1.11
-- 
-  category: dev-python
-  name: python-keystoneclient
-  
-  version: 3.8.0
-- 
-  category: dev-python
-  name: retrying
-  
-  version: 1.2.3
-- 
-  category: dev-python
-  name: taskflow
-  
-  version: 2.16.0
-- 
-  category: dev-python
   name: prettytable
   
   version: 0.7.0
 - 
   category: dev-python
-  name: prettytable
+  name: pymysql
   
-  version: 0.8.0
+  version: 0.7.6
 - 
   category: dev-python
-  name: oslo-log
+  name: sqlalchemy
   
-  version: 3.36.0
+  version: 1.0.10
 - 
   category: dev-python
-  name: futurist
+  name: oslo-concurrency
   
-  version: 1.2.0
+  version: 3.26.0
+- 
+  category: dev-python
+  name: pyopenssl
+  
+  version: 17.1.0
+- 
+  category: dev-python
+  name: pbr
+  
+  version: 2.0.0
+- 
+  category: dev-python
+  name: defusedxml
+  
+  version: 0.5.0
+- 
+  category: dev-python
+  name: oslo-context
+  
+  version: 2.19.2
+- 
+  category: dev-python
+  name: stevedore
+  
+  version: 1.20.0
 - 
   category: dev-python
   name: oslo-i18n
@@ -214,34 +214,19 @@ requires:
   version: 3.0.0
 - 
   category: dev-python
-  name: oslo-upgradecheck
+  name: pastedeploy
   
-  version: 0.1.0
+  version: 1.5.0
 - 
   category: dev-python
-  name: WSME
+  name: prettytable
   
   version: 0.8.0
 - 
   category: dev-python
-  name: oslo-concurrency
+  name: oslo-middleware
   
-  version: 3.26.0
-- 
-  category: dev-python
-  name: psycopg
-  
-  version: 2.5.0
-- 
-  category: dev-python
-  name: stevedore
-  
-  version: 1.20.0
-- 
-  category: dev-python
-  name: oslo-policy
-  
-  version: 1.30.0
+  version: 3.31.0
 - 
   category: dev-python
   name: debtcollector
@@ -249,14 +234,14 @@ requires:
   version: 1.2.0
 - 
   category: dev-python
-  name: oslo-reports
+  name: jsonschema
   
-  version: 1.18.0
+  version: 2.6.0
 - 
   category: dev-python
-  name: oslo-db
+  name: routes
   
-  version: 4.27.0
+  version: 2.3.1
 - 
   category: dev-python
   name: alembic
@@ -264,14 +249,9 @@ requires:
   version: 0.8.10
 - 
   category: dev-python
-  name: python-sqlparse
+  name: python-keystoneclient
   
-  version: 0.2.2
-- 
-  category: dev-python
-  name: jsonschema
-  
-  version: 2.6.0
+  version: 3.8.0
 - 
   category: dev-python
   name: osprofiler
@@ -279,9 +259,29 @@ requires:
   version: 1.4.0
 - 
   category: dev-python
-  name: pbr
+  name: glance_store
   
-  version: 2.0.0
+  version: 1.0.0
+- 
+  category: dev-python
+  name: oslo-reports
+  
+  version: 1.18.0
+- 
+  category: dev-python
+  name: oslo-config
+  
+  version: 5.2.0
+- 
+  category: dev-python
+  name: six
+  
+  version: 1.10.0
+- 
+  category: dev-python
+  name: retrying
+  
+  version: 1.2.3
 - 
   category: dev-python
   name: sqlalchemy-migrate

@@ -8,6 +8,16 @@ conflicts:
 name: iproute2
 requires:
 - 
+  category: virtual
+  name: libelf
+  
+  version: ""
+- 
+  category: net-firewall
+  name: iptables
+  
+  version: 1.4.20
+- 
   category: sys-libs
   name: db
   
@@ -32,16 +42,6 @@ requires:
   name: libcap
   
   version: ""
-- 
-  category: virtual
-  name: libelf
-  
-  version: ""
-- 
-  category: net-firewall
-  name: iptables
-  
-  version: 1.4.20
 use_flags:
 - atm
 - berkdb

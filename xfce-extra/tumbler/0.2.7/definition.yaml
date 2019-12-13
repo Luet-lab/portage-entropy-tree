@@ -3,20 +3,15 @@ conflicts: []
 name: tumbler
 requires:
 - 
-  category: net-misc
-  name: curl
-  
-  version: "7.25"
-- 
   category: media-libs
-  name: gst-plugins-base
+  name: libpng
   
   version: ""
 - 
   category: media-libs
-  name: libopenraw
+  name: gstreamer
   
-  version: 0.0.8
+  version: ""
 - 
   category: media-plugins
   name: gst-plugins-meta
@@ -24,22 +19,12 @@ requires:
   version: ""
 - 
   category: media-libs
-  name: freetype
+  name: gst-plugins-base
   
   version: ""
 - 
-  category: sys-apps
-  name: dbus
-  
-  version: "1.6"
-- 
-  category: dev-libs
-  name: glib
-  
-  version: "2.42"
-- 
-  category: media-libs
-  name: libpng
+  category: virtual
+  name: jpeg
   
   version: ""
 - 
@@ -48,35 +33,50 @@ requires:
   
   version: 0.12.4
 - 
-  category: xfce-base
-  name: thunar
+  category: dev-libs
+  name: glib
   
-  version: "1.4"
+  version: "2.42"
 - 
-  category: x11-libs
-  name: gdk-pixbuf
+  category: sys-apps
+  name: dbus
   
-  version: "2.14"
-- 
-  category: virtual
-  name: jpeg
-  
-  version: ""
-- 
-  category: gnome-extra
-  name: libgsf
-  
-  version: 1.14.20
+  version: "1.6"
 - 
   category: media-video
   name: ffmpegthumbnailer
   
   version: 2.0.8
 - 
+  category: net-misc
+  name: curl
+  
+  version: "7.25"
+- 
+  category: gnome-extra
+  name: libgsf
+  
+  version: 1.14.20
+- 
+  category: xfce-base
+  name: thunar
+  
+  version: "1.4"
+- 
   category: media-libs
-  name: gstreamer
+  name: freetype
   
   version: ""
+- 
+  category: x11-libs
+  name: gdk-pixbuf
+  
+  version: "2.14"
+- 
+  category: media-libs
+  name: libopenraw
+  
+  version: 0.0.8
 use_flags:
 - curl
 - ffmpeg

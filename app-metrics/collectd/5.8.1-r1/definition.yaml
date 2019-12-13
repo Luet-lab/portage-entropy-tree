@@ -8,48 +8,8 @@ conflicts:
 name: collectd
 requires:
 - 
-  category: net-libs
-  name: librouteros
-  
-  version: ""
-- 
-  category: virtual
-  name: logger
-  
-  version: ""
-- 
-  category: net-firewall
-  name: iptables
-  
-  version: 1.4.13
-- 
-  category: net-libs
-  name: liboping
-  
-  version: ""
-- 
-  category: net-libs
-  name: libesmtp
-  
-  version: ""
-- 
-  category: net-nds
-  name: openldap
-  
-  version: ""
-- 
-  category: dev-lang
-  name: perl
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libmodbus
-  
-  version: ""
-- 
-  category: dev-db
-  name: libdbi
+  category: sys-fs
+  name: lvm2
   
   version: ""
 - 
@@ -58,78 +18,13 @@ requires:
   
   version: ""
 - 
-  category: net-analyzer
-  name: rrdtool
+  category: sys-power
+  name: nut
   
-  version: ""
-- 
-  category: app-emulation
-  name: xen-tools
-  
-  version: ""
-- 
-  category: sys-libs
-  name: libstatgrab
-  
-  version: ""
-- 
-  category: net-misc
-  name: curl
-  
-  version: ""
-- 
-  category: dev-libs
-  name: yajl
-  
-  version: ""
+  version: 2.7.2-r2
 - 
   category: net-libs
-  name: libpcap
-  
-  version: ""
-- 
-  category: sys-libs
-  name: openipmi
-  
-  version: 2.0.16-r1
-- 
-  category: sys-fs
-  name: lvm2
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libmemcached
-  
-  version: ""
-- 
-  category: sys-fs
-  name: owfs
-  
-  version: "3.1"
-- 
-  category: dev-db
-  name: oracle-instantclient-basic
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libltdl
-  
-  version: ""
-- 
-  category: virtual
-  name: udev
-  
-  version: ""
-- 
-  category: dev-libs
-  name: glib
-  
-  version: ""
-- 
-  category: net-analyzer
-  name: net-snmp
+  name: liboping
   
   version: ""
 - 
@@ -138,48 +33,28 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
-  name: lm-sensors
+  category: dev-libs
+  name: glib
   
   version: ""
 - 
-  category: net-misc
-  name: tokyotyrant
+  category: sci-geosciences
+  name: gpsd
   
   version: ""
+- 
+  category: net-firewall
+  name: iptables
+  
+  version: 1.4.13
 - 
   category: dev-libs
-  name: protobuf-c
-  
-  version: 1.2.1-r1
-- 
-  category: virtual
-  name: jre
-  
-  version: "1.6"
-- 
-  category: sys-power
-  name: nut
-  
-  version: 2.7.2-r2
-- 
-  category: dev-libs
-  name: libatasmart
+  name: libgcrypt
   
   version: ""
 - 
-  category: sci-libs
-  name: libsigrok
-  
-  version: "0.4"
-- 
-  category: www-servers
-  name: varnish
-  
-  version: ""
-- 
-  category: net-libs
-  name: libmicrohttpd
+  category: dev-db
+  name: libdbi
   
   version: ""
 - 
@@ -194,37 +69,7 @@ requires:
   version: ""
 - 
   category: dev-libs
-  name: libxml2
-  
-  version: ""
-- 
-  category: app-emulation
-  name: libvirt
-  
-  version: ""
-- 
-  category: dev-libs
-  name: librdkafka
-  
-  version: 0.9.0.99
-- 
-  category: dev-libs
-  name: mongo-c-driver
-  
-  version: 1.8.2
-- 
-  category: sys-fs
-  name: xfsprogs
-  
-  version: ""
-- 
-  category: net-libs
-  name: rabbitmq-c
-  
-  version: ""
-- 
-  category: app-misc
-  name: mosquitto
+  name: libmemcached
   
   version: ""
 - 
@@ -234,7 +79,172 @@ requires:
   version: ""
 - 
   category: net-libs
+  name: libesmtp
+  
+  version: ""
+- 
+  category: net-libs
+  name: librouteros
+  
+  version: ""
+- 
+  category: sci-libs
+  name: libsigrok
+  
+  version: "0.4"
+- 
+  category: dev-libs
+  name: libltdl
+  
+  version: ""
+- 
+  category: dev-lang
+  name: perl
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libxml2
+  
+  version: ""
+- 
+  category: dev-db
+  name: oracle-instantclient-basic
+  
+  version: ""
+- 
+  category: app-emulation
+  name: libvirt
+  
+  version: ""
+- 
+  category: dev-libs
+  name: mongo-c-driver
+  
+  version: 1.8.2
+- 
+  category: net-libs
+  name: libmicrohttpd
+  
+  version: ""
+- 
+  category: virtual
+  name: logger
+  
+  version: ""
+- 
+  category: net-libs
+  name: libpcap
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libmodbus
+  
+  version: ""
+- 
+  category: app-misc
+  name: mosquitto
+  
+  version: ""
+- 
+  category: sys-fs
+  name: owfs
+  
+  version: "3.1"
+- 
+  category: sys-apps
+  name: lm-sensors
+  
+  version: ""
+- 
+  category: virtual
+  name: jre
+  
+  version: "1.6"
+- 
+  category: sec-policy
+  name: selinux-collectd
+  
+  version: ""
+- 
+  category: dev-libs
+  name: yajl
+  
+  version: ""
+- 
+  category: net-libs
   name: libmnl
+  
+  version: ""
+- 
+  category: net-nds
+  name: openldap
+  
+  version: ""
+- 
+  category: net-analyzer
+  name: rrdtool
+  
+  version: ""
+- 
+  category: net-misc
+  name: tokyotyrant
+  
+  version: ""
+- 
+  category: dev-libs
+  name: protobuf-c
+  
+  version: 1.2.1-r1
+- 
+  category: virtual
+  name: udev
+  
+  version: ""
+- 
+  category: net-libs
+  name: rabbitmq-c
+  
+  version: ""
+- 
+  category: net-misc
+  name: curl
+  
+  version: ""
+- 
+  category: sys-libs
+  name: openipmi
+  
+  version: 2.0.16-r1
+- 
+  category: dev-libs
+  name: libatasmart
+  
+  version: ""
+- 
+  category: net-analyzer
+  name: net-snmp
+  
+  version: ""
+- 
+  category: dev-libs
+  name: librdkafka
+  
+  version: 0.9.0.99
+- 
+  category: app-emulation
+  name: xen-tools
+  
+  version: ""
+- 
+  category: sys-libs
+  name: libstatgrab
+  
+  version: ""
+- 
+  category: sys-fs
+  name: xfsprogs
   
   version: ""
 - 
@@ -243,18 +253,8 @@ requires:
   
   version: ""
 - 
-  category: sec-policy
-  name: selinux-collectd
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libgcrypt
-  
-  version: ""
-- 
-  category: sci-geosciences
-  name: gpsd
+  category: www-servers
+  name: varnish
   
   version: ""
 use_flags:

@@ -2,17 +2,27 @@ category: sys-cluster
 conflicts:
 - 
   category: sys-fabric
-  name: srptools
+  name: libocrdma
   
   version: ""
 - 
   category: sys-fabric
-  name: libmlx5
+  name: ibacm
   
   version: ""
 - 
   category: sys-fabric
-  name: infiniband-diags
+  name: infinipath-psm
+  
+  version: ""
+- 
+  category: sys-fabric
+  name: libcxgb4
+  
+  version: ""
+- 
+  category: sys-fabric
+  name: libmthca
   
   version: ""
 - 
@@ -27,6 +37,21 @@ conflicts:
   version: ""
 - 
   category: sys-fabric
+  name: libmlx5
+  
+  version: ""
+- 
+  category: sys-fabric
+  name: srptools
+  
+  version: ""
+- 
+  category: sys-fabric
+  name: infiniband-diags
+  
+  version: ""
+- 
+  category: sys-fabric
   name: libibumad
   
   version: ""
@@ -37,27 +62,7 @@ conflicts:
   version: ""
 - 
   category: sys-fabric
-  name: infinipath-psm
-  
-  version: ""
-- 
-  category: sys-fabric
-  name: libmthca
-  
-  version: ""
-- 
-  category: sys-fabric
-  name: libnes
-  
-  version: ""
-- 
-  category: sys-fabric
   name: libcxgb3
-  
-  version: ""
-- 
-  category: sys-fabric
-  name: libcxgb4
   
   version: ""
 - 
@@ -67,16 +72,16 @@ conflicts:
   version: ""
 - 
   category: sys-fabric
-  name: libocrdma
-  
-  version: ""
-- 
-  category: sys-fabric
-  name: ibacm
+  name: libnes
   
   version: ""
 name: rdma-core
 requires:
+- 
+  category: dev-libs
+  name: libnl
+  
+  version: ""
 - 
   category: sys-apps
   name: systemd
@@ -90,11 +95,6 @@ requires:
 - 
   category: virtual
   name: libudev
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libnl
   
   version: ""
 use_flags:

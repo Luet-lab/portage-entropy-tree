@@ -3,23 +3,23 @@ conflicts: []
 name: gegl
 requires:
 - 
-  category: dev-libs
-  name: gobject-introspection
+  category: media-libs
+  name: libopenraw
   
-  version: "1.32"
-- 
-  category: x11-libs
-  name: gdk-pixbuf
-  
-  version: "2.18"
-- 
-  category: x11-libs
-  name: pango
-  
-  version: ""
+  version: 0.0.9
 - 
   category: media-libs
   name: libsdl
+  
+  version: ""
+- 
+  category: gnome-base
+  name: librsvg
+  
+  version: "2.14"
+- 
+  category: media-libs
+  name: libwebp
   
   version: ""
 - 
@@ -28,20 +28,20 @@ requires:
   
   version: 0.1.12
 - 
+  category: media-libs
+  name: libpng
+  
+  version: ""
+- 
   category: media-video
   name: libav
   
   version: ""
 - 
-  category: media-libs
-  name: lcms
+  category: dev-libs
+  name: gobject-introspection
   
-  version: "2.2"
-- 
-  category: media-libs
-  name: lensfun
-  
-  version: 0.2.5
+  version: "1.32"
 - 
   category: sci-libs
   name: umfpack
@@ -53,6 +53,16 @@ requires:
   
   version: 1.0.1
 - 
+  category: x11-libs
+  name: gdk-pixbuf
+  
+  version: "2.18"
+- 
+  category: x11-libs
+  name: cairo
+  
+  version: ""
+- 
   category: media-video
   name: ffmpeg
   
@@ -63,35 +73,15 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
-  name: zlib
+  category: media-libs
+  name: lensfun
   
-  version: ""
-- 
-  category: x11-libs
-  name: cairo
-  
-  version: ""
+  version: 0.2.5
 - 
   category: media-libs
   name: openexr
   
   version: ""
-- 
-  category: media-libs
-  name: libpng
-  
-  version: ""
-- 
-  category: media-libs
-  name: libopenraw
-  
-  version: 0.0.9
-- 
-  category: gnome-base
-  name: librsvg
-  
-  version: "2.14"
 - 
   category: dev-libs
   name: glib
@@ -104,7 +94,17 @@ requires:
   version: ""
 - 
   category: media-libs
-  name: libwebp
+  name: lcms
+  
+  version: "2.2"
+- 
+  category: sys-libs
+  name: zlib
+  
+  version: ""
+- 
+  category: x11-libs
+  name: pango
   
   version: ""
 use_flags:
