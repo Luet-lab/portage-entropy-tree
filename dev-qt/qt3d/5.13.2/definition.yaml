@@ -3,6 +3,21 @@ conflicts: []
 name: qt3d
 requires:
 - 
+  category: media-libs
+  name: assimp
+  
+  version: 4.0.0
+- 
+  category: dev-qt
+  name: qtgamepad
+  
+  version: 5.13.2
+- 
+  category: dev-qt
+  name: qtdeclarative-5.13.2[gles2=]
+  
+  version: ""
+- 
   category: dev-qt
   name: qtconcurrent
   
@@ -22,21 +37,6 @@ requires:
   name: qtnetwork
   
   version: 5.13.2
-- 
-  category: media-libs
-  name: assimp
-  
-  version: 4.0.0
-- 
-  category: dev-qt
-  name: qtgamepad
-  
-  version: 5.13.2
-- 
-  category: dev-qt
-  name: qtdeclarative-5.13.2[gles2=]
-  
-  version: ""
 use_flags:
 - gamepad
 - gles2

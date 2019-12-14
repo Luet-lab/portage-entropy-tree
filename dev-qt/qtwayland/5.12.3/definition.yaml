@@ -3,6 +3,21 @@ conflicts: []
 name: qtwayland
 requires:
 - 
+  category: x11-libs
+  name: libXcomposite
+  
+  version: ""
+- 
+  category: dev-libs
+  name: wayland
+  
+  version: 1.6.0
+- 
+  category: dev-qt
+  name: qtcore
+  
+  version: 5.12.3
+- 
   category: dev-qt
   name: qtdeclarative
   
@@ -27,21 +42,6 @@ requires:
   name: libX11
   
   version: ""
-- 
-  category: x11-libs
-  name: libXcomposite
-  
-  version: ""
-- 
-  category: dev-libs
-  name: wayland
-  
-  version: 1.6.0
-- 
-  category: dev-qt
-  name: qtcore
-  
-  version: 5.12.3
 use_flags:
 - +libinput
 - xcomposite

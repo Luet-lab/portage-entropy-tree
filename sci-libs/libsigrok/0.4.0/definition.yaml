@@ -3,8 +3,38 @@ conflicts: []
 name: libsigrok
 requires:
 - 
+  category: dev-libs
+  name: glib-2.32.0[static-libs(+)]
+  
+  version: ""
+- 
   category: sys-libs
   name: libieee1284[static-libs(+)]
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libserialport-0.1.1[static-libs(+)]
+  
+  version: ""
+- 
+  category: virtual
+  name: jre
+  
+  version: "1.4"
+- 
+  category: sys-libs
+  name: libieee1284
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libserialport
+  
+  version: 0.1.1
+- 
+  category: virtual
+  name: libusb
   
   version: ""
 - 
@@ -32,36 +62,6 @@ requires:
   name: libftdi
   
   version: "0.16"
-- 
-  category: dev-libs
-  name: libserialport
-  
-  version: 0.1.1
-- 
-  category: dev-libs
-  name: glib-2.32.0[static-libs(+)]
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libserialport-0.1.1[static-libs(+)]
-  
-  version: ""
-- 
-  category: virtual
-  name: jre
-  
-  version: "1.4"
-- 
-  category: sys-libs
-  name: libieee1284
-  
-  version: ""
-- 
-  category: virtual
-  name: libusb
-  
-  version: ""
 use_flags:
 - cxx
 - ftdi

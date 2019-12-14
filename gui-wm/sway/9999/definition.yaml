@@ -4,7 +4,7 @@ name: sway
 requires:
 - 
   category: dev-libs
-  name: libpcre
+  name: wayland
   
   version: ""
 - 
@@ -13,13 +13,53 @@ requires:
   
   version: ""
 - 
+  category: gui-apps
+  name: swayidle
+  
+  version: ""
+- 
+  category: x11-libs
+  name: gdk-pixbuf
+  
+  version: ""
+- 
+  category: gui-apps
+  name: swaybg
+  
+  version: ""
+- 
+  category: gui-apps
+  name: swaylock
+  
+  version: ""
+- 
+  category: dev-libs
+  name: json-c
+  
+  version: "0.13"
+- 
+  category: dev-libs
+  name: libpcre
+  
+  version: ""
+- 
+  category: x11-libs
+  name: pango
+  
+  version: ""
+- 
   category: sys-auth
   name: elogind
   
   version: "239"
 - 
-  category: gui-apps
-  name: swayidle
+  category: gui-libs
+  name: wlroots
+  
+  version: "9999"
+- 
+  category: x11-misc
+  name: xkeyboard-config
   
   version: ""
 - 
@@ -34,17 +74,7 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: pango
-  
-  version: ""
-- 
-  category: x11-libs
-  name: gdk-pixbuf
-  
-  version: ""
-- 
-  category: gui-apps
-  name: swaybg
+  name: libxkbcommon
   
   version: ""
 - 
@@ -55,36 +85,6 @@ requires:
 - 
   category: x11-libs
   name: libxcb
-  
-  version: ""
-- 
-  category: dev-libs
-  name: wayland
-  
-  version: ""
-- 
-  category: dev-libs
-  name: json-c
-  
-  version: "0.13"
-- 
-  category: x11-libs
-  name: libxkbcommon
-  
-  version: ""
-- 
-  category: x11-misc
-  name: xkeyboard-config
-  
-  version: ""
-- 
-  category: gui-libs
-  name: wlroots
-  
-  version: "9999"
-- 
-  category: gui-apps
-  name: swaylock
   
   version: ""
 use_flags:

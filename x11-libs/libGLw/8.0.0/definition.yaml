@@ -1,3 +1,32 @@
 category: x11-libs
+conflicts:
+- 
+  category: media-libs
+  name: mesa
+  
+  version: ""
 name: libGLw
+requires:
+- 
+  category: x11-libs
+  name: libX11
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXt
+  
+  version: ""
+- 
+  category: x11-libs
+  name: motif
+  
+  version: ""
+- 
+  category: virtual
+  name: opengl
+  
+  version: ""
+use_flags:
+- +motif
 version: 8.0.0

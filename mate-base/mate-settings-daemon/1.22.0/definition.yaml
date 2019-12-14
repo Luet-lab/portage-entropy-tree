@@ -3,18 +3,13 @@ conflicts: []
 name: mate-settings-daemon
 requires:
 - 
-  category: dev-libs
-  name: dbus-glib
+  category: mate-base
+  name: mate-desktop
   
-  version: "0.74"
-- 
-  category: media-sound
-  name: pulseaudio
-  
-  version: 0.9.15
+  version: 1.21.1
 - 
   category: media-libs
-  name: libcanberra
+  name: fontconfig
   
   version: ""
 - 
@@ -24,7 +19,22 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: libXi
+  name: gtk+
+  
+  version: "3.22"
+- 
+  category: x11-libs
+  name: libnotify
+  
+  version: "0.7"
+- 
+  category: media-libs
+  name: libmatemixer
+  
+  version: "1.10"
+- 
+  category: x11-libs
+  name: libX11
   
   version: ""
 - 
@@ -33,38 +43,58 @@ requires:
   
   version: "5.2"
 - 
-  category: x11-libs
-  name: libnotify
+  category: virtual
+  name: libintl
   
-  version: "0.7"
-- 
-  category: dev-libs
-  name: dbus-glib
-  
-  version: "0.71"
+  version: ""
 - 
   category: sys-apps
   name: dbus
   
   version: 1.1.2
 - 
+  category: media-sound
+  name: pulseaudio
+  
+  version: 0.9.15
+- 
+  category: dev-libs
+  name: dbus-glib
+  
+  version: "0.74"
+- 
+  category: gnome-base
+  name: dconf
+  
+  version: 0.13.4
+- 
+  category: x11-libs
+  name: libXi
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXext
+  
+  version: ""
+- 
+  category: media-libs
+  name: libcanberra
+  
+  version: ""
+- 
   category: dev-libs
   name: glib
   
   version: "2.50"
 - 
-  category: media-libs
-  name: fontconfig
+  category: mate-base
+  name: libmatekbd
   
-  version: ""
+  version: 1.17.0
 - 
   category: x11-libs
   name: gdk-pixbuf
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libX11
   
   version: ""
 - 
@@ -73,45 +103,15 @@ requires:
   
   version: ""
 - 
-  category: gnome-base
-  name: dconf
+  category: dev-libs
+  name: dbus-glib
   
-  version: 0.13.4
-- 
-  category: mate-base
-  name: libmatekbd
-  
-  version: 1.17.0
-- 
-  category: mate-base
-  name: mate-desktop
-  
-  version: 1.21.1
-- 
-  category: x11-libs
-  name: gtk+
-  
-  version: "3.22"
-- 
-  category: x11-libs
-  name: libXext
-  
-  version: ""
-- 
-  category: virtual
-  name: libintl
-  
-  version: ""
+  version: "0.71"
 - 
   category: sys-auth
   name: polkit
   
   version: "0.97"
-- 
-  category: media-libs
-  name: libmatemixer
-  
-  version: "1.10"
 - 
   category: dev-libs
   name: nss

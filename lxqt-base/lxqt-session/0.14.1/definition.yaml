@@ -8,23 +8,8 @@ conflicts:
 name: lxqt-session
 requires:
 - 
-  category: dev-qt
-  name: qtdbus
-  
-  version: ""
-- 
-  category: dev-qt
-  name: qtx11extras
-  
-  version: ""
-- 
-  category: kde-frameworks
-  name: kwindowsystem
-  
-  version: ""
-- 
-  category: lxqt-base
-  name: liblxqt
+  category: x11-libs
+  name: libX11
   
   version: ""
 - 
@@ -38,13 +23,18 @@ requires:
   
   version: ""
 - 
+  category: virtual
+  name: libudev
+  
+  version: ""
+- 
   category: dev-qt
   name: qtcore
   
   version: ""
 - 
   category: dev-qt
-  name: qtgui
+  name: qtdbus
   
   version: ""
 - 
@@ -53,13 +43,8 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
-  name: libX11
-  
-  version: ""
-- 
-  category: virtual
-  name: libudev
+  category: dev-qt
+  name: qtx11extras
   
   version: ""
 - 
@@ -67,6 +52,21 @@ requires:
   name: libqtxdg
   
   version: 3.3.1
+- 
+  category: dev-qt
+  name: qtgui
+  
+  version: ""
+- 
+  category: kde-frameworks
+  name: kwindowsystem
+  
+  version: ""
+- 
+  category: lxqt-base
+  name: liblxqt
+  
+  version: ""
 use_flags:
 - +themes
 - +udev

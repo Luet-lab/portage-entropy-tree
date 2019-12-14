@@ -8,6 +8,16 @@ conflicts:
 name: genkernel
 requires:
 - 
+  category: sys-kernel
+  name: linux-firmware
+  
+  version: ""
+- 
+  category: sys-fs
+  name: e2fsprogs
+  
+  version: ""
+- 
   category: sys-libs
   name: libselinux
   
@@ -27,16 +37,6 @@ requires:
   name: pax-utils
   
   version: 1.2.2
-- 
-  category: sys-kernel
-  name: linux-firmware
-  
-  version: ""
-- 
-  category: sys-fs
-  name: e2fsprogs
-  
-  version: ""
 use_flags:
 - cryptsetup
 - ibm

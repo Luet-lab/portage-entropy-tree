@@ -3,6 +3,16 @@ conflicts: []
 name: mate-media
 requires:
 - 
+  category: x11-libs
+  name: gtk+
+  
+  version: "3.22"
+- 
+  category: dev-libs
+  name: glib
+  
+  version: "2.50"
+- 
   category: dev-libs
   name: libxml2
   
@@ -10,26 +20,6 @@ requires:
 - 
   category: mate-base
   name: mate-desktop
-  
-  version: 1.17.0
-- 
-  category: x11-libs
-  name: pango
-  
-  version: ""
-- 
-  category: virtual
-  name: libintl
-  
-  version: ""
-- 
-  category: dev-libs
-  name: glib
-  
-  version: "2.50"
-- 
-  category: mate-base
-  name: mate-panel
   
   version: 1.17.0
 - 
@@ -48,10 +38,20 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
-  name: gtk+
+  category: mate-base
+  name: mate-panel
   
-  version: "3.22"
+  version: 1.17.0
+- 
+  category: x11-libs
+  name: pango
+  
+  version: ""
+- 
+  category: virtual
+  name: libintl
+  
+  version: ""
 use_flags:
 - ""
 version: 1.22.1

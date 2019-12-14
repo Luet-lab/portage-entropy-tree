@@ -8,13 +8,18 @@ conflicts:
 name: iproute2
 requires:
 - 
-  category: dev-libs
-  name: libbsd
+  category: net-libs
+  name: libmnl
   
   version: ""
 - 
-  category: virtual
-  name: libelf
+  category: net-dialup
+  name: linux-atm
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libbsd
   
   version: ""
 - 
@@ -22,16 +27,6 @@ requires:
   name: iptables
   
   version: 1.4.20
-- 
-  category: net-dialup
-  name: linux-atm
-  
-  version: ""
-- 
-  category: sys-libs
-  name: libcap
-  
-  version: ""
 - 
   category: sys-libs
   name: db
@@ -43,8 +38,13 @@ requires:
   
   version: ""
 - 
-  category: net-libs
-  name: libmnl
+  category: sys-libs
+  name: libcap
+  
+  version: ""
+- 
+  category: virtual
+  name: libelf
   
   version: ""
 use_flags:

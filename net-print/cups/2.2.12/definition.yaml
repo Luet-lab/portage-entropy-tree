@@ -8,20 +8,10 @@ conflicts:
 name: cups
 requires:
 - 
-  category: sys-apps
-  name: dbus
-  
-  version: 1.6.18-r1
-- 
-  category: sys-apps
-  name: xinetd
+  category: sys-libs
+  name: pam
   
   version: ""
-- 
-  category: net-dns
-  name: avahi
-  
-  version: 0.6.31-r2
 - 
   category: x11-misc
   name: xdg-utils
@@ -43,30 +33,40 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
-  name: pam
-  
-  version: ""
-- 
   category: sys-apps
-  name: systemd
+  name: dbus
   
-  version: ""
+  version: 1.6.18-r1
+- 
+  category: virtual
+  name: krb5
+  
+  version: 0-r1
 - 
   category: sys-apps
   name: acl
   
   version: ""
 - 
-  category: virtual
-  name: jre
+  category: net-dns
+  name: avahi
   
-  version: "1.6"
+  version: 0.6.31-r2
 - 
-  category: virtual
-  name: krb5
+  category: sys-apps
+  name: xinetd
   
-  version: 0-r1
+  version: ""
+- 
+  category: net-libs
+  name: gnutls
+  
+  version: 2.12.23-r6
+- 
+  category: sys-apps
+  name: systemd
+  
+  version: ""
 - 
   category: virtual
   name: libusb
@@ -83,10 +83,10 @@ requires:
   
   version: ""
 - 
-  category: net-libs
-  name: gnutls
+  category: virtual
+  name: jre
   
-  version: 2.12.23-r6
+  version: "1.6"
 use_flags:
 - acl
 - dbus

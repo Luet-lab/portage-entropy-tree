@@ -3,10 +3,20 @@ conflicts: []
 name: fcitx-libpinyin
 requires:
 - 
-  category: virtual
-  name: libintl
+  category: app-i18n
+  name: fcitx
+  
+  version: 4.2.9
+- 
+  category: sys-apps
+  name: dbus
   
   version: ""
+- 
+  category: app-i18n
+  name: fcitx-qt5
+  
+  version: "1.1"
 - 
   category: dev-qt
   name: qtcore
@@ -14,7 +24,7 @@ requires:
   version: "5.7"
 - 
   category: dev-qt
-  name: qtgui
+  name: qtdbus
   
   version: "5.7"
 - 
@@ -29,11 +39,6 @@ requires:
   version: "5.7"
 - 
   category: app-i18n
-  name: fcitx
-  
-  version: 4.2.9
-- 
-  category: app-i18n
   name: libpinyin
   
   version: 2.1.0
@@ -43,18 +48,13 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
-  name: dbus
+  category: virtual
+  name: libintl
   
   version: ""
 - 
-  category: app-i18n
-  name: fcitx-qt5
-  
-  version: "1.1"
-- 
   category: dev-qt
-  name: qtdbus
+  name: qtgui
   
   version: "5.7"
 - 

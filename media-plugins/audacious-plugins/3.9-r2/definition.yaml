@@ -3,35 +3,115 @@ conflicts: []
 name: audacious-plugins
 requires:
 - 
-  category: media-libs
-  name: libcddb
+  category: media-sound
+  name: audacious
   
-  version: 1.2.1
+  version: "3.9"
+- 
+  category: x11-libs
+  name: libXcomposite
+  
+  version: ""
+- 
+  category: media-libs
+  name: libbs2b
+  
+  version: ""
 - 
   category: media-sound
-  name: pulseaudio
-  
-  version: 0.9.3
-- 
-  category: net-misc
-  name: curl
+  name: fluidsynth
   
   version: ""
 - 
   category: media-libs
-  name: soxr
+  name: libmms
+  
+  version: "0.3"
+- 
+  category: media-libs
+  name: libsdl2
   
   version: ""
+- 
+  category: app-arch
+  name: unzip
+  
+  version: ""
+- 
+  category: media-libs
+  name: adplug
+  
+  version: ""
+- 
+  category: media-libs
+  name: libsidplayfp
+  
+  version: 1.0.0
+- 
+  category: media-libs
+  name: libmodplug
+  
+  version: ""
+- 
+  category: media-libs
+  name: alsa-lib
+  
+  version: 1.0.16
+- 
+  category: media-libs
+  name: bio2jack
+  
+  version: "0.4"
+- 
+  category: dev-libs
+  name: libcdio-paranoia
+  
+  version: ""
+- 
+  category: virtual
+  name: ffmpeg
+  
+  version: 0.7.3
+- 
+  category: media-libs
+  name: libvorbis
+  
+  version: "1.0"
 - 
   category: dev-libs
   name: glib
   
   version: ""
 - 
-  category: x11-libs
-  name: libXcomposite
+  category: dev-libs
+  name: libcdio
   
   version: ""
+- 
+  category: media-libs
+  name: libcue
+  
+  version: ""
+- 
+  category: media-sound
+  name: pulseaudio
+  
+  version: 0.9.3
+- 
+  category: dev-libs
+  name: dbus-glib
+  
+  version: ""
+- 
+  category: media-libs
+  name: faad2
+  
+  version: "2.7"
+- 
+  category: media-libs
+  name: libvorbis
+  
+  version: 1.2.0
 - 
   category: x11-libs
   name: libXrender
@@ -39,9 +119,39 @@ requires:
   version: ""
 - 
   category: media-libs
+  name: libsamplerate
+  
+  version: ""
+- 
+  category: media-libs
   name: flac
   
   version: 1.2.1-r1
+- 
+  category: net-misc
+  name: curl
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libnotify
+  
+  version: ""
+- 
+  category: app-misc
+  name: lirc
+  
+  version: ""
+- 
+  category: media-libs
+  name: libsndfile
+  
+  version: 1.0.17-r1
+- 
+  category: x11-libs
+  name: gtk+
+  
+  version: ""
 - 
   category: net-libs
   name: neon
@@ -53,63 +163,8 @@ requires:
   
   version: ""
 - 
-  category: media-libs
-  name: adplug
-  
-  version: ""
-- 
   category: media-sound
-  name: audacious
-  
-  version: "3.9"
-- 
-  category: media-libs
-  name: alsa-lib
-  
-  version: 1.0.16
-- 
-  category: media-libs
-  name: libbs2b
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libcdio
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libnotify
-  
-  version: ""
-- 
-  category: media-libs
-  name: libmms
-  
-  version: "0.3"
-- 
-  category: media-libs
-  name: libsndfile
-  
-  version: 1.0.17-r1
-- 
-  category: media-libs
-  name: libvorbis
-  
-  version: 1.2.0
-- 
-  category: media-libs
-  name: libcue
-  
-  version: ""
-- 
-  category: media-libs
-  name: libvorbis
-  
-  version: "1.0"
-- 
-  category: media-sound
-  name: fluidsynth
+  name: lame
   
   version: ""
 - 
@@ -119,72 +174,7 @@ requires:
   version: 1.12.1
 - 
   category: media-libs
-  name: libsdl2
-  
-  version: ""
-- 
-  category: dev-libs
-  name: dbus-glib
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libxml2
-  
-  version: ""
-- 
-  category: media-libs
-  name: faad2
-  
-  version: "2.7"
-- 
-  category: media-libs
-  name: libsamplerate
-  
-  version: ""
-- 
-  category: media-libs
-  name: libmodplug
-  
-  version: ""
-- 
-  category: app-arch
-  name: unzip
-  
-  version: ""
-- 
-  category: virtual
-  name: ffmpeg
-  
-  version: 0.7.3
-- 
-  category: media-libs
-  name: bio2jack
-  
-  version: "0.4"
-- 
-  category: media-sound
-  name: lame
-  
-  version: ""
-- 
-  category: app-misc
-  name: lirc
-  
-  version: ""
-- 
-  category: media-libs
-  name: libsidplayfp
-  
-  version: 1.0.0
-- 
-  category: x11-libs
-  name: gtk+
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libcdio-paranoia
+  name: soxr
   
   version: ""
 - 
@@ -197,6 +187,16 @@ requires:
   name: wavpack
   
   version: 4.50.1-r1
+- 
+  category: dev-libs
+  name: libxml2
+  
+  version: ""
+- 
+  category: media-libs
+  name: libcddb
+  
+  version: 1.2.1
 use_flags:
 - aac
 - +alsa

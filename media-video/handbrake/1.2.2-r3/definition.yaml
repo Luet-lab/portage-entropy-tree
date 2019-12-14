@@ -3,68 +3,13 @@ conflicts: []
 name: handbrake
 requires:
 - 
-  category: x11-libs
-  name: cairo
+  category: media-libs
+  name: x264
   
   version: ""
 - 
   category: media-libs
-  name: x265
-  
-  version: "2.9"
-- 
-  category: app-arch
-  name: xz-utils
-  
-  version: ""
-- 
-  category: media-libs
-  name: speex
-  
-  version: ""
-- 
-  category: media-libs
-  name: a52dec
-  
-  version: ""
-- 
-  category: media-sound
-  name: lame
-  
-  version: ""
-- 
-  category: media-libs
-  name: libass
-  
-  version: ""
-- 
-  category: media-plugins
-  name: gst-plugins-x264
-  
-  version: ""
-- 
-  category: x11-libs
-  name: gdk-pixbuf
-  
-  version: ""
-- 
-  category: media-libs
-  name: gst-plugins-bad
-  
-  version: ""
-- 
-  category: dev-libs
-  name: dbus-glib
-  
-  version: ""
-- 
-  category: media-libs
-  name: fdk-aac
-  
-  version: ""
-- 
-  category: media-plugins
-  name: gst-plugins-libav
+  name: gstreamer
   
   version: ""
 - 
@@ -73,23 +18,38 @@ requires:
   
   version: "3.10"
 - 
-  category: media-libs
-  name: libsamplerate
+  category: x11-libs
+  name: gdk-pixbuf
+  
+  version: ""
+- 
+  category: media-plugins
+  name: gst-plugins-libav
+  
+  version: ""
+- 
+  category: media-plugins
+  name: gst-plugins-x264
+  
+  version: ""
+- 
+  category: dev-libs
+  name: glib
   
   version: ""
 - 
   category: media-libs
-  name: libtheora
+  name: a52dec
   
   version: ""
 - 
   category: media-libs
-  name: nv-codec-headers
+  name: libbluray
   
-  version: ""
+  version: "1.0"
 - 
-  category: sys-libs
-  name: zlib
+  category: media-libs
+  name: libvpx
   
   version: ""
 - 
@@ -99,32 +59,57 @@ requires:
   version: ""
 - 
   category: media-libs
-  name: opus
+  name: libdvdnav
   
   version: ""
 - 
   category: media-libs
-  name: x264
+  name: speex
+  
+  version: ""
+- 
+  category: media-sound
+  name: lame
+  
+  version: ""
+- 
+  category: sys-libs
+  name: zlib
+  
+  version: ""
+- 
+  category: media-libs
+  name: x265
+  
+  version: "2.9"
+- 
+  category: media-libs
+  name: fdk-aac
+  
+  version: ""
+- 
+  category: media-libs
+  name: libass
+  
+  version: ""
+- 
+  category: media-libs
+  name: libdvdread
+  
+  version: ""
+- 
+  category: media-libs
+  name: nv-codec-headers
   
   version: ""
 - 
   category: media-video
-  name: libav
+  name: ffmpeg
   
-  version: "12.2"
+  version: "4.1"
 - 
   category: media-libs
   name: gst-plugins-base
-  
-  version: ""
-- 
-  category: media-libs
-  name: gst-plugins-good
-  
-  version: ""
-- 
-  category: x11-libs
-  name: pango
   
   version: ""
 - 
@@ -138,18 +123,13 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  name: glib
+  category: x11-libs
+  name: libnotify
   
   version: ""
 - 
-  category: dev-libs
-  name: libgudev
-  
-  version: ""
-- 
-  category: media-libs
-  name: libdvdread
+  category: app-arch
+  name: xz-utils
   
   version: ""
 - 
@@ -158,33 +138,53 @@ requires:
   
   version: ""
 - 
-  category: media-video
-  name: ffmpeg
+  category: media-libs
+  name: opus
   
-  version: "4.1"
+  version: ""
 - 
   category: media-libs
-  name: gstreamer
+  name: gst-plugins-bad
+  
+  version: ""
+- 
+  category: dev-libs
+  name: dbus-glib
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libgudev
   
   version: ""
 - 
   category: x11-libs
-  name: libnotify
+  name: cairo
+  
+  version: ""
+- 
+  category: x11-libs
+  name: pango
   
   version: ""
 - 
   category: media-libs
-  name: libbluray
-  
-  version: "1.0"
-- 
-  category: media-libs
-  name: libdvdnav
+  name: libsamplerate
   
   version: ""
 - 
   category: media-libs
-  name: libvpx
+  name: libtheora
+  
+  version: ""
+- 
+  category: media-video
+  name: libav
+  
+  version: "12.2"
+- 
+  category: media-libs
+  name: gst-plugins-good
   
   version: ""
 use_flags:

@@ -2,12 +2,12 @@ category: net-misc
 conflicts:
 - 
   category: net-misc
-  name: arping
+  name: rarpd
   
   version: ""
 - 
   category: net-misc
-  name: rarpd
+  name: arping
   
   version: ""
 - 
@@ -17,6 +17,11 @@ conflicts:
   version: ""
 name: iputils
 requires:
+- 
+  category: net-dns
+  name: libidn2
+  
+  version: ""
 - 
   category: dev-libs
   name: libgcrypt
@@ -40,11 +45,6 @@ requires:
 - 
   category: sys-libs
   name: libcap
-  
-  version: ""
-- 
-  category: net-dns
-  name: libidn2
   
   version: ""
 - 

@@ -3,6 +3,16 @@ conflicts: []
 name: xf86-input-wacom
 requires:
 - 
+  category: x11-libs
+  name: libXinerama
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libwacom
+  
+  version: ""
+- 
   category: virtual
   name: libudev
   
@@ -30,16 +40,6 @@ requires:
 - 
   category: x11-libs
   name: libXrandr
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXinerama
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libwacom
   
   version: ""
 use_flags:

@@ -8,13 +8,33 @@ conflicts:
 name: dovecot
 requires:
 - 
-  category: app-arch
-  name: xz-utils
+  category: sys-libs
+  name: libcap
+  
+  version: ""
+- 
+  category: virtual
+  name: krb5
+  
+  version: ""
+- 
+  category: net-nds
+  name: openldap
+  
+  version: ""
+- 
+  category: sec-policy
+  name: selinux-dovecot
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libsodium
   
   version: ""
 - 
   category: app-arch
-  name: lz4
+  name: xz-utils
   
   version: ""
 - 
@@ -23,58 +43,13 @@ requires:
   
   version: ""
 - 
-  category: dev-db
-  name: sqlite
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libressl
-  
-  version: ""
-- 
   category: acct-group
   name: mail
   
   version: ""
 - 
-  category: acct-user
-  name: dovecot
-  
-  version: ""
-- 
-  category: net-mail
-  name: vpopmail
-  
-  version: ""
-- 
-  category: acct-user
-  name: dovenull
-  
-  version: ""
-- 
-  category: net-mail
-  name: mailbase
-  
-  version: ""
-- 
-  category: dev-db
-  name: mysql-connector-c
-  
-  version: ""
-- 
-  category: sys-libs
-  name: pam
-  
-  version: ""
-- 
-  category: virtual
-  name: libiconv
-  
-  version: ""
-- 
-  category: sys-libs
-  name: libcap
+  category: app-arch
+  name: bzip2
   
   version: ""
 - 
@@ -88,28 +63,8 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
-  name: zlib
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libsodium
-  
-  version: ""
-- 
-  category: net-nds
-  name: openldap
-  
-  version: ""
-- 
-  category: dev-cpp
-  name: clucene
-  
-  version: "2.3"
-- 
-  category: dev-libs
-  name: openssl
+  category: app-arch
+  name: lz4
   
   version: ""
 - 
@@ -118,23 +73,18 @@ requires:
   
   version: ""
 - 
-  category: acct-group
-  name: dovenull
+  category: net-mail
+  name: mailbase
   
   version: ""
 - 
-  category: virtual
-  name: krb5
+  category: dev-libs
+  name: openssl
   
   version: ""
 - 
-  category: dev-lang
-  name: lua
-  
-  version: ""
-- 
-  category: sec-policy
-  name: selinux-dovecot
+  category: sys-libs
+  name: zlib
   
   version: ""
 - 
@@ -143,13 +93,63 @@ requires:
   
   version: ""
 - 
-  category: app-arch
-  name: bzip2
+  category: dev-lang
+  name: lua
+  
+  version: ""
+- 
+  category: dev-cpp
+  name: clucene
+  
+  version: "2.3"
+- 
+  category: dev-db
+  name: mysql-connector-c
+  
+  version: ""
+- 
+  category: sys-libs
+  name: pam
+  
+  version: ""
+- 
+  category: acct-user
+  name: dovecot
+  
+  version: ""
+- 
+  category: acct-user
+  name: dovenull
+  
+  version: ""
+- 
+  category: dev-db
+  name: sqlite
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libressl
   
   version: ""
 - 
   category: sys-apps
   name: tcp-wrappers
+  
+  version: ""
+- 
+  category: net-mail
+  name: vpopmail
+  
+  version: ""
+- 
+  category: virtual
+  name: libiconv
+  
+  version: ""
+- 
+  category: acct-group
+  name: dovenull
   
   version: ""
 use_flags:

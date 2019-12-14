@@ -8,40 +8,10 @@ conflicts:
 name: libav
 requires:
 - 
-  category: media-sound
-  name: lame
+  category: app-arch
+  name: bzip2
   
-  version: 3.99.5-r1
-- 
-  category: media-sound
-  name: jack-audio-connection-kit
-  
-  version: 0.121.3-r1
-- 
-  category: dev-libs
-  name: openssl
-  
-  version: 1.0.1h-r2
-- 
-  category: sys-libs
-  name: zlib
-  
-  version: 1.2.8-r1
-- 
-  category: media-libs
-  name: opencore-amr
-  
-  version: 0.1.3-r1
-- 
-  category: media-libs
-  name: faac
-  
-  version: 1.28-r3
-- 
-  category: "(\t>=media-libs"
-  name: freetype
-  
-  version: 2.5.0.1
+  version: 1.0.6-r4
 - 
   category: media-libs
   name: vo-amrwbenc
@@ -49,89 +19,24 @@ requires:
   version: 0.1.2-r1
 - 
   category: media-libs
-  name: speex
-  
-  version: 1.2_rc1-r1
-- 
-  category: media-libs
-  name: libdc1394
-  
-  version: 2.2.1
-- 
-  category: media-libs
-  name: libsdl
-  
-  version: 1.2.15-r4
-- 
-  category: media-sound
-  name: wavpack
-  
-  version: 4.60.1-r1
-- 
-  category: media-libs
-  name: x265
-  
-  version: "1.2"
-- 
-  category: media-libs
   name: libogg
   
   version: 1.3.0
-- 
-  category: media-libs
-  name: x264
-  
-  version: 0.0.20130506
-- 
-  category: media-sound
-  name: gsm
-  
-  version: 1.0.13-r1
-- 
-  category: sys-libs
-  name: libraw1394
-  
-  version: 2.1.0-r1
-- 
-  category: x11-libs
-  name: libvdpau
-  
-  version: "0.7"
-- 
-  category: media-libs
-  name: libbs2b
-  
-  version: 3.1.0-r1
-- 
-  category: app-arch
-  name: bzip2
-  
-  version: 1.0.6-r4
 - 
   category: media-sound
   name: twolame
   
   version: 0.3.13-r1
 - 
-  category: media-libs
-  name: xvid
-  
-  version: 1.3.2-r1
-- 
-  category: media-libs
-  name: fdk-aac
-  
-  version: 0.1.2
-- 
-  category: media-libs
-  name: opus
-  
-  version: 1.0.2-r2
-- 
   category: media-sound
-  name: pulseaudio
+  name: wavpack
   
-  version: 2.1-r1
+  version: 4.60.1-r1
+- 
+  category: dev-libs
+  name: libressl
+  
+  version: ""
 - 
   category: media-libs
   name: libvpx
@@ -143,20 +48,105 @@ requires:
   
   version: 1.0.27.2
 - 
-  category: x11-libs
-  name: libxcb
+  category: media-libs
+  name: libvorbis
   
-  version: 1.9.1
+  version: 1.3.3-r1
+- 
+  category: media-libs
+  name: libdc1394
+  
+  version: 2.2.1
+- 
+  category: media-sound
+  name: jack-audio-connection-kit
+  
+  version: 0.121.3-r1
+- 
+  category: media-sound
+  name: pulseaudio
+  
+  version: 2.1-r1
+- 
+  category: x11-libs
+  name: libva
+  
+  version: 1.2.1-r1
+- 
+  category: media-libs
+  name: opencore-amr
+  
+  version: 0.1.3-r1
+- 
+  category: media-libs
+  name: faac
+  
+  version: 1.28-r3
 - 
   category: media-plugins
   name: frei0r-plugins
   
   version: ""
 - 
-  category: dev-libs
-  name: libressl
+  category: media-libs
+  name: libbs2b
   
-  version: ""
+  version: 3.1.0-r1
+- 
+  category: dev-libs
+  name: libcdio-paranoia
+  
+  version: 0.90_p1-r1
+- 
+  category: media-libs
+  name: fdk-aac
+  
+  version: 0.1.2
+- 
+  category: media-video
+  name: rtmpdump
+  
+  version: 2.4_p20131018
+- 
+  category: media-libs
+  name: opus
+  
+  version: 1.0.2-r2
+- 
+  category: media-libs
+  name: fontconfig
+  
+  version: "2.10"
+- 
+  category: x11-libs
+  name: libvdpau
+  
+  version: "0.7"
+- 
+  category: media-sound
+  name: lame
+  
+  version: 3.99.5-r1
+- 
+  category: media-libs
+  name: libwebp
+  
+  version: 0.3.0
+- 
+  category: media-libs
+  name: x265
+  
+  version: "1.2"
+- 
+  category: media-sound
+  name: gsm
+  
+  version: 1.0.13-r1
+- 
+  category: dev-libs
+  name: openssl
+  
+  version: 1.0.1h-r2
 - 
   category: net-libs
   name: gnutls
@@ -164,9 +154,14 @@ requires:
   version: 2.12.23-r6
 - 
   category: x11-libs
-  name: libva
+  name: libxcb
   
-  version: 1.2.1-r1
+  version: 1.9.1
+- 
+  category: sys-libs
+  name: zlib
+  
+  version: 1.2.8-r1
 - 
   category: media-libs
   name: vo-aacenc
@@ -179,34 +174,39 @@ requires:
   version: 1.1.1
 - 
   category: media-libs
+  name: x264
+  
+  version: 0.0.20130506
+- 
+  category: media-libs
+  name: libsdl
+  
+  version: 1.2.15-r4
+- 
+  category: media-libs
+  name: speex
+  
+  version: 1.2_rc1-r1
+- 
+  category: "(\t>=media-libs"
+  name: freetype
+  
+  version: 2.5.0.1
+- 
+  category: media-libs
+  name: xvid
+  
+  version: 1.3.2-r1
+- 
+  category: sys-libs
+  name: libraw1394
+  
+  version: 2.1.0-r1
+- 
+  category: media-libs
   name: openjpeg
   
   version: 1.5.0
-- 
-  category: media-libs
-  name: libwebp
-  
-  version: 0.3.0
-- 
-  category: media-video
-  name: rtmpdump
-  
-  version: 2.4_p20131018
-- 
-  category: media-libs
-  name: fontconfig
-  
-  version: "2.10"
-- 
-  category: dev-libs
-  name: libcdio-paranoia
-  
-  version: 0.90_p1-r1
-- 
-  category: media-libs
-  name: libvorbis
-  
-  version: 1.3.3-r1
 use_flags:
 - aac
 - alsa

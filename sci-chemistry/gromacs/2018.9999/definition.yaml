@@ -3,21 +3,6 @@ conflicts: []
 name: gromacs
 requires:
 - 
-  category: x11-libs
-  name: libICE
-  
-  version: ""
-- 
-  category: virtual
-  name: opencl
-  
-  version: ""
-- 
-  category: sys-apps
-  name: hwloc
-  
-  version: "2"
-- 
   category: virtual
   name: mpi
   
@@ -32,6 +17,16 @@ requires:
   name: libSM
   
   version: ""
+- 
+  category: x11-libs
+  name: libICE
+  
+  version: ""
+- 
+  category: dev-util
+  name: nvidia-cuda-toolkit
+  
+  version: 4.2.9-r1
 - 
   category: sci-libs
   name: fftw
@@ -53,10 +48,15 @@ requires:
   
   version: ""
 - 
-  category: dev-util
-  name: nvidia-cuda-toolkit
+  category: virtual
+  name: opencl
   
-  version: 4.2.9-r1
+  version: ""
+- 
+  category: sys-apps
+  name: hwloc
+  
+  version: "2"
 use_flags:
 - X
 - blas

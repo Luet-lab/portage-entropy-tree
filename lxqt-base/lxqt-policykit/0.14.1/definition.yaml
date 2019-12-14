@@ -8,6 +8,21 @@ conflicts:
 name: lxqt-policykit
 requires:
 - 
+  category: lxqt-base
+  name: liblxqt
+  
+  version: ""
+- 
+  category: sys-auth
+  name: polkit-qt[qt5(+)]
+  
+  version: ""
+- 
+  category: dev-libs
+  name: glib
+  
+  version: ""
+- 
   category: dev-libs
   name: libqtxdg
   
@@ -25,21 +40,6 @@ requires:
 - 
   category: dev-qt
   name: qtwidgets
-  
-  version: ""
-- 
-  category: lxqt-base
-  name: liblxqt
-  
-  version: ""
-- 
-  category: sys-auth
-  name: polkit-qt[qt5(+)]
-  
-  version: ""
-- 
-  category: dev-libs
-  name: glib
   
   version: ""
 version: 0.14.1

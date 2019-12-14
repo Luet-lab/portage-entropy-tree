@@ -13,6 +13,16 @@ conflicts:
 name: linux-misc-apps
 requires:
 - 
+  category: sys-apps
+  name: hwids
+  
+  version: ""
+- 
+  category: dev-libs
+  name: glib
+  
+  version: "2.6"
+- 
   category: sys-kernel
   name: linux-headers
   
@@ -27,16 +37,6 @@ requires:
   name: libudev
   
   version: ""
-- 
-  category: sys-apps
-  name: hwids
-  
-  version: ""
-- 
-  category: dev-libs
-  name: glib
-  
-  version: "2.6"
 use_flags:
 - static-libs
 - tcpd

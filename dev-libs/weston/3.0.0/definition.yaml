@@ -3,53 +3,38 @@ conflicts: []
 name: weston
 requires:
 - 
-  category: dev-libs
-  name: wayland-protocols
-  
-  version: "1.8"
-- 
-  category: media-libs
-  name: lcms
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libX11
-  
-  version: ""
-- 
-  category: media-libs
-  name: libpng
-  
-  version: ""
-- 
-  category: media-libs
-  name: libwebp
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXcursor
-  
-  version: ""
-- 
   category: x11-libs
   name: cairo
   
   version: 1.11.3
 - 
   category: x11-libs
+  name: libdrm
+  
+  version: 2.4.30
+- 
+  category: x11-libs
   name: libxkbcommon
   
   version: 0.5.0
 - 
-  category: x11-libs
-  name: pixman
+  category: sys-libs
+  name: libunwind
   
-  version: 0.25.2
+  version: ""
 - 
-  category: net-misc
-  name: freerdp-1.1.0_beta1_p20130710
+  category: x11-base
+  name: xorg-server
+  
+  version: ""
+- 
+  category: media-libs
+  name: lcms
+  
+  version: ""
+- 
+  category: media-libs
+  name: mesa
   
   version: ""
 - 
@@ -58,55 +43,15 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
-  name: libunwind
+  category: media-libs
+  name: libpng
   
   version: ""
-- 
-  category: sys-apps
-  name: dbus
-  
-  version: "1.6"
-- 
-  category: sys-apps
-  name: systemd
-  
-  version: "209"
-- 
-  category: virtual
-  name: jpeg
-  
-  version: ""
-- 
-  category: x11-misc
-  name: xkeyboard-config
-  
-  version: ""
-- 
-  category: virtual
-  name: udev
-  
-  version: "136"
-- 
-  category: x11-base
-  name: xorg-server
-  
-  version: ""
-- 
-  category: dev-libs
-  name: wayland
-  
-  version: 1.12.0
 - 
   category: x11-libs
-  name: libdrm
+  name: pixman
   
-  version: 2.4.30
-- 
-  category: x11-misc
-  name: colord
-  
-  version: 0.1.27
+  version: 0.25.2
 - 
   category: x11-libs
   name: pango
@@ -119,7 +64,7 @@ requires:
   version: "1.9"
 - 
   category: x11-libs
-  name: cairo
+  name: libX11
   
   version: ""
 - 
@@ -128,13 +73,68 @@ requires:
   
   version: 0.8.0
 - 
+  category: dev-libs
+  name: wayland-protocols
+  
+  version: "1.8"
+- 
+  category: media-libs
+  name: libwebp
+  
+  version: ""
+- 
+  category: net-misc
+  name: freerdp-1.1.0_beta1_p20130710
+  
+  version: ""
+- 
+  category: dev-libs
+  name: wayland
+  
+  version: 1.12.0
+- 
+  category: virtual
+  name: jpeg
+  
+  version: ""
+- 
   category: sys-libs
   name: mtdev
   
   version: 1.1.0
 - 
-  category: media-libs
-  name: mesa
+  category: x11-misc
+  name: colord
+  
+  version: 0.1.27
+- 
+  category: sys-apps
+  name: dbus
+  
+  version: "1.6"
+- 
+  category: sys-apps
+  name: systemd
+  
+  version: "209"
+- 
+  category: virtual
+  name: udev
+  
+  version: "136"
+- 
+  category: x11-libs
+  name: cairo
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXcursor
+  
+  version: ""
+- 
+  category: x11-misc
+  name: xkeyboard-config
   
   version: ""
 use_flags:

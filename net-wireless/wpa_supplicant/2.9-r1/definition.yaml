@@ -3,18 +3,43 @@ conflicts: []
 name: wpa_supplicant
 requires:
 - 
-  category: sec-policy
-  name: selinux-networkmanager
-  
-  version: ""
-- 
-  category: sys-apps
-  name: dbus
+  category: dev-libs
+  name: libnl
   
   version: ""
 - 
   category: sys-apps
   name: pcsc-lite
+  
+  version: ""
+- 
+  category: sys-libs
+  name: readline
+  
+  version: ""
+- 
+  category: sec-policy
+  name: selinux-networkmanager
+  
+  version: ""
+- 
+  category: dev-qt
+  name: qtcore
+  
+  version: ""
+- 
+  category: dev-qt
+  name: qtwidgets
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libressl
+  
+  version: ""
+- 
+  category: sys-apps
+  name: dbus
   
   version: ""
 - 
@@ -24,37 +49,7 @@ requires:
   version: ""
 - 
   category: dev-qt
-  name: qtcore
-  
-  version: ""
-- 
-  category: sys-libs
-  name: ncurses
-  
-  version: ""
-- 
-  category: dev-libs
-  name: openssl
-  
-  version: 1.0.2k
-- 
-  category: dev-qt
-  name: qtwidgets
-  
-  version: ""
-- 
-  category: sys-libs
-  name: readline
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libressl
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libnl
+  name: qtsvg
   
   version: ""
 - 
@@ -68,10 +63,15 @@ requires:
   
   version: ""
 - 
-  category: dev-qt
-  name: qtsvg
+  category: sys-libs
+  name: ncurses
   
   version: ""
+- 
+  category: dev-libs
+  name: openssl
+  
+  version: 1.0.2k
 use_flags:
 - ap
 - bindist

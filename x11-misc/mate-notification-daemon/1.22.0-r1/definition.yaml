@@ -2,11 +2,6 @@ category: x11-misc
 conflicts:
 - 
   category: x11-misc
-  name: qtnotifydaemon
-  
-  version: ""
-- 
-  category: x11-misc
   name: notification-daemon
   
   version: ""
@@ -15,23 +10,38 @@ conflicts:
   name: notify-osd
   
   version: ""
+- 
+  category: x11-misc
+  name: qtnotifydaemon
+  
+  version: ""
 name: mate-notification-daemon
 requires:
 - 
-  category: sys-apps
-  name: dbus
-  
-  version: "1"
-- 
-  category: dev-libs
-  name: atk
+  category: x11-libs
+  name: cairo
   
   version: ""
+- 
+  category: x11-libs
+  name: libX11
+  
+  version: ""
+- 
+  category: media-libs
+  name: libcanberra
+  
+  version: "0.4"
 - 
   category: dev-libs
   name: glib
   
   version: "2.50"
+- 
+  category: x11-libs
+  name: gdk-pixbuf
+  
+  version: "2.22"
 - 
   category: x11-libs
   name: libnotify
@@ -43,6 +53,11 @@ requires:
   
   version: ""
 - 
+  category: sys-apps
+  name: dbus
+  
+  version: "1"
+- 
   category: x11-libs
   name: gtk+
   
@@ -53,25 +68,10 @@ requires:
   
   version: "3"
 - 
-  category: x11-libs
-  name: cairo
+  category: dev-libs
+  name: atk
   
   version: ""
-- 
-  category: x11-libs
-  name: gdk-pixbuf
-  
-  version: "2.22"
-- 
-  category: x11-libs
-  name: libX11
-  
-  version: ""
-- 
-  category: media-libs
-  name: libcanberra
-  
-  version: "0.4"
 use_flags:
 - ""
 version: 1.22.0-r1

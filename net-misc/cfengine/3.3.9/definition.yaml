@@ -4,22 +4,22 @@ name: cfengine
 requires:
 - 
   category: sys-libs
-  name: db
+  name: libselinux
   
-  version: "4"
+  version: ""
+- 
+  category: app-emulation
+  name: libvirt
+  
+  version: ""
 - 
   category: dev-db
   name: tokyocabinet
   
   version: ""
 - 
-  category: net-libs
-  name: libnsl
-  
-  version: ""
-- 
-  category: app-emulation
-  name: libvirt
+  category: dev-db
+  name: qdbm
   
   version: ""
 - 
@@ -33,6 +33,16 @@ requires:
   
   version: ""
 - 
+  category: net-libs
+  name: libnsl
+  
+  version: ""
+- 
+  category: sys-libs
+  name: db
+  
+  version: "4"
+- 
   category: virtual
   name: mysql
   
@@ -40,16 +50,6 @@ requires:
 - 
   category: dev-db
   name: postgresql
-  
-  version: ""
-- 
-  category: sys-libs
-  name: libselinux
-  
-  version: ""
-- 
-  category: dev-db
-  name: qdbm
   
   version: ""
 use_flags:

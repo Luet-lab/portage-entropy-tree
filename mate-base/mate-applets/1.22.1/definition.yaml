@@ -8,6 +8,46 @@ conflicts:
 name: mate-applets
 requires:
 - 
+  category: dev-libs
+  name: libxml2
+  
+  version: "2.5"
+- 
+  category: x11-libs
+  name: gtk+
+  
+  version: "3.22"
+- 
+  category: x11-libs
+  name: libX11
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libwnck
+  
+  version: "3.0"
+- 
+  category: sys-power
+  name: upower
+  
+  version: 0.9.23
+- 
+  category: dev-libs
+  name: glib
+  
+  version: "2.50"
+- 
+  category: x11-libs
+  name: gdk-pixbuf
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libmateweather
+  
+  version: 1.17.0
+- 
   category: gnome-base
   name: libgtop
   
@@ -19,69 +59,14 @@ requires:
   version: 1.1.2
 - 
   category: x11-libs
-  name: gdk-pixbuf
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libwnck
-  
-  version: "3.0"
-- 
-  category: sys-auth
-  name: polkit
-  
-  version: "0.97"
-- 
-  category: x11-libs
   name: libnotify
   
   version: "0.7"
 - 
-  category: dev-libs
-  name: glib
-  
-  version: "2.50"
-- 
-  category: dev-libs
-  name: libmateweather
-  
-  version: 1.17.0
-- 
-  category: dev-libs
-  name: libxml2
-  
-  version: "2.5"
-- 
-  category: gnome-extra
-  name: gucharmap
-  
-  version: "3.0"
-- 
   category: mate-base
-  name: mate-panel
+  name: mate-settings-daemon
   
-  version: 1.17.0
-- 
-  category: x11-libs
-  name: gtk+
-  
-  version: "3.22"
-- 
-  category: x11-libs
-  name: gtksourceview
-  
-  version: ""
-- 
-  category: x11-libs
-  name: pango
-  
-  version: ""
-- 
-  category: virtual
-  name: libintl
-  
-  version: ""
+  version: "1.6"
 - 
   category: dev-libs
   name: atk
@@ -98,25 +83,40 @@ requires:
   
   version: 28_pre9
 - 
-  category: x11-libs
-  name: libX11
-  
-  version: ""
-- 
-  category: sys-power
-  name: upower
-  
-  version: 0.9.23
-- 
-  category: mate-base
-  name: mate-settings-daemon
-  
-  version: "1.6"
-- 
   category: sys-power
   name: cpupower
   
   version: ""
+- 
+  category: x11-libs
+  name: gtksourceview
+  
+  version: ""
+- 
+  category: x11-libs
+  name: pango
+  
+  version: ""
+- 
+  category: virtual
+  name: libintl
+  
+  version: ""
+- 
+  category: sys-auth
+  name: polkit
+  
+  version: "0.97"
+- 
+  category: gnome-extra
+  name: gucharmap
+  
+  version: "3.0"
+- 
+  category: mate-base
+  name: mate-panel
+  
+  version: 1.17.0
 use_flags:
 - X
 - ipv6

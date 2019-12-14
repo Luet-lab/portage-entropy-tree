@@ -8,8 +8,18 @@ conflicts:
 name: dovecot
 requires:
 - 
+  category: net-mail
+  name: vpopmail
+  
+  version: ""
+- 
   category: sys-libs
-  name: pam
+  name: zlib
+  
+  version: ""
+- 
+  category: dev-lang
+  name: lua
   
   version: ""
 - 
@@ -18,18 +28,23 @@ requires:
   
   version: ""
 - 
+  category: dev-libs
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libressl
+  
+  version: ""
+- 
   category: app-text
   name: libexttextcat
   
   version: ""
 - 
-  category: net-nds
-  name: openldap
-  
-  version: ""
-- 
-  category: dev-lang
-  name: lua
+  category: net-mail
+  name: mailbase
   
   version: ""
 - 
@@ -39,32 +54,17 @@ requires:
   version: "2.3"
 - 
   category: app-arch
-  name: lz4
-  
-  version: ""
-- 
-  category: dev-libs
-  name: icu
-  
-  version: ""
-- 
-  category: acct-group
-  name: mail
-  
-  version: ""
-- 
-  category: net-mail
-  name: mailbase
+  name: xz-utils
   
   version: ""
 - 
   category: app-arch
-  name: bzip2
+  name: lz4
   
   version: ""
 - 
   category: sys-libs
-  name: libcap
+  name: pam
   
   version: ""
 - 
@@ -73,18 +73,8 @@ requires:
   
   version: ""
 - 
-  category: net-misc
-  name: curl
-  
-  version: ""
-- 
-  category: dev-libs
-  name: openssl
-  
-  version: ""
-- 
-  category: sys-libs
-  name: zlib
+  category: acct-group
+  name: mail
   
   version: ""
 - 
@@ -94,7 +84,17 @@ requires:
   version: ""
 - 
   category: dev-libs
+  name: icu
+  
+  version: ""
+- 
+  category: dev-libs
   name: libsodium
+  
+  version: ""
+- 
+  category: app-arch
+  name: bzip2
   
   version: ""
 - 
@@ -103,23 +103,8 @@ requires:
   
   version: ""
 - 
-  category: app-arch
-  name: xz-utils
-  
-  version: ""
-- 
   category: dev-db
   name: mysql-connector-c
-  
-  version: ""
-- 
-  category: dev-db
-  name: sqlite
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libressl
   
   version: ""
 - 
@@ -128,8 +113,23 @@ requires:
   
   version: ""
 - 
-  category: net-mail
-  name: vpopmail
+  category: sys-libs
+  name: libcap
+  
+  version: ""
+- 
+  category: net-nds
+  name: openldap
+  
+  version: ""
+- 
+  category: net-misc
+  name: curl
+  
+  version: ""
+- 
+  category: dev-db
+  name: sqlite
   
   version: ""
 use_flags:

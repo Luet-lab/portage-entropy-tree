@@ -8,6 +8,16 @@ conflicts:
 name: gitolite-gentoo
 requires:
 - 
+  category: sec-policy
+  name: selinux-gitosis
+  
+  version: ""
+- 
+  category: dev-perl
+  name: Net-SSH-AuthorizedKeysFile
+  
+  version: "0.17"
+- 
   category: dev-lang
   name: perl
   
@@ -23,11 +33,6 @@ requires:
   
   version: ""
 - 
-  category: dev-perl
-  name: Net-SSH-AuthorizedKeysFile
-  
-  version: "0.17"
-- 
   category: dev-vcs
   name: git
   
@@ -35,11 +40,6 @@ requires:
 - 
   category: app-vim
   name: gitolite-syntax
-  
-  version: ""
-- 
-  category: sec-policy
-  name: selinux-gitosis
   
   version: ""
 - 

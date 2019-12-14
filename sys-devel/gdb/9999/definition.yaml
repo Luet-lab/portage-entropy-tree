@@ -3,6 +3,11 @@ conflicts: []
 name: gdb
 requires:
 - 
+  category: sys-libs
+  name: readline
+  
+  version: ""
+- 
   category: app-arch
   name: xz-utils
   
@@ -32,11 +37,6 @@ requires:
   name: ncurses
   
   version: 5.2-r2
-- 
-  category: sys-libs
-  name: readline
-  
-  version: ""
 use_flags:
 - +client
 - lzma

@@ -3,33 +3,23 @@ conflicts: []
 name: ettercap
 requires:
 - 
+  category: sys-libs
+  name: ncurses
+  
+  version: "5.3"
+- 
   category: net-libs
   name: libpcap
   
   version: 0.8.1
 - 
-  category: dev-libs
-  name: geoip
-  
-  version: ""
-- 
-  category: x11-libs
-  name: cairo
-  
-  version: ""
-- 
-  category: net-misc
-  name: curl
-  
-  version: 7.26.0
-- 
-  category: dev-libs
-  name: libressl
-  
-  version: ""
-- 
   category: sys-libs
   name: zlib
+  
+  version: ""
+- 
+  category: dev-libs
+  name: geoip
   
   version: ""
 - 
@@ -38,13 +28,23 @@ requires:
   
   version: 2.2.2
 - 
-  category: media-libs
-  name: freetype
+  category: dev-libs
+  name: libbsd
   
   version: ""
 - 
+  category: dev-libs
+  name: libressl
+  
+  version: ""
+- 
+  category: dev-libs
+  name: atk
+  
+  version: 1.2.4
+- 
   category: x11-libs
-  name: gdk-pixbuf
+  name: cairo
   
   version: ""
 - 
@@ -58,13 +58,13 @@ requires:
   
   version: 1.2.3
 - 
-  category: dev-libs
-  name: libbsd
+  category: net-misc
+  name: curl
   
-  version: ""
+  version: 7.26.0
 - 
   category: dev-libs
-  name: libpcre
+  name: openssl
   
   version: ""
 - 
@@ -73,18 +73,18 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  name: atk
+  category: x11-libs
+  name: gdk-pixbuf
   
-  version: 1.2.4
-- 
-  category: sys-libs
-  name: ncurses
-  
-  version: "5.3"
+  version: ""
 - 
   category: dev-libs
-  name: openssl
+  name: libpcre
+  
+  version: ""
+- 
+  category: media-libs
+  name: freetype
   
   version: ""
 use_flags:

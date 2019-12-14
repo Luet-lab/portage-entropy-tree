@@ -8,8 +8,18 @@ conflicts:
 name: engrampa
 requires:
 - 
-  category: sys-apps
-  name: file
+  category: x11-libs
+  name: gtk+
+  
+  version: "3.22"
+- 
+  category: x11-libs
+  name: pango
+  
+  version: ""
+- 
+  category: app-admin
+  name: packagekit-base
   
   version: ""
 - 
@@ -23,13 +33,13 @@ requires:
   
   version: "0.14"
 - 
-  category: x11-libs
-  name: gtk+
+  category: virtual
+  name: libintl
   
-  version: "3.22"
+  version: ""
 - 
   category: x11-libs
-  name: pango
+  name: gdk-pixbuf
   
   version: ""
 - 
@@ -38,18 +48,8 @@ requires:
   
   version: 1.17.1
 - 
-  category: app-admin
-  name: packagekit-base
-  
-  version: ""
-- 
-  category: virtual
-  name: libintl
-  
-  version: ""
-- 
-  category: x11-libs
-  name: gdk-pixbuf
+  category: sys-apps
+  name: file
   
   version: ""
 use_flags:

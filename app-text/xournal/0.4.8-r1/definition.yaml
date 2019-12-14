@@ -3,8 +3,18 @@ conflicts: []
 name: xournal
 requires:
 - 
-  category: sys-libs
-  name: zlib
+  category: app-text
+  name: poppler
+  
+  version: ""
+- 
+  category: dev-libs
+  name: glib
+  
+  version: ""
+- 
+  category: media-libs
+  name: fontconfig
   
   version: ""
 - 
@@ -14,12 +24,17 @@ requires:
   version: ""
 - 
   category: x11-libs
+  name: gdk-pixbuf
+  
+  version: ""
+- 
+  category: x11-libs
   name: gtk+
   
   version: ""
 - 
   category: app-text
-  name: poppler
+  name: ghostscript-gpl
   
   version: ""
 - 
@@ -33,33 +48,18 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
-  name: gdk-pixbuf
-  
-  version: ""
-- 
-  category: x11-libs
-  name: pango
-  
-  version: ""
-- 
-  category: app-text
-  name: ghostscript-gpl
-  
-  version: ""
-- 
-  category: dev-libs
-  name: glib
-  
-  version: ""
-- 
   category: media-libs
   name: freetype
   
   version: ""
 - 
-  category: media-libs
-  name: fontconfig
+  category: sys-libs
+  name: zlib
+  
+  version: ""
+- 
+  category: x11-libs
+  name: pango
   
   version: ""
 use_flags:

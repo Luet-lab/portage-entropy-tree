@@ -3,8 +3,13 @@ conflicts: []
 name: gmic
 requires:
 - 
-  category: sci-libs
-  name: fftw
+  category: media-video
+  name: ffmpeg
+  
+  version: ""
+- 
+  category: sys-libs
+  name: zlib
   
   version: ""
 - 
@@ -13,13 +18,18 @@ requires:
   
   version: 5.2.0
 - 
-  category: x11-libs
-  name: libXext
+  category: media-gfx
+  name: graphicsmagick
   
   version: ""
 - 
-  category: net-misc
-  name: curl
+  category: x11-libs
+  name: libX11
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXext
   
   version: ""
 - 
@@ -28,10 +38,10 @@ requires:
   
   version: 2.8.0
 - 
-  category: x11-libs
-  name: libX11
+  category: dev-qt
+  name: qtwidgets
   
-  version: ""
+  version: 5.2.0
 - 
   category: virtual
   name: jpeg
@@ -49,12 +59,12 @@ requires:
   version: ""
 - 
   category: media-libs
-  name: libpng
+  name: openexr
   
   version: ""
 - 
-  category: sys-libs
-  name: zlib
+  category: net-misc
+  name: curl
   
   version: ""
 - 
@@ -64,32 +74,22 @@ requires:
   version: 5.2.0
 - 
   category: dev-qt
-  name: qtwidgets
-  
-  version: 5.2.0
-- 
-  category: media-gfx
-  name: graphicsmagick
-  
-  version: ""
-- 
-  category: media-video
-  name: ffmpeg
-  
-  version: ""
-- 
-  category: dev-qt
   name: qtgui
   
   version: 5.2.0
 - 
   category: media-libs
-  name: openexr
+  name: libpng
   
   version: ""
 - 
   category: media-libs
   name: tiff
+  
+  version: ""
+- 
+  category: sci-libs
+  name: fftw
   
   version: ""
 use_flags:

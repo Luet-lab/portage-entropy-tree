@@ -9,22 +9,32 @@ name: marco
 requires:
 - 
   category: x11-libs
-  name: libXdamage
+  name: startup-notification
   
-  version: ""
-- 
-  category: virtual
-  name: libintl
-  
-  version: ""
+  version: "0.7"
 - 
   category: gnome-extra
   name: zenity
   
   version: ""
 - 
+  category: dev-libs
+  name: atk
+  
+  version: ""
+- 
+  category: media-libs
+  name: libcanberra
+  
+  version: ""
+- 
   category: x11-libs
-  name: pango-1.2[X]
+  name: gdk-pixbuf
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libSM
   
   version: ""
 - 
@@ -34,12 +44,52 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: libXcomposite
+  name: libXext
   
-  version: "0.3"
+  version: ""
+- 
+  category: gnome-base
+  name: libgtop
+  
+  version: "2"
+- 
+  category: x11-libs
+  name: libICE
+  
+  version: ""
 - 
   category: x11-libs
   name: libXcursor
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXdamage
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXrender
+  
+  version: ""
+- 
+  category: virtual
+  name: libintl
+  
+  version: ""
+- 
+  category: x11-libs
+  name: cairo
+  
+  version: ""
+- 
+  category: x11-libs
+  name: pango-1.2[X]
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXfixes
   
   version: ""
 - 
@@ -53,20 +103,10 @@ requires:
   
   version: ""
 - 
-  category: gnome-base
-  name: libgtop
+  category: dev-libs
+  name: glib
   
-  version: "2"
-- 
-  category: x11-libs
-  name: cairo
-  
-  version: ""
-- 
-  category: x11-libs
-  name: gdk-pixbuf
-  
-  version: ""
+  version: "2.50"
 - 
   category: x11-libs
   name: gtk+
@@ -74,37 +114,12 @@ requires:
   version: "3.22"
 - 
   category: x11-libs
-  name: libSM
+  name: libXcomposite
   
-  version: ""
+  version: "0.3"
 - 
   category: x11-libs
-  name: libXext
-  
-  version: ""
-- 
-  category: x11-libs
-  name: startup-notification
-  
-  version: "0.7"
-- 
-  category: dev-libs
-  name: atk
-  
-  version: ""
-- 
-  category: dev-libs
-  name: glib
-  
-  version: "2.50"
-- 
-  category: media-libs
-  name: libcanberra
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXrender
+  name: libXrandr
   
   version: ""
 - 
@@ -112,21 +127,6 @@ requires:
   name: mate-desktop
   
   version: 1.20.0
-- 
-  category: x11-libs
-  name: libICE
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXfixes
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXrandr
-  
-  version: ""
 use_flags:
 - startup-notification
 - test

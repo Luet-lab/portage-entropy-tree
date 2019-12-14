@@ -3,8 +3,18 @@ conflicts: []
 name: gqrx
 requires:
 - 
-  category: media-libs
-  name: portaudio
+  category: dev-libs
+  name: boost
+  
+  version: ""
+- 
+  category: dev-qt
+  name: qtwidgets
+  
+  version: ""
+- 
+  category: media-sound
+  name: pulseaudio
   
   version: ""
 - 
@@ -12,11 +22,6 @@ requires:
   name: gr-osmosdr
   
   version: 0.1.0
-- 
-  category: dev-libs
-  name: boost
-  
-  version: ""
 - 
   category: dev-qt
   name: qtcore
@@ -38,8 +43,8 @@ requires:
   
   version: ""
 - 
-  category: dev-qt
-  name: qtwidgets
+  category: media-libs
+  name: portaudio
   
   version: ""
 - 
@@ -47,11 +52,6 @@ requires:
   name: gnuradio
   
   version: 3.7_rc
-- 
-  category: media-sound
-  name: pulseaudio
-  
-  version: ""
 use_flags:
 - gr-audio
 - portaudio

@@ -3,13 +3,23 @@ conflicts: []
 name: gromacs
 requires:
 - 
+  category: sys-apps
+  name: hwloc
+  
+  version: ""
+- 
+  category: sci-libs
+  name: lmfit
+  
+  version: ""
+- 
   category: x11-libs
   name: libSM
   
   version: ""
 - 
-  category: x11-libs
-  name: libICE
+  category: sci-libs
+  name: fftw
   
   version: ""
 - 
@@ -23,8 +33,13 @@ requires:
   
   version: 6.5.14
 - 
-  category: sci-libs
-  name: fftw
+  category: virtual
+  name: opencl
+  
+  version: ""
+- 
+  category: virtual
+  name: lapack
   
   version: ""
 - 
@@ -43,23 +58,8 @@ requires:
   
   version: ""
 - 
-  category: virtual
-  name: opencl
-  
-  version: ""
-- 
-  category: sys-apps
-  name: hwloc
-  
-  version: ""
-- 
-  category: virtual
-  name: lapack
-  
-  version: ""
-- 
-  category: sci-libs
-  name: lmfit
+  category: x11-libs
+  name: libICE
   
   version: ""
 use_flags:

@@ -3,8 +3,18 @@ conflicts: []
 name: mate-netbook
 requires:
 - 
-  category: virtual
-  name: libintl
+  category: mate-base
+  name: mate-panel
+  
+  version: 1.17.0
+- 
+  category: x11-libs
+  name: gtk+
+  
+  version: "3.22"
+- 
+  category: x11-libs
+  name: cairo
   
   version: ""
 - 
@@ -13,15 +23,15 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
-  name: cairo
+  category: virtual
+  name: libintl
   
   version: ""
 - 
-  category: x11-libs
-  name: gtk+
+  category: dev-libs
+  name: glib
   
-  version: "3.22"
+  version: "2.50"
 - 
   category: x11-libs
   name: libfakekey
@@ -37,16 +47,6 @@ requires:
   name: libXtst
   
   version: ""
-- 
-  category: dev-libs
-  name: glib
-  
-  version: "2.50"
-- 
-  category: mate-base
-  name: mate-panel
-  
-  version: 1.17.0
 use_flags:
 - ""
 version: 1.22.1

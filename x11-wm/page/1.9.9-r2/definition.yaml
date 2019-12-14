@@ -4,19 +4,14 @@ name: page
 requires:
 - 
   category: x11-libs
-  name: libXdamage
+  name: libxcb
   
-  version: 1.1.4-r1
+  version: "1.11"
 - 
   category: x11-libs
-  name: cairo-1.14.6[X,xcb]
+  name: xcb-util
   
-  version: ""
-- 
-  category: x11-libs
-  name: libXrender
-  
-  version: 0.9.10
+  version: 0.4.0
 - 
   category: x11-libs
   name: libXext
@@ -29,19 +24,14 @@ requires:
   version: 1.40.5
 - 
   category: x11-libs
-  name: libxcb
-  
-  version: "1.11"
-- 
-  category: x11-libs
-  name: xcb-util
-  
-  version: 0.4.0
-- 
-  category: x11-libs
   name: libXfixes
   
   version: 5.0.3
+- 
+  category: x11-libs
+  name: libXdamage
+  
+  version: 1.1.4-r1
 - 
   category: x11-libs
   name: libXrandr
@@ -52,6 +42,16 @@ requires:
   name: libXcomposite
   
   version: 0.4.4-r1
+- 
+  category: x11-libs
+  name: libXrender
+  
+  version: 0.9.10
+- 
+  category: x11-libs
+  name: cairo-1.14.6[X,xcb]
+  
+  version: ""
 - 
   category: dev-libs
   name: glib

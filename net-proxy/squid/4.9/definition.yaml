@@ -8,13 +8,13 @@ conflicts:
 name: squid
 requires:
 - 
-  category: net-fs
-  name: samba
+  category: net-nds
+  name: openldap
   
   version: ""
 - 
-  category: net-nds
-  name: openldap
+  category: dev-libs
+  name: libressl
   
   version: ""
 - 
@@ -23,23 +23,28 @@ requires:
   
   version: ""
 - 
-  category: app-admin
-  name: logrotate
+  category: sys-libs
+  name: db
+  
+  version: "4"
+- 
+  category: net-libs
+  name: gnutls
+  
+  version: 3.1.5
+- 
+  category: sec-policy
+  name: selinux-squid
   
   version: ""
 - 
-  category: dev-libs
-  name: libltdl
+  category: sys-libs
+  name: libcap
   
-  version: ""
+  version: "2.16"
 - 
-  category: dev-perl
-  name: DBD-mysql
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libressl
+  category: sys-libs
+  name: pam
   
   version: ""
 - 
@@ -58,28 +63,13 @@ requires:
   
   version: ""
 - 
-  category: net-libs
-  name: gnutls
-  
-  version: 3.1.5
-- 
-  category: dev-perl
-  name: DBD-SQLite
+  category: app-admin
+  name: logrotate
   
   version: ""
 - 
-  category: dev-lang
-  name: perl
-  
-  version: ""
-- 
-  category: sys-libs
-  name: libcap
-  
-  version: "2.16"
-- 
-  category: sys-libs
-  name: pam
+  category: net-fs
+  name: samba
   
   version: ""
 - 
@@ -103,18 +93,28 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
-  name: db
+  category: dev-libs
+  name: libltdl
   
-  version: "4"
+  version: ""
+- 
+  category: dev-lang
+  name: perl
+  
+  version: ""
+- 
+  category: dev-perl
+  name: DBD-mysql
+  
+  version: ""
 - 
   category: dev-perl
   name: DBD-Pg
   
   version: ""
 - 
-  category: sec-policy
-  name: selinux-squid
+  category: dev-perl
+  name: DBD-SQLite
   
   version: ""
 use_flags:

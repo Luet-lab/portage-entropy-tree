@@ -3,23 +3,38 @@ conflicts: []
 name: wlroots
 requires:
 - 
+  category: dev-libs
+  name: wayland
+  
+  version: 1.17.0
+- 
   category: sys-auth
   name: elogind
   
   version: "237"
 - 
+  category: x11-base
+  name: xorg-server
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libinput
+  
+  version: 1.9.0
+- 
+  category: x11-libs
+  name: libxkbcommon
+  
+  version: ""
+- 
+  category: x11-libs
+  name: pixman
+  
+  version: ""
+- 
   category: x11-libs
   name: xcb-util-wm
-  
-  version: ""
-- 
-  category: media-libs
-  name: mesa
-  
-  version: ""
-- 
-  category: virtual
-  name: libudev
   
   version: ""
 - 
@@ -30,6 +45,21 @@ requires:
 - 
   category: x11-libs
   name: xcb-util-image
+  
+  version: ""
+- 
+  category: media-video
+  name: ffmpeg
+  
+  version: ""
+- 
+  category: media-libs
+  name: mesa
+  
+  version: ""
+- 
+  category: virtual
+  name: libudev
   
   version: ""
 - 
@@ -44,39 +74,9 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: libxkbcommon
-  
-  version: ""
-- 
-  category: x11-libs
-  name: pixman
-  
-  version: ""
-- 
-  category: x11-libs
   name: libxcb
   
   version: ""
-- 
-  category: x11-base
-  name: xorg-server
-  
-  version: ""
-- 
-  category: media-video
-  name: ffmpeg
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libinput
-  
-  version: 1.9.0
-- 
-  category: dev-libs
-  name: wayland
-  
-  version: 1.17.0
 use_flags:
 - elogind
 - icccm

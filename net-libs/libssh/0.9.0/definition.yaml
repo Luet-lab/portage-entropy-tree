@@ -3,6 +3,16 @@ conflicts: []
 name: libssh
 requires:
 - 
+  category: net-libs
+  name: mbedtls
+  
+  version: ""
+- 
+  category: sys-libs
+  name: zlib
+  
+  version: 1.2.8-r1
+- 
   category: dev-libs
   name: openssl
   
@@ -22,16 +32,6 @@ requires:
   name: krb5
   
   version: 0-r1
-- 
-  category: net-libs
-  name: mbedtls
-  
-  version: ""
-- 
-  category: sys-libs
-  name: zlib
-  
-  version: 1.2.8-r1
 use_flags:
 - debug
 - doc

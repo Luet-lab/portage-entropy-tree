@@ -3,6 +3,21 @@ conflicts: []
 name: qtwayland
 requires:
 - 
+  category: dev-qt
+  name: qtgui-5.13.2[egl,libinput=]
+  
+  version: ""
+- 
+  category: media-libs
+  name: mesa
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libxkbcommon
+  
+  version: 0.2.0
+- 
   category: x11-libs
   name: libX11
   
@@ -27,21 +42,6 @@ requires:
   name: qtdeclarative
   
   version: 5.13.2
-- 
-  category: dev-qt
-  name: qtgui-5.13.2[egl,libinput=]
-  
-  version: ""
-- 
-  category: media-libs
-  name: mesa
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libxkbcommon
-  
-  version: 0.2.0
 use_flags:
 - +libinput
 - xcomposite

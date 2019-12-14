@@ -3,13 +3,43 @@ conflicts: []
 name: xine-lib
 requires:
 - 
-  category: media-sound
-  name: wavpack
+  category: x11-libs
+  name: libXext
+  
+  version: ""
+- 
+  category: sys-libs
+  name: zlib
+  
+  version: ""
+- 
+  category: media-libs
+  name: a52dec
   
   version: ""
 - 
   category: x11-libs
-  name: libxcb
+  name: gdk-pixbuf
+  
+  version: ""
+- 
+  category: media-libs
+  name: libmodplug
+  
+  version: 0.8.8.1
+- 
+  category: virtual
+  name: glu
+  
+  version: ""
+- 
+  category: media-libs
+  name: libsdl
+  
+  version: ""
+- 
+  category: media-libs
+  name: libtheora
   
   version: ""
 - 
@@ -18,18 +48,28 @@ requires:
   
   version: ""
 - 
-  category: virtual
-  name: jack
+  category: media-video
+  name: ffmpeg
   
   version: ""
 - 
-  category: media-libs
-  name: libmng
+  category: media-video
+  name: libav
   
   version: ""
 - 
-  category: media-libs
-  name: libv4l
+  category: media-sound
+  name: wavpack
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXvMC
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libvdpau
   
   version: ""
 - 
@@ -43,28 +83,8 @@ requires:
   
   version: ""
 - 
-  category: media-video
-  name: libav
-  
-  version: ""
-- 
   category: media-libs
-  name: libmodplug
-  
-  version: 0.8.8.1
-- 
-  category: media-libs
-  name: libsdl
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libvdpau
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXinerama
+  name: libdvdnav
   
   version: ""
 - 
@@ -74,107 +94,12 @@ requires:
   version: ""
 - 
   category: media-libs
-  name: aalib
-  
-  version: ""
-- 
-  category: media-video
-  name: ffmpeg
-  
-  version: ""
-- 
-  category: media-libs
   name: libpostproc
-  
-  version: ""
-- 
-  category: media-libs
-  name: freetype
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libva
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXvMC
-  
-  version: ""
-- 
-  category: media-libs
-  name: libdvdnav
-  
-  version: ""
-- 
-  category: media-libs
-  name: libbluray
-  
-  version: 0.2.1
-- 
-  category: media-libs
-  name: libdvdcss
-  
-  version: 1.2.10
-- 
-  category: virtual
-  name: glu
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libcdio
-  
-  version: ""
-- 
-  category: sys-libs
-  name: zlib
-  
-  version: ""
-- 
-  category: virtual
-  name: imagemagick-tools
-  
-  version: ""
-- 
-  category: media-libs
-  name: libcaca
-  
-  version: ""
-- 
-  category: media-sound
-  name: musepack-tools
-  
-  version: "444"
-- 
-  category: media-libs
-  name: libogg
-  
-  version: ""
-- 
-  category: media-libs
-  name: libvpx
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXext
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXv
   
   version: ""
 - 
   category: virtual
   name: opengl
-  
-  version: ""
-- 
-  category: media-libs
-  name: fontconfig
   
   version: ""
 - 
@@ -188,23 +113,68 @@ requires:
   
   version: ""
 - 
-  category: media-libs
-  name: a52dec
+  category: x11-libs
+  name: libxcb
   
   version: ""
 - 
   category: media-libs
-  name: flac
+  name: libdvdcss
+  
+  version: 1.2.10
+- 
+  category: media-libs
+  name: libmng
+  
+  version: ""
+- 
+  category: media-sound
+  name: musepack-tools
+  
+  version: "444"
+- 
+  category: dev-libs
+  name: libcdio
+  
+  version: ""
+- 
+  category: media-libs
+  name: libvpx
   
   version: ""
 - 
   category: x11-libs
-  name: gdk-pixbuf
+  name: libXinerama
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXv
+  
+  version: ""
+- 
+  category: media-libs
+  name: libbluray
+  
+  version: 0.2.1
+- 
+  category: media-libs
+  name: libdca
   
   version: ""
 - 
   category: virtual
-  name: jpeg
+  name: jack
+  
+  version: ""
+- 
+  category: media-libs
+  name: libcaca
+  
+  version: ""
+- 
+  category: media-libs
+  name: libv4l
   
   version: ""
 - 
@@ -213,8 +183,53 @@ requires:
   
   version: ""
 - 
+  category: x11-libs
+  name: libva
+  
+  version: ""
+- 
+  category: media-libs
+  name: aalib
+  
+  version: ""
+- 
+  category: media-libs
+  name: alsa-lib
+  
+  version: ""
+- 
+  category: media-libs
+  name: libfame
+  
+  version: ""
+- 
+  category: media-libs
+  name: flac
+  
+  version: ""
+- 
+  category: virtual
+  name: jpeg
+  
+  version: ""
+- 
   category: media-sound
   name: pulseaudio
+  
+  version: ""
+- 
+  category: media-libs
+  name: libogg
+  
+  version: ""
+- 
+  category: virtual
+  name: imagemagick-tools
+  
+  version: ""
+- 
+  category: media-libs
+  name: libmad
   
   version: ""
 - 
@@ -229,27 +244,12 @@ requires:
   version: ""
 - 
   category: media-libs
-  name: libtheora
+  name: fontconfig
   
   version: ""
 - 
   category: media-libs
-  name: alsa-lib
-  
-  version: ""
-- 
-  category: media-libs
-  name: libdca
-  
-  version: ""
-- 
-  category: media-libs
-  name: libfame
-  
-  version: ""
-- 
-  category: media-libs
-  name: libmad
+  name: freetype
   
   version: ""
 use_flags:

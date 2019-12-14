@@ -3,8 +3,8 @@ conflicts: []
 name: dealii
 requires:
 - 
-  category: sci-libs
-  name: adolc
+  category: virtual
+  name: mpi
   
   version: ""
 - 
@@ -14,37 +14,37 @@ requires:
   version: ""
 - 
   category: sci-libs
-  name: nanoflann
+  name: netcdf-cxx
   
   version: ""
 - 
   category: sci-libs
-  name: opencascade
+  name: arpack[mpi=]
   
   version: ""
 - 
   category: sci-libs
-  name: p4est
+  name: gmsh
   
   version: ""
 - 
   category: sci-libs
-  name: scalapack
-  
-  version: ""
-- 
-  category: dev-libs
-  name: boost
-  
-  version: ""
-- 
-  category: app-arch
-  name: bzip2
+  name: gsl
   
   version: ""
 - 
   category: sci-libs
-  name: umfpack
+  name: hdf5[mpi=]
+  
+  version: ""
+- 
+  category: sci-libs
+  name: parmetis
+  
+  version: "4"
+- 
+  category: sci-libs
+  name: sundials
   
   version: ""
 - 
@@ -63,23 +63,18 @@ requires:
   
   version: ""
 - 
-  category: sci-libs
-  name: arpack[mpi=]
+  category: dev-libs
+  name: boost
+  
+  version: ""
+- 
+  category: app-arch
+  name: bzip2
   
   version: ""
 - 
   category: media-libs
   name: assimp
-  
-  version: ""
-- 
-  category: sci-libs
-  name: gsl
-  
-  version: ""
-- 
-  category: sci-libs
-  name: hdf5[mpi=]
   
   version: ""
 - 
@@ -89,17 +84,17 @@ requires:
   version: ""
 - 
   category: sci-libs
-  name: parmetis
+  name: opencascade
   
-  version: "4"
+  version: ""
 - 
-  category: sci-libs
-  name: netcdf-cxx
+  category: dev-cpp
+  name: tbb
   
   version: ""
 - 
   category: sci-libs
-  name: sundials
+  name: adolc
   
   version: ""
 - 
@@ -109,12 +104,12 @@ requires:
   version: ""
 - 
   category: sci-libs
-  name: gmsh
+  name: p4est
   
   version: ""
 - 
-  category: dev-cpp
-  name: tbb
+  category: sci-libs
+  name: umfpack
   
   version: ""
 - 
@@ -128,8 +123,13 @@ requires:
   
   version: ""
 - 
-  category: virtual
-  name: mpi
+  category: sci-libs
+  name: nanoflann
+  
+  version: ""
+- 
+  category: sci-libs
+  name: scalapack
   
   version: ""
 use_flags:

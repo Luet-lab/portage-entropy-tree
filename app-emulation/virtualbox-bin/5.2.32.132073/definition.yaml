@@ -1,70 +1,20 @@
 category: app-emulation
 conflicts:
 - 
-  category: '!app-emulation'
-  name: virtualbox
+  category: app-emulation
+  name: virtualbox-additions
   
   version: ""
 - 
-  category: app-emulation
-  name: virtualbox-additions
+  category: '!app-emulation'
+  name: virtualbox
   
   version: ""
 name: virtualbox-bin
 requires:
 - 
   category: x11-libs
-  name: libXau
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libICE
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXdmcp
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXext
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXfixes
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXft
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libxml2
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libX11
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXmu
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libSM
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXrandr
+  name: libXrender
   
   version: ""
 - 
@@ -79,32 +29,7 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: libXt
-  
-  version: ""
-- 
-  category: dev-libs
-  name: glib
-  
-  version: ""
-- 
-  category: media-libs
-  name: fontconfig
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXinerama
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXrender
-  
-  version: ""
-- 
-  category: media-libs
-  name: libsdl[X]
+  name: libXdmcp
   
   version: ""
 - 
@@ -118,8 +43,38 @@ requires:
   
   version: ""
 - 
-  category: app-emulation
-  name: virtualbox-modules
+  category: x11-libs
+  name: libXinerama
+  
+  version: ""
+- 
+  category: media-libs
+  name: libpng
+  
+  version: ""
+- 
+  category: media-libs
+  name: libsdl[X]
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXrandr
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXt
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXmu
+  
+  version: ""
+- 
+  category: media-libs
+  name: fontconfig
   
   version: ""
 - 
@@ -128,8 +83,53 @@ requires:
   
   version: ""
 - 
-  category: media-libs
-  name: libpng
+  category: x11-libs
+  name: libSM
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libICE
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXau
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libX11
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXext
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libxml2
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXft
+  
+  version: ""
+- 
+  category: app-emulation
+  name: virtualbox-modules
+  
+  version: ""
+- 
+  category: dev-libs
+  name: glib
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXfixes
   
   version: ""
 use_flags:

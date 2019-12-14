@@ -2,29 +2,44 @@ category: media-gfx
 conflicts:
 - 
   category: app-office
-  name: calligra
+  name: calligra-l10n
   
   version: ""
 - 
   category: app-office
-  name: calligra-l10n
+  name: calligra
   
   version: ""
 name: krita
 requires:
 - 
   category: media-libs
-  name: libpng
+  name: giflib
+  
+  version: ""
+- 
+  category: sci-libs
+  name: gsl
   
   version: ""
 - 
   category: virtual
-  name: opengl
+  name: jpeg
   
   version: ""
 - 
-  category: x11-libs
-  name: libX11
+  category: media-libs
+  name: libheif
+  
+  version: ""
+- 
+  category: media-libs
+  name: lcms
+  
+  version: ""
+- 
+  category: media-libs
+  name: libpng
   
   version: ""
 - 
@@ -34,22 +49,7 @@ requires:
   version: ""
 - 
   category: media-libs
-  name: giflib
-  
-  version: ""
-- 
-  category: media-libs
-  name: libheif
-  
-  version: ""
-- 
-  category: dev-python
-  name: sip
-  
-  version: ""
-- 
-  category: media-gfx
-  name: exiv2
+  name: openexr
   
   version: ""
 - 
@@ -58,13 +58,13 @@ requires:
   
   version: ""
 - 
-  category: virtual
-  name: jpeg
+  category: dev-python
+  name: sip
   
   version: ""
 - 
   category: x11-libs
-  name: libXi
+  name: libX11
   
   version: ""
 - 
@@ -73,43 +73,13 @@ requires:
   
   version: ""
 - 
-  category: app-text
-  name: poppler
-  
-  version: ""
-- 
-  category: dev-libs
-  name: boost
-  
-  version: ""
-- 
-  category: sci-libs
-  name: gsl
-  
-  version: ""
-- 
-  category: media-libs
-  name: lcms
-  
-  version: ""
-- 
-  category: sys-libs
-  name: zlib
-  
-  version: ""
-- 
-  category: media-libs
-  name: ilmbase
-  
-  version: ""
-- 
-  category: media-libs
-  name: openexr
-  
-  version: ""
-- 
   category: media-libs
   name: tiff
+  
+  version: ""
+- 
+  category: media-gfx
+  name: exiv2
   
   version: ""
 - 
@@ -120,6 +90,36 @@ requires:
 - 
   category: dev-python
   name: PyQt5
+  
+  version: ""
+- 
+  category: sys-libs
+  name: zlib
+  
+  version: ""
+- 
+  category: virtual
+  name: opengl
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXi
+  
+  version: ""
+- 
+  category: media-libs
+  name: ilmbase
+  
+  version: ""
+- 
+  category: app-text
+  name: poppler
+  
+  version: ""
+- 
+  category: dev-libs
+  name: boost
   
   version: ""
 use_flags:

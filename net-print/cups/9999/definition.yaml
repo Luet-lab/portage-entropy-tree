@@ -8,6 +8,26 @@ conflicts:
 name: cups
 requires:
 - 
+  category: sec-policy
+  name: selinux-cups
+  
+  version: ""
+- 
+  category: net-libs
+  name: gnutls
+  
+  version: 2.12.23-r6
+- 
+  category: virtual
+  name: libusb
+  
+  version: ""
+- 
+  category: sys-apps
+  name: systemd
+  
+  version: ""
+- 
   category: x11-misc
   name: xdg-utils
   
@@ -18,15 +38,30 @@ requires:
   
   version: 0.6.31-r2
 - 
+  category: sys-apps
+  name: acl
+  
+  version: ""
+- 
+  category: sys-apps
+  name: dbus
+  
+  version: 1.6.18-r1
+- 
   category: virtual
   name: krb5
   
   version: 0-r1
 - 
-  category: net-libs
-  name: gnutls
+  category: sys-libs
+  name: zlib
   
-  version: 2.12.23-r6
+  version: ""
+- 
+  category: sys-apps
+  name: xinetd
+  
+  version: ""
 - 
   category: acct-group
   name: lp
@@ -38,48 +73,13 @@ requires:
   
   version: ""
 - 
-  category: virtual
-  name: libusb
-  
-  version: ""
-- 
-  category: sec-policy
-  name: selinux-cups
-  
-  version: ""
-- 
   category: sys-apps
-  name: acl
+  name: attr
   
   version: ""
-- 
-  category: sys-apps
-  name: xinetd
-  
-  version: ""
-- 
-  category: sys-apps
-  name: dbus
-  
-  version: 1.6.18-r1
 - 
   category: sys-libs
   name: pam
-  
-  version: ""
-- 
-  category: sys-apps
-  name: systemd
-  
-  version: ""
-- 
-  category: sys-libs
-  name: zlib
-  
-  version: ""
-- 
-  category: sys-apps
-  name: attr
   
   version: ""
 use_flags:

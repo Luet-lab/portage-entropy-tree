@@ -3,10 +3,20 @@ conflicts: []
 name: mate-utils
 requires:
 - 
+  category: dev-libs
+  name: glib
+  
+  version: "2.50"
+- 
   category: media-libs
   name: libcanberra
   
   version: "0.4"
+- 
+  category: sys-libs
+  name: zlib
+  
+  version: ""
 - 
   category: x11-libs
   name: cairo
@@ -19,7 +29,12 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: libX11
+  name: gtk+
+  
+  version: "3.22"
+- 
+  category: x11-libs
+  name: libSM
   
   version: ""
 - 
@@ -33,33 +48,13 @@ requires:
   
   version: "2.12"
 - 
-  category: sys-libs
-  name: zlib
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libSM
-  
-  version: ""
-- 
-  category: dev-libs
-  name: atk
-  
-  version: ""
-- 
-  category: dev-libs
-  name: glib
-  
-  version: "2.50"
-- 
-  category: x11-libs
-  name: gtk+
-  
-  version: "3.22"
-- 
   category: x11-libs
   name: libICE
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libX11
   
   version: ""
 - 
@@ -70,6 +65,11 @@ requires:
 - 
   category: x11-libs
   name: pango
+  
+  version: ""
+- 
+  category: dev-libs
+  name: atk
   
   version: ""
 use_flags:

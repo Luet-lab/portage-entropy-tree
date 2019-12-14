@@ -3,18 +3,13 @@ conflicts: []
 name: duc
 requires:
 - 
+  category: sys-libs
+  name: ncurses
+  
+  version: ""
+- 
   category: x11-libs
   name: cairo
-  
-  version: ""
-- 
-  category: x11-libs
-  name: cairo[X]
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libX11
   
   version: ""
 - 
@@ -28,28 +23,33 @@ requires:
   
   version: ""
 - 
-  category: media-libs
-  name: glfw
-  
-  version: "3.0"
-- 
   category: dev-libs
   name: leveldb
   
   version: ""
 - 
-  category: sys-libs
-  name: ncurses
+  category: dev-db
+  name: tokyocabinet
   
   version: ""
+- 
+  category: x11-libs
+  name: cairo[X]
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libX11
+  
+  version: ""
+- 
+  category: media-libs
+  name: glfw
+  
+  version: "3.0"
 - 
   category: dev-db
   name: sqlite
-  
-  version: ""
-- 
-  category: dev-db
-  name: tokyocabinet
   
   version: ""
 use_flags:

@@ -3,13 +3,8 @@ conflicts: []
 name: mate-power-manager
 requires:
 - 
-  category: x11-apps
-  name: xrandr
-  
-  version: "1.3"
-- 
   category: x11-libs
-  name: libXext
+  name: pango
   
   version: ""
 - 
@@ -18,40 +13,10 @@ requires:
   
   version: 1.17.0
 - 
-  category: mate-extra
-  name: mate-polkit
-  
-  version: "1.6"
-- 
   category: dev-libs
   name: dbus-glib
   
   version: "0.70"
-- 
-  category: sys-apps
-  name: dbus
-  
-  version: "1"
-- 
-  category: x11-libs
-  name: libXrandr
-  
-  version: ""
-- 
-  category: x11-libs
-  name: pango
-  
-  version: ""
-- 
-  category: sys-power
-  name: upower
-  
-  version: 0.9.23
-- 
-  category: sys-auth
-  name: elogind
-  
-  version: ""
 - 
   category: x11-libs
   name: cairo
@@ -64,7 +29,12 @@ requires:
   version: "2.11"
 - 
   category: x11-libs
-  name: libX11
+  name: gtk+
+  
+  version: "3.22"
+- 
+  category: x11-libs
+  name: libXext
   
   version: ""
 - 
@@ -73,15 +43,15 @@ requires:
   
   version: "0.7"
 - 
-  category: sys-apps
-  name: systemd
+  category: sys-power
+  name: upower
   
-  version: ""
+  version: 0.9.23
 - 
   category: sys-auth
-  name: consolekit
+  name: elogind
   
-  version: 0.9.2
+  version: ""
 - 
   category: dev-libs
   name: glib
@@ -93,15 +63,45 @@ requires:
   
   version: "0.10"
 - 
-  category: x11-libs
-  name: gtk+
+  category: sys-apps
+  name: dbus
   
-  version: "3.22"
+  version: "1"
+- 
+  category: sys-auth
+  name: consolekit
+  
+  version: 0.9.2
+- 
+  category: x11-apps
+  name: xrandr
+  
+  version: "1.3"
+- 
+  category: x11-libs
+  name: libX11
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXrandr
+  
+  version: ""
 - 
   category: gnome-base
   name: libgnome-keyring
   
   version: "3"
+- 
+  category: mate-extra
+  name: mate-polkit
+  
+  version: "1.6"
+- 
+  category: sys-apps
+  name: systemd
+  
+  version: ""
 use_flags:
 - +applet
 - elogind

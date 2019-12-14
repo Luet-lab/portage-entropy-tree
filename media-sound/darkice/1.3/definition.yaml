@@ -4,12 +4,17 @@ name: darkice
 requires:
 - 
   category: media-libs
-  name: opus
+  name: libsamplerate
+  
+  version: ""
+- 
+  category: media-sound
+  name: lame
   
   version: ""
 - 
   category: media-libs
-  name: libvorbis
+  name: faac
   
   version: ""
 - 
@@ -23,8 +28,8 @@ requires:
   
   version: ""
 - 
-  category: media-sound
-  name: lame
+  category: media-libs
+  name: opus
   
   version: ""
 - 
@@ -39,7 +44,7 @@ requires:
   version: ""
 - 
   category: media-libs
-  name: faac
+  name: libvorbis
   
   version: ""
 - 
@@ -47,11 +52,6 @@ requires:
   name: libaacplus
   
   version: 2.0.0
-- 
-  category: media-libs
-  name: libsamplerate
-  
-  version: ""
 use_flags:
 - aac
 - aacplus

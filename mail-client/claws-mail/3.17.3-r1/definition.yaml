@@ -3,73 +3,38 @@ conflicts: []
 name: claws-mail
 requires:
 - 
-  category: dev-libs
-  name: libindicate
+  category: net-misc
+  name: curl
+  
+  version: 7.9.7
+- 
+  category: www-client
+  name: dillo
   
   version: ""
+- 
+  category: net-nds
+  name: openldap
+  
+  version: 2.0.7
 - 
   category: x11-libs
-  name: libSM
+  name: libICE
   
   version: ""
-- 
-  category: app-text
-  name: enchant
-  
-  version: 1.0.0
-- 
-  category: x11-misc
-  name: shared-mime-info
-  
-  version: ""
-- 
-  category: dev-python
-  name: pygtk
-  
-  version: 2.10.3
 - 
   category: dev-libs
-  name: libxml2
+  name: nettle
   
   version: ""
 - 
   category: x11-libs
-  name: cairo
+  name: gtk+
   
-  version: ""
-- 
-  category: x11-libs
-  name: pango
-  
-  version: ""
+  version: "2.24"
 - 
   category: mail-filter
   name: bogofilter
-  
-  version: ""
-- 
-  category: net-libs
-  name: gnutls
-  
-  version: "3.0"
-- 
-  category: dev-libs
-  name: glib
-  
-  version: ""
-- 
-  category: app-pda
-  name: jpilot
-  
-  version: "0.99"
-- 
-  category: app-text
-  name: ghostscript-gpl
-  
-  version: ""
-- 
-  category: sys-libs
-  name: zlib
   
   version: ""
 - 
@@ -78,103 +43,23 @@ requires:
   
   version: 2.0.0
 - 
-  category: www-client
-  name: dillo
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libnotify
-  
-  version: ""
-- 
-  category: app-text
-  name: poppler
-  
-  version: ""
-- 
-  category: app-misc
-  name: mime-types
-  
-  version: ""
-- 
-  category: dev-lang
-  name: perl
-  
-  version: ""
-- 
-  category: x11-libs
-  name: gdk-pixbuf
-  
-  version: ""
-- 
-  category: sys-devel
-  name: gettext
-  
-  version: "0.18"
-- 
-  category: x11-libs
-  name: startup-notification
-  
-  version: ""
-- 
-  category: app-antivirus
-  name: clamav
-  
-  version: ""
-- 
-  category: net-misc
-  name: networkmanager
-  
-  version: ""
-- 
   category: dev-libs
-  name: dbus-glib
-  
-  version: "0.60"
-- 
-  category: net-nds
-  name: openldap
-  
-  version: 2.0.7
-- 
-  category: x11-libs
-  name: libX11
+  name: libindicate
   
   version: ""
 - 
-  category: app-arch
-  name: libarchive
+  category: app-pda
+  name: jpilot
   
-  version: ""
-- 
-  category: dev-libs
-  name: libgdata
-  
-  version: 0.17.2
-- 
-  category: app-crypt
-  name: gpgme
-  
-  version: 1.0.0
+  version: "0.99"
 - 
   category: gnome-base
   name: librsvg
   
   version: 2.40.5
 - 
-  category: dev-util
-  name: valgrind
-  
-  version: ""
-- 
-  category: net-misc
-  name: curl
-  
-  version: ""
-- 
-  category: dev-libs
-  name: nettle
+  category: app-misc
+  name: mime-types
   
   version: ""
 - 
@@ -184,12 +69,27 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: gtk+
+  name: cairo
   
-  version: "2.24"
+  version: ""
 - 
-  category: sys-apps
-  name: dbus
+  category: app-text
+  name: ghostscript-gpl
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libxml2
+  
+  version: ""
+- 
+  category: sys-devel
+  name: gettext
+  
+  version: "0.18"
+- 
+  category: x11-libs
+  name: libnotify
   
   version: ""
 - 
@@ -199,19 +99,119 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: libICE
+  name: libSM
+  
+  version: ""
+- 
+  category: x11-libs
+  name: startup-notification
+  
+  version: ""
+- 
+  category: dev-util
+  name: valgrind
+  
+  version: ""
+- 
+  category: x11-misc
+  name: shared-mime-info
+  
+  version: ""
+- 
+  category: net-misc
+  name: networkmanager
+  
+  version: ""
+- 
+  category: x11-libs
+  name: pango
+  
+  version: ""
+- 
+  category: app-arch
+  name: libarchive
   
   version: ""
 - 
   category: net-misc
   name: curl
   
-  version: 7.9.7
+  version: ""
 - 
   category: net-libs
   name: libetpan
   
   version: "0.57"
+- 
+  category: dev-lang
+  name: perl
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libgdata
+  
+  version: 0.17.2
+- 
+  category: dev-python
+  name: pygtk
+  
+  version: 2.10.3
+- 
+  category: sys-apps
+  name: dbus
+  
+  version: ""
+- 
+  category: net-libs
+  name: gnutls
+  
+  version: "3.0"
+- 
+  category: app-text
+  name: poppler
+  
+  version: ""
+- 
+  category: app-crypt
+  name: gpgme
+  
+  version: 1.0.0
+- 
+  category: app-text
+  name: enchant
+  
+  version: 1.0.0
+- 
+  category: x11-libs
+  name: libX11
+  
+  version: ""
+- 
+  category: dev-libs
+  name: dbus-glib
+  
+  version: "0.60"
+- 
+  category: dev-libs
+  name: glib
+  
+  version: ""
+- 
+  category: app-antivirus
+  name: clamav
+  
+  version: ""
+- 
+  category: sys-libs
+  name: zlib
+  
+  version: ""
+- 
+  category: x11-libs
+  name: gdk-pixbuf
+  
+  version: ""
 use_flags:
 - archive
 - bogofilter

@@ -8,15 +8,15 @@ conflicts:
 name: cups
 requires:
 - 
-  category: sys-libs
-  name: pam
+  category: sys-apps
+  name: acl
   
   version: ""
 - 
-  category: virtual
-  name: libusb
+  category: net-libs
+  name: gnutls
   
-  version: ""
+  version: 2.12.23-r6
 - 
   category: acct-group
   name: lp
@@ -28,30 +28,10 @@ requires:
   
   version: ""
 - 
-  category: app-text
-  name: libpaper
-  
-  version: ""
-- 
   category: sys-apps
-  name: acl
+  name: dbus
   
-  version: ""
-- 
-  category: sys-apps
-  name: attr
-  
-  version: ""
-- 
-  category: x11-misc
-  name: xdg-utils
-  
-  version: ""
-- 
-  category: sys-apps
-  name: xinetd
-  
-  version: ""
+  version: 1.6.18-r1
 - 
   category: net-dns
   name: avahi
@@ -59,12 +39,7 @@ requires:
   version: 0.6.31-r2
 - 
   category: sys-apps
-  name: dbus
-  
-  version: 1.6.18-r1
-- 
-  category: sys-libs
-  name: zlib
+  name: attr
   
   version: ""
 - 
@@ -73,13 +48,38 @@ requires:
   
   version: 0-r1
 - 
-  category: net-libs
-  name: gnutls
-  
-  version: 2.12.23-r6
-- 
   category: sys-apps
   name: systemd
+  
+  version: ""
+- 
+  category: virtual
+  name: libusb
+  
+  version: ""
+- 
+  category: sys-apps
+  name: xinetd
+  
+  version: ""
+- 
+  category: app-text
+  name: libpaper
+  
+  version: ""
+- 
+  category: sys-libs
+  name: zlib
+  
+  version: ""
+- 
+  category: sys-libs
+  name: pam
+  
+  version: ""
+- 
+  category: x11-misc
+  name: xdg-utils
   
   version: ""
 use_flags:

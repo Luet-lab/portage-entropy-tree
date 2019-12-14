@@ -3,8 +3,23 @@ conflicts: []
 name: xfce4-xkb-plugin
 requires:
 - 
+  category: xfce-base
+  name: xfconf
+  
+  version: 4.12.1
+- 
+  category: x11-apps
+  name: setxkbmap
+  
+  version: ""
+- 
+  category: gnome-base
+  name: librsvg
+  
+  version: ""
+- 
   category: x11-libs
-  name: libwnck
+  name: gtk+
   
   version: ""
 - 
@@ -23,23 +38,8 @@ requires:
   
   version: ""
 - 
-  category: xfce-base
-  name: libxfce4util
-  
-  version: "4.12"
-- 
-  category: xfce-base
-  name: xfconf
-  
-  version: 4.12.1
-- 
-  category: xfce-base
-  name: xfce4-settings
-  
-  version: "4.11"
-- 
-  category: gnome-base
-  name: librsvg
+  category: x11-libs
+  name: libwnck
   
   version: ""
 - 
@@ -49,19 +49,19 @@ requires:
   version: "4.12"
 - 
   category: xfce-base
+  name: libxfce4util
+  
+  version: "4.12"
+- 
+  category: xfce-base
   name: xfce4-panel
   
   version: "4.12"
 - 
-  category: x11-apps
-  name: setxkbmap
+  category: xfce-base
+  name: xfce4-settings
   
-  version: ""
-- 
-  category: x11-libs
-  name: gtk+
-  
-  version: ""
+  version: "4.11"
 use_flags:
 - ""
 version: 0.8.1

@@ -3,13 +3,43 @@ conflicts: []
 name: qtwebengine
 requires:
 - 
-  category: dev-libs
-  name: nspr
+  category: dev-qt
+  name: qtgui
+  
+  version: 5.12.3
+- 
+  category: media-libs
+  name: libvpx
+  
+  version: "1.5"
+- 
+  category: media-libs
+  name: mesa[egl,X(+)]
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXcomposite
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXfixes
+  
+  version: ""
+- 
+  category: media-video
+  name: ffmpeg
+  
+  version: ""
+- 
+  category: app-arch
+  name: snappy
   
   version: ""
 - 
   category: dev-libs
-  name: expat
+  name: nss
   
   version: ""
 - 
@@ -19,7 +49,12 @@ requires:
   version: ""
 - 
   category: media-libs
-  name: libwebp
+  name: lcms
+  
+  version: ""
+- 
+  category: media-libs
+  name: opus
   
   version: ""
 - 
@@ -29,112 +64,7 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: libXi
-  
-  version: ""
-- 
-  category: media-libs
-  name: lcms
-  
-  version: ""
-- 
-  category: sys-libs
-  name: zlib
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libX11
-  
-  version: ""
-- 
-  category: dev-qt
-  name: designer
-  
-  version: 5.12.3
-- 
-  category: dev-qt
-  name: qtwidgets
-  
-  version: 5.12.3
-- 
-  category: dev-qt
-  name: qtgui
-  
-  version: 5.12.3
-- 
-  category: dev-libs
-  name: libxml2
-  
-  version: ""
-- 
-  category: media-libs
-  name: fontconfig
-  
-  version: ""
-- 
-  category: media-libs
-  name: libjpeg-turbo
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXcomposite
-  
-  version: ""
-- 
-  category: app-arch
-  name: snappy
-  
-  version: ""
-- 
-  category: media-libs
-  name: freetype
-  
-  version: ""
-- 
-  category: media-libs
-  name: libpng
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libdrm
-  
-  version: ""
-- 
-  category: x11-libs
   name: libXcursor
-  
-  version: ""
-- 
-  category: media-sound
-  name: pulseaudio
-  
-  version: ""
-- 
-  category: dev-libs
-  name: glib
-  
-  version: ""
-- 
-  category: dev-libs
-  name: nss
-  
-  version: ""
-- 
-  category: dev-qt
-  name: qtnetwork
-  
-  version: 5.12.3
-- 
-  category: x11-libs
-  name: libXfixes
-  
-  version: ""
-- 
-  category: media-libs
-  name: alsa-lib
   
   version: ""
 - 
@@ -143,48 +73,8 @@ requires:
   
   version: 5.12.3
 - 
-  category: dev-libs
-  name: re2
-  
-  version: ""
-- 
-  category: sys-apps
-  name: dbus
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXext
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXrandr
-  
-  version: ""
-- 
-  category: media-libs
-  name: libvpx
-  
-  version: "1.5"
-- 
-  category: media-libs
-  name: opus
-  
-  version: ""
-- 
   category: dev-qt
-  name: qtcore
-  
-  version: 5.12.3
-- 
-  category: dev-qt
-  name: qtdeclarative
-  
-  version: 5.12.3
-- 
-  category: dev-qt
-  name: qtprintsupport
+  name: qtnetwork
   
   version: 5.12.3
 - 
@@ -193,13 +83,28 @@ requires:
   
   version: 5.12.3
 - 
-  category: dev-libs
-  name: libevent
+  category: sys-apps
+  name: dbus
   
   version: ""
 - 
-  category: dev-libs
-  name: libxslt
+  category: x11-libs
+  name: libXrender
+  
+  version: ""
+- 
+  category: media-sound
+  name: pulseaudio
+  
+  version: ""
+- 
+  category: dev-qt
+  name: qtcore
+  
+  version: 5.12.3
+- 
+  category: media-libs
+  name: fontconfig
   
   version: ""
 - 
@@ -209,12 +114,7 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: libXdamage
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXrender
+  name: libdrm
   
   version: ""
 - 
@@ -224,7 +124,87 @@ requires:
   version: ""
 - 
   category: media-libs
-  name: mesa[egl,X(+)]
+  name: alsa-lib
+  
+  version: ""
+- 
+  category: dev-libs
+  name: icu
+  
+  version: "60.2"
+- 
+  category: dev-libs
+  name: nspr
+  
+  version: ""
+- 
+  category: dev-qt
+  name: qtprintsupport
+  
+  version: 5.12.3
+- 
+  category: sys-libs
+  name: zlib
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXi
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXrandr
+  
+  version: ""
+- 
+  category: dev-qt
+  name: designer
+  
+  version: 5.12.3
+- 
+  category: dev-libs
+  name: glib
+  
+  version: ""
+- 
+  category: media-libs
+  name: libpng
+  
+  version: ""
+- 
+  category: media-libs
+  name: libwebp
+  
+  version: ""
+- 
+  category: dev-libs
+  name: expat
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libevent
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libxml2
+  
+  version: ""
+- 
+  category: dev-libs
+  name: re2
+  
+  version: ""
+- 
+  category: media-libs
+  name: freetype
+  
+  version: ""
+- 
+  category: media-libs
+  name: libjpeg-turbo
   
   version: ""
 - 
@@ -233,15 +213,35 @@ requires:
   
   version: ""
 - 
-  category: media-video
-  name: ffmpeg
+  category: dev-qt
+  name: qtwidgets
+  
+  version: 5.12.3
+- 
+  category: dev-qt
+  name: qtdeclarative
+  
+  version: 5.12.3
+- 
+  category: dev-libs
+  name: libxslt
   
   version: ""
 - 
-  category: dev-libs
-  name: icu
+  category: x11-libs
+  name: libX11
   
-  version: "60.2"
+  version: ""
+- 
+  category: x11-libs
+  name: libXdamage
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXext
+  
+  version: ""
 use_flags:
 - alsa
 - bindist

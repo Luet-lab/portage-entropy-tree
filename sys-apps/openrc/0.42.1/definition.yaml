@@ -1,11 +1,6 @@
 category: sys-apps
 conflicts:
 - 
-  category: <sys-process
-  name: procps
-  
-  version: 3.3.9-r2
-- 
   category: <sys-apps
   name: baselayout
   
@@ -17,9 +12,14 @@ conflicts:
   version: ""
 - 
   category: <app-shells
-  name: gentoo-zsh-completions
+  name: gentoo-bashcomp
   
-  version: "20180228"
+  version: "20180302"
+- 
+  category: <sys-process
+  name: procps
+  
+  version: 3.3.9-r2
 - 
   category: <sys-fs
   name: udev-init-scripts
@@ -27,34 +27,19 @@ conflicts:
   version: "27"
 - 
   category: <app-shells
-  name: gentoo-bashcomp
+  name: gentoo-zsh-completions
   
-  version: "20180302"
+  version: "20180228"
 name: openrc
 requires:
-- 
-  category: sys-apps
-  name: policycoreutils
-  
-  version: ""
-- 
-  category: sys-apps
-  name: sysvinit-2.86-r6[selinux?]
-  
-  version: ""
 - 
   category: sys-libs
   name: pam
   
   version: ""
 - 
-  category: sys-process
-  name: psmisc
-  
-  version: ""
-- 
-  category: app-shells
-  name: bash
+  category: sys-apps
+  name: policycoreutils
   
   version: ""
 - 
@@ -62,16 +47,6 @@ requires:
   name: tmpfiles
   
   version: ""
-- 
-  category: sec-policy
-  name: selinux-base-policy
-  
-  version: 2.20170204-r4
-- 
-  category: sec-policy
-  name: selinux-openrc
-  
-  version: 2.20170204-r4
 - 
   category: sys-libs
   name: ncurses
@@ -88,10 +63,35 @@ requires:
   
   version: ""
 - 
+  category: sys-process
+  name: psmisc
+  
+  version: ""
+- 
+  category: sec-policy
+  name: selinux-openrc
+  
+  version: 2.20170204-r4
+- 
   category: sys-libs
   name: libselinux
   
   version: "2.6"
+- 
+  category: app-shells
+  name: bash
+  
+  version: ""
+- 
+  category: sys-apps
+  name: sysvinit-2.86-r6[selinux?]
+  
+  version: ""
+- 
+  category: sec-policy
+  name: selinux-base-policy
+  
+  version: 2.20170204-r4
 use_flags:
 - audit
 - bash

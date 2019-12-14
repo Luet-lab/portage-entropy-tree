@@ -8,58 +8,23 @@ conflicts:
 name: collectd
 requires:
 - 
-  category: sys-fs
-  name: lvm2
+  category: www-servers
+  name: varnish
   
   version: ""
 - 
-  category: x11-libs
-  name: libnotify
+  category: app-emulation
+  name: libvirt
   
   version: ""
 - 
-  category: sys-power
-  name: nut
+  category: sys-libs
+  name: libstatgrab
   
-  version: 2.7.2-r2
+  version: ""
 - 
   category: net-libs
-  name: liboping
-  
-  version: ""
-- 
-  category: dev-db
-  name: postgresql
-  
-  version: ""
-- 
-  category: dev-libs
-  name: glib
-  
-  version: ""
-- 
-  category: sci-geosciences
-  name: gpsd
-  
-  version: ""
-- 
-  category: net-firewall
-  name: iptables
-  
-  version: 1.4.13
-- 
-  category: dev-libs
-  name: libgcrypt
-  
-  version: ""
-- 
-  category: dev-db
-  name: libdbi
-  
-  version: ""
-- 
-  category: sys-cluster
-  name: ganglia
+  name: libpcap
   
   version: ""
 - 
@@ -73,13 +38,48 @@ requires:
   
   version: ""
 - 
-  category: dev-db
-  name: mysql-connector-c
+  category: x11-libs
+  name: libnotify
+  
+  version: ""
+- 
+  category: net-analyzer
+  name: rrdtool
   
   version: ""
 - 
   category: net-libs
-  name: libesmtp
+  name: libmicrohttpd
+  
+  version: ""
+- 
+  category: sec-policy
+  name: selinux-collectd
+  
+  version: ""
+- 
+  category: net-misc
+  name: curl
+  
+  version: ""
+- 
+  category: dev-db
+  name: libdbi
+  
+  version: ""
+- 
+  category: sys-cluster
+  name: ganglia
+  
+  version: ""
+- 
+  category: dev-db
+  name: postgresql
+  
+  version: ""
+- 
+  category: dev-libs
+  name: hiredis
   
   version: ""
 - 
@@ -88,13 +88,13 @@ requires:
   
   version: ""
 - 
-  category: sci-libs
-  name: libsigrok
+  category: sys-apps
+  name: lm-sensors
   
-  version: "0.4"
+  version: ""
 - 
-  category: dev-libs
-  name: libltdl
+  category: app-emulation
+  name: xen-tools
   
   version: ""
 - 
@@ -104,37 +104,7 @@ requires:
   version: ""
 - 
   category: dev-libs
-  name: libxml2
-  
-  version: ""
-- 
-  category: dev-db
-  name: oracle-instantclient-basic
-  
-  version: ""
-- 
-  category: app-emulation
-  name: libvirt
-  
-  version: ""
-- 
-  category: dev-libs
-  name: mongo-c-driver
-  
-  version: 1.8.2
-- 
-  category: net-libs
-  name: libmicrohttpd
-  
-  version: ""
-- 
-  category: virtual
-  name: logger
-  
-  version: ""
-- 
-  category: net-libs
-  name: libpcap
+  name: yajl
   
   version: ""
 - 
@@ -143,53 +113,13 @@ requires:
   
   version: ""
 - 
-  category: app-misc
-  name: mosquitto
-  
-  version: ""
-- 
-  category: sys-fs
-  name: owfs
-  
-  version: "3.1"
-- 
-  category: sys-apps
-  name: lm-sensors
-  
-  version: ""
-- 
-  category: virtual
-  name: jre
-  
-  version: "1.6"
-- 
-  category: sec-policy
-  name: selinux-collectd
-  
-  version: ""
-- 
-  category: dev-libs
-  name: yajl
-  
-  version: ""
-- 
   category: net-libs
   name: libmnl
   
   version: ""
 - 
-  category: net-nds
-  name: openldap
-  
-  version: ""
-- 
-  category: net-analyzer
-  name: rrdtool
-  
-  version: ""
-- 
-  category: net-misc
-  name: tokyotyrant
+  category: virtual
+  name: logger
   
   version: ""
 - 
@@ -203,25 +133,50 @@ requires:
   
   version: ""
 - 
+  category: sys-power
+  name: nut
+  
+  version: 2.7.2-r2
+- 
+  category: dev-db
+  name: oracle-instantclient-basic
+  
+  version: ""
+- 
   category: net-libs
-  name: rabbitmq-c
+  name: liboping
   
   version: ""
 - 
-  category: net-misc
-  name: curl
+  category: dev-libs
+  name: mongo-c-driver
+  
+  version: 1.8.2
+- 
+  category: sci-geosciences
+  name: gpsd
   
   version: ""
 - 
-  category: sys-libs
-  name: openipmi
+  category: dev-db
+  name: mysql-connector-c
   
-  version: 2.0.16-r1
+  version: ""
+- 
+  category: dev-libs
+  name: glib
+  
+  version: ""
 - 
   category: dev-libs
   name: libatasmart
   
   version: ""
+- 
+  category: sys-fs
+  name: owfs
+  
+  version: "3.1"
 - 
   category: net-analyzer
   name: net-snmp
@@ -233,13 +188,58 @@ requires:
   
   version: 0.9.0.99
 - 
-  category: app-emulation
-  name: xen-tools
+  category: sys-libs
+  name: openipmi
+  
+  version: 2.0.16-r1
+- 
+  category: sys-fs
+  name: lvm2
   
   version: ""
 - 
-  category: sys-libs
-  name: libstatgrab
+  category: app-misc
+  name: mosquitto
+  
+  version: ""
+- 
+  category: net-nds
+  name: openldap
+  
+  version: ""
+- 
+  category: net-misc
+  name: tokyotyrant
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libgcrypt
+  
+  version: ""
+- 
+  category: net-libs
+  name: rabbitmq-c
+  
+  version: ""
+- 
+  category: net-firewall
+  name: iptables
+  
+  version: 1.4.13
+- 
+  category: sci-libs
+  name: libsigrok
+  
+  version: "0.4"
+- 
+  category: virtual
+  name: jre
+  
+  version: "1.6"
+- 
+  category: dev-libs
+  name: libltdl
   
   version: ""
 - 
@@ -249,12 +249,12 @@ requires:
   version: ""
 - 
   category: dev-libs
-  name: hiredis
+  name: libxml2
   
   version: ""
 - 
-  category: www-servers
-  name: varnish
+  category: net-libs
+  name: libesmtp
   
   version: ""
 use_flags:

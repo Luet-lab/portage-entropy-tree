@@ -4,27 +4,32 @@ name: tumbler
 requires:
 - 
   category: media-libs
+  name: freetype
+  
+  version: ""
+- 
+  category: media-libs
   name: libpng
   
   version: ""
 - 
-  category: media-libs
-  name: gstreamer
+  category: media-video
+  name: ffmpegthumbnailer
   
-  version: ""
+  version: 2.0.8
 - 
-  category: media-plugins
-  name: gst-plugins-meta
+  category: media-libs
+  name: libopenraw
   
-  version: ""
+  version: 0.0.8
+- 
+  category: x11-libs
+  name: gdk-pixbuf
+  
+  version: "2.14"
 - 
   category: media-libs
   name: gst-plugins-base
-  
-  version: ""
-- 
-  category: virtual
-  name: jpeg
   
   version: ""
 - 
@@ -43,10 +48,15 @@ requires:
   
   version: "1.6"
 - 
-  category: media-video
-  name: ffmpegthumbnailer
+  category: media-libs
+  name: gstreamer
   
-  version: 2.0.8
+  version: ""
+- 
+  category: virtual
+  name: jpeg
+  
+  version: ""
 - 
   category: net-misc
   name: curl
@@ -63,20 +73,10 @@ requires:
   
   version: "1.4"
 - 
-  category: media-libs
-  name: freetype
+  category: media-plugins
+  name: gst-plugins-meta
   
   version: ""
-- 
-  category: x11-libs
-  name: gdk-pixbuf
-  
-  version: "2.14"
-- 
-  category: media-libs
-  name: libopenraw
-  
-  version: 0.0.8
 use_flags:
 - curl
 - ffmpeg

@@ -3,28 +3,18 @@ conflicts: []
 name: gmic
 requires:
 - 
-  category: dev-qt
-  name: qtgui
-  
-  version: 5.2.0
-- 
-  category: dev-qt
-  name: qtcore
-  
-  version: 5.2.0
-- 
-  category: media-gfx
-  name: graphicsmagick
+  category: virtual
+  name: jpeg
   
   version: ""
 - 
   category: media-libs
-  name: opencv
+  name: ilmbase
   
-  version: 2.3.1a-r1
+  version: ""
 - 
   category: media-libs
-  name: openexr
+  name: tiff
   
   version: ""
 - 
@@ -38,8 +28,28 @@ requires:
   
   version: ""
 - 
-  category: media-video
-  name: ffmpeg
+  category: dev-qt
+  name: qtgui
+  
+  version: 5.2.0
+- 
+  category: media-gfx
+  name: graphicsmagick
+  
+  version: ""
+- 
+  category: media-libs
+  name: libpng
+  
+  version: ""
+- 
+  category: dev-qt
+  name: qtcore
+  
+  version: 5.2.0
+- 
+  category: net-misc
+  name: curl
   
   version: ""
 - 
@@ -54,22 +64,22 @@ requires:
   version: 5.2.0
 - 
   category: media-libs
-  name: ilmbase
+  name: opencv
   
-  version: ""
+  version: 2.3.1a-r1
 - 
   category: media-libs
-  name: libpng
+  name: openexr
   
   version: ""
 - 
-  category: media-libs
-  name: tiff
+  category: sys-libs
+  name: zlib
   
   version: ""
 - 
-  category: net-misc
-  name: curl
+  category: media-video
+  name: ffmpeg
   
   version: ""
 - 
@@ -82,16 +92,6 @@ requires:
   name: qtnetwork
   
   version: 5.2.0
-- 
-  category: virtual
-  name: jpeg
-  
-  version: ""
-- 
-  category: sys-libs
-  name: zlib
-  
-  version: ""
 use_flags:
 - +cli
 - curl

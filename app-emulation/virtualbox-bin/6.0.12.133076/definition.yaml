@@ -1,60 +1,30 @@
 category: app-emulation
 conflicts:
 - 
-  category: app-emulation
-  name: virtualbox-additions
+  category: '!app-emulation'
+  name: virtualbox
   
   version: ""
 - 
-  category: '!app-emulation'
-  name: virtualbox
+  category: app-emulation
+  name: virtualbox-additions
   
   version: ""
 name: virtualbox-bin
 requires:
 - 
-  category: app-emulation
-  name: virtualbox-modules
-  
-  version: ""
-- 
-  category: media-libs
-  name: fontconfig
-  
-  version: ""
-- 
-  category: media-libs
-  name: libpng
+  category: dev-libs
+  name: libxml2
   
   version: ""
 - 
   category: x11-libs
-  name: libXfixes
+  name: libXmu
   
   version: ""
 - 
   category: x11-libs
-  name: libXrandr
-  
-  version: ""
-- 
-  category: sys-fs
-  name: lvm2
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXt
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libSM
-  
-  version: ""
-- 
-  category: media-libs
-  name: libsdl[X]
+  name: libXcursor
   
   version: ""
 - 
@@ -73,6 +43,11 @@ requires:
   
   version: ""
 - 
+  category: dev-libs
+  name: expat
+  
+  version: ""
+- 
   category: x11-libs
   name: libXau
   
@@ -83,23 +58,43 @@ requires:
   
   version: ""
 - 
+  category: x11-libs
+  name: libICE
+  
+  version: ""
+- 
   category: media-libs
-  name: freetype
+  name: fontconfig
+  
+  version: ""
+- 
+  category: media-libs
+  name: libsdl[X]
   
   version: ""
 - 
   category: x11-libs
-  name: libXcursor
-  
-  version: ""
-- 
-  category: dev-libs
-  name: expat
+  name: libXfixes
   
   version: ""
 - 
   category: x11-libs
-  name: libXmu
+  name: libXft
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXrender
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXt
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libSM
   
   version: ""
 - 
@@ -109,27 +104,32 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: libXrender
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libxml2
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libICE
-  
-  version: ""
-- 
-  category: x11-libs
   name: libXdmcp
   
   version: ""
 - 
+  category: app-emulation
+  name: virtualbox-modules
+  
+  version: ""
+- 
+  category: media-libs
+  name: freetype
+  
+  version: ""
+- 
+  category: media-libs
+  name: libpng
+  
+  version: ""
+- 
   category: x11-libs
-  name: libXft
+  name: libXrandr
+  
+  version: ""
+- 
+  category: sys-fs
+  name: lvm2
   
   version: ""
 use_flags:
