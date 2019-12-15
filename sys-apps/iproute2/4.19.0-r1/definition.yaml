@@ -8,6 +8,11 @@ conflicts:
 name: iproute2
 requires:
 - 
+  category: sys-libs
+  name: libselinux
+  
+  version: ""
+- 
   category: net-libs
   name: libmnl
   
@@ -35,11 +40,6 @@ requires:
 - 
   category: net-dialup
   name: linux-atm
-  
-  version: ""
-- 
-  category: sys-libs
-  name: libselinux
   
   version: ""
 use_flags:

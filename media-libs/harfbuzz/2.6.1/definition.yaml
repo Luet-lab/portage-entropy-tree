@@ -3,6 +3,16 @@ conflicts: []
 name: harfbuzz
 requires:
 - 
+  category: x11-libs
+  name: cairo
+  
+  version: ""
+- 
+  category: dev-libs
+  name: glib
+  
+  version: "2.38"
+- 
   category: media-gfx
   name: graphite2
   
@@ -22,16 +32,6 @@ requires:
   name: freetype
   
   version: 2.5.0.1
-- 
-  category: x11-libs
-  name: cairo
-  
-  version: ""
-- 
-  category: dev-libs
-  name: glib
-  
-  version: "2.38"
 use_flags:
 - +cairo
 - debug

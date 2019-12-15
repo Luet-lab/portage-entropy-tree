@@ -3,13 +3,23 @@ conflicts: []
 name: mgba
 requires:
 - 
-  category: dev-qt
-  name: qtcore
+  category: sys-libs
+  name: zlib
   
   version: ""
 - 
-  category: media-libs
-  name: libsdl2[X,sound,joystick,video,opengl?]
+  category: dev-libs
+  name: elfutils
+  
+  version: ""
+- 
+  category: media-gfx
+  name: imagemagick
+  
+  version: ""
+- 
+  category: dev-qt
+  name: qtcore
   
   version: ""
 - 
@@ -28,38 +38,18 @@ requires:
   
   version: ""
 - 
-  category: dev-qt
-  name: qtopengl
-  
-  version: ""
-- 
-  category: media-video
-  name: ffmpeg
-  
-  version: ""
-- 
-  category: media-gfx
-  name: imagemagick
-  
-  version: ""
-- 
-  category: dev-qt
-  name: qtmultimedia
-  
-  version: ""
-- 
   category: dev-db
   name: sqlite
   
   version: ""
 - 
-  category: sys-libs
-  name: zlib
+  category: virtual
+  name: opengl
   
   version: ""
 - 
-  category: dev-libs
-  name: elfutils
+  category: media-libs
+  name: libsdl2[X,sound,joystick,video,opengl?]
   
   version: ""
 - 
@@ -68,8 +58,18 @@ requires:
   
   version: ""
 - 
-  category: virtual
-  name: opengl
+  category: media-video
+  name: ffmpeg
+  
+  version: ""
+- 
+  category: dev-qt
+  name: qtmultimedia
+  
+  version: ""
+- 
+  category: dev-qt
+  name: qtopengl
   
   version: ""
 use_flags:

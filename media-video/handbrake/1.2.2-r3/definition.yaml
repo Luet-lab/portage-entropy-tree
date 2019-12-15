@@ -3,23 +3,8 @@ conflicts: []
 name: handbrake
 requires:
 - 
-  category: media-libs
-  name: x264
-  
-  version: ""
-- 
-  category: media-libs
-  name: gstreamer
-  
-  version: ""
-- 
   category: x11-libs
-  name: gtk+
-  
-  version: "3.10"
-- 
-  category: x11-libs
-  name: gdk-pixbuf
+  name: cairo
   
   version: ""
 - 
@@ -34,27 +19,12 @@ requires:
   version: ""
 - 
   category: dev-libs
-  name: glib
-  
-  version: ""
-- 
-  category: media-libs
-  name: a52dec
-  
-  version: ""
-- 
-  category: media-libs
-  name: libbluray
-  
-  version: "1.0"
-- 
-  category: media-libs
-  name: libvpx
+  name: dbus-glib
   
   version: ""
 - 
   category: dev-libs
-  name: jansson
+  name: libgudev
   
   version: ""
 - 
@@ -64,52 +34,17 @@ requires:
   version: ""
 - 
   category: media-libs
-  name: speex
-  
-  version: ""
-- 
-  category: media-sound
-  name: lame
-  
-  version: ""
-- 
-  category: sys-libs
-  name: zlib
+  name: x264
   
   version: ""
 - 
   category: media-libs
-  name: x265
-  
-  version: "2.9"
-- 
-  category: media-libs
-  name: fdk-aac
+  name: gst-plugins-good
   
   version: ""
 - 
-  category: media-libs
-  name: libass
-  
-  version: ""
-- 
-  category: media-libs
-  name: libdvdread
-  
-  version: ""
-- 
-  category: media-libs
-  name: nv-codec-headers
-  
-  version: ""
-- 
-  category: media-video
-  name: ffmpeg
-  
-  version: "4.1"
-- 
-  category: media-libs
-  name: gst-plugins-base
+  category: dev-libs
+  name: jansson
   
   version: ""
 - 
@@ -123,8 +58,8 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
-  name: libnotify
+  category: media-libs
+  name: gst-plugins-bad
   
   version: ""
 - 
@@ -134,32 +69,102 @@ requires:
   version: ""
 - 
   category: media-libs
+  name: libsamplerate
+  
+  version: ""
+- 
+  category: media-libs
+  name: nv-codec-headers
+  
+  version: ""
+- 
+  category: media-libs
+  name: a52dec
+  
+  version: ""
+- 
+  category: media-libs
   name: libvorbis
   
   version: ""
 - 
-  category: media-libs
-  name: opus
+  category: x11-libs
+  name: gtk+
   
-  version: ""
+  version: "3.10"
 - 
   category: media-libs
-  name: gst-plugins-bad
+  name: gst-plugins-base
   
   version: ""
 - 
   category: dev-libs
-  name: dbus-glib
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libgudev
+  name: glib
   
   version: ""
 - 
   category: x11-libs
-  name: cairo
+  name: libnotify
+  
+  version: ""
+- 
+  category: media-libs
+  name: x265
+  
+  version: "2.9"
+- 
+  category: media-libs
+  name: libbluray
+  
+  version: "1.0"
+- 
+  category: media-libs
+  name: libtheora
+  
+  version: ""
+- 
+  category: media-sound
+  name: lame
+  
+  version: ""
+- 
+  category: sys-libs
+  name: zlib
+  
+  version: ""
+- 
+  category: media-video
+  name: ffmpeg
+  
+  version: "4.1"
+- 
+  category: media-libs
+  name: gstreamer
+  
+  version: ""
+- 
+  category: x11-libs
+  name: gdk-pixbuf
+  
+  version: ""
+- 
+  category: media-libs
+  name: fdk-aac
+  
+  version: ""
+- 
+  category: media-libs
+  name: speex
+  
+  version: ""
+- 
+  category: media-libs
+  name: libass
+  
+  version: ""
+- 
+  category: media-libs
+  name: libvpx
   
   version: ""
 - 
@@ -169,12 +174,12 @@ requires:
   version: ""
 - 
   category: media-libs
-  name: libsamplerate
+  name: libdvdread
   
   version: ""
 - 
   category: media-libs
-  name: libtheora
+  name: opus
   
   version: ""
 - 
@@ -182,11 +187,6 @@ requires:
   name: libav
   
   version: "12.2"
-- 
-  category: media-libs
-  name: gst-plugins-good
-  
-  version: ""
 use_flags:
 - +fdk
 - gstreamer

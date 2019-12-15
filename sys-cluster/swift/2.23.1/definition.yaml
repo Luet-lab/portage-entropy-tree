@@ -14,14 +14,9 @@ name: swift
 requires:
 - 
   category: dev-python
-  name: cryptography
+  name: greenlet
   
-  version: 2.0.2
-- 
-  category: dev-python
-  name: ipaddress
-  
-  version: 1.0.16
+  version: 0.3.2
 - 
   category: dev-python
   name: pbr
@@ -29,19 +24,34 @@ requires:
   version: 1.8.0
 - 
   category: dev-python
-  name: eventlet
+  name: pastedeploy
   
-  version: 0.25.0
-- 
-  category: dev-python
-  name: pyxattr
-  
-  version: ""
+  version: 1.3.3
 - 
   category: dev-python
   name: six
   
   version: 1.10.0
+- 
+  category: dev-python
+  name: netifaces
+  
+  version: "0.8"
+- 
+  category: dev-python
+  name: ipaddress
+  
+  version: 1.0.16
+- 
+  category: dev-python
+  name: cryptography
+  
+  version: 2.0.2
+- 
+  category: net-misc
+  name: memcached
+  
+  version: ""
 - 
   category: net-misc
   name: rsync
@@ -54,29 +64,19 @@ requires:
   version: 1.15.0
 - 
   category: dev-python
-  name: pastedeploy
+  name: eventlet
   
-  version: 1.3.3
+  version: 0.25.0
+- 
+  category: dev-python
+  name: pyxattr
+  
+  version: ""
 - 
   category: dev-python
   name: PyECLib
   
   version: 1.3.1
-- 
-  category: net-misc
-  name: memcached
-  
-  version: ""
-- 
-  category: dev-python
-  name: greenlet
-  
-  version: 0.3.2
-- 
-  category: dev-python
-  name: netifaces
-  
-  version: "0.8"
 use_flags:
 - account
 - container

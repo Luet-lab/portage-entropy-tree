@@ -3,15 +3,45 @@ conflicts: []
 name: rsyslog
 requires:
 - 
-  category: net-libs
-  name: libnet
+  category: dev-libs
+  name: libgcrypt
   
-  version: 1.1.6
+  version: 1.5.3
 - 
   category: dev-libs
-  name: hiredis
+  name: mongo-c-driver
   
-  version: 0.11.0
+  version: 1.1.10
+- 
+  category: dev-libs
+  name: librelp
+  
+  version: 1.2.17
+- 
+  category: dev-libs
+  name: liblogging
+  
+  version: 1.0.1
+- 
+  category: dev-db
+  name: mysql-connector-c
+  
+  version: ""
+- 
+  category: dev-libs
+  name: openssl
+  
+  version: 0.9.8y
+- 
+  category: dev-libs
+  name: libressl
+  
+  version: ""
+- 
+  category: dev-libs
+  name: liblognorm
+  
+  version: 2.0.3
 - 
   category: net-libs
   name: gnutls
@@ -23,10 +53,20 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
-  name: util-linux
+  category: dev-libs
+  name: librdkafka
+  
+  version: 0.9.0.99
+- 
+  category: virtual
+  name: krb5
   
   version: ""
+- 
+  category: net-libs
+  name: czmq
+  
+  version: 3.0.2
 - 
   category: dev-db
   name: libdbi
@@ -39,69 +79,49 @@ requires:
   version: ""
 - 
   category: dev-libs
-  name: openssl
+  name: hiredis
   
-  version: 0.9.8y
+  version: 0.11.0
 - 
   category: dev-libs
-  name: libfastjson
+  name: xxhash
   
-  version: 0.99.8
-- 
-  category: dev-libs
-  name: mongo-c-driver
-  
-  version: 1.1.10
-- 
-  category: dev-libs
-  name: liblognorm
-  
-  version: 2.0.3
-- 
-  category: dev-libs
-  name: libgcrypt
-  
-  version: 1.5.3
-- 
-  category: net-misc
-  name: curl
-  
-  version: 7.35.0
-- 
-  category: dev-libs
-  name: librdkafka
-  
-  version: 0.9.0.99
-- 
-  category: dev-libs
-  name: liblogging
-  
-  version: 1.0.1
+  version: ""
 - 
   category: dev-libs
   name: libestr
   
   version: 0.1.9
 - 
-  category: dev-db
-  name: postgresql
+  category: net-misc
+  name: curl
   
-  version: 8.4.20
+  version: 7.35.0
 - 
-  category: dev-db
-  name: mysql-connector-c
+  category: sys-apps
+  name: systemd
+  
+  version: "234"
+- 
+  category: sys-apps
+  name: util-linux
   
   version: ""
 - 
   category: dev-libs
-  name: librelp
+  name: libfastjson
   
-  version: 1.2.17
+  version: 0.99.8
 - 
-  category: sys-libs
-  name: zlib
+  category: net-libs
+  name: libnet
   
-  version: 1.2.5
+  version: 1.1.6
+- 
+  category: dev-db
+  name: postgresql
+  
+  version: 8.4.20
 - 
   category: net-libs
   name: rabbitmq-c
@@ -113,35 +133,15 @@ requires:
   
   version: 5.7.2
 - 
-  category: net-libs
-  name: czmq
+  category: sys-libs
+  name: zlib
   
-  version: 3.0.2
+  version: 1.2.5
 - 
   category: dev-libs
   name: jemalloc
   
   version: 3.3.1
-- 
-  category: dev-libs
-  name: libressl
-  
-  version: ""
-- 
-  category: sys-apps
-  name: systemd
-  
-  version: "234"
-- 
-  category: dev-libs
-  name: xxhash
-  
-  version: ""
-- 
-  category: virtual
-  name: krb5
-  
-  version: ""
 use_flags:
 - curl
 - dbi

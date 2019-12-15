@@ -3,6 +3,11 @@ conflicts: []
 name: xf86-input-wacom
 requires:
 - 
+  category: virtual
+  name: libudev
+  
+  version: ""
+- 
   category: x11-base
   name: xorg-server
   
@@ -35,11 +40,6 @@ requires:
 - 
   category: dev-libs
   name: libwacom
-  
-  version: ""
-- 
-  category: virtual
-  name: libudev
   
   version: ""
 use_flags:

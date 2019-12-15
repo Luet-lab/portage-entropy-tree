@@ -3,18 +3,18 @@ conflicts: []
 name: pqiv
 requires:
 - 
+  category: app-arch
+  name: libarchive
+  
+  version: ""
+- 
   category: media-video
-  name: ffmpeg
+  name: libav
   
   version: ""
 - 
   category: media-gfx
   name: imagemagick
-  
-  version: ""
-- 
-  category: app-text
-  name: poppler
   
   version: ""
 - 
@@ -29,12 +29,12 @@ requires:
   version: "2.32"
 - 
   category: x11-libs
-  name: gtk+
+  name: cairo
   
-  version: ""
+  version: "1.6"
 - 
-  category: media-video
-  name: libav
+  category: app-text
+  name: poppler
   
   version: ""
 - 
@@ -44,12 +44,12 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: cairo
+  name: gtk+
   
-  version: "1.6"
+  version: ""
 - 
-  category: app-arch
-  name: libarchive
+  category: media-video
+  name: ffmpeg
   
   version: ""
 use_flags:

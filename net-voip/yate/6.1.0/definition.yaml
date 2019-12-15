@@ -3,6 +3,11 @@ conflicts: []
 name: yate
 requires:
 - 
+  category: net-misc
+  name: dahdi
+  
+  version: ""
+- 
   category: virtual
   name: mysql
   
@@ -10,11 +15,6 @@ requires:
 - 
   category: media-sound
   name: gsm
-  
-  version: ""
-- 
-  category: media-libs
-  name: speex
   
   version: ""
 - 
@@ -28,18 +28,13 @@ requires:
   
   version: ""
 - 
-  category: media-libs
-  name: spandsp
-  
-  version: 0.0.3
-- 
-  category: net-misc
-  name: dahdi
+  category: dev-db
+  name: postgresql
   
   version: ""
 - 
-  category: dev-db
-  name: postgresql
+  category: media-libs
+  name: speex
   
   version: ""
 - 
@@ -47,6 +42,11 @@ requires:
   name: zlib
   
   version: ""
+- 
+  category: media-libs
+  name: spandsp
+  
+  version: 0.0.3
 use_flags:
 - doc
 - cpu_flags_x86_sse2

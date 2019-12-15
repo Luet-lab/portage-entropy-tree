@@ -3,8 +3,13 @@ conflicts: []
 name: wlroots
 requires:
 - 
+  category: virtual
+  name: libudev
+  
+  version: ""
+- 
   category: x11-libs
-  name: libdrm
+  name: libxkbcommon
   
   version: ""
 - 
@@ -13,33 +18,23 @@ requires:
   
   version: ""
 - 
-  category: x11-base
-  name: xorg-server
-  
-  version: ""
-- 
   category: x11-libs
   name: xcb-util-image
   
   version: ""
 - 
-  category: dev-libs
-  name: libinput
-  
-  version: 1.9.0
-- 
-  category: media-libs
-  name: mesa
+  category: x11-libs
+  name: xcb-util-wm
   
   version: ""
 - 
-  category: sys-apps
-  name: systemd
-  
-  version: "237"
-- 
   category: x11-libs
   name: libxcb
+  
+  version: ""
+- 
+  category: x11-base
+  name: xorg-server
   
   version: ""
 - 
@@ -48,8 +43,28 @@ requires:
   
   version: ""
 - 
-  category: virtual
-  name: libudev
+  category: dev-libs
+  name: libinput
+  
+  version: 1.9.0
+- 
+  category: x11-libs
+  name: libdrm
+  
+  version: ""
+- 
+  category: sys-apps
+  name: systemd
+  
+  version: "237"
+- 
+  category: dev-libs
+  name: wayland
+  
+  version: 1.17.0
+- 
+  category: media-libs
+  name: mesa
   
   version: ""
 - 
@@ -60,21 +75,6 @@ requires:
 - 
   category: net-misc
   name: freerdp
-  
-  version: ""
-- 
-  category: dev-libs
-  name: wayland
-  
-  version: 1.17.0
-- 
-  category: x11-libs
-  name: libxkbcommon
-  
-  version: ""
-- 
-  category: x11-libs
-  name: xcb-util-wm
   
   version: ""
 use_flags:

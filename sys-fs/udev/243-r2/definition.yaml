@@ -1,13 +1,13 @@
 category: sys-fs
 conflicts:
 - 
-  category: sys-apps
-  name: gentoo-systemd-integration
+  category: <sec-policy
+  name: selinux-base
   
-  version: ""
+  version: 2.20120725-r10
 - 
   category: sys-apps
-  name: systemd
+  name: gentoo-systemd-integration
   
   version: ""
 - 
@@ -21,55 +21,20 @@ conflicts:
   
   version: 2.02.103
 - 
-  category: <sec-policy
-  name: selinux-base
+  category: sys-apps
+  name: systemd
   
-  version: 2.20120725-r10
+  version: ""
 name: udev
 requires:
 - 
-  category: acct-group
-  name: kmem
-  
-  version: ""
-- 
-  category: acct-group
-  name: disk
+  category: sys-libs
+  name: libcap
   
   version: ""
 - 
   category: acct-group
   name: kvm
-  
-  version: ""
-- 
-  category: acct-group
-  name: lp
-  
-  version: ""
-- 
-  category: acct-group
-  name: video
-  
-  version: ""
-- 
-  category: sys-apps
-  name: kmod
-  
-  version: "16"
-- 
-  category: acct-group
-  name: tty
-  
-  version: ""
-- 
-  category: acct-group
-  name: audio
-  
-  version: ""
-- 
-  category: acct-group
-  name: input
   
   version: ""
 - 
@@ -89,12 +54,47 @@ requires:
   version: ""
 - 
   category: acct-group
+  name: disk
+  
+  version: ""
+- 
+  category: acct-group
   name: tape
   
   version: ""
 - 
+  category: sys-apps
+  name: kmod
+  
+  version: "16"
+- 
   category: sys-libs
-  name: libcap
+  name: libselinux
+  
+  version: 2.1.9
+- 
+  category: acct-group
+  name: tty
+  
+  version: ""
+- 
+  category: acct-group
+  name: video
+  
+  version: ""
+- 
+  category: acct-group
+  name: render
+  
+  version: ""
+- 
+  category: acct-group
+  name: kmem
+  
+  version: ""
+- 
+  category: acct-group
+  name: audio
   
   version: ""
 - 
@@ -104,14 +104,14 @@ requires:
   version: ""
 - 
   category: acct-group
-  name: render
+  name: input
   
   version: ""
 - 
-  category: sys-libs
-  name: libselinux
+  category: acct-group
+  name: lp
   
-  version: 2.1.9
+  version: ""
 use_flags:
 - acl
 - +kmod

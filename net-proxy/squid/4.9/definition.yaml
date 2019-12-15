@@ -8,33 +8,53 @@ conflicts:
 name: squid
 requires:
 - 
-  category: net-nds
-  name: openldap
-  
-  version: ""
-- 
   category: dev-libs
   name: libressl
   
   version: ""
 - 
   category: dev-libs
-  name: nettle
+  name: cyrus-sasl
+  
+  version: ""
+- 
+  category: app-admin
+  name: logrotate
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libltdl
+  
+  version: ""
+- 
+  category: dev-perl
+  name: DBD-mysql
+  
+  version: ""
+- 
+  category: sec-policy
+  name: selinux-squid
   
   version: ""
 - 
   category: sys-libs
-  name: db
+  name: pam
   
-  version: "4"
+  version: ""
 - 
-  category: net-libs
-  name: gnutls
+  category: dev-libs
+  name: libxml2
   
-  version: 3.1.5
+  version: ""
 - 
-  category: sec-policy
-  name: selinux-squid
+  category: net-fs
+  name: samba
+  
+  version: ""
+- 
+  category: dev-perl
+  name: DBD-Pg
   
   version: ""
 - 
@@ -43,13 +63,38 @@ requires:
   
   version: "2.16"
 - 
-  category: sys-libs
-  name: pam
+  category: net-libs
+  name: libnetfilter_conntrack
   
   version: ""
 - 
   category: dev-libs
-  name: cyrus-sasl
+  name: openssl
+  
+  version: ""
+- 
+  category: net-libs
+  name: gnutls
+  
+  version: 3.1.5
+- 
+  category: dev-lang
+  name: perl
+  
+  version: ""
+- 
+  category: dev-perl
+  name: DBD-SQLite
+  
+  version: ""
+- 
+  category: virtual
+  name: krb5
+  
+  version: ""
+- 
+  category: dev-libs
+  name: nettle
   
   version: ""
 - 
@@ -63,58 +108,13 @@ requires:
   
   version: ""
 - 
-  category: app-admin
-  name: logrotate
+  category: sys-libs
+  name: db
   
-  version: ""
+  version: "4"
 - 
-  category: net-fs
-  name: samba
-  
-  version: ""
-- 
-  category: virtual
-  name: krb5
-  
-  version: ""
-- 
-  category: net-libs
-  name: libnetfilter_conntrack
-  
-  version: ""
-- 
-  category: dev-libs
-  name: openssl
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libxml2
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libltdl
-  
-  version: ""
-- 
-  category: dev-lang
-  name: perl
-  
-  version: ""
-- 
-  category: dev-perl
-  name: DBD-mysql
-  
-  version: ""
-- 
-  category: dev-perl
-  name: DBD-Pg
-  
-  version: ""
-- 
-  category: dev-perl
-  name: DBD-SQLite
+  category: net-nds
+  name: openldap
   
   version: ""
 use_flags:

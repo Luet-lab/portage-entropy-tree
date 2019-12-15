@@ -8,13 +8,8 @@ conflicts:
 name: johntheripper-jumbo
 requires:
 - 
-  category: virtual
-  name: opencl
-  
-  version: ""
-- 
-  category: dev-libs
-  name: gmp
+  category: sys-libs
+  name: zlib
   
   version: ""
 - 
@@ -23,8 +18,18 @@ requires:
   
   version: ""
 - 
+  category: dev-libs
+  name: openssl
+  
+  version: 1.0.1
+- 
   category: virtual
   name: mpi
+  
+  version: ""
+- 
+  category: virtual
+  name: opencl
   
   version: ""
 - 
@@ -38,15 +43,10 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
-  name: zlib
+  category: dev-libs
+  name: gmp
   
   version: ""
-- 
-  category: dev-libs
-  name: openssl
-  
-  version: 1.0.1
 use_flags:
 - custom-cflags
 - kerberos

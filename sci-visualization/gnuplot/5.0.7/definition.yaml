@@ -3,8 +3,28 @@ conflicts: []
 name: gnuplot
 requires:
 - 
-  category: dev-qt
-  name: qtnetwork
+  category: virtual
+  name: latex-base
+  
+  version: ""
+- 
+  category: dev-tex
+  name: pgf
+  
+  version: ""
+- 
+  category: dev-texlive
+  name: texlive-latexrecommended
+  
+  version: 2008-r2
+- 
+  category: media-libs
+  name: libcaca
+  
+  version: ""
+- 
+  category: dev-lang
+  name: lua
   
   version: ""
 - 
@@ -18,63 +38,8 @@ requires:
   
   version: ""
 - 
-  category: dev-tex
-  name: pgf
-  
-  version: ""
-- 
-  category: media-libs
-  name: libcaca
-  
-  version: ""
-- 
-  category: dev-qt
-  name: qtcore
-  
-  version: ""
-- 
-  category: dev-qt
-  name: qtsvg
-  
-  version: ""
-- 
-  category: x11-libs
-  name: pango
-  
-  version: ""
-- 
-  category: virtual
-  name: latex-base
-  
-  version: ""
-- 
-  category: dev-texlive
-  name: texlive-latexrecommended
-  
-  version: 2008-r2
-- 
-  category: x11-libs
-  name: libXaw
-  
-  version: ""
-- 
-  category: dev-qt
-  name: qtgui
-  
-  version: ""
-- 
-  category: dev-qt
-  name: qtprintsupport
-  
-  version: ""
-- 
   category: dev-qt
   name: qtwidgets
-  
-  version: ""
-- 
-  category: sys-libs
-  name: readline
   
   version: ""
 - 
@@ -89,7 +54,17 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: gtk+
+  name: libXaw
+  
+  version: ""
+- 
+  category: x11-libs
+  name: pango
+  
+  version: ""
+- 
+  category: dev-qt
+  name: qtgui
   
   version: ""
 - 
@@ -103,8 +78,33 @@ requires:
   
   version: 2.0.35-r3
 - 
-  category: dev-lang
-  name: lua
+  category: dev-qt
+  name: qtcore
+  
+  version: ""
+- 
+  category: dev-qt
+  name: qtnetwork
+  
+  version: ""
+- 
+  category: dev-qt
+  name: qtprintsupport
+  
+  version: ""
+- 
+  category: dev-qt
+  name: qtsvg
+  
+  version: ""
+- 
+  category: sys-libs
+  name: readline
+  
+  version: ""
+- 
+  category: x11-libs
+  name: gtk+
   
   version: ""
 use_flags:

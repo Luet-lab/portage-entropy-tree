@@ -2,39 +2,9 @@ category: sys-cluster
 conflicts:
 - 
   category: ~dev-python
-  name: pymysql
-  
-  version: 0.7.7
-- 
-  category: ~dev-python
   name: setuptools
   
-  version: 34.0.0
-- 
-  category: ~dev-python
-  name: setuptools
-  
-  version: 34.1.0
-- 
-  category: ~dev-python
-  name: setuptools
-  
-  version: 36.2.0
-- 
-  category: ~dev-python
-  name: setuptools
-  
-  version: 34.0.1
-- 
-  category: ~dev-python
-  name: setuptools
-  
-  version: 34.2.0
-- 
-  category: ~dev-python
-  name: pbr
-  
-  version: 2.1.0
+  version: 34.3.2
 - 
   category: ~dev-python
   name: oslo-serialization
@@ -44,7 +14,22 @@ conflicts:
   category: ~dev-python
   name: setuptools
   
-  version: 24.0.0
+  version: 34.1.0
+- 
+  category: ~dev-python
+  name: setuptools
+  
+  version: 34.2.0
+- 
+  category: ~dev-python
+  name: setuptools
+  
+  version: 34.0.0
+- 
+  category: ~dev-python
+  name: pbr
+  
+  version: 2.1.0
 - 
   category: ~dev-python
   name: setuptools
@@ -59,12 +44,17 @@ conflicts:
   category: ~dev-python
   name: setuptools
   
-  version: 34.0.3
+  version: 34.1.1
 - 
   category: ~dev-python
   name: setuptools
   
-  version: 34.1.1
+  version: 24.0.0
+- 
+  category: ~dev-python
+  name: setuptools
+  
+  version: 34.0.3
 - 
   category: ~dev-python
   name: setuptools
@@ -74,34 +64,19 @@ conflicts:
   category: ~dev-python
   name: setuptools
   
-  version: 34.3.2
+  version: 36.2.0
+- 
+  category: ~dev-python
+  name: pymysql
+  
+  version: 0.7.7
+- 
+  category: ~dev-python
+  name: setuptools
+  
+  version: 34.0.1
 name: placement
 requires:
-- 
-  category: dev-python
-  name: webob
-  
-  version: 1.8.2
-- 
-  category: dev-python
-  name: oslo-db
-  
-  version: 4.40.0
-- 
-  category: dev-python
-  name: oslo-config
-  
-  version: 6.7.0
-- 
-  category: dev-python
-  name: oslo-serialization
-  
-  version: 1.18.0
-- 
-  category: dev-python
-  name: oslo-middleware
-  
-  version: 3.31.0
 - 
   category: dev-python
   name: keystonemiddleware
@@ -109,59 +84,24 @@ requires:
   version: 4.18.0
 - 
   category: dev-python
-  name: routes
+  name: requests
   
-  version: 2.3.1
+  version: 2.14.2
 - 
   category: dev-python
-  name: six
+  name: oslo-serialization
   
-  version: 1.10.0
+  version: 1.18.0
 - 
   category: dev-python
-  name: oslo-upgradecheck
+  name: setuptools
   
-  version: 0.2.0
-- 
-  category: dev-python
-  name: pymysql
-  
-  version: 0.7.6
-- 
-  category: dev-python
-  name: oslo-concurrency
-  
-  version: 3.26.0
-- 
-  category: dev-python
-  name: sqlalchemy
-  
-  version: 1.2.19
+  version: 21.0.0
 - 
   category: dev-python
   name: jsonschema
   
   version: 2.6.0
-- 
-  category: dev-python
-  name: oslo-log
-  
-  version: 3.36.0
-- 
-  category: dev-python
-  name: os-traits
-  
-  version: 0.16.0
-- 
-  category: dev-python
-  name: psycopg
-  
-  version: 2.5.0
-- 
-  category: dev-python
-  name: requests
-  
-  version: 2.14.2
 - 
   category: dev-python
   name: oslo-context
@@ -174,14 +114,14 @@ requires:
   version: 3.37.0
 - 
   category: dev-python
-  name: oslo-policy
+  name: oslo-middleware
   
-  version: 1.35.0
+  version: 3.31.0
 - 
   category: dev-python
-  name: setuptools
+  name: oslo-upgradecheck
   
-  version: 21.0.0
+  version: 0.2.0
 - 
   category: dev-python
   name: pbr
@@ -189,14 +129,74 @@ requires:
   version: 2.0.0
 - 
   category: dev-python
-  name: os-resource-classes
+  name: oslo-concurrency
   
-  version: 0.5.0
+  version: 3.26.0
 - 
   category: dev-python
   name: microversion-parse
   
   version: 0.2.1
+- 
+  category: dev-python
+  name: oslo-config
+  
+  version: 6.7.0
+- 
+  category: dev-python
+  name: oslo-db
+  
+  version: 4.40.0
+- 
+  category: dev-python
+  name: oslo-policy
+  
+  version: 1.35.0
+- 
+  category: dev-python
+  name: pymysql
+  
+  version: 0.7.6
+- 
+  category: dev-python
+  name: six
+  
+  version: 1.10.0
+- 
+  category: dev-python
+  name: oslo-log
+  
+  version: 3.36.0
+- 
+  category: dev-python
+  name: os-resource-classes
+  
+  version: 0.5.0
+- 
+  category: dev-python
+  name: sqlalchemy
+  
+  version: 1.2.19
+- 
+  category: dev-python
+  name: routes
+  
+  version: 2.3.1
+- 
+  category: dev-python
+  name: psycopg
+  
+  version: 2.5.0
+- 
+  category: dev-python
+  name: os-traits
+  
+  version: 0.16.0
+- 
+  category: dev-python
+  name: webob
+  
+  version: 1.8.2
 use_flags:
 - mysql
 - postgres

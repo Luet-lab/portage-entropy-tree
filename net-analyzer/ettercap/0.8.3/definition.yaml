@@ -4,22 +4,7 @@ name: ettercap
 requires:
 - 
   category: sys-libs
-  name: ncurses
-  
-  version: "5.3"
-- 
-  category: net-libs
-  name: libpcap
-  
-  version: 0.8.1
-- 
-  category: sys-libs
   name: zlib
-  
-  version: ""
-- 
-  category: dev-libs
-  name: geoip
   
   version: ""
 - 
@@ -27,6 +12,21 @@ requires:
   name: glib
   
   version: 2.2.2
+- 
+  category: sys-libs
+  name: ncurses
+  
+  version: "5.3"
+- 
+  category: x11-libs
+  name: cairo
+  
+  version: ""
+- 
+  category: net-misc
+  name: curl
+  
+  version: 7.26.0
 - 
   category: dev-libs
   name: libbsd
@@ -43,8 +43,8 @@ requires:
   
   version: 1.2.4
 - 
-  category: x11-libs
-  name: cairo
+  category: media-libs
+  name: freetype
   
   version: ""
 - 
@@ -58,13 +58,8 @@ requires:
   
   version: 1.2.3
 - 
-  category: net-misc
-  name: curl
-  
-  version: 7.26.0
-- 
   category: dev-libs
-  name: openssl
+  name: libpcre
   
   version: ""
 - 
@@ -73,18 +68,23 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
-  name: gdk-pixbuf
+  category: net-libs
+  name: libpcap
+  
+  version: 0.8.1
+- 
+  category: dev-libs
+  name: openssl
   
   version: ""
 - 
   category: dev-libs
-  name: libpcre
+  name: geoip
   
   version: ""
 - 
-  category: media-libs
-  name: freetype
+  category: x11-libs
+  name: gdk-pixbuf
   
   version: ""
 use_flags:

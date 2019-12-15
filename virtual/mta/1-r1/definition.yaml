@@ -9,12 +9,12 @@ requires:
   version: ""
 - 
   category: mail-mta
-  name: sendmail
+  name: postfix
   
   version: ""
 - 
-  category: mail-mta
-  name: courier
+  category: "|| (\tmail-mta"
+mailer
   
   version: ""
 - 
@@ -29,6 +29,11 @@ requires:
   version: ""
 - 
   category: mail-mta
+  name: courier
+  
+  version: ""
+- 
+  category: mail-mta
   name: esmtp
   
   version: ""
@@ -39,17 +44,12 @@ requires:
   version: ""
 - 
   category: mail-mta
-  name: postfix
+  name: sendmail
   
   version: ""
 - 
   category: mail-mta
   name: opensmtpd )
-  
-  version: ""
-- 
-  category: "|| (\tmail-mta"
-mailer
   
   version: ""
 version: 1-r1

@@ -1,9 +1,12 @@
 steps:
-- emerge -b =${PACKAGE_CATEGORY}/{{.PackageName}}-${PACKAGE_VERSION}
+- emerge -b ={{.PackageCategory}}/{{.PackageName}}-${PACKAGE_VERSION}
 requires:
 - category: "{{.LayerCategory}}"
   version:  "{{.LayerVersion}}"
   name:     "{{.LayerName}}"
+- category: "{{.LayerCategory}}"
+  version:  "{{.LayerVersion}}"
+  name:     "sabayon-sources"
 {{ if .Binhost }}
 includes:
 - /usr/portage/packages/.*

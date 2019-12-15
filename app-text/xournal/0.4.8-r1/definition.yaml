@@ -3,13 +3,18 @@ conflicts: []
 name: xournal
 requires:
 - 
+  category: x11-libs
+  name: gdk-pixbuf
+  
+  version: ""
+- 
   category: app-text
   name: poppler
   
   version: ""
 - 
-  category: dev-libs
-  name: glib
+  category: gnome-base
+  name: libgnomecanvas
   
   version: ""
 - 
@@ -24,12 +29,12 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: gdk-pixbuf
+  name: gtk+
   
   version: ""
 - 
   category: x11-libs
-  name: gtk+
+  name: pango
   
   version: ""
 - 
@@ -43,8 +48,8 @@ requires:
   
   version: ""
 - 
-  category: gnome-base
-  name: libgnomecanvas
+  category: dev-libs
+  name: glib
   
   version: ""
 - 
@@ -55,11 +60,6 @@ requires:
 - 
   category: sys-libs
   name: zlib
-  
-  version: ""
-- 
-  category: x11-libs
-  name: pango
   
   version: ""
 use_flags:

@@ -2,23 +2,43 @@ category: net-misc
 conflicts:
 - 
   category: net-misc
-  name: ntp
+  name: openntpd
   
   version: ""
 - 
   category: net-misc
-  name: openntpd
+  name: ntp
   
   version: ""
 name: ntpsec
 requires:
+- 
+  category: acct-user
+  name: ntp
+  
+  version: ""
 - 
   category: sys-libs
   name: libseccomp
   
   version: ""
 - 
-  category: acct-user
+  category: sci-visualization
+  name: gnuplot
+  
+  version: ""
+- 
+  category: dev-libs
+  name: openssl
+  
+  version: ""
+- 
+  category: media-fonts
+  name: liberation-fonts
+  
+  version: ""
+- 
+  category: acct-group
   name: ntp
   
   version: ""
@@ -35,26 +55,6 @@ requires:
 - 
   category: dev-libs
   name: libbsd
-  
-  version: ""
-- 
-  category: dev-libs
-  name: openssl
-  
-  version: ""
-- 
-  category: sci-visualization
-  name: gnuplot
-  
-  version: ""
-- 
-  category: media-fonts
-  name: liberation-fonts
-  
-  version: ""
-- 
-  category: acct-group
-  name: ntp
   
   version: ""
 use_flags:

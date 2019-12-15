@@ -7,6 +7,11 @@ conflicts:
   version: 0.10.1
 - 
   category: ~dev-python
+  name: cryptography
+  
+  version: "2.0"
+- 
+  category: ~dev-python
   name: netifaces
   
   version: 0.10.0
@@ -15,23 +20,33 @@ conflicts:
   name: eventlet
   
   version: 0.23.0
-- 
-  category: ~dev-python
-  name: cryptography
-  
-  version: "2.0"
 name: swift
 requires:
 - 
   category: dev-python
-  name: pbr
+  name: pyxattr
   
-  version: 1.8.0
+  version: ""
 - 
   category: dev-python
-  name: netifaces
+  name: cryptography
   
-  version: "0.5"
+  version: 1.6.0
+- 
+  category: dev-python
+  name: eventlet
+  
+  version: 0.17.4
+- 
+  category: dev-python
+  name: greenlet
+  
+  version: 0.3.1
+- 
+  category: dev-python
+  name: pastedeploy
+  
+  version: 1.3.3
 - 
   category: net-misc
   name: memcached
@@ -39,9 +54,9 @@ requires:
   version: ""
 - 
   category: dev-python
-  name: greenlet
+  name: netifaces
   
-  version: 0.3.1
+  version: "0.5"
 - 
   category: dev-python
   name: six
@@ -54,39 +69,24 @@ requires:
   version: 1.3.1
 - 
   category: dev-python
-  name: eventlet
-  
-  version: 0.17.4
-- 
-  category: dev-python
-  name: pastedeploy
-  
-  version: 1.3.3
-- 
-  category: dev-python
-  name: pyxattr
-  
-  version: ""
-- 
-  category: dev-python
   name: ipaddress
   
   version: 1.0.16
 - 
-  category: net-misc
-  name: rsync
+  category: dev-python
+  name: pbr
   
-  version: ""
+  version: 1.8.0
 - 
   category: dev-python
   name: dnspython
   
   version: 1.14.0
 - 
-  category: dev-python
-  name: cryptography
+  category: net-misc
+  name: rsync
   
-  version: 1.6.0
+  version: ""
 use_flags:
 - account
 - container

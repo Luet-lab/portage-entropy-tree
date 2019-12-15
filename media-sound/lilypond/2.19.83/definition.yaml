@@ -3,6 +3,21 @@ conflicts: []
 name: lilypond
 requires:
 - 
+  category: app-text
+  name: ghostscript-gpl
+  
+  version: "8.15"
+- 
+  category: media-libs
+  name: fontconfig
+  
+  version: ""
+- 
+  category: dev-scheme
+  name: guile
+  
+  version: "2"
+- 
   category: dev-scheme
   name: guile
   
@@ -14,7 +29,7 @@ requires:
   version: ""
 - 
   category: media-libs
-  name: fontconfig
+  name: freetype
   
   version: ""
 - 
@@ -32,21 +47,6 @@ requires:
   name: guile
   
   version: "2.0"
-- 
-  category: app-text
-  name: ghostscript-gpl
-  
-  version: "8.15"
-- 
-  category: dev-scheme
-  name: guile
-  
-  version: "2"
-- 
-  category: media-libs
-  name: freetype
-  
-  version: ""
 use_flags:
 - debug
 - emacs

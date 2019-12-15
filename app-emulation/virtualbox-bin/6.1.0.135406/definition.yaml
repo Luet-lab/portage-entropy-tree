@@ -13,13 +13,18 @@ conflicts:
 name: virtualbox-bin
 requires:
 - 
-  category: x11-libs
-  name: libXft
+  category: app-emulation
+  name: virtualbox-modules
   
   version: ""
 - 
-  category: sys-fs
-  name: lvm2
+  category: dev-libs
+  name: glib
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libX11
   
   version: ""
 - 
@@ -29,42 +34,12 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: libXdmcp
-  
-  version: ""
-- 
-  category: dev-libs
-  name: glib
-  
-  version: ""
-- 
-  category: media-libs
-  name: libpng
+  name: libXmu
   
   version: ""
 - 
   category: x11-libs
-  name: libXfixes
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXrandr
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libxml2
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXau
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libX11
+  name: libSM
   
   version: ""
 - 
@@ -74,47 +49,12 @@ requires:
   version: ""
 - 
   category: media-libs
-  name: freetype
+  name: libpng
   
   version: ""
 - 
   category: media-libs
   name: libsdl[X]
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libICE
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXmu
-  
-  version: ""
-- 
-  category: app-emulation
-  name: virtualbox-modules
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXinerama
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXrender
-  
-  version: ""
-- 
-  category: dev-libs
-  name: expat
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libSM
   
   version: ""
 - 
@@ -129,7 +69,67 @@ requires:
   version: ""
 - 
   category: x11-libs
+  name: libXrender
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXfixes
+  
+  version: ""
+- 
+  category: x11-libs
   name: libXi
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXinerama
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXrandr
+  
+  version: ""
+- 
+  category: dev-libs
+  name: expat
+  
+  version: ""
+- 
+  category: sys-fs
+  name: lvm2
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXau
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libICE
+  
+  version: ""
+- 
+  category: media-libs
+  name: freetype
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXft
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libxml2
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXdmcp
   
   version: ""
 use_flags:

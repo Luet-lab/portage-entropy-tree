@@ -3,13 +3,13 @@ conflicts: []
 name: polybar
 requires:
 - 
-  category: x11-libs
-  name: xcb-util-wm
+  category: media-sound
+  name: pulseaudio
   
   version: ""
 - 
-  category: media-libs
-  name: alsa-lib
+  category: x11-base
+  name: xcb-proto
   
   version: ""
 - 
@@ -23,8 +23,28 @@ requires:
   
   version: ""
 - 
-  category: x11-base
-  name: xcb-proto
+  category: x11-libs
+  name: xcb-util-wm
+  
+  version: ""
+- 
+  category: x11-libs
+  name: xcb-util-xrm
+  
+  version: ""
+- 
+  category: media-libs
+  name: alsa-lib
+  
+  version: ""
+- 
+  category: net-misc
+  name: curl
+  
+  version: ""
+- 
+  category: net-wireless
+  name: wireless-tools
   
   version: ""
 - 
@@ -40,26 +60,6 @@ requires:
 - 
   category: x11-libs
   name: xcb-util-image
-  
-  version: ""
-- 
-  category: x11-libs
-  name: xcb-util-xrm
-  
-  version: ""
-- 
-  category: net-misc
-  name: curl
-  
-  version: ""
-- 
-  category: net-wireless
-  name: wireless-tools
-  
-  version: ""
-- 
-  category: media-sound
-  name: pulseaudio
   
   version: ""
 use_flags:

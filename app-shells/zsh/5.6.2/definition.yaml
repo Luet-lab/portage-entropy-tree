@@ -8,6 +8,11 @@ conflicts:
 name: zsh
 requires:
 - 
+  category: sys-libs
+  name: libcap
+  
+  version: ""
+- 
   category: dev-libs
   name: libpcre
   
@@ -27,11 +32,6 @@ requires:
   name: ncurses
   
   version: 5.7-r4
-- 
-  category: sys-libs
-  name: libcap
-  
-  version: ""
 use_flags:
 - caps
 - debug

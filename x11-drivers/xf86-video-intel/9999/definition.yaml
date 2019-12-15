@@ -3,48 +3,13 @@ conflicts: []
 name: xf86-video-intel
 requires:
 - 
-  category: x11-libs
-  name: libXext
-  
-  version: ""
-- 
-  category: x11-base
-  name: xorg-server
-  
-  version: "1.18"
-- 
-  category: x11-libs
-  name: libX11
+  category: virtual
+  name: libudev
   
   version: ""
 - 
   category: x11-libs
-  name: libxshmfence
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXtst
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libdrm-2.4.52[video_cards_intel]
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libxcb
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXvMC
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXfixes
+  name: xcb-util
   
   version: ""
 - 
@@ -54,9 +19,14 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: pixman
+  name: libXrender
   
-  version: 0.27.1
+  version: ""
+- 
+  category: x11-libs
+  name: libxcb
+  
+  version: ""
 - 
   category: x11-libs
   name: libXinerama
@@ -64,17 +34,37 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: libXrender
+  name: libXtst
   
   version: ""
 - 
-  category: virtual
-  name: libudev
+  category: x11-libs
+  name: libXvMC
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libdrm-2.4.52[video_cards_intel]
+  
+  version: ""
+- 
+  category: x11-base
+  name: xorg-server
+  
+  version: "1.18"
+- 
+  category: x11-libs
+  name: libXfixes
   
   version: ""
 - 
   category: x11-libs
   name: libXcursor
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libX11
   
   version: ""
 - 
@@ -89,14 +79,24 @@ requires:
   version: ""
 - 
   category: x11-libs
+  name: libxshmfence
+  
+  version: ""
+- 
+  category: x11-libs
   name: libxcb
   
   version: "1.5"
 - 
   category: x11-libs
-  name: xcb-util
+  name: libXext
   
   version: ""
+- 
+  category: x11-libs
+  name: pixman
+  
+  version: 0.27.1
 use_flags:
 - debug
 - +sna

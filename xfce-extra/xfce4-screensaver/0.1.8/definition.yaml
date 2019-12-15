@@ -4,27 +4,12 @@ name: xfce4-screensaver
 requires:
 - 
   category: x11-libs
-  name: libXext
+  name: libxklavier
   
-  version: ""
+  version: "5.2"
 - 
   category: sys-auth
   name: consolekit
-  
-  version: ""
-- 
-  category: sys-apps
-  name: systemd
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libICE
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libX11
   
   version: ""
 - 
@@ -34,29 +19,44 @@ requires:
   version: "2.50"
 - 
   category: x11-libs
-  name: libXScrnSaver
+  name: gtk+
   
-  version: ""
-- 
-  category: x11-libs
-  name: libwnck
-  
-  version: "3.20"
+  version: "3.22"
 - 
   category: x11-libs
   name: libXxf86vm
   
   version: ""
 - 
-  category: x11-libs
-  name: libxklavier
-  
-  version: "5.2"
-- 
   category: xfce-base
-  name: garcon
+  name: libxfce4ui
   
-  version: 0.5.0
+  version: 4.12.1
+- 
+  category: sys-libs
+  name: pam
+  
+  version: ""
+- 
+  category: dev-libs
+  name: dbus-glib
+  
+  version: "0.30"
+- 
+  category: x11-libs
+  name: libX11
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXrandr
+  
+  version: "1.3"
+- 
+  category: x11-libs
+  name: libXScrnSaver
+  
+  version: ""
 - 
   category: xfce-base
   name: libxfce4util
@@ -68,18 +68,13 @@ requires:
   
   version: 4.12.1
 - 
-  category: dev-libs
-  name: dbus-glib
+  category: xfce-base
+  name: garcon
   
-  version: "0.30"
+  version: 0.5.0
 - 
-  category: x11-libs
-  name: gtk+
-  
-  version: "3.22"
-- 
-  category: sys-libs
-  name: pam
+  category: sys-auth
+  name: elogind
   
   version: ""
 - 
@@ -88,20 +83,25 @@ requires:
   
   version: ""
 - 
-  category: sys-auth
-  name: elogind
+  category: sys-apps
+  name: systemd
   
   version: ""
 - 
   category: x11-libs
-  name: libXrandr
+  name: libwnck
   
-  version: "1.3"
+  version: "3.20"
 - 
-  category: xfce-base
-  name: libxfce4ui
+  category: x11-libs
+  name: libICE
   
-  version: 4.12.1
+  version: ""
+- 
+  category: x11-libs
+  name: libXext
+  
+  version: ""
 use_flags:
 - consolekit
 - elogind

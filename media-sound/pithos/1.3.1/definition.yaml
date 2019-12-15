@@ -4,27 +4,7 @@ name: pithos
 requires:
 - 
   category: x11-libs
-  name: gtk+
-  
-  version: "3.14"
-- 
-  category: dev-libs
-  name: keybinder
-  
-  version: ""
-- 
-  category: dev-python
-  name: pylast
-  
-  version: ""
-- 
-  category: x11-libs
   name: pango
-  
-  version: ""
-- 
-  category: dev-libs
-  name: appstream-glib
   
   version: ""
 - 
@@ -38,13 +18,28 @@ requires:
   
   version: ""
 - 
-  category: x11-themes
-  name: gnome-icon-theme-symbolic
+  category: x11-libs
+  name: gtk+
   
-  version: ""
+  version: "3.14"
 - 
   category: x11-libs
   name: libnotify
+  
+  version: ""
+- 
+  category: dev-python
+  name: pylast
+  
+  version: ""
+- 
+  category: dev-python
+  name: pygobject
+  
+  version: "3.12"
+- 
+  category: x11-themes
+  name: gnome-icon-theme-symbolic
   
   version: ""
 - 
@@ -53,15 +48,20 @@ requires:
   
   version: ""
 - 
+  category: dev-libs
+  name: keybinder
+  
+  version: ""
+- 
   category: dev-python
   name: dbus-python
   
   version: ""
 - 
-  category: dev-python
-  name: pygobject
+  category: dev-libs
+  name: appstream-glib
   
-  version: "3.12"
+  version: ""
 use_flags:
 - libnotify
 - appindicator

@@ -8,6 +8,16 @@ conflicts:
 name: selinux-python
 requires:
 - 
+  category: app-admin
+  name: setools
+  
+  version: 4.2.0
+- 
+  category: dev-python
+  name: ipy
+  
+  version: ""
+- 
   category: sys-libs
   name: libselinux
   
@@ -22,16 +32,6 @@ requires:
   name: libsepol
   
   version: "2.9"
-- 
-  category: app-admin
-  name: setools
-  
-  version: 4.2.0
-- 
-  category: dev-python
-  name: ipy
-  
-  version: ""
 use_flags:
 - ""
 version: "2.9"

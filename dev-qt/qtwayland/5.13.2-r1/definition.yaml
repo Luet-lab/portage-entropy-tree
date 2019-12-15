@@ -4,6 +4,16 @@ name: qtwayland
 requires:
 - 
   category: dev-qt
+  name: qtcore
+  
+  version: 5.13.2
+- 
+  category: dev-qt
+  name: qtdeclarative
+  
+  version: 5.13.2
+- 
+  category: dev-qt
   name: qtgui-5.13.2[egl,libinput=]
   
   version: ""
@@ -32,16 +42,6 @@ requires:
   name: wayland
   
   version: 1.6.0
-- 
-  category: dev-qt
-  name: qtcore
-  
-  version: 5.13.2
-- 
-  category: dev-qt
-  name: qtdeclarative
-  
-  version: 5.13.2
 use_flags:
 - +libinput
 - xcomposite

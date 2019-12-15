@@ -3,6 +3,41 @@ conflicts: []
 name: sudo
 requires:
 - 
+  category: dev-libs
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libressl
+  
+  version: ""
+- 
+  category: sys-auth
+  name: sssd
+  
+  version: ""
+- 
+  category: net-nds
+  name: openldap
+  
+  version: 2.1.30-r1
+- 
+  category: dev-libs
+  name: cyrus-sasl
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libgcrypt
+  
+  version: ""
+- 
+  category: app-misc
+  name: editor-wrapper
+  
+  version: "3"
+- 
   category: sys-auth
   name: pambase
   
@@ -13,20 +48,15 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  name: cyrus-sasl
+  category: sys-libs
+  name: pam
   
   version: ""
 - 
-  category: dev-libs
-  name: openssl
+  category: sys-auth
+  name: skey
   
-  version: ""
-- 
-  category: app-misc
-  name: editor-wrapper
-  
-  version: "3"
+  version: 1.1.5-r1
 - 
   category: dev-lang
   name: perl
@@ -38,33 +68,13 @@ requires:
   
   version: ""
 - 
-  category: net-nds
-  name: openldap
-  
-  version: 2.1.30-r1
-- 
-  category: dev-libs
-  name: libgcrypt
-  
-  version: ""
-- 
-  category: sys-libs
-  name: pam
-  
-  version: ""
-- 
   category: virtual
   name: mta
   
   version: ""
 - 
-  category: sys-auth
-  name: sssd
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libressl
+  category: net-nds
+  name: openldap
   
   version: ""
 - 
@@ -72,16 +82,6 @@ requires:
   name: editor
   
   version: ""
-- 
-  category: net-nds
-  name: openldap
-  
-  version: ""
-- 
-  category: sys-auth
-  name: skey
-  
-  version: 1.1.5-r1
 use_flags:
 - gcrypt
 - ldap

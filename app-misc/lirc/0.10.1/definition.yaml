@@ -3,8 +3,13 @@ conflicts: []
 name: lirc
 requires:
 - 
-  category: dev-python
-  name: pygobject
+  category: x11-libs
+  name: libICE
+  
+  version: ""
+- 
+  category: media-libs
+  name: alsa-lib
   
   version: ""
 - 
@@ -13,23 +18,13 @@ requires:
   
   version: "5"
 - 
-  category: virtual
-  name: libusb
+  category: dev-embedded
+  name: libftdi
   
   version: ""
 - 
   category: x11-libs
   name: libSM
-  
-  version: ""
-- 
-  category: sys-apps
-  name: systemd
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libICE
   
   version: ""
 - 
@@ -43,6 +38,11 @@ requires:
   
   version: ""
 - 
+  category: dev-python
+  name: pygobject
+  
+  version: ""
+- 
   category: app-misc
   name: inputlircd
   
@@ -53,13 +53,13 @@ requires:
   
   version: "18"
 - 
-  category: media-libs
-  name: alsa-lib
+  category: sys-apps
+  name: systemd
   
   version: ""
 - 
-  category: dev-embedded
-  name: libftdi
+  category: virtual
+  name: libusb
   
   version: ""
 use_flags:

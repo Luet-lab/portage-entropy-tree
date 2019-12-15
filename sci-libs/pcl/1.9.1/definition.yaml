@@ -3,10 +3,10 @@ conflicts: []
 name: pcl
 requires:
 - 
-  category: dev-util
-  name: nvidia-cuda-toolkit
+  category: dev-libs
+  name: OpenNI
   
-  version: "4"
+  version: ""
 - 
   category: net-libs
   name: libpcap
@@ -19,7 +19,7 @@ requires:
   version: ""
 - 
   category: dev-qt
-  name: qtopengl
+  name: qtconcurrent
   
   version: ""
 - 
@@ -28,33 +28,28 @@ requires:
   
   version: 1.7.1
 - 
-  category: dev-libs
-  name: boost
-  
-  version: ""
-- 
-  category: virtual
-  name: libusb
-  
-  version: ""
-- 
-  category: dev-qt
-  name: qtgui
-  
-  version: ""
-- 
-  category: dev-qt
-  name: qtconcurrent
-  
-  version: ""
-- 
-  category: dev-libs
-  name: OpenNI
+  category: media-libs
+  name: freeglut
   
   version: ""
 - 
   category: dev-libs
   name: OpenNI2
+  
+  version: ""
+- 
+  category: dev-qt
+  name: qtcore
+  
+  version: ""
+- 
+  category: virtual
+  name: opengl
+  
+  version: ""
+- 
+  category: dev-cpp
+  name: eigen
   
   version: ""
 - 
@@ -64,7 +59,17 @@ requires:
   version: ""
 - 
   category: dev-qt
-  name: qtcore
+  name: qtgui
+  
+  version: ""
+- 
+  category: dev-qt
+  name: qtopengl
+  
+  version: ""
+- 
+  category: virtual
+  name: libusb
   
   version: ""
 - 
@@ -73,18 +78,13 @@ requires:
   
   version: "5.6"
 - 
-  category: dev-cpp
-  name: eigen
+  category: dev-util
+  name: nvidia-cuda-toolkit
   
-  version: ""
+  version: "4"
 - 
-  category: virtual
-  name: opengl
-  
-  version: ""
-- 
-  category: media-libs
-  name: freeglut
+  category: dev-libs
+  name: boost
   
   version: ""
 use_flags:

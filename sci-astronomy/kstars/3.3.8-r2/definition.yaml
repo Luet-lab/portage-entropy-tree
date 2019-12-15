@@ -3,15 +3,10 @@ conflicts: []
 name: kstars
 requires:
 - 
-  category: sys-libs
-  name: zlib
+  category: kde-frameworks
+  name: kxmlgui
   
-  version: ""
-- 
-  category: sci-libs
-  name: indilib
-  
-  version: 1.7.5
+  version: 5.60.0
 - 
   category: dev-qt
   name: qtquickcontrols
@@ -19,17 +14,17 @@ requires:
   version: 5.12.3
 - 
   category: dev-qt
-  name: qtprintsupport
+  name: qtquickcontrols2
+  
+  version: 5.12.3
+- 
+  category: dev-qt
+  name: qtdatavis3d
   
   version: 5.12.3
 - 
   category: kde-frameworks
-  name: kconfigwidgets
-  
-  version: 5.60.0
-- 
-  category: kde-frameworks
-  name: kcrash
+  name: kauth
   
   version: 5.60.0
 - 
@@ -43,38 +38,18 @@ requires:
   
   version: 5.60.0
 - 
-  category: dev-qt
-  name: qtdatavis3d
-  
-  version: 5.12.3
-- 
-  category: dev-qt
-  name: qtdeclarative
-  
-  version: 5.12.3
-- 
-  category: dev-qt
-  name: qtsql
-  
-  version: 5.12.3
-- 
   category: kde-frameworks
-  name: knotifications
+  name: kwidgetsaddons
   
   version: 5.60.0
 - 
   category: dev-qt
-  name: qtpositioning
+  name: qtdbus
   
   version: 5.12.3
 - 
-  category: kde-frameworks
-  name: kconfig
-  
-  version: 5.60.0
-- 
   category: dev-qt
-  name: qtquickcontrols2
+  name: qtwebsockets
   
   version: 5.12.3
 - 
@@ -84,17 +59,22 @@ requires:
   version: 5.12.3
 - 
   category: kde-frameworks
-  name: kwidgetsaddons
+  name: knotifications
   
   version: 5.60.0
 - 
   category: sci-libs
-  name: cfitsio
+  name: indilib
   
-  version: ""
+  version: 1.7.5
 - 
-  category: dev-libs
-  name: qtkeychain
+  category: kde-frameworks
+  name: kplotting
+  
+  version: 5.60.0
+- 
+  category: media-libs
+  name: libraw
   
   version: ""
 - 
@@ -102,6 +82,56 @@ requires:
   name: qtgraphicaleffects
   
   version: 5.12.3
+- 
+  category: dev-qt
+  name: qtdeclarative
+  
+  version: 5.12.3
+- 
+  category: dev-qt
+  name: qtprintsupport
+  
+  version: 5.12.3
+- 
+  category: kde-frameworks
+  name: knotifyconfig
+  
+  version: 5.60.0
+- 
+  category: kde-frameworks
+  name: ki18n
+  
+  version: 5.60.0
+- 
+  category: dev-libs
+  name: qtkeychain
+  
+  version: ""
+- 
+  category: sci-astronomy
+  name: wcslib
+  
+  version: ""
+- 
+  category: dev-qt
+  name: qtsql
+  
+  version: 5.12.3
+- 
+  category: kde-frameworks
+  name: kconfigwidgets
+  
+  version: 5.60.0
+- 
+  category: kde-frameworks
+  name: kcrash
+  
+  version: 5.60.0
+- 
+  category: sci-libs
+  name: libnova
+  
+  version: ""
 - 
   category: dev-qt
   name: qtgui
@@ -113,48 +143,18 @@ requires:
   
   version: 5.12.3
 - 
-  category: dev-qt
-  name: qtwebsockets
+  category: kde-frameworks
+  name: kconfig
   
-  version: 5.12.3
-- 
-  category: media-libs
-  name: libraw
-  
-  version: ""
-- 
-  category: sci-astronomy
-  name: wcslib
-  
-  version: ""
+  version: 5.60.0
 - 
   category: kde-frameworks
   name: kcoreaddons
   
   version: 5.60.0
 - 
-  category: kde-frameworks
-  name: ki18n
-  
-  version: 5.60.0
-- 
-  category: kde-frameworks
-  name: knotifyconfig
-  
-  version: 5.60.0
-- 
-  category: kde-frameworks
-  name: kplotting
-  
-  version: 5.60.0
-- 
-  category: kde-frameworks
-  name: kxmlgui
-  
-  version: 5.60.0
-- 
   category: dev-qt
-  name: qtdbus
+  name: qtpositioning
   
   version: 5.12.3
 - 
@@ -163,13 +163,13 @@ requires:
   
   version: 5.12.3
 - 
-  category: kde-frameworks
-  name: kauth
+  category: sys-libs
+  name: zlib
   
-  version: 5.60.0
+  version: ""
 - 
   category: sci-libs
-  name: libnova
+  name: cfitsio
   
   version: ""
 use_flags:

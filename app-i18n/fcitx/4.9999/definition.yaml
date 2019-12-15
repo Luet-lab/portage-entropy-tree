@@ -3,8 +3,38 @@ conflicts: []
 name: fcitx
 requires:
 - 
-  category: virtual
-  name: libintl
+  category: x11-libs
+  name: libXfixes
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXinerama
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libXrender
+  
+  version: ""
+- 
+  category: x11-libs
+  name: cairo[X]
+  
+  version: ""
+- 
+  category: dev-libs
+  name: gobject-introspection
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libxkbcommon
+  
+  version: ""
+- 
+  category: sys-apps
+  name: util-linux
   
   version: ""
 - 
@@ -14,42 +44,22 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: libXfixes
+  name: libXext
   
   version: ""
 - 
-  category: x11-libs
-  name: cairo[X]
+  category: dev-lang
+  name: lua
   
   version: ""
 - 
-  category: x11-libs
-  name: gtk+
-  
-  version: ""
-- 
-  category: app-text
-  name: iso-codes
+  category: dev-libs
+  name: libxml2
   
   version: ""
 - 
   category: sys-apps
   name: dbus
-  
-  version: ""
-- 
-  category: virtual
-  name: libiconv
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libxkbcommon
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libXinerama
   
   version: ""
 - 
@@ -63,33 +73,28 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  name: glib
-  
-  version: ""
-- 
-  category: x11-libs
-  name: pango
-  
-  version: ""
-- 
   category: app-text
   name: enchant
   
   version: ""
 - 
-  category: dev-libs
-  name: gobject-introspection
+  category: sys-devel
+  name: gettext
   
   version: ""
 - 
-  category: dev-lang
-  name: lua
+  category: app-text
+  name: iso-codes
   
   version: ""
 - 
-  category: x11-libs
-  name: libXrender
+  category: virtual
+  name: libiconv
+  
+  version: ""
+- 
+  category: virtual
+  name: libintl
   
   version: ""
 - 
@@ -99,12 +104,12 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: libXext
+  name: pango
   
   version: ""
 - 
-  category: sys-devel
-  name: gettext
+  category: x11-libs
+  name: gtk+
   
   version: ""
 - 
@@ -114,12 +119,7 @@ requires:
   version: ""
 - 
   category: dev-libs
-  name: libxml2
-  
-  version: ""
-- 
-  category: sys-apps
-  name: util-linux
+  name: glib
   
   version: ""
 use_flags:

@@ -9,17 +9,22 @@ name: e16-epplets
 requires:
 - 
   category: media-libs
-  name: libcdaudio
+  name: mesa[X(+)]
   
   version: ""
 - 
-  category: media-libs
-  name: glu
+  category: x11-libs
+  name: libX11
   
   version: ""
 - 
   category: x11-wm
   name: e16
+  
+  version: ""
+- 
+  category: media-libs
+  name: libcdaudio
   
   version: ""
 - 
@@ -29,7 +34,7 @@ requires:
   version: ""
 - 
   category: media-libs
-  name: mesa[X(+)]
+  name: glu
   
   version: ""
 - 
@@ -37,11 +42,6 @@ requires:
   name: imlib2
   
   version: 1.2.0
-- 
-  category: x11-libs
-  name: libX11
-  
-  version: ""
 - 
   category: x11-libs
   name: libXext

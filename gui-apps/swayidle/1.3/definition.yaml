@@ -13,6 +13,11 @@ conflicts:
 name: swayidle
 requires:
 - 
+  category: dev-libs
+  name: wayland
+  
+  version: ""
+- 
   category: sys-auth
   name: elogind
   
@@ -22,11 +27,6 @@ requires:
   name: systemd
   
   version: "237"
-- 
-  category: dev-libs
-  name: wayland
-  
-  version: ""
 use_flags:
 - elogind
 - fish-completion

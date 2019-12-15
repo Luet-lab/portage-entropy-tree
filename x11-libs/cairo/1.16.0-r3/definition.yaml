@@ -4,49 +4,14 @@ name: cairo
 requires:
 - 
   category: media-libs
-  name: mesa-9.1.6[egl,X(+),]
-  
-  version: ""
-- 
-  category: media-libs
-  name: libpng
-  
-  version: 1.6.10
-- 
-  category: sys-libs
-  name: binutils-libs
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libxcb
-  
-  version: 1.9.1
-- 
-  category: media-libs
   name: freetype
   
   version: 2.5.0.1
 - 
   category: x11-libs
-  name: libXext
+  name: pixman
   
-  version: 1.3.2
-- 
-  category: sys-libs
-  name: zlib
-  
-  version: 1.2.8-r1
-- 
-  category: media-libs
-  name: mesa
-  
-  version: 9.1.6
-- 
-  category: dev-libs
-  name: glib
-  
-  version: 2.34.3
+  version: 0.32.4
 - 
   category: x11-libs
   name: libXrender
@@ -58,20 +23,55 @@ requires:
   
   version: 2.06-r1
 - 
-  category: media-libs
-  name: fontconfig
+  category: sys-libs
+  name: binutils-libs
   
-  version: 2.10.92
+  version: ""
+- 
+  category: media-libs
+  name: mesa-9.1.6[egl,X(+),]
+  
+  version: ""
+- 
+  category: media-libs
+  name: libpng
+  
+  version: 1.6.10
+- 
+  category: sys-libs
+  name: zlib
+  
+  version: 1.2.8-r1
+- 
+  category: dev-libs
+  name: glib
+  
+  version: 2.34.3
 - 
   category: x11-libs
-  name: pixman
+  name: libXext
   
-  version: 0.32.4
+  version: 1.3.2
 - 
   category: x11-libs
   name: libX11
   
   version: 1.6.2
+- 
+  category: x11-libs
+  name: libxcb
+  
+  version: 1.9.1
+- 
+  category: media-libs
+  name: fontconfig
+  
+  version: 2.10.92
+- 
+  category: media-libs
+  name: mesa
+  
+  version: 9.1.6
 use_flags:
 - X
 - aqua

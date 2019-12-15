@@ -4,29 +4,14 @@ name: libsigrok
 requires:
 - 
   category: dev-libs
+  name: glib-2.32.0[static-libs(+)]
+  
+  version: ""
+- 
+  category: dev-libs
   name: glib
   
   version: 2.32.0
-- 
-  category: dev-cpp
-  name: glibmm
-  
-  version: ""
-- 
-  category: dev-python
-  name: pygobject
-  
-  version: 3.0.0
-- 
-  category: sys-libs
-  name: libieee1284[static-libs(+)]
-  
-  version: ""
-- 
-  category: virtual
-  name: jre
-  
-  version: "1.4"
 - 
   category: dev-libs
   name: libzip
@@ -53,8 +38,8 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  name: glib-2.32.0[static-libs(+)]
+  category: sys-libs
+  name: libieee1284[static-libs(+)]
   
   version: ""
 - 
@@ -62,6 +47,21 @@ requires:
   name: libserialport-0.1.1[static-libs(+)]
   
   version: ""
+- 
+  category: dev-cpp
+  name: glibmm
+  
+  version: ""
+- 
+  category: dev-python
+  name: pygobject
+  
+  version: 3.0.0
+- 
+  category: virtual
+  name: jre
+  
+  version: "1.4"
 use_flags:
 - cxx
 - ftdi

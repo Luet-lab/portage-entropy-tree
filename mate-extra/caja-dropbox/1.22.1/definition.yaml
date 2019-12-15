@@ -3,18 +3,8 @@ conflicts: []
 name: caja-dropbox
 requires:
 - 
-  category: mate-base
-  name: caja
-  
-  version: 1.19.1
-- 
-  category: media-libs
-  name: fontconfig
-  
-  version: ""
-- 
   category: x11-libs
-  name: cairo
+  name: gdk-pixbuf
   
   version: ""
 - 
@@ -28,10 +18,20 @@ requires:
   
   version: ""
 - 
+  category: dev-libs
+  name: glib
+  
+  version: "2.50"
+- 
   category: dev-python
   name: pygobject
   
   version: ""
+- 
+  category: mate-base
+  name: caja
+  
+  version: 1.19.1
 - 
   category: media-libs
   name: freetype
@@ -39,14 +39,9 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: gdk-pixbuf
+  name: cairo
   
   version: ""
-- 
-  category: x11-libs
-  name: gtk+
-  
-  version: "3.22"
 - 
   category: x11-libs
   name: pango
@@ -58,10 +53,15 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  name: glib
+  category: media-libs
+  name: fontconfig
   
-  version: "2.50"
+  version: ""
+- 
+  category: x11-libs
+  name: gtk+
+  
+  version: "3.22"
 use_flags:
 - debug
 version: 1.22.1

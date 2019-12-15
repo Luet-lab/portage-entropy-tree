@@ -3,13 +3,13 @@ conflicts: []
 name: mumble
 requires:
 - 
-  category: dev-qt
-  name: qtcore
+  category: x11-libs
+  name: libXi
   
   version: ""
 - 
-  category: dev-qt
-  name: qtxml
+  category: media-libs
+  name: speexdsp
   
   version: ""
 - 
@@ -19,69 +19,9 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: libXi
-  
-  version: ""
-- 
-  category: media-libs
-  name: alsa-lib
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libressl
-  
-  version: ""
-- 
-  category: media-libs
-  name: portaudio
-  
-  version: ""
-- 
-  category: dev-qt
-  name: qtnetwork
-  
-  version: ""
-- 
-  category: dev-qt
-  name: qtsvg
-  
-  version: ""
-- 
-  category: x11-libs
   name: libX11
   
   version: ""
-- 
-  category: app-misc
-  name: g15daemon
-  
-  version: ""
-- 
-  category: media-libs
-  name: opus
-  
-  version: 1.0.1
-- 
-  category: dev-qt
-  name: qtgui
-  
-  version: ""
-- 
-  category: dev-qt
-  name: qtsql
-  
-  version: ""
-- 
-  category: dev-qt
-  name: qtwidgets
-  
-  version: ""
-- 
-  category: dev-libs
-  name: protobuf
-  
-  version: 2.2.0
 - 
   category: media-libs
   name: speex
@@ -98,6 +38,71 @@ requires:
   
   version: 1.0.0b
 - 
+  category: app-accessibility
+  name: speech-dispatcher
+  
+  version: 0.8.0
+- 
+  category: dev-qt
+  name: qtsql
+  
+  version: ""
+- 
+  category: dev-libs
+  name: protobuf
+  
+  version: 2.2.0
+- 
+  category: media-libs
+  name: libsndfile
+  
+  version: 1.0.20
+- 
+  category: dev-qt
+  name: qtwidgets
+  
+  version: ""
+- 
+  category: dev-qt
+  name: qtxml
+  
+  version: ""
+- 
+  category: media-libs
+  name: alsa-lib
+  
+  version: ""
+- 
+  category: app-misc
+  name: g15daemon
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libressl
+  
+  version: ""
+- 
+  category: dev-qt
+  name: qtcore
+  
+  version: ""
+- 
+  category: dev-qt
+  name: qtgui
+  
+  version: ""
+- 
+  category: dev-qt
+  name: qtsvg
+  
+  version: ""
+- 
+  category: media-libs
+  name: portaudio
+  
+  version: ""
+- 
   category: media-sound
   name: pulseaudio
   
@@ -108,13 +113,8 @@ requires:
   
   version: ""
 - 
-  category: media-libs
-  name: libsndfile
-  
-  version: 1.0.20
-- 
-  category: media-libs
-  name: speexdsp
+  category: dev-qt
+  name: qtnetwork
   
   version: ""
 - 
@@ -123,10 +123,10 @@ requires:
   
   version: ""
 - 
-  category: app-accessibility
-  name: speech-dispatcher
+  category: media-libs
+  name: opus
   
-  version: 0.8.0
+  version: 1.0.1
 use_flags:
 - +alsa
 - +dbus

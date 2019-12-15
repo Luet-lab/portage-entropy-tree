@@ -4,7 +4,12 @@ name: lirc
 requires:
 - 
   category: x11-libs
-  name: libICE
+  name: libSM
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libX11
   
   version: ""
 - 
@@ -13,8 +18,8 @@ requires:
   
   version: ""
 - 
-  category: app-misc
-  name: inputlircd
+  category: dev-python
+  name: pygobject
   
   version: ""
 - 
@@ -23,28 +28,13 @@ requires:
   
   version: "18"
 - 
-  category: media-libs
-  name: alsa-lib
-  
-  version: ""
-- 
-  category: dev-embedded
-  name: libftdi
-  
-  version: ""
-- 
   category: sys-apps
   name: systemd
   
   version: ""
 - 
-  category: dev-python
-  name: pygobject
-  
-  version: ""
-- 
-  category: dev-python
-  name: pyyaml
+  category: dev-embedded
+  name: libftdi
   
   version: ""
 - 
@@ -54,12 +44,22 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: libSM
+  name: libICE
   
   version: ""
 - 
-  category: x11-libs
-  name: libX11
+  category: app-misc
+  name: inputlircd
+  
+  version: ""
+- 
+  category: media-libs
+  name: alsa-lib
+  
+  version: ""
+- 
+  category: dev-python
+  name: pyyaml
   
   version: ""
 use_flags:

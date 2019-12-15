@@ -3,78 +3,8 @@ conflicts: []
 name: mixxx
 requires:
 - 
-  category: media-libs
-  name: portmidi
-  
-  version: ""
-- 
-  category: media-libs
-  name: faad2
-  
-  version: ""
-- 
-  category: dev-libs
-  name: hidapi
-  
-  version: ""
-- 
   category: dev-qt
-  name: qtgui
-  
-  version: ""
-- 
-  category: dev-qt
-  name: qtx11extras
-  
-  version: ""
-- 
-  category: media-libs
-  name: libsoundtouch
-  
-  version: "1.5"
-- 
-  category: media-sound
-  name: wavpack
-  
-  version: ""
-- 
-  category: dev-qt
-  name: qtwidgets
-  
-  version: ""
-- 
-  category: media-libs
-  name: libid3tag
-  
-  version: ""
-- 
-  category: media-libs
-  name: libsndfile
-  
-  version: ""
-- 
-  category: media-libs
-  name: portaudio
-  
-  version: 19_pre
-- 
-  category: media-libs
-  name: rubberband
-  
-  version: ""
-- 
-  category: media-libs
-  name: libmad
-  
-  version: ""
-- 
-  category: dev-qt
-  name: qtdbus
-  
-  version: ""
-- 
-  category: dev-qt
-  name: qtsvg
+  name: qtopengl
   
   version: ""
 - 
@@ -83,35 +13,25 @@ requires:
   
   version: ""
 - 
-  category: media-video
-  name: ffmpeg
-  
-  version: ""
-- 
-  category: dev-libs
-  name: protobuf
-  
-  version: ""
-- 
-  category: sys-power
-  name: upower
-  
-  version: ""
-- 
   category: media-libs
-  name: libshout
+  name: taglib
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libX11
   
   version: ""
 - 
   category: dev-qt
-  name: qtcore
+  name: qtwidgets
   
   version: ""
 - 
-  category: media-libs
-  name: lilv
+  category: dev-qt
+  name: qtx11extras
   
-  version: 0.24.2-r3
+  version: ""
 - 
   category: dev-qt
   name: qtsql
@@ -123,33 +43,48 @@ requires:
   
   version: ""
 - 
-  category: sci-libs
-  name: fftw
+  category: media-libs
+  name: libsndfile
   
   version: ""
 - 
-  category: virtual
-  name: libusb
+  category: media-libs
+  name: faad2
   
   version: ""
 - 
-  category: virtual
-  name: opengl
+  category: media-libs
+  name: libmp4v2
+  
+  version: ""
+- 
+  category: media-libs
+  name: lilv
+  
+  version: 0.24.2-r3
+- 
+  category: dev-qt
+  name: qtcore
   
   version: ""
 - 
   category: dev-qt
-  name: qtnetwork
+  name: qtgui
   
   version: ""
 - 
-  category: dev-qt
-  name: qtopengl
+  category: media-libs
+  name: portmidi
   
   version: ""
 - 
-  category: dev-qt
-  name: qtxml
+  category: dev-libs
+  name: hidapi
+  
+  version: ""
+- 
+  category: media-libs
+  name: libmad
   
   version: ""
 - 
@@ -159,27 +94,22 @@ requires:
   version: ""
 - 
   category: media-libs
-  name: taglib
+  name: flac
+  
+  version: ""
+- 
+  category: sci-libs
+  name: fftw
+  
+  version: ""
+- 
+  category: virtual
+  name: opengl
   
   version: ""
 - 
   category: media-libs
-  name: vamp-plugin-sdk
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libX11
-  
-  version: ""
-- 
-  category: media-libs
-  name: libmp4v2
-  
-  version: ""
-- 
-  category: dev-libs
-  name: glib
+  name: libshout
   
   version: ""
 - 
@@ -189,7 +119,12 @@ requires:
   version: ""
 - 
   category: media-libs
-  name: flac
+  name: libsoundtouch
+  
+  version: "1.5"
+- 
+  category: dev-db
+  name: sqlite
   
   version: ""
 - 
@@ -198,13 +133,78 @@ requires:
   
   version: ""
 - 
-  category: dev-db
-  name: sqlite
+  category: media-libs
+  name: rubberband
+  
+  version: ""
+- 
+  category: media-sound
+  name: wavpack
   
   version: ""
 - 
   category: dev-qt
   name: qtscript
+  
+  version: ""
+- 
+  category: media-libs
+  name: portaudio
+  
+  version: 19_pre
+- 
+  category: dev-qt
+  name: qtdbus
+  
+  version: ""
+- 
+  category: dev-qt
+  name: qtnetwork
+  
+  version: ""
+- 
+  category: dev-qt
+  name: qtsvg
+  
+  version: ""
+- 
+  category: dev-qt
+  name: qtxml
+  
+  version: ""
+- 
+  category: media-libs
+  name: libid3tag
+  
+  version: ""
+- 
+  category: media-libs
+  name: vamp-plugin-sdk
+  
+  version: ""
+- 
+  category: dev-libs
+  name: glib
+  
+  version: ""
+- 
+  category: dev-libs
+  name: protobuf
+  
+  version: ""
+- 
+  category: media-video
+  name: ffmpeg
+  
+  version: ""
+- 
+  category: sys-power
+  name: upower
+  
+  version: ""
+- 
+  category: virtual
+  name: libusb
   
   version: ""
 use_flags:

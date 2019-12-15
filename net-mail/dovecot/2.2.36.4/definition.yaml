@@ -8,18 +8,23 @@ conflicts:
 name: dovecot
 requires:
 - 
-  category: dev-cpp
-  name: clucene
+  category: sec-policy
+  name: selinux-dovecot
   
-  version: "2.3"
+  version: ""
 - 
   category: dev-db
   name: sqlite
   
   version: ""
 - 
-  category: net-mail
-  name: vpopmail
+  category: sys-apps
+  name: tcp-wrappers
+  
+  version: ""
+- 
+  category: virtual
+  name: libiconv
   
   version: ""
 - 
@@ -28,28 +33,33 @@ requires:
   
   version: ""
 - 
+  category: sys-libs
+  name: zlib
+  
+  version: ""
+- 
+  category: virtual
+  name: krb5
+  
+  version: ""
+- 
   category: net-nds
   name: openldap
   
   version: ""
 - 
-  category: dev-libs
-  name: openssl
+  category: dev-cpp
+  name: clucene
+  
+  version: "2.3"
+- 
+  category: net-misc
+  name: curl
   
   version: ""
 - 
-  category: dev-libs
-  name: libressl
-  
-  version: ""
-- 
-  category: app-text
-  name: libexttextcat
-  
-  version: ""
-- 
-  category: sys-libs
-  name: zlib
+  category: net-mail
+  name: vpopmail
   
   version: ""
 - 
@@ -58,8 +68,33 @@ requires:
   
   version: ""
 - 
+  category: app-arch
+  name: bzip2
+  
+  version: ""
+- 
+  category: app-arch
+  name: xz-utils
+  
+  version: ""
+- 
   category: dev-db
   name: mysql-connector-c
+  
+  version: ""
+- 
+  category: dev-libs
+  name: expat
+  
+  version: ""
+- 
+  category: app-text
+  name: libexttextcat
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libressl
   
   version: ""
 - 
@@ -78,43 +113,8 @@ requires:
   
   version: ""
 - 
-  category: sec-policy
-  name: selinux-dovecot
-  
-  version: ""
-- 
-  category: app-arch
-  name: bzip2
-  
-  version: ""
-- 
-  category: app-arch
-  name: xz-utils
-  
-  version: ""
-- 
-  category: net-misc
-  name: curl
-  
-  version: ""
-- 
   category: dev-libs
-  name: expat
-  
-  version: ""
-- 
-  category: sys-apps
-  name: tcp-wrappers
-  
-  version: ""
-- 
-  category: virtual
-  name: libiconv
-  
-  version: ""
-- 
-  category: virtual
-  name: krb5
+  name: openssl
   
   version: ""
 use_flags:

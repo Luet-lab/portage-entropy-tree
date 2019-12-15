@@ -2,44 +2,14 @@ category: sys-cluster
 conflicts:
 - 
   category: ~dev-python
-  name: sqlalchemy
+  name: eventlet
   
-  version: 1.1.5
-- 
-  category: ~dev-python
-  name: sqlalchemy
-  
-  version: 1.1.6
-- 
-  category: ~dev-python
-  name: pbr
-  
-  version: 2.1.0
-- 
-  category: ~dev-python
-  name: requests
-  
-  version: 2.20.0
-- 
-  category: ~dev-python
-  name: sqlalchemy
-  
-  version: 1.1.8
-- 
-  category: ~dev-python
-  name: oslo-serialization
-  
-  version: 2.19.1
+  version: 0.25.0
 - 
   category: ~dev-python
   name: lxml
   
   version: 3.7.0
-- 
-  category: ~dev-python
-  name: eventlet
-  
-  version: 0.25.0
 - 
   category: ~dev-python
   name: oslo-service
@@ -57,9 +27,39 @@ conflicts:
   version: 0.7.7
 - 
   category: ~dev-python
+  name: sqlalchemy
+  
+  version: 1.1.8
+- 
+  category: ~dev-python
+  name: oslo-serialization
+  
+  version: 2.19.1
+- 
+  category: ~dev-python
+  name: sqlalchemy
+  
+  version: 1.1.5
+- 
+  category: ~dev-python
+  name: pbr
+  
+  version: 2.1.0
+- 
+  category: ~dev-python
   name: eventlet
   
   version: 0.23.0
+- 
+  category: ~dev-python
+  name: sqlalchemy
+  
+  version: 1.1.6
+- 
+  category: ~dev-python
+  name: requests
+  
+  version: 2.20.0
 - 
   category: ~dev-python
   name: retrying
@@ -69,134 +69,39 @@ name: cinder
 requires:
 - 
   category: dev-python
-  name: oslo-reports
+  name: keystonemiddleware
   
-  version: 1.18.0
+  version: 4.21.0
 - 
   category: dev-python
-  name: oslo-service
+  name: oslo-db
   
-  version: 1.24.0
+  version: 4.27.0
 - 
   category: dev-python
-  name: routes
+  name: oslo-config
   
-  version: 2.3.1
-- 
-  category: dev-python
-  name: sqlalchemy
-  
-  version: 1.0.10
-- 
-  category: dev-python
-  name: oslo-concurrency
-  
-  version: 3.26.0
-- 
-  category: dev-python
-  name: rtslib-fb
-  
-  version: 2.1.65
-- 
-  category: dev-python
-  name: tooz
-  
-  version: 1.58.0
-- 
-  category: dev-python
-  name: pymysql
-  
-  version: 0.7.6
-- 
-  category: dev-python
-  name: sqlalchemy-migrate
-  
-  version: 0.11.0
-- 
-  category: dev-python
-  name: decorator
-  
-  version: 3.4.0
-- 
-  category: dev-python
-  name: oauth2client
-  
-  version: 1.5.0
-- 
-  category: dev-python
-  name: oslo-middleware
-  
-  version: 3.31.0
-- 
-  category: dev-python
-  name: oslo-versionedobjects
-  
-  version: 1.31.2
-- 
-  category: dev-python
-  name: oslo-i18n
-  
-  version: 3.15.3
-- 
-  category: dev-python
-  name: os-win
-  
-  version: 3.0.0
+  version: 5.2.0
 - 
   category: sys-block
   name: tgt
   
   version: ""
 - 
-  category: app-emulation
-  name: qemu
+  category: sys-block
+  name: open-iscsi
   
   version: ""
 - 
   category: dev-python
-  name: python-glanceclient
+  name: iso8601
   
-  version: 2.15.0
+  version: 0.1.11
 - 
   category: dev-python
-  name: stevedore
+  name: pastedeploy
   
-  version: 1.20.0
-- 
-  category: dev-python
-  name: google-api-python-client
-  
-  version: 1.4.2
-- 
-  category: dev-python
-  name: cryptography
-  
-  version: "2.1"
-- 
-  category: dev-python
-  name: pbr
-  
-  version: 2.0.0
-- 
-  category: virtual
-  name: python-ipaddress
-  
-  version: ""
-- 
-  category: dev-python
-  name: prettytable
-  
-  version: "0.8"
-- 
-  category: dev-python
-  name: psutil
-  
-  version: 3.2.2
-- 
-  category: sys-fs
-  name: lvm2
-  
-  version: ""
+  version: 1.5.0
 - 
   category: dev-python
   name: prettytable
@@ -209,14 +114,59 @@ requires:
   version: 2.17.0
 - 
   category: dev-python
-  name: os-brick
+  name: oslo-service
   
-  version: 2.2.0
+  version: 1.24.0
 - 
   category: dev-python
-  name: castellan
+  name: retrying
   
-  version: 0.16.0
+  version: 1.2.3
+- 
+  category: dev-python
+  name: oslo-i18n
+  
+  version: 3.15.3
+- 
+  category: dev-python
+  name: oslo-reports
+  
+  version: 1.18.0
+- 
+  category: dev-python
+  name: oslo-versionedobjects
+  
+  version: 1.31.2
+- 
+  category: dev-python
+  name: pytz
+  
+  version: "2013.6"
+- 
+  category: dev-python
+  name: cryptography
+  
+  version: "2.1"
+- 
+  category: dev-python
+  name: oauth2client
+  
+  version: 1.5.0
+- 
+  category: dev-python
+  name: oslo-privsep
+  
+  version: 1.32.0
+- 
+  category: dev-python
+  name: oslo-rootwrap
+  
+  version: 5.8.0
+- 
+  category: sys-fs
+  name: lvm2
+  
+  version: ""
 - 
   category: sys-fs
   name: sysfsutils
@@ -224,44 +174,9 @@ requires:
   version: ""
 - 
   category: dev-python
-  name: oslo-policy
-  
-  version: 1.44.1
-- 
-  category: dev-python
-  name: osprofiler
-  
-  version: 1.4.0
-- 
-  category: dev-python
-  name: python-keystoneclient
-  
-  version: 3.15.0
-- 
-  category: dev-python
-  name: python-swiftclient
-  
-  version: 3.2.0
-- 
-  category: dev-python
-  name: suds
-  
-  version: "0.6"
-- 
-  category: dev-python
   name: oslo-context
   
   version: 2.19.2
-- 
-  category: dev-python
-  name: oslo-rootwrap
-  
-  version: 5.8.0
-- 
-  category: dev-python
-  name: keystoneauth
-  
-  version: 3.7.0
 - 
   category: dev-python
   name: oslo-log
@@ -274,6 +189,96 @@ requires:
   version: 2.1.0
 - 
   category: dev-python
+  name: taskflow
+  
+  version: 3.2.0
+- 
+  category: dev-python
+  name: os-brick
+  
+  version: 2.2.0
+- 
+  category: dev-python
+  name: google-api-python-client
+  
+  version: 1.4.2
+- 
+  category: dev-python
+  name: decorator
+  
+  version: 3.4.0
+- 
+  category: dev-python
+  name: psutil
+  
+  version: 3.2.2
+- 
+  category: dev-python
+  name: webob
+  
+  version: 1.7.1
+- 
+  category: dev-python
+  name: os-win
+  
+  version: 3.0.0
+- 
+  category: dev-python
+  name: pbr
+  
+  version: 2.0.0
+- 
+  category: dev-python
+  name: greenlet
+  
+  version: 0.4.1
+- 
+  category: dev-python
+  name: oslo-messaging
+  
+  version: 6.4.0
+- 
+  category: dev-python
+  name: oslo-upgradecheck
+  
+  version: 0.1.0
+- 
+  category: dev-python
+  name: oslo-utils
+  
+  version: 3.34.0
+- 
+  category: dev-python
+  name: paste
+  
+  version: 2.0.2
+- 
+  category: dev-python
+  name: tooz
+  
+  version: 1.58.0
+- 
+  category: dev-python
+  name: defusedxml
+  
+  version: 0.5.0
+- 
+  category: dev-python
+  name: httplib2
+  
+  version: 0.9.1
+- 
+  category: dev-python
+  name: cursive
+  
+  version: 0.2.1
+- 
+  category: dev-python
+  name: suds
+  
+  version: "0.6"
+- 
+  category: dev-python
   name: eventlet
   
   version: 0.22.0
@@ -284,89 +289,9 @@ requires:
   version: 2.6.0
 - 
   category: dev-python
-  name: lxml
-  
-  version: 3.4.1
-- 
-  category: dev-python
-  name: iso8601
-  
-  version: 0.1.11
-- 
-  category: dev-python
-  name: oslo-db
-  
-  version: 4.27.0
-- 
-  category: dev-python
   name: python-barbicanclient
   
   version: 4.5.2
-- 
-  category: net-misc
-  name: memcached
-  
-  version: ""
-- 
-  category: dev-python
-  name: oslo-utils
-  
-  version: 3.34.0
-- 
-  category: dev-python
-  name: taskflow
-  
-  version: 3.2.0
-- 
-  category: dev-python
-  name: greenlet
-  
-  version: 0.4.1
-- 
-  category: dev-python
-  name: paste
-  
-  version: 2.0.2
-- 
-  category: dev-python
-  name: python-novaclient
-  
-  version: 9.1.0
-- 
-  category: dev-python
-  name: retrying
-  
-  version: 1.2.3
-- 
-  category: dev-python
-  name: psycopg
-  
-  version: 2.5.0
-- 
-  category: dev-python
-  name: keystonemiddleware
-  
-  version: 4.21.0
-- 
-  category: dev-python
-  name: oslo-messaging
-  
-  version: 6.4.0
-- 
-  category: dev-python
-  name: paramiko
-  
-  version: 2.0.0
-- 
-  category: dev-python
-  name: webob
-  
-  version: 1.7.1
-- 
-  category: dev-python
-  name: defusedxml
-  
-  version: 0.5.0
 - 
   category: dev-python
   name: requests
@@ -374,14 +299,44 @@ requires:
   version: 2.14.2
 - 
   category: dev-python
-  name: httplib2
+  name: psycopg
   
-  version: 0.9.1
+  version: 2.5.0
 - 
   category: dev-python
-  name: pastedeploy
+  name: sqlalchemy-migrate
   
-  version: 1.5.0
+  version: 0.11.0
+- 
+  category: dev-python
+  name: oslo-concurrency
+  
+  version: 3.26.0
+- 
+  category: dev-python
+  name: python-keystoneclient
+  
+  version: 3.15.0
+- 
+  category: dev-python
+  name: rtslib-fb
+  
+  version: 2.1.65
+- 
+  category: dev-python
+  name: sqlalchemy
+  
+  version: 1.0.10
+- 
+  category: dev-python
+  name: oslo-middleware
+  
+  version: 3.31.0
+- 
+  category: dev-python
+  name: python-novaclient
+  
+  version: 9.1.0
 - 
   category: dev-python
   name: six
@@ -389,29 +344,39 @@ requires:
   version: 1.10.0
 - 
   category: dev-python
-  name: pytz
+  name: castellan
   
-  version: "2013.6"
+  version: 0.16.0
 - 
-  category: dev-python
-  name: cursive
+  category: app-emulation
+  name: qemu
   
-  version: 0.2.1
+  version: ""
 - 
-  category: sys-block
-  name: open-iscsi
+  category: virtual
+  name: python-ipaddress
   
   version: ""
 - 
   category: dev-python
-  name: oslo-config
+  name: keystoneauth
   
-  version: 5.2.0
+  version: 3.7.0
 - 
   category: dev-python
-  name: oslo-privsep
+  name: lxml
   
-  version: 1.32.0
+  version: 3.4.1
+- 
+  category: dev-python
+  name: oslo-policy
+  
+  version: 1.44.1
+- 
+  category: dev-python
+  name: osprofiler
+  
+  version: 1.4.0
 - 
   category: dev-python
   name: oslo-serialization
@@ -419,9 +384,44 @@ requires:
   version: 2.18.0
 - 
   category: dev-python
-  name: oslo-upgradecheck
+  name: prettytable
   
-  version: 0.1.0
+  version: "0.8"
+- 
+  category: dev-python
+  name: python-glanceclient
+  
+  version: 2.15.0
+- 
+  category: dev-python
+  name: python-swiftclient
+  
+  version: 3.2.0
+- 
+  category: net-misc
+  name: memcached
+  
+  version: ""
+- 
+  category: dev-python
+  name: paramiko
+  
+  version: 2.0.0
+- 
+  category: dev-python
+  name: routes
+  
+  version: 2.3.1
+- 
+  category: dev-python
+  name: pymysql
+  
+  version: 0.7.6
+- 
+  category: dev-python
+  name: stevedore
+  
+  version: 1.20.0
 use_flags:
 - +api
 - +scheduler

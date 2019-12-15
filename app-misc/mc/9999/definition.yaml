@@ -3,18 +3,13 @@ conflicts: []
 name: mc
 requires:
 - 
-  category: sys-fs
-  name: e2fsprogs
+  category: x11-libs
+  name: libSM
   
   version: ""
 - 
-  category: net-libs
-  name: libssh2
-  
-  version: ""
-- 
-  category: sys-libs
-  name: ncurses
+  category: net-fs
+  name: samba
   
   version: ""
 - 
@@ -23,13 +18,13 @@ requires:
   
   version: "2"
 - 
-  category: app-text
-  name: aspell
+  category: sys-libs
+  name: ncurses
   
   version: ""
 - 
-  category: x11-libs
-  name: libX11
+  category: app-text
+  name: aspell
   
   version: ""
 - 
@@ -43,6 +38,11 @@ requires:
   
   version: ""
 - 
+  category: x11-libs
+  name: libXdmcp
+  
+  version: ""
+- 
   category: dev-libs
   name: glib
   
@@ -53,18 +53,18 @@ requires:
   
   version: ""
 - 
-  category: net-fs
-  name: samba
+  category: sys-fs
+  name: e2fsprogs
+  
+  version: ""
+- 
+  category: net-libs
+  name: libssh2
   
   version: ""
 - 
   category: x11-libs
-  name: libXdmcp
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libSM
+  name: libX11
   
   version: ""
 use_flags:

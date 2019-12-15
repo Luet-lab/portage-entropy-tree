@@ -8,20 +8,40 @@ conflicts:
 name: policycoreutils
 requires:
 - 
-  category: sys-libs
-  name: libcap-ng
+  category: app-misc
+  name: pax-utils
   
   version: ""
 - 
-  category: sys-libs
-  name: libsepol
+  category: app-admin
+  name: setools
   
-  version: "3.0"
+  version: 4.2.0
+- 
+  category: sys-libs
+  name: pam
+  
+  version: ""
 - 
   category: sys-devel
   name: gettext
   
   version: ""
+- 
+  category: sys-libs
+  name: libselinux
+  
+  version: "3.0"
+- 
+  category: sys-libs
+  name: libcap
+  
+  version: 1.10-r10
+- 
+  category: sys-libs
+  name: libsemanage
+  
+  version: "3.0"
 - 
   category: dev-python
   name: ipy
@@ -44,34 +64,14 @@ requires:
   version: 1.5.1
 - 
   category: sys-libs
-  name: pam
+  name: libcap-ng
   
   version: ""
 - 
   category: sys-libs
-  name: libcap
-  
-  version: 1.10-r10
-- 
-  category: sys-libs
-  name: libsemanage
+  name: libsepol
   
   version: "3.0"
-- 
-  category: app-admin
-  name: setools
-  
-  version: 4.2.0
-- 
-  category: sys-libs
-  name: libselinux
-  
-  version: "3.0"
-- 
-  category: app-misc
-  name: pax-utils
-  
-  version: ""
 use_flags:
 - audit
 - pam

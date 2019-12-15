@@ -8,28 +8,8 @@ conflicts:
 name: dovecot
 requires:
 - 
-  category: sys-libs
-  name: libcap
-  
-  version: ""
-- 
-  category: virtual
-  name: krb5
-  
-  version: ""
-- 
-  category: net-nds
-  name: openldap
-  
-  version: ""
-- 
-  category: sec-policy
-  name: selinux-dovecot
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libsodium
+  category: net-mail
+  name: mailbase
   
   version: ""
 - 
@@ -38,63 +18,33 @@ requires:
   
   version: ""
 - 
+  category: dev-db
+  name: sqlite
+  
+  version: ""
+- 
+  category: sys-apps
+  name: tcp-wrappers
+  
+  version: ""
+- 
+  category: acct-group
+  name: dovenull
+  
+  version: ""
+- 
   category: net-misc
   name: curl
   
   version: ""
 - 
-  category: acct-group
-  name: mail
-  
-  version: ""
-- 
-  category: app-arch
-  name: bzip2
-  
-  version: ""
-- 
-  category: dev-libs
-  name: expat
-  
-  version: ""
-- 
-  category: app-text
-  name: libexttextcat
-  
-  version: ""
-- 
-  category: app-arch
-  name: lz4
-  
-  version: ""
-- 
-  category: dev-libs
-  name: icu
-  
-  version: ""
-- 
-  category: net-mail
-  name: mailbase
-  
-  version: ""
-- 
-  category: dev-libs
-  name: openssl
-  
-  version: ""
-- 
-  category: sys-libs
-  name: zlib
-  
-  version: ""
-- 
-  category: acct-group
+  category: acct-user
   name: dovecot
   
   version: ""
 - 
-  category: dev-lang
-  name: lua
+  category: sys-libs
+  name: libcap
   
   version: ""
 - 
@@ -108,33 +58,18 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
-  name: pam
-  
-  version: ""
-- 
-  category: acct-user
-  name: dovecot
-  
-  version: ""
-- 
-  category: acct-user
-  name: dovenull
-  
-  version: ""
-- 
-  category: dev-db
-  name: sqlite
+  category: dev-libs
+  name: expat
   
   version: ""
 - 
   category: dev-libs
-  name: libressl
+  name: openssl
   
   version: ""
 - 
-  category: sys-apps
-  name: tcp-wrappers
+  category: acct-group
+  name: mail
   
   version: ""
 - 
@@ -143,13 +78,78 @@ requires:
   
   version: ""
 - 
+  category: acct-group
+  name: dovecot
+  
+  version: ""
+- 
+  category: sys-libs
+  name: zlib
+  
+  version: ""
+- 
   category: virtual
   name: libiconv
   
   version: ""
 - 
-  category: acct-group
+  category: dev-lang
+  name: lua
+  
+  version: ""
+- 
+  category: app-arch
+  name: lz4
+  
+  version: ""
+- 
+  category: sys-libs
+  name: pam
+  
+  version: ""
+- 
+  category: sec-policy
+  name: selinux-dovecot
+  
+  version: ""
+- 
+  category: app-text
+  name: libexttextcat
+  
+  version: ""
+- 
+  category: acct-user
   name: dovenull
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libressl
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libsodium
+  
+  version: ""
+- 
+  category: app-arch
+  name: bzip2
+  
+  version: ""
+- 
+  category: virtual
+  name: krb5
+  
+  version: ""
+- 
+  category: net-nds
+  name: openldap
+  
+  version: ""
+- 
+  category: dev-libs
+  name: icu
   
   version: ""
 use_flags:

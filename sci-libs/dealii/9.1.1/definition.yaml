@@ -3,23 +3,28 @@ conflicts: []
 name: dealii
 requires:
 - 
-  category: virtual
-  name: mpi
-  
-  version: ""
-- 
   category: dev-cpp
   name: muParser
   
   version: ""
 - 
   category: sci-libs
-  name: netcdf-cxx
+  name: sundials
+  
+  version: ""
+- 
+  category: dev-cpp
+  name: tbb
+  
+  version: ""
+- 
+  category: dev-libs
+  name: boost
   
   version: ""
 - 
   category: sci-libs
-  name: arpack[mpi=]
+  name: adolc
   
   version: ""
 - 
@@ -33,28 +38,8 @@ requires:
   
   version: ""
 - 
-  category: sci-libs
-  name: hdf5[mpi=]
-  
-  version: ""
-- 
-  category: sci-libs
-  name: parmetis
-  
-  version: "4"
-- 
-  category: sci-libs
-  name: sundials
-  
-  version: ""
-- 
-  category: sci-mathematics
-  name: petsc[mpi=]
-  
-  version: ""
-- 
-  category: sci-mathematics
-  name: slepc[mpi=]
+  category: virtual
+  name: mpi
   
   version: ""
 - 
@@ -63,8 +48,8 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  name: boost
+  category: sci-mathematics
+  name: slepc[mpi=]
   
   version: ""
 - 
@@ -73,8 +58,13 @@ requires:
   
   version: ""
 - 
-  category: media-libs
-  name: assimp
+  category: sys-libs
+  name: zlib
+  
+  version: ""
+- 
+  category: sci-libs
+  name: arpack[mpi=]
   
   version: ""
 - 
@@ -84,22 +74,52 @@ requires:
   version: ""
 - 
   category: sci-libs
-  name: opencascade
+  name: parmetis
   
-  version: ""
+  version: "4"
 - 
-  category: dev-cpp
-  name: tbb
+  category: media-libs
+  name: assimp
   
   version: ""
 - 
   category: sci-libs
-  name: adolc
+  name: nanoflann
   
   version: ""
 - 
+  category: sci-libs
+  name: opencascade
+  
+  version: ""
+- 
+  category: sci-mathematics
+  name: petsc[mpi=]
+  
+  version: ""
+- 
+  category: sci-libs
+  name: scalapack
+  
+  version: ""
+- 
+  category: sci-libs
+  name: symengine
+  
+  version: "0.4"
+- 
   category: dev-util
   name: nvidia-cuda-sdk
+  
+  version: ""
+- 
+  category: sci-libs
+  name: hdf5[mpi=]
+  
+  version: ""
+- 
+  category: sci-libs
+  name: netcdf-cxx
   
   version: ""
 - 
@@ -110,26 +130,6 @@ requires:
 - 
   category: sci-libs
   name: umfpack
-  
-  version: ""
-- 
-  category: sci-libs
-  name: symengine
-  
-  version: "0.4"
-- 
-  category: sys-libs
-  name: zlib
-  
-  version: ""
-- 
-  category: sci-libs
-  name: nanoflann
-  
-  version: ""
-- 
-  category: sci-libs
-  name: scalapack
   
   version: ""
 use_flags:

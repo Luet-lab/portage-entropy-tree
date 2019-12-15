@@ -3,56 +3,6 @@ conflicts: []
 name: mate-settings-daemon
 requires:
 - 
-  category: mate-base
-  name: mate-desktop
-  
-  version: 1.21.1
-- 
-  category: media-libs
-  name: fontconfig
-  
-  version: ""
-- 
-  category: x11-libs
-  name: cairo
-  
-  version: ""
-- 
-  category: x11-libs
-  name: gtk+
-  
-  version: "3.22"
-- 
-  category: x11-libs
-  name: libnotify
-  
-  version: "0.7"
-- 
-  category: media-libs
-  name: libmatemixer
-  
-  version: "1.10"
-- 
-  category: x11-libs
-  name: libX11
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libxklavier
-  
-  version: "5.2"
-- 
-  category: virtual
-  name: libintl
-  
-  version: ""
-- 
-  category: sys-apps
-  name: dbus
-  
-  version: 1.1.2
-- 
   category: media-sound
   name: pulseaudio
   
@@ -68,6 +18,11 @@ requires:
   
   version: 0.13.4
 - 
+  category: mate-base
+  name: mate-desktop
+  
+  version: 1.21.1
+- 
   category: x11-libs
   name: libXi
   
@@ -78,10 +33,60 @@ requires:
   
   version: ""
 - 
+  category: dev-libs
+  name: dbus-glib
+  
+  version: "0.71"
+- 
+  category: media-libs
+  name: libmatemixer
+  
+  version: "1.10"
+- 
+  category: x11-libs
+  name: cairo
+  
+  version: ""
+- 
+  category: x11-libs
+  name: gtk+
+  
+  version: "3.22"
+- 
+  category: x11-libs
+  name: libxklavier
+  
+  version: "5.2"
+- 
+  category: virtual
+  name: libintl
+  
+  version: ""
+- 
+  category: dev-libs
+  name: nss
+  
+  version: 3.11.2
+- 
   category: media-libs
   name: libcanberra
   
   version: ""
+- 
+  category: x11-libs
+  name: gdk-pixbuf
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libX11
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libnotify
+  
+  version: "0.7"
 - 
   category: dev-libs
   name: glib
@@ -93,8 +98,8 @@ requires:
   
   version: 1.17.0
 - 
-  category: x11-libs
-  name: gdk-pixbuf
+  category: media-libs
+  name: fontconfig
   
   version: ""
 - 
@@ -103,20 +108,15 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  name: dbus-glib
+  category: sys-apps
+  name: dbus
   
-  version: "0.71"
+  version: 1.1.2
 - 
   category: sys-auth
   name: polkit
   
   version: "0.97"
-- 
-  category: dev-libs
-  name: nss
-  
-  version: 3.11.2
 use_flags:
 - X
 - debug

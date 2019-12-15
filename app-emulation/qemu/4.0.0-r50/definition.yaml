@@ -3,48 +3,23 @@ conflicts: []
 name: qemu
 requires:
 - 
-  category: sys-cluster
-  name: ceph
+  category: x11-libs
+  name: libxkbcommon
+  
+  version: ""
+- 
+  category: sys-process
+  name: numactl
   
   version: ""
 - 
   category: media-libs
-  name: libsdl2
+  name: mesa
   
   version: ""
 - 
   category: sys-firmware
-  name: sgabios
-  
-  version: ""
-- 
-  category: sys-cluster
-  name: glusterfs
-  
-  version: 3.4.0
-- 
-  category: dev-libs
-  name: nettle
-  
-  version: ""
-- 
-  category: media-libs
-  name: libepoxy
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libxml2
-  
-  version: ""
-- 
-  category: sys-libs
-  name: libcap-ng
-  
-  version: ""
-- 
-  category: net-misc
-  name: vde
+  name: edk2-ovmf
   
   version: ""
 - 
@@ -53,13 +28,98 @@ requires:
   
   version: 1.2.8
 - 
-  category: app-emulation
-  name: spice
+  category: sys-libs
+  name: libcap
   
-  version: 0.12.0
+  version: ""
+- 
+  category: sys-firmware
+  name: sgabios
+  
+  version: ""
+- 
+  category: sys-fabric
+  name: libibumad
+  
+  version: ""
+- 
+  category: sys-firmware
+  name: seabios
+  
+  version: 1.10.2
+- 
+  category: sys-apps
+  name: attr
+  
+  version: ""
+- 
+  category: x11-libs
+  name: pixman
+  
+  version: 0.28.0
+- 
+  category: sys-apps
+  name: dtc
+  
+  version: 1.5.0
+- 
+  category: sys-cluster
+  name: glusterfs
+  
+  version: 3.4.0
+- 
+  category: sys-fabric
+  name: libibverbs
+  
+  version: ""
+- 
+  category: dev-libs
+  name: jemalloc
+  
+  version: ""
+- 
+  category: dev-libs
+  name: nettle
+  
+  version: ""
+- 
+  category: net-libs
+  name: libiscsi
+  
+  version: ""
+- 
+  category: sys-libs
+  name: zlib
+  
+  version: ""
+- 
+  category: sys-fabric
+  name: librdmacm
+  
+  version: ""
+- 
+  category: app-arch
+  name: bzip2
+  
+  version: ""
+- 
+  category: net-libs
+  name: gnutls
+  
+  version: "3.0"
+- 
+  category: media-libs
+  name: libpng
+  
+  version: ""
 - 
   category: app-emulation
   name: xen-tools
+  
+  version: ""
+- 
+  category: dev-util
+  name: systemtap
   
   version: ""
 - 
@@ -68,8 +128,78 @@ requires:
   
   version: 1.0.13
 - 
+  category: sys-libs
+  name: libseccomp
+  
+  version: 2.1.0
+- 
+  category: app-emulation
+  name: spice
+  
+  version: 0.12.0
+- 
+  category: net-misc
+  name: vde
+  
+  version: ""
+- 
+  category: sys-firmware
+  name: edk2-ovmf
+  
+  version: "201905"
+- 
+  category: sys-firmware
+  name: sgabios
+  
+  version: 0.1_pre8
+- 
+  category: sys-firmware
+  name: ipxe
+  
+  version: ""
+- 
   category: dev-libs
-  name: capstone
+  name: libxml2
+  
+  version: ""
+- 
+  category: x11-libs
+  name: vte
+  
+  version: ""
+- 
+  category: media-libs
+  name: libsdl2[X]
+  
+  version: ""
+- 
+  category: media-libs
+  name: libsdl2
+  
+  version: ""
+- 
+  category: app-arch
+  name: snappy
+  
+  version: ""
+- 
+  category: app-emulation
+  name: spice-protocol
+  
+  version: 0.12.3
+- 
+  category: acct-group
+  name: kvm
+  
+  version: ""
+- 
+  category: sec-policy
+  name: selinux-qemu
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libaio
   
   version: ""
 - 
@@ -83,123 +213,13 @@ requires:
   
   version: ""
 - 
-  category: media-libs
-  name: mesa
-  
-  version: ""
-- 
-  category: sys-libs
-  name: libseccomp
-  
-  version: 2.1.0
-- 
-  category: app-emulation
-  name: libcacard
-  
-  version: 2.5.0
-- 
-  category: app-arch
-  name: snappy
-  
-  version: ""
-- 
-  category: sys-libs
-  name: zlib
-  
-  version: ""
-- 
-  category: app-accessibility
-  name: brltty
-  
-  version: ""
-- 
-  category: sys-fabric
-  name: libibumad
-  
-  version: ""
-- 
-  category: app-emulation
-  name: spice-protocol
-  
-  version: 0.12.3
-- 
-  category: sys-firmware
-  name: sgabios
-  
-  version: 0.1_pre8
-- 
-  category: sys-apps
-  name: usbredir
-  
-  version: "0.6"
-- 
-  category: sys-firmware
-  name: edk2-ovmf
-  
-  version: "201905"
-- 
-  category: sys-fs
-  name: xfsprogs
-  
-  version: ""
-- 
-  category: acct-group
-  name: kvm
+  category: media-sound
+  name: pulseaudio
   
   version: ""
 - 
   category: dev-libs
-  name: glib
-  
-  version: "2.0"
-- 
-  category: sys-apps
-  name: dtc
-  
-  version: 1.5.0
-- 
-  category: media-libs
-  name: libsdl2[X]
-  
-  version: ""
-- 
-  category: sys-libs
-  name: libcap
-  
-  version: ""
-- 
-  category: sys-firmware
-  name: seabios
-  
-  version: 1.12.0
-- 
-  category: net-misc
-  name: curl
-  
-  version: 7.15.4
-- 
-  category: virtual
-  name: jpeg
-  
-  version: ""
-- 
-  category: sys-process
-  name: numactl
-  
-  version: ""
-- 
-  category: sys-firmware
-  name: ipxe
-  
-  version: 1.0.0_p20190728
-- 
-  category: dev-libs
-  name: libaio
-  
-  version: ""
-- 
-  category: net-libs
-  name: libiscsi
+  name: cyrus-sasl
   
   version: ""
 - 
@@ -208,58 +228,73 @@ requires:
   
   version: ""
 - 
+  category: sys-fs
+  name: xfsprogs
+  
+  version: ""
+- 
+  category: dev-libs
+  name: capstone
+  
+  version: ""
+- 
   category: net-fs
   name: libnfs
   
   version: 1.9.3
 - 
-  category: virtual
-  name: opengl
+  category: media-libs
+  name: libepoxy
   
   version: ""
 - 
-  category: media-sound
-  name: pulseaudio
+  category: app-emulation
+  name: libcacard
+  
+  version: 2.5.0
+- 
+  category: sys-firmware
+  name: ipxe
+  
+  version: 1.0.0_p20190728
+- 
+  category: sys-libs
+  name: libcap-ng
   
   version: ""
 - 
-  category: net-libs
-  name: gnutls
+  category: net-misc
+  name: curl
   
-  version: "3.0"
+  version: 7.15.4
+- 
+  category: sys-apps
+  name: usbredir
+  
+  version: "0.6"
+- 
+  category: sys-firmware
+  name: seabios
+  
+  version: 1.12.0
+- 
+  category: dev-libs
+  name: glib
+  
+  version: "2.0"
 - 
   category: x11-libs
   name: gtk+
   
   version: ""
 - 
-  category: sys-fabric
-  name: libibverbs
+  category: virtual
+  name: jpeg
   
   version: ""
 - 
-  category: sys-firmware
-  name: edk2-ovmf
-  
-  version: ""
-- 
-  category: dev-util
-  name: systemtap
-  
-  version: ""
-- 
-  category: x11-libs
-  name: pixman
-  
-  version: 0.28.0
-- 
-  category: dev-libs
-  name: jemalloc
-  
-  version: ""
-- 
-  category: app-arch
-  name: bzip2
+  category: sys-cluster
+  name: ceph
   
   version: ""
 - 
@@ -268,48 +303,13 @@ requires:
   
   version: 1-r2
 - 
-  category: x11-libs
-  name: libxkbcommon
+  category: app-accessibility
+  name: brltty
   
   version: ""
 - 
-  category: sys-firmware
-  name: ipxe
-  
-  version: ""
-- 
-  category: sec-policy
-  name: selinux-qemu
-  
-  version: ""
-- 
-  category: sys-apps
-  name: attr
-  
-  version: ""
-- 
-  category: x11-libs
-  name: vte
-  
-  version: ""
-- 
-  category: sys-firmware
-  name: seabios
-  
-  version: 1.10.2
-- 
-  category: dev-libs
-  name: cyrus-sasl
-  
-  version: ""
-- 
-  category: sys-fabric
-  name: librdmacm
-  
-  version: ""
-- 
-  category: media-libs
-  name: libpng
+  category: virtual
+  name: opengl
   
   version: ""
 use_flags:

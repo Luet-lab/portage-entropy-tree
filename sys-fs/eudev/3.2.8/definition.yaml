@@ -1,6 +1,11 @@
 category: sys-fs
 conflicts:
 - 
+  category: sys-apps
+  name: systemd
+  
+  version: ""
+- 
   category: <sec-policy
   name: selinux-base
   
@@ -16,8 +21,8 @@ conflicts:
   
   version: ""
 - 
-  category: sys-apps
-  name: systemd
+  category: sys-fs
+  name: udev
   
   version: ""
 - 
@@ -25,13 +30,13 @@ conflicts:
   name: lvm2
   
   version: 2.02.103
-- 
-  category: sys-fs
-  name: udev
-  
-  version: ""
 name: eudev
 requires:
+- 
+  category: acct-group
+  name: kvm
+  
+  version: ""
 - 
   category: sys-apps
   name: util-linux
@@ -43,23 +48,18 @@ requires:
   
   version: "1.38"
 - 
-  category: sys-apps
-  name: kmod
-  
-  version: "16"
-- 
   category: sys-libs
   name: libselinux
   
   version: 2.1.9
 - 
-  category: acct-group
-  name: input
+  category: sys-apps
+  name: kmod
   
-  version: ""
+  version: "16"
 - 
   category: acct-group
-  name: kvm
+  name: input
   
   version: ""
 - 

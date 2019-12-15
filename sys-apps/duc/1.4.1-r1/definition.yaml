@@ -4,12 +4,17 @@ name: duc
 requires:
 - 
   category: x11-libs
+  name: cairo
+  
+  version: ""
+- 
+  category: x11-libs
   name: pango
   
   version: ""
 - 
   category: x11-libs
-  name: pango[X]
+  name: libX11
   
   version: ""
 - 
@@ -24,22 +29,17 @@ requires:
   version: ""
 - 
   category: dev-db
-  name: sqlite
-  
-  version: ""
-- 
-  category: dev-db
   name: tokyocabinet
   
   version: ""
 - 
   category: x11-libs
-  name: cairo
+  name: cairo[X]
   
   version: ""
 - 
   category: x11-libs
-  name: libX11
+  name: pango[X]
   
   version: ""
 - 
@@ -48,8 +48,8 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
-  name: cairo[X]
+  category: dev-db
+  name: sqlite
   
   version: ""
 use_flags:

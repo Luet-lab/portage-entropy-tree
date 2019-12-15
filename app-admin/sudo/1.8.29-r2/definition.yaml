@@ -3,18 +3,48 @@ conflicts: []
 name: sudo
 requires:
 - 
+  category: sys-auth
+  name: sssd
+  
+  version: ""
+- 
   category: virtual
   name: editor
   
   version: ""
+- 
+  category: virtual
+  name: mta
+  
+  version: ""
+- 
+  category: dev-libs
+  name: cyrus-sasl
+  
+  version: ""
+- 
+  category: net-nds
+  name: openldap
+  
+  version: ""
+- 
+  category: dev-libs
+  name: libgcrypt
+  
+  version: ""
+- 
+  category: app-misc
+  name: editor-wrapper
+  
+  version: "3"
 - 
   category: dev-lang
   name: perl
   
   version: ""
 - 
-  category: virtual
-  name: mta
+  category: sec-policy
+  name: selinux-sudo
   
   version: ""
 - 
@@ -24,12 +54,22 @@ requires:
   version: 2.1.30-r1
 - 
   category: sys-auth
-  name: sssd
+  name: skey
+  
+  version: 1.1.5-r1
+- 
+  category: dev-libs
+  name: openssl
   
   version: ""
 - 
   category: dev-libs
   name: libressl
+  
+  version: ""
+- 
+  category: sys-auth
+  name: pambase
   
   version: ""
 - 
@@ -40,46 +80,6 @@ requires:
 - 
   category: sys-libs
   name: pam
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libgcrypt
-  
-  version: ""
-- 
-  category: dev-libs
-  name: openssl
-  
-  version: ""
-- 
-  category: app-misc
-  name: editor-wrapper
-  
-  version: "3"
-- 
-  category: sec-policy
-  name: selinux-sudo
-  
-  version: ""
-- 
-  category: net-nds
-  name: openldap
-  
-  version: ""
-- 
-  category: sys-auth
-  name: skey
-  
-  version: 1.1.5-r1
-- 
-  category: sys-auth
-  name: pambase
-  
-  version: ""
-- 
-  category: dev-libs
-  name: cyrus-sasl
   
   version: ""
 use_flags:

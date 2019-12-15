@@ -3,6 +3,16 @@ conflicts: []
 name: libva
 requires:
 - 
+  category: x11-libs
+  name: libdrm
+  
+  version: 2.4.46
+- 
+  category: virtual
+  name: opengl
+  
+  version: 7.0-r1
+- 
   category: dev-libs
   name: wayland
   
@@ -22,16 +32,6 @@ requires:
   name: libXfixes
   
   version: 5.0.1
-- 
-  category: x11-libs
-  name: libdrm
-  
-  version: 2.4.46
-- 
-  category: virtual
-  name: opengl
-  
-  version: 7.0-r1
 use_flags:
 - +drm
 - opengl

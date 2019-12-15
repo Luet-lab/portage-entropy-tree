@@ -2,12 +2,7 @@ category: net-firewall
 conflicts:
 - 
   category: net-firewall
-  name: shorewall-core
-  
-  version: ""
-- 
-  category: net-firewall
-  name: shorewall6
+  name: shorewall-init
   
   version: ""
 - 
@@ -17,7 +12,17 @@ conflicts:
   version: ""
 - 
   category: net-firewall
-  name: shorewall-init
+  name: shorewall6
+  
+  version: ""
+- 
+  category: net-firewall
+  name: shorewall-lite
+  
+  version: ""
+- 
+  category: net-firewall
+  name: shorewall-core
   
   version: ""
 - 
@@ -25,18 +30,13 @@ conflicts:
   name: systemd
   
   version: "214"
-- 
-  category: net-firewall
-  name: shorewall-lite
-  
-  version: ""
 name: shorewall
 requires:
 - 
-  category: virtual
-  name: perl-Digest-SHA
+  category: dev-perl
+  name: Socket6
   
-  version: ""
+  version: 0.230.0
 - 
   category: dev-lang
   name: perl
@@ -48,10 +48,10 @@ requires:
   
   version: 2.20161023-r3
 - 
-  category: net-firewall
-  name: iptables
+  category: sys-apps
+  name: iproute2
   
-  version: 1.4.20
+  version: 3.8.0
 - 
   category: sys-devel
   name: bc
@@ -59,19 +59,19 @@ requires:
   version: 1.06.95
 - 
   category: sys-apps
-  name: iproute2
-  
-  version: 3.8.0
-- 
-  category: dev-perl
-  name: Socket6
-  
-  version: 0.230.0
-- 
-  category: sys-apps
   name: coreutils
   
   version: "8.20"
+- 
+  category: net-firewall
+  name: iptables
+  
+  version: 1.4.20
+- 
+  category: virtual
+  name: perl-Digest-SHA
+  
+  version: ""
 use_flags:
 - doc
 - +init

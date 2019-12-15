@@ -3,6 +3,11 @@ conflicts: []
 name: avfs
 requires:
 - 
+  category: sys-fs
+  name: fuse
+  
+  version: "2.4"
+- 
   category: sys-libs
   name: zlib
   
@@ -17,11 +22,6 @@ requires:
   name: xz-utils
   
   version: ""
-- 
-  category: sys-fs
-  name: fuse
-  
-  version: "2.4"
 use_flags:
 - static-libs
 - +lzma

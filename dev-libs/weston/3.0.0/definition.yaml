@@ -3,20 +3,15 @@ conflicts: []
 name: weston
 requires:
 - 
-  category: x11-libs
-  name: cairo
+  category: dev-libs
+  name: wayland-protocols
   
-  version: 1.11.3
+  version: "1.8"
 - 
-  category: x11-libs
-  name: libdrm
+  category: x11-misc
+  name: colord
   
-  version: 2.4.30
-- 
-  category: x11-libs
-  name: libxkbcommon
-  
-  version: 0.5.0
+  version: 0.1.27
 - 
   category: sys-libs
   name: libunwind
@@ -28,63 +23,33 @@ requires:
   
   version: ""
 - 
-  category: media-libs
-  name: lcms
-  
-  version: ""
-- 
-  category: media-libs
-  name: mesa
-  
-  version: ""
-- 
-  category: sys-auth
-  name: pambase
-  
-  version: ""
-- 
-  category: media-libs
-  name: libpng
-  
-  version: ""
-- 
-  category: x11-libs
-  name: pixman
-  
-  version: 0.25.2
-- 
-  category: x11-libs
-  name: pango
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libxcb
-  
-  version: "1.9"
-- 
-  category: x11-libs
-  name: libX11
-  
-  version: ""
-- 
   category: dev-libs
   name: libinput
   
   version: 0.8.0
 - 
-  category: dev-libs
-  name: wayland-protocols
+  category: x11-libs
+  name: libxkbcommon
   
-  version: "1.8"
+  version: 0.5.0
 - 
-  category: media-libs
-  name: libwebp
+  category: sys-libs
+  name: mtdev
   
-  version: ""
+  version: 1.1.0
 - 
-  category: net-misc
-  name: freerdp-1.1.0_beta1_p20130710
+  category: sys-apps
+  name: dbus
+  
+  version: "1.6"
+- 
+  category: x11-libs
+  name: libdrm
+  
+  version: 2.4.30
+- 
+  category: sys-auth
+  name: pambase
   
   version: ""
 - 
@@ -93,35 +58,75 @@ requires:
   
   version: 1.12.0
 - 
-  category: virtual
-  name: jpeg
+  category: x11-libs
+  name: cairo
+  
+  version: 1.11.3
+- 
+  category: x11-libs
+  name: pango
   
   version: ""
-- 
-  category: sys-libs
-  name: mtdev
-  
-  version: 1.1.0
-- 
-  category: x11-misc
-  name: colord
-  
-  version: 0.1.27
-- 
-  category: sys-apps
-  name: dbus
-  
-  version: "1.6"
 - 
   category: sys-apps
   name: systemd
   
   version: "209"
 - 
+  category: x11-libs
+  name: libXcursor
+  
+  version: ""
+- 
+  category: media-libs
+  name: libpng
+  
+  version: ""
+- 
+  category: virtual
+  name: jpeg
+  
+  version: ""
+- 
+  category: x11-libs
+  name: pixman
+  
+  version: 0.25.2
+- 
   category: virtual
   name: udev
   
   version: "136"
+- 
+  category: media-libs
+  name: mesa
+  
+  version: ""
+- 
+  category: media-libs
+  name: libwebp
+  
+  version: ""
+- 
+  category: x11-libs
+  name: libxcb
+  
+  version: "1.9"
+- 
+  category: x11-misc
+  name: xkeyboard-config
+  
+  version: ""
+- 
+  category: net-misc
+  name: freerdp-1.1.0_beta1_p20130710
+  
+  version: ""
+- 
+  category: media-libs
+  name: lcms
+  
+  version: ""
 - 
   category: x11-libs
   name: cairo
@@ -129,12 +134,7 @@ requires:
   version: ""
 - 
   category: x11-libs
-  name: libXcursor
-  
-  version: ""
-- 
-  category: x11-misc
-  name: xkeyboard-config
+  name: libX11
   
   version: ""
 use_flags:
