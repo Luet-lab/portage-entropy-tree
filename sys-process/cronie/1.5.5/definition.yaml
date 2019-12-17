@@ -1,3 +1,42 @@
 category: sys-process
+conflicts:
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: anacron
+  
+  version: ""
+description: Cronie is a standard UNIX daemon cron based on the original vixie-cron
+license: ISC BSD BSD-2 GPL-2
 name: cronie
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: obstack-standalone
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: debianutils
+  
+  version: ""
+uri:
+- https://github.com/cronie-crond/cronie/archive/cronie-1.5.5.tar.gz
+use_flags:
+- +anacron
+- +inotify
+- pam
+- selinux
 version: 1.5.5

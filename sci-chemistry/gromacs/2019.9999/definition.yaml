@@ -1,67 +1,95 @@
 category: sci-chemistry
 conflicts: []
+description: The ultimate molecular dynamics simulation package
+license: LGPL-2.1 UoI-NCSA !mkl? ( !fftw? ( BSD ) !blas? ( BSD ) !lapack? ( BSD )
+  ) cuda? ( LGPL-3 ) threads? ( BSD )
 name: gromacs
 requires:
 - 
-  category: sci-libs
-  name: fftw
-  
-  version: ""
-- 
-  category: sci-libs
-  name: lmfit
-  
-  version: ""
-- 
-  category: virtual
-  name: mpi
-  
-  version: ""
-- 
   category: x11-libs
-  name: libX11
+  description: ""
+  license: ""
+  name: libSM
   
   version: ""
 - 
   category: virtual
+  description: ""
+  license: ""
   name: blas
   
   version: ""
 - 
+  category: dev-util
+  description: ""
+  license: ""
+  name: nvidia-cuda-toolkit
+  
+  version: 6.5.14
+- 
   category: virtual
+  description: ""
+  license: ""
   name: opencl
   
   version: ""
 - 
   category: sys-apps
+  description: ""
+  license: ""
   name: hwloc
   
   version: ""
 - 
   category: virtual
+  description: ""
+  license: ""
+  name: mpi
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libICE
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: fftw
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
   name: lapack
   
   version: ""
 - 
   category: sci-libs
+  description: ""
+  license: ""
+  name: lmfit
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
   name: mkl
   
   version: ""
-- 
-  category: x11-libs
-  name: libSM
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libICE
-  
-  version: ""
-- 
-  category: dev-util
-  name: nvidia-cuda-toolkit
-  
-  version: 6.5.14
+uri: []
 use_flags:
 - X
 - blas

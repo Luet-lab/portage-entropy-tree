@@ -1,3 +1,39 @@
 category: net-misc
+conflicts:
+- 
+  category: <=net-misc
+  description: ""
+  license: ""
+  name: netkit-bootpd
+  
+  version: 0.17-r2
+description: Netkit - bootparamd
+license: BSD
 name: netkit-bootparamd
+requires:
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: rpcsvc-proto
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libtirpc
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: glibc[rpc(-)]
+  
+  version: ""
+uri:
+- mirror://debian/pool/main/n/netkit-bootparamd/netkit-bootparamd_0.17.orig.tar.gz
+use_flags:
+- +libtirpc
 version: 0.17-r4

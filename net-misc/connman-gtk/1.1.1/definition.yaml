@@ -1,3 +1,39 @@
 category: net-misc
+conflicts: []
+description: GTK GUI for Connman
+license: GPL-2+
 name: connman-gtk
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.0"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: "3.10"
+- 
+  category: net-vpn
+  description: ""
+  license: ""
+  name: openconnect
+  
+  version: "5.99"
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: connman
+  
+  version: ""
+uri:
+- https://github.com/jgke/connman-gtk/archive/v1.1.1.tar.gz -> connman-gtk-1.1.1.tar.gz
+use_flags:
+- openconnect
 version: 1.1.1

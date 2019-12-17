@@ -1,27 +1,39 @@
 category: net-nds
 conflicts: []
+description: portmap replacement which supports RPC over various protocols
+license: BSD
 name: rpcbind
 requires:
 - 
   category: net-libs
+  description: ""
+  license: ""
   name: libtirpc
   
   version: 0.2.3
 - 
   category: sys-apps
+  description: ""
+  license: ""
   name: systemd
   
   version: ""
 - 
   category: sys-apps
+  description: ""
+  license: ""
   name: tcp-wrappers
   
   version: ""
 - 
   category: sec-policy
+  description: ""
+  license: ""
   name: selinux-rpcbind
   
   version: ""
+uri:
+- mirror://sourceforge/rpcbind/rpcbind-1.2.5.tar.bz2
 use_flags:
 - debug
 - remotecalls

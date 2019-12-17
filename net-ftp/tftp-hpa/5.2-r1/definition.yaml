@@ -1,3 +1,49 @@
 category: net-ftp
+conflicts:
+- 
+  category: net-ftp
+  description: ""
+  license: ""
+  name: atftp
+  
+  version: ""
+- 
+  category: net-ftp
+  description: ""
+  license: ""
+  name: netkit-tftp
+  
+  version: ""
+description: port of the OpenBSD TFTP server
+license: BSD-4
 name: tftp-hpa
+requires:
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: tcp-wrappers
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-tftp
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
+uri:
+- https://www.kernel.org/pub/software/network/tftp/tftp-hpa/tftp-hpa-5.2.tar.xz
+use_flags:
+- ipv6
+- readline
+- selinux
+- tcpd
 version: 5.2-r1

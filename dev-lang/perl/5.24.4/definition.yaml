@@ -1,3 +1,48 @@
 category: dev-lang
+conflicts: []
+description: Larry Wall's Practical Extraction and Report Language
+license: '|| ( Artistic GPL-1+ )'
 name: perl
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: db
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: gdbm
+  
+  version: 1.8.3
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: bzip2
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+uri:
+- mirror://cpan/src/5.0/perl-5.24.4.tar.xz
+- mirror://cpan/authors/id/S/SH/SHAY/perl-5.24.4.tar.xz
+- https://github.com/gentoo-perl/perl-patchset/releases/download/perl-5.24.4-patches-1/perl-5.24.4-patches-1.tar.xz
+- mirror://gentoo/perl-5.24.4-patches-1.tar.xz
+- https://dev.gentoo.org/~kentnl/distfiles/perl-5.24.4-patches-1.tar.xz
+- https://github.com/arsv/perl-cross/releases/download/1.1.9/perl-cross-1.1.9.tar.gz
+use_flags:
+- berkdb
+- debug
+- doc
+- gdbm
+- ithreads
 version: 5.24.4

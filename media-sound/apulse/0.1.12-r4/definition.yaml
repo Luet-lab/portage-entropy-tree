@@ -1,3 +1,41 @@
 category: media-sound
+conflicts:
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: pulseaudio
+  
+  version: ""
+- 
+  category: '!media-plugins'
+  description: ""
+  license: ""
+  name: alsa-plugins
+  
+  version: ""
+description: PulseAudio emulation for ALSA
+license: MIT LGPL-2.1
 name: apulse
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: alsa-lib
+  
+  version: ""
+uri:
+- https://github.com/i-rinat/apulse/archive/v0.1.12.tar.gz -> apulse-0.1.12.tar.gz
+use_flags:
+- debug
+- sdk
+- test
 version: 0.1.12-r4

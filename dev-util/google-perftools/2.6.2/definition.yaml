@@ -1,3 +1,23 @@
 category: dev-util
+conflicts: []
+description: Fast, multi-threaded malloc() and nifty performance analysis tools
+license: MIT
 name: google-perftools
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libunwind
+  
+  version: ""
+uri:
+- https://github.com/gperftools/gperftools/tarball/gperftools-2.6.2 -> gperftools-2.6.2.tar.gz
+use_flags:
+- largepages
+- +debug
+- minimal
+- optimisememory
+- test
+- static-libs
 version: 2.6.2

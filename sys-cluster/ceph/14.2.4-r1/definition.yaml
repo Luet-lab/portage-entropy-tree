@@ -1,3 +1,245 @@
 category: sys-cluster
+conflicts:
+- 
+  category: <sys-apps
+  description: ""
+  license: ""
+  name: openrc
+  
+  version: 0.26.3
+description: Ceph distributed filesystem
+license: LGPL-2.1 CC-BY-SA-3.0 GPL-2 GPL-2+ LGPL-2+ BSD Boost-1.0 MIT public-domain
 name: ceph
+requires:
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: lttng-ust
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: fuse
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: sys-block
+  description: ""
+  license: ""
+  name: parted
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pyopenssl
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: babeltrace
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: rabbitmq-c
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: zfs
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nss
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: xfsprogs
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: gptfdisk
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: jinja
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libudev
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: bcrypt
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: cherrypy
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: prettytable
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: werkzeug
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: jemalloc
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: cryptsetup
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: flask
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pecan
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: requests
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: oath-toolkit
+  
+  version: ""
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: google-perftools
+  
+  version: "2.4"
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: socat
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lvm2[-device-mapper-only(-)]
+  
+  version: ""
+uri:
+- https://download.ceph.com/tarballs/ceph-14.2.4.tar.gz
+use_flags:
+- babeltrace
+- cephfs
+- dpdk
+- fuse
+- grafana
+- jemalloc
+- kerberos
+- ldap
+- libressl
+- lttng
+- +mgr
+- numa
+- rabbitmq
+- +radosgw
+- +ssl
+- static-libs
+- system-boost
+- systemd
+- +tcmalloc
+- test
+- xfs
+- zfs
+- |-
+  cpu_flags_x86_sse{,2,3,4_1,4_2}
+  cpu_flags_x86_ssse3
 version: 14.2.4-r1

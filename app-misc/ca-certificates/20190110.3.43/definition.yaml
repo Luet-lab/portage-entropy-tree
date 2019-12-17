@@ -1,17 +1,26 @@
 category: app-misc
 conflicts: []
+description: Common CA Certificates PEM files
+license: MPL-1.1
 name: ca-certificates
 requires:
 - 
-  category: app-misc
-  name: c_rehash
-  
-  version: ""
-- 
   category: sys-apps
+  description: ""
+  license: ""
   name: debianutils
   
   version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: c_rehash
+  
+  version: ""
+uri:
+- mirror://debian/pool/main/c/ca-certificates/ca-certificates_.tar.xz
+- https://archive.mozilla.org/pub/security/nss/releases/NSS__RTM/src/nss-.tar.gz
 use_flags:
 - cacert
 version: 20190110.3.43

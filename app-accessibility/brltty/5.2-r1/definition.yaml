@@ -1,3 +1,98 @@
 category: app-accessibility
+conflicts: []
+description: Daemon that provides access to the Linux/Unix console for a blind person
+license: GPL-2 LGPL-2.1
 name: brltty
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: gpm
+  
+  version: "1.20"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libusb
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXaw
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: tcl
+  
+  version: 8.4.15
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jre
+  
+  version: "1.4"
+- 
+  category: net-wireless
+  description: ""
+  license: ""
+  name: bluez
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libiconv
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: icu
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libintl
+  
+  version: ""
+uri:
+- https://brltty.app/archive/brltty-5.2.tar.xz
+use_flags:
+- +api
+- +beeper
+- bluetooth
+- +contracted-braille
+- doc
+- +fm
+- gpm
+- iconv
+- "icu\n\t\tjava"
+- +midi
+- ncurses
+- nls
+- ocaml
+- +pcm
+- python
+- usb
+- "+speech\n\t\ttcl"
+- X
 version: 5.2-r1

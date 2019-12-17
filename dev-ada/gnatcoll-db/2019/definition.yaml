@@ -1,3 +1,33 @@
 category: dev-ada
+conflicts: []
+description: GNAT Component Collection
+license: GPL-3
 name: gnatcoll-db
+requires:
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: postgresql
+  
+  version: ""
+uri:
+- https://github.com/AdaCore/gnatcoll-db/archive/fbc46346dc67dfa83ae5132ef72fdd64fbe7e199.tar.gz
+- -> gnatcoll-db-2019-src.tar.gz
+use_flags:
+- db2ada
+- gnatinspect
+- "postgres\n\t+shared"
+- sql
+- sqlite
+- static-libs
+- static-pic
+- xref
 version: "2019"

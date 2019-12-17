@@ -1,3 +1,37 @@
 category: app-emulation
+conflicts:
+- 
+  category: app-emulation
+  description: ""
+  license: ""
+  name: docker-runc
+  
+  version: ""
+description: runc container cli tools
+license: Apache-2.0
 name: runc
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libapparmor
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libseccomp
+  
+  version: ""
+uri:
+- https://github.com/opencontainers/runc/archive/d736ef14f0288d6993a1845745d6756cfc9ddd5a.tar.gz
+  -> runc-1.0.0.tar.gz
+use_flags:
+- +ambient
+- apparmor
+- hardened
+- +kmem
+- +seccomp
 version: 1.0.0_rc9

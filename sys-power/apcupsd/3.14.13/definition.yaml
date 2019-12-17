@@ -1,3 +1,86 @@
 category: sys-power
+conflicts: []
+description: APC UPS daemon with integrated tcp/ip remote shutdown
+license: GPL-2
 name: apcupsd
+requires:
+- 
+  category: sys-freebsd
+  description: ""
+  license: ""
+  name: freebsd-ubin
+  
+  version: ""
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: gettext
+  
+  version: ""
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: net-snmp
+  
+  version: 5.7.2
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: ""
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gconf
+  
+  version: "2.0"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: openrc
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux-2.23[tty-helpers(-)]
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: 2.4.0
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: mailx
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gd
+  
+  version: 1.8.4
+uri:
+- mirror://sourceforge/apcupsd/apcupsd-3.14.13.tar.gz
+use_flags:
+- snmp
+- +usb
+- cgi
+- nls
+- gnome
+- kernel_linux
 version: 3.14.13

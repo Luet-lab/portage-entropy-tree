@@ -1,3 +1,40 @@
 category: sci-libs
+conflicts: []
+description: General purpose library and file format for storing scientific data
+license: NCSA-HDF
 name: hdf5
+requires:
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: mpi
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: szip
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+uri:
+- http://www.hdfgroup.org/ftp/HDF5/releases/hdf5-/hdf5-1.10.5/src/hdf5-1.10.5.tar.bz2
+use_flags:
+- cxx
+- debug
+- examples
+- fortran
+- +hl
+- mpi
+- szip
+- threads
+- zlib
 version: 1.10.5

@@ -1,0 +1,57 @@
+category: x11-misc
+conflicts: []
+description: Service providing elegant and stable means of managing Optimus graphics
+  chipsets
+license: GPL-3
+name: bumblebee
+requires:
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: opengl
+  
+  version: ""
+- 
+  category: sys-power
+  description: ""
+  license: ""
+  name: bbswitch
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libbsd
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: kmod
+  
+  version: ""
+uri:
+- https://github.com/Bumblebee-Project/Bumblebee/archive/c322bd849aabe6e48b4304b8d13cc4aadc36a30d.tar.gz
+  -> bumblebee-3.2.1.tar.gz
+use_flags:
+- +bbswitch
+- video_cards_nouveau
+- video_cards_nvidia
+version: 3.2.1_p20170123

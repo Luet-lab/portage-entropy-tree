@@ -1,3 +1,118 @@
 category: media-libs
+conflicts: []
+description: Portable sound event library
+license: LGPL-2.1+
 name: libcanberra
+requires:
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gstreamer
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.32"
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: dconf
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libvorbis
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: ""
+- 
+  category: x11-themes
+  description: ""
+  license: ""
+  name: sound-theme-freedesktop
+  
+  version: ""
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gsettings-desktop-schemas
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libltdl
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: alsa-lib
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libudev
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: tdb
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: 2.20.0
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: pulseaudio
+  
+  version: 0.9.11
+uri:
+- http://0pointer.de/lennart/projects/libcanberra/libcanberra-0.30.tar.xz
+use_flags:
+- alsa
+- gnome
+- gstreamer
+- +gtk
+- +gtk3
+- oss
+- pulseaudio
+- +sound
+- tdb
+- udev
 version: 0.30-r5

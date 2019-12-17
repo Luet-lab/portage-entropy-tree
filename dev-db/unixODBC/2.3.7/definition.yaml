@@ -1,3 +1,35 @@
 category: dev-db
+conflicts: []
+description: A complete ODBC driver manager
+license: GPL-2 LGPL-2.1
 name: unixODBC
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: 6.2_p5-r1
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: 5.9-r3
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libiconv
+  
+  version: 0-r1
+uri:
+- ftp://ftp.unixodbc.org/pub/unixODBC/unixODBC-2.3.7.tar.gz
+use_flags:
+- +minimal
+- odbcmanual
+- static-libs
+- unicode
 version: 2.3.7

@@ -1,3 +1,78 @@
 category: sys-cluster
+conflicts: []
+description: Pacemaker CRM
+license: GPL-2
 name: pacemaker
+requires:
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: net-snmp
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: libqb
+  
+  version: 0.14.0
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: corosync
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: cluster-glue
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: resource-agents
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: heartbeat
+  
+  version: 3.0.0
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libesmtp
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: docbook-xsl-stylesheets
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxslt
+  
+  version: ""
+uri:
+- https://github.com/ClusterLabs/pacemaker/archive/Pacemaker-1.1.16.tar.gz
+use_flags:
+- acl
+- heartbeat
+- smtp
+- snmp
+- static-libs
 version: 1.1.16

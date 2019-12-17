@@ -1,3 +1,65 @@
 category: app-emulation
+conflicts: []
+description: SPICE server
+license: LGPL-2.1
 name: spice
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: lz4
+  
+  version: ""
+- 
+  category: app-emulation
+  description: ""
+  license: ""
+  name: libcacard
+  
+  version: 0.1.2
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: cyrus-sasl[static-libs(+)?]
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gstreamer
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gst-plugins-base
+  
+  version: ""
+uri:
+- https://www.spice-space.org/download/releases/spice-server/spice-0.14.2.tar.bz2
+use_flags:
+- libressl
+- lz4
+- sasl
+- smartcard
+- static-libs
+- gstreamer
 version: 0.14.2

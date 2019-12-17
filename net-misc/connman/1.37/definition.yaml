@@ -1,3 +1,148 @@
 category: net-misc
+conflicts: []
+description: Provides a daemon for managing internet connections
+license: GPL-2
 name: connman
+requires:
+- 
+  category: net-vpn
+  description: ""
+  license: ""
+  name: openconnect
+  
+  version: ""
+- 
+  category: net-dialup
+  description: ""
+  license: ""
+  name: pptpclient
+  
+  version: ""
+- 
+  category: net-vpn
+  description: ""
+  license: ""
+  name: vpnc
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libmnl
+  
+  version: 1.0.0
+- 
+  category: net-wireless
+  description: ""
+  license: ""
+  name: bluez
+  
+  version: ""
+- 
+  category: net-dialup
+  description: ""
+  license: ""
+  name: xl2tpd
+  
+  version: ""
+- 
+  category: net-vpn
+  description: ""
+  license: ""
+  name: openvpn
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: 1.2.24
+- 
+  category: net-wireless
+  description: ""
+  license: ""
+  name: iwd
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.16"
+- 
+  category: net-firewall
+  description: ""
+  license: ""
+  name: iptables
+  
+  version: 1.4.8
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libnftnl
+  
+  version: 1.0.4
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: ofono
+  
+  version: ""
+- 
+  category: net-wireless
+  description: ""
+  license: ""
+  name: wpa_supplicant
+  
+  version: "2.0"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
+uri:
+- https://www.kernel.org/pub/linux/network/connman/connman-1.37.tar.xz
+use_flags:
+- bluetooth
+- debug
+- doc
+- examples
+- +ethernet
+- +iptables
+- iwd
+- l2tp
+- nftables
+- ofono
+- openvpn
+- openconnect
+- pptp
+- policykit
+- tools
+- vpnc
+- +wifi
+- wispr
+- networkmanager
 version: "1.37"

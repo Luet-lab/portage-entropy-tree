@@ -1,3 +1,51 @@
 category: sys-libs
+conflicts: []
+description: SELinux userland library
+license: public-domain
 name: libselinux
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libsepol
+  
+  version: "9999"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpcre
+  
+  version: 8.33-r1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpcre2
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: ruby
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: fts-standalone
+  
+  version: ""
+uri: []
+use_flags:
+- pcre2
+- python
+- ruby
+- static-libs
+- ruby_targets_ruby24
+- ruby_targets_ruby25
+- ruby_targets_ruby26
 version: "9999"

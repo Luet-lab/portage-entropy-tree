@@ -1,3 +1,129 @@
 category: net-ftp
+conflicts: []
+description: Fast, production-quality, standard-conformant FTP server
+license: BSD
 name: pure-ftpd
+requires:
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: 2.0.25
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 0.9.6g
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-ftp
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: postgresql
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: quota
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: inetd
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libiconv
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: net-ftp
+  description: ""
+  license: ""
+  name: ftpbase
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mariadb-connector-c
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libsodium
+  
+  version: ""
+uri:
+- ftp://ftp.pureftpd.org/pub/pure-ftpd/releases/pure-ftpd-1.0.47.tar.bz2
+- http://download.pureftpd.org/pub/pure-ftpd/releases/pure-ftpd-1.0.47.tar.bz2
+use_flags:
+- anondel
+- anonperm
+- anonren
+- anonres
+- caps
+- charconv
+- implicittls
+- ldap
+- libressl
+- mysql
+- noiplog
+- pam
+- paranoidmsg
+- postgres
+- resolveids
+- selinux
+- ssl
+- sysquota
+- vchroot
+- xinetd
 version: 1.0.47-r4

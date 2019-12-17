@@ -1,3 +1,56 @@
 category: dev-util
+conflicts: []
+description: NVIDIA CUDA Toolkit (compiler and friends)
+license: NVIDIA-CUDA
 name: nvidia-cuda-toolkit
+requires:
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: gcc
+  
+  version: "9"
+- 
+  category: x11-drivers
+  description: ""
+  license: ""
+  name: nvidia-drivers-440.33.01[X,uvm]
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl-compat
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libtermcap-compat
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses-compat
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jre
+  
+  version: "1.6"
+uri:
+- https://developer.download.nvidia.com/compute/cuda//Prod/local_installers/cuda_10.2.89_440.33.01_linux.run
+use_flags:
+- debugger
+- doc
+- eclipse
+- profiler
 version: 10.2.89

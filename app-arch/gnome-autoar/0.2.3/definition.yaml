@@ -1,3 +1,40 @@
 category: app-arch
+conflicts: []
+description: Automatic archives creating and extracting library
+license: LGPL-2.1+
 name: gnome-autoar
+requires:
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: libarchive
+  
+  version: 3.2.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.35.6
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: "3.2"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gobject-introspection
+  
+  version: 1.30.0
+uri: []
+use_flags:
+- gtk
+- +introspection
+- vala
 version: 0.2.3

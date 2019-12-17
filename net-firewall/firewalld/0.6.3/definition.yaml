@@ -1,3 +1,46 @@
 category: net-firewall
+conflicts:
+- 
+  category: '!net-firewall'
+  description: ""
+  license: ""
+  name: gshield
+  
+  version: ""
+description: A firewall daemon with D-BUS interface providing a dynamic firewall
+license: GPL-2+
 name: firewalld
+requires:
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: dbus-python
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: decorator
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: python-slip
+  
+  version: 0.2.7
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pygobject
+  
+  version: ""
+uri:
+- https://github.com/firewalld/firewalld/archive/v0.6.3.tar.gz -> firewalld-0.6.3.tar.gz
+use_flags:
+- gui
 version: 0.6.3

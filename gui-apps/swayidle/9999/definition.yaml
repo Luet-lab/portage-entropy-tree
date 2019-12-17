@@ -1,3 +1,49 @@
 category: gui-apps
+conflicts:
+- 
+  category: <=gui-wm
+  description: ""
+  license: ""
+  name: sway-1.0_beta1
+  
+  version: ""
+- 
+  category: ~gui-wm
+  description: ""
+  license: ""
+  name: sway-1.0_beta2
+  
+  version: ""
+description: Idle management daemon for Wayland
+license: MIT
 name: swayidle
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: wayland
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: elogind
+  
+  version: "237"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "237"
+uri: []
+use_flags:
+- elogind
+- fish-completion
+- +man
+- systemd
+- zsh-completion
 version: "9999"

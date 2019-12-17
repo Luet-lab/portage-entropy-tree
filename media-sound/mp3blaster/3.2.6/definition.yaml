@@ -1,3 +1,50 @@
 category: media-sound
+conflicts: []
+description: Text console based program for playing audio files
+license: GPL-2
 name: mp3blaster
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: lirc
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libsdl
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libsidplay
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libvorbis
+  
+  version: ""
+uri:
+- mirror://sourceforge/mp3blaster/mp3blaster-3.2.6.tar.gz
+use_flags:
+- lirc
+- oss
+- +sdl
+- sid
+- vorbis
 version: 3.2.6

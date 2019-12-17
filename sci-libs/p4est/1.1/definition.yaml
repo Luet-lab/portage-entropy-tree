@@ -1,3 +1,61 @@
 category: sci-libs
+conflicts: []
+description: Scalable Algorithms for Parallel Adaptive Mesh Refinement on Forests
+  of Octrees
+license: GPL-2+
 name: p4est
+requires:
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: libsc-1.1[mpi=,romio=,static-libs=]
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: lua
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: blas
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: lapack
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: mpi[romio=]
+  
+  version: ""
+uri:
+- https://github.com/cburstedde/p4est/archive/v1.1.tar.gz -> p4est-1.1.tar.gz
+- https://github.com/cburstedde/libsc/archive/v1.1.tar.gz -> libsc-1.1.tar.gz
+use_flags:
+- debug
+- doc
+- examples
+- mpi
+- romio
+- static-libs
+- +vtk-binary
 version: "1.1"

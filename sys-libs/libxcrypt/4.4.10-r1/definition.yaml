@@ -1,3 +1,29 @@
 category: sys-libs
+conflicts:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: musl
+  
+  version: ""
+description: 'Extended crypt library for descrypt, md5crypt, bcrypt, and others '
+license: LGPL-2.1+ public-domain BSD BSD-2
 name: libxcrypt
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: glibc[-crypt(+)]
+  
+  version: ""
+uri:
+- https://github.com/besser82/libxcrypt/archive/v4.4.10.tar.gz -> libxcrypt-4.4.10.tar.gz
+use_flags:
+- +compat
+- split-usr
+- static-libs
+- system
+- test
 version: 4.4.10-r1

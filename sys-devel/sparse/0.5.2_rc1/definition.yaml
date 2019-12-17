@@ -1,22 +1,33 @@
 category: sys-devel
 conflicts: []
+description: C semantic parser
+license: MIT
 name: sparse
 requires:
 - 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: ""
+- 
   category: sys-devel
+  description: ""
+  license: ""
   name: llvm
   
   version: "3.0"
 - 
   category: dev-libs
+  description: ""
+  license: ""
   name: libxml2
   
   version: ""
-- 
-  category: x11-libs
-  name: gtk+
-  
-  version: ""
+uri:
+- https://git.kernel.org/pub/scm/devel/sparse/sparse.git/snapshot/sparse-d1c2f8d3d4205ca1ae7cf0ec2cbd89a7fce73e5c.tar.gz
+  -> sparse-0.5.2.tar.gz
 use_flags:
 - gtk
 - llvm

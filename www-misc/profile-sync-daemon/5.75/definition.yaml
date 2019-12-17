@@ -1,22 +1,32 @@
 category: www-misc
 conflicts: []
+description: Symlinks and syncs browser profile dirs to RAM
+license: MIT GPL-2
 name: profile-sync-daemon
 requires:
 - 
+  category: app-shells
+  description: ""
+  license: ""
+  name: bash
+  
+  version: ""
+- 
   category: net-misc
+  description: ""
+  license: ""
   name: rsync
   
   version: ""
 - 
   category: sys-apps
+  description: ""
+  license: ""
   name: systemd
   
   version: ""
-- 
-  category: app-shells
-  name: bash
-  
-  version: ""
+uri:
+- https://github.com/graysky2/profile-sync-daemon/archive/v5.75.tar.gz -> profile-sync-daemon-5.75.tar.gz
 use_flags:
 - systemd
 version: "5.75"

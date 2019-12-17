@@ -1,3 +1,43 @@
 category: net-nds
+conflicts: []
+description: portmap replacement which supports RPC over various protocols
+license: BSD
 name: rpcbind
+requires:
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-rpcbind
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libtirpc
+  
+  version: 0.2.3
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: tcp-wrappers
+  
+  version: ""
+uri: []
+use_flags:
+- debug
+- remotecalls
+- selinux
+- systemd
+- tcpd
+- warmstarts
 version: "9999"

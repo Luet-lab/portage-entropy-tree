@@ -1,3 +1,71 @@
 category: app-misc
+conflicts: []
+description: A location information D-Bus service
+license: LGPL-2.1+ GPL-2+
 name: geoclue
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.44"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: json-glib
+  
+  version: 0.14.0
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libsoup
+  
+  version: 2.42.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gobject-introspection
+  
+  version: "1.54"
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: modemmanager
+  
+  version: "1.6"
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: avahi
+  
+  version: 0.6.10
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libnotify
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: ""
+uri:
+- https://gitlab.freedesktop.org/geoclue/geoclue/-/archive/2.5.3/geoclue-2.5.3.tar.bz2
+use_flags:
+- +introspection
+- gtk-doc
+- modemmanager
+- vala
+- zeroconf
 version: 2.5.3-r2

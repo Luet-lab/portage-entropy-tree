@@ -1,3 +1,122 @@
 category: media-tv
+conflicts: []
+description: Tvheadend is a TV streaming server and digital video recorder
+license: GPL-3
 name: tvheadend
+requires:
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: avahi
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libiconv
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libdvbcsa
+  
+  version: ""
+- 
+  category: media-tv
+  description: ""
+  license: ""
+  name: linuxtv-dvb-apps
+  
+  version: ""
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: ffmpeg
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libhdhomerun
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: uriparser
+  
+  version: ""
+- 
+  category: media-tv
+  description: ""
+  license: ""
+  name: dtv-scan-tables
+  
+  version: ""
+- 
+  category: media-tv
+  description: ""
+  license: ""
+  name: xmltv
+  
+  version: ""
+uri:
+- https://github.com/tvheadend/tvheadend/archive/v4.2.8.tar.gz -> tvheadend-4.2.8.tar.gz
+use_flags:
+- +capmt
+- +constcw
+- +cwc
+- dbus
+- debug
+- dvbcsa
+- dvben50221
+- +dvb
+- +ffmpeg
+- hdhomerun
+- +imagecache
+- +inotify
+- iptv
+- libressl
+- satip
+- systemd
+- +timeshift
+- uriparser
+- xmltv
+- zeroconf
+- zlib
 version: 4.2.8

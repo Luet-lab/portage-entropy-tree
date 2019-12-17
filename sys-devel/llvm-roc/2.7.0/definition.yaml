@@ -1,3 +1,27 @@
 category: sys-devel
+conflicts: []
+description: Radeon Open Compute llvm,lld,clang
+license: UoI-NCSA rc BSD public-domain
 name: llvm-roc
+requires:
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: cblas
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: rocr-runtime
+  
+  version: ""
+uri:
+- https://github.com/RadeonOpenCompute/llvm/archive/roc-ocl-2.7.0.tar.gz -> llvm-roc-ocl-2.7.0.tar.gz
+- https://github.com/RadeonOpenCompute/clang/archive/roc-2.7.0.tar.gz -> clang-roc-2.7.0.tar.gz
+- https://github.com/RadeonOpenCompute/lld/archive/roc-ocl-2.7.0.tar.gz -> lld-roc-ocl-2.7.0.tar.gz
+use_flags:
+- ""
 version: 2.7.0

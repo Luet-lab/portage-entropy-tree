@@ -1,3 +1,23 @@
 category: sys-libs
+conflicts:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libunwind
+  
+  version: ""
+description: C++ runtime stack unwinder from LLVM
+license: '|| ( UoI-NCSA MIT )'
 name: llvm-libunwind
+requires: []
+uri:
+- https://github.com/llvm/llvm-project/releases/download/llvmorg-8.0.1/libunwind-8.0.1.src.tar.xz
+- https://github.com/llvm/llvm-project/releases/download/llvmorg-8.0.1/libcxx-8.0.1.src.tar.xz
+- https://github.com/llvm/llvm-project/releases/download/llvmorg-8.0.1/libcxxabi-8.0.1.src.tar.xz
+  )
+use_flags:
+- debug
+- +static-libs
+- test
 version: 8.0.1

@@ -1,3 +1,56 @@
 category: media-libs
+conflicts:
+- 
+  category: ""
+  description: ""
+  license: ""
+  name: libmikmod
+  
+  version: ""
+description: A library to play a wide range of module formats
+license: LGPL-2+ LGPL-2.1
 name: libmikmod
+requires:
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: alsa-lib
+  
+  version: 1.0.27.2
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: nas
+  
+  version: 1.9.4
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: openal
+  
+  version: 1.15.1-r1
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: pulseaudio
+  
+  version: "5.0"
+uri:
+- mirror://sourceforge/mikmod/libmikmod-3.3.11.1.tar.gz
+use_flags:
+- +alsa
+- altivec
+- coreaudio
+- debug
+- nas
+- openal
+- oss
+- pulseaudio
+- cpu_flags_x86_sse2
+- static-libs
+- +threads
 version: 3.3.11.1

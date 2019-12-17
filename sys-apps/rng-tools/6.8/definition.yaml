@@ -1,3 +1,84 @@
 category: sys-apps
+conflicts: []
+description: Daemon to use hardware random number generators
+license: GPL-2
 name: rng-tools
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libp11
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: argp-standalone
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-rngd
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgcrypt
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: sysfsutils
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: jitterentropy
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgpg-error
+  
+  version: ""
+uri:
+- https://github.com/nhorman/rng-tools/archive/v6.8.tar.gz -> rng-tools-6.8.tar.gz
+use_flags:
+- jitterentropy
+- nistbeacon
+- pkcs11
+- selinux
 version: "6.8"

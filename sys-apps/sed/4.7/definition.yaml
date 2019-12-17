@@ -1,3 +1,36 @@
 category: sys-apps
+conflicts: []
+description: Super-useful stream editor
+license: GPL-3
 name: sed
+requires:
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libintl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: acl
+  
+  version: ""
+uri:
+- mirror://gnu/sed/sed-4.7.tar.xz
+use_flags:
+- acl
+- forced-sandbox
+- nls
+- selinux
+- static
 version: "4.7"

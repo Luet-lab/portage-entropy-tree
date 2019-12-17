@@ -1,3 +1,66 @@
 category: sys-fs
+conflicts: []
+description: A high performance inline data deduplicating filesystem
+license: GPL-3
 name: lessfs
+requires:
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: tokyocabinet
+  
+  version: 1.4.42
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: mhash
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: fuse
+  
+  version: 2.8.0
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: db
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: lzo
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: snappy
+  
+  version: ""
+uri:
+- mirror://sourceforge/lessfs/lessfs/lessfs-1.7.0/lessfs-1.7.0.tar.gz
+use_flags:
+- berkdb
+- crypt
+- debug
+- filelog
+- memtrace
+- lzo
+- snappy
 version: 1.7.0-r1

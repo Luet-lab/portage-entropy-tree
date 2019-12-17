@@ -1,3 +1,19 @@
 category: sys-apps
+conflicts: []
+description: helper binary and library for sandboxing & restricting privs of service
+license: BSD
 name: minijail
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap-ng
+  
+  version: ""
+uri:
+- https://github.com/google/minijail/archive/linux-v9.tar.gz -> minijail-9.tar.gz
+use_flags:
+- +seccomp
+- test
 version: "9"

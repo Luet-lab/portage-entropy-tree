@@ -1,3 +1,45 @@
 category: dev-util
+conflicts: []
+description: Android platform tools (adb, fastboot, and mkbootimg)
+license: Apache-2.0 BSD-2
 name: android-tools
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpcre
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+uri:
+- https://projects.archlinux.org/svntogit/community.git/snapshot/community-caa300cf262afcf5bdb4dcc923dee54e3715fd5c.tar.gz
+  -> android-tools-5.1.1-arch.tar.gz
+- https://github.com/android/platform_system_core/archive/android-5.1.1.tar.gz ->
+  android-tools-5.1.1-core.tar.gz
+- mirror://gentoo/android-tools-5.1.1-extras.tar.gz
+- mirror://gentoo/android-tools-5.1.1-libselinux.tar.gz
+- mirror://gentoo/android-tools-5.1.1-f2fs-tools.tar.gz
+use_flags:
+- libressl
 version: 5.1.1_p13

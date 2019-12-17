@@ -1,3 +1,127 @@
 category: sys-cluster
+conflicts:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: uthash
+  
+  version: ""
+- 
+  category: '!games-util'
+  description: ""
+  license: ""
+  name: qstat
+  
+  version: ""
+description: Resource manager and queuing system based on OpenPBS
+license: torque-2.5
 name: torque
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: munge
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: netkit-rsh
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: hwloc
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: tk
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: tcl
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: openssh
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: x11-drivers
+  description: ""
+  license: ""
+  name: nvidia-drivers
+  
+  version: "275"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: logger
+  
+  version: ""
+uri:
+- https://github.com/adaptivecomputing/torque/archive/ddf5c4f40091b6157164a8846e5b60f42a5ae7f6.tar.gz
+  -> torque-4.2.10-gh-20150517.tar.gz
+use_flags:
+- cpusets
+- +crypt
+- doc
+- drmaa
+- kernel_linux
+- libressl
+- munge
+- nvidia
+- server
+- +syslog
+- tk
 version: 4.2.10-r1

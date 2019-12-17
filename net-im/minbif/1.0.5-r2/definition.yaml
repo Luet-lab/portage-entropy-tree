@@ -1,3 +1,64 @@
 category: net-im
+conflicts: []
+description: IRC gateway to IM networks
+license: GPL-2
 name: minbif
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: logger
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: xinetd
+  
+  version: ""
+- 
+  category: net-im
+  description: ""
+  license: ""
+  name: pidgin
+  
+  version: "2.6"
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: imlib2
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libcaca
+  
+  version: ""
+uri:
+- https://symlink.me/attachments/download/148/minbif-1.0.5.tar.gz
+use_flags:
+- gnutls
+- +imlib
+- +libcaca
+- pam
+- xinetd
 version: 1.0.5-r2

@@ -1,3 +1,34 @@
 category: net-misc
+conflicts: []
+description: A TCP, UDP, and SCTP network bandwidth measurement tool
+license: BSD
 name: iperf
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: lksctp-tools
+  
+  version: ""
+uri:
+- https://github.com/esnet/iperf/archive/3.6.tar.gz -> iperf-3.6.tar.gz
+use_flags:
+- libressl
+- sctp
+- static-libs
 version: "3.6"

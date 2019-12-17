@@ -1,3 +1,51 @@
 category: dev-lua
+conflicts:
+- 
+  category: dev-lua
+  description: ""
+  license: ""
+  name: luaossl
+  
+  version: ""
+description: OpenSSL binding for Lua
+license: MIT openssl PHP-3
 name: lua-openssl
+requires:
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: luajit
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: lua
+  
+  version: "5.1"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: 2.7.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+uri:
+- https://github.com/zhaozg/lua-openssl/archive/0.7.3.tar.gz -> lua-openssl-0.7.3.tar.gz
+- https://github.com/zhaozg/lua-auxiliar/archive/b56f6937096acea34ddf241ec7ea08ac52414d18.tar.gz
+  -> lua-openssl-aux-b56f6937096acea34ddf241ec7ea08ac52414d18.tar.gz
+- https://github.com/keplerproject/lua-compat-5.3/archive/daebe77a2f498817713df37f0bb316db1d82222f.tar.gz
+  -> lua-openssl-compat-daebe77a2f498817713df37f0bb316db1d82222f.tar.gz
+use_flags:
+- libressl
+- luajit
 version: 0.7.3

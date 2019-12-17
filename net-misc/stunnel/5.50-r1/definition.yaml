@@ -1,3 +1,56 @@
 category: net-misc
+conflicts: []
+description: TLS/SSL - Port Wrapper
+license: GPL-2
 name: stunnel
+requires:
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: tcp-wrappers
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: perl
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-stunnel
+  
+  version: ""
+uri:
+- ftp://ftp.stunnel.org/stunnel/archive/5.x/stunnel-5.50.tar.gz
+- http://www.usenix.org.uk/mirrors/stunnel/archive/5.x/stunnel-5.50.tar.gz
+- http://ftp.nluug.nl/pub/networking/stunnel/archive/5.x/stunnel-5.50.tar.gz
+- http://www.namesdir.com/mirrors/stunnel/archive/5.x/stunnel-5.50.tar.gz
+- http://stunnel.cybermirror.org/archive/5.x/stunnel-5.50.tar.gz
+- http://mirrors.zerg.biz/stunnel/archive/5.x/stunnel-5.50.tar.gz
+- ftp://mirrors.go-parts.com/stunnel/archive/5.x/stunnel-5.50.tar.gz
+use_flags:
+- ipv6
+- libressl
+- selinux
+- stunnel3
+- tcpd
 version: 5.50-r1

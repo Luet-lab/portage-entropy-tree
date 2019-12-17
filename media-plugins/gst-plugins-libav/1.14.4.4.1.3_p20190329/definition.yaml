@@ -1,3 +1,63 @@
 category: media-plugins
+conflicts: []
+description: FFmpeg based gstreamer plugin
+license: LGPL-2+
 name: gst-plugins-libav
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.40.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gstreamer
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gst-plugins-base
+  
+  version: ""
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: ffmpeg
+  
+  version: "4"
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: bzip2
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: xz-utils
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: orc
+  
+  version: 0.4.17
+uri:
+- https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-.tar.xz
+- https://dev.gentoo.org/~leio/distfiles/gst-libav--ffmpeg4-patchset.tar.xz
+- 'https://ffmpeg.org/releases/ffmpeg-.tar.bz2 '
+use_flags:
+- libav
+- +orc
 version: 1.14.4.4.1.3_p20190329

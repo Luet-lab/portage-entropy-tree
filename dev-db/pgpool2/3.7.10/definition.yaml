@@ -1,3 +1,51 @@
 category: dev-db
+conflicts: []
+description: Connection pool server for PostgreSQL
+license: BSD
 name: pgpool2
+requires:
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libnsl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libmemcached
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: pambase
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+uri:
+- https://www.pgpool.net/download.php?f=pgpool-II-3.7.10.tar.gz -> pgpool-II-3.7.10.tar.gz
+use_flags:
+- doc
+- libressl
+- memcached
+- pam
+- ssl
+- static-libs
 version: 3.7.10

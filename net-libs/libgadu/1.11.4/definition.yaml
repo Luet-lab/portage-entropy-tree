@@ -1,3 +1,50 @@
 category: net-libs
+conflicts:
+- 
+  category: =net-im
+  description: ""
+  license: ""
+  name: kadu
+  
+  version: 0.6.0.2
+- 
+  category: =net-im
+  description: ""
+  license: ""
+  name: kadu
+  
+  version: 0.6.0.1
+description: This library implements the client side of the Gadu-Gadu protocol
+license: LGPL-2.1
 name: libgadu
+requires:
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 0.9.6m
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+uri:
+- https://github.com/wojtekka/libgadu/archive/1.11.4.tar.gz -> libgadu-1.11.4.tar.gz
+use_flags:
+- doc
+- gnutls
+- ssl
+- static-libs
+- threads
 version: 1.11.4

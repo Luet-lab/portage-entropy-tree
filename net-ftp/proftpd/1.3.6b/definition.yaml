@@ -1,3 +1,187 @@
 category: net-ftp
+conflicts: []
+description: An advanced and very configurable FTP server
+license: GPL-2
 name: proftpd
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-ftp
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: acl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libiconv
+  
+  version: ""
+- 
+  category: net-ftp
+  description: ""
+  license: ""
+  name: ftpbase
+  
+  version: ""
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: ""
+- 
+  category: app-antivirus
+  description: ""
+  license: ""
+  name: clamav
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpcre
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: postgresql
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libsodium
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libmemcached
+  
+  version: "0.41"
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: ""
+uri:
+- ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.6b.tar.gz
+- 'http://www.castaglia.org/proftpd/modules/proftpd-mod-case-0.7.tar.gz '
+- 'https://github.com/jbenden/mod_clamav/archive/v0.14rc2.tar.gz -> proftpd-mod_clamav-0.14rc2.tar.gz '
+- 'http://www.castaglia.org/proftpd/modules/proftpd-mod-diskuse-0.9.tar.gz '
+- 'mirror://sourceforge/gssmod/mod_gss-1.3.9.tar.gz '
+- 'http://www.castaglia.org/proftpd/modules/proftpd-mod-msg-0.4.1.tar.gz '
+- 'https://github.com/Castaglia/proftpd-mod_vroot/archive/v0.9.4.tar.gz -> mod_vroot-0.9.4.tar.gz '
+use_flags:
+- acl
+- authfile
+- ban
+- +caps
+- case
+- clamav
+- copy
+- ctrls
+- deflate
+- diskuse
+- dso
+- dynmasq
+- exec
+- ifsession
+- ifversion
+- ident
+- "ipv6\n\tkerberos"
+- ldap
+- libressl
+- log-forensic
+- memcache
+- msg
+- mysql
+- ncurses
+- nls
+- pam
+- +pcre
+- postgres
+- qos
+- "radius\n\tratio"
+- readme
+- rewrite
+- selinux
+- sftp
+- shaper
+- sitemisc
+- snmp
+- sodium
+- softquota
+- sqlite
+- ssl
+- tcpd
+- test
+- unique-id
+- vroot
 version: 1.3.6b

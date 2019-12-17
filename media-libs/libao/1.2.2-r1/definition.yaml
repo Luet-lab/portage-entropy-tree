@@ -1,3 +1,36 @@
 category: media-libs
+conflicts: []
+description: The Audio Output library
+license: GPL-2
 name: libao
+requires:
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: alsa-lib
+  
+  version: 1.0.27.2
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: nas
+  
+  version: 1.9.4
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: pulseaudio
+  
+  version: 2.1-r1
+uri:
+- https://github.com/xiph/libao/archive/1.2.2.tar.gz -> libao-1.2.2.tar.gz
+use_flags:
+- alsa
+- nas
+- mmap
+- pulseaudio
+- static-libs
 version: 1.2.2-r1

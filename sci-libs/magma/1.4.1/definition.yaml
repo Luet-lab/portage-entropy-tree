@@ -1,3 +1,35 @@
 category: sci-libs
+conflicts: []
+description: Matrix Algebra on GPU and Multicore Architectures
+license: BSD
 name: magma
+requires:
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: nvidia-cuda-toolkit
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: cblas
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: lapack
+  
+  version: ""
+uri:
+- http://icl.cs.utk.edu/projectsfiles/magma/downloads/magma-1.4.1.tar.gz
+use_flags:
+- fermi
+- kepler
+- static-libs
+- test
 version: 1.4.1

@@ -1,0 +1,132 @@
+category: sys-apps
+conflicts:
+- 
+  category: <sys-apps
+  description: ""
+  license: ""
+  name: baselayout
+  
+  version: 2.1-r1
+- 
+  category: <sys-fs
+  description: ""
+  license: ""
+  name: udev-init-scripts
+  
+  version: "27"
+- 
+  category: <app-shells
+  description: ""
+  license: ""
+  name: gentoo-zsh-completions
+  
+  version: "20180228"
+- 
+  category: <sys-process
+  description: ""
+  license: ""
+  name: procps
+  
+  version: 3.3.9-r2
+- 
+  category: <app-shells
+  description: ""
+  license: ""
+  name: gentoo-bashcomp
+  
+  version: "20180302"
+description: OpenRC manages the services, startup and shutdown of a host
+license: BSD-2
+name: openrc
+requires:
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-base-policy
+  
+  version: 2.20170204-r4
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: audit
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: psmisc
+  
+  version: ""
+- 
+  category: app-shells
+  description: ""
+  license: ""
+  name: bash
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: policycoreutils
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: "2.6"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: tmpfiles
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-openrc
+  
+  version: 2.20170204-r4
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: pambase
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+uri:
+- https://github.com/openrc/openrc/archive/0.41.2.tar.gz -> openrc-0.41.2.tar.gz
+use_flags:
+- audit
+- bash
+- debug
+- ncurses
+- pam
+- newnet
+- prefix
+- +netifrc
+- selinux
+- "static-libs\n\tunicode"
+version: 0.41.2

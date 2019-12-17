@@ -1,3 +1,28 @@
 category: sys-process
+conflicts: []
+description: Lists open files for running Unix processes
+license: lsof
 name: lsof
+requires:
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libtirpc
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: ""
+uri:
+- https://github.com/lsof-org/lsof/archive/4.93.2.tar.gz -> lsof-4.93.2.tar.gz
+use_flags:
+- examples
+- ipv6
+- rpc
+- selinux
 version: 4.93.2-r1

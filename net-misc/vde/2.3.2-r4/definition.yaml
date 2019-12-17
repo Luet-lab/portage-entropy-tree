@@ -1,3 +1,52 @@
 category: net-misc
+conflicts: []
+description: Virtual distributed ethernet emulator for emulators like qemu, bochs,
+  and uml
+license: GPL-2
 name: vde
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: qemu
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-vde
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libpcap
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+uri:
+- mirror://sourceforge/vde/vde2-2.3.2.tar.bz2
+use_flags:
+- pcap
+- python
+- selinux
+- ssl
+- libressl
+- static-libs
 version: 2.3.2-r4

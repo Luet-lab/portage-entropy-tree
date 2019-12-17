@@ -1,3 +1,52 @@
 category: media-sound
+conflicts: []
+description: Ncurses client for the Music Player Daemon (MPD)
+license: GPL-2+
 name: ncmpc
+requires:
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libmpdclient
+  
+  version: "2.9"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: lirc
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpcre
+  
+  version: ""
+uri:
+- https://www.musicpd.org/download/ncmpc/0/ncmpc-0.34.tar.xz
+use_flags:
+- async-connect
+- chat-screen
+- doc
+- +help-screen
+- key-screen
+- +library-screen
+- lirc
+- lyrics-screen
+- +mouse
+- nls
+- outputs-screen
+- pcre
+- search-screen
+- +song-screen
 version: "0.34"

@@ -1,3 +1,58 @@
 category: net-firewall
+conflicts: []
+description: Linux kernel (2.4+) firewall, NAT and packet mangling tools
+license: GPL-2
 name: iptables
+requires:
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libnfnetlink
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libmnl
+  
+  version: "1.0"
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libnftnl
+  
+  version: 1.1.5
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libpcap
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: ethertypes
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libnetfilter_conntrack
+  
+  version: 1.0.6
+uri:
+- https://www.netfilter.org/projects/iptables/files/iptables-1.8.4.tar.bz2
+use_flags:
+- conntrack
+- ipv6
+- netlink
+- nftables
+- pcap
+- static-libs
 version: 1.8.4

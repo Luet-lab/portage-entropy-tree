@@ -1,47 +1,67 @@
 category: net-analyzer
 conflicts: []
+description: Tool to check TLS/SSL cipher support
+license: GPL-2 bundled-openssl? ( openssl )
 name: testssl
 requires:
 - 
-  category: sys-libs
-  name: ncurses
-  
-  version: ""
-- 
-  category: sys-process
-  name: procps
-  
-  version: ""
-- 
-  category: sys-libs
-  name: zlib
-  
-  version: ""
-- 
-  category: virtual
-  name: krb5
-  
-  version: ""
-- 
   category: dev-libs
+  description: ""
+  license: ""
   name: openssl
   
   version: ""
 - 
   category: app-shells
+  description: ""
+  license: ""
   name: bash
   
   version: ""
 - 
   category: net-dns
+  description: ""
+  license: ""
   name: bind-tools
   
   version: ""
 - 
   category: sys-apps
+  description: ""
+  license: ""
   name: util-linux
   
   version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: procps
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
+  
+  version: ""
+uri:
+- https://github.com/drwetter/testssl.sh/archive/v2.9.5.tar.gz -> testssl-2.9.5.tar.gz
 use_flags:
 - bundled-openssl
 - kerberos

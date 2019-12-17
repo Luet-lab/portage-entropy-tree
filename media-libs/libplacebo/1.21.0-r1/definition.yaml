@@ -1,3 +1,43 @@
 category: media-libs
+conflicts: []
+description: Reusable library for GPU-accelerated image processing primitives
+license: LGPL-2.1+
 name: libplacebo
+requires:
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: shaderc
+  
+  version: "2017.2"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: vulkan-loader
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: glslang
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: lcms
+  
+  version: ""
+uri:
+- https://code.videolan.org/videolan/libplacebo/-/archive/v1.21.0/libplacebo-v1.21.0.tar.gz
+use_flags:
+- glslang
+- lcms
+- +shaderc
+- test
+- +vulkan
 version: 1.21.0-r1

@@ -1,3 +1,50 @@
 category: lxde-base
+conflicts: []
+description: LXDE Display Manager
+license: GPL-3
 name: lxdm
+requires:
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: ""
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: gettext
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: consolekit
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxcb
+  
+  version: ""
+uri:
+- mirror://sourceforge/lxde/lxdm-0.5.3.tar.xz
+use_flags:
+- consolekit
+- debug
+- gtk3
+- nls
+- pam
 version: 0.5.3-r1

@@ -1,3 +1,75 @@
 category: app-portage
+conflicts: []
+description: Tool to manage Gentoo overlays
+license: GPL-2
 name: layman
+requires:
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: portage
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: ssl-fetch
+  
+  version: "0.2"
+- 
+  category: dev-vcs
+  description: ""
+  license: ""
+  name: bzr
+  
+  version: ""
+- 
+  category: dev-vcs
+  description: ""
+  license: ""
+  name: cvs
+  
+  version: ""
+- 
+  category: dev-vcs
+  description: ""
+  license: ""
+  name: darcs
+  
+  version: ""
+- 
+  category: dev-vcs
+  description: ""
+  license: ""
+  name: git
+  
+  version: ""
+- 
+  category: dev-vcs
+  description: ""
+  license: ""
+  name: mercurial
+  
+  version: ""
+- 
+  category: app-portage
+  description: ""
+  license: ""
+  name: g-sorcery
+  
+  version: ""
+uri:
+- mirror://sourceforge/layman/layman-2.2.0.tar.gz
+use_flags:
+- bazaar
+- cvs
+- darcs
+- +git
+- g-sorcery
+- mercurial
+- squashfs
+- subversion
+- test
 version: 2.2.0-r7

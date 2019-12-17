@@ -1,52 +1,74 @@
 category: app-portage
 conflicts: []
+description: Autogenerate and install ebuilds for CPAN modules
+license: '|| ( Artistic GPL-2 )'
 name: g-cpan
 requires:
 - 
-  category: sys-apps
-  name: portage
-  
-  version: 2.0.0
-- 
   category: virtual
+  description: ""
+  license: ""
   name: perl-File-Path
   
   version: ""
 - 
-  category: dev-perl
-  name: YAML
-  
-  version: "0.60"
-- 
   category: virtual
-  name: perl-Memoize
+  description: ""
+  license: ""
+  name: perl-File-Spec
   
   version: ""
 - 
   category: virtual
+  description: ""
+  license: ""
   name: perl-IO
   
   version: ""
 - 
   category: dev-perl
+  description: ""
+  license: ""
+  name: YAML
+  
+  version: "0.60"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: portage
+  
+  version: 2.0.0
+- 
+  category: dev-perl
+  description: ""
+  license: ""
+  name: Log-Agent
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: perl-Memoize
+  
+  version: ""
+- 
+  category: dev-perl
+  description: ""
+  license: ""
   name: Shell-EnvImporter
   
   version: ""
 - 
   category: virtual
+  description: ""
+  license: ""
   name: perl-Term-ANSIColor
   
   version: ""
-- 
-  category: virtual
-  name: perl-File-Spec
-  
-  version: ""
-- 
-  category: dev-perl
-  name: Log-Agent
-  
-  version: ""
+uri:
+- https://github.com/gentoo-perl/g-cpan/releases/download/v0.16.7/g-cpan-0.16.7.tar.gz
 use_flags:
 - test
 version: 0.16.7

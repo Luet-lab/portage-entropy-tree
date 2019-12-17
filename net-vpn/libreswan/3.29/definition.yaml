@@ -1,3 +1,145 @@
 category: net-vpn
+conflicts:
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: openswan
+  
+  version: ""
+- 
+  category: net-vpn
+  description: ""
+  license: ""
+  name: strongswan
+  
+  version: ""
+description: IPsec implementation for Linux, fork of Openswan
+license: GPL-2 BSD-4 RSA DES
 name: libreswan
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gmp
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libevent
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nspr
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nss
+  
+  version: "3.42"
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-ipsec
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: ldns
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libseccomp
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: iproute2
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap-ng
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
+  
+  version: ""
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: unbound
+  
+  version: 1.9.1-r1
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nss[utils(+)]
+  
+  version: ""
+uri:
+- https://download.libreswan.org/libreswan-3.29.tar.gz
+use_flags:
+- caps
+- curl
+- dnssec
+- ldap
+- pam
+- seccomp
+- selinux
+- systemd
+- test
 version: "3.29"

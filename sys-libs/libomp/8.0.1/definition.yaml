@@ -1,3 +1,44 @@
 category: sys-libs
+conflicts: []
+description: OpenMP runtime library for LLVM/clang compiler
+license: '|| ( UoI-NCSA MIT ) MIT LLVM-Grant'
 name: libomp
+requires:
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: hwloc
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libelf
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libffi
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: nvidia-cuda-toolkit
+  
+  version: ""
+uri:
+- https://github.com/llvm/llvm-project/releases/download/llvmorg-8.0.1/openmp-8.0.1.src.tar.xz
+use_flags:
+- cuda
+- hwloc
+- kernel_linux
+- offload
+- ompt
+- test
 version: 8.0.1

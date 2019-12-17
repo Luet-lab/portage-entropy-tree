@@ -1,3 +1,37 @@
 category: dev-util
+conflicts: []
+description: Official Vulkan Tools and Utilities for Windows, Linux, Android, and
+  MacOS
+license: Apache-2.0
 name: vulkan-tools
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: wayland
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXrandr
+  
+  version: ""
+uri:
+- https://github.com/KhronosGroup/Vulkan-Tools/archive/2abb69904b9ad017d39d3da1e7fc3dec1a584cd8.tar.gz
+  -> vulkan-tools-1.1.106.tar.gz
+use_flags:
+- +cube
+- +vulkaninfo
+- +X
+- wayland
 version: 1.1.106-r1

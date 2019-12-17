@@ -1,3 +1,78 @@
 category: net-analyzer
+conflicts:
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: nagios-core
+  
+  version: ""
+description: Nagios Fork - Check daemon, CGIs, docs, IDOutils
+license: GPL-2
 name: icinga
+requires:
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: perl
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: mailx
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gd
+  
+  version: ""
+- 
+  category: www-servers
+  description: ""
+  license: ""
+  name: lighttpd
+  
+  version: ""
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: monitoring-plugins
+  
+  version: ""
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: nagios-plugins
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: libdbi-drivers[mysql?,postgres?]
+  
+  version: ""
+uri:
+- https://github.com/icinga/icinga-core/archive/v1.14.2/icinga-1.14.2.tar.gz
+use_flags:
+- +apache2
+- contrib
+- eventhandler
+- +idoutils
+- lighttpd
+- +mysql
+- perl
+- +plugins
+- postgres
+- ssl
+- +vim-syntax
+- +web
 version: 1.14.2

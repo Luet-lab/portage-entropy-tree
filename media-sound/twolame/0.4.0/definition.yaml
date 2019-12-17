@@ -1,3 +1,20 @@
 category: media-sound
+conflicts: []
+description: An optimised MPEG Audio Layer 2 (MP2) encoder
+license: GPL-2
 name: twolame
+requires:
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libsndfile
+  
+  version: 1.0.25
+uri:
+- mirror://sourceforge/twolame/twolame-0.4.0.tar.gz
+use_flags:
+- +sndfile
+- static-libs
+- test
 version: 0.4.0

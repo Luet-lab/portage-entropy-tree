@@ -1,3 +1,58 @@
 category: sys-cluster
+conflicts:
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: mpich
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: openmpi
+  
+  version: ""
+description: A high performance and portable MPI implementation
+license: mpich2
 name: mpich2
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libaio
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libnsl
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: hwloc
+  
+  version: ""
+- 
+  category: net-fs
+  description: ""
+  license: ""
+  name: nfs-utils
+  
+  version: ""
+uri:
+- http://www.mcs.anl.gov/research/projects/mpich2/downloads/tarballs/1.5/mpich2-1.5.tar.gz
+use_flags:
+- +cxx
+- doc
+- fortran
+- mpi-threads
+- romio
+- threads
 version: "1.5"

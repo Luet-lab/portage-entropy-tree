@@ -1,3 +1,63 @@
 category: sys-cluster
+conflicts:
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: firebird
+  
+  version: ""
+description: A scalable distributed monitoring system for clusters and grids
+license: BSD
 name: ganglia
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpcre
+  
+  version: ""
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: rrdtool
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: confuse
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: expat
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: apr
+  
+  version: "1.0"
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libnsl
+  
+  version: ""
+uri:
+- mirror://sourceforge/ganglia/ganglia-3.7.1.tar.gz
+use_flags:
+- minimal
+- pcre
+- python
+- examples
 version: 3.7.1-r1

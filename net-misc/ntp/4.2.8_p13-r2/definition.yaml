@@ -1,3 +1,116 @@
 category: net-misc
+conflicts:
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: ntpsec
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: openntpd
+  
+  version: ""
+description: Network Time Protocol suite/programs
+license: HPND BSD ISC
 name: ntp
+requires:
+- 
+  category: app-vim
+  description: ""
+  license: ""
+  name: ntp-syntax
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: "4.1"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: pps-tools
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: ntp
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-ntp
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: ""
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: avahi
+  
+  version: ""
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: net-snmp
+  
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: ntp
+  
+  version: ""
+uri:
+- http://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8.tar.gz
+- https://dev.gentoo.org/~polynomial-c/ntp-4.2.8-manpages.tar.xz
+use_flags:
+- caps
+- debug
+- ipv6
+- libressl
+- openntpd
+- parse-clocks
+- readline
+- samba
+- selinux
+- snmp
+- ssl
+- +threads
+- vim-syntax
+- zeroconf
 version: 4.2.8_p13-r2

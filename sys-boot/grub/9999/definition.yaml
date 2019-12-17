@@ -1,3 +1,127 @@
 category: sys-boot
+conflicts:
+- 
+  category: sys-boot
+  description: ""
+  license: ""
+  name: grub-static
+  
+  version: ""
+- 
+  category: sys-boot
+  description: ""
+  license: ""
+  name: grub
+  
+  version: ""
+description: GNU GRUB boot loader
+license: GPL-3 fonts? ( GPL-2-with-font-exception ) themes? ( BitstreamVera )
 name: grub
+requires:
+- 
+  category: sys-boot
+  description: ""
+  license: ""
+  name: efibootmgr
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: ibm-powerpc-utils
+  
+  version: 1.3.5
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: 5.2-r5
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libsdl
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lvm2
+  
+  version: 2.02.45
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: zfs
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: fuse
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
+  
+  version: ""
+- 
+  category: app-emulation
+  description: ""
+  license: ""
+  name: xen-tools
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: xz-utils
+  
+  version: ""
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: gettext
+  
+  version: ""
+uri:
+- 'mirror://gnu/unifont/unifont-12.1.02/unifont-12.1.02.pcf.gz '
+- 'mirror://sourceforge/dejavu/dejavu-sans-ttf-2.37.zip '
+use_flags:
+- device-mapper
+- doc
+- efiemu
+- +fonts
+- mount
+- nls
+- sdl
+- test
+- +themes
+- truetype
+- libzfs
+- coreboot
+- efi-32
+- efi-64
+- emu
+- ieee1275
+- loongson
+- multiboot
+- qemu
+- qemu-mips
+- pc
+- uboot
+- xen
+- xen-32
+- xen-pvh
 version: "9999"

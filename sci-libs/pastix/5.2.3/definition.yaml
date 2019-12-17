@@ -1,3 +1,44 @@
 category: sci-libs
+conflicts: []
+description: Parallel solver for very large sparse linear systems
+license: CeCILL-C
 name: pastix
+requires:
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: hwloc
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: blas
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: mpi
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: starpu
+  
+  version: ""
+uri:
+- https://gforge.inria.fr/frs/download.php/latestfile/218/pastix_5.2.3.tar.bz2
+use_flags:
+- doc
+- int64
+- mpi
+- +smp
+- starpu
+- static-libs
 version: 5.2.3

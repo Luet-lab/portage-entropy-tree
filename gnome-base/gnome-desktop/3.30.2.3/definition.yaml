@@ -1,3 +1,98 @@
 category: gnome-base
+conflicts:
+- 
+  category: <gnome-base
+  description: ""
+  license: ""
+  name: gnome-desktop
+  
+  version: 2.32.1-r1
+description: Library with common API for various GNOME modules
+license: GPL-2+ FDL-1.1+ LGPL-2+
 name: gnome-desktop
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libseccomp
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: hwids
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libudev
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.53.0
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: xkeyboard-config
+  
+  version: ""
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gsettings-desktop-schemas
+  
+  version: 3.27.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gobject-introspection
+  
+  version: 0.9.7
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: bubblewrap
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: iso-codes
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo
+  
+  version: ""
+uri:
+- https://dev.gentoo.org/~leio/distfiles/gnome-desktop-3.30.2.3-patchset.tar.xz
+use_flags:
+- debug
+- +introspection
+- seccomp
+- udev
 version: 3.30.2.3

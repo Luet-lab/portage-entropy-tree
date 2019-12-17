@@ -1,3 +1,71 @@
 category: app-admin
+conflicts: []
+description: A userspace logging daemon for netfilter/iptables related logging
+license: GPL-2
 name: ulogd
+requires:
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libpcap
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: postgresql
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-ulogd
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libnetfilter_conntrack
+  
+  version: 1.0.2
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libnetfilter_log
+  
+  version: 1.0.0
+uri:
+- https://www.netfilter.org/projects/ulogd/files/ulogd-2.0.7.tar.bz2
+use_flags:
+- dbi
+- doc
+- json
+- mysql
+- nfacct
+- +nfct
+- +nflog
+- pcap
+- postgres
+- selinux
+- sqlite
+- ulog
 version: 2.0.7-r1

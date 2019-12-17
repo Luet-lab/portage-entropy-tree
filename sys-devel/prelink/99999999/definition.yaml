@@ -1,3 +1,54 @@
 category: sys-devel
+conflicts:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libelf
+  
+  version: ""
+description: Modifies ELFs to avoid runtime symbol resolutions resulting in faster
+  load times
+license: GPL-2
 name: prelink
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux[static-libs(+)]
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: binutils-libs
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: glibc
+  
+  version: "2.8"
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: binutils
+  
+  version: "2.18"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: elfutils-0.100[static-libs(+)]
+  
+  version: ""
+uri: []
+use_flags:
+- doc
+- selinux
 version: "99999999"

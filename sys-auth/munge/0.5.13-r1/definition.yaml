@@ -1,3 +1,41 @@
 category: sys-auth
+conflicts: []
+description: An authentication service for creating and validating credentials
+license: GPL-3
 name: munge
+requires:
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: bzip2
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgcrypt
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+uri:
+- https://github.com/dun/munge/releases/download/munge-0.5.13/munge-0.5.13.tar.xz
+use_flags:
+- debug
+- gcrypt
+- static-libs
 version: 0.5.13-r1

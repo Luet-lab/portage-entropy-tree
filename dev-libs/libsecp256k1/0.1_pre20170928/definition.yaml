@@ -1,3 +1,27 @@
 category: dev-libs
+conflicts: []
+description: Optimized C library for EC operations on curve secp256k1
+license: MIT
 name: libsecp256k1
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gmp
+  
+  version: ""
+uri:
+- https://github.com/bitcoin-core/secp256k1/archive/7a78f60598a6aeb635ef227ead50fb44a209c363.tar.gz
+  -> libsecp256k1-v0.1.tgz
+use_flags:
+- +asm
+- ecdh
+- endomorphism
+- experimental
+- gmp
+- java
+- +recovery
+- test
+- test-openssl
 version: 0.1_pre20170928

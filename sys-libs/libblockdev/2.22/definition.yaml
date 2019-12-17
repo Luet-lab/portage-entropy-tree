@@ -1,67 +1,95 @@
 category: sys-libs
 conflicts: []
+description: A library for manipulating block devices
+license: LGPL-2+
 name: libblockdev
 requires:
 - 
-  category: sys-block
-  name: parted
-  
-  version: "3.1"
-- 
   category: sys-fs
-  name: lvm2
-  
-  version: ""
-- 
-  category: sys-fs
+  description: ""
+  license: ""
   name: dmraid
   
   version: ""
 - 
-  category: virtual
-  name: udev
-  
-  version: ""
-- 
   category: dev-libs
-  name: libbytesize
+  description: ""
+  license: ""
+  name: libyaml
   
   version: ""
 - 
   category: sys-apps
-  name: kmod
+  description: ""
+  license: ""
+  name: util-linux
   
-  version: "19"
+  version: "2.27"
 - 
   category: dev-libs
+  description: ""
+  license: ""
   name: nss
   
   version: 3.18.0
 - 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: cryptsetup
+  
+  version: 1.6.7
+- 
+  category: sys-block
+  description: ""
+  license: ""
+  name: parted
+  
+  version: "3.1"
+- 
   category: dev-libs
+  description: ""
+  license: ""
   name: volume_key
   
   version: ""
 - 
   category: sys-fs
-  name: cryptsetup
+  description: ""
+  license: ""
+  name: lvm2
   
-  version: 1.6.7
+  version: ""
 - 
-  category: dev-libs
-  name: libyaml
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
   
   version: ""
 - 
   category: dev-libs
+  description: ""
+  license: ""
   name: glib
   
   version: 2.42.2
 - 
-  category: sys-apps
-  name: util-linux
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libbytesize
   
-  version: "2.27"
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: kmod
+  
+  version: "19"
+uri:
+- https://github.com/storaged-project/libblockdev/releases/download/2.22-1/libblockdev-2.22.tar.gz
 use_flags:
 - bcache
 - +cryptsetup

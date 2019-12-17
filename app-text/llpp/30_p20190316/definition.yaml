@@ -1,3 +1,76 @@
 category: app-text
+conflicts: []
+description: Graphical PDF viewer which aims to superficially resemble less(1)
+license: public-domain
 name: llpp
+requires:
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: jbig2dec
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib[static-libs=]
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jpeg
+  
+  version: ""
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: xsel
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: mupdf
+  
+  version: 1.15.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: openjpeg
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11[static-libs=]
+  
+  version: ""
+uri:
+- https://github.com/moosotc/llpp/archive/1f3ae0843d5877a0e599d8411d433bd9b0078157.tar.gz
+  -> llpp-30.tar.gz
+use_flags:
+- +ocamlopt
+- static-libs
 version: 30_p20190316

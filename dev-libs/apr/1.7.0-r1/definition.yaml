@@ -1,3 +1,37 @@
 category: dev-libs
+conflicts: []
+description: Apache Portable Runtime Library
+license: Apache-2.0
 name: apr
+requires:
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: "2.16"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: "2.18"
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-base-policy
+  
+  version: ""
+uri:
+- mirror://apache/apr/apr-1.7.0.tar.bz2
+use_flags:
+- doc
+- elibc_FreeBSD
+- older-kernels-compatibility
+- selinux
+- static-libs
+- +urandom
 version: 1.7.0-r1

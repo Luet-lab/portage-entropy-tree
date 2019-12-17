@@ -1,3 +1,41 @@
 category: app-crypt
+conflicts: []
+description: An open-source TCG Software Stack (TSS) v1.1 implementation
+license: CPL-1.0 GPL-2
 name: trousers
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 0.9.7
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-tcsd
+  
+  version: ""
+uri:
+- mirror://sourceforge/trousers/trousers/trousers-0.3.14.tar.gz
+use_flags:
+- doc
+- libressl
+- selinux
 version: 0.3.14-r1

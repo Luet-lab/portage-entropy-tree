@@ -1,3 +1,44 @@
 category: sci-libs
+conflicts: []
+description: MUltifrontal Massively Parallel sparse direct matrix Solver
+license: public-domain
 name: mumps
+requires:
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: blas
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: parmetis
+  
+  version: "4"
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: scotch-6[mpi=]
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: scalapack
+  
+  version: ""
+uri:
+- http://mumps.enseeiht.fr/MUMPS_5.1.2.tar.gz
+use_flags:
+- doc
+- examples
+- metis
+- mpi
+- +scotch
+- static-libs
 version: 5.1.2

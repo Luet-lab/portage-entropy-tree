@@ -1,3 +1,57 @@
 category: net-libs
+conflicts: []
+description: An implementation of the Interactice Connectivity Establishment standard
+  (ICE)
+license: '|| ( MPL-1.1 LGPL-2.1 )'
 name: libnice
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.48"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gobject-introspection
+  
+  version: 1.30.0
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: 2.12.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gupnp-igd
+  
+  version: 0.2.4
+uri:
+- https://nice.freedesktop.org/releases/libnice-0.1.15.tar.gz
+use_flags:
+- +gnutls
+- +introspection
+- libressl
+- +upnp
 version: 0.1.15

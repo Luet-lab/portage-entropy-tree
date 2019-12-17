@@ -1,3 +1,110 @@
 category: mail-filter
+conflicts: []
+description: A milter providing DKIM signing and verification
+license: BSD GPL-2 Sendmail-Open-Source
 name: opendkim
+requires:
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: lua
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: lmdb
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libmemcached
+  
+  version: ""
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: dnssec-root
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: ldns
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-dkim
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: db
+  
+  version: "3.2"
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: opendbx
+  
+  version: 1.4.0
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: cyrus-sasl
+  
+  version: ""
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: unbound
+  
+  version: 1.4.1
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: psmisc
+  
+  version: ""
+uri:
+- mirror://sourceforge/opendkim/opendkim-2.10.3.tar.gz
+use_flags:
+- berkdb
+- ldap
+- libressl
+- lmdb
+- lua
+- memcached
+- opendbx
+- poll
+- sasl
+- selinux
+- +ssl
+- static-libs
+- stats
+- query_cache
+- test
+- unbound
 version: 2.10.3-r16

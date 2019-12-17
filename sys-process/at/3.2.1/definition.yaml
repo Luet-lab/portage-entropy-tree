@@ -1,3 +1,34 @@
 category: sys-process
+conflicts: []
+description: Queues jobs for later execution
+license: GPL-2
 name: at
+requires:
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: mta
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: logger
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-at
+  
+  version: ""
+uri:
+- http://software.calhariz.com/at/at_3.2.1.orig.tar.gz
+- mirror://debian/pool/main/a/at/at_3.2.1.orig.tar.gz
+use_flags:
+- pam
+- selinux
 version: 3.2.1

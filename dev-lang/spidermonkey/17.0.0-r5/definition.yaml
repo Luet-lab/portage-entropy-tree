@@ -1,3 +1,44 @@
 category: dev-lang
+conflicts: []
+description: Stand-alone JavaScript C library
+license: NPL-1.1
 name: spidermonkey
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nspr
+  
+  version: 4.9.4
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libffi
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: 1.1.4
+uri:
+- http://archive.mozilla.org/pub/js/mozjs17.0.0.tar.gz
+- https://dev.gentoo.org/~axs/distfiles/spidermonkey-slot17-patches-01.tar.xz
+use_flags:
+- debug
+- jit
+- minimal
+- static-libs
+- test
 version: 17.0.0-r5

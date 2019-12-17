@@ -1,3 +1,27 @@
 category: sys-apps
+conflicts:
+- 
+  category: <sys-apps
+  description: ""
+  license: ""
+  name: openrc
+  
+  version: 0.11.8
+description: A simple entropy daemon using the HAVEGE algorithm
+license: GPL-3+
 name: haveged
+requires:
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-entropyd
+  
+  version: ""
+uri:
+- https://github.com/jirka-h/haveged/archive/v1.9.8c.tar.gz -> haveged-1.9.8c.tar.gz
+use_flags:
+- selinux
+- static-libs
+- threads
 version: 1.9.8c

@@ -1,3 +1,35 @@
 category: sys-apps
+conflicts: []
+description: GNU awk pattern-matching language
+license: GPL-2
 name: gawk
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gmp
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: mpfr
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
+uri:
+- mirror://gnu/gawk/gawk-5.0.1.tar.xz
+use_flags:
+- forced-sandbox
+- mpfr
+- nls
+- readline
 version: 5.0.1

@@ -1,3 +1,44 @@
 category: net-libs
+conflicts: []
+description: GLib binding for the D-Bus API provided by signond
+license: LGPL-2.1
 name: libsignon-glib
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: signond
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gobject-introspection
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pygobject
+  
+  version: ""
+uri:
+- https://gitlab.com/accounts-sso/libsignon-glib/-/archive/VERSION_2.1/libsignon-glib-VERSION_2.1.tar.gz
+  -> libsignon-glib-2.1.tar.gz
+use_flags:
+- debug
+- doc
+- +introspection
+- python
+- test
 version: "2.1"

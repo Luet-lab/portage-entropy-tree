@@ -1,3 +1,65 @@
 category: net-analyzer
+conflicts: []
+description: Nagios core - monitoring daemon, web GUI, and documentation
+license: GPL-2
 name: nagios-core
+requires:
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: mailx
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: perl
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: unzip
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gd
+  
+  version: ""
+- 
+  category: www-servers
+  description: ""
+  license: ""
+  name: lighttpd
+  
+  version: ""
+- 
+  category: app-vim
+  description: ""
+  license: ""
+  name: nagios-syntax
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libltdl
+  
+  version: ""
+uri:
+- mirror://sourceforge/nagios/nagios-4.4.5.tar.gz
+use_flags:
+- apache2
+- classicui
+- lighttpd
+- perl
+- +web
+- vim-syntax
 version: 4.4.5-r3

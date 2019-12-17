@@ -1,3 +1,66 @@
 category: net-misc
+conflicts: []
+description: MiniUPnP IGD Daemon
+license: BSD
 name: miniupnpd
+requires:
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libmnl
+  
+  version: ""
+- 
+  category: net-firewall
+  description: ""
+  license: ""
+  name: nftables
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libnftnl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gmp
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libnfnetlink
+  
+  version: ""
+uri:
+- http://miniupnp.free.fr/files/miniupnpd-2.1.20191006.tar.gz
+use_flags:
+- +leasefile
+- igd2
+- ipv6
+- nftables
+- pcp-peer
+- portinuse
+- strict
 version: 2.1.20191006

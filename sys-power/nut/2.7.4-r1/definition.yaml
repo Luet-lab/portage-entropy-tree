@@ -1,3 +1,156 @@
 category: sys-power
+conflicts: []
+description: Network-UPS Tools
+license: GPL-2
 name: nut
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: "1"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: tcp-wrappers
+  
+  version: ""
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: avahi
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libltdl
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: ""
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: net-snmp
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libusb
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: neon
+  
+  version: 0.25.0
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: freeipmi
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libnsl
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-nut
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gd
+  
+  version: "2"
+uri:
+- http://random.networkupstools.org/source/2.7/nut-2.7.4.tar.gz
+- http://www.networkupstools.org/source/2.7/nut-2.7.4.tar.gz
+use_flags:
+- cgi
+- ipmi
+- snmp
+- +usb
+- selinux
+- ssl
+- tcpd
+- xml
+- zeroconf
+- ""
+- +ups_drivers_al175
+- +ups_drivers_bcmxcp
+- +ups_drivers_belkin
+- +ups_drivers_belkinunv
+- +ups_drivers_bestfcom
+- +ups_drivers_bestfortress
+- +ups_drivers_bestuferrups
+- +ups_drivers_bestups
+- +ups_drivers_dummy-ups
+- +ups_drivers_etapro
+- +ups_drivers_everups
+- +ups_drivers_gamatronic
+- +ups_drivers_genericups
+- +ups_drivers_isbmex
+- +ups_drivers_liebert
+- +ups_drivers_liebert-esp2
+- +ups_drivers_masterguard
+- +ups_drivers_metasys
+- +ups_drivers_oldmge-shut
+- +ups_drivers_mge-utalk
+- +ups_drivers_microdowell
+- +ups_drivers_mge-shut
+- +ups_drivers_oneac
+- +ups_drivers_optiups
+- +ups_drivers_powercom
+- +ups_drivers_rhino
+- +ups_drivers_safenet
+- +ups_drivers_solis
+- +ups_drivers_tripplite
+- +ups_drivers_tripplitesu
+- +ups_drivers_upscode2
+- +ups_drivers_victronups
+- +ups_drivers_powerpanel
+- +ups_drivers_blazer_ser
+- +ups_drivers_clone
+- +ups_drivers_clone-outlet
+- +ups_drivers_ivtscd
+- +ups_drivers_apcsmart
+- +ups_drivers_apcsmart-old
+- +ups_drivers_apcupsd-ups
+- +ups_drivers_riello_ser
+- +ups_drivers_nutdrv_qx
+- +ups_drivers_usbhid-ups
+- +ups_drivers_bcmxcp_usb
+- +ups_drivers_tripplite_usb
+- +ups_drivers_blazer_usb
+- +ups_drivers_richcomm_usb
+- +ups_drivers_riello_usb
+- ups_drivers_netxml-ups
+- ups_drivers_snmp-ups
+- ups_drivers_nut-ipmipsu
 version: 2.7.4-r1

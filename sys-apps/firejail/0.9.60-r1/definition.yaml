@@ -1,12 +1,18 @@
 category: sys-apps
 conflicts: []
+description: Security sandbox for any type of processes
+license: GPL-2
 name: firejail
 requires:
 - 
   category: sys-libs
+  description: ""
+  license: ""
   name: libapparmor
   
   version: ""
+uri:
+- https://github.com/netblue30/firejail/archive/0.9.60.tar.gz -> firejail-0.9.60.tar.gz
 use_flags:
 - apparmor
 - +chroot

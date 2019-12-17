@@ -1,32 +1,47 @@
 category: sys-fs
 conflicts: []
+description: a read-only FUSE filesystem which transcodes FLAC audio files to MP3
+  when read
+license: GPL-3
 name: mp3fs
 requires:
 - 
-  category: media-libs
-  name: libid3tag
-  
-  version: ""
-- 
-  category: media-libs
-  name: flac
-  
-  version: ""
-- 
   category: media-sound
+  description: ""
+  license: ""
   name: lame
   
   version: ""
 - 
   category: media-libs
+  description: ""
+  license: ""
   name: libogg
   
   version: ""
 - 
   category: sys-fs
+  description: ""
+  license: ""
   name: fuse
   
   version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libid3tag
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: flac
+  
+  version: ""
+uri:
+- https://github.com/khenriks/mp3fs/releases/download/v0.91/mp3fs-0.91.tar.gz
 use_flags:
 - ""
 version: 0.91-r1

@@ -1,3 +1,39 @@
 category: net-libs
+conflicts: []
+description: A brokerless kernel
+license: LGPL-3
 name: zeromq
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libsodium
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: openpgm
+  
+  version: 5.2.122
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libunwind
+  
+  version: ""
+uri:
+- https://github.com/zeromq/libzmq/releases/download/v4.3.2/zeromq-4.3.2.tar.gz
+use_flags:
+- doc
+- drafts
+- pgm
+- +sodium
+- static-libs
+- test
+- unwind
+- elibc_Darwin
 version: 4.3.2

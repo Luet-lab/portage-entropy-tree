@@ -1,3 +1,28 @@
 category: sys-apps
+conflicts:
+- 
+  category: app-doc
+  description: ""
+  license: ""
+  name: ucspi-tcp-man
+  
+  version: ""
+description: Collection of tools for managing UNIX services
+license: public-domain
 name: ucspi-tcp
+requires:
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-ucspitcp
+  
+  version: ""
+uri:
+- https://cr.yp.to/ucspi-tcp/ucspi-tcp-0.88.tar.gz
+- http://smarden.org/pape/djb/manpages/ucspi-tcp-0.88-man.tar.gz
+use_flags:
+- ipv6
+- qmail-spp
+- selinux
 version: 0.88-r18

@@ -1,3 +1,40 @@
 category: sys-auth
+conflicts: []
+description: Library and tool for personalization of Yubico's YubiKey
+license: BSD-2
 name: ykpers
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: json-c
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: libyubikey
+  
+  version: "1.6"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libusb
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: consolekit
+  
+  version: ""
+uri:
+- https://github.com/Yubico/yubikey-personalization/archive/v1.20.0.tar.gz -> ykpers-1.20.0.tar.gz
+use_flags:
+- consolekit
+- static-libs
 version: 1.20.0

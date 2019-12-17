@@ -1,82 +1,116 @@
 category: gui-libs
 conflicts: []
+description: Pluggable, composable, unopinionated modules for building a Wayland compositor
+license: MIT
 name: wlroots
 requires:
 - 
+  category: media-libs
+  description: ""
+  license: ""
+  name: mesa
+  
+  version: ""
+- 
   category: virtual
+  description: ""
+  license: ""
   name: libudev
   
   version: ""
 - 
-  category: x11-libs
-  name: libxkbcommon
+  category: sys-auth
+  description: ""
+  license: ""
+  name: elogind
   
-  version: ""
-- 
-  category: x11-libs
-  name: pixman
-  
-  version: ""
-- 
-  category: x11-libs
-  name: xcb-util-image
-  
-  version: ""
-- 
-  category: x11-libs
-  name: xcb-util-wm
-  
-  version: ""
-- 
-  category: x11-libs
-  name: libxcb
-  
-  version: ""
-- 
-  category: x11-base
-  name: xorg-server
-  
-  version: ""
-- 
-  category: media-video
-  name: ffmpeg
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libinput
-  
-  version: 1.9.0
-- 
-  category: x11-libs
-  name: libdrm
-  
-  version: ""
+  version: "237"
 - 
   category: sys-apps
+  description: ""
+  license: ""
   name: systemd
   
   version: "237"
 - 
   category: dev-libs
+  description: ""
+  license: ""
+  name: libinput
+  
+  version: 1.9.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
   name: wayland
   
   version: 1.17.0
 - 
-  category: media-libs
-  name: mesa
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxkbcommon
   
   version: ""
 - 
-  category: sys-auth
-  name: elogind
+  category: x11-libs
+  description: ""
+  license: ""
+  name: xcb-util-wm
   
-  version: "237"
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libdrm
+  
+  version: ""
 - 
   category: net-misc
+  description: ""
+  license: ""
   name: freerdp
   
   version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxcb
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: xcb-util-image
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pixman
+  
+  version: ""
+- 
+  category: x11-base
+  description: ""
+  license: ""
+  name: xorg-server
+  
+  version: ""
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: ffmpeg
+  
+  version: ""
+uri:
+- https://github.com/swaywm/wlroots/archive/0.6.0.tar.gz -> wlroots-0.6.0.tar.gz
 use_flags:
 - elogind
 - icccm

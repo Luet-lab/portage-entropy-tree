@@ -1,3 +1,42 @@
 category: net-vpn
+conflicts: []
+description: Create tunnels over TCP/IP networks with shaping, encryption, and compression
+license: GPL-2
 name: vtun
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: lzo
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: net-proxy
+  description: ""
+  license: ""
+  name: dante
+  
+  version: ""
+uri:
+- mirror://sourceforge/vtun/vtun-3.0.3.tar.gz
+use_flags:
+- lzo
+- socks5
+- ssl
+- zlib
 version: 3.0.3

@@ -1,3 +1,59 @@
 category: net-misc
+conflicts: []
+description: NTP client and server programs
+license: GPL-2
 name: chrony
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libedit
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: 4.1-r4
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libseccomp
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-chronyd
+  
+  version: ""
+uri:
+- https://download.tuxfamily.org/chrony/chrony-3.3.tar.gz
+use_flags:
+- caps
+- +cmdmon
+- html
+- ipv6
+- libedit
+- +ntp
+- +phc
+- pps
+- readline
+- +refclock
+- +rtc
+- seccomp
+- selinux
+- +adns
 version: "3.3"

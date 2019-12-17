@@ -1,3 +1,33 @@
 category: net-analyzer
+conflicts: []
+description: An ethernet monitor program that keeps track of ethernet/IP address pairings
+license: BSD GPL-2
 name: arpwatch
+requires:
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libpcap
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-arpwatch
+  
+  version: ""
+uri:
+- ftp://ftp.ee.lbl.gov/arpwatch-.tar.gz
+- https://dev.gentoo.org/~jer/arpwatch-patchset-0.8.tar.xz
+use_flags:
+- selinux
 version: 2.1.15-r11

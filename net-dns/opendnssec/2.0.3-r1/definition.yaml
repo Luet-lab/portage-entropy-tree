@@ -1,3 +1,97 @@
 category: net-dns
+conflicts: []
+description: An open-source turn-key solution for DNSSEC
+license: BSD GPL-2
 name: opendnssec
+requires:
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: perl
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: ldns
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: opensc
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: softhsm
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxslt
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c
+  
+  version: ""
+- 
+  category: dev-perl
+  description: ""
+  license: ""
+  name: DBD-mysql
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: ""
+- 
+  category: dev-perl
+  description: ""
+  license: ""
+  name: DBD-SQLite
+  
+  version: ""
+uri:
+- http://www.opendnssec.org/files/source/opendnssec-2.0.3.tar.gz
+use_flags:
+- debug
+- doc
+- +mysql
+- readline
+- +signer
+- sqlite
+- test
+- +softhsm
+- opensc
+- external-hsm
 version: 2.0.3-r1

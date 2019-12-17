@@ -1,3 +1,26 @@
 category: sys-auth
+conflicts: []
+description: Create per-user private temporary directories during login
+license: BSD-2
 name: pam_mktemp
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: ""
+uri:
+- http://www.openwall.com/pam/modules/pam_mktemp/pam_mktemp-1.1.1.tar.gz
+use_flags:
+- selinux
+- +prevent-removal
 version: 1.1.1

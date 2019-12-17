@@ -1,3 +1,61 @@
 category: net-firewall
+conflicts: []
+description: Linux kernel (3.13+) firewall, NAT and packet mangling tools
+license: GPL-2
 name: nftables
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gmp
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: jansson
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libnftnl
+  
+  version: 1.1.5
+- 
+  category: net-firewall
+  description: ""
+  license: ""
+  name: iptables
+  
+  version: 1.6.1
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libmnl
+  
+  version: 1.0.3
+uri:
+- https://netfilter.org/projects/nftables/files/nftables-0.9.3.tar.bz2
+use_flags:
+- debug
+- +doc
+- +gmp
+- json
+- +modern-kernel
+- python
+- +readline
+- static-libs
+- xtables
 version: 0.9.3-r1

@@ -1,3 +1,27 @@
 category: gnustep-base
+conflicts: []
+description: GNUstep Objective-C runtime
+license: MIT
 name: libobjc2
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: boehm-gc
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcxx
+  
+  version: ""
+uri:
+- https://github.com/gnustep/libobjc2/archive/v1.8.tar.gz -> libobjc2-1.8.tar.gz
+use_flags:
+- boehm-gc
+- cxx
+- test
 version: "1.8"

@@ -1,3 +1,32 @@
 category: net-vpn
+conflicts: []
+description: Fortinet compatible VPN client
+license: GPL-3-with-openssl-exception openssl
 name: openfortivpn
+requires:
+- 
+  category: net-dialup
+  description: ""
+  license: ""
+  name: ppp
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+uri:
+- https://github.com/adrienverge/openfortivpn/archive/v1.11.0.tar.gz -> openfortivpn-1.11.0.tar.gz
+use_flags:
+- libressl
 version: 1.11.0

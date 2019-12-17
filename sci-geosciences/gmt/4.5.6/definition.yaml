@@ -1,3 +1,48 @@
 category: sci-geosciences
+conflicts:
+- 
+  category: sci-biology
+  description: ""
+  license: ""
+  name: probcons
+  
+  version: ""
+description: Powerful map generator
+license: GPL-2 gmttria? ( Artistic )
 name: gmt
+requires:
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: netcdf
+  
+  version: "4.1"
+- 
+  category: sci-mathematics
+  description: ""
+  license: ""
+  name: octave
+  
+  version: ""
+uri:
+- mirror://gmt/legacy/gmt-4.5.6-src.tar.bz2
+- mirror://gmt/legacy/gmt-4.5.6-share.tar.bz2
+- mirror://gmt/legacy/gshhs-2.1.1-coast.tar.bz2
+- mirror://gmt/legacy/gmt-4.5.6-suppl.tar.bz2
+- 'mirror://gmt/legacy/gmt-4.5.6-doc.tar.bz2 '
+- 'mirror://gmt/legacy/gshhs-2.1.1-full.tar.bz2 '
+- 'mirror://gmt/legacy/gshhs-2.1.1-high.tar.bz2 '
+- 'mirror://gmt/legacy/gmt-4.5.6-triangle.tar.bz2 '
+use_flags:
+- doc
+- debug
+- gmtfull
+- gmthigh
+- gmttria
+- +metric
+- mex
+- +netcdf
+- octave
+- postscript
 version: 4.5.6

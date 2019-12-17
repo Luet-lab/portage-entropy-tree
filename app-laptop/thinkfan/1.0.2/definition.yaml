@@ -1,3 +1,34 @@
 category: app-laptop
+conflicts: []
+description: simple fan control program for thinkpads
+license: GPL-3
 name: thinkfan
+requires:
+- 
+  category: x11-drivers
+  description: ""
+  license: ""
+  name: nvidia-drivers
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libatasmart
+  
+  version: ""
+- 
+  category: dev-cpp
+  description: ""
+  license: ""
+  name: yaml-cpp
+  
+  version: ""
+uri:
+- https://github.com/vmatare/thinkfan/archive/1.0.2.tar.gz -> thinkfan-1.0.2.tar.gz
+use_flags:
+- atasmart
+- nvidia
+- +yaml
 version: 1.0.2

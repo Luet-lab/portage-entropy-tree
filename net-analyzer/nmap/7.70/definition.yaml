@@ -1,3 +1,99 @@
 category: net-analyzer
+conflicts: []
+description: A utility for network discovery and security auditing
+license: GPL-2
 name: nmap
+requires:
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libpcap
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libintl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: apr
+  
+  version: ""
+- 
+  category: dev-vcs
+  description: ""
+  license: ""
+  name: subversion
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: lua
+  
+  version: "5.2"
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pygtk
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: liblinear
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpcre
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libssh2
+  
+  version: ""
+uri:
+- https://nmap.org/dist/nmap-7.70.tar.bz2
+- https://dev.gentoo.org/~jer/nmap-logo-64.png
+use_flags:
+- ipv6
+- libressl
+- libssh2
+- ncat
+- ndiff
+- nls
+- nmap-update
+- nping
+- +nse
+- ssl
+- "system-lua\n\tzenmap"
 version: "7.70"

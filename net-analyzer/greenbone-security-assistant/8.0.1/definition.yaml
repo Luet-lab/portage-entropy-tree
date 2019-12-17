@@ -1,3 +1,69 @@
 category: net-analyzer
+conflicts:
+- 
+  category: ~net-analyzer
+  description: ""
+  license: ""
+  name: greenbone-security-assistant
+  
+  version: 7.0.3
+description: Greenbone Security Assistant
+license: GPL-2+
 name: greenbone-security-assistant
+requires:
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libmicrohttpd
+  
+  version: ""
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: openvas-scanner
+  
+  version: 6.0.1
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: gvmd
+  
+  version: 8.0.1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgcrypt
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxslt
+  
+  version: ""
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: gvm-libs
+  
+  version: 10.0.1
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: ""
+uri:
+- https://github.com/greenbone/gsa/archive/v8.0.1.tar.gz -> greenbone-security-assistant-8.0.1.tar.gz
+- https://github.com/greenbone/gsa/releases/download/v8.0.1/gsa-node-modules-8.0.1.tar.gz
+  -> greenbone-security-assistant-8.0.1-node_modules.tar.gz
+use_flags:
+- extras
 version: 8.0.1

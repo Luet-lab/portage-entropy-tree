@@ -1,3 +1,52 @@
 category: sys-cluster
+conflicts: []
+description: Lustre is a parallel distributed file system
+license: GPL-2
 name: lustre
+requires:
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: awk
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libyaml
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: zfs-kmod
+  
+  version: "0.8"
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: zfs
+  
+  version: "0.8"
+uri:
+- https://dev.gentoo.org/~alexxy/distfiles/lustre-2.13.0.tar.gz
+use_flags:
+- +client
+- +utils
+- +modules
+- +dlc
+- server
+- readline
+- tests
 version: 2.13.0

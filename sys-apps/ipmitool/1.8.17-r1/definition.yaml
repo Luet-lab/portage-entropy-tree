@@ -1,3 +1,35 @@
 category: sys-apps
+conflicts: []
+description: Utility for controlling IPMI enabled devices.
+license: BSD
 name: ipmitool
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
+uri:
+- mirror://sourceforge/ipmitool/ipmitool-1.8.17.tar.gz
+- https://launchpad.net/ubuntu/+archive/primary/+files/ipmitool_1.8.17-1.debian.tar.xz
+use_flags:
+- libressl
+- openipmi
+- static
 version: 1.8.17-r1

@@ -1,12 +1,21 @@
 category: dev-libs
 conflicts: []
+description: A minimal libc subset for use with initramfs
+license: '|| ( GPL-2 LGPL-2 )'
 name: klibc
 requires:
 - 
   category: dev-lang
+  description: ""
+  license: ""
   name: perl
   
   version: ""
+uri:
+- https://www.kernel.org/pub/linux/libs/klibc/2.0/klibc-2.0.4.tar.xz
+- mirror://debian/pool/main/k/klibc/klibc_2.0.4-9.debian.tar.xz
+- https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.14.tar.xz
+- https://www.kernel.org/pub/linux/kernel/v4.x/testing/linux-4.14.tar.xz
 use_flags:
 - debug
 - test

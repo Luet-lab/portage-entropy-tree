@@ -1,3 +1,72 @@
 category: dev-haskell
+conflicts: []
+description: Supports using pandoc with citeproc
+license: BSD
 name: pandoc-citeproc
+requires:
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: ghc
+  
+  version: 7.4.1
+- 
+  category: dev-haskell
+  description: ""
+  license: ""
+  name: hs-bibutils
+  
+  version: "0.3"
+- 
+  category: dev-haskell
+  description: ""
+  license: ""
+  name: hexpat
+  
+  version: 0.20.2
+- 
+  category: dev-haskell
+  description: ""
+  license: ""
+  name: xml
+  
+  version: ""
+- 
+  category: dev-haskell
+  description: ""
+  license: ""
+  name: http
+  
+  version: 4000.0.9
+- 
+  category: dev-haskell
+  description: ""
+  license: ""
+  name: text-icu
+  
+  version: ""
+- 
+  category: dev-haskell
+  description: ""
+  license: ""
+  name: rfc5051
+  
+  version: ""
+- 
+  category: dev-haskell
+  description: ""
+  license: ""
+  name: vector
+  
+  version: "0.11"
+uri:
+- https://hackage.haskell.org/package/pandoc-citeproc-0.3.1/pandoc-citeproc-0.3.1.tar.gz
+use_flags:
+- +bibutils
+- embed-data-files
+- +hexpat
+- +network
+- test-citeproc
+- unicode_collation
 version: 0.3.1

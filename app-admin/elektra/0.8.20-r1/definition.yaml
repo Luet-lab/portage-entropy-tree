@@ -1,3 +1,80 @@
 category: app-admin
+conflicts: []
+description: Framework to store config parameters in hierarchical key-value pairs
+license: BSD
 name: elektra
+requires:
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: 1.6.18-r1
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libiconv
+  
+  version: 0-r1
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: coreutils
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: yajl
+  
+  version: 1.0.11-r1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libltdl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: 2.9.1-r4
+- 
+  category: app-admin
+  description: ""
+  license: ""
+  name: augeas
+  
+  version: ""
+uri:
+- https://www.libelektra.org/ftp/elektra/releases/elektra-0.8.20.tar.gz
+use_flags:
+- dbus
+- doc
+- static-libs
+- test
+- augeas
+- iconv
+- ini
+- simpleini
+- syslog
+- systemd
+- tcl
+- +uname
+- xml
+- yajl
 version: 0.8.20-r1

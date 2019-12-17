@@ -1,3 +1,88 @@
 category: net-irc
+conflicts: []
+description: Anope IRC Services
+license: GPL-2
 name: anope
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgcrypt
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: ""
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: gettext
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c
+  
+  version: ""
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpcre
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: tre
+  
+  version: ""
+uri:
+- https://github.com/anope/anope/releases/download/2.0.6/anope-2.0.6-source.tar.gz
+use_flags:
+- chanstats
+- cs-fantasy-stats
+- cs-fantasy-top
+- gnutls
+- irc2sql
+- "ldap\n\tldap-auth"
+- ldap-oper
+- mysql
+- pcre
+- posix
+- sql-auth
+- sql-log
+- "sql-oper\n\tsqlite"
+- ssl
+- tre
 version: 2.0.6

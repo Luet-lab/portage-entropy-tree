@@ -1,3 +1,64 @@
 category: sci-libs
+conflicts: []
+description: Kernel module and driver library for GPIB (IEEE 488.2) hardware
+license: GPL-2
 name: linux-gpib
+requires:
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: php
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: fxload
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: tcl
+  
+  version: ""
+- 
+  category: dev-scheme
+  description: ""
+  license: ""
+  name: guile
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: perl
+  
+  version: ""
+uri:
+- mirror://sourceforge/linux-gpib/linux-gpib-4.1.0.tar.gz
+- 'https://linux-gpib.sourceforge.io/firmware/gpib_firmware-2006-11-12.tar.gz '
+use_flags:
+- isa
+- pcmcia
+- static
+- debug
+- guile
+- perl
+- php
+- python
+- tcl
+- doc
+- firmware
 version: 4.1.0

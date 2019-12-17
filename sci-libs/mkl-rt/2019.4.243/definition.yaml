@@ -1,3 +1,32 @@
 category: sci-libs
+conflicts:
+- 
+  category: app-eselect
+  description: ""
+  license: ""
+  name: eselect-cblas
+  
+  version: ""
+description: Intel Math Kernel Library (Runtime)
+license: ISSL
 name: mkl-rt
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libomp
+  
+  version: ""
+- 
+  category: app-eselect
+  description: ""
+  license: ""
+  name: eselect-blas
+  
+  version: "0.2"
+uri:
+- https://repo.continuum.io/pkgs/main/linux-64/mkl-2019.4-243.tar.bz2 -> mkl-rt-2019.4.243.tar.bz2
+use_flags:
+- eselect-ldso
 version: 2019.4.243

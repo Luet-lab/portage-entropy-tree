@@ -1,3 +1,102 @@
 category: app-emulation
+conflicts: []
+description: The core functions you need to create Docker images and run Docker containers
+license: Apache-2.0
 name: docker
+requires:
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: 3.7.9
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libapparmor
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: procps
+  
+  version: ""
+- 
+  category: dev-vcs
+  description: ""
+  license: ""
+  name: git
+  
+  version: "1.7"
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: xz-utils
+  
+  version: "4.9"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libltdl
+  
+  version: ""
+- 
+  category: app-emulation
+  description: ""
+  license: ""
+  name: containerd
+  
+  version: 1.2.10
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lvm2
+  
+  version: 2.02.89
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libseccomp
+  
+  version: 2.2.1
+- 
+  category: net-firewall
+  description: ""
+  license: ""
+  name: iptables
+  
+  version: "1.4"
+- 
+  category: app-emulation
+  description: ""
+  license: ""
+  name: docker-proxy
+  
+  version: 0.8.0_p20191011
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: tini
+  
+  version: 0.18.0
+uri:
+- https://github.com/docker/docker-ce/archive/v19.03.5.tar.gz -> docker-19.03.5.tar.gz
+use_flags:
+- apparmor
+- aufs
+- btrfs
+- +container-init
+- device-mapper
+- hardened
+- +overlay
+- seccomp
 version: 19.03.5

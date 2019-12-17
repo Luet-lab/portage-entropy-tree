@@ -1,3 +1,27 @@
 category: mail-filter
+conflicts: []
+description: 'Open source DMARC implementation '
+license: BSD
 name: opendmarc
+requires:
+- 
+  category: dev-perl
+  description: ""
+  license: ""
+  name: DBI
+  
+  version: ""
+- 
+  category: mail-filter
+  description: ""
+  license: ""
+  name: libspf2
+  
+  version: ""
+uri:
+- mirror://sourceforge/opendmarc/opendmarc-1.3.2.tar.gz
+use_flags:
+- spf
+- +reports
+- static-libs
 version: 1.3.2-r3

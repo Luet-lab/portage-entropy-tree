@@ -1,22 +1,32 @@
 category: media-libs
 conflicts: []
+description: Reference implementation of the X Color Management specification
+license: MIT
 name: libXcm
 requires:
 - 
   category: x11-libs
+  description: ""
+  license: ""
+  name: libXmu
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
   name: libX11
   
   version: ""
 - 
   category: x11-libs
+  description: ""
+  license: ""
   name: libXfixes
   
   version: ""
-- 
-  category: x11-libs
-  name: libXmu
-  
-  version: ""
+uri:
+- https://github.com/oyranos-cms/libxcm/archive/0.5.4.tar.gz -> libXcm-0.5.4.tar.gz
 use_flags:
 - static-libs
 - X

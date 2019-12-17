@@ -1,3 +1,49 @@
 category: net-libs
+conflicts: []
+description: Encrypted P2P, messaging, and audio/video calling platform
+license: GPL-3+
 name: tox
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libconfig
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libsodium
+  
+  version: 0.6.1
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libvpx
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: opus
+  
+  version: ""
+uri:
+- https://github.com/TokTok/c-toxcore/archive/v0.2.9.tar.gz -> c-toxcore-0.2.9.tar.gz
+use_flags:
+- +av
+- daemon
+- dht-node
+- ipv6
+- log-debug
+- +log-error
+- log-info
+- log-trace
+- log-warn
+- static-libs
+- test
 version: 0.2.9-r1

@@ -1,3 +1,28 @@
 category: sys-apps
+conflicts: []
+description: GNU utilities for finding files
+license: GPL-3+
 name: findutils
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libintl
+  
+  version: ""
+uri:
+- mirror://gnu/findutils/findutils-4.7.0.tar.xz
+use_flags:
+- nls
+- selinux
+- static
+- test
 version: 4.7.0

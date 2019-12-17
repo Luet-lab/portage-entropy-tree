@@ -1,3 +1,98 @@
 category: sys-apps
+conflicts: []
+description: KMS/DRM based virtual Console Emulator
+license: MIT LGPL-2.1 BSD-2
 name: kmscon
+requires:
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pango
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pixman
+  
+  version: ""
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: xkeyboard-config
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: "172"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxkbcommon
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: mesa
+  
+  version: 8.0.3
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libtsm
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: mesa[X(+)]
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libdrm
+  
+  version: ""
+uri:
+- https://www.freedesktop.org/software/kmscon/releases/kmscon-8.tar.xz
+use_flags:
+- debug
+- doc
+- +drm
+- +fbdev
+- +gles2
+- +optimizations
+- +pango
+- pixman
+- static-libs
+- systemd
+- +unicode
 version: 8-r1

@@ -1,3 +1,28 @@
 category: sys-cluster
+conflicts: []
+description: Single Node Kubernetes Cluster
+license: Apache-2.0 BSD BSD-2 CC-BY-4.0 CC-BY-SA-4.0 CC0-1.0 GPL-2 ISC LGPL-3 MIT
+  MPL-2.0 WTFPL-2 ZLIB || ( LGPL-3+ GPL-2 ) || ( Apache-2.0 LGPL-3+ ) || ( Apache-2.0
+  CC-BY-4.0 )
 name: minikube
+requires:
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: kubectl
+  
+  version: 1.14.0
+- 
+  category: app-emulation
+  description: ""
+  license: ""
+  name: libvirt
+  
+  version: ""
+uri:
+- https://github.com/kubernetes/minikube/archive/v1.6.1.tar.gz -> minikube-1.6.1.tar.gz
+use_flags:
+- hardened
+- libvirt
 version: 1.6.1

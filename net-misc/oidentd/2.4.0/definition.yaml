@@ -1,3 +1,42 @@
 category: net-misc
+conflicts: []
+description: Another (RFC1413 compliant) ident daemon
+license: BSD-2 GPL-2 LGPL-2+ MIT
 name: oidentd
+requires:
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: oidentd
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-oident
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libnetfilter_conntrack
+  
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: oidentd
+  
+  version: ""
+uri:
+- https://files.janikrabe.com/pub/oidentd/releases/2.4.0/oidentd-2.4.0.tar.xz
+use_flags:
+- debug
+- ipv6
+- masquerade
+- selinux
 version: 2.4.0

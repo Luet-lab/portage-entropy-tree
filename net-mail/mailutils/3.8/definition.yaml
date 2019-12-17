@@ -1,3 +1,208 @@
 category: net-mail
+conflicts:
+- 
+  category: mail-client
+  description: ""
+  license: ""
+  name: nmh
+  
+  version: ""
+- 
+  category: mail-filter
+  description: ""
+  license: ""
+  name: libsieve
+  
+  version: ""
+- 
+  category: mail-client
+  description: ""
+  license: ""
+  name: mailx
+  
+  version: ""
+- 
+  category: mail-client
+  description: ""
+  license: ""
+  name: nail
+  
+  version: ""
+description: A useful collection of mail servers, clients, and filters
+license: GPL-2 LGPL-2.1
 name: mailutils
+requires:
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: mta
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: emacs
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: gdbm
+  
+  version: ""
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: gettext
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: postgresql
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: tcp-wrappers
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: tokyocabinet
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libltdl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: fribidi
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: kyotocabinet
+  
+  version: ""
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: db
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: gsasl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libunistring
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libiconv
+  
+  version: ""
+uri:
+- mirror://gnu/mailutils/mailutils-3.8.tar.xz
+use_flags:
+- berkdb
+- bidi
+- +clients
+- emacs
+- gdbm
+- sasl
+- guile
+- ipv6
+- kerberos
+- kyotocabinet
+- "\tldap"
+- mysql
+- nls
+- pam
+- postgres
+- python
+- servers
+- split-usr
+- ssl
+- static-libs
+- +threads
+- tcpd
+- "\ttokyocabinet"
 version: "3.8"

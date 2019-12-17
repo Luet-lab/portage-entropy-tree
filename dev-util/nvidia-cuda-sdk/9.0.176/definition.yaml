@@ -1,3 +1,59 @@
 category: dev-util
+conflicts: []
+description: NVIDIA CUDA Software Development Kit
+license: CUDPP
 name: nvidia-cuda-sdk
+requires:
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freeimage
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: glew
+  
+  version: ""
+- 
+  category: x11-drivers
+  description: ""
+  license: ""
+  name: nvidia-drivers
+  
+  version: "384.81"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: mpi
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: nvidia-cuda-toolkit
+  
+  version: 9.0.176
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freeglut
+  
+  version: ""
+uri:
+- https://developer.nvidia.com/compute/cuda//Prod/local_installers/cuda_9.0.176_384.81_linux-run
+  -> cuda_9.0.176_384.81_linux.run
+use_flags:
+- +cuda
+- debug
+- +doc
+- +examples
+- opencl
+- mpi
 version: 9.0.176

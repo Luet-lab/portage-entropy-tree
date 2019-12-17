@@ -1,3 +1,27 @@
 category: net-firewall
+conflicts: []
+description: Netflow iptables module
+license: GPL-2
 name: ipt_netflow
+requires:
+- 
+  category: net-firewall
+  description: ""
+  license: ""
+  name: iptables
+  
+  version: ""
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: net-snmp
+  
+  version: ""
+uri:
+- https://github.com/aabc/ipt-netflow/archive/v2.4.tar.gz -> ipt_netflow-2.4.tar.gz
+use_flags:
+- debug
+- natevents
+- snmp
 version: "2.4"

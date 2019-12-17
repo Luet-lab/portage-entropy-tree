@@ -1,3 +1,33 @@
 category: x11-misc
+conflicts: []
+description: py3status is an extensible i3status wrapper written in python
+license: BSD
 name: py3status
+requires:
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: i3status
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: gevent
+  
+  version: 1.2.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pyudev
+  
+  version: 0.21.0
+uri:
+- https://github.com/ultrabug/py3status/archive/3.22.tar.gz -> py3status-3.22.tar.gz
+use_flags:
+- gevent
+- +udev
 version: "3.22"

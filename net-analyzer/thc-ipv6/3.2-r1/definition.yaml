@@ -1,22 +1,33 @@
 category: net-analyzer
 conflicts: []
+description: complete tool set to attack the inherent protocol weaknesses of IPV6
+  and ICMP6
+license: AGPL-3 openssl
 name: thc-ipv6
 requires:
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
   category: net-libs
+  description: ""
+  license: ""
   name: libpcap
   
   version: ""
 - 
   category: net-libs
+  description: ""
+  license: ""
   name: libnetfilter_queue
   
   version: ""
-- 
-  category: dev-libs
-  name: openssl
-  
-  version: ""
+uri:
+- https://github.com/vanhauser-thc/thc-ipv6/archive/3.2.tar.gz -> thc-ipv6-3.2.tar.gz
 use_flags:
 - ssl
 version: 3.2-r1

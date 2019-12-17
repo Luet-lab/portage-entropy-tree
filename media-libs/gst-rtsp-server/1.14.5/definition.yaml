@@ -1,3 +1,41 @@
 category: media-libs
+conflicts: []
+description: A GStreamer based RTSP server
+license: LGPL-2+
 name: gst-rtsp-server
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.40.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gst-plugins-good
+  
+  version: 1.14.5
+- 
+  category: media-plugins
+  description: ""
+  license: ""
+  name: gst-plugins-srtp
+  
+  version: 1.14.5
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gobject-introspection
+  
+  version: 1.31.1
+uri: []
+use_flags:
+- examples
+- +introspection
+- static-libs
+- test
 version: 1.14.5

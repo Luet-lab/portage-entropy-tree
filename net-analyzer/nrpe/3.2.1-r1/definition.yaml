@@ -1,3 +1,35 @@
 category: net-analyzer
+conflicts: []
+description: Nagios Remote Plugin Executor
+license: GPL-2+
 name: nrpe
+requires:
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: tcp-wrappers
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+uri:
+- https://github.com/NagiosEnterprises/nrpe/releases/download/nrpe-3.2.1/nrpe-3.2.1.tar.gz
+use_flags:
+- command-args
+- libressl
+- selinux
+- ssl
 version: 3.2.1-r1

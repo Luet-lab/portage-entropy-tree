@@ -1,3 +1,36 @@
 category: media-libs
+conflicts: []
+description: A set of cross-platform C++ classes for realtime audio I/O
+license: MIT
 name: rtaudio
+requires:
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: jack-audio-connection-kit
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: pulseaudio
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: alsa-lib
+  
+  version: ""
+uri:
+- https://www.music.mcgill.ca/~gary/rtaudio/release/rtaudio-5.0.0.tar.gz
+use_flags:
+- +alsa
+- doc
+- jack
+- pulseaudio
+- static-libs
 version: 5.0.0

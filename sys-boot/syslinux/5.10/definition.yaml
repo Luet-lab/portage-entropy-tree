@@ -1,3 +1,32 @@
 category: sys-boot
+conflicts: []
+description: SYSLINUX, PXELINUX, ISOLINUX, EXTLINUX and MEMDISK bootloaders
+license: GPL-2
 name: syslinux
+requires:
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: mtools
+  
+  version: ""
+- 
+  category: dev-perl
+  description: ""
+  license: ""
+  name: Crypt-PasswdMD5
+  
+  version: ""
+- 
+  category: dev-perl
+  description: ""
+  license: ""
+  name: Digest-SHA1
+  
+  version: ""
+uri:
+- https://www.kernel.org/pub/linux/utils/boot/syslinux/5.xx/syslinux-5.10.tar.xz
+use_flags:
+- custom-cflags
 version: "5.10"

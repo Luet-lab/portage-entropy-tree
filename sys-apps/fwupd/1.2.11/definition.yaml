@@ -1,3 +1,228 @@
 category: sys-apps
+conflicts: []
+description: Aims to make updating firmware on Linux automatic, safe and reliable
+license: LGPL-2.1+
 name: fwupd
+requires:
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: gcab
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: "0.103"
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: 3.4.4.1
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: thunderbolt-software-user-space
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.45.8
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: elogind
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gpgme
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgpg-error
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgudev
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgusb
+  
+  version: 0.2.9
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxmlb
+  
+  version: 0.1.7
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: efivar
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: json-glib
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pillow
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libelf
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libsmbios
+  
+  version: 2.4.0
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "211"
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: libarchive
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pycairo
+  
+  version: ""
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: colord
+  
+  version: 1.2.12
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: efivar
+  
+  version: "33"
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pygobject
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libsoup
+  
+  version: 2.51.92
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: consolekit
+  
+  version: 1.0.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
+  
+  version: ""
+- 
+  category: sys-boot
+  description: ""
+  license: ""
+  name: gnu-efi
+  
+  version: ""
+uri:
+- https://github.com/hughsie/fwupd/archive/1.2.11.tar.gz -> fwupd-1.2.11.tar.gz
+use_flags:
+- agent
+- colorhug
+- consolekit
+- dell
+- doc
+- elogind
+- +gpg
+- +man
+- nvme
+- pkcs7
+- redfish
+- systemd
+- test
+- thunderbolt
+- uefi
 version: 1.2.11

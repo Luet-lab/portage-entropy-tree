@@ -1,3 +1,50 @@
 category: sys-cluster
+conflicts:
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: heartbeat
+  
+  version: ""
+description: OSI Certified implementation of a complete cluster engine
+license: BSD-2 public-domain
 name: corosync
+requires:
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: libibverbs
+  
+  version: ""
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: librdmacm
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nss
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: libqb
+  
+  version: 0.14.4
+uri:
+- http://build.clusterlabs.org/corosync/releases/corosync-2.3.5.tar.gz
+use_flags:
+- doc
+- infiniband
+- static-libs
+- systemd
+- xml
 version: 2.3.5

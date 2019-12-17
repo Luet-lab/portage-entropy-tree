@@ -1,3 +1,26 @@
 category: app-emulation
+conflicts: []
+description: Hypervisor-based Runtime for OCI
+license: Apache-2.0
 name: hyperd
+requires:
+- 
+  category: app-emulation
+  description: ""
+  license: ""
+  name: libvirt
+  
+  version: 1.2.2
+- 
+  category: app-emulation
+  description: ""
+  license: ""
+  name: xen
+  
+  version: ""
+uri:
+- https://github.com/hyperhq/hyperd/archive/v0.7.0.tar.gz -> hyperd-0.7.0.tar.gz
+use_flags:
+- libvirt
+- xen
 version: 0.7.0-r1

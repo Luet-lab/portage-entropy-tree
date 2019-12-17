@@ -1,3 +1,27 @@
 category: net-misc
+conflicts: []
+description: Linux IPv6 Router Advertisement Daemon
+license: BSD
 name: radvd
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libdaemon
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-radvd
+  
+  version: ""
+uri:
+- http://v6web.litech.org/radvd/dist/radvd-2.18.tar.gz
+use_flags:
+- kernel_FreeBSD
+- selinux
+- test
 version: "2.18"

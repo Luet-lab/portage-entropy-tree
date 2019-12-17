@@ -1,3 +1,23 @@
 category: app-crypt
+conflicts: []
+description: fast password cracker
+license: GPL-2
 name: johntheripper
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+uri:
+- https://www.openwall.com/john/j/john-1.8.0.tar.xz
+use_flags:
+- custom-cflags
+- openmp
+- cpu_flags_x86_mmx
+- cpu_flags_x86_sse2
+- cpu_flags_x86_avx
+- cpu_flags_x86_xop
 version: 1.8.0

@@ -1,3 +1,16 @@
 category: dev-libs
+description: Jemalloc is a general-purpose scalable concurrent allocator
+license: BSD
 name: jemalloc
+uri:
+- https://github.com/jemalloc/jemalloc/releases/download/5.0.1/jemalloc-5.0.1.tar.bz2
+use_flags:
+- debug
+- hardened
+- +hugepages
+- lazy-lock
+- prof
+- static-libs
+- stats
+- xmalloc
 version: 5.0.1

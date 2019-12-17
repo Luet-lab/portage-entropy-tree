@@ -1,3 +1,65 @@
 category: sys-apps
+conflicts:
+- 
+  category: <app-crypt
+  description: ""
+  license: ""
+  name: ccid
+  
+  version: 1.4.1-r1
+- 
+  category: <sys-apps
+  description: ""
+  license: ""
+  name: baselayout
+  
+  version: "2"
+- 
+  category: <sys-apps
+  description: ""
+  license: ""
+  name: openrc
+  
+  version: 0.11.8
+description: PC/SC Architecture smartcard middleware library
+license: BSD ISC MIT GPL-3+ GPL-2
 name: pcsc-lite
+requires:
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-pcscd
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libusb
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: "0.111"
+uri:
+- https://pcsclite.apdu.fr/files/pcsc-lite-1.8.25.tar.bz2
+use_flags:
+- python
+- libusb
+- policykit
+- selinux
+- systemd
+- +udev
 version: 1.8.25

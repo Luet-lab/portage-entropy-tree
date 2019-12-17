@@ -1,3 +1,76 @@
 category: sci-libs
+conflicts:
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: cblas-reference
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: lapack-reference
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: lapacke-reference
+  
+  version: ""
+- 
+  category: app-eselect
+  description: ""
+  license: ""
+  name: eselect-cblas
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: blas-reference
+  
+  version: ""
+description: BLAS,CBLAS,LAPACK,LAPACKE reference implementations
+license: BSD
 name: lapack
+requires:
+- 
+  category: app-eselect
+  description: ""
+  license: ""
+  name: eselect-blas
+  
+  version: "0.2"
+- 
+  category: app-eselect
+  description: ""
+  license: ""
+  name: eselect-lapack
+  
+  version: "0.2"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: fortran
+  
+  version: ""
+- 
+  category: app-doc
+  description: ""
+  license: ""
+  name: blas-docs
+  
+  version: ""
+uri:
+- http://www.netlib.org/lapack/lapack-3.8.0.tar.gz
+use_flags:
+- lapacke
+- doc
+- eselect-ldso
 version: 3.8.0

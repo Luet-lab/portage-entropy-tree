@@ -1,3 +1,72 @@
 category: net-fs
+conflicts:
+- 
+  category: net-fs
+  description: ""
+  license: ""
+  name: mount-cifs
+  
+  version: ""
+- 
+  category: <net-fs
+  description: ""
+  license: ""
+  name: samba
+  
+  version: 3.6_rc1
+description: Tools for Managing Linux CIFS Client Filesystems
+license: GPL-3
 name: cifs-utils
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap-ng
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: keyutils
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: talloc
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
+  
+  version: ""
+uri:
+- https://ftp.samba.org/pub/linux-cifs/cifs-utils/cifs-utils-6.7.tar.bz2
+use_flags:
+- +acl
+- +ads
+- +caps
+- +caps-ng
+- creds
+- pam
 version: "6.7"

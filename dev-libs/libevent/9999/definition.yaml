@@ -1,3 +1,37 @@
 category: dev-libs
+conflicts:
+- 
+  category: <=dev-libs
+  description: ""
+  license: ""
+  name: 9libs
+  
+  version: "1.0"
+description: Library to execute a function when a specific event occurs on a file
+  descriptor
+license: BSD
 name: libevent
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 1.0.1h-r2
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+uri: []
+use_flags:
+- debug
+- libressl
+- +ssl
+- static-libs
+- test
+- +threads
 version: "9999"

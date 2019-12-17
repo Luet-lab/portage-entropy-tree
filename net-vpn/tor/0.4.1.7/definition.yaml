@@ -1,3 +1,121 @@
 category: net-vpn
+conflicts: []
+description: Anonymizing overlay network for TCP
+license: BSD GPL-2
 name: tor
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: asciidoc
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: libscrypt
+  
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: tor
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libevent
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libseccomp
+  
+  version: 2.4.1
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-tor
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: tor
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: zstd
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: xz-utils
+  
+  version: ""
+uri:
+- https://www.torproject.org/dist/tor-.tar.gz
+- https://archive.torproject.org/tor-package-archive/tor-.tar.gz
+use_flags:
+- caps
+- doc
+- libressl
+- lzma
+- +man
+- scrypt
+- seccomp
+- selinux
+- systemd
+- tor-hardening
+- test
+- zstd
 version: 0.4.1.7

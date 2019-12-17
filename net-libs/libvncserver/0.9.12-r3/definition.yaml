@@ -1,3 +1,93 @@
 category: net-libs
+conflicts: []
+description: library for creating vnc servers
+license: GPL-2+ LGPL-2.1+ BSD MIT
 name: libvncserver
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: 2.7.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: lzo
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 1.0.2
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: 2.12.23-r6
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jpeg
+  
+  version: 0-r2
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libpng
+  
+  version: 1.6.10
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: cyrus-sasl
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: 1.2.8-r1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgcrypt
+  
+  version: 1.5.3
+uri:
+- https://github.com/LibVNC/libvncserver/archive/LibVNCServer-0.9.12.tar.gz
+use_flags:
+- +24bpp
+- gcrypt
+- gnutls
+- ipv6
+- +jpeg
+- libressl
+- lzo
+- +png
+- sasl
+- ssl
+- systemd
+- +threads
+- +zlib
 version: 0.9.12-r3

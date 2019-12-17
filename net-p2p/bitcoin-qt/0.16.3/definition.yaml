@@ -1,3 +1,145 @@
 category: net-p2p
+conflicts: []
+description: An end-user Qt GUI for the Bitcoin crypto-currency
+license: MIT
 name: bitcoin-qt
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: univalue
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtwidgets
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libevent
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: miniupnpc
+  
+  version: 1.9.20150916
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: boost
+  
+  version: 1.52.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libsecp256k1
+  
+  version: 0.0.0_pre20151118
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtcore
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtnetwork
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: bitcoin-leveldb
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: db
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtgui
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: protobuf
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtdbus
+  
+  version: ""
+- 
+  category: media-gfx
+  description: ""
+  license: ""
+  name: qrencode
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: zeromq
+  
+  version: ""
+uri:
+- https://github.com/bitcoin/bitcoin/archive/49e34e288005a5b144a642e197b628396f5a0765.tar.gz
+  -> bitcoin-v0.16.3.tar.gz
+- https://bitcoinknots.org/files/0.16.x/0.16.3.knots20180918/bitcoin-0.16.3.knots20180918.patches.txz
+  -> bitcoin-0.16.3.knots20180918.patches.tar.xz
+use_flags:
+- +asm
+- +bip70
+- +bitcoin_policy_rbf
+- dbus
+- kde
+- +libevent
+- knots
+- libressl
+- +qrcode
+- test
+- upnp
+- +wallet
+- zeromq
 version: 0.16.3

@@ -1,3 +1,34 @@
 category: sys-libs
+conflicts:
+- 
+  category: <sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: "6"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: ""
+description: console display library
+license: MIT
 name: ncurses-compat
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: gpm
+  
+  version: ""
+uri:
+- mirror://gnu/ncurses/ncurses-5.9.tar.gz
+use_flags:
+- gpm
+- tinfo
+- unicode
 version: "5.9"

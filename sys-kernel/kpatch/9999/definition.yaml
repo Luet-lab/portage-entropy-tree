@@ -1,3 +1,35 @@
 category: sys-kernel
+conflicts: []
+description: Dynamic kernel patching for Linux
+license: GPL-2+
 name: kpatch
+requires:
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: pesign
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: pciutils
+  
+  version: ""
+uri: []
+use_flags:
+- contrib
+- +kpatch
+- +kpatch-build
+- kmod
+- test
 version: "9999"

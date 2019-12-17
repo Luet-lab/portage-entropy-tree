@@ -1,3 +1,132 @@
 category: sys-cluster
+conflicts:
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: mpiexec
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libotf
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: mpich
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: lcdf-typetools
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: mpich2
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: pmix
+  
+  version: ""
+description: A high-performance message passing library (MPI)
+license: BSD
 name: openmpi
+requires:
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: dapl
+  
+  version: ""
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: librdmacm
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: slurm
+  
+  version: ""
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: infinipath-psm
+  
+  version: ""
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: ofed
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: knem
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: lksctp-tools
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: torque
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: hwloc
+  
+  version: "2"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libltdl
+  
+  version: ""
+uri:
+- http://www.open-mpi.org/software/ompi/v/downloads/openmpi-1.6.5.tar.bz2
+use_flags:
+- +cxx
+- fortran
+- heterogeneous
+- ipv6
+- mpi-threads
+- romio
+- threads
+- "vt\n\t\n\topenmpi_fabrics_dapl\n\topenmpi_fabrics_ofed\n\topenmpi_fabrics_knem\n\topenmpi_fabrics_psm\n\topenmpi_fabrics_sctp"
+- "\n\topenmpi_rm_pbs\n\topenmpi_rm_slurm"
+- "\n\topenmpi_ofed_features_control-hdr-padding\n\topenmpi_ofed_features_connectx-xrc\n\topenmpi_ofed_features_rdmacm\n\topenmpi_ofed_features_dynamic-sl\n\topenmpi_ofed_features_failover"
 version: 1.6.5-r1

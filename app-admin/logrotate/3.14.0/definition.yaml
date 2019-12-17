@@ -1,3 +1,49 @@
 category: app-admin
+conflicts: []
+description: Rotates, compresses, and mails system logs
+license: GPL-2
 name: logrotate
+requires:
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: acl
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-logrotate
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: cron
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: popt
+  
+  version: "1.5"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: ""
+uri:
+- https://github.com/logrotate/logrotate/releases/download/3.14.0/logrotate-3.14.0.tar.gz
+  -> logrotate-3.14.0.tar.gz
+use_flags:
+- acl
+- +cron
+- selinux
 version: 3.14.0

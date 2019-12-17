@@ -1,3 +1,50 @@
 category: app-admin
+conflicts: []
+description: Open Source File Integrity Checker and IDS
+license: GPL-2
 name: tripwire
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: cron
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: mta
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-tripwire
+  
+  version: ""
+uri:
+- https://github.com/Tripwire/tripwire-open-source/archive/2.4.3.7.tar.gz -> .tar.gz
+use_flags:
+- libressl
+- selinux
+- ssl
+- static
+- +tools
 version: 2.4.3.7

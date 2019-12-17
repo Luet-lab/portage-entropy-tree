@@ -1,3 +1,38 @@
 category: net-misc
+conflicts: []
+description: Precision Time Protocol daemon
+license: BSD
 name: ptpd
+requires:
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libpcap
+  
+  version: ""
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: net-snmp
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: ntp
+  
+  version: ""
+uri:
+- https://github.com/ptpd/ptpd/archive/ptpd-2.3.1.tar.gz
+use_flags:
+- debug
+- experimental
+- ntp
+- +pcap
+- snmp
+- slave-only
+- +statistics
 version: 2.3.1-r2

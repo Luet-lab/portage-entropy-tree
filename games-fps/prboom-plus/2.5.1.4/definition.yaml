@@ -1,3 +1,93 @@
 category: games-fps
+conflicts: []
+description: A Doom source port developed from the original PrBoom project
+license: "GPL-2+\n\tnonfree? ( freedist )\n\t!nonfree? ( BSD )"
 name: prboom-plus
+requires:
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: dumb
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: fluidsynth
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libmad
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: sdl-net
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libvorbis
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: sdl-image
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpcre
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libpng
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: portmidi
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: sdl-mixer
+  
+  version: ""
+uri:
+- https://github.com/coelckers/prboom-plus/archive/f96f891d068dcc5ec52ed91056b46d27e9a8462d.tar.gz
+  -> prboom-plus-2.5.1.4.tar.gz
+use_flags:
+- dumb
+- fluidsynth
+- mad
+- net
+- nonfree
+- +opengl
+- pcre
+- +png
+- portmidi
+- sdl-image
+- +sdl-mixer
+- vorbis
 version: 2.5.1.4

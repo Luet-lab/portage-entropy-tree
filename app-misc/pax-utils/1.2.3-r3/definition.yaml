@@ -1,3 +1,36 @@
 category: app-misc
+conflicts: []
+description: ELF utils that can check files for security relevant properties
+license: GPL-2
 name: pax-utils
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: "2.24"
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pyelftools
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libseccomp
+  
+  version: ""
+uri:
+- mirror://gentoo/pax-utils-1.2.3.tar.xz
+- https://dev.gentoo.org/~slyfox/distfiles/pax-utils-1.2.3.tar.xz
+use_flags:
+- caps
+- debug
+- python
+- seccomp
 version: 1.2.3-r3

@@ -1,3 +1,34 @@
 category: net-libs
+conflicts: []
+description: Open-source implementation of the Secure Real-time Transport Protocol
+  (SRTP)
+license: BSD
 name: libsrtp
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+uri:
+- https://github.com/cisco/libsrtp/archive/v2.2.0.tar.gz -> libsrtp-2.2.0.tar.gz
+use_flags:
+- aesicm
+- console
+- debug
+- doc
+- libressl
+- openssl
+- static-libs
+- syslog
+- test
 version: 2.2.0

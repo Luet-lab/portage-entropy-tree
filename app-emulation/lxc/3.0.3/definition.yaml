@@ -1,3 +1,73 @@
 category: app-emulation
+conflicts: []
+description: LinuX Containers userspace utilities
+license: LGPL-3
 name: lxc
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libseccomp
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: pax-utils
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: awk
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+uri:
+- https://linuxcontainers.org/downloads/lxc/lxc-3.0.3.tar.gz
+use_flags:
+- apparmor
+- examples
+- pam
+- python
+- seccomp
+- selinux
+- +templates
 version: 3.0.3

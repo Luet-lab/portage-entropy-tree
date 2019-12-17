@@ -1,3 +1,37 @@
 category: sys-fs
+conflicts: []
+description: Device-mapper RAID tool and library
+license: GPL-2
 name: dmraid
+requires:
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lvm2
+  
+  version: 2.02.45
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: klibc
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: dietlibc
+  
+  version: ""
+uri:
+- https://people.redhat.com/~heinzm/sw/dmraid/src/dmraid-1.0.0-3.tar.bz2
+use_flags:
+- dietlibc
+- intel_led
+- klibc
+- led
+- mini
+- static
 version: 1.0.0_rc16-r3

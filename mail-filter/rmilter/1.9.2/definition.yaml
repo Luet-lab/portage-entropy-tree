@@ -1,3 +1,62 @@
 category: mail-filter
+conflicts: []
+description: Another sendmail milter for different mail checks
+license: BSD
 name: rmilter
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpcre
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: mail-filter
+  description: ""
+  license: ""
+  name: libmilter
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.28"
+- 
+  category: mail-filter
+  description: ""
+  license: ""
+  name: opendkim
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libmemcached
+  
+  version: ""
+uri:
+- https://github.com/vstakhov/rmilter/archive/1.9.2.tar.gz -> rmilter-1.9.2.tar.gz
+use_flags:
+- dkim
+- libressl
+- +memcached
 version: 1.9.2

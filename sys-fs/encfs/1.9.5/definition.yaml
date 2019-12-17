@@ -1,3 +1,47 @@
 category: sys-fs
+conflicts: []
+description: An implementation of encrypted filesystem in user-space using FUSE
+license: GPL-3 LGPL-3
 name: encfs
+requires:
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: fuse
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: tinyxml2
+  
+  version: ""
+uri:
+- https://github.com/vgough/encfs/archive/v1.9.5.tar.gz -> encfs-1.9.5.tar.gz
+use_flags:
+- libressl
+- nls
 version: 1.9.5

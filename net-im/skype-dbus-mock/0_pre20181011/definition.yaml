@@ -1,3 +1,40 @@
 category: net-im
+conflicts:
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: elogind
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+description: Mocked systemd dbus interface for skype 8.30+
+license: MIT
 name: skype-dbus-mock
+requires:
+- 
+  category: net-im
+  description: ""
+  license: ""
+  name: skypeforlinux
+  
+  version: "8.30"
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: dbus-python
+  
+  version: ""
+uri:
+- https://github.com/maelnor/skype-dbus-mock/archive/3a9e2882ac5c0ad6be3c5cb5c7da008b4cfa51da.tar.gz
+  -> skype-dbus-mock-0.tar.gz
+use_flags:
+- ""
 version: 0_pre20181011

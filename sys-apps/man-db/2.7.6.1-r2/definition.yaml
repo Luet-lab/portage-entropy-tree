@@ -1,3 +1,66 @@
 category: sys-apps
+conflicts:
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: man
+  
+  version: ""
+description: a man replacement that utilizes berkdb instead of flat files
+license: GPL-3
 name: man-db
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpipeline
+  
+  version: 1.4.0
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: db
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: gdbm
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: groff
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-mandb
+  
+  version: ""
+uri:
+- mirror://nongnu/man-db/man-db-2.7.6.1.tar.xz
+use_flags:
+- berkdb
+- +gdbm
+- +manpager
+- nls
+- selinux
+- static-libs
+- zlib
 version: 2.7.6.1-r2

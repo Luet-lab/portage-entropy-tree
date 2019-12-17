@@ -1,3 +1,99 @@
 category: media-sound
+conflicts: []
+description: Software real-time synthesizer based on the Soundfont 2 specifications
+license: LGPL-2
 name: fluidsynth
+requires:
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: ladspa-sdk
+  
+  version: 1.13-r2
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: portaudio
+  
+  version: 19_pre20111121-r1
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: 1.6.18-r1
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jack
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: ladspa-cmt
+  
+  version: 1.16-r3
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: pulseaudio
+  
+  version: 2.1-r1
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: 6.2_p5-r1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.34.3
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: alsa-lib
+  
+  version: 1.0.27.2
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: lash
+  
+  version: 0.5.4-r2
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libsndfile
+  
+  version: 1.0.25
+uri:
+- https://github.com/FluidSynth/fluidsynth/archive/v1.1.11.tar.gz -> fluidsynth-1.1.11.tar.gz
+use_flags:
+- alsa
+- dbus
+- debug
+- examples
+- ipv6
+- jack
+- ladspa
+- lash
+- portaudio
+- pulseaudio
+- readline
+- sndfile
 version: 1.1.11

@@ -1,3 +1,93 @@
 category: mail-client
+conflicts:
+- 
+  category: <=net-mail
+  description: ""
+  license: ""
+  name: uw-imap
+  
+  version: 2004g
+- 
+  category: mail-client
+  description: ""
+  license: ""
+  name: pine
+  
+  version: ""
+description: An easy to use text-based based mail and news client
+license: Apache-2.0
 name: alpine
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: mit-krb5
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: aspell
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: mime-types
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: "5.1"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+uri:
+- https://repo.or.cz/alpine.git/snapshot/672d6838a9babf2faeb9f79267525a4ab9d20b14.tar.gz
+  -> alpine-2.21.1.tar.gz
+use_flags:
+- doc
+- ipv6
+- kerberos
+- ldap
+- libressl
+- nls
+- onlyalpine
+- passfile
+- smime
+- spell
+- ssl
+- threads
 version: 2.21.1

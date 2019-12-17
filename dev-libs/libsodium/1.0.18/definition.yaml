@@ -1,3 +1,14 @@
 category: dev-libs
+description: A portable fork of NaCl, a higher-level cryptographic library
+license: ISC
 name: libsodium
+uri:
+- http://download.libsodium.org/libsodium/releases/libsodium-1.0.18.tar.gz
+use_flags:
+- +asm
+- minimal
+- static-libs
+- +urandom
+- cpu_flags_x86_sse4_1
+- cpu_flags_x86_aes
 version: 1.0.18

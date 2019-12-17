@@ -1,3 +1,84 @@
 category: dev-python
+conflicts:
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pypy3
+  
+  version: ""
+description: Pre-built version of PyPy3
+license: MIT
 name: pypy3-bin
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: gdbm
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-tcltk
+  description: ""
+  license: ""
+  name: tix
+  
+  version: ""
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: gcc
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: glibc
+  
+  version: "2.28"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: tk
+  
+  version: ""
+uri:
+- https://bitbucket.org/pypy/pypy/downloads/pypy3.6-v7.2.0-src.tar.bz2
+- 'https://dev.gentoo.org/~mgorny/dist/pypy3-bin/7.2.0/pypy3-bin-7.2.0-amd64+bzip2+jit+ncurses.tar.lz '
+- 'https://dev.gentoo.org/~mgorny/dist/pypy3-bin/7.2.0/pypy3-bin-7.2.0-amd64+bzip2+ncurses.tar.lz '
+- 'https://dev.gentoo.org/~mgorny/dist/pypy3-bin/7.2.0/pypy3-bin-7.2.0-x86+bzip2+jit+ncurses+sse2.tar.lz '
+- 'https://dev.gentoo.org/~mgorny/dist/pypy3-bin/7.2.0/pypy3-bin-7.2.0-x86+bzip2+ncurses+sse2.tar.lz '
+use_flags:
+- gdbm
+- +jit
+- libressl
+- sqlite
+- cpu_flags_x86_sse2
+- test
+- tk
 version: 7.2.0-r1

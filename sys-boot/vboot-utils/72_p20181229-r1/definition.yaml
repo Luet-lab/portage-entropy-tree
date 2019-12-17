@@ -1,3 +1,63 @@
 category: sys-boot
+conflicts: []
+description: Chrome OS verified boot tools
+license: BSD
 name: vboot-utils
+requires:
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: xz-utils
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: fts-standalone
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libzip
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libyaml
+  
+  version: ""
+uri:
+- mirror://gentoo/vboot-utils-72.tar.xz
+- https://dev.gentoo.org/~zmedico/dist/vboot-utils-72.tar.xz
+use_flags:
+- libressl
+- minimal
+- static
 version: 72_p20181229-r1

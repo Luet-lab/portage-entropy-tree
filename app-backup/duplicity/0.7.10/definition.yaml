@@ -1,3 +1,47 @@
 category: app-backup
+conflicts: []
+description: Secure backup system using gnupg to encrypt data
+license: GPL-3
 name: duplicity
+requires:
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: boto
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: librsync
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gnupg
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: lockfile
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: paramiko
+  
+  version: ""
+uri:
+- https://code.launchpad.net/duplicity/-series/0.7.10/+download/duplicity-0.7.10.tar.gz
+use_flags:
+- s3
+- test
 version: 0.7.10

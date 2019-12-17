@@ -1,3 +1,73 @@
 category: net-ftp
+conflicts: []
+description: Very Secure FTP Daemon written with speed, size and security in mind
+license: GPL-2
 name: vsftpd
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: "2"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: tcp-wrappers
+  
+  version: "7.6"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: net-ftp
+  description: ""
+  license: ""
+  name: ftpbase
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-ftp
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: xinetd
+  
+  version: ""
+uri:
+- http://security.appspot.com/downloads/vsftpd-3.0.3.tar.gz
+use_flags:
+- caps
+- libressl
+- pam
+- tcpd
+- ssl
+- selinux
+- xinetd
 version: 3.0.3-r2

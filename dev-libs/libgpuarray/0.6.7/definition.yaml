@@ -1,3 +1,29 @@
 category: dev-libs
+conflicts: []
+description: Library to manipulate tensors on the GPU
+license: BSD
 name: libgpuarray
+requires:
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: nvidia-cuda-toolkit
+  
+  version: "7"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: opencl
+  
+  version: ""
+uri:
+- https://github.com/Theano/libgpuarray/archive/v0.6.7.tar.gz -> libgpuarray-0.6.7.tar.gz
+use_flags:
+- cuda
+- doc
+- opencl
+- static-libs
+- test
 version: 0.6.7

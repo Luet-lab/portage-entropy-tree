@@ -1,3 +1,41 @@
 category: x11-libs
+conflicts:
+- 
+  category: <x11-misc
+  description: ""
+  license: ""
+  name: colord
+  
+  version: 0.1.27
+description: GTK support library for colord
+license: LGPL-3+
 name: colord-gtk
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.28"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: lcms
+  
+  version: "2.2"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gobject-introspection
+  
+  version: 0.9.8
+uri:
+- https://www.freedesktop.org/software/colord/releases/colord-gtk-0.1.26.tar.xz
+use_flags:
+- doc
+- +introspection
+- vala
 version: 0.1.26

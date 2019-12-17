@@ -1,3 +1,41 @@
 category: dev-util
+conflicts: []
+description: Android platform tools (adb, fastboot, and mkbootimg)
+license: Apache-2.0 BSD-2
 name: android-tools
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpcre2
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libusb
+  
+  version: ""
+uri:
+- https://git.archlinux.org/svntogit/community.git/snapshot/community-0ffb7b41d599741d100a6a00a4bb20e162cd3f90.tar.xz
+  -> android-tools-9.0.0-arch.tar.xz
+- https://github.com/android/platform_system_core/archive/android-9.0.0.tar.gz ->
+  android-tools-9.0.0-core.tar.gz
+- https://github.com/google/boringssl/archive/45210dd4e21ace9d28cb76b3f83303fcdd2efcce.tar.gz
+  -> boringssl-45210dd4e21ace9d28cb76b3f83303fcdd2efcce.tar.gz
+- mirror://gentoo/android-tools-9.0.0-e2fsprogs.tar.xz https://dev.gentoo.org/~zmedico/dist/android-tools-9.0.0-e2fsprogs.tar.xz
+- mirror://gentoo/android-tools-9.0.0-extras.tar.xz https://dev.gentoo.org/~zmedico/dist/android-tools-9.0.0-extras.tar.xz
+- mirror://gentoo/android-tools-9.0.0-selinux.tar.xz https://dev.gentoo.org/~zmedico/dist/android-tools-9.0.0-selinux.tar.xz
+- mirror://gentoo/android-tools-9.0.0-f2fs-tools.tar.xz https://dev.gentoo.org/~zmedico/dist/android-tools-9.0.0-f2fs-tools.tar.xz
+use_flags:
+- python
 version: 9.0.0_p3

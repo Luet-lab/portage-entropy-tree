@@ -1,22 +1,33 @@
 category: media-plugins
 conflicts: []
+description: This plugin sends an announcement to the notification daemon on song
+  change
+license: GPL-2
 name: gmpc-libnotify
 requires:
 - 
-  category: media-sound
-  name: gmpc
-  
-  version: 11.8.16
-- 
   category: dev-libs
+  description: ""
+  license: ""
   name: libxml2
   
   version: ""
 - 
   category: x11-libs
+  description: ""
+  license: ""
   name: libnotify
   
   version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: gmpc
+  
+  version: 11.8.16
+uri:
+- mirror://sourceforge/musicpd/gmpc-libnotify-11.8.16.tar.gz
 use_flags:
 - nls
 version: 11.8.16

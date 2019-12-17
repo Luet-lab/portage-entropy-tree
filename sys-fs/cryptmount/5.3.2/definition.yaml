@@ -1,3 +1,71 @@
 category: sys-fs
+conflicts: []
+description: A utility for management and user-mode mounting of encrypted filesystems
+license: GPL-2+
 name: cryptmount
+requires:
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libiconv
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libintl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgcrypt
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: cryptsetup
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+uri:
+- mirror://sourceforge/cryptmount/cryptmount-5.3.2.tar.gz
+use_flags:
+- argv0switch
+- cswap
+- fsck
+- +gcrypt
+- +largefile
+- mount
+- +nls
+- +luks
+- +openssl
+- selinux
+- systemd
+- udev
 version: 5.3.2

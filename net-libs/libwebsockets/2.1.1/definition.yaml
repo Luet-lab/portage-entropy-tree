@@ -1,3 +1,75 @@
 category: net-libs
+conflicts: []
+description: canonical libwebsockets.org websocket library
+license: LGPL-2.1
 name: libwebsockets
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libhubbub
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libev
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libuv
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: ""
+uri:
+- https://github.com/warmcat/libwebsockets/archive/v2.1.1.tar.gz -> libwebsockets-2.1.1.tar.gz
+use_flags:
+- +http2
+- +ssl
+- access-log
+- cgi
+- client
+- generic-sessions
+- http-proxy
+- ipv6
+- lejp
+- libev
+- libressl
+- libuv
+- server-status
+- smtp
+- sqlite3
+- static-libs
 version: 2.1.1

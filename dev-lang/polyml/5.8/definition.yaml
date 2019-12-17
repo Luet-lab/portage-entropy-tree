@@ -1,3 +1,44 @@
 category: dev-lang
+conflicts: []
+description: Poly/ML is a full implementation of Standard ML
+license: LGPL-2.1
 name: polyml
+requires:
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: motif
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gmp
+  
+  version: "5"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: glibc
+  
+  version: "2.13"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libffi
+  
+  version: ""
+uri:
+- https://codeload.github.com/polyml/polyml/tar.gz/v5.8 -> polyml-5.8.tar.gz
+use_flags:
+- X
+- elibc_glibc
+- +gmp
+- portable
+- test
+- +threads
 version: "5.8"

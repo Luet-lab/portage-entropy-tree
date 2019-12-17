@@ -1,3 +1,58 @@
 category: net-mail
+conflicts: []
+description: the legendary remote-mail retrieval and forwarding utility
+license: GPL-2 public-domain
 name: fetchmail
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 0.9.6
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libintl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: e2fsprogs-libs
+  
+  version: ""
+- 
+  category: net-proxy
+  description: ""
+  license: ""
+  name: dante
+  
+  version: ""
+uri:
+- mirror://sourceforge/fetchmail/fetchmail-6.3.26.tar.xz
+use_flags:
+- ssl
+- nls
+- kerberos
+- tk
+- socks
+- libressl
 version: 6.3.26-r4

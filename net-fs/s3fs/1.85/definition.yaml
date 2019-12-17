@@ -1,3 +1,71 @@
 category: net-fs
+conflicts: []
+description: Amazon S3 mounting via fuse
+license: GPL-2+
 name: s3fs
+requires:
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: fuse
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nettle
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nss
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: mime-types
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+uri:
+- https://github.com/s3fs-fuse/s3fs-fuse/archive/v1.85.tar.gz -> s3fs-1.85.tar.gz
+use_flags:
+- gnutls
+- nettle
+- nss
+- +openssl
+- test
 version: "1.85"

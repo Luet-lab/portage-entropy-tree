@@ -1,3 +1,54 @@
 category: sys-cluster
+conflicts:
+- 
+  category: <sys-cluster
+  description: ""
+  license: ""
+  name: vzctl
+  
+  version: "4.8"
+description: openvz tool and a library to control ploop block devices
+license: GPL-2
 name: ploop
+requires:
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: findutils
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: sys-block
+  description: ""
+  license: ""
+  name: parted
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: e2fsprogs
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: lsof
+  
+  version: ""
+uri:
+- https://download.openvz.org/utils/ploop/1.14.1/src/ploop-1.14.1.tar.bz2
+use_flags:
+- debug
+- static-libs
 version: 1.14.1

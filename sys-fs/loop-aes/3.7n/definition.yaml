@@ -1,3 +1,12 @@
 category: sys-fs
+description: Linux kernel module to encrypt disk partitions with AES cipher
+license: GPL-2
 name: loop-aes
+uri:
+- mirror://sourceforge/loop-aes/loop-AES-v3.7n.tar.bz2
+use_flags:
+- cpu_flags_x86_aes
+- extra-ciphers
+- keyscrub
+- cpu_flags_x86_padlock
 version: 3.7n

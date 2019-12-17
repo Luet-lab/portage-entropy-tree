@@ -1,3 +1,32 @@
 category: sys-apps
+conflicts: []
+description: Security sandbox for any type of processes
+license: GPL-2
 name: firejail
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libapparmor
+  
+  version: ""
+uri: []
+use_flags:
+- apparmor
+- +chroot
+- contrib
+- debug
+- +file-transfer
+- +globalcfg
+- +network
+- +overlayfs
+- +private-home
+- +seccomp
+- +suid
+- test
+- +userns
+- vim-syntax
+- +whitelist
+- x11
 version: "9999"

@@ -1,3 +1,127 @@
 category: net-analyzer
+conflicts: []
+description: A network tool to gather IP traffic information
+license: GPL-2
 name: pmacct
+requires:
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: zeromq
+  
+  version: 4.2.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libmaxminddb
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: "3"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: mongo-c-driver
+  
+  version: "0.98"
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: rabbitmq-c
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libnetfilter_log
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: postgresql
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: librdkafka
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: mongo-c-driver
+  
+  version: 0.8.1-r1
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: nDPI
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libpcap
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: geoip
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: jansson
+  
+  version: ""
+uri:
+- http://www.pmacct.net/pmacct-1.7.2.tar.gz
+use_flags:
+- 64bit
+- +bgp-bins
+- +bmp-bins
+- geoip
+- geoipv2
+- ipv6
+- jansson
+- kafka
+- +l2
+- "mongodb\n\tmysql"
+- ndpi
+- nflog
+- plabel
+- postgres
+- rabbitmq
+- sqlite
+- +st-bins
+- +traffic-bins
+- zmq
 version: 1.7.2-r1

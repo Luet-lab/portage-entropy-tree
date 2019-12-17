@@ -1,3 +1,22 @@
 category: sys-boot
+conflicts: []
+description: Standard Linux boot loader
+license: BSD GPL-2
 name: lilo
+requires:
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lvm2
+  
+  version: 2.02.45
+uri:
+- http://lilo.alioth.debian.org/ftp/sources/lilo-24.1.tar.gz
+- mirror://gentoo/dolilo-0.6.tar.bz2
+use_flags:
+- static
+- minimal
+- pxeserial
+- device-mapper
 version: "24.1"

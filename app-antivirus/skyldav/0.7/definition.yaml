@@ -1,3 +1,54 @@
 category: app-antivirus
+conflicts: []
+description: 'Skyld AV: on-access scanning daemon for ClamAV using fanotify'
+license: Apache-2.0
 name: skyldav
+requires:
+- 
+  category: app-antivirus
+  description: ""
+  license: ""
+  name: clamav
+  
+  version: 0.97.8
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libcanberra
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libnotify
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: ""
+uri:
+- https://github.com/xypron/skyldav/archive/0.7.tar.gz -> skyldav-0.7.tar.gz
+use_flags:
+- libnotify
+- systemd
 version: "0.7"

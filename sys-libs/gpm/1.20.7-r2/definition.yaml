@@ -1,3 +1,26 @@
 category: sys-libs
+conflicts: []
+description: Console-based mouse driver
+license: GPL-2
 name: gpm
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: 5.9-r3
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-gpm
+  
+  version: ""
+uri:
+- https://www.nico.schottelius.org/software/gpm/archives/gpm-1.20.7.tar.lzma
+use_flags:
+- selinux
+- static-libs
 version: 1.20.7-r2

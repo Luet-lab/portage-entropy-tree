@@ -1,0 +1,171 @@
+category: mail-client
+conflicts: []
+description: A small but very powerful text-based mail client
+license: GPL-2
+name: mutt
+requires:
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libintl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: cyrus-sasl
+  
+  version: "2"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: slang
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: mime-types
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: gdbm
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 0.9.6
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: libidn2
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-mutt
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: qdbm
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: tokyocabinet
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: 1.0.17
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gpgme
+  
+  version: 0.9.0
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: "5.2"
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gnupg
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libiconv
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: db
+  
+  version: "4"
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: lmdb
+  
+  version: ""
+uri:
+- ftp://ftp.mutt.org/pub/mutt/mutt-1.13.1.tar.gz
+- https://bitbucket.org/mutt/mutt/downloads/mutt-1.13.1.tar.gz
+- https://dev.gentoo.org/~grobian/distfiles/mutt-gentoo-1.13.1-patches-r0.tar.xz
+use_flags:
+- berkdb
+- debug
+- doc
+- gdbm
+- gnutls
+- gpgme
+- +hcache
+- idn
+- +imap
+- kerberos
+- libressl
+- +lmdb
+- mbox
+- nls
+- pgp-classic
+- pop
+- qdbm
+- +sasl
+- selinux
+- slang
+- smime-classic
+- +smtp
+- +ssl
+- tokyocabinet
+- vanilla
+- prefix
+version: 1.13.1

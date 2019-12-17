@@ -1,3 +1,57 @@
 category: net-misc
+conflicts:
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: ocsync
+  
+  version: ""
+description: lightweight file synchronizer utility
+license: GPL-2
 name: csync
+requires:
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: "3.4"
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: neon
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libiconv
+  
+  version: ""
+- 
+  category: net-fs
+  description: ""
+  license: ""
+  name: samba
+  
+  version: "3.5"
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libssh
+  
+  version: "0.5"
+uri:
+- https://open.cryptomilk.org/attachments/download/27/csync-0.50.0.tar.xz
+use_flags:
+- doc
+- iconv
+- samba
+- +sftp
+- test
 version: 0.50.0

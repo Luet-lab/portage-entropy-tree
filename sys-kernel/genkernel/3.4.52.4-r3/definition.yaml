@@ -2,36 +2,62 @@ category: sys-kernel
 conflicts:
 - 
   category: <sys-apps
+  description: ""
+  license: ""
   name: openrc
   
   version: 0.9.9
+description: Gentoo automatic kernel building scripts
+license: GPL-2
 name: genkernel
 requires:
 - 
   category: sys-fs
+  description: ""
+  license: ""
   name: e2fsprogs
   
   version: ""
 - 
   category: sys-libs
+  description: ""
+  license: ""
   name: libselinux
   
   version: ""
 - 
   category: sys-fs
+  description: ""
+  license: ""
   name: cryptsetup
   
   version: ""
 - 
   category: app-arch
+  description: ""
+  license: ""
   name: cpio
   
   version: ""
 - 
   category: app-misc
+  description: ""
+  license: ""
   name: pax-utils
   
   version: 0.2.1
+uri:
+- https://dev.gentoo.org/~zerochaos/distfiles/genkernel-3.4.52.4.tar.xz
+- https://people.redhat.com/~heinzm/sw/dmraid/src/dmraid-1.0.0.rc16-3.tar.bz2
+- https://people.redhat.com/~heinzm/sw/dmraid/src/old/dmraid-1.0.0.rc16-3.tar.bz2
+- https://www.kernel.org/pub/linux/utils/raid/mdadm/mdadm-3.1.5.tar.bz2
+- https://busybox.net/downloads/busybox-1.20.2.tar.bz2
+- http://www.open-iscsi.org/bits/open-iscsi-2.0-872.tar.gz
+- mirror://gentoo/open-iscsi-2.0-872.tar.gz
+- mirror://sourceforge/fuse/fuse-2.8.6.tar.gz
+- http://podgorny.cz/unionfs-fuse/releases/unionfs-fuse-0.24.tar.bz2
+- mirror://gentoo/unionfs-fuse-0.24.tar.bz2
+- mirror://gnupg/gnupg/gnupg-1.4.11.tar.bz2
 use_flags:
 - cryptsetup
 - ibm

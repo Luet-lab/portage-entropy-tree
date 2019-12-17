@@ -1,3 +1,100 @@
 category: dev-libs
+conflicts: []
+description: Unified runtime system for heterogeneous multicore architectures
+license: LGPL-2.1
 name: starpu
+requires:
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freeglut
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: hwloc
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: blas
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: nvidia-cuda-toolkit
+  
+  version: ""
+- 
+  category: x11-drivers
+  description: ""
+  license: ""
+  name: nvidia-drivers
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: magma
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: fftw
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: mpi
+  
+  version: ""
+- 
+  category: sci-mathematics
+  description: ""
+  license: ""
+  name: glpk
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: opencl
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: valgrind
+  
+  version: ""
+uri:
+- https://gforge.inria.fr/frs/download.php/file/37744/starpu-1.2.6.tar.gz
+use_flags:
+- blas
+- cuda
+- doc
+- examples
+- fftw
+- fortran
+- gcc-plugin
+- mpi
+- opencl
+- "opengl\n\tspinlock-check"
+- static-libs
+- test
+- valgrind
 version: 1.2.6

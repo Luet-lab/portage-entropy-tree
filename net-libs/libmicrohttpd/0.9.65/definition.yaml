@@ -1,3 +1,29 @@
 category: net-libs
+conflicts: []
+description: Small C library to run an HTTP server as part of another application
+license: LGPL-2.1
 name: libmicrohttpd
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgcrypt
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: ""
+uri:
+- mirror://gnu/libmicrohttpd/libmicrohttpd-0.9.65.tar.gz
+use_flags:
+- +epoll
+- messages
+- ssl
+- static-libs
+- test
 version: 0.9.65

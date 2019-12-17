@@ -1,3 +1,30 @@
 category: media-sound
+conflicts: []
+description: LAME Ain't an MP3 Encoder
+license: LGPL-2.1
 name: lame
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: 5.7-r7
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libsndfile
+  
+  version: 1.0.2
+uri:
+- mirror://sourceforge/lame/lame-3.100.tar.gz
+use_flags:
+- debug
+- cpu_flags_x86_mmx
+- +frontend
+- mp3rtp
+- sndfile
+- static-libs
 version: 3.100-r2

@@ -1,3 +1,46 @@
 category: sys-cluster
+conflicts: []
+description: Web frontend for sys-cluster/ganglia
+license: BSD
 name: ganglia-web
+requires:
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: rsync
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: ganglia
+  
+  version: 3.3.7
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: php
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: httpd-php
+  
+  version: ""
+- 
+  category: media-fonts
+  description: ""
+  license: ""
+  name: dejavu
+  
+  version: ""
+uri:
+- https://github.com/ganglia/ganglia-web/archive/3.7.3.tar.gz -> ganglia-web-3.7.3.tar.gz
+use_flags:
+- vhosts
 version: 3.7.3-r1

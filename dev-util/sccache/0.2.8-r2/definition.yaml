@@ -1,3 +1,38 @@
 category: dev-util
+conflicts: []
+description: ccache/distcc like tool with support for rust and cloud storage
+license: Apache-2.0
 name: sccache
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: icecream
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: bubblewrap
+  
+  version: ""
+uri:
+- https://github.com/mozilla/sccache/archive/0.2.8.tar.gz -> sccache-0.2.8.tar.gz
+use_flags:
+- azure
+- dist-client
+- dist-server
+- gcs
+- memcached
+- redis
+- s3
 version: 0.2.8-r2

@@ -1,3 +1,31 @@
 category: app-portage
+conflicts: []
+description: Stand-alone Manifest generation & verification tool
+license: BSD-2
 name: gemato
+requires:
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gnupg
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: setuptools
+  
+  version: ""
+uri:
+- https://github.com/mgorny/gemato/archive/v14.1+multiprocessing.tar.gz -> gemato-14.1-multiprocessing.tar.gz
+use_flags:
+- +blake2
+- bzip2
+- +gpg
+- lzma
+- sha3
+- test
+- tools
 version: 14.1m

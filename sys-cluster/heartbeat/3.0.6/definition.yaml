@@ -1,3 +1,48 @@
 category: sys-cluster
+conflicts: []
+description: Heartbeat high availability cluster manager
+license: GPL-2
 name: heartbeat
+requires:
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: ""
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: net-snmp
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: cluster-glue
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: ssh
+  
+  version: ""
+uri:
+- http://hg.linux-ha.org/heartbeat-STABLE_3_0/archive/STABLE-3.0.6.tar.bz2
+use_flags:
+- doc
+- snmp
+- static-libs
 version: 3.0.6

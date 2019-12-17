@@ -1,3 +1,27 @@
 category: sys-process
+conflicts:
+- 
+  category: app-doc
+  description: ""
+  license: ""
+  name: daemontools-man
+  
+  version: ""
+description: Collection of tools for managing UNIX services
+license: public-domain
 name: daemontools
+requires:
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-daemontools
+  
+  version: ""
+uri:
+- http://cr.yp.to/daemontools/daemontools-0.76.tar.gz
+- http://smarden.org/pape/djb/manpages/daemontools-0.76-man-20020131.tar.gz
+use_flags:
+- selinux
+- static
 version: 0.76-r8

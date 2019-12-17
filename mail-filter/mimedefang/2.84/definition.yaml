@@ -1,3 +1,63 @@
 category: mail-filter
+conflicts: []
+description: Antispam, antivirus and other customizable filters for MTAs with Milter
+  support
+license: GPL-2+
 name: mimedefang
+requires:
+- 
+  category: dev-perl
+  description: ""
+  license: ""
+  name: Digest-SHA1
+  
+  version: ""
+- 
+  category: dev-perl
+  description: ""
+  license: ""
+  name: MailTools
+  
+  version: ""
+- 
+  category: dev-perl
+  description: ""
+  license: ""
+  name: Unix-Syslog
+  
+  version: ""
+- 
+  category: app-antivirus
+  description: ""
+  license: ""
+  name: clamav
+  
+  version: ""
+- 
+  category: dev-perl
+  description: ""
+  license: ""
+  name: MIME-tools
+  
+  version: "5.412"
+- 
+  category: dev-perl
+  description: ""
+  license: ""
+  name: IO-stringy
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: perl-MIME-Base64
+  
+  version: ""
+uri:
+- http://www.mimedefang.org/static/mimedefang-2.84.tar.gz
+use_flags:
+- clamav
+- +poll
+- test
 version: "2.84"

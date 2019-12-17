@@ -1,3 +1,44 @@
 category: dev-libs
+conflicts: []
+description: REINER SCT cyberJack USB chipcard reader user space driver
+license: GPL-2+ LGPL-2.1+
 name: cyberjack
+requires:
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: pcsc-lite
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libusb
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+uri:
+- https://support.reiner-sct.de/downloads/LINUX/V3.99.5/pcsc-cyberjack_3.99.5.tar.gz
+use_flags:
+- static-libs
+- threads
+- tools
+- +udev
+- +usb
+- xml
 version: 3.99.5_p13

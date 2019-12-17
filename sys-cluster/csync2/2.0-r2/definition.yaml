@@ -1,3 +1,57 @@
 category: sys-cluster
+conflicts: []
+description: Cluster synchronization tool
+license: GPL-2
 name: csync2
+requires:
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: postgresql
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: "3.0"
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: 2.7.3
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: xinetd
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: librsync
+  
+  version: 0.9.5
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c
+  
+  version: ""
+uri:
+- https://github.com/LINBIT/csync2/archive/csync2-2.0.tar.gz -> csync2-2.0-github.tar.gz
+use_flags:
+- mysql
+- postgres
+- sqlite
+- ssl
+- xinetd
 version: 2.0-r2

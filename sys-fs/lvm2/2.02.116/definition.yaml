@@ -1,3 +1,82 @@
 category: sys-fs
+conflicts:
+- 
+  category: <sys-apps
+  description: ""
+  license: ""
+  name: openrc
+  
+  version: "0.11"
+- 
+  category: <sys-fs
+  description: ""
+  license: ""
+  name: cryptsetup
+  
+  version: 1.1.2
+- 
+  category: '!sys-fs'
+  description: ""
+  license: ""
+  name: lvm-user
+  
+  version: ""
+description: User-land utilities for LVM2 (device-mapper) software
+license: GPL-2
 name: lvm2
+requires:
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: "2.16"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: makedev
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libudev
+  
+  version: "208"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: baselayout
+  
+  version: "2.2"
+- 
+  category: sys-block
+  description: ""
+  license: ""
+  name: thin-provisioning-tools
+  
+  version: 0.3.0
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
+uri: []
+use_flags:
+- readline
+- static
+- static-libs
+- systemd
+- lvm1
+- lvm2create_initrd
+- selinux
+- +udev
+- +thin
+- device-mapper-only
 version: 2.02.116

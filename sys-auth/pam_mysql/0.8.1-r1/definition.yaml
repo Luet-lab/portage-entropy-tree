@@ -1,3 +1,32 @@
 category: sys-auth
+conflicts: []
+description: pam_mysql is a module for pam to authenticate users with mysql
+license: GPL-2
 name: pam_mysql
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: "0.72"
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c
+  
+  version: ""
+uri:
+- https://github.com/NigelCunningham/pam-MySQL/archive/v0.8.1.tar.gz -> pam_mysql-0.8.1.tar.gz
+use_flags:
+- openssl
 version: 0.8.1-r1

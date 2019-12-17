@@ -1,3 +1,33 @@
 category: sys-process
+conflicts: []
+description: Queues jobs for later execution
+license: GPL-2
 name: at
+requires:
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: mta
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: logger
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-at
+  
+  version: ""
+uri:
+- mirror://debian/pool/main/a/at/at_3.1.23.orig.tar.gz
+use_flags:
+- pam
+- selinux
 version: 3.1.23

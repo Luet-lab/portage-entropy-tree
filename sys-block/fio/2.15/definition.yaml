@@ -1,3 +1,75 @@
 category: sys-block
+conflicts: []
+description: Jens Axboe's Flexible IO tester
+license: GPL-2
 name: fio
+requires:
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: numactl
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: ceph
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: ""
+- 
+  category: sci-visualization
+  description: ""
+  license: ""
+  name: gnuplot
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libaio
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: glusterfs
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: ""
+uri:
+- http://brick.kernel.dk/snaps/fio-2.15.tar.bz2
+use_flags:
+- aio
+- glusterfs
+- gnuplot
+- gtk
+- numa
+- rbd
+- rdma
+- static
+- zlib
 version: "2.15"

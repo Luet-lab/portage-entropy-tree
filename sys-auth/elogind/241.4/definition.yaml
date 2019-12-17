@@ -1,3 +1,65 @@
 category: sys-auth
+conflicts:
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+description: The systemd project's logind, extracted to a standalone package
+license: CC0-1.0 LGPL-2.1+ public-domain
 name: elogind
+requires:
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libudev
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: acl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: ""
+uri:
+- https://github.com/elogind/elogind/archive/v241.4.tar.gz -> elogind-241.4.tar.gz
+use_flags:
+- +acl
+- debug
+- doc
+- +pam
+- +policykit
+- selinux
 version: "241.4"

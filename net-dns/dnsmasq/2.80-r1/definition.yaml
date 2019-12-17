@@ -1,3 +1,84 @@
 category: net-dns
+conflicts: []
+description: Small forwarding DNS server
+license: '|| ( GPL-2 GPL-3 )'
 name: dnsmasq
+requires:
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: libidn
+  
+  version: ""
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: libidn2
+  
+  version: "2.0"
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: lua
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libnetfilter_conntrack
+  
+  version: ""
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: gettext
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nettle
+  
+  version: "3.4"
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-dnsmasq
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: ""
+uri:
+- http://www.thekelleys.org.uk/dnsmasq/dnsmasq-2.80.tar.xz
+use_flags:
+- auth-dns
+- conntrack
+- dbus
+- +dhcp
+- dhcp-tools
+- dnssec
+- +dumpfile
+- id
+- idn
+- libidn2
+- +inotify
+- ipv6
+- lua
+- nls
+- script
+- selinux
+- static
+- tftp
 version: 2.80-r1

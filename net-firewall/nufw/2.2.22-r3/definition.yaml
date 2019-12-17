@@ -1,3 +1,122 @@
 category: net-firewall
+conflicts: []
+description: An enterprise grade authenticating firewall based on netfilter
+license: GPL-2
 name: nufw
+requires:
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libnetfilter_queue
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgcrypt
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libnfnetlink
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: ipy
+  
+  version: ""
+- 
+  category: net-firewall
+  description: ""
+  license: ""
+  name: iptables
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libnetfilter_conntrack
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: postgresql
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libprelude
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: cyrus-sasl
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: ""
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: "2"
+uri:
+- http://www.nufw.org/attachments/download/39/nufw-2.2.22.tar.bz2
+use_flags:
+- debug
+- ldap
+- mysql
+- pam
+- pam_nuauth
+- plaintext
+- postgres
+- prelude
+- unicode
+- nfqueue
+- nfconntrack
+- static
+- syslog
+- test
 version: 2.2.22-r3

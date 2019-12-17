@@ -1,3 +1,45 @@
 category: app-laptop
+conflicts: []
+description: Handles power management and special keys on laptops
+license: GPL-2
 name: pbbuttonsd
+requires:
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: alsa-lib
+  
+  version: "1.0"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: pciutils
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libsmbios
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.6"
+uri:
+- mirror://sourceforge/pbbuttons/pbbuttonsd-0.8.1a.tar.gz
+use_flags:
+- acpi
+- alsa
+- doc
+- ibam
+- macbook
+- oss
+- static-libs
 version: 0.8.1a

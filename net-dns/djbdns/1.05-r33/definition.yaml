@@ -1,3 +1,34 @@
 category: net-dns
+conflicts: []
+description: Collection of DNS client/server software
+license: public-domain
 name: djbdns
+requires:
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: daemontools
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-djbdns
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: ucspi-tcp
+  
+  version: ""
+uri:
+- http://cr.yp.to/djbdns/djbdns-1.05.tar.gz
+- http://smarden.org/pape/djb/manpages/djbdns-1.05-man.tar.gz
+use_flags:
+- ipv6
+- selinux
 version: 1.05-r33

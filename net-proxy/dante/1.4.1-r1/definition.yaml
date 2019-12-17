@@ -1,3 +1,59 @@
 category: net-proxy
+conflicts: []
+description: A free socks4,5 and msproxy implementation
+license: BSD GPL-2
 name: dante
+requires:
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-dante
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: tcp-wrappers
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: miniupnpc
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: shadow
+  
+  version: ""
+uri:
+- https://www.inet.no/dante/files/dante-1.4.1.tar.gz
+use_flags:
+- debug
+- kerberos
+- pam
+- selinux
+- static-libs
+- tcpd
+- upnp
 version: 1.4.1-r1

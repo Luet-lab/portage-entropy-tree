@@ -1,3 +1,44 @@
 category: net-ftp
+conflicts: []
+description: Standard Linux FTP client
+license: BSD
 name: ftp
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: "5.2"
+uri:
+- ftp://sunsite.unc.edu/pub/Linux/system/network/netkit/netkit-ftp-.tar.gz
+- mirror://debian/pool/main/n/netkit-ftp-ssl/netkit-ftp-ssl_+-.debian.tar.gz
+- mirror://gentoo/netkit-ftp--patches-2.tar.bz2
+use_flags:
+- ipv6
+- libressl
+- readline
+- ssl
 version: 0.17.23.0.2.1

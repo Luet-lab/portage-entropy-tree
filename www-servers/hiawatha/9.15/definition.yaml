@@ -1,3 +1,46 @@
 category: www-servers
+conflicts: []
+description: Advanced and secure webserver
+license: GPL-2
 name: hiawatha
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: mbedtls
+  
+  version: "2.0"
+- 
+  category: "(\tdev-libs"
+  description: ""
+  license: ""
+  name: libxslt
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+uri:
+- https://www.hiawatha-webserver.org/files/hiawatha-9.15.tar.gz
+use_flags:
+- +cache
+- ipv6
+- monitor
+- +rewrite
+- +rproxy
+- +ssl
+- tomahawk
+- +xslt
 version: "9.15"

@@ -1,3 +1,69 @@
 category: app-arch
+conflicts: []
+description: Package maintenance system for Debian
+license: GPL-2+
 name: dpkg
+requires:
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libintl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: 1.1.4
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: perl
+  
+  version: 5.14.2
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: bzip2
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: libmd
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: xz-utils
+  
+  version: ""
+uri:
+- mirror://debian/pool/main/d/dpkg/dpkg_1.19.6.tar.xz
+use_flags:
+- +bzip2
+- libmd
+- +lzma
+- nls
+- selinux
+- static-libs
+- test
+- unicode
+- +update-alternatives
+- +zlib
 version: 1.19.6

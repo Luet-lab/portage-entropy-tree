@@ -1,3 +1,45 @@
 category: dev-libs
+conflicts: []
+description: Portable C++ runtime for threads and sockets
+license: LGPL-3
 name: ucommon
+requires:
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgcrypt
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+uri:
+- mirror://gnu/commoncpp/ucommon-7.0.0.tar.gz
+use_flags:
+- doc
+- static-libs
+- +cxx
+- debug
+- libressl
+- ssl
+- gnutls
 version: 7.0.0

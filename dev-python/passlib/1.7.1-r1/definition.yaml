@@ -1,3 +1,36 @@
 category: dev-python
+conflicts: []
+description: Password hashing framework supporting over 20 schemes
+license: BSD-2
 name: passlib
+requires:
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: scrypt
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: bcrypt
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: cryptography
+  
+  version: ""
+uri:
+- mirror://pypi/p/passlib/passlib-1.7.1.tar.gz
+use_flags:
+- +bcrypt
+- doc
+- +scrypt
+- test
+- +totp
 version: 1.7.1-r1

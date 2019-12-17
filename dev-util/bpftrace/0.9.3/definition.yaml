@@ -1,37 +1,53 @@
 category: dev-util
 conflicts: []
+description: High-level tracing language for eBPF
+license: Apache-2.0
 name: bpftrace
 requires:
 - 
-  category: dev-util
-  name: systemtap
-  
-  version: ""
-- 
   category: sys-devel
-  name: clang
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libbpf
-  
-  version: ""
-- 
-  category: sys-devel
+  description: ""
+  license: ""
   name: llvm
   
   version: 3.7.1
 - 
   category: dev-util
+  description: ""
+  license: ""
   name: bcc
   
   version: 0.10.0
 - 
   category: virtual
+  description: ""
+  license: ""
   name: libelf
   
   version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: systemtap
+  
+  version: ""
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: clang
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libbpf
+  
+  version: ""
+uri:
+- https://github.com/iovisor/bpftrace/archive/v0.9.3.tar.gz -> bpftrace-0.9.3.tar.gz
 use_flags:
 - test
 version: 0.9.3

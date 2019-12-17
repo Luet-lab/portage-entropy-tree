@@ -1,0 +1,23 @@
+category: sys-libs
+description: GNU libc C library
+license: LGPL-2.1+ BSD HPND ISC inner-net rc PCRE
+name: glibc
+uri:
+- 'mirror://gnu/glibc/glibc-2.26.tar.xz https://dev.gentoo.org/~dilfridge/distfiles/glibc-2.26-patches-7.tar.bz2
+  multilib? ( https://dev.gentoo.org/~dilfridge/distfiles/gcc-multilib-bootstrap-20180511.tar.xz '
+use_flags:
+- audit
+- caps
+- debug
+- doc
+- gd
+- hardened
+- multilib
+- nscd
+- selinux
+- systemtap
+- profile
+- suid
+- vanilla
+- headers-only
+version: 2.26-r7

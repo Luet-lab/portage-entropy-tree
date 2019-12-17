@@ -1,3 +1,68 @@
 category: sys-apps
+conflicts: []
+description: Userspace system daemon to enable security levels for Thunderbolt 3.
+license: LGPL-2.1
 name: bolt
+requires:
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: asciidoc
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.50.0
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: glib-utils
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libudev
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: umockdev
+  
+  version: ""
+uri:
+- https://gitlab.freedesktop.org/bolt/bolt/-/archive/0.7/bolt-0.7.tar.gz
+use_flags:
+- doc
+- systemd
 version: "0.7"

@@ -1,3 +1,23 @@
 category: dev-libs
+conflicts: []
+description: Tools and libraries to configure and manage kernel control groups
+license: LGPL-2.1
 name: libcgroup
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+uri:
+- mirror://sourceforge/project/libcg/libcgroup/v0.41/libcgroup-0.41.tar.bz2
+use_flags:
+- +daemon
+- elibc_musl
+- pam
+- static-libs
+- test
+- +tools
 version: 0.41-r5

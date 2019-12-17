@@ -1,3 +1,56 @@
 category: sci-libs
+conflicts: []
+description: Streamlined C++ linear algebra library
+license: Apache-2.0
 name: armadillo
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: boost
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: arpack
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: blas
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: lapack
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: superlu
+  
+  version: "5.2"
+uri:
+- mirror://sourceforge/arma/armadillo-9.200.5.tar.xz
+use_flags:
+- arpack
+- blas
+- debug
+- doc
+- examples
+- hdf5
+- lapack
+- mkl
+- superlu
+- tbb
+- test
 version: 9.200.5

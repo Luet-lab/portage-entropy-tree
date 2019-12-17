@@ -1,3 +1,31 @@
 category: sci-libs
+conflicts:
+- 
+  category: app-eselect
+  description: ""
+  license: ""
+  name: eselect-cblas
+  
+  version: ""
+description: BLAS-like Library Instantiation Software Framework
+license: BSD
 name: blis
+requires:
+- 
+  category: app-eselect
+  description: ""
+  license: ""
+  name: eselect-blas
+  
+  version: "0.2"
+uri:
+- https://github.com/flame/blis/archive/0.5.2.tar.gz -> blis-0.5.2.tar.gz
+use_flags:
+- openmp
+- pthread
+- serial
+- static-libs
+- eselect-ldso
+- doc
+- 64bit-index
 version: 0.5.2

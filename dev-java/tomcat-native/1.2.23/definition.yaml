@@ -1,3 +1,33 @@
 category: dev-java
+conflicts: []
+description: Allows Tomcat to use certain native resources for better performance
+license: Apache-2.0
 name: tomcat-native
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: apr
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jre
+  
+  version: "1.8"
+uri:
+- mirror://apache/tomcat/tomcat-connectors/native/1.2.23/source/tomcat-native-1.2.23-src.tar.gz
+use_flags:
+- static-libs
+- test
 version: 1.2.23

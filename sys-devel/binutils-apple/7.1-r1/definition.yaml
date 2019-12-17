@@ -1,3 +1,49 @@
 category: sys-devel
+conflicts: []
+description: Darwin assembler as(1) and static linker ld(1), Xcode Tools 7.1
+license: APSL-2
 name: binutils-apple
+requires:
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: binutils-config
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: xar
+  
+  version: ""
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: llvm
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcxx
+  
+  version: ""
+uri:
+- http://www.opensource.apple.com/tarballs/ld64/ld64-253.6.tar.gz
+- http://www.opensource.apple.com/tarballs/cctools/cctools-877.7.tar.gz
+- http://www.opensource.apple.com/tarballs/dyld/dyld-360.17.tar.gz
+- http://www.opensource.apple.com/tarballs/libunwind/libunwind-35.3.tar.gz
+- https://dev.gentoo.org/~grobian/distfiles/binutils-apple-patches-4.3-r1.tar.bz2
+- https://dev.gentoo.org/~grobian/distfiles/binutils-apple-patches-5.1-r2.tar.bz2
+- https://dev.gentoo.org/~grobian/distfiles/binutils-apple-patches-6.1-r1.tar.bz2
+- https://dev.gentoo.org/~grobian/distfiles/binutils-apple-patches-6.3-r2.tar.bz2
+- https://dev.gentoo.org/~grobian/distfiles/binutils-apple-patches-7.0-r3.tar.bz2
+use_flags:
+- lto
+- test
+- multitarget
 version: 7.1-r1

@@ -1,27 +1,44 @@
 category: www-client
 conflicts: []
+description: Seamonkey Web Browser
+license: MPL-2.0 GPL-2 LGPL-2.1
 name: seamonkey
 requires:
 - 
-  category: dev-libs
-  name: nss
-  
-  version: 3.28.3
-- 
-  category: dev-libs
-  name: nspr
-  
-  version: 4.13.1
-- 
   category: virtual
+  description: ""
+  license: ""
   name: jack
   
   version: ""
 - 
   category: x11-plugins
+  description: ""
+  license: ""
   name: enigmail
   
   version: 2.1.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nss
+  
+  version: 3.28.3
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nspr
+  
+  version: 4.13.1
+uri:
+- https://archive.mozilla.org/pub/seamonkey/releases/2.49.5/source/seamonkey-2.49.5.source.tar.xz
+  -> seamonkey-2.49.5.source.tar.xz
+- https://archive.mozilla.org/pub/seamonkey/releases/2.49.5/source/seamonkey-2.49.5.source-l10n.tar.xz
+  -> seamonkey-2.49.5.source-l10n.tar.xz
+- https://dev.gentoo.org/~axs/mozilla/patchsets/seamonkey-2.49.5-patches-01.tar.xz
+- https://dev.gentoo.org/~polynomial-c/mozilla/patchsets/seamonkey-2.49.5-patches-01.tar.xz
 use_flags:
 - +calendar
 - +chatzilla

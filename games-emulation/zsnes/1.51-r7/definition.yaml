@@ -1,3 +1,57 @@
 category: games-emulation
+conflicts: []
+description: SNES (Super Nintendo) emulator that uses x86 assembly
+license: GPL-2
 name: zsnes
+requires:
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libsdl[sound,video,abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib-1.2.3-r1[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libao[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: opengl[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libpng
+  
+  version: ""
+uri:
+- mirror://sourceforge/zsnes/zsnes151src.tar.bz2
+use_flags:
+- ao
+- custom-cflags
+- +debug
+- opengl
+- png
 version: 1.51-r7

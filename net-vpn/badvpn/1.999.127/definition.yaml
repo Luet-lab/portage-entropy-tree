@@ -1,3 +1,51 @@
 category: net-vpn
+conflicts: []
+description: Peer-to-peer VPN, NCD scripting language, tun2socks proxifier
+license: BSD
 name: badvpn
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nspr
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nss
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: iproute2
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: "171"
+uri:
+- https://badvpn.googlecode.com/files/badvpn-1.999.127.tar.bz2
+use_flags:
+- +client
+- +ncd
+- +server
+- +tun2socks
+- +udpgw
+- debug
 version: 1.999.127

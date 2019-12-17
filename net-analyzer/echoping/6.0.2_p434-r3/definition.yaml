@@ -1,3 +1,63 @@
 category: net-analyzer
+conflicts: []
+description: Small program to test performances of remote servers
+license: GPL-2
 name: echoping
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: libidn
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: postgresql
+  
+  version: ""
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: "3.3"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+uri:
+- https://dev.gentoo.org/~jer/echoping-6.0.2.tar.gz
+use_flags:
+- libressl
+- gnutls
+- http
+- icp
+- idn
+- priority
+- smtp
+- ssl
+- tos
+- postgres
+- ldap
 version: 6.0.2_p434-r3

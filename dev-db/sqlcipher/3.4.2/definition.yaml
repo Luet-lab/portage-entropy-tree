@@ -1,3 +1,51 @@
 category: dev-db
+conflicts: []
+description: Full Database Encryption for SQLite
+license: BSD
 name: sqlcipher
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libedit
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: tcl
+  
+  version: ""
+uri:
+- https://github.com/sqlcipher/sqlcipher/archive/v3.4.2.tar.gz -> sqlcipher-3.4.2.tar.gz
+use_flags:
+- libedit
+- readline
+- libressl
+- static-libs
+- tcl
+- test
 version: 3.4.2

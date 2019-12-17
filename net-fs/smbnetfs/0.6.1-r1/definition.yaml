@@ -1,3 +1,39 @@
 category: net-fs
+conflicts: []
+description: FUSE filesystem for SMB shares
+license: GPL-2
 name: smbnetfs
+requires:
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: fuse
+  
+  version: "2.3"
+- 
+  category: net-fs
+  description: ""
+  license: ""
+  name: samba
+  
+  version: "4.2"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.30"
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: libsecret
+  
+  version: ""
+uri:
+- mirror://sourceforge/smbnetfs/smbnetfs-0.6.1.tar.bz2
+use_flags:
+- gnome-keyring
 version: 0.6.1-r1

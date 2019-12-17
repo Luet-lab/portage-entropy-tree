@@ -1,3 +1,101 @@
 category: app-admin
+conflicts:
+- 
+  category: '!app-misc'
+  description: ""
+  license: ""
+  name: pwsafe
+  
+  version: ""
+description: Password manager with wxGTK based frontend
+license: Artistic-2
 name: passwordsafe
+requires:
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: xvkbd
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: xerces-c
+  
+  version: ""
+- 
+  category: media-gfx
+  description: ""
+  license: ""
+  name: qrencode
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXt
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: wxGTK
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: ykpers
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXtst
+  
+  version: ""
+uri:
+- https://github.com/pwsafe/pwsafe/archive/1.08.tar.gz -> passwordsafe-1.08.tar.gz
+use_flags:
+- libressl
+- minimal
+- test
+- qr
+- yubikey
+- +xml
+- xvkbd
 version: 1.08_beta

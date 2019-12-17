@@ -1,3 +1,48 @@
 category: media-libs
+conflicts: []
+description: Library for SSA/ASS subtitles rendering
+license: ISC
 name: libass
+requires:
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
+  
+  version: 2.10.92
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
+  
+  version: 2.5.0.1
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libiconv
+  
+  version: 0-r1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: fribidi
+  
+  version: 0.19.5-r1
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: harfbuzz
+  
+  version: 0.9.12
+uri:
+- https://github.com/libass/libass/releases/download/0.14.0/libass-0.14.0.tar.xz
+use_flags:
+- +fontconfig
+- +harfbuzz
+- static-libs
 version: 0.14.0

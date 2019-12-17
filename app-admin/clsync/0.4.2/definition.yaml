@@ -1,3 +1,54 @@
 category: app-admin
+conflicts: []
+description: Live sync tool based on inotify, written in GNU C
+license: GPL-3+
 name: clsync
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libcgroup
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: mhash
+  
+  version: ""
+- 
+  category: app-doc
+  description: ""
+  license: ""
+  name: clsync-docs
+  
+  version: 0.4.2
+uri:
+- https://github.com/xaionaro/clsync/archive/v0.4.2.tar.gz -> clsync-0.4.2.tar.gz
+use_flags:
+- +caps
+- cluster
+- control-socket
+- cgroups
+- debug
+- |-
+  extra-debug
+  extra-hardened
+- gio
+- hardened
+- +highload-locks
+- +inotify
+- |-
+  mhash
+  namespaces
+- seccomp
 version: 0.4.2

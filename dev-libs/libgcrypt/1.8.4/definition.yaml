@@ -1,3 +1,20 @@
 category: dev-libs
+conflicts: []
+description: General purpose crypto library based on the code used in GnuPG
+license: LGPL-2.1 MIT
 name: libgcrypt
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgpg-error
+  
+  version: "1.25"
+uri:
+- mirror://gnupg/libgcrypt/libgcrypt-1.8.4.tar.bz2
+use_flags:
+- doc
+- o-flag-munging
+- static-libs
 version: 1.8.4

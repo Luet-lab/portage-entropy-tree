@@ -1,3 +1,72 @@
 category: www-apps
+conflicts: []
+description: ViewVC, a web interface to CVS and Subversion
+license: BSD-2
 name: viewvc
+requires:
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: httpd-cgi
+  
+  version: ""
+- 
+  category: dev-vcs
+  description: ""
+  license: ""
+  name: cvsgraph
+  
+  version: 1.5.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: mysql-python
+  
+  version: 0.9.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pygments
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: mime-types
+  
+  version: ""
+- 
+  category: dev-vcs
+  description: ""
+  license: ""
+  name: rcs
+  
+  version: ""
+- 
+  category: dev-vcs
+  description: ""
+  license: ""
+  name: subversion
+  
+  version: 1.3.1
+- 
+  category: www-apache
+  description: ""
+  license: ""
+  name: mod_wsgi
+  
+  version: ""
+uri:
+- http://viewvc.org/downloads/viewvc-1.1.26.tar.gz
+use_flags:
+- cvs
+- cvsgraph
+- mod_wsgi
+- mysql
+- pygments
+- +subversion
 version: 1.1.26

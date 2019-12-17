@@ -1,3 +1,27 @@
 category: net-misc
+conflicts: []
+description: 'Netkit''s Remote Shell Suite: rexec{,d} rlogin{,d} rsh{,d}'
+license: BSD
 name: netkit-rsh
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: "5.2"
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: pambase
+  
+  version: "20080219.1"
+uri:
+- ftp://ftp.uk.linux.org/pub/linux/Networking/netkit/netkit-rsh-0.17.tar.gz
+- mirror://gentoo/rexec-1.5.tar.gz
+- mirror://gentoo/netkit-rsh-0.17-patches-3.tar.lzma
+use_flags:
+- pam
 version: 0.17-r10

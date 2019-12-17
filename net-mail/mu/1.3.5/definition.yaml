@@ -1,3 +1,54 @@
 category: net-mail
+conflicts:
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: mailutils
+  
+  version: ""
+description: Set of tools to deal with Maildirs, in particular, searching and indexing
+license: GPL-3+
 name: mu
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gmime
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: xapian
+  
+  version: "1.4"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: emacs
+  
+  version: "24.4"
+- 
+  category: dev-scheme
+  description: ""
+  license: ""
+  name: guile
+  
+  version: "2.0"
+uri:
+- https://github.com/djcb/mu/archive/1.3.5.tar.gz -> mu-1.3.5.tar.gz
+use_flags:
+- emacs
+- guile
 version: 1.3.5

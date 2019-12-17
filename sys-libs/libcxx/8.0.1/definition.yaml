@@ -1,3 +1,38 @@
 category: sys-libs
+conflicts: []
+description: New implementation of the C++ standard library, targeting C++11
+license: '|| ( UoI-NCSA MIT )'
 name: libcxx
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcxxabi-8.0.1[libunwind=,static-libs?,]
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcxxrt[libunwind=,static-libs?,]
+  
+  version: ""
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: gcc
+  
+  version: "4.7"
+uri:
+- https://github.com/llvm/llvm-project/releases/download/llvmorg-8.0.1/libcxx-8.0.1.src.tar.xz
+use_flags:
+- elibc_glibc
+- elibc_musl
+- +libcxxabi
+- libcxxrt
+- +libunwind
+- +static-libs
+- test
 version: 8.0.1

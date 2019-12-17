@@ -1,3 +1,92 @@
 category: sys-devel
+conflicts:
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: llvm
+  
+  version: ""
+description: Low Level Virtual Machine
+license: "UoI-NCSA rc BSD public-domain\n\tllvm_targets_ARM? ( LLVM-Grant )"
 name: llvm
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpfm
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libedit
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libffi
+  
+  version: 3.0.13-r1
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: 5.9-r3
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: xar
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+uri:
+- https://github.com/llvm/llvm-project/releases/download/llvmorg-8.0.1/llvm-8.0.1.src.tar.xz
+- 'https://dev.gentoo.org/~mgorny/dist/llvm/llvm-8.0.1-manpages.tar.bz2 '
+use_flags:
+- debug
+- doc
+- exegesis
+- gold
+- libedit
+- +libffi
+- ncurses
+- test
+- xar
+- "xml\n\tkernel_Darwin"
+- AArch64
+- AMDGPU
+- ARM
+- BPF
+- Hexagon
+- Lanai
+- Mips
+- MSP430
+- NVPTX
+- PowerPC
+- Sparc
+- SystemZ
+- WebAssembly
+- X86
+- XCore
 version: 8.0.1

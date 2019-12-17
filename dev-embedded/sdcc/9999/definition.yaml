@@ -1,3 +1,74 @@
 category: dev-embedded
+conflicts:
+- 
+  category: dev-embedded
+  description: ""
+  license: ""
+  name: sdcc-svn
+  
+  version: ""
+description: Small device C compiler (for various microprocessors)
+license: "\n\tGPL-2 ZLIB\n\tnon-free? ( MicroChip-SDCC )\n\tpackihx? ( public-domain
+  )\n"
 name: sdcc
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
+- 
+  category: dev-embedded
+  description: ""
+  license: ""
+  name: gputils
+  
+  version: 0.13.7
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: boehm-gc
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: boost
+  
+  version: ""
+uri: []
+use_flags:
+- avr
+- ds390
+- ds400
+- gbz80
+- hc08
+- mcs51
+- pic14
+- pic16
+- r2k
+- r3ka
+- s08
+- stm8
+- tlcs90
+- "z180\n\tz80\n\n\t+boehm-gc"
+- device-lib
+- doc
+- non-free
+- packihx
+- +sdbinutils
+- sdcdb
+- +sdcpp
+- ucsim
 version: "9999"

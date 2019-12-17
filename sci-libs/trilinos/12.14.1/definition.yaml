@@ -1,3 +1,264 @@
 category: sci-libs
+conflicts: []
+description: Scientific library collection for large scale problems
+license: BSD LGPL-2.1
 name: trilinos
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: binutils-libs
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: adolc
+  
+  version: ""
+- 
+  category: sci-mathematics
+  description: ""
+  license: ""
+  name: glpk
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: cxsparse
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: superlu
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: boost
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: mkl
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: scalapack
+  
+  version: ""
+- 
+  category: dev-cpp
+  description: ""
+  license: ""
+  name: yaml-cpp
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: arprec
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: coinor-clp
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: scotch
+  
+  version: ""
+- 
+  category: dev-cpp
+  description: ""
+  license: ""
+  name: eigen
+  
+  version: ""
+- 
+  category: dev-cpp
+  description: ""
+  license: ""
+  name: gtest
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: hdf5
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: hwloc
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: mumps
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: umfpack
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: matio
+  
+  version: ""
+- 
+  category: sci-mathematics
+  description: ""
+  license: ""
+  name: petsc
+  
+  version: ""
+- 
+  category: dev-cpp
+  description: ""
+  license: ""
+  name: tbb
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: blas
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: lapack
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: mpi
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: nvidia-cuda-toolkit
+  
+  version: "3.2"
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: hypre
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: netcdf
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: qd
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: taucs
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: tvmet
+  
+  version: ""
+uri:
+- https://github.com/trilinos/Trilinos/archive/trilinos-release-12-14-1.tar.gz ->
+  trilinos-12.14.1.tar.gz
+- https://dev.gentoo.org/~tamiko/distfiles/trilinos-12.14.1-patches-r0.tar.xz
+use_flags:
+- adolc
+- arprec
+- boost
+- clp
+- cuda
+- eigen
+- glpk
+- gtest
+- hdf5
+- hwloc
+- "hypre\n\tmatio"
+- metis
+- mkl
+- mumps
+- netcdf
+- petsc
+- qd
+- scalapack
+- scotch
+- "sparse\n\tsuperlu"
+- taucs
+- tbb
+- test
+- threads
+- tvmet
+- yaml
+- zlib
+- X
 version: 12.14.1

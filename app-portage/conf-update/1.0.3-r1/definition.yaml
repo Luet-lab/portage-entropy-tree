@@ -1,3 +1,47 @@
 category: app-portage
+conflicts: []
+description: conf-update is a ncurses-based config management utility
+license: GPL-2
 name: conf-update
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.6"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: colordiff
+  
+  version: ""
+uri:
+- https://gitweb.gentoo.org/proj/conf-update.git/snapshot/conf-update-1.0.3.tar.bz2
+use_flags:
+- colordiff
+- libressl
 version: 1.0.3-r1

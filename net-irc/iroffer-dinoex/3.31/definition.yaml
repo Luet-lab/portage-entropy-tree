@@ -1,3 +1,74 @@
 category: net-irc
+conflicts: []
+description: IRC fileserver using DCC
+license: GPL-2
 name: iroffer-dinoex
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nss
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl[curl_ssl_gnutls]
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl[curl_ssl_openssl]
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: geoip
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: ruby
+  
+  version: ""
+uri:
+- http://iroffer.dinoex.net/iroffer-dinoex-3.31.tar.gz
+- http://iroffer.dinoex.net/HISTORY/iroffer-dinoex-3.31.tar.gz
+use_flags:
+- +admin
+- +blowfish
+- +chroot
+- curl
+- debug
+- geoip
+- gnutls
+- +http
+- kqueue
+- +memsave
+- ruby
+- ssl
+- +telnet
+- upnp
 version: "3.31"

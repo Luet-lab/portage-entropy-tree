@@ -1,3 +1,27 @@
 category: net-analyzer
+conflicts: []
+description: Read system statistical data and feed it to RRDtool
+license: GPL-2
 name: rrdcollect
+requires:
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: rrdtool
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpcre
+  
+  version: ""
+uri:
+- mirror://sourceforge/rrdcollect/rrdcollect-0.2.9.tar.gz
+use_flags:
+- exec
+- librrd
+- pcre
 version: 0.2.9

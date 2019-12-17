@@ -1,3 +1,81 @@
 category: net-misc
+conflicts: []
+description: A free routing daemon replacing Zebra supporting RIP, OSPF and BGP
+license: GPL-2
 name: quagga
+requires:
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: c-ares
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: protobuf-c
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: net-snmp
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpcre
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: iproute2
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: ""
+uri:
+- mirror://nongnu/quagga/quagga-1.2.4.tar.gz
+use_flags:
+- bgpclassless
+- caps
+- fpm
+- doc
+- elibc_glibc
+- ipv6
+- multipath
+- nhrpd
+- ospfapi
+- pam
+- protobuf
+- +readline
+- snmp
+- tcp-zebra
+- test
 version: 1.2.4

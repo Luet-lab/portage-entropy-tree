@@ -1,3 +1,23 @@
 category: sys-libs
+conflicts: []
+description: Standard GNU database libraries
+license: GPL-3
 name: gdbm
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
+uri:
+- mirror://gnu/gdbm/gdbm-1.14.1.tar.gz
+- 'mirror://gnu/gdbm/gdbm-1.8.3.tar.gz '
+use_flags:
+- +berkdb
+- exporter
+- nls
+- +readline
+- static-libs
 version: 1.14.1

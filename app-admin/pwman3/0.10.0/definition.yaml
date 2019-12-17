@@ -1,3 +1,50 @@
 category: app-admin
+conflicts: []
+description: A lightweight password-manager with multiple database backends
+license: GPL-3
 name: pwman3
+requires:
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: cryptography
+  
+  version: "2.3"
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: colorama
+  
+  version: 0.3.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pymongo
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pymysql
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: psycopg
+  
+  version: ""
+uri:
+- https://github.com/pwman3/pwman3/archive/v0.10.0.tar.gz -> pwman3-0.10.0.tar.gz
+use_flags:
+- mongodb
+- mysql
+- postgres
+- +sqlite
+- test
 version: 0.10.0

@@ -1,3 +1,63 @@
 category: net-p2p
+conflicts: []
+description: A GTK+ Gnutella client
+license: GPL-2
 name: gtk-gnutella
+requires:
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: 2.2.1
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: 0.35.2
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: 2.2.5
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: gettext
+  
+  version: 0.11.5
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: binutils-libs
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+uri:
+- mirror://sourceforge/gtk-gnutella/gtk-gnutella-1.1.15.tar.xz
+use_flags:
+- nls
+- dbus
+- ssl
+- +gtk
 version: 1.1.15

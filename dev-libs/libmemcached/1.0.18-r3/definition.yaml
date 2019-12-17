@@ -1,3 +1,36 @@
 category: dev-libs
+conflicts: []
+description: a C client library to the memcached server
+license: BSD
 name: libmemcached
+requires:
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: memcached
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: cyrus-sasl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libevent
+  
+  version: ""
+uri:
+- https://launchpad.net/libmemcached/1.0/1.0.18/+download/libmemcached-1.0.18.tar.gz
+use_flags:
+- debug
+- hsieh
+- +libevent
+- sasl
+- static-libs
 version: 1.0.18-r3

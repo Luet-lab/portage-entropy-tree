@@ -1,3 +1,89 @@
 category: net-irc
+conflicts: []
+description: An advanced Internet Relay Chat daemon
+license: GPL-2
 name: unrealircd
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: unrealircd
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: argon2
+  
+  version: 20171227-r1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpcre2
+  
+  version: ""
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: c-ares
+  
+  version: "1.7"
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
+  
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: unrealircd
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libnsl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+uri:
+- https://www.unrealircd.org/unrealircd/unrealircd-4.2.4.1.tar.gz
+use_flags:
+- class-nofakelag
+- curl
+- +extban-stacking
+- libressl
+- +operoverride
+- "operoverride-verify\n\t+prefixaq"
+- showlistmodes
+- shunnotices
+- +usermod
 version: 4.2.4.1

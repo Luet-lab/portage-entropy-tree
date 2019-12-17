@@ -1,3 +1,33 @@
 category: app-arch
+conflicts: []
+description: Use this to make tarballs :)
+license: GPL-3+
 name: tar
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: acl
+  
+  version: ""
+uri:
+- mirror://gnu/tar/tar-1.32.tar.bz2
+- mirror://gnu-alpha/tar/tar-1.32.tar.bz2
+use_flags:
+- acl
+- elibc_glibc
+- minimal
+- nls
+- selinux
+- static
+- userland_GNU
+- xattr
 version: "1.32"

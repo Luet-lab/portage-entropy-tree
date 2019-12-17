@@ -1,3 +1,34 @@
 category: app-shells
+conflicts:
+- 
+  category: '!net-fs'
+  description: ""
+  license: ""
+  name: mc
+  
+  version: ""
+description: Programmable Completion for bash
+license: GPL-2+
 name: bash-completion
+requires:
+- 
+  category: app-shells
+  description: ""
+  license: ""
+  name: bash
+  
+  version: 4.3_p30-r1
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: miscfiles
+  
+  version: ""
+uri:
+- https://github.com/scop/bash-completion/releases/download/2.10/bash-completion-2.10.tar.xz
+- 'https://github.com/mgorny/bashcomp2/releases/download/v2.0.3/bashcomp-2.0.3.tar.gz '
+use_flags:
+- +eselect
+- test
 version: "2.10"

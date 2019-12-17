@@ -1,3 +1,91 @@
 category: sys-devel
+conflicts:
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: llvm
+  
+  version: ""
+description: Low Level Virtual Machine
+license: "UoI-NCSA rc BSD public-domain\n\tllvm_targets_ARM? ( LLVM-Grant )"
 name: llvm
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: 5.9-r3
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: xar
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpfm
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libedit
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libffi
+  
+  version: 3.0.13-r1
+uri:
+- https://releases.llvm.org/7.1.0/llvm-7.1.0.src.tar.xz
+- 'https://dev.gentoo.org/~mgorny/dist/llvm/llvm-7.1.0-manpages.tar.bz2 '
+use_flags:
+- debug
+- doc
+- exegesis
+- gold
+- libedit
+- +libffi
+- ncurses
+- test
+- xar
+- "xml\n\tkernel_Darwin"
+- AArch64
+- AMDGPU
+- ARM
+- BPF
+- Hexagon
+- Lanai
+- Mips
+- MSP430
+- NVPTX
+- PowerPC
+- Sparc
+- SystemZ
+- X86
+- XCore
 version: 7.1.0

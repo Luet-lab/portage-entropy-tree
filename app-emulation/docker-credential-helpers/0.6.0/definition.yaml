@@ -1,3 +1,26 @@
 category: app-emulation
+conflicts: []
+description: A suite of programs to use native stores to keep Docker credentials safe
+license: MIT
 name: docker-credential-helpers
+requires:
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: libsecret
+  
+  version: ""
+- 
+  category: app-admin
+  description: ""
+  license: ""
+  name: pass
+  
+  version: ""
+uri:
+- https://github.com/docker/docker-credential-helpers/archive/v0.6.0.tar.gz -> docker-credential-helpers-0.6.0.tar.gz
+use_flags:
+- gnome-keyring
+- pass
 version: 0.6.0

@@ -1,3 +1,257 @@
 category: net-analyzer
+conflicts: []
+description: A network protocol analyzer formerly known as ethereal
+license: GPL-2
 name: wireshark
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libnl
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtgui
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: spandsp
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgcrypt
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: nghttp2
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: lz4
+  
+  version: ""
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: xdg-utils
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.32"
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: lua
+  
+  version: "5.1"
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtwidgets
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libpcap
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libsmi
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: bcg729
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-wireshark
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtmultimedia
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: c-ares
+  
+  version: "1.5"
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: brotli
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libmaxminddb
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtprintsupport
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: sbc
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: snappy
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: freedesktop-icon-theme
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libssh
+  
+  version: "0.6"
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtcore
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: ""
+uri:
+- https://www.wireshark.org/download/src/all-versions/wireshark-3.2.0.tar.xz
+use_flags:
+- androiddump
+- bcg729
+- brotli
+- +capinfos
+- +captype
+- ciscodump
+- +dftest
+- doc
+- "dpauxmon\n\t+dumpcap"
+- +editcap
+- http2
+- kerberos
+- libxml2
+- lua
+- lz4
+- maxminddb
+- "+mergecap\n\t+minizip"
+- +netlink
+- +plugins
+- plugin-ifdemo
+- +pcap
+- +qt5
+- +randpkt
+- "+randpktdump\n\t+reordercap"
+- sbc
+- selinux
+- +sharkd
+- smi
+- snappy
+- spandsp
+- sshdump
+- ssl
+- "sdjournal\n\t+text2pcap"
+- tfshark
+- +tshark
+- +udpdump
+- zlib
 version: 3.2.0_rc1

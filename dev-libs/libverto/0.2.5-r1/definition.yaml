@@ -1,3 +1,65 @@
 category: dev-libs
+conflicts:
+- 
+  category: =app-crypt
+  description: ""
+  license: ""
+  name: mit-krb5
+  
+  version: 1.10.1-r0
+- 
+  category: =app-crypt
+  description: ""
+  license: ""
+  name: mit-krb5
+  
+  version: 1.10.1-r1
+- 
+  category: =app-crypt
+  description: ""
+  license: ""
+  name: mit-krb5
+  
+  version: 1.10.1-r2
+description: Main event loop abstraction library
+license: MIT
 name: libverto
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.34.3
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libev
+  
+  version: "4.15"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libevent
+  
+  version: 2.0.21
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: tevent
+  
+  version: 0.9.19
+uri:
+- https://github.com/latchset/libverto/releases/download/0.2.5/libverto-0.2.5.tar.gz
+use_flags:
+- glib
+- +libev
+- libevent
+- tevent
+- +threads
+- static-libs
 version: 0.2.5-r1

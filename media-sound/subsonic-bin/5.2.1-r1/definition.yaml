@@ -1,3 +1,41 @@
 category: media-sound
+conflicts: []
+description: Subsonic is a complete, personal media streaming solution
+license: GPL-3
 name: subsonic-bin
+requires:
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: lame
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: ffmpeg
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-subsonic
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jre
+  
+  version: ""
+uri:
+- mirror://sourceforge/subsonic/5.2.1/subsonic-5.2.1-standalone.tar.gz
+use_flags:
+- ffmpeg
+- lame
+- selinux
 version: 5.2.1-r1

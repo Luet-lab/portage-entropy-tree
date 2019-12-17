@@ -1,3 +1,90 @@
 category: sys-kernel
+conflicts:
+- 
+  category: '>=app-shells'
+  description: ""
+  license: ""
+  name: bash
+  
+  version: "4.4"
+description: Generic initramfs generation tool
+license: GPL-2
 name: dracut
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libsepol
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-dracut
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "199"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: "2.21"
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: strace
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: cpio
+  
+  version: ""
+- 
+  category: app-shells
+  description: ""
+  license: ""
+  name: bash
+  
+  version: "4.0"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: kmod
+  
+  version: "5"
+uri:
+- https://www.kernel.org/pub/linux/utils/boot/dracut/dracut-044.tar.xz
+use_flags:
+- debug
+- selinux
+- systemd
 version: 044-r1

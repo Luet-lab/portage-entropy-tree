@@ -1,3 +1,49 @@
 category: app-emulation
+conflicts: []
+description: Graphical console client for connecting to virtual machines
+license: GPL-2
 name: virt-viewer
+requires:
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gtk-vnc-0.5.0[sasl?,gtk3(+)]
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: "2.6"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: ""
+- 
+  category: app-emulation
+  description: ""
+  license: ""
+  name: libvirt-glib
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: spice-gtk-0.35[sasl?,gtk3]
+  
+  version: ""
+uri:
+- https://virt-manager.org/download/sources/virt-viewer/virt-viewer-8.0.tar.gz
+use_flags:
+- +libvirt
+- sasl
+- +spice
+- +vnc
 version: "8.0"

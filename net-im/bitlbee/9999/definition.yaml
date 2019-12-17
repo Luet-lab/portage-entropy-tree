@@ -1,3 +1,87 @@
 category: net-im
+conflicts: []
+description: irc to IM gateway that support multiple IM protocols
+license: GPL-2
 name: bitlbee
+requires:
+- 
+  category: net-im
+  description: ""
+  license: ""
+  name: pidgin
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: xinetd
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.16"
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libotr
+  
+  version: "4"
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nss
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libevent
+  
+  version: ""
+uri: []
+use_flags:
+- debug
+- +gnutls
+- ipv6
+- libevent
+- libressl
+- nss
+- otr
+- +plugins
+- selinux
+- test
+- "xinetd\n\tmsn"
+- oscar
+- purple
+- twitter
+- +xmpp
 version: "9999"

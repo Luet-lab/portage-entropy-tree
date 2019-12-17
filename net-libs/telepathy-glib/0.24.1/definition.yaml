@@ -1,3 +1,34 @@
 category: net-libs
+conflicts: []
+description: GLib bindings for the Telepathy D-Bus protocol
+license: LGPL-2.1+
 name: telepathy-glib
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.36"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: dbus-glib
+  
+  version: "0.90"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gobject-introspection
+  
+  version: "1.30"
+uri:
+- https://telepathy.freedesktop.org/releases/telepathy-glib/telepathy-glib-0.24.1.tar.gz
+use_flags:
+- debug
+- +introspection
+- +vala
 version: 0.24.1

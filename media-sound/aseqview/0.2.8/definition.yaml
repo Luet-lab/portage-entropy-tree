@@ -1,22 +1,32 @@
 category: media-sound
 conflicts: []
+description: ALSA sequencer event viewer/filter
+license: GPL-2
 name: aseqview
 requires:
 - 
+  category: media-libs
+  description: ""
+  license: ""
+  name: alsa-lib
+  
+  version: 0.9.0
+- 
   category: x11-libs
+  description: ""
+  license: ""
   name: gtk+
   
   version: ""
 - 
   category: net-libs
+  description: ""
+  license: ""
   name: libpcap
   
   version: ""
-- 
-  category: media-libs
-  name: alsa-lib
-  
-  version: 0.9.0
+uri:
+- https://ftp.suse.com/pub/people/tiwai/aseqview/aseqview-0.2.8.tar.gz
 use_flags:
 - ""
 version: 0.2.8

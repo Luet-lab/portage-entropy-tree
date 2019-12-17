@@ -1,3 +1,135 @@
 category: sys-cluster
+conflicts:
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: mpiexec
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: pmix
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: mpich
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+mpi
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: mpich2
+  
+  version: ""
+description: A high-performance message passing library (MPI)
+license: BSD
 name: openmpi
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libltdl
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: nvidia-cuda-toolkit
+  
+  version: 6.5.19-r1
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: knem
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: torque
+  
+  version: ""
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: ofed
+  
+  version: ""
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: infinipath-psm
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: 1.2.8-r1
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: librdmacm
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jre
+  
+  version: "1.6"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libevent
+  
+  version: 2.0.22
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: slurm
+  
+  version: ""
+uri:
+- http://www.open-mpi.org/software/ompi/v/downloads/openmpi-2.1.6.tar.bz2
+use_flags:
+- cma
+- cuda
+- cxx
+- fortran
+- heterogeneous
+- ipv6
+- java
+- mpi-threads
+- numa
+- romio
+- "threads\n\t\n\topenmpi_fabrics_ofed\n\topenmpi_fabrics_knem\n\topenmpi_fabrics_psm"
+- "\n\topenmpi_rm_pbs\n\topenmpi_rm_slurm"
+- "\n\topenmpi_ofed_features_control-hdr-padding\n\topenmpi_ofed_features_udcm\n\topenmpi_ofed_features_rdmacm\n\topenmpi_ofed_features_dynamic-sl"
 version: 2.1.6

@@ -1,3 +1,58 @@
 category: media-libs
+conflicts:
+- 
+  category: <media-libs
+  description: ""
+  license: ""
+  name: gst-plugins-bad
+  
+  version: 1.13.1
+description: Open source multimedia framework
+license: LGPL-2+
 name: gstreamer
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.40.0
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gobject-introspection
+  
+  version: 1.31.1
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libunwind
+  
+  version: 1.2_rc1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: elfutils
+  
+  version: ""
+uri:
+- https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.14.4.tar.xz
+use_flags:
+- +caps
+- +introspection
+- nls
+- +orc
+- test
+- unwind
 version: 1.14.4

@@ -1,3 +1,45 @@
 category: dev-libs
+conflicts: []
+description: Blocking, shuffling and lossless compression library
+license: MIT
 name: c-blosc
+requires:
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: zstd
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: lz4
+  
+  version: 1.7.5
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: snappy
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+uri:
+- https://github.com/Blosc/c-blosc/archive/v1.11.2.tar.gz -> c-blosc-1.11.2.tar.gz
+use_flags:
+- cpu_flags_x86_avx2
+- +lz4
+- +snappy
+- static-libs
+- test
+- zlib
+- zstd
 version: 1.11.2

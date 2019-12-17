@@ -1,3 +1,53 @@
 category: app-crypt
+conflicts: []
+description: Apache plugin for certbot (Let's Encrypt Client)
+license: Apache-2.0
 name: certbot-apache
+requires:
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: acme
+  
+  version: 0.29.0
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: certbot
+  
+  version: 0.39.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: mock
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: python-augeas
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: zope-component
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: zope-interface
+  
+  version: ""
+uri:
+- https://github.com/certbot/certbot/archive/v1.0.0.tar.gz -> certbot-1.0.0.tar.gz
+use_flags:
+- test
 version: 1.0.0

@@ -1,3 +1,93 @@
 category: net-libs
+conflicts: []
+description: canonical libwebsockets.org websocket library
+license: LGPL-2.1
 name: libwebsockets
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libevent
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libhubbub
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libev
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libuv
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: ""
+uri:
+- https://github.com/warmcat/libwebsockets/archive/v2.4.2.tar.gz -> libwebsockets-2.4.2.tar.gz
+use_flags:
+- +http2
+- +ssl
+- access-log
+- caps
+- cgi
+- client
+- generic-sessions
+- http-proxy
+- ipv6
+- lejp
+- "libev\n\tlibevent"
+- libressl
+- libuv
+- peer-limits
+- server-status
+- socks5
+- smtp
+- sqlite3
+- static-libs
+- +zip
 version: 2.4.2

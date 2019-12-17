@@ -1,3 +1,37 @@
 category: sys-libs
+conflicts:
+- 
+  category: <sys-devel
+  description: ""
+  license: ""
+  name: gdb
+  
+  version: 7.10-r1
+description: Core binutils libraries (libbfd, libopcodes, libiberty) for external
+  packages
+license: '|| ( GPL-3 LGPL-3 )'
 name: binutils-libs
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: binutils-config
+  
+  version: "5"
+uri:
+- mirror://gnu/binutils/binutils-2.33.1.tar.xz
+- https://dev.gentoo.org/~dilfridge/distfiles/binutils-2.33.1-patches-1.tar.xz
+use_flags:
+- 64-bit-bfd
+- multitarget
+- nls
+- static-libs
 version: 2.33.1

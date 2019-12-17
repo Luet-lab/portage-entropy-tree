@@ -1,3 +1,180 @@
 category: net-misc
+conflicts: []
+description: A small daemon to act on remote or local events
+license: GPL-3+ LGPL-3+ ISC MIT
 name: eventd
+requires:
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: librsvg
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxcb
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: xcb-util
+  
+  version: ""
+- 
+  category: net-im
+  description: ""
+  license: ""
+  name: pidgin
+  
+  version: ""
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: avahi
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: glib-networking
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gobject-introspection
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libsndfile
+  
+  version: ""
+- 
+  category: app-accessibility
+  description: ""
+  license: ""
+  name: speech-dispatcher
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxkbcommon
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libcanberra
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: xcb-util-wm
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libsoup
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gdk-pixbuf
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pango
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: pulseaudio
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gssdp
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: wayland
+  
+  version: ""
+uri:
+- https://www.eventd.org/download/eventd/eventd-0.27.0.tar.xz
+use_flags:
+- debug
+- fbcon
+- +introspection
+- ipv6
+- libcanberra
+- libnotify
+- "+notification\n\tpulseaudio"
+- purple
+- speech
+- systemd
+- test
+- upnp
+- wayland
+- webhook
+- "websocket\n\t+X"
+- zeroconf
 version: 0.27.0

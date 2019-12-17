@@ -1,3 +1,50 @@
 category: sci-libs
+conflicts: []
+description: Support for parallel scientific applications
+license: LGPL-2.1+
 name: libsc
+requires:
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: lua
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: blas
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: lapack
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: mpi[romio?]
+  
+  version: ""
+uri:
+- https://github.com/cburstedde/libsc/archive/v1.1.tar.gz -> libsc-1.1.tar.gz
+use_flags:
+- debug
+- examples
+- mpi
+- romio
+- static-libs
 version: 1.1-r1

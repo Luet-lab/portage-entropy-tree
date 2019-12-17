@@ -2,36 +2,52 @@ category: sys-apps
 conflicts:
 - 
   category: <sys-apps
+  description: ""
+  license: ""
   name: policycoreutils
   
   version: 2.7_pre
+description: Daemon to watch for creation and set default SELinux fcontexts
+license: GPL-2
 name: restorecond
 requires:
 - 
-  category: sys-libs
-  name: libsepol
-  
-  version: "3.0"
-- 
-  category: sys-libs
-  name: libselinux
-  
-  version: "3.0"
-- 
   category: dev-libs
-  name: dbus-glib
-  
-  version: ""
-- 
-  category: dev-libs
+  description: ""
+  license: ""
   name: libpcre
   
   version: ""
 - 
   category: sys-libs
+  description: ""
+  license: ""
   name: libcap
   
   version: 1.10-r10
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libsepol
+  
+  version: "3.0"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: "3.0"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: dbus-glib
+  
+  version: ""
+uri:
+- https://github.com/SELinuxProject/selinux/releases/download/20191204/restorecond-3.0.tar.gz
 use_flags:
 - ""
 version: "3.0"

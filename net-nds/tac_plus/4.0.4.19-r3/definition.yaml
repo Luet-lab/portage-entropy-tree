@@ -1,3 +1,37 @@
 category: net-nds
+conflicts: []
+description: An updated version of Cisco's TACACS+ server
+license: HPND RSA GPL-2
 name: tac_plus
+requires:
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: skey
+  
+  version: 1.1.5-r1
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: tcp-wrappers
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+uri:
+- ftp://ftp.shrubbery.net/pub/tac_plus/tacacs+-F4.0.4.19.tar.gz
+use_flags:
+- debug
+- finger
+- maxsess
+- tcpd
+- skey
+- static-libs
 version: 4.0.4.19-r3

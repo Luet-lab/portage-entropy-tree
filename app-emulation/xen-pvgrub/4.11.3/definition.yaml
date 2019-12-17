@@ -1,12 +1,25 @@
 category: app-emulation
 conflicts: []
+description: allows to boot Xen domU kernels from a menu.lst laying inside guest filesystem
+license: GPL-2
 name: xen-pvgrub
 requires:
 - 
   category: app-emulation
+  description: ""
+  license: ""
   name: xen-tools
   
   version: 4.11.3
+uri:
+- https://downloads.xenproject.org/release/xen/4.11.3/xen-4.11.3.tar.gz
+- mirror://gnu-alpha/grub/grub-0.97.tar.gz
+- http://xenbits.xensource.com/xen-extfiles/zlib-1.2.3.tar.gz
+- ftp://atrey.karlin.mff.cuni.cz/pub/linux/pci/pciutils-2.2.9.tar.bz2
+- http://xenbits.xensource.com/xen-extfiles/lwip-1.3.0.tar.gz
+- http://xenbits.xensource.com/xen-extfiles/newlib/newlib-1.16.0.tar.gz
+- https://dev.gentoo.org/~dlan/distfiles/xen-4.11.3-upstream-patches-0.tar.xz
+- https://github.com/hydrapolic/gentoo-dist/raw/master/xen/xen-4.11.3-upstream-patches-0.tar.xz
 use_flags:
 - custom-cflags
 version: 4.11.3

@@ -1,3 +1,67 @@
 category: sys-process
+conflicts: []
+description: A command scheduler with extended capabilities over cron and anacron
+license: GPL-2
 name: fcron
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: editor-wrapper
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: mta
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: pambase
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: audit
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+uri:
+- http://fcron.free.fr/archives/fcron-3.2.1.src.tar.gz
+use_flags:
+- audit
+- debug
+- pam
+- selinux
+- l10n_fr
+- +mta
+- +system-crontab
+- readline
 version: 3.2.1-r3

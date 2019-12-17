@@ -1,27 +1,39 @@
 category: media-sound
 conflicts: []
+description: Extracts and records individual MP3 file tracks from shoutcast streams
+license: GPL-2
 name: streamripper
 requires:
 - 
   category: media-libs
+  description: ""
+  license: ""
+  name: libvorbis
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
   name: libmad
   
   version: ""
 - 
   category: media-libs
+  description: ""
+  license: ""
   name: faad2
   
   version: ""
 - 
   category: dev-libs
+  description: ""
+  license: ""
   name: glib
   
   version: "2.16"
-- 
-  category: media-libs
-  name: libvorbis
-  
-  version: ""
+uri:
+- mirror://sourceforge/streamripper/streamripper-1.64.6.tar.gz
 use_flags:
 - vorbis
 version: 1.64.6

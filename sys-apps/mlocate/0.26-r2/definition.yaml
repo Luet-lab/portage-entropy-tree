@@ -1,3 +1,33 @@
 category: sys-apps
+conflicts:
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: slocate
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: rlocate
+  
+  version: ""
+description: Merging locate is an utility to index and quickly search for files
+license: GPL-2
 name: mlocate
+requires:
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-slocate
+  
+  version: ""
+uri:
+- http://releases.pagure.org/mlocate/mlocate-0.26.tar.xz
+use_flags:
+- nls
+- selinux
 version: 0.26-r2

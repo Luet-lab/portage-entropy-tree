@@ -1,22 +1,32 @@
 category: www-servers
 conflicts: []
+description: Proxies incoming HTTP and TLS connections based on the hostname
+license: BSD-2
 name: sniproxy
 requires:
 - 
   category: dev-libs
+  description: ""
+  license: ""
   name: libev
   
   version: ""
 - 
   category: dev-libs
+  description: ""
+  license: ""
   name: libpcre
   
   version: "3"
 - 
   category: net-libs
+  description: ""
+  license: ""
   name: udns
   
   version: ""
+uri:
+- https://github.com/dlundquist/sniproxy/archive/0.5.0.tar.gz -> sniproxy-0.5.0.tar.gz
 use_flags:
 - +dns
 - +largefile

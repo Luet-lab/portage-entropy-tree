@@ -1,3 +1,47 @@
 category: x11-plugins
+conflicts: []
+description: A dockable app to report APM, ACPI, or SPIC battery status
+license: GPL-2
 name: wmbattery
+requires:
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXext
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXpm
+  
+  version: ""
+- 
+  category: sys-power
+  description: ""
+  license: ""
+  name: upower
+  
+  version: 0.9.23
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: apmd
+  
+  version: ""
+uri:
+- https://www.dockapps.net/download/wmbattery-2.51.tar.gz
+use_flags:
+- apm
+- +upower
 version: "2.51"

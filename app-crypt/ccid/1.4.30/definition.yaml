@@ -1,3 +1,27 @@
 category: app-crypt
+conflicts: []
+description: CCID free software driver
+license: GPL-2
 name: ccid
+requires:
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: pcsc-lite
+  
+  version: 1.8.3
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libusb
+  
+  version: ""
+uri:
+- https://ccid.apdu.fr/files/ccid-1.4.30.tar.bz2
+use_flags:
+- twinserial
+- kobil-midentity
+- +usb
 version: 1.4.30

@@ -1,3 +1,70 @@
 category: app-emulation
+conflicts: []
+description: ncurses interface for QEMU
+license: BSD-2
 name: nemu
+requires:
+- 
+  category: app-emulation
+  description: ""
+  license: ""
+  name: qemu
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: libarchive
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: tigervnc
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libusb
+  
+  version: ""
+uri:
+- http://lib.void.so/src/nemu-2.1.0.tar.gz
+use_flags:
+- +vnc-client
+- +ovf
+- savevm
+- debug
 version: 2.1.0

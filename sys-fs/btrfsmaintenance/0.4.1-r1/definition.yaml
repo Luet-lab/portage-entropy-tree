@@ -1,3 +1,33 @@
 category: sys-fs
+conflicts: []
+description: Scripts for btrfs maintenance tasks like periodic scrub, balance, trim
+  or defrag
+license: GPL-2
 name: btrfsmaintenance
+requires:
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: cron
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: btrfs-progs
+  
+  version: ""
+uri:
+- https://github.com/kdave/btrfsmaintenance/archive/v0.4.1.tar.gz -> btrfsmaintenance-0.4.1.tar.gz
+use_flags:
+- systemd
 version: 0.4.1-r1

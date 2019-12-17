@@ -1,3 +1,18 @@
 category: www-apache
+conflicts: []
+description: Rewrites X-Forwarded-For to REMOTE_ADDR for reverse proxy configurations
+license: Apache-1.1
 name: mod_extract_forwarded
+requires:
+- 
+  category: www-servers
+  description: ""
+  license: ""
+  name: apache[apache2_modules_proxy_connect]
+  
+  version: ""
+uri:
+- https://dev.gentoo.org/~pacho/maintainer-needed/mod_extract_forwarded-2.0.3.tar.xz
+use_flags:
+- mod-proxy
 version: 2.0.3_pre2015052015

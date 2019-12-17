@@ -1,3 +1,39 @@
 category: dev-perl
+conflicts:
+- 
+  category: <dev-perl
+  description: ""
+  license: ""
+  name: DBD-SQLite
+  
+  version: "1"
+description: Self Contained RDBMS in a DBI Driver
+license: ""
 name: DBD-SQLite
+requires:
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite-3.21.0[extensions(+)]
+  
+  version: ""
+- 
+  category: dev-perl
+  description: ""
+  license: ""
+  name: DBI
+  
+  version: 1.570.0
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: perl-Scalar-List-Utils
+  
+  version: ""
+uri: []
+use_flags:
+- test
+- system-sqlite
 version: 1.560.0

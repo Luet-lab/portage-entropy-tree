@@ -1,3 +1,57 @@
 category: sci-mathematics
+conflicts: []
+description: automatic theorem prover for satisfiability modulo theories (SMT) problems
+license: GPL-2
 name: cvc4
+requires:
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: cln
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gmp
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: antlr-c
+  
+  version: ""
+- 
+  category: dev-java
+  description: ""
+  license: ""
+  name: antlr
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: boost
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
+uri:
+- https://github.com/CVC4/CVC4/archive/1.7.tar.gz -> cvc4-1.7.tar.gz
+use_flags:
+- +cln
+- proofs
+- readline
+- replay
+- +statistics
 version: "1.7"

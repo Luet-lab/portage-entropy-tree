@@ -1,3 +1,35 @@
 category: dev-db
+conflicts: []
+description: A persistent caching system, key-value and data structures database
+license: BSD
 name: redis
+requires:
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: luajit
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: google-perftools
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: jemalloc
+  
+  version: "3.2"
+uri:
+- http://download.redis.io/releases/redis-4.0.10.tar.gz
+use_flags:
+- +jemalloc
+- tcmalloc
+- luajit
+- test
 version: 4.0.10

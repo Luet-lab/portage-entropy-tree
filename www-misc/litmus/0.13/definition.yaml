@@ -1,3 +1,68 @@
 category: www-misc
+conflicts: []
+description: WebDAV server protocol compliance test suite
+license: GPL-2
 name: litmus
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: expat
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: mit-krb5
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libproxy
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: pakchois
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+uri:
+- mirror://gentoo/litmus-0.13.tar.gz
+use_flags:
+- debug
+- expat
+- gnutls
+- kerberos
+- libproxy
+- +libxml2
+- pkcs11
+- +ssl
+- threads
 version: "0.13"

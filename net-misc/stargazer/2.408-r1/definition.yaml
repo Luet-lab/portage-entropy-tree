@@ -1,3 +1,68 @@
 category: net-misc
+conflicts: []
+description: Billing system for small home and office networks
+license: GPL-2
 name: stargazer
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: expat
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: xmlrpc-c
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: firebird
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: postgresql
+  
+  version: ""
+uri:
+- http://stg.dp.ua/download/server/2.408/stg-2.408.tar.gz
+use_flags:
+- sgconv
+- radius
+- rscriptd
+- sgauth
+- sgconf
+- sgconf_xml
+- +stargazer
+- debug
+- module_auth_always_online
+- module_auth_internet_access
+- module_auth_freeradius
+- module_capture_ipq
+- module_capture_ether
+- module_capture_netflow
+- module_config_sgconfig
+- module_config_rpcconfig
+- module_other_ping
+- module_other_smux
+- module_other_remote_script
+- +module_store_files
+- module_store_firebird
+- module_store_mysql
+- module_store_postgres
 version: 2.408-r1

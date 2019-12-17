@@ -1,3 +1,50 @@
 category: net-libs
+conflicts:
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: uw-imap
+  
+  version: ""
+description: UW IMAP c-client library
+license: Apache-2.0
 name: c-client
+requires:
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: mit-krb5
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+uri:
+- ftp://ftp.cac.washington.edu/imap/imap-2007f.tar.Z
+- 'mirror://gentoo/c-client-2007f-chappa-115-all.patch.gz '
+use_flags:
+- doc
+- +ipv6
+- kerberos
+- kernel_linux
+- kernel_FreeBSD
+- libressl
+- pam
+- ssl
+- static-libs
+- topal
+- chappa
 version: 2007f-r6

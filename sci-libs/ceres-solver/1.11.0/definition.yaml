@@ -1,3 +1,76 @@
 category: sci-libs
+conflicts: []
+description: Nonlinear least-squares minimizer
+license: sparse? ( BSD ) !sparse? ( LGPL-2.1 ) cxsparse? ( BSD )
 name: ceres-solver
+requires:
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: colamd
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: spqr
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: cxsparse
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: lapack
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: amd
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: camd
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: ccolamd
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: cholmod
+  
+  version: ""
+uri:
+- http://ceres-solver.org//ceres-solver-1.11.0.tar.gz
+use_flags:
+- cxsparse
+- c++11
+- doc
+- examples
+- gflags
+- lapack
+- openmp
+- +schur
+- sparse
+- test
 version: 1.11.0

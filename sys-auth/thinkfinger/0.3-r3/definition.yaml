@@ -1,3 +1,27 @@
 category: sys-auth
+conflicts: []
+description: Support for the UPEK/SGS Thomson fingerprint reader, common in Thinkpads
+license: GPL-2
 name: thinkfinger
+requires:
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libusb
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+uri:
+- mirror://sourceforge/thinkfinger/thinkfinger-0.3.tar.gz
+use_flags:
+- debug
+- pam
+- static-libs
 version: 0.3-r3

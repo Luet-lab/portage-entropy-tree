@@ -1,3 +1,16 @@
 category: net-proxy
+description: A lightweight HTTP/SSL proxy
+license: GPL-2
 name: tinyproxy
+uri:
+- https://github.com/tinyproxy/tinyproxy/releases/download/1.10.0/tinyproxy-1.10.0.tar.xz
+use_flags:
+- test
+- debug
+- +filter-proxy
+- reverse-proxy
+- |-
+  transparent-proxy
+  +upstream-proxy
+- +xtinyproxy-header
 version: 1.10.0-r1

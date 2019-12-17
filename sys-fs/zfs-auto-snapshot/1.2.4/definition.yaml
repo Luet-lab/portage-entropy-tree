@@ -1,17 +1,26 @@
 category: sys-fs
 conflicts: []
+description: ZFS Automatic Snapshot Service for Linux
+license: GPL-2+
 name: zfs-auto-snapshot
 requires:
 - 
-  category: sys-fs
-  name: zfs
-  
-  version: ""
-- 
   category: virtual
+  description: ""
+  license: ""
   name: cron
   
   version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: zfs
+  
+  version: ""
+uri:
+- https://github.com/zfsonlinux/zfs-auto-snapshot/archive/upstream/1.2.4.tar.gz ->
+  zfs-auto-snapshot-upstream-1.2.4.tar.gz
 use_flags:
 - +default-exclude
 version: 1.2.4

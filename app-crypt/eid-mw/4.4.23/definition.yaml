@@ -1,3 +1,70 @@
 category: app-crypt
+conflicts:
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: eid-viewer-bin
+  
+  version: ""
+description: Electronic Identity Card middleware supplied by the Belgian Federal Government
+license: LGPL-3
 name: eid-mw
+requires:
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libproxy
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: p11-kit
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: pcsc-lite
+  
+  version: 1.2.9
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gdk-pixbuf
+  
+  version: ""
+uri:
+- https://codeload.github.com/fedict/eid-mw/tar.gz/v4.4.23 -> eid-mw-4.4.23.tar.gz
+use_flags:
+- +dialogs
+- +gtk
+- +p11v220
+- p11-kit
 version: 4.4.23

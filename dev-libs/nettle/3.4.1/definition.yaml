@@ -1,3 +1,23 @@
 category: dev-libs
+conflicts: []
+description: Low-level cryptographic library
+license: '|| ( LGPL-3 LGPL-2.1 )'
 name: nettle
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gmp
+  
+  version: "6.0"
+uri:
+- mirror://gnu/nettle/nettle-3.4.1.tar.gz
+use_flags:
+- doc
+- +gmp
+- neon
+- static-libs
+- test
+- cpu_flags_x86_aes
 version: 3.4.1

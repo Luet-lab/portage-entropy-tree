@@ -1,3 +1,33 @@
 category: www-servers
+conflicts: []
+description: Tomcat Servlet-3.0/JSP-2.2 Container
+license: Apache-2.0
 name: tomcat
+requires:
+- 
+  category: dev-java
+  description: ""
+  license: ""
+  name: tomcat-servlet-api
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jre
+  
+  version: ""
+- 
+  category: dev-java
+  description: ""
+  license: ""
+  name: eclipse-ecj
+  
+  version: ""
+uri:
+- mirror://apache/tomcat/tomcat-7/v7.0.96/src/apache-tomcat-7.0.96-src.tar.gz
+use_flags:
+- extra-webapps
+- websockets
 version: 7.0.96

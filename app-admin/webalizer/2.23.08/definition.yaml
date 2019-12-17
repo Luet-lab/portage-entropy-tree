@@ -1,3 +1,58 @@
 category: app-admin
+conflicts: []
+description: Webserver log file analyzer
+license: GPL-2
 name: webalizer
+requires:
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: bzip2
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: db
+  
+  version: "4.2"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: 1.1.4
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libpng
+  
+  version: "1.2"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gd
+  
+  version: 1.8.3
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: geoip
+  
+  version: ""
+uri:
+- ftp://ftp.mrunix.net/pub/webalizer/webalizer---src.tar.bz2
+- 'http://patrickfrei.ch/webalizer/rb30/webalizer---RB30-patch.tar.gz '
+- https://dev.gentoo.org/~blueness/webalizer/webalizer.conf.gz
+use_flags:
+- bzip2
+- xtended
+- geoip
+- nls
 version: 2.23.08

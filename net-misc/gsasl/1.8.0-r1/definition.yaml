@@ -1,3 +1,53 @@
 category: net-misc
+conflicts: []
+description: The GNU SASL client, server, and library
+license: GPL-3
 name: gsasl
+requires:
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libntlm
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgcrypt
+  
+  version: ""
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: libidn
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
+  
+  version: ""
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: gettext
+  
+  version: 0.18.1
+uri:
+- mirror://gnu/gsasl/gsasl-1.8.0.tar.gz
+use_flags:
+- doc
+- gcrypt
+- idn
+- kerberos
+- nls
+- ntlm
+- static-libs
+- +threads
 version: 1.8.0-r1

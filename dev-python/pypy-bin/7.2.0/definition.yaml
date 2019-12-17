@@ -1,3 +1,84 @@
 category: dev-python
+conflicts:
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pypy
+  
+  version: ""
+description: Pre-built version of PyPy
+license: MIT
 name: pypy-bin
+requires:
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: gcc
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: gdbm
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: ""
+- 
+  category: dev-tcltk
+  description: ""
+  license: ""
+  name: tix
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: glibc
+  
+  version: "2.28"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: tk
+  
+  version: ""
+uri:
+- https://bitbucket.org/pypy/pypy/downloads/pypy2.7-v7.2.0-src.tar.bz2
+- https://dev.gentoo.org/~floppym/python/python-gentoo-patches-2.7.15.tar.xz
+- 'https://dev.gentoo.org/~mgorny/dist/pypy-bin/7.2.0/pypy-bin-7.2.0-amd64+bzip2+jit+ncurses.tar.lz '
+- 'https://dev.gentoo.org/~mgorny/dist/pypy-bin/7.2.0/pypy-bin-7.2.0-amd64+bzip2+ncurses.tar.lz '
+- 'https://dev.gentoo.org/~mgorny/dist/pypy-bin/7.2.0/pypy-bin-7.2.0-x86+bzip2+jit+ncurses+sse2.tar.lz '
+- 'https://dev.gentoo.org/~mgorny/dist/pypy-bin/7.2.0/pypy-bin-7.2.0-x86+bzip2+ncurses+sse2.tar.lz '
+use_flags:
+- gdbm
+- +jit
+- libressl
+- sqlite
+- cpu_flags_x86_sse2
+- tk
 version: 7.2.0

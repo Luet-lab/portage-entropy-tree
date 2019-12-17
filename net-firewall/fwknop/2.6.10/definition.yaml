@@ -1,3 +1,83 @@
 category: net-firewall
+conflicts: []
+description: Single Packet Authorization and Port Knocking application
+license: GPL-2+
 name: fwknop
+requires:
+- 
+  category: net-firewall
+  description: ""
+  license: ""
+  name: iptables
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libpcap
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gpgme
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgpg-error
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: gdbm
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libassuan
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libnetfilter_queue
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: wget
+  
+  version: ""
+- 
+  category: net-firewall
+  description: ""
+  license: ""
+  name: firewalld
+  
+  version: ""
+uri:
+- https://www.cipherdyne.org/fwknop/download/fwknop-2.6.10.tar.gz
+use_flags:
+- +client
+- extras
+- firewalld
+- gdbm
+- gpg
+- +iptables
+- nfqueue
+- python
+- +server
+- udp-server
 version: 2.6.10

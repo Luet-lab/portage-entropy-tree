@@ -1,3 +1,35 @@
 category: app-benchmarks
+conflicts: []
+description: A tool from HP for measuring web server performance
+license: GPL-2+-with-openssl-exception
 name: httperf
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libevent
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+uri:
+- https://github.com/httperf/httperf/archive/00bf5dab6fd284aa559f125964f5fe6dc0f23595.tar.gz
+  -> httperf-0.9.1.tar.gz
+use_flags:
+- debug
+- idleconn
+- libressl
 version: 0.9.1_p20181111-r1

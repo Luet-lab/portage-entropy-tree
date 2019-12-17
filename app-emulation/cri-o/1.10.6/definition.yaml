@@ -1,3 +1,120 @@
 category: app-emulation
+conflicts: []
+description: OCI-based implementation of Kubernetes Container Runtime Interface
+license: Apache-2.0 BSD BSD-2 CC-BY-SA-4.0 ISC MIT MPL-2.0
 name: cri-o
+requires:
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gpgme
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libassuan
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: iproute2
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: btrfs-progs
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgpg-error
+  
+  version: ""
+- 
+  category: net-firewall
+  description: ""
+  license: ""
+  name: conntrack-tools
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: socat
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: ""
+- 
+  category: net-firewall
+  description: ""
+  license: ""
+  name: iptables
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: cni-plugins
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lvm2
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: ostree
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libseccomp
+  
+  version: ""
+- 
+  category: app-emulation
+  description: ""
+  license: ""
+  name: runc
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: ""
+uri:
+- https://github.com/kubernetes-incubator/cri-o/archive/v1.10.6.tar.gz -> cri-o-1.10.6.tar.gz
+use_flags:
+- btrfs
+- +device-mapper
+- ostree
+- seccomp
+- selinux
 version: 1.10.6

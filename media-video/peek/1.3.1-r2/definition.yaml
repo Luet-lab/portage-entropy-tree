@@ -1,3 +1,47 @@
 category: media-video
+conflicts: []
+description: Simple animated Gif screen recorder
+license: GPL-3+
 name: peek
+requires:
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: imagemagick-tools
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: "3.14"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: keybinder
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.38"
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: ffmpeg[X,encode,vpx,xcb]
+  
+  version: ""
+uri:
+- https://github.com/phw/peek/archive/1.3.1.tar.gz -> peek-1.3.1.tar.gz
+use_flags:
+- keybinder
+- test
 version: 1.3.1-r2

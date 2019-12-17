@@ -2,36 +2,56 @@ category: app-shells
 conflicts:
 - 
   category: <sys-apps
+  description: ""
+  license: ""
   name: baselayout
   
   version: 2.4.1
+description: UNIX Shell similar to the Korn shell
+license: ZSH gdbm? ( GPL-2 )
 name: zsh
 requires:
 - 
   category: sys-libs
+  description: ""
+  license: ""
+  name: gdbm
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
   name: ncurses
   
   version: "5.1"
 - 
   category: sys-libs
+  description: ""
+  license: ""
   name: ncurses
   
   version: 5.7-r4
 - 
   category: sys-libs
+  description: ""
+  license: ""
   name: libcap
   
   version: ""
 - 
   category: dev-libs
+  description: ""
+  license: ""
   name: libpcre
   
   version: "3.9"
-- 
-  category: sys-libs
-  name: gdbm
-  
-  version: ""
+uri:
+- https://www.zsh.org/pub/zsh-5.7.1.tar.xz
+- https://www.zsh.org/pub/old/zsh-5.7.1.tar.xz
+- mirror://sourceforge/zsh/zsh-5.7.1.tar.xz
+- https://www.zsh.org/pub/zsh-5.7.1-doc.tar.xz
+- mirror://sourceforge/zsh/zsh-5.7.1-doc.tar.xz
 use_flags:
 - caps
 - debug

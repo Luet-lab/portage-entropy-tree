@@ -1,3 +1,101 @@
 category: mail-client
+conflicts:
+- 
+  category: mail-client
+  description: ""
+  license: ""
+  name: pine
+  
+  version: ""
+- 
+  category: <=net-mail
+  description: ""
+  license: ""
+  name: uw-imap
+  
+  version: 2004g
+description: An easy to use text-based based mail and news client
+license: Apache-2.0
 name: alpine
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: "5.1"
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: mit-krb5
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: aspell
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: mime-types
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: c-client-2007f-r4[chappa=]
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: ""
+uri:
+- ftp://ftp.cac.washington.edu/alpine/alpine-2.00.tar.bz2
+- -> alpine-2.00-chappa-115-all.patch.gz )
+use_flags:
+- doc
+- ipv6
+- kerberos
+- ldap
+- libressl
+- nls
+- onlyalpine
+- passfile
+- smime
+- spell
+- ssl
+- threads
+- +chappa
 version: 2.00-r7

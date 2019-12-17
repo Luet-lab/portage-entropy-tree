@@ -1,3 +1,36 @@
 category: dev-lang
+conflicts: []
+description: Stand-alone JavaScript C library
+license: NPL-1.1
 name: spidermonkey
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: jemalloc
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nspr
+  
+  version: 4.7.0
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
+uri:
+- https://archive.mozilla.org/pub/js/js-1.0.0.tar.gz
+- https://dev.gentoo.org/~axs/distfiles/spidermonkey-slot0-patches-02.tar.xz
+use_flags:
+- debug
+- minimal
+- static-libs
+- test
 version: 1.8.5-r7

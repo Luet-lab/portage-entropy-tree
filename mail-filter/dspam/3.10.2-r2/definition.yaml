@@ -1,3 +1,74 @@
 category: mail-filter
+conflicts: []
+description: A statistical-algorithmic hybrid anti-spam filter
+license: AGPL-3
 name: dspam
+requires:
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: mailbase
+  
+  version: ""
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: postgresql
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: ""
+- 
+  category: app-antivirus
+  description: ""
+  license: ""
+  name: clamav
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: logger
+  
+  version: ""
+uri:
+- mirror://sourceforge/dspam/dspam-3.10.2.tar.gz
+use_flags:
+- clamav
+- daemon
+- debug
+- ldap
+- static-libs
+- syslog
+- virtual-users
+- user-homedirs
+- +hash
+- mysql
+- postgres
+- sqlite
+- small-scale
+- +domain-scale
+- large-scale
 version: 3.10.2-r2

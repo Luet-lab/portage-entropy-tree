@@ -1,3 +1,37 @@
 category: media-plugins
+conflicts: []
+description: 'VDR plugin: create timers from epg content based on saved search expressions'
+license: GPL-2
 name: vdr-epgsearch
+requires:
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: vdr
+  
+  version: "2.2"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpcre
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: tre
+  
+  version: ""
+uri:
+- https://projects.vdr-developer.org/git/vdr-plugin-.git/snapshot/vdr-plugin--2.2.0.tar.gz
+  -> vdr-epgsearch-2.2.0.tgz
+use_flags:
+- +conflictcheckonly
+- +epgsearchonly
+- pcre
+- +quicksearch
+- tre
 version: 2.2.0

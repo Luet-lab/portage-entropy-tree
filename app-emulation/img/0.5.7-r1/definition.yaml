@@ -1,3 +1,26 @@
 category: app-emulation
+conflicts: []
+description: Standalone daemon-less unprivileged Dockerfile and OCI container image
+  builder
+license: MIT
 name: img
+requires:
+- 
+  category: app-emulation
+  description: ""
+  license: ""
+  name: runc
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libseccomp
+  
+  version: ""
+uri:
+- https://github.com/genuinetools/img/archive/v0.5.7.tar.gz -> img-0.5.7.tar.gz
+use_flags:
+- seccomp
 version: 0.5.7-r1

@@ -1,3 +1,20 @@
 category: media-libs
+conflicts:
+- 
+  category: <www-client
+  description: ""
+  license: ""
+  name: firefox
+  
+  version: "39"
+description: Cisco OpenH264 library and Gecko Media Plugin for Mozilla packages
+license: BSD
 name: openh264
+requires: []
+uri:
+- https://github.com/cisco/openh264/archive/v1.7.0.tar.gz -> openh264-1.7.0.tar.gz
+- https://github.com/mozilla/gmp-api/archive/Firefox39.tar.gz -> gmp-api-Firefox39.tar.gz
+use_flags:
+- +plugin
+- utils
 version: 1.7.0-r1

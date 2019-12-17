@@ -1,3 +1,38 @@
 category: net-analyzer
+conflicts: []
+description: Open Source Host-based Intrusion Detection System
+license: GPL-2
 name: ossec-hids
+requires:
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: mysql
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: postgresql
+  
+  version: ""
+uri:
+- https://github.com/ossec/ossec-hids/archive/3.2.0.tar.gz -> ossec-hids-3.2.0.tar.gz
+use_flags:
+- agent
+- hybrid
+- local
+- mysql
+- postgres
+- server
+- sqlite
 version: 3.2.0-r1

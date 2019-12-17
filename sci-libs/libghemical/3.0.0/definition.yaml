@@ -1,3 +1,41 @@
 category: sci-libs
+conflicts: []
+description: Chemical quantum mechanics and molecular mechanics
+license: GPL-2
 name: libghemical
+requires:
+- 
+  category: sci-chemistry
+  description: ""
+  license: ""
+  name: mopac7
+  
+  version: 1.13-r1
+- 
+  category: sci-chemistry
+  description: ""
+  license: ""
+  name: mpqc
+  
+  version: 2.3.1-r1
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: blas
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: lapack
+  
+  version: ""
+uri:
+- http://www.bioinformatics.org/ghemical/download/current/libghemical-3.0.0.tar.gz
+use_flags:
+- mopac7
+- mpqc
+- static-libs
 version: 3.0.0

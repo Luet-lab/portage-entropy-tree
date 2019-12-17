@@ -1,3 +1,33 @@
 category: net-libs
+conflicts:
+- 
+  category: <net-fs
+  description: ""
+  license: ""
+  name: nfs-utils
+  
+  version: 1.2.2
+- 
+  category: net-fs
+  description: ""
+  license: ""
+  name: idmapd
+  
+  version: ""
+description: NFSv4 ID <-> name mapping library
+license: BSD
 name: libnfsidmap
+requires:
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: ""
+uri:
+- http://www.citi.umich.edu/projects/nfsv4/linux/libnfsidmap/libnfsidmap-0.25.tar.gz
+use_flags:
+- ldap
+- static-libs
 version: 0.25-r1

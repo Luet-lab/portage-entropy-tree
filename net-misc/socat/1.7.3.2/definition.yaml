@@ -1,3 +1,44 @@
 category: net-misc
+conflicts: []
+description: Multipurpose relay (SOcket CAT)
+license: GPL-2
 name: socat
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: tcp-wrappers
+  
+  version: ""
+uri:
+- http://www.dest-unreach.org/socat/download/socat-1.7.3.2.tar.bz2
+use_flags:
+- bindist
+- libressl
+- ssl
+- readline
+- ipv6
+- tcpd
 version: 1.7.3.2

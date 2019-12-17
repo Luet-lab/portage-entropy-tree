@@ -1,17 +1,10 @@
 category: sys-devel
-conflicts: []
+description: Tools necessary to build programs
+license: GPL-3+
 name: binutils
-requires:
-- 
-  category: sys-devel
-  name: binutils-config
-  
-  version: "3"
-- 
-  category: sys-libs
-  name: zlib
-  
-  version: ""
+uri:
+- mirror://gnu/binutils/binutils-2.30.tar.xz https://sourceware.org/pub/binutils/releases/binutils-2.30.tar.xz
+- https://dev.gentoo.org/~slyfox/distfiles/binutils-2.30-patches-5.tar.xz
 use_flags:
 - +cxx
 - doc

@@ -1,3 +1,94 @@
 category: media-libs
+conflicts: []
+description: Advanced shading language for production GI renderers
+license: BSD
 name: osl
+requires:
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: openimageio
+  
+  version: 1.8.5
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtcore
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: pugixml
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: openexr
+  
+  version: 2.2.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: partio
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtgui
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtwidgets
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: boost
+  
+  version: "1.62"
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: clang
+  
+  version: "5"
+uri:
+- https://github.com/imageworks/OpenShadingLanguage/archive/Release-1.10.5.tar.gz
+  -> osl-1.10.5.tar.gz
+use_flags:
+- doc
+- partio
+- qt5
+- test
+- sse2:sse2
+- sse3:sse3
+- ssse3:ssse3
+- sse4_1:sse4.1
+- sse4_2:sse4.2
+- avx:avx
+- avx2:avx2
+- avx512f:avx512f
+- f16c
 version: 1.10.5

@@ -1,3 +1,64 @@
 category: xfce-extra
+conflicts: []
+description: A panel plug-in for acpi, lm-sensors and hddtemp sensors
+license: GPL-2
 name: xfce4-sensors-plugin
+requires:
+- 
+  category: xfce-base
+  description: ""
+  license: ""
+  name: xfce4-panel
+  
+  version: "4.12"
+- 
+  category: app-admin
+  description: ""
+  license: ""
+  name: hddtemp
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libnotify
+  
+  version: "0.7"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: lm-sensors
+  
+  version: 3.1.0
+- 
+  category: x11-drivers
+  description: ""
+  license: ""
+  name: nvidia-drivers
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: "3.20"
+- 
+  category: xfce-base
+  description: ""
+  license: ""
+  name: libxfce4ui
+  
+  version: "4.12"
+uri:
+- https://archive.xfce.org/src/panel-plugins/xfce4-sensors-plugin/1.3/xfce4-sensors-plugin-1.3.0.tar.bz2
+use_flags:
+- +acpi
+- hddtemp
+- libnotify
+- lm-sensors
+- video_cards_nvidia
 version: 1.3.0-r1

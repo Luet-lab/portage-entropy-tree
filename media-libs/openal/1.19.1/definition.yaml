@@ -1,3 +1,77 @@
 category: media-libs
+conflicts: []
+description: A software implementation of the OpenAL 3D audio API
+license: LGPL-2+
 name: openal
+requires:
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libsdl2
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: alsa-lib
+  
+  version: 1.0.27.2
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jack
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: portaudio
+  
+  version: 19_pre20111121-r1
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: pulseaudio
+  
+  version: 2.1-r1
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtcore
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtgui
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtwidgets
+  
+  version: ""
+uri:
+- https://www.openal-soft.org/openal-releases/openal-soft-1.19.1.tar.bz2
+use_flags:
+- alsa
+- coreaudio
+- debug
+- jack
+- oss
+- portaudio
+- pulseaudio
+- sdl
+- "qt5\n\tcpu_flags_x86_sse"
+- cpu_flags_x86_sse2
+- "cpu_flags_x86_sse4_1\n\tcpu_flags_arm_neon"
 version: 1.19.1

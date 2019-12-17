@@ -1,3 +1,34 @@
 category: sci-mathematics
+conflicts: []
+description: A C library implementing a suite of algorithms to factor large integers
+license: public-domain
 name: msieve
+requires:
+- 
+  category: sci-mathematics
+  description: ""
+  license: ""
+  name: gmp-ecm
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: mpi
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+uri:
+- mirror://sourceforge/msieve/msieve/Msieve%20v1.53/msieve153_src.tar.gz -> msieve-1.53.tar.gz
+use_flags:
+- zlib
+- +ecm
+- mpi
 version: 1.53-r1

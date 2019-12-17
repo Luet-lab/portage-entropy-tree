@@ -1,3 +1,28 @@
 category: sys-libs
+conflicts:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: glibc[vanilla(+)]
+  
+  version: ""
+description: Timezone data (/usr/share/zoneinfo) and utilities (tzselect/zic/zdump)
+license: BSD public-domain
 name: timezone-data
+requires:
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libintl
+  
+  version: ""
+uri:
+- https://www.iana.org/time-zones/repository/releases/tzdata2019c.tar.gz
+- https://www.iana.org/time-zones/repository/releases/tzcode2019c.tar.gz
+use_flags:
+- nls
+- leaps-timezone
+- elibc_FreeBSD
 version: 2019c

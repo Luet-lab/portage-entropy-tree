@@ -1,3 +1,29 @@
 category: app-crypt
+conflicts: []
+description: TCG Trusted Platform Module 2.0 Software Stack
+license: BSD-2
 name: tpm2-tss
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgcrypt
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+uri:
+- https://github.com/tpm2-software/tpm2-tss/releases/download/2.2.3/tpm2-tss-2.2.3.tar.gz
+use_flags:
+- doc
+- +gcrypt
+- openssl
+- static-libs
+- test
 version: 2.2.3-r1

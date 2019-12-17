@@ -1,3 +1,44 @@
 category: sys-process
+conflicts:
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: dcron
+  
+  version: ""
+description: systemd units to create timers for cron directories and crontab
+license: MIT
 name: systemd-cron
+requires:
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "217"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: debianutils
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: cronbase
+  
+  version: ""
+uri:
+- https://github.com/systemd-cron/systemd-cron/archive/v1.5.12.tar.gz -> systemd-cron-1.5.12.tar.gz
+use_flags:
+- cron-boot
+- etc-crontab-systemd
+- minutely
+- setgid
+- test
+- yearly
 version: 1.5.12-r1

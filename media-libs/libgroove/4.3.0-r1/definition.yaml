@@ -1,3 +1,50 @@
 category: media-libs
+conflicts: []
+description: Streaming audio processing library.
+license: MIT
 name: libgroove
+requires:
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libebur128
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libsdl2
+  
+  version: ""
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: libav
+  
+  version: ""
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: ffmpeg
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: chromaprint
+  
+  version: ""
+uri:
+- https://github.com/andrewrk/libgroove/archive/4.3.0.tar.gz -> libgroove-4.3.0.tar.gz
+use_flags:
+- +chromaprint
+- libav
+- +loudness
+- +sound
+- static-libs
 version: 4.3.0-r1

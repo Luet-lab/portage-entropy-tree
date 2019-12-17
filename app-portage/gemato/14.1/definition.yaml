@@ -1,3 +1,31 @@
 category: app-portage
+conflicts: []
+description: Stand-alone Manifest generation & verification tool
+license: BSD-2
 name: gemato
+requires:
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gnupg
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: setuptools
+  
+  version: ""
+uri:
+- mirror://pypi/g/gemato/gemato-14.1.tar.gz
+use_flags:
+- +blake2
+- bzip2
+- +gpg
+- lzma
+- sha3
+- test
+- tools
 version: "14.1"

@@ -1,3 +1,168 @@
 category: net-dns
+conflicts: []
+description: Berkeley Internet Name Domain - Name Server
+license: Apache-2.0 BSD BSD-2 GPL-2 HPND ISC MPL-2.0
 name: bind
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: protobuf-c
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: ply
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: unixODBC
+  
+  version: 2.2.6
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: geoip
+  
+  version: 1.4.6
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: lmdb
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: json-c
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: fstrm
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-bind
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: psmisc
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libmaxminddb
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: postgresql
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: 2.1.0
+uri:
+- https://downloads.isc.org/isc/bind9/9.14.8/bind-9.14.8.tar.gz
+use_flags:
+- -berkdb
+- +caps
+- dlz
+- dnstap
+- doc
+- dnsrps
+- fixed-rrset
+- geoip
+- geoip2
+- |-
+  gssapi
+  json
+- ldap
+- libressl
+- lmdb
+- mysql
+- odbc
+- postgres
+- python
+- selinux
+- |-
+  static-libs
+  urandom
+- xml
+- +zlib
 version: 9.14.8

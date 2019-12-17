@@ -1,3 +1,33 @@
 category: net-libs
+conflicts:
+- 
+  category: <net-fs
+  description: ""
+  license: ""
+  name: nfs-utils
+  
+  version: 1.2.2
+- 
+  category: net-fs
+  description: ""
+  license: ""
+  name: idmapd
+  
+  version: ""
+description: NFSv4 ID <-> name mapping library
+license: BSD
 name: libnfsidmap
+requires:
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: ""
+uri:
+- https://fedorapeople.org/~steved/libnfsidmap/0.27/libnfsidmap-0.27.tar.bz2
+use_flags:
+- ldap
+- static-libs
 version: "0.27"

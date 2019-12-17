@@ -1,3 +1,42 @@
 category: media-gfx
+conflicts: []
+description: command-line utility and library for lossy compression of PNG images
+license: GPL-3 HPND rwpng
 name: pngquant
+requires:
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: lcms
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libpng
+  
+  version: ""
+- 
+  category: media-gfx
+  description: ""
+  license: ""
+  name: libimagequant
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+uri:
+- https://pngquant.org/pngquant-2.12.3-src.tar.gz
+use_flags:
+- debug
+- lcms
+- openmp
+- cpu_flags_x86_sse2
 version: 2.12.3

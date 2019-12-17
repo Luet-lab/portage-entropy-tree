@@ -1,3 +1,70 @@
 category: gnome-extra
+conflicts:
+- 
+  category: <gnome-extra
+  description: ""
+  license: ""
+  name: cinnamon
+  
+  version: "2.4"
+description: Linux Mint's fork of gjs for Cinnamon
+license: MIT || ( MPL-1.1 LGPL-2+ GPL-2+ )
 name: cjs
+requires:
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: spidermonkey
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.37.3
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gobject-introspection
+  
+  version: "1.38"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libffi
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo[X,glib]
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: ""
+uri:
+- https://github.com/linuxmint/cjs/archive/3.8.0.tar.gz -> cjs-3.8.0.tar.gz
+use_flags:
+- +cairo
+- examples
+- gtk
+- test
 version: 3.8.0

@@ -1,3 +1,32 @@
 category: www-apache
+conflicts: []
+description: SSL/TLS module for the Apache HTTP server
+license: Apache-2.0
 name: mod_nss
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nspr
+  
+  version: 4.6.4
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nss
+  
+  version: 3.11.4
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: bind-tools
+  
+  version: ""
+uri:
+- https://releases.pagure.org/mod_nss/mod_nss-1.0.12.tar.gz
+use_flags:
+- +ecc
 version: 1.0.12-r1

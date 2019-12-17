@@ -1,3 +1,106 @@
 category: sci-misc
+conflicts:
+- 
+  category: app-admin
+  description: ""
+  license: ""
+  name: quickswitch
+  
+  version: ""
+description: The Berkeley Open Infrastructure for Network Computing
+license: LGPL-2.1
 name: boinc
+requires:
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jpeg
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libnotify
+  
+  version: "0.7"
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: ca-certificates
+  
+  version: "20080809"
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: nvidia-cuda-toolkit
+  
+  version: "2.1"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: wxGTK
+  
+  version: ""
+- 
+  category: x11-drivers
+  description: ""
+  license: ""
+  name: nvidia-drivers
+  
+  version: "180.22"
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl[curl_ssl_gnutls(-)=,curl_ssl_libressl(-)=,-curl_ssl_nss(-),curl_ssl_openssl(-)=,-curl_ssl_axtls(-),-curl_ssl_cyassl(-)]
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freeglut
+  
+  version: ""
+uri:
+- https://github.com/BOINC/boinc/archive/client_release/7.10/7.9.3.tar.gz -> boinc-7.9.3.tar.gz
+use_flags:
+- X
+- cuda
+- curl_ssl_gnutls
+- curl_ssl_libressl
+- +curl_ssl_openssl
 version: 7.9.3

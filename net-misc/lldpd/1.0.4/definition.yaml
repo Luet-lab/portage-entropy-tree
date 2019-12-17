@@ -1,3 +1,76 @@
 category: net-misc
+conflicts: []
+description: Implementation of IEEE 802.1ab (LLDP)
+license: ISC
 name: lldpd
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libbsd
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libevent
+  
+  version: 2.0.5
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: net-snmp[extensible(+)]
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libseccomp
+  
+  version: ""
+- 
+  category: app-shells
+  description: ""
+  license: ""
+  name: zsh
+  
+  version: ""
+uri:
+- http://media.luffy.cx/files/lldpd/lldpd-1.0.4.tar.gz
+use_flags:
+- cdp
+- doc
+- +dot1
+- +dot3
+- edp
+- fdp
+- graph
+- +lldpmed
+- old-kernel
+- "sanitizers\n\tseccomp"
+- sonmp
+- snmp
+- static-libs
+- test
+- readline
+- xml
+- zsh-completion
 version: 1.0.4

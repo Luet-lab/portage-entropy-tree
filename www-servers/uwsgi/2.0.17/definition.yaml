@@ -1,3 +1,315 @@
 category: www-servers
+conflicts: []
+description: uWSGI server for Python web applications
+license: GPL-2
 name: uwsgi
+requires:
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: perl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: ceph
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxslt
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: php
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gloox
+  
+  version: ""
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: rrdtool
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: jansson
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: expat
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: geoip
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: mono
+  
+  version: "4"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: postgresql
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: yajl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpcre
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: zeromq
+  
+  version: ""
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: tcp-wrappers
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: ""
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: gcc
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: gevent
+  
+  version: 1.2.1
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-uwsgi
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libyaml
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: lua
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: pypy
+  
+  version: ""
+uri:
+- https://github.com/unbit/uwsgi/archive/2.0.17.tar.gz -> uwsgi-2.0.17.tar.gz
+use_flags:
+- apache2
+- +caps
+- debug
+- +embedded
+- expat
+- jemalloc
+- json
+- libressl
+- +pcre
+- +routing
+- selinux
+- +ssl
+- +xml
+- yajl
+- yaml
+- zeromq
+- +uwsgi_plugins_ping
+- +uwsgi_plugins_cache
+- +uwsgi_plugins_carbon
+- +uwsgi_plugins_nagios
+- +uwsgi_plugins_rpc
+- +uwsgi_plugins_rrdtool
+- +uwsgi_plugins_http
+- +uwsgi_plugins_ugreen
+- +uwsgi_plugins_signal
+- +uwsgi_plugins_syslog
+- +uwsgi_plugins_rsyslog
+- +uwsgi_plugins_router_{uwsgi,redirect,basicauth,rewrite,http,cache,static,memcached,redis,hash,expires,metrics}
+- +uwsgi_plugins_{core,fast,raw,ssl}router
+- +uwsgi_plugins_redislog
+- +uwsgi_plugins_mongodblog
+- +uwsgi_plugins_log{file,socket}
+- +uwsgi_plugins_spooler
+- +uwsgi_plugins_cheaper_busyness
+- +uwsgi_plugins_symcall
+- +uwsgi_plugins_transformation_{chunked,gzip,offload,tofile}
+- +uwsgi_plugins_zergpool
+- uwsgi_plugins_alarm_{curl,xmpp}
+- uwsgi_plugins_clock_{monotonic,realtime}
+- uwsgi_plugins_curl_cron
+- uwsgi_plugins_dumbloop
+- uwsgi_plugins_echo
+- uwsgi_plugins_emperor_{amqp,pg,zeromq}
+- uwsgi_plugins_forkptyrouter
+- uwsgi_plugins_geoip
+- uwsgi_plugins_graylog2
+- uwsgi_plugins_legion_cache_fetch
+- uwsgi_plugins_ldap
+- uwsgi_plugins_log{crypto,pipe}
+- uwsgi_plugins_notfound
+- uwsgi_plugins_pam
+- uwsgi_plugins_rados
+- uwsgi_plugins_router_{access,radius,spnego,xmldir}
+- uwsgi_plugins_sqlite
+- uwsgi_plugins_ssi
+- uwsgi_plugins_stats_pusher_statsd
+- uwsgi_plugins_systemd_logger
+- uwsgi_plugins_transformation_toupper
+- uwsgi_plugins_tuntap
+- uwsgi_plugins_webdav
+- uwsgi_plugins_xattr
+- uwsgi_plugins_xslt
+- uwsgi_plugins_zabbix
+- cgi
+- mono
+- perl
+- go
+- lua
+- php
+- pypy
+- python
+- python_asyncio
+- python_gevent
+- ruby
 version: 2.0.17

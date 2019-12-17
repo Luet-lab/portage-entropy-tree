@@ -1,3 +1,16 @@
 category: sys-libs
+description: Compiler runtime libraries for clang (sanitizers & xray)
+license: '|| ( UoI-NCSA MIT )'
 name: compiler-rt-sanitizers
+uri:
+- https://releases.llvm.org/7.1.0/compiler-rt-7.1.0.src.tar.xz
+- 'https://releases.llvm.org/7.1.0/llvm-7.1.0.src.tar.xz '
+use_flags:
+- +clang
+- +libfuzzer
+- +profile
+- +sanitize
+- test
+- +xray
+- elibc_glibc
 version: 7.1.0

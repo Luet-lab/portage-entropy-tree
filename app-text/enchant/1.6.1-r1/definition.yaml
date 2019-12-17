@@ -1,3 +1,35 @@
 category: app-text
+conflicts: []
+description: Spellchecker wrapping library
+license: LGPL-2.1
 name: enchant
+requires:
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: aspell
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: hunspell
+  
+  version: 1.2.1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.6"
+uri:
+- https://github.com/AbiWord/enchant/releases/download/enchant-/enchant-1.6.1.tar.gz
+use_flags:
+- aspell
+- +hunspell
+- static-libs
+- test
 version: 1.6.1-r1

@@ -1,3 +1,107 @@
 category: net-voip
+conflicts:
+- 
+  category: <net-im
+  description: ""
+  license: ""
+  name: telepathy-mission-control
+  
+  version: 5.5.0
+description: A XMPP connection manager, handles single and multi user chats and voice
+  calls
+license: LGPL-2.1
 name: telepathy-gabble
+requires:
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: 2.10.2
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libsoup
+  
+  version: "2.42"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.44"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: 1.1.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: dbus-glib
+  
+  version: "0.82"
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: telepathy-glib
+  
+  version: 0.19.9
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libnice
+  
+  version: 0.0.11
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 0.9.8g
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtksourceview
+  
+  version: ""
+uri:
+- https://telepathy.freedesktop.org/releases/telepathy-gabble/telepathy-gabble-0.18.4.tar.gz
+use_flags:
+- gnutls
+- +jingle
+- libressl
+- plugins
+- test
 version: 0.18.4-r1

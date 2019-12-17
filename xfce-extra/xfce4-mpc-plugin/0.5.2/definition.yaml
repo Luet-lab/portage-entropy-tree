@@ -1,3 +1,32 @@
 category: xfce-extra
+conflicts: []
+description: Music Player Daemon (mpd) panel plugin
+license: ISC
 name: xfce4-mpc-plugin
+requires:
+- 
+  category: xfce-base
+  description: ""
+  license: ""
+  name: libxfce4ui
+  
+  version: "4.12"
+- 
+  category: xfce-base
+  description: ""
+  license: ""
+  name: xfce4-panel
+  
+  version: 4.13.5
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libmpd
+  
+  version: ""
+uri:
+- https://archive.xfce.org/src/panel-plugins/xfce4-mpc-plugin/0.5/xfce4-mpc-plugin-0.5.2.tar.bz2
+use_flags:
+- +libmpd
 version: 0.5.2

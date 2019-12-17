@@ -1,3 +1,52 @@
 category: dev-python
+conflicts: []
+description: python binding for curl/libcurl
+license: LGPL-2.1
 name: pycurl
+requires:
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
+  
+  version: 7.25.0-r1
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl[curl_ssl_gnutls(-)=,curl_ssl_libressl(-)=,curl_ssl_nss(-)=,curl_ssl_openssl(-)=,-curl_ssl_axtls(-),-curl_ssl_cyassl(-)]
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: 2.11.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+uri:
+- mirror://pypi/p/pycurl/pycurl-7.43.0.tar.gz
+use_flags:
+- curl_ssl_gnutls
+- curl_ssl_libressl
+- curl_ssl_nss
+- +curl_ssl_openssl
+- examples
+- ssl
+- test
 version: 7.43.0

@@ -1,3 +1,29 @@
 category: dev-libs
+conflicts: []
+description: a fast key-value storage library written at Google
+license: BSD
 name: leveldb
+requires:
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: google-perftools
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: snappy
+  
+  version: ""
+uri:
+- https://github.com/google/leveldb/archive/v1.20.tar.gz -> leveldb-1.20.tar.gz
+use_flags:
+- +snappy
+- static-libs
+- kernel_FreeBSD
+- +tcmalloc
+- test
 version: "1.20"

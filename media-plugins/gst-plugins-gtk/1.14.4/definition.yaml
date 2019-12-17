@@ -1,3 +1,35 @@
 category: media-plugins
+conflicts:
+- 
+  category: <media-libs
+  description: ""
+  license: ""
+  name: gst-plugins-bad
+  
+  version: 1.13.1
+description: Video sink plugin for GStreamer that renders to a GtkWidget
+license: ""
 name: gst-plugins-gtk
+requires:
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gst-plugins-base
+  
+  version: 1.14.4
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: "3.15"
+uri: []
+use_flags:
+- +egl
+- gles2
+- +opengl
+- wayland
+- +X
 version: 1.14.4

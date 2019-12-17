@@ -1,22 +1,32 @@
 category: dev-util
 conflicts: []
+description: pahole (Poke-a-Hole) and other DWARF2 utilities
+license: GPL-2
 name: dwarves
 requires:
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: elfutils
+  
+  version: "0.177"
+- 
   category: sys-libs
+  description: ""
+  license: ""
   name: zlib
   
   version: ""
 - 
   category: dev-libs
+  description: ""
+  license: ""
   name: elfutils
   
   version: "0.131"
-- 
-  category: dev-libs
-  name: elfutils
-  
-  version: "0.177"
+uri:
+- http://fedorapeople.org/~acme/dwarves/dwarves-1.12.tar.bz2
 use_flags:
 - debug
 version: "1.12"

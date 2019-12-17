@@ -1,3 +1,36 @@
 category: dev-libs
+conflicts: []
+description: Near Field Communications (NFC) library
+license: LGPL-3
 name: libnfc
+requires:
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: pcsc-lite
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libusb
+  
+  version: ""
+uri:
+- https://github.com/nfc-tools/libnfc/releases/download/libnfc-1.7.1/libnfc-1.7.1.tar.bz2
+use_flags:
+- doc
+- pcsc-lite
+- readline
+- static-libs
+- usb
 version: 1.7.1

@@ -1,3 +1,22 @@
 category: sys-devel
+conflicts: []
+description: Darwin assembler as(1) and static linker ld(1), Xcode Tools 3.2.6
+license: APSL-2
 name: binutils-apple
+requires:
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: binutils-config
+  
+  version: ""
+uri:
+- https://opensource.apple.com/tarballs/ld64/ld64-97.17.tar.gz
+- https://opensource.apple.com/tarballs/cctools/cctools-795.tar.gz
+- http://www.opensource.apple.com/tarballs/libunwind/libunwind-30.tar.gz
+- http://www.opensource.apple.com/tarballs/dyld/dyld-132.13.tar.gz
+- https://dev.gentoo.org/~grobian/distfiles/binutils-apple-patches-3.2.6-r0.tar.bz2
+use_flags:
+- test
 version: 3.2.6

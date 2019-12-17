@@ -1,3 +1,56 @@
 category: app-crypt
+conflicts:
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: ekey-egd-linux
+  
+  version: ""
+description: Entropy Key userspace daemon
+license: MIT GPL-2
 name: ekeyd
+requires:
+- 
+  category: dev-lua
+  description: ""
+  license: ""
+  name: luasocket
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: ""
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: munin
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: service-manager
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: lua
+  
+  version: ""
+uri:
+- mirror://ubuntu/pool/universe/e/ekeyd/ekeyd_1.1.5.orig.tar.gz
+use_flags:
+- kernel_linux
+- munin
+- minimal
+- usb
 version: 1.1.5-r1

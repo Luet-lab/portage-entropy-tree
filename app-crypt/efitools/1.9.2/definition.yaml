@@ -1,3 +1,33 @@
 category: app-crypt
+conflicts: []
+description: Tools for manipulating UEFI secure boot platforms
+license: GPL-2 LGPL-2.1
 name: efitools
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: ""
+uri:
+- https://git.kernel.org/pub/scm/linux/kernel/git/jejb/efitools.git/snapshot/efitools-1.9.2.tar.gz
+use_flags:
+- libressl
+- static
 version: 1.9.2

@@ -1,3 +1,124 @@
 category: app-arch
+conflicts: []
+description: Multi-format archive and compression library
+license: BSD BSD-2 BSD-4 public-domain
 name: libarchive
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: zstd
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nettle
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: expat
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: lz4
+  
+  version: 0_p131
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: xz-utils[threads=,]
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: acl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: lzo
+  
+  version: "2"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: bzip2
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libiconv
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: attr
+  
+  version: ""
+uri:
+- https://www.libarchive.org/downloads/libarchive-3.3.3.tar.gz
+use_flags:
+- acl
+- +bzip2
+- +e2fsprogs
+- expat
+- +iconv
+- kernel_linux
+- libressl
+- lz4
+- +lzma
+- lzo
+- nettle
+- static-libs
+- +threads
+- xattr
+- +zlib
+- zstd
 version: 3.3.3

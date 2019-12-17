@@ -1,3 +1,59 @@
 category: app-arch
+conflicts: []
+description: The open source Windows Imaging (WIM) library
+license: '|| ( GPL-3+ LGPL-3+ ) CC0-1.0'
 name: wimlib
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: ntfs3g
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: fuse
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: cabextract
+  
+  version: ""
+- 
+  category: app-cdr
+  description: ""
+  license: ""
+  name: cdrtools
+  
+  version: ""
+uri:
+- https://wimlib.net/downloads/wimlib-1.13.0.tar.gz -> wimlib-1.13.0.tar.gz
+use_flags:
+- cpu_flags_x86_ssse3
+- fuse
+- iso
+- ntfs
+- openssl
+- threads
+- yasm
 version: 1.13.0

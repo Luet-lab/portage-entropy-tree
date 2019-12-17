@@ -1,3 +1,53 @@
 category: net-dns
+conflicts: []
+description: A DNS-Server which gets its data from a MySQL-/PostgreSQL-database
+license: GPL-2
 name: mydns
+requires:
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: postgresql
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libiconv
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libintl
+  
+  version: ""
+uri:
+- mirror://sourceforge/mydns-ng/mydns-1.2.8.31.tar.gz
+use_flags:
+- alias
+- debug
+- nls
+- mysql
+- postgres
+- ssl
+- static
+- status
 version: 1.2.8.31-r2

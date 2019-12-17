@@ -1,3 +1,28 @@
 category: media-sound
+conflicts: []
+description: Audio file volume normalizer
+license: GPL-2
 name: normalize
+requires:
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: audiofile
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libmad
+  
+  version: ""
+uri:
+- https://savannah.nongnu.org/download/normalize/normalize-0.7.7.tar.bz2
+- https://dev.gentoo.org/~radhermit/distfiles/normalize-0.7.7-m4.patch.gz
+use_flags:
+- audiofile
+- mad
+- nls
 version: 0.7.7-r1

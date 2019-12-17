@@ -1,3 +1,40 @@
 category: x11-plugins
+conflicts: []
+description: A filesystem mounter that uses udisks to handle notification and mounting
+license: GPL-2
 name: wmudmount
+requires:
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: udisks
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: 3.8.0
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: libgnome-keyring
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libnotify
+  
+  version: "0.7"
+uri:
+- mirror://sourceforge/wmudmount/wmudmount-2.2.tar.gz
+use_flags:
+- gnome-keyring
+- libnotify
 version: 2.2-r2

@@ -2,156 +2,222 @@ category: net-mail
 conflicts:
 - 
   category: dev-db
+  description: ""
+  license: ""
   name: postgresql
   
   version: ""
+description: An IMAP and POP3 server written with security primarily in mind
+license: LGPL-2.1 MIT
 name: dovecot
 requires:
 - 
-  category: app-text
-  name: libexttextcat
-  
-  version: ""
-- 
   category: dev-lang
+  description: ""
+  license: ""
   name: lua
   
   version: ""
 - 
-  category: acct-group
-  name: mail
+  category: dev-cpp
+  description: ""
+  license: ""
+  name: clucene
   
-  version: ""
-- 
-  category: net-mail
-  name: mailbase
-  
-  version: ""
-- 
-  category: sys-libs
-  name: libcap
-  
-  version: ""
-- 
-  category: virtual
-  name: krb5
-  
-  version: ""
-- 
-  category: sec-policy
-  name: selinux-dovecot
-  
-  version: ""
-- 
-  category: net-misc
-  name: curl
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libsodium
-  
-  version: ""
-- 
-  category: sys-libs
-  name: pam
-  
-  version: ""
+  version: "2.3"
 - 
   category: dev-db
+  description: ""
+  license: ""
   name: sqlite
   
   version: ""
 - 
-  category: acct-user
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
   name: dovenull
   
   version: ""
 - 
+  category: app-arch
+  description: ""
+  license: ""
+  name: bzip2
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: xz-utils
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: mail
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libiconv
+  
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: dovecot
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: dovecot
+  
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: dovenull
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libsodium
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: lz4
+  
+  version: ""
+- 
   category: dev-db
+  description: ""
+  license: ""
   name: mysql-connector-c
   
   version: ""
 - 
   category: dev-libs
+  description: ""
+  license: ""
   name: expat
   
   version: ""
 - 
-  category: dev-libs
-  name: openssl
-  
-  version: ""
-- 
-  category: app-arch
-  name: bzip2
-  
-  version: ""
-- 
-  category: dev-cpp
-  name: clucene
-  
-  version: "2.3"
-- 
-  category: acct-user
-  name: dovecot
-  
-  version: ""
-- 
   category: net-nds
+  description: ""
+  license: ""
   name: openldap
   
   version: ""
 - 
   category: sys-libs
-  name: zlib
+  description: ""
+  license: ""
+  name: pam
   
   version: ""
 - 
-  category: app-arch
-  name: lz4
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
   
   version: ""
 - 
   category: net-mail
+  description: ""
+  license: ""
   name: vpopmail
   
   version: ""
 - 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-dovecot
+  
+  version: ""
+- 
   category: sys-apps
+  description: ""
+  license: ""
   name: tcp-wrappers
   
   version: ""
 - 
-  category: virtual
-  name: libiconv
+  category: app-text
+  description: ""
+  license: ""
+  name: libexttextcat
   
   version: ""
 - 
   category: dev-libs
+  description: ""
+  license: ""
   name: icu
   
   version: ""
 - 
-  category: acct-group
-  name: dovecot
+  category: net-mail
+  description: ""
+  license: ""
+  name: mailbase
   
   version: ""
-- 
-  category: acct-group
-  name: dovenull
-  
-  version: ""
-- 
-  category: app-arch
-  name: xz-utils
-  
-  version: ""
-- 
-  category: dev-libs
-  name: libressl
-  
-  version: ""
+uri:
+- https://dovecot.org/releases//dovecot-2.3.8.tar.gz
+- https://pigeonhole.dovecot.org/releases//dovecot--pigeonhole-0.5.8.tar.gz
+- https://pigeonhole.dovecot.org/releases//dovecot--pigeonhole-0.5.8.tar.gz
 use_flags:
 - kerberos
 - ldap

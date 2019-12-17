@@ -1,3 +1,51 @@
 category: net-libs
+conflicts: []
+description: A network programming library in C++
+license: GPL-2
 name: wvstreams
+requires:
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: 1.4.20
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: "1.1"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+uri:
+- https://wvstreams.googlecode.com/files/wvstreams-4.6.1.tar.gz
+use_flags:
+- pam
+- doc
+- +ssl
+- +dbus
+- debug
+- boost
 version: 4.6.1-r3

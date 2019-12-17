@@ -1,3 +1,71 @@
 category: sys-power
+conflicts:
+- 
+  category: sys-power
+  description: ""
+  license: ""
+  name: powermgmt-base[-pm-utils(+)]
+  
+  version: ""
+- 
+  category: <app-laptop
+  description: ""
+  license: ""
+  name: laptop-mode-tools
+  
+  version: 1.55-r1
+description: Suspend and hibernation utilities
+license: GPL-2
 name: pm-utils
+requires:
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: "2.13"
+- 
+  category: sys-power
+  description: ""
+  license: ""
+  name: pm-quirks
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: alsa-utils
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: vbetool
+  
+  version: ""
+- 
+  category: app-laptop
+  description: ""
+  license: ""
+  name: radeontool
+  
+  version: ""
+uri:
+- https://pm-utils.freedesktop.org/releases/pm-utils-1.4.1.tar.gz
+use_flags:
+- alsa
+- debug
+- ntp
+- video_cards_intel
+- video_cards_radeon
 version: 1.4.1-r6

@@ -1,3 +1,29 @@
 category: app-emulation
+conflicts: []
+description: A daemon to control runC
+license: Apache-2.0
 name: containerd
+requires:
+- 
+  category: app-emulation
+  description: ""
+  license: ""
+  name: runc
+  
+  version: 1.0.0_rc6
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libseccomp
+  
+  version: ""
+uri:
+- https://github.com/containerd/containerd/archive/v1.2.6.tar.gz -> containerd-1.2.6.tar.gz
+use_flags:
+- apparmor
+- +btrfs
+- +cri
+- hardened
+- +seccomp
 version: 1.2.6

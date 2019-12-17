@@ -1,3 +1,22 @@
 category: media-libs
+conflicts: []
+description: Portable Network Graphics library
+license: libpng2
 name: libpng
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: 1.2.8-r1
+uri:
+- mirror://sourceforge/libpng/libpng-1.6.37.tar.xz
+- 'mirror://sourceforge/apng/libpng-1.6.37-apng.patch.gz '
+use_flags:
+- apng
+- cpu_flags_x86_sse
+- neon
+- static-libs
 version: 1.6.37

@@ -1,3 +1,41 @@
 category: sys-cluster
+conflicts:
+- 
+  category: <sys-cluster
+  description: ""
+  license: ""
+  name: heartbeat
+  
+  version: "3.0"
+description: Resources pack for Heartbeat / Pacemaker
+license: GPL-2
 name: resource-agents
+requires:
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: iproute2
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: cluster-glue
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libnet
+  
+  version: ""
+uri:
+- https://github.com/ClusterLabs/resource-agents/archive/v3.9.6.tar.gz -> resource-agents-3.9.6.tar.gz
+use_flags:
+- doc
+- libnet
+- rgmanager
 version: 3.9.6

@@ -1,3 +1,73 @@
 category: sys-apps
+conflicts: []
+description: User space utilities for the zSeries (s390) Linux kernel and device drivers
+license: MIT
 name: s390-tools
+requires:
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: pfm
+  
+  version: ""
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: net-snmp
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: fuse
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: cryptsetup
+  
+  version: 2.0.3
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: json-c
+  
+  version: ""
+uri:
+- https://github.com/ibm-s390-tools/s390-tools/archive/v2.9.0.tar.gz -> s390-tools-2.9.0.tar.gz
+use_flags:
+- cryptsetup
+- fuse
+- ncurses
+- openssl
+- pfm
+- snmp
+- zlib
 version: 2.9.0

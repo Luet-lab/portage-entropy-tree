@@ -1,3 +1,60 @@
 category: app-misc
+conflicts: []
+description: Contains the lowlevel lcd drivers for GraphLCD
+license: GPL-2
 name: graphlcd-base
+requires:
+- 
+  category: media-gfx
+  description: ""
+  license: ""
+  name: imagemagick
+  
+  version: "7"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libusb
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libhid
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libvncserver
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
+  
+  version: ""
+uri:
+- https://projects.vdr-developer.org/git/graphlcd-base.git/snapshot/graphlcd-base-1.0.2.tar.bz2
+use_flags:
+- fontconfig
+- freetype
+- g15
+- graphicsmagick
+- imagemagick
+- lcd_devices_ax206dpf
+- lcd_devices_picolcd_256x64
+- lcd_devices_vnc
 version: 1.0.2

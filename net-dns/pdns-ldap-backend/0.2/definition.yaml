@@ -1,3 +1,32 @@
 category: net-dns
+conflicts: []
+description: Fork of the official but unmaintained LDAP backend
+license: GPL-2
 name: pdns-ldap-backend
+requires:
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: pdns
+  
+  version: "3.2"
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap[sasl=]
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
+  
+  version: ""
+uri:
+- http://sequanux.org/dl/pdns-ldap-backend/pdns-ldap-backend-0.2.tar.gz
+use_flags:
+- sasl
 version: "0.2"

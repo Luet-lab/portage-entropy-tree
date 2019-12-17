@@ -1,3 +1,62 @@
 category: sys-libs
+conflicts: []
+description: GObject library for managing information about real and virtual OSes
+license: GPL-2+ LGPL-2.1+
 name: libosinfo
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gobject-introspection
+  
+  version: 0.9.7
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.38.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: 2.6.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxslt
+  
+  version: 1.0.0
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: hwids
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: osinfo-db-tools
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: osinfo-db
+  
+  version: ""
+uri:
+- https://releases.pagure.org/libosinfo/libosinfo-1.3.0.tar.gz
+use_flags:
+- +introspection
+- +vala
+- test
 version: 1.3.0

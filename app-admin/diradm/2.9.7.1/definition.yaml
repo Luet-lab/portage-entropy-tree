@@ -1,57 +1,82 @@
 category: app-admin
 conflicts: []
+description: A nearly complete nss/shadow suite for managing POSIX users/groups/data
+  in LDAP
+license: GPL-2
 name: diradm
 requires:
 - 
   category: net-nds
+  description: ""
+  license: ""
   name: openldap
   
   version: "2.3"
 - 
   category: sys-apps
+  description: ""
+  license: ""
+  name: grep
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: perl-MIME-Base64
+  
+  version: ""
+- 
+  category: net-fs
+  description: ""
+  license: ""
+  name: samba
+  
+  version: 3.0.6
+- 
+  category: dev-perl
+  description: ""
+  license: ""
+  name: Crypt-SmbHash
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
   name: gawk
   
   version: ""
 - 
   category: sys-apps
+  description: ""
+  license: ""
   name: coreutils
   
   version: ""
 - 
-  category: sys-apps
-  name: grep
+  category: dev-lang
+  description: ""
+  license: ""
+  name: perl
   
   version: ""
 - 
   category: app-shells
+  description: ""
+  license: ""
   name: bash
   
   version: ""
 - 
   category: sys-apps
+  description: ""
+  license: ""
   name: sed
   
   version: ""
-- 
-  category: virtual
-  name: perl-MIME-Base64
-  
-  version: ""
-- 
-  category: dev-lang
-  name: perl
-  
-  version: ""
-- 
-  category: dev-perl
-  name: Crypt-SmbHash
-  
-  version: ""
-- 
-  category: net-fs
-  name: samba
-  
-  version: 3.0.6
+uri:
+- http://orbis-terrarum.net/~robbat2/diradm-2.9.7.1.tar.bz2
 use_flags:
 - automount
 - irixpasswd

@@ -1,3 +1,28 @@
 category: media-libs
+conflicts: []
+description: Library implementing a custom algorithm for extracting audio fingerprints
+license: LGPL-2.1
 name: chromaprint
+requires:
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: libav
+  
+  version: "11"
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: ffmpeg
+  
+  version: "2.6"
+uri:
+- https://github.com/acoustid/chromaprint/releases/download/v1.4.3/chromaprint-1.4.3.tar.gz
+- 'https://github.com/google/googletest/archive/release-1.8.0.tar.gz -> gtest-1.8.0.tar.gz '
+use_flags:
+- libav
+- test
+- tools
 version: 1.4.3

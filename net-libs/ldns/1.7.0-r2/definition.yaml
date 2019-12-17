@@ -1,3 +1,32 @@
 category: net-libs
+conflicts: []
+description: a library with the aim to simplify DNS programming in C
+license: BSD
 name: ldns
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 1.0.1e
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+uri:
+- http://www.nlnetlabs.nl/downloads/ldns/ldns-1.7.0.tar.gz
+use_flags:
+- +dane
+- doc
+- +ecdsa
+- gost
+- libressl
+- python
+- static-libs
+- vim-syntax
 version: 1.7.0-r2

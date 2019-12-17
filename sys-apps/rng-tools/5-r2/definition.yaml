@@ -1,3 +1,39 @@
 category: sys-apps
+conflicts: []
+description: Daemon to use hardware random number generators
+license: GPL-2
 name: rng-tools
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgcrypt
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgpg-error
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: argp-standalone
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-rngd
+  
+  version: ""
+uri:
+- mirror://sourceforge/gkernel/rng-tools-5.tar.gz
+use_flags:
+- selinux
 version: 5-r2

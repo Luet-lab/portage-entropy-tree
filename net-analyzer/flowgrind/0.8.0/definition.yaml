@@ -1,27 +1,39 @@
 category: net-analyzer
 conflicts: []
+description: Network performance measurement tool
+license: GPL-3
 name: flowgrind
 requires:
 - 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libpcap
+  
+  version: ""
+- 
   category: sys-apps
+  description: ""
+  license: ""
   name: util-linux
   
   version: ""
 - 
   category: dev-libs
+  description: ""
+  license: ""
   name: xmlrpc-c
   
   version: ""
 - 
   category: sci-libs
+  description: ""
+  license: ""
   name: gsl
   
   version: ""
-- 
-  category: net-libs
-  name: libpcap
-  
-  version: ""
+uri:
+- https://github.com/flowgrind/flowgrind/releases/download/flowgrind-0.8.0/flowgrind-0.8.0.tar.bz2
 use_flags:
 - debug
 - doc

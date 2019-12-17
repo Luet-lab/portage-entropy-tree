@@ -1,3 +1,28 @@
 category: media-libs
+conflicts:
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: aacplusenc
+  
+  version: ""
+description: HE-AAC+ v2 library, based on the reference implementation
+license: LGPL-2.1
 name: libaacplus
+requires:
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: fftw
+  
+  version: 3.3.3-r2
+uri:
+- https://dev.gentoo.org/~aballier/libaacplus-2.0.2.tar.gz
+- http://217.20.164.161/~tipok/aacplus/libaacplus-2.0.2.tar.gz
+- http://www.3gpp.org/ftp/Specs/archive/26_series/26.410/26410-800.zip
+use_flags:
+- fftw
+- static-libs
 version: 2.0.2-r2

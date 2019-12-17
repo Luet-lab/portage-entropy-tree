@@ -1,3 +1,57 @@
 category: media-gfx
+conflicts: []
+description: Translate PostScript and PDF graphics into other vector formats
+license: GPL-2
 name: pstoedit
+requires:
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gd
+  
+  version: 2.0.35-r1
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: ghostscript-gpl
+  
+  version: 8.71-r1
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libemf
+  
+  version: 1.0.3
+- 
+  category: media-gfx
+  description: ""
+  license: ""
+  name: imagemagick
+  
+  version: 6.6.1.2
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: plotutils
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libzip
+  
+  version: ""
+uri:
+- mirror://sourceforge/pstoedit/pstoedit-3.70.tar.gz
+use_flags:
+- emf
+- imagemagick
+- plotutils
+- pptx
+- static-libs
 version: 3.70-r1

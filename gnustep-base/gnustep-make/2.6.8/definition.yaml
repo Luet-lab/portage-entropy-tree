@@ -1,3 +1,40 @@
 category: gnustep-base
+conflicts:
+- 
+  category: '!gnustep-base'
+  description: ""
+  license: ""
+  name: libobjc2
+  
+  version: ""
+description: GNUstep Makefile Package
+license: GPL-2
 name: gnustep-make
+requires:
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: make
+  
+  version: "3.75"
+- 
+  category: gnustep-base
+  description: ""
+  license: ""
+  name: libobjc2
+  
+  version: ""
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: clang
+  
+  version: ""
+uri:
+- ftp://ftp.gnustep.org/pub/gnustep/core/gnustep-make-2.6.8.tar.gz
+use_flags:
+- libobjc2
+- native-exceptions
 version: 2.6.8

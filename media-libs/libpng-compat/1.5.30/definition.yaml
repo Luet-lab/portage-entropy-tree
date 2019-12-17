@@ -1,3 +1,27 @@
 category: media-libs
+conflicts:
+- 
+  category: =media-libs
+  description: ""
+  license: ""
+  name: libpng-1.5*
+  
+  version: ""
+description: Portable Network Graphics library
+license: libpng
 name: libpng-compat
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+uri:
+- mirror://sourceforge/libpng/libpng-1.5.30.tar.xz
+- 'https://dev.gentoo.org/~polynomial-c/libpng-1.5.30-apng.patch.gz '
+use_flags:
+- apng
+- neon
 version: 1.5.30

@@ -1,17 +1,10 @@
 category: sys-devel
-conflicts: []
+description: Tools necessary to build programs
+license: GPL-3+
 name: binutils-hppa64
-requires:
-- 
-  category: sys-devel
-  name: binutils-config
-  
-  version: "3"
-- 
-  category: sys-libs
-  name: zlib
-  
-  version: ""
+uri:
+- mirror://gnu/binutils/binutils-2.33.1.tar.xz
+- https://dev.gentoo.org/~dilfridge/distfiles/binutils-2.33.1-patches-1.tar.xz
 use_flags:
 - default-gold
 - doc

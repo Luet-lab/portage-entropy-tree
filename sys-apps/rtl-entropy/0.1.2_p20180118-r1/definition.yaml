@@ -1,3 +1,40 @@
 category: sys-apps
+conflicts: []
+description: An entropy generator using SDR peripherals, including rtl-sdr and BladeRF
+license: GPL-3+
 name: rtl-entropy
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: net-wireless
+  description: ""
+  license: ""
+  name: rtl-sdr
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: ""
+- 
+  category: net-wireless
+  description: ""
+  license: ""
+  name: bladerf
+  
+  version: ""
+uri:
+- https://github.com/pwarren/rtl-entropy/archive/9f1768c35f6205a73a657cfc9ac7bd9f9a40936c.tar.gz
+  -> rtl-entropy-0.1.2.tar.gz
+use_flags:
+- bladerf
 version: 0.1.2_p20180118-r1

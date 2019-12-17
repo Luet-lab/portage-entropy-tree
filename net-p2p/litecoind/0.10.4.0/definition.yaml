@@ -1,3 +1,55 @@
 category: net-p2p
+conflicts: []
+description: P2P Internet currency based on Bitcoin but easier to mine
+license: MIT ISC GPL-2
 name: litecoind
+requires:
+- 
+  category: app-admin
+  description: ""
+  license: ""
+  name: logrotate
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: miniupnpc
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: db
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: leveldb
+  
+  version: 1.18-r1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: boost
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+uri:
+- https://github.com/litecoin-project/litecoin/archive/v0.10.4.0.tar.gz -> litecoin-0.10.4.0.tar.gz
+use_flags:
+- logrotate
+- upnp
+- +wallet
 version: 0.10.4.0

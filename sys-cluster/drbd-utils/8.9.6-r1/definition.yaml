@@ -1,3 +1,42 @@
 category: sys-cluster
+conflicts:
+- 
+  category: '!sys-cluster'
+  description: ""
+  license: ""
+  name: drbd
+  
+  version: ""
+description: mirror/replicate block-devices across a network-connection
+license: GPL-2
 name: drbd-utils
+requires:
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: heartbeat
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: pacemaker
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: ""
+uri:
+- http://oss.linbit.com/drbd/drbd-utils-8.9.6.tar.gz
+use_flags:
+- heartbeat
+- pacemaker
+- +udev
+- xen
 version: 8.9.6-r1

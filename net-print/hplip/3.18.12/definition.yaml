@@ -1,3 +1,154 @@
 category: net-print
+conflicts: []
+description: HP Linux Imaging and Printing - Print, scan, fax drivers and service
+  tools
+license: GPL-2
 name: hplip
+requires:
+- 
+  category: net-print
+  description: ""
+  license: ""
+  name: cups
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: dbus-python
+  
+  version: 1.2.0-r1
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: notify2
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: ""
+- 
+  category: net-print
+  description: ""
+  license: ""
+  name: cups-filters
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libusb
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jpeg
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: ""
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: net-snmp
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: PyQt5
+  
+  version: 5.5.1
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: reportlab
+  
+  version: "3.2"
+- 
+  category: media-gfx
+  description: ""
+  license: ""
+  name: sane-backends
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: ghostscript-gpl
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: reportlab
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pillow
+  
+  version: 3.1.1
+uri:
+- mirror://sourceforge/hplip/hplip-3.18.12.tar.gz
+- https://dev.gentoo.org/~billie/distfiles/hplip-3.18.12-patches-1.tar.xz
+use_flags:
+- doc
+- fax
+- +hpcups
+- hpijs
+- kde
+- libnotify
+- libressl
+- -libusb0
+- minimal
+- parport
+- policykit
+- qt5
+- scanner
+- +snmp
+- static-ppds
+- X
 version: 3.18.12

@@ -1,3 +1,63 @@
 category: net-dns
+conflicts: []
+description: Various tools to generate special DNS records like SSHFP, TLSA, OPENPGPKEY,
+  IPSECKEY
+license: GPL-2+
 name: hash-slinger
+requires:
+- 
+  category: net-vpn
+  description: ""
+  license: ""
+  name: libreswan
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: python-gnupg
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: openssh
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: dnspython
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: ipaddr
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: m2crypto
+  
+  version: ""
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: unbound
+  
+  version: ""
+uri:
+- https://people.redhat.com/pwouters/hash-slinger/hash-slinger-2.7.tar.gz
+use_flags:
+- ipsec
+- +openpgp
+- +ssh
 version: 2.7-r1

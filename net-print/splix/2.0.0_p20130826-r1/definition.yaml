@@ -1,3 +1,33 @@
 category: net-print
+conflicts: []
+description: A set of CUPS printer drivers for SPL (Samsung Printer Language) printers
+license: GPL-2
 name: splix
+requires:
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: ghostscript-gpl
+  
+  version: "9.02"
+- 
+  category: net-print
+  description: ""
+  license: ""
+  name: cups
+  
+  version: 1.4.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: jbigkit
+  
+  version: ""
+uri:
+- https://dev.gentoo.org/~voyageur/distfiles/splix-2.0.0.tar.bz2
+- https://dev.gentoo.org/~voyageur/distfiles/samsung-cms-20120312.tar.xz
+use_flags:
+- +jbig
 version: 2.0.0_p20130826-r1

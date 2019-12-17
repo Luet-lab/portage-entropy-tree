@@ -1,3 +1,75 @@
 category: net-dns
+conflicts: []
+description: 'bind tools: dig, nslookup, host, nsupdate, dnssec-keygen'
+license: Apache-2.0 BSD BSD-2 GPL-2 HPND ISC MPL-2.0
 name: bind-tools
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: libidn2
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libedit
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+uri:
+- https://downloads.isc.org/isc/bind9/9.15.6/bind-9.15.6.tar.gz
+use_flags:
+- +caps
+- doc
+- gssapi
+- idn
+- ipv6
+- libedit
+- libressl
+- readline
+- xml
 version: 9.15.6

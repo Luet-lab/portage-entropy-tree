@@ -1,3 +1,29 @@
 category: sci-libs
+conflicts: []
+description: A mesh and field I/O library and scientific database
+license: BSD
 name: silo
+requires:
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: hdf5
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtgui
+  
+  version: ""
+uri:
+- https://wci.llnl.gov/content/assets/docs/simulation/computer-codes/silo/silo-4.10.2/silo-4.10.2.tar.gz
+use_flags:
+- hdf5
+- +silex
+- static-libs
+- +qt5
+- test
 version: 4.10.2-r1

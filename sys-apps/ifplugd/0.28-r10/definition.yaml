@@ -1,22 +1,32 @@
 category: sys-apps
 conflicts: []
+description: Brings up/down ethernet ports automatically with cable detection
+license: GPL-2
 name: ifplugd
 requires:
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libdaemon
+  
+  version: "0.5"
+- 
   category: sys-apps
+  description: ""
+  license: ""
   name: baselayout
   
   version: "1.12"
 - 
   category: sec-policy
+  description: ""
+  license: ""
   name: selinux-ifplugd
   
   version: ""
-- 
-  category: dev-libs
-  name: libdaemon
-  
-  version: "0.5"
+uri:
+- http://0pointer.de/lennart/projects/ifplugd/ifplugd-0.28.tar.gz
 use_flags:
 - doc
 - selinux

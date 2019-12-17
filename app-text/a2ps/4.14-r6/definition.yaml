@@ -1,3 +1,75 @@
 category: app-text
+conflicts: []
+description: Any to PostScript filter
+license: GPL-3
 name: a2ps
+requires:
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: psutils
+  
+  version: "1.17"
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: wdiff
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: emacs
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: latex-base
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libintl
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: coreutils
+  
+  version: 6.10-r1
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: ghostscript-gpl
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: libpaper
+  
+  version: ""
+uri:
+- mirror://gnu/a2ps/a2ps-4.14.tar.gz
+- 'mirror://gentoo/a2ps-4.14-ja_nls.patch.gz '
+use_flags:
+- cjk
+- emacs
+- latex
+- nls
+- static-libs
+- userland_BSD
+- userland_GNU
+- vanilla
 version: 4.14-r6

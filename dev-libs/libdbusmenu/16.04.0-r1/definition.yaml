@@ -1,3 +1,57 @@
 category: dev-libs
+conflicts: []
+description: Library to pass menu structure across DBus
+license: LGPL-2.1 LGPL-3
 name: libdbusmenu
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: dbus-glib
+  
+  version: "0.100"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.35.4
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: "3.2"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gobject-introspection
+  
+  version: "1"
+uri:
+- https://launchpad.net/dbusmenu/16.04/16.04.0/+download/libdbusmenu-16.04.0.tar.gz
+use_flags:
+- debug
+- gtk
+- gtk3
+- +introspection
+- test
 version: 16.04.0-r1

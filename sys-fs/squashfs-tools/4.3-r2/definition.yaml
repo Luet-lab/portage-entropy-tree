@@ -1,3 +1,53 @@
 category: sys-fs
+conflicts: []
+description: Tool for creating compressed filesystem type squashfs
+license: GPL-2
 name: squashfs-tools
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: lz4
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: xz-utils
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: lzo
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: attr
+  
+  version: ""
+uri:
+- mirror://sourceforge/squashfs/squashfs4.3.tar.gz
+- mirror://debian/pool/main/s/squashfs-tools/squashfs-tools_4.3-3.debian.tar.xz
+use_flags:
+- debug
+- lz4
+- lzma
+- lzo
+- static
+- xattr
+- +xz
 version: 4.3-r2

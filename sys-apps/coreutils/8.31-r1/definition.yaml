@@ -1,3 +1,144 @@
 category: sys-apps
+conflicts:
+- 
+  category: <net-fs
+  description: ""
+  license: ""
+  name: netatalk
+  
+  version: 2.0.3-r4
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: stat
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: mktemp
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: net-tools
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: realpath
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: procps
+  
+  version: ""
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: base64
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: ""
+- 
+  category: <sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: "2.13"
+- 
+  category: <sys-apps
+  description: ""
+  license: ""
+  name: sandbox
+  
+  version: 2.10-r4
+- 
+  category: <app-forensics
+  description: ""
+  license: ""
+  name: tct
+  
+  version: 1.18-r1
+description: Standard GNU utilities (chmod, cp, dd, ls, sort, tr, head, wc, who,...)
+license: GPL-3
 name: coreutils
+requires:
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: attr
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: acl
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libintl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gmp
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: ""
+uri:
+- mirror://gnu/coreutils/coreutils-8.31.tar.xz
+- mirror://gentoo/coreutils-8.30-patches-01.tar.xz
+- https://dev.gentoo.org/~polynomial-c/dist/coreutils-8.30-patches-01.tar.xz
+use_flags:
+- acl
+- caps
+- gmp
+- hostname
+- kill
+- multicall
+- nls
+- selinux
+- +split-usr
+- static
+- test
+- vanilla
+- xattr
 version: 8.31-r1

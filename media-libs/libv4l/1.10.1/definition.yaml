@@ -1,3 +1,32 @@
 category: media-libs
+conflicts:
+- 
+  category: media-tv
+  description: ""
+  license: ""
+  name: v4l2-ctl
+  
+  version: ""
+- 
+  category: <media-tv
+  description: ""
+  license: ""
+  name: ivtv-utils
+  
+  version: 1.4.0-r2
+description: Separate libraries ebuild from upstream v4l-utils package
+license: LGPL-2.1+
 name: libv4l
+requires:
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jpeg
+  
+  version: 0-r2
+uri:
+- https://linuxtv.org/downloads/v4l-utils/v4l-utils-1.10.1.tar.bz2
+use_flags:
+- jpeg
 version: 1.10.1

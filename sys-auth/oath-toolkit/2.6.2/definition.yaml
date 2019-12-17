@@ -1,3 +1,27 @@
 category: sys-auth
+conflicts: []
+description: Toolkit for using one-time password authentication with HOTP/TOTP algorithms
+license: GPL-3 LGPL-2.1
 name: oath-toolkit
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: xmlsec
+  
+  version: ""
+uri:
+- http://download.savannah.gnu.org/releases/oath-toolkit/oath-toolkit-2.6.2.tar.gz
+use_flags:
+- pam
+- pskc
+- test
 version: 2.6.2

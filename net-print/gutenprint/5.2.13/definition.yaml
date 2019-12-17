@@ -1,3 +1,59 @@
 category: net-print
+conflicts: []
+description: Ghostscript and cups printer drivers
+license: GPL-2
 name: gutenprint
+requires:
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: perl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
+- 
+  category: net-print
+  description: ""
+  license: ""
+  name: cups
+  
+  version: 1.1.14
+- 
+  category: media-gfx
+  description: ""
+  license: ""
+  name: gimp
+  
+  version: "2.2"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libintl
+  
+  version: ""
+uri:
+- mirror://sourceforge/gimp-print/gutenprint-5.2.13.tar.bz2
+use_flags:
+- cups
+- gimp
+- gtk
+- nls
+- readline
+- ppds
+- static-libs
 version: 5.2.13

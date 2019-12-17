@@ -1,3 +1,144 @@
 category: net-misc
+conflicts: []
+description: Port of OpenBSD's free SSH release
+license: BSD GPL-2
 name: openssh
+requires:
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: ldns[ecdsa,ssl(+)]
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: shadow
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: ldns
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: ldns[-ecdsa,ssl(+)]
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libedit
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: lksctp-tools
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: 1.2.3
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: pambase
+  
+  version: "20081028"
+- 
+  category: x11-apps
+  description: ""
+  license: ""
+  name: xauth
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: audit
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: "1.28"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 1.1.0g
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+uri:
+- mirror://openbsd/OpenSSH/portable/openssh-8.0.tar.gz
+- 'https://dev.gentoo.org/~whissi/dist/openssh/openssh-8.0+x509-12.1-gentoo.diff.gz '
+use_flags:
+- abi_mips_n32
+- audit
+- bindist
+- debug
+- hpn
+- kerberos
+- kernel_linux
+- ldns
+- libedit
+- libressl
+- livecd
+- pam
+- +pie
+- sctp
+- selinux
+- +ssl
+- static
+- test
+- X
+- X509
+- xmss
 version: 8.0_p1-r4

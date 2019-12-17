@@ -1,3 +1,98 @@
 category: sys-apps
+conflicts:
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: ""
+description: Utilities to deal with user accounts
+license: BSD GPL-2
 name: shadow
+requires:
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: acl
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: audit
+  
+  version: "2.6"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libintl
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: skey
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: attr
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: cracklib
+  
+  version: 2.7-r3
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: "1.28"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libsemanage
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: pambase
+  
+  version: "20150213"
+uri:
+- https://github.com/shadow-maint/shadow/releases/download/4.8/shadow-4.8.tar.xz
+use_flags:
+- acl
+- audit
+- bcrypt
+- +cracklib
+- nls
+- pam
+- selinux
+- skey
+- split-usr
+- +su
+- xattr
 version: 4.8-r1

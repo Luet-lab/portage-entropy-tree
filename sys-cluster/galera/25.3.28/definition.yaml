@@ -1,3 +1,27 @@
 category: sys-cluster
+conflicts: []
+description: Synchronous multi-master replication engine that provides the wsrep API
+license: GPL-2 BSD
 name: galera
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: boost
+  
+  version: "1.41"
+uri:
+- http://nyc2.mirrors.digitalocean.com/mariadb/mariadb-10.3.20/galera-25.3.28/src/galera-25.3.28.tar.gz
+use_flags:
+- cpu_flags_x86_sse4_2
+- garbd
+- test
 version: 25.3.28

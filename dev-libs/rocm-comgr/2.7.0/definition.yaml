@@ -1,20 +1,31 @@
 category: dev-libs
 conflicts: []
+description: Radeon Open Compute Code Object Manager
+license: MIT
 name: rocm-comgr
 requires:
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: rocm-device-libs
+  
+  version: 2.7.0
+- 
   category: dev-cpp
+  description: ""
+  license: ""
   name: yaml-cpp
   
   version: ""
 - 
   category: sys-devel
+  description: ""
+  license: ""
   name: llvm-roc
   
   version: 2.7.0
-- 
-  category: dev-libs
-  name: rocm-device-libs
-  
-  version: 2.7.0
+uri:
+- https://github.com/RadeonOpenCompute/ROCm-CompilerSupport/archive/roc-2.7.0.tar.gz
+  -> rocm-comgr-2.7.0.tar.gz
 version: 2.7.0

@@ -1,62 +1,89 @@
 category: games-emulation
 conflicts: []
+description: Game Boy, GBC, and GBA emulator forked from VisualBoyAdvance
+license: GPL-2
 name: vbam
 requires:
 - 
-  category: media-libs
-  name: libpng
-  
-  version: "1.4"
-- 
-  category: media-libs
-  name: libsdl2
+  category: virtual
+  description: ""
+  license: ""
+  name: glu
   
   version: ""
 - 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libsfml
+  
+  version: "2.0"
+- 
   category: sys-libs
+  description: ""
+  license: ""
   name: zlib
   
   version: ""
 - 
   category: virtual
-  name: glu
+  description: ""
+  license: ""
+  name: opengl
   
   version: ""
 - 
   category: media-video
+  description: ""
+  license: ""
   name: ffmpeg-3*
   
   version: ""
 - 
   category: app-misc
+  description: ""
+  license: ""
   name: lirc
   
   version: ""
 - 
-  category: media-libs
-  name: openal
-  
-  version: ""
-- 
-  category: media-libs
-  name: libsfml
-  
-  version: "2.0"
-- 
   category: virtual
-  name: opengl
-  
-  version: ""
-- 
-  category: virtual
+  description: ""
+  license: ""
   name: libintl
   
   version: ""
 - 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libpng
+  
+  version: "1.4"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libsdl2
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: openal
+  
+  version: ""
+- 
   category: x11-libs
+  description: ""
+  license: ""
   name: wxGTK
   
   version: ""
+uri:
+- https://github.com/visualboyadvance-m/visualboyadvance-m/archive/v2.1.0.tar.gz ->
+  vbam-2.1.0.tar.gz
 use_flags:
 - ffmpeg
 - link

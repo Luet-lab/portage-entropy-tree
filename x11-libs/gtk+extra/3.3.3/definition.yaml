@@ -1,3 +1,34 @@
 category: x11-libs
+conflicts: []
+description: Useful Additional GTK+ widgets
+license: FDL-1.1 LGPL-2
 name: gtk+extra
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gobject-introspection
+  
+  version: 0.6.14
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: 2.12.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: ""
+uri:
+- mirror://sourceforge/gtkextra/gtkextra-3.3.3.tar.gz
+use_flags:
+- +introspection
+- static-libs
+- test
 version: 3.3.3

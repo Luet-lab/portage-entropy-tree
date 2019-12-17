@@ -1,3 +1,22 @@
 category: net-dns
+conflicts: []
+description: Tools to ease the validation of DNSSEC related technologies
+license: BSD
 name: dnssec-validator
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 1.1.0
+uri:
+- https://github.com/DNSSEC-Tools/DNSSEC-Tools/archive/dnssec-tools-2.2.3.tar.gz
+use_flags:
+- dlv
+- +ipv6
+- +nsec3
+- static-libs
+- +threads
 version: 2.2.3

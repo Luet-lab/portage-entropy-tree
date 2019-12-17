@@ -1,3 +1,44 @@
 category: sci-libs
+conflicts: []
+description: Parallel matrix preconditioners library
+license: LGPL-2.1
 name: hypre
+requires:
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: superlu
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: blas
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: lapack
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: mpi
+  
+  version: ""
+uri:
+- https://github.com/hypre-space/hypre/archive/v2.18.2.tar.gz -> hypre-2.18.2.tar.gz
+use_flags:
+- debug
+- examples
+- fortran
+- int64
+- openmp
+- mpi
 version: 2.18.2

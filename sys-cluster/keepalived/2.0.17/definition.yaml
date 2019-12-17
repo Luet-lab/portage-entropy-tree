@@ -1,3 +1,86 @@
 category: sys-cluster
+conflicts: []
+description: A strong & robust keepalive facility to the Linux Virtual Server project
+license: GPL-2
 name: keepalived
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: ""
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: net-snmp
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpcre2
+  
+  version: "8"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: popt
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libnfnetlink
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: iproute2
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: json-c
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libnl
+  
+  version: ""
+uri:
+- https://www.keepalived.org/software/keepalived-2.0.17.tar.gz
+use_flags:
+- +bfd
+- dbus
+- debug
+- -json
+- regex
+- snmp
 version: 2.0.17

@@ -1,3 +1,66 @@
 category: sys-cluster
+conflicts: []
+description: C++ runtime system for parallel and distributed applications
+license: Boost-1.0
 name: hpx
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: boost
+  
+  version: "1.49"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: hwloc
+  
+  version: "1.8"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libunwind
+  
+  version: "1"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: papi
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: google-perftools
+  
+  version: 1.7.1
+- 
+  category: dev-cpp
+  description: ""
+  license: ""
+  name: tbb
+  
+  version: ""
+uri:
+- https://stellar.cct.lsu.edu/files/hpx_1.2.1.tar.gz
+use_flags:
+- doc
+- examples
+- jemalloc
+- papi
+- +perftools
+- tbb
+- test
 version: 1.2.1

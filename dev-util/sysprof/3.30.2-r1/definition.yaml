@@ -1,3 +1,47 @@
 category: dev-util
+conflicts: []
+description: System-wide Linux Profiler
+license: GPL-3+ GPL-2+
 name: sysprof
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.44"
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: 3.22.0
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: elogind
+  
+  version: "239.3"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "222"
+uri: []
+use_flags:
+- elogind
+- gtk
+- systemd
 version: 3.30.2-r1
