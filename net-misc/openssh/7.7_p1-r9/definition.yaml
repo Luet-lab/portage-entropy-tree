@@ -5,10 +5,24 @@ license: BSD GPL-2
 name: openssh
 requires:
 - 
-  category: net-misc
+  category: net-libs
   description: ""
   license: ""
-  name: lksctp-tools
+  name: ldns[ecdsa,ssl(+)]
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: ldns[-ecdsa,ssl(+)]
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libedit
   
   version: ""
 - 
@@ -22,7 +36,14 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: pam
+  name: zlib
+  
+  version: 1.2.3
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
   
   version: ""
 - 
@@ -40,40 +61,19 @@ requires:
   
   version: ""
 - 
-  category: net-libs
-  description: ""
-  license: ""
-  name: ldns[-ecdsa,ssl(+)]
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
-  name: zlib
+  name: libselinux
   
-  version: 1.2.3
+  version: "1.28"
 - 
-  category: net-libs
+  category: sys-auth
   description: ""
   license: ""
-  name: ldns[ecdsa,ssl(+)]
+  name: pambase
   
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: krb5
-  
-  version: ""
+  version: "20081028"
 - 
   category: x11-apps
   description: ""
@@ -89,19 +89,12 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: net-misc
   description: ""
   license: ""
-  name: libedit
+  name: lksctp-tools
   
   version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: "1.28"
 - 
   category: dev-libs
   description: ""
@@ -117,12 +110,19 @@ requires:
   
   version: ""
 - 
-  category: sys-auth
+  category: dev-libs
   description: ""
   license: ""
-  name: pambase
+  name: libressl
   
-  version: "20081028"
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
 uri:
 - mirror://openbsd/OpenSSH/portable/openssh-7.7.tar.gz
 - https://dev.gentoo.org/~whissi/dist/openssh/openssh-7.7p1-patches-1.2.tar.xz

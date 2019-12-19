@@ -5,6 +5,48 @@ license: GPL-3
 name: sssd
 requires:
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpcre
+  
+  version: "8.30"
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: 2.1.9
+- 
+  category: net-fs
+  description: ""
+  license: ""
+  name: cifs-utils
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libintl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ldb
+  
+  version: 1.1.17-r1
+- 
   category: sys-apps
   description: ""
   license: ""
@@ -19,54 +61,12 @@ requires:
   
   version: "9.9"
 - 
-  category: net-fs
-  description: ""
-  license: ""
-  name: samba
-  
-  version: "4.5"
-- 
   category: dev-libs
   description: ""
   license: ""
   name: ding-libs
   
   version: "0.2"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: jansson
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: glibc
-  
-  version: "2.17"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libpcre
-  
-  version: "8.30"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libsemanage
-  
-  version: "2.1"
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: http-parser
-  
-  version: ""
 - 
   category: app-crypt
   description: ""
@@ -80,49 +80,14 @@ requires:
   license: ""
   name: c-ares
   
+  version: 1.10.0-r1
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: c-ares
+  
   version: 1.7.4
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: 0-r1
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: 2.1.9
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: tevent
-  
-  version: 0.9.16
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: ldb
-  
-  version: 1.1.17-r1
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: nss
-  
-  version: 3.12.9
 - 
   category: dev-libs
   description: ""
@@ -131,12 +96,19 @@ requires:
   
   version: 2.1.25-r3
 - 
-  category: net-fs
+  category: sec-policy
   description: ""
   license: ""
-  name: cifs-utils
+  name: selinux-sssd
   
-  version: ""
+  version: 2.20120725-r9
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: 0-r1
 - 
   category: dev-libs
   description: ""
@@ -152,41 +124,6 @@ requires:
   
   version: 1.2.9
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libnl
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-sssd
-  
-  version: 2.20120725-r9
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: talloc
-  
-  version: 2.0.7
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: gettext
-  
-  version: "0.18"
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: curl
-  
-  version: ""
-- 
   category: sys-apps
   description: ""
   license: ""
@@ -194,12 +131,33 @@ requires:
   
   version: "1.6"
 - 
-  category: net-nds
+  category: net-fs
   description: ""
   license: ""
-  name: openldap
+  name: samba
   
-  version: 2.4.30
+  version: "4.5"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: glibc
+  
+  version: "2.17"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: tevent
+  
+  version: 0.9.16
 - 
   category: app-crypt
   description: ""
@@ -208,19 +166,61 @@ requires:
   
   version: 1.10.3
 - 
-  category: net-dns
+  category: net-nds
   description: ""
   license: ""
-  name: c-ares
+  name: openldap
   
-  version: 1.10.0-r1
+  version: 2.4.30
 - 
-  category: virtual
+  category: dev-libs
   description: ""
   license: ""
-  name: libintl
+  name: jansson
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nss
+  
+  version: 3.12.9
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libsemanage
+  
+  version: "2.1"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libnl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: talloc
+  
+  version: 2.0.7
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: http-parser
+  
+  version: ""
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: gettext
+  
+  version: "0.18"
 uri:
 - http://releases.pagure.org/SSSD/sssd/sssd-1.16.3.tar.gz
 use_flags:

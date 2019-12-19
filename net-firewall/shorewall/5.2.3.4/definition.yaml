@@ -4,14 +4,28 @@ conflicts:
   category: net-firewall
   description: ""
   license: ""
-  name: shorewall6-lite
+  name: shorewall-init
+  
+  version: ""
+- 
+  category: <sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "214"
+- 
+  category: net-firewall
+  description: ""
+  license: ""
+  name: shorewall-lite
   
   version: ""
 - 
   category: net-firewall
   description: ""
   license: ""
-  name: shorewall-lite
+  name: shorewall-core
   
   version: ""
 - 
@@ -25,27 +39,20 @@ conflicts:
   category: net-firewall
   description: ""
   license: ""
-  name: shorewall-init
+  name: shorewall6-lite
   
   version: ""
-- 
-  category: net-firewall
-  description: ""
-  license: ""
-  name: shorewall-core
-  
-  version: ""
-- 
-  category: <sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: "214"
 description: A high-level tool for configuring Netfilter
 license: GPL-2
 name: shorewall
 requires:
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: iproute2
+  
+  version: 3.8.0
 - 
   category: dev-perl
   description: ""
@@ -61,20 +68,6 @@ requires:
   
   version: "8.20"
 - 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: perl
-  
-  version: "5.16"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: iproute2
-  
-  version: 3.8.0
-- 
   category: net-firewall
   description: ""
   license: ""
@@ -82,12 +75,12 @@ requires:
   
   version: 1.4.20
 - 
-  category: sec-policy
+  category: dev-lang
   description: ""
   license: ""
-  name: selinux-shorewall
+  name: perl
   
-  version: 2.20161023-r3
+  version: "5.16"
 - 
   category: virtual
   description: ""
@@ -102,6 +95,13 @@ requires:
   name: bc
   
   version: 1.06.95
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-shorewall
+  
+  version: 2.20161023-r3
 uri:
 - http://www.shorewall.net/pub/shorewall//shorewall-/shorewall-core-5.2.3.4.tar.bz2
 - 'http://www.shorewall.net/pub/shorewall//shorewall-/shorewall-5.2.3.4.tar.bz2 '

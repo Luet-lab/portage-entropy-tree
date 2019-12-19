@@ -6,24 +6,31 @@ license: GPL-2 LGPL-2
 name: libguestfs
 requires:
 - 
-  category: x11-libs
+  category: dev-perl
   description: ""
   license: ""
-  name: gtk+
+  name: String-ShellQuote
   
   version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: fakechroot
-  
-  version: "2.8"
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libpcre
+  name: gobject-introspection
+  
+  version: 1.30.0
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: cpio
   
   version: ""
 - 
@@ -34,6 +41,13 @@ requires:
   
   version: ""
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
   category: sys-libs
   description: ""
   license: ""
@@ -41,52 +55,59 @@ requires:
   
   version: "4.6"
 - 
-  category: virtual
+  category: app-arch
   description: ""
   license: ""
-  name: perl-ExtUtils-MakeMaker
+  name: xz-utils
   
   version: ""
+- 
+  category: dev-ml
+  description: ""
+  license: ""
+  name: ounit
+  
+  version: "2"
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: glib
+  name: yajl
   
-  version: "2.26"
+  version: 2.0.4
 - 
-  category: dev-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: gobject-introspection
-  
-  version: 1.30.0
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: gettext
+  name: libcap
   
   version: ""
 - 
-  category: virtual
+  category: x11-libs
   description: ""
   license: ""
-  name: cdrtools
+  name: gtk+
   
   version: ""
 - 
-  category: app-admin
+  category: app-misc
   description: ""
   license: ""
-  name: augeas
+  name: hivex
   
-  version: 1.0.0
+  version: 1.3.1
 - 
-  category: dev-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: libconfig
+  name: fakeroot
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: file
   
   version: ""
 - 
@@ -100,9 +121,135 @@ requires:
   category: dev-perl
   description: ""
   license: ""
+  name: libintl-perl
+  
+  version: ""
+- 
+  category: dev-ml
+  description: ""
+  license: ""
+  name: findlib
+  
+  version: ""
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: gettext
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpcre
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libconfig
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
+- 
+  category: dev-perl
+  description: ""
+  license: ""
   name: Sys-Virt
   
   version: 0.2.4
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gjs
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: erlang
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: cdrtools
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: fakechroot
+  
+  version: "2.8"
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gnupg
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: perl-ExtUtils-MakeMaker
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: fuse
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.26"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: perl-Data-Dumper
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libsemanage
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: systemtap
+  
+  version: ""
 - 
   category: dev-lang
   description: ""
@@ -125,52 +272,10 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: virtual
   description: ""
   license: ""
-  name: yajl
-  
-  version: 2.0.4
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: squashfs-tools
-  
-  version: ""
-- 
-  category: dev-perl
-  description: ""
-  license: ""
-  name: String-ShellQuote
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: fuse
-  
-  version: ""
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: systemtap
-  
-  version: ""
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: erlang
+  name: perl-Getopt-Long
   
   version: ""
 - 
@@ -181,136 +286,10 @@ requires:
   
   version: ""
 - 
-  category: app-arch
-  description: ""
-  license: ""
-  name: cpio
-  
-  version: ""
-- 
-  category: app-shells
-  description: ""
-  license: ""
-  name: bash-completion
-  
-  version: "2.0"
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: xz-utils
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: perl-Getopt-Long
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: gjs
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: ""
-- 
-  category: app-misc
-  description: ""
-  license: ""
-  name: hivex
-  
-  version: 1.3.1
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: file
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libtirpc
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: ncurses
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: perl-Data-Dumper
-  
-  version: ""
-- 
-  category: dev-perl
-  description: ""
-  license: ""
-  name: libintl-perl
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libsemanage
-  
-  version: ""
-- 
-  category: dev-ml
-  description: ""
-  license: ""
-  name: findlib
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: acl
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libcap
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
   name: libxcrypt
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: fakeroot
   
   version: ""
 - 
@@ -321,10 +300,38 @@ requires:
   
   version: ""
 - 
-  category: app-crypt
+  category: app-admin
   description: ""
   license: ""
-  name: gnupg
+  name: augeas
+  
+  version: 1.0.0
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: lua
+  
+  version: ""
+- 
+  category: app-shells
+  description: ""
+  license: ""
+  name: bash-completion
+  
+  version: "2.0"
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libtirpc
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: squashfs-tools
   
   version: ""
 - 
@@ -335,13 +342,6 @@ requires:
   
   version: ""
 - 
-  category: dev-ml
-  description: ""
-  license: ""
-  name: ounit
-  
-  version: "2"
-- 
   category: media-libs
   description: ""
   license: ""
@@ -349,17 +349,17 @@ requires:
   
   version: ""
 - 
-  category: dev-lang
+  category: virtual
   description: ""
   license: ""
-  name: lua
+  name: acl
   
   version: ""
 - 
-  category: sys-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: readline
+  name: dbus
   
   version: ""
 uri:

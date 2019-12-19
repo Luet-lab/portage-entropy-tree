@@ -11,14 +11,7 @@ conflicts:
   category: sys-cluster
   description: ""
   license: ""
-  name: pmix
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: mpich
+  name: mpich2
   
   version: ""
 - 
@@ -32,55 +25,20 @@ mpi
   category: sys-cluster
   description: ""
   license: ""
-  name: mpich2
+  name: pmix
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: mpich
   
   version: ""
 description: A high-performance message passing library (MPI)
 license: BSD
 name: openmpi
 requires:
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libltdl
-  
-  version: ""
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: nvidia-cuda-toolkit
-  
-  version: 6.5.19-r1
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: knem
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: torque
-  
-  version: ""
-- 
-  category: sys-fabric
-  description: ""
-  license: ""
-  name: ofed
-  
-  version: ""
-- 
-  category: sys-fabric
-  description: ""
-  license: ""
-  name: infinipath-psm
-  
-  version: ""
 - 
   category: sys-libs
   description: ""
@@ -92,7 +50,49 @@ requires:
   category: sys-fabric
   description: ""
   license: ""
+  name: ofed
+  
+  version: ""
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
   name: librdmacm
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libltdl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libevent
+  
+  version: 2.0.22
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: knem
+  
+  version: ""
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: infinipath-psm
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: torque
   
   version: ""
 - 
@@ -103,12 +103,12 @@ requires:
   
   version: "1.6"
 - 
-  category: dev-libs
+  category: dev-util
   description: ""
   license: ""
-  name: libevent
+  name: nvidia-cuda-toolkit
   
-  version: 2.0.22
+  version: 6.5.19-r1
 - 
   category: sys-cluster
   description: ""

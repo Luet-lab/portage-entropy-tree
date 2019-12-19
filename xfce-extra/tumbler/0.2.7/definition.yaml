@@ -5,19 +5,19 @@ license: GPL-2+
 name: tumbler
 requires:
 - 
-  category: x11-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: gdk-pixbuf
+  name: glib
   
-  version: "2.14"
+  version: "2.42"
 - 
-  category: virtual
+  category: media-video
   description: ""
   license: ""
-  name: jpeg
+  name: ffmpegthumbnailer
   
-  version: ""
+  version: 2.0.8
 - 
   category: gnome-extra
   description: ""
@@ -33,12 +33,26 @@ requires:
   
   version: 0.12.4
 - 
-  category: sys-apps
+  category: media-libs
   description: ""
   license: ""
-  name: dbus
+  name: libpng
   
-  version: "1.6"
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gdk-pixbuf
+  
+  version: "2.14"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gst-plugins-base
+  
+  version: ""
 - 
   category: xfce-base
   description: ""
@@ -47,34 +61,6 @@ requires:
   
   version: "1.4"
 - 
-  category: media-plugins
-  description: ""
-  license: ""
-  name: gst-plugins-meta
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.42"
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: curl
-  
-  version: "7.25"
-- 
-  category: media-video
-  description: ""
-  license: ""
-  name: ffmpegthumbnailer
-  
-  version: 2.0.8
-- 
   category: media-libs
   description: ""
   license: ""
@@ -82,12 +68,19 @@ requires:
   
   version: ""
 - 
-  category: media-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: libpng
+  name: dbus
   
-  version: ""
+  version: "1.6"
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
+  
+  version: "7.25"
 - 
   category: media-libs
   description: ""
@@ -99,16 +92,23 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: gst-plugins-base
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
   name: libopenraw
   
   version: 0.0.8
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jpeg
+  
+  version: ""
+- 
+  category: media-plugins
+  description: ""
+  license: ""
+  name: gst-plugins-meta
+  
+  version: ""
 uri:
 - https://archive.xfce.org/src/xfce/tumbler/0.2/tumbler-0.2.7.tar.bz2
 use_flags:

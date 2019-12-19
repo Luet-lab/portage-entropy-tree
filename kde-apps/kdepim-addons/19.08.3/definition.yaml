@@ -4,7 +4,7 @@ conflicts:
   category: kde-apps
   description: ""
   license: ""
-  name: kaddressbook
+  name: kmail
   
   version: ""
 - 
@@ -18,48 +18,13 @@ conflicts:
   category: kde-apps
   description: ""
   license: ""
-  name: kmail
+  name: kaddressbook
   
   version: ""
 description: Plugins for KDE Personal Information Management Suite
 license: GPL-2+ LGPL-2.1+
 name: kdepim-addons
 requires:
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtxml
-  
-  version: 5.12.3
-- 
-  category: kde-apps
-  description: ""
-  license: ""
-  name: akonadi
-  
-  version: ""
-- 
-  category: kde-apps
-  description: ""
-  license: ""
-  name: akonadi-notes
-  
-  version: ""
-- 
-  category: kde-apps
-  description: ""
-  license: ""
-  name: kidentitymanagement
-  
-  version: ""
-- 
-  category: kde-apps
-  description: ""
-  license: ""
-  name: messagelib
-  
-  version: ""
 - 
   category: kde-apps
   description: ""
@@ -68,10 +33,38 @@ requires:
   
   version: ""
 - 
+  category: kde-apps
+  description: ""
+  license: ""
+  name: libktnef
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtnetwork
+  
+  version: 5.12.3
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: discount
+  
+  version: ""
+- 
   category: kde-frameworks
   description: ""
   license: ""
-  name: kconfigwidgets
+  name: kconfig
+  
+  version: 5.60.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kio
   
   version: 5.60.0
 - 
@@ -85,28 +78,35 @@ requires:
   category: kde-frameworks
   description: ""
   license: ""
-  name: kxmlgui
-  
-  version: 5.60.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: prison
+  name: syntax-highlighting
   
   version: 5.60.0
 - 
   category: kde-apps
   description: ""
   license: ""
-  name: mailcommon
+  name: akonadi-contacts
+  
+  version: ""
+- 
+  category: kde-apps
+  description: ""
+  license: ""
+  name: pimcommon
+  
+  version: ""
+- 
+  category: kde-apps
+  description: ""
+  license: ""
+  name: akonadi-import-wizard
   
   version: ""
 - 
   category: kde-frameworks
   description: ""
   license: ""
-  name: kdbusaddons
+  name: kcoreaddons
   
   version: 5.60.0
 - 
@@ -120,21 +120,56 @@ requires:
   category: kde-apps
   description: ""
   license: ""
-  name: kmailtransport
+  name: libkleo
   
   version: ""
 - 
-  category: kde-apps
+  category: kde-frameworks
   description: ""
   license: ""
-  name: libktnef
+  name: kconfigwidgets
   
-  version: ""
+  version: 5.60.0
 - 
   category: kde-apps
   description: ""
   license: ""
   name: kpkpass
+  
+  version: ""
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kcontacts
+  
+  version: 5.60.0
+- 
+  category: kde-apps
+  description: ""
+  license: ""
+  name: akonadi-notes
+  
+  version: ""
+- 
+  category: kde-apps
+  description: ""
+  license: ""
+  name: incidenceeditor
+  
+  version: ""
+- 
+  category: kde-apps
+  description: ""
+  license: ""
+  name: kidentitymanagement
+  
+  version: ""
+- 
+  category: kde-apps
+  description: ""
+  license: ""
+  name: kitinerary
   
   version: ""
 - 
@@ -148,7 +183,14 @@ requires:
   category: kde-apps
   description: ""
   license: ""
-  name: pimcommon
+  name: libksieve
+  
+  version: ""
+- 
+  category: kde-apps
+  description: ""
+  license: ""
+  name: messagelib
   
   version: ""
 - 
@@ -169,21 +211,14 @@ requires:
   category: kde-apps
   description: ""
   license: ""
-  name: kimap
+  name: kmime
   
   version: ""
 - 
   category: kde-apps
   description: ""
   license: ""
-  name: kitinerary
-  
-  version: ""
-- 
-  category: kde-apps
-  description: ""
-  license: ""
-  name: grantleetheme
+  name: mailcommon
   
   version: ""
 - 
@@ -197,42 +232,56 @@ requires:
   category: dev-qt
   description: ""
   license: ""
-  name: qtnetwork
+  name: qtwidgets
   
   version: 5.12.3
 - 
   category: kde-frameworks
   description: ""
   license: ""
-  name: kcoreaddons
-  
-  version: 5.60.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kio
-  
-  version: 5.60.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: syntax-highlighting
+  name: kxmlgui
   
   version: 5.60.0
 - 
   category: kde-apps
   description: ""
   license: ""
-  name: akonadi-contacts
+  name: kimap
   
   version: ""
+- 
+  category: kde-apps
+  description: ""
+  license: ""
+  name: akonadi
+  
+  version: ""
+- 
+  category: kde-apps
+  description: ""
+  license: ""
+  name: grantleetheme
+  
+  version: ""
+- 
+  category: kde-apps
+  description: ""
+  license: ""
+  name: kdepim-apps-libs
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtxml
+  
+  version: 5.12.3
 - 
   category: kde-frameworks
   description: ""
   license: ""
-  name: kcontacts
+  name: kdbusaddons
   
   version: 5.60.0
 - 
@@ -246,28 +295,14 @@ requires:
   category: kde-apps
   description: ""
   license: ""
-  name: libksieve
-  
-  version: ""
-- 
-  category: kde-apps
-  description: ""
-  license: ""
-  name: akonadi-import-wizard
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: discount
+  name: kmailtransport
   
   version: ""
 - 
   category: kde-frameworks
   description: ""
   license: ""
-  name: kconfig
+  name: prison
   
   version: 5.60.0
 - 
@@ -275,41 +310,6 @@ requires:
   description: ""
   license: ""
   name: eventviews
-  
-  version: ""
-- 
-  category: kde-apps
-  description: ""
-  license: ""
-  name: kmime
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtwidgets
-  
-  version: 5.12.3
-- 
-  category: kde-apps
-  description: ""
-  license: ""
-  name: incidenceeditor
-  
-  version: ""
-- 
-  category: kde-apps
-  description: ""
-  license: ""
-  name: kdepim-apps-libs
-  
-  version: ""
-- 
-  category: kde-apps
-  description: ""
-  license: ""
-  name: libkleo
   
   version: ""
 uri: []

@@ -15,23 +15,30 @@ conflicts:
   
   version: 2.21.3
 - 
-  category: <gnome-base
-  description: ""
-  license: ""
-  name: librsvg
-  
-  version: 2.31.0
-- 
   category: <x11-libs
   description: ""
   license: ""
   name: gtk+
   
   version: 2.90.4
+- 
+  category: <gnome-base
+  description: ""
+  license: ""
+  name: librsvg
+  
+  version: 2.31.0
 description: Image loading library for GTK+
 license: LGPL-2+
 name: gdk-pixbuf
 requires:
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libpng
+  
+  version: "1.4"
 - 
   category: dev-libs
   description: ""
@@ -47,6 +54,13 @@ requires:
   
   version: ""
 - 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
   category: dev-libs
   description: ""
   license: ""
@@ -57,23 +71,9 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libpng
-  
-  version: "1.4"
-- 
-  category: media-libs
-  description: ""
-  license: ""
   name: tiff
   
   version: 3.9.2
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
 uri: []
 use_flags:
 - X

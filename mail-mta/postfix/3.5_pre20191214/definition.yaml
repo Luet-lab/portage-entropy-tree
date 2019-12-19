@@ -4,7 +4,21 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: courier
+  name: exim
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: sendmail
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: ssmtp
   
   version: ""
 - 
@@ -18,14 +32,14 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: qmail-ldap
+  name: msmtp
   
   version: ""
 - 
   category: mail-mta
   description: ""
   license: ""
-  name: ssmtp
+  name: netqmail
   
   version: ""
 - 
@@ -46,7 +60,14 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: sendmail
+  name: courier
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: qmail-ldap
   
   version: ""
 - 
@@ -63,43 +84,15 @@ mailer
   name: esmtp
   
   version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: msmtp
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: exim
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: netqmail
-  
-  version: ""
 description: A fast and secure drop-in replacement for sendmail
 license: '|| ( IBM EPL-2.0 )'
 name: postfix
 requires:
 - 
-  category: dev-db
+  category: sys-libs
   description: ""
   license: ""
-  name: mysql-connector-c
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
+  name: pam
   
   version: ""
 - 
@@ -109,6 +102,90 @@ requires:
   name: cyrus-sasl
   
   version: "2"
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: mailbase
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: perl
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: lmdb
+  
+  version: 0.9.11
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: postdrop
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libnsl
+  
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: postfix
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: memcached
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: db
+  
+  version: "3.2"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: icu
+  
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -124,31 +201,10 @@ requires:
   
   version: ""
 - 
-  category: net-nds
+  category: dev-db
   description: ""
   license: ""
-  name: openldap
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libpcre
-  
-  version: "3.4"
-- 
-  category: acct-user
-  description: ""
-  license: ""
-  name: postfix
-  
-  version: ""
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: mailbase
+  name: postgresql
   
   version: ""
 - 
@@ -159,73 +215,17 @@ requires:
   
   version: ""
 - 
-  category: net-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libnsl
+  name: libpcre
   
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: postgresql
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: db
-  
-  version: "3.2"
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: lmdb
-  
-  version: 0.9.11
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: memcached
-  
-  version: ""
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: perl
-  
-  version: ""
+  version: "3.4"
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: icu
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: postdrop
+  name: openssl
   
   version: ""
 uri:

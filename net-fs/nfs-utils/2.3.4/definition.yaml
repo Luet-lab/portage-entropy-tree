@@ -1,6 +1,13 @@
 category: net-fs
 conflicts:
 - 
+  category: <sys-apps
+  description: ""
+  license: ""
+  name: openrc
+  
+  version: 0.13.9
+- 
   category: net-libs
   description: ""
   license: ""
@@ -14,36 +21,50 @@ conflicts:
   name: portmap
   
   version: ""
-- 
-  category: <sys-apps
-  description: ""
-  license: ""
-  name: openrc
-  
-  version: 0.13.9
 description: NFS client and server daemons
 license: GPL-2
 name: nfs-utils
 requires:
 - 
-  category: dev-libs
+  category: dev-db
   description: ""
   license: ""
-  name: libxml2
+  name: sqlite
   
-  version: ""
+  version: "3.3"
 - 
-  category: net-libs
+  category: net-nds
   description: ""
   license: ""
-  name: libtirpc
+  name: rpcbind
+  
+  version: 0.2.4
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: keyutils
+  
+  version: 1.5.9
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: e2fsprogs-libs
   
   version: ""
 - 
   category: sys-apps
   description: ""
   license: ""
-  name: util-linux
+  name: tcp-wrappers
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-rpc
   
   version: ""
 - 
@@ -61,10 +82,31 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: sys-fs
   description: ""
   license: ""
-  name: tcp-wrappers
+  name: lvm2
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libtirpc
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
   
   version: ""
 - 
@@ -82,59 +124,17 @@ requires:
   
   version: ""
 - 
-  category: dev-db
+  category: sys-apps
   description: ""
   license: ""
-  name: sqlite
+  name: util-linux
   
-  version: "3.3"
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: rpcbind
-  
-  version: 0.2.4
+  version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
   name: libevent
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: lvm2
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: e2fsprogs-libs
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libcap
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: keyutils
-  
-  version: 1.5.9
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-rpc
   
   version: ""
 uri:

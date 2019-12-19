@@ -5,33 +5,12 @@ license: GPL-2+
 name: cinnamon-control-center
 requires:
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: "3.8"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.31"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: ""
-- 
   category: gnome-extra
   description: ""
   license: ""
-  name: cinnamon-desktop
+  name: cinnamon-settings-daemon[input_devices_wacom]
   
-  version: "1.0"
+  version: ""
 - 
   category: x11-libs
   description: ""
@@ -43,23 +22,9 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: gtk+
+  name: libnotify
   
-  version: 3.4.1
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxklavier
-  
-  version: ""
-- 
-  category: gnome-extra
-  description: ""
-  license: ""
-  name: cinnamon-menus
-  
-  version: "1.0"
+  version: 0.7.3
 - 
   category: dev-libs
   description: ""
@@ -68,33 +33,33 @@ requires:
   
   version: "0.7"
 - 
-  category: sys-apps
+  category: sys-auth
   description: ""
   license: ""
-  name: systemd
+  name: elogind
   
-  version: "31"
+  version: ""
 - 
-  category: gnome-extra
+  category: x11-themes
   description: ""
   license: ""
-  name: cinnamon-settings-daemon
+  name: adwaita-icon-theme
   
-  version: "1.0"
+  version: ""
 - 
-  category: net-misc
+  category: x11-misc
   description: ""
   license: ""
-  name: networkmanager
+  name: colord
   
-  version: 0.9.8
+  version: 0.1.14
 - 
-  category: x11-libs
+  category: net-print
   description: ""
   license: ""
-  name: libnotify
+  name: cups
   
-  version: 0.7.3
+  version: "1.4"
 - 
   category: app-admin
   description: ""
@@ -106,23 +71,23 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libX11
+  name: libxklavier
   
   version: ""
 - 
-  category: net-print
+  category: gnome-base
   description: ""
   license: ""
-  name: cups-pk-helper
+  name: libgnomekbd
   
-  version: ""
+  version: 2.91.91
 - 
   category: gnome-extra
   description: ""
   license: ""
-  name: cinnamon-settings-daemon[input_devices_wacom]
+  name: cinnamon-desktop
   
-  version: ""
+  version: "1.0"
 - 
   category: sys-auth
   description: ""
@@ -131,33 +96,33 @@ requires:
   
   version: "0.103"
 - 
-  category: net-print
+  category: x11-libs
   description: ""
   license: ""
-  name: cups
-  
-  version: "1.4"
-- 
-  category: x11-themes
-  description: ""
-  license: ""
-  name: adwaita-icon-theme
+  name: libX11
   
   version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "31"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.31"
 - 
   category: gnome-extra
   description: ""
   license: ""
-  name: gnome-color-manager
+  name: cinnamon-menus
   
-  version: "3"
-- 
-  category: app-admin
-  description: ""
-  license: ""
-  name: system-config-printer
-  
-  version: ""
+  version: "1.0"
 - 
   category: media-libs
   description: ""
@@ -166,26 +131,19 @@ requires:
   
   version: ""
 - 
-  category: net-misc
+  category: gnome-extra
   description: ""
   license: ""
-  name: modemmanager
+  name: cinnamon-settings-daemon
   
-  version: "0.7"
+  version: "1.0"
 - 
-  category: x11-misc
+  category: app-admin
   description: ""
   license: ""
-  name: colord
+  name: system-config-printer
   
-  version: 0.1.14
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: libgnomekbd
-  
-  version: 2.91.91
+  version: ""
 - 
   category: gnome-extra
   description: ""
@@ -201,12 +159,54 @@ requires:
   
   version: "1.2"
 - 
-  category: sys-auth
+  category: net-print
   description: ""
   license: ""
-  name: elogind
+  name: cups-pk-helper
   
   version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: networkmanager
+  
+  version: 0.9.8
+- 
+  category: gnome-extra
+  description: ""
+  license: ""
+  name: gnome-color-manager
+  
+  version: "3"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: "3.8"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: modemmanager
+  
+  version: "0.7"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: 3.4.1
 uri:
 - https://github.com/linuxmint/cinnamon-control-center/archive/3.8.0.tar.gz -> cinnamon-control-center-3.8.0.tar.gz
 use_flags:

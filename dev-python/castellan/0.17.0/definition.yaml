@@ -4,13 +4,6 @@ conflicts:
   category: ~dev-python
   description: ""
   license: ""
-  name: python-barbicanclient
-  
-  version: 4.5.1
-- 
-  category: ~dev-python
-  description: ""
-  license: ""
   name: pbr
   
   version: 2.1.0
@@ -18,9 +11,9 @@ conflicts:
   category: ~dev-python
   description: ""
   license: ""
-  name: cryptography
+  name: Babel
   
-  version: "2.0"
+  version: 2.4.0
 - 
   category: ~dev-python
   description: ""
@@ -32,13 +25,27 @@ conflicts:
   category: ~dev-python
   description: ""
   license: ""
-  name: Babel
+  name: python-barbicanclient
   
-  version: 2.4.0
+  version: 4.5.1
+- 
+  category: ~dev-python
+  description: ""
+  license: ""
+  name: cryptography
+  
+  version: "2.0"
 description: Generic Key Manager interface for OpenStack
 license: Apache-2.0
 name: castellan
 requires:
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: Babel
+  
+  version: 2.3.4
 - 
   category: dev-python
   description: ""
@@ -50,9 +57,44 @@ requires:
   category: dev-python
   description: ""
   license: ""
+  name: oslo-i18n
+  
+  version: 3.15.3
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: oslo-utils
+  
+  version: 3.33.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pbr
+  
+  version: 2.0.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: stevedore
+  
+  version: 1.20.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
   name: keystoneauth
   
   version: 3.3.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: cryptography
+  
+  version: "1.9"
 - 
   category: dev-python
   description: ""
@@ -71,51 +113,9 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: stevedore
-  
-  version: 1.20.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pbr
-  
-  version: 2.0.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: Babel
-  
-  version: 2.3.4
-- 
-  category: dev-python
-  description: ""
-  license: ""
   name: oslo-log
   
   version: 3.30.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: cryptography
-  
-  version: "1.9"
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: oslo-utils
-  
-  version: 3.33.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: oslo-i18n
-  
-  version: 3.15.3
 uri:
 - mirror://pypi/c/castellan/castellan-0.17.0.tar.gz
 use_flags:

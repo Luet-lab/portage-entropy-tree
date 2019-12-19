@@ -12,17 +12,10 @@ license: GPL-2
 name: dracut
 requires:
 - 
-  category: app-shells
+  category: virtual
   description: ""
   license: ""
-  name: bash
-  
-  version: "4.0"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: coreutils[xattr(-)]
+  name: udev
   
   version: ""
 - 
@@ -32,6 +25,13 @@ requires:
   name: util-linux
   
   version: "2.21"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libsepol
+  
+  version: ""
 - 
   category: dev-util
   description: ""
@@ -61,6 +61,13 @@ requires:
   
   version: ""
 - 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: kmod
+  
+  version: "15"
+- 
   category: app-arch
   description: ""
   license: ""
@@ -68,26 +75,19 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: app-shells
   description: ""
   license: ""
-  name: libsepol
+  name: bash
   
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: udev
-  
-  version: ""
+  version: "4.0"
 - 
   category: sys-apps
   description: ""
   license: ""
-  name: kmod
+  name: coreutils[xattr(-)]
   
-  version: "15"
+  version: ""
 uri:
 - https://www.kernel.org/pub/linux/utils/boot/dracut/dracut-045.tar.xz
 use_flags:

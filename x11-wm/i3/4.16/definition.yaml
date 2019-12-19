@@ -5,6 +5,27 @@ license: BSD
 name: i3
 requires:
 - 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: perl
+  
+  version: ""
+- 
+  category: dev-perl
+  description: ""
+  license: ""
+  name: AnyEvent-I3
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libev
+  
+  version: ""
+- 
   category: x11-misc
   description: ""
   license: ""
@@ -15,28 +36,7 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: startup-notification
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: xcb-util-xrm
-  
-  version: ""
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: perl
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: xcb-util-cursor
+  name: cairo-1.14.4[X,xcb]
   
   version: ""
 - 
@@ -50,7 +50,7 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: xcb-util
+  name: xcb-util-wm
   
   version: ""
 - 
@@ -58,27 +58,6 @@ requires:
   description: ""
   license: ""
   name: pango-1.30.0[X]
-  
-  version: ""
-- 
-  category: dev-perl
-  description: ""
-  license: ""
-  name: AnyEvent-I3
-  
-  version: ""
-- 
-  category: dev-perl
-  description: ""
-  license: ""
-  name: JSON-XS
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libev
   
   version: ""
 - 
@@ -92,21 +71,28 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libxkbcommon[X]
+  name: xcb-util
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: xcb-util-wm
+  name: xcb-util-cursor
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: cairo-1.14.4[X,xcb]
+  name: xcb-util-xrm
+  
+  version: ""
+- 
+  category: dev-perl
+  description: ""
+  license: ""
+  name: JSON-XS
   
   version: ""
 - 
@@ -123,6 +109,20 @@ requires:
   name: yajl
   
   version: 2.0.3
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: startup-notification
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxkbcommon[X]
+  
+  version: ""
 uri:
 - https://i3wm.org/downloads/i3-4.16.tar.bz2
 use_flags:

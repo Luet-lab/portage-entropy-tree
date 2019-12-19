@@ -22,6 +22,13 @@ conflicts:
   
   version: 2.20120725-r10
 - 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+- 
   category: sys-fs
   description: ""
   license: ""
@@ -35,24 +42,10 @@ conflicts:
   name: glibc
   
   version: "2.11"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: ""
 description: Linux dynamic and persistent device naming support (aka userspace devfs)
 license: LGPL-2.1 MIT GPL-2
 name: eudev
 requires:
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: kmod
-  
-  version: "16"
 - 
   category: sys-libs
   description: ""
@@ -60,6 +53,20 @@ requires:
   name: libselinux
   
   version: 2.1.9
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: "2.20"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: kmod
+  
+  version: "16"
 - 
   category: acct-group
   description: ""
@@ -71,16 +78,16 @@ requires:
   category: acct-group
   description: ""
   license: ""
-  name: render
+  name: kvm
   
   version: ""
 - 
-  category: sys-apps
+  category: acct-group
   description: ""
   license: ""
-  name: util-linux
+  name: render
   
-  version: "2.20"
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -88,13 +95,6 @@ requires:
   name: gobject-introspection
   
   version: "1.38"
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: kvm
-  
-  version: ""
 uri:
 - https://dev.gentoo.org/~blueness/eudev/eudev-3.2.7.tar.gz
 use_flags:

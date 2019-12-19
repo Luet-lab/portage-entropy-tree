@@ -5,45 +5,45 @@ license: GPL-2
 name: qmmp
 requires:
 - 
-  category: media-video
+  category: app-arch
   description: ""
   license: ""
-  name: ffmpeg
+  name: libarchive
   
   version: ""
 - 
   category: media-sound
   description: ""
   license: ""
-  name: mpg123
-  
-  version: ""
-- 
-  category: media-video
-  description: ""
-  license: ""
-  name: mplayer
+  name: wildmidi
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libprojectm
+  name: libmodplug
+  
+  version: 0.8.4
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtmultimedia
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libogg
+  name: libshout
   
   version: ""
 - 
-  category: x11-libs
+  category: dev-qt
   description: ""
   license: ""
-  name: libX11
+  name: qtcore
   
   version: ""
 - 
@@ -51,6 +51,13 @@ requires:
   description: ""
   license: ""
   name: faad2
+  
+  version: ""
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: ffmpeg
   
   version: ""
 - 
@@ -64,16 +71,100 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: opusfile
+  name: libmad
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: musepack-tools
+  
+  version: "444"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libprojectm
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtgui
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libsidplayfp
+  name: taglib
   
-  version: 1.1.0
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: alsa-lib
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: jack-audio-connection-kit
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libogg
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: wavpack
+  
+  version: ""
+- 
+  category: app-i18n
+  description: ""
+  license: ""
+  name: enca
+  
+  version: ""
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: libav
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: ladspa-cmt
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: mpg123
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtopengl
+  
+  version: ""
 - 
   category: media-libs
   description: ""
@@ -85,35 +176,28 @@ requires:
   category: dev-qt
   description: ""
   license: ""
+  name: qtnetwork
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
   name: qtsql
   
   version: ""
 - 
-  category: media-video
+  category: dev-qt
   description: ""
   license: ""
-  name: libav
+  name: qtwidgets
   
   version: ""
 - 
-  category: app-arch
+  category: x11-libs
   description: ""
   license: ""
-  name: libarchive
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libbs2b
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libcdio
+  name: libX11
   
   version: ""
 - 
@@ -134,91 +218,7 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libmad
-  
-  version: ""
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: musepack-tools
-  
-  version: "444"
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtmultimedia
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: udisks
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libvorbis
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtcore
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtgui
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: soxr
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtnetwork
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtx11extras
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: alsa-lib
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
   name: game-music-emu
-  
-  version: ""
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: jack-audio-connection-kit
   
   version: ""
 - 
@@ -229,10 +229,10 @@ requires:
   
   version: ""
 - 
-  category: dev-qt
+  category: media-libs
   description: ""
   license: ""
-  name: qtopengl
+  name: opusfile
   
   version: ""
 - 
@@ -246,7 +246,28 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: taglib
+  name: libvorbis
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtx11extras
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libcdio
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: soxr
   
   version: ""
 - 
@@ -257,17 +278,10 @@ requires:
   
   version: ""
 - 
-  category: media-sound
+  category: media-libs
   description: ""
   license: ""
-  name: wavpack
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtwidgets
+  name: libbs2b
   
   version: ""
 - 
@@ -278,38 +292,24 @@ requires:
   
   version: ""
 - 
-  category: app-i18n
+  category: media-video
   description: ""
   license: ""
-  name: enca
+  name: mplayer
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: ladspa-cmt
+  name: libsidplayfp
   
-  version: ""
+  version: 1.1.0
 - 
-  category: media-sound
+  category: sys-fs
   description: ""
   license: ""
-  name: wildmidi
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libmodplug
-  
-  version: 0.8.4
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libshout
+  name: udisks
   
   version: ""
 uri: []

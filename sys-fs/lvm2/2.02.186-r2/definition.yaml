@@ -1,6 +1,13 @@
 category: sys-fs
 conflicts:
 - 
+  category: '!sys-fs'
+  description: ""
+  license: ""
+  name: lvm-user
+  
+  version: ""
+- 
   category: <sys-apps
   description: ""
   license: ""
@@ -14,17 +21,31 @@ conflicts:
   name: cryptsetup
   
   version: 1.1.2
-- 
-  category: '!sys-fs'
-  description: ""
-  license: ""
-  name: lvm-user
-  
-  version: ""
 description: User-land utilities for LVM2 (device-mapper) software
 license: GPL-2
 name: lvm2
 requires:
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: sanlock
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "205"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: baselayout
+  
+  version: "2.2"
 - 
   category: sys-apps
   description: ""
@@ -32,13 +53,6 @@ requires:
   name: makedev
   
   version: ""
-- 
-  category: sys-block
-  description: ""
-  license: ""
-  name: thin-provisioning-tools
-  
-  version: 0.3.0
 - 
   category: dev-libs
   description: ""
@@ -54,19 +68,19 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: sys-libs
   description: ""
   license: ""
-  name: libudev
+  name: readline
   
-  version: "208"
+  version: ""
 - 
-  category: sys-apps
+  category: sys-block
   description: ""
   license: ""
-  name: baselayout
+  name: thin-provisioning-tools
   
-  version: "2.2"
+  version: 0.3.0
 - 
   category: sys-apps
   description: ""
@@ -75,26 +89,12 @@ requires:
   
   version: "2.16"
 - 
-  category: sys-libs
+  category: virtual
   description: ""
   license: ""
-  name: readline
+  name: libudev
   
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: sanlock
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: "205"
+  version: "208"
 uri: []
 use_flags:
 - readline

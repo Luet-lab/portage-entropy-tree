@@ -4,34 +4,6 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: mini-qmail
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: netqmail
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: postfix
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: courier
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
   name: esmtp
   
   version: ""
@@ -39,7 +11,7 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: qmail-ldap
+  name: exim
   
   version: ""
 - 
@@ -53,7 +25,28 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
+  name: courier
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: netqmail
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
 mailer
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: postfix
   
   version: ""
 - 
@@ -64,10 +57,24 @@ mailer
   
   version: 2.64-r2
 - 
+  category: '>=mail-mta'
+  description: ""
+  license: ""
+  name: ssmtp
+  
+  version: 2.64-r2
+- 
   category: mail-mta
   description: ""
   license: ""
-  name: exim
+  name: mini-qmail
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: qmail-ldap
   
   version: ""
 - 
@@ -77,13 +84,6 @@ mailer
   name: opensmtpd
   
   version: ""
-- 
-  category: '>=mail-mta'
-  description: ""
-  license: ""
-  name: ssmtp
-  
-  version: 2.64-r2
 description: An SMTP client and SMTP plugin for mail user agents such as Mutt
 license: GPL-3
 name: msmtp
@@ -103,17 +103,17 @@ requires:
   
   version: ""
 - 
-  category: net-dns
+  category: virtual
   description: ""
   license: ""
-  name: libidn2
+  name: gsasl
   
   version: ""
 - 
   category: virtual
   description: ""
   license: ""
-  name: gsasl
+  name: libintl
   
   version: ""
 - 
@@ -124,10 +124,10 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: net-dns
   description: ""
   license: ""
-  name: libintl
+  name: libidn2
   
   version: ""
 uri:

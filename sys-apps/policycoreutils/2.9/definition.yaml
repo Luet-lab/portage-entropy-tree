@@ -1,19 +1,19 @@
 category: sys-apps
 conflicts:
 - 
-  category: <sec-policy
-  description: ""
-  license: ""
-  name: selinux-base-policy
-  
-  version: 2.20151208-r6
-- 
   category: <sys-apps
   description: ""
   license: ""
   name: openrc
   
   version: "0.14"
+- 
+  category: <sec-policy
+  description: ""
+  license: ""
+  name: selinux-base-policy
+  
+  version: 2.20151208-r6
 description: SELinux core utilities
 license: GPL-2
 name: policycoreutils
@@ -22,44 +22,9 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: libselinux
-  
-  version: "2.9"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
   name: libsemanage
   
   version: "2.9"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: dbus-glib
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libsepol
-  
-  version: "2.9"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: ""
 - 
   category: sys-libs
   description: ""
@@ -71,9 +36,9 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: libcap-ng
+  name: libsepol
   
-  version: ""
+  version: "2.9"
 - 
   category: sys-devel
   description: ""
@@ -82,10 +47,52 @@ requires:
   
   version: ""
 - 
-  category: app-misc
+  category: sys-apps
   description: ""
   license: ""
-  name: pax-utils
+  name: dbus
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: "2.9"
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: ipy
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: dbus-glib
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: audit
+  
+  version: 1.5.1
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap-ng
   
   version: ""
 - 
@@ -96,19 +103,12 @@ requires:
   
   version: 4.2.0
 - 
-  category: dev-python
+  category: app-misc
   description: ""
   license: ""
-  name: ipy
+  name: pax-utils
   
   version: ""
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: audit
-  
-  version: 1.5.1
 uri:
 - https://github.com/SELinuxProject/selinux/releases/download/20190315/policycoreutils-2.9.tar.gz
 - https://dev.gentoo.org/~perfinion/distfiles/policycoreutils-extra-1.36.tar.bz2

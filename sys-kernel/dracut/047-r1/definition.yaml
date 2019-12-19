@@ -5,6 +5,13 @@ license: GPL-2
 name: dracut
 requires:
 - 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libsepol
+  
+  version: ""
+- 
   category: sys-apps
   description: ""
   license: ""
@@ -12,17 +19,31 @@ requires:
   
   version: "23"
 - 
-  category: sys-apps
+  category: app-arch
   description: ""
   license: ""
-  name: coreutils[xattr(-)]
+  name: cpio
   
   version: ""
+- 
+  category: app-shells
+  description: ""
+  license: ""
+  name: bash
+  
+  version: "4.0"
 - 
   category: dev-util
   description: ""
   license: ""
   name: strace
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-dracut
   
   version: ""
 - 
@@ -40,19 +61,12 @@ requires:
   
   version: ""
 - 
-  category: app-arch
+  category: sys-apps
   description: ""
   license: ""
-  name: cpio
+  name: coreutils[xattr(-)]
   
   version: ""
-- 
-  category: app-shells
-  description: ""
-  license: ""
-  name: bash
-  
-  version: "4.0"
 - 
   category: sys-apps
   description: ""
@@ -61,24 +75,10 @@ requires:
   
   version: "2.21"
 - 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-dracut
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
   name: libselinux
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libsepol
   
   version: ""
 uri:

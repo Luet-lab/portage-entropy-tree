@@ -5,12 +5,19 @@ license: GPL-2+
 name: gedit-plugins
 requires:
 - 
+  category: app-editors
+  description: ""
+  license: ""
+  name: gedit
+  
+  version: "3.16"
+- 
   category: x11-libs
   description: ""
   license: ""
-  name: gtksourceview
+  name: pango
   
-  version: "3.14"
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -22,9 +29,30 @@ requires:
   category: dev-libs
   description: ""
   license: ""
+  name: glib
+  
+  version: "2.32"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
   name: libpeas
   
-  version: 1.7.0
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pygobject
+  
+  version: ""
+- 
+  category: gnome-extra
+  description: ""
+  license: ""
+  name: gucharmap
+  
+  version: "3"
 - 
   category: x11-libs
   description: ""
@@ -36,35 +64,7 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: pango
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
   name: gdk-pixbuf
-  
-  version: ""
-- 
-  category: gnome-extra
-  description: ""
-  license: ""
-  name: gucharmap
-  
-  version: "3"
-- 
-  category: app-editors
-  description: ""
-  license: ""
-  name: gedit
-  
-  version: "3.16"
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pygobject
   
   version: ""
 - 
@@ -75,12 +75,26 @@ requires:
   
   version: "0.52"
 - 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtksourceview
+  
+  version: "3.14"
+- 
   category: dev-libs
   description: ""
   license: ""
   name: libpeas
   
-  version: ""
+  version: 1.7.0
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: "3.9"
 - 
   category: dev-python
   description: ""
@@ -95,20 +109,6 @@ requires:
   name: pycairo
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.32"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: "3.9"
 uri: []
 use_flags:
 - +python

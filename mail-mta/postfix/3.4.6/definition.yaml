@@ -4,7 +4,7 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-mailer
+  name: mini-qmail
   
   version: ""
 - 
@@ -14,6 +14,34 @@ mailer
   name: opensmtpd
   
   version: ""
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: fastforward
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: msmtp
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: qmail-ldap
+  
+  version: ""
+- 
+  category: <mail-mta
+  description: ""
+  license: ""
+  name: ssmtp
+  
+  version: 2.64-r2
 - 
   category: mail-mta
   description: ""
@@ -29,17 +57,24 @@ mailer
   
   version: ""
 - 
-  category: <mail-mta
+  category: mail-mta
   description: ""
   license: ""
-  name: ssmtp
+  name: esmtp
   
-  version: 2.64-r2
+  version: ""
 - 
   category: mail-mta
   description: ""
   license: ""
   name: netqmail
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+mailer
   
   version: ""
 - 
@@ -53,42 +88,7 @@ mailer
   category: mail-mta
   description: ""
   license: ""
-  name: esmtp
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: mini-qmail
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: msmtp
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
   name: sendmail
-  
-  version: ""
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: fastforward
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: qmail-ldap
   
   version: ""
 description: A fast and secure drop-in replacement for sendmail
@@ -103,19 +103,54 @@ requires:
   
   version: ""
 - 
-  category: net-nds
+  category: dev-libs
   description: ""
   license: ""
-  name: openldap
+  name: libressl
+  
+  version: 2.9.1
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: icu
+  name: openssl
   
   version: ""
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: mailbase
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-postfix
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: db
+  
+  version: "3.2"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: cyrus-sasl
+  
+  version: "2"
 - 
   category: dev-db
   description: ""
@@ -123,13 +158,6 @@ requires:
   name: sqlite
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
-  
-  version: 2.9.1
 - 
   category: net-misc
   description: ""
@@ -141,16 +169,16 @@ requires:
   category: dev-db
   description: ""
   license: ""
+  name: lmdb
+  
+  version: 0.9.11
+- 
+  category: dev-db
+  description: ""
+  license: ""
   name: postgresql
   
   version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: db
-  
-  version: "3.2"
 - 
   category: net-libs
   description: ""
@@ -169,14 +197,14 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: cyrus-sasl
+  name: icu
   
-  version: "2"
+  version: ""
 - 
-  category: dev-libs
+  category: net-nds
   description: ""
   license: ""
-  name: openssl
+  name: openldap
   
   version: ""
 - 
@@ -186,34 +214,6 @@ requires:
   name: libpcre
   
   version: "3.4"
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: lmdb
-  
-  version: 0.9.11
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: mailbase
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mysql-connector-c
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-postfix
-  
-  version: ""
 uri:
 - ftp://ftp.porcupine.org/mirrors/postfix-release/official/postfix-3.4.6.tar.gz
 use_flags:

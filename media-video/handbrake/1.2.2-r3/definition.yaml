@@ -5,31 +5,24 @@ license: GPL-2
 name: handbrake
 requires:
 - 
-  category: dev-libs
+  category: media-libs
   description: ""
   license: ""
-  name: glib
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gdk-pixbuf
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pango
+  name: a52dec
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libtheora
+  name: gstreamer
+  
+  version: ""
+- 
+  category: media-plugins
+  description: ""
+  license: ""
+  name: gst-plugins-x264
   
   version: ""
 - 
@@ -37,6 +30,13 @@ requires:
   description: ""
   license: ""
   name: dbus-glib
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libdvdnav
   
   version: ""
 - 
@@ -54,10 +54,38 @@ requires:
   
   version: ""
 - 
-  category: media-sound
+  category: app-arch
   description: ""
   license: ""
-  name: lame
+  name: xz-utils
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libbluray
+  
+  version: "1.0"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libdvdread
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: x264
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fdk-aac
   
   version: ""
 - 
@@ -68,24 +96,17 @@ requires:
   
   version: "12.2"
 - 
-  category: media-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: fdk-aac
+  name: gdk-pixbuf
   
   version: ""
 - 
-  category: media-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: nv-codec-headers
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: gstreamer
+  name: libnotify
   
   version: ""
 - 
@@ -106,49 +127,21 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libdvdnav
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
   name: gst-plugins-base
   
   version: ""
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libnotify
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: xz-utils
-  
-  version: ""
-- 
   category: media-libs
   description: ""
   license: ""
-  name: speex
+  name: gst-plugins-good
   
   version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: x265
-  
-  version: "2.9"
 - 
   category: media-plugins
   description: ""
   license: ""
-  name: gst-plugins-a52dec
+  name: gst-plugins-libav
   
   version: ""
 - 
@@ -162,7 +155,14 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libvorbis
+  name: x265
+  
+  version: "2.9"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libtheora
   
   version: ""
 - 
@@ -170,48 +170,6 @@ requires:
   description: ""
   license: ""
   name: opus
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: gst-plugins-bad
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: a52dec
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libsamplerate
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libdvdread
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: gst-plugins-ugly
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: x264
   
   version: ""
 - 
@@ -232,35 +190,77 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: gst-plugins-good
+  name: gst-plugins-ugly
   
   version: ""
 - 
   category: media-plugins
   description: ""
   license: ""
-  name: gst-plugins-libav
-  
-  version: ""
-- 
-  category: media-plugins
-  description: ""
-  license: ""
-  name: gst-plugins-x264
+  name: gst-plugins-a52dec
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libbluray
+  name: speex
   
-  version: "1.0"
+  version: ""
 - 
   category: media-libs
   description: ""
   license: ""
   name: libvpx
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: lame
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pango
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libsamplerate
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libvorbis
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: nv-codec-headers
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gst-plugins-bad
   
   version: ""
 uri:

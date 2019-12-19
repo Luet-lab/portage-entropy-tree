@@ -5,12 +5,82 @@ license: GPL-2
 name: mutt
 requires:
 - 
-  category: virtual
+  category: dev-db
   description: ""
   license: ""
-  name: libintl
+  name: tokyocabinet
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gpgme
+  
+  version: 0.9.0
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-mutt
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gnupg
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: db
+  
+  version: "4"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: gdbm
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: qdbm
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: mime-types
+  
+  version: ""
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: libidn2
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 0.9.6
 - 
   category: dev-libs
   description: ""
@@ -18,6 +88,13 @@ requires:
   name: cyrus-sasl
   
   version: "2"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libintl
+  
+  version: ""
 - 
   category: virtual
   description: ""
@@ -33,59 +110,24 @@ requires:
   
   version: ""
 - 
-  category: app-misc
-  description: ""
-  license: ""
-  name: mime-types
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
-  name: gdbm
+  name: ncurses
   
-  version: ""
+  version: "5.2"
 - 
-  category: dev-libs
+  category: virtual
   description: ""
   license: ""
-  name: libressl
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: 0.9.6
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: libidn2
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-mutt
+  name: libiconv
   
   version: ""
 - 
   category: dev-db
   description: ""
   license: ""
-  name: qdbm
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: tokyocabinet
+  name: lmdb
   
   version: ""
 - 
@@ -95,52 +137,10 @@ requires:
   name: gnutls
   
   version: 1.0.17
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: gpgme
-  
-  version: 0.9.0
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: ncurses
-  
-  version: "5.2"
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: gnupg
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libiconv
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: db
-  
-  version: "4"
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: lmdb
-  
-  version: ""
 uri:
 - ftp://ftp.mutt.org/pub/mutt/mutt-1.13.1.tar.gz
 - https://bitbucket.org/mutt/mutt/downloads/mutt-1.13.1.tar.gz
-- https://dev.gentoo.org/~grobian/distfiles/mutt-gentoo-1.13.1-patches-r0.tar.xz
+- https://dev.gentoo.org/~grobian/distfiles/mutt-gentoo-1.13.1-patches-r1.tar.xz
 use_flags:
 - berkdb
 - debug

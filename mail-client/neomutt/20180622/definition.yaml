@@ -5,17 +5,10 @@ license: GPL-2
 name: neomutt
 requires:
 - 
-  category: app-misc
-  description: ""
-  license: ""
-  name: mime-types
-  
-  version: ""
-- 
   category: dev-db
   description: ""
   license: ""
-  name: kyotocabinet
+  name: lmdb
   
   version: ""
 - 
@@ -33,24 +26,31 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: sec-policy
   description: ""
   license: ""
-  name: cyrus-sasl
+  name: selinux-mutt
   
-  version: "2"
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: mime-types
+  
+  version: ""
 - 
   category: sys-libs
   description: ""
   license: ""
-  name: ncurses
+  name: db
   
-  version: ""
+  version: "6.3"
 - 
-  category: virtual
+  category: sys-libs
   description: ""
   license: ""
-  name: libintl
+  name: gdbm
   
   version: ""
 - 
@@ -61,52 +61,17 @@ requires:
   
   version: ""
 - 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnutls
-  
-  version: 1.0.17
-- 
   category: sys-libs
   description: ""
   license: ""
-  name: db
-  
-  version: "6.3"
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: lmdb
+  name: ncurses
   
   version: ""
 - 
   category: dev-db
   description: ""
   license: ""
-  name: qdbm
-  
-  version: ""
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: libidn
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: gdbm
+  name: kyotocabinet
   
   version: ""
 - 
@@ -131,12 +96,47 @@ requires:
   
   version: 0.9.6
 - 
-  category: sec-policy
+  category: dev-libs
   description: ""
   license: ""
-  name: selinux-mutt
+  name: libressl
   
   version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libintl
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: qdbm
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: 1.0.17
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: libidn
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: cyrus-sasl
+  
+  version: "2"
 uri:
 - https://github.com/neomutt/neomutt/archive/neomutt-20180622.tar.gz
 use_flags:

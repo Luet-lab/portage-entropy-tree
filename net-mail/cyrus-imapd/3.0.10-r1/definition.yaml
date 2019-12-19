@@ -1,17 +1,10 @@
 category: net-mail
 conflicts:
 - 
-  category: net-nntp
-  description: ""
-  license: ""
-  name: leafnode
-  
-  version: ""
-- 
   category: net-mail
   description: ""
   license: ""
-  name: bincimap
+  name: uw-imap
   
   version: ""
 - 
@@ -25,14 +18,14 @@ conflicts:
   category: net-mail
   description: ""
   license: ""
-  name: uw-imap
+  name: courier-imap
   
   version: ""
 - 
   category: net-mail
   description: ""
   license: ""
-  name: courier-imap
+  name: bincimap
   
   version: ""
 - 
@@ -42,87 +35,17 @@ conflicts:
   name: courier
   
   version: ""
+- 
+  category: net-nntp
+  description: ""
+  license: ""
+  name: leafnode
+  
+  version: ""
 description: The Cyrus IMAP Server
 license: BSD-with-attribution GPL-2
 name: cyrus-imapd
 requires:
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: postgresql
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: krb5
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mysql-connector-c
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: ""
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: lmdb
-  
-  version: ""
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: mailbase
-  
-  version: "1"
-- 
-  category: net-analyzer
-  description: ""
-  license: ""
-  name: net-snmp
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: cyrus-sasl
-  
-  version: 2.1.13
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libical
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
-  
-  version: ""
 - 
   category: sys-libs
   description: ""
@@ -138,10 +61,10 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: dev-lang
   description: ""
   license: ""
-  name: libxml2
+  name: perl
   
   version: ""
 - 
@@ -152,6 +75,55 @@ requires:
   
   version: 5.2.2-r1
 - 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpcre
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c
+  
+  version: ""
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: mailbase
+  
+  version: "1"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libical
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: postgresql
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
+  
+  version: ""
+- 
   category: sys-apps
   description: ""
   license: ""
@@ -159,24 +131,31 @@ requires:
   
   version: "7.6"
 - 
-  category: sys-libs
+  category: net-analyzer
   description: ""
   license: ""
-  name: zlib
+  name: net-snmp
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: jansson
+  name: xapian
+  
+  version: 1.4.0
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
   
   version: ""
 - 
-  category: dev-lang
+  category: sys-libs
   description: ""
   license: ""
-  name: perl
+  name: pam
   
   version: ""
 - 
@@ -190,16 +169,9 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: xapian
+  name: cyrus-sasl
   
-  version: 1.4.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libpcre
-  
-  version: ""
+  version: 2.1.13
 - 
   category: sys-libs
   description: ""
@@ -211,7 +183,28 @@ requires:
   category: dev-libs
   description: ""
   license: ""
+  name: jansson
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
   name: icu
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
   
   version: ""
 - 
@@ -219,6 +212,13 @@ requires:
   description: ""
   license: ""
   name: clamav
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: lmdb
   
   version: ""
 uri:

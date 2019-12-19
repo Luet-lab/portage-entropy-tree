@@ -4,9 +4,23 @@ conflicts:
   category: '>=dev-php'
   description: ""
   license: ""
-  name: PHP_TokenStream
+  name: sebastian-version
   
   version: "3.0"
+- 
+  category: '>=dev-php'
+  description: ""
+  license: ""
+  name: File_Iterator
+  
+  version: "2.0"
+- 
+  category: '>=dev-php'
+  description: ""
+  license: ""
+  name: Text_Template
+  
+  version: "2.0"
 - 
   category: '>=dev-php'
   description: ""
@@ -25,27 +39,20 @@ conflicts:
   category: '>=dev-php'
   description: ""
   license: ""
-  name: sebastian-version
+  name: PHP_TokenStream
   
   version: "3.0"
-- 
-  category: '>=dev-php'
-  description: ""
-  license: ""
-  name: File_Iterator
-  
-  version: "2.0"
-- 
-  category: '>=dev-php'
-  description: ""
-  license: ""
-  name: Text_Template
-  
-  version: "2.0"
 description: Collection, processing, and rendering for PHP code coverage
 license: BSD
 name: PHP_CodeCoverage
 requires:
+- 
+  category: dev-php
+  description: ""
+  license: ""
+  name: fedora-autoloader
+  
+  version: ""
 - 
   category: dev-php
   description: ""
@@ -71,7 +78,7 @@ requires:
   category: dev-php
   description: ""
   license: ""
-  name: fedora-autoloader
+  name: sebastian-code-unit-reverse-lookup
   
   version: ""
 - 
@@ -88,13 +95,6 @@ requires:
   name: PHP_TokenStream
   
   version: "1.4"
-- 
-  category: dev-php
-  description: ""
-  license: ""
-  name: sebastian-code-unit-reverse-lookup
-  
-  version: ""
 uri:
 - https://github.com/sebastianbergmann/php-code-coverage/archive/4.0.7.tar.gz -> PHP_CodeCoverage-4.0.7.tar.gz
 use_flags:

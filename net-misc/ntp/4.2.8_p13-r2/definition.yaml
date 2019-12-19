@@ -4,14 +4,14 @@ conflicts:
   category: net-misc
   description: ""
   license: ""
-  name: ntpsec
+  name: openntpd
   
   version: ""
 - 
   category: net-misc
   description: ""
   license: ""
-  name: openntpd
+  name: ntpsec
   
   version: ""
 description: Network Time Protocol suite/programs
@@ -19,19 +19,33 @@ license: HPND BSD ISC
 name: ntp
 requires:
 - 
-  category: app-vim
+  category: sec-policy
   description: ""
   license: ""
-  name: ntp-syntax
+  name: selinux-ntp
+  
+  version: ""
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: net-snmp
   
   version: ""
 - 
   category: sys-libs
   description: ""
   license: ""
-  name: readline
+  name: libcap
   
-  version: "4.1"
+  version: ""
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: avahi
+  
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -61,38 +75,24 @@ requires:
   
   version: ""
 - 
-  category: sec-policy
+  category: acct-user
   description: ""
   license: ""
-  name: selinux-ntp
+  name: ntp
   
   version: ""
 - 
   category: sys-libs
   description: ""
   license: ""
-  name: libcap
+  name: readline
   
-  version: ""
+  version: "4.1"
 - 
-  category: net-dns
+  category: app-vim
   description: ""
   license: ""
-  name: avahi
-  
-  version: ""
-- 
-  category: net-analyzer
-  description: ""
-  license: ""
-  name: net-snmp
-  
-  version: ""
-- 
-  category: acct-user
-  description: ""
-  license: ""
-  name: ntp
+  name: ntp-syntax
   
   version: ""
 uri:

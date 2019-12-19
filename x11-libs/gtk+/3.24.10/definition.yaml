@@ -1,28 +1,56 @@
 category: x11-libs
 conflicts:
 - 
-  category: <x11-libs
-  description: ""
-  license: ""
-  name: vte
-  
-  version: 0.31.0
-- 
   category: <gnome-base
   description: ""
   license: ""
   name: gail
   
   version: "1000"
+- 
+  category: <x11-libs
+  description: ""
+  license: ""
+  name: vte
+  
+  version: 0.31.0
 description: Gimp ToolKit +
 license: LGPL-2+
 name: gtk+
 requires:
 - 
-  category: x11-misc
+  category: dev-libs
   description: ""
   license: ""
-  name: shared-mime-info
+  name: glib
+  
+  version: 2.53.4
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: rest
+  
+  version: "0.7"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: mesa[X(+),]
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: mesa
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXcursor
   
   version: ""
 - 
@@ -32,6 +60,34 @@ requires:
   name: json-glib
   
   version: "1.0"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxkbcommon
+  
+  version: "0.2"
+- 
+  category: app-accessibility
+  description: ""
+  license: ""
+  name: at-spi2-atk
+  
+  version: 2.5.3
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: fribidi
+  
+  version: 0.19.7
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: harfbuzz
+  
+  version: "0.9"
 - 
   category: net-print
   description: ""
@@ -47,10 +103,17 @@ requires:
   
   version: 1.9.91
 - 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: shared-mime-info
+  
+  version: ""
+- 
   category: x11-libs
   description: ""
   license: ""
-  name: libXfixes
+  name: libXext
   
   version: ""
 - 
@@ -61,47 +124,19 @@ requires:
   
   version: ""
 - 
+  category: dev-util
+  description: ""
+  license: ""
+  name: gtk-update-icon-cache
+  
+  version: "3"
+- 
   category: media-libs
   description: ""
   license: ""
-  name: harfbuzz
-  
-  version: "0.9"
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: rest
-  
-  version: "0.7"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXinerama
+  name: fontconfig
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: fribidi
-  
-  version: 0.19.7
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXcursor
-  
-  version: ""
-- 
-  category: x11-misc
-  description: ""
-  license: ""
-  name: colord
-  
-  version: 0.1.9
 - 
   category: dev-libs
   description: ""
@@ -120,30 +155,37 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXcomposite
+  name: libXrandr
   
-  version: ""
+  version: "1.5"
 - 
-  category: dev-util
+  category: x11-libs
   description: ""
   license: ""
-  name: gtk-update-icon-cache
-  
-  version: "3"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: mesa
+  name: libXfixes
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXext
+  name: libXcomposite
   
   version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXinerama
+  
+  version: ""
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: colord
+  
+  version: 0.1.9
 - 
   category: dev-libs
   description: ""
@@ -158,48 +200,6 @@ requires:
   name: libXi
   
   version: "1.3"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: 2.53.4
-- 
-  category: app-accessibility
-  description: ""
-  license: ""
-  name: at-spi2-atk
-  
-  version: 2.5.3
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: mesa[X(+),]
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXrandr
-  
-  version: "1.5"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: fontconfig
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxkbcommon
-  
-  version: "0.2"
 uri: []
 use_flags:
 - aqua

@@ -1,6 +1,13 @@
 category: net-mail
 conflicts:
 - 
+  category: net-mail
+  description: ""
+  license: ""
+  name: cyrus-imapd
+  
+  version: ""
+- 
   category: mail-mta
   description: ""
   license: ""
@@ -11,7 +18,7 @@ conflicts:
   category: net-mail
   description: ""
   license: ""
-  name: cyrus-imapd
+  name: uw-imap
   
   version: ""
 - 
@@ -21,45 +28,10 @@ conflicts:
   name: bincimap
   
   version: ""
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: uw-imap
-  
-  version: ""
 description: An IMAP daemon designed specifically for maildirs
 license: GPL-3
 name: courier-imap
 requires:
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: fam
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: courier-authlib
-  
-  version: "0.61"
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: courier-unicode
-  
-  version: "1.3"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: ""
 - 
   category: sys-libs
   description: ""
@@ -75,6 +47,13 @@ requires:
   
   version: ""
 - 
+  category: net-libs
+  description: ""
+  license: ""
+  name: courier-authlib
+  
+  version: "0.61"
+- 
   category: net-mail
   description: ""
   license: ""
@@ -82,10 +61,31 @@ requires:
   
   version: 0.00-r8
 - 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: ""
+- 
   category: sys-libs
   description: ""
   license: ""
   name: db
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
   
   version: ""
 - 
@@ -99,14 +99,14 @@ requires:
   category: net-libs
   description: ""
   license: ""
-  name: gnutls
+  name: courier-unicode
   
-  version: ""
+  version: "1.3"
 - 
-  category: dev-libs
+  category: virtual
   description: ""
   license: ""
-  name: libressl
+  name: fam
   
   version: ""
 uri:

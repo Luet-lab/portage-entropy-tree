@@ -4,20 +4,76 @@ conflicts:
   category: app-office
   description: ""
   license: ""
-  name: libreoffice
+  name: openoffice
   
   version: ""
 - 
   category: app-office
   description: ""
   license: ""
-  name: openoffice
+  name: libreoffice
   
   version: ""
 description: A full office productivity suite. Binary package
 license: LGPL-3
 name: libreoffice-bin
 requires:
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kwindowsystem
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: glibc
+  
+  version: "2.29"
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: hunspell
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: libetonyek
+  
+  version: "0.1"
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: unixODBC
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libpng
+  
+  version: "1.4"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gobject-introspection
+  
+  version: ""
+- 
+  category: dev-cpp
+  description: ""
+  license: ""
+  name: libcmis
+  
+  version: "0.5"
 - 
   category: dev-libs
   description: ""
@@ -29,182 +85,14 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: icu
+  name: libxslt
   
   version: ""
 - 
-  category: net-print
+  category: net-misc
   description: ""
   license: ""
-  name: cups
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: gstreamer
-  
-  version: ""
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kconfig
-  
-  version: ""
-- 
-  category: media-fonts
-  description: ""
-  license: ""
-  name: liberation-fonts
-  
-  version: ""
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: gcc
-  
-  version: 8.3.0
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: hunspell
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: boost
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: gst-plugins-base
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: gobject-introspection
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtcore
-  
-  version: ""
-- 
-  category: media-gfx
-  description: ""
-  license: ""
-  name: graphite2
-  
-  version: 1.3.10
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: liborcus
-  
-  version: 0.14.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libzmf
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: glu
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: libmwaw
-  
-  version: 0.3.1
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libvisio
-  
-  version: 0.1.0
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: neon
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXinerama
-  
-  version: ""
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kio
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtwidgets
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: liblangtag
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus
-  
-  version: ""
-- 
-  category: dev-cpp
-  description: ""
-  license: ""
-  name: libcmis
-  
-  version: "0.5"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: fontconfig
+  name: curl
   
   version: ""
 - 
@@ -215,10 +103,206 @@ requires:
   
   version: ""
 - 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nspr
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libepoxy-1.3.1[X]
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mariadb-connector-c
+  
+  version: ""
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kconfig
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: libstaroffice
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: libwpd
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libassuan
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: neon
+  
+  version: ""
+- 
   category: gnome-base
   description: ""
   license: ""
   name: dconf
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gst-plugins-base
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: unzip
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: zip
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: opengl
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pango
+  
+  version: ""
+- 
+  category: media-fonts
+  description: ""
+  license: ""
+  name: liberation-fonts
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: libqxp
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: libmwaw
+  
+  version: "0.3"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: liborcus
+  
+  version: 0.14.0
+- 
+  category: sci-mathematics
+  description: ""
+  license: ""
+  name: lpsolve
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtwidgets
+  
+  version: ""
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kcoreaddons
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: libexttextcat
+  
+  version: "3.4"
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: libepubgen
+  
+  version: ""
+- 
+  category: dev-cpp
+  description: ""
+  license: ""
+  name: clucene
+  
+  version: 2.3.3.4-r2
+- 
+  category: media-gfx
+  description: ""
+  license: ""
+  name: fontforge
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libpagemaker
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXrandr
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXrender
   
   version: ""
 - 
@@ -239,9 +323,16 @@ requires:
   category: app-text
   description: ""
   license: ""
-  name: libetonyek
+  name: libmspub
   
-  version: "0.1"
+  version: 0.1.0
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: libnumbertext
+  
+  version: ""
 - 
   category: app-text
   description: ""
@@ -250,38 +341,73 @@ requires:
   
   version: "0.4"
 - 
-  category: kde-frameworks
+  category: dev-libs
   description: ""
   license: ""
-  name: kwindowsystem
-  
-  version: ""
-- 
-  category: sci-mathematics
-  description: ""
-  license: ""
-  name: lpsolve
+  name: libgpg-error
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: glib
+  name: libxml2
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtx11extras
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libvisio
+  
+  version: 0.1.0
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: gcc
+  
+  version: 8.3.0
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gpgme
   
   version: ""
 - 
   category: app-text
   description: ""
   license: ""
-  name: libqxp
+  name: libabw
   
-  version: ""
+  version: 0.1.0
 - 
   category: app-text
   description: ""
   license: ""
-  name: libwpd
+  name: libwpg
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: perl
   
   version: ""
 - 
@@ -295,65 +421,9 @@ requires:
   category: app-text
   description: ""
   license: ""
-  name: libodfgen
-  
-  version: 0.1.0
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: unixODBC
+  name: libexttextcat
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgpg-error
-  
-  version: ""
-- 
-  category: media-gfx
-  description: ""
-  license: ""
-  name: fontforge
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: harfbuzz
-  
-  version: 0.9.42
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libpng
-  
-  version: "1.4"
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: curl
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: opengl
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: libabw
-  
-  version: 0.1.0
 - 
   category: dev-libs
   description: ""
@@ -369,17 +439,59 @@ requires:
   
   version: 1.2.28
 - 
-  category: kde-frameworks
+  category: media-libs
   description: ""
   license: ""
-  name: kcoreaddons
+  name: libfreehand
+  
+  version: 0.1.0
+- 
+  category: gnome-extra
+  description: ""
+  license: ""
+  name: evolution-data-server
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: liblangtag
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: harfbuzz
+  
+  version: 0.9.42
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
   
   version: ""
 - 
   category: kde-frameworks
   description: ""
   license: ""
-  name: ki18n
+  name: kio
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: libodfgen
+  
+  version: 0.1.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nss
   
   version: ""
 - 
@@ -393,217 +505,63 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libfreehand
-  
-  version: 0.1.0
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXrandr
+  name: mesa
   
   version: ""
 - 
-  category: app-text
+  category: kde-frameworks
   description: ""
   license: ""
-  name: libexttextcat
-  
-  version: "3.4"
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: libexttextcat
+  name: ki18n
   
   version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: freetype
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pango
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mariadb-connector-c
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: libmwaw
-  
-  version: "0.3"
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: nspr
+  name: boost
   
   version: ""
 - 
-  category: x11-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: gtk+
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libepoxy-1.3.1[X]
+  name: librevenge
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libpagemaker
+  name: libzmf
   
   version: ""
 - 
   category: virtual
   description: ""
   license: ""
-  name: jpeg
+  name: glu
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXrender
+  name: libXinerama
   
   version: ""
 - 
   category: dev-qt
   description: ""
   license: ""
-  name: qtx11extras
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: glibc
-  
-  version: "2.29"
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: libstaroffice
-  
-  version: ""
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: perl
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: libnumbertext
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: mythes
-  
-  version: ""
-- 
-  category: dev-cpp
-  description: ""
-  license: ""
-  name: clucene
-  
-  version: 2.3.3.4-r2
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxslt
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: nss
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: unzip
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: zip
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: libmspub
-  
-  version: 0.1.0
-- 
-  category: media-gfx
-  description: ""
-  license: ""
-  name: graphite2
+  name: qtcore
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: lcms
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: mesa
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: ""
-- 
-  category: gnome-extra
-  description: ""
-  license: ""
-  name: evolution-data-server
+  name: gstreamer
   
   version: ""
 - 
@@ -617,35 +575,77 @@ requires:
   category: app-text
   description: ""
   license: ""
-  name: libepubgen
+  name: mythes
   
   version: ""
 - 
-  category: dev-libs
+  category: media-gfx
   description: ""
   license: ""
-  name: librevenge
+  name: graphite2
   
   version: ""
 - 
-  category: app-crypt
+  category: media-libs
   description: ""
   license: ""
-  name: gpgme
+  name: fontconfig
   
   version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: lcms
+  
+  version: ""
+- 
+  category: net-print
+  description: ""
+  license: ""
+  name: cups
+  
+  version: ""
+- 
+  category: media-gfx
+  description: ""
+  license: ""
+  name: graphite2
+  
+  version: 1.3.10
 - 
   category: app-text
   description: ""
   license: ""
-  name: libwpg
+  name: libmwaw
+  
+  version: 0.3.1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: icu
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jpeg
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libassuan
+  name: glib
   
   version: ""
 uri:

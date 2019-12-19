@@ -12,52 +12,17 @@ license: GPL-2
 name: virt-manager
 requires:
 - 
-  category: dev-libs
+  category: app-emulation
   description: ""
   license: ""
-  name: libxml2
+  name: libvirt-glib
   
-  version: ""
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: libgnome-keyring
-  
-  version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: polkit
-  
-  version: ""
-- 
-  category: app-cdr
-  description: ""
-  license: ""
-  name: cdrtools
-  
-  version: ""
+  version: 1.0.0
 - 
   category: dev-python
   description: ""
   license: ""
   name: requests
-  
-  version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: x11-ssh-askpass
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
   
   version: ""
 - 
@@ -68,17 +33,24 @@ requires:
   
   version: ""
 - 
-  category: dev-python
+  category: gnome-base
   description: ""
   license: ""
-  name: ipaddr
+  name: dconf
   
   version: ""
 - 
-  category: dev-python
+  category: x11-libs
   description: ""
   license: ""
-  name: argcomplete
+  name: gtk+
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
   
   version: ""
 - 
@@ -96,10 +68,10 @@ requires:
   
   version: 0.2.10
 - 
-  category: gnome-base
+  category: dev-python
   description: ""
   license: ""
-  name: dconf
+  name: libvirt-python
   
   version: ""
 - 
@@ -110,6 +82,13 @@ requires:
   
   version: ""
 - 
+  category: net-misc
+  description: ""
+  license: ""
+  name: x11-ssh-askpass
+  
+  version: ""
+- 
   category: x11-libs
   description: ""
   license: ""
@@ -117,19 +96,40 @@ requires:
   
   version: ""
 - 
-  category: dev-python
+  category: app-cdr
   description: ""
   license: ""
-  name: libvirt-python
+  name: cdrtools
   
   version: ""
 - 
-  category: app-emulation
+  category: dev-libs
   description: ""
   license: ""
-  name: libvirt-glib
+  name: libxml2
   
-  version: 1.0.0
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: argcomplete
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: ipaddr
+  
+  version: ""
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: libgnome-keyring
+  
+  version: ""
 uri:
 - http://virt-manager.org/download/sources/virt-manager/virt-manager-2.2.0.tar.gz
 use_flags:

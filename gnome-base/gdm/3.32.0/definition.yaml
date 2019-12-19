@@ -13,40 +13,54 @@ license: "\n\tGPL-2+\n\tbranding? ( CC-BY-SA-4.0 )\n"
 name: gdm
 requires:
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: x11-misc
-  description: ""
-  license: ""
-  name: xdg-utils
-  
-  version: 1.0.2-r3
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: "186"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXau
-  
-  version: ""
-- 
   category: sys-auth
   description: ""
   license: ""
   name: elogind
   
   version: "239.3"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: tcp-wrappers
+  
+  version: "7.6"
+- 
+  category: app-accessibility
+  description: ""
+  license: ""
+  name: orca
+  
+  version: "3.10"
+- 
+  category: gnome-extra
+  description: ""
+  license: ""
+  name: mousetweaks
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: 2.91.1
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: ""
 - 
   category: x11-apps
   description: ""
@@ -55,10 +69,10 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: x11-base
   description: ""
   license: ""
-  name: pam
+  name: xorg-server
   
   version: ""
 - 
@@ -69,12 +83,26 @@ requires:
   
   version: ""
 - 
-  category: media-libs
+  category: gnome-base
   description: ""
   license: ""
-  name: libcanberra
+  name: gnome-shell
   
-  version: "0.4"
+  version: 3.1.90
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgudev
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: accountsservice
+  
+  version: 0.6.35
 - 
   category: sys-process
   description: ""
@@ -90,26 +118,12 @@ requires:
   
   version: ""
 - 
-  category: app-accessibility
-  description: ""
-  license: ""
-  name: orca
-  
-  version: "3.10"
-- 
   category: gnome-base
   description: ""
   license: ""
-  name: gnome-settings-daemon
+  name: gnome-session
   
-  version: 3.1.4
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: fprintd
-  
-  version: ""
+  version: "3.6"
 - 
   category: gnome-base
   description: ""
@@ -121,21 +135,21 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: gtk+
+  name: libX11
   
-  version: 2.91.1
+  version: ""
 - 
-  category: sys-apps
+  category: x11-misc
   description: ""
   license: ""
-  name: accountsservice
+  name: xdg-utils
   
-  version: 0.6.35
+  version: 1.0.2-r3
 - 
-  category: x11-libs
+  category: sys-auth
   description: ""
   license: ""
-  name: libXdmcp
+  name: fprintd
   
   version: ""
 - 
@@ -145,13 +159,6 @@ requires:
   name: plymouth
   
   version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: tcp-wrappers
-  
-  version: "7.6"
 - 
   category: sys-auth
   description: ""
@@ -166,34 +173,6 @@ requires:
   name: iso-codes
   
   version: ""
-- 
-  category: x11-base
-  description: ""
-  license: ""
-  name: xorg-server
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: ""
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gnome-session
-  
-  version: "3.6"
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gnome-shell
-  
-  version: 3.1.90
 - 
   category: dev-libs
   description: ""
@@ -216,19 +195,33 @@ requires:
   
   version: 2.5.0
 - 
-  category: sys-apps
+  category: media-libs
   description: ""
   license: ""
-  name: dbus
+  name: libcanberra
+  
+  version: "0.4"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libxcb
+  name: libXau
   
   version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "186"
 - 
   category: dev-libs
   description: ""
@@ -237,17 +230,24 @@ requires:
   
   version: 0.9.12
 - 
-  category: gnome-extra
+  category: gnome-base
   description: ""
   license: ""
-  name: mousetweaks
+  name: gnome-settings-daemon
+  
+  version: 3.1.4
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXdmcp
   
   version: ""
 - 
-  category: dev-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: libgudev
+  name: libxcb
   
   version: ""
 uri:

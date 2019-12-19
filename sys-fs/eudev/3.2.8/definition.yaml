@@ -1,19 +1,12 @@
 category: sys-fs
 conflicts:
 - 
-  category: <sys-fs
+  category: sys-apps
   description: ""
   license: ""
-  name: lvm2
+  name: systemd
   
-  version: 2.02.103
-- 
-  category: <sys-libs
-  description: ""
-  license: ""
-  name: glibc
-  
-  version: "2.11"
+  version: ""
 - 
   category: <sec-policy
   description: ""
@@ -29,6 +22,13 @@ conflicts:
   
   version: ""
 - 
+  category: <sys-libs
+  description: ""
+  license: ""
+  name: glibc
+  
+  version: "2.11"
+- 
   category: sys-apps
   description: ""
   license: ""
@@ -36,12 +36,12 @@ conflicts:
   
   version: ""
 - 
-  category: sys-apps
+  category: <sys-fs
   description: ""
   license: ""
-  name: systemd
+  name: lvm2
   
-  version: ""
+  version: 2.02.103
 description: Linux dynamic and persistent device naming support (aka userspace devfs)
 license: LGPL-2.1 MIT GPL-2
 name: eudev
@@ -61,27 +61,6 @@ requires:
   
   version: "1.38"
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: 2.1.9
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: kvm
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: render
-  
-  version: ""
-- 
   category: sys-apps
   description: ""
   license: ""
@@ -93,6 +72,27 @@ requires:
   description: ""
   license: ""
   name: input
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: kvm
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: 2.1.9
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: render
   
   version: ""
 uri:

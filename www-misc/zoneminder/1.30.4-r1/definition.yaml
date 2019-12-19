@@ -5,10 +5,10 @@ license: GPL-2
 name: zoneminder
 requires:
 - 
-  category: dev-db
+  category: dev-perl
   description: ""
   license: ""
-  name: mysql-connector-c
+  name: Data-Dump
   
   version: ""
 - 
@@ -19,24 +19,101 @@ requires:
   
   version: ""
 - 
-  category: net-libs
+  category: virtual
   description: ""
   license: ""
-  name: gnutls
+  name: jpeg
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: perl-Time-HiRes
   
   version: ""
 - 
   category: dev-perl
   description: ""
   license: ""
-  name: Data-Dump
+  name: URI-Encode
+  
+  version: ""
+- 
+  category: www-servers
+  description: ""
+  license: ""
+  name: apache
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
   
   version: ""
 - 
   category: dev-perl
   description: ""
   license: ""
-  name: Archive-Zip
+  name: DBD-mysql
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: httpd-php
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: app-eselect
+  description: ""
+  license: ""
+  name: eselect-php
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: perl
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: ffmpeg
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: perl-Getopt-Long
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: perl-Sys-Syslog
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpcre
   
   version: ""
 - 
@@ -50,77 +127,7 @@ requires:
   category: dev-perl
   description: ""
   license: ""
-  name: Data-UUID
-  
-  version: ""
-- 
-  category: dev-perl
-  description: ""
-  license: ""
-  name: SOAP-WSDL
-  
-  version: ""
-- 
-  category: dev-perl
-  description: ""
-  license: ""
-  name: URI-Encode
-  
-  version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: polkit
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: perl-Getopt-Long
-  
-  version: ""
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: php
-  
-  version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: curl
-  
-  version: ""
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: perl
-  
-  version: ""
-- 
-  category: dev-perl
-  description: ""
-  license: ""
-  name: IO-Socket-Multicast
-  
-  version: ""
-- 
-  category: dev-perl
-  description: ""
-  license: ""
-  name: Sys-MemInfo
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: perl-Sys-Syslog
+  name: Date-Manip
   
   version: ""
 - 
@@ -134,28 +141,35 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libressl
+  name: libgcrypt
   
   version: ""
 - 
-  category: media-video
+  category: net-libs
   description: ""
   license: ""
-  name: vlc
+  name: gnutls
   
   version: ""
 - 
-  category: app-eselect
+  category: dev-libs
   description: ""
   license: ""
-  name: eselect-php
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: php
   
   version: ""
 - 
   category: dev-perl
   description: ""
   license: ""
-  name: Sys-CPU
+  name: Archive-Zip
   
   version: ""
 - 
@@ -176,49 +190,7 @@ requires:
   category: virtual
   description: ""
   license: ""
-  name: ffmpeg
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jpeg
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: perl-Time-HiRes
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: ""
-- 
-  category: dev-perl
-  description: ""
-  license: ""
-  name: Date-Manip
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgcrypt
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libpcre
+  name: perl-ExtUtils-MakeMaker
   
   version: ""
 - 
@@ -232,28 +204,56 @@ requires:
   category: dev-perl
   description: ""
   license: ""
-  name: DBD-mysql
+  name: IO-Socket-Multicast
   
   version: ""
 - 
-  category: virtual
+  category: dev-perl
   description: ""
   license: ""
-  name: perl-ExtUtils-MakeMaker
+  name: SOAP-WSDL
   
   version: ""
 - 
-  category: www-servers
+  category: dev-perl
   description: ""
   license: ""
-  name: apache
+  name: Sys-MemInfo
   
   version: ""
 - 
-  category: virtual
+  category: media-video
   description: ""
   license: ""
-  name: httpd-php
+  name: vlc
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c
+  
+  version: ""
+- 
+  category: dev-perl
+  description: ""
+  license: ""
+  name: Data-UUID
+  
+  version: ""
+- 
+  category: dev-perl
+  description: ""
+  license: ""
+  name: Sys-CPU
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
   
   version: ""
 uri:

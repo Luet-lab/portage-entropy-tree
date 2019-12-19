@@ -12,68 +12,19 @@ license: LGPL-2.1
 name: libvirt
 requires:
 - 
-  category: sys-block
+  category: app-emulation
   description: ""
   license: ""
-  name: parted
-  
-  version: "1.8"
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: dnsmasq
+  name: xen-tools
   
   version: ""
 - 
-  category: net-misc
+  category: app-emulation
   description: ""
   license: ""
-  name: curl
+  name: qemu
   
-  version: 7.18.0
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: ncurses
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libapparmor
-  
-  version: ""
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: numactl
-  
-  version: 2.0.2
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libpciaccess
-  
-  version: 0.10.9
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: gettext
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: lvm2-2.02.48-r2[-device-mapper-only(-)]
-  
-  version: ""
+  version: 1.5.0
 - 
   category: sys-cluster
   description: ""
@@ -89,6 +40,62 @@ requires:
   
   version: ""
 - 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libpciaccess
+  
+  version: 0.10.9
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: qemu
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libpcap
+  
+  version: 1.0.0
+- 
+  category: net-fs
+  description: ""
+  license: ""
+  name: nfs-utils
+  
+  version: ""
+- 
+  category: sys-block
+  description: ""
+  license: ""
+  name: parted
+  
+  version: "1.8"
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: dnsmasq
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.48.0
+- 
   category: dev-libs
   description: ""
   license: ""
@@ -96,38 +103,10 @@ requires:
   
   version: 2.7.6
 - 
-  category: sys-apps
+  category: net-libs
   description: ""
   license: ""
-  name: util-linux
-  
-  version: "2.17"
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: lvm2[-device-mapper-only(-)]
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: zfs
-  
-  version: ""
-- 
-  category: net-analyzer
-  description: ""
-  license: ""
-  name: wireshark
-  
-  version: ""
-- 
-  category: app-emulation
-  description: ""
-  license: ""
-  name: xen-tools
+  name: rpcsvc-proto
   
   version: ""
 - 
@@ -138,26 +117,26 @@ requires:
   
   version: ""
 - 
-  category: net-analyzer
+  category: sys-fs
   description: ""
   license: ""
-  name: openbsd-netcat
+  name: zfs
   
-  version: 1.105-r1
+  version: ""
 - 
   category: net-libs
   description: ""
   license: ""
-  name: libtirpc
+  name: libssh
   
   version: ""
 - 
-  category: sys-libs
+  category: net-firewall
   description: ""
   license: ""
-  name: libcap-ng
+  name: firewalld
   
-  version: ""
+  version: 0.6.3
 - 
   category: sys-fs
   description: ""
@@ -166,6 +145,41 @@ requires:
   
   version: 2.8.6
 - 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: glusterfs
+  
+  version: 3.4.1
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap-ng
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: numactl
+  
+  version: 2.0.2
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: yajl
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dmidecode
+  
+  version: ""
+- 
   category: sys-apps
   description: ""
   license: ""
@@ -173,75 +187,54 @@ requires:
   
   version: ""
 - 
-  category: sys-process
-  description: ""
-  license: ""
-  name: numad
-  
-  version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: polkit
-  
-  version: "0.9"
-- 
   category: net-firewall
   description: ""
   license: ""
-  name: iptables
-  
-  version: 1.4.10
-- 
-  category: app-emulation
-  description: ""
-  license: ""
-  name: xen
-  
-  version: 4.6.0
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: udev
-  
-  version: ""
-- 
-  category: acct-user
-  description: ""
-  license: ""
-  name: qemu
+  name: ebtables
   
   version: ""
 - 
   category: net-libs
   description: ""
   license: ""
-  name: rpcsvc-proto
+  name: libtirpc
   
   version: ""
 - 
-  category: sys-process
+  category: net-misc
   description: ""
   license: ""
-  name: audit
+  name: curl
+  
+  version: 7.18.0
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: "2.17"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
   
   version: ""
 - 
-  category: net-fs
+  category: dev-util
   description: ""
   license: ""
-  name: nfs-utils
+  name: systemtap
   
   version: ""
 - 
-  category: app-emulation
+  category: sys-fs
   description: ""
   license: ""
-  name: qemu
+  name: lvm2-2.02.48-r2[-device-mapper-only(-)]
   
-  version: 1.5.0
+  version: ""
 - 
   category: sys-libs
   description: ""
@@ -250,33 +243,26 @@ requires:
   
   version: 2.0.85
 - 
-  category: net-misc
+  category: net-analyzer
   description: ""
   license: ""
-  name: radvd
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: libvirt
-  
-  version: ""
-- 
-  category: app-misc
-  description: ""
-  license: ""
-  name: scrub
+  name: wireshark
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: glib
+  name: libgcrypt
   
-  version: 2.48.0
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libapparmor
+  
+  version: ""
 - 
   category: sys-apps
   description: ""
@@ -292,10 +278,24 @@ requires:
   
   version: ""
 - 
-  category: dev-util
+  category: sys-auth
   description: ""
   license: ""
-  name: systemtap
+  name: polkit
+  
+  version: "0.9"
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: radvd
+  
+  version: ""
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: gettext
   
   version: ""
 - 
@@ -306,24 +306,73 @@ requires:
   
   version: 1.18.0
 - 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lvm2[-device-mapper-only(-)]
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: audit
+  
+  version: ""
+- 
+  category: net-firewall
+  description: ""
+  license: ""
+  name: iptables
+  
+  version: 1.4.10
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: openbsd-netcat
+  
+  version: 1.105-r1
+- 
   category: net-libs
   description: ""
   license: ""
-  name: libssh
+  name: gnutls
+  
+  version: 1.0.25
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
   
   version: ""
 - 
-  category: dev-libs
+  category: sys-process
   description: ""
   license: ""
-  name: yajl
+  name: numad
   
   version: ""
 - 
-  category: dev-libs
+  category: app-emulation
   description: ""
   license: ""
-  name: libgcrypt
+  name: xen
+  
+  version: 4.6.0
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: libvirt
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: scrub
   
   version: ""
 - 
@@ -333,55 +382,6 @@ requires:
   name: libssh2
   
   version: ""
-- 
-  category: net-firewall
-  description: ""
-  license: ""
-  name: ebtables
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libpcap
-  
-  version: 1.0.0
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnutls
-  
-  version: 1.0.25
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dmidecode
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: readline
-  
-  version: ""
-- 
-  category: net-firewall
-  description: ""
-  license: ""
-  name: firewalld
-  
-  version: 0.6.3
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: glusterfs
-  
-  version: 3.4.1
 uri: []
 use_flags:
 - apparmor

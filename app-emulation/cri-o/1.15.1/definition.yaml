@@ -12,17 +12,31 @@ license: Apache-2.0 BSD BSD-2 CC-BY-SA-4.0 ISC MIT MPL-2.0
 name: cri-o
 requires:
 - 
-  category: net-misc
+  category: dev-libs
   description: ""
   license: ""
-  name: cni-plugins
+  name: glib
+  
+  version: ""
+- 
+  category: net-firewall
+  description: ""
+  license: ""
+  name: iptables
   
   version: ""
 - 
   category: sys-apps
   description: ""
   license: ""
-  name: systemd
+  name: iproute2
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: btrfs-progs
   
   version: ""
 - 
@@ -30,20 +44,6 @@ requires:
   description: ""
   license: ""
   name: gpgme
-  
-  version: ""
-- 
-  category: app-emulation
-  description: ""
-  license: ""
-  name: runc
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
   
   version: ""
 - 
@@ -61,17 +61,10 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: net-misc
   description: ""
   license: ""
-  name: libseccomp
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: btrfs-progs
+  name: socat
   
   version: ""
 - 
@@ -82,27 +75,6 @@ requires:
   
   version: ""
 - 
-  category: net-firewall
-  description: ""
-  license: ""
-  name: iptables
-  
-  version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: socat
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: iproute2
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
@@ -110,10 +82,38 @@ requires:
   
   version: ""
 - 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libseccomp
+  
+  version: ""
+- 
+  category: app-emulation
+  description: ""
+  license: ""
+  name: runc
+  
+  version: ""
+- 
   category: dev-libs
   description: ""
   license: ""
   name: libgpg-error
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: cni-plugins
   
   version: ""
 uri:

@@ -4,28 +4,7 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mariadb-galera
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mysql-cluster
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: percona-server
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mariadb
+  name: mariadb-connector-c
   
   version: ""
 - 
@@ -39,13 +18,48 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mariadb-connector-c
+  name: mariadb
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-cluster
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mariadb-galera
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: percona-server
   
   version: ""
 description: A fast, multi-threaded, multi-user SQL database server
 license: GPL-2
 name: mysql
 requires:
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: sed
+  
+  version: "4"
 - 
   category: sys-libs
   description: ""
@@ -54,10 +68,73 @@ requires:
   
   version: 1.2.3
 - 
-  category: acct-group
+  category: sys-process
   description: ""
   license: ""
-  name: mysql
+  name: numactl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libaio
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-init-scripts
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: texinfo
+  
+  version: 4.7-r1
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: procps
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: lz4
+  
+  version: 0_p131
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 1.0.0
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: systemtap
+  
+  version: "1.3"
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libtirpc
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: google-perftools
   
   version: ""
 - 
@@ -68,10 +145,17 @@ requires:
   
   version: ""
 - 
-  category: sys-process
+  category: sys-libs
   description: ""
   license: ""
-  name: procps
+  name: ncurses
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: jemalloc
   
   version: ""
 - 
@@ -89,87 +173,10 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: texinfo
-  
-  version: 4.7-r1
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: numactl
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: sed
-  
-  version: "4"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: jemalloc
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
   name: protobuf
-  
-  version: ""
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: systemtap
-  
-  version: "1.3"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: 1.0.0
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mysql-init-scripts
-  
-  version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: curl
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: lz4
-  
-  version: 0_p131
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: google-perftools
   
   version: ""
 - 
@@ -180,24 +187,17 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: ncurses
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
-  name: libaio
+  name: libressl
   
   version: ""
 - 
-  category: net-libs
+  category: acct-group
   description: ""
   license: ""
-  name: libtirpc
+  name: mysql
   
   version: ""
 uri:

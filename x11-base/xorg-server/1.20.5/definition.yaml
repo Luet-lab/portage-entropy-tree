@@ -1,17 +1,17 @@
 category: x11-base
 conflicts:
 - 
-  category: app-eselect
-  description: ""
-  license: ""
-  name: eselect-opengl
-  
-  version: ""
-- 
   category: x11-drivers
   description: ""
   license: ""
   name: xf86-video-modesetting
+  
+  version: ""
+- 
+  category: app-eselect
+  description: ""
+  license: ""
+  name: eselect-opengl
   
   version: ""
 description: X.Org X servers
@@ -22,37 +22,16 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libpciaccess
+  name: libX11
   
-  version: 0.12.901
+  version: 1.1.5
 - 
-  category: media-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: libepoxy[X,egl(+)]
+  name: libXmu
   
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libunwind
-  
-  version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: elogind
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus
-  
-  version: ""
+  version: 1.0.3
 - 
   category: virtual
   description: ""
@@ -61,61 +40,12 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
+  category: media-libs
   description: ""
   license: ""
-  name: xcb-util-image
+  name: libglvnd
   
   version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXext
-  
-  version: 1.0.99.4
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxshmfence
-  
-  version: "1.1"
-- 
-  category: x11-misc
-  description: ""
-  license: ""
-  name: xkeyboard-config
-  
-  version: 2.4.1-r3
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-xserver
-  
-  version: ""
-- 
-  category: x11-apps
-  description: ""
-  license: ""
-  name: rgb
-  
-  version: 1.0.3
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libdrm
-  
-  version: 2.4.89
 - 
   category: x11-libs
   description: ""
@@ -131,124 +61,12 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: wayland
-  
-  version: 1.3.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: wayland-protocols
-  
-  version: "1.1"
-- 
-  category: x11-apps
-  description: ""
-  license: ""
-  name: xauth
-  
-  version: 1.0.3
-- 
-  category: x11-misc
-  description: ""
-  license: ""
-  name: xbitmaps
-  
-  version: 1.0.1
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: 1.1.5
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXi
-  
-  version: 1.2.99.1
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXtst
-  
-  version: 1.0.99.2
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: xtrans
-  
-  version: 1.3.5
-- 
   category: x11-libs
   description: ""
   license: ""
   name: libdmx
   
   version: 1.0.99.1
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXmu
-  
-  version: 1.0.3
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXext
-  
-  version: 1.0.5
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pixman
-  
-  version: 0.27.2
-- 
-  category: x11-apps
-  description: ""
-  license: ""
-  name: xkbcomp
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: xcb-util
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: xcb-util-keysyms
-  
-  version: ""
-- 
-  category: x11-apps
-  description: ""
-  license: ""
-  name: xinit
-  
-  version: 1.3.3-r1
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libglvnd
-  
-  version: ""
 - 
   category: x11-libs
   description: ""
@@ -260,42 +78,84 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libxcb
+  name: libpciaccess
+  
+  version: 0.12.901
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pixman
+  
+  version: 0.27.2
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: xkeyboard-config
+  
+  version: 2.4.1-r3
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: xcb-util
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libepoxy[egl(+)]
+  name: libepoxy[X,egl(+)]
   
   version: ""
 - 
-  category: sys-auth
+  category: x11-apps
   description: ""
   license: ""
-  name: pambase
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXau
-  
-  version: 1.0.4
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXdmcp
+  name: iceauth
   
   version: 1.0.2
 - 
-  category: dev-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: openssl
+  name: libXext
+  
+  version: 1.0.5
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libdrm
+  
+  version: 2.4.89
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXtst
+  
+  version: 1.0.99.2
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: xcb-util-wm
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libunwind
   
   version: ""
 - 
@@ -309,14 +169,105 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: xcb-util-wm
+  name: xcb-util-keysyms
   
   version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libepoxy[egl(+)]
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXi
+  
+  version: 1.2.99.1
+- 
+  category: x11-apps
+  description: ""
+  license: ""
+  name: xauth
+  
+  version: 1.0.3
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: xtrans
+  
+  version: 1.3.5
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXdmcp
+  
+  version: 1.0.2
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxshmfence
+  
+  version: "1.1"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXaw
+  
+  version: 1.0.4
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: xcb-util-image
+  
+  version: ""
+- 
+  category: x11-apps
+  description: ""
+  license: ""
+  name: xinit
+  
+  version: 1.3.3-r1
 - 
   category: app-eselect
   description: ""
   license: ""
   name: "eselect-opengl-1.3.0\t)"
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXext
+  
+  version: 1.0.99.4
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: wayland
+  
+  version: 1.3.0
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: xcb-util-renderutil
   
   version: ""
 - 
@@ -334,26 +285,19 @@ requires:
   
   version: ""
 - 
-  category: x11-apps
-  description: ""
-  license: ""
-  name: iceauth
-  
-  version: 1.0.2
-- 
   category: x11-libs
   description: ""
   license: ""
-  name: libXaw
+  name: libXau
   
   version: 1.0.4
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXrender
+  name: libxkbfile
   
-  version: ""
+  version: 1.0.4
 - 
   category: x11-libs
   description: ""
@@ -365,16 +309,72 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: xcb-util-renderutil
+  name: libxcb
+  
+  version: ""
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: xbitmaps
+  
+  version: 1.0.1
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-xserver
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: elogind
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: wayland-protocols
+  
+  version: "1.1"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: pambase
+  
+  version: ""
+- 
+  category: x11-apps
+  description: ""
+  license: ""
+  name: rgb
+  
+  version: 1.0.3
+- 
+  category: x11-apps
+  description: ""
+  license: ""
+  name: xkbcomp
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libxkbfile
+  name: libXrender
   
-  version: 1.0.4
+  version: ""
 uri: []
 use_flags:
 - dmx

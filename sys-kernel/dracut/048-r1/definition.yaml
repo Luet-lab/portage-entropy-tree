@@ -5,19 +5,19 @@ license: GPL-2
 name: dracut
 requires:
 - 
-  category: app-arch
+  category: virtual
   description: ""
   license: ""
-  name: cpio
+  name: udev
   
   version: ""
 - 
-  category: app-shells
+  category: dev-util
   description: ""
   license: ""
-  name: bash
+  name: strace
   
-  version: "4.0"
+  version: ""
 - 
   category: sec-policy
   description: ""
@@ -33,17 +33,17 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: sys-apps
   description: ""
   license: ""
-  name: pkgconfig
+  name: kmod
   
-  version: ""
+  version: "23"
 - 
   category: virtual
   description: ""
   license: ""
-  name: udev
+  name: pkgconfig
   
   version: ""
 - 
@@ -61,13 +61,6 @@ requires:
   
   version: "2.21"
 - 
-  category: dev-util
-  description: ""
-  license: ""
-  name: strace
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
@@ -75,12 +68,19 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: app-arch
   description: ""
   license: ""
-  name: kmod
+  name: cpio
   
-  version: "23"
+  version: ""
+- 
+  category: app-shells
+  description: ""
+  license: ""
+  name: bash
+  
+  version: "4.0"
 uri:
 - https://www.kernel.org/pub/linux/utils/boot/dracut/dracut-048.tar.xz
 use_flags:

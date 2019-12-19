@@ -12,12 +12,47 @@ license: GPL-2+ LGPL-2.1+
 name: syslog-ng
 requires:
 - 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libnet
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: tcp-wrappers
+  
+  version: "7.6"
+- 
   category: dev-libs
   description: ""
   license: ""
-  name: json-c
+  name: openssl
   
-  version: "0.9"
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: rabbitmq-c
+  
+  version: 0.8.0
 - 
   category: dev-libs
   description: ""
@@ -36,56 +71,7 @@ requires:
   category: net-libs
   description: ""
   license: ""
-  name: libnet
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: curl
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: tcp-wrappers
-  
-  version: "7.6"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: hiredis
-  
-  version: 0.11.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libpcre
-  
-  version: "6.1"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libcap
-  
-  version: ""
-- 
-  category: net-analyzer
-  description: ""
-  license: ""
-  name: net-snmp
+  name: libesmtp
   
   version: ""
 - 
@@ -96,12 +82,47 @@ requires:
   
   version: 0.42.4
 - 
-  category: net-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: rabbitmq-c
+  name: libmaxminddb
   
-  version: 0.8.0
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
+  
+  version: ""
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: net-snmp
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.10.1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpcre
+  
+  version: "6.1"
 - 
   category: dev-db
   description: ""
@@ -113,37 +134,16 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libmaxminddb
+  name: json-c
   
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libesmtp
-  
-  version: ""
+  version: "0.9"
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: openssl
+  name: hiredis
   
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: 2.10.1
+  version: 0.11.0
 uri:
 - https://github.com/balabit/syslog-ng/releases/download/syslog-ng-3.24.1/syslog-ng-3.24.1.tar.gz
 use_flags:

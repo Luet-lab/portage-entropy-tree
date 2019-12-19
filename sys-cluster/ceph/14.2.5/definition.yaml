@@ -5,10 +5,10 @@ license: LGPL-2.1 CC-BY-SA-3.0 GPL-2 GPL-2+ LGPL-2+ BSD Boost-1.0 MIT public-dom
 name: ceph
 requires:
 - 
-  category: dev-python
+  category: sys-apps
   description: ""
   license: ""
-  name: requests
+  name: sed
   
   version: ""
 - 
@@ -19,10 +19,31 @@ requires:
   
   version: ""
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: oath-toolkit
+  
+  version: ""
+- 
   category: sys-fs
   description: ""
   license: ""
-  name: xfsprogs
+  name: fuse
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nss
   
   version: ""
 - 
@@ -36,28 +57,21 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: bcrypt
+  name: prettytable
   
   version: ""
 - 
   category: dev-python
   description: ""
   license: ""
-  name: flask
+  name: requests
   
   version: ""
 - 
-  category: virtual
+  category: sys-apps
   description: ""
   license: ""
-  name: krb5
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: rabbitmq-c
+  name: grep
   
   version: ""
 - 
@@ -71,7 +85,35 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: pyopenssl
+  name: bcrypt
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pecan
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: jemalloc
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: cryptsetup
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lvm2[-device-mapper-only(-)]
   
   version: ""
 - 
@@ -89,73 +131,17 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: virtual
   description: ""
   license: ""
-  name: grep
+  name: krb5
   
   version: ""
 - 
-  category: sys-block
+  category: virtual
   description: ""
   license: ""
-  name: parted
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: sed
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: zfs
-  
-  version: ""
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: google-perftools
-  
-  version: "2.4"
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: jinja
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: ceph
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: nss
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
+  name: awk
   
   version: ""
 - 
@@ -166,10 +152,17 @@ requires:
   
   version: ""
 - 
-  category: sys-fs
+  category: dev-python
   description: ""
   license: ""
-  name: lvm2[-device-mapper-only(-)]
+  name: jinja
+  
+  version: ""
+- 
+  category: app-shells
+  description: ""
+  license: ""
+  name: bash
   
   version: ""
 - 
@@ -190,7 +183,70 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: jemalloc
+  name: openssl
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: rabbitmq-c
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: xfsprogs
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: zfs
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: google-perftools
+  
+  version: "2.4"
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: ceph
+  
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: ceph
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: coreutils
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: lttng-ust
+  
+  version: ""
+- 
+  category: sys-block
+  description: ""
+  license: ""
+  name: parted
   
   version: ""
 - 
@@ -204,70 +260,14 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: prettytable
-  
-  version: ""
-- 
-  category: acct-user
-  description: ""
-  license: ""
-  name: ceph
-  
-  version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: oath-toolkit
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: coreutils
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: cryptsetup
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: awk
-  
-  version: ""
-- 
-  category: app-shells
-  description: ""
-  license: ""
-  name: bash
-  
-  version: ""
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: lttng-ust
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: fuse
+  name: flask
   
   version: ""
 - 
   category: dev-python
   description: ""
   license: ""
-  name: pecan
+  name: pyopenssl
   
   version: ""
 uri:

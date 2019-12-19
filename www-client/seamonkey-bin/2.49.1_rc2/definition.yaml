@@ -5,19 +5,33 @@ license: MPL-2.0 GPL-2 LGPL-2.1
 name: seamonkey-bin
 requires:
 - 
-  category: dev-libs
+  category: virtual
   description: ""
   license: ""
-  name: atk
+  name: freedesktop-icon-theme
   
   version: ""
 - 
-  category: dev-libs
+  category: media-libs
   description: ""
   license: ""
-  name: glib
+  name: alsa-lib
   
-  version: "2.26"
+  version: 1.0.16
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gconf
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
+  
+  version: ""
 - 
   category: x11-libs
   description: ""
@@ -29,30 +43,23 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXfixes
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
   name: libXrender
   
   version: ""
 - 
-  category: sys-apps
+  category: x11-libs
   description: ""
   license: ""
-  name: dbus
+  name: libXt
   
-  version: "0.60"
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: atk
+  
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -61,31 +68,17 @@ requires:
   
   version: "0.72"
 - 
-  category: gnome-base
+  category: dev-libs
   description: ""
   license: ""
-  name: gconf
+  name: glib
   
-  version: ""
+  version: "2.26"
 - 
   category: gnome-base
   description: ""
   license: ""
   name: gnome-vfs
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: alsa-lib
-  
-  version: 1.0.16
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: fontconfig
   
   version: ""
 - 
@@ -103,20 +96,6 @@ requires:
   
   version: ""
 - 
-  category: virtual
-  description: ""
-  license: ""
-  name: freedesktop-icon-theme
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: freetype
-  
-  version: 2.4.10
-- 
   category: x11-libs
   description: ""
   license: ""
@@ -131,10 +110,24 @@ requires:
   
   version: ""
 - 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: "0.60"
+- 
   category: x11-libs
   description: ""
   license: ""
-  name: libXt
+  name: libXext
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
   
   version: ""
 - 
@@ -148,7 +141,7 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXext
+  name: libXfixes
   
   version: ""
 - 
@@ -158,6 +151,13 @@ requires:
   name: pango
   
   version: 1.22.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
+  
+  version: 2.4.10
 uri:
 - 'http://archive.mozilla.org/pub/mozilla.org/seamonkey/releases/2.49.1/linux-x86_64/en-US/seamonkey-2.49.1.tar.bz2
   -> seamonkey-bin_x86_64-2.49.1.tar.bz2 '

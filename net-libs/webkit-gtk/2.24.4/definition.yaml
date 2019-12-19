@@ -5,19 +5,33 @@ license: LGPL-2+ BSD
 name: webkit-gtk
 requires:
 - 
-  category: dev-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: libxml2
+  name: libXcomposite
   
-  version: 2.8.0
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXdamage
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
+  
+  version: 2.13.0
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: glib
+  name: libgcrypt
   
-  version: "2.40"
+  version: 1.7.0
 - 
   category: dev-libs
   description: ""
@@ -25,6 +39,48 @@ requires:
   name: gobject-introspection
   
   version: 1.32.0
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libnotify
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: opengl
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: mesa
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: icu
+  
+  version: 3.8.1-r1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxslt
+  
+  version: 1.1.7
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: woff2
+  
+  version: ""
 - 
   category: app-text
   description: ""
@@ -36,56 +92,21 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: gstreamer
-  
-  version: "1.14"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: icu
-  
-  version: 3.8.1-r1
-- 
-  category: media-libs
-  description: ""
-  license: ""
   name: gst-plugins-bad
   
   version: "1.14"
 - 
-  category: media-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: mesa
+  name: libXrender
   
   version: ""
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: libsecret
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: freetype
-  
-  version: 2.9.0
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libgcrypt
-  
-  version: 1.7.0
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jpeg
+  name: hyphen
   
   version: ""
 - 
@@ -96,33 +117,12 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: app-misc
   description: ""
   license: ""
-  name: libxslt
+  name: geoclue
   
-  version: 1.1.7
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXcomposite
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXt
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: fontconfig
-  
-  version: 2.13.0
+  version: 2.1.5
 - 
   category: dev-libs
   description: ""
@@ -138,19 +138,12 @@ requires:
   
   version: 2.24.10
 - 
-  category: media-plugins
+  category: media-libs
   description: ""
   license: ""
-  name: gst-plugins-opus
+  name: gstreamer
   
-  version: 1.14.4-r1
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXrender
-  
-  version: ""
+  version: "1.14"
 - 
   category: media-libs
   description: ""
@@ -158,6 +151,27 @@ requires:
   name: openjpeg
   
   version: 2.2.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
+  
+  version: 2.9.0
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jpeg
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: 2.8.0
 - 
   category: sys-libs
   description: ""
@@ -173,24 +187,10 @@ requires:
   
   version: 2.8.0
 - 
-  category: media-libs
-  description: ""
-  license: ""
-  name: woff2
-  
-  version: ""
-- 
   category: x11-libs
   description: ""
   license: ""
-  name: libXdamage
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libnotify
+  name: libX11
   
   version: ""
 - 
@@ -201,26 +201,19 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: app-crypt
   description: ""
   license: ""
-  name: opengl
+  name: libsecret
   
   version: ""
 - 
-  category: app-misc
+  category: media-libs
   description: ""
   license: ""
-  name: geoclue
+  name: harfbuzz
   
-  version: 2.1.5
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
+  version: 1.4.2
 - 
   category: media-libs
   description: ""
@@ -232,16 +225,23 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: hyphen
+  name: glib
   
-  version: ""
+  version: "2.40"
 - 
-  category: media-libs
+  category: media-plugins
   description: ""
   license: ""
-  name: harfbuzz
+  name: gst-plugins-opus
   
-  version: 1.4.2
+  version: 1.14.4-r1
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXt
+  
+  version: ""
 uri:
 - https://www.webkitgtk.org/releases/webkitgtk-2.24.4.tar.xz
 use_flags:

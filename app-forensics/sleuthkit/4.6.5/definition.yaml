@@ -5,12 +5,26 @@ license: BSD CPL-1.0 GPL-2+ IBM java? ( Apache-2.0 )
 name: sleuthkit
 requires:
 - 
-  category: sys-libs
+  category: virtual
   description: ""
   license: ""
-  name: zlib
+  name: jre
+  
+  version: "1.8"
+- 
+  category: app-forensics
+  description: ""
+  license: ""
+  name: afflib
   
   version: ""
+- 
+  category: dev-java
+  description: ""
+  license: ""
+  name: c3p0
+  
+  version: 0.9.5
 - 
   category: dev-java
   description: ""
@@ -19,19 +33,19 @@ requires:
   
   version: "9.4"
 - 
+  category: virtual
+  description: ""
+  license: ""
+  name: jdk
+  
+  version: "1.8"
+- 
   category: dev-db
   description: ""
   license: ""
   name: postgresql
   
   version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jre
-  
-  version: "1.8"
 - 
   category: dev-db
   description: ""
@@ -47,26 +61,12 @@ requires:
   
   version: ""
 - 
-  category: dev-java
+  category: sys-libs
   description: ""
   license: ""
-  name: c3p0
-  
-  version: 0.9.5
-- 
-  category: app-forensics
-  description: ""
-  license: ""
-  name: afflib
+  name: zlib
   
   version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jdk
-  
-  version: "1.8"
 uri:
 - https://github.com/sleuthkit/sleuthkit/releases/download/sleuthkit-4.6.5/sleuthkit-4.6.5.tar.gz
 - 'https://dev.gentoo.org/~gokturk/distfiles/app-forensics/libewf/libewf-20130128.tar.gz '

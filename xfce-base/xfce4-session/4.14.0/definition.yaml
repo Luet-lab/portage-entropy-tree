@@ -5,20 +5,6 @@ license: GPL-2+
 name: xfce4-session
 requires:
 - 
-  category: xfce-base
-  description: ""
-  license: ""
-  name: libxfce4util
-  
-  version: "4.12"
-- 
-  category: x11-misc
-  description: ""
-  license: ""
-  name: xscreensaver
-  
-  version: "5.26"
-- 
   category: x11-apps
   description: ""
   license: ""
@@ -26,24 +12,31 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: gtk+
+  name: glib
   
-  version: "3.22"
+  version: "2.42"
 - 
-  category: x11-libs
+  category: sys-auth
   description: ""
   license: ""
-  name: libX11
+  name: polkit
+  
+  version: "0.102"
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: xdg-user-dirs
   
   version: ""
 - 
   category: x11-misc
   description: ""
   license: ""
-  name: slock
+  name: alock
   
   version: ""
 - 
@@ -57,16 +50,44 @@ requires:
   category: x11-libs
   description: ""
   license: ""
+  name: libX11
+  
+  version: ""
+- 
+  category: xfce-base
+  description: ""
+  license: ""
+  name: libxfce4ui
+  
+  version: 4.12.1
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: xlockmore
+  
+  version: "5.43"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: "3.22"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
   name: libwnck
   
   version: ""
 - 
-  category: x11-apps
+  category: xfce-base
   description: ""
   license: ""
-  name: xrdb
+  name: libxfce4util
   
-  version: ""
+  version: "4.12"
 - 
   category: xfce-base
   description: ""
@@ -75,19 +96,12 @@ requires:
   
   version: "4.12"
 - 
-  category: x11-misc
+  category: x11-apps
   description: ""
   license: ""
-  name: xdg-user-dirs
+  name: xrdb
   
   version: ""
-- 
-  category: x11-misc
-  description: ""
-  license: ""
-  name: xlockmore
-  
-  version: "5.43"
 - 
   category: xfce-extra
   description: ""
@@ -99,30 +113,16 @@ requires:
   category: x11-misc
   description: ""
   license: ""
-  name: alock
+  name: xscreensaver
+  
+  version: "5.26"
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: slock
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.42"
-- 
-  category: xfce-base
-  description: ""
-  license: ""
-  name: libxfce4ui
-  
-  version: 4.12.1
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: polkit
-  
-  version: "0.102"
 uri:
 - https://archive.xfce.org/src/xfce/xfce4-session/4.14/xfce4-session-4.14.0.tar.bz2
 use_flags:

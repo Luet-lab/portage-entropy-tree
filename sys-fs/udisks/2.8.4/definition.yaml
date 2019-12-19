@@ -5,12 +5,26 @@ license: LGPL-2+ GPL-2+
 name: udisks
 requires:
 - 
-  category: virtual
+  category: dev-libs
   description: ""
   license: ""
-  name: udev
+  name: libgudev
   
-  version: ""
+  version: "165"
+- 
+  category: sys-block
+  description: ""
+  license: ""
+  name: parted
+  
+  version: "3"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libatasmart
+  
+  version: "0.19"
 - 
   category: virtual
   description: ""
@@ -18,13 +32,6 @@ requires:
   name: acl
   
   version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: polkit
-  
-  version: "0.110"
 - 
   category: dev-libs
   description: ""
@@ -50,16 +57,16 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libgudev
+  name: glib
   
-  version: "165"
+  version: "2.50"
 - 
-  category: sys-auth
+  category: virtual
   description: ""
   license: ""
-  name: elogind
+  name: udev
   
-  version: "219"
+  version: ""
 - 
   category: sys-fs
   description: ""
@@ -75,33 +82,26 @@ requires:
   
   version: "209"
 - 
-  category: sys-block
-  description: ""
-  license: ""
-  name: parted
-  
-  version: "3"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.50"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libatasmart
-  
-  version: "0.19"
-- 
   category: sys-apps
   description: ""
   license: ""
   name: util-linux
   
   version: "2.30"
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: "0.110"
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: elogind
+  
+  version: "219"
 uri:
 - https://github.com/storaged-project/udisks/releases/download/udisks-2.8.4/udisks-2.8.4.tar.bz2
 use_flags:

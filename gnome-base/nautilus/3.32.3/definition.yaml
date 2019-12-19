@@ -1,19 +1,19 @@
 category: gnome-base
 conflicts:
 - 
-  category: <gnome-extra
-  description: ""
-  license: ""
-  name: nautilus-sendto
-  
-  version: 3.0.1
-- 
   category: <media-video
   description: ""
   license: ""
   name: totem
   
   version: 3.31.91
+- 
+  category: <gnome-extra
+  description: ""
+  license: ""
+  name: nautilus-sendto
+  
+  version: 3.0.1
 description: Default file manager for the GNOME desktop
 license: GPL-3+ LGPL-2.1+
 name: nautilus
@@ -26,6 +26,34 @@ requires:
   
   version: 2.58.1
 - 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: "2.0"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: 2.7.8
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: tracker-miners
+  
+  version: "2.0"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gstreamer
+  
+  version: ""
+- 
   category: media-libs
   description: ""
   license: ""
@@ -33,26 +61,19 @@ requires:
   
   version: ""
 - 
-  category: app-arch
+  category: sys-libs
   description: ""
   license: ""
-  name: gnome-autoar
+  name: libseccomp
   
-  version: 0.2.1
+  version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: pango
+  name: libX11
   
-  version: 1.28.3
-- 
-  category: app-misc
-  description: ""
-  license: ""
-  name: tracker
-  
-  version: "2.0"
+  version: ""
 - 
   category: media-libs
   description: ""
@@ -68,12 +89,26 @@ requires:
   
   version: ""
 - 
+  category: app-misc
+  description: ""
+  license: ""
+  name: tracker
+  
+  version: "2.0"
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: gnome-autoar
+  
+  version: 0.2.1
+- 
   category: x11-libs
   description: ""
   license: ""
-  name: libX11
+  name: pango
   
-  version: ""
+  version: 1.28.3
 - 
   category: dev-libs
   description: ""
@@ -82,27 +117,6 @@ requires:
   
   version: "1.54"
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: bubblewrap
-  
-  version: 0.3.1
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: gstreamer
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: "2.0"
-- 
   category: app-admin
   description: ""
   license: ""
@@ -110,26 +124,12 @@ requires:
   
   version: ""
 - 
-  category: app-misc
+  category: sys-apps
   description: ""
   license: ""
-  name: tracker-miners
+  name: bubblewrap
   
-  version: "2.0"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libseccomp
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: 2.7.8
+  version: 0.3.1
 uri: []
 use_flags:
 - gnome

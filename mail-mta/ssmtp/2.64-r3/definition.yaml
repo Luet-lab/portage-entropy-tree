@@ -4,28 +4,7 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: esmtp
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: qmail-ldap
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: sendmail
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: nbsmtp
+  name: exim
   
   version: ""
 - 
@@ -39,7 +18,7 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: opensmtpd
+mailer
   
   version: ""
 - 
@@ -53,14 +32,21 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: msmtp
+  name: esmtp
   
   version: ""
 - 
   category: mail-mta
   description: ""
   license: ""
-  name: mini-qmail
+  name: nbsmtp
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: postfix
   
   version: ""
 - 
@@ -74,21 +60,35 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: exim
+  name: mini-qmail
   
   version: ""
 - 
   category: mail-mta
   description: ""
   license: ""
-mailer
+  name: sendmail
   
   version: ""
 - 
   category: mail-mta
   description: ""
   license: ""
-  name: postfix
+  name: opensmtpd
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: msmtp
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: qmail-ldap
   
   version: ""
 description: Extremely simple MTA to get mail off the system to a Mailhub
@@ -96,10 +96,10 @@ license: GPL-2
 name: ssmtp
 requires:
 - 
-  category: dev-libs
+  category: net-mail
   description: ""
   license: ""
-  name: libressl
+  name: mailbase
   
   version: ""
 - 
@@ -110,10 +110,10 @@ requires:
   
   version: ""
 - 
-  category: net-mail
+  category: dev-libs
   description: ""
   license: ""
-  name: mailbase
+  name: libressl
   
   version: ""
 - 

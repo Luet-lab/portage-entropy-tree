@@ -4,7 +4,7 @@ conflicts:
   category: x11-misc
   description: ""
   license: ""
-  name: notify-osd
+  name: notification-daemon
   
   version: ""
 - 
@@ -18,7 +18,7 @@ conflicts:
   category: x11-misc
   description: ""
   license: ""
-  name: notification-daemon
+  name: notify-osd
   
   version: ""
 description: MATE Notification daemon
@@ -26,33 +26,12 @@ license: GPL-2
 name: mate-notification-daemon
 requires:
 - 
-  category: x11-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: gtk+
+  name: dbus
   
-  version: "3.22"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libintl
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libcanberra
-  
-  version: "0.4"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: atk
-  
-  version: ""
+  version: "1"
 - 
   category: x11-libs
   description: ""
@@ -61,12 +40,33 @@ requires:
   
   version: "0.7"
 - 
-  category: sys-apps
+  category: x11-libs
   description: ""
   license: ""
-  name: dbus
+  name: gtk+
   
-  version: "1"
+  version: "3.22"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: atk
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.50"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
 - 
   category: x11-libs
   description: ""
@@ -82,10 +82,17 @@ requires:
   
   version: "2.22"
 - 
-  category: x11-libs
+  category: media-libs
   description: ""
   license: ""
-  name: libX11
+  name: libcanberra
+  
+  version: "0.4"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libintl
   
   version: ""
 - 
@@ -95,13 +102,6 @@ requires:
   name: libwnck
   
   version: "3"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.50"
 uri: []
 use_flags:
 - ""

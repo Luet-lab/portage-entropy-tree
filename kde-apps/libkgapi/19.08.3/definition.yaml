@@ -1,23 +1,30 @@
 category: kde-apps
 conflicts:
 - 
-  category: <kde-apps
-  description: ""
-  license: ""
-  name: kdepim-runtime
-  
-  version: 18.07.80
-- 
   category: kde-apps
   description: ""
   license: ""
   name: kdepim-l10n
   
   version: ""
+- 
+  category: <kde-apps
+  description: ""
+  license: ""
+  name: kdepim-runtime
+  
+  version: 18.07.80
 description: Library for accessing Google calendar and contact resources
 license: LGPL-2.1+
 name: libkgapi
 requires:
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtgui
+  
+  version: 5.12.3
 - 
   category: dev-qt
   description: ""
@@ -29,14 +36,7 @@ requires:
   category: kde-frameworks
   description: ""
   license: ""
-  name: kio
-  
-  version: 5.60.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kcontacts
+  name: kcalendarcore
   
   version: 5.60.0
 - 
@@ -46,13 +46,6 @@ requires:
   name: kwindowsystem
   
   version: 5.60.0
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtgui
-  
-  version: 5.12.3
 - 
   category: dev-qt
   description: ""
@@ -85,7 +78,14 @@ requires:
   category: kde-frameworks
   description: ""
   license: ""
-  name: kcalendarcore
+  name: kcontacts
+  
+  version: 5.60.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kio
   
   version: 5.60.0
 uri: []

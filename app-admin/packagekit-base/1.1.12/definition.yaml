@@ -6,6 +6,34 @@ license: GPL-2
 name: packagekit-base
 requires:
 - 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: "0.114"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "213"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: dbus-glib
+  
+  version: "0.74"
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: ""
+- 
   category: dev-libs
   description: ""
   license: ""
@@ -20,27 +48,6 @@ requires:
   
   version: 1.3.0
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: gobject-introspection
-  
-  version: 0.9.9
-- 
-  category: app-shells
-  description: ""
-  license: ""
-  name: bash-completion
-  
-  version: "2"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: dbus-glib
-  
-  version: "0.74"
-- 
   category: sys-auth
   description: ""
   license: ""
@@ -48,12 +55,12 @@ requires:
   
   version: "229.4"
 - 
-  category: sys-apps
+  category: dev-libs
   description: ""
   license: ""
-  name: systemd
+  name: gobject-introspection
   
-  version: "213"
+  version: 0.9.9
 - 
   category: app-portage
   description: ""
@@ -69,12 +76,12 @@ requires:
   
   version: "2.2"
 - 
-  category: sys-auth
+  category: app-shells
   description: ""
   license: ""
-  name: consolekit
+  name: bash-completion
   
-  version: ""
+  version: "2"
 - 
   category: sys-apps
   description: ""
@@ -83,19 +90,12 @@ requires:
   
   version: "234"
 - 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
-  
-  version: ""
-- 
   category: sys-auth
   description: ""
   license: ""
-  name: polkit
+  name: consolekit
   
-  version: "0.114"
+  version: ""
 uri:
 - https://www.freedesktop.org/software/PackageKit/releases/PackageKit-1.1.12.tar.xz
 use_flags:

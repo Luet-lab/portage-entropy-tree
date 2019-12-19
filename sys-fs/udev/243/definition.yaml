@@ -1,12 +1,12 @@
 category: sys-fs
 conflicts:
 - 
-  category: sys-apps
+  category: <sys-libs
   description: ""
   license: ""
-  name: systemd
+  name: glibc
   
-  version: ""
+  version: "2.11"
 - 
   category: <sec-policy
   description: ""
@@ -15,13 +15,6 @@ conflicts:
   
   version: 2.20120725-r10
 - 
-  category: <sys-fs
-  description: ""
-  license: ""
-  name: lvm2
-  
-  version: 2.02.103
-- 
   category: sys-apps
   description: ""
   license: ""
@@ -29,44 +22,23 @@ conflicts:
   
   version: ""
 - 
-  category: <sys-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: glibc
+  name: systemd
   
-  version: "2.11"
+  version: ""
+- 
+  category: <sys-fs
+  description: ""
+  license: ""
+  name: lvm2
+  
+  version: 2.02.103
 description: Linux dynamic and persistent device naming support (aka userspace devfs)
 license: LGPL-2.1 MIT GPL-2
 name: udev
 requires:
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libcap
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: dialout
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: input
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: tape
-  
-  version: ""
 - 
   category: acct-group
   description: ""
@@ -78,23 +50,9 @@ requires:
   category: sys-apps
   description: ""
   license: ""
-  name: util-linux
+  name: kmod
   
-  version: "2.30"
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: kvm
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: acl
-  
-  version: ""
+  version: "16"
 - 
   category: acct-group
   description: ""
@@ -106,7 +64,21 @@ requires:
   category: acct-group
   description: ""
   license: ""
-  name: tty
+  name: kvm
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: render
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: audio
   
   version: ""
 - 
@@ -120,6 +92,13 @@ requires:
   category: acct-group
   description: ""
   license: ""
+  name: dialout
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
   name: lp
   
   version: ""
@@ -127,16 +106,37 @@ requires:
   category: acct-group
   description: ""
   license: ""
-  name: render
+  name: tty
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: disk
   
   version: ""
 - 
   category: sys-apps
   description: ""
   license: ""
-  name: kmod
+  name: util-linux
   
-  version: "16"
+  version: "2.30"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: acl
+  
+  version: ""
 - 
   category: sys-libs
   description: ""
@@ -148,14 +148,14 @@ requires:
   category: acct-group
   description: ""
   license: ""
-  name: audio
+  name: input
   
   version: ""
 - 
   category: acct-group
   description: ""
   license: ""
-  name: disk
+  name: tape
   
   version: ""
 uri:

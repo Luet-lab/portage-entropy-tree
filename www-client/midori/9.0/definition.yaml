@@ -5,12 +5,19 @@ license: LGPL-2.1+
 name: midori
 requires:
 - 
-  category: app-arch
+  category: x11-libs
   description: ""
   license: ""
-  name: libarchive
+  name: libnotify
   
-  version: ""
+  version: "0.7"
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gcr
+  
+  version: "3"
 - 
   category: dev-db
   description: ""
@@ -29,35 +36,14 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: json-glib
+  name: libpeas
   
-  version: "0.12"
+  version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
   name: libxml2
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: 3.12.0
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: gcr
-  
-  version: "3"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libpeas
   
   version: ""
 - 
@@ -67,6 +53,20 @@ requires:
   name: libsoup
   
   version: "2.38"
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: libarchive
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: json-glib
+  
+  version: "0.12"
 - 
   category: net-libs
   description: ""
@@ -78,9 +78,9 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libnotify
+  name: gtk+
   
-  version: "0.7"
+  version: 3.12.0
 uri:
 - https://github.com/midori-browser/core/releases/download/v9.0/midori-v9.0.tar.gz
 use_flags:

@@ -4,20 +4,6 @@ conflicts:
   category: sys-cluster
   description: ""
   license: ""
-  name: mpich
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-mpi
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
   name: mpiexec
   
   version: ""
@@ -28,24 +14,38 @@ mpi
   name: mpich2
   
   version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: mpich
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+mpi
+  
+  version: ""
 description: A high-performance message passing library (MPI)
 license: BSD
 name: openmpi
 requires:
 - 
-  category: virtual
+  category: sys-fabric
   description: ""
   license: ""
-  name: jre
+  name: ofed
   
-  version: "1.6"
+  version: ""
 - 
-  category: dev-libs
+  category: sys-cluster
   description: ""
   license: ""
-  name: libevent
+  name: slurm
   
-  version: 2.0.22
+  version: ""
 - 
   category: sys-libs
   description: ""
@@ -61,10 +61,24 @@ requires:
   
   version: 6.5.19-r1
 - 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: knem
+  
+  version: ""
+- 
   category: sys-fabric
   description: ""
   license: ""
-  name: ofed
+  name: infinipath-psm
+  
+  version: ""
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: librdmacm
   
   version: ""
 - 
@@ -82,38 +96,24 @@ requires:
   
   version: 2.0.2
 - 
-  category: sys-cluster
+  category: virtual
   description: ""
   license: ""
-  name: knem
+  name: jre
   
-  version: ""
+  version: "1.6"
 - 
-  category: sys-fabric
+  category: dev-libs
   description: ""
   license: ""
-  name: infinipath-psm
+  name: libevent
   
-  version: ""
+  version: 2.0.22
 - 
   category: sys-cluster
   description: ""
   license: ""
   name: torque
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: slurm
-  
-  version: ""
-- 
-  category: sys-fabric
-  description: ""
-  license: ""
-  name: librdmacm
   
   version: ""
 uri:

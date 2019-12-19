@@ -4,14 +4,14 @@ conflicts:
   category: <gnome-base
   description: ""
   license: ""
-  name: gdm
+  name: gnome-session
   
   version: 3.27.90
 - 
   category: <gnome-base
   description: ""
   license: ""
-  name: gnome-session
+  name: gdm
   
   version: 3.27.90
 description: Gnome Settings Daemon
@@ -19,10 +19,52 @@ license: GPL-2+ LGPL-2+
 name: gnome-settings-daemon
 requires:
 - 
+  category: media-libs
+  description: ""
+  license: ""
+  name: lcms
+  
+  version: "2.2"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libcanberra
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: geoclue
+  
+  version: 2.3.1
+- 
+  category: sys-power
+  description: ""
+  license: ""
+  name: upower
+  
+  version: "0.99"
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gnome-desktop
+  
+  version: 3.11.1
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: pulseaudio
+  
+  version: "2"
+- 
   category: x11-libs
   description: ""
   license: ""
-  name: libXi
+  name: libXext
   
   version: ""
 - 
@@ -33,38 +75,31 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: sci-geosciences
   description: ""
   license: ""
-  name: glib
+  name: geocode-glib
   
-  version: "2.56"
+  version: "3.10"
 - 
-  category: gnome-base
+  category: media-libs
   description: ""
   license: ""
-  name: gsettings-desktop-schemas
+  name: fontconfig
   
-  version: 3.27.90
+  version: ""
 - 
-  category: x11-misc
+  category: sys-apps
   description: ""
   license: ""
-  name: colord
+  name: systemd
   
-  version: 1.0.2
+  version: ""
 - 
-  category: app-misc
+  category: x11-libs
   description: ""
   license: ""
-  name: geoclue
-  
-  version: 2.3.1
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: wayland
+  name: libX11
   
   version: ""
 - 
@@ -75,26 +110,19 @@ requires:
   
   version: "0.7"
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nss
+  
+  version: 3.11.2
+- 
   category: x11-libs
   description: ""
   license: ""
-  name: pango
+  name: libnotify
   
-  version: 1.20.0
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: polkit
-  
-  version: "0.114"
-- 
-  category: sys-power
-  description: ""
-  license: ""
-  name: upower
-  
-  version: "0.99"
+  version: 0.7.3
 - 
   category: dev-libs
   description: ""
@@ -103,19 +131,47 @@ requires:
   
   version: ""
 - 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pango
+  
+  version: 1.20.0
+- 
   category: dev-libs
   description: ""
   license: ""
-  name: nss
+  name: glib
   
-  version: 3.11.2
+  version: "2.56"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXi
+  
+  version: ""
 - 
   category: gnome-base
   description: ""
   license: ""
-  name: dconf
+  name: gsettings-desktop-schemas
   
-  version: ""
+  version: 3.27.90
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgweather
+  
+  version: 3.9.5
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: "0.114"
 - 
   category: x11-libs
   description: ""
@@ -131,47 +187,26 @@ requires:
   
   version: "1.4"
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXext
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: ""
-- 
   category: media-libs
   description: ""
   license: ""
-  name: lcms
-  
-  version: "2.2"
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: pulseaudio
-  
-  version: "2"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
+  name: alsa-lib
   
   version: ""
 - 
-  category: sci-geosciences
+  category: x11-misc
   description: ""
   license: ""
-  name: geocode-glib
+  name: colord
   
-  version: "3.10"
+  version: 1.0.2
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: wayland
+  
+  version: ""
 - 
   category: net-misc
   description: ""
@@ -183,42 +218,7 @@ requires:
   category: gnome-base
   description: ""
   license: ""
-  name: gnome-desktop
-  
-  version: 3.11.1
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgweather
-  
-  version: 3.9.5
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libcanberra
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libnotify
-  
-  version: 0.7.3
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: alsa-lib
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: fontconfig
+  name: dconf
   
   version: ""
 uri:

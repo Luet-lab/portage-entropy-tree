@@ -5,45 +5,10 @@ license: LGPL-2.1+ GPL-2+ BSD ISC samba? ( GPL-3+ )
 name: mpv
 requires:
 - 
-  category: virtual
+  category: x11-libs
   description: ""
   license: ""
-  name: jack
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: ttf-fonts
-  
-  version: ""
-- 
-  category: net-fs
-  description: ""
-  license: ""
-  name: samba
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: shaderc
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-mplayer
-  
-  version: ""
-- 
-  category: app-i18n
-  description: ""
-  license: ""
-  name: uchardet
+  name: libdrm
   
   version: ""
 - 
@@ -54,6 +19,27 @@ requires:
   
   version: 1.0.0
 - 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libplacebo
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXrandr
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXdamage
+  
+  version: ""
+- 
   category: sys-libs
   description: ""
   license: ""
@@ -61,26 +47,40 @@ requires:
   
   version: ""
 - 
-  category: x11-drivers
+  category: app-arch
   description: ""
   license: ""
-  name: nvidia-drivers[X]
+  name: libarchive
   
-  version: ""
+  version: 3.0.0
 - 
   category: media-libs
   description: ""
   license: ""
-  name: mesa[egl,gbm(-)?,wayland(-)?]
+  name: lcms
+  
+  version: "2.6"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libvdpau
   
   version: ""
 - 
-  category: media-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libbluray
+  name: wayland
   
-  version: 0.3.0
+  version: 1.6.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: wayland-protocols
+  
+  version: "1.14"
 - 
   category: media-libs
   description: ""
@@ -89,26 +89,19 @@ requires:
   
   version: 4.2.0
 - 
-  category: media-libs
+  category: virtual
   description: ""
   license: ""
-  name: libsdl2
+  name: jpeg
   
   version: ""
 - 
   category: virtual
   description: ""
   license: ""
-  name: libiconv
+  name: ttf-fonts
   
   version: ""
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: lua
-  
-  version: "5.3"
 - 
   category: x11-libs
   description: ""
@@ -120,91 +113,7 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libvdpau
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: libarchive
-  
-  version: 3.0.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: wayland-protocols
-  
-  version: "1.14"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXdamage
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: zimg
-  
-  version: 2.9.2
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libplacebo
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: lcms
-  
-  version: "2.6"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: rubberband
-  
-  version: 1.8.0
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jpeg
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libass
-  
-  version: 0.12.1
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libcaca-0.99_beta18
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: raspberrypi-userland
-  
-  version: 0_pre20160305-r1
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXext
+  name: libXv
   
   version: ""
 - 
@@ -215,26 +124,19 @@ requires:
   
   version: 1.0.18
 - 
-  category: x11-libs
+  category: virtual
   description: ""
   license: ""
-  name: libXScrnSaver
+  name: libiconv
   
   version: ""
 - 
-  category: x11-libs
+  category: media-libs
   description: ""
   license: ""
-  name: libXv
+  name: libass
   
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxkbcommon
-  
-  version: 0.3.0
+  version: 0.12.1
 - 
   category: media-libs
   description: ""
@@ -250,12 +152,19 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: app-i18n
   description: ""
   license: ""
-  name: opengl
+  name: uchardet
   
   version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: lua
+  
+  version: "5.3"
 - 
   category: dev-lang
   description: ""
@@ -267,7 +176,42 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libdrm
+  name: libXext
+  
+  version: ""
+- 
+  category: x11-drivers
+  description: ""
+  license: ""
+  name: nvidia-drivers[X]
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: shaderc
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: opengl
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libbluray
+  
+  version: 0.3.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libcdio-paranoia
   
   version: ""
 - 
@@ -278,12 +222,61 @@ requires:
   
   version: 4.1.0
 - 
-  category: dev-libs
+  category: media-libs
   description: ""
   license: ""
-  name: wayland
+  name: mesa[egl,gbm(-)?,wayland(-)?]
   
-  version: 1.6.0
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jack
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: raspberrypi-userland
+  
+  version: 0_pre20160305-r1
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: zimg
+  
+  version: 2.9.2
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-mplayer
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libcaca-0.99_beta18
+  
+  version: ""
+- 
+  category: net-fs
+  description: ""
+  license: ""
+  name: samba
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxkbcommon
+  
+  version: 0.3.0
 - 
   category: x11-libs
   description: ""
@@ -292,24 +285,31 @@ requires:
   
   version: ""
 - 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libsdl2
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: rubberband
+  
+  version: 1.8.0
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXScrnSaver
+  
+  version: ""
+- 
   category: x11-libs
   description: ""
   license: ""
   name: libXinerama
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXrandr
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libcdio-paranoia
   
   version: ""
 uri:

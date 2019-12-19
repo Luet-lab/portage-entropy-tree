@@ -8,30 +8,9 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXrandr
+  name: libXcomposite
   
-  version: "1.5"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libinput
-  
-  version: "1.4"
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: elogind
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libdrm
-  
-  version: ""
+  version: "0.2"
 - 
   category: x11-libs
   description: ""
@@ -43,7 +22,35 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXinerama
+  name: libXi
+  
+  version: 1.7.4
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgudev
+  
+  version: "232"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.53.2
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXcomposite
+  
+  version: "0.4"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxcb
   
   version: ""
 - 
@@ -57,72 +64,23 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libgudev
+  name: wayland
   
-  version: "232"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: mesa
-  
-  version: "10.3"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: cairo-1.14[X]
-  
-  version: ""
+  version: 1.13.0
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: glib
+  name: wayland-protocols
   
-  version: 2.53.2
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: startup-notification
-  
-  version: "0.7"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXcomposite
-  
-  version: "0.2"
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gnome-desktop
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXrender
-  
-  version: ""
-- 
-  category: x11-base
-  description: ""
-  license: ""
-  name: xorg-server
-  
-  version: ""
+  version: "1.16"
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: atk
+  name: json-glib
   
-  version: 2.5.3
+  version: 0.12.0
 - 
   category: gnome-base
   description: ""
@@ -134,23 +92,23 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXcomposite
-  
-  version: "0.4"
-- 
-  category: gnome-extra
-  description: ""
-  license: ""
-  name: zenity
+  name: libXinerama
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: wayland-protocols
+  name: gobject-introspection
   
-  version: "1.16"
+  version: "1.42"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libinput
+  
+  version: "1.4"
 - 
   category: virtual
   description: ""
@@ -158,6 +116,20 @@ requires:
   name: libudev
   
   version: "136"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: atk
+  
+  version: 2.5.3
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo-1.14[X]
+  
+  version: ""
 - 
   category: x11-libs
   description: ""
@@ -169,9 +141,16 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXi
+  name: libXrandr
   
-  version: 1.7.4
+  version: "1.5"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXrender
+  
+  version: ""
 - 
   category: media-libs
   description: ""
@@ -183,16 +162,37 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXext
+  name: libICE
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libxkbfile
+  name: libXdamage
   
   version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: elogind
+  
+  version: ""
+- 
+  category: x11-base
+  description: ""
+  license: ""
+  name: xorg-server
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: startup-notification
+  
+  version: "0.7"
 - 
   category: dev-libs
   description: ""
@@ -201,26 +201,19 @@ requires:
   
   version: "0.13"
 - 
-  category: dev-libs
+  category: media-libs
   description: ""
   license: ""
-  name: wayland
+  name: mesa
   
-  version: 1.13.0
+  version: "10.3"
 - 
-  category: dev-libs
+  category: gnome-base
   description: ""
   license: ""
-  name: gobject-introspection
+  name: gnome-desktop
   
-  version: "1.42"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gdk-pixbuf
-  
-  version: "2"
+  version: ""
 - 
   category: x11-libs
   description: ""
@@ -239,35 +232,35 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXdamage
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxcb
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
   name: libxkbcommon-0.4.3[X]
   
   version: ""
 - 
-  category: dev-libs
+  category: gnome-extra
   description: ""
   license: ""
-  name: json-glib
+  name: zenity
   
-  version: 0.12.0
+  version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libICE
+  name: gdk-pixbuf
+  
+  version: "2"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXext
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxkbfile
   
   version: ""
 - 
@@ -275,6 +268,13 @@ requires:
   description: ""
   license: ""
   name: systemd
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libdrm
   
   version: ""
 uri:

@@ -12,31 +12,10 @@ license: Apache-2.0 BSD BSD-2 CC-BY-SA-4.0 ISC MIT MPL-2.0
 name: cri-o
 requires:
 - 
-  category: sys-apps
+  category: net-firewall
   description: ""
   license: ""
-  name: iproute2
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libseccomp
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: lvm2
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libassuan
+  name: iptables
   
   version: ""
 - 
@@ -47,10 +26,10 @@ requires:
   
   version: ""
 - 
-  category: net-firewall
+  category: sys-libs
   description: ""
   license: ""
-  name: conntrack-tools
+  name: libseccomp
   
   version: ""
 - 
@@ -61,10 +40,17 @@ requires:
   
   version: ""
 - 
-  category: net-firewall
+  category: net-misc
   description: ""
   license: ""
-  name: iptables
+  name: cni-plugins
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: iproute2
   
   version: ""
 - 
@@ -75,10 +61,24 @@ requires:
   
   version: ""
 - 
-  category: net-misc
+  category: dev-libs
   description: ""
   license: ""
-  name: cni-plugins
+  name: libassuan
+  
+  version: ""
+- 
+  category: app-emulation
+  description: ""
+  license: ""
+  name: runc
+  
+  version: ""
+- 
+  category: net-firewall
+  description: ""
+  license: ""
+  name: conntrack-tools
   
   version: ""
 - 
@@ -86,6 +86,20 @@ requires:
   description: ""
   license: ""
   name: socat
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: btrfs-progs
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lvm2
   
   version: ""
 - 
@@ -100,20 +114,6 @@ requires:
   description: ""
   license: ""
   name: gpgme
-  
-  version: ""
-- 
-  category: app-emulation
-  description: ""
-  license: ""
-  name: runc
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: btrfs-progs
   
   version: ""
 uri:

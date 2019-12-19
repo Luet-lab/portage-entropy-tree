@@ -1,6 +1,20 @@
 category: sys-fs
 conflicts:
 - 
+  category: <sys-kernel
+  description: ""
+  license: ""
+  name: genkernel-next
+  
+  version: "67"
+- 
+  category: <sys-kernel
+  description: ""
+  license: ""
+  name: bliss-initramfs
+  
+  version: 7.1.0
+- 
   category: =sys-apps
   description: ""
   license: ""
@@ -25,9 +39,9 @@ conflicts:
   category: <sys-kernel
   description: ""
   license: ""
-  name: genkernel-next
+  name: dracut
   
-  version: "67"
+  version: 044-r1
 - 
   category: <sys-boot
   description: ""
@@ -35,20 +49,6 @@ conflicts:
   name: grub
   
   version: 2.00-r2
-- 
-  category: <sys-kernel
-  description: ""
-  license: ""
-  name: bliss-initramfs
-  
-  version: 7.1.0
-- 
-  category: <sys-kernel
-  description: ""
-  license: ""
-  name: dracut
-  
-  version: 044-r1
 description: Userland utilities for ZFS Linux kernel module
 license: BSD-2 CDDL MIT
 name: zfs
@@ -57,28 +57,7 @@ requires:
   category: sys-fs
   description: ""
   license: ""
-  name: zfs-kmod
-  
-  version: 0.7.13
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
-  
-  version: ""
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: bc
-  
-  version: ""
-- 
-  category: sys-block
-  description: ""
-  license: ""
-  name: parted
+  name: lsscsi
   
   version: ""
 - 
@@ -89,13 +68,6 @@ requires:
   
   version: ""
 - 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libtirpc
-  
-  version: ""
-- 
   category: virtual
   description: ""
   license: ""
@@ -103,10 +75,52 @@ requires:
   
   version: ""
 - 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: ""
+- 
+  category: sys-block
+  description: ""
+  license: ""
+  name: parted
+  
+  version: ""
+- 
   category: sys-fs
   description: ""
   license: ""
-  name: lsscsi
+  name: udev-init-scripts
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: pax-utils
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libtirpc
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: mdadm
   
   version: ""
 - 
@@ -120,21 +134,14 @@ requires:
   category: sys-fs
   description: ""
   license: ""
-  name: udev-init-scripts
+  name: zfs-kmod
   
-  version: ""
+  version: 0.7.13
 - 
-  category: virtual
+  category: sys-devel
   description: ""
   license: ""
-  name: udev
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: mdadm
+  name: bc
   
   version: ""
 - 
@@ -142,13 +149,6 @@ requires:
   description: ""
   license: ""
   name: cpio
-  
-  version: ""
-- 
-  category: app-misc
-  description: ""
-  license: ""
-  name: pax-utils
   
   version: ""
 uri:

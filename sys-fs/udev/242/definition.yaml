@@ -1,6 +1,20 @@
 category: sys-fs
 conflicts:
 - 
+  category: <sys-libs
+  description: ""
+  license: ""
+  name: glibc
+  
+  version: "2.11"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: gentoo-systemd-integration
+  
+  version: ""
+- 
   category: <sec-policy
   description: ""
   license: ""
@@ -18,27 +32,20 @@ conflicts:
   category: sys-apps
   description: ""
   license: ""
-  name: gentoo-systemd-integration
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
   name: systemd
   
   version: ""
-- 
-  category: <sys-libs
-  description: ""
-  license: ""
-  name: glibc
-  
-  version: "2.11"
 description: Linux dynamic and persistent device naming support (aka userspace devfs)
 license: LGPL-2.1 MIT GPL-2
 name: udev
 requires:
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: kmod
+  
+  version: "16"
 - 
   category: acct-group
   description: ""
@@ -57,14 +64,14 @@ requires:
   category: acct-group
   description: ""
   license: ""
-  name: input
+  name: kvm
   
   version: ""
 - 
   category: acct-group
   description: ""
   license: ""
-  name: tape
+  name: render
   
   version: ""
 - 
@@ -72,13 +79,6 @@ requires:
   description: ""
   license: ""
   name: libcap
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: acl
   
   version: ""
 - 
@@ -92,7 +92,14 @@ requires:
   category: acct-group
   description: ""
   license: ""
-  name: dialout
+  name: tape
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: acl
   
   version: ""
 - 
@@ -100,6 +107,41 @@ requires:
   description: ""
   license: ""
   name: audio
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: "2.30"
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: cdrom
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: dialout
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: input
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: lp
   
   version: ""
 - 
@@ -116,48 +158,6 @@ requires:
   name: kmem
   
   version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: kvm
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: lp
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: cdrom
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: render
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
-  
-  version: "2.30"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: kmod
-  
-  version: "16"
 uri:
 - https://github.com/systemd/systemd/archive/v242/systemd-242.tar.gz
 use_flags:

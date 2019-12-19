@@ -1,12 +1,12 @@
 category: sys-kernel
 conflicts:
 - 
-  category: <sys-apps
+  category: sys-fs
   description: ""
   license: ""
-  name: openrc
+  name: eudev
   
-  version: 0.9.9
+  version: ""
 - 
   category: sys-kernel
   description: ""
@@ -15,42 +15,21 @@ conflicts:
   
   version: ""
 - 
-  category: sys-fs
+  category: <sys-apps
   description: ""
   license: ""
-  name: eudev
+  name: openrc
   
-  version: ""
+  version: 0.9.9
 description: Gentoo automatic kernel building scripts, reloaded
 license: GPL-2
 name: genkernel-next
 requires:
 - 
-  category: sys-libs
+  category: sys-block
   description: ""
   license: ""
-  name: libselinux
-  
-  version: ""
-- 
-  category: sys-boot
-  description: ""
-  license: ""
-  name: plymouth
-  
-  version: ""
-- 
-  category: app-portage
-  description: ""
-  license: ""
-  name: portage-utils
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
+  name: thin-provisioning-tools
   
   version: ""
 - 
@@ -68,24 +47,10 @@ requires:
   
   version: 1.0.0_rc16
 - 
-  category: app-arch
+  category: app-crypt
   description: ""
   license: ""
-  name: cpio
-  
-  version: ""
-- 
-  category: app-misc
-  description: ""
-  license: ""
-  name: pax-utils
-  
-  version: "0.6"
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: e2fsprogs
+  name: gnupg
   
   version: ""
 - 
@@ -96,6 +61,13 @@ requires:
   
   version: ""
 - 
+  category: app-portage
+  description: ""
+  license: ""
+  name: portage-utils
+  
+  version: ""
+- 
   category: sys-fs
   description: ""
   license: ""
@@ -103,10 +75,10 @@ requires:
   
   version: ""
 - 
-  category: sys-block
+  category: sys-apps
   description: ""
   license: ""
-  name: thin-provisioning-tools
+  name: util-linux
   
   version: ""
 - 
@@ -124,12 +96,40 @@ requires:
   
   version: ""
 - 
-  category: app-crypt
+  category: app-arch
   description: ""
   license: ""
-  name: gnupg
+  name: cpio
   
   version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: e2fsprogs
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: ""
+- 
+  category: sys-boot
+  description: ""
+  license: ""
+  name: plymouth
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: pax-utils
+  
+  version: "0.6"
 uri:
 - https://github.com/Sabayon/genkernel-next/archive/v70.tar.gz -> genkernel-next-70.tar.gz
 use_flags:

@@ -5,34 +5,6 @@ license: Apache-2.0
 name: docker
 requires:
 - 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
-  
-  version: 3.7.9
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libapparmor
-  
-  version: ""
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: procps
-  
-  version: ""
-- 
-  category: dev-vcs
-  description: ""
-  license: ""
-  name: git
-  
-  version: "1.7"
-- 
   category: app-arch
   description: ""
   license: ""
@@ -50,9 +22,16 @@ requires:
   category: app-emulation
   description: ""
   license: ""
-  name: containerd
+  name: docker-proxy
   
-  version: 1.2.10
+  version: 0.8.0_p20191011
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: 3.7.9
 - 
   category: sys-fs
   description: ""
@@ -68,6 +47,27 @@ requires:
   
   version: 2.2.1
 - 
+  category: sys-process
+  description: ""
+  license: ""
+  name: procps
+  
+  version: ""
+- 
+  category: dev-vcs
+  description: ""
+  license: ""
+  name: git
+  
+  version: "1.7"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libapparmor
+  
+  version: ""
+- 
   category: net-firewall
   description: ""
   license: ""
@@ -78,9 +78,9 @@ requires:
   category: app-emulation
   description: ""
   license: ""
-  name: docker-proxy
+  name: containerd
   
-  version: 0.8.0_p20191011
+  version: 1.2.10
 - 
   category: sys-process
   description: ""

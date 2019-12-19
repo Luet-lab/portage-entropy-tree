@@ -4,14 +4,14 @@ conflicts:
   category: net-misc
   description: ""
   license: ""
-  name: mDNSResponder
+  name: howl
   
   version: ""
 - 
   category: net-misc
   description: ""
   license: ""
-  name: howl
+  name: mDNSResponder
   
   version: ""
 description: System which facilitates service discovery on a local network
@@ -19,7 +19,21 @@ license: LGPL-2.1
 name: avahi
 requires:
 - 
-  category: acct-group
+  category: dev-libs
+  description: ""
+  license: ""
+  name: expat
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: twisted
+  
+  version: 16.0.0
+- 
+  category: acct-user
   description: ""
   license: ""
   name: avahi
@@ -29,28 +43,7 @@ requires:
   category: acct-group
   description: ""
   license: ""
-  name: netdev
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: gobject-introspection
-  
-  version: ""
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: mono
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: expat
+  name: avahi-autoipd
   
   version: ""
 - 
@@ -68,6 +61,13 @@ requires:
   
   version: ""
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gobject-introspection
+  
+  version: ""
+- 
   category: dev-dotnet
   description: ""
   license: ""
@@ -75,56 +75,14 @@ requires:
   
   version: ""
 - 
-  category: acct-user
+  category: acct-group
   description: ""
   license: ""
   name: avahi
   
   version: ""
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: gdbm
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtcore
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: twisted
-  
-  version: 16.0.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: dbus-python
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pygobject
-  
-  version: ""
-- 
   category: acct-user
-  description: ""
-  license: ""
-  name: avahi-autoipd
-  
-  version: ""
-- 
-  category: acct-group
   description: ""
   license: ""
   name: avahi-autoipd
@@ -138,10 +96,52 @@ requires:
   
   version: ""
 - 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtcore
+  
+  version: ""
+- 
   category: sys-apps
   description: ""
   license: ""
   name: dbus
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: mono
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pygobject
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-avahi
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: netdev
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: gdbm
   
   version: ""
 - 
@@ -152,10 +152,10 @@ requires:
   
   version: ""
 - 
-  category: sec-policy
+  category: dev-python
   description: ""
   license: ""
-  name: selinux-avahi
+  name: dbus-python
   
   version: ""
 uri:

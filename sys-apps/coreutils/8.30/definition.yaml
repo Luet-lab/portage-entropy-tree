@@ -1,6 +1,27 @@
 category: sys-apps
 conflicts:
 - 
+  category: sys-process
+  description: ""
+  license: ""
+  name: procps
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: stat
+  
+  version: ""
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: base64
+  
+  version: ""
+- 
   category: <app-forensics
   description: ""
   license: ""
@@ -11,7 +32,7 @@ conflicts:
   category: sys-apps
   description: ""
   license: ""
-  name: util-linux
+  name: net-tools
   
   version: ""
 - 
@@ -29,38 +50,17 @@ conflicts:
   
   version: "2.13"
 - 
-  category: sys-apps
+  category: <sys-apps
   description: ""
   license: ""
-  name: stat
+  name: sandbox
   
-  version: ""
+  version: 2.10-r4
 - 
   category: sys-apps
   description: ""
   license: ""
   name: mktemp
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: net-tools
-  
-  version: ""
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: base64
-  
-  version: ""
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: procps
   
   version: ""
 - 
@@ -71,16 +71,37 @@ conflicts:
   
   version: 2.0.3-r4
 - 
-  category: <sys-apps
+  category: sys-apps
   description: ""
   license: ""
-  name: sandbox
+  name: util-linux
   
-  version: 2.10-r4
+  version: ""
 description: Standard GNU utilities (chmod, cp, dd, ls, sort, tr, head, wc, who,...)
 license: GPL-3
 name: coreutils
 requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gmp
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libintl
+  
+  version: ""
 - 
   category: sys-apps
   description: ""
@@ -96,31 +117,10 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: gmp
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libcap
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
   name: libselinux
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libintl
   
   version: ""
 uri:

@@ -5,27 +5,6 @@ license: MIT CC-BY-SA-3.0
 name: weston
 requires:
 - 
-  category: net-misc
-  description: ""
-  license: ""
-  name: freerdp
-  
-  version: 2.0.0_rc2
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: pambase
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libinput
-  
-  version: 0.8.0
-- 
   category: dev-libs
   description: ""
   license: ""
@@ -36,28 +15,28 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libdrm
+  name: pango
   
-  version: 2.4.68
+  version: ""
 - 
-  category: x11-misc
+  category: x11-libs
   description: ""
   license: ""
-  name: colord
+  name: libX11
   
-  version: 0.1.27
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libinput
+  
+  version: 0.8.0
 - 
   category: media-libs
   description: ""
   license: ""
-  name: mesa
-  
-  version: ""
-- 
-  category: x11-base
-  description: ""
-  license: ""
-  name: xorg-server
+  name: lcms
   
   version: ""
 - 
@@ -71,23 +50,30 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libxkbcommon
-  
-  version: 0.5.0
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus
-  
-  version: "1.6"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: cairo
+  name: libXcursor
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: wayland
+  
+  version: 1.17.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libpng
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: freerdp
+  
+  version: 2.0.0_rc2
 - 
   category: sys-apps
   description: ""
@@ -103,12 +89,96 @@ requires:
   
   version: "1.9"
 - 
-  category: dev-libs
+  category: x11-base
   description: ""
   license: ""
-  name: wayland
+  name: xorg-server
   
-  version: 1.17.0
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pixman
+  
+  version: 0.25.2
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: mesa
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: pambase
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gst-plugins-base
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo
+  
+  version: 1.11.3
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libdrm
+  
+  version: 2.4.68
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: xkeyboard-config
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: "136"
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: pipewire
+  
+  version: "0.2"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jpeg
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxkbcommon
+  
+  version: 0.5.0
 - 
   category: media-libs
   description: ""
@@ -124,6 +194,13 @@ requires:
   
   version: 1.1.0
 - 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: colord
+  
+  version: 0.1.27
+- 
   category: media-libs
   description: ""
   license: ""
@@ -131,89 +208,12 @@ requires:
   
   version: ""
 - 
-  category: media-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: gst-plugins-base
+  name: dbus
   
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: cairo
-  
-  version: 1.11.3
-- 
-  category: x11-misc
-  description: ""
-  license: ""
-  name: xkeyboard-config
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pango
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libpng
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: udev
-  
-  version: "136"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pixman
-  
-  version: 0.25.2
-- 
-  category: media-video
-  description: ""
-  license: ""
-  name: pipewire
-  
-  version: "0.2"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXcursor
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: lcms
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jpeg
-  
-  version: ""
+  version: "1.6"
 uri:
 - https://wayland.freedesktop.org/releases/weston-7.0.0.tar.xz
 use_flags:

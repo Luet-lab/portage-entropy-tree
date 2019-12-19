@@ -5,12 +5,19 @@ license: GPL-3+
 name: gnome-flashback
 requires:
 - 
+  category: sys-power
+  description: ""
+  license: ""
+  name: upower
+  
+  version: 0.99.0
+- 
   category: x11-libs
   description: ""
   license: ""
-  name: gtk+
+  name: libXext
   
-  version: 3.22.0
+  version: ""
 - 
   category: x11-libs
   description: ""
@@ -19,19 +26,40 @@ requires:
   
   version: ""
 - 
-  category: media-sound
+  category: x11-libs
   description: ""
   license: ""
-  name: pulseaudio
+  name: libxcb
   
   version: ""
+- 
+  category: net-wireless
+  description: ""
+  license: ""
+  name: gnome-bluetooth
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXi
+  
+  version: 1.6.0
 - 
   category: gnome-base
   description: ""
   license: ""
-  name: gnome-desktop
+  name: gnome-panel
   
-  version: 3.12.0
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: 3.22.0
 - 
   category: media-libs
   description: ""
@@ -50,14 +78,14 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXrandr
+  name: libX11
   
-  version: 1.5.0
+  version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXext
+  name: libxkbfile
   
   version: ""
 - 
@@ -75,10 +103,45 @@ requires:
   
   version: ""
 - 
+  category: media-sound
+  description: ""
+  license: ""
+  name: pulseaudio
+  
+  version: ""
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gnome-desktop
+  
+  version: 3.12.0
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gsettings-desktop-schemas
+  
+  version: 3.24.0
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: "0.97"
+- 
   category: x11-wm
   description: ""
   license: ""
   name: metacity
+  
+  version: ""
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gnome-settings-daemon
   
   version: ""
 - 
@@ -96,75 +159,12 @@ requires:
   
   version: 1.5.2
 - 
-  category: sys-power
-  description: ""
-  license: ""
-  name: upower
-  
-  version: 0.99.0
-- 
   category: x11-libs
   description: ""
   license: ""
-  name: libxcb
+  name: libXrandr
   
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: net-wireless
-  description: ""
-  license: ""
-  name: gnome-bluetooth
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxkbfile
-  
-  version: ""
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gnome-settings-daemon
-  
-  version: ""
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gsettings-desktop-schemas
-  
-  version: 3.24.0
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: polkit
-  
-  version: "0.97"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXi
-  
-  version: 1.6.0
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gnome-panel
-  
-  version: ""
+  version: 1.5.0
 uri: []
 use_flags:
 - ""
