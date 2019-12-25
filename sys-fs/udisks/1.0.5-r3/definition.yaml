@@ -5,27 +5,6 @@ license: GPL-2
 name: udisks
 requires:
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.30"
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: polkit
-  
-  version: "0.110"
-- 
-  category: sys-block
-  description: ""
-  license: ""
-  name: parted
-  
-  version: "3"
-- 
   category: sys-fs
   description: ""
   license: ""
@@ -40,10 +19,10 @@ requires:
   
   version: 2.02.183
 - 
-  category: sec-policy
+  category: net-dns
   description: ""
   license: ""
-  name: selinux-devicekit
+  name: avahi
   
   version: ""
 - 
@@ -57,9 +36,16 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libatasmart
+  name: glib
   
-  version: "0.19"
+  version: "2.30"
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: "0.110"
 - 
   category: dev-libs
   description: ""
@@ -82,6 +68,27 @@ requires:
   
   version: ""
 - 
+  category: sys-block
+  description: ""
+  license: ""
+  name: parted
+  
+  version: "3"
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-devicekit
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: 2.20.1-r2
+- 
   category: virtual
   description: ""
   license: ""
@@ -89,12 +96,12 @@ requires:
   
   version: ""
 - 
-  category: net-dns
+  category: dev-libs
   description: ""
   license: ""
-  name: avahi
+  name: libatasmart
   
-  version: ""
+  version: "0.19"
 - 
   category: sys-apps
   description: ""
@@ -109,13 +116,6 @@ requires:
   name: sg3_utils
   
   version: 1.27.20090411
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
-  
-  version: 2.20.1-r2
 uri:
 - https://hal.freedesktop.org/releases/udisks-1.0.5.tar.gz
 use_flags:

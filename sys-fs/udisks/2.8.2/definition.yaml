@@ -5,6 +5,27 @@ license: LGPL-2+ GPL-2+
 name: udisks
 requires:
 - 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: "2.30"
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-devicekit
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "209"
+- 
   category: dev-libs
   description: ""
   license: ""
@@ -19,19 +40,12 @@ requires:
   
   version: ""
 - 
-  category: sys-auth
+  category: virtual
   description: ""
   license: ""
-  name: elogind
+  name: acl
   
-  version: "219"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
-  
-  version: "2.30"
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -40,33 +54,19 @@ requires:
   
   version: "1.30"
 - 
-  category: sys-fs
+  category: sys-block
   description: ""
   license: ""
-  name: lvm2
+  name: parted
+  
+  version: "3"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: eject
   
   version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: "209"
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-devicekit
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libatasmart
-  
-  version: "0.19"
 - 
   category: dev-libs
   description: ""
@@ -82,24 +82,24 @@ requires:
   
   version: "0.110"
 - 
-  category: virtual
+  category: sys-auth
   description: ""
   license: ""
-  name: acl
+  name: elogind
   
-  version: ""
+  version: "219"
 - 
-  category: sys-block
+  category: dev-libs
   description: ""
   license: ""
-  name: parted
+  name: libatasmart
   
-  version: "3"
+  version: "0.19"
 - 
-  category: virtual
+  category: sys-fs
   description: ""
   license: ""
-  name: eject
+  name: lvm2
   
   version: ""
 uri:

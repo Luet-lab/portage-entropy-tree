@@ -5,40 +5,12 @@ license: GPL-2
 name: labplot
 requires:
 - 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: ki18n
-  
-  version: 5.60.0
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: gsl
-  
-  version: "1.15"
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: libcerf
-  
-  version: ""
-- 
   category: dev-qt
   description: ""
   license: ""
-  name: qtprintsupport
+  name: qtsql
   
   version: 5.12.3
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kcompletion
-  
-  version: 5.60.0
 - 
   category: kde-frameworks
   description: ""
@@ -50,23 +22,16 @@ requires:
   category: kde-frameworks
   description: ""
   license: ""
-  name: knewstuff
+  name: kconfigwidgets
   
   version: 5.60.0
 - 
   category: kde-frameworks
   description: ""
   license: ""
-  name: ktextwidgets
+  name: kcrash
   
   version: 5.60.0
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: cfitsio
-  
-  version: ""
 - 
   category: sys-libs
   description: ""
@@ -78,6 +43,13 @@ requires:
   category: dev-qt
   description: ""
   license: ""
+  name: qtprintsupport
+  
+  version: 5.12.3
+- 
+  category: dev-qt
+  description: ""
+  license: ""
   name: qtserialport
   
   version: 5.12.3
@@ -85,7 +57,7 @@ requires:
   category: kde-frameworks
   description: ""
   license: ""
-  name: karchive
+  name: kio
   
   version: 5.60.0
 - 
@@ -96,33 +68,54 @@ requires:
   
   version: 19.08.0
 - 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kservice
-  
-  version: 5.60.0
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtconcurrent
-  
-  version: 5.12.3
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kiconthemes
-  
-  version: 5.60.0
-- 
   category: dev-qt
   description: ""
   license: ""
   name: qtsvg
   
   version: 5.12.3
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: ki18n
+  
+  version: 5.60.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: syntax-highlighting
+  
+  version: 5.60.0
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: gsl
+  
+  version: "1.15"
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtwidgets
+  
+  version: 5.12.3
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: ktextwidgets
+  
+  version: 5.60.0
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: fftw
+  
+  version: ""
 - 
   category: sci-libs
   description: ""
@@ -138,59 +131,17 @@ requires:
   
   version: ""
 - 
-  category: app-arch
-  description: ""
-  license: ""
-  name: lz4
-  
-  version: ""
-- 
   category: dev-qt
   description: ""
   license: ""
-  name: qtnetwork
-  
-  version: 5.12.3
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtsql
+  name: qtconcurrent
   
   version: 5.12.3
 - 
   category: kde-frameworks
   description: ""
   license: ""
-  name: kio
-  
-  version: 5.60.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kwidgetsaddons
-  
-  version: 5.60.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kconfigwidgets
-  
-  version: 5.60.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kcoreaddons
-  
-  version: 5.60.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kcrash
+  name: kiconthemes
   
   version: 5.60.0
 - 
@@ -204,7 +155,21 @@ requires:
   category: kde-frameworks
   description: ""
   license: ""
-  name: syntax-highlighting
+  name: kservice
+  
+  version: 5.60.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kcoreaddons
+  
+  version: 5.60.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: knewstuff
   
   version: 5.60.0
 - 
@@ -214,6 +179,48 @@ requires:
   name: kparts
   
   version: 5.60.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: karchive
+  
+  version: 5.60.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kcompletion
+  
+  version: 5.60.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kwidgetsaddons
+  
+  version: 5.60.0
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: cfitsio
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: libcerf
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: lz4
+  
+  version: ""
 - 
   category: dev-qt
   description: ""
@@ -225,16 +232,9 @@ requires:
   category: dev-qt
   description: ""
   license: ""
-  name: qtwidgets
+  name: qtnetwork
   
   version: 5.12.3
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: fftw
-  
-  version: ""
 uri: []
 use_flags:
 - cantor

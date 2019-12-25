@@ -6,52 +6,24 @@ license: "PHP-3.01\n\tBSD\n\tZend-2.0\n\tbcmath? ( LGPL-2.1+ )\n\tfpm? ( BSD-2 )
 name: php
 requires:
 - 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: acl
+  
+  version: ""
+- 
   category: sys-libs
   description: ""
   license: ""
-  name: readline
+  name: db
   
   version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: aspell
-  
-  version: "0.50"
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
-  
-  version: 3.7.6.3
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libmcrypt
-  
-  version: "2.4"
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: curl
-  
-  version: 7.10.5
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: icu
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: krb5
+  name: gmp
   
   version: ""
 - 
@@ -62,24 +34,80 @@ requires:
   
   version: ""
 - 
-  category: sec-policy
+  category: dev-db
   description: ""
   license: ""
-  name: selinux-phpfpm
+  name: sqlite
+  
+  version: 3.7.6.3
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
+  
+  version: "2"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jpeg
   
   version: ""
 - 
-  category: sys-apps
+  category: app-text
   description: ""
   license: ""
-  name: systemd
+  name: enchant
   
   version: ""
 - 
-  category: sys-apps
+  category: net-analyzer
   description: ""
   license: ""
-  name: acl
+  name: net-snmp
+  
+  version: "5.2"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: t1lib
+  
+  version: 5.0.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpcre
+  
+  version: "8.32"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libmcrypt
+  
+  version: "2.4"
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: postgresql
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
   
   version: ""
 - 
@@ -93,28 +121,112 @@ requires:
   category: dev-db
   description: ""
   license: ""
-  name: unixODBC
-  
-  version: 1.8.13
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: freetype
-  
-  version: "2"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: t1lib
-  
-  version: 5.0.0
-- 
-  category: dev-db
-  description: ""
-  license: ""
   name: libiodbc
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: cyrus-sasl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libvpx
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXpm
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxslt
+  
+  version: ""
+- 
+  category: www-servers
+  description: ""
+  license: ""
+  name: apache[apache2_modules_unixd(+),threads=]
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
+  
+  version: 7.10.5
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libiconv
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: recode
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: htmltidy
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: lcov
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: icu
+  
+  version: ""
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: gettext
   
   version: ""
 - 
@@ -132,10 +244,17 @@ requires:
   
   version: 2.6.8
 - 
-  category: media-libs
+  category: sec-policy
   description: ""
   license: ""
-  name: libvpx
+  name: selinux-phpfpm
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: firebird
   
   version: ""
 - 
@@ -149,49 +268,7 @@ requires:
   category: virtual
   description: ""
   license: ""
-  name: libiconv
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mysql-connector-c
-  
-  version: "8.0"
-- 
-  category: www-servers
-  description: ""
-  license: ""
-  name: apache[apache2_modules_unixd(+),threads=]
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: db
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libpng
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: enchant
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: firebird
+  name: imap-c-client-2[kerberos=,ssl=]
   
   version: ""
 - 
@@ -205,16 +282,9 @@ requires:
   category: app-text
   description: ""
   license: ""
-  name: recode
+  name: aspell
   
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: ""
+  version: "0.50"
 - 
   category: dev-libs
   description: ""
@@ -223,40 +293,33 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: virtual
   description: ""
   license: ""
-  name: libxslt
+  name: mta
   
   version: ""
 - 
-  category: dev-libs
+  category: media-libs
   description: ""
   license: ""
-  name: libpcre
-  
-  version: "8.32"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
+  name: libpng
   
   version: ""
 - 
-  category: app-text
+  category: sys-libs
   description: ""
   license: ""
-  name: htmltidy
+  name: zlib
   
   version: ""
 - 
-  category: x11-libs
+  category: net-nds
   description: ""
   license: ""
-  name: libXpm
+  name: openldap
   
-  version: ""
+  version: 1.2.11
 - 
   category: dev-db
   description: ""
@@ -268,79 +331,16 @@ requires:
   category: dev-db
   description: ""
   license: ""
-  name: postgresql
+  name: mysql-connector-c
   
-  version: ""
+  version: "8.0"
 - 
-  category: virtual
+  category: dev-db
   description: ""
   license: ""
-  name: mta
+  name: unixODBC
   
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: ""
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: lcov
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: imap-c-client-2[kerberos=,ssl=]
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: cyrus-sasl
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jpeg
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: gmp
-  
-  version: ""
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
-  
-  version: 1.2.11
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: gettext
-  
-  version: ""
-- 
-  category: net-analyzer
-  description: ""
-  license: ""
-  name: net-snmp
-  
-  version: "5.2"
+  version: 1.8.13
 uri:
 - https://php.net/distributions/php-5.6.40.tar.xz
 - https://gitweb.gentoo.org/proj/php-patches.git/snapshot/php-patches-7.1.33bp.tar.bz2

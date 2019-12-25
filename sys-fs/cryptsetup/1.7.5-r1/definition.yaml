@@ -5,17 +5,31 @@ license: GPL-2+
 name: cryptsetup
 requires:
 - 
-  category: dev-libs
+  category: sys-fs
   description: ""
   license: ""
-  name: nettle-2.4[static-libs(+)]
+  name: lvm2[static-libs(+)]
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: openssl
+  name: nettle
+  
+  version: "2.4"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libudev
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
   
   version: ""
 - 
@@ -29,28 +43,14 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: nettle
-  
-  version: "2.4"
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: lvm2[static-libs(+)]
+  name: libgpg-error
   
   version: ""
 - 
-  category: sys-fs
+  category: dev-libs
   description: ""
   license: ""
-  name: lvm2
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libudev
+  name: popt
   
   version: ""
 - 
@@ -58,6 +58,27 @@ requires:
   description: ""
   license: ""
   name: libgpg-error[static-libs(+)]
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libudev[static-libs(-)]
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgcrypt
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
   
   version: ""
 - 
@@ -75,20 +96,6 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: popt
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
@@ -96,31 +103,24 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: sys-fs
   description: ""
   license: ""
-  name: libgcrypt
+  name: lvm2
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libressl
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libudev[static-libs(-)]
+  name: nettle-2.4[static-libs(+)]
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libgpg-error
+  name: openssl
   
   version: ""
 uri:

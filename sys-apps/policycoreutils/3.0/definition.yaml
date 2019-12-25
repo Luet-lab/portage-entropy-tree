@@ -1,16 +1,37 @@
 category: sys-apps
-conflicts:
-- 
-  category: <sys-apps
-  description: ""
-  license: ""
-  name: openrc
-  
-  version: "0.14"
+conflicts: []
 description: SELinux core utilities
 license: GPL-2
 name: policycoreutils
 requires:
+- 
+  category: app-admin
+  description: ""
+  license: ""
+  name: setools
+  
+  version: 4.2.0
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: gettext
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: dbus-glib
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: audit
+  
+  version: 1.5.1
 - 
   category: sys-libs
   description: ""
@@ -26,6 +47,20 @@ requires:
   
   version: "3.0"
 - 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libsepol
+  
+  version: "3.0"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap-ng
+  
+  version: ""
+- 
   category: dev-python
   description: ""
   license: ""
@@ -40,40 +75,12 @@ requires:
   
   version: ""
 - 
-  category: sys-process
-  description: ""
-  license: ""
-  name: audit
-  
-  version: 1.5.1
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: gettext
-  
-  version: ""
-- 
   category: app-misc
   description: ""
   license: ""
   name: pax-utils
   
   version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libsemanage
-  
-  version: "3.0"
-- 
-  category: app-admin
-  description: ""
-  license: ""
-  name: setools
-  
-  version: 4.2.0
 - 
   category: sys-libs
   description: ""
@@ -85,28 +92,15 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: libcap-ng
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libsepol
+  name: libsemanage
   
   version: "3.0"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: dbus-glib
-  
-  version: ""
 uri:
 - https://github.com/SELinuxProject/selinux/releases/download/20191204/policycoreutils-3.0.tar.gz
 - https://dev.gentoo.org/~perfinion/distfiles/policycoreutils-extra-1.36.tar.bz2
 use_flags:
 - audit
-- pam
 - dbus
+- pam
+- split-usr
 version: "3.0"

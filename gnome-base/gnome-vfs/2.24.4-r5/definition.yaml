@@ -12,19 +12,12 @@ license: GPL-2 LGPL-2
 name: gnome-vfs
 requires:
 - 
-  category: x11-misc
+  category: gnome-base
   description: ""
   license: ""
-  name: shared-mime-info
+  name: gconf
   
-  version: "0.14"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: dbus-glib
-  
-  version: 0.100.2
+  version: 2.32.4-r1
 - 
   category: sys-apps
   description: ""
@@ -40,19 +33,26 @@ requires:
   
   version: 2.12.23-r6
 - 
-  category: sys-apps
+  category: dev-libs
   description: ""
   license: ""
-  name: acl
+  name: libressl
   
-  version: 2.2.52-r1
+  version: ""
 - 
-  category: gnome-base
+  category: dev-libs
   description: ""
   license: ""
-  name: gconf
+  name: dbus-glib
   
-  version: 2.32.4-r1
+  version: 0.100.2
+- 
+  category: net-fs
+  description: ""
+  license: ""
+  name: samba
+  
+  version: 3.6.23-r1
 - 
   category: dev-libs
   description: ""
@@ -68,26 +68,33 @@ requires:
   
   version: 1.0.6-r4
 - 
-  category: virtual
+  category: gnome-base
   description: ""
   license: ""
-  name: krb5
+  name: gnome-mime-data
   
-  version: 0-r1
+  version: ""
 - 
-  category: net-fs
+  category: x11-misc
   description: ""
   license: ""
-  name: samba
+  name: shared-mime-info
   
-  version: 3.6.23-r1
+  version: "0.14"
 - 
-  category: dev-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: openssl
+  name: acl
   
-  version: 1.0.1h-r2
+  version: 2.2.52-r1
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: avahi
+  
+  version: 0.6.31-r2
 - 
   category: dev-libs
   description: ""
@@ -96,26 +103,19 @@ requires:
   
   version: 2.9.1-r4
 - 
-  category: gnome-base
+  category: virtual
   description: ""
   license: ""
-  name: gnome-mime-data
+  name: krb5
   
-  version: ""
+  version: 0-r1
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libressl
+  name: openssl
   
-  version: ""
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: avahi
-  
-  version: 0.6.31-r2
+  version: 1.0.1h-r2
 uri: []
 use_flags:
 - acl

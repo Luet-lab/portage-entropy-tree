@@ -5,17 +5,17 @@ license: GPL-2
 name: kadu
 requires:
 - 
-  category: dev-qt
+  category: x11-libs
   description: ""
   license: ""
-  name: qtxmlpatterns
+  name: libX11
   
   version: ""
 - 
-  category: sys-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: zlib
+  name: libXScrnSaver
   
   version: ""
 - 
@@ -29,37 +29,58 @@ requires:
   category: dev-qt
   description: ""
   license: ""
-  name: qtwidgets
+  name: qttest
   
   version: ""
 - 
-  category: x11-libs
+  category: net-dns
   description: ""
   license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: enchant
+  name: libidn
   
   version: ""
 - 
   category: dev-qt
   description: ""
   license: ""
-  name: qtnetwork
+  name: qtdbus
   
   version: ""
 - 
   category: dev-qt
   description: ""
   license: ""
-  name: qtmultimedia
+  name: qtxml
   
   version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: qxmpp
+  
+  version: 0.9.3-r1
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtsql
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libmpdclient
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgcrypt
+  
+  version: 1.2.2
 - 
   category: dev-qt
   description: ""
@@ -71,79 +92,9 @@ requires:
   category: dev-qt
   description: ""
   license: ""
-  name: qtx11extras
+  name: qtxmlpatterns
   
   version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXext
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXScrnSaver
-  
-  version: ""
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: libidn
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: qxmpp
-  
-  version: 0.9.3-r1
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: libarchive
-  
-  version: "2.6"
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtsql
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtgui
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qttest
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtxml
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgcrypt
-  
-  version: 1.2.2
 - 
   category: net-libs
   description: ""
@@ -151,13 +102,6 @@ requires:
   name: libotr
   
   version: 4.1.0
-- 
-  category: app-accessibility
-  description: ""
-  license: ""
-  name: powiedz
-  
-  version: ""
 - 
   category: dev-qt
   description: ""
@@ -173,10 +117,10 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
+  category: dev-qt
   description: ""
   license: ""
-  name: libXfixes
+  name: qtsvg
   
   version: ""
 - 
@@ -187,26 +131,19 @@ requires:
   
   version: 1.12.2
 - 
-  category: media-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: libmpdclient
+  name: zlib
   
   version: ""
 - 
-  category: dev-qt
+  category: app-arch
   description: ""
   license: ""
-  name: qtdbus
+  name: libarchive
   
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtsvg
-  
-  version: ""
+  version: "2.6"
 - 
   category: dev-libs
   description: ""
@@ -214,6 +151,69 @@ requires:
   name: injeqt
   
   version: 1.1.0
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtgui
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtnetwork
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtwidgets
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXext
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtmultimedia
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtx11extras
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXfixes
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: enchant
+  
+  version: ""
+- 
+  category: app-accessibility
+  description: ""
+  license: ""
+  name: powiedz
+  
+  version: ""
 uri:
 - http://download.kadu.im/stable/kadu-4.3.tar.bz2
 use_flags:

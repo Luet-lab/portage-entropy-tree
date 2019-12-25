@@ -5,117 +5,19 @@ license: LGPL-2+
 name: gvfs
 requires:
 - 
-  category: net-fs
+  category: net-dns
   description: ""
   license: ""
-  name: samba
+  name: avahi
   
-  version: "4"
+  version: "0.6"
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libcdio-paranoia
+  name: libgudev
   
-  version: 0.78.2
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgdata
-  
-  version: 0.17.9
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: fuse
-  
-  version: 2.8.0
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: "206"
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: polkit
-  
-  version: "0.114"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: ""
-- 
-  category: app-pda
-  description: ""
-  license: ""
-  name: libplist
-  
-  version: "1"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: 2.57.2
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: gcr
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libgphoto2
-  
-  version: 2.5.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgcrypt
-  
-  version: 1.2.2
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libusb
-  
-  version: 1.0.21
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: openssh
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libcap
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libcdio
-  
-  version: ""
+  version: "147"
 - 
   category: sys-auth
   description: ""
@@ -131,12 +33,89 @@ requires:
   
   version: ""
 - 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: fuse
+  
+  version: 2.8.0
+- 
   category: app-pda
   description: ""
   license: ""
   name: libimobiledevice
   
   version: "1.2"
+- 
+  category: net-fs
+  description: ""
+  license: ""
+  name: samba
+  
+  version: "4"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.57.2
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgcrypt
+  
+  version: 1.2.2
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: udisks
+  
+  version: "1.97"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libmtp
+  
+  version: 1.1.15
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libgphoto2
+  
+  version: 2.5.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libcdio-paranoia
+  
+  version: 0.78.2
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: openssh
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: ""
 - 
   category: net-libs
   description: ""
@@ -148,9 +127,23 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libgudev
+  name: libcdio
   
-  version: "147"
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: app-pda
+  description: ""
+  license: ""
+  name: libplist
+  
+  version: "1"
 - 
   category: net-libs
   description: ""
@@ -159,33 +152,47 @@ requires:
   
   version: 3.17.1
 - 
-  category: media-libs
+  category: app-crypt
   description: ""
   license: ""
-  name: libmtp
+  name: gcr
   
-  version: 1.1.15
+  version: ""
 - 
-  category: net-fs
+  category: app-crypt
   description: ""
   license: ""
-  name: libnfs
+  name: libsecret
   
-  version: 1.9.8
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libusb
+  
+  version: 1.0.21
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgdata
+  
+  version: 0.17.9
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: "0.114"
 - 
   category: sys-apps
   description: ""
   license: ""
-  name: dbus
+  name: systemd
   
-  version: ""
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: avahi
-  
-  version: "0.6"
+  version: "206"
 - 
   category: media-libs
   description: ""
@@ -194,19 +201,12 @@ requires:
   
   version: ""
 - 
-  category: sys-fs
+  category: net-fs
   description: ""
   license: ""
-  name: udisks
+  name: libnfs
   
-  version: "1.97"
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: libsecret
-  
-  version: ""
+  version: 1.9.8
 uri: []
 use_flags:
 - afp

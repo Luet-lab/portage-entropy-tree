@@ -1,6 +1,13 @@
 category: x11-libs
 conflicts:
 - 
+  category: <x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: 2.90.4
+- 
   category: <gnome-base
   description: ""
   license: ""
@@ -15,13 +22,6 @@ conflicts:
   
   version: 2.21.3
 - 
-  category: <x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: 2.90.4
-- 
   category: <gnome-base
   description: ""
   license: ""
@@ -32,6 +32,13 @@ description: Image loading library for GTK+
 license: LGPL-2+
 name: gdk-pixbuf
 requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.48.0
 - 
   category: media-libs
   description: ""
@@ -47,12 +54,12 @@ requires:
   
   version: 0.9.3
 - 
-  category: virtual
+  category: media-libs
   description: ""
   license: ""
-  name: jpeg
+  name: tiff
   
-  version: ""
+  version: 3.9.2
 - 
   category: x11-libs
   description: ""
@@ -61,19 +68,12 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: virtual
   description: ""
   license: ""
-  name: glib
+  name: jpeg
   
-  version: 2.48.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: tiff
-  
-  version: 3.9.2
+  version: ""
 uri: []
 use_flags:
 - X

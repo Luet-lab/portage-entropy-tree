@@ -5,10 +5,31 @@ license: LGPL-2+ GPL-2+
 name: udisks
 requires:
 - 
-  category: virtual
+  category: dev-libs
   description: ""
   license: ""
-  name: udev
+  name: libgudev
+  
+  version: "165"
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-devicekit
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: elogind
+  
+  version: "219"
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lvm2
   
   version: ""
 - 
@@ -19,19 +40,33 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: gobject-introspection
+  name: systemd
   
-  version: "1.30"
+  version: "209"
 - 
-  category: sec-policy
+  category: virtual
   description: ""
   license: ""
-  name: selinux-devicekit
+  name: eject
   
   version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: "2.30"
+- 
+  category: sys-block
+  description: ""
+  license: ""
+  name: parted
+  
+  version: "3"
 - 
   category: dev-libs
   description: ""
@@ -47,20 +82,6 @@ requires:
   
   version: "0.19"
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
-  
-  version: "2.30"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: eject
-  
-  version: ""
-- 
   category: sys-auth
   description: ""
   license: ""
@@ -68,40 +89,19 @@ requires:
   
   version: "0.110"
 - 
-  category: sys-auth
+  category: virtual
   description: ""
   license: ""
-  name: elogind
+  name: udev
   
-  version: "219"
+  version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libgudev
+  name: gobject-introspection
   
-  version: "165"
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: lvm2
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: "209"
-- 
-  category: sys-block
-  description: ""
-  license: ""
-  name: parted
-  
-  version: "3"
+  version: "1.30"
 uri:
 - https://github.com/storaged-project/udisks/releases/download/udisks-2.8.3/udisks-2.8.3.tar.bz2
 use_flags:

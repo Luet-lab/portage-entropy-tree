@@ -8,9 +8,23 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libxkbcommon
+  name: libXcursor
   
-  version: 0.5.0
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: "1.6"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "209"
 - 
   category: x11-libs
   description: ""
@@ -19,12 +33,12 @@ requires:
   
   version: 1.11.3
 - 
-  category: sys-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: mtdev
+  name: pixman
   
-  version: 1.1.0
+  version: 0.25.2
 - 
   category: media-libs
   description: ""
@@ -33,24 +47,17 @@ requires:
   
   version: ""
 - 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: pambase
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libinput
-  
-  version: 0.8.0
-- 
   category: x11-libs
   description: ""
   license: ""
-  name: libX11
+  name: libxcb
+  
+  version: "1.9"
+- 
+  category: x11-base
+  description: ""
+  license: ""
+  name: xorg-server
   
   version: ""
 - 
@@ -64,7 +71,56 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXcursor
+  name: libdrm
+  
+  version: 2.4.30
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: wayland-protocols
+  
+  version: "1.8"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pango
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jpeg
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxkbcommon
+  
+  version: 0.5.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libinput
+  
+  version: 0.8.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: lcms
   
   version: ""
 - 
@@ -75,26 +131,12 @@ requires:
   
   version: ""
 - 
-  category: x11-base
-  description: ""
-  license: ""
-  name: xorg-server
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: wayland
-  
-  version: 1.12.0
-- 
   category: sys-libs
   description: ""
   license: ""
-  name: libunwind
+  name: mtdev
   
-  version: ""
+  version: 1.1.0
 - 
   category: virtual
   description: ""
@@ -103,17 +145,10 @@ requires:
   
   version: "136"
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: "209"
-- 
   category: media-libs
   description: ""
   license: ""
-  name: lcms
+  name: libpng
   
   version: ""
 - 
@@ -138,61 +173,26 @@ requires:
   
   version: ""
 - 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: pambase
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libunwind
+  
+  version: ""
+- 
   category: dev-libs
   description: ""
   license: ""
-  name: wayland-protocols
+  name: wayland
   
-  version: "1.8"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxcb
-  
-  version: "1.9"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libpng
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jpeg
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus
-  
-  version: "1.6"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pango
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libdrm
-  
-  version: 2.4.30
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pixman
-  
-  version: 0.25.2
+  version: 1.12.0
 uri:
 - https://wayland.freedesktop.org/releases/weston-3.0.0.tar.xz
 use_flags:

@@ -1,0 +1,29 @@
+category: www-apps
+conflicts: []
+description: Personal cloud that runs on your own server
+license: AGPL-3
+name: nextcloud
+requires:
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: httpd-php
+  
+  version: ""
+- 
+  category: dev-php
+  description: ""
+  license: ""
+  name: pecl-imagick
+  
+  version: ""
+uri:
+- http://download.nextcloud.com/server/releases/nextcloud-17.0.2.tar.bz2
+use_flags:
+- +curl
+- +imagemagick
+- mysql
+- postgres
+- +sqlite
+version: 17.0.2

@@ -9,14 +9,28 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: readline
+  name: gdbm
   
-  version: ""
+  version: 1.8.0
 - 
   category: dev-db
   description: ""
   license: ""
-  name: tokyocabinet
+  name: lmdb
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxslt
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
   
   version: ""
 - 
@@ -27,52 +41,38 @@ requires:
   
   version: ""
 - 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: 1.2.11
+- 
   category: app-text
   description: ""
   license: ""
-  name: enchant
-  
-  version: "2.0"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: krb5
-  
-  version: ""
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: gettext
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: unixODBC
-  
-  version: 1.8.13
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: postgresql
+  name: recode
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libressl
+  name: libxml2
+  
+  version: 2.6.8
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
   
   version: ""
 - 
-  category: virtual
+  category: dev-db
   description: ""
   license: ""
-  name: mta
+  name: tokyocabinet
   
   version: ""
 - 
@@ -90,33 +90,26 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: sys-libs
   description: ""
   license: ""
-  name: libiconv
+  name: zlib
   
   version: ""
 - 
-  category: virtual
+  category: dev-libs
   description: ""
   license: ""
-  name: imap-c-client-2[kerberos=,ssl=]
+  name: gmp
   
   version: ""
 - 
-  category: dev-db
+  category: sec-policy
   description: ""
   license: ""
-  name: oracle-instantclient-basic
+  name: selinux-phpfpm
   
   version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: aspell
-  
-  version: "0.50"
 - 
   category: x11-libs
   description: ""
@@ -125,47 +118,40 @@ requires:
   
   version: ""
 - 
-  category: app-arch
-  description: ""
-  license: ""
-  name: bzip2
-  
-  version: ""
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
-  
-  version: 1.2.11
-- 
   category: dev-libs
   description: ""
   license: ""
-  name: cyrus-sasl
+  name: libpcre
   
-  version: ""
+  version: "8.32"
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
+  
+  version: 7.10.5
 - 
   category: app-text
   description: ""
   license: ""
-  name: recode
+  name: enchant
+  
+  version: "2.0"
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: oracle-instantclient-basic
   
   version: ""
 - 
-  category: dev-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: mm
+  name: readline
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: 2.6.8
 - 
   category: dev-db
   description: ""
@@ -177,42 +163,7 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libxslt
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: acl
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: gdbm
-  
-  version: 1.8.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: gmp
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: freetds
+  name: libressl
   
   version: ""
 - 
@@ -223,17 +174,17 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: libzip
+  name: acl
   
-  version: 1.2.0
+  version: ""
 - 
-  category: sec-policy
+  category: www-servers
   description: ""
   license: ""
-  name: selinux-phpfpm
+  name: apache[apache2_modules_unixd(+),threads=]
   
   version: ""
 - 
@@ -243,41 +194,6 @@ requires:
   name: libpng
   
   version: ""
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: argon2
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libwebp
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libpcre
-  
-  version: "8.32"
 - 
   category: dev-libs
   description: ""
@@ -293,31 +209,59 @@ requires:
   
   version: ""
 - 
-  category: dev-db
+  category: dev-libs
   description: ""
   license: ""
-  name: lmdb
+  name: cyrus-sasl
   
   version: ""
 - 
-  category: net-analyzer
+  category: dev-libs
   description: ""
   license: ""
-  name: net-snmp
+  name: mm
   
-  version: "5.2"
+  version: ""
 - 
-  category: net-misc
+  category: dev-libs
   description: ""
   license: ""
-  name: curl
+  name: oniguruma
   
-  version: 7.10.5
+  version: ""
 - 
-  category: dev-db
+  category: dev-libs
   description: ""
   license: ""
-  name: firebird
+  name: libzip
+  
+  version: 1.2.0
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: mta
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: argon2
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: bzip2
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
   
   version: ""
 - 
@@ -328,6 +272,13 @@ requires:
   
   version: ""
 - 
+  category: app-text
+  description: ""
+  license: ""
+  name: aspell
+  
+  version: "0.50"
+- 
   category: media-libs
   description: ""
   license: ""
@@ -335,19 +286,68 @@ requires:
   
   version: "2"
 - 
-  category: dev-libs
+  category: media-libs
   description: ""
   license: ""
-  name: oniguruma
+  name: libwebp
   
   version: ""
 - 
-  category: www-servers
+  category: virtual
   description: ""
   license: ""
-  name: apache[apache2_modules_unixd(+),threads=]
+  name: imap-c-client-2[kerberos=,ssl=]
   
   version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: freetds
+  
+  version: ""
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: gettext
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: firebird
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libiconv
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: unixODBC
+  
+  version: 1.8.13
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: postgresql
+  
+  version: ""
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: net-snmp
+  
+  version: "5.2"
 uri:
 - https://php.net/distributions/php-7.2.25.tar.xz
 use_flags:

@@ -19,24 +19,24 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: libdrm
+  name: libnih
+  
+  version: 1.0.2
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
   
   version: ""
 - 
-  category: sec-policy
+  category: sys-power
   description: ""
   license: ""
-  name: selinux-consolekit
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: coreutils[acl?]
+  name: pm-utils
   
   version: ""
 - 
@@ -50,7 +50,7 @@ requires:
   category: sys-apps
   description: ""
   license: ""
-  name: dbus
+  name: acl
   
   version: ""
 - 
@@ -61,10 +61,24 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: pam
+  name: libdrm
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: "0.110"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
   
   version: ""
 - 
@@ -89,17 +103,10 @@ requires:
   
   version: ""
 - 
-  category: sys-auth
+  category: sys-apps
   description: ""
   license: ""
-  name: polkit
-  
-  version: "0.110"
-- 
-  category: sys-power
-  description: ""
-  license: ""
-  name: pm-utils
+  name: coreutils[acl?]
   
   version: ""
 - 
@@ -117,19 +124,12 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: sec-policy
   description: ""
   license: ""
-  name: acl
+  name: selinux-consolekit
   
   version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libnih
-  
-  version: 1.0.2
 uri: []
 use_flags:
 - acl

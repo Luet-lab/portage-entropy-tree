@@ -1,13 +1,6 @@
 category: net-fs
 conflicts:
 - 
-  category: <sys-apps
-  description: ""
-  license: ""
-  name: openrc
-  
-  version: 0.13.9
-- 
   category: net-libs
   description: ""
   license: ""
@@ -21,31 +14,24 @@ conflicts:
   name: portmap
   
   version: ""
+- 
+  category: <sys-apps
+  description: ""
+  license: ""
+  name: openrc
+  
+  version: 0.13.9
 description: NFS client and server daemons
 license: GPL-2
 name: nfs-utils
 requires:
 - 
-  category: dev-db
+  category: net-libs
   description: ""
   license: ""
-  name: sqlite
+  name: libtirpc
   
-  version: "3.3"
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: rpcbind
-  
-  version: 0.2.4
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: keyutils
-  
-  version: 1.5.9
+  version: ""
 - 
   category: sys-libs
   description: ""
@@ -54,10 +40,38 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: sys-libs
   description: ""
   license: ""
-  name: tcp-wrappers
+  name: libcap
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libevent
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-rpcbind
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: "3.3"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
   
   version: ""
 - 
@@ -65,6 +79,13 @@ requires:
   description: ""
   license: ""
   name: selinux-rpc
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: tcp-wrappers
   
   version: ""
 - 
@@ -89,26 +110,19 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: net-nds
   description: ""
   license: ""
-  name: libxml2
+  name: rpcbind
   
-  version: ""
+  version: 0.2.4
 - 
-  category: net-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: libtirpc
+  name: keyutils
   
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libcap
-  
-  version: ""
+  version: 1.5.9
 - 
   category: net-nds
   description: ""
@@ -117,24 +131,10 @@ requires:
   
   version: ""
 - 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-rpcbind
-  
-  version: ""
-- 
   category: sys-apps
   description: ""
   license: ""
   name: util-linux
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libevent
   
   version: ""
 uri:

@@ -11,20 +11,6 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: qmail-ldap
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: opensmtpd
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
 mailer
   
   version: ""
@@ -32,7 +18,7 @@ mailer
   category: mail-mta
   description: ""
   license: ""
-  name: sendmail
+  name: esmtp
   
   version: ""
 - 
@@ -46,21 +32,14 @@ mailer
   category: mail-mta
   description: ""
   license: ""
-  name: postfix
+  name: sendmail
   
   version: ""
 - 
   category: mail-mta
   description: ""
   license: ""
-  name: courier
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: esmtp
+  name: opensmtpd
   
   version: ""
 - 
@@ -78,21 +57,42 @@ mailer
   
   version: ""
 - 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: postfix
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: qmail-ldap
+  
+  version: ""
+- 
   category: <mail-mta
   description: ""
   license: ""
   name: ssmtp
   
   version: 2.64-r2
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: courier
+  
+  version: ""
 description: An SMTP client and SMTP plugin for mail user agents such as Mutt
 license: GPL-3
 name: msmtp
 requires:
 - 
-  category: virtual
+  category: app-crypt
   description: ""
   license: ""
-  name: gsasl
+  name: libsecret
   
   version: ""
 - 
@@ -100,6 +100,13 @@ requires:
   description: ""
   license: ""
   name: mailbase
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libintl
   
   version: ""
 - 
@@ -113,7 +120,7 @@ requires:
   category: virtual
   description: ""
   license: ""
-  name: libintl
+  name: gsasl
   
   version: ""
 - 
@@ -121,13 +128,6 @@ requires:
   description: ""
   license: ""
   name: gnutls[idn?]
-  
-  version: ""
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: libsecret
   
   version: ""
 - 

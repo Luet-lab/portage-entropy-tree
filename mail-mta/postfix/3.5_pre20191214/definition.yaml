@@ -4,49 +4,21 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
+mailer
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: esmtp
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
   name: exim
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: sendmail
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: ssmtp
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: mini-qmail
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: msmtp
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: netqmail
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: opensmtpd
   
   version: ""
 - 
@@ -60,13 +32,6 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: courier
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
   name: qmail-ldap
   
   version: ""
@@ -74,55 +39,55 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-mailer
+  name: msmtp
   
   version: ""
 - 
   category: mail-mta
   description: ""
   license: ""
-  name: esmtp
+  name: sendmail
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: opensmtpd
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: ssmtp
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: courier
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: netqmail
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: mini-qmail
   
   version: ""
 description: A fast and secure drop-in replacement for sendmail
 license: '|| ( IBM EPL-2.0 )'
 name: postfix
 requires:
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: cyrus-sasl
-  
-  version: "2"
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: mailbase
-  
-  version: ""
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: perl
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: lmdb
-  
-  version: 0.9.11
 - 
   category: net-nds
   description: ""
@@ -134,28 +99,84 @@ requires:
   category: dev-db
   description: ""
   license: ""
-  name: sqlite
+  name: mysql-connector-c
   
   version: ""
 - 
-  category: acct-group
+  category: net-mail
   description: ""
   license: ""
-  name: postdrop
+  name: mailbase
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpcre
+  
+  version: "3.4"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: icu
   
   version: ""
 - 
   category: dev-db
   description: ""
   license: ""
-  name: mysql-connector-c
+  name: postgresql
   
   version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: lmdb
+  
+  version: 0.9.11
 - 
   category: net-libs
   description: ""
   license: ""
   name: libnsl
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: postfix
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: perl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: 2.9.1
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-postfix
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
   
   version: ""
 - 
@@ -180,47 +201,26 @@ requires:
   
   version: "3.2"
 - 
-  category: dev-libs
+  category: dev-db
   description: ""
   license: ""
-  name: icu
+  name: sqlite
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
-  
-  version: 2.9.1
 - 
   category: acct-group
   description: ""
   license: ""
-  name: postfix
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: postgresql
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-postfix
+  name: postdrop
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libpcre
+  name: cyrus-sasl
   
-  version: "3.4"
+  version: "2"
 - 
   category: dev-libs
   description: ""

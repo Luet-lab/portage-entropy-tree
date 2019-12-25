@@ -8,21 +8,28 @@ requires:
   category: kde-frameworks
   description: ""
   license: ""
-  name: threadweaver
+  name: kwallet
   
   version: 5.63.0
 - 
   category: dev-qt
   description: ""
   license: ""
-  name: qtgui
+  name: qtsvg
   
   version: 5.12.3
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: poppler
+  
+  version: ""
 - 
   category: kde-frameworks
   description: ""
   license: ""
-  name: kparts
+  name: karchive
   
   version: 5.63.0
 - 
@@ -36,14 +43,7 @@ requires:
   category: kde-frameworks
   description: ""
   license: ""
-  name: kio
-  
-  version: 5.63.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kpty
+  name: kcrash
   
   version: 5.63.0
 - 
@@ -61,31 +61,59 @@ requires:
   
   version: 5.12.3
 - 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: purpose
+  
+  version: 5.63.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kbookmarks
+  
+  version: 5.63.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kconfig
+  
+  version: 5.63.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kjs
+  
+  version: 5.63.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kpty
+  
+  version: 5.63.0
+- 
   category: dev-qt
   description: ""
   license: ""
-  name: qtsvg
+  name: qtgui
   
   version: 5.12.3
 - 
-  category: kde-frameworks
+  category: media-libs
   description: ""
   license: ""
-  name: khtml
+  name: freetype
   
-  version: 5.63.0
+  version: ""
 - 
-  category: kde-frameworks
+  category: media-libs
   description: ""
   license: ""
-  name: kactivities
-  
-  version: 5.63.0
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: poppler
+  name: phonon[qt5(+)]
   
   version: ""
 - 
@@ -99,28 +127,14 @@ requires:
   category: kde-frameworks
   description: ""
   license: ""
-  name: purpose
+  name: kcompletion
   
   version: 5.63.0
 - 
-  category: kde-frameworks
+  category: app-text
   description: ""
   license: ""
-  name: kcoreaddons
-  
-  version: 5.63.0
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtwidgets
-  
-  version: 5.12.3
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: phonon[qt5(+)]
+  name: libspectre
   
   version: ""
 - 
@@ -131,47 +145,19 @@ requires:
   
   version: 5.12.3
 - 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kcompletion
-  
-  version: 5.63.0
-- 
-  category: kde-apps
-  description: ""
-  license: ""
-  name: libkexiv2
-  
-  version: ""
-- 
   category: app-text
   description: ""
   license: ""
-  name: ebook-tools
+  name: discount
   
   version: ""
 - 
-  category: kde-frameworks
+  category: dev-qt
   description: ""
   license: ""
-  name: kconfig
+  name: qtwidgets
   
-  version: 5.63.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kcrash
-  
-  version: 5.63.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kjs
-  
-  version: 5.63.0
+  version: 5.12.3
 - 
   category: sys-libs
   description: ""
@@ -180,73 +166,17 @@ requires:
   
   version: ""
 - 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: khtml
+  
+  version: 5.63.0
+- 
   category: kde-apps
   description: ""
   license: ""
   name: kdegraphics-mobipocket
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: libspectre
-  
-  version: ""
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kirigami
-  
-  version: 5.63.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kbookmarks
-  
-  version: 5.63.0
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: qca
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: discount
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jpeg
-  
-  version: ""
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kwallet
-  
-  version: 5.63.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: freetype
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: chmlib
   
   version: ""
 - 
@@ -274,7 +204,77 @@ requires:
   category: kde-frameworks
   description: ""
   license: ""
-  name: karchive
+  name: kactivities
+  
+  version: 5.63.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kirigami
+  
+  version: 5.63.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kio
+  
+  version: 5.63.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kparts
+  
+  version: 5.63.0
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: ebook-tools
+  
+  version: ""
+- 
+  category: kde-apps
+  description: ""
+  license: ""
+  name: libkexiv2
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jpeg
+  
+  version: ""
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kcoreaddons
+  
+  version: 5.63.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: chmlib
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: qca
+  
+  version: ""
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: threadweaver
   
   version: 5.63.0
 uri: []

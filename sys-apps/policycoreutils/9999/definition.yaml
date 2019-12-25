@@ -1,16 +1,23 @@
 category: sys-apps
-conflicts:
-- 
-  category: <sys-apps
-  description: ""
-  license: ""
-  name: openrc
-  
-  version: "0.14"
+conflicts: []
 description: SELinux core utilities
 license: GPL-2
 name: policycoreutils
 requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: "9999"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: 1.10-r10
 - 
   category: sys-devel
   description: ""
@@ -19,10 +26,38 @@ requires:
   
   version: ""
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: dbus-glib
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: pax-utils
+  
+  version: ""
+- 
   category: sys-libs
   description: ""
   license: ""
-  name: libselinux
+  name: libsemanage
+  
+  version: "9999"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap-ng
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libsepol
   
   version: "9999"
 - 
@@ -40,52 +75,10 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libsemanage
-  
-  version: "9999"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libsepol
-  
-  version: "9999"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libcap
-  
-  version: 1.10-r10
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libcap-ng
-  
-  version: ""
-- 
   category: sys-apps
   description: ""
   license: ""
   name: dbus
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: dbus-glib
   
   version: ""
 - 
@@ -96,16 +89,17 @@ requires:
   
   version: 1.5.1
 - 
-  category: app-misc
+  category: sys-libs
   description: ""
   license: ""
-  name: pax-utils
+  name: pam
   
   version: ""
 uri:
 - https://dev.gentoo.org/~perfinion/distfiles/policycoreutils-extra-1.36.tar.bz2
 use_flags:
 - audit
-- pam
 - dbus
+- pam
+- split-usr
 version: "9999"

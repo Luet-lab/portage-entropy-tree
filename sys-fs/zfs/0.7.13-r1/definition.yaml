@@ -1,27 +1,6 @@
 category: sys-fs
 conflicts:
 - 
-  category: <sys-kernel
-  description: ""
-  license: ""
-  name: genkernel-next
-  
-  version: "67"
-- 
-  category: <sys-kernel
-  description: ""
-  license: ""
-  name: bliss-initramfs
-  
-  version: 7.1.0
-- 
-  category: =sys-apps
-  description: ""
-  license: ""
-  name: grep-2.13*
-  
-  version: ""
-- 
   category: sys-fs
   description: ""
   license: ""
@@ -32,9 +11,16 @@ conflicts:
   category: <sys-kernel
   description: ""
   license: ""
-  name: genkernel
+  name: bliss-initramfs
   
-  version: 3.5.1.1
+  version: 7.1.0
+- 
+  category: <sys-kernel
+  description: ""
+  license: ""
+  name: genkernel-next
+  
+  version: "67"
 - 
   category: <sys-kernel
   description: ""
@@ -49,22 +35,36 @@ conflicts:
   name: grub
   
   version: 2.00-r2
+- 
+  category: <sys-kernel
+  description: ""
+  license: ""
+  name: genkernel
+  
+  version: 3.5.1.1
+- 
+  category: =sys-apps
+  description: ""
+  license: ""
+  name: grep-2.13*
+  
+  version: ""
 description: Userland utilities for ZFS Linux kernel module
 license: BSD-2 CDDL MIT
 name: zfs
 requires:
 - 
-  category: sys-fs
+  category: virtual
   description: ""
   license: ""
-  name: lsscsi
+  name: modutils
   
   version: ""
 - 
-  category: sys-process
+  category: app-arch
   description: ""
   license: ""
-  name: procps
+  name: cpio
   
   version: ""
 - 
@@ -75,10 +75,10 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: sys-devel
   description: ""
   license: ""
-  name: udev
+  name: bc
   
   version: ""
 - 
@@ -92,28 +92,7 @@ requires:
   category: sys-fs
   description: ""
   license: ""
-  name: udev-init-scripts
-  
-  version: ""
-- 
-  category: app-misc
-  description: ""
-  license: ""
-  name: pax-utils
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libtirpc
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
+  name: lsscsi
   
   version: ""
 - 
@@ -124,10 +103,17 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: net-libs
   description: ""
   license: ""
-  name: modutils
+  name: libtirpc
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: udev-init-scripts
   
   version: ""
 - 
@@ -138,17 +124,31 @@ requires:
   
   version: 0.7.13
 - 
-  category: sys-devel
+  category: virtual
   description: ""
   license: ""
-  name: bc
+  name: udev
   
   version: ""
 - 
-  category: app-arch
+  category: sys-apps
   description: ""
   license: ""
-  name: cpio
+  name: util-linux
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: procps
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: pax-utils
   
   version: ""
 uri:

@@ -5,19 +5,47 @@ license: MPL-2.0 GPL-2 LGPL-2.1
 name: thunderbird
 requires:
 - 
-  category: x11-libs
+  category: media-libs
   description: ""
   license: ""
-  name: libXdamage
+  name: libjpeg-turbo
+  
+  version: 1.2.1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nspr
+  
+  version: "4.21"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: atk
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXrender
+  name: gtk+
   
-  version: ""
+  version: "2.18"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libpng
+  
+  version: 1.6.35
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.26"
 - 
   category: media-libs
   description: ""
@@ -29,7 +57,84 @@ requires:
   category: virtual
   description: ""
   license: ""
+  name: freedesktop-icon-theme
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXcomposite
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXfixes
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: alsa-lib
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
   name: ffmpeg
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nss
+  
+  version: 3.44.1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: expat
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo-1.10[X]
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: 3.4.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: mesa
+  
+  version: "10.2"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXt
   
   version: ""
 - 
@@ -40,12 +145,40 @@ requires:
   
   version: 1.0.0
 - 
+  category: media-gfx
+  description: ""
+  license: ""
+  name: graphite2
+  
+  version: 1.3.13
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: "0.60"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXext
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXrender
+  
+  version: ""
+- 
   category: dev-libs
   description: ""
   license: ""
-  name: libevent
+  name: icu
   
-  version: "2.0"
+  version: "63.1"
 - 
   category: dev-db
   description: ""
@@ -68,117 +201,12 @@ requires:
   
   version: ""
 - 
-  category: media-libs
-  description: ""
-  license: ""
-  name: fontconfig
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: dbus-glib
-  
-  version: "0.72"
-- 
-  category: media-gfx
-  description: ""
-  license: ""
-  name: graphite2
-  
-  version: 1.3.13
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: nspr
-  
-  version: "4.21"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: atk
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: mesa
-  
-  version: "10.2"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus
-  
-  version: "0.60"
-- 
   category: x11-libs
   description: ""
   license: ""
-  name: startup-notification
+  name: pixman
   
-  version: "0.8"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXcomposite
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: harfbuzz
-  
-  version: 2.4.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: nss
-  
-  version: 3.44.1
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libjpeg-turbo
-  
-  version: 1.2.1
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: expat
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: freedesktop-icon-theme
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.26"
+  version: 0.19.2
 - 
   category: sys-libs
   description: ""
@@ -190,100 +218,9 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXfixes
+  name: libXdamage
   
   version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXt
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: icu
-  
-  version: "63.1"
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: apulse
-  
-  version: 0.1.9
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: alsa-lib
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pixman
-  
-  version: 0.19.2
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libffi
-  
-  version: 3.0.10
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXext
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: cairo-1.10[X]
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: 3.4.0
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gdk-pixbuf
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pango
-  
-  version: 1.22.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libpng
-  
-  version: 1.6.35
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: dav1d
-  
-  version: 0.3.0
 - 
   category: media-libs
   description: ""
@@ -302,9 +239,72 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: gtk+
+  name: pango
   
-  version: "2.18"
+  version: 1.22.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: dbus-glib
+  
+  version: "0.72"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libffi
+  
+  version: 3.0.10
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libevent
+  
+  version: "2.0"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gdk-pixbuf
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: startup-notification
+  
+  version: "0.8"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: dav1d
+  
+  version: 0.3.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: harfbuzz
+  
+  version: 2.4.0
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: apulse
+  
+  version: 0.1.9
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
 - 
   category: virtual
   description: ""

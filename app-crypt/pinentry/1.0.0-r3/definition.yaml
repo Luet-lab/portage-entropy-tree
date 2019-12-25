@@ -5,19 +5,19 @@ license: GPL-2
 name: pinentry
 requires:
 - 
+  category: app-eselect
+  description: ""
+  license: ""
+  name: eselect-pinentry
+  
+  version: ""
+- 
   category: dev-libs
   description: ""
   license: ""
-  name: libgpg-error
+  name: libassuan
   
-  version: "1.17"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libcap
-  
-  version: ""
+  version: "2.1"
 - 
   category: app-crypt
   description: ""
@@ -36,35 +36,7 @@ requires:
   category: dev-qt
   description: ""
   license: ""
-  name: qtcore
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
   name: qtgui
-  
-  version: ""
-- 
-  category: app-eselect
-  description: ""
-  license: ""
-  name: eselect-pinentry
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgcrypt
-  
-  version: 1.6.3
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
   
   version: ""
 - 
@@ -74,13 +46,6 @@ requires:
   name: qtwidgets
   
   version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: ncurses
-  
-  version: 5.7-r5
 - 
   category: app-crypt
   description: ""
@@ -92,9 +57,44 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libassuan
+  name: libgcrypt
   
-  version: "2.1"
+  version: 1.6.3
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgpg-error
+  
+  version: "1.17"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtcore
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: 5.7-r5
 uri:
 - mirror://gnupg/pinentry/pinentry-1.0.0.tar.bz2
 use_flags:

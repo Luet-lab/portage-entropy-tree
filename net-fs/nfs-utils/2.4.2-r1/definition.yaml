@@ -1,6 +1,13 @@
 category: net-fs
 conflicts:
 - 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libnfsidmap
+  
+  version: ""
+- 
   category: net-nds
   description: ""
   license: ""
@@ -14,43 +21,29 @@ conflicts:
   name: openrc
   
   version: 0.13.9
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libnfsidmap
-  
-  version: ""
 description: NFS client and server daemons
 license: GPL-2
 name: nfs-utils
 requires:
 - 
-  category: sys-apps
+  category: net-libs
   description: ""
   license: ""
-  name: util-linux
+  name: libtirpc
+  
+  version: 0.2.4-r1
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: e2fsprogs-libs
   
   version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: keyutils
-  
-  version: 1.5.9
 - 
   category: app-crypt
   description: ""
   license: ""
   name: mit-krb5
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: lvm2
   
   version: ""
 - 
@@ -61,10 +54,17 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: sec-policy
   description: ""
   license: ""
-  name: libxml2
+  name: selinux-rpc
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-rpcbind
   
   version: ""
 - 
@@ -75,13 +75,6 @@ requires:
   
   version: 0.2.4
 - 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-rpc
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
@@ -89,31 +82,10 @@ requires:
   
   version: ""
 - 
-  category: net-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: libtirpc
-  
-  version: 0.2.4-r1
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-rpcbind
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
-  
-  version: "3.3"
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libtirpc
+  name: util-linux
   
   version: ""
 - 
@@ -124,10 +96,31 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: e2fsprogs-libs
+  name: keyutils
+  
+  version: 1.5.9
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lvm2
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libtirpc
   
   version: ""
 - 
@@ -137,6 +130,13 @@ requires:
   name: openldap
   
   version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: "3.3"
 uri:
 - mirror://sourceforge/nfs/nfs-utils-2.4.2.tar.bz2
 use_flags:

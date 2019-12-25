@@ -1,0 +1,45 @@
+category: app-crypt
+conflicts: []
+description: Disk encryption with strong security based on TrueCrypt
+license: Apache-2.0 BSD truecrypt-3.0
+name: veracrypt
+requires:
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lvm2
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: fuse
+  
+  version: ""
+- 
+  category: app-admin
+  description: ""
+  license: ""
+  name: sudo
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: pkcs11-helper
+  
+  version: ""
+uri:
+- https://github.com/veracrypt/VeraCrypt/archive/VeraCrypt_1.24-Update2.tar.gz ->
+  veracrypt-1.24.tar.gz
+use_flags:
+- +asm
+- cpu_flags_x86_sse2
+- cpu_flags_x86_sse4_1
+- cpu_flags_x86_ssse3
+- doc
+- X
+version: 1.24_p2

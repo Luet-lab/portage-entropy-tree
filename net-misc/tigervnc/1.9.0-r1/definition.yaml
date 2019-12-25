@@ -4,7 +4,7 @@ conflicts:
   category: net-misc
   description: ""
   license: ""
-  name: xf4vnc
+  name: vnc
   
   version: ""
 - 
@@ -18,7 +18,7 @@ conflicts:
   category: net-misc
   description: ""
   license: ""
-  name: vnc
+  name: xf4vnc
   
   version: ""
 description: Remote desktop viewer display system
@@ -26,59 +26,10 @@ license: GPL-2
 name: tigervnc
 requires:
 - 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnutls
-  
-  version: ""
-- 
   category: x11-libs
   description: ""
   license: ""
-  name: libXdamage
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXrender
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pixman
-  
-  version: 0.27.2
-- 
-  category: x11-base
-  description: ""
-  license: ""
-  name: xorg-server
-  
-  version: "1.20"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jre
-  
-  version: "1.5"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jpeg
+  name: libXfont2
   
   version: ""
 - 
@@ -92,7 +43,14 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXext
+  name: libXau
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXdamage
   
   version: ""
 - 
@@ -103,33 +61,19 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
+  category: x11-base
   description: ""
   license: ""
-  name: libXfont2
+  name: xorg-server
+  
+  version: "1.20"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jpeg
   
   version: ""
-- 
-  category: x11-apps
-  description: ""
-  license: ""
-  name: xsetroot
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXinerama
-  
-  version: ""
-- 
-  category: x11-apps
-  description: ""
-  license: ""
-  name: xauth
-  
-  version: 1.0.3
 - 
   category: x11-libs
   description: ""
@@ -141,28 +85,28 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXau
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libiconv
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
   name: libXtst
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXext
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
   
   version: ""
 - 
@@ -183,14 +127,70 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: openssl
+  name: libressl
+  
+  version: ""
+- 
+  category: x11-apps
+  description: ""
+  license: ""
+  name: xauth
+  
+  version: 1.0.3
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXrender
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pixman
+  
+  version: 0.27.2
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libiconv
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libressl
+  name: openssl
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jre
+  
+  version: "1.5"
+- 
+  category: x11-apps
+  description: ""
+  license: ""
+  name: xsetroot
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXinerama
   
   version: ""
 uri:

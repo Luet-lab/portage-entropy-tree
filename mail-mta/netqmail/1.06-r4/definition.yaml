@@ -4,35 +4,7 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: courier
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: qmail-ldap
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: esmtp
-  
-  version: ""
-- 
-  category: '>=mail-mta'
-  description: ""
-  license: ""
-  name: ssmtp
-  
-  version: 2.64-r2
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: postfix
+  name: mini-qmail
   
   version: ""
 - 
@@ -46,14 +18,35 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: sendmail
+  name: msmtp
   
   version: ""
 - 
   category: mail-mta
   description: ""
   license: ""
-  name: qmail
+  name: qmail-ldap
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: sendmail
+  
+  version: ""
+- 
+  category: '>=mail-mta'
+  description: ""
+  license: ""
+  name: ssmtp
+  
+  version: 2.64-r2
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: esmtp
   
   version: ""
 - 
@@ -67,14 +60,14 @@ mailer
   category: mail-mta
   description: ""
   license: ""
-  name: mini-qmail
+  name: postfix
   
   version: ""
 - 
   category: mail-mta
   description: ""
   license: ""
-  name: msmtp
+  name: courier
   
   version: ""
 - 
@@ -84,15 +77,22 @@ mailer
   name: exim
   
   version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: qmail
+  
+  version: ""
 description: qmail -- a secure, reliable, efficient, simple message transfer agent
 license: public-domain
 name: netqmail
 requires:
 - 
-  category: virtual
+  category: sys-apps
   description: ""
   license: ""
-  name: daemontools
+  name: gentoo-functions
   
   version: ""
 - 
@@ -100,6 +100,34 @@ requires:
   description: ""
   license: ""
   name: qmail
+  
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: qmaild
+  
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: qmaill
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: groff
   
   version: ""
 - 
@@ -117,6 +145,34 @@ requires:
   
   version: ""
 - 
+  category: acct-user
+  description: ""
+  license: ""
+  name: alias
+  
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: qmailp
+  
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: qmailq
+  
+  version: ""
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: cmd5checkpw
+  
+  version: "0.30"
+- 
   category: sys-apps
   description: ""
   license: ""
@@ -127,28 +183,14 @@ requires:
   category: sys-apps
   description: ""
   license: ""
-  name: groff
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
   name: ucspi-ssl
   
   version: 0.70-r1
 - 
-  category: net-mail
+  category: virtual
   description: ""
   license: ""
-  name: dot-forward
-  
-  version: 0.71-r3
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: gentoo-functions
+  name: daemontools
   
   version: ""
 - 
@@ -162,51 +204,16 @@ requires:
   category: acct-user
   description: ""
   license: ""
-  name: qmaild
-  
-  version: ""
-- 
-  category: acct-user
-  description: ""
-  license: ""
   name: qmailr
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: checkpassword
-  
-  version: ""
-- 
-  category: acct-user
-  description: ""
-  license: ""
-  name: qmailp
   
   version: ""
 - 
   category: net-mail
   description: ""
   license: ""
-  name: cmd5checkpw
+  name: dot-forward
   
-  version: "0.30"
-- 
-  category: acct-user
-  description: ""
-  license: ""
-  name: alias
-  
-  version: ""
-- 
-  category: acct-user
-  description: ""
-  license: ""
-  name: qmaill
-  
-  version: ""
+  version: 0.71-r3
 - 
   category: net-mail
   description: ""
@@ -215,17 +222,10 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: virtual
   description: ""
   license: ""
-  name: libressl
-  
-  version: ""
-- 
-  category: acct-user
-  description: ""
-  license: ""
-  name: qmailq
+  name: checkpassword
   
   version: ""
 uri:

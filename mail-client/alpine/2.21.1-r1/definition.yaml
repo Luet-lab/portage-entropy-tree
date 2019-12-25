@@ -1,23 +1,30 @@
 category: mail-client
 conflicts:
 - 
-  category: <=net-mail
-  description: ""
-  license: ""
-  name: uw-imap
-  
-  version: 2004g
-- 
   category: mail-client
   description: ""
   license: ""
   name: pine
   
   version: ""
+- 
+  category: <=net-mail
+  description: ""
+  license: ""
+  name: uw-imap
+  
+  version: 2004g
 description: An easy to use text-based based mail and news client
 license: Apache-2.0
 name: alpine
 requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
 - 
   category: net-nds
   description: ""
@@ -33,19 +40,12 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
-  name: ncurses
+  name: pam
   
-  version: "5.1"
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -71,9 +71,9 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: pam
+  name: ncurses
   
-  version: ""
+  version: "5.1"
 uri:
 - https://repo.or.cz/alpine.git/snapshot/843b2f16abfd949e09b1c5465387b1b0f724994a.tar.gz
   -> alpine-843b2f1.tar.gz

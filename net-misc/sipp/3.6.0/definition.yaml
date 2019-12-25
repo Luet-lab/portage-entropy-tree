@@ -1,0 +1,49 @@
+category: net-misc
+conflicts: []
+description: A free Open Source test tool / traffic generator for the SIP protocol
+license: GPL-2 ISC
+name: sipp
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: gsl
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libpcap
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libnet
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+uri:
+- https://github.com/SIPp/sipp/releases/download/v3.6.0/.tar.gz
+use_flags:
+- gsl
+- +pcap
+- sctp
+- +ssl
+version: 3.6.0

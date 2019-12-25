@@ -1,12 +1,68 @@
 category: sys-apps
 conflicts:
 - 
-  category: <app-shells
+  category: <sys-apps
   description: ""
   license: ""
-  name: bash-completion
+  name: sysvinit
   
-  version: 2.7-r1
+  version: 2.88-r7
+- 
+  category: <sys-libs
+  description: ""
+  license: ""
+  name: e2fsprogs-libs
+  
+  version: 1.41.8
+- 
+  category: net-wireless
+  description: ""
+  license: ""
+  name: rfkill
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: hardlink
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: procps
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: setarch
+  
+  version: ""
+- 
+  category: '>=app-admin'
+  description: ""
+  license: ""
+  name: sysklogd
+  
+  version: "2.0"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: coreutils
+  
+  version: ""
+- 
+  category: <sys-apps
+  description: ""
+  license: ""
+  name: shadow
+  
+  version: 4.7-r2
 - 
   category: '>=sys-apps'
   description: ""
@@ -22,41 +78,6 @@ conflicts:
   
   version: ""
 - 
-  category: <sys-libs
-  description: ""
-  license: ""
-  name: e2fsprogs-libs
-  
-  version: 1.41.8
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: coreutils
-  
-  version: ""
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: procps
-  
-  version: ""
-- 
-  category: net-wireless
-  description: ""
-  license: ""
-  name: rfkill
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: setarch
-  
-  version: ""
-- 
   category: <sys-fs
   description: ""
   license: ""
@@ -64,37 +85,37 @@ conflicts:
   
   version: 1.41.8
 - 
-  category: <sys-apps
+  category: <app-shells
   description: ""
   license: ""
-  name: sysvinit
+  name: bash-completion
   
-  version: 2.88-r7
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: hardlink
-  
-  version: ""
-- 
-  category: '>=app-admin'
-  description: ""
-  license: ""
-  name: sysklogd
-  
-  version: "2.0"
-- 
-  category: <sys-apps
-  description: ""
-  license: ""
-  name: shadow
-  
-  version: 4.7-r2
+  version: 2.7-r1
 description: Various useful Linux utilities
 license: GPL-2 LGPL-2.1 BSD-4 MIT public-domain
 name: util-linux
 requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap-ng
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: 5.2-r2
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libintl
+  
+  version: ""
 - 
   category: sys-libs
   description: ""
@@ -107,13 +128,6 @@ requires:
   description: ""
   license: ""
   name: systemd
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libudev
   
   version: ""
 - 
@@ -134,35 +148,14 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: ncurses
+  name: libselinux
   
-  version: 5.2-r2
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: slang
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libcap-ng
-  
-  version: ""
+  version: 2.2.2-r4
 - 
   category: sys-fs
   description: ""
   license: ""
   name: cryptsetup
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libintl
   
   version: ""
 - 
@@ -176,9 +169,16 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: libselinux
+  name: slang
   
-  version: 2.2.2-r4
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libudev
+  
+  version: ""
 uri: []
 use_flags:
 - build

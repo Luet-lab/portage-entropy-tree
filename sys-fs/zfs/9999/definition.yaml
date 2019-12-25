@@ -1,26 +1,12 @@
 category: sys-fs
 conflicts:
 - 
-  category: <sys-kernel
+  category: =sys-apps
   description: ""
   license: ""
-  name: genkernel-next
-  
-  version: "67"
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: zfs-fuse
+  name: grep-2.13*
   
   version: ""
-- 
-  category: <sys-boot
-  description: ""
-  license: ""
-  name: grub
-  
-  version: 2.00-r2
 - 
   category: <sys-kernel
   description: ""
@@ -36,23 +22,44 @@ conflicts:
   
   version: 7.1.0
 - 
-  category: =sys-apps
-  description: ""
-  license: ""
-  name: grep-2.13*
-  
-  version: ""
-- 
   category: <sys-kernel
   description: ""
   license: ""
   name: dracut
   
   version: 044-r1
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: zfs-fuse
+  
+  version: ""
+- 
+  category: <sys-kernel
+  description: ""
+  license: ""
+  name: genkernel-next
+  
+  version: "67"
+- 
+  category: <sys-boot
+  description: ""
+  license: ""
+  name: grub
+  
+  version: 2.00-r2
 description: Userland utilities for ZFS Linux kernel module
 license: BSD-2 CDDL MIT
 name: zfs
 requires:
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: python-cffi
+  
+  version: ""
 - 
   category: sys-fs
   description: ""
@@ -61,10 +68,52 @@ requires:
   
   version: "9999"
 - 
+  category: virtual
+  description: ""
+  license: ""
+  name: awk
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: cpio
+  
+  version: ""
+- 
   category: app-misc
   description: ""
   license: ""
   name: pax-utils
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: mdadm
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: udev-init-scripts
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lsscsi
   
   version: ""
 - 
@@ -82,27 +131,6 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: udev-init-scripts
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: cpio
-  
-  version: ""
-- 
   category: sys-block
   description: ""
   license: ""
@@ -110,17 +138,10 @@ requires:
   
   version: ""
 - 
-  category: sys-fs
+  category: sys-process
   description: ""
   license: ""
-  name: lsscsi
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: mdadm
+  name: procps
   
   version: ""
 - 
@@ -128,13 +149,6 @@ requires:
   description: ""
   license: ""
   name: modutils
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: awk
   
   version: ""
 - 
@@ -148,21 +162,7 @@ requires:
   category: virtual
   description: ""
   license: ""
-  name: python-cffi
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
   name: udev
-  
-  version: ""
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: procps
   
   version: ""
 uri: []

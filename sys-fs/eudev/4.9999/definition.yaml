@@ -1,6 +1,13 @@
 category: sys-fs
 conflicts:
 - 
+  category: <sys-fs
+  description: ""
+  license: ""
+  name: lvm2
+  
+  version: 2.02.103
+- 
   category: <sys-libs
   description: ""
   license: ""
@@ -15,12 +22,12 @@ conflicts:
   
   version: ""
 - 
-  category: <sys-fs
+  category: sys-apps
   description: ""
   license: ""
-  name: lvm2
+  name: systemd
   
-  version: 2.02.103
+  version: ""
 - 
   category: <sec-policy
   description: ""
@@ -35,13 +42,6 @@ conflicts:
   name: udev
   
   version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: ""
 description: Linux dynamic and persistent device naming support (aka userspace devfs)
 license: LGPL-2.1 GPL-2
 name: eudev
@@ -53,13 +53,6 @@ requires:
   name: kmod
   
   version: "16"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: 2.1.9
 - 
   category: acct-group
   description: ""
@@ -88,6 +81,13 @@ requires:
   name: util-linux
   
   version: "2.20"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: 2.1.9
 uri: []
 use_flags:
 - +blkid

@@ -5,10 +5,17 @@ license: LGPL-2.1
 name: libquicktime
 requires:
 - 
-  category: sys-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: zlib
+  name: libXaw
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXv
   
   version: ""
 - 
@@ -18,6 +25,13 @@ requires:
   name: faad2
   
   version: 2.7-r3
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: libav
+  
+  version: "12"
 - 
   category: x11-libs
   description: ""
@@ -29,51 +43,9 @@ requires:
   category: virtual
   description: ""
   license: ""
-  name: opengl
+  name: jpeg
   
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libogg
-  
-  version: 1.3.0
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXaw
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libintl
-  
-  version: 0-r1
-- 
-  category: media-video
-  description: ""
-  license: ""
-  name: ffmpeg
-  
-  version: 3.2.6
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXext
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: alsa-lib
-  
-  version: 1.0.20
+  version: 0-r2
 - 
   category: media-sound
   description: ""
@@ -81,6 +53,20 @@ requires:
   name: lame
   
   version: 3.99.5-r1
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: faac
+  
+  version: 1.28-r3
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: alsa-lib
+  
+  version: 1.0.20
 - 
   category: media-libs
   description: ""
@@ -99,7 +85,28 @@ requires:
   category: x11-libs
   description: ""
   license: ""
+  name: libXt
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libintl
+  
+  version: 0-r1
+- 
+  category: x11-libs
+  description: ""
+  license: ""
   name: libX11
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXext
   
   version: ""
 - 
@@ -110,12 +117,12 @@ requires:
   
   version: 0.0.20130506
 - 
-  category: media-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: faac
+  name: zlib
   
-  version: 1.28-r3
+  version: ""
 - 
   category: media-libs
   description: ""
@@ -127,30 +134,23 @@ requires:
   category: media-video
   description: ""
   license: ""
-  name: libav
+  name: ffmpeg
   
-  version: "12"
+  version: 3.2.6
 - 
   category: virtual
   description: ""
   license: ""
-  name: jpeg
-  
-  version: 0-r2
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXt
+  name: opengl
   
   version: ""
 - 
-  category: x11-libs
+  category: media-libs
   description: ""
   license: ""
-  name: libXv
+  name: libogg
   
-  version: ""
+  version: 1.3.0
 uri:
 - mirror://sourceforge/libquicktime/libquicktime-1.2.4.tar.gz
 use_flags:

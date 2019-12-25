@@ -4,14 +4,14 @@ conflicts:
   category: net-misc
   description: ""
   license: ""
-  name: howl
+  name: mDNSResponder
   
   version: ""
 - 
   category: net-misc
   description: ""
   license: ""
-  name: mDNSResponder
+  name: howl
   
   version: ""
 description: System which facilitates service discovery on a local network
@@ -19,19 +19,12 @@ license: LGPL-2.1
 name: avahi
 requires:
 - 
-  category: dev-libs
+  category: sec-policy
   description: ""
   license: ""
-  name: expat
+  name: selinux-avahi
   
   version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: twisted
-  
-  version: 16.0.0
 - 
   category: acct-user
   description: ""
@@ -41,48 +34,6 @@ requires:
   version: ""
 - 
   category: acct-group
-  description: ""
-  license: ""
-  name: avahi-autoipd
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: gobject-introspection
-  
-  version: ""
-- 
-  category: dev-dotnet
-  description: ""
-  license: ""
-  name: gtk-sharp
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: avahi
-  
-  version: ""
-- 
-  category: acct-user
   description: ""
   license: ""
   name: avahi-autoipd
@@ -96,24 +47,24 @@ requires:
   
   version: ""
 - 
-  category: dev-qt
+  category: sys-libs
   description: ""
   license: ""
-  name: qtcore
+  name: libcap
   
   version: ""
 - 
-  category: sys-apps
+  category: dev-libs
   description: ""
   license: ""
-  name: dbus
+  name: gobject-introspection
   
   version: ""
 - 
-  category: dev-lang
+  category: dev-python
   description: ""
   license: ""
-  name: mono
+  name: dbus-python
   
   version: ""
 - 
@@ -124,10 +75,10 @@ requires:
   
   version: ""
 - 
-  category: sec-policy
+  category: acct-group
   description: ""
   license: ""
-  name: selinux-avahi
+  name: avahi
   
   version: ""
 - 
@@ -145,17 +96,66 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: libcap
+  name: gtk+
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
   
   version: ""
 - 
   category: dev-python
   description: ""
   license: ""
-  name: dbus-python
+  name: twisted
+  
+  version: 16.0.0
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: avahi-autoipd
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: mono
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: expat
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtcore
+  
+  version: ""
+- 
+  category: dev-dotnet
+  description: ""
+  license: ""
+  name: gtk-sharp
   
   version: ""
 uri:

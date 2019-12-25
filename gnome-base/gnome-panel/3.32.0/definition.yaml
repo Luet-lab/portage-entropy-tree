@@ -5,19 +5,19 @@ license: GPL-2+ FDL-1.1 LGPL-2.1+
 name: gnome-panel
 requires:
 - 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "230"
+- 
   category: dev-libs
   description: ""
   license: ""
   name: glib
   
   version: 2.45.3
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gnome-menus
-  
-  version: 3.7.90
 - 
   category: x11-libs
   description: ""
@@ -26,31 +26,17 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gnome-desktop
-  
-  version: 2.91.0
-- 
-  category: gnome-extra
-  description: ""
-  license: ""
-  name: evolution-data-server
-  
-  version: 3.5.3
-- 
   category: gnome-base
   description: ""
   license: ""
   name: gdm
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
   
   version: ""
 - 
@@ -64,30 +50,37 @@ requires:
   category: gnome-base
   description: ""
   license: ""
-  name: dconf
+  name: gnome-desktop
   
-  version: 0.13.4
+  version: 2.91.0
 - 
-  category: x11-libs
+  category: gnome-base
   description: ""
   license: ""
-  name: gtk+
+  name: gnome-menus
   
-  version: 3.22.0
+  version: 3.7.90
 - 
-  category: x11-libs
+  category: sys-auth
   description: ""
   license: ""
-  name: libwnck
-  
-  version: 3.4.6
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
+  name: elogind
   
   version: "230"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXrandr
+  
+  version: 1.3.0
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -96,12 +89,12 @@ requires:
   
   version: 3.28.0
 - 
-  category: sys-auth
+  category: gnome-base
   description: ""
   license: ""
-  name: polkit
+  name: dconf
   
-  version: ""
+  version: 0.13.4
 - 
   category: x11-libs
   description: ""
@@ -117,19 +110,26 @@ requires:
   
   version: 1.15.4
 - 
-  category: sys-auth
+  category: x11-libs
   description: ""
   license: ""
-  name: elogind
+  name: gtk+
   
-  version: "230"
+  version: 3.22.0
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXrandr
+  name: libwnck
   
-  version: 1.3.0
+  version: 3.4.6
+- 
+  category: gnome-extra
+  description: ""
+  license: ""
+  name: evolution-data-server
+  
+  version: 3.5.3
 uri: []
 use_flags:
 - eds

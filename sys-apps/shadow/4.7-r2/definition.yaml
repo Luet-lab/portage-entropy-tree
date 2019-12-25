@@ -12,6 +12,20 @@ license: BSD GPL-2
 name: shadow
 requires:
 - 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: "1.28"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libsemanage
+  
+  version: ""
+- 
   category: sys-apps
   description: ""
   license: ""
@@ -19,12 +33,12 @@ requires:
   
   version: ""
 - 
-  category: sys-process
+  category: sys-libs
   description: ""
   license: ""
-  name: audit
+  name: cracklib
   
-  version: "2.6"
+  version: 2.7-r3
 - 
   category: virtual
   description: ""
@@ -40,38 +54,10 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: "1.28"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: cracklib
-  
-  version: 2.7-r3
-- 
   category: sys-auth
   description: ""
   license: ""
   name: skey
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libsemanage
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: attr
   
   version: ""
 - 
@@ -81,6 +67,20 @@ requires:
   name: pambase
   
   version: "20150213"
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: audit
+  
+  version: "2.6"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: attr
+  
+  version: ""
 uri:
 - https://github.com/shadow-maint/shadow/releases/download/4.7/shadow-4.7.tar.gz
 use_flags:

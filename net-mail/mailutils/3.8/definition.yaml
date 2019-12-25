@@ -4,21 +4,7 @@ conflicts:
   category: mail-client
   description: ""
   license: ""
-  name: nmh
-  
-  version: ""
-- 
-  category: mail-client
-  description: ""
-  license: ""
   name: nail
-  
-  version: ""
-- 
-  category: mail-filter
-  description: ""
-  license: ""
-  name: libsieve
   
   version: ""
 - 
@@ -28,15 +14,36 @@ conflicts:
   name: mailx
   
   version: ""
+- 
+  category: mail-client
+  description: ""
+  license: ""
+  name: nmh
+  
+  version: ""
+- 
+  category: mail-filter
+  description: ""
+  license: ""
+  name: libsieve
+  
+  version: ""
 description: A useful collection of mail servers, clients, and filters
 license: GPL-2 LGPL-2.1
 name: mailutils
 requires:
 - 
-  category: dev-db
+  category: virtual
   description: ""
   license: ""
-  name: kyotocabinet
+  name: mta
+  
+  version: ""
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: gettext
   
   version: ""
 - 
@@ -47,17 +54,38 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: dev-db
   description: ""
   license: ""
-  name: gsasl
+  name: postgresql
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: tcp-wrappers
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: tokyocabinet
   
   version: ""
 - 
   category: sys-libs
   description: ""
   license: ""
-  name: readline
+  name: ncurses
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: db
   
   version: ""
 - 
@@ -71,21 +99,14 @@ requires:
   category: virtual
   description: ""
   license: ""
-  name: mta
+  name: krb5
   
   version: ""
 - 
-  category: dev-db
+  category: virtual
   description: ""
   license: ""
-  name: mysql-connector-c
-  
-  version: ""
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: gettext
+  name: gsasl
   
   version: ""
 - 
@@ -96,41 +117,6 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: db
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: emacs
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: gdbm
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: krb5
-  
-  version: ""
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
@@ -138,24 +124,10 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libltdl
-  
-  version: ""
-- 
   category: dev-db
   description: ""
   license: ""
-  name: tokyocabinet
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: postgresql
+  name: kyotocabinet
   
   version: ""
 - 
@@ -166,17 +138,45 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: sys-libs
   description: ""
   license: ""
-  name: tcp-wrappers
+  name: readline
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libltdl
+  
+  version: ""
+- 
+  category: app-editors
+  description: ""
+  license: ""
+  name: emacs
+  
+  version: "23.1"
 - 
   category: sys-libs
   description: ""
   license: ""
-  name: ncurses
+  name: gdbm
+  
+  version: ""
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c
   
   version: ""
 uri:

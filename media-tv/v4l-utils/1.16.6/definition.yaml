@@ -1,30 +1,30 @@
 category: media-tv
 conflicts:
 - 
-  category: media-tv
-  description: ""
-  license: ""
-  name: v4l2-ctl
-  
-  version: ""
-- 
   category: <media-tv
   description: ""
   license: ""
   name: ivtv-utils
   
   version: 1.4.0-r2
+- 
+  category: media-tv
+  description: ""
+  license: ""
+  name: v4l2-ctl
+  
+  version: ""
 description: Separate utilities ebuild from upstream v4l-utils package
 license: GPL-2+ LGPL-2.1+
 name: v4l-utils
 requires:
 - 
-  category: media-libs
+  category: virtual
   description: ""
   license: ""
-  name: libv4l
+  name: libelf
   
-  version: 1.16.6
+  version: ""
 - 
   category: dev-qt
   description: ""
@@ -40,10 +40,17 @@ requires:
   
   version: ""
 - 
-  category: dev-qt
+  category: virtual
   description: ""
   license: ""
-  name: qtopengl
+  name: opengl
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libudev
   
   version: ""
 - 
@@ -54,17 +61,17 @@ requires:
   
   version: 0-r2
 - 
-  category: virtual
+  category: media-libs
   description: ""
   license: ""
-  name: libelf
+  name: libv4l
   
-  version: ""
+  version: 1.16.6
 - 
-  category: virtual
+  category: dev-qt
   description: ""
   license: ""
-  name: opengl
+  name: qtopengl
   
   version: ""
 - 
@@ -72,13 +79,6 @@ requires:
   description: ""
   license: ""
   name: alsa-lib
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libudev
   
   version: ""
 uri:

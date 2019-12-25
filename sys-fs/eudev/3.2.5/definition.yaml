@@ -1,12 +1,26 @@
 category: sys-fs
 conflicts:
 - 
+  category: <sys-fs
+  description: ""
+  license: ""
+  name: lvm2
+  
+  version: 2.02.103
+- 
   category: <sec-policy
   description: ""
   license: ""
   name: selinux-base
   
   version: 2.20120725-r10
+- 
+  category: <sys-libs
+  description: ""
+  license: ""
+  name: glibc
+  
+  version: "2.11"
 - 
   category: sys-apps
   description: ""
@@ -22,26 +36,12 @@ conflicts:
   
   version: ""
 - 
-  category: <sys-fs
-  description: ""
-  license: ""
-  name: lvm2
-  
-  version: 2.02.103
-- 
   category: sys-fs
   description: ""
   license: ""
   name: udev
   
   version: ""
-- 
-  category: <sys-libs
-  description: ""
-  license: ""
-  name: glibc
-  
-  version: "2.11"
 description: Linux dynamic and persistent device naming support (aka userspace devfs)
 license: LGPL-2.1 MIT GPL-2
 name: eudev
@@ -50,7 +50,7 @@ requires:
   category: acct-group
   description: ""
   license: ""
-  name: kvm
+  name: render
   
   version: ""
 - 
@@ -71,14 +71,7 @@ requires:
   category: acct-group
   description: ""
   license: ""
-  name: input
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: render
+  name: kvm
   
   version: ""
 - 
@@ -95,6 +88,13 @@ requires:
   name: kmod
   
   version: "16"
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: input
+  
+  version: ""
 uri:
 - https://dev.gentoo.org/~blueness/eudev/eudev-3.2.5.tar.gz
 use_flags:

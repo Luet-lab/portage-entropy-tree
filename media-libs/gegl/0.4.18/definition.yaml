@@ -5,54 +5,19 @@ license: '|| ( GPL-3+ LGPL-3 )'
 name: gegl
 requires:
 - 
-  category: app-text
-  description: ""
-  license: ""
-  name: poppler
-  
-  version: 0.71.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: tiff
-  
-  version: "4"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libv4l
-  
-  version: 1.0.1
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.44"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libnsgif
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jpeg
-  
-  version: ""
-- 
   category: x11-libs
   description: ""
   license: ""
-  name: gdk-pixbuf
+  name: cairo
   
-  version: "2.32"
+  version: 1.12.2
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: libav
+  
+  version: ""
 - 
   category: media-libs
   description: ""
@@ -64,16 +29,16 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: lensfun
+  name: libv4l
   
-  version: 0.2.5
+  version: 1.0.1
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libraw
+  name: libpng
   
-  version: 0.15.4
+  version: 1.6.0
 - 
   category: media-libs
   description: ""
@@ -82,40 +47,26 @@ requires:
   
   version: 1.2.0
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: json-glib
-  
-  version: 1.2.6
-- 
   category: media-libs
   description: ""
   license: ""
-  name: libwebp
+  name: tiff
   
-  version: 0.5.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: gobject-introspection
-  
-  version: "1.32"
+  version: "4"
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: cairo
+  name: gdk-pixbuf
   
-  version: 1.12.2
+  version: "2.32"
 - 
-  category: sys-libs
+  category: media-libs
   description: ""
   license: ""
-  name: zlib
+  name: libnsgif
   
-  version: 1.2.0
+  version: ""
 - 
   category: x11-libs
   description: ""
@@ -127,23 +78,16 @@ requires:
   category: media-video
   description: ""
   license: ""
-  name: libav
-  
-  version: ""
-- 
-  category: media-video
-  description: ""
-  license: ""
   name: ffmpeg
   
   version: ""
 - 
-  category: media-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: openexr
+  name: gobject-introspection
   
-  version: 1.6.1
+  version: "1.32"
 - 
   category: gnome-base
   description: ""
@@ -162,9 +106,65 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libpng
+  name: libwebp
   
-  version: 1.6.0
+  version: 0.5.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.44"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: 1.2.0
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jpeg
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: lensfun
+  
+  version: 0.2.5
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: openexr
+  
+  version: 1.6.1
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: poppler
+  
+  version: 0.71.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libraw
+  
+  version: 0.15.4
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: json-glib
+  
+  version: 1.2.6
 uri:
 - http://download.gimp.org/pub/gegl/0.4/gegl-0.4.18.tar.xz
 use_flags:

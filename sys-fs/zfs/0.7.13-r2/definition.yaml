@@ -1,40 +1,12 @@
 category: sys-fs
 conflicts:
 - 
-  category: <sys-kernel
-  description: ""
-  license: ""
-  name: genkernel-next
-  
-  version: "67"
-- 
-  category: <sys-kernel
-  description: ""
-  license: ""
-  name: genkernel
-  
-  version: 3.5.1.1
-- 
   category: =sys-apps
   description: ""
   license: ""
   name: grep-2.13*
   
   version: ""
-- 
-  category: <sys-kernel
-  description: ""
-  license: ""
-  name: bliss-initramfs
-  
-  version: 7.1.0
-- 
-  category: <sys-kernel
-  description: ""
-  license: ""
-  name: dracut
-  
-  version: 044-r1
 - 
   category: sys-fs
   description: ""
@@ -49,22 +21,50 @@ conflicts:
   name: grub
   
   version: 2.00-r2
+- 
+  category: <sys-kernel
+  description: ""
+  license: ""
+  name: genkernel
+  
+  version: 3.5.1.1
+- 
+  category: <sys-kernel
+  description: ""
+  license: ""
+  name: genkernel-next
+  
+  version: "67"
+- 
+  category: <sys-kernel
+  description: ""
+  license: ""
+  name: dracut
+  
+  version: 044-r1
+- 
+  category: <sys-kernel
+  description: ""
+  license: ""
+  name: bliss-initramfs
+  
+  version: 7.1.0
 description: Userland utilities for ZFS Linux kernel module
 license: BSD-2 CDDL MIT
 name: zfs
 requires:
 - 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: ""
+- 
   category: sys-fs
   description: ""
   license: ""
   name: udev-init-scripts
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libtirpc
   
   version: ""
 - 
@@ -82,24 +82,10 @@ requires:
   
   version: ""
 - 
-  category: sys-process
+  category: sys-fs
   description: ""
   license: ""
-  name: procps
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
-  
-  version: ""
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: bc
+  name: lsscsi
   
   version: ""
 - 
@@ -110,13 +96,6 @@ requires:
   
   version: ""
 - 
-  category: virtual
-  description: ""
-  license: ""
-  name: modutils
-  
-  version: ""
-- 
   category: app-arch
   description: ""
   license: ""
@@ -124,10 +103,24 @@ requires:
   
   version: ""
 - 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libtirpc
+  
+  version: ""
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: bc
+  
+  version: ""
+- 
   category: virtual
   description: ""
   license: ""
-  name: udev
+  name: modutils
   
   version: ""
 - 
@@ -145,10 +138,17 @@ requires:
   
   version: 0.7.13
 - 
-  category: sys-fs
+  category: sys-apps
   description: ""
   license: ""
-  name: lsscsi
+  name: util-linux
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: procps
   
   version: ""
 uri:

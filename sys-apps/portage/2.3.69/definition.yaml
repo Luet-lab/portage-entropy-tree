@@ -1,49 +1,42 @@
 category: sys-apps
 conflicts:
 - 
-  category: <app-portage
-  description: ""
-  license: ""
-  name: repoman
-  
-  version: 2.3.10
-- 
   category: <app-admin
   description: ""
   license: ""
   name: logrotate
   
   version: 3.8.0
+- 
+  category: <app-portage
+  description: ""
+  license: ""
+  name: repoman
+  
+  version: 2.3.10
 description: Portage is the package management and distribution system for Gentoo
 license: GPL-2
 name: portage
 requires:
 - 
-  category: app-misc
+  category: app-crypt
   description: ""
   license: ""
-  name: pax-utils
+  name: openpgp-keys-gentoo-release
   
-  version: 0.1.17
+  version: "20180706"
 - 
-  category: app-arch
+  category: app-admin
   description: ""
   license: ""
-  name: tar
+  name: eselect
   
-  version: "1.27"
+  version: "1.2"
 - 
-  category: sys-apps
+  category: app-crypt
   description: ""
   license: ""
-  name: sed
-  
-  version: 4.0.5
-- 
-  category: app-shells
-  description: ""
-  license: ""
-  name: bash
+  name: gnupg-2.2.4-r2[ssl(-)]
   
   version: ""
 - 
@@ -54,6 +47,20 @@ requires:
   
   version: ""
 - 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: pax-utils
+  
+  version: 0.1.17
+- 
   category: dev-lang
   description: ""
   license: ""
@@ -61,40 +68,12 @@ requires:
   
   version: ""
 - 
-  category: app-admin
+  category: sys-apps
   description: ""
   license: ""
-  name: eselect
+  name: sed
   
-  version: "1.2"
-- 
-  category: app-portage
-  description: ""
-  license: ""
-  name: gemato
-  
-  version: "14"
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: openpgp-keys-gentoo-release
-  
-  version: "20180706"
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: gnupg-2.2.4-r2[ssl(-)]
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: 2.0.94
+  version: 4.0.5
 - 
   category: sys-apps
   description: ""
@@ -103,6 +82,20 @@ requires:
   
   version: "0.3"
 - 
+  category: app-arch
+  description: ""
+  license: ""
+  name: tar
+  
+  version: "1.27"
+- 
+  category: app-portage
+  description: ""
+  license: ""
+  name: gemato
+  
+  version: "14"
+- 
   category: sys-apps
   description: ""
   license: ""
@@ -110,10 +103,17 @@ requires:
   
   version: "2.2"
 - 
-  category: sys-apps
+  category: sys-libs
   description: ""
   license: ""
-  name: util-linux
+  name: libselinux
+  
+  version: 2.0.94
+- 
+  category: app-shells
+  description: ""
+  license: ""
+  name: bash
   
   version: ""
 uri: []

@@ -4,13 +4,6 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mysql-connector-c
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
   name: mariadb-galera
   
   version: ""
@@ -18,7 +11,7 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mariadb-connector-c
+  name: mysql-cluster
   
   version: ""
 - 
@@ -26,6 +19,13 @@ conflicts:
   description: ""
   license: ""
   name: mysql
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c
   
   version: ""
 - 
@@ -39,7 +39,7 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mysql-cluster
+  name: mariadb-connector-c
   
   version: ""
 description: A fast, multi-threaded, multi-user SQL database server
@@ -47,52 +47,10 @@ license: GPL-2
 name: percona-server
 requires:
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: ncurses
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: zstd
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: xz-utils
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: sed
-  
-  version: "4"
-- 
   category: dev-libs
   description: ""
   license: ""
-  name: protobuf
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libaio
+  name: libevent
   
   version: ""
 - 
@@ -103,12 +61,33 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: openssl
+  name: pam
   
-  version: 1.0.0
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-mysql
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: mysql
+  
+  version: ""
 - 
   category: acct-user
   description: ""
@@ -117,10 +96,10 @@ requires:
   
   version: ""
 - 
-  category: app-text
+  category: dev-libs
   description: ""
   license: ""
-  name: mecab
+  name: jemalloc
   
   version: ""
 - 
@@ -134,42 +113,21 @@ requires:
   category: dev-util
   description: ""
   license: ""
-  name: google-perftools
+  name: systemtap
   
-  version: ""
+  version: "1.3"
 - 
-  category: acct-group
+  category: app-text
   description: ""
   license: ""
-  name: mysql
+  name: mecab
   
   version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: texinfo
-  
-  version: 4.7-r1
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: jemalloc
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libtirpc
-  
-  version: ""
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: procps
+  name: libressl
   
   version: ""
 - 
@@ -180,45 +138,73 @@ requires:
   
   version: 0_p131
 - 
-  category: dev-util
+  category: dev-libs
   description: ""
   license: ""
-  name: valgrind
+  name: protobuf
   
   version: ""
 - 
-  category: dev-util
+  category: sys-apps
   description: ""
   license: ""
-  name: systemtap
+  name: sed
   
-  version: "1.3"
+  version: "4"
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libressl
+  name: libaio
   
   version: ""
 - 
-  category: sec-policy
+  category: app-arch
   description: ""
   license: ""
-  name: selinux-mysql
+  name: zstd
   
   version: ""
 - 
-  category: net-misc
+  category: dev-util
   description: ""
   license: ""
-  name: curl
+  name: google-perftools
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libevent
+  name: openssl
+  
+  version: 1.0.0
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: xz-utils
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-init-scripts
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: procps
   
   version: ""
 - 
@@ -229,12 +215,26 @@ requires:
   
   version: 1.2.3
 - 
-  category: dev-db
+  category: net-libs
   description: ""
   license: ""
-  name: mysql-init-scripts
+  name: libtirpc
   
   version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: valgrind
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: texinfo
+  
+  version: 4.7-r1
 uri:
 - https://www.percona.com/downloads/Percona-Server-/Percona-Server-/source/tarball/percona-server-.tar.gz
 - mirror://sourceforge/boost/boost_1_59_0.tar.gz

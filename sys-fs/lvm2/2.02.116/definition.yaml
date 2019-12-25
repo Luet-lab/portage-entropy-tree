@@ -1,12 +1,12 @@
 category: sys-fs
 conflicts:
 - 
-  category: <sys-apps
+  category: <sys-fs
   description: ""
   license: ""
-  name: openrc
+  name: cryptsetup
   
-  version: "0.11"
+  version: 1.1.2
 - 
   category: '!sys-fs'
   description: ""
@@ -15,44 +15,16 @@ conflicts:
   
   version: ""
 - 
-  category: <sys-fs
+  category: <sys-apps
   description: ""
   license: ""
-  name: cryptsetup
+  name: openrc
   
-  version: 1.1.2
+  version: "0.11"
 description: User-land utilities for LVM2 (device-mapper) software
 license: GPL-2
 name: lvm2
 requires:
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libudev
-  
-  version: "208"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: baselayout
-  
-  version: "2.2"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: readline
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
-  
-  version: "2.16"
 - 
   category: sys-apps
   description: ""
@@ -67,6 +39,34 @@ requires:
   name: thin-provisioning-tools
   
   version: 0.3.0
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: baselayout
+  
+  version: "2.2"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: "2.16"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libudev
+  
+  version: "208"
 uri: []
 use_flags:
 - readline

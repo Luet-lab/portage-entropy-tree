@@ -5,20 +5,6 @@ license: GPL-2+
 name: gnome-disk-utility
 requires:
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: 3.16.0
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: libsecret
-  
-  version: "0.7"
-- 
   category: app-arch
   description: ""
   license: ""
@@ -29,9 +15,23 @@ requires:
   category: sys-fs
   description: ""
   license: ""
-  name: dosfstools
+  name: udisks
   
-  version: ""
+  version: 2.7.6
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: libsecret
+  
+  version: "0.7"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libcanberra
+  
+  version: "0.1"
 - 
   category: media-libs
   description: ""
@@ -47,19 +47,26 @@ requires:
   
   version: "209"
 - 
-  category: gnome-base
+  category: dev-libs
   description: ""
   license: ""
-  name: gnome-settings-daemon
+  name: glib
   
-  version: "3.8"
+  version: "2.31"
 - 
-  category: media-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: libcanberra
+  name: gtk+
   
-  version: "0.1"
+  version: 3.16.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpwquality
+  
+  version: 1.0.0
 - 
   category: x11-libs
   description: ""
@@ -75,31 +82,24 @@ requires:
   
   version: "209"
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.31"
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: udisks
-  
-  version: 2.7.6
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libpwquality
-  
-  version: 1.0.0
-- 
   category: x11-themes
   description: ""
   license: ""
   name: adwaita-icon-theme
+  
+  version: ""
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gnome-settings-daemon
+  
+  version: "3.8"
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: dosfstools
   
   version: ""
 uri: []

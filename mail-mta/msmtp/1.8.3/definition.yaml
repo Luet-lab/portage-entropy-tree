@@ -4,21 +4,14 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: esmtp
+  name: postfix
   
   version: ""
 - 
   category: mail-mta
   description: ""
   license: ""
-  name: exim
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: sendmail
+  name: opensmtpd
   
   version: ""
 - 
@@ -32,7 +25,7 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: netqmail
+  name: esmtp
   
   version: ""
 - 
@@ -42,20 +35,6 @@ conflicts:
 mailer
   
   version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: postfix
-  
-  version: ""
-- 
-  category: <mail-mta
-  description: ""
-  license: ""
-  name: ssmtp
-  
-  version: 2.64-r2
 - 
   category: '>=mail-mta'
   description: ""
@@ -67,7 +46,7 @@ mailer
   category: mail-mta
   description: ""
   license: ""
-  name: mini-qmail
+  name: netqmail
   
   version: ""
 - 
@@ -81,27 +60,34 @@ mailer
   category: mail-mta
   description: ""
   license: ""
-  name: opensmtpd
+  name: sendmail
+  
+  version: ""
+- 
+  category: <mail-mta
+  description: ""
+  license: ""
+  name: ssmtp
+  
+  version: 2.64-r2
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: exim
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: mini-qmail
   
   version: ""
 description: An SMTP client and SMTP plugin for mail user agents such as Mutt
 license: GPL-3
 name: msmtp
 requires:
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: libsecret
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnutls[idn?]
-  
-  version: ""
 - 
   category: virtual
   description: ""
@@ -110,10 +96,10 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: net-dns
   description: ""
   license: ""
-  name: libintl
+  name: libidn2
   
   version: ""
 - 
@@ -124,10 +110,24 @@ requires:
   
   version: ""
 - 
-  category: net-dns
+  category: virtual
   description: ""
   license: ""
-  name: libidn2
+  name: libintl
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls[idn?]
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: libsecret
   
   version: ""
 uri:

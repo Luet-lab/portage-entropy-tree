@@ -5,17 +5,38 @@ license: GPL-2+
 name: metacity
 requires:
 - 
-  category: media-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: libcanberra
+  name: libXcursor
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libSM
+  name: libICE
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: 3.22.0
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXrender
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXrandr
   
   version: ""
 - 
@@ -29,9 +50,16 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libICE
+  name: pango-1.2.0[X]
   
   version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXcomposite
+  
+  version: "0.3"
 - 
   category: x11-libs
   description: ""
@@ -50,6 +78,13 @@ requires:
   category: x11-libs
   description: ""
   license: ""
+  name: libSM
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
   name: libXinerama
   
   version: ""
@@ -61,68 +96,12 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXcursor
-  
-  version: ""
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: libgtop
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXrandr
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
   name: glib
   
   version: 2.44.0
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: 3.22.0
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXcomposite
-  
-  version: "0.3"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXdamage
-  
-  version: ""
-- 
-  category: gnome-extra
-  description: ""
-  license: ""
-  name: zenity
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pango-1.2.0[X]
-  
-  version: ""
 - 
   category: gnome-base
   description: ""
@@ -134,7 +113,14 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXrender
+  name: libXdamage
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libcanberra
   
   version: ""
 - 
@@ -144,6 +130,20 @@ requires:
   name: startup-notification
   
   version: "0.7"
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: libgtop
+  
+  version: ""
+- 
+  category: gnome-extra
+  description: ""
+  license: ""
+  name: zenity
+  
+  version: ""
 uri: []
 use_flags:
 - +libcanberra

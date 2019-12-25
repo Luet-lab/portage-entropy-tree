@@ -5,17 +5,31 @@ license: GPL-2 LGPL-2.1
 name: inkscape-1.0_beta2
 requires:
 - 
-  category: media-gfx
+  category: media-libs
   description: ""
   license: ""
-  name: scour
+  name: libpng
   
   version: ""
 - 
-  category: sci-libs
+  category: media-gfx
   description: ""
   license: ""
-  name: gsl
+  name: imagemagick
+  
+  version: "7"
+- 
+  category: media-gfx
+  description: ""
+  license: ""
+  name: graphicsmagick
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: jemalloc
   
   version: ""
 - 
@@ -26,38 +40,52 @@ requires:
   
   version: ""
 - 
-  category: media-libs
+  category: app-text
   description: ""
   license: ""
-  name: libvisio
-  
-  version: ""
-- 
-  category: media-gfx
-  description: ""
-  license: ""
-  name: potrace
-  
-  version: ""
-- 
-  category: dev-cpp
-  description: ""
-  license: ""
-  name: gtkmm
+  name: libwpg
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: boehm-gc
+  name: librevenge
   
-  version: "7.1"
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: gtkspell
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: poppler
+  
+  version: 0.57.0
+- 
+  category: dev-cpp
+  description: ""
+  license: ""
+  name: glibmm
+  
+  version: 2.54.1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: double-conversion
+  
+  version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: freetype
+  name: fontconfig
   
   version: ""
 - 
@@ -68,17 +96,87 @@ requires:
   
   version: ""
 - 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: ""
+- 
   category: app-text
   description: ""
   license: ""
-  name: libwpg
+  name: ghostscript-gpl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.41"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gdl
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
+  name: lcms
+  
+  version: ""
+- 
+  category: dev-cpp
+  description: ""
+  license: ""
+  name: cairomm
+  
+  version: "1.12"
+- 
+  category: media-gfx
+  description: ""
+  license: ""
+  name: potrace
+  
+  version: ""
+- 
+  category: media-gfx
+  description: ""
+  license: ""
+  name: scour
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pango
+  
+  version: 1.37.2
+- 
+  category: media-libs
+  description: ""
+  license: ""
   name: libcdr
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libvisio
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: lxml
   
   version: ""
 - 
@@ -89,17 +187,10 @@ requires:
   
   version: ""
 - 
-  category: dev-cpp
+  category: virtual
   description: ""
   license: ""
-  name: glibmm
-  
-  version: 2.54.1
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: gtkspell
+  name: jpeg
   
   version: ""
 - 
@@ -110,12 +201,19 @@ requires:
   
   version: ""
 - 
-  category: media-libs
+  category: dev-cpp
   description: ""
   license: ""
-  name: libexif
+  name: gtkmm
   
   version: ""
+- 
+  category: dev-cpp
+  description: ""
+  license: ""
+  name: pangomm
+  
+  version: "2.40"
 - 
   category: dev-libs
   description: ""
@@ -124,24 +222,17 @@ requires:
   
   version: 1.1.25
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pango
-  
-  version: 1.37.2
-- 
-  category: media-gfx
-  description: ""
-  license: ""
-  name: imagemagick
-  
-  version: "7"
-- 
   category: dev-libs
   description: ""
   license: ""
-  name: jemalloc
+  name: popt
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: gsl
   
   version: ""
 - 
@@ -155,16 +246,16 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libsigc++
+  name: boehm-gc
   
-  version: "2.8"
+  version: "7.1"
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: librevenge
+  name: libsigc++
   
-  version: ""
+  version: "2.8"
 - 
   category: dev-libs
   description: ""
@@ -176,98 +267,7 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: fontconfig
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jpeg
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: lcms
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: double-conversion
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.41"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: ""
-- 
-  category: media-gfx
-  description: ""
-  license: ""
-  name: graphicsmagick
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: ghostscript-gpl
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: poppler
-  
-  version: 0.57.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: gdl
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: lxml
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libpng
-  
-  version: ""
-- 
-  category: dev-cpp
-  description: ""
-  license: ""
-  name: cairomm
-  
-  version: "1.12"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: popt
+  name: freetype
   
   version: ""
 - 
@@ -278,12 +278,12 @@ requires:
   
   version: ""
 - 
-  category: dev-cpp
+  category: media-libs
   description: ""
   license: ""
-  name: pangomm
+  name: libexif
   
-  version: "2.40"
+  version: ""
 uri:
 - https://inkscape.org/gallery/item/16197/inkscape-1.0beta2-_2019-12-03_2b71d25d45.tar.xz
 use_flags:

@@ -8,17 +8,17 @@ conflicts:
   
   version: ""
 - 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: courier
-  
-  version: ""
-- 
   category: net-mail
   description: ""
   license: ""
   name: uw-imap
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: courier
   
   version: ""
 - 
@@ -33,12 +33,12 @@ license: GPL-3
 name: courier-imap
 requires:
 - 
-  category: sys-libs
+  category: net-libs
   description: ""
   license: ""
-  name: gdbm
+  name: courier-unicode
   
-  version: 1.8.0
+  version: "1.3"
 - 
   category: sec-policy
   description: ""
@@ -50,28 +50,7 @@ requires:
   category: net-libs
   description: ""
   license: ""
-  name: courier-authlib
-  
-  version: "0.61"
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: mailbase
-  
-  version: 0.00-r8
-- 
-  category: net-libs
-  description: ""
-  license: ""
   name: gnutls
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: db
   
   version: ""
 - 
@@ -81,6 +60,34 @@ requires:
   name: openssl
   
   version: ""
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: mailbase
+  
+  version: 0.00-r8
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: db
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: fam
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: gdbm
+  
+  version: 1.8.0
 - 
   category: dev-libs
   description: ""
@@ -92,23 +99,16 @@ requires:
   category: net-libs
   description: ""
   license: ""
-  name: courier-unicode
+  name: courier-authlib
   
-  version: "2"
+  version: "0.61"
 - 
   category: net-libs
   description: ""
   license: ""
   name: courier-unicode
   
-  version: "1.3"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: fam
-  
-  version: ""
+  version: "2"
 uri:
 - mirror://sourceforge/courier/courier-imap-4.17.3.tar.bz2
 use_flags:

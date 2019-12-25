@@ -4,20 +4,34 @@ conflicts:
   category: sys-auth
   description: ""
   license: ""
-  name: pam_ldap
+  name: nss_ldap
   
   version: ""
 - 
   category: sys-auth
   description: ""
   license: ""
-  name: nss_ldap
+  name: pam_ldap
   
   version: ""
 description: NSS module for name lookups using LDAP
 license: LGPL-2.1
 name: nss-pam-ldapd
 requires:
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: python-ldap
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: python-daemon
+  
+  version: ""
 - 
   category: net-nds
   description: ""
@@ -44,20 +58,6 @@ requires:
   description: ""
   license: ""
   name: pam
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: python-ldap
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: python-daemon
   
   version: ""
 uri:

@@ -13,12 +13,33 @@ license: GPL-3+
 name: xemacs
 requires:
 - 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXmu
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: db
+  
+  version: "4"
+- 
   category: dev-libs
   description: ""
   license: ""
-  name: libressl
+  name: openssl
   
-  version: ""
+  version: 0.9.6
 - 
   category: media-libs
   description: ""
@@ -30,35 +51,21 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXft
+  name: dnd
   
   version: ""
-- 
-  category: app-eselect
-  description: ""
-  license: ""
-  name: eselect-emacs
-  
-  version: "1.15"
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libpng
-  
-  version: "1.2"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jpeg
+  name: freetype
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXt
+  name: libXrender
   
   version: ""
 - 
@@ -79,35 +86,49 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXaw3d
+  name: neXtaw
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libpng
+  
+  version: "1.2"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jpeg
   
   version: ""
 - 
   category: sys-libs
   description: ""
   license: ""
-  name: zlib
+  name: ncurses
   
-  version: 1.1.4
+  version: "5.2"
 - 
-  category: media-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: audiofile
+  name: libressl
   
-  version: 0.2.3
+  version: ""
 - 
-  category: sys-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: gpm
+  name: libXt
   
-  version: 1.19.6
+  version: ""
 - 
-  category: dev-db
+  category: x11-libs
   description: ""
   license: ""
-  name: postgresql
+  name: libXaw3d
   
   version: ""
 - 
@@ -118,24 +139,24 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: app-eselect
   description: ""
   license: ""
-  name: db
+  name: eselect-emacs
   
-  version: "4"
+  version: "1.15"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: audiofile
+  
+  version: 0.2.3
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXrender
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: neXtaw
+  name: libXaw
   
   version: ""
 - 
@@ -146,54 +167,12 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: dev-db
   description: ""
   license: ""
-  name: openssl
-  
-  version: 0.9.6
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
+  name: postgresql
   
   version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXmu
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: tiff
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: dnd
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: freetype
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: ncurses
-  
-  version: "5.2"
 - 
   category: media-libs
   description: ""
@@ -219,14 +198,28 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: gdbm-1.8.3[berkdb(+)]
+  name: zlib
+  
+  version: 1.1.4
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: gpm
+  
+  version: 1.19.6
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: tiff
   
   version: ""
 - 
-  category: x11-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: libXaw
+  name: gdbm-1.8.3[berkdb(+)]
   
   version: ""
 - 
@@ -236,6 +229,13 @@ requires:
   name: motif
   
   version: "2.3"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXft
+  
+  version: ""
 uri:
 - http://ftp.xemacs.org/xemacs-21.5/xemacs-21.5.34.tar.gz
 - http://www.malfunction.de/afterstep/files/NeXT_XEmacs.tar.gz

@@ -1,44 +1,72 @@
 category: x11-libs
 conflicts:
 - 
-  category: <gnome-base
-  description: ""
-  license: ""
-  name: gail
-  
-  version: "1000"
-- 
   category: <x11-libs
   description: ""
   license: ""
   name: vte
   
   version: 0.31.0
+- 
+  category: <gnome-base
+  description: ""
+  license: ""
+  name: gail
+  
+  version: "1000"
 description: Gimp ToolKit +
 license: LGPL-2+
 name: gtk+
 requires:
 - 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
   category: dev-libs
   description: ""
   license: ""
-  name: glib
+  name: json-glib
   
-  version: 2.53.4
+  version: "1.0"
 - 
-  category: net-libs
+  category: x11-misc
   description: ""
   license: ""
-  name: rest
+  name: colord
   
-  version: "0.7"
+  version: 0.1.9
 - 
-  category: media-libs
+  category: app-accessibility
   description: ""
   license: ""
-  name: mesa[X(+),]
+  name: at-spi2-atk
+  
+  version: 2.5.3
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXcomposite
   
   version: ""
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: shared-mime-info
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXrandr
+  
+  version: "1.5"
 - 
   category: media-libs
   description: ""
@@ -50,65 +78,9 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXcursor
+  name: libXi
   
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: json-glib
-  
-  version: "1.0"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxkbcommon
-  
-  version: "0.2"
-- 
-  category: app-accessibility
-  description: ""
-  license: ""
-  name: at-spi2-atk
-  
-  version: 2.5.3
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: fribidi
-  
-  version: 0.19.7
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: harfbuzz
-  
-  version: "0.9"
-- 
-  category: net-print
-  description: ""
-  license: ""
-  name: cups
-  
-  version: "2.0"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: wayland
-  
-  version: 1.9.91
-- 
-  category: x11-misc
-  description: ""
-  license: ""
-  name: shared-mime-info
-  
-  version: ""
+  version: "1.3"
 - 
   category: x11-libs
   description: ""
@@ -124,6 +96,13 @@ requires:
   
   version: ""
 - 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXinerama
+  
+  version: ""
+- 
   category: dev-util
   description: ""
   license: ""
@@ -134,30 +113,23 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: fontconfig
+  name: harfbuzz
+  
+  version: "0.9"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: mesa[X(+),]
   
   version: ""
 - 
-  category: dev-libs
+  category: net-print
   description: ""
   license: ""
-  name: gobject-introspection
+  name: cups
   
-  version: "1.39"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXrandr
-  
-  version: "1.5"
+  version: "2.0"
 - 
   category: x11-libs
   description: ""
@@ -166,26 +138,40 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libXcomposite
+  name: wayland
   
-  version: ""
+  version: 1.9.91
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXinerama
+  name: libXcursor
   
   version: ""
 - 
-  category: x11-misc
+  category: dev-libs
   description: ""
   license: ""
-  name: colord
+  name: fribidi
   
-  version: 0.1.9
+  version: 0.19.7
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.53.4
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gobject-introspection
+  
+  version: "1.39"
 - 
   category: dev-libs
   description: ""
@@ -197,9 +183,23 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXi
+  name: libxkbcommon
   
-  version: "1.3"
+  version: "0.2"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: rest
+  
+  version: "0.7"
 uri: []
 use_flags:
 - aqua

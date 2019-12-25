@@ -1,13 +1,6 @@
 category: app-emulation
 conflicts:
 - 
-  category: ~dev-python
-  description: ""
-  license: ""
-  name: pbr
-  
-  version: 2.1.0
-- 
   category: dev-python
   description: ""
   license: ""
@@ -21,6 +14,13 @@ conflicts:
   name: Babel
   
   version: 2.4.0
+- 
+  category: ~dev-python
+  description: ""
+  license: ""
+  name: pbr
+  
+  version: 2.1.0
 description: Golden Disk Image builder.
 license: Apache-2.0
 name: diskimage-builder
@@ -29,35 +29,35 @@ requires:
   category: dev-python
   description: ""
   license: ""
+  name: networkx
+  
+  version: "1.10"
+- 
+  category: dev-python
+  description: ""
+  license: ""
   name: Babel
   
   version: 2.3.4
 - 
-  category: dev-python
+  category: app-emulation
   description: ""
   license: ""
-  name: pyyaml
+  name: qemu
   
-  version: "3.12"
+  version: ""
 - 
-  category: dev-python
+  category: sys-fs
   description: ""
   license: ""
-  name: flake8
+  name: multipath-tools
   
-  version: 2.5.4
+  version: ""
 - 
-  category: dev-python
+  category: sys-fs
   description: ""
   license: ""
-  name: six
-  
-  version: 1.10.0
-- 
-  category: sys-block
-  description: ""
-  license: ""
-  name: parted
+  name: dosfstools
   
   version: ""
 - 
@@ -80,40 +80,19 @@ requires:
   license: ""
   name: flake8
   
+  version: 2.5.4
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: flake8
+  
   version: 2.6.0
 - 
-  category: sys-fs
+  category: sys-block
   description: ""
   license: ""
-  name: multipath-tools
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: networkx
-  
-  version: "1.10"
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: stevedore
-  
-  version: 1.20.0
-- 
-  category: app-emulation
-  description: ""
-  license: ""
-  name: qemu
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: dosfstools
+  name: parted
   
   version: ""
 - 
@@ -123,6 +102,27 @@ requires:
   name: gptfdisk
   
   version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pyyaml
+  
+  version: "3.12"
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: six
+  
+  version: 1.10.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: stevedore
+  
+  version: 1.20.0
 uri: []
 use_flags:
 - ""

@@ -26,10 +26,10 @@ license: '|| ( MIT Apache-2.0 ) BSD-1 BSD-2 BSD-4 UoI-NCSA'
 name: rust-bin
 requires:
 - 
-  category: sys-libs
+  category: net-libs
   description: ""
   license: ""
-  name: zlib
+  name: libssh2
   
   version: ""
 - 
@@ -40,19 +40,12 @@ requires:
   
   version: ""
 - 
-  category: net-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: libssh2
+  name: zlib
   
   version: ""
-- 
-  category: app-eselect
-  description: ""
-  license: ""
-  name: eselect-rust
-  
-  version: "20190311"
 - 
   category: dev-libs
   description: ""
@@ -67,6 +60,13 @@ requires:
   name: curl
   
   version: ""
+- 
+  category: app-eselect
+  description: ""
+  license: ""
+  name: eselect-rust
+  
+  version: "20190311"
 uri: []
 use_flags:
 - clippy

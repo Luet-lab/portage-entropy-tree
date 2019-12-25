@@ -5,19 +5,19 @@ license: GPL-3
 name: sssd
 requires:
 - 
-  category: net-nds
+  category: app-crypt
   description: ""
   license: ""
-  name: openldap
+  name: mit-krb5
   
-  version: 2.4.30
+  version: 1.10.3
 - 
-  category: sys-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: talloc
+  name: jansson
   
-  version: 2.0.7
+  version: ""
 - 
   category: app-crypt
   description: ""
@@ -26,26 +26,12 @@ requires:
   
   version: 1.12.2
 - 
-  category: net-dns
+  category: net-fs
   description: ""
   license: ""
-  name: bind-tools
+  name: cifs-utils
   
-  version: "9.9"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: cyrus-sasl
-  
-  version: 2.1.25-r3
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus
-  
-  version: "1.6"
+  version: ""
 - 
   category: net-fs
   description: ""
@@ -57,9 +43,9 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: pam
+  name: glibc
   
-  version: 0-r1
+  version: "2.17"
 - 
   category: dev-libs
   description: ""
@@ -67,6 +53,104 @@ requires:
   name: glib
   
   version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: tdb
+  
+  version: 1.2.9
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nss
+  
+  version: 3.12.9
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: 0-r1
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: talloc
+  
+  version: 2.0.7
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: 2.4.30
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: http-parser
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ldb
+  
+  version: 1.1.17-r1
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: c-ares
+  
+  version: 1.10.0-r1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: cyrus-sasl
+  
+  version: 2.1.25-r3
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: gettext
+  
+  version: "0.18"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpcre
+  
+  version: "8.30"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libsemanage
+  
+  version: "2.1"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: ding-libs
+  
+  version: "0.2"
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: c-ares
+  
+  version: 1.7.4
 - 
   category: virtual
   description: ""
@@ -82,26 +166,12 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: sec-policy
   description: ""
   license: ""
-  name: popt
+  name: selinux-sssd
   
-  version: "1.16"
-- 
-  category: net-fs
-  description: ""
-  license: ""
-  name: cifs-utils
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: tdb
-  
-  version: 1.2.9
+  version: 2.20120725-r9
 - 
   category: sys-libs
   description: ""
@@ -110,54 +180,12 @@ requires:
   
   version: 0.9.16
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libpcre
-  
-  version: "8.30"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: ding-libs
-  
-  version: "0.2"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: jansson
-  
-  version: ""
-- 
   category: net-misc
   description: ""
   license: ""
   name: curl
   
   version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: 2.1.9
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: gettext
-  
-  version: "0.18"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: ldb
-  
-  version: 1.1.17-r1
 - 
   category: sys-apps
   description: ""
@@ -166,61 +194,33 @@ requires:
   
   version: "1.5"
 - 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: 2.1.9
+- 
   category: net-dns
   description: ""
   license: ""
-  name: c-ares
+  name: bind-tools
   
-  version: 1.7.4
+  version: "9.9"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: "1.6"
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: nss
+  name: popt
   
-  version: 3.12.9
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: glibc
-  
-  version: "2.17"
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: mit-krb5
-  
-  version: 1.10.3
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: c-ares
-  
-  version: 1.10.0-r1
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libsemanage
-  
-  version: "2.1"
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-sssd
-  
-  version: 2.20120725-r9
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: http-parser
-  
-  version: ""
+  version: "1.16"
 uri:
 - http://releases.pagure.org/SSSD/sssd/sssd-2.1.0.tar.gz
 use_flags:

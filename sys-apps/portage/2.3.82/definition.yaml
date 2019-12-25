@@ -1,13 +1,6 @@
 category: sys-apps
 conflicts:
 - 
-  category: <app-admin
-  description: ""
-  license: ""
-  name: logrotate
-  
-  version: 3.8.0
-- 
   category: <app-portage
   description: ""
   license: ""
@@ -21,52 +14,24 @@ conflicts:
   name: repoman
   
   version: 2.3.10
+- 
+  category: <app-admin
+  description: ""
+  license: ""
+  name: logrotate
+  
+  version: 3.8.0
 description: Portage is the package management and distribution system for Gentoo
 license: GPL-2
 name: portage
 requires:
 - 
-  category: app-misc
+  category: sys-libs
   description: ""
   license: ""
-  name: pax-utils
+  name: libselinux
   
-  version: 0.1.17
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: tar
-  
-  version: "1.27"
-- 
-  category: app-portage
-  description: ""
-  license: ""
-  name: gemato
-  
-  version: "14"
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: gnupg-2.2.4-r2[ssl(-)]
-  
-  version: ""
-- 
-  category: sys-freebsd
-  description: ""
-  license: ""
-  name: freebsd-bin
-  
-  version: ""
-- 
-  category: app-shells
-  description: ""
-  license: ""
-  name: bash
-  
-  version: ""
+  version: 2.0.94
 - 
   category: app-admin
   description: ""
@@ -75,19 +40,26 @@ requires:
   
   version: "1.2"
 - 
-  category: sys-apps
+  category: app-crypt
   description: ""
   license: ""
-  name: sandbox
+  name: openpgp-keys-gentoo-release
   
-  version: "2.2"
+  version: "20180706"
 - 
-  category: sys-libs
+  category: sys-freebsd
   description: ""
   license: ""
-  name: libselinux
+  name: freebsd-bin
   
-  version: 2.0.94
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: tar
+  
+  version: "1.27"
 - 
   category: sys-apps
   description: ""
@@ -106,16 +78,16 @@ requires:
   category: sys-apps
   description: ""
   license: ""
-  name: sed
+  name: sandbox
   
-  version: 4.0.5
+  version: "2.2"
 - 
   category: app-crypt
   description: ""
   license: ""
-  name: openpgp-keys-gentoo-release
+  name: gnupg-2.2.4-r2[ssl(-)]
   
-  version: "20180706"
+  version: ""
 - 
   category: sys-apps
   description: ""
@@ -123,6 +95,34 @@ requires:
   name: util-linux
   
   version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: pax-utils
+  
+  version: 0.1.17
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: sed
+  
+  version: 4.0.5
+- 
+  category: app-shells
+  description: ""
+  license: ""
+  name: bash
+  
+  version: ""
+- 
+  category: app-portage
+  description: ""
+  license: ""
+  name: gemato
+  
+  version: "14"
 uri: []
 use_flags:
 - build

@@ -12,10 +12,45 @@ license: GPL-2+ LGPL-2.1+
 name: syslog-ng
 requires:
 - 
-  category: sys-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libcap
+  name: hiredis
+  
+  version: 0.11.0
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libesmtp
+  
+  version: ""
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: net-snmp
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: mongo-c-driver
+  
+  version: 1.2.0
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: libdbi
+  
+  version: 0.9.0
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
   
   version: ""
 - 
@@ -23,6 +58,27 @@ requires:
   description: ""
   license: ""
   name: libnet
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpcre
+  
+  version: "6.1"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
   
   version: ""
 - 
@@ -36,16 +92,9 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: openssl
+  name: ivykis
   
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
-  
-  version: ""
+  version: 0.42.4
 - 
   category: net-libs
   description: ""
@@ -54,33 +103,12 @@ requires:
   
   version: 0.8.0
 - 
-  category: dev-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: librdkafka
-  
-  version: 1.0.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: mongo-c-driver
-  
-  version: 1.2.0
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libesmtp
+  name: libcap
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: ivykis
-  
-  version: 0.42.4
 - 
   category: dev-libs
   description: ""
@@ -88,48 +116,6 @@ requires:
   name: libmaxminddb
   
   version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: curl
-  
-  version: ""
-- 
-  category: net-analyzer
-  description: ""
-  license: ""
-  name: net-snmp
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: 2.10.1
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libpcre
-  
-  version: "6.1"
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: libdbi
-  
-  version: 0.9.0
 - 
   category: dev-libs
   description: ""
@@ -141,9 +127,23 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: hiredis
+  name: librdkafka
   
-  version: 0.11.0
+  version: 1.0.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.10.1
 uri:
 - https://github.com/balabit/syslog-ng/releases/download/syslog-ng-3.24.1/syslog-ng-3.24.1.tar.gz
 use_flags:

@@ -1,19 +1,12 @@
 category: sys-fs
 conflicts:
 - 
-  category: sys-apps
+  category: <sys-libs
   description: ""
   license: ""
-  name: systemd
+  name: glibc
   
-  version: ""
-- 
-  category: <sec-policy
-  description: ""
-  license: ""
-  name: selinux-base
-  
-  version: 2.20120725-r10
+  version: "2.11"
 - 
   category: <sys-fs
   description: ""
@@ -22,6 +15,13 @@ conflicts:
   
   version: 2.02.103
 - 
+  category: <sec-policy
+  description: ""
+  license: ""
+  name: selinux-base
+  
+  version: 2.20120725-r10
+- 
   category: sys-apps
   description: ""
   license: ""
@@ -29,12 +29,12 @@ conflicts:
   
   version: ""
 - 
-  category: <sys-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: glibc
+  name: systemd
   
-  version: "2.11"
+  version: ""
 description: Linux dynamic and persistent device naming support (aka userspace devfs)
 license: LGPL-2.1 MIT GPL-2
 name: udev
@@ -43,7 +43,21 @@ requires:
   category: acct-group
   description: ""
   license: ""
-  name: audio
+  name: kmem
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: dialout
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: render
   
   version: ""
 - 
@@ -64,28 +78,14 @@ requires:
   category: acct-group
   description: ""
   license: ""
-  name: kvm
+  name: tape
   
   version: ""
 - 
   category: acct-group
   description: ""
   license: ""
-  name: render
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: acl
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: kmem
+  name: input
   
   version: ""
 - 
@@ -106,42 +106,14 @@ requires:
   category: acct-group
   description: ""
   license: ""
-  name: input
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libcap
+  name: kvm
   
   version: ""
 - 
   category: acct-group
   description: ""
   license: ""
-  name: dialout
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: lp
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: tape
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: video
+  name: audio
   
   version: ""
 - 
@@ -156,6 +128,34 @@ requires:
   description: ""
   license: ""
   name: tty
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: lp
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: video
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: acl
   
   version: ""
 uri:

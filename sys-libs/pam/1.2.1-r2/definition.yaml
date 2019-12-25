@@ -1,23 +1,23 @@
 category: sys-libs
-conflicts:
-- 
-  category: <sys-apps
-  description: ""
-  license: ""
-  name: openrc
-  
-  version: 0.11.8
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: pam_userdb
-  
-  version: ""
+conflicts: []
 description: Linux-PAM (Pluggable Authentication Modules)
 license: '|| ( BSD GPL-2 )'
 name: pam
 requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: cracklib
+  
+  version: 2.9.1-r1
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: audit
+  
+  version: 2.2.2
 - 
   category: sys-libs
   description: ""
@@ -46,20 +46,6 @@ requires:
   name: libintl
   
   version: 0-r1
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: cracklib
-  
-  version: 2.9.1-r1
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: audit
-  
-  version: 2.2.2
 uri:
 - http://www.linux-pam.org/library/Linux-PAM-1.2.1.tar.bz2
 - http://www.linux-pam.org/documentation/Linux-PAM-1.2.0-docs.tar.bz2

@@ -12,24 +12,17 @@ license: MPL-2.0 GPL-2 LGPL-2.1
 name: firefox-bin
 requires:
 - 
-  category: dev-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: glib
+  name: gtk+
   
-  version: "2.26"
+  version: "2.18"
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: cairo-1.10[X]
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXext
+  name: libXdamage
   
   version: ""
 - 
@@ -40,10 +33,24 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: atk
+  name: libXt
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pango
+  
+  version: 1.22.0
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: freedesktop-icon-theme
   
   version: ""
 - 
@@ -54,10 +61,52 @@ requires:
   
   version: "0.72"
 - 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
+  
+  version: ""
+- 
   category: x11-libs
   description: ""
   license: ""
-  name: libXt
+  name: libXext
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: atk
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXcomposite
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.26"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo-1.10[X]
   
   version: ""
 - 
@@ -73,28 +122,14 @@ requires:
   license: ""
   name: gtk+
   
-  version: "2.18"
+  version: 3.4.0
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXcomposite
+  name: libXfixes
   
   version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: freedesktop-icon-theme
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pango
-  
-  version: 1.22.0
 - 
   category: sys-apps
   description: ""
@@ -106,44 +141,9 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: fontconfig
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
   name: freetype
   
   version: 2.4.10
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: 3.4.0
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXdamage
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXfixes
-  
-  version: ""
 uri:
 - 'https://archive.mozilla.org/pub/mozilla.org/firefox/releases/68.2.0esr/linux-x86_64/en-US/firefox-68.2.0esr.tar.bz2
   -> firefox-bin_x86_64-68.2.0.tar.bz2 '

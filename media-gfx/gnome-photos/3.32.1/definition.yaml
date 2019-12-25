@@ -5,26 +5,33 @@ license: GPL-3+ LGPL-2+ CC0-1.0
 name: gnome-photos
 requires:
 - 
-  category: x11-libs
+  category: media-libs
   description: ""
   license: ""
-  name: cairo
+  name: grilo
   
-  version: 1.14.0
+  version: 0.3.5
 - 
-  category: x11-libs
+  category: virtual
   description: ""
   license: ""
-  name: gtk+
+  name: jpeg
   
-  version: 3.22.16
+  version: ""
 - 
-  category: app-misc
+  category: sys-apps
   description: ""
   license: ""
-  name: tracker-miners
+  name: dbus
   
-  version: "2"
+  version: ""
+- 
+  category: media-plugins
+  description: ""
+  license: ""
+  name: grilo-plugins
+  
+  version: ""
 - 
   category: media-libs
   description: ""
@@ -40,62 +47,6 @@ requires:
   
   version: 0.4.0
 - 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnome-online-accounts
-  
-  version: 3.8.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgdata
-  
-  version: 0.15.2
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gdk-pixbuf
-  
-  version: 2.36.8
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: 2.57.2
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libgfbgraph
-  
-  version: 0.2.1
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jpeg
-  
-  version: ""
-- 
-  category: media-plugins
-  description: ""
-  license: ""
-  name: grilo-plugins
-  
-  version: ""
-- 
   category: sci-geosciences
   description: ""
   license: ""
@@ -110,12 +61,19 @@ requires:
   
   version: 0.10.8
 - 
-  category: media-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: grilo
+  name: cairo
   
-  version: 0.3.5
+  version: 1.14.0
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnome-online-accounts
+  
+  version: 3.8.0
 - 
   category: gnome-base
   description: ""
@@ -124,6 +82,13 @@ requires:
   
   version: ""
 - 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: 3.22.16
+- 
   category: dev-libs
   description: ""
   license: ""
@@ -131,12 +96,47 @@ requires:
   
   version: 3.26.0
 - 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libgfbgraph
+  
+  version: 0.2.1
+- 
   category: media-libs
   description: ""
   license: ""
   name: libpng
   
   version: "1.6"
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: tracker-miners
+  
+  version: "2"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gdk-pixbuf
+  
+  version: 2.36.8
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgdata
+  
+  version: 0.15.2
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.57.2
 uri: []
 use_flags:
 - flickr

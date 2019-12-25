@@ -13,19 +13,26 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: virtual
   description: ""
   license: ""
-  name: libserialport
+  name: libusb
   
-  version: 0.1.1
+  version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: glib
+  name: glib-2.32.0[static-libs(+)]
   
-  version: 2.32.0
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libzip
+  
+  version: "0.8"
 - 
   category: dev-cpp
   description: ""
@@ -51,6 +58,20 @@ requires:
   category: dev-libs
   description: ""
   license: ""
+  name: libserialport
+  
+  version: 0.1.1
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libieee1284[static-libs(+)]
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
   name: libserialport-0.1.1[static-libs(+)]
   
   version: ""
@@ -65,30 +86,9 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libzip
+  name: glib
   
-  version: "0.8"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libusb
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib-2.32.0[static-libs(+)]
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libieee1284[static-libs(+)]
-  
-  version: ""
+  version: 2.32.0
 uri:
 - https://sigrok.org/download/source/libsigrok/libsigrok-0.4.0.tar.gz
 use_flags:

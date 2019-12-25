@@ -1,13 +1,6 @@
 category: net-mail
 conflicts:
 - 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: courier
-  
-  version: ""
-- 
   category: net-mail
   description: ""
   license: ""
@@ -18,14 +11,21 @@ conflicts:
   category: net-mail
   description: ""
   license: ""
-  name: bincimap
+  name: uw-imap
   
   version: ""
 - 
   category: net-mail
   description: ""
   license: ""
-  name: uw-imap
+  name: bincimap
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: courier
   
   version: ""
 description: An IMAP daemon designed specifically for maildirs
@@ -33,31 +33,10 @@ license: GPL-3
 name: courier-imap
 requires:
 - 
-  category: net-dns
+  category: net-libs
   description: ""
   license: ""
-  name: libidn
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: fam
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: gdbm
-  
-  version: 1.8.0
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-courier
+  name: gnutls
   
   version: ""
 - 
@@ -78,23 +57,9 @@ requires:
   category: net-libs
   description: ""
   license: ""
-  name: courier-authlib
-  
-  version: 0.66.4
-- 
-  category: net-libs
-  description: ""
-  license: ""
   name: courier-unicode
   
   version: "2"
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: mailbase
-  
-  version: 0.00-r8
 - 
   category: sys-libs
   description: ""
@@ -103,10 +68,45 @@ requires:
   
   version: ""
 - 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: gdbm
+  
+  version: 1.8.0
+- 
   category: net-libs
   description: ""
   license: ""
-  name: gnutls
+  name: courier-authlib
+  
+  version: 0.66.4
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: mailbase
+  
+  version: 0.00-r8
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: fam
+  
+  version: ""
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: libidn
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-courier
   
   version: ""
 uri:
