@@ -4,14 +4,14 @@ conflicts:
   category: kde-apps
   description: ""
   license: ""
-  name: kdepim-l10n
+  name: kdepim-common-libs
   
   version: ""
 - 
   category: kde-apps
   description: ""
   license: ""
-  name: kdepim-common-libs
+  name: kdepim-l10n
   
   version: ""
 description: Common PIM libraries
@@ -19,24 +19,59 @@ license: GPL-2+ LGPL-2.1+
 name: pimcommon
 requires:
 - 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtxml
+  
+  version: 5.12.3
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: karchive
+  
+  version: 5.63.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: knewstuff
+  
+  version: 5.63.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kwidgetsaddons
+  
+  version: 5.63.0
+- 
   category: kde-apps
   description: ""
   license: ""
-  name: kimap
+  name: akonadi-contacts
   
   version: ""
 - 
   category: dev-qt
   description: ""
   license: ""
-  name: qtgui
+  name: qtdbus
   
   version: 5.12.3
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kjobwidgets
+  
+  version: 5.63.0
 - 
   category: dev-qt
   description: ""
   license: ""
-  name: qtprintsupport
+  name: qtwidgets
   
   version: 5.12.3
 - 
@@ -50,7 +85,21 @@ requires:
   category: kde-frameworks
   description: ""
   license: ""
-  name: knewstuff
+  name: kservice
+  
+  version: 5.63.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kio
+  
+  version: 5.63.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: purpose
   
   version: 5.63.0
 - 
@@ -61,73 +110,17 @@ requires:
   
   version: ""
 - 
-  category: dev-qt
+  category: kde-apps
   description: ""
   license: ""
-  name: qtnetwork
+  name: kimap
   
-  version: 5.12.3
+  version: ""
 - 
   category: kde-frameworks
   description: ""
   license: ""
-  name: kcodecs
-  
-  version: 5.63.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kservice
-  
-  version: 5.63.0
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtdbus
-  
-  version: 5.12.3
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kwidgetsaddons
-  
-  version: 5.63.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: karchive
-  
-  version: 5.63.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kjobwidgets
-  
-  version: 5.63.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kitemmodels
-  
-  version: 5.63.0
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtxml
-  
-  version: 5.12.3
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kcontacts
+  name: kconfig
   
   version: 5.63.0
 - 
@@ -145,33 +138,19 @@ requires:
   
   version: 5.63.0
 - 
-  category: kde-apps
-  description: ""
-  license: ""
-  name: akonadi-contacts
-  
-  version: ""
-- 
-  category: kde-apps
-  description: ""
-  license: ""
-  name: libkdepim
-  
-  version: ""
-- 
-  category: kde-apps
-  description: ""
-  license: ""
-  name: kpimtextedit
-  
-  version: ""
-- 
   category: dev-qt
   description: ""
   license: ""
-  name: qtwidgets
+  name: qtprintsupport
   
   version: 5.12.3
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kcodecs
+  
+  version: 5.63.0
 - 
   category: kde-frameworks
   description: ""
@@ -183,7 +162,7 @@ requires:
   category: kde-frameworks
   description: ""
   license: ""
-  name: kconfig
+  name: kitemmodels
   
   version: 5.63.0
 - 
@@ -194,6 +173,27 @@ requires:
   
   version: 5.63.0
 - 
+  category: kde-apps
+  description: ""
+  license: ""
+  name: kpimtextedit
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtnetwork
+  
+  version: 5.12.3
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kcontacts
+  
+  version: 5.63.0
+- 
   category: kde-frameworks
   description: ""
   license: ""
@@ -201,19 +201,19 @@ requires:
   
   version: 5.63.0
 - 
-  category: kde-frameworks
+  category: kde-apps
   description: ""
   license: ""
-  name: kio
+  name: libkdepim
   
-  version: 5.63.0
+  version: ""
 - 
-  category: kde-frameworks
+  category: dev-qt
   description: ""
   license: ""
-  name: purpose
+  name: qtgui
   
-  version: 5.63.0
+  version: 5.12.3
 uri: []
 use_flags:
 - ""

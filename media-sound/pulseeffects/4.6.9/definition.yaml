@@ -6,19 +6,40 @@ license: GPL-3
 name: pulseeffects
 requires:
 - 
-  category: media-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: zita-convolver
+  name: boost
   
-  version: 3.0.0
+  version: "1.41"
 - 
-  category: media-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: lilv
+  name: glib
   
-  version: 0.24.2-r1
+  version: "2.56"
+- 
+  category: media-plugins
+  description: ""
+  license: ""
+  name: gst-plugins-lv2
+  
+  version: 1.12.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libsigc++
+  
+  version: "2.10"
+- 
+  category: media-plugins
+  description: ""
+  license: ""
+  name: gst-plugins-pulse
+  
+  version: 1.12.0
 - 
   category: media-plugins
   description: ""
@@ -30,7 +51,7 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: rubberband
+  name: libebur128
   
   version: ""
 - 
@@ -38,13 +59,6 @@ requires:
   description: ""
   license: ""
   name: pulseaudio
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus
   
   version: ""
 - 
@@ -58,13 +72,6 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: gstreamer
-  
-  version: 1.12.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
   name: lsp-plugins
   
   version: 1.1.7
@@ -72,7 +79,21 @@ requires:
   category: media-libs
   description: ""
   license: ""
+  name: gstreamer
+  
+  version: 1.12.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
   name: gst-plugins-good
+  
+  version: 1.12.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gst-plugins-bad
   
   version: 1.12.0
 - 
@@ -90,26 +111,12 @@ requires:
   
   version: 1.12.0
 - 
-  category: media-plugins
+  category: media-libs
   description: ""
   license: ""
-  name: gst-plugins-lv2
+  name: rubberband
   
-  version: 1.12.0
-- 
-  category: media-plugins
-  description: ""
-  license: ""
-  name: gst-plugins-pulse
-  
-  version: 1.12.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: boost
-  
-  version: "1.41"
+  version: ""
 - 
   category: dev-cpp
   description: ""
@@ -117,13 +124,6 @@ requires:
   name: glibmm
   
   version: 2.56.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libebur128
-  
-  version: ""
 - 
   category: x11-libs
   description: ""
@@ -135,9 +135,9 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: gst-plugins-bad
+  name: lilv
   
-  version: 1.12.0
+  version: 0.24.2-r1
 - 
   category: media-plugins
   description: ""
@@ -146,19 +146,19 @@ requires:
   
   version: 0.90.0
 - 
-  category: dev-libs
+  category: media-libs
   description: ""
   license: ""
-  name: glib
+  name: zita-convolver
   
-  version: "2.56"
+  version: 3.0.0
 - 
-  category: dev-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: libsigc++
+  name: dbus
   
-  version: "2.10"
+  version: ""
 uri:
 - https://github.com/wwmm/pulseeffects/archive/v4.6.9.tar.gz -> pulseeffects-4.6.9.tar.gz
 use_flags:

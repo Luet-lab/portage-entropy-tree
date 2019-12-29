@@ -5,48 +5,6 @@ license: GPL-2
 name: consolekit
 requires:
 - 
-  category: app-admin
-  description: ""
-  license: ""
-  name: cgmanager
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libevdev
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: udev
-  
-  version: "200"
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-consolekit
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
@@ -64,9 +22,23 @@ requires:
   category: sys-apps
   description: ""
   license: ""
-  name: coreutils[acl?]
+  name: dbus
   
   version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: "200"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libnih
+  
+  version: 1.0.2
 - 
   category: sys-libs
   description: ""
@@ -75,10 +47,10 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libX11
+  name: libevdev
   
   version: ""
 - 
@@ -96,10 +68,10 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: pam
+  name: coreutils[acl?]
   
   version: ""
 - 
@@ -117,6 +89,20 @@ requires:
   
   version: ""
 - 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-consolekit
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
   category: sys-apps
   description: ""
   license: ""
@@ -124,12 +110,26 @@ requires:
   
   version: ""
 - 
+  category: app-admin
+  description: ""
+  license: ""
+  name: cgmanager
+  
+  version: ""
+- 
   category: sys-libs
   description: ""
   license: ""
-  name: libnih
+  name: pam
   
-  version: 1.0.2
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: ""
 uri:
 - https://github.com/ConsoleKit2/ConsoleKit2/releases/download/1.2.0/ConsoleKit2-1.2.0.tar.bz2
 use_flags:

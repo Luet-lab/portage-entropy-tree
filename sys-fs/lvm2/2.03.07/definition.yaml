@@ -1,12 +1,12 @@
 category: sys-fs
 conflicts:
 - 
-  category: <sys-fs
+  category: '!sys-fs'
   description: ""
   license: ""
-  name: cryptsetup
+  name: lvm-user
   
-  version: 1.1.2
+  version: ""
 - 
   category: <sys-apps
   description: ""
@@ -15,16 +15,23 @@ conflicts:
   
   version: "0.11"
 - 
-  category: '!sys-fs'
+  category: <sys-fs
   description: ""
   license: ""
-  name: lvm-user
+  name: cryptsetup
   
-  version: ""
+  version: 1.1.2
 description: User-land utilities for LVM2 (device-mapper) software
 license: GPL-2
 name: lvm2
 requires:
+- 
+  category: sys-block
+  description: ""
+  license: ""
+  name: thin-provisioning-tools
+  
+  version: 0.3.0
 - 
   category: dev-libs
   description: ""
@@ -50,9 +57,9 @@ requires:
   category: sys-apps
   description: ""
   license: ""
-  name: baselayout
+  name: util-linux
   
-  version: "2.2"
+  version: "2.16"
 - 
   category: sys-apps
   description: ""
@@ -60,13 +67,6 @@ requires:
   name: makedev
   
   version: ""
-- 
-  category: sys-block
-  description: ""
-  license: ""
-  name: thin-provisioning-tools
-  
-  version: 0.3.0
 - 
   category: dev-libs
   description: ""
@@ -92,9 +92,9 @@ requires:
   category: sys-apps
   description: ""
   license: ""
-  name: util-linux
+  name: baselayout
   
-  version: "2.16"
+  version: "2.2"
 uri: []
 use_flags:
 - readline

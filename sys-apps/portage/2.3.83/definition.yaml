@@ -1,6 +1,13 @@
 category: sys-apps
 conflicts:
 - 
+  category: <app-admin
+  description: ""
+  license: ""
+  name: logrotate
+  
+  version: 3.8.0
+- 
   category: <app-portage
   description: ""
   license: ""
@@ -14,13 +21,6 @@ conflicts:
   name: repoman
   
   version: 2.3.10
-- 
-  category: <app-admin
-  description: ""
-  license: ""
-  name: logrotate
-  
-  version: 3.8.0
 description: Portage is the package management and distribution system for Gentoo
 license: GPL-2
 name: portage
@@ -33,33 +33,12 @@ requires:
   
   version: "20180706"
 - 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: gnupg-2.2.4-r2[ssl(-)]
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: sandbox
-  
-  version: "2.2"
-- 
   category: sys-apps
   description: ""
   license: ""
   name: sed
   
   version: 4.0.5
-- 
-  category: app-portage
-  description: ""
-  license: ""
-  name: gemato
-  
-  version: "14"
 - 
   category: sys-freebsd
   description: ""
@@ -68,12 +47,12 @@ requires:
   
   version: ""
 - 
-  category: app-admin
+  category: sys-apps
   description: ""
   license: ""
-  name: eselect
+  name: util-linux
   
-  version: "1.2"
+  version: ""
 - 
   category: sys-libs
   description: ""
@@ -89,26 +68,12 @@ requires:
   
   version: "0.3"
 - 
-  category: app-misc
-  description: ""
-  license: ""
-  name: pax-utils
-  
-  version: 0.1.17
-- 
   category: app-arch
   description: ""
   license: ""
   name: tar
   
   version: "1.27"
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: python-exec
-  
-  version: ""
 - 
   category: app-shells
   description: ""
@@ -117,12 +82,47 @@ requires:
   
   version: ""
 - 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gnupg-2.2.4-r2[ssl(-)]
+  
+  version: ""
+- 
   category: sys-apps
   description: ""
   license: ""
-  name: util-linux
+  name: sandbox
+  
+  version: "2.2"
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: pax-utils
+  
+  version: 0.1.17
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: python-exec
   
   version: ""
+- 
+  category: app-admin
+  description: ""
+  license: ""
+  name: eselect
+  
+  version: "1.2"
+- 
+  category: app-portage
+  description: ""
+  license: ""
+  name: gemato
+  
+  version: "14"
 uri: []
 use_flags:
 - build

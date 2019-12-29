@@ -1,6 +1,13 @@
 category: sys-apps
 conflicts:
 - 
+  category: <app-admin
+  description: ""
+  license: ""
+  name: logrotate
+  
+  version: 3.8.0
+- 
   category: <app-portage
   description: ""
   license: ""
@@ -14,24 +21,17 @@ conflicts:
   name: repoman
   
   version: 2.3.10
-- 
-  category: <app-admin
-  description: ""
-  license: ""
-  name: logrotate
-  
-  version: 3.8.0
 description: Portage is the package management and distribution system for Gentoo
 license: GPL-2
 name: portage
 requires:
 - 
-  category: app-arch
+  category: dev-lang
   description: ""
   license: ""
-  name: tar
+  name: python-exec
   
-  version: "1.27"
+  version: ""
 - 
   category: app-admin
   description: ""
@@ -40,6 +40,13 @@ requires:
   
   version: "1.2"
 - 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: openpgp-keys-gentoo-release
+  
+  version: "20180706"
+- 
   category: app-misc
   description: ""
   license: ""
@@ -47,19 +54,12 @@ requires:
   
   version: 0.1.17
 - 
-  category: sys-libs
+  category: app-arch
   description: ""
   license: ""
-  name: libselinux
+  name: tar
   
-  version: 2.0.94
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: install-xattr
-  
-  version: "0.3"
+  version: "1.27"
 - 
   category: sys-apps
   description: ""
@@ -82,12 +82,12 @@ requires:
   
   version: "14"
 - 
-  category: app-crypt
+  category: sys-apps
   description: ""
   license: ""
-  name: openpgp-keys-gentoo-release
+  name: util-linux
   
-  version: "20180706"
+  version: ""
 - 
   category: app-crypt
   description: ""
@@ -103,13 +103,6 @@ requires:
   
   version: ""
 - 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: python-exec
-  
-  version: ""
-- 
   category: sys-apps
   description: ""
   license: ""
@@ -117,12 +110,19 @@ requires:
   
   version: "2.2"
 - 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: 2.0.94
+- 
   category: sys-apps
   description: ""
   license: ""
-  name: util-linux
+  name: install-xattr
   
-  version: ""
+  version: "0.3"
 uri: []
 use_flags:
 - build

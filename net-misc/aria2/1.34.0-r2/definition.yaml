@@ -5,20 +5,6 @@ license: GPL-2+-with-openssl-exception
 name: aria2
 requires:
 - 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libintl
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
@@ -33,6 +19,20 @@ requires:
   
   version: "1.13"
 - 
+  category: dev-util
+  description: ""
+  license: ""
+  name: google-perftools
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libintl
+  
+  version: ""
+- 
   category: dev-libs
   description: ""
   license: ""
@@ -43,49 +43,14 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: openssl
+  name: gmp
   
-  version: ""
+  version: "6"
 - 
   category: virtual
   description: ""
   license: ""
   name: libiconv
-  
-  version: ""
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: ruby
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libssh2
-  
-  version: ""
-- 
-  category: app-misc
-  description: ""
-  license: ""
-  name: ca-certificates
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: 2.6.26
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: expat
   
   version: ""
 - 
@@ -106,14 +71,49 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libgcrypt
+  name: libxml2
   
-  version: 1.2.2
+  version: 2.6.26
 - 
-  category: dev-util
+  category: net-libs
   description: ""
   license: ""
-  name: google-perftools
+  name: libssh2
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: ruby
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: expat
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: ca-certificates
   
   version: ""
 - 
@@ -127,9 +127,9 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: gmp
+  name: libgcrypt
   
-  version: "6"
+  version: 1.2.2
 uri:
 - https://github.com/aria2/aria2/releases/download/release-1.34.0/aria2-1.34.0.tar.xz
 use_flags:

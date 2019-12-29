@@ -1,0 +1,36 @@
+category: app-admin
+conflicts: []
+description: System performance tools for Linux
+license: GPL-2
+name: sysstat
+requires:
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-sysstat
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libintl
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: lm-sensors
+  
+  version: ""
+uri:
+- https://github.com/sysstat/sysstat/archive/v12.2.1.tar.gz -> sysstat-12.2.1.tar.gz
+use_flags:
+- debug
+- nls
+- lm-sensors
+- selinux
+- static
+version: 12.2.1

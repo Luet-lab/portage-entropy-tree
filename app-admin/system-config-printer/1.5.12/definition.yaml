@@ -5,10 +5,24 @@ license: GPL-2+
 name: system-config-printer
 requires:
 - 
-  category: net-print
+  category: dev-python
   description: ""
   license: ""
-  name: cups
+  name: pycups
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libusb
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
   
   version: ""
 - 
@@ -16,6 +30,34 @@ requires:
   description: ""
   license: ""
   name: libnotify
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: requests
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: urllib3
+  
+  version: ""
+- 
+  category: net-print
+  description: ""
+  license: ""
+  name: cups-pk-helper
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pango
   
   version: ""
 - 
@@ -36,56 +78,14 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: requests
+  name: pycairo
   
   version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: urllib3
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pango
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pycups
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libusb
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: udev
-  
-  version: "172"
 - 
   category: app-crypt
   description: ""
   license: ""
   name: libsecret
-  
-  version: ""
-- 
-  category: net-print
-  description: ""
-  license: ""
-  name: cups-pk-helper
   
   version: ""
 - 
@@ -96,19 +96,19 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
+  category: net-print
   description: ""
   license: ""
-  name: gtk+
+  name: cups
   
   version: ""
 - 
-  category: dev-python
+  category: virtual
   description: ""
   license: ""
-  name: pycairo
+  name: udev
   
-  version: ""
+  version: "172"
 uri:
 - https://github.com/OpenPrinting/system-config-printer/releases/download/1.5.12/system-config-printer-1.5.12.tar.xz
 use_flags:

@@ -1,17 +1,17 @@
 category: sys-cluster
 conflicts:
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: uthash
-  
-  version: ""
-- 
   category: '!games-util'
   description: ""
   license: ""
   name: qstat
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: uthash
   
   version: ""
 description: Resource manager and queuing system based on OpenPBS
@@ -19,31 +19,24 @@ license: torque-2.5
 name: torque
 requires:
 - 
-  category: dev-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: boost
+  name: hwloc
   
-  version: "1.41"
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: munge
+  
+  version: ""
 - 
   category: dev-lang
   description: ""
   license: ""
   name: tcl
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: netkit-rsh
   
   version: ""
 - 
@@ -54,17 +47,10 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: net-misc
   description: ""
   license: ""
-  name: readline
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: hwloc
+  name: netkit-rsh
   
   version: ""
 - 
@@ -89,12 +75,19 @@ requires:
   
   version: ""
 - 
-  category: sys-auth
+  category: sys-libs
   description: ""
   license: ""
-  name: munge
+  name: readline
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: boost
+  
+  version: "1.41"
 - 
   category: x11-drivers
   description: ""
@@ -102,6 +95,13 @@ requires:
   name: nvidia-drivers
   
   version: "275"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
 uri:
 - https://github.com/adaptivecomputing/torque/archive/6a0b37f85c7d644e9217cbab1542792d646f59a6.tar.gz
   -> torque-6.0.4-gh-20170829.tar.gz

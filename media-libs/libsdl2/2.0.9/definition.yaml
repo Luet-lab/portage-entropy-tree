@@ -5,19 +5,33 @@ license: ZLIB
 name: libsdl2
 requires:
 - 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXxf86vm
+  
+  version: 1.1.3
+- 
   category: media-libs
   description: ""
   license: ""
-  name: mesa
+  name: vulkan-loader
   
-  version: 9.0.0
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: 1.6.18-r1
 - 
   category: virtual
   description: ""
   license: ""
-  name: glu
+  name: opengl
   
-  version: 9.0-r1
+  version: 7.0-r1
 - 
   category: x11-libs
   description: ""
@@ -26,13 +40,6 @@ requires:
   
   version: 1.0-r3
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: wayland
-  
-  version: 1.0.6
-- 
   category: x11-libs
   description: ""
   license: ""
@@ -40,12 +47,19 @@ requires:
   
   version: 1.7.2
 - 
+  category: virtual
+  description: ""
+  license: ""
+  name: libudev
+  
+  version: "208"
+- 
   category: x11-libs
   description: ""
   license: ""
-  name: libXScrnSaver
+  name: libXext
   
-  version: 1.2.2-r1
+  version: 1.3.2
 - 
   category: x11-libs
   description: ""
@@ -54,12 +68,26 @@ requires:
   
   version: 1.4.2
 - 
-  category: sys-apps
+  category: x11-libs
   description: ""
   license: ""
-  name: dbus
+  name: libXinerama
   
-  version: 1.6.18-r1
+  version: 1.1.3
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: mesa
+  
+  version: 9.0.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: nas
+  
+  version: 1.9.4
 - 
   category: x11-libs
   description: ""
@@ -71,9 +99,16 @@ requires:
   category: virtual
   description: ""
   license: ""
-  name: opengl
+  name: glu
   
-  version: 7.0-r1
+  version: 9.0-r1
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: alsa-lib
+  
+  version: 1.0.27.2
 - 
   category: media-sound
   description: ""
@@ -96,40 +131,19 @@ requires:
   
   version: 1.6.2
 - 
-  category: media-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: alsa-lib
+  name: libXcursor
   
-  version: 1.0.27.2
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: nas
-  
-  version: 1.9.4
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libudev
-  
-  version: "208"
+  version: 1.1.14
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXext
+  name: libXScrnSaver
   
-  version: 1.3.2
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXinerama
-  
-  version: 1.1.3
+  version: 1.2.2-r1
 - 
   category: media-libs
   description: ""
@@ -152,26 +166,12 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libXcursor
+  name: wayland
   
-  version: 1.1.14
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXxf86vm
-  
-  version: 1.1.3
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: vulkan-loader
-  
-  version: ""
+  version: 1.0.6
 uri:
 - http://www.libsdl.org/release/SDL2-2.0.9.tar.gz
 use_flags:

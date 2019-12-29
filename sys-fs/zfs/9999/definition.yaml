@@ -1,13 +1,6 @@
 category: sys-fs
 conflicts:
 - 
-  category: =sys-apps
-  description: ""
-  license: ""
-  name: grep-2.13*
-  
-  version: ""
-- 
   category: <sys-kernel
   description: ""
   license: ""
@@ -22,12 +15,26 @@ conflicts:
   
   version: 7.1.0
 - 
+  category: =sys-apps
+  description: ""
+  license: ""
+  name: grep-2.13*
+  
+  version: ""
+- 
+  category: <sys-boot
+  description: ""
+  license: ""
+  name: grub
+  
+  version: 2.00-r2
+- 
   category: <sys-kernel
   description: ""
   license: ""
-  name: dracut
+  name: genkernel-next
   
-  version: 044-r1
+  version: "67"
 - 
   category: sys-fs
   description: ""
@@ -39,25 +46,18 @@ conflicts:
   category: <sys-kernel
   description: ""
   license: ""
-  name: genkernel-next
+  name: dracut
   
-  version: "67"
-- 
-  category: <sys-boot
-  description: ""
-  license: ""
-  name: grub
-  
-  version: 2.00-r2
+  version: 044-r1
 description: Userland utilities for ZFS Linux kernel module
 license: BSD-2 CDDL MIT
 name: zfs
 requires:
 - 
-  category: virtual
+  category: dev-libs
   description: ""
   license: ""
-  name: python-cffi
+  name: libressl
   
   version: ""
 - 
@@ -71,28 +71,14 @@ requires:
   category: virtual
   description: ""
   license: ""
-  name: awk
+  name: udev
   
   version: ""
 - 
-  category: dev-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: openssl
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: cpio
-  
-  version: ""
-- 
-  category: app-misc
-  description: ""
-  license: ""
-  name: pax-utils
+  name: util-linux
   
   version: ""
 - 
@@ -103,10 +89,24 @@ requires:
   
   version: ""
 - 
+  category: virtual
+  description: ""
+  license: ""
+  name: python-cffi
+  
+  version: ""
+- 
   category: sys-fs
   description: ""
   license: ""
   name: udev-init-scripts
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: cpio
   
   version: ""
 - 
@@ -124,17 +124,31 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
-  
-  version: ""
-- 
   category: sys-block
   description: ""
   license: ""
   name: parted
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: awk
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: pax-utils
   
   version: ""
 - 
@@ -149,20 +163,6 @@ requires:
   description: ""
   license: ""
   name: modutils
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: udev
   
   version: ""
 uri: []

@@ -1,6 +1,13 @@
 category: sys-fs
 conflicts:
 - 
+  category: <sys-kernel
+  description: ""
+  license: ""
+  name: bliss-initramfs
+  
+  version: 7.1.0
+- 
   category: =sys-apps
   description: ""
   license: ""
@@ -25,16 +32,16 @@ conflicts:
   category: <sys-kernel
   description: ""
   license: ""
-  name: dracut
+  name: genkernel-next
   
-  version: 044-r1
+  version: "67"
 - 
   category: <sys-kernel
   description: ""
   license: ""
-  name: genkernel-next
+  name: dracut
   
-  version: "67"
+  version: 044-r1
 - 
   category: <sys-boot
   description: ""
@@ -42,17 +49,52 @@ conflicts:
   name: grub
   
   version: 2.00-r2
-- 
-  category: <sys-kernel
-  description: ""
-  license: ""
-  name: bliss-initramfs
-  
-  version: 7.1.0
 description: Userland utilities for ZFS Linux kernel module
 license: BSD-2 CDDL MIT
 name: zfs
 requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: python-cffi
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: pax-utils
+  
+  version: ""
+- 
+  category: sys-block
+  description: ""
+  license: ""
+  name: parted
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: mdadm
+  
+  version: ""
 - 
   category: virtual
   description: ""
@@ -61,17 +103,31 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: libressl
+  name: util-linux
+  
+  version: ""
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: bc
   
   version: ""
 - 
   category: virtual
   description: ""
   license: ""
-  name: udev
+  name: modutils
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: udev-init-scripts
   
   version: ""
 - 
@@ -89,31 +145,10 @@ requires:
   
   version: ""
 - 
-  category: virtual
-  description: ""
-  license: ""
-  name: modutils
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
-  name: openssl
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: udev-init-scripts
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: mdadm
+  name: libressl
   
   version: ""
 - 
@@ -128,41 +163,6 @@ requires:
   description: ""
   license: ""
   name: cpio
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
-  
-  version: ""
-- 
-  category: sys-block
-  description: ""
-  license: ""
-  name: parted
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: python-cffi
-  
-  version: ""
-- 
-  category: app-misc
-  description: ""
-  license: ""
-  name: pax-utils
-  
-  version: ""
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: bc
   
   version: ""
 uri:

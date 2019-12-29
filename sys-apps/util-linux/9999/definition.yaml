@@ -1,40 +1,12 @@
 category: sys-apps
 conflicts:
 - 
-  category: <sys-apps
+  category: '>=sys-apps'
   description: ""
   license: ""
-  name: sysvinit
+  name: shadow
   
-  version: 2.88-r7
-- 
-  category: <sys-libs
-  description: ""
-  license: ""
-  name: e2fsprogs-libs
-  
-  version: 1.41.8
-- 
-  category: net-wireless
-  description: ""
-  license: ""
-  name: rfkill
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: hardlink
-  
-  version: ""
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: procps
-  
-  version: ""
+  version: 4.7-r2
 - 
   category: sys-apps
   description: ""
@@ -43,12 +15,19 @@ conflicts:
   
   version: ""
 - 
-  category: '>=app-admin'
+  category: <sys-fs
   description: ""
   license: ""
-  name: sysklogd
+  name: e2fsprogs
   
-  version: "2.0"
+  version: 1.41.8
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: procps
+  
+  version: ""
 - 
   category: sys-apps
   description: ""
@@ -64,12 +43,33 @@ conflicts:
   
   version: 4.7-r2
 - 
-  category: '>=sys-apps'
+  category: <sys-libs
   description: ""
   license: ""
-  name: shadow
+  name: e2fsprogs-libs
   
-  version: 4.7-r2
+  version: 1.41.8
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: hardlink
+  
+  version: ""
+- 
+  category: <app-shells
+  description: ""
+  license: ""
+  name: bash-completion
+  
+  version: 2.7-r1
+- 
+  category: '>=app-admin'
+  description: ""
+  license: ""
+  name: sysklogd
+  
+  version: "2.0"
 - 
   category: sys-process
   description: ""
@@ -78,28 +78,28 @@ conflicts:
   
   version: ""
 - 
-  category: <sys-fs
+  category: <sys-apps
   description: ""
   license: ""
-  name: e2fsprogs
+  name: sysvinit
   
-  version: 1.41.8
+  version: 2.88-r7
 - 
-  category: <app-shells
+  category: net-wireless
   description: ""
   license: ""
-  name: bash-completion
+  name: rfkill
   
-  version: 2.7-r1
+  version: ""
 description: Various useful Linux utilities
 license: GPL-2 LGPL-2.1 BSD-4 MIT public-domain
 name: util-linux
 requires:
 - 
-  category: sys-libs
+  category: virtual
   description: ""
   license: ""
-  name: libcap-ng
+  name: libudev
   
   version: ""
 - 
@@ -110,13 +110,6 @@ requires:
   
   version: 5.2-r2
 - 
-  category: virtual
-  description: ""
-  license: ""
-  name: libintl
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
@@ -124,10 +117,10 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: sys-libs
   description: ""
   license: ""
-  name: systemd
+  name: slang
   
   version: ""
 - 
@@ -145,17 +138,17 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: 2.2.2-r4
-- 
   category: sys-fs
   description: ""
   license: ""
   name: cryptsetup
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libintl
   
   version: ""
 - 
@@ -169,14 +162,21 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: slang
+  name: libselinux
+  
+  version: 2.2.2-r4
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
   
   version: ""
 - 
-  category: virtual
+  category: sys-libs
   description: ""
   license: ""
-  name: libudev
+  name: libcap-ng
   
   version: ""
 uri: []

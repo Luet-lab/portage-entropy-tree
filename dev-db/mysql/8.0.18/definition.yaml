@@ -11,7 +11,7 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mariadb
+  name: mysql-cluster
   
   version: ""
 - 
@@ -25,13 +25,20 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mysql-cluster
+  name: mariadb
   
   version: ""
 description: A fast, multi-threaded, multi-user SQL database server
 license: GPL-2
 name: mysql
 requires:
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: lz4
+  
+  version: 0_p131
 - 
   category: app-text
   description: ""
@@ -47,13 +54,6 @@ requires:
   
   version: 1.0.0
 - 
-  category: sys-process
-  description: ""
-  license: ""
-  name: numactl
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
@@ -68,10 +68,24 @@ requires:
   
   version: ""
 - 
-  category: sys-process
+  category: dev-libs
   description: ""
   license: ""
-  name: procps
+  name: libaio
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: google-perftools
+  
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: mysql
   
   version: ""
 - 
@@ -82,7 +96,7 @@ requires:
   
   version: ""
 - 
-  category: acct-user
+  category: acct-group
   description: ""
   license: ""
   name: mysql
@@ -110,19 +124,26 @@ requires:
   
   version: 1.2.3
 - 
-  category: dev-libs
+  category: sys-process
   description: ""
   license: ""
-  name: libressl
+  name: procps
   
   version: ""
 - 
-  category: app-arch
+  category: sys-process
   description: ""
   license: ""
-  name: lz4
+  name: numactl
   
-  version: 0_p131
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-init-scripts
+  
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -134,28 +155,7 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libaio
-  
-  version: ""
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: google-perftools
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: mysql
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mysql-init-scripts
+  name: libressl
   
   version: ""
 uri:

@@ -4,14 +4,7 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: percona-server
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mariadb
+  name: mysql
   
   version: ""
 - 
@@ -25,14 +18,21 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mysql
+  name: mariadb-galera
   
   version: ""
 - 
   category: dev-db
   description: ""
   license: ""
-  name: mariadb-galera
+  name: mariadb
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: percona-server
   
   version: ""
 description: An enhanced, drop-in replacement for MySQL
@@ -40,10 +40,10 @@ license: GPL-2
 name: mysql-cluster
 requires:
 - 
-  category: dev-libs
+  category: sys-process
   description: ""
   license: ""
-  name: libevent
+  name: numactl
   
   version: ""
 - 
@@ -54,12 +54,12 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: dev-util
   description: ""
   license: ""
-  name: libressl
+  name: systemtap
   
-  version: ""
+  version: "1.3"
 - 
   category: sys-libs
   description: ""
@@ -67,6 +67,27 @@ requires:
   name: zlib
   
   version: 1.2.3
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: perl-Getopt-Long
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libevent
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: texinfo
+  
+  version: 4.7-r1
 - 
   category: virtual
   description: ""
@@ -82,10 +103,17 @@ requires:
   
   version: ""
 - 
-  category: sys-process
+  category: dev-db
   description: ""
   license: ""
-  name: procps
+  name: mysql-init-scripts
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libaio
   
   version: ""
 - 
@@ -96,59 +124,10 @@ requires:
   
   version: "4"
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: texinfo
-  
-  version: 4.7-r1
-- 
   category: dev-libs
   description: ""
   license: ""
   name: jemalloc
-  
-  version: ""
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: numactl
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: ncurses
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mysql-init-scripts
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: perl-Time-HiRes
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jre
-  
-  version: "1.6"
-- 
-  category: dev-perl
-  description: ""
-  license: ""
-  name: TermReadKey
   
   version: ""
 - 
@@ -159,24 +138,45 @@ requires:
   
   version: 1.0.0
 - 
-  category: dev-util
+  category: dev-perl
   description: ""
   license: ""
-  name: systemtap
+  name: TermReadKey
   
-  version: "1.3"
+  version: ""
 - 
   category: virtual
   description: ""
   license: ""
-  name: perl-Getopt-Long
+  name: perl-Time-HiRes
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jre
+  
+  version: "1.6"
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: procps
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libaio
+  name: libressl
   
   version: ""
 uri:

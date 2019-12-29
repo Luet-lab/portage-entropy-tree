@@ -8,6 +8,13 @@ conflicts:
   
   version: "2.11"
 - 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: gentoo-systemd-integration
+  
+  version: ""
+- 
   category: <sys-fs
   description: ""
   license: ""
@@ -15,17 +22,10 @@ conflicts:
   
   version: 2.02.103
 - 
-  category: <sec-policy
+  category: sys-fs
   description: ""
   license: ""
-  name: selinux-base
-  
-  version: 2.20120725-r10
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: gentoo-systemd-integration
+  name: udev
   
   version: ""
 - 
@@ -36,12 +36,12 @@ conflicts:
   
   version: ""
 - 
-  category: sys-fs
+  category: <sec-policy
   description: ""
   license: ""
-  name: udev
+  name: selinux-base
   
-  version: ""
+  version: 2.20120725-r10
 description: Linux dynamic and persistent device naming support (aka userspace devfs)
 license: LGPL-2.1 MIT GPL-2
 name: eudev
@@ -54,27 +54,6 @@ requires:
   
   version: "2.20"
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: 2.1.9
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: kvm
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: gobject-introspection
-  
-  version: "1.38"
-- 
   category: sys-apps
   description: ""
   license: ""
@@ -86,6 +65,27 @@ requires:
   description: ""
   license: ""
   name: input
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gobject-introspection
+  
+  version: "1.38"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: 2.1.9
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: kvm
   
   version: ""
 - 

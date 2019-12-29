@@ -5,17 +5,17 @@ license: GPL-2+ LGPL-2+ MIT CC-BY-3.0 CC-BY-SA-3.0
 name: gnome-maps
 requires:
 - 
-  category: dev-libs
+  category: app-misc
   description: ""
   license: ""
-  name: libxml2
+  name: geoclue
   
-  version: ""
+  version: 0.12.99
 - 
-  category: media-libs
+  category: net-libs
   description: ""
   license: ""
-  name: clutter
+  name: libsoup
   
   version: ""
 - 
@@ -26,12 +26,19 @@ requires:
   
   version: ""
 - 
-  category: app-misc
+  category: dev-libs
   description: ""
   license: ""
-  name: geoclue
+  name: gobject-introspection
   
-  version: 0.12.99
+  version: 0.10.1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgee
+  
+  version: "0.16"
 - 
   category: dev-libs
   description: ""
@@ -50,63 +57,7 @@ requires:
   category: net-libs
   description: ""
   license: ""
-  name: rest
-  
-  version: 0.7.90
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnome-online-accounts
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
   name: libgfbgraph
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: gobject-introspection
-  
-  version: 0.10.1
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgee
-  
-  version: "0.16"
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: libsecret
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgweather
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: clutter-gtk
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libsoup
   
   version: ""
 - 
@@ -116,6 +67,13 @@ requires:
   name: glib
   
   version: 2.44.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgweather
+  
+  version: ""
 - 
   category: x11-libs
   description: ""
@@ -134,9 +92,51 @@ requires:
   category: dev-libs
   description: ""
   license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: rest
+  
+  version: 0.7.90
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: libsecret
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: clutter-gtk
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: clutter
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
   name: gjs
   
   version: 1.50.0
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnome-online-accounts
+  
+  version: ""
 uri: []
 use_flags:
 - ""

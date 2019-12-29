@@ -8,6 +8,20 @@ conflicts:
   
   version: ""
 - 
+  category: net-nntp
+  description: ""
+  license: ""
+  name: leafnode
+  
+  version: ""
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: courier-imap
+  
+  version: ""
+- 
   category: app-arch
   description: ""
   license: ""
@@ -28,36 +42,29 @@ conflicts:
   name: courier
   
   version: ""
-- 
-  category: net-nntp
-  description: ""
-  license: ""
-  name: leafnode
-  
-  version: ""
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: courier-imap
-  
-  version: ""
 description: The Cyrus IMAP Server
 license: BSD-with-attribution GPL-2
 name: cyrus-imapd
 requires:
 - 
-  category: dev-db
+  category: dev-libs
   description: ""
   license: ""
-  name: sqlite
+  name: icu
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: e2fsprogs-libs
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libical
+  name: libxml2
   
   version: ""
 - 
@@ -68,19 +75,19 @@ requires:
   
   version: ""
 - 
-  category: dev-lang
+  category: net-mail
   description: ""
   license: ""
-  name: perl
+  name: mailbase
   
-  version: ""
+  version: "1"
 - 
-  category: dev-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: libxml2
+  name: tcp-wrappers
   
-  version: ""
+  version: "7.6"
 - 
   category: net-analyzer
   description: ""
@@ -96,33 +103,12 @@ requires:
   
   version: ""
 - 
-  category: net-fs
+  category: dev-lang
   description: ""
   license: ""
-  name: openafs
+  name: perl
   
   version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libcap
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: tcp-wrappers
-  
-  version: "7.6"
 - 
   category: dev-libs
   description: ""
@@ -131,52 +117,10 @@ requires:
   
   version: 1.4.0
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: e2fsprogs-libs
-  
-  version: ""
-- 
-  category: app-antivirus
-  description: ""
-  license: ""
-  name: clamav
-  
-  version: ""
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: mailbase
-  
-  version: "1"
-- 
   category: dev-db
   description: ""
   license: ""
-  name: lmdb
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: cyrus-sasl
-  
-  version: 2.1.13
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: jansson
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: icu
+  name: mysql-connector-c
   
   version: ""
 - 
@@ -190,7 +134,28 @@ requires:
   category: dev-db
   description: ""
   license: ""
+  name: lmdb
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
   name: postgresql
+  
+  version: ""
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: net-snmp
+  
+  version: 5.2.2-r1
+- 
+  category: app-antivirus
+  description: ""
+  license: ""
+  name: clamav
   
   version: ""
 - 
@@ -201,26 +166,61 @@ requires:
   
   version: 1.0.1e
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libical
+  
+  version: ""
+- 
   category: sys-libs
   description: ""
   license: ""
-  name: zlib
+  name: libcap
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: jansson
+  
+  version: ""
+- 
+  category: net-fs
+  description: ""
+  license: ""
+  name: openafs
   
   version: ""
 - 
   category: dev-db
   description: ""
   license: ""
-  name: mysql-connector-c
+  name: sqlite
   
   version: ""
 - 
-  category: net-analyzer
+  category: dev-libs
   description: ""
   license: ""
-  name: net-snmp
+  name: cyrus-sasl
   
-  version: 5.2.2-r1
+  version: 2.1.13
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
 uri:
 - https://github.com/cyrusimap/cyrus-imapd/releases/download/cyrus-imapd-3.0.10/cyrus-imapd-3.0.10.tar.gz
 use_flags:

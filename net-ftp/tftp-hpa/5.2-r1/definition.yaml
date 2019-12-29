@@ -4,20 +4,27 @@ conflicts:
   category: net-ftp
   description: ""
   license: ""
-  name: atftp
+  name: netkit-tftp
   
   version: ""
 - 
   category: net-ftp
   description: ""
   license: ""
-  name: netkit-tftp
+  name: atftp
   
   version: ""
 description: port of the OpenBSD TFTP server
 license: BSD-4
 name: tftp-hpa
 requires:
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-tftp
+  
+  version: ""
 - 
   category: sys-libs
   description: ""
@@ -30,13 +37,6 @@ requires:
   description: ""
   license: ""
   name: tcp-wrappers
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-tftp
   
   version: ""
 uri:

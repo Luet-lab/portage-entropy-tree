@@ -8,42 +8,35 @@ conflicts:
   
   version: "0.11"
 - 
-  category: <sys-fs
-  description: ""
-  license: ""
-  name: cryptsetup
-  
-  version: 1.1.2
-- 
   category: '!sys-fs'
   description: ""
   license: ""
   name: lvm-user
   
   version: ""
+- 
+  category: <sys-fs
+  description: ""
+  license: ""
+  name: cryptsetup
+  
+  version: 1.1.2
 description: User-land utilities for LVM2 (device-mapper) software
 license: GPL-2
 name: lvm2
 requires:
 - 
-  category: sys-block
+  category: sys-apps
   description: ""
   license: ""
-  name: thin-provisioning-tools
+  name: util-linux
   
-  version: 0.3.0
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: sanlock
-  
-  version: ""
+  version: "2.16"
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libaio[static-libs?]
+  name: libaio
   
   version: ""
 - 
@@ -54,12 +47,12 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: sys-cluster
   description: ""
   license: ""
-  name: systemd
+  name: sanlock
   
-  version: "205"
+  version: ""
 - 
   category: virtual
   description: ""
@@ -75,19 +68,26 @@ requires:
   
   version: "2.2"
 - 
-  category: sys-apps
+  category: sys-block
   description: ""
   license: ""
-  name: util-linux
+  name: thin-provisioning-tools
   
-  version: "2.16"
+  version: 0.3.0
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libaio
+  name: libaio[static-libs?]
   
   version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "205"
 - 
   category: sys-apps
   description: ""

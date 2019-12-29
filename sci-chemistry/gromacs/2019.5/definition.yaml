@@ -6,19 +6,12 @@ license: LGPL-2.1 UoI-NCSA !mkl? ( !fftw? ( BSD ) !blas? ( BSD ) !lapack? ( BSD 
 name: gromacs
 requires:
 - 
-  category: virtual
+  category: dev-util
   description: ""
   license: ""
-  name: blas
+  name: nvidia-cuda-toolkit
   
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: opencl
-  
-  version: ""
+  version: 6.5.14
 - 
   category: sys-apps
   description: ""
@@ -31,34 +24,6 @@ requires:
   description: ""
   license: ""
   name: lapack
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: mpi
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libSM
-  
-  version: ""
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: fftw
   
   version: ""
 - 
@@ -76,6 +41,20 @@ requires:
   
   version: ""
 - 
+  category: virtual
+  description: ""
+  license: ""
+  name: blas
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libSM
+  
+  version: ""
+- 
   category: x11-libs
   description: ""
   license: ""
@@ -83,12 +62,33 @@ requires:
   
   version: ""
 - 
-  category: dev-util
+  category: virtual
   description: ""
   license: ""
-  name: nvidia-cuda-toolkit
+  name: opencl
   
-  version: 6.5.14
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: fftw
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: mpi
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
 uri:
 - ftp://ftp.gromacs.org/pub/gromacs/gromacs-2019.5.tar.gz
 - 'http://gerrit.gromacs.org/download/regressiontests-2019.5.tar.gz '

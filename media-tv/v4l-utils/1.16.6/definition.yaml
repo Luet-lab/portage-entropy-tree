@@ -1,23 +1,44 @@
 category: media-tv
 conflicts:
 - 
-  category: <media-tv
-  description: ""
-  license: ""
-  name: ivtv-utils
-  
-  version: 1.4.0-r2
-- 
   category: media-tv
   description: ""
   license: ""
   name: v4l2-ctl
   
   version: ""
+- 
+  category: <media-tv
+  description: ""
+  license: ""
+  name: ivtv-utils
+  
+  version: 1.4.0-r2
 description: Separate utilities ebuild from upstream v4l-utils package
 license: GPL-2+ LGPL-2.1+
 name: v4l-utils
 requires:
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtopengl
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libudev
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jpeg
+  
+  version: 0-r2
 - 
   category: virtual
   description: ""
@@ -47,19 +68,12 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: media-libs
   description: ""
   license: ""
-  name: libudev
+  name: alsa-lib
   
   version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jpeg
-  
-  version: 0-r2
 - 
   category: media-libs
   description: ""
@@ -67,20 +81,6 @@ requires:
   name: libv4l
   
   version: 1.16.6
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtopengl
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: alsa-lib
-  
-  version: ""
 uri:
 - https://linuxtv.org/downloads/v4l-utils/v4l-utils-1.16.6.tar.bz2
 use_flags:

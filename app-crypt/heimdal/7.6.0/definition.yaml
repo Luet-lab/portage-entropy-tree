@@ -19,33 +19,12 @@ license: BSD
 name: heimdal
 requires:
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: readline
-  
-  version: 6.2_p5-r1
-- 
   category: x11-libs
   description: ""
   license: ""
-  name: libX11
+  name: libXau
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: 1.0.1h-r2
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: gdbm
-  
-  version: 1.10-r1
 - 
   category: sys-libs
   description: ""
@@ -53,6 +32,20 @@ requires:
   name: ncurses
   
   version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-kerberos
+  
+  version: ""
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: 2.3.0
 - 
   category: dev-libs
   description: ""
@@ -71,48 +64,6 @@ requires:
   category: dev-db
   description: ""
   license: ""
-  name: sqlite
-  
-  version: 3.8.2
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXt
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-kerberos
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libcap-ng
-  
-  version: ""
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
-  
-  version: 2.3.0
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXau
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
   name: lmdb
   
   version: ""
@@ -124,12 +75,61 @@ requires:
   
   version: 1.42.9
 - 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: 6.2_p5-r1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 1.0.1h-r2
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap-ng
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: 3.8.2
+- 
   category: net-fs
   description: ""
   license: ""
   name: openafs
   
   version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXt
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: gdbm
+  
+  version: 1.10-r1
 uri:
 - https://github.com/heimdal/heimdal/releases/download/heimdal-7.6.0/heimdal-7.6.0.tar.gz
 use_flags:

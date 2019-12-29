@@ -4,34 +4,20 @@ conflicts:
   category: '!app-crypt'
   description: ""
   license: ""
-  name: mit-krb5
+  name: mit-krb5-appl
   
   version: ""
 - 
   category: '!app-crypt'
   description: ""
   license: ""
-  name: mit-krb5-appl
+  name: mit-krb5
   
   version: ""
 description: Kerberos 5 implementation from KTH
 license: BSD
 name: heimdal
 requires:
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: 1.0.1h-r2
 - 
   category: sys-libs
   description: ""
@@ -43,16 +29,9 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: readline
+  name: gdbm
   
-  version: 6.2_p5-r1
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: ncurses
-  
-  version: ""
+  version: 1.10-r1
 - 
   category: x11-libs
   description: ""
@@ -60,6 +39,20 @@ requires:
   name: libXau
   
   version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-kerberos
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 1.0.1h-r2
 - 
   category: dev-db
   description: ""
@@ -71,21 +64,35 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: libcap-ng
+  name: e2fsprogs-libs
+  
+  version: 1.42.9
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
   
   version: ""
 - 
-  category: dev-db
+  category: sys-libs
   description: ""
   license: ""
-  name: sqlite
+  name: readline
   
-  version: 3.8.2
+  version: 6.2_p5-r1
 - 
-  category: dev-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: libressl
+  name: libXt
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap-ng
   
   version: ""
 - 
@@ -96,40 +103,33 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXt
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-kerberos
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: gdbm
-  
-  version: 1.10-r1
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: e2fsprogs-libs
-  
-  version: 1.42.9
-- 
   category: net-nds
   description: ""
   license: ""
   name: openldap
   
   version: 2.3.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: 3.8.2
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
 uri:
 - https://github.com/heimdal/heimdal/releases/download/heimdal-7.7.0/heimdal-7.7.0.tar.gz
 use_flags:

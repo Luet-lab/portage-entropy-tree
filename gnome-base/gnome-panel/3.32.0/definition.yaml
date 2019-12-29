@@ -5,12 +5,19 @@ license: GPL-2+ FDL-1.1 LGPL-2.1+
 name: gnome-panel
 requires:
 - 
-  category: sys-apps
+  category: x11-libs
   description: ""
   license: ""
-  name: systemd
+  name: gdk-pixbuf
   
-  version: "230"
+  version: 2.26.0
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pango
+  
+  version: 1.15.4
 - 
   category: dev-libs
   description: ""
@@ -22,9 +29,16 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: cairo-1.0.0[X,glib]
+  name: gtk+
   
-  version: ""
+  version: 3.22.0
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gnome-menus
+  
+  version: 3.7.90
 - 
   category: gnome-base
   description: ""
@@ -36,37 +50,23 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libX11
+  name: libwnck
   
-  version: ""
+  version: 3.4.6
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXi
+  name: cairo-1.0.0[X,glib]
   
   version: ""
 - 
   category: gnome-base
   description: ""
   license: ""
-  name: gnome-desktop
+  name: dconf
   
-  version: 2.91.0
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gnome-menus
-  
-  version: 3.7.90
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: elogind
-  
-  version: "230"
+  version: 0.13.4
 - 
   category: x11-libs
   description: ""
@@ -82,6 +82,13 @@ requires:
   
   version: ""
 - 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "230"
+- 
   category: dev-libs
   description: ""
   license: ""
@@ -89,40 +96,19 @@ requires:
   
   version: 3.28.0
 - 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXi
+  
+  version: ""
+- 
   category: gnome-base
   description: ""
   license: ""
-  name: dconf
+  name: gnome-desktop
   
-  version: 0.13.4
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gdk-pixbuf
-  
-  version: 2.26.0
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pango
-  
-  version: 1.15.4
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: 3.22.0
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libwnck
-  
-  version: 3.4.6
+  version: 2.91.0
 - 
   category: gnome-extra
   description: ""
@@ -130,6 +116,20 @@ requires:
   name: evolution-data-server
   
   version: 3.5.3
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: elogind
+  
+  version: "230"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
 uri: []
 use_flags:
 - eds

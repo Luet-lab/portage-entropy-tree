@@ -8,12 +8,12 @@ conflicts:
   
   version: ""
 - 
-  category: <net-wireless
+  category: <gnome-base
   description: ""
   license: ""
-  name: gnome-bluetooth
+  name: gdm
   
-  version: 3.3.2
+  version: 2.91.94
 - 
   category: <gnome-extra
   description: ""
@@ -22,12 +22,12 @@ conflicts:
   
   version: 2.32.0-r300
 - 
-  category: <gnome-base
+  category: <net-wireless
   description: ""
   license: ""
-  name: gdm
+  name: gnome-bluetooth
   
-  version: 2.91.94
+  version: 3.3.2
 description: GNOME's main interface to configure various aspects of the desktop
 license: GPL-2+
 name: gnome-control-center
@@ -40,20 +40,6 @@ requires:
   
   version: 0.1.34
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gdk-pixbuf
-  
-  version: 2.23.0
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
   category: media-libs
   description: ""
   license: ""
@@ -61,157 +47,17 @@ requires:
   
   version: 0.3.0
 - 
-  category: media-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: clutter-gtk
+  name: colord-gtk
   
-  version: ""
-- 
-  category: media-video
-  description: ""
-  license: ""
-  name: cheese
-  
-  version: 3.28.0
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: "31"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: accountsservice
-  
-  version: 0.6.39
+  version: 0.1.24
 - 
   category: gnome-base
   description: ""
   license: ""
-  name: libgnomekbd
-  
-  version: "3"
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: elogind
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: 3.22.0
-- 
-  category: net-wireless
-  description: ""
-  license: ""
-  name: gnome-bluetooth
-  
-  version: 3.18.2
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libsoup
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libpwquality
-  
-  version: 1.2.2
-- 
-  category: app-admin
-  description: ""
-  license: ""
-  name: system-config-printer
-  
-  version: ""
-- 
-  category: x11-drivers
-  description: ""
-  license: ""
-  name: xf86-input-libinput
-  
-  version: 0.19.0
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: pulseaudio
-  
-  version: "2.0"
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: polkit
-  
-  version: "0.114"
-- 
-  category: app-i18n
-  description: ""
-  license: ""
-  name: ibus
-  
-  version: 1.5.2
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgudev
-  
-  version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: networkmanager
-  
-  version: 1.10.0
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: modemmanager
-  
-  version: 0.7.990
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: mit-krb5
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libcanberra
-  
-  version: "0.13"
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnome-online-accounts
-  
-  version: 3.25.3
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libinput
+  name: libgtop
   
   version: ""
 - 
@@ -222,13 +68,6 @@ requires:
   
   version: ""
 - 
-  category: net-print
-  description: ""
-  license: ""
-  name: cups-pk-helper
-  
-  version: ""
-- 
   category: x11-drivers
   description: ""
   license: ""
@@ -236,12 +75,12 @@ requires:
   
   version: 0.33.0
 - 
-  category: gnome-extra
+  category: sys-apps
   description: ""
   license: ""
-  name: nm-applet
+  name: accountsservice
   
-  version: 1.8.0
+  version: 0.6.39
 - 
   category: gnome-base
   description: ""
@@ -264,19 +103,19 @@ requires:
   
   version: "1.7"
 - 
-  category: x11-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: cairo
+  name: libgudev
   
   version: ""
 - 
-  category: gnome-base
+  category: media-libs
   description: ""
   license: ""
-  name: libgtop
+  name: libcanberra
   
-  version: ""
+  version: "0.13"
 - 
   category: gnome-extra
   description: ""
@@ -292,6 +131,146 @@ requires:
   
   version: 2.53.0
 - 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gnome-desktop
+  
+  version: 3.27.90
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: "0.114"
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: elogind
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: sys-power
+  description: ""
+  license: ""
+  name: upower
+  
+  version: 0.99.6
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libwacom
+  
+  version: "0.27"
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libsoup
+  
+  version: ""
+- 
+  category: x11-drivers
+  description: ""
+  license: ""
+  name: xf86-input-libinput
+  
+  version: 0.19.0
+- 
+  category: app-i18n
+  description: ""
+  license: ""
+  name: ibus
+  
+  version: 1.5.2
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libinput
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gdk-pixbuf
+  
+  version: 2.23.0
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
+  category: net-fs
+  description: ""
+  license: ""
+  name: samba
+  
+  version: 4.0.0
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: cheese
+  
+  version: 3.28.0
+- 
+  category: gnome-extra
+  description: ""
+  license: ""
+  name: nm-applet
+  
+  version: 1.8.0
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: modemmanager
+  
+  version: 0.7.990
+- 
+  category: net-wireless
+  description: ""
+  license: ""
+  name: gnome-bluetooth
+  
+  version: 3.18.2
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: libsecret
+  
+  version: ""
+- 
   category: x11-themes
   description: ""
   license: ""
@@ -306,12 +285,12 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: libxml2
+  name: gtk+
   
-  version: ""
+  version: 3.22.0
 - 
   category: media-libs
   description: ""
@@ -320,54 +299,75 @@ requires:
   
   version: 1.11.3
 - 
-  category: media-libs
+  category: app-crypt
   description: ""
   license: ""
-  name: fontconfig
+  name: mit-krb5
   
   version: ""
-- 
-  category: sys-power
-  description: ""
-  license: ""
-  name: upower
-  
-  version: 0.99.6
-- 
-  category: net-fs
-  description: ""
-  license: ""
-  name: samba
-  
-  version: 4.0.0
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libwacom
+  name: libpwquality
   
-  version: "0.27"
+  version: 1.2.2
 - 
-  category: x11-libs
+  category: net-print
   description: ""
   license: ""
-  name: colord-gtk
+  name: cups-pk-helper
   
-  version: 0.1.24
+  version: ""
 - 
-  category: app-crypt
+  category: net-libs
   description: ""
   license: ""
-  name: libsecret
+  name: gnome-online-accounts
+  
+  version: 3.25.3
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: pulseaudio
+  
+  version: "2.0"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: clutter-gtk
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: networkmanager
+  
+  version: 1.10.0
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "31"
+- 
+  category: app-admin
+  description: ""
+  license: ""
+  name: system-config-printer
   
   version: ""
 - 
   category: gnome-base
   description: ""
   license: ""
-  name: gnome-desktop
+  name: libgnomekbd
   
-  version: 3.27.90
+  version: "3"
 uri:
 - https://dev.gentoo.org/~leio/distfiles/gnome-control-center-3.30.3-patchset.tar.xz
 use_flags:

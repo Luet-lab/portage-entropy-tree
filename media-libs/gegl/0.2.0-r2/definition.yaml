@@ -5,40 +5,26 @@ license: '|| ( GPL-3 LGPL-3 )'
 name: gegl
 requires:
 - 
-  category: x11-libs
+  category: gnome-base
   description: ""
   license: ""
-  name: cairo
+  name: librsvg
+  
+  version: "2.14"
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: umfpack
   
   version: ""
 - 
-  category: media-video
+  category: dev-libs
   description: ""
   license: ""
-  name: ffmpeg
+  name: glib
   
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: openexr
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libpng
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: ""
+  version: "2.28"
 - 
   category: virtual
   description: ""
@@ -50,14 +36,7 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libopenraw
-  
-  version: 0.0.9
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: umfpack
+  name: openexr
   
   version: ""
 - 
@@ -75,6 +54,27 @@ requires:
   
   version: ""
 - 
+  category: media-video
+  description: ""
+  license: ""
+  name: ffmpeg
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libpng
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo
+  
+  version: ""
+- 
   category: media-libs
   description: ""
   license: ""
@@ -89,13 +89,6 @@ requires:
   
   version: "2.18"
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.28"
-- 
   category: x11-libs
   description: ""
   license: ""
@@ -103,12 +96,12 @@ requires:
   
   version: ""
 - 
-  category: gnome-base
+  category: sys-libs
   description: ""
   license: ""
-  name: librsvg
+  name: zlib
   
-  version: "2.14"
+  version: ""
 - 
   category: media-libs
   description: ""
@@ -116,6 +109,13 @@ requires:
   name: babl
   
   version: 0.1.10
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libopenraw
+  
+  version: 0.0.9
 uri:
 - https://download.gimp.org/pub/gegl/0.2/gegl-0.2.0.tar.bz2
 use_flags:

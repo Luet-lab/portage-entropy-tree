@@ -4,6 +4,13 @@ conflicts:
   category: sys-cluster
   description: ""
   license: ""
+  name: mpiexec
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
   name: mpich2
   
   version: ""
@@ -21,17 +28,24 @@ conflicts:
 mpi
   
   version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: mpiexec
-  
-  version: ""
 description: A high-performance message passing library (MPI)
 license: BSD
 name: openmpi
 requires:
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: hwloc
+  
+  version: 2.0.2
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: infinipath-psm
+  
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -44,41 +58,6 @@ requires:
   description: ""
   license: ""
   name: libltdl
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: hwloc
-  
-  version: 2.0.2
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: knem
-  
-  version: ""
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: nvidia-cuda-toolkit
-  
-  version: 6.5.19-r1
-- 
-  category: sys-fabric
-  description: ""
-  license: ""
-  name: ofed
-  
-  version: ""
-- 
-  category: sys-fabric
-  description: ""
-  license: ""
-  name: infinipath-psm
   
   version: ""
 - 
@@ -96,10 +75,17 @@ requires:
   
   version: 1.2.8-r1
 - 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: ofed
+  
+  version: ""
+- 
   category: sys-cluster
   description: ""
   license: ""
-  name: torque
+  name: knem
   
   version: ""
 - 
@@ -110,12 +96,26 @@ requires:
   
   version: ""
 - 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: torque
+  
+  version: ""
+- 
   category: virtual
   description: ""
   license: ""
   name: jre
   
   version: "1.6"
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: nvidia-cuda-toolkit
+  
+  version: 6.5.19-r1
 uri:
 - http://www.open-mpi.org/software/ompi/v/downloads/openmpi-4.0.1.tar.bz2
 use_flags:

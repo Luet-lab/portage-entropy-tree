@@ -1,13 +1,6 @@
 category: sys-kernel
 conflicts:
 - 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: eudev
-  
-  version: ""
-- 
   category: <sys-apps
   description: ""
   license: ""
@@ -21,29 +14,22 @@ conflicts:
   name: genkernel
   
   version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: eudev
+  
+  version: ""
 description: Gentoo automatic kernel building scripts, reloaded
 license: GPL-2
 name: genkernel-next
 requires:
 - 
-  category: sys-boot
-  description: ""
-  license: ""
-  name: plymouth
-  
-  version: ""
-- 
   category: sys-fs
   description: ""
   license: ""
-  name: lvm2
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: e2fsprogs
+  name: cryptsetup
   
   version: ""
 - 
@@ -54,13 +40,6 @@ requires:
   
   version: ""
 - 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: cryptsetup
-  
-  version: ""
-- 
   category: sys-block
   description: ""
   license: ""
@@ -68,10 +47,52 @@ requires:
   
   version: ""
 - 
+  category: sys-boot
+  description: ""
+  license: ""
+  name: plymouth
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: pax-utils
+  
+  version: "0.6"
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: e2fsprogs
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: dmraid
+  
+  version: 1.0.0_rc16
+- 
   category: sys-fs
   description: ""
   license: ""
   name: mdadm
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lvm2
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
   
   version: ""
 - 
@@ -96,10 +117,10 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: app-portage
   description: ""
   license: ""
-  name: libselinux
+  name: portage-utils
   
   version: ""
 - 
@@ -109,27 +130,6 @@ requires:
   name: cpio
   
   version: ""
-- 
-  category: app-misc
-  description: ""
-  license: ""
-  name: pax-utils
-  
-  version: "0.6"
-- 
-  category: app-portage
-  description: ""
-  license: ""
-  name: portage-utils
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: dmraid
-  
-  version: 1.0.0_rc16
 uri:
 - https://github.com/Sabayon/genkernel-next/archive/v69.tar.gz -> genkernel-next-69.tar.gz
 use_flags:

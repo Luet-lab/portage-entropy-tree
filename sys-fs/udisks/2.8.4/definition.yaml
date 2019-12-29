@@ -5,12 +5,68 @@ license: LGPL-2+ GPL-2+
 name: udisks
 requires:
 - 
+  category: sys-block
+  description: ""
+  license: ""
+  name: parted
+  
+  version: "3"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "209"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: "2.30"
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lvm2
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: eject
+  
+  version: ""
+- 
   category: dev-libs
   description: ""
   license: ""
   name: glib
   
   version: "2.50"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgudev
+  
+  version: "165"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: acl
+  
+  version: ""
 - 
   category: sys-auth
   description: ""
@@ -22,23 +78,9 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libgudev
+  name: gobject-introspection
   
-  version: "165"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
-  
-  version: "2.30"
-- 
-  category: sys-block
-  description: ""
-  license: ""
-  name: parted
-  
-  version: "3"
+  version: "1.30"
 - 
   category: sec-policy
   description: ""
@@ -46,27 +88,6 @@ requires:
   name: selinux-devicekit
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: gobject-introspection
-  
-  version: "1.30"
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: lvm2
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: "209"
 - 
   category: dev-libs
   description: ""
@@ -81,27 +102,6 @@ requires:
   name: polkit
   
   version: "0.110"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: udev
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: acl
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: eject
-  
-  version: ""
 uri:
 - https://github.com/storaged-project/udisks/releases/download/udisks-2.8.4/udisks-2.8.4.tar.bz2
 use_flags:

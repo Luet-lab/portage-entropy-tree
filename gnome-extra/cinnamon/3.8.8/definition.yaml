@@ -8,16 +8,30 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: dbus-glib
+  name: glib
+  
+  version: 2.35.0
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gconf
   
   version: ""
 - 
-  category: dev-libs
+  category: gnome-extra
   description: ""
   license: ""
-  name: gobject-introspection
+  name: cinnamon-menus
   
-  version: 0.10.1
+  version: "3.6"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gstreamer
+  
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -26,31 +40,80 @@ requires:
   
   version: ""
 - 
+  category: media-libs
+  description: ""
+  license: ""
+  name: cogl
+  
+  version: ""
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: dconf
+  
+  version: 0.4.1
+- 
+  category: gnome-extra
+  description: ""
+  license: ""
+  name: cinnamon-session
+  
+  version: "3.8"
+- 
+  category: x11-themes
+  description: ""
+  license: ""
+  name: gnome-themes-standard
+  
+  version: ""
+- 
+  category: gnome-extra
+  description: ""
+  license: ""
+  name: nemo
+  
+  version: "3.8"
+- 
+  category: gnome-extra
+  description: ""
+  license: ""
+  name: cinnamon-control-center
+  
+  version: "3.8"
+- 
+  category: gnome-extra
+  description: ""
+  license: ""
+  name: cjs
+  
+  version: 3.8.0
+- 
   category: x11-libs
   description: ""
   license: ""
-  name: startup-notification
+  name: gdk-pixbuf
   
-  version: "0.11"
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: polkit
-  
-  version: "0.100"
+  version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: gtk+
+  name: libXfixes
   
-  version: 3.12.0
+  version: "5.0"
 - 
-  category: dev-python
+  category: gnome-extra
   description: ""
   license: ""
-  name: pygobject
+  name: cinnamon-screensaver
+  
+  version: "3.8"
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: ca-certificates
   
   version: ""
 - 
@@ -75,139 +138,6 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXfixes
-  
-  version: "5.0"
-- 
-  category: gnome-extra
-  description: ""
-  license: ""
-  name: nemo
-  
-  version: "3.8"
-- 
-  category: gnome-extra
-  description: ""
-  license: ""
-  name: cinnamon-screensaver
-  
-  version: "3.8"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: cogl
-  
-  version: ""
-- 
-  category: sys-power
-  description: ""
-  license: ""
-  name: upower
-  
-  version: ""
-- 
-  category: app-accessibility
-  description: ""
-  license: ""
-  name: caribou
-  
-  version: "0.3"
-- 
-  category: gnome-extra
-  description: ""
-  license: ""
-  name: polkit-gnome
-  
-  version: ""
-- 
-  category: gnome-extra
-  description: ""
-  license: ""
-  name: cinnamon-menus
-  
-  version: "3.6"
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gsettings-desktop-schemas
-  
-  version: 2.91.91
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gdk-pixbuf
-  
-  version: ""
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: dconf
-  
-  version: 0.4.1
-- 
-  category: x11-themes
-  description: ""
-  license: ""
-  name: gnome-themes-standard
-  
-  version: ""
-- 
-  category: x11-themes
-  description: ""
-  license: ""
-  name: adwaita-icon-theme
-  
-  version: ""
-- 
-  category: gnome-extra
-  description: ""
-  license: ""
-  name: cinnamon-session
-  
-  version: "3.8"
-- 
-  category: app-misc
-  description: ""
-  license: ""
-  name: ca-certificates
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: 2.35.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: clutter
-  
-  version: "1.10"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pango
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
   category: x11-wm
   description: ""
   license: ""
@@ -222,10 +152,10 @@ requires:
   
   version: 2.91.4
 - 
-  category: dev-python
+  category: x11-libs
   description: ""
   license: ""
-  name: dbus-python
+  name: xapps
   
   version: ""
 - 
@@ -236,10 +166,87 @@ requires:
   
   version: "3.8"
 - 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: "0.100"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: startup-notification
+  
+  version: "0.11"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
+  category: gnome-extra
+  description: ""
+  license: ""
+  name: cinnamon-settings-daemon
+  
+  version: "3.8"
+- 
+  category: app-accessibility
+  description: ""
+  license: ""
+  name: caribou
+  
+  version: "0.3"
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pygobject
+  
+  version: ""
+- 
   category: app-accessibility
   description: ""
   license: ""
   name: at-spi2-atk
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gst-plugins-base
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: 3.12.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: dbus-python
+  
+  version: ""
+- 
+  category: x11-themes
+  description: ""
+  license: ""
+  name: adwaita-icon-theme
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: dbus-glib
   
   version: ""
 - 
@@ -250,12 +257,12 @@ requires:
   
   version: "3.6"
 - 
-  category: gnome-extra
+  category: x11-libs
   description: ""
   license: ""
-  name: cjs
+  name: pango
   
-  version: 3.8.0
+  version: ""
 - 
   category: x11-misc
   description: ""
@@ -264,12 +271,12 @@ requires:
   
   version: ""
 - 
-  category: gnome-base
+  category: dev-libs
   description: ""
   license: ""
-  name: gconf
+  name: gobject-introspection
   
-  version: ""
+  version: 0.10.1
 - 
   category: gnome-base
   description: ""
@@ -281,37 +288,30 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: gstreamer
+  name: clutter
   
-  version: ""
+  version: "1.10"
 - 
-  category: media-libs
+  category: gnome-base
   description: ""
   license: ""
-  name: gst-plugins-base
+  name: gsettings-desktop-schemas
   
-  version: ""
+  version: 2.91.91
 - 
-  category: gnome-extra
+  category: sys-power
   description: ""
   license: ""
-  name: cinnamon-settings-daemon
-  
-  version: "3.8"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: xapps
+  name: upower
   
   version: ""
 - 
   category: gnome-extra
   description: ""
   license: ""
-  name: cinnamon-control-center
+  name: polkit-gnome
   
-  version: "3.8"
+  version: ""
 uri:
 - https://github.com/linuxmint/Cinnamon/archive/3.8.8.tar.gz -> cinnamon-3.8.8.tar.gz
 use_flags:

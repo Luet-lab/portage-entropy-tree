@@ -1,12 +1,12 @@
 category: sys-apps
 conflicts:
 - 
-  category: <app-admin
+  category: <app-portage
   description: ""
   license: ""
-  name: logrotate
+  name: gentoolkit
   
-  version: 3.8.0
+  version: 0.4.6
 - 
   category: <app-portage
   description: ""
@@ -15,23 +15,23 @@ conflicts:
   
   version: 2.3.10
 - 
-  category: <app-portage
+  category: <app-admin
   description: ""
   license: ""
-  name: gentoolkit
+  name: logrotate
   
-  version: 0.4.6
+  version: 3.8.0
 description: Portage is the package management and distribution system for Gentoo
 license: GPL-2
 name: portage
 requires:
 - 
-  category: sys-libs
+  category: app-arch
   description: ""
   license: ""
-  name: libselinux
+  name: tar
   
-  version: 2.0.94
+  version: "1.27"
 - 
   category: dev-lang
   description: ""
@@ -39,6 +39,41 @@ requires:
   name: python-exec
   
   version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: sed
+  
+  version: 4.0.5
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: install-xattr
+  
+  version: "0.3"
+- 
+  category: app-shells
+  description: ""
+  license: ""
+  name: bash
+  
+  version: ""
+- 
+  category: app-admin
+  description: ""
+  license: ""
+  name: eselect
+  
+  version: "1.2"
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: openpgp-keys-gentoo-release
+  
+  version: "20180706"
 - 
   category: sys-apps
   description: ""
@@ -54,19 +89,12 @@ requires:
   
   version: 0.1.17
 - 
-  category: app-arch
+  category: sys-libs
   description: ""
   license: ""
-  name: tar
+  name: libselinux
   
-  version: "1.27"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
-  
-  version: ""
+  version: 2.0.94
 - 
   category: app-portage
   description: ""
@@ -92,37 +120,9 @@ requires:
   category: sys-apps
   description: ""
   license: ""
-  name: install-xattr
-  
-  version: "0.3"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: sed
-  
-  version: 4.0.5
-- 
-  category: app-shells
-  description: ""
-  license: ""
-  name: bash
+  name: util-linux
   
   version: ""
-- 
-  category: app-admin
-  description: ""
-  license: ""
-  name: eselect
-  
-  version: "1.2"
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: openpgp-keys-gentoo-release
-  
-  version: "20180706"
 uri: []
 use_flags:
 - build

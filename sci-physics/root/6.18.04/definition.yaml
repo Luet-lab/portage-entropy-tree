@@ -12,45 +12,59 @@ license: LGPL-2.1 freedist MSttfEULA LGPL-3 libpng UoI-NCSA
 name: root
 requires:
 - 
-  category: x11-libs
+  category: virtual
   description: ""
   license: ""
-  name: libXext
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXpm
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtwebengine
-  
-  version: ""
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: fftw
+  name: opengl
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: jemalloc
+  name: openssl
   
   version: ""
 - 
-  category: dev-lang
+  category: dev-libs
   description: ""
   license: ""
-  name: R
+  name: vc
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: xrootd
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: xxhash
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: glu
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c
   
   version: ""
 - 
@@ -61,10 +75,10 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: ncurses
+  name: libxml2
   
   version: ""
 - 
@@ -75,6 +89,20 @@ requires:
   
   version: ""
 - 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtcore
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: postgresql
+  
+  version: ""
+- 
   category: media-libs
   description: ""
   license: ""
@@ -82,17 +110,31 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
+  category: dev-util
   description: ""
   license: ""
-  name: gl2ps
+  name: nvidia-cuda-toolkit
+  
+  version: "9.0"
+- 
+  category: sci-physics
+  description: ""
+  license: ""
+  name: pythia
   
   version: ""
 - 
-  category: media-gfx
+  category: dev-qt
   description: ""
   license: ""
-  name: graphviz
+  name: qtwebengine
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libafterimage[gif,jpeg,png,tiff?]
   
   version: ""
 - 
@@ -110,6 +152,13 @@ requires:
   
   version: ""
 - 
+  category: dev-cpp
+  description: ""
+  license: ""
+  name: tbb
+  
+  version: "2018"
+- 
   category: app-arch
   description: ""
   license: ""
@@ -117,31 +166,31 @@ requires:
   
   version: ""
 - 
-  category: app-arch
+  category: sys-libs
   description: ""
   license: ""
-  name: xz-utils
+  name: ncurses
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtgui
+  
+  version: ""
+- 
+  category: media-gfx
+  description: ""
+  license: ""
+  name: graphviz
   
   version: ""
 - 
   category: sys-libs
   description: ""
   license: ""
-  name: zlib
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: opengl
-  
-  version: ""
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: cfitsio
+  name: libcxx
   
   version: ""
 - 
@@ -159,17 +208,87 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: xxhash
+  name: zlib
   
   version: ""
 - 
-  category: dev-qt
+  category: x11-libs
   description: ""
   license: ""
-  name: qtgui
+  name: libX11
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gl2ps
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: fftw
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: cfitsio
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: fcgi
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: jemalloc
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: xz-utils
+  
+  version: ""
+- 
+  category: media-fonts
+  description: ""
+  license: ""
+  name: dejavu
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXpm
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXext
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXft
   
   version: ""
 - 
@@ -180,38 +299,24 @@ requires:
   
   version: ""
 - 
-  category: dev-db
+  category: app-editors
   description: ""
   license: ""
-  name: mysql-connector-c
+  name: emacs
   
-  version: ""
+  version: "23.1"
 - 
   category: dev-db
   description: ""
   license: ""
-  name: postgresql
+  name: oracle-instantclient-basic
   
   version: ""
 - 
-  category: dev-libs
+  category: dev-lang
   description: ""
   license: ""
-  name: openssl
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: xrootd
-  
-  version: ""
-- 
-  category: sci-physics
-  description: ""
-  license: ""
-  name: pythia
+  name: cfortran
   
   version: ""
 - 
@@ -229,115 +334,10 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: oracle-instantclient-basic
-  
-  version: ""
-- 
-  category: dev-cpp
-  description: ""
-  license: ""
-  name: tbb
-  
-  version: "2018"
-- 
-  category: media-fonts
-  description: ""
-  license: ""
-  name: dejavu
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: fcgi
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: ""
-- 
   category: dev-lang
   description: ""
   license: ""
-  name: cfortran
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXft
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: glu
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtcore
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libafterimage[gif,jpeg,png,tiff?]
-  
-  version: ""
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: nvidia-cuda-toolkit
-  
-  version: "9.0"
-- 
-  category: app-editors
-  description: ""
-  license: ""
-  name: emacs
-  
-  version: "23.1"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libcxx
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: vc
+  name: R
   
   version: ""
 uri:

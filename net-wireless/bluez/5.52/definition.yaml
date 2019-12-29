@@ -5,26 +5,12 @@ license: GPL-2+ LGPL-2.1+
 name: bluez
 requires:
 - 
-  category: sys-apps
+  category: virtual
   description: ""
   license: ""
-  name: dbus
+  name: udev
   
-  version: "1.6"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: readline
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: ""
+  version: "172"
 - 
   category: dev-python
   description: ""
@@ -33,12 +19,19 @@ requires:
   
   version: "1"
 - 
-  category: dev-python
+  category: sys-apps
   description: ""
   license: ""
-  name: pygobject
+  name: hwids
   
-  version: ""
+  version: "20121202.2"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: ell
+  
+  version: "0.26"
 - 
   category: net-print
   description: ""
@@ -50,23 +43,16 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: json-c
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
   name: libical
   
   version: ""
 - 
-  category: virtual
+  category: sys-apps
   description: ""
   license: ""
-  name: udev
+  name: dbus
   
-  version: "172"
+  version: "1.6"
 - 
   category: dev-libs
   description: ""
@@ -78,14 +64,35 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: ell
+  name: json-c
   
-  version: "0.26"
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
 - 
   category: media-libs
   description: ""
   license: ""
   name: alsa-lib
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pygobject
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
   
   version: ""
 - 
@@ -95,13 +102,6 @@ requires:
   name: selinux-bluetooth
   
   version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: hwids
-  
-  version: "20121202.2"
 uri:
 - https://www.kernel.org/pub/linux/bluetooth/bluez-5.52.tar.xz
 use_flags:

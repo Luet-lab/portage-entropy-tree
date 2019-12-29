@@ -5,24 +5,24 @@ license: GPL-2
 name: neomutt
 requires:
 - 
-  category: sys-libs
+  category: net-libs
   description: ""
   license: ""
-  name: db
+  name: gnutls
   
-  version: "6.3"
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: gpgme
-  
-  version: 0.9.0
+  version: 1.0.17
 - 
   category: virtual
   description: ""
   license: ""
   name: krb5
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: mime-types
   
   version: ""
 - 
@@ -36,21 +36,7 @@ requires:
   category: dev-db
   description: ""
   license: ""
-  name: lmdb
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: cyrus-sasl
-  
-  version: "2"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
+  name: tokyocabinet
   
   version: ""
 - 
@@ -61,13 +47,6 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: slang
-  
-  version: ""
-- 
   category: sec-policy
   description: ""
   license: ""
@@ -75,19 +54,26 @@ requires:
   
   version: ""
 - 
-  category: dev-db
+  category: sys-libs
   description: ""
   license: ""
-  name: tokyocabinet
+  name: gdbm
   
   version: ""
 - 
-  category: net-libs
+  category: dev-db
   description: ""
   license: ""
-  name: gnutls
+  name: lmdb
   
-  version: 1.0.17
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libintl
+  
+  version: ""
 - 
   category: net-dns
   description: ""
@@ -103,26 +89,40 @@ requires:
   
   version: ""
 - 
-  category: app-misc
+  category: dev-libs
   description: ""
   license: ""
-  name: mime-types
+  name: openssl
+  
+  version: 0.9.6
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: cyrus-sasl
+  
+  version: "2"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: slang
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
   
   version: ""
 - 
   category: sys-libs
   description: ""
   license: ""
-  name: gdbm
+  name: db
   
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libintl
-  
-  version: ""
+  version: "6.3"
 - 
   category: dev-db
   description: ""
@@ -131,12 +131,12 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: app-crypt
   description: ""
   license: ""
-  name: openssl
+  name: gpgme
   
-  version: 0.9.6
+  version: 0.9.0
 uri:
 - https://github.com/neomutt/neomutt/archive/20191207.tar.gz -> neomutt-20191207.tar.gz
 use_flags:

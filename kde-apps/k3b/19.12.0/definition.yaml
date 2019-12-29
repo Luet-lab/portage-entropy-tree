@@ -5,38 +5,24 @@ license: GPL-2 FDL-1.2
 name: k3b
 requires:
 - 
-  category: kde-frameworks
+  category: app-cdr
   description: ""
   license: ""
-  name: knotifications
+  name: dvd+rw-tools
   
-  version: 5.63.0
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtwebkit
-  
-  version: 5.212.0_pre20180120
+  version: "7"
 - 
   category: media-video
   description: ""
   license: ""
-  name: vcdimager
+  name: transcode
   
   version: ""
 - 
   category: kde-frameworks
   description: ""
   license: ""
-  name: kcompletion
-  
-  version: 5.63.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: solid
+  name: kwidgetsaddons
   
   version: 5.63.0
 - 
@@ -50,23 +36,51 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libmad
+  name: libdvdread
   
   version: ""
 - 
-  category: media-sound
+  category: kde-frameworks
   description: ""
   license: ""
-  name: cdparanoia
+  name: kio
+  
+  version: 5.63.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: solid
+  
+  version: 5.63.0
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: libav
   
   version: ""
 - 
   category: media-video
   description: ""
   license: ""
-  name: transcode
+  name: ffmpeg
   
   version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libmad
+  
+  version: ""
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kcompletion
+  
+  version: 5.63.0
 - 
   category: kde-frameworks
   description: ""
@@ -78,135 +92,9 @@ requires:
   category: kde-frameworks
   description: ""
   license: ""
-  name: kcoreaddons
-  
-  version: 5.63.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: knewstuff
-  
-  version: 5.63.0
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtxml
-  
-  version: 5.12.3
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: taglib
-  
-  version: "1.5"
-- 
-  category: app-cdr
-  description: ""
-  license: ""
-  name: cdrdao
-  
-  version: ""
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kbookmarks
-  
-  version: 5.63.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: knotifyconfig
-  
-  version: 5.63.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kxmlgui
-  
-  version: 5.63.0
-- 
-  category: kde-apps
-  description: ""
-  license: ""
-  name: libkcddb
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libsamplerate
-  
-  version: ""
-- 
-  category: media-video
-  description: ""
-  license: ""
-  name: libav
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: flac
-  
-  version: "1.2"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libogg
-  
-  version: ""
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kcmutils
-  
-  version: 5.63.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
   name: kiconthemes
   
   version: 5.63.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kwidgetsaddons
-  
-  version: 5.63.0
-- 
-  category: media-video
-  description: ""
-  license: ""
-  name: ffmpeg
-  
-  version: ""
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: musepack-tools
-  
-  version: "444"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libsndfile
-  
-  version: ""
 - 
   category: media-libs
   description: ""
@@ -222,20 +110,6 @@ requires:
   
   version: ""
 - 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: karchive
-  
-  version: 5.63.0
-- 
-  category: app-cdr
-  description: ""
-  license: ""
-  name: dvd+rw-tools
-  
-  version: "7"
-- 
   category: dev-qt
   description: ""
   license: ""
@@ -249,6 +123,132 @@ requires:
   name: qtnetwork
   
   version: 5.12.3
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libsndfile
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libburn
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: cdparanoia
+  
+  version: ""
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kbookmarks
+  
+  version: 5.63.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: knewstuff
+  
+  version: 5.63.0
+- 
+  category: kde-apps
+  description: ""
+  license: ""
+  name: libkcddb
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: flac
+  
+  version: "1.2"
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: musepack-tools
+  
+  version: "444"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libogg
+  
+  version: ""
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: ki18n
+  
+  version: 5.63.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kjobwidgets
+  
+  version: 5.63.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: knotifications
+  
+  version: 5.63.0
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: emovix
+  
+  version: ""
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: vcdimager
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: lame
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: taglib
+  
+  version: "1.5"
+- 
+  category: app-cdr
+  description: ""
+  license: ""
+  name: cdrdao
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libsamplerate
+  
+  version: ""
 - 
   category: media-sound
   description: ""
@@ -271,6 +271,13 @@ requires:
   
   version: 5.63.0
 - 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kxmlgui
+  
+  version: 5.63.0
+- 
   category: dev-qt
   description: ""
   license: ""
@@ -278,52 +285,45 @@ requires:
   
   version: 5.12.3
 - 
-  category: media-sound
+  category: kde-frameworks
   description: ""
   license: ""
-  name: lame
+  name: knotifyconfig
   
-  version: ""
+  version: 5.63.0
 - 
-  category: dev-libs
+  category: dev-qt
   description: ""
   license: ""
-  name: libburn
+  name: qtxml
   
-  version: ""
+  version: 5.12.3
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtwebkit
+  
+  version: 5.212.0_pre20180120
 - 
   category: kde-frameworks
   description: ""
   license: ""
-  name: kio
+  name: karchive
   
   version: 5.63.0
 - 
   category: kde-frameworks
   description: ""
   license: ""
-  name: kjobwidgets
+  name: kcmutils
   
   version: 5.63.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libdvdread
-  
-  version: ""
-- 
-  category: media-video
-  description: ""
-  license: ""
-  name: emovix
-  
-  version: ""
 - 
   category: kde-frameworks
   description: ""
   license: ""
-  name: ki18n
+  name: kcoreaddons
   
   version: 5.63.0
 uri: []

@@ -5,10 +5,31 @@ license: GPL-2
 name: kopete
 requires:
 - 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: latex-base
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtsql
+  
+  version: 5.12.3
+- 
   category: kde-frameworks
   description: ""
   license: ""
-  name: kdbusaddons
+  name: kcmutils
   
   version: 5.60.0
 - 
@@ -22,30 +43,51 @@ requires:
   category: kde-frameworks
   description: ""
   license: ""
-  name: ki18n
+  name: kparts
   
   version: 5.60.0
 - 
-  category: x11-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: libXScrnSaver
+  name: zlib
   
   version: ""
 - 
-  category: media-libs
+  category: kde-frameworks
   description: ""
   license: ""
-  name: libv4l
+  name: kdnssd
+  
+  version: 5.60.0
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtgui
+  
+  version: 5.12.3
+- 
+  category: kde-apps
+  description: ""
+  license: ""
+  name: libkleo
   
   version: ""
 - 
-  category: dev-libs
+  category: kde-frameworks
   description: ""
   license: ""
-  name: libxml2
+  name: kcoreaddons
   
-  version: ""
+  version: 5.60.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: ktexteditor
+  
+  version: 5.60.0
 - 
   category: dev-qt
   description: ""
@@ -57,51 +99,51 @@ requires:
   category: kde-frameworks
   description: ""
   license: ""
-  name: kcrash
-  
-  version: 5.60.0
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: latex-base
-  
-  version: ""
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: knotifyconfig
-  
-  version: 5.60.0
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
   name: kcontacts
   
   version: 5.60.0
 - 
+  category: net-dns
+  description: ""
+  license: ""
+  name: libidn
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: kde-apps
+  description: ""
+  license: ""
+  name: kidentitymanagement
+  
+  version: ""
+- 
   category: kde-frameworks
   description: ""
   license: ""
-  name: kcoreaddons
+  name: kdbusaddons
   
   version: 5.60.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: phonon[qt5(+)]
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libgadu
+  
+  version: 1.8.0
 - 
   category: app-crypt
   description: ""
@@ -117,82 +159,12 @@ requires:
   
   version: 4.0.0
 - 
-  category: kde-frameworks
+  category: dev-libs
   description: ""
   license: ""
-  name: kdnssd
-  
-  version: 5.60.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: khtml
-  
-  version: 5.60.0
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libgadu
-  
-  version: 1.8.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: ktexteditor
-  
-  version: 5.60.0
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
+  name: libxslt
   
   version: ""
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: libidn
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtsql
-  
-  version: 5.12.3
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kdelibs4support
-  
-  version: 5.60.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: phonon[qt5(+)]
-  
-  version: ""
-- 
-  category: kde-apps
-  description: ""
-  license: ""
-  name: libkleo
-  
-  version: ""
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kconfig
-  
-  version: 5.60.0
 - 
   category: dev-qt
   description: ""
@@ -201,10 +173,38 @@ requires:
   
   version: 5.12.3
 - 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kcrash
+  
+  version: 5.60.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: ki18n
+  
+  version: 5.60.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: knotifyconfig
+  
+  version: 5.60.0
+- 
   category: net-libs
   description: ""
   license: ""
   name: meanwhile
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libv4l
   
   version: ""
 - 
@@ -215,31 +215,24 @@ requires:
   
   version: ""
 - 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtgui
-  
-  version: 5.12.3
-- 
   category: kde-frameworks
   description: ""
   license: ""
-  name: kcmutils
+  name: khtml
   
   version: 5.60.0
 - 
   category: kde-frameworks
   description: ""
   license: ""
-  name: kparts
+  name: kdelibs4support
   
   version: 5.60.0
 - 
-  category: dev-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: libxslt
+  name: libX11
   
   version: ""
 - 
@@ -250,10 +243,17 @@ requires:
   
   version: ""
 - 
-  category: kde-apps
+  category: kde-frameworks
   description: ""
   license: ""
-  name: kidentitymanagement
+  name: kconfig
+  
+  version: 5.60.0
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXScrnSaver
   
   version: ""
 uri: []

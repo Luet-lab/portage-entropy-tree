@@ -12,96 +12,19 @@ license: LGPL-2.1
 name: libvirt
 requires:
 - 
-  category: sys-libs
+  category: net-libs
   description: ""
   license: ""
-  name: readline
+  name: gnutls
   
-  version: ""
-- 
-  category: app-emulation
-  description: ""
-  license: ""
-  name: qemu
-  
-  version: 1.5.0
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libcap-ng
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: glusterfs
-  
-  version: 3.4.1
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: numactl
-  
-  version: 2.0.2
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: 2.0.85
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: iproute2
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libpciaccess
-  
-  version: 0.10.9
-- 
-  category: app-misc
-  description: ""
-  license: ""
-  name: scrub
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dmidecode
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: fuse
-  
-  version: 2.8.6
+  version: 1.0.25
 - 
   category: net-libs
   description: ""
   license: ""
-  name: libiscsi
+  name: libssh2
   
-  version: 1.18.0
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: polkit
-  
-  version: "0.9"
+  version: ""
 - 
   category: net-misc
   description: ""
@@ -113,7 +36,7 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: ncurses
+  name: readline
   
   version: ""
 - 
@@ -124,27 +47,6 @@ requires:
   
   version: ""
 - 
-  category: net-firewall
-  description: ""
-  license: ""
-  name: firewalld
-  
-  version: 0.6.3
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: ceph
-  
-  version: ""
-- 
-  category: net-firewall
-  description: ""
-  license: ""
-  name: iptables
-  
-  version: 1.4.10
-- 
   category: acct-group
   description: ""
   license: ""
@@ -152,10 +54,10 @@ requires:
   
   version: ""
 - 
-  category: net-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libssh2
+  name: libgcrypt
   
   version: ""
 - 
@@ -169,63 +71,7 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: yajl
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: 2.7.6
-- 
-  category: net-analyzer
-  description: ""
-  license: ""
-  name: openbsd-netcat
-  
-  version: 1.105-r1
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libssh
-  
-  version: ""
-- 
-  category: sys-block
-  description: ""
-  license: ""
-  name: parted
-  
-  version: "1.8"
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: rpcsvc-proto
-  
-  version: ""
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: systemtap
-  
-  version: ""
-- 
-  category: sys-block
-  description: ""
-  license: ""
-  name: open-iscsi
-  
-  version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: radvd
+  name: cyrus-sasl
   
   version: ""
 - 
@@ -236,31 +82,10 @@ requires:
   
   version: ""
 - 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libtirpc
-  
-  version: ""
-- 
   category: sys-devel
   description: ""
   license: ""
   name: gettext
-  
-  version: ""
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: audit
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus
   
   version: ""
 - 
@@ -278,47 +103,159 @@ requires:
   
   version: ""
 - 
+  category: app-emulation
+  description: ""
+  license: ""
+  name: qemu
+  
+  version: 1.5.0
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: openbsd-netcat
+  
+  version: 1.105-r1
+- 
   category: net-libs
   description: ""
   license: ""
-  name: gnutls
+  name: rpcsvc-proto
   
-  version: 1.0.25
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
-  
-  version: "2.17"
+  version: ""
 - 
   category: sys-libs
   description: ""
   license: ""
-  name: libapparmor
+  name: libcap-ng
   
   version: ""
 - 
-  category: app-emulation
+  category: net-libs
   description: ""
   license: ""
-  name: xen-tools
+  name: libiscsi
+  
+  version: 1.18.0
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: dnsmasq
   
   version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: zfs
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libpciaccess
+  
+  version: 0.10.9
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libgcrypt
+  name: libxml2
+  
+  version: 2.7.6
+- 
+  category: net-firewall
+  description: ""
+  license: ""
+  name: firewalld
+  
+  version: 0.6.3
+- 
+  category: sys-block
+  description: ""
+  license: ""
+  name: open-iscsi
+  
+  version: ""
+- 
+  category: net-firewall
+  description: ""
+  license: ""
+  name: ebtables
   
   version: ""
 - 
   category: sys-process
   description: ""
   license: ""
-  name: numad
+  name: audit
   
   version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libssh
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: ceph
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libtirpc
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: yajl
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: fuse
+  
+  version: 2.8.6
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: glusterfs
+  
+  version: 3.4.1
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: scrub
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: numactl
+  
+  version: 2.0.2
 - 
   category: net-libs
   description: ""
@@ -327,10 +264,31 @@ requires:
   
   version: 1.0.0
 - 
-  category: dev-libs
+  category: app-emulation
   description: ""
   license: ""
-  name: cyrus-sasl
+  name: xen-tools
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: 2.0.85
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: iproute2
   
   version: ""
 - 
@@ -341,12 +299,26 @@ requires:
   
   version: ""
 - 
-  category: net-dns
+  category: acct-user
   description: ""
   license: ""
-  name: dnsmasq
+  name: qemu
   
   version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libapparmor
+  
+  version: ""
+- 
+  category: net-firewall
+  description: ""
+  license: ""
+  name: iptables
+  
+  version: 1.4.10
 - 
   category: app-emulation
   description: ""
@@ -355,24 +327,52 @@ requires:
   
   version: 4.6.0
 - 
-  category: sys-fs
+  category: sys-apps
   description: ""
   license: ""
-  name: zfs
+  name: dmidecode
   
   version: ""
 - 
-  category: acct-user
+  category: sys-block
   description: ""
   license: ""
-  name: qemu
+  name: parted
+  
+  version: "1.8"
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: numad
   
   version: ""
 - 
-  category: net-firewall
+  category: sys-auth
   description: ""
   license: ""
-  name: ebtables
+  name: polkit
+  
+  version: "0.9"
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: radvd
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: "2.17"
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: systemtap
   
   version: ""
 uri:

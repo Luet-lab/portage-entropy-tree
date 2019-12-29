@@ -1,6 +1,13 @@
 category: sys-apps
 conflicts:
 - 
+  category: sys-process
+  description: ""
+  license: ""
+  name: procps
+  
+  version: ""
+- 
   category: app-misc
   description: ""
   license: ""
@@ -14,34 +21,6 @@ conflicts:
   name: util-linux
   
   version: "2.13"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: net-tools
-  
-  version: ""
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: base64
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
-  
-  version: ""
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: procps
-  
-  version: ""
 - 
   category: <sys-apps
   description: ""
@@ -57,12 +36,12 @@ conflicts:
   
   version: ""
 - 
-  category: sys-apps
+  category: <net-fs
   description: ""
   license: ""
-  name: mktemp
+  name: netatalk
   
-  version: ""
+  version: 2.0.3-r4
 - 
   category: <app-forensics
   description: ""
@@ -71,35 +50,42 @@ conflicts:
   
   version: 1.18-r1
 - 
-  category: <net-fs
+  category: sys-apps
   description: ""
   license: ""
-  name: netatalk
-  
-  version: 2.0.3-r4
-description: Standard GNU utilities (chmod, cp, dd, ls, sort, tr, head, wc, who,...)
-license: GPL-3
-name: coreutils
-requires:
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libcap
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
+  name: net-tools
   
   version: ""
 - 
   category: sys-apps
   description: ""
   license: ""
-  name: acl
+  name: util-linux
+  
+  version: ""
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: base64
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: mktemp
+  
+  version: ""
+description: Standard GNU utilities (chmod, cp, dd, ls, sort, tr, head, wc, who,...)
+license: GPL-3
+name: coreutils
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gmp
   
   version: ""
 - 
@@ -110,10 +96,24 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: gmp
+  name: acl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
   
   version: ""
 - 

@@ -8,13 +8,6 @@ conflicts:
   
   version: "2.11"
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: ""
-- 
   category: <sec-policy
   description: ""
   license: ""
@@ -29,6 +22,13 @@ conflicts:
   
   version: ""
 - 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+- 
   category: <sys-fs
   description: ""
   license: ""
@@ -39,6 +39,41 @@ description: Linux dynamic and persistent device naming support (aka userspace d
 license: LGPL-2.1 MIT GPL-2
 name: udev
 requires:
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: tape
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: acl
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: audio
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: dialout
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: input
+  
+  version: ""
 - 
   category: acct-group
   description: ""
@@ -61,20 +96,6 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: 2.1.9
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: dialout
-  
-  version: ""
-- 
   category: acct-group
   description: ""
   license: ""
@@ -85,28 +106,7 @@ requires:
   category: acct-group
   description: ""
   license: ""
-  name: audio
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: video
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: input
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: tape
+  name: cdrom
   
   version: ""
 - 
@@ -145,17 +145,17 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: sys-libs
   description: ""
   license: ""
-  name: acl
+  name: libselinux
   
-  version: ""
+  version: 2.1.9
 - 
   category: acct-group
   description: ""
   license: ""
-  name: cdrom
+  name: video
   
   version: ""
 uri:

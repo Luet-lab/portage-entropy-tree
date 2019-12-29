@@ -4,14 +4,14 @@ conflicts:
   category: '!app-crypt'
   description: ""
   license: ""
-  name: mit-krb5-appl
+  name: mit-krb5
   
   version: ""
 - 
   category: '!app-crypt'
   description: ""
   license: ""
-  name: mit-krb5
+  name: mit-krb5-appl
   
   version: ""
 description: Kerberos 5 implementation from KTH
@@ -19,26 +19,26 @@ license: BSD
 name: heimdal
 requires:
 - 
-  category: dev-db
+  category: net-nds
   description: ""
   license: ""
-  name: sqlite
+  name: openldap
   
-  version: 3.8.2
+  version: 2.3.0
 - 
-  category: sys-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: readline
-  
-  version: 6.2_p5-r1
-- 
-  category: net-fs
-  description: ""
-  license: ""
-  name: openafs
+  name: libX11
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 1.0.1h-r2
 - 
   category: sys-libs
   description: ""
@@ -54,31 +54,17 @@ requires:
   
   version: 1.10-r1
 - 
-  category: net-nds
+  category: dev-db
   description: ""
   license: ""
-  name: openldap
+  name: sqlite
   
-  version: 2.3.0
+  version: 3.8.2
 - 
-  category: sec-policy
+  category: sys-libs
   description: ""
   license: ""
-  name: selinux-kerberos
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: 1.0.1h-r2
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
+  name: ncurses
   
   version: ""
 - 
@@ -92,28 +78,35 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: e2fsprogs-libs
+  name: readline
   
-  version: 1.42.9
+  version: 6.2_p5-r1
 - 
-  category: x11-libs
+  category: sec-policy
   description: ""
   license: ""
-  name: libXt
+  name: selinux-kerberos
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
   
   version: ""
 - 
   category: sys-libs
   description: ""
   license: ""
-  name: ncurses
+  name: e2fsprogs-libs
   
-  version: ""
+  version: 1.42.9
 - 
-  category: x11-libs
+  category: net-fs
   description: ""
   license: ""
-  name: libX11
+  name: openafs
   
   version: ""
 - 
@@ -121,6 +114,13 @@ requires:
   description: ""
   license: ""
   name: libXau
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXt
   
   version: ""
 uri:

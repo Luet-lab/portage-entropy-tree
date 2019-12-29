@@ -4,6 +4,13 @@ conflicts:
   category: net-mail
   description: ""
   license: ""
+  name: bincimap
+  
+  version: ""
+- 
+  category: net-mail
+  description: ""
+  license: ""
   name: cyrus-imapd
   
   version: ""
@@ -12,13 +19,6 @@ conflicts:
   description: ""
   license: ""
   name: uw-imap
-  
-  version: ""
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: bincimap
   
   version: ""
 - 
@@ -33,10 +33,17 @@ license: GPL-3
 name: courier-imap
 requires:
 - 
-  category: net-libs
+  category: net-dns
   description: ""
   license: ""
-  name: gnutls
+  name: libidn
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-courier
   
   version: ""
 - 
@@ -44,6 +51,48 @@ requires:
   description: ""
   license: ""
   name: openssl
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: courier-authlib
+  
+  version: 0.66.4
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: gdbm
+  
+  version: 1.8.0
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: mailbase
+  
+  version: 0.00-r8
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: fam
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: db
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
   
   version: ""
 - 
@@ -60,55 +109,6 @@ requires:
   name: courier-unicode
   
   version: "2"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: db
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: gdbm
-  
-  version: 1.8.0
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: courier-authlib
-  
-  version: 0.66.4
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: mailbase
-  
-  version: 0.00-r8
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: fam
-  
-  version: ""
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: libidn
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-courier
-  
-  version: ""
 uri:
 - mirror://sourceforge/courier/courier-imap-5.0.7.tar.bz2
 use_flags:

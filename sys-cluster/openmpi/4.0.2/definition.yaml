@@ -11,13 +11,6 @@ conflicts:
   category: sys-cluster
   description: ""
   license: ""
-  name: mpiexec
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
 mpi
   
   version: ""
@@ -28,29 +21,22 @@ mpi
   name: mpich2
   
   version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: mpiexec
+  
+  version: ""
 description: A high-performance message passing library (MPI)
 license: BSD
 name: openmpi
 requires:
 - 
-  category: sys-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: zlib
-  
-  version: 1.2.8-r1
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: nvidia-cuda-toolkit
-  
-  version: 6.5.19-r1
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: slurm
+  name: libltdl
   
   version: ""
 - 
@@ -61,12 +47,26 @@ requires:
   
   version: 2.0.2
 - 
+  category: virtual
+  description: ""
+  license: ""
+  name: jre
+  
+  version: "1.6"
+- 
   category: dev-libs
   description: ""
   license: ""
-  name: libltdl
+  name: libevent
   
-  version: ""
+  version: 2.0.22
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: nvidia-cuda-toolkit
+  
+  version: 6.5.19-r1
 - 
   category: sys-fabric
   description: ""
@@ -89,19 +89,12 @@ requires:
   
   version: ""
 - 
-  category: sys-fabric
+  category: sys-cluster
   description: ""
   license: ""
-  name: librdmacm
+  name: slurm
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libevent
-  
-  version: 2.0.22
 - 
   category: sys-fabric
   description: ""
@@ -110,12 +103,19 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: sys-fabric
   description: ""
   license: ""
-  name: jre
+  name: librdmacm
   
-  version: "1.6"
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: 1.2.8-r1
 uri:
 - http://www.open-mpi.org/software/ompi/v/downloads/openmpi-4.0.2.tar.bz2
 use_flags:

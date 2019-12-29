@@ -1,24 +1,10 @@
 category: sys-process
 conflicts:
 - 
-  category: <sys-apps
-  description: ""
-  license: ""
-  name: sysvinit
-  
-  version: 2.88-r6
-- 
   category: sys-apps
   description: ""
   license: ""
   name: coreutils
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
   
   version: ""
 - 
@@ -35,17 +21,24 @@ conflicts:
   name: man-pages-pl
   
   version: 0.7-r1
+- 
+  category: <sys-apps
+  description: ""
+  license: ""
+  name: sysvinit
+  
+  version: 2.88-r6
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: ""
 description: standard informational utilities and process-handling tools
 license: GPL-2
 name: procps
 requires:
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: ""
 - 
   category: sys-apps
   description: ""
@@ -67,6 +60,13 @@ requires:
   name: ncurses
   
   version: 5.7-r7
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: ""
 uri:
 - mirror://sourceforge/procps-ng/procps-ng-3.3.16.tar.xz
 use_flags:

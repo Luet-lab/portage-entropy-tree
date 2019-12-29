@@ -4,7 +4,7 @@ conflicts:
   category: sys-cluster
   description: ""
   license: ""
-  name: mpich2
+  name: mpich
   
   version: ""
 - 
@@ -25,7 +25,7 @@ mpi
   category: sys-cluster
   description: ""
   license: ""
-  name: mpich
+  name: mpich2
   
   version: ""
 - 
@@ -40,10 +40,24 @@ license: BSD
 name: openmpi
 requires:
 - 
-  category: dev-libs
+  category: sys-cluster
   description: ""
   license: ""
-  name: libltdl
+  name: slurm
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: nvidia-cuda-toolkit
+  
+  version: 6.5.19-r1
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: ofed
   
   version: ""
 - 
@@ -68,26 +82,19 @@ requires:
   
   version: 2.0.22
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libltdl
+  
+  version: ""
+- 
   category: sys-libs
   description: ""
   license: ""
   name: zlib
   
   version: 1.2.8-r1
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: nvidia-cuda-toolkit
-  
-  version: 6.5.19-r1
-- 
-  category: sys-fabric
-  description: ""
-  license: ""
-  name: ofed
-  
-  version: ""
 - 
   category: sys-cluster
   description: ""
@@ -96,10 +103,10 @@ requires:
   
   version: ""
 - 
-  category: sys-cluster
+  category: sys-fabric
   description: ""
   license: ""
-  name: slurm
+  name: infinipath-psm
   
   version: ""
 - 
@@ -109,13 +116,6 @@ requires:
   name: jre
   
   version: "1.6"
-- 
-  category: sys-fabric
-  description: ""
-  license: ""
-  name: infinipath-psm
-  
-  version: ""
 uri:
 - http://www.open-mpi.org/software/ompi/v/downloads/openmpi-2.1.6.tar.bz2
 use_flags:

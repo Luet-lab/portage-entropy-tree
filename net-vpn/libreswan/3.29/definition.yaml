@@ -1,17 +1,17 @@
 category: net-vpn
 conflicts:
 - 
-  category: net-vpn
-  description: ""
-  license: ""
-  name: strongswan
-  
-  version: ""
-- 
   category: net-misc
   description: ""
   license: ""
   name: openswan
+  
+  version: ""
+- 
+  category: net-vpn
+  description: ""
+  license: ""
+  name: strongswan
   
   version: ""
 description: IPsec implementation for Linux, fork of Openswan
@@ -19,24 +19,31 @@ license: GPL-2 BSD-4 RSA DES
 name: libreswan
 requires:
 - 
-  category: net-libs
-  description: ""
-  license: ""
-  name: ldns
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
-  name: libselinux
+  name: libcap-ng
   
   version: ""
 - 
-  category: dev-libs
+  category: net-nds
   description: ""
   license: ""
-  name: nss[utils(+)]
+  name: openldap
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: iproute2
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-ipsec
   
   version: ""
 - 
@@ -54,31 +61,17 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: net-libs
   description: ""
   license: ""
-  name: nss
+  name: ldns
   
-  version: "3.42"
+  version: ""
 - 
   category: sys-libs
   description: ""
   license: ""
-  name: libcap-ng
-  
-  version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: curl
-  
-  version: ""
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
+  name: libselinux
   
   version: ""
 - 
@@ -89,10 +82,10 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: sys-libs
   description: ""
   license: ""
-  name: iproute2
+  name: libseccomp
   
   version: ""
 - 
@@ -103,24 +96,17 @@ requires:
   
   version: ""
 - 
-  category: sec-policy
+  category: dev-libs
   description: ""
   license: ""
-  name: selinux-ipsec
+  name: nss
   
-  version: ""
+  version: "3.42"
 - 
-  category: sys-libs
+  category: net-misc
   description: ""
   license: ""
-  name: libseccomp
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
+  name: curl
   
   version: ""
 - 
@@ -130,6 +116,20 @@ requires:
   name: unbound
   
   version: 1.9.1-r1
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nss[utils(+)]
+  
+  version: ""
 uri:
 - https://download.libreswan.org/libreswan-3.29.tar.gz
 use_flags:

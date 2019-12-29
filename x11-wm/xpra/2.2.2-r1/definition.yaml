@@ -6,115 +6,24 @@ license: GPL-2 BSD
 name: xpra
 requires:
 - 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pycups
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pillow
-  
-  version: ""
-- 
   category: media-video
   description: ""
   license: ""
   name: ffmpeg
   
-  version: 3.2.2
+  version: 1.0.4
 - 
-  category: virtual
+  category: media-libs
   description: ""
   license: ""
-  name: ffmpeg
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: rencode
-  
-  version: ""
-- 
-  category: media-video
-  description: ""
-  license: ""
-  name: libav
+  name: libjpeg-turbo
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: gstreamer
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: ssh
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pyopengl_accelerate
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: opencv
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pygtk
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXrandr
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pygtkglext
-  
-  version: ""
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: pulseaudio
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: gst-python
+  name: libwebp
   
   version: ""
 - 
@@ -135,28 +44,42 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXdamage
+  name: gtk+
   
   version: ""
 - 
-  category: x11-libs
+  category: media-video
   description: ""
   license: ""
-  name: libXfixes
+  name: ffmpeg
+  
+  version: 3.2.2
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: x265
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: ffmpeg
   
   version: ""
 - 
   category: dev-python
   description: ""
   license: ""
-  name: netifaces
+  name: pyinotify
   
   version: ""
 - 
-  category: x11-drivers
+  category: x11-libs
   description: ""
   license: ""
-  name: xf86-input-void
+  name: libXtst
   
   version: ""
 - 
@@ -167,19 +90,33 @@ requires:
   
   version: 1.2.2
 - 
-  category: media-libs
+  category: media-video
   description: ""
   license: ""
-  name: x265
+  name: ffmpeg
   
-  version: ""
+  version: "2"
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libwebp
+  name: gstreamer
   
   version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: gst-python
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: python-lzo
+  
+  version: 0.7.0
 - 
   category: x11-libs
   description: ""
@@ -191,91 +128,14 @@ requires:
   category: media-video
   description: ""
   license: ""
-  name: ffmpeg
-  
-  version: 1.0.4
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libjpeg-turbo
+  name: libav
   
   version: ""
 - 
-  category: media-libs
+  category: virtual
   description: ""
   license: ""
-  name: gst-plugins-base
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libvpx
-  
-  version: ""
-- 
-  category: x11-base
-  description: ""
-  license: ""
-  name: xorg-server
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: numpy
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxkbfile
-  
-  version: ""
-- 
-  category: media-video
-  description: ""
-  license: ""
-  name: ffmpeg
-  
-  version: "2"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXtst
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: x264
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: lz4
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: python-lzo
-  
-  version: 0.7.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pyinotify
+  name: ssh
   
   version: ""
 - 
@@ -289,7 +149,147 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: gtk+
+  name: libXfixes
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxkbfile
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: x264
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pygtk
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: lz4
+  
+  version: ""
+- 
+  category: x11-drivers
+  description: ""
+  license: ""
+  name: xf86-input-void
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: numpy
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: opencv
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libvpx
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: rencode
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pillow
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pygtkglext
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: pulseaudio
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gst-plugins-base
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: netifaces
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pycups
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pyopengl_accelerate
+  
+  version: ""
+- 
+  category: x11-base
+  description: ""
+  license: ""
+  name: xorg-server
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXdamage
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXrandr
   
   version: ""
 uri:

@@ -1,12 +1,12 @@
 category: x11-libs
 conflicts:
 - 
-  category: <gnome-base
+  category: <x11-libs
   description: ""
   license: ""
-  name: gail
+  name: gtk+
   
-  version: "1000"
+  version: 2.21.3
 - 
   category: <x11-libs
   description: ""
@@ -15,12 +15,12 @@ conflicts:
   
   version: 2.90.4
 - 
-  category: <x11-libs
+  category: <gnome-base
   description: ""
   license: ""
-  name: gtk+
+  name: gail
   
-  version: 2.21.3
+  version: "1000"
 - 
   category: <gnome-base
   description: ""
@@ -33,6 +33,41 @@ license: LGPL-2+
 name: gdk-pixbuf
 requires:
 - 
+  category: media-libs
+  description: ""
+  license: ""
+  name: tiff
+  
+  version: 3.9.2
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.48.0
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jpeg
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gobject-introspection
+  
+  version: "1.54"
+- 
   category: x11-misc
   description: ""
   license: ""
@@ -43,44 +78,9 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: tiff
-  
-  version: 3.9.2
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: gobject-introspection
-  
-  version: "1.54"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: 2.48.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
   name: libpng
   
   version: "1.4"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jpeg
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
 uri: []
 use_flags:
 - X

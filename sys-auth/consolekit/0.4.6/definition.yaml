@@ -5,10 +5,17 @@ license: GPL-2
 name: consolekit
 requires:
 - 
-  category: sys-apps
+  category: dev-libs
   description: ""
   license: ""
-  name: acl
+  name: glib
+  
+  version: 2.38.2-r1
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
   
   version: ""
 - 
@@ -19,26 +26,12 @@ requires:
   
   version: "0.110"
 - 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-consolekit
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
   name: dbus-glib
   
   version: "0.100"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: 2.38.2-r1
 - 
   category: sys-libs
   description: ""
@@ -54,6 +47,13 @@ requires:
   
   version: ""
 - 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: acl
+  
+  version: ""
+- 
   category: virtual
   description: ""
   license: ""
@@ -61,17 +61,17 @@ requires:
   
   version: "200"
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: ""
-- 
   category: sys-apps
   description: ""
   license: ""
   name: coreutils[acl?]
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-consolekit
   
   version: ""
 uri:

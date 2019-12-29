@@ -5,13 +5,6 @@ license: '|| ( GPL-3+ LGPL-3 )'
 name: gegl
 requires:
 - 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: librsvg
-  
-  version: 2.40.6
-- 
   category: media-libs
   description: ""
   license: ""
@@ -19,12 +12,47 @@ requires:
   
   version: "4"
 - 
-  category: dev-libs
+  category: media-libs
   description: ""
   license: ""
-  name: glib
+  name: babl
   
-  version: "2.44"
+  version: 0.1.62
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libpng
+  
+  version: 1.6.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: openexr
+  
+  version: 2.2.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libsdl
+  
+  version: 1.2.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: lensfun
+  
+  version: 0.2.5
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jpeg
+  
+  version: ""
 - 
   category: media-video
   description: ""
@@ -47,47 +75,19 @@ requires:
   
   version: "2.8"
 - 
-  category: media-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: openexr
-  
-  version: 2.2.0
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: poppler
-  
-  version: 0.71.0
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: 1.2.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: babl
-  
-  version: 0.1.62
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jpeg
+  name: json-glib
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: pango
+  name: cairo
   
-  version: ""
+  version: 1.12.2
 - 
   category: media-libs
   description: ""
@@ -103,6 +103,27 @@ requires:
   
   version: 1.0.1
 - 
+  category: app-text
+  description: ""
+  license: ""
+  name: poppler
+  
+  version: 0.71.0
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: librsvg
+  
+  version: 2.40.6
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: umfpack
+  
+  version: ""
+- 
   category: media-libs
   description: ""
   license: ""
@@ -113,30 +134,9 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: json-glib
+  name: glib
   
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libpng
-  
-  version: 1.6.0
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: cairo
-  
-  version: 1.12.2
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: gobject-introspection
-  
-  version: "1.32"
+  version: "2.44"
 - 
   category: x11-libs
   description: ""
@@ -145,26 +145,26 @@ requires:
   
   version: "2.32"
 - 
-  category: media-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: lensfun
-  
-  version: 0.2.5
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libsdl
-  
-  version: 1.2.0
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: umfpack
+  name: pango
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gobject-introspection
+  
+  version: "1.32"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: 1.2.0
 uri:
 - http://download.gimp.org/pub/gegl/0.4/gegl-0.4.16.tar.bz2
 use_flags:

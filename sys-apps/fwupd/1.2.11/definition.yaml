@@ -5,6 +5,34 @@ license: LGPL-2.1+
 name: fwupd
 requires:
 - 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: elogind
+  
+  version: ""
+- 
+  category: sys-boot
+  description: ""
+  license: ""
+  name: gnu-efi
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: efivar
+  
+  version: "33"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: json-glib
+  
+  version: ""
+- 
   category: net-libs
   description: ""
   license: ""
@@ -12,33 +40,40 @@ requires:
   
   version: 3.4.4.1
 - 
-  category: sys-apps
+  category: media-libs
   description: ""
   license: ""
-  name: systemd
-  
-  version: "211"
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pycairo
+  name: fontconfig
   
   version: ""
 - 
-  category: app-crypt
+  category: x11-libs
   description: ""
   license: ""
-  name: gpgme
+  name: cairo
   
   version: ""
 - 
-  category: sys-auth
+  category: virtual
   description: ""
   license: ""
-  name: consolekit
+  name: libelf
   
-  version: 1.0.0
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: libarchive
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.45.8
 - 
   category: dev-libs
   description: ""
@@ -54,26 +89,12 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: dev-python
   description: ""
   license: ""
-  name: libxmlb
+  name: pygobject
   
-  version: 0.1.7
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: 2.45.8
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgusb
-  
-  version: 0.2.9
+  version: ""
 - 
   category: sys-auth
   description: ""
@@ -82,17 +103,80 @@ requires:
   
   version: "0.103"
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxmlb
+  
+  version: 0.1.7
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pillow
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libsoup
+  
+  version: 2.51.92
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: thunderbolt-software-user-space
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pycairo
+  
+  version: ""
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: colord
+  
+  version: 1.2.12
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: efivar
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gpgme
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "211"
+- 
   category: media-libs
   description: ""
   license: ""
   name: freetype
-  
-  version: ""
-- 
-  category: sys-boot
-  description: ""
-  license: ""
-  name: gnu-efi
   
   version: ""
 - 
@@ -106,72 +190,16 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: json-glib
+  name: libgusb
   
-  version: ""
+  version: 0.2.9
 - 
-  category: net-libs
+  category: sys-auth
   description: ""
   license: ""
-  name: libsoup
+  name: consolekit
   
-  version: 2.51.92
-- 
-  category: x11-misc
-  description: ""
-  license: ""
-  name: colord
-  
-  version: 1.2.12
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: thunderbolt-software-user-space
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: fontconfig
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: efivar
-  
-  version: "33"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: cairo
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pygobject
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: efivar
-  
-  version: ""
+  version: 1.0.0
 - 
   category: sys-libs
   description: ""
@@ -179,34 +207,6 @@ requires:
   name: libsmbios
   
   version: 2.4.0
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: elogind
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: libarchive
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pillow
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libelf
-  
-  version: ""
 uri:
 - https://github.com/hughsie/fwupd/archive/1.2.11.tar.gz -> fwupd-1.2.11.tar.gz
 use_flags:

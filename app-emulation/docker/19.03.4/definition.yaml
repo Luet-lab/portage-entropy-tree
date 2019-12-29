@@ -5,47 +5,12 @@ license: Apache-2.0
 name: docker
 requires:
 - 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
-  
-  version: 3.7.9
-- 
-  category: net-firewall
-  description: ""
-  license: ""
-  name: iptables
-  
-  version: "1.4"
-- 
-  category: dev-vcs
-  description: ""
-  license: ""
-  name: git
-  
-  version: "1.7"
-- 
   category: dev-libs
   description: ""
   license: ""
   name: libltdl
   
   version: ""
-- 
-  category: app-emulation
-  description: ""
-  license: ""
-  name: containerd
-  
-  version: 1.2.10
-- 
-  category: app-emulation
-  description: ""
-  license: ""
-  name: docker-proxy
-  
-  version: 0.8.0_p20191011
 - 
   category: sys-process
   description: ""
@@ -54,12 +19,12 @@ requires:
   
   version: 0.18.0
 - 
-  category: sys-fs
+  category: dev-db
   description: ""
   license: ""
-  name: lvm2
+  name: sqlite
   
-  version: 2.02.89
+  version: 3.7.9
 - 
   category: sys-libs
   description: ""
@@ -75,6 +40,13 @@ requires:
   
   version: ""
 - 
+  category: net-firewall
+  description: ""
+  license: ""
+  name: iptables
+  
+  version: "1.4"
+- 
   category: sys-process
   description: ""
   license: ""
@@ -82,12 +54,40 @@ requires:
   
   version: ""
 - 
+  category: dev-vcs
+  description: ""
+  license: ""
+  name: git
+  
+  version: "1.7"
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lvm2
+  
+  version: 2.02.89
+- 
   category: app-arch
   description: ""
   license: ""
   name: xz-utils
   
   version: "4.9"
+- 
+  category: app-emulation
+  description: ""
+  license: ""
+  name: containerd
+  
+  version: 1.2.10
+- 
+  category: app-emulation
+  description: ""
+  license: ""
+  name: docker-proxy
+  
+  version: 0.8.0_p20191011
 uri:
 - https://github.com/docker/docker-ce/archive/v19.03.4.tar.gz -> docker-19.03.4.tar.gz
 use_flags:

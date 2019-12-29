@@ -4,16 +4,16 @@ conflicts:
   category: ~dev-python
   description: ""
   license: ""
-  name: oslo-serialization
+  name: pbr
   
-  version: 2.19.1
+  version: 2.1.0
 - 
   category: ~dev-python
   description: ""
   license: ""
-  name: pbr
+  name: oslo-serialization
   
-  version: 2.1.0
+  version: 2.19.1
 description: A library to do [jobs, tasks, flows] in a HA manner using different backends
 license: Apache-2.0
 name: taskflow
@@ -22,23 +22,30 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: oslo-utils
-  
-  version: 3.33.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: oslo-serialization
-  
-  version: 1.18.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: cachetools
+  name: pbr
   
   version: 2.0.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: six
+  
+  version: 1.10.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: jsonschema
+  
+  version: 3.0.0
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: python-enum34
+  
+  version: ""
 - 
   category: dev-python
   description: ""
@@ -50,16 +57,23 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: networkx
+  name: contextlib2
   
-  version: "1.10"
+  version: 0.4.0
 - 
-  category: virtual
+  category: dev-python
   description: ""
   license: ""
-  name: python-futures
+  name: stevedore
   
-  version: ""
+  version: 1.20.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: automaton
+  
+  version: 1.9.0
 - 
   category: dev-python
   description: ""
@@ -78,30 +92,16 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: pbr
+  name: oslo-serialization
+  
+  version: 1.18.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: cachetools
   
   version: 2.0.0
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: python-enum34
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: contextlib2
-  
-  version: 0.4.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: automaton
-  
-  version: 1.9.0
 - 
   category: dev-python
   description: ""
@@ -120,9 +120,16 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: stevedore
+  name: networkx
   
-  version: 1.20.0
+  version: "1.10"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: python-futures
+  
+  version: ""
 - 
   category: dev-python
   description: ""
@@ -134,16 +141,9 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: six
+  name: oslo-utils
   
-  version: 1.10.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: jsonschema
-  
-  version: 3.0.0
+  version: 3.33.0
 uri:
 - mirror://pypi/t/taskflow/taskflow-3.5.0.tar.gz
 use_flags:

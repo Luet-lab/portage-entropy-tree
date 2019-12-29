@@ -5,10 +5,17 @@ license: MIT
 name: sway
 requires:
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: wayland
+  
+  version: ""
+- 
   category: x11-libs
   description: ""
   license: ""
-  name: pango
+  name: libxkbcommon
   
   version: ""
 - 
@@ -33,12 +40,12 @@ requires:
   
   version: ""
 - 
-  category: x11-misc
+  category: dev-libs
   description: ""
   license: ""
-  name: xkeyboard-config
+  name: libinput
   
-  version: ""
+  version: 1.6.0
 - 
   category: x11-libs
   description: ""
@@ -47,33 +54,26 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: wayland
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxkbcommon
-  
-  version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: elogind
-  
-  version: "239"
-- 
   category: sys-apps
   description: ""
   license: ""
   name: systemd
   
   version: "239"
+- 
+  category: gui-apps
+  description: ""
+  license: ""
+  name: swaylock
+  
+  version: ""
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: xkeyboard-config
+  
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -92,6 +92,27 @@ requires:
   category: x11-libs
   description: ""
   license: ""
+  name: pango
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: elogind
+  
+  version: "239"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gdk-pixbuf
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
   name: libxcb
   
   version: ""
@@ -102,27 +123,6 @@ requires:
   name: wlroots
   
   version: 0.7.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libinput
-  
-  version: 1.6.0
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gdk-pixbuf
-  
-  version: ""
-- 
-  category: gui-apps
-  description: ""
-  license: ""
-  name: swaylock
-  
-  version: ""
 uri:
 - https://github.com/swaywm/sway/archive/1.2.tar.gz -> sway-1.2.tar.gz
 use_flags:

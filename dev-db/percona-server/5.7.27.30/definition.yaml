@@ -18,14 +18,14 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mariadb
+  name: mysql-connector-c
   
   version: ""
 - 
   category: dev-db
   description: ""
   license: ""
-  name: mysql-cluster
+  name: mariadb
   
   version: ""
 - 
@@ -39,7 +39,7 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mysql-connector-c
+  name: mysql-cluster
   
   version: ""
 description: A fast, multi-threaded, multi-user SQL database server
@@ -54,10 +54,66 @@ requires:
   
   version: ""
 - 
+  category: dev-util
+  description: ""
+  license: ""
+  name: google-perftools
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-init-scripts
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: sed
+  
+  version: "4"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libevent
+  
+  version: ""
+- 
   category: sys-process
   description: ""
   license: ""
-  name: procps
+  name: numactl
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: valgrind
   
   version: ""
 - 
@@ -72,83 +128,6 @@ requires:
   description: ""
   license: ""
   name: libressl
-  
-  version: ""
-- 
-  category: acct-user
-  description: ""
-  license: ""
-  name: mysql
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libevent
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libtirpc
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: xz-utils
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mysql-init-scripts
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: lz4
-  
-  version: 0_p131
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: zstd
-  
-  version: ""
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: systemtap
-  
-  version: "1.3"
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: snappy
-  
-  version: ""
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: valgrind
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: ncurses
   
   version: ""
 - 
@@ -169,9 +148,9 @@ requires:
   category: dev-util
   description: ""
   license: ""
-  name: google-perftools
+  name: systemtap
   
-  version: ""
+  version: "1.3"
 - 
   category: sec-policy
   description: ""
@@ -180,12 +159,12 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: pam
+  name: texinfo
   
-  version: ""
+  version: 4.7-r1
 - 
   category: sys-libs
   description: ""
@@ -194,17 +173,10 @@ requires:
   
   version: 1.2.3
 - 
-  category: app-text
-  description: ""
-  license: ""
-  name: mecab
-  
-  version: ""
-- 
   category: sys-process
   description: ""
   license: ""
-  name: numactl
+  name: procps
   
   version: ""
 - 
@@ -215,26 +187,54 @@ requires:
   
   version: ""
 - 
-  category: net-misc
+  category: app-text
   description: ""
   license: ""
-  name: curl
+  name: mecab
   
   version: ""
 - 
-  category: sys-apps
+  category: net-libs
   description: ""
   license: ""
-  name: sed
+  name: libtirpc
   
-  version: "4"
+  version: ""
 - 
-  category: sys-apps
+  category: app-arch
   description: ""
   license: ""
-  name: texinfo
+  name: xz-utils
   
-  version: 4.7-r1
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: mysql
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: lz4
+  
+  version: 0_p131
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: zstd
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: snappy
+  
+  version: ""
 uri:
 - https://www.percona.com/downloads/Percona-Server-/Percona-Server-/source/tarball/percona-server-.tar.gz
 - mirror://sourceforge/boost/boost_1_59_0.tar.gz

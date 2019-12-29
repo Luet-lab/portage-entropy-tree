@@ -5,12 +5,12 @@ license: GPL-2+ LGPL-2.1+
 name: bluez
 requires:
 - 
-  category: virtual
+  category: dev-python
   description: ""
   license: ""
-  name: udev
+  name: pygobject
   
-  version: "172"
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -26,19 +26,40 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: readline
-  
-  version: ""
-- 
   category: sys-apps
   description: ""
   license: ""
   name: systemd
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.28"
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-bluetooth
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: dbus-python
+  
+  version: "1"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: "172"
 - 
   category: sys-apps
   description: ""
@@ -61,26 +82,12 @@ requires:
   
   version: ""
 - 
-  category: dev-python
+  category: sys-libs
   description: ""
   license: ""
-  name: dbus-python
-  
-  version: "1"
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pygobject
+  name: readline
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.28"
 - 
   category: media-libs
   description: ""
@@ -95,13 +102,6 @@ requires:
   name: dbus
   
   version: "1.6"
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-bluetooth
-  
-  version: ""
 uri:
 - https://www.kernel.org/pub/linux/bluetooth/bluez-5.51.tar.xz
 use_flags:
