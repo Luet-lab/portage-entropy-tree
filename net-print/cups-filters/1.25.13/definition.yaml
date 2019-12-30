@@ -1,28 +1,35 @@
 category: net-print
 conflicts:
 - 
-  category: net-print
-  description: ""
-  license: ""
-  name: foomatic-filters
-  
-  version: ""
-- 
   category: <=net-print
   description: ""
   license: ""
   name: cups
   
   version: 1.5.9999
+- 
+  category: net-print
+  description: ""
+  license: ""
+  name: foomatic-filters
+  
+  version: ""
 description: Cups filters
 license: MIT GPL-2
 name: cups-filters
 requires:
 - 
-  category: virtual
+  category: net-print
   description: ""
   license: ""
-  name: jpeg
+  name: cups
+  
+  version: 1.7.3
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
   
   version: ""
 - 
@@ -33,13 +40,6 @@ requires:
   
   version: ""
 - 
-  category: app-text
-  description: ""
-  license: ""
-  name: mupdf
-  
-  version: ""
-- 
   category: dev-lang
   description: ""
   license: ""
@@ -47,52 +47,10 @@ requires:
   
   version: ""
 - 
-  category: media-libs
-  description: ""
-  license: ""
-  name: fontconfig
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libpng
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: ghostscript-gpl
-  
-  version: "9.09"
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: avahi
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
   name: glib
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus
   
   version: ""
 - 
@@ -110,12 +68,26 @@ requires:
   
   version: ""
 - 
-  category: net-print
+  category: net-dns
   description: ""
   license: ""
-  name: cups
+  name: avahi
   
-  version: 1.7.3
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: qpdf
+  
+  version: 8.3.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
+  
+  version: ""
 - 
   category: sys-devel
   description: ""
@@ -127,16 +99,44 @@ requires:
   category: media-libs
   description: ""
   license: ""
+  name: libpng
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
   name: tiff
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jpeg
   
   version: ""
 - 
   category: app-text
   description: ""
   license: ""
-  name: qpdf
+  name: mupdf
   
-  version: 8.3.0
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: ghostscript-gpl
+  
+  version: "9.09"
 uri:
 - http://www.openprinting.org/download/cups-filters/cups-filters-1.25.13.tar.xz
 use_flags:

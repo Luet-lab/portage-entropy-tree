@@ -1,6 +1,20 @@
 category: sys-fs
 conflicts:
 - 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+- 
+  category: <sys-fs
+  description: ""
+  license: ""
+  name: lvm2
+  
+  version: 2.02.103
+- 
   category: <sys-libs
   description: ""
   license: ""
@@ -21,20 +35,6 @@ conflicts:
   name: selinux-base
   
   version: 2.20120725-r10
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: ""
-- 
-  category: <sys-fs
-  description: ""
-  license: ""
-  name: lvm2
-  
-  version: 2.02.103
 description: Linux dynamic and persistent device naming support (aka userspace devfs)
 license: LGPL-2.1 MIT GPL-2
 name: udev
@@ -47,12 +47,12 @@ requires:
   
   version: "2.30"
 - 
-  category: sys-apps
+  category: sys-libs
   description: ""
   license: ""
-  name: kmod
+  name: libcap
   
-  version: "16"
+  version: ""
 - 
   category: sys-libs
   description: ""
@@ -64,7 +64,56 @@ requires:
   category: acct-group
   description: ""
   license: ""
-  name: kmem
+  name: tty
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: dialout
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: kvm
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: kmod
+  
+  version: "16"
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: lp
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: render
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: tape
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: audio
   
   version: ""
 - 
@@ -85,49 +134,7 @@ requires:
   category: acct-group
   description: ""
   license: ""
-  name: tape
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libcap
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: tty
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: lp
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: render
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: kvm
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: video
+  name: input
   
   version: ""
 - 
@@ -141,21 +148,14 @@ requires:
   category: acct-group
   description: ""
   license: ""
-  name: audio
+  name: kmem
   
   version: ""
 - 
   category: acct-group
   description: ""
   license: ""
-  name: dialout
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: input
+  name: video
   
   version: ""
 uri: []

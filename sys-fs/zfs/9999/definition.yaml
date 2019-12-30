@@ -4,21 +4,35 @@ conflicts:
   category: <sys-kernel
   description: ""
   license: ""
-  name: genkernel
+  name: bliss-initramfs
   
-  version: 3.5.1.1
+  version: 7.1.0
 - 
   category: <sys-kernel
   description: ""
   license: ""
-  name: bliss-initramfs
+  name: genkernel-next
   
-  version: 7.1.0
+  version: "67"
+- 
+  category: <sys-kernel
+  description: ""
+  license: ""
+  name: dracut
+  
+  version: 044-r1
 - 
   category: =sys-apps
   description: ""
   license: ""
   name: grep-2.13*
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: zfs-fuse
   
   version: ""
 - 
@@ -32,104 +46,13 @@ conflicts:
   category: <sys-kernel
   description: ""
   license: ""
-  name: genkernel-next
+  name: genkernel
   
-  version: "67"
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: zfs-fuse
-  
-  version: ""
-- 
-  category: <sys-kernel
-  description: ""
-  license: ""
-  name: dracut
-  
-  version: 044-r1
+  version: 3.5.1.1
 description: Userland utilities for ZFS Linux kernel module
 license: BSD-2 CDDL MIT
 name: zfs
 requires:
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: zfs-kmod
-  
-  version: "9999"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: udev
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: mdadm
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: python-cffi
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: udev-init-scripts
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: cpio
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: lsscsi
-  
-  version: ""
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: bc
-  
-  version: ""
-- 
-  category: sys-block
-  description: ""
-  license: ""
-  name: parted
-  
-  version: ""
 - 
   category: virtual
   description: ""
@@ -141,14 +64,35 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: openssl
+  name: libressl
   
   version: ""
 - 
-  category: app-misc
+  category: sys-block
   description: ""
   license: ""
-  name: pax-utils
+  name: parted
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lsscsi
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: ""
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: bc
   
   version: ""
 - 
@@ -163,6 +107,62 @@ requires:
   description: ""
   license: ""
   name: modutils
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: mdadm
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: udev-init-scripts
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: python-cffi
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: zfs-kmod
+  
+  version: "9999"
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: cpio
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: pax-utils
   
   version: ""
 uri: []

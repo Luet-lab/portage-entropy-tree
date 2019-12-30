@@ -5,12 +5,19 @@ license: LGPL-2+
 name: libblockdev
 requires:
 - 
-  category: sys-block
+  category: dev-libs
   description: ""
   license: ""
-  name: parted
+  name: volume_key
   
-  version: "3.1"
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: dmraid
+  
+  version: ""
 - 
   category: virtual
   description: ""
@@ -33,12 +40,12 @@ requires:
   
   version: "19"
 - 
-  category: sys-apps
+  category: sys-block
   description: ""
   license: ""
-  name: util-linux
+  name: parted
   
-  version: "2.27"
+  version: "3.1"
 - 
   category: dev-libs
   description: ""
@@ -46,13 +53,6 @@ requires:
   name: nss
   
   version: 3.18.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: volume_key
-  
-  version: ""
 - 
   category: sys-fs
   description: ""
@@ -65,13 +65,6 @@ requires:
   description: ""
   license: ""
   name: lvm2
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: dmraid
   
   version: ""
 - 
@@ -88,6 +81,13 @@ requires:
   name: libbytesize
   
   version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: "2.27"
 uri:
 - https://github.com/storaged-project/libblockdev/archive/2.20-1.tar.gz -> libblockdev-2.20-1.tar.gz
 use_flags:

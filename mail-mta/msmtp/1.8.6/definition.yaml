@@ -4,41 +4,6 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: postfix
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: qmail-ldap
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: sendmail
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-mailer
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: exim
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
   name: mini-qmail
   
   version: ""
@@ -46,7 +11,7 @@ mailer
   category: mail-mta
   description: ""
   license: ""
-  name: netqmail
+  name: postfix
   
   version: ""
 - 
@@ -78,21 +43,56 @@ mailer
   
   version: ""
 - 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: exim
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+mailer
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: sendmail
+  
+  version: ""
+- 
   category: <mail-mta
   description: ""
   license: ""
   name: ssmtp
   
   version: 2.64-r2
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: netqmail
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: qmail-ldap
+  
+  version: ""
 description: An SMTP client and SMTP plugin for mail user agents such as Mutt
 license: GPL-3
 name: msmtp
 requires:
 - 
-  category: acct-group
+  category: net-dns
   description: ""
   license: ""
-  name: msmtpd
+  name: libidn2
   
   version: ""
 - 
@@ -103,24 +103,17 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: net-libs
   description: ""
   license: ""
-  name: gsasl
+  name: gnutls[idn?]
   
   version: ""
 - 
-  category: net-mail
+  category: acct-group
   description: ""
   license: ""
-  name: mailbase
-  
-  version: ""
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: libidn2
+  name: msmtpd
   
   version: ""
 - 
@@ -138,10 +131,17 @@ requires:
   
   version: ""
 - 
-  category: net-libs
+  category: virtual
   description: ""
   license: ""
-  name: gnutls[idn?]
+  name: gsasl
+  
+  version: ""
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: mailbase
   
   version: ""
 uri:

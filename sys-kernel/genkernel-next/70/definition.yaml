@@ -1,12 +1,12 @@
 category: sys-kernel
 conflicts:
 - 
-  category: <sys-apps
+  category: sys-fs
   description: ""
   license: ""
-  name: openrc
+  name: eudev
   
-  version: 0.9.9
+  version: ""
 - 
   category: sys-kernel
   description: ""
@@ -15,30 +15,16 @@ conflicts:
   
   version: ""
 - 
-  category: sys-fs
+  category: <sys-apps
   description: ""
   license: ""
-  name: eudev
+  name: openrc
   
-  version: ""
+  version: 0.9.9
 description: Gentoo automatic kernel building scripts, reloaded
 license: GPL-2
 name: genkernel-next
 requires:
-- 
-  category: app-portage
-  description: ""
-  license: ""
-  name: portage-utils
-  
-  version: ""
-- 
-  category: app-misc
-  description: ""
-  license: ""
-  name: pax-utils
-  
-  version: "0.6"
 - 
   category: sys-apps
   description: ""
@@ -50,37 +36,23 @@ requires:
   category: sys-fs
   description: ""
   license: ""
-  name: e2fsprogs
-  
-  version: ""
-- 
-  category: sys-boot
-  description: ""
-  license: ""
-  name: plymouth
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: dmraid
-  
-  version: 1.0.0_rc16
-- 
-  category: sys-fs
-  description: ""
-  license: ""
   name: lvm2
   
   version: ""
 - 
-  category: sys-libs
+  category: sys-fs
   description: ""
   license: ""
-  name: libselinux
+  name: e2fsprogs
   
   version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: pax-utils
+  
+  version: "0.6"
 - 
   category: sys-block
   description: ""
@@ -89,10 +61,10 @@ requires:
   
   version: ""
 - 
-  category: app-crypt
+  category: app-arch
   description: ""
   license: ""
-  name: gnupg
+  name: cpio
   
   version: ""
 - 
@@ -103,10 +75,10 @@ requires:
   
   version: ""
 - 
-  category: app-arch
+  category: sys-boot
   description: ""
   license: ""
-  name: cpio
+  name: plymouth
   
   version: ""
 - 
@@ -124,10 +96,38 @@ requires:
   
   version: ""
 - 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: ""
+- 
   category: sys-fs
   description: ""
   license: ""
   name: cryptsetup
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gnupg
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: dmraid
+  
+  version: 1.0.0_rc16
+- 
+  category: app-portage
+  description: ""
+  license: ""
+  name: portage-utils
   
   version: ""
 uri:

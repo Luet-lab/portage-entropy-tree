@@ -4,28 +4,7 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: percona-server
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mysql
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mysql-connector-c
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mariadb-galera
+  name: mariadb-connector-c
   
   version: ""
 - 
@@ -39,7 +18,21 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mariadb-connector-c
+  name: mysql
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mariadb-galera
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: percona-server
   
   version: ""
 - 
@@ -47,6 +40,13 @@ conflicts:
   description: ""
   license: ""
   name: mytop
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c
   
   version: ""
 description: An enhanced, drop-in replacement for MySQL
@@ -68,24 +68,17 @@ requires:
   
   version: "4.1"
 - 
-  category: dev-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: boost
-  
-  version: 1.40.0
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: google-perftools
+  name: pam
   
   version: ""
 - 
-  category: dev-libs
+  category: sec-policy
   description: ""
   license: ""
-  name: libressl
+  name: selinux-mysql
   
   version: ""
 - 
@@ -103,24 +96,17 @@ requires:
   
   version: "1.3"
 - 
-  category: virtual
+  category: sys-libs
   description: ""
   license: ""
-  name: perl-Time-HiRes
+  name: zlib
   
-  version: ""
+  version: 1.2.3
 - 
-  category: sec-policy
+  category: dev-db
   description: ""
   license: ""
-  name: selinux-mysql
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libaio
+  name: mysql-connector-c[,static-libs?]
   
   version: ""
 - 
@@ -131,12 +117,82 @@ requires:
   
   version: "4"
 - 
+  category: dev-util
+  description: ""
+  license: ""
+  name: google-perftools
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: perl-Time-HiRes
+  
+  version: ""
+- 
+  category: dev-perl
+  description: ""
+  license: ""
+  name: TermReadKey
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: texinfo
+  
+  version: 4.7-r1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: boost
+  
+  version: 1.40.0
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: perl-Getopt-Long
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: procps
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-init-scripts
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
   category: sys-libs
   description: ""
   license: ""
-  name: zlib
+  name: ncurses
   
-  version: 1.2.3
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libaio
+  
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -148,65 +204,9 @@ requires:
   category: virtual
   description: ""
   license: ""
-  name: perl-Getopt-Long
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: ncurses
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mysql-connector-c[,static-libs?]
-  
-  version: ""
-- 
-  category: dev-perl
-  description: ""
-  license: ""
-  name: TermReadKey
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
   name: perl-Term-ANSIColor
   
   version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mysql-init-scripts
-  
-  version: ""
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: procps
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: texinfo
-  
-  version: 4.7-r1
 uri:
 - https://downloads.mariadb.org/interstitial/mariadb-5.5.66/source/mariadb-5.5.66.tar.gz
 - mirror://gentoo/mysql-extras-20180809-1700Z.tar.bz2

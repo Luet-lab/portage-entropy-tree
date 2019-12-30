@@ -5,52 +5,10 @@ license: GPL-2+
 name: networkmanager
 requires:
 - 
-  category: net-firewall
-  description: ""
-  license: ""
-  name: iptables
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: readline
-  
-  version: ""
-- 
   category: sys-process
   description: ""
   license: ""
   name: audit
-  
-  version: ""
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: dnsmasq
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: dhcp
-  
-  version: "4"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgcrypt
   
   version: ""
 - 
@@ -61,26 +19,33 @@ requires:
   
   version: "2.12"
 - 
-  category: dev-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: newt
+  name: libselinux
   
-  version: 0.52.15
+  version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: dbus-glib
+  name: glib
   
-  version: "0.100"
+  version: "2.40"
 - 
-  category: dev-libs
+  category: net-firewall
   description: ""
   license: ""
-  name: gobject-introspection
+  name: iptables
   
-  version: 0.10.3
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: elogind
+  
+  version: "219"
 - 
   category: net-misc
   description: ""
@@ -92,65 +57,30 @@ requires:
   category: net-wireless
   description: ""
   license: ""
+  name: wpa_supplicant
+  
+  version: 0.7.3-r3
+- 
+  category: net-wireless
+  description: ""
+  license: ""
   name: iwd
   
   version: ""
 - 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libndp
-  
-  version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: ofono
-  
-  version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: libteam
-  
-  version: "1.9"
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: consolekit
-  
-  version: 1.0.0
-- 
   category: sys-apps
   description: ""
   license: ""
-  name: systemd
+  name: dbus
   
-  version: "209"
+  version: "1.2"
 - 
-  category: net-misc
+  category: net-wireless
   description: ""
   license: ""
-  name: curl
+  name: bluez
   
-  version: "7.24"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libudev
-  
-  version: "175"
+  version: "5"
 - 
   category: net-misc
   description: ""
@@ -166,61 +96,33 @@ requires:
   
   version: "2.5"
 - 
-  category: dev-libs
+  category: net-misc
   description: ""
   license: ""
-  name: nss
-  
-  version: "3.11"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: jansson
+  name: ofono
   
   version: ""
-- 
-  category: net-wireless
-  description: ""
-  license: ""
-  name: wpa_supplicant
-  
-  version: 0.7.3-r3
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus
-  
-  version: "1.2"
 - 
   category: net-misc
   description: ""
   license: ""
-  name: iputils
+  name: curl
+  
+  version: "7.24"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
   
   version: ""
 - 
-  category: net-wireless
+  category: sys-auth
   description: ""
   license: ""
-  name: bluez
+  name: consolekit
   
-  version: "5"
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: plugdev
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.40"
+  version: 1.0.0
 - 
   category: sys-auth
   description: ""
@@ -229,19 +131,26 @@ requires:
   
   version: "0.106"
 - 
-  category: net-dns
+  category: virtual
   description: ""
   license: ""
-  name: openresolv
+  name: libudev
+  
+  version: "175"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gobject-introspection
+  
+  version: 0.10.3
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgcrypt
   
   version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: elogind
-  
-  version: "219"
 - 
   category: net-dialup
   description: ""
@@ -249,6 +158,97 @@ requires:
   name: ppp
   
   version: 2.4.5
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: plugdev
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: iputils
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: jansson
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "209"
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: dnsmasq
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: dhcp
+  
+  version: "4"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: newt
+  
+  version: 0.52.15
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nss
+  
+  version: "3.11"
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: openresolv
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: dbus-glib
+  
+  version: "0.100"
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libndp
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: libteam
+  
+  version: "1.9"
 uri: []
 use_flags:
 - audit

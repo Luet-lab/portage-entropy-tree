@@ -12,41 +12,6 @@ license: MPL-2.0 GPL-2 LGPL-2.1
 name: firefox-bin
 requires:
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: "2.18"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXrender
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXt
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pango
-  
-  version: 1.22.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: atk
-  
-  version: ""
-- 
   category: sys-apps
   description: ""
   license: ""
@@ -57,49 +22,56 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: dbus-glib
+  name: glib
   
-  version: "0.72"
+  version: "2.26"
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: gdk-pixbuf
+  name: gtk+
+  
+  version: 3.4.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: atk
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXext
+  name: gtk+
+  
+  version: "2.18"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXt
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: glib
+  name: dbus-glib
   
-  version: "2.26"
+  version: "0.72"
 - 
   category: media-libs
   description: ""
   license: ""
   name: fontconfig
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: freetype
-  
-  version: 2.4.10
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: freedesktop-icon-theme
   
   version: ""
 - 
@@ -113,14 +85,7 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: gtk+
-  
-  version: 3.4.0
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
+  name: gdk-pixbuf
   
   version: ""
 - 
@@ -134,7 +99,7 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXdamage
+  name: libXext
   
   version: ""
 - 
@@ -144,6 +109,41 @@ requires:
   name: libXfixes
   
   version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: freedesktop-icon-theme
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
+  
+  version: 2.4.10
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXdamage
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXrender
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pango
+  
+  version: 1.22.0
 uri:
 - 'https://archive.mozilla.org/pub/mozilla.org/firefox/releases/68.2.0esr/linux-x86_64/en-US/firefox-68.2.0esr.tar.bz2
   -> firefox-bin_x86_64-68.2.0.tar.bz2 '

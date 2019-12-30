@@ -4,7 +4,14 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: msmtp
+  name: esmtp
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: exim
   
   version: ""
 - 
@@ -18,21 +25,7 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: esmtp
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: mini-qmail
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: qmail-ldap
+  name: msmtp
   
   version: ""
 - 
@@ -46,21 +39,14 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
+  name: mini-qmail
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
   name: netqmail
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-mailer
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: ssmtp
   
   version: ""
 - 
@@ -81,7 +67,21 @@ mailer
   category: mail-mta
   description: ""
   license: ""
-  name: exim
+mailer
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: qmail-ldap
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: ssmtp
   
   version: ""
 description: A fast and secure drop-in replacement for sendmail
@@ -89,10 +89,31 @@ license: '|| ( IBM EPL-2.0 )'
 name: postfix
 requires:
 - 
-  category: sys-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: pam
+  name: libpcre
+  
+  version: "3.4"
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: lmdb
+  
+  version: 0.9.11
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libnsl
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
   
   version: ""
 - 
@@ -103,17 +124,38 @@ requires:
   
   version: ""
 - 
-  category: dev-db
+  category: dev-libs
   description: ""
   license: ""
-  name: postgresql
+  name: libressl
   
-  version: ""
+  version: 2.9.1
 - 
   category: acct-user
   description: ""
   license: ""
   name: postfix
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: postfix
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: postgresql
   
   version: ""
 - 
@@ -127,16 +169,16 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: openssl
+  name: icu
   
   version: ""
 - 
-  category: dev-libs
+  category: net-nds
   description: ""
   license: ""
-  name: libpcre
+  name: openldap
   
-  version: "3.4"
+  version: ""
 - 
   category: dev-db
   description: ""
@@ -148,9 +190,9 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libressl
+  name: openssl
   
-  version: 2.9.1
+  version: ""
 - 
   category: sec-policy
   description: ""
@@ -159,31 +201,17 @@ requires:
   
   version: ""
 - 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libnsl
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: cyrus-sasl
-  
-  version: "2"
-- 
   category: dev-lang
   description: ""
   license: ""
   name: perl
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: postdrop
   
   version: ""
 - 
@@ -197,37 +225,9 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: icu
+  name: cyrus-sasl
   
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: postfix
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: lmdb
-  
-  version: 0.9.11
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: postdrop
-  
-  version: ""
+  version: "2"
 uri:
 - ftp://ftp.porcupine.org/mirrors/postfix-release/experimental/postfix-3.5.tar.gz
 use_flags:

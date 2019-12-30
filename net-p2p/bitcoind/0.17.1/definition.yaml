@@ -5,6 +5,20 @@ license: MIT
 name: bitcoind
 requires:
 - 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: db
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: boost
+  
+  version: 1.52.0
+- 
   category: dev-libs
   description: ""
   license: ""
@@ -12,12 +26,12 @@ requires:
   
   version: 0.0.0_pre20151118
 - 
-  category: dev-libs
+  category: virtual
   description: ""
   license: ""
-  name: univalue
+  name: bitcoin-leveldb
   
-  version: 1.0.4
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -40,19 +54,12 @@ requires:
   
   version: 1.9.20150916
 - 
-  category: sys-libs
+  category: net-libs
   description: ""
   license: ""
-  name: db
+  name: zeromq
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: boost
-  
-  version: 1.52.0
 - 
   category: dev-libs
   description: ""
@@ -61,19 +68,12 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: dev-libs
   description: ""
   license: ""
-  name: bitcoin-leveldb
+  name: univalue
   
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: zeromq
-  
-  version: ""
+  version: 1.0.4
 uri:
 - https://github.com/bitcoin/bitcoin/archive/ef70f9b52b851c7997a9f1a0834714e3eebc1fd8.tar.gz
   -> bitcoin-v0.17.1.tar.gz

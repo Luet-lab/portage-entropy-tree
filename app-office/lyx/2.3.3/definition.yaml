@@ -5,17 +5,38 @@ license: GPL-2
 name: lyx
 requires:
 - 
-  category: dev-qt
+  category: app-text
   description: ""
   license: ""
-  name: qtwidgets
+  name: ps2eps
   
   version: ""
 - 
-  category: sys-apps
+  category: dev-texlive
   description: ""
   license: ""
-  name: file
+  name: texlive-latexextra
+  
+  version: ""
+- 
+  category: dev-texlive
+  description: ""
+  license: ""
+  name: texlive-pictures
+  
+  version: ""
+- 
+  category: dev-tex
+  description: ""
+  license: ""
+  name: latex2rtf
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: boost
   
   version: ""
 - 
@@ -29,28 +50,14 @@ requires:
   category: dev-tex
   description: ""
   license: ""
-  name: latex2rtf
+  name: html2latex
   
   version: ""
 - 
-  category: app-office
+  category: dev-tex
   description: ""
   license: ""
-  name: dia
-  
-  version: ""
-- 
-  category: dev-texlive
-  description: ""
-  license: ""
-  name: texlive-fontsrecommended
-  
-  version: ""
-- 
-  category: dev-texlive
-  description: ""
-  license: ""
-  name: texlive-pictures
+  name: culmus-latex
   
   version: ""
 - 
@@ -61,80 +68,10 @@ requires:
   
   version: ""
 - 
-  category: dev-vcs
+  category: sys-apps
   description: ""
   license: ""
-  name: subversion
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: boost
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtcore
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtgui
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtx11extras
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: aspell
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: dvipng
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: texlive
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtsvg
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: sgmltools-lite
-  
-  version: ""
-- 
-  category: media-gfx
-  description: ""
-  license: ""
-  name: graphviz
+  name: file
   
   version: ""
 - 
@@ -152,20 +89,6 @@ requires:
   
   version: ""
 - 
-  category: dev-texlive
-  description: ""
-  license: ""
-  name: texlive-mathscience
-  
-  version: ""
-- 
-  category: dev-vcs
-  description: ""
-  license: ""
-  name: rcs
-  
-  version: ""
-- 
   category: dev-tex
   description: ""
   license: ""
@@ -173,24 +96,17 @@ requires:
   
   version: ""
 - 
-  category: app-text
+  category: app-office
   description: ""
   license: ""
-  name: mythes
-  
-  version: ""
-- 
-  category: net-print
-  description: ""
-  license: ""
-  name: cups
+  name: dia
   
   version: ""
 - 
   category: app-text
   description: ""
   license: ""
-  name: ps2eps
+  name: texlive
   
   version: ""
 - 
@@ -198,27 +114,6 @@ requires:
   description: ""
   license: ""
   name: chktex
-  
-  version: ""
-- 
-  category: dev-texlive
-  description: ""
-  license: ""
-  name: texlive-latexextra
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: unrtf
-  
-  version: ""
-- 
-  category: dev-texlive
-  description: ""
-  license: ""
-  name: texlive-fontsextra
   
   version: ""
 - 
@@ -236,17 +131,122 @@ requires:
   
   version: ""
 - 
-  category: dev-tex
+  category: dev-texlive
   description: ""
   license: ""
-  name: html2latex
+  name: texlive-fontsrecommended
   
   version: ""
 - 
-  category: dev-tex
+  category: dev-vcs
   description: ""
   license: ""
-  name: culmus-latex
+  name: rcs
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: mythes
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtcore
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: aspell
+  
+  version: ""
+- 
+  category: net-print
+  description: ""
+  license: ""
+  name: cups
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtgui
+  
+  version: ""
+- 
+  category: dev-texlive
+  description: ""
+  license: ""
+  name: texlive-fontsextra
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtsvg
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtwidgets
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: sgmltools-lite
+  
+  version: ""
+- 
+  category: dev-texlive
+  description: ""
+  license: ""
+  name: texlive-mathscience
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtx11extras
+  
+  version: ""
+- 
+  category: dev-vcs
+  description: ""
+  license: ""
+  name: subversion
+  
+  version: ""
+- 
+  category: media-gfx
+  description: ""
+  license: ""
+  name: graphviz
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: dvipng
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: unrtf
   
   version: ""
 uri:

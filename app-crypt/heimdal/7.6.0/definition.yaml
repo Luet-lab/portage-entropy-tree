@@ -19,12 +19,19 @@ license: BSD
 name: heimdal
 requires:
 - 
-  category: x11-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: libXau
+  name: gdbm
   
-  version: ""
+  version: 1.10-r1
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: e2fsprogs-libs
+  
+  version: 1.42.9
 - 
   category: sys-libs
   description: ""
@@ -33,24 +40,10 @@ requires:
   
   version: ""
 - 
-  category: sec-policy
+  category: x11-libs
   description: ""
   license: ""
-  name: selinux-kerberos
-  
-  version: ""
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
-  
-  version: 2.3.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
+  name: libXau
   
   version: ""
 - 
@@ -64,30 +57,16 @@ requires:
   category: dev-db
   description: ""
   license: ""
+  name: sqlite
+  
+  version: 3.8.2
+- 
+  category: dev-db
+  description: ""
+  license: ""
   name: lmdb
   
   version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: e2fsprogs-libs
-  
-  version: 1.42.9
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: readline
-  
-  version: 6.2_p5-r1
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: 1.0.1h-r2
 - 
   category: sys-libs
   description: ""
@@ -96,19 +75,26 @@ requires:
   
   version: ""
 - 
-  category: dev-db
+  category: dev-libs
   description: ""
   license: ""
-  name: sqlite
+  name: openssl
   
-  version: 3.8.2
+  version: 1.0.1h-r2
 - 
-  category: net-fs
+  category: dev-libs
   description: ""
   license: ""
-  name: openafs
+  name: libressl
   
   version: ""
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: 2.3.0
 - 
   category: x11-libs
   description: ""
@@ -124,12 +110,26 @@ requires:
   
   version: ""
 - 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-kerberos
+  
+  version: ""
+- 
   category: sys-libs
   description: ""
   license: ""
-  name: gdbm
+  name: readline
   
-  version: 1.10-r1
+  version: 6.2_p5-r1
+- 
+  category: net-fs
+  description: ""
+  license: ""
+  name: openafs
+  
+  version: ""
 uri:
 - https://github.com/heimdal/heimdal/releases/download/heimdal-7.6.0/heimdal-7.6.0.tar.gz
 use_flags:

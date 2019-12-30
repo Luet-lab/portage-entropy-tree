@@ -5,10 +5,10 @@ license: GPL-2+
 name: xfce4-session
 requires:
 - 
-  category: x11-apps
+  category: x11-misc
   description: ""
   license: ""
-  name: iceauth
+  name: alock
   
   version: ""
 - 
@@ -22,30 +22,16 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libSM
-  
-  version: ""
-- 
-  category: x11-apps
-  description: ""
-  license: ""
-  name: xrdb
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.42"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
   name: libX11
   
   version: ""
+- 
+  category: xfce-base
+  description: ""
+  license: ""
+  name: xfconf
+  
+  version: "4.12"
 - 
   category: x11-misc
   description: ""
@@ -57,13 +43,6 @@ requires:
   category: x11-misc
   description: ""
   license: ""
-  name: xlockmore
-  
-  version: "5.43"
-- 
-  category: x11-misc
-  description: ""
-  license: ""
   name: slock
   
   version: ""
@@ -71,9 +50,23 @@ requires:
   category: x11-misc
   description: ""
   license: ""
-  name: alock
+  name: xscreensaver
   
-  version: ""
+  version: "5.26"
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: xlockmore
+  
+  version: "5.43"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.42"
 - 
   category: x11-libs
   description: ""
@@ -92,16 +85,23 @@ requires:
   category: xfce-base
   description: ""
   license: ""
-  name: xfconf
+  name: libxfce4ui
   
-  version: "4.12"
+  version: 4.12.1
 - 
-  category: sys-auth
+  category: x11-apps
   description: ""
   license: ""
-  name: polkit
+  name: xrdb
   
-  version: "0.102"
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libSM
+  
+  version: ""
 - 
   category: xfce-extra
   description: ""
@@ -110,19 +110,19 @@ requires:
   
   version: ""
 - 
-  category: xfce-base
+  category: x11-apps
   description: ""
   license: ""
-  name: libxfce4ui
+  name: iceauth
   
-  version: 4.12.1
+  version: ""
 - 
-  category: x11-misc
+  category: sys-auth
   description: ""
   license: ""
-  name: xscreensaver
+  name: polkit
   
-  version: "5.26"
+  version: "0.102"
 uri:
 - https://archive.xfce.org/src/xfce/xfce4-session/4.14/xfce4-session-4.14.0.tar.bz2
 use_flags:

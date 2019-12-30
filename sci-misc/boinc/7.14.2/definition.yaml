@@ -12,17 +12,17 @@ license: LGPL-2.1
 name: boinc
 requires:
 - 
-  category: net-misc
+  category: dev-util
   description: ""
   license: ""
-  name: curl[curl_ssl_gnutls(-)=,curl_ssl_libressl(-)=,-curl_ssl_nss(-),curl_ssl_openssl(-)=,-curl_ssl_axtls(-),-curl_ssl_cyassl(-)]
+  name: nvidia-cuda-toolkit
   
-  version: ""
+  version: "2.1"
 - 
-  category: sys-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: zlib
+  name: util-linux
   
   version: ""
 - 
@@ -43,7 +43,7 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: gtk+
+  name: wxGTK
   
   version: ""
 - 
@@ -61,13 +61,6 @@ requires:
   
   version: "20080809"
 - 
-  category: dev-util
-  description: ""
-  license: ""
-  name: nvidia-cuda-toolkit
-  
-  version: "2.1"
-- 
   category: x11-drivers
   description: ""
   license: ""
@@ -75,10 +68,17 @@ requires:
   
   version: "180.22"
 - 
-  category: sys-apps
+  category: net-misc
   description: ""
   license: ""
-  name: util-linux
+  name: curl[curl_ssl_gnutls(-)=,curl_ssl_libressl(-)=,-curl_ssl_nss(-),curl_ssl_openssl(-)=,-curl_ssl_axtls(-),-curl_ssl_cyassl(-)]
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
   
   version: ""
 - 
@@ -92,7 +92,7 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: wxGTK
+  name: gtk+
   
   version: ""
 uri:

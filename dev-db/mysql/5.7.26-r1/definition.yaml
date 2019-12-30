@@ -4,21 +4,7 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mysql-cluster
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mariadb
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mariadb-galera
+  name: mariadb-connector-c
   
   version: ""
 - 
@@ -39,7 +25,21 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mariadb-connector-c
+  name: mariadb
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mariadb-galera
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-cluster
   
   version: ""
 description: A fast, multi-threaded, multi-user SQL database server
@@ -54,10 +54,31 @@ requires:
   
   version: "4"
 - 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: procps
+  
+  version: ""
+- 
   category: app-text
   description: ""
   license: ""
   name: mecab
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: protobuf
   
   version: ""
 - 
@@ -71,63 +92,14 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libressl
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: jemalloc
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libaio
-  
-  version: ""
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: procps
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: lz4
-  
-  version: 0_p131
-- 
-  category: dev-libs
-  description: ""
-  license: ""
   name: openssl
   
   version: 1.0.0
 - 
-  category: sys-apps
+  category: sec-policy
   description: ""
   license: ""
-  name: texinfo
-  
-  version: 4.7-r1
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: protobuf
-  
-  version: ""
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: google-perftools
+  name: selinux-mysql
   
   version: ""
 - 
@@ -138,12 +110,40 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: ncurses
+  name: libaio
   
   version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: lz4
+  
+  version: 0_p131
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: google-perftools
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-init-scripts
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: texinfo
+  
+  version: 4.7-r1
 - 
   category: sys-libs
   description: ""
@@ -155,7 +155,7 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libevent
+  name: jemalloc
   
   version: ""
 - 
@@ -166,26 +166,26 @@ requires:
   
   version: ""
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libevent
+  
+  version: ""
+- 
   category: dev-util
   description: ""
   license: ""
   name: systemtap
   
   version: "1.3"
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-mysql
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mysql-init-scripts
-  
-  version: ""
 uri:
 - https://cdn.mysql.com/Downloads/MySQL-5.7/mysql-boost-5.7.26.tar.gz
 - https://cdn.mysql.com/archives/mysql-5.7/mysql-boost-5.7.26.tar.gz

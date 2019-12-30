@@ -5,10 +5,24 @@ license: MIT LGPL-2.1 BSD-2
 name: kmscon
 requires:
 - 
-  category: x11-libs
+  category: virtual
   description: ""
   license: ""
-  name: libdrm
+  name: udev
+  
+  version: "172"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libtsm
+  
+  version: 4.0.0
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
   
   version: ""
 - 
@@ -19,59 +33,17 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pixman
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: udev
-  
-  version: "172"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxkbcommon
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libtsm
-  
-  version: 4.0.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: mesa[X(+)]
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: mesa
-  
-  version: 8.0.3
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
   name: glib
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pixman
   
   version: ""
 - 
@@ -81,6 +53,34 @@ requires:
   name: xkeyboard-config
   
   version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxkbcommon
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: mesa[X(+)]
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libdrm
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: mesa
+  
+  version: 8.0.3
 uri:
 - https://github.com/Aetf/kmscon/archive/01dd0a231e2125a40ceba5f59fd945ff29bf2cdc.tar.gz
   -> kmscon-8.tar.gz

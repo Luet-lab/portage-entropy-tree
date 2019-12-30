@@ -1,21 +1,14 @@
 category: mail-mta
 conflicts:
 - 
-  category: '>=mail-mta'
+  category: mail-mta
   description: ""
   license: ""
-  name: ssmtp
-  
-  version: 2.64-r2
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: fastforward
+  name: qmail-ldap
   
   version: ""
 - 
-  category: <mail-mta
+  category: '>=mail-mta'
   description: ""
   license: ""
   name: ssmtp
@@ -25,7 +18,56 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
+  name: exim
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: esmtp
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: netqmail
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: opensmtpd
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: courier
+  
+  version: ""
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: fastforward
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
   name: mini-qmail
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: sendmail
   
   version: ""
 - 
@@ -43,54 +85,12 @@ mailer
   
   version: ""
 - 
-  category: mail-mta
+  category: <mail-mta
   description: ""
   license: ""
-  name: esmtp
+  name: ssmtp
   
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: courier
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: netqmail
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: qmail-ldap
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: sendmail
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: opensmtpd
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: exim
-  
-  version: ""
+  version: 2.64-r2
 description: A fast and secure drop-in replacement for sendmail
 license: '|| ( IBM EPL-2.0 )'
 name: postfix
@@ -99,9 +99,16 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: icu
+  name: openssl
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: 2.9.1
 - 
   category: sys-libs
   description: ""
@@ -110,13 +117,6 @@ requires:
   
   version: "3.2"
 - 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: perl
-  
-  version: ""
-- 
   category: dev-db
   description: ""
   license: ""
@@ -124,10 +124,45 @@ requires:
   
   version: 0.9.11
 - 
-  category: net-mail
+  category: dev-libs
   description: ""
   license: ""
-  name: mailbase
+  name: libpcre
+  
+  version: "3.4"
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: icu
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: postgresql
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
   
   version: ""
 - 
@@ -145,27 +180,6 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: postgresql
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
@@ -173,40 +187,26 @@ requires:
   
   version: "2"
 - 
+  category: net-mail
+  description: ""
+  license: ""
+  name: mailbase
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: perl
+  
+  version: ""
+- 
   category: net-misc
   description: ""
   license: ""
   name: memcached
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libpcre
-  
-  version: "3.4"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: ""
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
-  
-  version: 2.9.1
 - 
   category: sec-policy
   description: ""

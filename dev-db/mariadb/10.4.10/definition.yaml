@@ -1,12 +1,12 @@
 category: dev-db
 conflicts:
 - 
-  category: dev-db
+  category: <virtual
   description: ""
   license: ""
-  name: mariadb-galera
+  name: libmysqlclient
   
-  version: ""
+  version: 18-r1
 - 
   category: <virtual
   description: ""
@@ -18,28 +18,28 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mytop
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
   name: mysql-cluster
   
   version: ""
-- 
-  category: <virtual
-  description: ""
-  license: ""
-  name: libmysqlclient
-  
-  version: 18-r1
 - 
   category: dev-db
   description: ""
   license: ""
   name: mysql
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mariadb-galera
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mytop
   
   version: ""
 - 
@@ -54,69 +54,6 @@ license: GPL-2 LGPL-2.1+
 name: mariadb
 requires:
 - 
-  category: virtual
-  description: ""
-  license: ""
-  name: perl-Getopt-Long
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: perl-Term-ANSIColor
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: groonga-normalizer-mysql
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: 1.0.0
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: lsof
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: sed
-  
-  version: "4"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: texinfo
-  
-  version: 4.7-r1
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnutls
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
@@ -124,115 +61,10 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: judy
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libpcre
-  
-  version: 8.41-r1
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: iproute2
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: snappy
-  
-  version: ""
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: numactl
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
-  name: pam
-  
-  version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: socat
-  
-  version: ""
-- 
-  category: acct-user
-  description: ""
-  license: ""
-  name: mysql
-  
-  version: ""
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: procps
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libaio
-  
-  version: ""
-- 
-  category: dev-perl
-  description: ""
-  license: ""
-  name: TermReadKey
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: jemalloc
-  
-  version: ""
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: google-perftools
-  
-  version: ""
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: systemtap
-  
-  version: "1.3"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: krb5
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: binutils-libs
+  name: ncurses
   
   version: ""
 - 
@@ -246,14 +78,182 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: boost
+  name: lzo
   
-  version: 1.40.0
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: galera
+  
+  version: "26"
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-init-scripts
+  
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: mysql
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: texinfo
+  
+  version: 4.7-r1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 1.0.0
 - 
   category: sys-libs
   description: ""
   license: ""
-  name: cracklib
+  name: readline
+  
+  version: "4.1"
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: socat
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: perl-Term-ANSIColor
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: procps
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: google-perftools
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: 1.2.3
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: binutils-libs
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: unixODBC
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: judy
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: jemalloc
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: systemtap
+  
+  version: "1.3"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: boost
+  
+  version: 1.40.0
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: iproute2
+  
+  version: ""
+- 
+  category: dev-perl
+  description: ""
+  license: ""
+  name: TermReadKey
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: libarchive
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: lz4
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: lsof
   
   version: ""
 - 
@@ -274,21 +274,42 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: readline
-  
-  version: "4.1"
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: lz4
+  name: pam
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: lzo
+  name: libaio
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: sed
+  
+  version: "4"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: cracklib
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: snappy
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: groonga-normalizer-mysql
   
   version: ""
 - 
@@ -299,38 +320,24 @@ requires:
   
   version: 7.0.4
 - 
-  category: sys-cluster
+  category: dev-libs
   description: ""
   license: ""
-  name: galera
+  name: libpcre
   
-  version: "26"
+  version: 8.41-r1
 - 
-  category: dev-db
+  category: virtual
   description: ""
   license: ""
-  name: mysql-init-scripts
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: libarchive
+  name: perl-Getopt-Long
   
   version: ""
 - 
-  category: sys-libs
+  category: sys-process
   description: ""
   license: ""
-  name: ncurses
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: unixODBC
+  name: numactl
   
   version: ""
 - 
@@ -347,13 +354,6 @@ requires:
   name: perl-Time-HiRes
   
   version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: 1.2.3
 uri:
 - https://downloads.mariadb.org/interstitial/mariadb-10.4.10/source/mariadb-10.4.10.tar.gz
 - mirror://gentoo/mysql-extras-20190731-2258Z.tar.bz2

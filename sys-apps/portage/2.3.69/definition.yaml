@@ -1,44 +1,30 @@
 category: sys-apps
 conflicts:
 - 
-  category: <app-admin
-  description: ""
-  license: ""
-  name: logrotate
-  
-  version: 3.8.0
-- 
   category: <app-portage
   description: ""
   license: ""
   name: repoman
   
   version: 2.3.10
+- 
+  category: <app-admin
+  description: ""
+  license: ""
+  name: logrotate
+  
+  version: 3.8.0
 description: Portage is the package management and distribution system for Gentoo
 license: GPL-2
 name: portage
 requires:
 - 
-  category: app-arch
+  category: dev-lang
   description: ""
   license: ""
-  name: tar
+  name: python-exec
   
-  version: "1.27"
-- 
-  category: app-misc
-  description: ""
-  license: ""
-  name: pax-utils
-  
-  version: 0.1.17
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: 2.0.94
+  version: ""
 - 
   category: sys-apps
   description: ""
@@ -47,12 +33,40 @@ requires:
   
   version: 4.0.5
 - 
-  category: app-portage
+  category: sys-apps
   description: ""
   license: ""
-  name: gemato
+  name: install-xattr
   
-  version: "14"
+  version: "0.3"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: 2.0.94
+- 
+  category: app-shells
+  description: ""
+  license: ""
+  name: bash
+  
+  version: ""
+- 
+  category: app-admin
+  description: ""
+  license: ""
+  name: eselect
+  
+  version: "1.2"
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: openpgp-keys-gentoo-release
+  
+  version: "20180706"
 - 
   category: app-crypt
   description: ""
@@ -68,40 +82,19 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: app-arch
   description: ""
   license: ""
-  name: install-xattr
+  name: tar
   
-  version: "0.3"
+  version: "1.27"
 - 
-  category: app-admin
+  category: app-portage
   description: ""
   license: ""
-  name: eselect
+  name: gemato
   
-  version: "1.2"
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: python-exec
-  
-  version: ""
-- 
-  category: app-shells
-  description: ""
-  license: ""
-  name: bash
-  
-  version: ""
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: openpgp-keys-gentoo-release
-  
-  version: "20180706"
+  version: "14"
 - 
   category: sys-freebsd
   description: ""
@@ -116,6 +109,13 @@ requires:
   name: sandbox
   
   version: "2.2"
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: pax-utils
+  
+  version: 0.1.17
 uri: []
 use_flags:
 - build

@@ -8,13 +8,6 @@ conflicts:
   
   version: ""
 - 
-  category: net-nntp
-  description: ""
-  license: ""
-  name: leafnode
-  
-  version: ""
-- 
   category: net-mail
   description: ""
   license: ""
@@ -22,10 +15,10 @@ conflicts:
   
   version: ""
 - 
-  category: app-arch
+  category: mail-mta
   description: ""
   license: ""
-  name: dump
+  name: courier
   
   version: ""
 - 
@@ -36,10 +29,17 @@ conflicts:
   
   version: ""
 - 
-  category: mail-mta
+  category: net-nntp
   description: ""
   license: ""
-  name: courier
+  name: leafnode
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: dump
   
   version: ""
 description: The Cyrus IMAP Server
@@ -47,31 +47,10 @@ license: BSD-with-attribution GPL-2
 name: cyrus-imapd
 requires:
 - 
-  category: dev-libs
+  category: net-fs
   description: ""
   license: ""
-  name: icu
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: e2fsprogs-libs
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: ""
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
+  name: openafs
   
   version: ""
 - 
@@ -82,52 +61,31 @@ requires:
   
   version: "1"
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: tcp-wrappers
-  
-  version: "7.6"
-- 
-  category: net-analyzer
-  description: ""
-  license: ""
-  name: net-snmp
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libpcre
-  
-  version: ""
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: perl
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: xapian
-  
-  version: 1.4.0
-- 
   category: dev-db
   description: ""
   license: ""
-  name: mysql-connector-c
+  name: sqlite
   
   version: ""
 - 
-  category: virtual
+  category: sys-libs
   description: ""
   license: ""
-  name: krb5
+  name: zlib
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: cyrus-sasl
+  
+  version: 2.1.13
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: icu
   
   version: ""
 - 
@@ -138,33 +96,26 @@ requires:
   
   version: ""
 - 
-  category: dev-db
+  category: dev-lang
   description: ""
   license: ""
-  name: postgresql
+  name: perl
   
   version: ""
 - 
-  category: net-analyzer
+  category: sys-apps
   description: ""
   license: ""
-  name: net-snmp
+  name: tcp-wrappers
   
-  version: 5.2.2-r1
+  version: "7.6"
 - 
-  category: app-antivirus
+  category: sys-libs
   description: ""
   license: ""
-  name: clamav
+  name: e2fsprogs-libs
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: 1.0.1e
 - 
   category: dev-libs
   description: ""
@@ -183,30 +134,30 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: jansson
-  
-  version: ""
-- 
-  category: net-fs
-  description: ""
-  license: ""
-  name: openafs
+  name: libxml2
   
   version: ""
 - 
   category: dev-db
   description: ""
   license: ""
-  name: sqlite
+  name: postgresql
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: cyrus-sasl
+  name: libpcre
   
-  version: 2.1.13
+  version: ""
+- 
+  category: app-antivirus
+  description: ""
+  license: ""
+  name: clamav
+  
+  version: ""
 - 
   category: sys-libs
   description: ""
@@ -215,10 +166,59 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: zlib
+  name: xapian
+  
+  version: 1.4.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: jansson
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
+  
+  version: ""
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: ""
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: net-snmp
+  
+  version: 5.2.2-r1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 1.0.1e
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: net-snmp
   
   version: ""
 uri:

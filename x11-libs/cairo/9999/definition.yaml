@@ -5,12 +5,12 @@ license: '|| ( LGPL-2.1 MPL-1.1 )'
 name: cairo
 requires:
 - 
-  category: dev-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: glib
+  name: binutils-libs
   
-  version: 2.34.3
+  version: ""
 - 
   category: sys-libs
   description: ""
@@ -19,12 +19,47 @@ requires:
   
   version: 1.2.8-r1
 - 
+  category: media-libs
+  description: ""
+  license: ""
+  name: mesa
+  
+  version: 9.1.6
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXrender
+  
+  version: 0.9.8
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: lzo
+  
+  version: 2.06-r1
+- 
   category: x11-libs
   description: ""
   license: ""
   name: pixman
   
   version: 0.32.4
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: mesa-9.1.6[egl,X(+),]
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libpng
+  
+  version: 1.6.10
 - 
   category: x11-libs
   description: ""
@@ -36,44 +71,16 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libX11
+  name: libxcb
   
-  version: 1.6.2
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: lzo
-  
-  version: 2.06-r1
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libpng
-  
-  version: 1.6.10
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: mesa
-  
-  version: 9.1.6
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: mesa-9.1.6[egl,X(+),]
-  
-  version: ""
+  version: 1.9.1
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libxcb
+  name: libX11
   
-  version: 1.9.1
+  version: 1.6.2
 - 
   category: media-libs
   description: ""
@@ -89,19 +96,12 @@ requires:
   
   version: 2.5.0.1
 - 
-  category: sys-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: binutils-libs
+  name: glib
   
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXrender
-  
-  version: 0.9.8
+  version: 2.34.3
 uri: []
 use_flags:
 - X

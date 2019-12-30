@@ -1,31 +1,10 @@
 category: mail-mta
 conflicts:
 - 
-  category: net-mail
-  description: ""
-  license: ""
-  name: vacation
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: msmtp
-  
-  version: ""
-- 
   category: mail-mta
   description: ""
   license: ""
   name: netqmail
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: opensmtpd
   
   version: ""
 - 
@@ -36,6 +15,27 @@ conflicts:
   
   version: 2.64-r2
 - 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: esmtp
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: mini-qmail
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: qmail-ldap
+  
+  version: ""
+- 
   category: '>=mail-mta'
   description: ""
   license: ""
@@ -43,10 +43,10 @@ conflicts:
   
   version: 2.64-r2
 - 
-  category: mail-mta
+  category: net-mail
   description: ""
   license: ""
-  name: postfix
+  name: vacation
   
   version: ""
 - 
@@ -60,14 +60,14 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: esmtp
+  name: exim
   
   version: ""
 - 
   category: mail-mta
   description: ""
   license: ""
-  name: exim
+  name: msmtp
   
   version: ""
 - 
@@ -81,14 +81,14 @@ mailer
   category: mail-mta
   description: ""
   license: ""
-  name: qmail-ldap
+  name: postfix
   
   version: ""
 - 
   category: mail-mta
   description: ""
   license: ""
-  name: mini-qmail
+  name: opensmtpd
   
   version: ""
 description: Widely-used Mail Transport Agent (MTA)
@@ -96,17 +96,24 @@ license: Sendmail GPL-2
 name: sendmail
 requires:
 - 
-  category: net-mail
-  description: ""
-  license: ""
-  name: mailbase
-  
-  version: "0.00"
-- 
   category: sys-devel
   description: ""
   license: ""
   name: m4
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: tcp-wrappers
+  
+  version: ""
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: mailbase
   
   version: ""
 - 
@@ -117,19 +124,12 @@ requires:
   
   version: ""
 - 
-  category: net-mail
+  category: sys-libs
   description: ""
   license: ""
-  name: mailbase
+  name: db
   
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: cyrus-sasl
-  
-  version: 2.1.10
+  version: "3.2"
 - 
   category: net-nds
   description: ""
@@ -138,19 +138,19 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: net-mail
   description: ""
   license: ""
-  name: db
+  name: mailbase
   
-  version: "3.2"
+  version: "0.00"
 - 
-  category: sys-apps
+  category: dev-libs
   description: ""
   license: ""
-  name: tcp-wrappers
+  name: cyrus-sasl
   
-  version: ""
+  version: 2.1.10
 uri:
 - ftp://ftp.sendmail.org/pub/sendmail/sendmail.8.14.9.tar.gz
 use_flags:

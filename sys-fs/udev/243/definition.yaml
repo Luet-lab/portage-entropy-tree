@@ -1,13 +1,6 @@
 category: sys-fs
 conflicts:
 - 
-  category: <sys-libs
-  description: ""
-  license: ""
-  name: glibc
-  
-  version: "2.11"
-- 
   category: <sec-policy
   description: ""
   license: ""
@@ -21,6 +14,13 @@ conflicts:
   name: gentoo-systemd-integration
   
   version: ""
+- 
+  category: <sys-libs
+  description: ""
+  license: ""
+  name: glibc
+  
+  version: "2.11"
 - 
   category: sys-apps
   description: ""
@@ -40,13 +40,6 @@ license: LGPL-2.1 MIT GPL-2
 name: udev
 requires:
 - 
-  category: acct-group
-  description: ""
-  license: ""
-  name: tape
-  
-  version: ""
-- 
   category: sys-apps
   description: ""
   license: ""
@@ -57,7 +50,35 @@ requires:
   category: acct-group
   description: ""
   license: ""
-  name: audio
+  name: cdrom
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: lp
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: tape
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: kmod
+  
+  version: "16"
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: kmem
   
   version: ""
 - 
@@ -75,47 +96,19 @@ requires:
   
   version: ""
 - 
-  category: acct-group
-  description: ""
-  license: ""
-  name: kvm
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: lp
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: render
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: kmem
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: cdrom
-  
-  version: ""
-- 
   category: sys-apps
   description: ""
   license: ""
-  name: kmod
+  name: util-linux
   
-  version: "16"
+  version: "2.30"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: 2.1.9
 - 
   category: acct-group
   description: ""
@@ -127,16 +120,30 @@ requires:
   category: acct-group
   description: ""
   license: ""
+  name: audio
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
   name: disk
   
   version: ""
 - 
-  category: sys-apps
+  category: acct-group
   description: ""
   license: ""
-  name: util-linux
+  name: kvm
   
-  version: "2.30"
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: render
+  
+  version: ""
 - 
   category: sys-libs
   description: ""
@@ -144,13 +151,6 @@ requires:
   name: libcap
   
   version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: 2.1.9
 - 
   category: acct-group
   description: ""

@@ -5,10 +5,17 @@ license: GPL-2
 name: proftpd
 requires:
 - 
-  category: sec-policy
+  category: net-nds
   description: ""
   license: ""
-  name: selinux-ftp
+  name: openldap
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
   
   version: ""
 - 
@@ -19,17 +26,10 @@ requires:
   
   version: ""
 - 
-  category: virtual
-  description: ""
-  license: ""
-  name: libiconv
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
-  name: openssl
+  name: libressl
   
   version: ""
 - 
@@ -39,20 +39,6 @@ requires:
   name: libpcre
   
   version: ""
-- 
-  category: net-ftp
-  description: ""
-  license: ""
-  name: ftpbase
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libmemcached
-  
-  version: "0.41"
 - 
   category: dev-db
   description: ""
@@ -75,31 +61,10 @@ requires:
   
   version: ""
 - 
-  category: app-antivirus
+  category: sec-policy
   description: ""
   license: ""
-  name: clamav
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: krb5
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
+  name: selinux-ftp
   
   version: ""
 - 
@@ -117,10 +82,17 @@ requires:
   
   version: ""
 - 
-  category: net-nds
+  category: dev-libs
   description: ""
   license: ""
-  name: openldap
+  name: libmemcached
+  
+  version: "0.41"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libiconv
   
   version: ""
 - 
@@ -128,6 +100,34 @@ requires:
   description: ""
   license: ""
   name: ncurses
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: app-antivirus
+  description: ""
+  license: ""
+  name: clamav
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: net-ftp
+  description: ""
+  license: ""
+  name: ftpbase
   
   version: ""
 uri:

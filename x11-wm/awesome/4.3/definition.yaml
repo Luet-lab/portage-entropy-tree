@@ -5,33 +5,33 @@ license: GPL-2
 name: awesome
 requires:
 - 
-  category: sys-apps
+  category: x11-libs
   description: ""
   license: ""
-  name: dbus
-  
-  version: "1"
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: luajit
+  name: xcb-util-cursor
   
   version: ""
 - 
-  category: dev-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: libxdg-basedir
+  name: xcb-util-wm
   
-  version: "1"
+  version: 0.3.8
 - 
-  category: dev-lua
+  category: x11-libs
   description: ""
   license: ""
-  name: lgi
+  name: libxcb
   
-  version: "0.8"
+  version: "1.6"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: startup-notification
+  
+  version: 0.10_p20110426
 - 
   category: x11-libs
   description: ""
@@ -40,10 +40,24 @@ requires:
   
   version: 0.3.8
 - 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: "1"
+- 
   category: x11-libs
   description: ""
   license: ""
-  name: xcb-util-cursor
+  name: xcb-util-keysyms
+  
+  version: 0.3.4
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXcursor
   
   version: ""
 - 
@@ -57,13 +71,6 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: cairo
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
   name: pango
   
   version: 1.19.3
@@ -71,16 +78,9 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: startup-notification
+  name: xcb-util-xrm
   
-  version: 0.10_p20110426
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: 1.3.99.901
+  version: "1.0"
 - 
   category: dev-lang
   description: ""
@@ -88,6 +88,20 @@ requires:
   name: lua
   
   version: "5.1"
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: luajit
+  
+  version: ""
+- 
+  category: dev-lua
+  description: ""
+  license: ""
+  name: lgi
+  
+  version: "0.8"
 - 
   category: x11-libs
   description: ""
@@ -99,23 +113,9 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: xcb-util-keysyms
+  name: libX11
   
-  version: 0.3.4
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: xcb-util-wm
-  
-  version: 0.3.8
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: xcb-util-xrm
-  
-  version: "1.0"
+  version: 1.3.99.901
 - 
   category: dev-libs
   description: ""
@@ -124,17 +124,17 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libxcb
+  name: libxdg-basedir
   
-  version: "1.6"
+  version: "1"
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXcursor
+  name: cairo
   
   version: ""
 uri:

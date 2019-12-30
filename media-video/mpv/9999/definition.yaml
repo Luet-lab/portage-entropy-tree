@@ -5,13 +5,6 @@ license: LGPL-2.1+ GPL-2+ BSD ISC samba? ( GPL-3+ )
 name: mpv
 requires:
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXinerama
-  
-  version: ""
-- 
   category: virtual
   description: ""
   license: ""
@@ -19,12 +12,96 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: x11-drivers
   description: ""
   license: ""
-  name: zlib
+  name: nvidia-drivers[X]
   
   version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: alsa-lib
+  
+  version: 1.0.18
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: libarchive
+  
+  version: 3.0.0
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: mujs
+  
+  version: 1.0.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libass
+  
+  version: 0.12.1
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: lua
+  
+  version: "5.3"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXext
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libbluray
+  
+  version: 0.3.0
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libdrm
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libdvdnav
+  
+  version: 4.2.0
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: ttf-fonts
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXrandr
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: zimg
+  
+  version: 2.9.2
 - 
   category: dev-lang
   description: ""
@@ -33,10 +110,24 @@ requires:
   
   version: ""
 - 
-  category: media-sound
+  category: x11-libs
   description: ""
   license: ""
-  name: pulseaudio
+  name: libXinerama
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: mesa[egl,gbm(-)?,wayland(-)?]
+  
+  version: ""
+- 
+  category: app-i18n
+  description: ""
+  license: ""
+  name: uchardet
   
   version: ""
 - 
@@ -54,59 +145,31 @@ requires:
   
   version: ""
 - 
-  category: media-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: mesa[egl,gbm(-)?,wayland(-)?]
+  name: wayland
   
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libcaca-0.99_beta18
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: openal
-  
-  version: "1.13"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXrandr
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxkbcommon
-  
-  version: 0.3.0
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXext
-  
-  version: ""
+  version: 1.6.0
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libcdio-paranoia
+  name: wayland-protocols
+  
+  version: "1.14"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
   
   version: ""
 - 
-  category: app-i18n
+  category: virtual
   description: ""
   license: ""
-  name: uchardet
+  name: jack
   
   version: ""
 - 
@@ -117,47 +180,19 @@ requires:
   
   version: ""
 - 
-  category: net-fs
+  category: media-libs
   description: ""
   license: ""
-  name: samba
+  name: lcms
   
-  version: ""
+  version: "2.6"
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libsdl2
+  name: openal
   
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libplacebo
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: zimg
-  
-  version: 2.9.2
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: alsa-lib
-  
-  version: 1.0.18
+  version: "1.13"
 - 
   category: media-libs
   description: ""
@@ -169,16 +204,30 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libva
+  name: libxkbcommon
   
-  version: ""
+  version: 0.3.0
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: wayland-protocols
+  name: libcdio-paranoia
   
-  version: "1.14"
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXv
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
 - 
   category: x11-libs
   description: ""
@@ -197,16 +246,30 @@ requires:
   category: virtual
   description: ""
   license: ""
-  name: jack
+  name: libiconv
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libass
+  name: libcaca-0.99_beta18
   
-  version: 0.12.1
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libva
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libplacebo
+  
+  version: ""
 - 
   category: x11-libs
   description: ""
@@ -215,19 +278,26 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: media-libs
   description: ""
   license: ""
-  name: ttf-fonts
+  name: libsdl2
   
   version: ""
 - 
-  category: dev-lang
+  category: media-sound
   description: ""
   license: ""
-  name: lua
+  name: pulseaudio
   
-  version: "5.3"
+  version: ""
+- 
+  category: net-fs
+  description: ""
+  license: ""
+  name: samba
+  
+  version: ""
 - 
   category: media-libs
   description: ""
@@ -236,80 +306,10 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: wayland
-  
-  version: 1.6.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libbluray
-  
-  version: 0.3.0
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libdrm
-  
-  version: ""
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: mujs
-  
-  version: 1.0.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: lcms
-  
-  version: "2.6"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXv
-  
-  version: ""
-- 
   category: sec-policy
   description: ""
   license: ""
   name: selinux-mplayer
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: libarchive
-  
-  version: 3.0.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libdvdnav
-  
-  version: 4.2.0
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libiconv
-  
-  version: ""
-- 
-  category: x11-drivers
-  description: ""
-  license: ""
-  name: nvidia-drivers[X]
   
   version: ""
 uri: []

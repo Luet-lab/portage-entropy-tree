@@ -11,6 +11,13 @@ conflicts:
   category: sys-cluster
   description: ""
   license: ""
+  name: mpiexec
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
   name: pmix
   
   version: ""
@@ -21,22 +28,15 @@ conflicts:
   name: mpich
   
   version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: mpiexec
-  
-  version: ""
 description: A high-performance message passing library (MPI)
 license: BSD
 name: openmpi
 requires:
 - 
-  category: sys-fabric
+  category: sys-cluster
   description: ""
   license: ""
-  name: infinipath-psm
+  name: knem
   
   version: ""
 - 
@@ -47,10 +47,10 @@ requires:
   
   version: ""
 - 
-  category: sys-fabric
+  category: dev-libs
   description: ""
   license: ""
-  name: librdmacm
+  name: libevent
   
   version: ""
 - 
@@ -68,6 +68,13 @@ requires:
   
   version: ""
 - 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: ofed
+  
+  version: ""
+- 
   category: sys-cluster
   description: ""
   license: ""
@@ -75,17 +82,17 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: sys-fabric
   description: ""
   license: ""
-  name: libevent
+  name: infinipath-psm
   
   version: ""
 - 
   category: sys-fabric
   description: ""
   license: ""
-  name: ofed
+  name: librdmacm
   
   version: ""
 - 
@@ -95,13 +102,6 @@ requires:
   name: hwloc
   
   version: "2"
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: knem
-  
-  version: ""
 uri:
 - http://www.open-mpi.org/software/ompi/v/downloads/openmpi-1.7.5.tar.bz2
 use_flags:

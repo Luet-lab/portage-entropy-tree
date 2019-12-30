@@ -1,31 +1,10 @@
 category: sys-cluster
 conflicts:
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libotf
-  
-  version: ""
-- 
   category: sys-cluster
   description: ""
   license: ""
   name: mpich
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: mpich2
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: mpiexec
   
   version: ""
 - 
@@ -42,22 +21,43 @@ conflicts:
   name: lcdf-typetools
   
   version: ""
-description: A high-performance message passing library (MPI)
-license: BSD
-name: openmpi
-requires:
 - 
-  category: sys-fabric
+  category: sys-cluster
   description: ""
   license: ""
-  name: ofed
+  name: mpich2
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libotf
   
   version: ""
 - 
   category: sys-cluster
   description: ""
   license: ""
-  name: torque
+  name: mpiexec
+  
+  version: ""
+description: A high-performance message passing library (MPI)
+license: BSD
+name: openmpi
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libltdl
+  
+  version: ""
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: dapl
   
   version: ""
 - 
@@ -65,27 +65,6 @@ requires:
   description: ""
   license: ""
   name: slurm
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: knem
-  
-  version: ""
-- 
-  category: sys-fabric
-  description: ""
-  license: ""
-  name: infinipath-psm
-  
-  version: ""
-- 
-  category: sys-fabric
-  description: ""
-  license: ""
-  name: librdmacm
   
   version: ""
 - 
@@ -99,7 +78,14 @@ requires:
   category: sys-fabric
   description: ""
   license: ""
-  name: dapl
+  name: ofed
+  
+  version: ""
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: infinipath-psm
   
   version: ""
 - 
@@ -110,10 +96,24 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: sys-cluster
   description: ""
   license: ""
-  name: libltdl
+  name: torque
+  
+  version: ""
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: librdmacm
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: knem
   
   version: ""
 uri:

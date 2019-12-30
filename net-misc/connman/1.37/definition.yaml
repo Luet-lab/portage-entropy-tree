@@ -5,17 +5,10 @@ license: GPL-2
 name: connman
 requires:
 - 
-  category: net-libs
+  category: net-vpn
   description: ""
   license: ""
-  name: libnftnl
-  
-  version: 1.0.4
-- 
-  category: net-dialup
-  description: ""
-  license: ""
-  name: pptpclient
+  name: vpnc
   
   version: ""
 - 
@@ -26,10 +19,17 @@ requires:
   
   version: "2.0"
 - 
-  category: net-vpn
+  category: net-firewall
   description: ""
   license: ""
-  name: openvpn
+  name: iptables
+  
+  version: 1.4.8
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: ofono
   
   version: ""
 - 
@@ -40,6 +40,13 @@ requires:
   
   version: ""
 - 
+  category: net-vpn
+  description: ""
+  license: ""
+  name: openvpn
+  
+  version: ""
+- 
   category: net-libs
   description: ""
   license: ""
@@ -47,26 +54,26 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: glib
+  name: dbus
   
-  version: "2.16"
+  version: 1.2.24
 - 
-  category: net-firewall
+  category: net-dialup
   description: ""
   license: ""
-  name: iptables
-  
-  version: 1.4.8
-- 
-  category: net-wireless
-  description: ""
-  license: ""
-  name: bluez
+  name: xl2tpd
   
   version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libnftnl
+  
+  version: 1.0.4
 - 
   category: net-libs
   description: ""
@@ -82,19 +89,12 @@ requires:
   
   version: ""
 - 
-  category: net-dialup
+  category: dev-libs
   description: ""
   license: ""
-  name: xl2tpd
+  name: glib
   
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus
-  
-  version: 1.2.24
+  version: "2.16"
 - 
   category: sys-libs
   description: ""
@@ -106,21 +106,21 @@ requires:
   category: net-wireless
   description: ""
   license: ""
+  name: bluez
+  
+  version: ""
+- 
+  category: net-wireless
+  description: ""
+  license: ""
   name: iwd
   
   version: ""
 - 
-  category: net-misc
+  category: net-dialup
   description: ""
   license: ""
-  name: ofono
-  
-  version: ""
-- 
-  category: net-vpn
-  description: ""
-  license: ""
-  name: vpnc
+  name: pptpclient
   
   version: ""
 uri:

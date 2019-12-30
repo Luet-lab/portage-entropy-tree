@@ -1,17 +1,17 @@
 category: net-mail
 conflicts:
 - 
+  category: net-mail
+  description: ""
+  license: ""
+  name: cyrus-imapd
+  
+  version: ""
+- 
   category: mail-mta
   description: ""
   license: ""
   name: courier
-  
-  version: ""
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: bincimap
   
   version: ""
 - 
@@ -25,7 +25,7 @@ conflicts:
   category: net-mail
   description: ""
   license: ""
-  name: cyrus-imapd
+  name: bincimap
   
   version: ""
 description: An IMAP daemon designed specifically for maildirs
@@ -40,6 +40,13 @@ requires:
   
   version: ""
 - 
+  category: net-libs
+  description: ""
+  license: ""
+  name: courier-authlib
+  
+  version: "0.61"
+- 
   category: sys-libs
   description: ""
   license: ""
@@ -47,31 +54,10 @@ requires:
   
   version: 1.8.0
 - 
-  category: net-mail
+  category: dev-libs
   description: ""
   license: ""
-  name: mailbase
-  
-  version: 0.00-r8
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: courier-unicode
-  
-  version: "2"
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: courier-unicode
-  
-  version: "1.3"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: fam
+  name: openssl
   
   version: ""
 - 
@@ -81,20 +67,6 @@ requires:
   name: libressl
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: courier-authlib
-  
-  version: "0.61"
 - 
   category: sec-policy
   description: ""
@@ -106,9 +78,37 @@ requires:
   category: net-libs
   description: ""
   license: ""
+  name: courier-unicode
+  
+  version: "1.3"
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: mailbase
+  
+  version: 0.00-r8
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: fam
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
   name: gnutls
   
   version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: courier-unicode
+  
+  version: "2"
 uri:
 - mirror://sourceforge/courier/courier-imap-4.17.3.tar.bz2
 use_flags:

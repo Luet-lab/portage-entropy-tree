@@ -13,87 +13,24 @@ license: GPL-2 dtrace? ( CDDL )
 name: virtualbox
 requires:
 - 
-  category: virtual
+  category: app-emulation
   description: ""
   license: ""
-  name: jre
+  name: virtualbox-modules
   
-  version: "1.6"
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: curl
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libvpx
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtprintsupport
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtwidgets
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtopengl
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXinerama
-  
-  version: ""
+  version: 5.2.32
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libressl
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libsdl
+  name: libIDL
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXcursor
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXt
+  name: libX11
   
   version: ""
 - 
@@ -104,108 +41,10 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libIDL
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtcore
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: ""
-- 
   category: media-libs
   description: ""
   license: ""
   name: opus
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXmu
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libvncserver
-  
-  version: 0.9.9
-- 
-  category: app-emulation
-  description: ""
-  license: ""
-  name: virtualbox-modules
-  
-  version: 5.2.32
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtgui
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtx11extras
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: lvm2
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxslt
-  
-  version: 1.1.19
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libpng
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXext
   
   version: ""
 - 
@@ -219,7 +58,77 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libxcb
+  name: libXmu
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXext
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtwidgets
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtx11extras
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jre
+  
+  version: "1.6"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libvpx
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXt
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtopengl
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtgui
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libpng
   
   version: ""
 - 
@@ -227,6 +136,97 @@ requires:
   description: ""
   license: ""
   name: freeglut
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtprintsupport
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libvncserver
+  
+  version: 0.9.9
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxslt
+  
+  version: 1.1.19
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libsdl
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXinerama
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxcb
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXcursor
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtcore
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lvm2
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
   
   version: ""
 uri:

@@ -11,39 +11,53 @@ conflicts:
   category: <app-portage
   description: ""
   license: ""
-  name: gentoolkit
+  name: repoman
   
-  version: 0.4.6
+  version: 2.3.10
 - 
   category: <app-portage
   description: ""
   license: ""
-  name: repoman
+  name: gentoolkit
   
-  version: 2.3.10
+  version: 0.4.6
 description: Portage is the package management and distribution system for Gentoo
 license: GPL-2
 name: portage
 requires:
 - 
+  category: app-arch
+  description: ""
+  license: ""
+  name: tar
+  
+  version: "1.27"
+- 
+  category: app-portage
+  description: ""
+  license: ""
+  name: gemato
+  
+  version: "14"
+- 
   category: app-crypt
   description: ""
   license: ""
-  name: openpgp-keys-gentoo-release
+  name: gnupg-2.2.4-r2[ssl(-)]
   
-  version: "20180706"
+  version: ""
 - 
-  category: sys-apps
+  category: dev-lang
   description: ""
   license: ""
-  name: sed
+  name: python-exec
   
-  version: 4.0.5
+  version: ""
 - 
-  category: sys-freebsd
+  category: app-shells
   description: ""
   license: ""
-  name: freebsd-bin
+  name: bash
   
   version: ""
 - 
@@ -53,6 +67,20 @@ requires:
   name: util-linux
   
   version: ""
+- 
+  category: sys-freebsd
+  description: ""
+  license: ""
+  name: freebsd-bin
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: pax-utils
+  
+  version: 0.1.17
 - 
   category: sys-libs
   description: ""
@@ -68,47 +96,12 @@ requires:
   
   version: "0.3"
 - 
-  category: app-arch
-  description: ""
-  license: ""
-  name: tar
-  
-  version: "1.27"
-- 
-  category: app-shells
-  description: ""
-  license: ""
-  name: bash
-  
-  version: ""
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: gnupg-2.2.4-r2[ssl(-)]
-  
-  version: ""
-- 
   category: sys-apps
   description: ""
   license: ""
-  name: sandbox
+  name: sed
   
-  version: "2.2"
-- 
-  category: app-misc
-  description: ""
-  license: ""
-  name: pax-utils
-  
-  version: 0.1.17
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: python-exec
-  
-  version: ""
+  version: 4.0.5
 - 
   category: app-admin
   description: ""
@@ -117,12 +110,19 @@ requires:
   
   version: "1.2"
 - 
-  category: app-portage
+  category: app-crypt
   description: ""
   license: ""
-  name: gemato
+  name: openpgp-keys-gentoo-release
   
-  version: "14"
+  version: "20180706"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: sandbox
+  
+  version: "2.2"
 uri: []
 use_flags:
 - build

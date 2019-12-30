@@ -1,10 +1,59 @@
 category: mail-mta
 conflicts:
 - 
+  category: '>=mail-mta'
+  description: ""
+  license: ""
+  name: msmtp
+  
+  version: 1.4.19-r1
+- 
   category: mail-mta
   description: ""
   license: ""
-mailer
+  name: qmail-ldap
+  
+  version: ""
+- 
+  category: <mail-mta
+  description: ""
+  license: ""
+  name: ssmtp
+  
+  version: 2.64-r2
+- 
+  category: <mail-mta
+  description: ""
+  license: ""
+  name: msmtp
+  
+  version: 1.4.19-r1
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: netqmail
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: opensmtpd
+  
+  version: ""
+- 
+  category: '>=mail-mta'
+  description: ""
+  license: ""
+  name: ssmtp
+  
+  version: 2.64-r2
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: mini-qmail
   
   version: ""
 - 
@@ -18,14 +67,21 @@ mailer
   category: mail-mta
   description: ""
   license: ""
-  name: opensmtpd
+  name: courier
   
   version: ""
 - 
   category: mail-mta
   description: ""
   license: ""
-  name: qmail-ldap
+mailer
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: postfix
   
   version: ""
 - 
@@ -42,78 +98,22 @@ mailer
   name: esmtp
   
   version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: mini-qmail
-  
-  version: ""
-- 
-  category: <mail-mta
-  description: ""
-  license: ""
-  name: msmtp
-  
-  version: 1.4.19-r1
-- 
-  category: <mail-mta
-  description: ""
-  license: ""
-  name: ssmtp
-  
-  version: 2.64-r2
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: netqmail
-  
-  version: ""
-- 
-  category: '>=mail-mta'
-  description: ""
-  license: ""
-  name: msmtp
-  
-  version: 1.4.19-r1
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: courier
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: postfix
-  
-  version: ""
-- 
-  category: '>=mail-mta'
-  description: ""
-  license: ""
-  name: ssmtp
-  
-  version: 2.64-r2
 description: A highly configurable, drop-in replacement for sendmail
 license: GPL-2
 name: exim
 requires:
 - 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libnsl
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
   name: hiredis
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXaw
   
   version: ""
 - 
@@ -124,47 +124,33 @@ requires:
   
   version: ""
 - 
-  category: net-dns
-  description: ""
-  license: ""
-  name: libidn
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libtasn1
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: cyrus-sasl
-  
-  version: 2.1.26-r2
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: db
-  
-  version: "3.2"
-- 
   category: sys-libs
   description: ""
   license: ""
   name: db
   
   version: "6"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpcre
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: 2.0.7
 - 
   category: virtual
   description: ""
@@ -176,21 +162,7 @@ requires:
   category: mail-filter
   description: ""
   license: ""
-  name: libspf2
-  
-  version: 1.2.5-r1
-- 
-  category: mail-filter
-  description: ""
-  license: ""
-  name: libsrs_alt
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXaw
+  name: dcc
   
   version: ""
 - 
@@ -201,24 +173,17 @@ requires:
   
   version: ""
 - 
+  category: mail-filter
+  description: ""
+  license: ""
+  name: opendmarc
+  
+  version: ""
+- 
   category: dev-db
   description: ""
   license: ""
-  name: postgresql
-  
-  version: ""
-- 
-  category: net-dialup
-  description: ""
-  license: ""
-  name: freeradius-client
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
+  name: sqlite
   
   version: ""
 - 
@@ -227,96 +192,12 @@ requires:
   license: ""
   name: libnsl
   
-  version: "1"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
-  
   version: ""
 - 
-  category: mail-filter
+  category: dev-db
   description: ""
   license: ""
-  name: dcc
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-exim
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: sed
-  
-  version: 4.0.5
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libpcre
-  
-  version: ""
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
-  
-  version: 2.0.7
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libtirpc
-  
-  version: ""
-- 
-  category: mail-filter
-  description: ""
-  license: ""
-  name: opendmarc
-  
-  version: ""
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: perl
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: tcp-wrappers
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXmu
-  
-  version: ""
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: mailbase
-  
-  version: 0.00-r5
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
+  name: postgresql
   
   version: ""
 - 
@@ -327,10 +208,80 @@ requires:
   
   version: ""
 - 
-  category: dev-db
+  category: net-mail
   description: ""
   license: ""
-  name: mysql-connector-c
+  name: mailbase
+  
+  version: 0.00-r5
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: sed
+  
+  version: 4.0.5
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: libidn
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: perl
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libnsl
+  
+  version: "1"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: tcp-wrappers
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libtasn1
+  
+  version: ""
+- 
+  category: mail-filter
+  description: ""
+  license: ""
+  name: libsrs_alt
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-exim
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libtirpc
   
   version: ""
 - 
@@ -340,6 +291,55 @@ requires:
   name: libXt
   
   version: ""
+- 
+  category: net-dialup
+  description: ""
+  license: ""
+  name: freeradius-client
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: db
+  
+  version: "3.2"
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: cyrus-sasl
+  
+  version: 2.1.26-r2
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXmu
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: mail-filter
+  description: ""
+  license: ""
+  name: libspf2
+  
+  version: 1.2.5-r1
 uri:
 - https://downloads.exim.org/exim4/exim-4.92.2.tar.xz
 - mirror://gentoo/system_filter.exim.gz

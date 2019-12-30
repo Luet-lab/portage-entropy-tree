@@ -12,12 +12,12 @@ license: GPL-2
 name: portage
 requires:
 - 
-  category: app-shells
+  category: app-portage
   description: ""
   license: ""
-  name: bash
+  name: gemato
   
-  version: ""
+  version: "14"
 - 
   category: app-crypt
   description: ""
@@ -26,26 +26,26 @@ requires:
   
   version: "20180706"
 - 
-  category: app-misc
+  category: app-crypt
   description: ""
   license: ""
-  name: pax-utils
+  name: gnupg-2.2.4-r2[ssl(-)]
   
-  version: 0.1.17
+  version: ""
 - 
-  category: sys-libs
+  category: app-arch
   description: ""
   license: ""
-  name: libselinux
+  name: tar
   
-  version: 2.0.94
+  version: "1.27"
 - 
-  category: app-portage
+  category: sys-freebsd
   description: ""
   license: ""
-  name: gemato
+  name: freebsd-bin
   
-  version: "14"
+  version: ""
 - 
   category: sys-apps
   description: ""
@@ -54,12 +54,47 @@ requires:
   
   version: "2.2"
 - 
+  category: app-misc
+  description: ""
+  license: ""
+  name: pax-utils
+  
+  version: 0.1.17
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: install-xattr
+  
+  version: "0.3"
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: python-exec
+  
+  version: ""
+- 
   category: sys-apps
   description: ""
   license: ""
   name: sed
   
   version: 4.0.5
+- 
+  category: app-shells
+  description: ""
+  license: ""
+  name: bash
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: 2.0.94
 - 
   category: app-admin
   description: ""
@@ -74,41 +109,6 @@ requires:
   name: util-linux
   
   version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: tar
-  
-  version: "1.27"
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: python-exec
-  
-  version: ""
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: gnupg-2.2.4-r2[ssl(-)]
-  
-  version: ""
-- 
-  category: sys-freebsd
-  description: ""
-  license: ""
-  name: freebsd-bin
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: install-xattr
-  
-  version: "0.3"
 uri: []
 use_flags:
 - build

@@ -5,26 +5,33 @@ license: LGPL-2+ CC-BY-2.0
 name: gnome-boxes
 requires:
 - 
-  category: dev-libs
+  category: app-crypt
   description: ""
   license: ""
-  name: gobject-introspection
+  name: libsecret
   
-  version: "1.54"
+  version: ""
 - 
-  category: virtual
+  category: net-libs
   description: ""
   license: ""
-  name: libusb
+  name: libsoup
+  
+  version: "2.44"
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: spice-gtk-0.32[gtk3(+),smartcard,usbredir]
   
   version: ""
 - 
   category: app-emulation
   description: ""
   license: ""
-  name: spice
+  name: libvirt
   
-  version: ""
+  version: 0.9.3
 - 
   category: app-emulation
   description: ""
@@ -54,31 +61,10 @@ requires:
   
   version: 0.2.3
 - 
-  category: net-misc
-  description: ""
-  license: ""
-  name: freerdp
-  
-  version: ""
-- 
-  category: app-misc
-  description: ""
-  license: ""
-  name: tracker-miners
-  
-  version: "2"
-- 
   category: app-emulation
   description: ""
   license: ""
-  name: libvirt
-  
-  version: 0.9.3
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: mtools
+  name: spice
   
   version: ""
 - 
@@ -89,12 +75,19 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
+  category: sys-auth
   description: ""
   license: ""
-  name: gtk+
+  name: polkit
   
-  version: 3.22.20
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.52"
 - 
   category: net-libs
   description: ""
@@ -103,26 +96,33 @@ requires:
   
   version: ""
 - 
-  category: app-crypt
+  category: app-misc
   description: ""
   license: ""
-  name: libsecret
+  name: tracker-miners
+  
+  version: "2"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libusb
   
   version: ""
 - 
   category: net-libs
   description: ""
   license: ""
-  name: libsoup
+  name: webkit-gtk
   
-  version: "2.44"
+  version: ""
 - 
-  category: dev-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: glib
+  name: libosinfo
   
-  version: "2.52"
+  version: 1.1.0
 - 
   category: dev-libs
   description: ""
@@ -134,30 +134,30 @@ requires:
   category: net-misc
   description: ""
   license: ""
-  name: spice-gtk-0.32[gtk3(+),smartcard,usbredir]
+  name: freerdp
   
   version: ""
 - 
-  category: net-libs
+  category: sys-fs
   description: ""
   license: ""
-  name: webkit-gtk
+  name: mtools
   
   version: ""
 - 
-  category: sys-auth
+  category: dev-libs
   description: ""
   license: ""
-  name: polkit
+  name: gobject-introspection
   
-  version: ""
+  version: "1.54"
 - 
-  category: sys-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: libosinfo
+  name: gtk+
   
-  version: 1.1.0
+  version: 3.22.20
 uri: []
 use_flags:
 - rdp

@@ -5,10 +5,17 @@ license: GPL-3
 name: clementine
 requires:
 - 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: qca
+  
+  version: ""
+- 
   category: dev-qt
   description: ""
   license: ""
-  name: qtcore
+  name: qtconcurrent
   
   version: ""
 - 
@@ -22,21 +29,21 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: gst-plugins-base
+  name: libmygpo-qt-1.0.9[qt5(+)]
   
   version: ""
 - 
-  category: virtual
+  category: x11-libs
   description: ""
   license: ""
-  name: glu
+  name: libX11
   
   version: ""
 - 
-  category: sys-fs
+  category: dev-libs
   description: ""
   license: ""
-  name: udisks
+  name: libcdio
   
   version: ""
 - 
@@ -47,24 +54,24 @@ requires:
   
   version: 1.0.0
 - 
-  category: dev-db
+  category: media-plugins
   description: ""
   license: ""
-  name: sqlite
+  name: gst-plugins-taglib
   
   version: ""
 - 
-  category: media-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: liblastfm
+  name: crypto++
   
-  version: 1.1.0_pre20150206
+  version: ""
 - 
-  category: sci-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: fftw
+  name: glib
   
   version: ""
 - 
@@ -82,10 +89,17 @@ requires:
   
   version: ""
 - 
-  category: gnome-base
+  category: dev-qt
   description: ""
   license: ""
-  name: gvfs
+  name: qtcore
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtsql
   
   version: ""
 - 
@@ -96,33 +110,54 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: virtual
   description: ""
   license: ""
-  name: zlib
+  name: glu
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtdbus
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: fftw
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: opengl
+  
+  version: ""
+- 
+  category: media-plugins
+  description: ""
+  license: ""
+  name: gst-plugins-libmms
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libprojectm
-  
-  version: 1.2.0
-- 
-  category: media-plugins
-  description: ""
-  license: ""
-  name: gst-plugins-taglib
+  name: gstreamer
   
   version: ""
 - 
-  category: app-crypt
+  category: media-libs
   description: ""
   license: ""
-  name: qca
+  name: liblastfm
   
-  version: ""
+  version: 1.1.0_pre20150206
 - 
   category: dev-qt
   description: ""
@@ -134,9 +169,16 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: gstreamer
+  name: taglib
   
-  version: ""
+  version: 1.11.1_p20181028
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libgpod
+  
+  version: 0.8.0
 - 
   category: media-plugins
   description: ""
@@ -145,24 +187,24 @@ requires:
   
   version: ""
 - 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: udisks
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: ""
+- 
   category: dev-libs
   description: ""
   license: ""
-  name: crypto++
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtconcurrent
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtsql
+  name: protobuf
   
   version: ""
 - 
@@ -176,14 +218,21 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libmygpo-qt-1.0.9[qt5(+)]
+  name: gst-plugins-base
   
   version: ""
 - 
-  category: virtual
+  category: sys-libs
   description: ""
   license: ""
-  name: opengl
+  name: zlib
+  
+  version: ""
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gvfs
   
   version: ""
 - 
@@ -194,61 +243,12 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: protobuf
-  
-  version: ""
-- 
   category: media-libs
   description: ""
   license: ""
-  name: libgpod
+  name: libprojectm
   
-  version: 0.8.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: taglib
-  
-  version: 1.11.1_p20181028
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libcdio
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtdbus
-  
-  version: ""
-- 
-  category: media-plugins
-  description: ""
-  license: ""
-  name: gst-plugins-libmms
-  
-  version: ""
+  version: 1.2.0
 uri:
 - https://github.com/clementine-player/Clementine/archive/9af827b6acaabb2331246f58436cd34b11548b6c.tar.gz
   -> clementine-1.3.1.tar.gz

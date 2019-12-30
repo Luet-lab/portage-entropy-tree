@@ -1,12 +1,19 @@
 category: sys-fs
 conflicts:
 - 
-  category: <sys-libs
+  category: sys-fs
   description: ""
   license: ""
-  name: glibc
+  name: udev
   
-  version: "2.11"
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: gentoo-systemd-integration
+  
+  version: ""
 - 
   category: <sys-fs
   description: ""
@@ -15,10 +22,17 @@ conflicts:
   
   version: 2.02.103
 - 
-  category: sys-fs
+  category: <sys-libs
   description: ""
   license: ""
-  name: udev
+  name: glibc
+  
+  version: "2.11"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
   
   version: ""
 - 
@@ -28,45 +42,10 @@ conflicts:
   name: selinux-base
   
   version: 2.20120725-r10
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: gentoo-systemd-integration
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: ""
 description: Linux dynamic and persistent device naming support (aka userspace devfs)
 license: LGPL-2.1 MIT GPL-2
 name: eudev
 requires:
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: kvm
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: render
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: input
-  
-  version: ""
 - 
   category: sys-apps
   description: ""
@@ -82,6 +61,27 @@ requires:
   
   version: "1.38"
 - 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: 2.1.9
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: kvm
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: render
+  
+  version: ""
+- 
   category: sys-apps
   description: ""
   license: ""
@@ -89,12 +89,12 @@ requires:
   
   version: "16"
 - 
-  category: sys-libs
+  category: acct-group
   description: ""
   license: ""
-  name: libselinux
+  name: input
   
-  version: 2.1.9
+  version: ""
 uri:
 - https://dev.gentoo.org/~blueness/eudev/eudev-3.2.5.tar.gz
 use_flags:

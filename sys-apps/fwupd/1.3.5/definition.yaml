@@ -5,12 +5,131 @@ license: LGPL-2.1+
 name: fwupd
 requires:
 - 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: tpm2-tss
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
+  
+  version: ""
+- 
+  category: sys-boot
+  description: ""
+  license: ""
+  name: efibootmgr
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: efivar
+  
+  version: "33"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.45.8
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libsmbios
+  
+  version: 2.4.0
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgudev
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gpgme
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: elogind
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
+  
+  version: ""
+- 
+  category: sys-boot
+  description: ""
+  license: ""
+  name: gnu-efi
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgpg-error
+  
+  version: ""
+- 
   category: sys-libs
   description: ""
   license: ""
   name: efivar
   
   version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pycairo
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: consolekit
+  
+  version: 1.0.0
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: gcab
+  
+  version: "1.0"
 - 
   category: dev-libs
   description: ""
@@ -26,52 +145,10 @@ requires:
   
   version: ""
 - 
-  category: app-crypt
+  category: virtual
   description: ""
   license: ""
-  name: tpm2-tss
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: libarchive
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pycairo
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: "211"
-- 
-  category: sys-boot
-  description: ""
-  license: ""
-  name: efibootmgr
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgpg-error
+  name: udev
   
   version: ""
 - 
@@ -82,94 +159,10 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgudev
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnutls
-  
-  version: 3.4.4.1
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus
-  
-  version: ""
-- 
   category: app-arch
   description: ""
   license: ""
-  name: gcab
-  
-  version: "1.0"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: udev
-  
-  version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: elogind
-  
-  version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: polkit
-  
-  version: "0.103"
-- 
-  category: sys-boot
-  description: ""
-  license: ""
-  name: gnu-efi
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: 2.45.8
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: consolekit
-  
-  version: 1.0.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: fontconfig
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: efivar
-  
-  version: "33"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: cairo
+  name: libarchive
   
   version: ""
 - 
@@ -180,31 +173,17 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: libsmbios
+  name: systemd
   
-  version: 2.4.0
+  version: "211"
 - 
-  category: app-crypt
+  category: dev-db
   description: ""
   license: ""
-  name: gpgme
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: freetype
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pillow
+  name: sqlite
   
   version: ""
 - 
@@ -214,6 +193,27 @@ requires:
   name: pygobject
   
   version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: 3.4.4.1
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pillow
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: "0.103"
 uri:
 - https://github.com/hughsie/fwupd/archive/1.3.5.tar.gz -> fwupd-1.3.5.tar.gz
 use_flags:

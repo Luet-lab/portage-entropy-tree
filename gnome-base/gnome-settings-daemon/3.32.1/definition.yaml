@@ -4,20 +4,83 @@ conflicts:
   category: <gnome-base
   description: ""
   license: ""
-  name: gnome-session
+  name: gdm
   
   version: 3.27.90
 - 
   category: <gnome-base
   description: ""
   license: ""
-  name: gdm
+  name: gnome-session
   
   version: 3.27.90
 description: Gnome Settings Daemon
 license: GPL-2+ LGPL-2+
 name: gnome-settings-daemon
 requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgweather
+  
+  version: 3.9.5
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: alsa-lib
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libcanberra
+  
+  version: ""
+- 
+  category: sys-power
+  description: ""
+  license: ""
+  name: upower
+  
+  version: "0.99"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gdk-pixbuf
+  
+  version: ""
+- 
+  category: net-print
+  description: ""
+  license: ""
+  name: cups
+  
+  version: "1.4"
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: dconf
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: geoclue
+  
+  version: 2.3.1
 - 
   category: x11-libs
   description: ""
@@ -26,12 +89,12 @@ requires:
   
   version: ""
 - 
-  category: gnome-base
+  category: sci-geosciences
   description: ""
   license: ""
-  name: gsettings-desktop-schemas
+  name: geocode-glib
   
-  version: 3.27.90
+  version: "3.10"
 - 
   category: media-sound
   description: ""
@@ -47,45 +110,10 @@ requires:
   
   version: "0.114"
 - 
-  category: x11-misc
+  category: dev-libs
   description: ""
   license: ""
-  name: colord
-  
-  version: 1.0.2
-- 
-  category: app-misc
-  description: ""
-  license: ""
-  name: geoclue
-  
-  version: 2.3.1
-- 
-  category: sys-power
-  description: ""
-  license: ""
-  name: upower
-  
-  version: "0.99"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pango
-  
-  version: 1.20.0
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gdk-pixbuf
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXi
+  name: wayland
   
   version: ""
 - 
@@ -96,54 +124,12 @@ requires:
   
   version: ""
 - 
-  category: sci-geosciences
-  description: ""
-  license: ""
-  name: geocode-glib
-  
-  version: "3.10"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: wayland
-  
-  version: ""
-- 
-  category: net-print
-  description: ""
-  license: ""
-  name: cups
-  
-  version: "1.4"
-- 
   category: media-libs
   description: ""
   license: ""
-  name: alsa-lib
+  name: lcms
   
-  version: ""
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gnome-desktop
-  
-  version: 3.11.1
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgweather
-  
-  version: 3.9.5
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libwacom
-  
-  version: "0.7"
+  version: "2.2"
 - 
   category: net-misc
   description: ""
@@ -152,52 +138,24 @@ requires:
   
   version: "1.0"
 - 
-  category: media-libs
+  category: gnome-base
   description: ""
   license: ""
-  name: fontconfig
+  name: gsettings-desktop-schemas
   
-  version: ""
+  version: 3.27.90
 - 
-  category: media-libs
+  category: x11-misc
   description: ""
   license: ""
-  name: lcms
+  name: colord
   
-  version: "2.2"
+  version: 1.0.2
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: nss
-  
-  version: 3.11.2
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgudev
-  
-  version: ""
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: dconf
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
+  name: libXi
   
   version: ""
 - 
@@ -208,12 +166,12 @@ requires:
   
   version: "2.56"
 - 
-  category: media-libs
+  category: gnome-base
   description: ""
   license: ""
-  name: libcanberra
+  name: gnome-desktop
   
-  version: ""
+  version: 3.11.1
 - 
   category: x11-libs
   description: ""
@@ -221,6 +179,48 @@ requires:
   name: libnotify
   
   version: 0.7.3
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgudev
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nss
+  
+  version: 3.11.2
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libwacom
+  
+  version: "0.7"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pango
+  
+  version: 1.20.0
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
 uri:
 - https://dev.gentoo.org/~leio/distfiles/gnome-settings-daemon-3.32.1-patchset.tar.xz
 use_flags:

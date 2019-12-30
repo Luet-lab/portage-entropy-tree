@@ -15,16 +15,9 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libedit
+  name: openssl
   
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: shadow
-  
-  version: ""
+  version: 1.1.0g
 - 
   category: net-libs
   description: ""
@@ -33,10 +26,31 @@ requires:
   
   version: ""
 - 
-  category: net-libs
+  category: sys-auth
   description: ""
   license: ""
-  name: ldns[ecdsa,ssl(+)]
+  name: pambase
+  
+  version: "20081028"
+- 
+  category: x11-apps
+  description: ""
+  license: ""
+  name: xauth
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libedit
   
   version: ""
 - 
@@ -46,34 +60,6 @@ requires:
   name: libselinux
   
   version: "1.28"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: ""
-- 
-  category: x11-apps
-  description: ""
-  license: ""
-  name: xauth
-  
-  version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: lksctp-tools
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: ""
 - 
   category: dev-libs
   description: ""
@@ -96,10 +82,24 @@ requires:
   
   version: ""
 - 
+  category: virtual
+  description: ""
+  license: ""
+  name: shadow
+  
+  version: ""
+- 
   category: sys-process
   description: ""
   license: ""
   name: audit
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: lksctp-tools
   
   version: ""
 - 
@@ -108,14 +108,14 @@ requires:
   license: ""
   name: openssl
   
-  version: 1.1.0g
+  version: ""
 - 
-  category: sys-auth
+  category: net-libs
   description: ""
   license: ""
-  name: pambase
+  name: ldns[ecdsa,ssl(+)]
   
-  version: "20081028"
+  version: ""
 uri:
 - mirror://openbsd/OpenSSH/portable/openssh-7.9.tar.gz
 - https://dev.gentoo.org/~whissi/dist/openssh/openssh-7.9p1-patches-1.0.tar.xz

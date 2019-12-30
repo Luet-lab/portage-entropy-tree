@@ -18,7 +18,14 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-mailer
+  name: sendmail
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: postfix
   
   version: ""
 - 
@@ -32,14 +39,7 @@ mailer
   category: mail-mta
   description: ""
   license: ""
-  name: qmail-ldap
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: courier
+  name: exim
   
   version: ""
 - 
@@ -60,21 +60,21 @@ mailer
   category: mail-mta
   description: ""
   license: ""
-  name: postfix
+  name: qmail-ldap
   
   version: ""
 - 
   category: mail-mta
   description: ""
   license: ""
-  name: exim
+mailer
   
   version: ""
 - 
   category: mail-mta
   description: ""
   license: ""
-  name: sendmail
+  name: courier
   
   version: ""
 description: Lightweight but featured SMTP daemon from OpenBSD
@@ -89,17 +89,17 @@ requires:
   
   version: ""
 - 
-  category: app-misc
+  category: net-libs
   description: ""
   license: ""
-  name: ca-certificates
+  name: libasr
   
   version: ""
 - 
-  category: net-mail
+  category: dev-libs
   description: ""
   license: ""
-  name: mailbase
+  name: libressl
   
   version: ""
 - 
@@ -113,7 +113,7 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: fts-standalone
+  name: db
   
   version: ""
 - 
@@ -134,21 +134,21 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: db
+  name: fts-standalone
   
   version: ""
 - 
-  category: net-libs
+  category: net-mail
   description: ""
   license: ""
-  name: libasr
+  name: mailbase
   
   version: ""
 - 
-  category: dev-libs
+  category: app-misc
   description: ""
   license: ""
-  name: libressl
+  name: ca-certificates
   
   version: ""
 uri:

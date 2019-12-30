@@ -5,10 +5,10 @@ license: GPL-3
 name: qt-creator
 requires:
 - 
-  category: dev-util
+  category: dev-vcs
   description: ""
   license: ""
-  name: cmake[server(+)]
+  name: cvs
   
   version: ""
 - 
@@ -22,119 +22,7 @@ requires:
   category: dev-qt
   description: ""
   license: ""
-  name: qtx11extras
-  
-  version: 5.9.0
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtscript
-  
-  version: 5.9.0
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: clang
-  
-  version: "6"
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: designer
-  
-  version: 5.9.0
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: autoconf
-  
-  version: ""
-- 
-  category: dev-vcs
-  description: ""
-  license: ""
-  name: cvs
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtdeclarative
-  
-  version: 5.9.0
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtprintsupport
-  
-  version: 5.9.0
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtxml
-  
-  version: 5.9.0
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtgui
-  
-  version: 5.9.0
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: ""
-- 
-  category: dev-vcs
-  description: ""
-  license: ""
-  name: bzr
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtwidgets
-  
-  version: 5.9.0
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtsvg
-  
-  version: 5.9.0
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qthelp
-  
-  version: 5.9.0
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: cppcheck
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qttranslations
+  name: qtquickcontrols
   
   version: 5.9.0
 - 
@@ -148,14 +36,56 @@ requires:
   category: dev-qt
   description: ""
   license: ""
-  name: qtnetwork
+  name: designer
   
   version: 5.9.0
 - 
   category: dev-qt
   description: ""
   license: ""
-  name: qtquickcontrols
+  name: qtcore
+  
+  version: 5.9.0
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtprintsupport
+  
+  version: 5.9.0
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: autoconf
+  
+  version: ""
+- 
+  category: dev-vcs
+  description: ""
+  license: ""
+  name: bzr
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: cmake[server(+)]
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: the_silver_searcher
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qttranslations
   
   version: 5.9.0
 - 
@@ -173,17 +103,52 @@ requires:
   
   version: 1.12.2
 - 
-  category: sys-devel
+  category: dev-qt
   description: ""
   license: ""
-  name: gdb
+  name: qtserialport
   
-  version: ""
+  version: 5.9.0
 - 
-  category: dev-libs
+  category: dev-qt
   description: ""
   license: ""
-  name: botan-2.9*
+  name: qtconcurrent
+  
+  version: 5.9.0
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtgui
+  
+  version: 5.9.0
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtscript
+  
+  version: 5.9.0
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtwidgets
+  
+  version: 5.9.0
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qthelp
+  
+  version: 5.9.0
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
   
   version: ""
 - 
@@ -194,13 +159,6 @@ requires:
   
   version: ""
 - 
-  category: dev-vcs
-  description: ""
-  license: ""
-  name: subversion
-  
-  version: ""
-- 
   category: dev-util
   description: ""
   license: ""
@@ -208,33 +166,75 @@ requires:
   
   version: ""
 - 
-  category: dev-qt
+  category: dev-libs
   description: ""
   license: ""
-  name: qtcore
-  
-  version: 5.9.0
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtserialport
-  
-  version: 5.9.0
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: the_silver_searcher
+  name: botan-2.9*
   
   version: ""
 - 
   category: dev-qt
   description: ""
   license: ""
-  name: qtconcurrent
+  name: qtdeclarative
   
   version: 5.9.0
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtsvg
+  
+  version: 5.9.0
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: clang
+  
+  version: "6"
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: cppcheck
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtnetwork
+  
+  version: 5.9.0
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtxml
+  
+  version: 5.9.0
+- 
+  category: dev-vcs
+  description: ""
+  license: ""
+  name: subversion
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtx11extras
+  
+  version: 5.9.0
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: gdb
+  
+  version: ""
 uri:
 - https://download.qt.io/official_releases/qtcreator/4.8/4.8.2/qt-creator-opensource-src-4.8.2.tar.xz
 use_flags:

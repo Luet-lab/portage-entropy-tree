@@ -5,38 +5,24 @@ license: BSD-2
 name: petsc
 requires:
 - 
-  category: virtual
+  category: sci-libs
   description: ""
   license: ""
-  name: lapack
+  name: cholmod
   
-  version: ""
+  version: 1.7.0
 - 
-  category: media-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: libafterimage
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: boost
+  name: libX11
   
   version: ""
 - 
   category: sci-libs
   description: ""
   license: ""
-  name: superlu
-  
-  version: "5"
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: hypre-2.8.0b[mpi?]
+  name: fftw
   
   version: ""
 - 
@@ -46,13 +32,6 @@ requires:
   name: parmetis
   
   version: "4"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: mpi[cxx?,fortran?]
-  
-  version: ""
 - 
   category: sci-libs
   description: ""
@@ -71,9 +50,58 @@ requires:
   category: sci-libs
   description: ""
   license: ""
-  name: fftw
+  name: suitesparse
   
   version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: blas
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: boost
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: mpi[cxx?,fortran?]
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: scalapack
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: lapack
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libafterimage
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: superlu
+  
+  version: "5"
 - 
   category: sci-libs
   description: ""
@@ -85,37 +113,9 @@ requires:
   category: sci-libs
   description: ""
   license: ""
-  name: scalapack
+  name: hypre-2.8.0b[mpi?]
   
   version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: blas
-  
-  version: ""
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: suitesparse
-  
-  version: ""
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: cholmod
-  
-  version: 1.7.0
 uri:
 - http://ftp.mcs.anl.gov/pub/petsc/release-snapshots/petsc-3.11.3.tar.gz
 use_flags:

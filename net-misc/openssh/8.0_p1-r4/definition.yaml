@@ -5,59 +5,10 @@ license: BSD GPL-2
 name: openssh
 requires:
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: 1.1.0g
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: 1.2.3
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: pambase
-  
-  version: "20081028"
-- 
-  category: x11-apps
-  description: ""
-  license: ""
-  name: xauth
-  
-  version: ""
-- 
   category: net-libs
   description: ""
   license: ""
-  name: ldns[-ecdsa,ssl(+)]
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: krb5
+  name: ldns
   
   version: ""
 - 
@@ -71,16 +22,23 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libedit
+  name: openssl
   
   version: ""
 - 
-  category: net-misc
+  category: dev-libs
   description: ""
   license: ""
-  name: lksctp-tools
+  name: libressl
   
   version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: 1.2.3
 - 
   category: sys-libs
   description: ""
@@ -89,10 +47,10 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: x11-apps
   description: ""
   license: ""
-  name: shadow
+  name: xauth
   
   version: ""
 - 
@@ -106,7 +64,28 @@ requires:
   category: net-libs
   description: ""
   license: ""
-  name: ldns
+  name: ldns[-ecdsa,ssl(+)]
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: lksctp-tools
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 1.1.0g
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libedit
   
   version: ""
 - 
@@ -116,6 +95,27 @@ requires:
   name: libselinux
   
   version: "1.28"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: pambase
+  
+  version: "20081028"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: shadow
+  
+  version: ""
 uri:
 - mirror://openbsd/OpenSSH/portable/openssh-8.0.tar.gz
 - 'https://dev.gentoo.org/~whissi/dist/openssh/openssh-8.0+x509-12.1-gentoo.diff.gz '

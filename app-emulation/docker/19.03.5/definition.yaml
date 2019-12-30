@@ -5,34 +5,6 @@ license: Apache-2.0
 name: docker
 requires:
 - 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
-  
-  version: 3.7.9
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: lvm2
-  
-  version: 2.02.89
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libseccomp
-  
-  version: 2.2.1
-- 
-  category: app-emulation
-  description: ""
-  license: ""
-  name: containerd
-  
-  version: 1.2.10
-- 
   category: app-emulation
   description: ""
   license: ""
@@ -40,19 +12,19 @@ requires:
   
   version: 0.8.0_p20191011
 - 
-  category: sys-libs
+  category: sys-process
   description: ""
   license: ""
-  name: libapparmor
+  name: tini
   
-  version: ""
+  version: 0.18.0
 - 
-  category: net-firewall
+  category: dev-db
   description: ""
   license: ""
-  name: iptables
+  name: sqlite
   
-  version: "1.4"
+  version: 3.7.9
 - 
   category: sys-process
   description: ""
@@ -82,12 +54,40 @@ requires:
   
   version: ""
 - 
-  category: sys-process
+  category: app-emulation
   description: ""
   license: ""
-  name: tini
+  name: containerd
   
-  version: 0.18.0
+  version: 1.2.10
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lvm2
+  
+  version: 2.02.89
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libseccomp
+  
+  version: 2.2.1
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libapparmor
+  
+  version: ""
+- 
+  category: net-firewall
+  description: ""
+  license: ""
+  name: iptables
+  
+  version: "1.4"
 uri:
 - https://github.com/docker/docker-ce/archive/v19.03.5.tar.gz -> docker-19.03.5.tar.gz
 use_flags:

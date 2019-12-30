@@ -5,45 +5,10 @@ license: GPL-2
 name: scribus
 requires:
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: icu
-  
-  version: "58.2"
-- 
   category: dev-qt
   description: ""
   license: ""
-  name: qtxml
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: fontconfig
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: lcms
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: poppler
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: librevenge
+  name: qtwidgets
   
   version: ""
 - 
@@ -54,31 +19,24 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
+  category: media-libs
   description: ""
   license: ""
-  name: cairo-1.10.0[X,svg]
+  name: lcms
+  
+  version: ""
+- 
+  category: net-print
+  description: ""
+  license: ""
+  name: cups
   
   version: ""
 - 
   category: app-text
   description: ""
   license: ""
-  name: ghostscript-gpl
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: hyphen
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtcore
+  name: libqxp
   
   version: ""
 - 
@@ -89,45 +47,17 @@ requires:
   
   version: ""
 - 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libcdr
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libfreehand
-  
-  version: ""
-- 
-  category: dev-games
-  description: ""
-  license: ""
-  name: openscenegraph
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: podofo
-  
-  version: ""
-- 
   category: dev-python
   description: ""
   license: ""
   name: pillow[tk?,]
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtgui
   
   version: ""
 - 
@@ -145,24 +75,17 @@ requires:
   
   version: ""
 - 
-  category: media-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: libzmf
+  name: zlib
   
   version: ""
 - 
-  category: media-libs
+  category: app-text
   description: ""
   license: ""
-  name: tiff
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jpeg
+  name: poppler
   
   version: ""
 - 
@@ -173,31 +96,31 @@ requires:
   
   version: 0.9.42
 - 
-  category: net-print
+  category: dev-qt
   description: ""
   license: ""
-  name: cups
+  name: qtxml
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: tiff
   
   version: ""
 - 
   category: app-text
   description: ""
   license: ""
-  name: hunspell
+  name: ghostscript-gpl
   
   version: ""
 - 
-  category: app-text
+  category: dev-libs
   description: ""
   license: ""
-  name: libmspub
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: libqxp
+  name: hyphen
   
   version: ""
 - 
@@ -208,38 +131,31 @@ requires:
   
   version: ""
 - 
-  category: dev-qt
+  category: x11-libs
   description: ""
   license: ""
-  name: qtgui
+  name: cairo-1.10.0[X,svg]
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: podofo
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libpagemaker
+  name: fontconfig
   
   version: ""
 - 
-  category: media-gfx
+  category: media-libs
   description: ""
   license: ""
-  name: graphicsmagick
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtprintsupport
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtwidgets
+  name: libzmf
   
   version: ""
 - 
@@ -250,12 +166,96 @@ requires:
   
   version: ""
 - 
+  category: app-text
+  description: ""
+  license: ""
+  name: hunspell
+  
+  version: ""
+- 
+  category: media-gfx
+  description: ""
+  license: ""
+  name: graphicsmagick
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: icu
+  
+  version: "58.2"
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtcore
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libpagemaker
+  
+  version: ""
+- 
   category: dev-libs
   description: ""
   license: ""
   name: boost
   
   version: "1.67"
+- 
+  category: dev-games
+  description: ""
+  license: ""
+  name: openscenegraph
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtprintsupport
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libfreehand
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libcdr
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jpeg
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: libmspub
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: librevenge
+  
+  version: ""
 uri:
 - mirror://sourceforge/project/scribus/scribus-devel/1.5.5/scribus-1.5.5.tar.xz
 use_flags:

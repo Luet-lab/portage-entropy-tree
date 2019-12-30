@@ -5,34 +5,6 @@ license: LGPL-2.1+
 name: dealii
 requires:
 - 
-  category: sci-mathematics
-  description: ""
-  license: ""
-  name: petsc[mpi=]
-  
-  version: ""
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: symengine
-  
-  version: "0.4"
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: adolc
-  
-  version: ""
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: nvidia-cuda-sdk
-  
-  version: ""
-- 
   category: sci-libs
   description: ""
   license: ""
@@ -47,66 +19,24 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: sci-libs
   description: ""
   license: ""
-  name: lapack
+  name: sundials
   
-  version: ""
+  version: "4"
 - 
-  category: virtual
+  category: dev-cpp
   description: ""
   license: ""
-  name: mpi
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: bzip2
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
+  name: tbb
   
   version: ""
 - 
   category: sci-libs
   description: ""
   license: ""
-  name: netcdf-cxx
-  
-  version: ""
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: p4est
-  
-  version: ""
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: umfpack
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: boost
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: assimp
+  name: adolc
   
   version: ""
 - 
@@ -124,17 +54,24 @@ requires:
   
   version: "4"
 - 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: netcdf-cxx
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: opencascade
+  
+  version: ""
+- 
   category: sci-mathematics
   description: ""
   license: ""
   name: slepc[mpi=]
-  
-  version: ""
-- 
-  category: dev-cpp
-  description: ""
-  license: ""
-  name: tbb
   
   version: ""
 - 
@@ -145,6 +82,13 @@ requires:
   
   version: ""
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: boost
+  
+  version: ""
+- 
   category: sci-libs
   description: ""
   license: ""
@@ -152,10 +96,24 @@ requires:
   
   version: ""
 - 
-  category: dev-cpp
+  category: media-libs
   description: ""
   license: ""
-  name: muParser
+  name: assimp
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: lapack
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: mpi
   
   version: ""
 - 
@@ -169,7 +127,49 @@ requires:
   category: sci-libs
   description: ""
   license: ""
-  name: opencascade
+  name: umfpack
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: symengine
+  
+  version: "0.4"
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: bzip2
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: nvidia-cuda-sdk
+  
+  version: ""
+- 
+  category: dev-cpp
+  description: ""
+  license: ""
+  name: muParser
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: p4est
+  
+  version: ""
+- 
+  category: sci-mathematics
+  description: ""
+  license: ""
+  name: petsc[mpi=]
   
   version: ""
 - 
@@ -180,12 +180,12 @@ requires:
   
   version: ""
 - 
-  category: sci-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: sundials
+  name: zlib
   
-  version: "4"
+  version: ""
 uri:
 - https://github.com/dealii/dealii/releases/download/v9.1.1/dealii-9.1.1.tar.gz ->
   dealii-9.1.1.tar.gz

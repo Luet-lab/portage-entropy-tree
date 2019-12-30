@@ -4,7 +4,14 @@ conflicts:
   category: net-mail
   description: ""
   license: ""
-  name: bincimap
+  name: uw-imap
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: courier
   
   version: ""
 - 
@@ -18,14 +25,7 @@ conflicts:
   category: net-mail
   description: ""
   license: ""
-  name: uw-imap
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: courier
+  name: bincimap
   
   version: ""
 description: An IMAP daemon designed specifically for maildirs
@@ -33,17 +33,45 @@ license: GPL-3
 name: courier-imap
 requires:
 - 
-  category: net-dns
+  category: dev-libs
   description: ""
   license: ""
-  name: libidn
+  name: libressl
   
   version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: courier-unicode
+  
+  version: "2"
 - 
   category: sec-policy
   description: ""
   license: ""
   name: selinux-courier
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: fam
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: gdbm
+  
+  version: 1.8.0
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: db
   
   version: ""
 - 
@@ -61,13 +89,6 @@ requires:
   
   version: 0.66.4
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: gdbm
-  
-  version: 1.8.0
-- 
   category: net-mail
   description: ""
   license: ""
@@ -75,17 +96,10 @@ requires:
   
   version: 0.00-r8
 - 
-  category: virtual
+  category: net-dns
   description: ""
   license: ""
-  name: fam
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: db
+  name: libidn
   
   version: ""
 - 
@@ -95,20 +109,6 @@ requires:
   name: gnutls
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: courier-unicode
-  
-  version: "2"
 uri:
 - mirror://sourceforge/courier/courier-imap-5.0.7.tar.bz2
 use_flags:

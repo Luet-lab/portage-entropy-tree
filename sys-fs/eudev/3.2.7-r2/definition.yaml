@@ -1,6 +1,20 @@
 category: sys-fs
 conflicts:
 - 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: udev
+  
+  version: ""
+- 
   category: <sys-libs
   description: ""
   license: ""
@@ -15,26 +29,12 @@ conflicts:
   
   version: ""
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: ""
-- 
   category: <sys-fs
   description: ""
   license: ""
   name: lvm2
   
   version: 2.02.103
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: udev
-  
-  version: ""
 - 
   category: <sec-policy
   description: ""
@@ -47,12 +47,26 @@ license: LGPL-2.1 MIT GPL-2
 name: eudev
 requires:
 - 
-  category: sys-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: libselinux
+  name: kmod
   
-  version: 2.1.9
+  version: "16"
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: input
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: kvm
+  
+  version: ""
 - 
   category: acct-group
   description: ""
@@ -68,20 +82,6 @@ requires:
   
   version: "2.20"
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: kmod
-  
-  version: "16"
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: kvm
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
@@ -89,12 +89,12 @@ requires:
   
   version: "1.38"
 - 
-  category: acct-group
+  category: sys-libs
   description: ""
   license: ""
-  name: input
+  name: libselinux
   
-  version: ""
+  version: 2.1.9
 uri:
 - https://dev.gentoo.org/~blueness/eudev/eudev-3.2.7.tar.gz
 use_flags:

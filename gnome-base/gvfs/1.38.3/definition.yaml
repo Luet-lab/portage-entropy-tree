@@ -5,17 +5,31 @@ license: LGPL-2+
 name: gvfs
 requires:
 - 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnome-online-accounts
+  
+  version: 3.17.1
+- 
   category: dev-libs
   description: ""
   license: ""
-  name: glib
+  name: libgdata
   
-  version: 2.57.2
+  version: 0.17.9
 - 
-  category: sys-apps
+  category: dev-libs
   description: ""
   license: ""
-  name: dbus
+  name: libgcrypt
+  
+  version: 1.2.2
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gcr
   
   version: ""
 - 
@@ -26,19 +40,19 @@ requires:
   
   version: ""
 - 
-  category: app-pda
+  category: net-libs
   description: ""
   license: ""
-  name: libimobiledevice
+  name: libsoup
   
-  version: "1.2"
+  version: 2.42.0
 - 
-  category: media-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: libmtp
+  name: systemd
   
-  version: 1.1.15
+  version: "206"
 - 
   category: net-dns
   description: ""
@@ -50,23 +64,9 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libgudev
+  name: libcdio-paranoia
   
-  version: "147"
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: elogind
-  
-  version: "229"
-- 
-  category: app-pda
-  description: ""
-  license: ""
-  name: libplist
-  
-  version: "1"
+  version: 0.78.2
 - 
   category: sys-auth
   description: ""
@@ -75,52 +75,10 @@ requires:
   
   version: "0.114"
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libusb
-  
-  version: 1.0.21
-- 
-  category: net-fs
-  description: ""
-  license: ""
-  name: libnfs
-  
-  version: 1.9.8
-- 
   category: sys-libs
   description: ""
   license: ""
   name: libcap
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: "206"
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnome-online-accounts
-  
-  version: 3.17.1
-- 
-  category: net-fs
-  description: ""
-  license: ""
-  name: samba
-  
-  version: "4"
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: openssh
   
   version: ""
 - 
@@ -134,14 +92,14 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libgdata
+  name: libusb
   
-  version: 0.17.9
+  version: 1.0.21
 - 
-  category: app-crypt
+  category: app-arch
   description: ""
   license: ""
-  name: gcr
+  name: libarchive
   
   version: ""
 - 
@@ -155,9 +113,58 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libcdio-paranoia
+  name: glib
   
-  version: 0.78.2
+  version: 2.57.2
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: elogind
+  
+  version: "229"
+- 
+  category: net-fs
+  description: ""
+  license: ""
+  name: libnfs
+  
+  version: 1.9.8
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: openssh
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: libsecret
+  
+  version: ""
+- 
+  category: net-fs
+  description: ""
+  license: ""
+  name: samba
+  
+  version: "4"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libcdio
+  
+  version: ""
 - 
   category: media-libs
   description: ""
@@ -169,9 +176,23 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libgcrypt
+  name: libgudev
   
-  version: 1.2.2
+  version: "147"
+- 
+  category: app-pda
+  description: ""
+  license: ""
+  name: libimobiledevice
+  
+  version: "1.2"
+- 
+  category: app-pda
+  description: ""
+  license: ""
+  name: libplist
+  
+  version: "1"
 - 
   category: media-libs
   description: ""
@@ -180,33 +201,12 @@ requires:
   
   version: ""
 - 
-  category: app-arch
+  category: media-libs
   description: ""
   license: ""
-  name: libarchive
+  name: libmtp
   
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libcdio
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libsoup
-  
-  version: 2.42.0
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: libsecret
-  
-  version: ""
+  version: 1.1.15
 uri: []
 use_flags:
 - afp

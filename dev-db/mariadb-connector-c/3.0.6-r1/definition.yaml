@@ -1,6 +1,20 @@
 category: dev-db
 conflicts:
 - 
+  category: '>=dev-db'
+  description: ""
+  license: ""
+  name: mariadb-10.2.0[client-libs(+)]
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mariadb[client-libs(+)]
+  
+  version: ""
+- 
   category: dev-db
   description: ""
   license: ""
@@ -11,7 +25,7 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: percona-server[client-libs(+)]
+  name: mysql-connector-c
   
   version: ""
 - 
@@ -32,48 +46,13 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mariadb[client-libs(+)]
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mysql-connector-c
-  
-  version: ""
-- 
-  category: '>=dev-db'
-  description: ""
-  license: ""
-  name: mariadb-10.2.0[client-libs(+)]
+  name: percona-server[client-libs(+)]
   
   version: ""
 description: C client library for MariaDB/MySQL
 license: LGPL-2.1
 name: mariadb-connector-c
 requires:
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnutls
-  
-  version: 3.3.24
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libiconv
-  
-  version: ""
 - 
   category: net-misc
   description: ""
@@ -86,6 +65,13 @@ requires:
   description: ""
   license: ""
   name: heimdal
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libiconv
   
   version: ""
 - 
@@ -102,6 +88,20 @@ requires:
   name: openssl
   
   version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: 3.3.24
 uri:
 - https://downloads.mariadb.org/f/connector-c-3.0.6/mariadb-connector-c-3.0.6-src.tar.gz?serve
   -> mariadb-connector-c-3.0.6-src.tar.gz

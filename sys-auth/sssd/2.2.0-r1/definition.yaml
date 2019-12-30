@@ -5,13 +5,6 @@ license: GPL-3
 name: sssd
 requires:
 - 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-sssd
-  
-  version: 2.20120725-r9
-- 
   category: dev-libs
   description: ""
   license: ""
@@ -22,44 +15,23 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: ding-libs
+  name: libpcre
   
-  version: "0.2"
+  version: "8.30"
 - 
-  category: sys-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: tdb
+  name: keyutils
   
-  version: 1.2.9
+  version: "1.5"
 - 
-  category: net-nds
+  category: dev-libs
   description: ""
   license: ""
-  name: openldap
+  name: cyrus-sasl
   
-  version: 2.4.30
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: c-ares
-  
-  version: 1.10.0-r1
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: 0-r1
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: talloc
-  
-  version: 2.0.7
+  version: 2.1.25-r3
 - 
   category: sys-libs
   description: ""
@@ -68,26 +40,26 @@ requires:
   
   version: 0.9.16
 - 
-  category: dev-libs
+  category: app-crypt
   description: ""
   license: ""
-  name: nss
+  name: mit-krb5
   
-  version: 3.12.9
+  version: 1.12.2
 - 
-  category: net-dns
+  category: sys-libs
   description: ""
   license: ""
-  name: c-ares
+  name: libselinux
   
-  version: 1.7.4
+  version: 2.1.9
 - 
-  category: net-dns
+  category: net-fs
   description: ""
   license: ""
-  name: bind-tools
+  name: cifs-utils
   
-  version: "9.9"
+  version: ""
 - 
   category: sys-apps
   description: ""
@@ -95,6 +67,20 @@ requires:
   name: dbus
   
   version: "1.6"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: glibc
+  
+  version: "2.17"
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: bind-tools
+  
+  version: "9.9"
 - 
   category: sys-devel
   description: ""
@@ -110,19 +96,54 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: sec-policy
   description: ""
   license: ""
-  name: popt
+  name: selinux-sssd
   
-  version: "1.16"
+  version: 2.20120725-r9
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: 0-r1
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libpcre
+  name: ding-libs
   
-  version: "8.30"
+  version: "0.2"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nss
+  
+  version: 3.12.9
+- 
+  category: net-fs
+  description: ""
+  license: ""
+  name: samba
+  
+  version: 4.10.2
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libnl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: talloc
+  
+  version: 2.0.7
 - 
   category: dev-libs
   description: ""
@@ -131,19 +152,19 @@ requires:
   
   version: ""
 - 
-  category: net-misc
+  category: net-dns
   description: ""
   license: ""
-  name: curl
+  name: c-ares
   
-  version: ""
+  version: 1.10.0-r1
 - 
-  category: net-fs
+  category: sys-libs
   description: ""
   license: ""
-  name: cifs-utils
+  name: libsemanage
   
-  version: ""
+  version: "2.1"
 - 
   category: sys-libs
   description: ""
@@ -159,47 +180,40 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: net-dns
   description: ""
   license: ""
-  name: libselinux
+  name: c-ares
   
-  version: 2.1.9
+  version: 1.7.4
 - 
-  category: dev-libs
+  category: net-misc
   description: ""
   license: ""
-  name: libnl
+  name: curl
   
   version: ""
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libsemanage
-  
-  version: "2.1"
-- 
   category: dev-libs
   description: ""
   license: ""
-  name: cyrus-sasl
+  name: popt
   
-  version: 2.1.25-r3
+  version: "1.16"
 - 
-  category: net-fs
+  category: sys-libs
   description: ""
   license: ""
-  name: samba
+  name: tdb
   
-  version: 4.10.2
+  version: 1.2.9
 - 
-  category: sys-apps
+  category: net-nds
   description: ""
   license: ""
-  name: keyutils
+  name: openldap
   
-  version: "1.5"
+  version: 2.4.30
 - 
   category: app-crypt
   description: ""
@@ -207,20 +221,6 @@ requires:
   name: mit-krb5
   
   version: 1.10.3
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: mit-krb5
-  
-  version: 1.12.2
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: glibc
-  
-  version: "2.17"
 uri:
 - http://releases.pagure.org/SSSD/sssd/sssd-2.2.0.tar.gz
 use_flags:

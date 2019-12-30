@@ -8,37 +8,30 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXcomposite
-  
-  version: "0.2"
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gnome-desktop
+  name: libxkbfile
   
   version: ""
 - 
-  category: x11-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libXext
+  name: gobject-introspection
   
-  version: ""
+  version: "1.42"
 - 
-  category: x11-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libXrandr
+  name: libinput
   
-  version: "1.5"
+  version: "1.4"
 - 
-  category: x11-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libxkbcommon-0.4.3[X]
+  name: wayland-protocols
   
-  version: ""
+  version: "1.9"
 - 
   category: dev-libs
   description: ""
@@ -47,19 +40,40 @@ requires:
   
   version: 2.5.3
 - 
-  category: x11-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: gdk-pixbuf
+  name: glib
   
-  version: "2"
+  version: 2.53.2
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXi
+  name: libXrender
   
-  version: 1.7.4
+  version: ""
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: xkeyboard-config
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libudev
+  
+  version: "136"
+- 
+  category: x11-base
+  description: ""
+  license: ""
+  name: xorg-server
+  
+  version: ""
 - 
   category: media-libs
   description: ""
@@ -73,89 +87,26 @@ requires:
   license: ""
   name: libXcomposite
   
-  version: "0.4"
+  version: "0.2"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXi
+  
+  version: 1.7.4
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXrandr
+  
+  version: "1.5"
 - 
   category: gnome-extra
   description: ""
   license: ""
   name: zenity
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libinput
-  
-  version: "1.4"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libdrm
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libICE
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXcursor
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXdamage
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxcb
-  
-  version: ""
-- 
-  category: x11-misc
-  description: ""
-  license: ""
-  name: xkeyboard-config
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: 2.53.2
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: startup-notification
-  
-  version: "0.7"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libSM
   
   version: ""
 - 
@@ -166,26 +117,26 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXfixes
-  
-  version: "3"
-- 
   category: dev-libs
   description: ""
   license: ""
-  name: wayland-protocols
+  name: libwacom
   
-  version: "1.9"
+  version: "0.13"
 - 
-  category: virtual
+  category: media-libs
   description: ""
   license: ""
-  name: libudev
+  name: mesa
   
-  version: "136"
+  version: "10.3"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libdrm
+  
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -197,9 +148,9 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: cairo-1.14[X]
+  name: startup-notification
   
-  version: ""
+  version: "0.7"
 - 
   category: gnome-base
   description: ""
@@ -208,24 +159,31 @@ requires:
   
   version: "3.31"
 - 
-  category: media-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: mesa
+  name: libXcursor
   
   version: ""
 - 
-  category: media-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: mesa
+  name: libXext
   
-  version: "10.3"
+  version: ""
 - 
-  category: x11-base
+  category: x11-libs
   description: ""
   license: ""
-  name: xorg-server
+  name: gdk-pixbuf
+  
+  version: "2"
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gnome-desktop
   
   version: ""
 - 
@@ -239,37 +197,58 @@ requires:
   category: x11-libs
   description: ""
   license: ""
+  name: libXdamage
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXfixes
+  
+  version: "3"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
   name: libXinerama
   
   version: ""
 - 
-  category: x11-libs
+  category: media-libs
   description: ""
   license: ""
-  name: libXrender
+  name: mesa
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libxkbfile
+  name: cairo-1.14[X]
   
   version: ""
 - 
-  category: dev-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: libwacom
+  name: libICE
   
-  version: "0.13"
+  version: ""
 - 
-  category: dev-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: gobject-introspection
+  name: libSM
   
-  version: "1.42"
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXcomposite
+  
+  version: "0.4"
 - 
   category: dev-libs
   description: ""
@@ -284,6 +263,27 @@ requires:
   name: wayland
   
   version: 1.13.0
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxcb
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxkbcommon-0.4.3[X]
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
 uri:
 - https://dev.gentoo.org/~leio/distfiles/mutter-3.26.2-patchset.tar.xz
 use_flags:

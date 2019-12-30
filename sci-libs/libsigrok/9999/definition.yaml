@@ -6,24 +6,10 @@ license: GPL-3
 name: libsigrok
 requires:
 - 
-  category: dev-python
+  category: dev-libs
   description: ""
   license: ""
-  name: pygobject
-  
-  version: 3.0.0
-- 
-  category: dev-embedded
-  description: ""
-  license: ""
-  name: libftdi
-  
-  version: "0.16"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libieee1284
+  name: glib-2.32.0[static-libs(+)]
   
   version: ""
 - 
@@ -34,12 +20,19 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: dev-libs
   description: ""
   license: ""
-  name: jre
+  name: glib
   
-  version: "1.4"
+  version: 2.32.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libzip
+  
+  version: "0.8"
 - 
   category: dev-cpp
   description: ""
@@ -48,12 +41,40 @@ requires:
   
   version: ""
 - 
+  category: dev-embedded
+  description: ""
+  license: ""
+  name: libftdi
+  
+  version: "0.16"
+- 
   category: dev-libs
   description: ""
   license: ""
-  name: libzip
+  name: libserialport-0.1.1[static-libs(+)]
   
-  version: "0.8"
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jre
+  
+  version: "1.4"
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pygobject
+  
+  version: 3.0.0
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libieee1284
+  
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -68,27 +89,6 @@ requires:
   name: libusb
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib-2.32.0[static-libs(+)]
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libserialport-0.1.1[static-libs(+)]
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: 2.32.0
 uri: []
 use_flags:
 - cxx

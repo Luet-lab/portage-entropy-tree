@@ -11,21 +11,7 @@ conflicts:
   category: sys-cluster
   description: ""
   license: ""
-mpi
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
   name: mpiexec
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: mpich2
   
   version: ""
 - 
@@ -35,17 +21,45 @@ mpi
   name: pmix
   
   version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+mpi
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: mpich2
+  
+  version: ""
 description: A high-performance message passing library (MPI)
 license: BSD
 name: openmpi
 requires:
 - 
-  category: sys-cluster
+  category: sys-libs
   description: ""
   license: ""
-  name: slurm
+  name: zlib
+  
+  version: 1.2.8-r1
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: infinipath-psm
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libevent
+  
+  version: 2.0.22
 - 
   category: dev-util
   description: ""
@@ -53,6 +67,13 @@ requires:
   name: nvidia-cuda-toolkit
   
   version: 6.5.19-r1
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: knem
+  
+  version: ""
 - 
   category: sys-fabric
   description: ""
@@ -68,19 +89,12 @@ requires:
   
   version: ""
 - 
-  category: sys-fabric
+  category: sys-cluster
   description: ""
   license: ""
-  name: librdmacm
+  name: slurm
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libevent
-  
-  version: 2.0.22
 - 
   category: dev-libs
   description: ""
@@ -89,24 +103,10 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: 1.2.8-r1
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: knem
-  
-  version: ""
-- 
   category: sys-fabric
   description: ""
   license: ""
-  name: infinipath-psm
+  name: librdmacm
   
   version: ""
 - 

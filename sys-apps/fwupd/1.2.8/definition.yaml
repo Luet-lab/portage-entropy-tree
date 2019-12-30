@@ -5,26 +5,54 @@ license: LGPL-2.1+
 name: fwupd
 requires:
 - 
-  category: sys-auth
+  category: app-arch
   description: ""
   license: ""
-  name: elogind
+  name: libarchive
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgpg-error
   
   version: ""
 - 
   category: dev-python
   description: ""
   license: ""
-  name: pygobject
+  name: pycairo
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: efivar
   
   version: ""
 - 
   category: net-libs
   description: ""
   license: ""
-  name: libsoup
+  name: gnutls
   
-  version: 2.51.92
+  version: 3.4.4.1
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libsmbios
+  
+  version: 2.4.0
 - 
   category: sys-apps
   description: ""
@@ -43,23 +71,44 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: glib
+  name: libxmlb
   
-  version: 2.45.8
+  version: 0.1.7
 - 
-  category: dev-libs
+  category: sys-auth
   description: ""
   license: ""
-  name: libgpg-error
+  name: polkit
+  
+  version: "0.103"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: gcab
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libxmlb
+  name: libgusb
   
-  version: 0.1.7
+  version: 0.2.9
 - 
   category: x11-misc
   description: ""
@@ -75,20 +124,6 @@ requires:
   
   version: 1.0.0
 - 
-  category: media-libs
-  description: ""
-  license: ""
-  name: freetype
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: efivar
-  
-  version: ""
-- 
   category: sys-apps
   description: ""
   license: ""
@@ -96,10 +131,10 @@ requires:
   
   version: ""
 - 
-  category: media-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: fontconfig
+  name: cairo
   
   version: ""
 - 
@@ -117,6 +152,20 @@ requires:
   
   version: ""
 - 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pygobject
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libsoup
+  
+  version: 2.51.92
+- 
   category: virtual
   description: ""
   license: ""
@@ -124,66 +173,10 @@ requires:
   
   version: ""
 - 
-  category: app-arch
-  description: ""
-  license: ""
-  name: libarchive
-  
-  version: ""
-- 
   category: sys-auth
   description: ""
   license: ""
-  name: polkit
-  
-  version: "0.103"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libsmbios
-  
-  version: 2.4.0
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: gpgme
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: gcab
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgusb
-  
-  version: 0.2.9
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnutls
-  
-  version: 3.4.4.1
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: cairo
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
+  name: elogind
   
   version: ""
 - 
@@ -194,19 +187,26 @@ requires:
   
   version: ""
 - 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pycairo
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
   name: efivar
   
   version: "33"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.45.8
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gpgme
+  
+  version: ""
 uri:
 - https://github.com/hughsie/fwupd/archive/1.2.8.tar.gz -> fwupd-1.2.8.tar.gz
 use_flags:

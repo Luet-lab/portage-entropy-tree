@@ -8,6 +8,27 @@ conflicts:
   
   version: 2.1-r1
 - 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: sysvinit
+  
+  version: ""
+- 
+  category: <app-shells
+  description: ""
+  license: ""
+  name: gentoo-bashcomp
+  
+  version: "20180302"
+- 
+  category: <app-shells
+  description: ""
+  license: ""
+  name: gentoo-zsh-completions
+  
+  version: "20180228"
+- 
   category: <sys-process
   description: ""
   license: ""
@@ -21,31 +42,17 @@ conflicts:
   name: udev-init-scripts
   
   version: "27"
-- 
-  category: <app-shells
-  description: ""
-  license: ""
-  name: gentoo-zsh-completions
-  
-  version: "20180228"
-- 
-  category: <app-shells
-  description: ""
-  license: ""
-  name: gentoo-bashcomp
-  
-  version: "20180302"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: sysvinit
-  
-  version: ""
 description: OpenRC manages the services, startup and shutdown of a host
 license: BSD-2
 name: openrc
 requires:
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: sysvinit-2.86-r6[selinux?]
+  
+  version: ""
 - 
   category: sys-auth
   description: ""
@@ -54,34 +61,6 @@ requires:
   
   version: ""
 - 
-  category: sys-process
-  description: ""
-  license: ""
-  name: audit
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: "2.6"
-- 
-  category: app-shells
-  description: ""
-  license: ""
-  name: bash
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-openrc
-  
-  version: 2.20170204-r4
-- 
   category: sys-libs
   description: ""
   license: ""
@@ -89,10 +68,10 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: sys-apps
   description: ""
   license: ""
-  name: tmpfiles
+  name: policycoreutils
   
   version: ""
 - 
@@ -103,6 +82,20 @@ requires:
   
   version: ""
 - 
+  category: app-shells
+  description: ""
+  license: ""
+  name: bash
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: audit
+  
+  version: ""
+- 
   category: sys-process
   description: ""
   license: ""
@@ -110,10 +103,17 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: sys-libs
   description: ""
   license: ""
-  name: sysvinit-2.86-r6[selinux?]
+  name: libselinux
+  
+  version: "2.6"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: tmpfiles
   
   version: ""
 - 
@@ -124,12 +124,12 @@ requires:
   
   version: 2.20170204-r4
 - 
-  category: sys-apps
+  category: sec-policy
   description: ""
   license: ""
-  name: policycoreutils
+  name: selinux-openrc
   
-  version: ""
+  version: 2.20170204-r4
 uri:
 - https://github.com/openrc/openrc/archive/0.42.1.tar.gz -> openrc-0.42.1.tar.gz
 use_flags:
