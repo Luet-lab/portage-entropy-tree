@@ -6,19 +6,12 @@ license: GPL-2
 name: openvpn
 requires:
 - 
-  category: sys-apps
+  category: dev-libs
   description: ""
   license: ""
-  name: systemd
+  name: pkcs11-helper
   
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-openvpn
-  
-  version: ""
+  version: "1.11"
 - 
   category: sys-apps
   description: ""
@@ -34,10 +27,10 @@ requires:
   
   version: 1.60_p20160215155418
 - 
-  category: sys-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: pam
+  name: libressl
   
   version: ""
 - 
@@ -58,9 +51,16 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: pkcs11-helper
+  name: lzo
   
-  version: "1.11"
+  version: "1.07"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -69,19 +69,19 @@ requires:
   
   version: 0.9.8
 - 
-  category: dev-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: libressl
+  name: systemd
   
   version: ""
 - 
-  category: dev-libs
+  category: sec-policy
   description: ""
   license: ""
-  name: lzo
+  name: selinux-openvpn
   
-  version: "1.07"
+  version: ""
 uri:
 - https://swupdate.openvpn.net/community/releases/openvpn-2.4.6.tar.gz
 use_flags:

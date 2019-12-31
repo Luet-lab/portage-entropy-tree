@@ -5,6 +5,20 @@ license: NVIDIA-CUDA
 name: nvidia-cuda-toolkit
 requires:
 - 
+  category: x11-drivers
+  description: ""
+  license: ""
+  name: nvidia-drivers-396.24[X,uvm]
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libtermcap-compat
+  
+  version: ""
+- 
   category: sys-libs
   description: ""
   license: ""
@@ -25,20 +39,6 @@ requires:
   name: gcc
   
   version: "9"
-- 
-  category: x11-drivers
-  description: ""
-  license: ""
-  name: nvidia-drivers-396.24[X,uvm]
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libtermcap-compat
-  
-  version: ""
 uri:
 - https://developer.nvidia.com/compute/cuda//Prod/local_installers/cuda_10.1.105_418.39_linux.run
   -> cuda_10.1.105_418.39_linux.run

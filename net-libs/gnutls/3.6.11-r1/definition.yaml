@@ -5,12 +5,19 @@ license: GPL-3 LGPL-2.1+
 name: gnutls
 requires:
 - 
-  category: sys-devel
+  category: dev-libs
   description: ""
   license: ""
-  name: autogen
+  name: gmp
   
-  version: ""
+  version: 5.1.3-r1
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: unbound
+  
+  version: 1.4.20
 - 
   category: virtual
   description: ""
@@ -43,27 +50,6 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: nettle
-  
-  version: 3.4.1
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: unbound
-  
-  version: 1.4.20
-- 
-  category: dev-scheme
-  description: ""
-  license: ""
-  name: guile
-  
-  version: "2"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
   name: libunistring
   
   version: ""
@@ -71,9 +57,23 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: gmp
+  name: nettle
   
-  version: 5.1.3-r1
+  version: 3.4.1
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: autogen
+  
+  version: ""
+- 
+  category: dev-scheme
+  description: ""
+  license: ""
+  name: guile
+  
+  version: "2"
 uri:
 - mirror://gnupg/gnutls/v/gnutls-3.6.11.tar.xz
 use_flags:

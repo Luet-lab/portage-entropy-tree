@@ -6,59 +6,59 @@ license: "\n\tGPL-3+\n\tGPL-3\n\tGPL-2+\n\tGPL-2\n\tGPL-1+\n\tLGPL-3+\n\tLGPL-2.
 name: calibre
 requires:
 - 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtwidgets
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
+  
+  version: "2"
+- 
   category: dev-libs
   description: ""
   license: ""
-  name: hyphen
+  name: libinput
   
   version: ""
 - 
   category: dev-python
   description: ""
   license: ""
-  name: PyQt5
+  name: netifaces
   
-  version: "5.12"
+  version: 0.10.5
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: apsw
+  
+  version: 3.25.2_p1
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: 1.10.8
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: markdown
+  
+  version: 3.0.1
 - 
   category: dev-qt
   description: ""
   license: ""
-  name: qtwebengine
-  
-  version: "5.12"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: 1.2.11
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: mechanize
-  
-  version: 0.3.5
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: msgpack
-  
-  version: 0.5.6
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: desktop-file-utils
+  name: qtdbus
   
   version: ""
 - 
@@ -69,17 +69,17 @@ requires:
   
   version: ""
 - 
-  category: app-pda
+  category: virtual
   description: ""
   license: ""
-  name: usbmuxd
+  name: libudev
   
-  version: 1.0.8
+  version: ""
 - 
-  category: media-libs
+  category: dev-python
   description: ""
   license: ""
-  name: fontconfig
+  name: regex
   
   version: ""
 - 
@@ -100,23 +100,44 @@ requires:
   category: x11-misc
   description: ""
   license: ""
-  name: xdg-utils
+  name: shared-mime-info
   
-  version: 1.0.2-r2
+  version: ""
 - 
-  category: dev-python
+  category: app-text
   description: ""
   license: ""
-  name: css-parser
+  name: hunspell
   
-  version: 1.0.4
+  version: "1.7"
 - 
-  category: dev-python
+  category: dev-libs
   description: ""
   license: ""
-  name: lxml
+  name: chmlib
   
-  version: 3.8.0
+  version: "0.40"
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtcore
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXrender
+  
+  version: ""
+- 
+  category: app-pda
+  description: ""
+  license: ""
+  name: usbmuxd
+  
+  version: 1.0.8
 - 
   category: app-pda
   description: ""
@@ -125,19 +146,75 @@ requires:
   
   version: 1.2.0
 - 
-  category: media-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libwmf
+  name: glib
   
-  version: 0.2.8
+  version: ""
 - 
   category: dev-python
   description: ""
   license: ""
-  name: pillow
+  name: html2text
   
-  version: 3.2.0
+  version: 2019.8.11
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: python-dateutil
+  
+  version: 2.5.3
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtgui
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: chardet
+  
+  version: 3.0.3
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: html5-parser
+  
+  version: 0.4.3
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pygments
+  
+  version: 2.3.1
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: poppler
+  
+  version: 0.26.5
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: lxml
+  
+  version: 3.8.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: PyQtWebEngine
+  
+  version: "5.12"
 - 
   category: media-fonts
   description: ""
@@ -146,19 +223,12 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libXext
+  name: icu
   
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: freetype
-  
-  version: "2"
+  version: "57.1"
 - 
   category: dev-python
   description: ""
@@ -174,6 +244,34 @@ requires:
   
   version: 1.2.4
 - 
+  category: dev-python
+  description: ""
+  license: ""
+  name: msgpack
+  
+  version: 0.5.6
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pillow
+  
+  version: 3.2.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libmtp
+  
+  version: 1.1.11
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libwmf
+  
+  version: 0.2.8
+- 
   category: app-text
   description: ""
   license: ""
@@ -184,126 +282,35 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: apsw
+  name: css-parser
   
-  version: 3.25.2_p1
+  version: 1.0.4
 - 
   category: dev-python
   description: ""
   license: ""
-  name: feedparser
+  name: psutil
   
-  version: 5.2.1
+  version: 4.3.0
 - 
   category: dev-qt
   description: ""
   license: ""
-  name: qtgui
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libmtp
-  
-  version: 1.1.11
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: chardet
-  
-  version: 3.0.3
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: dnspython
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: html2text
-  
-  version: 2019.8.11
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: PyQtWebEngine
+  name: qtwebengine
   
   version: "5.12"
 - 
-  category: dev-qt
+  category: x11-libs
   description: ""
   license: ""
-  name: qtdbus
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: poppler
-  
-  version: 0.26.5
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: netifaces
-  
-  version: 0.10.5
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtcore
-  
-  version: ""
-- 
-  category: x11-misc
-  description: ""
-  license: ""
-  name: shared-mime-info
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: python-dateutil
-  
-  version: 2.5.3
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtwidgets
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libudev
+  name: libXext
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: chmlib
-  
-  version: "0.40"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libinput
+  name: hyphen
   
   version: ""
 - 
@@ -314,33 +321,19 @@ requires:
   
   version: ""
 - 
-  category: app-text
+  category: media-libs
   description: ""
   license: ""
-  name: hunspell
+  name: fontconfig
   
-  version: "1.7"
+  version: ""
 - 
-  category: sys-apps
+  category: x11-misc
   description: ""
   license: ""
-  name: dbus
+  name: xdg-utils
   
-  version: 1.10.8
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pygments
-  
-  version: 2.3.1
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: icu
-  
-  version: "57.1"
+  version: 1.0.2-r2
 - 
   category: dev-libs
   description: ""
@@ -352,21 +345,21 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: psutil
+  name: feedparser
   
-  version: 4.3.0
+  version: 5.2.1
 - 
-  category: x11-libs
+  category: dev-python
   description: ""
   license: ""
-  name: libXrender
+  name: mechanize
   
-  version: ""
+  version: 0.3.5
 - 
-  category: virtual
+  category: dev-util
   description: ""
   license: ""
-  name: libusb
+  name: desktop-file-utils
   
   version: ""
 - 
@@ -380,21 +373,28 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: html5-parser
+  name: dnspython
   
-  version: 0.4.3
+  version: ""
 - 
   category: dev-python
   description: ""
   license: ""
-  name: markdown
+  name: PyQt5
   
-  version: 3.0.1
+  version: "5.12"
 - 
-  category: dev-python
+  category: sys-libs
   description: ""
   license: ""
-  name: regex
+  name: zlib
+  
+  version: 1.2.11
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libusb
   
   version: ""
 uri:

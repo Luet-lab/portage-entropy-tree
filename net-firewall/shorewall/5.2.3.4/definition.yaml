@@ -11,7 +11,7 @@ conflicts:
   category: net-firewall
   description: ""
   license: ""
-  name: shorewall-lite
+  name: shorewall-core
   
   version: ""
 - 
@@ -25,7 +25,7 @@ conflicts:
   category: net-firewall
   description: ""
   license: ""
-  name: shorewall6-lite
+  name: shorewall-lite
   
   version: ""
 - 
@@ -39,27 +39,13 @@ conflicts:
   category: net-firewall
   description: ""
   license: ""
-  name: shorewall-core
+  name: shorewall6-lite
   
   version: ""
 description: A high-level tool for configuring Netfilter
 license: GPL-2
 name: shorewall
 requires:
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: perl
-  
-  version: "5.16"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: coreutils
-  
-  version: "8.20"
 - 
   category: sys-devel
   description: ""
@@ -78,16 +64,9 @@ requires:
   category: sys-apps
   description: ""
   license: ""
-  name: iproute2
+  name: coreutils
   
-  version: 3.8.0
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: perl-Digest-SHA
-  
-  version: ""
+  version: "8.20"
 - 
   category: sec-policy
   description: ""
@@ -95,6 +74,27 @@ requires:
   name: selinux-shorewall
   
   version: 2.20161023-r3
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: iproute2
+  
+  version: 3.8.0
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: perl
+  
+  version: "5.16"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: perl-Digest-SHA
+  
+  version: ""
 - 
   category: net-firewall
   description: ""

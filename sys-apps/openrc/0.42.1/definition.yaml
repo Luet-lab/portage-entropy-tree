@@ -1,13 +1,6 @@
 category: sys-apps
 conflicts:
 - 
-  category: <sys-apps
-  description: ""
-  license: ""
-  name: baselayout
-  
-  version: 2.1-r1
-- 
   category: sys-apps
   description: ""
   license: ""
@@ -29,6 +22,13 @@ conflicts:
   
   version: "20180228"
 - 
+  category: <sys-fs
+  description: ""
+  license: ""
+  name: udev-init-scripts
+  
+  version: "27"
+- 
   category: <sys-process
   description: ""
   license: ""
@@ -36,12 +36,12 @@ conflicts:
   
   version: 3.3.9-r2
 - 
-  category: <sys-fs
+  category: <sys-apps
   description: ""
   license: ""
-  name: udev-init-scripts
+  name: baselayout
   
-  version: "27"
+  version: 2.1-r1
 description: OpenRC manages the services, startup and shutdown of a host
 license: BSD-2
 name: openrc
@@ -51,6 +51,48 @@ requires:
   description: ""
   license: ""
   name: sysvinit-2.86-r6[selinux?]
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-base-policy
+  
+  version: 2.20170204-r4
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-openrc
+  
+  version: 2.20170204-r4
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: psmisc
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: audit
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: policycoreutils
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: tmpfiles
   
   version: ""
 - 
@@ -68,10 +110,10 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: app-shells
   description: ""
   license: ""
-  name: policycoreutils
+  name: bash
   
   version: ""
 - 
@@ -82,54 +124,12 @@ requires:
   
   version: ""
 - 
-  category: app-shells
-  description: ""
-  license: ""
-  name: bash
-  
-  version: ""
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: audit
-  
-  version: ""
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: psmisc
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
   name: libselinux
   
   version: "2.6"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: tmpfiles
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-base-policy
-  
-  version: 2.20170204-r4
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-openrc
-  
-  version: 2.20170204-r4
 uri:
 - https://github.com/openrc/openrc/archive/0.42.1.tar.gz -> openrc-0.42.1.tar.gz
 use_flags:

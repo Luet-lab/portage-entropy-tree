@@ -1,13 +1,6 @@
 category: sys-fs
 conflicts:
 - 
-  category: <sys-apps
-  description: ""
-  license: ""
-  name: openrc
-  
-  version: "0.11"
-- 
   category: <sys-fs
   description: ""
   license: ""
@@ -21,31 +14,31 @@ conflicts:
   name: lvm-user
   
   version: ""
+- 
+  category: <sys-apps
+  description: ""
+  license: ""
+  name: openrc
+  
+  version: "0.11"
 description: User-land utilities for LVM2 (device-mapper) software
 license: GPL-2
 name: lvm2
 requires:
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: readline
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: sanlock
-  
-  version: ""
-- 
   category: sys-apps
   description: ""
   license: ""
-  name: baselayout
+  name: util-linux
   
-  version: "2.2"
+  version: "2.16"
+- 
+  category: sys-block
+  description: ""
+  license: ""
+  name: thin-provisioning-tools
+  
+  version: 0.3.0
 - 
   category: dev-libs
   description: ""
@@ -61,12 +54,12 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: sys-libs
   description: ""
   license: ""
-  name: systemd
+  name: readline
   
-  version: "205"
+  version: ""
 - 
   category: virtual
   description: ""
@@ -78,23 +71,30 @@ requires:
   category: sys-apps
   description: ""
   license: ""
-  name: util-linux
-  
-  version: "2.16"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
   name: makedev
   
   version: ""
 - 
-  category: sys-block
+  category: sys-cluster
   description: ""
   license: ""
-  name: thin-provisioning-tools
+  name: sanlock
   
-  version: 0.3.0
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "205"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: baselayout
+  
+  version: "2.2"
 uri: []
 use_flags:
 - readline

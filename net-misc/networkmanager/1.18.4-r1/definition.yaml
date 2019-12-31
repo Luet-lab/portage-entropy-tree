@@ -12,26 +12,12 @@ requires:
   
   version: ""
 - 
-  category: net-libs
+  category: sys-auth
   description: ""
   license: ""
-  name: gnutls
+  name: consolekit
   
-  version: "2.12"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.40"
+  version: 1.0.0
 - 
   category: net-firewall
   description: ""
@@ -39,48 +25,6 @@ requires:
   name: iptables
   
   version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: elogind
-  
-  version: "219"
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: modemmanager
-  
-  version: 0.7.991
-- 
-  category: net-wireless
-  description: ""
-  license: ""
-  name: wpa_supplicant
-  
-  version: 0.7.3-r3
-- 
-  category: net-wireless
-  description: ""
-  license: ""
-  name: iwd
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus
-  
-  version: "1.2"
-- 
-  category: net-wireless
-  description: ""
-  license: ""
-  name: bluez
-  
-  version: "5"
 - 
   category: net-misc
   description: ""
@@ -92,55 +36,6 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: jansson
-  
-  version: "2.5"
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: ofono
-  
-  version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: curl
-  
-  version: "7.24"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
-  
-  version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: consolekit
-  
-  version: 1.0.0
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: polkit
-  
-  version: "0.106"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libudev
-  
-  version: "175"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
   name: gobject-introspection
   
   version: 0.10.3
@@ -148,7 +43,14 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libgcrypt
+  name: jansson
+  
+  version: "2.5"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: jansson
   
   version: ""
 - 
@@ -159,34 +61,6 @@ requires:
   
   version: 2.4.5
 - 
-  category: acct-group
-  description: ""
-  license: ""
-  name: plugdev
-  
-  version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: iputils
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: readline
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: jansson
-  
-  version: ""
-- 
   category: sys-apps
   description: ""
   license: ""
@@ -194,12 +68,12 @@ requires:
   
   version: "209"
 - 
-  category: net-dns
+  category: net-misc
   description: ""
   license: ""
-  name: dnsmasq
+  name: curl
   
-  version: ""
+  version: "7.24"
 - 
   category: net-misc
   description: ""
@@ -222,10 +96,10 @@ requires:
   
   version: "3.11"
 - 
-  category: net-dns
+  category: dev-libs
   description: ""
   license: ""
-  name: openresolv
+  name: libgcrypt
   
   version: ""
 - 
@@ -235,6 +109,41 @@ requires:
   name: dbus-glib
   
   version: "0.100"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: libteam
+  
+  version: "1.9"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: "1.2"
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: iputils
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: "2.12"
 - 
   category: net-libs
   description: ""
@@ -246,9 +155,100 @@ requires:
   category: net-misc
   description: ""
   license: ""
-  name: libteam
+  name: modemmanager
   
-  version: "1.9"
+  version: 0.7.991
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: plugdev
+  
+  version: ""
+- 
+  category: net-wireless
+  description: ""
+  license: ""
+  name: wpa_supplicant
+  
+  version: 0.7.3-r3
+- 
+  category: net-wireless
+  description: ""
+  license: ""
+  name: iwd
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libudev
+  
+  version: "175"
+- 
+  category: net-wireless
+  description: ""
+  license: ""
+  name: bluez
+  
+  version: "5"
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: dnsmasq
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.40"
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: "0.106"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: elogind
+  
+  version: "219"
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: ofono
+  
+  version: ""
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: openresolv
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: ""
 uri: []
 use_flags:
 - audit

@@ -6,26 +6,47 @@ license: GPL-3
 name: gnome-dvb-daemon
 requires:
 - 
-  category: dev-python
+  category: dev-libs
   description: ""
   license: ""
-  name: gst-python
+  name: glib
   
-  version: ""
+  version: 2.32.0
 - 
-  category: media-video
+  category: dev-libs
   description: ""
   license: ""
-  name: totem
+  name: libgudev
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: gst-plugins-bad
+  name: gstreamer
   
   version: 1.4.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gst-plugins-good
+  
+  version: 1.4.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pygobject
+  
+  version: 3.2.1
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: ""
 - 
   category: dev-db
   description: ""
@@ -41,34 +62,6 @@ requires:
   
   version: 1.4.5
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: gobject-introspection
-  
-  version: 1.44.0
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: 2.32.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgudev
-  
-  version: ""
-- 
   category: media-plugins
   description: ""
   license: ""
@@ -79,7 +72,7 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: gstreamer
+  name: gst-plugins-bad
   
   version: 1.4.0
 - 
@@ -93,16 +86,23 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: pygobject
+  name: gst-python
   
-  version: 3.2.1
+  version: ""
 - 
-  category: media-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: gst-plugins-good
+  name: gobject-introspection
   
-  version: 1.4.0
+  version: 1.44.0
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: totem
+  
+  version: ""
 uri: []
 use_flags:
 - nls

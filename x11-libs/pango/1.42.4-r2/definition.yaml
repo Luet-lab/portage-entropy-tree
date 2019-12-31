@@ -5,19 +5,19 @@ license: LGPL-2+ FTL
 name: pango
 requires:
 - 
-  category: media-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: freetype
+  name: libXft
   
-  version: 2.5.0.1
+  version: 2.3.1-r1
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: fribidi
+  name: glib
   
-  version: 0.19.7
+  version: 2.50.2
 - 
   category: dev-libs
   description: ""
@@ -25,6 +25,20 @@ requires:
   name: gobject-introspection
   
   version: 0.9.5
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXrender
+  
+  version: 0.9.8
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: 1.6.2
 - 
   category: media-libs
   description: ""
@@ -40,33 +54,19 @@ requires:
   
   version: 2.12.92
 - 
-  category: x11-libs
+  category: media-libs
   description: ""
   license: ""
-  name: libX11
+  name: freetype
   
-  version: 1.6.2
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXft
-  
-  version: 2.3.1-r1
+  version: 2.5.0.1
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: glib
+  name: fribidi
   
-  version: 2.50.2
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXrender
-  
-  version: 0.9.8
+  version: 0.19.7
 uri:
 - https://dev.gentoo.org/~leio/distfiles/pango-1.42.4-patchset.tar.xz
 use_flags:

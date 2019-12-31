@@ -5,6 +5,27 @@ license: '|| ( LGPL-2 LGPL-3 ) BSD Sleepycat'
 name: evolution-data-server
 requires:
 - 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: libsecret
+  
+  version: "0.5"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgweather
+  
+  version: "3.10"
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: webkit-gtk
+  
+  version: 2.11.91
+- 
   category: dev-libs
   description: ""
   license: ""
@@ -12,26 +33,33 @@ requires:
   
   version: "4.4"
 - 
-  category: sys-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: zlib
+  name: gtk+
   
-  version: ""
+  version: "3.10"
 - 
-  category: sys-libs
+  category: media-libs
   description: ""
   license: ""
-  name: db
+  name: libcanberra
   
-  version: "4"
+  version: "0.25"
 - 
-  category: net-nds
+  category: dev-libs
   description: ""
   license: ""
-  name: openldap
+  name: libxml2
   
   version: "2"
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libsoup
+  
+  version: "2.42"
 - 
   category: dev-libs
   description: ""
@@ -47,47 +75,12 @@ requires:
   
   version: ""
 - 
-  category: app-crypt
+  category: net-nds
   description: ""
   license: ""
-  name: gcr
+  name: openldap
   
-  version: "3.4"
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: libsecret
-  
-  version: "0.5"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libical
-  
-  version: 3.0.2
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libsoup
-  
-  version: "2.42"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libiconv
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libcanberra
-  
-  version: "0.25"
+  version: "2"
 - 
   category: dev-db
   description: ""
@@ -99,9 +92,37 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: icu
+  name: glib
+  
+  version: "2.46"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libical
+  
+  version: 3.0.2
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
   
   version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libiconv
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: db
+  
+  version: "4"
 - 
   category: dev-libs
   description: ""
@@ -110,13 +131,6 @@ requires:
   
   version: 1.0.4
 - 
-  category: net-libs
-  description: ""
-  license: ""
-  name: webkit-gtk
-  
-  version: 2.11.91
-- 
   category: dev-libs
   description: ""
   license: ""
@@ -124,19 +138,12 @@ requires:
   
   version: 0.17.7
 - 
-  category: dev-libs
+  category: app-crypt
   description: ""
   license: ""
-  name: glib
+  name: gcr
   
-  version: "2.46"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: "2"
+  version: "3.4"
 - 
   category: dev-libs
   description: ""
@@ -145,12 +152,12 @@ requires:
   
   version: "3.9"
 - 
-  category: x11-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: gtk+
+  name: icu
   
-  version: "3.10"
+  version: ""
 - 
   category: net-libs
   description: ""
@@ -158,13 +165,6 @@ requires:
   name: gnome-online-accounts
   
   version: "3.8"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgweather
-  
-  version: "3.10"
 uri: []
 use_flags:
 - berkdb

@@ -4,28 +4,14 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: opensmtpd
-  
-  version: ""
-- 
-  category: <mail-mta
-  description: ""
-  license: ""
-  name: ssmtp
-  
-  version: 2.64-r2
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: esmtp
+  name: sendmail
   
   version: ""
 - 
   category: mail-mta
   description: ""
   license: ""
-  name: netqmail
+  name: mini-qmail
   
   version: ""
 - 
@@ -36,10 +22,17 @@ conflicts:
   
   version: ""
 - 
+  category: net-mail
+  description: ""
+  license: ""
+  name: fastforward
+  
+  version: ""
+- 
   category: mail-mta
   description: ""
   license: ""
-  name: msmtp
+  name: courier
   
   version: ""
 - 
@@ -53,14 +46,28 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-mailer
+  name: esmtp
   
   version: ""
 - 
   category: mail-mta
   description: ""
   license: ""
-  name: sendmail
+  name: msmtp
+  
+  version: ""
+- 
+  category: <mail-mta
+  description: ""
+  license: ""
+  name: ssmtp
+  
+  version: 2.64-r2
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+mailer
   
   version: ""
 - 
@@ -74,21 +81,14 @@ mailer
   category: mail-mta
   description: ""
   license: ""
-  name: courier
+  name: opensmtpd
   
   version: ""
 - 
   category: mail-mta
   description: ""
   license: ""
-  name: mini-qmail
-  
-  version: ""
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: fastforward
+  name: netqmail
   
   version: ""
 description: A fast and secure drop-in replacement for sendmail
@@ -96,12 +96,19 @@ license: '|| ( IBM EPL-2.0 )'
 name: postfix
 requires:
 - 
-  category: net-nds
+  category: net-misc
   description: ""
   license: ""
-  name: openldap
+  name: memcached
   
   version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: lmdb
+  
+  version: 0.9.11
 - 
   category: dev-libs
   description: ""
@@ -113,7 +120,21 @@ requires:
   category: acct-group
   description: ""
   license: ""
-  name: postfix
+  name: postdrop
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libnsl
+  
+  version: ""
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
   
   version: ""
 - 
@@ -124,38 +145,24 @@ requires:
   
   version: ""
 - 
-  category: dev-db
+  category: sys-libs
   description: ""
   license: ""
-  name: lmdb
+  name: pam
   
-  version: 0.9.11
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
 - 
   category: acct-user
   description: ""
   license: ""
   name: postfix
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
-  
-  version: ""
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: perl
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: postdrop
   
   version: ""
 - 
@@ -173,17 +180,10 @@ requires:
   
   version: "3.4"
 - 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-postfix
-  
-  version: ""
-- 
   category: dev-db
   description: ""
   license: ""
-  name: mysql-connector-c
+  name: postgresql
   
   version: ""
 - 
@@ -194,13 +194,6 @@ requires:
   
   version: "2"
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
@@ -208,31 +201,38 @@ requires:
   
   version: "3.2"
 - 
-  category: net-misc
+  category: acct-group
   description: ""
   license: ""
-  name: memcached
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libnsl
+  name: postfix
   
   version: ""
 - 
   category: dev-db
   description: ""
   license: ""
-  name: postgresql
+  name: sqlite
   
   version: ""
 - 
-  category: sys-libs
+  category: sec-policy
   description: ""
   license: ""
-  name: pam
+  name: selinux-postfix
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: perl
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c
   
   version: ""
 uri:

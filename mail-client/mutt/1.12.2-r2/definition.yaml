@@ -5,20 +5,6 @@ license: GPL-2
 name: mutt
 requires:
 - 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-mutt
-  
-  version: ""
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: gpgme
-  
-  version: 0.9.0
-- 
   category: sys-libs
   description: ""
   license: ""
@@ -36,7 +22,7 @@ requires:
   category: dev-db
   description: ""
   license: ""
-  name: tokyocabinet
+  name: qdbm
   
   version: ""
 - 
@@ -47,10 +33,24 @@ requires:
   
   version: 1.0.17
 - 
-  category: sys-libs
+  category: virtual
   description: ""
   license: ""
-  name: slang
+  name: libintl
+  
+  version: ""
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: libidn2
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: mime-types
   
   version: ""
 - 
@@ -61,31 +61,10 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: sec-policy
   description: ""
   license: ""
-  name: libressl
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: 0.9.6
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libintl
-  
-  version: ""
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: notmuch
+  name: selinux-mutt
   
   version: ""
 - 
@@ -96,17 +75,31 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: gdbm
-  
-  version: ""
-- 
   category: dev-db
   description: ""
   license: ""
-  name: qdbm
+  name: tokyocabinet
+  
+  version: ""
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: notmuch
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: "5.2"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
   
   version: ""
 - 
@@ -124,26 +117,33 @@ requires:
   
   version: ""
 - 
-  category: net-dns
+  category: app-crypt
   description: ""
   license: ""
-  name: libidn2
+  name: gpgme
+  
+  version: 0.9.0
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: slang
   
   version: ""
 - 
   category: sys-libs
   description: ""
   license: ""
-  name: ncurses
-  
-  version: "5.2"
-- 
-  category: app-misc
-  description: ""
-  license: ""
-  name: mime-types
+  name: gdbm
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 0.9.6
 uri:
 - ftp://ftp.mutt.org/pub/mutt/mutt-1.12.2.tar.gz
 - https://bitbucket.org/mutt/mutt/downloads/mutt-1.12.2.tar.gz

@@ -1,17 +1,17 @@
 category: sys-kernel
 conflicts:
 - 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: eudev
-  
-  version: ""
-- 
   category: sys-kernel
   description: ""
   license: ""
   name: genkernel
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: eudev
   
   version: ""
 - 
@@ -29,35 +29,28 @@ requires:
   category: sys-fs
   description: ""
   license: ""
-  name: cryptsetup
-  
-  version: ""
-- 
-  category: sys-block
-  description: ""
-  license: ""
-  name: open-iscsi
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
   name: mdadm
   
   version: ""
 - 
-  category: sys-block
+  category: app-arch
   description: ""
   license: ""
-  name: thin-provisioning-tools
+  name: cpio
   
   version: ""
 - 
   category: sys-fs
   description: ""
   license: ""
-  name: lvm2
+  name: e2fsprogs
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: cryptsetup
   
   version: ""
 - 
@@ -68,19 +61,26 @@ requires:
   
   version: 1.0.0_rc16
 - 
-  category: app-arch
+  category: sys-boot
   description: ""
   license: ""
-  name: cpio
+  name: plymouth
   
   version: ""
 - 
-  category: app-misc
+  category: sys-apps
   description: ""
   license: ""
-  name: pax-utils
+  name: util-linux
   
-  version: "0.6"
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lvm2
+  
+  version: ""
 - 
   category: sys-libs
   description: ""
@@ -96,10 +96,10 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: sys-block
   description: ""
   license: ""
-  name: util-linux
+  name: thin-provisioning-tools
   
   version: ""
 - 
@@ -110,13 +110,6 @@ requires:
   
   version: ""
 - 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: e2fsprogs
-  
-  version: ""
-- 
   category: app-crypt
   description: ""
   license: ""
@@ -124,12 +117,19 @@ requires:
   
   version: ""
 - 
-  category: sys-boot
+  category: sys-block
   description: ""
   license: ""
-  name: plymouth
+  name: open-iscsi
   
   version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: pax-utils
+  
+  version: "0.6"
 uri:
 - https://github.com/Sabayon/genkernel-next/archive/v69.tar.gz -> genkernel-next-69.tar.gz
 use_flags:

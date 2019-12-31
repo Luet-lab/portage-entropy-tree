@@ -1,12 +1,12 @@
 category: sys-fs
 conflicts:
 - 
-  category: <sys-kernel
+  category: sys-fs
   description: ""
   license: ""
-  name: genkernel-next
+  name: zfs-fuse
   
-  version: "67"
+  version: ""
 - 
   category: <sys-boot
   description: ""
@@ -18,9 +18,9 @@ conflicts:
   category: <sys-kernel
   description: ""
   license: ""
-  name: dracut
+  name: genkernel
   
-  version: 044-r1
+  version: 3.5.1.1
 - 
   category: =sys-apps
   description: ""
@@ -32,9 +32,9 @@ conflicts:
   category: <sys-kernel
   description: ""
   license: ""
-  name: genkernel
+  name: genkernel-next
   
-  version: 3.5.1.1
+  version: "67"
 - 
   category: <sys-kernel
   description: ""
@@ -43,23 +43,16 @@ conflicts:
   
   version: 7.1.0
 - 
-  category: sys-fs
+  category: <sys-kernel
   description: ""
   license: ""
-  name: zfs-fuse
+  name: dracut
   
-  version: ""
+  version: 044-r1
 description: Userland utilities for ZFS Linux kernel module
 license: BSD-2 CDDL MIT
 name: zfs
 requires:
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libtirpc
-  
-  version: ""
 - 
   category: sys-devel
   description: ""
@@ -68,24 +61,52 @@ requires:
   
   version: ""
 - 
+  category: sys-block
+  description: ""
+  license: ""
+  name: parted
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: procps
+  
+  version: ""
+- 
   category: sys-fs
   description: ""
   license: ""
-  name: lsscsi
+  name: zfs-kmod
   
-  version: ""
+  version: 0.7.13
 - 
   category: virtual
   description: ""
   license: ""
-  name: awk
+  name: modutils
   
   version: ""
 - 
-  category: sys-apps
+  category: app-arch
   description: ""
   license: ""
-  name: util-linux
+  name: cpio
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: pax-utils
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libtirpc
   
   version: ""
 - 
@@ -99,35 +120,7 @@ requires:
   category: virtual
   description: ""
   license: ""
-  name: modutils
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: zfs-kmod
-  
-  version: 0.7.13
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: mdadm
-  
-  version: ""
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: procps
-  
-  version: ""
-- 
-  category: app-misc
-  description: ""
-  license: ""
-  name: pax-utils
+  name: awk
   
   version: ""
 - 
@@ -138,17 +131,24 @@ requires:
   
   version: ""
 - 
-  category: sys-block
+  category: sys-apps
   description: ""
   license: ""
-  name: parted
+  name: util-linux
   
   version: ""
 - 
-  category: app-arch
+  category: sys-fs
   description: ""
   license: ""
-  name: cpio
+  name: lsscsi
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: mdadm
   
   version: ""
 uri:

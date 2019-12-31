@@ -5,6 +5,20 @@ license: Apache-2.0
 name: docker
 requires:
 - 
+  category: dev-vcs
+  description: ""
+  license: ""
+  name: git
+  
+  version: "1.7"
+- 
+  category: app-emulation
+  description: ""
+  license: ""
+  name: containerd
+  
+  version: 1.2.10
+- 
   category: app-emulation
   description: ""
   license: ""
@@ -19,12 +33,12 @@ requires:
   
   version: 0.18.0
 - 
-  category: dev-db
+  category: net-firewall
   description: ""
   license: ""
-  name: sqlite
+  name: iptables
   
-  version: 3.7.9
+  version: "1.4"
 - 
   category: sys-process
   description: ""
@@ -32,13 +46,6 @@ requires:
   name: procps
   
   version: ""
-- 
-  category: dev-vcs
-  description: ""
-  license: ""
-  name: git
-  
-  version: "1.7"
 - 
   category: app-arch
   description: ""
@@ -54,12 +61,12 @@ requires:
   
   version: ""
 - 
-  category: app-emulation
+  category: dev-db
   description: ""
   license: ""
-  name: containerd
+  name: sqlite
   
-  version: 1.2.10
+  version: 3.7.9
 - 
   category: sys-fs
   description: ""
@@ -81,13 +88,6 @@ requires:
   name: libapparmor
   
   version: ""
-- 
-  category: net-firewall
-  description: ""
-  license: ""
-  name: iptables
-  
-  version: "1.4"
 uri:
 - https://github.com/docker/docker-ce/archive/v19.03.5.tar.gz -> docker-19.03.5.tar.gz
 use_flags:

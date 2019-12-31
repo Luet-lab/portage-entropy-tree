@@ -5,19 +5,40 @@ license: LGPL-2.1+
 name: fwupd
 requires:
 - 
-  category: sys-auth
+  category: dev-libs
   description: ""
   license: ""
-  name: consolekit
+  name: libgudev
   
-  version: 1.0.0
+  version: ""
 - 
-  category: x11-misc
+  category: app-crypt
   description: ""
   license: ""
-  name: colord
+  name: gpgme
   
-  version: 1.2.12
+  version: ""
+- 
+  category: sys-boot
+  description: ""
+  license: ""
+  name: gnu-efi
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: efivar
+  
+  version: "33"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgpg-error
+  
+  version: ""
 - 
   category: sys-libs
   description: ""
@@ -26,17 +47,52 @@ requires:
   
   version: 2.4.0
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: thunderbolt-software-user-space
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
-  name: libgpg-error
+  name: json-glib
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pygobject
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: elogind
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: libarchive
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "211"
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: consolekit
+  
+  version: 1.0.0
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
   
   version: ""
 - 
@@ -50,28 +106,28 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libgudev
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
   name: libxmlb
   
   version: 0.1.7
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pillow
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: thunderbolt-software-user-space
+  
+  version: ""
 - 
   category: media-libs
   description: ""
   license: ""
   name: fontconfig
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: freetype
   
   version: ""
 - 
@@ -82,83 +138,6 @@ requires:
   
   version: ""
 - 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libelf
-  
-  version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: elogind
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: "211"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: efivar
-  
-  version: "33"
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: libarchive
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnutls
-  
-  version: 3.4.4.1
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pygobject
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: json-glib
-  
-  version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: polkit
-  
-  version: "0.103"
-- 
-  category: sys-boot
-  description: ""
-  license: ""
-  name: gnu-efi
-  
-  version: ""
-- 
   category: app-arch
   description: ""
   license: ""
@@ -166,10 +145,17 @@ requires:
   
   version: ""
 - 
-  category: dev-python
+  category: x11-misc
   description: ""
   license: ""
-  name: pillow
+  name: colord
+  
+  version: 1.2.12
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
   
   version: ""
 - 
@@ -187,19 +173,19 @@ requires:
   
   version: 2.51.92
 - 
-  category: sys-libs
+  category: virtual
   description: ""
   license: ""
-  name: efivar
+  name: libelf
   
   version: ""
 - 
-  category: app-crypt
+  category: net-libs
   description: ""
   license: ""
-  name: gpgme
+  name: gnutls
   
-  version: ""
+  version: 3.4.4.1
 - 
   category: dev-libs
   description: ""
@@ -207,6 +193,20 @@ requires:
   name: libgusb
   
   version: 0.2.9
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: efivar
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: "0.103"
 uri:
 - https://github.com/hughsie/fwupd/archive/1.2.11.tar.gz -> fwupd-1.2.11.tar.gz
 use_flags:

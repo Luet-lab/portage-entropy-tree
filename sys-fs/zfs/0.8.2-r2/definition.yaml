@@ -11,9 +11,9 @@ conflicts:
   category: <sys-kernel
   description: ""
   license: ""
-  name: genkernel-next
+  name: genkernel
   
-  version: "67"
+  version: 3.5.1.1
 - 
   category: <sys-kernel
   description: ""
@@ -29,12 +29,12 @@ conflicts:
   
   version: 044-r1
 - 
-  category: =sys-apps
+  category: <sys-kernel
   description: ""
   license: ""
-  name: grep-2.13*
+  name: genkernel-next
   
-  version: ""
+  version: "67"
 - 
   category: sys-fs
   description: ""
@@ -43,16 +43,86 @@ conflicts:
   
   version: ""
 - 
-  category: <sys-kernel
+  category: =sys-apps
   description: ""
   license: ""
-  name: genkernel
+  name: grep-2.13*
   
-  version: 3.5.1.1
+  version: ""
 description: Userland utilities for ZFS Linux kernel module
 license: BSD-2 CDDL MIT
 name: zfs
 requires:
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: zfs-kmod
+  
+  version: 0.8.2
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: cpio
+  
+  version: ""
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: bc
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: awk
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: python-cffi
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: pax-utils
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: procps
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: udev-init-scripts
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: ""
 - 
   category: sys-block
   description: ""
@@ -71,14 +141,7 @@ requires:
   category: sys-fs
   description: ""
   license: ""
-  name: zfs-kmod
-  
-  version: 0.8.2
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
+  name: mdadm
   
   version: ""
 - 
@@ -89,20 +152,6 @@ requires:
   
   version: ""
 - 
-  category: virtual
-  description: ""
-  license: ""
-  name: awk
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: python-cffi
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
@@ -110,59 +159,10 @@ requires:
   
   version: ""
 - 
-  category: virtual
-  description: ""
-  license: ""
-  name: udev
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: udev-init-scripts
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: cpio
-  
-  version: ""
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: bc
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: mdadm
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
   name: openssl
-  
-  version: ""
-- 
-  category: app-misc
-  description: ""
-  license: ""
-  name: pax-utils
-  
-  version: ""
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: procps
   
   version: ""
 uri:

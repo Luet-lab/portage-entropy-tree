@@ -4,14 +4,14 @@ conflicts:
   category: x11-misc
   description: ""
   license: ""
-  name: notify-osd
+  name: qtnotifydaemon
   
   version: ""
 - 
   category: x11-misc
   description: ""
   license: ""
-  name: qtnotifydaemon
+  name: notify-osd
   
   version: ""
 description: Notification daemon
@@ -19,10 +19,24 @@ license: GPL-2
 name: notification-daemon
 requires:
 - 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gconf
+  
+  version: "2"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libcanberra
+  
+  version: "0.4"
+- 
   category: x11-libs
   description: ""
   license: ""
-  name: libwnck
+  name: libnotify
   
   version: ""
 - 
@@ -33,10 +47,10 @@ requires:
   
   version: ""
 - 
-  category: gnome-base
+  category: dev-libs
   description: ""
   license: ""
-  name: gconf
+  name: glib
   
   version: "2"
 - 
@@ -57,16 +71,9 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libnotify
+  name: libwnck
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2"
 - 
   category: x11-libs
   description: ""
@@ -74,13 +81,6 @@ requires:
   name: gtk+
   
   version: "2.18"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libcanberra
-  
-  version: "0.4"
 uri: []
 use_flags:
 - ""

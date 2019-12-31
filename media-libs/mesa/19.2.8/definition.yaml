@@ -4,6 +4,13 @@ conflicts:
   category: app-eselect
   description: ""
   license: ""
+  name: eselect-opengl
+  
+  version: ""
+- 
+  category: app-eselect
+  description: ""
+  license: ""
   name: eselect-mesa
   
   version: ""
@@ -14,24 +21,10 @@ conflicts:
   name: libva-vdpau-driver
   
   version: 0.7.4-r3
-- 
-  category: app-eselect
-  description: ""
-  license: ""
-  name: eselect-opengl
-  
-  version: ""
 description: OpenGL-like graphic library for Linux
 license: MIT
 name: mesa
 requires:
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libunwind
-  
-  version: ""
 - 
   category: sys-apps
   description: ""
@@ -43,9 +36,58 @@ requires:
   category: x11-libs
   description: ""
   license: ""
+  name: libvdpau
+  
+  version: "1.1"
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: glslang
+  
+  version: ""
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: clang
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libglvnd
+  
+  version: 1.2.0-r1
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXvMC
+  
+  version: 1.0.8
+- 
+  category: x11-libs
+  description: ""
+  license: ""
   name: libXxf86vm
   
   version: 1.1.3
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxcb
+  
+  version: "1.13"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: ocl-icd
+  
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -61,34 +103,6 @@ requires:
   
   version: 1.7.3
 - 
-  category: dev-util
-  description: ""
-  license: ""
-  name: glslang
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXext
-  
-  version: 1.3.2
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxcb
-  
-  version: "1.13"
-- 
-  category: app-eselect
-  description: ""
-  license: ""
-  name: eselect-opengl
-  
-  version: 1.3.0
-- 
   category: x11-libs
   description: ""
   license: ""
@@ -96,19 +110,26 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: expat
-  
-  version: 2.1.0-r3
-- 
   category: x11-libs
   description: ""
   license: ""
-  name: libXvMC
+  name: libXfixes
   
-  version: 1.0.8
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: wayland
+  
+  version: 1.15.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: wayland-protocols
+  
+  version: "1.8"
 - 
   category: x11-libs
   description: ""
@@ -120,56 +141,35 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libxshmfence
-  
-  version: "1.1"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXfixes
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
   name: libdrm-2.4.99[video_cards_radeon]
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: ocl-icd
-  
-  version: ""
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: clang
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: wayland
-  
-  version: 1.15.0
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXdamage
-  
-  version: 1.1.4-r1
 - 
   category: x11-libs
   description: ""
   license: ""
   name: libdrm-2.4.99[video_cards_amdgpu]
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: expat
+  
+  version: 2.1.0-r3
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libunwind
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libelf
   
   version: ""
 - 
@@ -187,33 +187,33 @@ requires:
   
   version: 1.2.8
 - 
-  category: media-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: libglvnd
+  name: libxshmfence
   
-  version: 1.2.0-r1
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libelf
-  
-  version: ""
+  version: "1.1"
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libvdpau
+  name: libXext
   
-  version: "1.1"
+  version: 1.3.2
 - 
-  category: dev-libs
+  category: app-eselect
   description: ""
   license: ""
-  name: wayland-protocols
+  name: eselect-opengl
   
-  version: "1.8"
+  version: 1.3.0
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXdamage
+  
+  version: 1.1.4-r1
 uri:
 - https://mesa.freedesktop.org/archive/mesa-19.2.8.tar.xz
 use_flags:

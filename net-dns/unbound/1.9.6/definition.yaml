@@ -5,19 +5,19 @@ license: BSD GPL-2
 name: unbound
 requires:
 - 
-  category: sec-policy
+  category: dev-libs
   description: ""
   license: ""
-  name: selinux-bind
+  name: libressl
   
-  version: ""
+  version: 2.2.4
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libevent
+  name: openssl
   
-  version: 2.0.21
+  version: 1.0.1h-r2
 - 
   category: dev-libs
   description: ""
@@ -32,6 +32,20 @@ requires:
   name: dnssec-root
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: expat
+  
+  version: 2.1.0-r3
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libevent
+  
+  version: 2.0.21
 - 
   category: dev-libs
   description: ""
@@ -61,26 +75,12 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: sec-policy
   description: ""
   license: ""
-  name: expat
+  name: selinux-bind
   
-  version: 2.1.0-r3
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
-  
-  version: 2.2.4
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: 1.0.1h-r2
+  version: ""
 uri:
 - https://nlnetlabs.nl/downloads/unbound/unbound-1.9.6.tar.gz
 use_flags:

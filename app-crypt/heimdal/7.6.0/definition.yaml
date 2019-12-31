@@ -19,24 +19,24 @@ license: BSD
 name: heimdal
 requires:
 - 
-  category: sys-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: gdbm
+  name: openssl
   
-  version: 1.10-r1
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: e2fsprogs-libs
-  
-  version: 1.42.9
+  version: 1.0.1h-r2
 - 
   category: sys-libs
   description: ""
   license: ""
   name: ncurses
+  
+  version: ""
+- 
+  category: net-fs
+  description: ""
+  license: ""
+  name: openafs
   
   version: ""
 - 
@@ -47,12 +47,12 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: dev-db
   description: ""
   license: ""
-  name: db
+  name: lmdb
   
-  version: 4.8.30-r1
+  version: ""
 - 
   category: dev-db
   description: ""
@@ -61,12 +61,19 @@ requires:
   
   version: 3.8.2
 - 
-  category: dev-db
+  category: sec-policy
   description: ""
   license: ""
-  name: lmdb
+  name: selinux-kerberos
   
   version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: gdbm
+  
+  version: 1.10-r1
 - 
   category: sys-libs
   description: ""
@@ -75,26 +82,12 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: openssl
+  name: e2fsprogs-libs
   
-  version: 1.0.1h-r2
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
-  
-  version: ""
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
-  
-  version: 2.3.0
+  version: 1.42.9
 - 
   category: x11-libs
   description: ""
@@ -110,12 +103,19 @@ requires:
   
   version: ""
 - 
-  category: sec-policy
+  category: dev-libs
   description: ""
   license: ""
-  name: selinux-kerberos
+  name: libressl
   
   version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: db
+  
+  version: 4.8.30-r1
 - 
   category: sys-libs
   description: ""
@@ -124,12 +124,12 @@ requires:
   
   version: 6.2_p5-r1
 - 
-  category: net-fs
+  category: net-nds
   description: ""
   license: ""
-  name: openafs
+  name: openldap
   
-  version: ""
+  version: 2.3.0
 uri:
 - https://github.com/heimdal/heimdal/releases/download/heimdal-7.6.0/heimdal-7.6.0.tar.gz
 use_flags:

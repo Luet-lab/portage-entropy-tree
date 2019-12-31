@@ -5,83 +5,6 @@ license: GPL-3
 name: claws-mail
 requires:
 - 
-  category: net-misc
-  description: ""
-  license: ""
-  name: curl
-  
-  version: 7.9.7
-- 
-  category: mail-filter
-  description: ""
-  license: ""
-  name: bogofilter
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: dbus-glib
-  
-  version: "0.60"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgdata
-  
-  version: 0.17.2
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: gpgme
-  
-  version: 1.0.0
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: ytnef
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: libarchive
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libICE
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: cairo
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: gumbo
-  
-  version: "0.10"
-- 
   category: app-pda
   description: ""
   license: ""
@@ -96,19 +19,26 @@ requires:
   
   version: ""
 - 
-  category: dev-util
+  category: app-text
   description: ""
   license: ""
-  name: valgrind
+  name: enchant
+  
+  version: 1.0.0
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: networkmanager
   
   version: ""
 - 
-  category: net-libs
+  category: net-mail
   description: ""
   license: ""
-  name: libetpan
+  name: ytnef
   
-  version: "0.57"
+  version: ""
 - 
   category: x11-libs
   description: ""
@@ -116,62 +46,6 @@ requires:
   name: pango
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libical
-  
-  version: 2.0.0
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libnotify
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: poppler
-  
-  version: ""
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: perl
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnutls
-  
-  version: "3.0"
 - 
   category: net-nds
   description: ""
@@ -187,19 +61,19 @@ requires:
   
   version: ""
 - 
-  category: media-libs
+  category: dev-lang
   description: ""
   license: ""
-  name: fontconfig
+  name: perl
   
   version: ""
 - 
-  category: app-text
+  category: dev-util
   description: ""
   license: ""
-  name: enchant
+  name: valgrind
   
-  version: 1.0.0
+  version: ""
 - 
   category: x11-misc
   description: ""
@@ -211,9 +85,9 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: nettle
+  name: libgdata
   
-  version: ""
+  version: 0.17.2
 - 
   category: www-client
   description: ""
@@ -222,40 +96,12 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: media-libs
   description: ""
   license: ""
-  name: glib
-  
-  version: "2.36"
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: librsvg
-  
-  version: 2.40.5
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: ghostscript-gpl
+  name: libcanberra
   
   version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: "2.24"
 - 
   category: dev-libs
   description: ""
@@ -264,24 +110,24 @@ requires:
   
   version: ""
 - 
-  category: app-misc
+  category: dev-libs
   description: ""
   license: ""
-  name: mime-types
+  name: nettle
   
   version: ""
 - 
-  category: app-antivirus
+  category: sys-libs
   description: ""
   license: ""
-  name: clamav
+  name: zlib
   
   version: ""
 - 
-  category: net-misc
+  category: mail-filter
   description: ""
   license: ""
-  name: networkmanager
+  name: bogofilter
   
   version: ""
 - 
@@ -292,24 +138,17 @@ requires:
   
   version: ""
 - 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: gettext
-  
-  version: "0.18"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libcanberra
-  
-  version: ""
-- 
   category: x11-libs
   description: ""
   license: ""
   name: startup-notification
+  
+  version: ""
+- 
+  category: app-antivirus
+  description: ""
+  license: ""
+  name: clamav
   
   version: ""
 - 
@@ -323,7 +162,168 @@ requires:
   category: x11-libs
   description: ""
   license: ""
+  name: gtk+
+  
+  version: "2.24"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.36"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libnotify
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: libarchive
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
+  
+  version: 7.9.7
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: dbus-glib
+  
+  version: "0.60"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: ""
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: librsvg
+  
+  version: 2.40.5
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: mime-types
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: "3.0"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: poppler
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libICE
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libetpan
+  
+  version: "0.57"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gumbo
+  
+  version: "0.10"
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gpgme
+  
+  version: 1.0.0
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: ghostscript-gpl
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
   name: gdk-pixbuf
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libical
+  
+  version: 2.0.0
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: gettext
+  
+  version: "0.18"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
   
   version: ""
 uri: []

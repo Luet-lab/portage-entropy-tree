@@ -5,12 +5,12 @@ license: GPL-2
 name: flightgear
 requires:
 - 
-  category: sci-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: gdal
+  name: dbus
   
-  version: 2.0.0
+  version: 1.6.18-r1
 - 
   category: dev-qt
   description: ""
@@ -19,19 +19,40 @@ requires:
   
   version: 5.7.1
 - 
-  category: games-simulation
+  category: dev-qt
   description: ""
   license: ""
-  name: flightgear-data
+  name: qtgui
   
-  version: 2018.3.1
+  version: 5.7.1
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: speex
+  name: libpng
   
-  version: 1.2.0
+  version: ""
+- 
+  category: dev-games
+  description: ""
+  license: ""
+  name: simgear-2018.3.1[gdal=]
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: openal
+  
+  version: ""
 - 
   category: media-libs
   description: ""
@@ -47,31 +68,10 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: x11-libs
   description: ""
   license: ""
-  name: dbus
-  
-  version: 1.6.18-r1
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtcore
-  
-  version: 5.7.1
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: udev
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: freetype
+  name: libX11
   
   version: ""
 - 
@@ -82,10 +82,17 @@ requires:
   
   version: ""
 - 
+  category: games-simulation
+  description: ""
+  license: ""
+  name: flightgear-data
+  
+  version: 2018.3.1
+- 
   category: media-libs
   description: ""
   license: ""
-  name: openal
+  name: freetype
   
   version: ""
 - 
@@ -96,6 +103,13 @@ requires:
   
   version: 3.5.6
 - 
+  category: media-libs
+  description: ""
+  license: ""
+  name: speex
+  
+  version: 1.2.0
+- 
   category: media-sound
   description: ""
   license: ""
@@ -103,19 +117,33 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
+  category: sci-libs
   description: ""
   license: ""
-  name: libX11
+  name: gdal
   
-  version: ""
+  version: 2.0.0
 - 
   category: dev-qt
   description: ""
   license: ""
-  name: qtdeclarative
+  name: qtnetwork
   
   version: 5.7.1
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freeglut
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: glew
+  
+  version: ""
 - 
   category: dev-db
   description: ""
@@ -134,14 +162,14 @@ requires:
   category: dev-qt
   description: ""
   license: ""
-  name: qtgui
+  name: qtcore
   
   version: 5.7.1
 - 
   category: dev-qt
   description: ""
   license: ""
-  name: qtnetwork
+  name: qtdeclarative
   
   version: 5.7.1
 - 
@@ -151,34 +179,6 @@ requires:
   name: qtwidgets
   
   version: 5.7.1
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: freeglut
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: glew
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libpng
-  
-  version: ""
-- 
-  category: dev-games
-  description: ""
-  license: ""
-  name: simgear-2018.3.1[gdal=]
-  
-  version: ""
 uri:
 - mirror://sourceforge/flightgear/flightgear-2018.3.1.tar.bz2
 use_flags:

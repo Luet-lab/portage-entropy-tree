@@ -5,10 +5,17 @@ license: '|| ( GPL-2 LGPL-3+ )'
 name: glusterfs
 requires:
 - 
-  category: net-libs
+  category: sys-fabric
   description: ""
   license: ""
-  name: libtirpc
+  name: libibverbs
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: glibc[rpc(-)]
   
   version: ""
 - 
@@ -19,38 +26,10 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: dev-util
   description: ""
   license: ""
-  name: userspace-rcu
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: argp-standalone
-  
-  version: ""
-- 
-  category: app-editors
-  description: ""
-  license: ""
-  name: emacs
-  
-  version: "23.1"
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: fuse
-  
-  version: 2.7.0
-- 
-  category: sys-fabric
-  description: ""
-  license: ""
-  name: libibverbs
+  name: systemtap
   
   version: ""
 - 
@@ -64,35 +43,35 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: openssl
+  name: libxml2
   
   version: ""
 - 
   category: sys-fs
   description: ""
   license: ""
-  name: lvm2
+  name: fuse
+  
+  version: 2.7.0
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: argp-standalone
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libxml2
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libaio
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
+  name: userspace-rcu
   
   version: ""
 - 
@@ -110,6 +89,27 @@ requires:
   
   version: ""
 - 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lvm2
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libaio
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libtirpc
+  
+  version: ""
+- 
   category: sys-fabric
   description: ""
   license: ""
@@ -117,26 +117,26 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: glibc[rpc(-)]
+  name: openssl
   
   version: ""
 - 
-  category: dev-util
+  category: dev-libs
   description: ""
   license: ""
-  name: systemtap
+  name: libressl
   
   version: ""
 - 
-  category: sys-libs
+  category: app-editors
   description: ""
   license: ""
-  name: readline
+  name: emacs
   
-  version: ""
+  version: "23.1"
 uri:
 - https://download.gluster.org/pub/gluster/glusterfs//4.1.8/glusterfs-4.1.8.tar.gz
 use_flags:

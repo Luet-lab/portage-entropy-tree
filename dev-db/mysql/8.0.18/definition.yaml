@@ -4,7 +4,7 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mariadb
+  name: mariadb-galera
   
   version: ""
 - 
@@ -25,7 +25,7 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mariadb-galera
+  name: mariadb
   
   version: ""
 description: A fast, multi-threaded, multi-user SQL database server
@@ -36,49 +36,21 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: openssl
-  
-  version: 1.0.0
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: mysql
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mysql-init-scripts
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: lz4
-  
-  version: 0_p131
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libtirpc
+  name: libaio
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libaio
+  name: openssl
   
-  version: ""
+  version: 1.0.0
 - 
-  category: sys-process
+  category: dev-libs
   description: ""
   license: ""
-  name: procps
+  name: icu
   
   version: ""
 - 
@@ -96,17 +68,10 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: acct-group
   description: ""
   license: ""
-  name: jemalloc
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-mysql
+  name: mysql
   
   version: ""
 - 
@@ -117,17 +82,10 @@ requires:
   
   version: ""
 - 
-  category: dev-util
-  description: ""
-  license: ""
-  name: google-perftools
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
-  name: libressl
+  name: libevent
   
   version: ""
 - 
@@ -138,19 +96,54 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: dev-util
   description: ""
   license: ""
-  name: icu
+  name: google-perftools
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libtirpc
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: procps
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-mysql
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libevent
+  name: libressl
   
   version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-init-scripts
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: lz4
+  
+  version: 0_p131
 - 
   category: sys-libs
   description: ""
@@ -158,6 +151,13 @@ requires:
   name: zlib
   
   version: 1.2.3
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: jemalloc
+  
+  version: ""
 uri:
 - https://cdn.mysql.com/Downloads/MySQL-8.0/mysql-boost-8.0.18.tar.gz
 - https://cdn.mysql.com/archives/mysql-8.0/mysql-boost-8.0.18.tar.gz

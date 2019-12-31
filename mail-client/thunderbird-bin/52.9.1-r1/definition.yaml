@@ -12,17 +12,45 @@ license: MPL-2.0 GPL-2 LGPL-2.1
 name: thunderbird-bin
 requires:
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.26"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: alsa-lib
+  
+  version: 1.0.16
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
+  
+  version: 2.4.10
+- 
   category: x11-libs
   description: ""
   license: ""
-  name: pango
+  name: gdk-pixbuf
   
-  version: 1.22.0
+  version: ""
 - 
-  category: virtual
+  category: x11-libs
   description: ""
   license: ""
-  name: freedesktop-icon-theme
+  name: gtk+
+  
+  version: "2.18"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
   
   version: ""
 - 
@@ -36,21 +64,7 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: freetype
-  
-  version: 2.4.10
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: cairo-1.10[X]
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
+  name: fontconfig
   
   version: ""
 - 
@@ -68,27 +82,6 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.26"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: alsa-lib
-  
-  version: 1.0.16
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: 3.4.0
-- 
   category: x11-libs
   description: ""
   license: ""
@@ -96,12 +89,12 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: atk
+  name: pango
   
-  version: ""
+  version: 1.22.0
 - 
   category: sys-apps
   description: ""
@@ -110,17 +103,17 @@ requires:
   
   version: "0.60"
 - 
-  category: media-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: fontconfig
+  name: atk
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: gdk-pixbuf
+  name: cairo-1.10[X]
   
   version: ""
 - 
@@ -129,7 +122,14 @@ requires:
   license: ""
   name: gtk+
   
-  version: "2.18"
+  version: 3.4.0
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: freedesktop-icon-theme
+  
+  version: ""
 uri:
 - 'https://archive.mozilla.org/pub/thunderbird/releases/52.9.1/linux-x86_64/en-US/thunderbird-52.9.1.tar.bz2
   -> thunderbird-bin_x86_64-52.9.1.tar.bz2 '

@@ -1,13 +1,6 @@
 category: dev-util
 conflicts:
 - 
-  category: <dev-util
-  description: ""
-  license: ""
-  name: electron
-  
-  version: 0.36.12-r4
-- 
   category: <x11-drivers
   description: ""
   license: ""
@@ -21,15 +14,22 @@ conflicts:
   name: samba
   
   version: 4.5.12-r0
+- 
+  category: <dev-util
+  description: ""
+  license: ""
+  name: electron
+  
+  version: 0.36.12-r4
 description: Cross platform application development framework based on web technologies
 license: BSD
 name: electron
 requires:
 - 
-  category: sys-apps
+  category: media-libs
   description: ""
   license: ""
-  name: dbus
+  name: libpng
   
   version: ""
 - 
@@ -43,56 +43,14 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXcursor
+  name: libX11
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXtst
-  
-  version: ""
-- 
-  category: app-eselect
-  description: ""
-  license: ""
-  name: eselect-electron
-  
-  version: "2.0"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: freetype
-  
-  version: ""
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: pulseaudio
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: ttf-fonts
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: opengl
+  name: libXrandr
   
   version: ""
 - 
@@ -103,24 +61,10 @@ requires:
   
   version: 3.14.3
 - 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libjpeg-turbo
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: nghttp2
-  
-  version: 1.32.0
-- 
   category: x11-libs
   description: ""
   license: ""
-  name: libXext
+  name: libXcursor
   
   version: ""
 - 
@@ -131,61 +75,12 @@ requires:
   
   version: 1.6.0
 - 
-  category: x11-misc
-  description: ""
-  license: ""
-  name: xdg-utils
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: nspr
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: udev
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libnotify
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXdamage
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXfixes
-  
-  version: ""
-- 
   category: media-libs
   description: ""
   license: ""
-  name: opus
+  name: libwebp
   
-  version: ""
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: c-ares
-  
-  version: 1.13.0
+  version: 0.4.0
 - 
   category: dev-libs
   description: ""
@@ -201,24 +96,52 @@ requires:
   
   version: "4"
 - 
-  category: net-print
+  category: x11-libs
   description: ""
   license: ""
-  name: cups
+  name: libXtst
   
-  version: 1.3.11
+  version: ""
 - 
-  category: media-libs
+  category: virtual
   description: ""
   license: ""
-  name: libwebp
+  name: krb5
   
-  version: 0.4.0
+  version: ""
 - 
-  category: sec-policy
+  category: net-dns
   description: ""
   license: ""
-  name: selinux-chromium
+  name: c-ares
+  
+  version: 1.13.0
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: nghttp2
+  
+  version: 1.32.0
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXcomposite
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXfixes
+  
+  version: ""
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: xdg-utils
   
   version: ""
 - 
@@ -236,52 +159,73 @@ requires:
   
   version: "3.12"
 - 
-  category: sys-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: zlib
+  name: libnotify
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libexif
+  name: flac
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gconf
+  
+  version: 2.24.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libjpeg-turbo
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: cairo
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXScrnSaver
+  name: libXext
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: alsa-lib
+  name: openh264
   
-  version: 1.0.19
+  version: 1.6.0
 - 
-  category: sys-apps
+  category: media-sound
   description: ""
   license: ""
-  name: pciutils
+  name: pulseaudio
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXrandr
+  name: gtk+
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gdk-pixbuf
   
   version: ""
 - 
@@ -295,70 +239,49 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: flac
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: bzip2
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXcomposite
-  
-  version: ""
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gconf
-  
-  version: 2.24.0
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gdk-pixbuf
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pango
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: icu
-  
-  version: "58"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: fontconfig
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
   name: libvpx-1.7*
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: pciutils
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: net-print
+  description: ""
+  license: ""
+  name: cups
+  
+  version: 1.3.11
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libexif
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
   
   version: ""
 - 
@@ -369,17 +292,38 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: dev-libs
   description: ""
   license: ""
-  name: krb5
+  name: libxslt
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: opus
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-chromium
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: glib
+  name: nspr
   
   version: ""
 - 
@@ -397,31 +341,87 @@ requires:
   
   version: 1.4.2
 - 
-  category: media-libs
+  category: virtual
   description: ""
   license: ""
-  name: openh264
+  name: opengl
   
-  version: 1.6.0
+  version: ""
 - 
-  category: dev-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: libxml2
+  name: libXdamage
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: bzip2
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libxslt
+  name: glib
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: icu
+  
+  version: "58"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libpng
+  name: alsa-lib
+  
+  version: 1.0.19
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: ttf-fonts
+  
+  version: ""
+- 
+  category: app-eselect
+  description: ""
+  license: ""
+  name: eselect-electron
+  
+  version: "2.0"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXScrnSaver
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pango
   
   version: ""
 uri:

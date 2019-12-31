@@ -5,40 +5,40 @@ license: GPL-3 LGPL-3 Apache-2.0
 name: rsyslog
 requires:
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: liblognorm
-  
-  version: 2.0.3
-- 
   category: net-libs
   description: ""
   license: ""
-  name: rabbitmq-c
+  name: gnutls
   
-  version: 0.3.0
+  version: 2.12.23
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: net-snmp
+  
+  version: 5.7.2
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libressl
+  name: openssl
   
   version: ""
 - 
-  category: sys-apps
+  category: dev-libs
   description: ""
   license: ""
-  name: systemd
+  name: libfastjson
   
-  version: "234"
+  version: 0.99.8
 - 
-  category: virtual
+  category: net-misc
   description: ""
   license: ""
-  name: krb5
+  name: curl
   
-  version: ""
+  version: 7.35.0
 - 
   category: dev-db
   description: ""
@@ -50,30 +50,16 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: hiredis
+  name: liblogging
   
-  version: 0.11.0
+  version: 1.0.1
 - 
-  category: dev-libs
+  category: dev-db
   description: ""
   license: ""
-  name: openssl
+  name: mysql-connector-c
   
-  version: 0.9.8y
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: czmq
-  
-  version: 3.0.2
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: curl
-  
-  version: 7.35.0
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -82,33 +68,12 @@ requires:
   
   version: 0.9.0.99
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: mongo-c-driver
-  
-  version: 1.1.10
-- 
   category: net-libs
   description: ""
   license: ""
-  name: gnutls
+  name: rabbitmq-c
   
-  version: 2.12.23
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: 1.2.5
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: postgresql
-  
-  version: 8.4.20
+  version: 0.3.0
 - 
   category: dev-libs
   description: ""
@@ -120,23 +85,16 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: liblogging
-  
-  version: 1.0.1
-- 
-  category: net-analyzer
-  description: ""
-  license: ""
-  name: net-snmp
-  
-  version: 5.7.2
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
+  name: xxhash
   
   version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: czmq
+  
+  version: 3.0.2
 - 
   category: dev-libs
   description: ""
@@ -144,41 +102,6 @@ requires:
   name: libgcrypt
   
   version: 1.5.3
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mysql-connector-c
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libnet
-  
-  version: 1.1.6
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: xxhash
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libfastjson
-  
-  version: 0.99.8
 - 
   category: dev-libs
   description: ""
@@ -197,9 +120,86 @@ requires:
   category: dev-libs
   description: ""
   license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libnet
+  
+  version: 1.1.6
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: hiredis
+  
+  version: 0.11.0
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: postgresql
+  
+  version: 8.4.20
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 0.9.8y
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "234"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
   name: libestr
   
   version: 0.1.9
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: 1.2.5
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: mongo-c-driver
+  
+  version: 1.1.10
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: liblognorm
+  
+  version: 2.0.3
 uri:
 - https://www.rsyslog.com/files/download/rsyslog/rsyslog-8.1911.0.tar.gz
 - 'https://www.rsyslog.com/files/download/rsyslog/rsyslog-doc-8.1911.0.tar.gz '

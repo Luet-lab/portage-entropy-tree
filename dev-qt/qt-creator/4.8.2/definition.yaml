@@ -5,10 +5,24 @@ license: GPL-3
 name: qt-creator
 requires:
 - 
-  category: dev-vcs
+  category: dev-qt
   description: ""
   license: ""
-  name: cvs
+  name: qtsvg
+  
+  version: 5.9.0
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: qbs
+  
+  version: 1.12.2
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: cmake[server(+)]
   
   version: ""
 - 
@@ -22,35 +36,21 @@ requires:
   category: dev-qt
   description: ""
   license: ""
-  name: qtquickcontrols
+  name: qttranslations
   
   version: 5.9.0
 - 
   category: dev-qt
   description: ""
   license: ""
-  name: qtsql
+  name: qtdeclarative
   
   version: 5.9.0
 - 
   category: dev-qt
   description: ""
   license: ""
-  name: designer
-  
-  version: 5.9.0
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtcore
-  
-  version: 5.9.0
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtprintsupport
+  name: qtwebengine
   
   version: 5.9.0
 - 
@@ -68,59 +68,80 @@ requires:
   
   version: ""
 - 
-  category: dev-util
+  category: dev-vcs
   description: ""
   license: ""
-  name: cmake[server(+)]
+  name: mercurial
   
   version: ""
+- 
+  category: dev-vcs
+  description: ""
+  license: ""
+  name: subversion
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtsql
+  
+  version: 5.9.0
 - 
   category: sys-apps
   description: ""
   license: ""
-  name: the_silver_searcher
+  name: systemd
+  
+  version: ""
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: gdb
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: cppcheck
   
   version: ""
 - 
   category: dev-qt
   description: ""
   license: ""
-  name: qttranslations
+  name: qtxml
   
   version: 5.9.0
 - 
-  category: dev-qt
+  category: sys-devel
   description: ""
   license: ""
-  name: qtwebengine
+  name: clang
   
-  version: 5.9.0
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: qbs
-  
-  version: 1.12.2
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtserialport
-  
-  version: 5.9.0
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtconcurrent
-  
-  version: 5.9.0
+  version: "6"
 - 
   category: dev-qt
   description: ""
   license: ""
   name: qtgui
+  
+  version: 5.9.0
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtprintsupport
+  
+  version: 5.9.0
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtquickcontrols
   
   version: 5.9.0
 - 
@@ -141,23 +162,37 @@ requires:
   category: dev-qt
   description: ""
   license: ""
-  name: qthelp
+  name: qtx11extras
   
   version: 5.9.0
 - 
-  category: sys-apps
+  category: dev-qt
   description: ""
   license: ""
-  name: systemd
+  name: qtconcurrent
   
-  version: ""
+  version: 5.9.0
 - 
-  category: dev-vcs
+  category: dev-qt
   description: ""
   license: ""
-  name: mercurial
+  name: designer
   
-  version: ""
+  version: 5.9.0
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtserialport
+  
+  version: 5.9.0
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qthelp
+  
+  version: 5.9.0
 - 
   category: dev-util
   description: ""
@@ -176,30 +211,9 @@ requires:
   category: dev-qt
   description: ""
   license: ""
-  name: qtdeclarative
+  name: qtcore
   
   version: 5.9.0
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtsvg
-  
-  version: 5.9.0
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: clang
-  
-  version: "6"
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: cppcheck
-  
-  version: ""
 - 
   category: dev-qt
   description: ""
@@ -208,31 +222,17 @@ requires:
   
   version: 5.9.0
 - 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtxml
-  
-  version: 5.9.0
-- 
   category: dev-vcs
   description: ""
   license: ""
-  name: subversion
+  name: cvs
   
   version: ""
 - 
-  category: dev-qt
+  category: sys-apps
   description: ""
   license: ""
-  name: qtx11extras
-  
-  version: 5.9.0
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: gdb
+  name: the_silver_searcher
   
   version: ""
 uri:

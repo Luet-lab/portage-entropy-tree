@@ -12,12 +12,19 @@ license: GPL-2 CC-BY-SA-3.0 FDL-1.3 LGPL-2.1
 name: empathy
 requires:
 - 
-  category: app-misc
+  category: media-libs
   description: ""
   license: ""
-  name: geoclue
+  name: cogl
   
-  version: "2.1"
+  version: "1.14"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
 - 
   category: media-libs
   description: ""
@@ -26,24 +33,45 @@ requires:
   
   version: 1.7.14
 - 
+  category: x11-themes
+  description: ""
+  license: ""
+  name: adwaita-icon-theme
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.48"
+- 
   category: media-libs
   description: ""
   license: ""
-  name: libchamplain
+  name: clutter-gst
   
-  version: 0.12.1
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: enchant
-  
-  version: "1.2"
+  version: ""
 - 
   category: media-libs
   description: ""
   license: ""
   name: gst-plugins-base
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: dbus-glib
+  
+  version: "0.51"
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: farstream
   
   version: ""
 - 
@@ -54,59 +82,24 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: folks
-  
-  version: 0.9.5
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libsoup
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnome-online-accounts
-  
-  version: 3.5.1
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.48"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: dbus-glib
-  
-  version: "0.51"
-- 
   category: media-libs
   description: ""
   license: ""
-  name: gstreamer
+  name: clutter
   
-  version: ""
+  version: 1.10.0
 - 
-  category: dev-libs
+  category: sci-geosciences
   description: ""
   license: ""
-  name: libxml2
+  name: geocode-glib
   
-  version: ""
+  version: "3.10"
 - 
-  category: x11-libs
+  category: media-plugins
   description: ""
   license: ""
-  name: libX11
+  name: gst-plugins-v4l2
   
   version: ""
 - 
@@ -117,6 +110,20 @@ requires:
   
   version: ""
 - 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: 3.9.4
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: telepathy-farstream
+  
+  version: 0.6.0
+- 
   category: net-libs
   description: ""
   license: ""
@@ -124,17 +131,45 @@ requires:
   
   version: 0.23.2
 - 
-  category: net-im
+  category: app-crypt
   description: ""
   license: ""
-  name: telepathy-logger
+  name: gcr
   
-  version: 0.8.0
+  version: ""
 - 
-  category: net-im
+  category: app-misc
   description: ""
   license: ""
-  name: telepathy-connection-managers
+  name: geoclue
+  
+  version: "2.1"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libchamplain
+  
+  version: 0.12.1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgudev
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libnotify
+  
+  version: "0.7"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gstreamer
   
   version: ""
 - 
@@ -145,38 +180,10 @@ requires:
   
   version: ""
 - 
-  category: sci-geosciences
+  category: net-im
   description: ""
   license: ""
-  name: geocode-glib
-  
-  version: "3.10"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgudev
-  
-  version: ""
-- 
-  category: x11-themes
-  description: ""
-  license: ""
-  name: adwaita-icon-theme
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: farstream
-  
-  version: ""
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gsettings-desktop-schemas
+  name: telepathy-connection-managers
   
   version: ""
 - 
@@ -190,51 +197,58 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: clutter
+  name: clutter-gtk
   
-  version: 1.10.0
+  version: 0.90.3
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: enchant
+  
+  version: "1.2"
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: iso-codes
+  
+  version: "0.35"
 - 
   category: app-crypt
   description: ""
   license: ""
-  name: gcr
+  name: libsecret
+  
+  version: "0.5"
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gsettings-desktop-schemas
   
   version: ""
 - 
-  category: media-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: clutter-gst
+  name: libxml2
   
   version: ""
 - 
   category: net-libs
   description: ""
   license: ""
-  name: telepathy-farstream
+  name: libsoup
   
-  version: 0.6.0
-- 
-  category: media-video
-  description: ""
-  license: ""
-  name: cheese
-  
-  version: "3.4"
+  version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libgee
+  name: folks
   
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libcanberra
-  
-  version: "0.25"
+  version: 0.9.5
 - 
   category: net-libs
   description: ""
@@ -250,54 +264,40 @@ requires:
   
   version: 1.1.2
 - 
-  category: media-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: cogl
-  
-  version: "1.14"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: clutter-gtk
-  
-  version: 0.90.3
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: iso-codes
-  
-  version: "0.35"
-- 
-  category: media-plugins
-  description: ""
-  license: ""
-  name: gst-plugins-v4l2
+  name: libgee
   
   version: ""
 - 
-  category: x11-libs
+  category: media-libs
   description: ""
   license: ""
-  name: gtk+
+  name: libcanberra
   
-  version: 3.9.4
+  version: "0.25"
 - 
-  category: app-crypt
+  category: media-video
   description: ""
   license: ""
-  name: libsecret
+  name: cheese
   
-  version: "0.5"
+  version: "3.4"
 - 
-  category: x11-libs
+  category: net-im
   description: ""
   license: ""
-  name: libnotify
+  name: telepathy-logger
   
-  version: "0.7"
+  version: 0.8.0
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnome-online-accounts
+  
+  version: 3.5.1
 uri: []
 use_flags:
 - debug

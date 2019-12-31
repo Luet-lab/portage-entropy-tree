@@ -5,19 +5,19 @@ license: GPL-2+
 name: cinnamon-settings-daemon
 requires:
 - 
-  category: net-print
+  category: x11-libs
   description: ""
   license: ""
-  name: cups
+  name: libXext
   
-  version: "1.4"
+  version: ""
 - 
-  category: dev-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: nss
+  name: libxklavier
   
-  version: 3.11.2
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -26,103 +26,12 @@ requires:
   
   version: "2.38"
 - 
-  category: gnome-extra
-  description: ""
-  license: ""
-  name: cinnamon-desktop
-  
-  version: 2.8.0
-- 
-  category: sys-power
-  description: ""
-  license: ""
-  name: upower
-  
-  version: 0.9.11
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXext
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
   name: libgudev
   
   version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: fontconfig
-  
-  version: ""
-- 
-  category: x11-drivers
-  description: ""
-  license: ""
-  name: xf86-input-wacom
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXtst
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libwacom
-  
-  version: "0.7"
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: polkit
-  
-  version: "0.97"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXi
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: ""
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: libgnomekbd
-  
-  version: "3.6"
 - 
   category: x11-libs
   description: ""
@@ -134,9 +43,79 @@ requires:
   category: x11-libs
   description: ""
   license: ""
+  name: libXfixes
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libwacom
+  
+  version: "0.7"
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: libgnomekbd
+  
+  version: "3.6"
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: "0.97"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
   name: libnotify
   
   version: 0.7.3
+- 
+  category: net-print
+  description: ""
+  license: ""
+  name: cups
+  
+  version: "1.4"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libcanberra
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: ""
 - 
   category: media-libs
   description: ""
@@ -145,10 +124,17 @@ requires:
   
   version: "2.2"
 - 
-  category: x11-libs
+  category: x11-misc
   description: ""
   license: ""
-  name: gdk-pixbuf
+  name: colord
+  
+  version: 0.1.27
+- 
+  category: "(\tsys-auth"
+  description: ""
+  license: ""
+  name: elogind
   
   version: ""
 - 
@@ -162,35 +148,49 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXfixes
+  name: gdk-pixbuf
   
   version: ""
 - 
-  category: x11-misc
+  category: x11-drivers
   description: ""
   license: ""
-  name: colord
+  name: xf86-input-wacom
   
-  version: 0.1.27
+  version: ""
+- 
+  category: gnome-extra
+  description: ""
+  license: ""
+  name: cinnamon-desktop
+  
+  version: 2.8.0
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libxklavier
+  name: libXi
   
   version: ""
 - 
-  category: "(\tsys-auth"
+  category: dev-libs
   description: ""
   license: ""
-  name: elogind
+  name: nss
   
-  version: ""
+  version: 3.11.2
 - 
-  category: media-libs
+  category: sys-power
   description: ""
   license: ""
-  name: libcanberra
+  name: upower
+  
+  version: 0.9.11
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXtst
   
   version: ""
 uri:

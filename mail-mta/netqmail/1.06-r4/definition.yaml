@@ -4,7 +4,14 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: esmtp
+  name: postfix
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+mailer
   
   version: ""
 - 
@@ -22,28 +29,7 @@ conflicts:
   
   version: ""
 - 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: sendmail
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: exim
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: msmtp
-  
-  version: ""
-- 
-  category: <mail-mta
+  category: '>=mail-mta'
   description: ""
   license: ""
   name: ssmtp
@@ -60,6 +46,27 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
+  name: msmtp
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: esmtp
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: exim
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
   name: qmail-ldap
   
   version: ""
@@ -67,18 +74,11 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-mailer
+  name: sendmail
   
   version: ""
 - 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: postfix
-  
-  version: ""
-- 
-  category: '>=mail-mta'
+  category: <mail-mta
   description: ""
   license: ""
   name: ssmtp
@@ -89,24 +89,10 @@ license: public-domain
 name: netqmail
 requires:
 - 
-  category: acct-group
+  category: net-mail
   description: ""
   license: ""
-  name: nofiles
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: qmail
-  
-  version: ""
-- 
-  category: acct-user
-  description: ""
-  license: ""
-  name: qmails
+  name: queue-repair
   
   version: ""
 - 
@@ -120,7 +106,77 @@ requires:
   category: acct-user
   description: ""
   license: ""
+  name: qmaild
+  
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: qmails
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: ucspi-tcp
+  
+  version: 0.88-r17
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: nofiles
+  
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  license: ""
   name: qmaill
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: qmail
+  
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: alias
+  
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: qmailp
+  
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: qmailq
+  
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: qmailr
   
   version: ""
 - 
@@ -134,42 +190,28 @@ requires:
   category: sys-apps
   description: ""
   license: ""
-  name: ucspi-tcp
-  
-  version: 0.88-r17
-- 
-  category: sys-apps
-  description: ""
-  license: ""
   name: ucspi-ssl
   
   version: 0.70-r1
 - 
-  category: acct-user
+  category: net-mail
   description: ""
   license: ""
-  name: alias
+  name: cmd5checkpw
   
-  version: ""
-- 
-  category: acct-user
-  description: ""
-  license: ""
-  name: qmailr
-  
-  version: ""
+  version: "0.30"
 - 
   category: net-mail
   description: ""
   license: ""
-  name: queue-repair
+  name: dot-forward
   
-  version: ""
+  version: 0.71-r3
 - 
-  category: dev-libs
+  category: virtual
   description: ""
   license: ""
-  name: libressl
+  name: checkpassword
   
   version: ""
 - 
@@ -180,54 +222,12 @@ requires:
   
   version: ""
 - 
-  category: acct-user
-  description: ""
-  license: ""
-  name: qmaild
-  
-  version: ""
-- 
-  category: acct-user
-  description: ""
-  license: ""
-  name: qmailp
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: checkpassword
-  
-  version: ""
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: cmd5checkpw
-  
-  version: "0.30"
-- 
-  category: acct-user
-  description: ""
-  license: ""
-  name: qmailq
-  
-  version: ""
-- 
   category: sys-apps
   description: ""
   license: ""
   name: groff
   
   version: ""
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: dot-forward
-  
-  version: 0.71-r3
 uri:
 - mirror://qmail/netqmail-1.06.tar.gz
 use_flags:

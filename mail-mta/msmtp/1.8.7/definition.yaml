@@ -4,16 +4,16 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: sendmail
+  name: courier
   
   version: ""
 - 
-  category: '>=mail-mta'
+  category: mail-mta
   description: ""
   license: ""
-  name: ssmtp
+  name: opensmtpd
   
-  version: 2.64-r2
+  version: ""
 - 
   category: mail-mta
   description: ""
@@ -22,17 +22,17 @@ conflicts:
   
   version: ""
 - 
-  category: <mail-mta
+  category: mail-mta
   description: ""
   license: ""
-  name: ssmtp
+  name: esmtp
   
-  version: 2.64-r2
+  version: ""
 - 
   category: mail-mta
   description: ""
   license: ""
-  name: netqmail
+  name: mini-qmail
   
   version: ""
 - 
@@ -53,20 +53,6 @@ mailer
   category: mail-mta
   description: ""
   license: ""
-  name: mini-qmail
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: courier
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
   name: exim
   
   version: ""
@@ -74,60 +60,39 @@ mailer
   category: mail-mta
   description: ""
   license: ""
-  name: esmtp
+  name: netqmail
   
   version: ""
 - 
   category: mail-mta
   description: ""
   license: ""
-  name: opensmtpd
+  name: sendmail
   
   version: ""
+- 
+  category: <mail-mta
+  description: ""
+  license: ""
+  name: ssmtp
+  
+  version: 2.64-r2
+- 
+  category: '>=mail-mta'
+  description: ""
+  license: ""
+  name: ssmtp
+  
+  version: 2.64-r2
 description: An SMTP client and SMTP plugin for mail user agents such as Mutt
 license: GPL-3
 name: msmtp
 requires:
 - 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: libsecret
-  
-  version: ""
-- 
   category: net-mail
   description: ""
   license: ""
   name: mailbase
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: msmtpd
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnutls[idn?]
-  
-  version: ""
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: libidn2
-  
-  version: ""
-- 
-  category: acct-user
-  description: ""
-  license: ""
-  name: msmtpd
   
   version: ""
 - 
@@ -142,6 +107,41 @@ requires:
   description: ""
   license: ""
   name: gsasl
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: msmtpd
+  
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: msmtpd
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: libsecret
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls[idn?]
+  
+  version: ""
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: libidn2
   
   version: ""
 uri:

@@ -5,12 +5,26 @@ license: GPL-2
 name: irssi
 requires:
 - 
+  category: net-proxy
+  description: ""
+  license: ""
+  name: dante
+  
+  version: 1.1.18
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-irc
+  
+  version: ""
+- 
   category: dev-libs
   description: ""
   license: ""
-  name: glib
+  name: openssl
   
-  version: 2.6.0
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -18,13 +32,6 @@ requires:
   name: libressl
   
   version: 2.7.4
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgcrypt
-  
-  version: 1.2.0
 - 
   category: net-libs
   description: ""
@@ -40,13 +47,6 @@ requires:
   
   version: ""
 - 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-irc
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
@@ -57,16 +57,16 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: openssl
+  name: glib
   
-  version: ""
+  version: 2.6.0
 - 
-  category: net-proxy
+  category: dev-libs
   description: ""
   license: ""
-  name: dante
+  name: libgcrypt
   
-  version: 1.1.18
+  version: 1.2.0
 uri:
 - https://github.com/irssi/irssi/releases/download/1.2.2/irssi-1.2.2.tar.xz
 use_flags:

@@ -5,24 +5,17 @@ license: BSD GPL-2
 name: openssh
 requires:
 - 
+  category: sys-process
+  description: ""
+  license: ""
+  name: audit
+  
+  version: ""
+- 
   category: net-libs
   description: ""
   license: ""
   name: ldns
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: ldns[ecdsa,ssl(+)]
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
   
   version: ""
 - 
@@ -33,17 +26,24 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: zlib
+  name: libedit
   
-  version: 1.2.3
+  version: ""
 - 
-  category: sys-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: pam
+  name: openssl
+  
+  version: 1.1.0g
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: shadow
   
   version: ""
 - 
@@ -54,10 +54,17 @@ requires:
   
   version: ""
 - 
-  category: sys-process
+  category: sys-auth
   description: ""
   license: ""
-  name: audit
+  name: pambase
+  
+  version: "20081028"
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: ldns[ecdsa,ssl(+)]
   
   version: ""
 - 
@@ -75,26 +82,19 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: 1.1.0g
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libedit
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
   name: libselinux
   
   version: "1.28"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
 - 
   category: virtual
   description: ""
@@ -103,17 +103,17 @@ requires:
   
   version: ""
 - 
-  category: sys-auth
+  category: sys-libs
   description: ""
   license: ""
-  name: pambase
+  name: zlib
   
-  version: "20081028"
+  version: 1.2.3
 - 
-  category: virtual
+  category: sys-libs
   description: ""
   license: ""
-  name: shadow
+  name: pam
   
   version: ""
 uri:

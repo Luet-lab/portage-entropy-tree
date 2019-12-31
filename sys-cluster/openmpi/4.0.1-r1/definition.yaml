@@ -4,7 +4,7 @@ conflicts:
   category: sys-cluster
   description: ""
   license: ""
-  name: mpich2
+  name: mpich
   
   version: ""
 - 
@@ -18,14 +18,14 @@ mpi
   category: sys-cluster
   description: ""
   license: ""
-  name: mpich
+  name: mpiexec
   
   version: ""
 - 
   category: sys-cluster
   description: ""
   license: ""
-  name: mpiexec
+  name: mpich2
   
   version: ""
 description: A high-performance message passing library (MPI)
@@ -39,34 +39,6 @@ requires:
   name: libltdl
   
   version: ""
-- 
-  category: sys-fabric
-  description: ""
-  license: ""
-  name: ofed
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: torque
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: slurm
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: hwloc
-  
-  version: 2.0.2
 - 
   category: dev-util
   description: ""
@@ -82,10 +54,17 @@ requires:
   
   version: ""
 - 
-  category: sys-fabric
+  category: sys-cluster
   description: ""
   license: ""
-  name: librdmacm
+  name: slurm
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: torque
   
   version: ""
 - 
@@ -95,6 +74,20 @@ requires:
   name: libevent
   
   version: 2.0.22
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: hwloc
+  
+  version: 2.0.2
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jre
+  
+  version: "1.6"
 - 
   category: sys-libs
   description: ""
@@ -106,16 +99,23 @@ requires:
   category: sys-fabric
   description: ""
   license: ""
+  name: ofed
+  
+  version: ""
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
   name: infinipath-psm
   
   version: ""
 - 
-  category: virtual
+  category: sys-fabric
   description: ""
   license: ""
-  name: jre
+  name: librdmacm
   
-  version: "1.6"
+  version: ""
 uri:
 - http://www.open-mpi.org/software/ompi/v/downloads/openmpi-4.0.1.tar.bz2
 use_flags:

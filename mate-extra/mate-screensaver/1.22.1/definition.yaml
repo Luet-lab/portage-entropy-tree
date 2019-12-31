@@ -12,26 +12,33 @@ license: GPL-2
 name: mate-screensaver
 requires:
 - 
-  category: mate-base
-  description: ""
-  license: ""
-  name: mate-desktop
-  
-  version: 1.17.0
-- 
   category: x11-libs
   description: ""
   license: ""
-  name: libXext
+  name: libXrandr
   
   version: ""
 - 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: "0.30"
+- 
   category: x11-libs
   description: ""
   license: ""
-  name: libnotify
+  name: libXxf86vm
   
-  version: "0.7"
+  version: ""
+- 
+  category: mate-base
+  description: ""
+  license: ""
+  name: mate-session-manager
+  
+  version: "1.6"
 - 
   category: dev-libs
   description: ""
@@ -39,6 +46,20 @@ requires:
   name: dbus-glib
   
   version: "0.71"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXxf86misc
+  
+  version: ""
 - 
   category: x11-libs
   description: ""
@@ -54,6 +75,69 @@ requires:
   
   version: ""
 - 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.50"
+- 
+  category: mate-base
+  description: ""
+  license: ""
+  name: mate-menus
+  
+  version: 1.21.0
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXext
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXScrnSaver
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: consolekit
+  
+  version: ""
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: dconf
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gdk-pixbuf
+  
+  version: "2.14"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: "1"
+- 
   category: x11-libs
   description: ""
   license: ""
@@ -61,31 +145,52 @@ requires:
   
   version: "3.22"
 - 
-  category: x11-libs
+  category: virtual
   description: ""
   license: ""
-  name: libXxf86vm
+  name: libintl
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libxklavier
+  name: libnotify
+  
+  version: "0.7"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: opengl
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: elogind
   
   version: ""
 - 
   category: mate-base
   description: ""
   license: ""
-  name: mate-session-manager
+  name: libmatekbd
   
-  version: "1.6"
+  version: 1.17.0
+- 
+  category: mate-base
+  description: ""
+  license: ""
+  name: mate-desktop
+  
+  version: 1.17.0
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: cairo
+  name: libxklavier
   
   version: ""
 - 
@@ -102,111 +207,6 @@ requires:
   name: shadow
   
   version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: elogind
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: ""
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: dconf
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: "1"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXrandr
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXxf86misc
-  
-  version: ""
-- 
-  category: mate-base
-  description: ""
-  license: ""
-  name: libmatekbd
-  
-  version: 1.17.0
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: opengl
-  
-  version: ""
-- 
-  category: mate-base
-  description: ""
-  license: ""
-  name: mate-menus
-  
-  version: 1.21.0
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus
-  
-  version: "0.30"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gdk-pixbuf
-  
-  version: "2.14"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXScrnSaver
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libintl
-  
-  version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: consolekit
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.50"
 uri: []
 use_flags:
 - X

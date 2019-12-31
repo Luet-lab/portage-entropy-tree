@@ -6,14 +6,14 @@ conflicts:
   license: ""
   name: sqlalchemy
   
-  version: 1.1.7
+  version: 1.1.8
 - 
   category: ~dev-python
   description: ""
   license: ""
-  name: sqlalchemy
+  name: pbr
   
-  version: 1.1.8
+  version: 2.1.0
 - 
   category: ~dev-python
   description: ""
@@ -32,34 +32,13 @@ conflicts:
   category: ~dev-python
   description: ""
   license: ""
-  name: pbr
+  name: sqlalchemy
   
-  version: 2.1.0
+  version: 1.1.7
 description: OpenStack Common DB Code
 license: Apache-2.0
 name: oslo-db
 requires:
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: six
-  
-  version: 1.10.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: oslo-config
-  
-  version: 5.2.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: psycopg
-  
-  version: "2.7"
 - 
   category: dev-python
   description: ""
@@ -71,9 +50,9 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: alembic
+  name: six
   
-  version: 0.9.6
+  version: 1.10.0
 - 
   category: dev-python
   description: ""
@@ -85,9 +64,16 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: stevedore
+  name: oslo-utils
   
-  version: 1.20.0
+  version: 3.33.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: psycopg
+  
+  version: "2.7"
 - 
   category: dev-python
   description: ""
@@ -99,13 +85,6 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: sqlalchemy
-  
-  version: 1.0.10
-- 
-  category: dev-python
-  description: ""
-  license: ""
   name: debtcollector
   
   version: 1.2.0
@@ -113,9 +92,30 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: oslo-utils
+  name: sqlalchemy
   
-  version: 3.33.0
+  version: 1.0.10
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: stevedore
+  
+  version: 1.20.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: alembic
+  
+  version: 0.9.6
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: oslo-config
+  
+  version: 5.2.0
 uri:
 - mirror://pypi/o/oslo.db/oslo.db-4.45.0.tar.gz
 use_flags:

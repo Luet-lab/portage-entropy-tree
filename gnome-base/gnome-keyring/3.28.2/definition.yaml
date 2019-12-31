@@ -5,17 +5,24 @@ license: GPL-2+ LGPL-2+
 name: gnome-keyring
 requires:
 - 
-  category: dev-libs
+  category: app-crypt
   description: ""
   license: ""
-  name: glib
+  name: gnupg
   
-  version: "2.44"
+  version: 2.0.28
 - 
   category: app-misc
   description: ""
   license: ""
   name: ca-certificates
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap-ng
   
   version: ""
 - 
@@ -29,7 +36,14 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: libcap-ng
+  name: pam
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-gnome
   
   version: ""
 - 
@@ -47,26 +61,12 @@ requires:
   
   version: 3.27.90
 - 
-  category: sys-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: pam
+  name: glib
   
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-gnome
-  
-  version: ""
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: gnupg
-  
-  version: 2.0.28
+  version: "2.44"
 uri: []
 use_flags:
 - +caps

@@ -5,12 +5,12 @@ license: GPL-2+
 name: xfce4-screenshooter
 requires:
 - 
-  category: xfce-base
+  category: dev-libs
   description: ""
   license: ""
-  name: libxfce4util
+  name: glib
   
-  version: "4.10"
+  version: "2.16"
 - 
   category: x11-libs
   description: ""
@@ -29,9 +29,23 @@ requires:
   category: xfce-base
   description: ""
   license: ""
-  name: xfce4-panel
+  name: libxfce4ui
   
   version: "4.12"
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libsoup
+  
+  version: "2.26"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gdk-pixbuf
+  
+  version: "2.16"
 - 
   category: dev-libs
   description: ""
@@ -64,30 +78,16 @@ requires:
   category: xfce-base
   description: ""
   license: ""
-  name: libxfce4ui
+  name: xfce4-panel
   
   version: "4.12"
 - 
-  category: dev-libs
+  category: xfce-base
   description: ""
   license: ""
-  name: glib
+  name: libxfce4util
   
-  version: "2.16"
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libsoup
-  
-  version: "2.26"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gdk-pixbuf
-  
-  version: "2.16"
+  version: "4.10"
 uri:
 - https://archive.xfce.org/src/apps/xfce4-screenshooter/1.9/xfce4-screenshooter-1.9.6.tar.bz2
 use_flags:

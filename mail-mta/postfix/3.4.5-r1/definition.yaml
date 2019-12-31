@@ -4,7 +4,21 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: courier
+  name: mini-qmail
+  
+  version: ""
+- 
+  category: <mail-mta
+  description: ""
+  license: ""
+  name: ssmtp
+  
+  version: 2.64-r2
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: netqmail
   
   version: ""
 - 
@@ -22,13 +36,6 @@ conflicts:
   
   version: ""
 - 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: exim
-  
-  version: ""
-- 
   category: '>=mail-mta'
   description: ""
   license: ""
@@ -39,7 +46,14 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: netqmail
+  name: courier
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: exim
   
   version: ""
 - 
@@ -57,10 +71,10 @@ conflicts:
   
   version: ""
 - 
-  category: net-mail
+  category: mail-mta
   description: ""
   license: ""
-  name: fastforward
+mailer
   
   version: ""
 - 
@@ -71,37 +85,23 @@ conflicts:
   
   version: ""
 - 
-  category: mail-mta
+  category: net-mail
   description: ""
   license: ""
-  name: mini-qmail
+  name: fastforward
   
   version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-mailer
-  
-  version: ""
-- 
-  category: <mail-mta
-  description: ""
-  license: ""
-  name: ssmtp
-  
-  version: 2.64-r2
 description: A fast and secure drop-in replacement for sendmail
 license: '|| ( IBM EPL-2.0 )'
 name: postfix
 requires:
 - 
-  category: sys-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: db
+  name: libpcre
   
-  version: "3.2"
+  version: "3.4"
 - 
   category: dev-libs
   description: ""
@@ -113,14 +113,7 @@ requires:
   category: dev-db
   description: ""
   license: ""
-  name: lmdb
-  
-  version: 0.9.11
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libnsl
+  name: mysql-connector-c
   
   version: ""
 - 
@@ -131,26 +124,12 @@ requires:
   
   version: "2"
 - 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-postfix
-  
-  version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: memcached
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
-  name: openssl
+  name: libressl
   
-  version: ""
+  version: 2.9.1
 - 
   category: net-mail
   description: ""
@@ -159,10 +138,24 @@ requires:
   
   version: ""
 - 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: db
+  
+  version: "3.2"
+- 
   category: dev-db
   description: ""
   license: ""
-  name: mysql-connector-c
+  name: lmdb
+  
+  version: 0.9.11
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: memcached
   
   version: ""
 - 
@@ -173,10 +166,31 @@ requires:
   
   version: ""
 - 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: ""
+- 
   category: net-nds
   description: ""
   license: ""
   name: openldap
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: perl
   
   version: ""
 - 
@@ -187,31 +201,17 @@ requires:
   
   version: ""
 - 
-  category: dev-db
+  category: sec-policy
   description: ""
   license: ""
-  name: sqlite
+  name: selinux-postfix
   
   version: ""
 - 
-  category: dev-libs
+  category: net-libs
   description: ""
   license: ""
-  name: libressl
-  
-  version: 2.9.1
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libpcre
-  
-  version: "3.4"
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: perl
+  name: libnsl
   
   version: ""
 uri:

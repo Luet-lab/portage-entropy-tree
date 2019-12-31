@@ -4,20 +4,6 @@ conflicts:
   category: ~dev-python
   description: ""
   license: ""
-  name: kombu
-  
-  version: 4.0.2
-- 
-  category: ~dev-python
-  description: ""
-  license: ""
-  name: pbr
-  
-  version: 2.1.0
-- 
-  category: ~dev-python
-  description: ""
-  license: ""
   name: oslo-serialization
   
   version: 2.19.1
@@ -25,9 +11,23 @@ conflicts:
   category: ~dev-python
   description: ""
   license: ""
+  name: kombu
+  
+  version: 4.0.2
+- 
+  category: ~dev-python
+  description: ""
+  license: ""
   name: oslo-service
   
   version: 1.28.1
+- 
+  category: ~dev-python
+  description: ""
+  license: ""
+  name: pbr
+  
+  version: 2.1.0
 description: Messaging API for RPC and notifications over different messaging transports
 license: Apache-2.0
 name: oslo-messaging
@@ -36,30 +36,9 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: pbr
+  name: oslo-service
   
-  version: 2.0.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: oslo-utils
-  
-  version: 3.33.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: stevedore
-  
-  version: 1.20.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: debtcollector
-  
-  version: 1.2.0
+  version: 1.24.0
 - 
   category: dev-python
   description: ""
@@ -67,13 +46,6 @@ requires:
   name: cachetools
   
   version: 2.0.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: oslo-config
-  
-  version: 5.2.0
 - 
   category: dev-python
   description: ""
@@ -92,16 +64,16 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: py-amqp
+  name: futurist
   
-  version: 2.3.0
+  version: 1.2.0
 - 
   category: dev-python
   description: ""
   license: ""
-  name: tenacity
+  name: oslo-config
   
-  version: 4.4.0
+  version: 5.2.0
 - 
   category: dev-python
   description: ""
@@ -113,20 +85,6 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: oslo-service
-  
-  version: 1.24.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: monotonic
-  
-  version: "0.6"
-- 
-  category: dev-python
-  description: ""
-  license: ""
   name: six
   
   version: 1.10.0
@@ -134,16 +92,16 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: futurist
+  name: tenacity
   
-  version: 1.2.0
+  version: 4.4.0
 - 
   category: dev-python
   description: ""
   license: ""
-  name: oslo-log
+  name: oslo-middleware
   
-  version: 3.36.0
+  version: 3.31.0
 - 
   category: dev-python
   description: ""
@@ -155,16 +113,16 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: kombu
+  name: stevedore
   
-  version: 4.0.0
+  version: 1.20.0
 - 
   category: dev-python
   description: ""
   license: ""
-  name: pika
+  name: debtcollector
   
-  version: 0.10.0
+  version: 1.2.0
 - 
   category: dev-python
   description: ""
@@ -183,9 +141,51 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: oslo-middleware
+  name: oslo-log
   
-  version: 3.31.0
+  version: 3.36.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: monotonic
+  
+  version: "0.6"
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: kombu
+  
+  version: 4.0.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: py-amqp
+  
+  version: 2.3.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pika
+  
+  version: 0.10.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pbr
+  
+  version: 2.0.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: oslo-utils
+  
+  version: 3.33.0
 uri:
 - mirror://pypi/o/oslo.messaging/oslo.messaging-8.1.2.tar.gz
 version: 8.1.2

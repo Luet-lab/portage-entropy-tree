@@ -1,13 +1,6 @@
 category: x11-wm
 conflicts:
 - 
-  category: '!<x11-themes'
-  description: ""
-  license: ""
-  name: fluxbox-styles-fluxmod
-  
-  version: 20040809-r1
-- 
   category: '!<=x11-misc'
   description: ""
   license: ""
@@ -21,10 +14,31 @@ conflicts:
   name: fluxconf
   
   version: 0.9.9
+- 
+  category: '!<x11-themes'
+  description: ""
+  license: ""
+  name: fluxbox-styles-fluxmod
+  
+  version: 20040809-r1
 description: X11 window manager featuring tabs and an iconbar
 license: MIT
 name: fluxbox
 requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: fribidi
+  
+  version: 0.19.2
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
+  
+  version: ""
 - 
   category: x11-libs
   description: ""
@@ -43,7 +57,7 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXpm
+  name: libXinerama
   
   version: ""
 - 
@@ -54,24 +68,17 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: fribidi
-  
-  version: 0.19.2
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: imlib2-1.2.0[X]
+  name: libXrender
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: freetype
+  name: imlib2-1.2.0[X]
   
   version: ""
 - 
@@ -85,14 +92,7 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXrender
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXinerama
+  name: libXpm
   
   version: ""
 uri:

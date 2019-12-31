@@ -8,105 +8,7 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: yappi
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: libvirt-python
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: libcloud
-  
-  version: 0.14.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pycryptodome
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pyyaml
-  
-  version: ""
-- 
-  category: www-servers
-  description: ""
-  license: ""
-  name: tornado
-  
-  version: "5.0"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: python-futures
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: mako
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: msgpack
-  
-  version: "0.3"
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-salt
-  
-  version: ""
-- 
-  category: app-vim
-  description: ""
-  license: ""
-  name: salt-vim
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: keyring
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: cherrypy
-  
-  version: 3.2.2
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: mysql-python
+  name: jinja
   
   version: ""
 - 
@@ -117,10 +19,10 @@ requires:
   
   version: ""
 - 
-  category: dev-python
+  category: virtual
   description: ""
   license: ""
-  name: pyopenssl
+  name: python-futures
   
   version: ""
 - 
@@ -134,9 +36,9 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: redis-py
+  name: raet
   
-  version: ""
+  version: 0.6.0
 - 
   category: dev-python
   description: ""
@@ -148,16 +50,16 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: jinja
+  name: pyyaml
   
   version: ""
 - 
   category: dev-python
   description: ""
   license: ""
-  name: requests
+  name: libcloud
   
-  version: 1.0.0
+  version: 0.14.0
 - 
   category: dev-python
   description: ""
@@ -169,16 +71,16 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: pyzmq
+  name: cherrypy
   
-  version: 2.2.0
+  version: 3.2.2
 - 
   category: dev-python
   description: ""
   license: ""
-  name: python-novaclient
+  name: pymongo
   
-  version: 2.17.0
+  version: ""
 - 
   category: dev-python
   description: ""
@@ -190,42 +92,56 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: python-gnupg
+  name: msgpack
   
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: pciutils
-  
-  version: ""
-- 
-  category: www-servers
-  description: ""
-  license: ""
-  name: tornado
-  
-  version: 4.2.1
+  version: "0.3"
 - 
   category: dev-python
   description: ""
   license: ""
-  name: python-ldap
+  name: mako
   
   version: ""
 - 
   category: dev-python
   description: ""
   license: ""
-  name: raet
+  name: python-novaclient
   
-  version: 0.6.0
+  version: 2.17.0
 - 
   category: dev-python
   description: ""
   license: ""
-  name: pymongo
+  name: yappi
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: requests
+  
+  version: 1.0.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pyopenssl
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pycryptodome
   
   version: ""
 - 
@@ -239,7 +155,91 @@ requires:
   category: dev-python
   description: ""
   license: ""
+  name: redis-py
+  
+  version: ""
+- 
+  category: www-servers
+  description: ""
+  license: ""
+  name: tornado
+  
+  version: "5.0"
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: python-ldap
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pyzmq
+  
+  version: 2.2.0
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: pciutils
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: keyring
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: mysql-python
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
   name: markupsafe
+  
+  version: ""
+- 
+  category: www-servers
+  description: ""
+  license: ""
+  name: tornado
+  
+  version: 4.2.1
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: libvirt-python
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-salt
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: python-gnupg
+  
+  version: ""
+- 
+  category: app-vim
+  description: ""
+  license: ""
+  name: salt-vim
   
   version: ""
 uri:

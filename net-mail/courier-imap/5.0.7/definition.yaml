@@ -4,14 +4,7 @@ conflicts:
   category: net-mail
   description: ""
   license: ""
-  name: uw-imap
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: courier
+  name: bincimap
   
   version: ""
 - 
@@ -25,7 +18,14 @@ conflicts:
   category: net-mail
   description: ""
   license: ""
-  name: bincimap
+  name: uw-imap
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: courier
   
   version: ""
 description: An IMAP daemon designed specifically for maildirs
@@ -33,40 +33,19 @@ license: GPL-3
 name: courier-imap
 requires:
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
-  
-  version: ""
-- 
   category: net-libs
   description: ""
   license: ""
-  name: courier-unicode
+  name: courier-authlib
   
-  version: "2"
+  version: 0.66.4
 - 
-  category: sec-policy
+  category: net-dns
   description: ""
   license: ""
-  name: selinux-courier
+  name: libidn
   
   version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: fam
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: gdbm
-  
-  version: 1.8.0
 - 
   category: sys-libs
   description: ""
@@ -78,16 +57,9 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: openssl
+  name: libressl
   
   version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: courier-authlib
-  
-  version: 0.66.4
 - 
   category: net-mail
   description: ""
@@ -96,10 +68,10 @@ requires:
   
   version: 0.00-r8
 - 
-  category: net-dns
+  category: sec-policy
   description: ""
   license: ""
-  name: libidn
+  name: selinux-courier
   
   version: ""
 - 
@@ -109,6 +81,34 @@ requires:
   name: gnutls
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: fam
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: courier-unicode
+  
+  version: "2"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: gdbm
+  
+  version: 1.8.0
 uri:
 - mirror://sourceforge/courier/courier-imap-5.0.7.tar.bz2
 use_flags:

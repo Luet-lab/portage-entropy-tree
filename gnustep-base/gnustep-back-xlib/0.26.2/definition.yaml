@@ -4,20 +4,27 @@ conflicts:
   category: gnustep-base
   description: ""
   license: ""
-  name: gnustep-back-cairo
+  name: gnustep-back-art
   
   version: ""
 - 
   category: gnustep-base
   description: ""
   license: ""
-  name: gnustep-back-art
+  name: gnustep-back-cairo
   
   version: ""
 description: Default X11 back-end component for the GNUstep GUI Library
 license: LGPL-2.1
 name: gnustep-back-xlib
 requires:
+- 
+  category: gnustep-base
+  description: ""
+  license: ""
+  name: gnustep-gui
+  
+  version: "0.26"
 - 
   category: x11-libs
   description: ""
@@ -36,7 +43,14 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXt
+  name: libX11
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXft
   
   version: ""
 - 
@@ -64,21 +78,7 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
   name: libXmu
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXft
   
   version: ""
 - 
@@ -89,12 +89,12 @@ requires:
   
   version: ""
 - 
-  category: gnustep-base
+  category: x11-libs
   description: ""
   license: ""
-  name: gnustep-gui
+  name: libXt
   
-  version: "0.26"
+  version: ""
 - 
   category: x11-libs
   description: ""

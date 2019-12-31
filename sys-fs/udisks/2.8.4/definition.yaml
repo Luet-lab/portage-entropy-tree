@@ -12,19 +12,26 @@ requires:
   
   version: "0.19"
 - 
-  category: sec-policy
+  category: sys-auth
   description: ""
   license: ""
-  name: selinux-devicekit
+  name: elogind
   
-  version: ""
+  version: "219"
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: glib
+  name: gobject-introspection
   
-  version: "2.50"
+  version: "1.30"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: ""
 - 
   category: virtual
   description: ""
@@ -40,20 +47,6 @@ requires:
   
   version: ""
 - 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: polkit
-  
-  version: "0.110"
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: elogind
-  
-  version: "219"
-- 
   category: sys-apps
   description: ""
   license: ""
@@ -68,26 +61,19 @@ requires:
   
   version: "3"
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgudev
-  
-  version: "165"
-- 
   category: virtual
   description: ""
   license: ""
-  name: udev
+  name: eject
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: gobject-introspection
+  name: glib
   
-  version: "1.30"
+  version: "2.50"
 - 
   category: sys-apps
   description: ""
@@ -96,12 +82,26 @@ requires:
   
   version: "209"
 - 
-  category: virtual
+  category: sec-policy
   description: ""
   license: ""
-  name: eject
+  name: selinux-devicekit
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgudev
+  
+  version: "165"
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: "0.110"
 uri:
 - https://github.com/storaged-project/udisks/releases/download/udisks-2.8.4/udisks-2.8.4.tar.bz2
 use_flags:

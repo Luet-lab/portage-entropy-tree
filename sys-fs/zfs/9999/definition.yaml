@@ -1,26 +1,19 @@
 category: sys-fs
 conflicts:
 - 
-  category: <sys-kernel
+  category: <sys-boot
   description: ""
   license: ""
-  name: bliss-initramfs
+  name: grub
   
-  version: 7.1.0
+  version: 2.00-r2
 - 
   category: <sys-kernel
   description: ""
   license: ""
-  name: genkernel-next
+  name: genkernel
   
-  version: "67"
-- 
-  category: <sys-kernel
-  description: ""
-  license: ""
-  name: dracut
-  
-  version: 044-r1
+  version: 3.5.1.1
 - 
   category: =sys-apps
   description: ""
@@ -36,51 +29,30 @@ conflicts:
   
   version: ""
 - 
-  category: <sys-boot
+  category: <sys-kernel
   description: ""
   license: ""
-  name: grub
+  name: dracut
   
-  version: 2.00-r2
+  version: 044-r1
 - 
   category: <sys-kernel
   description: ""
   license: ""
-  name: genkernel
+  name: genkernel-next
   
-  version: 3.5.1.1
+  version: "67"
+- 
+  category: <sys-kernel
+  description: ""
+  license: ""
+  name: bliss-initramfs
+  
+  version: 7.1.0
 description: Userland utilities for ZFS Linux kernel module
 license: BSD-2 CDDL MIT
 name: zfs
 requires:
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: awk
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
-  
-  version: ""
-- 
-  category: sys-block
-  description: ""
-  license: ""
-  name: parted
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: lsscsi
-  
-  version: ""
 - 
   category: sys-apps
   description: ""
@@ -96,6 +68,20 @@ requires:
   
   version: ""
 - 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lsscsi
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
   category: sys-process
   description: ""
   license: ""
@@ -106,21 +92,7 @@ requires:
   category: virtual
   description: ""
   license: ""
-  name: modutils
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: mdadm
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: udev
+  name: python-cffi
   
   version: ""
 - 
@@ -131,17 +103,24 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: app-misc
   description: ""
   license: ""
-  name: openssl
+  name: pax-utils
   
   version: ""
 - 
-  category: virtual
+  category: sys-block
   description: ""
   license: ""
-  name: python-cffi
+  name: parted
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: mdadm
   
   version: ""
 - 
@@ -159,10 +138,31 @@ requires:
   
   version: ""
 - 
-  category: app-misc
+  category: virtual
   description: ""
   license: ""
-  name: pax-utils
+  name: modutils
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: awk
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
   
   version: ""
 uri: []

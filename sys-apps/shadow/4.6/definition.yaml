@@ -5,12 +5,19 @@ license: BSD GPL-2
 name: shadow
 requires:
 - 
-  category: sys-apps
+  category: sys-libs
   description: ""
   license: ""
-  name: attr
+  name: libsemanage
   
   version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: pambase
+  
+  version: "20150213"
 - 
   category: sys-apps
   description: ""
@@ -26,19 +33,12 @@ requires:
   
   version: ""
 - 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: skey
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
-  name: libsemanage
+  name: libselinux
   
-  version: ""
+  version: "1.28"
 - 
   category: virtual
   description: ""
@@ -47,12 +47,12 @@ requires:
   
   version: ""
 - 
-  category: sys-auth
+  category: sys-apps
   description: ""
   license: ""
-  name: pambase
+  name: attr
   
-  version: "20150213"
+  version: ""
 - 
   category: sys-process
   description: ""
@@ -68,12 +68,12 @@ requires:
   
   version: 2.7-r3
 - 
-  category: sys-libs
+  category: sys-auth
   description: ""
   license: ""
-  name: libselinux
+  name: skey
   
-  version: "1.28"
+  version: ""
 uri:
 - https://github.com/shadow-maint/shadow/releases/download/4.6/shadow-4.6.tar.gz
 use_flags:

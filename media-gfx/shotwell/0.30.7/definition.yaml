@@ -5,6 +5,20 @@ license: LGPL-2.1
 name: shotwell
 requires:
 - 
+  category: net-libs
+  description: ""
+  license: ""
+  name: webkit-gtk
+  
+  version: "2.4"
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: 3.5.9
+- 
   category: media-libs
   description: ""
   license: ""
@@ -22,16 +36,30 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: gexiv2
+  name: opencv
   
-  version: 0.10.4
+  version: 2.3.0
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: 3.22.0
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libraw
+  name: libexif
   
-  version: 0.13.2
+  version: 0.6.16
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgdata
+  
+  version: ""
 - 
   category: x11-libs
   description: ""
@@ -43,16 +71,16 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: glib
+  name: libgudev
   
-  version: 2.40.0
+  version: "145"
 - 
-  category: net-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: webkit-gtk
+  name: json-glib
   
-  version: "2.4"
+  version: 0.7.6
 - 
   category: dev-libs
   description: ""
@@ -61,20 +89,6 @@ requires:
   
   version: 2.6.32
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gdk-pixbuf
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
-  
-  version: 3.5.9
-- 
   category: media-libs
   description: ""
   license: ""
@@ -82,12 +96,40 @@ requires:
   
   version: ""
 - 
+  category: media-plugins
+  description: ""
+  license: ""
+  name: gst-plugins-gdkpixbuf
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.40.0
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gdk-pixbuf
+  
+  version: ""
+- 
   category: media-libs
   description: ""
   license: ""
-  name: libexif
+  name: gexiv2
   
-  version: 0.6.16
+  version: 0.10.4
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libraw
+  
+  version: 0.13.2
 - 
   category: app-crypt
   description: ""
@@ -109,48 +151,6 @@ requires:
   name: libgee
   
   version: 0.8.5
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: json-glib
-  
-  version: 0.7.6
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: opencv
-  
-  version: 2.3.0
-- 
-  category: media-plugins
-  description: ""
-  license: ""
-  name: gst-plugins-gdkpixbuf
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: 3.22.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgudev
-  
-  version: "145"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgdata
-  
-  version: ""
 uri: []
 use_flags:
 - opencv

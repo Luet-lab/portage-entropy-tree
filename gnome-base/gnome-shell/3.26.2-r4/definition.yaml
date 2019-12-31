@@ -5,136 +5,10 @@ license: GPL-2+ LGPL-2+
 name: gnome-shell
 requires:
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: accountsservice
-  
-  version: 0.6.14
-- 
-  category: app-accessibility
-  description: ""
-  license: ""
-  name: at-spi2-core
-  
-  version: ""
-- 
-  category: app-accessibility
-  description: ""
-  license: ""
-  name: caribou
-  
-  version: 0.4.8
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: librsvg
-  
-  version: ""
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: gcr
-  
-  version: 3.7.5
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: gobject-introspection
-  
-  version: 1.49.1
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: networkmanager
-  
-  version: 0.9.8
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libsoup
-  
-  version: "2.40"
-- 
-  category: app-i18n
-  description: ""
-  license: ""
-  name: ibus-1.4.99[dconf(+),gtk,introspection]
-  
-  version: ""
-- 
-  category: gnome-extra
-  description: ""
-  license: ""
-  name: evolution-data-server
-  
-  version: 3.17.2
-- 
   category: x11-libs
   description: ""
   license: ""
-  name: gtk+
-  
-  version: 3.15.0
-- 
-  category: gnome-extra
-  description: ""
-  license: ""
-  name: nm-applet
-  
-  version: 0.9.8
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: "31"
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gnome-settings-daemon
-  
-  version: 3.8.3
-- 
-  category: x11-themes
-  description: ""
-  license: ""
-  name: adwaita-icon-theme
-  
-  version: "3.26"
-- 
-  category: net-wireless
-  description: ""
-  license: ""
-  name: gnome-bluetooth
-  
-  version: "3.9"
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: libsecret
-  
-  version: "0.18"
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: elogind
-  
-  version: "237"
-- 
-  category: app-misc
-  description: ""
-  license: ""
-  name: geoclue
+  name: libX11
   
   version: ""
 - 
@@ -152,6 +26,13 @@ requires:
   
   version: ""
 - 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pango
+  
+  version: ""
+- 
   category: x11-misc
   description: ""
   license: ""
@@ -159,40 +40,40 @@ requires:
   
   version: ""
 - 
+  category: net-misc
+  description: ""
+  license: ""
+  name: mobile-broadband-provider-info
+  
+  version: ""
+- 
   category: dev-libs
   description: ""
   license: ""
-  name: dbus-glib
+  name: gjs
   
-  version: ""
+  version: 1.47.0
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libcanberra
+  name: gstreamer
   
-  version: ""
+  version: 0.11.92
 - 
-  category: dev-libs
+  category: net-misc
   description: ""
   license: ""
-  name: libxml2
+  name: networkmanager
   
-  version: ""
+  version: 0.9.8
 - 
-  category: x11-libs
+  category: app-crypt
   description: ""
   license: ""
-  name: libX11
+  name: libsecret
   
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pygobject
-  
-  version: ""
+  version: "0.18"
 - 
   category: media-libs
   description: ""
@@ -208,68 +89,54 @@ requires:
   
   version: "0.19"
 - 
-  category: dev-libs
+  category: dev-python
   description: ""
   license: ""
-  name: gjs
+  name: pygobject
   
-  version: 1.47.0
+  version: ""
 - 
-  category: dev-libs
+  category: app-accessibility
   description: ""
   license: ""
-  name: json-glib
+  name: at-spi2-core
   
-  version: 0.13.2
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gcr
+  
+  version: 3.7.5
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: startup-notification
+  name: gtk+
   
-  version: "0.11"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: gstreamer
-  
-  version: 0.11.92
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libcroco
-  
-  version: 0.6.8
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: gjs
-  
-  version: "1.53"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: timezone-data
-  
-  version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: mobile-broadband-provider-info
-  
-  version: ""
+  version: 3.15.0
 - 
   category: gnome-base
   description: ""
   license: ""
-  name: gnome-desktop
+  name: gsettings-desktop-schemas
   
-  version: 3.7.90
+  version: 3.21.3
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: dbus-glib
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -278,38 +145,10 @@ requires:
   
   version: "2"
 - 
-  category: dev-libs
+  category: gnome-base
   description: ""
   license: ""
-  name: libgweather
-  
-  version: "3.26"
-- 
-  category: sys-power
-  description: ""
-  license: ""
-  name: upower
-  
-  version: "0.99"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gdk-pixbuf
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXfixes
-  
-  version: "5.0"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pango
+  name: librsvg
   
   version: ""
 - 
@@ -319,6 +158,34 @@ requires:
   name: gnome-session
   
   version: 2.91.91
+- 
+  category: net-im
+  description: ""
+  license: ""
+  name: telepathy-logger
+  
+  version: 0.2.4
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gjs
+  
+  version: "1.53"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: startup-notification
+  
+  version: "0.11"
+- 
+  category: net-wireless
+  description: ""
+  license: ""
+  name: gnome-bluetooth
+  
+  version: "3.9"
 - 
   category: dev-libs
   description: ""
@@ -330,16 +197,135 @@ requires:
   category: sys-auth
   description: ""
   license: ""
-  name: polkit
+  name: elogind
   
-  version: "0.100"
+  version: "237"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: accountsservice
+  
+  version: 0.6.14
+- 
+  category: app-accessibility
+  description: ""
+  license: ""
+  name: caribou
+  
+  version: 0.4.8
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: geoclue
+  
+  version: ""
+- 
+  category: sys-power
+  description: ""
+  license: ""
+  name: upower
+  
+  version: "0.99"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgweather
+  
+  version: "3.26"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libcroco
+  
+  version: 0.6.8
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: json-glib
+  
+  version: 0.13.2
+- 
+  category: gnome-extra
+  description: ""
+  license: ""
+  name: nm-applet
+  
+  version: 0.9.8
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "31"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libcanberra
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXfixes
+  
+  version: "5.0"
 - 
   category: gnome-base
   description: ""
   license: ""
-  name: gsettings-desktop-schemas
+  name: gnome-desktop
   
-  version: 3.21.3
+  version: 3.7.90
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gobject-introspection
+  
+  version: 1.49.1
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: timezone-data
+  
+  version: ""
+- 
+  category: x11-themes
+  description: ""
+  license: ""
+  name: adwaita-icon-theme
+  
+  version: "3.26"
+- 
+  category: app-i18n
+  description: ""
+  license: ""
+  name: ibus-1.4.99[dconf(+),gtk,introspection]
+  
+  version: ""
+- 
+  category: gnome-extra
+  description: ""
+  license: ""
+  name: evolution-data-server
+  
+  version: 3.17.2
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: "0.100"
 - 
   category: app-accessibility
   description: ""
@@ -348,12 +334,26 @@ requires:
   
   version: 2.5.3
 - 
-  category: net-im
+  category: x11-libs
   description: ""
   license: ""
-  name: telepathy-logger
+  name: gdk-pixbuf
   
-  version: 0.2.4
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libsoup
+  
+  version: "2.40"
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gnome-settings-daemon
+  
+  version: 3.8.3
 uri:
 - https://dev.gentoo.org/~leio/distfiles/gnome-shell-3.26.2-patchset.tar.xz
 use_flags:

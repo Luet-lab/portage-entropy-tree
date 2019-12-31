@@ -19,19 +19,19 @@ license: GPL-2
 name: portage
 requires:
 - 
-  category: dev-lang
+  category: app-crypt
   description: ""
   license: ""
-  name: python-exec
+  name: gnupg-2.2.4-r2[ssl(-)]
   
   version: ""
 - 
   category: sys-apps
   description: ""
   license: ""
-  name: sed
+  name: util-linux
   
-  version: 4.0.5
+  version: ""
 - 
   category: sys-apps
   description: ""
@@ -39,20 +39,6 @@ requires:
   name: install-xattr
   
   version: "0.3"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: 2.0.94
-- 
-  category: app-shells
-  description: ""
-  license: ""
-  name: bash
-  
-  version: ""
 - 
   category: app-admin
   description: ""
@@ -68,26 +54,33 @@ requires:
   
   version: "20180706"
 - 
-  category: app-crypt
+  category: sys-apps
   description: ""
   license: ""
-  name: gnupg-2.2.4-r2[ssl(-)]
+  name: sandbox
+  
+  version: "2.2"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: 2.0.94
+- 
+  category: app-shells
+  description: ""
+  license: ""
+  name: bash
   
   version: ""
 - 
   category: sys-apps
   description: ""
   license: ""
-  name: util-linux
+  name: sed
   
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: tar
-  
-  version: "1.27"
+  version: 4.0.5
 - 
   category: app-portage
   description: ""
@@ -96,6 +89,13 @@ requires:
   
   version: "14"
 - 
+  category: app-arch
+  description: ""
+  license: ""
+  name: tar
+  
+  version: "1.27"
+- 
   category: sys-freebsd
   description: ""
   license: ""
@@ -103,19 +103,19 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: sandbox
-  
-  version: "2.2"
-- 
   category: app-misc
   description: ""
   license: ""
   name: pax-utils
   
   version: 0.1.17
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: python-exec
+  
+  version: ""
 uri: []
 use_flags:
 - build
