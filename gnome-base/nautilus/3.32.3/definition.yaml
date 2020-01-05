@@ -1,51 +1,37 @@
 category: gnome-base
 conflicts:
 - 
-  category: <gnome-extra
-  description: ""
-  license: ""
-  name: nautilus-sendto
-  
-  version: 3.0.1
-- 
   category: <media-video
   description: ""
   license: ""
   name: totem
   
   version: 3.31.91
+- 
+  category: <gnome-extra
+  description: ""
+  license: ""
+  name: nautilus-sendto
+  
+  version: 3.0.1
 description: Default file manager for the GNOME desktop
 license: GPL-3+ LGPL-2.1+
 name: nautilus
 requires:
 - 
-  category: app-misc
+  category: dev-libs
   description: ""
   license: ""
-  name: tracker-miners
+  name: glib
   
-  version: "2.0"
+  version: 2.58.1
 - 
-  category: media-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: gexiv2
+  name: gobject-introspection
   
-  version: 0.10.0
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gsettings-desktop-schemas
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libseccomp
-  
-  version: ""
+  version: "1.54"
 - 
   category: app-misc
   description: ""
@@ -54,12 +40,19 @@ requires:
   
   version: "2.0"
 - 
-  category: app-admin
+  category: x11-libs
   description: ""
   license: ""
-  name: packagekit-base
+  name: libX11
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: 2.7.8
 - 
   category: media-libs
   description: ""
@@ -78,16 +71,9 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: libselinux
+  name: libseccomp
   
-  version: "2.0"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: gobject-introspection
-  
-  version: "1.54"
+  version: ""
 - 
   category: x11-libs
   description: ""
@@ -96,33 +82,12 @@ requires:
   
   version: 1.28.3
 - 
-  category: x11-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: libX11
+  name: libselinux
   
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: 2.7.8
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: 2.58.1
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: gstreamer
-  
-  version: ""
+  version: "2.0"
 - 
   category: sys-apps
   description: ""
@@ -130,6 +95,41 @@ requires:
   name: bubblewrap
   
   version: 0.3.1
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gexiv2
+  
+  version: 0.10.0
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gsettings-desktop-schemas
+  
+  version: ""
+- 
+  category: app-admin
+  description: ""
+  license: ""
+  name: packagekit-base
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: tracker-miners
+  
+  version: "2.0"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gstreamer
+  
+  version: ""
 uri: []
 use_flags:
 - gnome

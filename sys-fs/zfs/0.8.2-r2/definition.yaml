@@ -18,6 +18,27 @@ conflicts:
   category: <sys-kernel
   description: ""
   license: ""
+  name: genkernel-next
+  
+  version: "67"
+- 
+  category: =sys-apps
+  description: ""
+  license: ""
+  name: grep-2.13*
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: zfs-fuse
+  
+  version: ""
+- 
+  category: <sys-kernel
+  description: ""
+  license: ""
   name: bliss-initramfs
   
   version: 7.1.0
@@ -28,27 +49,6 @@ conflicts:
   name: dracut
   
   version: 044-r1
-- 
-  category: <sys-kernel
-  description: ""
-  license: ""
-  name: genkernel-next
-  
-  version: "67"
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: zfs-fuse
-  
-  version: ""
-- 
-  category: =sys-apps
-  description: ""
-  license: ""
-  name: grep-2.13*
-  
-  version: ""
 description: Userland utilities for ZFS Linux kernel module
 license: BSD-2 CDDL MIT
 name: zfs
@@ -61,17 +61,17 @@ requires:
   
   version: 0.8.2
 - 
-  category: app-arch
+  category: app-misc
   description: ""
   license: ""
-  name: cpio
+  name: pax-utils
   
   version: ""
 - 
-  category: sys-devel
+  category: sys-block
   description: ""
   license: ""
-  name: bc
+  name: parted
   
   version: ""
 - 
@@ -89,52 +89,10 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
-  
-  version: ""
-- 
-  category: app-misc
-  description: ""
-  license: ""
-  name: pax-utils
-  
-  version: ""
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: procps
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: udev-init-scripts
-  
-  version: ""
-- 
   category: virtual
   description: ""
   license: ""
   name: udev
-  
-  version: ""
-- 
-  category: sys-block
-  description: ""
-  license: ""
-  name: parted
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: lsscsi
   
   version: ""
 - 
@@ -145,10 +103,38 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: sys-fs
   description: ""
   license: ""
-  name: modutils
+  name: lsscsi
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: cpio
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: ""
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: bc
   
   version: ""
 - 
@@ -159,10 +145,24 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: sys-fs
   description: ""
   license: ""
-  name: openssl
+  name: udev-init-scripts
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: procps
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: modutils
   
   version: ""
 uri:

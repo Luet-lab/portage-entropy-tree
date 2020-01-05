@@ -12,31 +12,10 @@ license: LGPL-2.1
 name: boinc
 requires:
 - 
-  category: dev-util
+  category: dev-db
   description: ""
   license: ""
-  name: nvidia-cuda-toolkit
-  
-  version: "2.1"
-- 
-  category: x11-drivers
-  description: ""
-  license: ""
-  name: nvidia-drivers
-  
-  version: "180.22"
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: curl[curl_ssl_gnutls(-)=,curl_ssl_libressl(-)=,-curl_ssl_nss(-),curl_ssl_openssl(-)=,-curl_ssl_axtls(-),-curl_ssl_cyassl(-)]
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
+  name: sqlite
   
   version: ""
 - 
@@ -61,24 +40,31 @@ requires:
   
   version: "0.7"
 - 
-  category: app-misc
+  category: net-misc
   description: ""
   license: ""
-  name: ca-certificates
-  
-  version: "20080809"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: wxGTK
+  name: curl[curl_ssl_gnutls(-)=,curl_ssl_libressl(-)=,-curl_ssl_nss(-),curl_ssl_openssl(-)=,-curl_ssl_axtls(-),-curl_ssl_cyassl(-)]
   
   version: ""
 - 
-  category: dev-db
+  category: sys-apps
   description: ""
   license: ""
-  name: sqlite
+  name: util-linux
+  
+  version: ""
+- 
+  category: x11-drivers
+  description: ""
+  license: ""
+  name: nvidia-drivers
+  
+  version: "180.22"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
   
   version: ""
 - 
@@ -89,12 +75,26 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: x11-libs
   description: ""
   license: ""
-  name: util-linux
+  name: wxGTK
   
   version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: ca-certificates
+  
+  version: "20080809"
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: nvidia-cuda-toolkit
+  
+  version: "2.1"
 uri:
 - https://github.com/BOINC/boinc/archive/client_release/7.10/7.9.3.tar.gz -> boinc-7.9.3.tar.gz
 use_flags:

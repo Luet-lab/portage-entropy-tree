@@ -5,19 +5,40 @@ license: GPL-2+
 name: gnome-session
 requires:
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: 2.46.0
-- 
   category: sys-apps
   description: ""
   license: ""
-  name: systemd
+  name: dbus[X]
   
-  version: "183"
+  version: ""
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: xdg-user-dirs-gtk
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libICE
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: mesa[egl,gles2,X(+)]
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXcomposite
+  
+  version: ""
 - 
   category: gnome-base
   description: ""
@@ -29,9 +50,9 @@ requires:
   category: gnome-base
   description: ""
   license: ""
-  name: gsettings-desktop-schemas
+  name: gnome-desktop
   
-  version: 0.1.7
+  version: "3.18"
 - 
   category: sys-auth
   description: ""
@@ -40,19 +61,54 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
+  category: x11-misc
   description: ""
   license: ""
-  name: libXcomposite
+  name: xdg-user-dirs
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.46.0
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libICE
+  name: gtk+
   
-  version: ""
+  version: 3.18.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: json-glib
+  
+  version: "0.10"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "183"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: dbus-glib
+  
+  version: "0.76"
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gsettings-desktop-schemas
+  
+  version: 0.1.7
 - 
   category: x11-libs
   description: ""
@@ -68,13 +124,6 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: json-glib
-  
-  version: "0.10"
-- 
   category: media-libs
   description: ""
   license: ""
@@ -82,61 +131,12 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: 3.18.0
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gnome-desktop
-  
-  version: "3.18"
-- 
   category: sys-auth
   description: ""
   license: ""
   name: elogind
   
   version: "239.4"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus[X]
-  
-  version: ""
-- 
-  category: x11-misc
-  description: ""
-  license: ""
-  name: xdg-user-dirs-gtk
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: mesa[egl,gles2,X(+)]
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: dbus-glib
-  
-  version: "0.76"
-- 
-  category: x11-misc
-  description: ""
-  license: ""
-  name: xdg-user-dirs
-  
-  version: ""
 uri: []
 use_flags:
 - consolekit

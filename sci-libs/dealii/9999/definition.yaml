@@ -5,10 +5,17 @@ license: LGPL-2.1+
 name: dealii
 requires:
 - 
-  category: sci-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: adolc
+  name: boost
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: assimp
   
   version: ""
 - 
@@ -22,7 +29,21 @@ requires:
   category: sci-libs
   description: ""
   license: ""
-  name: umfpack
+  name: symengine
+  
+  version: "0.4"
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: trilinos
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: scalapack
   
   version: ""
 - 
@@ -36,14 +57,21 @@ requires:
   category: sci-libs
   description: ""
   license: ""
-  name: gsl
+  name: arpack[mpi=]
   
   version: ""
 - 
   category: sci-libs
   description: ""
   license: ""
-  name: hdf5[mpi=]
+  name: gmsh
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: lapack
   
   version: ""
 - 
@@ -54,13 +82,6 @@ requires:
   
   version: "4"
 - 
-  category: dev-cpp
-  description: ""
-  license: ""
-  name: muParser
-  
-  version: ""
-- 
   category: sci-libs
   description: ""
   license: ""
@@ -68,52 +89,24 @@ requires:
   
   version: ""
 - 
-  category: sci-libs
+  category: sci-mathematics
   description: ""
   license: ""
-  name: symengine
+  name: petsc[mpi=]
   
-  version: "0.4"
+  version: ""
 - 
-  category: media-libs
+  category: sci-mathematics
   description: ""
   license: ""
-  name: assimp
+  name: slepc[mpi=]
   
   version: ""
 - 
   category: sci-libs
   description: ""
   license: ""
-  name: opencascade
-  
-  version: ""
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: scalapack
-  
-  version: ""
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: sundials
-  
-  version: "4"
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: trilinos
-  
-  version: ""
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: gmsh
+  name: umfpack
   
   version: ""
 - 
@@ -127,7 +120,7 @@ requires:
   category: sci-libs
   description: ""
   license: ""
-  name: arpack[mpi=]
+  name: adolc
   
   version: ""
 - 
@@ -138,10 +131,38 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: sci-libs
   description: ""
   license: ""
-  name: lapack
+  name: hdf5[mpi=]
+  
+  version: ""
+- 
+  category: dev-cpp
+  description: ""
+  license: ""
+  name: muParser
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: opencascade
+  
+  version: ""
+- 
+  category: dev-cpp
+  description: ""
+  license: ""
+  name: tbb
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: gsl
   
   version: ""
 - 
@@ -159,33 +180,12 @@ requires:
   
   version: ""
 - 
-  category: sci-mathematics
+  category: sci-libs
   description: ""
   license: ""
-  name: petsc[mpi=]
+  name: sundials
   
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: boost
-  
-  version: ""
-- 
-  category: dev-cpp
-  description: ""
-  license: ""
-  name: tbb
-  
-  version: ""
-- 
-  category: sci-mathematics
-  description: ""
-  license: ""
-  name: slepc[mpi=]
-  
-  version: ""
+  version: "4"
 uri: []
 use_flags:
 - adolc

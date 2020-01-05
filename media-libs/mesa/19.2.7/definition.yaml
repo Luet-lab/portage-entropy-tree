@@ -1,6 +1,13 @@
 category: media-libs
 conflicts:
 - 
+  category: app-eselect
+  description: ""
+  license: ""
+  name: eselect-mesa
+  
+  version: ""
+- 
   category: <=x11-libs
   description: ""
   license: ""
@@ -14,38 +21,10 @@ conflicts:
   name: eselect-opengl
   
   version: ""
-- 
-  category: app-eselect
-  description: ""
-  license: ""
-  name: eselect-mesa
-  
-  version: ""
 description: OpenGL-like graphic library for Linux
 license: MIT
 name: mesa
 requires:
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: wayland-protocols
-  
-  version: "1.8"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxshmfence
-  
-  version: "1.1"
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: llvm
-  
-  version: ""
 - 
   category: x11-libs
   description: ""
@@ -54,10 +33,45 @@ requires:
   
   version: 1.0.8
 - 
-  category: virtual
+  category: x11-libs
   description: ""
   license: ""
-  name: libelf
+  name: libXdamage
+  
+  version: 1.1.4-r1
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXxf86vm
+  
+  version: 1.1.3
+- 
+  category: app-eselect
+  description: ""
+  license: ""
+  name: eselect-opengl
+  
+  version: 1.3.0
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libdrm-2.4.99[video_cards_radeon]
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: 1.2.8
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: lm-sensors
   
   version: ""
 - 
@@ -68,12 +82,33 @@ requires:
   
   version: ""
 - 
-  category: dev-util
+  category: sys-devel
   description: ""
   license: ""
-  name: glslang
+  name: clang
   
   version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libunwind
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: wayland
+  
+  version: 1.15.0
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: 1.6.2
 - 
   category: x11-libs
   description: ""
@@ -85,7 +120,7 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libdrm-2.4.99[video_cards_radeon]
+  name: libXfixes
   
   version: ""
 - 
@@ -103,34 +138,6 @@ requires:
   
   version: 1.2.0-r1
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: lm-sensors
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: 1.6.2
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXdamage
-  
-  version: 1.1.4-r1
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXxf86vm
-  
-  version: 1.1.3
-- 
   category: dev-libs
   description: ""
   license: ""
@@ -145,47 +152,12 @@ requires:
   
   version: "1.1"
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: expat
-  
-  version: 2.1.0-r3
-- 
   category: x11-libs
   description: ""
   license: ""
-  name: libva
+  name: libxshmfence
   
-  version: 1.7.3
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: 1.2.8
-- 
-  category: app-eselect
-  description: ""
-  license: ""
-  name: eselect-opengl
-  
-  version: 1.3.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: wayland
-  
-  version: 1.15.0
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libdrm-2.4.99[video_cards_intel]
-  
-  version: ""
+  version: "1.1"
 - 
   category: x11-libs
   description: ""
@@ -194,26 +166,54 @@ requires:
   
   version: 1.3.2
 - 
-  category: x11-libs
+  category: virtual
   description: ""
   license: ""
-  name: libXfixes
+  name: libelf
   
   version: ""
 - 
-  category: sys-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: libunwind
+  name: libdrm-2.4.99[video_cards_intel]
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: glslang
   
   version: ""
 - 
   category: sys-devel
   description: ""
   license: ""
-  name: clang
+  name: llvm
   
   version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libva
+  
+  version: 1.7.3
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: wayland-protocols
+  
+  version: "1.8"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: expat
+  
+  version: 2.1.0-r3
 uri:
 - https://mesa.freedesktop.org/archive/mesa-19.2.7.tar.xz
 use_flags:

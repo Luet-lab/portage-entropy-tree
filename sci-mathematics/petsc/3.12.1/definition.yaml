@@ -5,10 +5,10 @@ license: BSD-2
 name: petsc
 requires:
 - 
-  category: x11-libs
+  category: media-libs
   description: ""
   license: ""
-  name: libX11
+  name: libafterimage
   
   version: ""
 - 
@@ -19,31 +19,24 @@ requires:
   
   version: ""
 - 
-  category: sci-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: suitesparse
+  name: boost
   
   version: ""
 - 
   category: sci-libs
   description: ""
   license: ""
-  name: cholmod
+  name: hdf5[mpi?]
   
-  version: 1.7.0
+  version: ""
 - 
   category: sci-libs
   description: ""
   license: ""
-  name: superlu
-  
-  version: "5"
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: fftw
+  name: scotch[mpi?]
   
   version: ""
 - 
@@ -64,7 +57,21 @@ requires:
   category: sci-libs
   description: ""
   license: ""
-  name: scotch[mpi?]
+  name: suitesparse
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: superlu
+  
+  version: "5"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: blas
   
   version: ""
 - 
@@ -75,20 +82,6 @@ requires:
   
   version: ""
 - 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libafterimage
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: boost
-  
-  version: ""
-- 
   category: sci-libs
   description: ""
   license: ""
@@ -96,17 +89,17 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: x11-libs
   description: ""
   license: ""
-  name: blas
+  name: libX11
   
   version: ""
 - 
   category: sci-libs
   description: ""
   license: ""
-  name: hdf5[mpi?]
+  name: fftw
   
   version: ""
 - 
@@ -116,6 +109,13 @@ requires:
   name: scalapack
   
   version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: cholmod
+  
+  version: 1.7.0
 uri:
 - http://ftp.mcs.anl.gov/pub/petsc/release-snapshots/petsc-3.12.1.tar.gz
 use_flags:

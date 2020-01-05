@@ -4,14 +4,14 @@ conflicts:
   category: dev-java
   description: ""
   license: ""
-  name: icedtea-web
+  name: icedtea
   
   version: ""
 - 
   category: dev-java
   description: ""
   license: ""
-  name: icedtea
+  name: icedtea-web
   
   version: ""
 description: A harness to build OpenJDK using Free Software build tools and dependencies
@@ -20,19 +20,40 @@ license: Apache-1.1 Apache-2.0 GPL-1 GPL-2 GPL-2-with-linking-exception LGPL-2 M
 name: icedtea
 requires:
 - 
-  category: net-print
+  category: virtual
   description: ""
   license: ""
-  name: cups
+  name: ttf-fonts
   
-  version: 1.2.12
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libpng
+  
+  version: "1.2"
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: systemtap
+  
+  version: "1"
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXext
+  name: gdk-pixbuf
   
-  version: 1.1.1
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: 1.1.3
 - 
   category: media-libs
   description: ""
@@ -41,19 +62,47 @@ requires:
   
   version: "2.9"
 - 
-  category: gnome-base
+  category: x11-libs
   description: ""
   license: ""
-  name: gsettings-desktop-schemas
+  name: libXi
   
-  version: 3.12.2
+  version: 1.1.3
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libX11
+  name: libXtst
   
-  version: 1.1.3
+  version: 1.0.3
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-java
+  
+  version: ""
+- 
+  category: net-print
+  description: ""
+  license: ""
+  name: cups
+  
+  version: 1.2.12
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: lksctp-tools
+  
+  version: ""
 - 
   category: sys-apps
   description: ""
@@ -65,7 +114,14 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: gdk-pixbuf
+  name: gtk+
+  
+  version: "2.8"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXcomposite
   
   version: ""
 - 
@@ -76,40 +132,12 @@ requires:
   
   version: 0.1.0-r1
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXtst
-  
-  version: 1.0.3
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.26"
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: lksctp-tools
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXcomposite
-  
-  version: ""
-- 
   category: media-libs
   description: ""
   license: ""
-  name: fontconfig
+  name: alsa-lib
   
-  version: ""
+  version: "1.0"
 - 
   category: dev-libs
   description: ""
@@ -132,19 +160,19 @@ requires:
   
   version: 4.1.6
 - 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libpng
-  
-  version: "1.2"
-- 
   category: x11-libs
   description: ""
   license: ""
   name: libXrender
   
   version: 0.9.4
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
+  
+  version: 2.5.3
 - 
   category: sys-libs
   description: ""
@@ -153,6 +181,20 @@ requires:
   
   version: 1.2.3
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.26"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jpeg
+  
+  version: ""
+- 
   category: virtual
   description: ""
   license: ""
@@ -160,33 +202,12 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: gnome-base
   description: ""
   license: ""
-  name: ttf-fonts
+  name: gsettings-desktop-schemas
   
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: alsa-lib
-  
-  version: "1.0"
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: systemtap
-  
-  version: "1"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: freetype
-  
-  version: 2.5.3
+  version: 3.12.2
 - 
   category: x11-libs
   description: ""
@@ -198,30 +219,9 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXi
+  name: libXext
   
-  version: 1.1.3
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-java
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jpeg
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: "2.8"
+  version: 1.1.1
 uri:
 - https://icedtea.classpath.org/download/source/icedtea-.tar.xz
 - https://icedtea.classpath.org/download/drops/icedtea8//openjdk.tar.xz -> icedtea--openjdk-c8f86954855a.tar.xz

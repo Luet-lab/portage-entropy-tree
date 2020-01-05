@@ -5,12 +5,12 @@ license: LGPL-2+ GPL-2+
 name: udisks
 requires:
 - 
-  category: sec-policy
+  category: dev-libs
   description: ""
   license: ""
-  name: selinux-devicekit
+  name: glib
   
-  version: ""
+  version: "2.50"
 - 
   category: sys-fs
   description: ""
@@ -19,19 +19,12 @@ requires:
   
   version: ""
 - 
-  category: sys-block
+  category: sec-policy
   description: ""
   license: ""
-  name: parted
+  name: selinux-devicekit
   
-  version: "3"
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: elogind
-  
-  version: "219"
+  version: ""
 - 
   category: virtual
   description: ""
@@ -39,6 +32,20 @@ requires:
   name: udev
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gobject-introspection
+  
+  version: "1.30"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libatasmart
+  
+  version: "0.19"
 - 
   category: virtual
   description: ""
@@ -61,19 +68,12 @@ requires:
   
   version: "2.30"
 - 
-  category: virtual
+  category: sys-block
   description: ""
   license: ""
-  name: eject
+  name: parted
   
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.50"
+  version: "3"
 - 
   category: dev-libs
   description: ""
@@ -89,19 +89,19 @@ requires:
   
   version: "0.110"
 - 
-  category: dev-libs
+  category: sys-auth
   description: ""
   license: ""
-  name: gobject-introspection
+  name: elogind
   
-  version: "1.30"
+  version: "219"
 - 
-  category: dev-libs
+  category: virtual
   description: ""
   license: ""
-  name: libatasmart
+  name: eject
   
-  version: "0.19"
+  version: ""
 uri:
 - https://github.com/storaged-project/udisks/releases/download/udisks-2.8.3/udisks-2.8.3.tar.bz2
 use_flags:

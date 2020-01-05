@@ -5,38 +5,10 @@ license: GPL-2
 name: consolekit
 requires:
 - 
-  category: sys-power
-  description: ""
-  license: ""
-  name: pm-utils
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
-  name: libnih
-  
-  version: 1.0.2
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libdrm
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
+  name: zlib
   
   version: ""
 - 
@@ -47,10 +19,17 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: libevdev
+  name: pam
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: coreutils[acl?]
   
   version: ""
 - 
@@ -68,12 +47,12 @@ requires:
   
   version: "0.19"
 - 
-  category: sys-auth
+  category: sys-libs
   description: ""
   license: ""
-  name: polkit
+  name: libnih
   
-  version: "0.110"
+  version: 1.0.2
 - 
   category: virtual
   description: ""
@@ -82,38 +61,10 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: pam
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: coreutils[acl?]
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-consolekit
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
+  name: libdrm
   
   version: ""
 - 
@@ -130,6 +81,55 @@ requires:
   name: udev
   
   version: "200"
+- 
+  category: sys-power
+  description: ""
+  license: ""
+  name: pm-utils
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-consolekit
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libevdev
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: "0.110"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: ""
 uri:
 - https://github.com/ConsoleKit2/ConsoleKit2/releases/download/1.2.0/ConsoleKit2-1.2.0.tar.bz2
 use_flags:

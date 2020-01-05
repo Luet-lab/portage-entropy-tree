@@ -6,94 +6,24 @@ license: GPL-2 BSD
 name: xpra
 requires:
 - 
-  category: media-video
+  category: media-libs
   description: ""
   license: ""
-  name: ffmpeg
+  name: x265
   
-  version: 1.0.4
+  version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: gstreamer
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: ffmpeg
+  name: libjpeg-turbo
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXdamage
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXtst
-  
-  version: ""
-- 
-  category: media-video
-  description: ""
-  license: ""
-  name: ffmpeg
-  
-  version: 1.2.2
-- 
-  category: media-video
-  description: ""
-  license: ""
-  name: ffmpeg
-  
-  version: "2"
-- 
-  category: media-video
-  description: ""
-  license: ""
-  name: ffmpeg
-  
-  version: 3.2.2
-- 
-  category: x11-apps
-  description: ""
-  license: ""
-  name: xmodmap
-  
-  version: ""
-- 
-  category: x11-drivers
-  description: ""
-  license: ""
-  name: xf86-input-void
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pygtk
-  
-  version: ""
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: pulseaudio
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: ssh
+  name: gtk+
   
   version: ""
 - 
@@ -107,28 +37,35 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXrandr
+  name: libXcomposite
   
   version: ""
 - 
-  category: dev-python
+  category: x11-libs
   description: ""
   license: ""
-  name: pygtkglext
+  name: libXdamage
   
   version: ""
 - 
-  category: dev-python
+  category: x11-libs
   description: ""
   license: ""
-  name: rencode
+  name: libXfixes
   
   version: ""
 - 
-  category: dev-python
+  category: x11-libs
   description: ""
   license: ""
-  name: pycups
+  name: libXtst
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libvpx
   
   version: ""
 - 
@@ -136,41 +73,6 @@ requires:
   description: ""
   license: ""
   name: dbus-python
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: gst-python
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pillow
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: opencv
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pyinotify
   
   version: ""
 - 
@@ -188,27 +90,6 @@ requires:
   
   version: ""
 - 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pygobject
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXfixes
-  
-  version: ""
-- 
-  category: media-video
-  description: ""
-  license: ""
-  name: libav
-  
-  version: ""
-- 
   category: media-libs
   description: ""
   license: ""
@@ -219,14 +100,70 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libvpx
+  name: libwebp
+  
+  version: ""
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: ffmpeg
+  
+  version: 1.2.2
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: ffmpeg
+  
+  version: 1.0.4
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pygtkglext
+  
+  version: ""
+- 
+  category: x11-base
+  description: ""
+  license: ""
+  name: xorg-server
+  
+  version: ""
+- 
+  category: x11-drivers
+  description: ""
+  license: ""
+  name: xf86-input-void
+  
+  version: ""
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: ffmpeg
+  
+  version: 3.2.2
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gstreamer
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pillow
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libxkbfile
+  name: libXrandr
   
   version: ""
 - 
@@ -240,7 +177,98 @@ requires:
   category: dev-python
   description: ""
   license: ""
+  name: rencode
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: ssh
+  
+  version: ""
+- 
+  category: x11-apps
+  description: ""
+  license: ""
+  name: xmodmap
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pycups
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pygtk
+  
+  version: ""
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: libav
+  
+  version: ""
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: ffmpeg
+  
+  version: "2"
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: pulseaudio
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
   name: netifaces
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pyinotify
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pygobject
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxkbfile
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: gst-python
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: ffmpeg
   
   version: ""
 - 
@@ -258,38 +286,10 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXcomposite
-  
-  version: ""
-- 
   category: media-libs
   description: ""
   license: ""
-  name: x265
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libjpeg-turbo
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libwebp
-  
-  version: ""
-- 
-  category: x11-base
-  description: ""
-  license: ""
-  name: xorg-server
+  name: opencv
   
   version: ""
 uri:

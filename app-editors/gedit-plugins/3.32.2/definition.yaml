@@ -5,24 +5,31 @@ license: GPL-2+
 name: gedit-plugins
 requires:
 - 
-  category: x11-libs
+  category: dev-python
   description: ""
   license: ""
-  name: vte
+  name: dbus-python
   
-  version: "0.52"
+  version: "0.82"
 - 
-  category: app-editors
+  category: dev-libs
   description: ""
   license: ""
-  name: gedit
+  name: glib
   
-  version: "3.16"
+  version: "2.32"
 - 
   category: dev-libs
   description: ""
   license: ""
   name: libpeas
+  
+  version: 1.7.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pycairo
   
   version: ""
 - 
@@ -43,6 +50,20 @@ requires:
   category: x11-libs
   description: ""
   license: ""
+  name: vte
+  
+  version: "0.52"
+- 
+  category: app-editors
+  description: ""
+  license: ""
+  name: gedit
+  
+  version: "3.16"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
   name: gtksourceview
   
   version: 4.0.2
@@ -50,28 +71,7 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: gtk+
-  
-  version: "3.9"
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: dbus-python
-  
-  version: "0.82"
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pycairo
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pygobject
+  name: pango
   
   version: ""
 - 
@@ -82,17 +82,24 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.32"
-- 
   category: x11-libs
   description: ""
   license: ""
-  name: pango
+  name: gtk+
+  
+  version: "3.9"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpeas
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pygobject
   
   version: ""
 - 
@@ -102,13 +109,6 @@ requires:
   name: gucharmap
   
   version: "3"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libpeas
-  
-  version: 1.7.0
 uri: []
 use_flags:
 - +python

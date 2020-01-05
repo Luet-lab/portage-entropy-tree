@@ -4,23 +4,9 @@ conflicts:
   category: <app-shells
   description: ""
   license: ""
-  name: gentoo-zsh-completions
+  name: gentoo-bashcomp
   
-  version: "20180228"
-- 
-  category: <sys-fs
-  description: ""
-  license: ""
-  name: udev-init-scripts
-  
-  version: "27"
-- 
-  category: <sys-process
-  description: ""
-  license: ""
-  name: procps
-  
-  version: 3.3.9-r2
+  version: "20180302"
 - 
   category: <sys-apps
   description: ""
@@ -29,6 +15,20 @@ conflicts:
   
   version: 2.1-r1
 - 
+  category: <sys-fs
+  description: ""
+  license: ""
+  name: udev-init-scripts
+  
+  version: "27"
+- 
+  category: <app-shells
+  description: ""
+  license: ""
+  name: gentoo-zsh-completions
+  
+  version: "20180228"
+- 
   category: sys-apps
   description: ""
   license: ""
@@ -36,12 +36,12 @@ conflicts:
   
   version: ""
 - 
-  category: <app-shells
+  category: <sys-process
   description: ""
   license: ""
-  name: gentoo-bashcomp
+  name: procps
   
-  version: "20180302"
+  version: 3.3.9-r2
 description: OpenRC manages the services, startup and shutdown of a host
 license: BSD-2
 name: openrc
@@ -54,10 +54,17 @@ requires:
   
   version: 2.20170204-r4
 - 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: pambase
+  
+  version: ""
+- 
   category: sys-apps
   description: ""
   license: ""
-  name: sysvinit-2.86-r6[selinux?]
+  name: policycoreutils
   
   version: ""
 - 
@@ -68,10 +75,17 @@ requires:
   
   version: "2.6"
 - 
-  category: app-shells
+  category: virtual
   description: ""
   license: ""
-  name: bash
+  name: tmpfiles
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: psmisc
   
   version: ""
 - 
@@ -89,17 +103,24 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: app-shells
   description: ""
   license: ""
-  name: policycoreutils
+  name: bash
   
   version: ""
 - 
-  category: virtual
+  category: sys-libs
   description: ""
   license: ""
-  name: tmpfiles
+  name: pam
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: sysvinit-2.86-r6[selinux?]
   
   version: ""
 - 
@@ -109,27 +130,6 @@ requires:
   name: selinux-openrc
   
   version: 2.20170204-r4
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: ""
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: psmisc
-  
-  version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: pambase
-  
-  version: ""
 uri: []
 use_flags:
 - audit

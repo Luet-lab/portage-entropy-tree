@@ -12,31 +12,10 @@ license: GPL-2+ LGPL-2.1+
 name: syslog-ng
 requires:
 - 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libesmtp
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
-  name: glib
-  
-  version: 2.10.1
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libpcre
-  
-  version: "6.1"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libcap
+  name: openssl
   
   version: ""
 - 
@@ -47,10 +26,66 @@ requires:
   
   version: ""
 - 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: json-c
+  
+  version: "0.9"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: librdkafka
+  
+  version: 1.0.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: ivykis
+  
+  version: 0.42.4
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: libdbi
+  
+  version: 0.9.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: mongo-c-driver
+  
+  version: 1.2.0
+- 
   category: net-analyzer
   description: ""
   license: ""
   name: net-snmp
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
   
   version: ""
 - 
@@ -71,9 +106,9 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: ivykis
+  name: libpcre
   
-  version: 0.42.4
+  version: "6.1"
 - 
   category: net-libs
   description: ""
@@ -85,16 +120,9 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: librdkafka
+  name: geoip
   
-  version: 1.0.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: mongo-c-driver
-  
-  version: 1.2.0
+  version: 1.5.0
 - 
   category: dev-libs
   description: ""
@@ -103,38 +131,10 @@ requires:
   
   version: 0.11.0
 - 
-  category: dev-libs
+  category: net-libs
   description: ""
   license: ""
-  name: geoip
-  
-  version: 1.5.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: json-c
-  
-  version: "0.9"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: libdbi
-  
-  version: 0.9.0
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: curl
+  name: libesmtp
   
   version: ""
 - 
@@ -145,12 +145,12 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: dev-libs
   description: ""
   license: ""
-  name: systemd
+  name: glib
   
-  version: ""
+  version: 2.10.1
 uri:
 - https://github.com/balabit/syslog-ng/releases/download/syslog-ng-3.22.1/syslog-ng-3.22.1.tar.gz
 use_flags:

@@ -5,12 +5,12 @@ license: GPL-2
 name: neomutt
 requires:
 - 
-  category: dev-db
+  category: net-libs
   description: ""
   license: ""
-  name: tokyocabinet
+  name: gnutls
   
-  version: ""
+  version: 1.0.17
 - 
   category: app-crypt
   description: ""
@@ -18,48 +18,6 @@ requires:
   name: gpgme
   
   version: 0.9.0
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: slang
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-mutt
-  
-  version: ""
-- 
-  category: app-misc
-  description: ""
-  license: ""
-  name: mime-types
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: gdbm
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: kyotocabinet
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnutls
-  
-  version: 1.0.17
 - 
   category: virtual
   description: ""
@@ -71,9 +29,16 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: openssl
+  name: cyrus-sasl
   
-  version: 0.9.6
+  version: "2"
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: mime-types
+  
+  version: ""
 - 
   category: sys-libs
   description: ""
@@ -81,6 +46,41 @@ requires:
   name: db
   
   version: "6.3"
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: kyotocabinet
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: qdbm
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: slang
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: gdbm
+  
+  version: ""
 - 
   category: dev-db
   description: ""
@@ -103,10 +103,17 @@ requires:
   
   version: ""
 - 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-mutt
+  
+  version: ""
+- 
   category: dev-db
   description: ""
   license: ""
-  name: qdbm
+  name: tokyocabinet
   
   version: ""
 - 
@@ -127,16 +134,9 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: cyrus-sasl
+  name: openssl
   
-  version: "2"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
-  
-  version: ""
+  version: 0.9.6
 uri:
 - https://github.com/neomutt/neomutt/archive/20191129.tar.gz -> neomutt-20191129.tar.gz
 use_flags:

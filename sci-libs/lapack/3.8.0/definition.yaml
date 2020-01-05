@@ -4,20 +4,6 @@ conflicts:
   category: sci-libs
   description: ""
   license: ""
-  name: lapacke-reference
-  
-  version: ""
-- 
-  category: app-eselect
-  description: ""
-  license: ""
-  name: eselect-cblas
-  
-  version: ""
-- 
-  category: sci-libs
-  description: ""
-  license: ""
   name: blas-reference
   
   version: ""
@@ -35,6 +21,20 @@ conflicts:
   name: lapack-reference
   
   version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: lapacke-reference
+  
+  version: ""
+- 
+  category: app-eselect
+  description: ""
+  license: ""
+  name: eselect-cblas
+  
+  version: ""
 description: BLAS,CBLAS,LAPACK,LAPACKE reference implementations
 license: BSD
 name: lapack
@@ -43,16 +43,16 @@ requires:
   category: app-eselect
   description: ""
   license: ""
-  name: eselect-blas
-  
-  version: "0.2"
-- 
-  category: app-eselect
-  description: ""
-  license: ""
   name: eselect-lapack
   
   version: "0.2"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: fortran
+  
+  version: ""
 - 
   category: app-doc
   description: ""
@@ -61,12 +61,12 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: app-eselect
   description: ""
   license: ""
-  name: fortran
+  name: eselect-blas
   
-  version: ""
+  version: "0.2"
 uri:
 - http://www.netlib.org/lapack/lapack-3.8.0.tar.gz
 use_flags:

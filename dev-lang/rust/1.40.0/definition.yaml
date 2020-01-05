@@ -4,41 +4,20 @@ conflicts:
   category: dev-util
   description: ""
   license: ""
-  name: cargo
+  name: rustfmt
   
   version: ""
 - 
   category: dev-util
   description: ""
   license: ""
-  name: rustfmt
+  name: cargo
   
   version: ""
 description: Systems programming language from Mozilla
 license: '|| ( MIT Apache-2.0 ) BSD-1 BSD-2 BSD-4 UoI-NCSA'
 name: rust
 requires:
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libssh2
-  
-  version: ""
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: llvm
-  
-  version: "10"
 - 
   category: sys-libs
   description: ""
@@ -50,7 +29,28 @@ requires:
   category: dev-libs
   description: ""
   license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: app-eselect
+  description: ""
+  license: ""
+  name: eselect-rust
+  
+  version: "20190311"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
   name: openssl
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libssh2
   
   version: ""
 - 
@@ -68,12 +68,12 @@ requires:
   
   version: ""
 - 
-  category: app-eselect
+  category: sys-devel
   description: ""
   license: ""
-  name: eselect-rust
+  name: llvm
   
-  version: "20190311"
+  version: "10"
 uri:
 - https://static.rust-lang.org/dist/rustc-1.40.0-src.tar.xz -> rustc-1.40.0-src.tar.xz
 use_flags:

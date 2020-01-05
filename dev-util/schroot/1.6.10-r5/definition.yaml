@@ -1,0 +1,75 @@
+category: dev-util
+conflicts:
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dchroot
+  
+  version: ""
+description: Utility to execute commands in a chroot environment
+license: GPL-3
+name: schroot
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: boost
+  
+  version: 1.42.0
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: "2.16"
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: btrfs-progs
+  
+  version: 0.19-r2
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lvm2
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: debianutils
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libintl
+  
+  version: ""
+uri:
+- mirror://debian/pool/main/s/schroot/schroot_1.6.10.orig.tar.xz
+- mirror://debian/pool/main/s/schroot/schroot_1.6.10-6.debian.tar.xz
+use_flags:
+- btrfs
+- +dchroot
+- debug
+- doc
+- lvm
+- nls
+- pam
+- test
+version: 1.6.10-r5

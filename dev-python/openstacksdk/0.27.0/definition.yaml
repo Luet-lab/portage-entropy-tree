@@ -4,41 +4,20 @@ conflicts:
   category: ~dev-python
   description: ""
   license: ""
-  name: pbr
+  name: jsonpatch
   
-  version: 2.1.0
+  version: "1.20"
 - 
   category: ~dev-python
   description: ""
   license: ""
-  name: jsonpatch
+  name: pbr
   
-  version: "1.20"
+  version: 2.1.0
 description: A collection of libraries for building applications to work with OpenStack.
 license: Apache-2.0
 name: openstacksdk
 requires:
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: dogpile-cache
-  
-  version: 0.6.2
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: cryptography
-  
-  version: 2.1.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: netifaces
-  
-  version: 0.10.4
 - 
   category: dev-python
   description: ""
@@ -50,9 +29,16 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: munch
+  name: six
   
-  version: 2.1.0
+  version: 1.10.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: keystoneauth
+  
+  version: 3.13.0
 - 
   category: dev-python
   description: ""
@@ -61,6 +47,27 @@ requires:
   
   version: 3.4.0
 - 
+  category: virtual
+  description: ""
+  license: ""
+  name: python-ipaddress
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: iso8601
+  
+  version: 0.1.11
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: munch
+  
+  version: 2.1.0
+- 
   category: dev-python
   description: ""
   license: ""
@@ -68,19 +75,33 @@ requires:
   
   version: 0.9.0
 - 
-  category: virtual
-  description: ""
-  license: ""
-  name: python-futures
-  
-  version: ""
-- 
   category: dev-python
   description: ""
   license: ""
   name: pyyaml
   
   version: "3.12"
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: netifaces
+  
+  version: 0.10.4
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: cryptography
+  
+  version: 2.1.0
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: python-futures
+  
+  version: ""
 - 
   category: dev-python
   description: ""
@@ -96,26 +117,19 @@ requires:
   
   version: "1.16"
 - 
-  category: virtual
+  category: dev-python
   description: ""
   license: ""
-  name: python-ipaddress
+  name: os-service-types
   
-  version: ""
+  version: 1.2.0
 - 
   category: dev-python
   description: ""
   license: ""
-  name: keystoneauth
+  name: dogpile-cache
   
-  version: 3.13.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: iso8601
-  
-  version: 0.1.11
+  version: 0.6.2
 - 
   category: dev-python
   description: ""
@@ -123,20 +137,6 @@ requires:
   name: pbr
   
   version: 2.0.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: six
-  
-  version: 1.10.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: os-service-types
-  
-  version: 1.2.0
 uri:
 - mirror://pypi/o/openstacksdk/openstacksdk-0.27.0.tar.gz
 use_flags:

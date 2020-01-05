@@ -5,12 +5,12 @@ license: GPL-2+ LGPL-2+
 name: gnome-keyring
 requires:
 - 
-  category: net-misc
+  category: app-crypt
   description: ""
   license: ""
-  name: openssh
+  name: gcr
   
-  version: ""
+  version: 3.27.90
 - 
   category: dev-libs
   description: ""
@@ -18,6 +18,27 @@ requires:
   name: glib
   
   version: "2.44"
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: ca-certificates
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-gnome
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: openssh
+  
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -33,10 +54,10 @@ requires:
   
   version: ""
 - 
-  category: sec-policy
+  category: sys-libs
   description: ""
   license: ""
-  name: selinux-gnome
+  name: pam
   
   version: ""
 - 
@@ -46,27 +67,6 @@ requires:
   name: gnupg
   
   version: 2.0.28
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: gcr
-  
-  version: 3.27.90
-- 
-  category: app-misc
-  description: ""
-  license: ""
-  name: ca-certificates
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: ""
 uri: []
 use_flags:
 - +caps

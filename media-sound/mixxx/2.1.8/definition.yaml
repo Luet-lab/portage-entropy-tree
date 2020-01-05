@@ -5,31 +5,24 @@ license: GPL-2
 name: mixxx
 requires:
 - 
-  category: dev-db
+  category: media-libs
   description: ""
   license: ""
-  name: sqlite
+  name: taglib
   
   version: ""
 - 
-  category: dev-qt
+  category: media-libs
   description: ""
   license: ""
-  name: qtcore
+  name: faad2
   
   version: ""
 - 
-  category: dev-qt
+  category: media-libs
   description: ""
   license: ""
-  name: qtsvg
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: protobuf
+  name: libmad
   
   version: ""
 - 
@@ -43,14 +36,21 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: portmidi
+  name: libsoundtouch
+  
+  version: "1.5"
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: ffmpeg
   
   version: ""
 - 
-  category: media-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: faad2
+  name: hidapi
   
   version: ""
 - 
@@ -61,115 +61,10 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtscript
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: flac
-  
-  version: ""
-- 
   category: media-libs
   description: ""
   license: ""
   name: libsndfile
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libvorbis
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtconcurrent
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtxml
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: portaudio
-  
-  version: 19_pre
-- 
-  category: "(\tmedia-libs"
-  description: ""
-  license: ""
-  name: opusfile
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libmp4v2
-  
-  version: ""
-- 
-  category: media-video
-  description: ""
-  license: ""
-  name: ffmpeg
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtgui
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtopengl
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtsql
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libid3tag
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
   
   version: ""
 - 
@@ -190,21 +85,14 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: hidapi
+  name: protobuf
   
   version: ""
 - 
   category: dev-qt
   description: ""
   license: ""
-  name: qtnetwork
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtwidgets
+  name: qtopengl
   
   version: ""
 - 
@@ -218,21 +106,49 @@ requires:
   category: media-libs
   description: ""
   license: ""
+  name: libvorbis
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: portaudio
+  
+  version: 19_pre
+- 
+  category: media-libs
+  description: ""
+  license: ""
   name: rubberband
   
   version: ""
 - 
-  category: media-libs
+  category: virtual
   description: ""
   license: ""
-  name: vamp-plugin-sdk
+  name: libusb
   
   version: ""
 - 
-  category: media-libs
+  category: dev-db
   description: ""
   license: ""
-  name: libmad
+  name: sqlite
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtsvg
+  
+  version: ""
+- 
+  category: "(\tmedia-libs"
+  description: ""
+  license: ""
+  name: opusfile
   
   version: ""
 - 
@@ -243,19 +159,89 @@ requires:
   
   version: ""
 - 
-  category: media-libs
+  category: dev-qt
   description: ""
   license: ""
-  name: taglib
+  name: qtnetwork
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtgui
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtwidgets
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libsoundtouch
+  name: portmidi
   
-  version: "1.5"
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libmp4v2
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtconcurrent
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtsql
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtxml
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: flac
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libid3tag
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: vamp-plugin-sdk
+  
+  version: ""
 - 
   category: sci-libs
   description: ""
@@ -264,10 +250,24 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: dev-qt
   description: ""
   license: ""
-  name: libusb
+  name: qtcore
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtscript
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
   
   version: ""
 uri:

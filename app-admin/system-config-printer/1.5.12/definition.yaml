@@ -5,10 +5,17 @@ license: GPL-2+
 name: system-config-printer
 requires:
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: ""
+- 
   category: x11-libs
   description: ""
   license: ""
-  name: libnotify
+  name: gtk+
   
   version: ""
 - 
@@ -22,14 +29,7 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: pycups
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pygobject
+  name: dbus-python
   
   version: ""
 - 
@@ -40,17 +40,10 @@ requires:
   
   version: ""
 - 
-  category: net-print
+  category: x11-libs
   description: ""
   license: ""
-  name: cups
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: dbus-python
+  name: libnotify
   
   version: ""
 - 
@@ -58,6 +51,41 @@ requires:
   description: ""
   license: ""
   name: pycairo
+  
+  version: ""
+- 
+  category: net-print
+  description: ""
+  license: ""
+  name: cups-pk-helper
+  
+  version: ""
+- 
+  category: net-print
+  description: ""
+  license: ""
+  name: cups
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libusb
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: "172"
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pygobject
   
   version: ""
 - 
@@ -75,40 +103,12 @@ requires:
   
   version: ""
 - 
-  category: net-print
+  category: dev-python
   description: ""
   license: ""
-  name: cups-pk-helper
+  name: pycups
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libusb
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: udev
-  
-  version: "172"
 uri:
 - https://github.com/OpenPrinting/system-config-printer/releases/download/1.5.12/system-config-printer-1.5.12.tar.xz
 use_flags:

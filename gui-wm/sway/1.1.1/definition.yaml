@@ -5,10 +5,31 @@ license: MIT
 name: sway
 requires:
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: json-c
+  
+  version: "0.13"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxkbcommon
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: elogind
+  
+  version: "239"
+- 
   category: gui-apps
   description: ""
   license: ""
-  name: swaybg
+  name: swaylock
   
   version: ""
 - 
@@ -22,16 +43,37 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libpcre
+  name: libinput
+  
+  version: 1.6.0
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo
   
   version: ""
 - 
-  category: sys-auth
+  category: gui-apps
   description: ""
   license: ""
-  name: elogind
+  name: swayidle
   
-  version: "239"
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pango
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pixman
+  
+  version: ""
 - 
   category: x11-libs
   description: ""
@@ -43,28 +85,7 @@ requires:
   category: gui-apps
   description: ""
   license: ""
-  name: swayidle
-  
-  version: ""
-- 
-  category: gui-apps
-  description: ""
-  license: ""
-  name: swaylock
-  
-  version: ""
-- 
-  category: x11-misc
-  description: ""
-  license: ""
-  name: xkeyboard-config
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pixman
+  name: swaybg
   
   version: ""
 - 
@@ -75,10 +96,17 @@ requires:
   
   version: "239"
 - 
-  category: gui-libs
+  category: x11-misc
   description: ""
   license: ""
-  name: wlroots-0.6.0[elogind=,systemd=,X=]
+  name: xkeyboard-config
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpcre
   
   version: ""
 - 
@@ -89,40 +117,12 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
+  category: gui-libs
   description: ""
   license: ""
-  name: cairo
+  name: wlroots-0.6.0[elogind=,systemd=,X=]
   
   version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxkbcommon
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pango
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: json-c
-  
-  version: "0.13"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libinput
-  
-  version: 1.6.0
 uri:
 - https://github.com/swaywm/sway/archive/1.1.1.tar.gz -> sway-1.1.1.tar.gz
 use_flags:

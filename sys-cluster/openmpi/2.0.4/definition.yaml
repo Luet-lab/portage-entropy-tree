@@ -4,7 +4,14 @@ conflicts:
   category: sys-cluster
   description: ""
   license: ""
-  name: mpiexec
+  name: mpich
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: pmix
   
   version: ""
 - 
@@ -21,66 +28,10 @@ conflicts:
 mpi
   
   version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: pmix
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: mpich
-  
-  version: ""
 description: A high-performance message passing library (MPI)
 license: BSD
 name: openmpi
 requires:
-- 
-  category: sys-fabric
-  description: ""
-  license: ""
-  name: infinipath-psm
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jre
-  
-  version: "1.6"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libevent
-  
-  version: 2.0.22
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libltdl
-  
-  version: ""
-- 
-  category: sys-fabric
-  description: ""
-  license: ""
-  name: ofed
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: knem
-  
-  version: ""
 - 
   category: sys-libs
   description: ""
@@ -89,12 +40,33 @@ requires:
   
   version: 1.2.8-r1
 - 
-  category: dev-util
+  category: sys-cluster
   description: ""
   license: ""
-  name: nvidia-cuda-toolkit
+  name: knem
   
-  version: 6.5.19-r1
+  version: ""
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: infinipath-psm
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libevent
+  
+  version: 2.0.22
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: ofed
+  
+  version: ""
 - 
   category: sys-cluster
   description: ""
@@ -116,6 +88,27 @@ requires:
   name: librdmacm
   
   version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jre
+  
+  version: "1.6"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libltdl
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: nvidia-cuda-toolkit
+  
+  version: 6.5.19-r1
 uri:
 - http://www.open-mpi.org/software/ompi/v/downloads/openmpi-2.0.4.tar.bz2
 use_flags:

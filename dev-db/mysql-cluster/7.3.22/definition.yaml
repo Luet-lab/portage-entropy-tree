@@ -4,7 +4,7 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: percona-server
+  name: mytop
   
   version: ""
 - 
@@ -18,7 +18,14 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mytop
+  name: mariadb-galera
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: percona-server
   
   version: ""
 - 
@@ -28,36 +35,22 @@ conflicts:
   name: mariadb
   
   version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mariadb-galera
-  
-  version: ""
 description: An enhanced, drop-in replacement for MySQL
 license: GPL-2
 name: mysql-cluster
 requires:
 - 
-  category: dev-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: libaio
+  name: texinfo
   
-  version: ""
+  version: 4.7-r1
 - 
-  category: sys-process
+  category: dev-util
   description: ""
   license: ""
-  name: numactl
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: perl-Time-HiRes
+  name: google-perftools
   
   version: ""
 - 
@@ -68,33 +61,19 @@ requires:
   
   version: "1.3"
 - 
-  category: dev-perl
+  category: sys-libs
   description: ""
   license: ""
-  name: TermReadKey
+  name: zlib
+  
+  version: 1.2.3
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: procps
   
   version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: perl-Term-ANSIColor
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-mysql
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: texinfo
-  
-  version: 4.7-r1
 - 
   category: dev-libs
   description: ""
@@ -103,17 +82,17 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: sed
-  
-  version: "4"
-- 
   category: dev-libs
   description: ""
   license: ""
   name: jemalloc
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: numactl
   
   version: ""
 - 
@@ -131,26 +110,26 @@ requires:
   
   version: ""
 - 
+  category: dev-perl
+  description: ""
+  license: ""
+  name: TermReadKey
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: sed
+  
+  version: "4"
+- 
   category: virtual
   description: ""
   license: ""
   name: jre
   
   version: "1.6"
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mysql-init-scripts
-  
-  version: ""
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: procps
-  
-  version: ""
 - 
   category: virtual
   description: ""
@@ -159,17 +138,24 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: virtual
   description: ""
   license: ""
-  name: zlib
+  name: perl-Term-ANSIColor
   
-  version: 1.2.3
+  version: ""
 - 
-  category: dev-util
+  category: virtual
   description: ""
   license: ""
-  name: google-perftools
+  name: perl-Time-HiRes
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-init-scripts
   
   version: ""
 - 
@@ -177,6 +163,20 @@ requires:
   description: ""
   license: ""
   name: libressl
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-mysql
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libaio
   
   version: ""
 uri:

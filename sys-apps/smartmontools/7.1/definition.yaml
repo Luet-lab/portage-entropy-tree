@@ -1,0 +1,66 @@
+category: sys-apps
+conflicts: []
+description: Tools to monitor storage systems to provide advanced warning of disk
+  degradation
+license: GPL-2
+name: smartmontools
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: mailx
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-smartmon
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gnupg
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap-ng
+  
+  version: ""
+- 
+  category: sys-freebsd
+  description: ""
+  license: ""
+  name: freebsd-lib
+  
+  version: ""
+uri:
+- mirror://sourceforge/smartmontools/smartmontools-7.1.tar.gz
+use_flags:
+- caps
+- +daemon
+- selinux
+- static
+- systemd
+- update_drivedb
+version: "7.1"

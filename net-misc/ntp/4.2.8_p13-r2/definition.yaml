@@ -4,14 +4,14 @@ conflicts:
   category: net-misc
   description: ""
   license: ""
-  name: ntpsec
+  name: openntpd
   
   version: ""
 - 
   category: net-misc
   description: ""
   license: ""
-  name: openntpd
+  name: ntpsec
   
   version: ""
 description: Network Time Protocol suite/programs
@@ -19,17 +19,10 @@ license: HPND BSD ISC
 name: ntp
 requires:
 - 
-  category: sys-libs
+  category: net-analyzer
   description: ""
   license: ""
-  name: readline
-  
-  version: "4.1"
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: avahi
+  name: net-snmp
   
   version: ""
 - 
@@ -54,10 +47,10 @@ requires:
   
   version: ""
 - 
-  category: sec-policy
+  category: acct-user
   description: ""
   license: ""
-  name: selinux-ntp
+  name: ntp
   
   version: ""
 - 
@@ -68,10 +61,10 @@ requires:
   
   version: ""
 - 
-  category: net-analyzer
+  category: net-dns
   description: ""
   license: ""
-  name: net-snmp
+  name: avahi
   
   version: ""
 - 
@@ -82,10 +75,10 @@ requires:
   
   version: ""
 - 
-  category: acct-user
+  category: sec-policy
   description: ""
   license: ""
-  name: ntp
+  name: selinux-ntp
   
   version: ""
 - 
@@ -95,6 +88,13 @@ requires:
   name: ntp-syntax
   
   version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: "4.1"
 uri:
 - http://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8.tar.gz
 - https://dev.gentoo.org/~polynomial-c/ntp-4.2.8-manpages.tar.xz

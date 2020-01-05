@@ -4,16 +4,16 @@ conflicts:
   category: ~dev-python
   description: ""
   license: ""
-  name: oslo-service
+  name: eventlet
   
-  version: 1.28.1
+  version: 0.20.1
 - 
   category: ~dev-python
   description: ""
   license: ""
-  name: eventlet
+  name: oslo-service
   
-  version: 0.20.1
+  version: 1.28.1
 - 
   category: ~dev-python
   description: ""
@@ -33,47 +33,12 @@ license: Apache-2.0
 name: neutron
 requires:
 - 
-  category: dev-python
+  category: net-firewall
   description: ""
   license: ""
-  name: os-vif
+  name: ipset
   
-  version: 1.15.1
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pbr
-  
-  version: 4.0.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: sqlalchemy
-  
-  version: 1.2.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: oslo-versionedobjects
-  
-  version: 1.35.1
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: psutil
-  
-  version: 3.2.2
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: python-novaclient
-  
-  version: 9.1.0
+  version: ""
 - 
   category: dev-python
   description: ""
@@ -85,70 +50,63 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: oslo-utils
+  name: oslo-service
   
-  version: 3.33.0
+  version: 1.24.0
 - 
   category: dev-python
   description: ""
   license: ""
-  name: ovsdbapp
+  name: ovs
   
-  version: 0.9.1
+  version: 2.8.0
 - 
   category: dev-python
   description: ""
   license: ""
-  name: pyroute2
+  name: openstacksdk
   
-  version: 0.5.3
+  version: 0.31.2
 - 
   category: dev-python
   description: ""
   license: ""
-  name: osprofiler
+  name: decorator
   
-  version: 2.3.0
+  version: 3.4.0
 - 
   category: dev-python
   description: ""
   license: ""
-  name: netaddr
+  name: requests
   
-  version: 0.7.18
+  version: 2.14.2
 - 
   category: dev-python
   description: ""
   license: ""
-  name: netifaces
+  name: webob
   
-  version: 0.10.4
+  version: 1.8.2
 - 
-  category: dev-python
+  category: net-dns
   description: ""
   license: ""
-  name: oslo-config
-  
-  version: 5.2.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: os-ken
-  
-  version: 0.3.0
-- 
-  category: net-firewall
-  description: ""
-  license: ""
-  name: conntrack-tools
+  name: dnsmasq
   
   version: ""
 - 
-  category: net-firewall
+  category: dev-python
   description: ""
   license: ""
-  name: ebtables
+  name: httplib2
+  
+  version: 0.9.1
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: radvd
   
   version: ""
 - 
@@ -162,21 +120,91 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: oslo-serialization
+  name: oslo-upgradecheck
   
-  version: 1.18.0
+  version: 0.1.0
+- 
+  category: net-firewall
+  description: ""
+  license: ""
+  name: iptables
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pastedeploy
+  
+  version: 1.5.0-r1
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: oslo-cache
+  
+  version: 1.26.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: oslo-config
+  
+  version: 5.2.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: oslo-db
+  
+  version: 4.37.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: sqlalchemy
+  
+  version: 1.2.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: ovsdbapp
+  
+  version: 0.9.1
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: psutil
+  
+  version: 3.2.2
+- 
+  category: net-proxy
+  description: ""
+  license: ""
+  name: haproxy
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: alembic
+  
+  version: 0.8.10
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: stevedore
+  
+  version: 1.20.1
 - 
   category: sys-apps
   description: ""
   license: ""
   name: iproute2
-  
-  version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: iputils
   
   version: ""
 - 
@@ -190,16 +218,9 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: httplib2
+  name: oslo-versionedobjects
   
-  version: 0.9.1
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: oslo-middleware
-  
-  version: 3.31.0
+  version: 1.35.1
 - 
   category: net-misc
   description: ""
@@ -207,20 +228,6 @@ requires:
   name: openvswitch
   
   version: ""
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: dnsmasq
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: paste
-  
-  version: 2.0.2
 - 
   category: dev-python
   description: ""
@@ -232,23 +239,30 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: decorator
+  name: debtcollector
   
-  version: 3.4.0
+  version: 1.2.0
 - 
   category: dev-python
   description: ""
   license: ""
-  name: keystoneauth
+  name: oslo-serialization
   
-  version: 3.4.0
+  version: 1.18.0
 - 
   category: dev-python
   description: ""
   license: ""
-  name: oslo-concurrency
+  name: oslo-utils
   
-  version: 3.26.0
+  version: 3.33.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pbr
+  
+  version: 4.0.0
 - 
   category: dev-python
   description: ""
@@ -257,40 +271,61 @@ requires:
   
   version: 1.18.0
 - 
-  category: net-proxy
+  category: dev-python
   description: ""
   license: ""
-  name: haproxy
+  name: osprofiler
+  
+  version: 2.3.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: eventlet
+  
+  version: 0.18.4
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: oslo-messaging
+  
+  version: 5.29.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pyudev
+  
+  version: ""
+- 
+  category: net-firewall
+  description: ""
+  license: ""
+  name: conntrack-tools
   
   version: ""
 - 
   category: dev-python
   description: ""
   license: ""
-  name: requests
+  name: python-novaclient
   
-  version: 2.14.2
+  version: 9.1.0
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: dibbler
+  
+  version: 1.0.1
 - 
   category: dev-python
   description: ""
   license: ""
-  name: stevedore
+  name: tenacity
   
-  version: 1.20.1
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: oslo-context
-  
-  version: 2.19.2
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: oslo-service
-  
-  version: 1.24.0
+  version: 3.2.1
 - 
   category: dev-python
   description: ""
@@ -309,128 +344,9 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: oslo-log
+  name: oslo-middleware
   
-  version: 3.36.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: oslo-upgradecheck
-  
-  version: 0.1.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pecan
-  
-  version: 1.3.2
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: jinja
-  
-  version: "2.10"
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: python-neutronclient
-  
-  version: 6.3.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: tenacity
-  
-  version: 3.2.1
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: oslo-cache
-  
-  version: 1.26.0
-- 
-  category: net-firewall
-  description: ""
-  license: ""
-  name: ipset
-  
-  version: ""
-- 
-  category: net-firewall
-  description: ""
-  license: ""
-  name: iptables
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pymysql
-  
-  version: 0.7.6
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: oslo-messaging
-  
-  version: 5.29.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: python-designateclient
-  
-  version: 2.7.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: os-xenapi
-  
-  version: 0.3.1
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: radvd
-  
-  version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: dibbler
-  
-  version: 1.0.1
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: debtcollector
-  
-  version: 1.2.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: neutron-lib
-  
-  version: 1.29.1
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: alembic
-  
-  version: 0.8.10
+  version: 3.31.0
 - 
   category: dev-python
   description: ""
@@ -442,23 +358,23 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: ovs
+  name: jinja
   
-  version: 2.8.0
+  version: "2.10"
 - 
   category: dev-python
   description: ""
   license: ""
-  name: pastedeploy
+  name: netaddr
   
-  version: 1.5.0-r1
+  version: 0.7.18
 - 
   category: dev-python
   description: ""
   license: ""
-  name: webob
+  name: oslo-concurrency
   
-  version: 1.8.2
+  version: 3.26.0
 - 
   category: dev-python
   description: ""
@@ -470,30 +386,114 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: oslo-db
+  name: os-ken
   
-  version: 4.37.0
+  version: 0.3.0
 - 
   category: dev-python
   description: ""
   license: ""
-  name: openstacksdk
+  name: python-designateclient
   
-  version: 0.31.2
+  version: 2.7.0
 - 
   category: dev-python
   description: ""
   license: ""
-  name: pyudev
+  name: os-vif
+  
+  version: 1.15.1
+- 
+  category: net-firewall
+  description: ""
+  license: ""
+  name: ebtables
   
   version: ""
 - 
   category: dev-python
   description: ""
   license: ""
-  name: eventlet
+  name: pecan
   
-  version: 0.18.4
+  version: 1.3.2
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pymysql
+  
+  version: 0.7.6
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: oslo-log
+  
+  version: 3.36.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: os-xenapi
+  
+  version: 0.3.1
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: netifaces
+  
+  version: 0.10.4
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: neutron-lib
+  
+  version: 1.29.1
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: oslo-context
+  
+  version: 2.19.2
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pyroute2
+  
+  version: 0.5.3
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: paste
+  
+  version: 2.0.2
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: python-neutronclient
+  
+  version: 6.3.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: keystoneauth
+  
+  version: 3.4.0
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: iputils
+  
+  version: ""
 uri:
 - https://dev.gentoo.org/~prometheanfire/dist/openstack/neutron/train/configs.tar.gz
   -> neutron-configs-2019.2.9999.tar.gz

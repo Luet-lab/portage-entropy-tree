@@ -5,12 +5,12 @@ license: Apache-2.0
 name: docker
 requires:
 - 
-  category: app-emulation
+  category: net-firewall
   description: ""
   license: ""
-  name: docker-proxy
+  name: iptables
   
-  version: 0.8.0_p20190513
+  version: "1.4"
 - 
   category: sys-process
   description: ""
@@ -26,26 +26,12 @@ requires:
   
   version: "1.7"
 - 
-  category: app-arch
+  category: app-emulation
   description: ""
   license: ""
-  name: xz-utils
+  name: docker-proxy
   
-  version: "4.9"
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
-  
-  version: 3.7.9
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: lvm2
-  
-  version: 2.02.89
+  version: 0.8.0_p20190513
 - 
   category: sys-libs
   description: ""
@@ -61,12 +47,12 @@ requires:
   
   version: ""
 - 
-  category: net-firewall
+  category: app-arch
   description: ""
   license: ""
-  name: iptables
+  name: xz-utils
   
-  version: "1.4"
+  version: "4.9"
 - 
   category: dev-libs
   description: ""
@@ -88,6 +74,20 @@ requires:
   name: tini
   
   version: 0.18.0
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: 3.7.9
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lvm2
+  
+  version: 2.02.89
 uri:
 - https://github.com/docker/docker-ce/archive/v18.09.9.tar.gz -> docker-18.09.9.tar.gz
 use_flags:

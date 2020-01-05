@@ -5,12 +5,40 @@ license: GPL-3
 name: sssd
 requires:
 - 
-  category: app-crypt
+  category: sys-libs
   description: ""
   license: ""
-  name: mit-krb5
+  name: ldb
   
-  version: 1.12.2
+  version: 1.1.17-r1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: jansson
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: keyutils
+  
+  version: "1.5"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libintl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nss
+  
+  version: 3.12.9
 - 
   category: sys-libs
   description: ""
@@ -19,33 +47,12 @@ requires:
   
   version: "2.1"
 - 
-  category: net-dns
+  category: dev-libs
   description: ""
   license: ""
-  name: c-ares
+  name: popt
   
-  version: 1.10.0-r1
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: c-ares
-  
-  version: 1.7.4
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: gettext
-  
-  version: "0.18"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: ldb
-  
-  version: 1.1.17-r1
+  version: "1.16"
 - 
   category: dev-libs
   description: ""
@@ -61,12 +68,68 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: net-fs
   description: ""
   license: ""
-  name: cyrus-sasl
+  name: cifs-utils
   
-  version: 2.1.25-r3
+  version: ""
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: c-ares
+  
+  version: 1.10.0-r1
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: 2.1.9
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: glibc
+  
+  version: "2.17"
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-sssd
+  
+  version: 2.20120725-r9
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: mit-krb5
+  
+  version: 1.10.3
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: mit-krb5
+  
+  version: 1.12.2
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: c-ares
+  
+  version: 1.7.4
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: bind-tools
+  
+  version: "9.9"
 - 
   category: sys-apps
   description: ""
@@ -74,6 +137,13 @@ requires:
   name: dbus
   
   version: "1.6"
+- 
+  category: net-fs
+  description: ""
+  license: ""
+  name: samba
+  
+  version: 4.10.2
 - 
   category: sys-libs
   description: ""
@@ -85,23 +155,23 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: jansson
-  
-  version: ""
-- 
-  category: net-fs
-  description: ""
-  license: ""
-  name: samba
-  
-  version: 4.10.2
-- 
-  category: dev-libs
-  description: ""
-  license: ""
   name: ding-libs
   
   version: "0.2"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: tevent
+  
+  version: 0.9.16
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: 2.4.30
 - 
   category: net-libs
   description: ""
@@ -110,24 +180,17 @@ requires:
   
   version: ""
 - 
-  category: app-crypt
+  category: sys-devel
   description: ""
   license: ""
-  name: mit-krb5
+  name: gettext
   
-  version: 1.10.3
+  version: "0.18"
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: nss
-  
-  version: 3.12.9
-- 
-  category: net-fs
-  description: ""
-  license: ""
-  name: cifs-utils
+  name: glib
   
   version: ""
 - 
@@ -145,75 +208,12 @@ requires:
   
   version: 1.2.9
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: tevent
-  
-  version: 0.9.16
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: 2.1.9
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-sssd
-  
-  version: 2.20120725-r9
-- 
   category: dev-libs
   description: ""
   license: ""
-  name: popt
+  name: cyrus-sasl
   
-  version: "1.16"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libintl
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: glibc
-  
-  version: "2.17"
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
-  
-  version: 2.4.30
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: keyutils
-  
-  version: "1.5"
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: bind-tools
-  
-  version: "9.9"
+  version: 2.1.25-r3
 - 
   category: dev-libs
   description: ""

@@ -4,14 +4,14 @@ conflicts:
   category: sys-cluster
   description: ""
   license: ""
-  name: mpich2
+  name: pmix
   
   version: ""
 - 
   category: sys-cluster
   description: ""
   license: ""
-  name: pmix
+  name: mpich2
   
   version: ""
 - 
@@ -21,36 +21,22 @@ conflicts:
   name: mpich
   
   version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: mpiexec
-  
-  version: ""
 description: A high-performance message passing library (MPI)
 license: BSD
 name: openmpi
 requires:
 - 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: librdmacm
+  
+  version: ""
+- 
   category: dev-libs
   description: ""
   license: ""
   name: libltdl
-  
-  version: ""
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: nvidia-cuda-toolkit
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: knem
   
   version: ""
 - 
@@ -68,10 +54,17 @@ requires:
   
   version: ""
 - 
-  category: sys-cluster
+  category: virtual
   description: ""
   license: ""
-  name: torque
+  name: jre
+  
+  version: "1.6"
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: nvidia-cuda-toolkit
   
   version: ""
 - 
@@ -82,31 +75,31 @@ requires:
   
   version: ""
 - 
-  category: sys-fabric
+  category: sys-libs
   description: ""
   license: ""
-  name: librdmacm
+  name: zlib
   
   version: ""
 - 
-  category: virtual
+  category: sys-cluster
   description: ""
   license: ""
-  name: jre
+  name: knem
   
-  version: "1.6"
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: torque
+  
+  version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
   name: libevent
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
   
   version: ""
 uri:

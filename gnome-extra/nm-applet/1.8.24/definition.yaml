@@ -5,19 +5,26 @@ license: GPL-2+
 name: nm-applet
 requires:
 - 
-  category: x11-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libnotify
+  name: glib
   
-  version: 0.7.0
+  version: "2.38"
 - 
-  category: app-crypt
+  category: sys-auth
   description: ""
   license: ""
-  name: gcr
+  name: polkit
   
-  version: "3.14"
+  version: 0.96-r1
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: freedesktop-icon-theme
+  
+  version: ""
 - 
   category: net-misc
   description: ""
@@ -26,47 +33,12 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: app-crypt
   description: ""
   license: ""
-  name: libselinux
+  name: gcr
   
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.38"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus
-  
-  version: 1.4.1
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libappindicator
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libdbusmenu
-  
-  version: 16.04.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: gobject-introspection
-  
-  version: 0.9.6
+  version: "3.14"
 - 
   category: dev-libs
   description: ""
@@ -85,23 +57,44 @@ requires:
   category: dev-libs
   description: ""
   license: ""
+  name: dbus-glib
+  
+  version: "0.88"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
   name: libgudev
   
   version: ""
 - 
-  category: virtual
+  category: sys-apps
   description: ""
   license: ""
-  name: freedesktop-icon-theme
+  name: dbus
+  
+  version: 1.4.1
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libnotify
+  
+  version: 0.7.0
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: mobile-broadband-provider-info
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: dbus-glib
+  name: gobject-introspection
   
-  version: "0.88"
+  version: 0.9.6
 - 
   category: app-text
   description: ""
@@ -110,17 +103,24 @@ requires:
   
   version: ""
 - 
-  category: sys-auth
+  category: dev-libs
   description: ""
   license: ""
-  name: polkit
+  name: libappindicator
   
-  version: 0.96-r1
+  version: ""
 - 
-  category: net-misc
+  category: dev-libs
   description: ""
   license: ""
-  name: mobile-broadband-provider-info
+  name: libdbusmenu
+  
+  version: 16.04.0
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
   
   version: ""
 uri: []

@@ -1,44 +1,23 @@
 category: net-vpn
 conflicts:
 - 
-  category: net-misc
-  description: ""
-  license: ""
-  name: openswan
-  
-  version: ""
-- 
   category: net-vpn
   description: ""
   license: ""
   name: strongswan
   
   version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: openswan
+  
+  version: ""
 description: IPsec implementation for Linux, fork of Openswan
 license: GPL-2 BSD-4 RSA DES
 name: libreswan
 requires:
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-ipsec
-  
-  version: ""
 - 
   category: dev-libs
   description: ""
@@ -54,10 +33,24 @@ requires:
   
   version: 1.9.1-r1
 - 
-  category: net-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: ldns
+  name: nss[utils(+)]
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libseccomp
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
   
   version: ""
 - 
@@ -68,10 +61,10 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: sec-policy
   description: ""
   license: ""
-  name: libselinux
+  name: selinux-ipsec
   
   version: ""
 - 
@@ -82,10 +75,10 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libcap-ng
+  name: nspr
   
   version: ""
 - 
@@ -99,21 +92,7 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: libseccomp
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: nss[utils(+)]
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: nspr
+  name: pam
   
   version: ""
 - 
@@ -124,10 +103,31 @@ requires:
   
   version: "3.42"
 - 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap-ng
+  
+  version: ""
+- 
   category: net-misc
   description: ""
   license: ""
   name: curl
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: ldns
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
   
   version: ""
 uri:

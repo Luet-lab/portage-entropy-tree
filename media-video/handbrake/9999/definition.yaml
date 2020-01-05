@@ -5,19 +5,26 @@ license: GPL-2
 name: handbrake
 requires:
 - 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: x265
+  
+  version: "3.2"
+- 
   category: app-arch
   description: ""
   license: ""
   name: xz-utils
   
   version: ""
-- 
-  category: media-video
-  description: ""
-  license: ""
-  name: ffmpeg
-  
-  version: 4.2.1
 - 
   category: media-libs
   description: ""
@@ -26,45 +33,10 @@ requires:
   
   version: ""
 - 
-  category: media-plugins
+  category: sys-libs
   description: ""
   license: ""
-  name: gst-plugins-a52dec
-  
-  version: ""
-- 
-  category: media-plugins
-  description: ""
-  license: ""
-  name: gst-plugins-x264
-  
-  version: ""
-- 
-  category: media-plugins
-  description: ""
-  license: ""
-  name: gst-plugins-gdkpixbuf
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: speex
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: a52dec
+  name: zlib
   
   version: ""
 - 
@@ -75,10 +47,31 @@ requires:
   
   version: "12.2"
 - 
+  category: media-video
+  description: ""
+  license: ""
+  name: ffmpeg
+  
+  version: 4.2.1
+- 
+  category: media-plugins
+  description: ""
+  license: ""
+  name: gst-plugins-libav
+  
+  version: ""
+- 
   category: x11-libs
   description: ""
   license: ""
   name: gdk-pixbuf
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fdk-aac
   
   version: ""
 - 
@@ -96,10 +89,45 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: media-plugins
   description: ""
   license: ""
-  name: zlib
+  name: gst-plugins-a52dec
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: a52dec
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libsamplerate
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: lame
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gst-plugins-good
+  
+  version: ""
+- 
+  category: media-plugins
+  description: ""
+  license: ""
+  name: gst-plugins-x264
   
   version: ""
 - 
@@ -110,19 +138,19 @@ requires:
   
   version: "3.10"
 - 
-  category: media-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libvorbis
+  name: glib
   
   version: ""
 - 
-  category: media-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libbluray
+  name: libgudev
   
-  version: "1.0"
+  version: ""
 - 
   category: media-libs
   description: ""
@@ -134,42 +162,7 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libtheora
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: gst-plugins-good
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: gst-plugins-ugly
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: cairo
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: dbus-glib
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libnotify
+  name: x264
   
   version: ""
 - 
@@ -183,14 +176,14 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: x265
+  name: libtheora
   
-  version: "3.2"
+  version: ""
 - 
-  category: media-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: fdk-aac
+  name: libnotify
   
   version: ""
 - 
@@ -204,14 +197,35 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: dav1d
+  name: libbluray
   
-  version: 0.5.1
+  version: "1.0"
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libsamplerate
+  name: dav1d
+  
+  version: 0.5.1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: dbus-glib
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: jansson
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
   
   version: ""
 - 
@@ -225,28 +239,14 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: x264
+  name: gst-plugins-bad
   
   version: ""
 - 
-  category: media-sound
+  category: media-libs
   description: ""
   license: ""
-  name: lame
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: jansson
+  name: speex
   
   version: ""
 - 
@@ -260,28 +260,28 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: gstreamer
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: gst-plugins-bad
+  name: gst-plugins-ugly
   
   version: ""
 - 
   category: media-plugins
   description: ""
   license: ""
-  name: gst-plugins-libav
+  name: gst-plugins-gdkpixbuf
   
   version: ""
 - 
-  category: dev-libs
+  category: media-libs
   description: ""
   license: ""
-  name: libgudev
+  name: libvorbis
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gstreamer
   
   version: ""
 uri: []

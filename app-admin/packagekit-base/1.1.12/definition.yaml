@@ -6,6 +6,27 @@ license: GPL-2
 name: packagekit-base
 requires:
 - 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: "0.114"
+- 
+  category: app-portage
+  description: ""
+  license: ""
+  name: layman
+  
+  version: "2"
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: consolekit
+  
+  version: ""
+- 
   category: dev-db
   description: ""
   license: ""
@@ -16,16 +37,9 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: gobject-introspection
+  name: dbus-glib
   
-  version: 0.9.9
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: portage
-  
-  version: "2.2"
+  version: "0.74"
 - 
   category: sys-apps
   description: ""
@@ -41,6 +55,13 @@ requires:
   
   version: "229.4"
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gobject-introspection
+  
+  version: 0.9.9
+- 
   category: sys-apps
   description: ""
   license: ""
@@ -48,12 +69,19 @@ requires:
   
   version: "213"
 - 
-  category: app-portage
+  category: sys-apps
   description: ""
   license: ""
-  name: layman
+  name: portage
   
-  version: "2"
+  version: "2.2"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: entropy
+  
+  version: "234"
 - 
   category: app-shells
   description: ""
@@ -65,37 +93,9 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: dbus-glib
-  
-  version: "0.74"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
   name: glib
   
   version: 2.54.0
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: polkit
-  
-  version: "0.114"
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: consolekit
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: entropy
-  
-  version: "234"
 uri:
 - https://www.freedesktop.org/software/PackageKit/releases/PackageKit-1.1.12.tar.xz
 use_flags:

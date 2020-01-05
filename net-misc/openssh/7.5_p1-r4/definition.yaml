@@ -5,6 +5,20 @@ license: BSD GPL-2
 name: openssh
 requires:
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: ""
+- 
   category: sys-process
   description: ""
   license: ""
@@ -19,31 +33,24 @@ requires:
   
   version: ""
 - 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
-  
-  version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: pambase
-  
-  version: "20081028"
-- 
-  category: x11-apps
-  description: ""
-  license: ""
-  name: xauth
-  
-  version: ""
-- 
   category: net-libs
   description: ""
   license: ""
   name: ldns[-ecdsa,ssl(+)]
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
   
   version: ""
 - 
@@ -66,12 +73,33 @@ requires:
   license: ""
   name: openssl
   
-  version: ""
+  version: 1.0.1
 - 
-  category: virtual
+  category: sys-auth
   description: ""
   license: ""
-  name: krb5
+  name: pambase
+  
+  version: "20081028"
+- 
+  category: x11-apps
+  description: ""
+  license: ""
+  name: xauth
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: 1.2.3
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
   
   version: ""
 - 
@@ -79,13 +107,6 @@ requires:
   description: ""
   license: ""
   name: shadow
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
   
   version: ""
 - 
@@ -109,27 +130,6 @@ requires:
   name: skey
   
   version: 1.1.5-r1
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: 1.0.1
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: 1.2.3
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: ""
 uri:
 - mirror://openbsd/OpenSSH/portable/openssh-7.5.tar.gz
 - 'mirror://gentoo/openssh-7.5-hpnssh14v12.tar.xz '

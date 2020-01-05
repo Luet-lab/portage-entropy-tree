@@ -1,5 +1,12 @@
 category: sci-chemistry
-conflicts: []
+conflicts:
+- 
+  category: sci-chemistry
+  description: ""
+  license: ""
+  name: gmxapi
+  
+  version: ""
 description: The ultimate molecular dynamics simulation package
 license: LGPL-2.1 UoI-NCSA !mkl? ( !fftw? ( BSD ) !blas? ( BSD ) !lapack? ( BSD )
   ) cuda? ( LGPL-3 ) threads? ( BSD )
@@ -10,6 +17,48 @@ requires:
   description: ""
   license: ""
   name: libICE
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: nvidia-cuda-toolkit
+  
+  version: 6.5.14
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: hwloc
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: lmfit
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: mpi
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libSM
   
   version: ""
 - 
@@ -34,13 +83,6 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: hwloc
-  
-  version: ""
-- 
   category: virtual
   description: ""
   license: ""
@@ -48,45 +90,10 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libSM
-  
-  version: ""
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: nvidia-cuda-toolkit
-  
-  version: 6.5.14
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: lmfit
-  
-  version: ""
-- 
   category: sci-libs
   description: ""
   license: ""
   name: mkl
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: mpi
   
   version: ""
 uri: []
@@ -98,6 +105,7 @@ use_flags:
 - -double-precision
 - +fftw
 - +gmxapi
+- +gmxapi-legacy
 - +hwloc
 - lapack
 - +lmfit
@@ -106,6 +114,7 @@ use_flags:
 - +offensive
 - opencl
 - openmp
+- +python
 - +single-precision
 - test
 - +threads

@@ -1,17 +1,31 @@
 category: sys-apps
 conflicts:
 - 
+  category: sys-process
+  description: ""
+  license: ""
+  name: schedutils
+  
+  version: ""
+- 
+  category: <sys-libs
+  description: ""
+  license: ""
+  name: e2fsprogs-libs
+  
+  version: 1.41.8
+- 
+  category: <sys-fs
+  description: ""
+  license: ""
+  name: e2fsprogs
+  
+  version: 1.41.8
+- 
   category: app-arch
   description: ""
   license: ""
   name: hardlink
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: coreutils
   
   version: ""
 - 
@@ -22,12 +36,12 @@ conflicts:
   
   version: ""
 - 
-  category: net-wireless
+  category: <sys-apps
   description: ""
   license: ""
-  name: rfkill
+  name: shadow
   
-  version: ""
+  version: 4.7-r2
 - 
   category: '>=app-admin'
   description: ""
@@ -36,12 +50,12 @@ conflicts:
   
   version: "2.0"
 - 
-  category: <sys-apps
+  category: <app-shells
   description: ""
   license: ""
-  name: shadow
+  name: bash-completion
   
-  version: 4.7-r2
+  version: 2.7-r1
 - 
   category: '>=sys-apps'
   description: ""
@@ -50,26 +64,12 @@ conflicts:
   
   version: 4.7-r2
 - 
-  category: sys-process
+  category: net-wireless
   description: ""
   license: ""
-  name: schedutils
+  name: rfkill
   
   version: ""
-- 
-  category: <sys-fs
-  description: ""
-  license: ""
-  name: e2fsprogs
-  
-  version: 1.41.8
-- 
-  category: <app-shells
-  description: ""
-  license: ""
-  name: bash-completion
-  
-  version: 2.7-r1
 - 
   category: sys-apps
   description: ""
@@ -85,12 +85,12 @@ conflicts:
   
   version: 2.88-r7
 - 
-  category: <sys-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: e2fsprogs-libs
+  name: coreutils
   
-  version: 1.41.8
+  version: ""
 description: Various useful Linux utilities
 license: GPL-2 LGPL-2.1 BSD-4 MIT public-domain
 name: util-linux
@@ -99,56 +99,7 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: ncurses
-  
-  version: 5.2-r2
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: 2.2.2-r4
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: slang
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libcap-ng
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: cryptsetup
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libudev
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
+  name: zlib
   
   version: ""
 - 
@@ -169,7 +120,14 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: zlib
+  name: libcap-ng
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: cryptsetup
   
   version: ""
 - 
@@ -177,6 +135,48 @@ requires:
   description: ""
   license: ""
   name: libintl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: 2.2.2-r4
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: slang
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: 5.2-r2
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libudev
   
   version: ""
 uri: []

@@ -5,33 +5,19 @@ license: GPL-2+
 name: xfce4-power-manager
 requires:
 - 
-  category: sys-power
-  description: ""
-  license: ""
-  name: upower
-  
-  version: 0.99.0
-- 
   category: x11-libs
   description: ""
   license: ""
-  name: libnotify
+  name: libX11
   
-  version: "0.7"
+  version: ""
 - 
-  category: xfce-base
+  category: sys-auth
   description: ""
   license: ""
-  name: xfconf
+  name: polkit
   
-  version: "4.12"
-- 
-  category: xfce-base
-  description: ""
-  license: ""
-  name: libxfce4util
-  
-  version: "4.12"
+  version: "0.112"
 - 
   category: net-misc
   description: ""
@@ -43,16 +29,65 @@ requires:
   category: sys-power
   description: ""
   license: ""
+  name: upower
+  
+  version: 0.99.0
+- 
+  category: sys-power
+  description: ""
+  license: ""
   name: pm-utils
   
   version: ""
 - 
-  category: sys-auth
+  category: x11-libs
   description: ""
   license: ""
-  name: polkit
+  name: gtk+
   
-  version: "0.112"
+  version: "3.14"
+- 
+  category: xfce-base
+  description: ""
+  license: ""
+  name: libxfce4util
+  
+  version: "4.12"
+- 
+  category: xfce-base
+  description: ""
+  license: ""
+  name: xfce4-panel
+  
+  version: "4.12"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libnotify
+  
+  version: "0.7"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXtst
+  
+  version: ""
+- 
+  category: xfce-base
+  description: ""
+  license: ""
+  name: xfconf
+  
+  version: "4.12"
+- 
+  category: xfce-base
+  description: ""
+  license: ""
+  name: libxfce4ui
+  
+  version: "4.12"
 - 
   category: dev-libs
   description: ""
@@ -64,13 +99,6 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
   name: libXrandr
   
   version: "1.2"
@@ -78,37 +106,9 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXtst
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: "3.14"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
   name: libXext
   
   version: ""
-- 
-  category: xfce-base
-  description: ""
-  license: ""
-  name: libxfce4ui
-  
-  version: "4.12"
-- 
-  category: xfce-base
-  description: ""
-  license: ""
-  name: xfce4-panel
-  
-  version: "4.12"
 uri:
 - https://archive.xfce.org/src/xfce/xfce4-power-manager/1.6/xfce4-power-manager-1.6.5.tar.bz2
 use_flags:

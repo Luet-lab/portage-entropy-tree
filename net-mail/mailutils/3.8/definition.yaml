@@ -1,10 +1,10 @@
 category: net-mail
 conflicts:
 - 
-  category: mail-client
+  category: mail-filter
   description: ""
   license: ""
-  name: nmh
+  name: libsieve
   
   version: ""
 - 
@@ -15,10 +15,10 @@ conflicts:
   
   version: ""
 - 
-  category: mail-filter
+  category: mail-client
   description: ""
   license: ""
-  name: libsieve
+  name: nmh
   
   version: ""
 - 
@@ -40,45 +40,10 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: readline
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: db
-  
-  version: ""
-- 
   category: virtual
   description: ""
   license: ""
   name: krb5
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: kyotocabinet
-  
-  version: ""
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
-  
-  version: ""
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: gettext
   
   version: ""
 - 
@@ -89,17 +54,24 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: virtual
   description: ""
   license: ""
-  name: tcp-wrappers
+  name: gsasl
   
   version: ""
 - 
-  category: dev-libs
+  category: dev-db
   description: ""
   license: ""
-  name: fribidi
+  name: tokyocabinet
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: db
   
   version: ""
 - 
@@ -110,10 +82,52 @@ requires:
   
   version: ""
 - 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: tcp-wrappers
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: mta
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: fribidi
+  
+  version: ""
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: ""
+- 
   category: virtual
   description: ""
   license: ""
   name: libiconv
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libunistring
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c
   
   version: ""
 - 
@@ -124,17 +138,17 @@ requires:
   
   version: ""
 - 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
+- 
   category: dev-libs
   description: ""
   license: ""
   name: libltdl
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: mta
   
   version: ""
 - 
@@ -148,7 +162,14 @@ requires:
   category: dev-db
   description: ""
   license: ""
-  name: mysql-connector-c
+  name: kyotocabinet
+  
+  version: ""
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: gettext
   
   version: ""
 - 
@@ -156,27 +177,6 @@ requires:
   description: ""
   license: ""
   name: postgresql
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: tokyocabinet
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: gsasl
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libunistring
   
   version: ""
 uri:

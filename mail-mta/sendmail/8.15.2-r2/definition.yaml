@@ -4,14 +4,14 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: exim
+  name: courier
   
   version: ""
 - 
   category: mail-mta
   description: ""
   license: ""
-mailer
+  name: msmtp
   
   version: ""
 - 
@@ -25,16 +25,16 @@ mailer
   category: mail-mta
   description: ""
   license: ""
-  name: netqmail
+  name: exim
   
   version: ""
 - 
-  category: <mail-mta
+  category: mail-mta
   description: ""
   license: ""
-  name: ssmtp
+  name: mini-qmail
   
-  version: 2.64-r2
+  version: ""
 - 
   category: net-mail
   description: ""
@@ -46,9 +46,16 @@ mailer
   category: mail-mta
   description: ""
   license: ""
-  name: courier
+  name: netqmail
   
   version: ""
+- 
+  category: '>=mail-mta'
+  description: ""
+  license: ""
+  name: ssmtp
+  
+  version: 2.64-r2
 - 
   category: mail-mta
   description: ""
@@ -60,14 +67,7 @@ mailer
   category: mail-mta
   description: ""
   license: ""
-  name: mini-qmail
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: msmtp
+mailer
   
   version: ""
 - 
@@ -85,7 +85,7 @@ mailer
   
   version: ""
 - 
-  category: '>=mail-mta'
+  category: <mail-mta
   description: ""
   license: ""
   name: ssmtp
@@ -96,54 +96,19 @@ license: Sendmail GPL-2
 name: sendmail
 requires:
 - 
+  category: net-mail
+  description: ""
+  license: ""
+  name: mailbase
+  
+  version: ""
+- 
   category: dev-libs
   description: ""
   license: ""
   name: openssl
   
   version: ""
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
-  
-  version: ""
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: m4
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: tcp-wrappers
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: cyrus-sasl
-  
-  version: 2.1.10
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: mailbase
-  
-  version: ""
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: mailbase
-  
-  version: "0.00"
 - 
   category: dev-libs
   description: ""
@@ -158,6 +123,41 @@ requires:
   name: db
   
   version: "3.2"
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: m4
+  
+  version: ""
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: ""
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: mailbase
+  
+  version: "0.00"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: cyrus-sasl
+  
+  version: 2.1.10
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: tcp-wrappers
+  
+  version: ""
 uri:
 - ftp://ftp.sendmail.org/pub/sendmail/sendmail.8.15.2.tar.gz
 use_flags:

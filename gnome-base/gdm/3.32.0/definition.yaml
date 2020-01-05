@@ -13,61 +13,12 @@ license: "\n\tGPL-2+\n\tbranding? ( CC-BY-SA-4.0 )\n"
 name: gdm
 requires:
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: "186"
-- 
-  category: app-accessibility
-  description: ""
-  license: ""
-  name: orca
-  
-  version: "3.10"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus
-  
-  version: ""
-- 
   category: x11-libs
   description: ""
   license: ""
-  name: libxcb
+  name: libXinerama
   
   version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: pam_fprint
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgudev
-  
-  version: ""
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: dconf
-  
-  version: "0.20"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libcanberra
-  
-  version: "0.4"
 - 
   category: gnome-extra
   description: ""
@@ -83,10 +34,38 @@ requires:
   
   version: "2.44"
 - 
-  category: sys-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: pam
+  name: libgudev
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXau
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
+  
+  version: 2.5.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libcanberra
+  
+  version: "0.4"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXext
   
   version: ""
 - 
@@ -97,38 +76,10 @@ requires:
   
   version: 0.9.12
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXext
-  
-  version: ""
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gnome-shell
-  
-  version: 3.1.90
-- 
   category: sys-auth
   description: ""
   license: ""
-  name: elogind
-  
-  version: "239.3"
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: audit
+  name: pam_fprint
   
   version: ""
 - 
@@ -146,6 +97,62 @@ requires:
   
   version: "3.6"
 - 
+  category: app-accessibility
+  description: ""
+  license: ""
+  name: orca
+  
+  version: "3.10"
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: fprintd
+  
+  version: ""
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gnome-settings-daemon
+  
+  version: 3.1.4
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: sys-boot
+  description: ""
+  license: ""
+  name: plymouth
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: elogind
+  
+  version: "239.3"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "186"
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gnome-shell
+  
+  version: 3.1.90
+- 
   category: x11-apps
   description: ""
   license: ""
@@ -153,10 +160,45 @@ requires:
   
   version: ""
 - 
-  category: app-text
+  category: x11-libs
   description: ""
   license: ""
-  name: iso-codes
+  name: gtk+
+  
+  version: 2.91.1
+- 
+  category: x11-base
+  description: ""
+  license: ""
+  name: xorg-server
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: xdg-utils
+  
+  version: 1.0.2-r3
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: ""
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gsettings-desktop-schemas
   
   version: ""
 - 
@@ -170,84 +212,42 @@ requires:
   category: x11-libs
   description: ""
   license: ""
+  name: libxcb
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: audit
+  
+  version: ""
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: dconf
+  
+  version: "0.20"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
   name: libXdmcp
   
   version: ""
 - 
-  category: x11-libs
+  category: app-text
   description: ""
   license: ""
-  name: libXinerama
-  
-  version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: fprintd
-  
-  version: ""
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gsettings-desktop-schemas
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: fontconfig
-  
-  version: 2.5.0
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXau
-  
-  version: ""
-- 
-  category: x11-misc
-  description: ""
-  license: ""
-  name: xdg-utils
-  
-  version: 1.0.2-r3
-- 
-  category: sys-boot
-  description: ""
-  license: ""
-  name: plymouth
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: 2.91.1
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gnome-settings-daemon
-  
-  version: 3.1.4
-- 
-  category: x11-base
-  description: ""
-  license: ""
-  name: xorg-server
+  name: iso-codes
   
   version: ""
 uri:

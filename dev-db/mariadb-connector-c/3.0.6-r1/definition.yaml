@@ -4,13 +4,6 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mysql-cluster[client-libs(+)]
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
   name: mariadb[client-libs(+)]
   
   version: ""
@@ -18,7 +11,7 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mariadb-galera[client-libs(+)]
+  name: percona-server[client-libs(+)]
   
   version: ""
 - 
@@ -26,13 +19,6 @@ conflicts:
   description: ""
   license: ""
   name: mysql-connector-c
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mysql[client-libs(+)]
   
   version: ""
 - 
@@ -46,7 +32,21 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: percona-server[client-libs(+)]
+  name: mysql-cluster[client-libs(+)]
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mariadb-galera[client-libs(+)]
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql[client-libs(+)]
   
   version: ""
 description: C client library for MariaDB/MySQL
@@ -54,24 +54,10 @@ license: LGPL-2.1
 name: mariadb-connector-c
 requires:
 - 
-  category: virtual
+  category: sys-libs
   description: ""
   license: ""
-  name: libiconv
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
+  name: zlib
   
   version: ""
 - 
@@ -82,17 +68,24 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: ""
-- 
   category: net-misc
   description: ""
   license: ""
   name: curl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libiconv
   
   version: ""
 - 
@@ -102,6 +95,13 @@ requires:
   name: gnutls
   
   version: 3.3.24
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
 uri:
 - https://downloads.mariadb.org/f/connector-c-3.0.6/mariadb-connector-c-3.0.6-src.tar.gz?serve
   -> mariadb-connector-c-3.0.6-src.tar.gz

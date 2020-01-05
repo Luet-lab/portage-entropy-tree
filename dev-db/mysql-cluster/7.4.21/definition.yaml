@@ -4,7 +4,7 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mysql
+  name: mariadb
   
   version: ""
 - 
@@ -32,13 +32,27 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mariadb
+  name: mysql
   
   version: ""
 description: An enhanced, drop-in replacement for MySQL
 license: GPL-2
 name: mysql-cluster
 requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-init-scripts
+  
+  version: ""
 - 
   category: sys-process
   description: ""
@@ -50,16 +64,65 @@ requires:
   category: dev-libs
   description: ""
   license: ""
+  name: libevent
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: sed
+  
+  version: "4"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
   name: jemalloc
   
   version: ""
 - 
-  category: virtual
+  category: dev-util
   description: ""
   license: ""
-  name: perl-Getopt-Long
+  name: google-perftools
   
   version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: systemtap
+  
+  version: "1.3"
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-mysql
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libaio
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 1.0.0
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: 1.2.3
 - 
   category: dev-perl
   description: ""
@@ -68,10 +131,17 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: sys-process
   description: ""
   license: ""
-  name: ncurses
+  name: numactl
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: perl-Getopt-Long
   
   version: ""
 - 
@@ -89,61 +159,12 @@ requires:
   
   version: ""
 - 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-mysql
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libaio
-  
-  version: ""
-- 
   category: sys-apps
   description: ""
   license: ""
   name: texinfo
   
   version: 4.7-r1
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: numactl
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: 1.2.3
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jre
-  
-  version: "1.6"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: sed
-  
-  version: "4"
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: google-perftools
-  
-  version: ""
 - 
   category: dev-libs
   description: ""
@@ -152,33 +173,12 @@ requires:
   
   version: ""
 - 
-  category: dev-db
+  category: virtual
   description: ""
   license: ""
-  name: mysql-init-scripts
+  name: jre
   
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libevent
-  
-  version: ""
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: systemtap
-  
-  version: "1.3"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: 1.0.0
+  version: "1.6"
 uri:
 - https://cdn.mysql.com/Downloads/MySQL-Cluster-7.4/mysql-cluster-gpl-7.4.21.tar.gz
 - https://downloads.mysql.com/archives/MySQL-Cluster-7.4/mysql-cluster-gpl-7.4.21.tar.gz

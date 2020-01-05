@@ -1,6 +1,13 @@
 category: sys-kernel
 conflicts:
 - 
+  category: <sys-apps
+  description: ""
+  license: ""
+  name: openrc
+  
+  version: 0.9.9
+- 
   category: sys-kernel
   description: ""
   license: ""
@@ -14,22 +21,15 @@ conflicts:
   name: eudev
   
   version: ""
-- 
-  category: <sys-apps
-  description: ""
-  license: ""
-  name: openrc
-  
-  version: 0.9.9
 description: Gentoo automatic kernel building scripts, reloaded
 license: GPL-2
 name: genkernel-next
 requires:
 - 
-  category: sys-fs
+  category: sys-block
   description: ""
   license: ""
-  name: mdadm
+  name: open-iscsi
   
   version: ""
 - 
@@ -40,59 +40,17 @@ requires:
   
   version: ""
 - 
-  category: sys-fs
+  category: app-misc
   description: ""
   license: ""
-  name: e2fsprogs
+  name: pax-utils
   
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: cryptsetup
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: dmraid
-  
-  version: 1.0.0_rc16
-- 
-  category: sys-boot
-  description: ""
-  license: ""
-  name: plymouth
-  
-  version: ""
+  version: "0.6"
 - 
   category: sys-apps
   description: ""
   license: ""
   name: util-linux
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: lvm2
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: ""
-- 
-  category: app-portage
-  description: ""
-  license: ""
-  name: portage-utils
   
   version: ""
 - 
@@ -110,26 +68,68 @@ requires:
   
   version: ""
 - 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: e2fsprogs
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: dmraid
+  
+  version: 1.0.0_rc16
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: mdadm
+  
+  version: ""
+- 
+  category: app-portage
+  description: ""
+  license: ""
+  name: portage-utils
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lvm2
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: cryptsetup
+  
+  version: ""
+- 
+  category: sys-boot
+  description: ""
+  license: ""
+  name: plymouth
+  
+  version: ""
+- 
   category: app-crypt
   description: ""
   license: ""
   name: gnupg
   
   version: ""
-- 
-  category: sys-block
-  description: ""
-  license: ""
-  name: open-iscsi
-  
-  version: ""
-- 
-  category: app-misc
-  description: ""
-  license: ""
-  name: pax-utils
-  
-  version: "0.6"
 uri:
 - https://github.com/Sabayon/genkernel-next/archive/v69.tar.gz -> genkernel-next-69.tar.gz
 use_flags:

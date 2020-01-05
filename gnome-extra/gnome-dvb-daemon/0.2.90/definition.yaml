@@ -6,20 +6,6 @@ license: GPL-3
 name: gnome-dvb-daemon
 requires:
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: 2.32.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgudev
-  
-  version: ""
-- 
   category: media-libs
   description: ""
   license: ""
@@ -34,17 +20,31 @@ requires:
   
   version: 1.4.0
 - 
-  category: dev-python
+  category: dev-libs
   description: ""
   license: ""
-  name: pygobject
+  name: gobject-introspection
   
-  version: 3.2.1
+  version: 1.44.0
 - 
-  category: x11-libs
+  category: media-video
   description: ""
   license: ""
-  name: gtk+
+  name: totem
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.32.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgudev
   
   version: ""
 - 
@@ -62,13 +62,6 @@ requires:
   
   version: 1.4.5
 - 
-  category: media-plugins
-  description: ""
-  license: ""
-  name: gst-plugins-dvb
-  
-  version: ""
-- 
   category: media-libs
   description: ""
   license: ""
@@ -83,6 +76,20 @@ requires:
   
   version: "0.8"
 - 
+  category: media-plugins
+  description: ""
+  license: ""
+  name: gst-plugins-dvb
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: ""
+- 
   category: dev-python
   description: ""
   license: ""
@@ -90,19 +97,12 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: dev-python
   description: ""
   license: ""
-  name: gobject-introspection
+  name: pygobject
   
-  version: 1.44.0
-- 
-  category: media-video
-  description: ""
-  license: ""
-  name: totem
-  
-  version: ""
+  version: 3.2.1
 uri: []
 use_flags:
 - nls

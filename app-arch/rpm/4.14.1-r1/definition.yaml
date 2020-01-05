@@ -12,12 +12,26 @@ license: GPL-2 LGPL-2
 name: rpm
 requires:
 - 
-  category: app-crypt
+  category: sec-policy
   description: ""
   license: ""
-  name: gnupg
+  name: selinux-rpm
   
-  version: "1.2"
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: elfutils
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: "2.0"
 - 
   category: app-arch
   description: ""
@@ -26,47 +40,19 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: dev-lang
   description: ""
   license: ""
-  name: db
+  name: perl
   
-  version: "4.5"
+  version: 5.8.8
 - 
-  category: app-arch
+  category: dev-lang
   description: ""
   license: ""
-  name: bzip2
+  name: lua
   
-  version: 1.0.1
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-rpm
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: 1.2.3-r1
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: popt
-  
-  version: "1.7"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: nss
-  
-  version: ""
+  version: 5.1.0
 - 
   category: virtual
   description: ""
@@ -82,19 +68,12 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: elfutils
+  name: zlib
   
-  version: ""
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: perl
-  
-  version: 5.8.8
+  version: 1.2.3-r1
 - 
   category: virtual
   description: ""
@@ -103,19 +82,40 @@ requires:
   
   version: ""
 - 
-  category: dev-lang
+  category: app-crypt
   description: ""
   license: ""
-  name: lua
+  name: gnupg
   
-  version: 5.1.0
+  version: "1.2"
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: bzip2
+  
+  version: 1.0.1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: popt
+  
+  version: "1.7"
 - 
   category: sys-libs
   description: ""
   license: ""
-  name: libcap
+  name: db
   
-  version: "2.0"
+  version: "4.5"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nss
+  
+  version: ""
 uri:
 - http://ftp.rpm.org/releases/rpm-.x/rpm-4.14.1.tar.bz2
 use_flags:

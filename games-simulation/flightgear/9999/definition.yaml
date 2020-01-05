@@ -5,26 +5,26 @@ license: GPL-2
 name: flightgear
 requires:
 - 
-  category: sci-libs
+  category: virtual
   description: ""
   license: ""
-  name: gdal
+  name: opengl
   
-  version: 2.0.0
+  version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: openal
+  name: speex
   
-  version: ""
+  version: 1.2.0
 - 
-  category: sys-apps
+  category: media-sound
   description: ""
   license: ""
-  name: dbus
+  name: gsm
   
-  version: 1.6.18-r1
+  version: ""
 - 
   category: virtual
   description: ""
@@ -36,7 +36,7 @@ requires:
   category: dev-qt
   description: ""
   license: ""
-  name: qtcore
+  name: qtdeclarative
   
   version: 5.7.1
 - 
@@ -50,44 +50,37 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libpng
+  name: freetype
   
   version: ""
 - 
-  category: dev-db
+  category: media-libs
   description: ""
   license: ""
-  name: sqlite
+  name: glew
   
   version: ""
 - 
-  category: media-sound
+  category: games-simulation
   description: ""
   license: ""
-  name: gsm
+  name: flightgear-data
+  
+  version: "9999"
+- 
+  category: dev-games
+  description: ""
+  license: ""
+  name: simgear-9999[gdal=]
   
   version: ""
 - 
-  category: x11-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: libX11
+  name: zlib
   
   version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtgui
-  
-  version: 5.7.1
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtnetwork
-  
-  version: 5.7.1
 - 
   category: virtual
   description: ""
@@ -103,10 +96,66 @@ requires:
   
   version: ""
 - 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: 1.6.18-r1
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: gdal
+  
+  version: 2.0.0
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtcore
+  
+  version: 5.7.1
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtgui
+  
+  version: 5.7.1
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtnetwork
+  
+  version: 5.7.1
+- 
+  category: dev-games
+  description: ""
+  license: ""
+  name: openscenegraph
+  
+  version: 3.5.6
+- 
   category: media-libs
   description: ""
   license: ""
-  name: freetype
+  name: openal
   
   version: ""
 - 
@@ -117,24 +166,10 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: media-libs
   description: ""
   license: ""
-  name: zlib
-  
-  version: ""
-- 
-  category: games-simulation
-  description: ""
-  license: ""
-  name: flightgear-data
-  
-  version: "9999"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: opengl
+  name: libpng
   
   version: ""
 - 
@@ -144,41 +179,6 @@ requires:
   name: qtwebsockets
   
   version: 5.7.1
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: speex
-  
-  version: 1.2.0
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtdeclarative
-  
-  version: 5.7.1
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: glew
-  
-  version: ""
-- 
-  category: dev-games
-  description: ""
-  license: ""
-  name: openscenegraph
-  
-  version: 3.5.6
-- 
-  category: dev-games
-  description: ""
-  license: ""
-  name: simgear-9999[gdal=]
-  
-  version: ""
 uri: []
 use_flags:
 - dbus

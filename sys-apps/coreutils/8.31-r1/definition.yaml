@@ -1,12 +1,19 @@
 category: sys-apps
 conflicts:
 - 
-  category: sys-apps
+  category: app-misc
   description: ""
   license: ""
-  name: net-tools
+  name: realpath
   
   version: ""
+- 
+  category: <sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: "2.13"
 - 
   category: sys-apps
   description: ""
@@ -22,6 +29,13 @@ conflicts:
   
   version: ""
 - 
+  category: <app-forensics
+  description: ""
+  license: ""
+  name: tct
+  
+  version: 1.18-r1
+- 
   category: <net-fs
   description: ""
   license: ""
@@ -29,19 +43,12 @@ conflicts:
   
   version: 2.0.3-r4
 - 
-  category: app-misc
+  category: sys-apps
   description: ""
   license: ""
-  name: realpath
+  name: net-tools
   
   version: ""
-- 
-  category: <sys-apps
-  description: ""
-  license: ""
-  name: sandbox
-  
-  version: 2.10-r4
 - 
   category: sys-apps
   description: ""
@@ -60,9 +67,9 @@ conflicts:
   category: <sys-apps
   description: ""
   license: ""
-  name: util-linux
+  name: sandbox
   
-  version: "2.13"
+  version: 2.10-r4
 - 
   category: sys-apps
   description: ""
@@ -70,29 +77,22 @@ conflicts:
   name: stat
   
   version: ""
-- 
-  category: <app-forensics
-  description: ""
-  license: ""
-  name: tct
-  
-  version: 1.18-r1
 description: Standard GNU utilities (chmod, cp, dd, ls, sort, tr, head, wc, who,...)
 license: GPL-3
 name: coreutils
 requires:
 - 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: ""
+- 
   category: dev-libs
   description: ""
   license: ""
   name: gmp
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libintl
   
   version: ""
 - 
@@ -103,17 +103,17 @@ requires:
   
   version: ""
 - 
+  category: virtual
+  description: ""
+  license: ""
+  name: libintl
+  
+  version: ""
+- 
   category: sys-apps
   description: ""
   license: ""
   name: acl
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libcap
   
   version: ""
 - 

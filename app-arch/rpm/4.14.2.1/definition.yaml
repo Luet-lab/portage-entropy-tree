@@ -12,12 +12,26 @@ license: GPL-2 LGPL-2
 name: rpm
 requires:
 - 
-  category: sys-libs
+  category: dev-lang
   description: ""
   license: ""
-  name: db
+  name: lua
   
-  version: "4.5"
+  version: 5.1.0
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: zstd
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: libarchive
+  
+  version: ""
 - 
   category: sys-libs
   description: ""
@@ -29,28 +43,14 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: elfutils
+  name: popt
   
-  version: ""
+  version: "1.7"
 - 
-  category: app-arch
+  category: dev-libs
   description: ""
   license: ""
-  name: libarchive
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: acl
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-rpm
+  name: nss
   
   version: ""
 - 
@@ -61,6 +61,20 @@ requires:
   
   version: 5.8.8
 - 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: "2.0"
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-rpm
+  
+  version: ""
+- 
   category: sys-apps
   description: ""
   license: ""
@@ -68,19 +82,33 @@ requires:
   
   version: ""
 - 
-  category: app-arch
+  category: virtual
   description: ""
   license: ""
-  name: zstd
+  name: libintl
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: acl
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: popt
+  name: elfutils
   
-  version: "1.7"
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: db
+  
+  version: "4.5"
 - 
   category: app-arch
   description: ""
@@ -95,34 +123,6 @@ requires:
   name: gnupg
   
   version: "1.2"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libintl
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: nss
-  
-  version: ""
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: lua
-  
-  version: 5.1.0
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libcap
-  
-  version: "2.0"
 uri:
 - http://ftp.rpm.org/releases/rpm-.x/rpm-4.14.2.1.tar.bz2
 use_flags:

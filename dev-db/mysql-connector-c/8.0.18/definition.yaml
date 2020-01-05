@@ -4,9 +4,9 @@ conflicts:
   category: =dev-db
   description: ""
   license: ""
-  name: mysql
+  name: mysql-5.7.23*
   
-  version: 5.7.27-r0
+  version: ""
 - 
   category: <dev-db
   description: ""
@@ -14,6 +14,20 @@ conflicts:
   name: percona-server
   
   version: 5.7.26.29-r1
+- 
+  category: <dev-db
+  description: ""
+  license: ""
+  name: mysql
+  
+  version: 5.6.45-r1
+- 
+  category: =dev-db
+  description: ""
+  license: ""
+  name: mysql-5.7.24*
+  
+  version: ""
 - 
   category: =dev-db
   description: ""
@@ -29,49 +43,21 @@ conflicts:
   
   version: 5.7.26-r0
 - 
-  category: <dev-db
+  category: =dev-db
   description: ""
   license: ""
   name: mysql
   
-  version: 5.6.45-r1
-- 
-  category: =dev-db
-  description: ""
-  license: ""
-  name: mysql-5.7.23*
-  
-  version: ""
-- 
-  category: =dev-db
-  description: ""
-  license: ""
-  name: mysql-5.7.24*
-  
-  version: ""
+  version: 5.7.27-r0
 description: C client library for MariaDB/MySQL
 license: GPL-2
 name: mysql-connector-c
 requires:
 - 
-  category: app-arch
-  description: ""
-  license: ""
-  name: lz4
-  
-  version: 0_p131
-- 
   category: dev-libs
   description: ""
   license: ""
   name: cyrus-sasl
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
   
   version: ""
 - 
@@ -88,6 +74,20 @@ requires:
   name: libressl
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: lz4
+  
+  version: 0_p131
 uri:
 - https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-boost-8.0.18.tar.gz
 use_flags:

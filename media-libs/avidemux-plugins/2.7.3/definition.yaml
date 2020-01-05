@@ -12,34 +12,6 @@ license: GPL-1 GPL-2 MIT PSF-2 public-domain
 name: avidemux-plugins
 requires:
 - 
-  category: virtual
-  description: ""
-  license: ""
-  name: libiconv
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: pulseaudio
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: xvid
-  
-  version: ""
-- 
   category: dev-qt
   description: ""
   license: ""
@@ -50,42 +22,7 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libvorbis
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXv
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: faac
-  
-  version: 1.29.9.2
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: lame
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libmad
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: x264
+  name: libvpx
   
   version: ""
 - 
@@ -99,49 +36,14 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: a52dec
+  name: faad2
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libass
-  
-  version: ""
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: dcaenc
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: fontconfig
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libmp4v2
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: alsa-lib
-  
-  version: 1.0.3b-r2
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: fribidi
+  name: libsamplerate
   
   version: ""
 - 
@@ -162,21 +64,21 @@ requires:
   category: media-sound
   description: ""
   license: ""
-  name: twolame
+  name: pulseaudio
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libvpx
+  name: x264
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: x265
+  name: libmp4v2
   
   version: ""
 - 
@@ -190,37 +92,9 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: opencore-amr
+  name: faac
   
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: faad2
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: fdk-aac
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libsamplerate
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: opus
-  
-  version: ""
+  version: 1.29.9.2
 - 
   category: dev-qt
   description: ""
@@ -232,21 +106,42 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: freetype
+  name: libvorbis
   
   version: ""
 - 
-  category: dev-lang
+  category: x11-libs
   description: ""
   license: ""
-  name: spidermonkey
+  name: libX11
   
-  version: 1.5-r2
+  version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
   name: libxml2
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libmad
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXv
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: fribidi
   
   version: ""
 - 
@@ -260,7 +155,28 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libpng
+  name: opencore-amr
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: alsa-lib
+  
+  version: 1.0.3b-r2
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: dcaenc
   
   version: ""
 - 
@@ -268,6 +184,90 @@ requires:
   description: ""
   license: ""
   name: libdca
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fdk-aac
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: lame
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: opus
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: spidermonkey
+  
+  version: 1.5-r2
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libiconv
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: xvid
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: twolame
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libpng
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: x265
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: a52dec
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libass
   
   version: ""
 uri:

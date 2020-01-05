@@ -1,0 +1,41 @@
+category: app-emulation
+conflicts: []
+description: GLib and GObject mappings for libvirt
+license: LGPL-2.1
+name: libvirt-glib
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gobject-introspection
+  
+  version: 1.36.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: app-emulation
+  description: ""
+  license: ""
+  name: libvirt
+  
+  version: 1.2.6
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.38.0
+uri:
+- ftp://libvirt.org/libvirt/glib/libvirt-glib-3.0.0.tar.gz
+use_flags:
+- +introspection
+- nls
+- +vala
+version: 3.0.0

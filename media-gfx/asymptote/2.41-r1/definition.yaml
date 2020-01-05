@@ -5,19 +5,26 @@ license: GPL-3
 name: asymptote
 requires:
 - 
-  category: media-gfx
+  category: sci-libs
   description: ""
   license: ""
-  name: imagemagick
+  name: fftw
+  
+  version: 3.0.1
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: gsl
   
   version: ""
 - 
-  category: media-libs
+  category: dev-texlive
   description: ""
   license: ""
-  name: mesa-8[X(+)]
+  name: texlive-latexextra
   
-  version: ""
+  version: "2013"
 - 
   category: sys-libs
   description: ""
@@ -26,24 +33,10 @@ requires:
   
   version: 5.4-r5
 - 
-  category: app-text
+  category: virtual
   description: ""
   license: ""
-  name: dvisvgm
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libsigsegv
-  
-  version: ""
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: gsl
+  name: latex-base
   
   version: ""
 - 
@@ -61,10 +54,10 @@ requires:
   
   version: 4.3-r5
 - 
-  category: media-libs
+  category: app-text
   description: ""
   license: ""
-  name: mesa
+  name: dvisvgm
   
   version: ""
 - 
@@ -75,26 +68,26 @@ requires:
   
   version: "7.0"
 - 
-  category: dev-python
+  category: media-libs
   description: ""
   license: ""
-  name: pillow
+  name: mesa-8[X(+)]
   
   version: ""
 - 
-  category: virtual
+  category: media-libs
   description: ""
   license: ""
-  name: latex-base
+  name: mesa
   
   version: ""
 - 
-  category: sci-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: fftw
+  name: libsigsegv
   
-  version: 3.0.1
+  version: ""
 - 
   category: x11-misc
   description: ""
@@ -103,12 +96,19 @@ requires:
   
   version: ""
 - 
-  category: dev-texlive
+  category: dev-python
   description: ""
   license: ""
-  name: texlive-latexextra
+  name: pillow
   
-  version: "2013"
+  version: ""
+- 
+  category: media-gfx
+  description: ""
+  license: ""
+  name: imagemagick
+  
+  version: ""
 uri: []
 use_flags:
 - +boehm-gc

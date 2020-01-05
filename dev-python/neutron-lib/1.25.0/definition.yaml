@@ -6,35 +6,7 @@ conflicts:
   license: ""
   name: pecan
   
-  version: 1.0.2
-- 
-  category: ~dev-python
-  description: ""
-  license: ""
-  name: pecan
-  
   version: 1.0.3
-- 
-  category: ~dev-python
-  description: ""
-  license: ""
-  name: pecan
-  
-  version: 1.2.0
-- 
-  category: ~dev-python
-  description: ""
-  license: ""
-  name: oslo-service
-  
-  version: 1.28.1
-- 
-  category: ~dev-python
-  description: ""
-  license: ""
-  name: pbr
-  
-  version: 2.1.0
 - 
   category: ~dev-python
   description: ""
@@ -49,10 +21,45 @@ conflicts:
   name: oslo-serialization
   
   version: 2.19.1
+- 
+  category: ~dev-python
+  description: ""
+  license: ""
+  name: pbr
+  
+  version: 2.1.0
+- 
+  category: ~dev-python
+  description: ""
+  license: ""
+  name: pecan
+  
+  version: 1.0.2
+- 
+  category: ~dev-python
+  description: ""
+  license: ""
+  name: pecan
+  
+  version: 1.2.0
+- 
+  category: ~dev-python
+  description: ""
+  license: ""
+  name: oslo-service
+  
+  version: 1.28.1
 description: Neutron shared routines and utilities.
 license: Apache-2.0
 name: neutron-lib
 requires:
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pecan
+  
+  version: 1.0.0
 - 
   category: dev-python
   description: ""
@@ -71,16 +78,9 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: oslo-log
+  name: oslo-service
   
-  version: 3.36.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: oslo-messaging
-  
-  version: 5.29.0
+  version: 1.24.0
 - 
   category: dev-python
   description: ""
@@ -92,9 +92,16 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: pbr
+  name: osprofiler
   
-  version: 2.0.0
+  version: 1.4.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: weakrefmethod
+  
+  version: 1.0.2
 - 
   category: dev-python
   description: ""
@@ -106,58 +113,16 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: oslo-versionedobjects
+  name: os-traits
   
-  version: 1.31.2
+  version: 0.9.0
 - 
   category: dev-python
   description: ""
   license: ""
-  name: osprofiler
+  name: pbr
   
-  version: 1.4.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: oslo-policy
-  
-  version: 1.30.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: oslo-service
-  
-  version: 1.24.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pecan
-  
-  version: 1.0.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: oslo-context
-  
-  version: 2.19.2
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: setproctitle
-  
-  version: 1.1.10
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: sqlalchemy
-  
-  version: 1.2.0
+  version: 2.0.0
 - 
   category: dev-python
   description: ""
@@ -169,23 +134,23 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: keystoneauth
+  name: oslo-log
   
-  version: 3.4.0
+  version: 3.36.0
 - 
   category: dev-python
   description: ""
   license: ""
-  name: oslo-config
+  name: oslo-versionedobjects
   
-  version: 5.2.0
+  version: 1.31.2
 - 
   category: dev-python
   description: ""
   license: ""
-  name: oslo-i18n
+  name: oslo-policy
   
-  version: 3.15.3
+  version: 1.30.0
 - 
   category: dev-python
   description: ""
@@ -197,9 +162,37 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: os-traits
+  name: sqlalchemy
   
-  version: 0.9.0
+  version: 1.2.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: keystoneauth
+  
+  version: 3.4.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: oslo-i18n
+  
+  version: 3.15.3
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: oslo-messaging
+  
+  version: 5.29.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: setproctitle
+  
+  version: 1.1.10
 - 
   category: dev-python
   description: ""
@@ -211,9 +204,16 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: weakrefmethod
+  name: oslo-config
   
-  version: 1.0.2
+  version: 5.2.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: oslo-context
+  
+  version: 2.19.2
 uri:
 - mirror://pypi/n/neutron-lib/neutron-lib-1.25.0.tar.gz
 use_flags:

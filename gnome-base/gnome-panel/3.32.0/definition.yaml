@@ -5,54 +5,12 @@ license: GPL-2+ FDL-1.1 LGPL-2.1+
 name: gnome-panel
 requires:
 - 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gdm
-  
-  version: ""
-- 
   category: x11-libs
   description: ""
   license: ""
-  name: libX11
+  name: libwnck
   
-  version: ""
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gnome-desktop
-  
-  version: 2.91.0
-- 
-  category: gnome-extra
-  description: ""
-  license: ""
-  name: evolution-data-server
-  
-  version: 3.5.3
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: "230"
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: polkit
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: 3.22.0
+  version: 3.4.6
 - 
   category: gnome-base
   description: ""
@@ -61,10 +19,31 @@ requires:
   
   version: 3.7.90
 - 
-  category: x11-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: cairo-1.0.0[X,glib]
+  name: systemd
+  
+  version: "230"
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: dconf
+  
+  version: 0.13.4
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gdm
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
   
   version: ""
 - 
@@ -78,9 +57,30 @@ requires:
   category: gnome-base
   description: ""
   license: ""
-  name: dconf
+  name: gnome-desktop
   
-  version: 0.13.4
+  version: 2.91.0
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gdk-pixbuf
+  
+  version: 2.26.0
+- 
+  category: gnome-extra
+  description: ""
+  license: ""
+  name: evolution-data-server
+  
+  version: 3.5.3
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo-1.0.0[X,glib]
+  
+  version: ""
 - 
   category: x11-libs
   description: ""
@@ -92,9 +92,9 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXi
+  name: pango
   
-  version: ""
+  version: 1.15.4
 - 
   category: dev-libs
   description: ""
@@ -106,9 +106,9 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libwnck
+  name: gtk+
   
-  version: 3.4.6
+  version: 3.22.0
 - 
   category: sys-auth
   description: ""
@@ -120,16 +120,16 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: gdk-pixbuf
+  name: libX11
   
-  version: 2.26.0
+  version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: pango
+  name: libXi
   
-  version: 1.15.4
+  version: ""
 uri: []
 use_flags:
 - eds

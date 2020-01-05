@@ -5,52 +5,24 @@ license: GPL-2
 name: consolekit
 requires:
 - 
-  category: x11-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libX11
+  name: glib
   
-  version: ""
+  version: "2.40"
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: gettext
+  
+  version: "0.19"
 - 
   category: sys-apps
   description: ""
   license: ""
   name: acl
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: polkit
-  
-  version: "0.110"
-- 
-  category: sys-power
-  description: ""
-  license: ""
-  name: pm-utils
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-consolekit
   
   version: ""
 - 
@@ -60,13 +32,6 @@ requires:
   name: udev
   
   version: "200"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libudev
-  
-  version: ""
 - 
   category: sys-libs
   description: ""
@@ -82,24 +47,17 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: sys-power
   description: ""
   license: ""
-  name: dbus
+  name: pm-utils
   
   version: ""
 - 
-  category: sys-devel
+  category: x11-libs
   description: ""
   license: ""
-  name: gettext
-  
-  version: "0.19"
-- 
-  category: app-admin
-  description: ""
-  license: ""
-  name: cgmanager
+  name: libX11
   
   version: ""
 - 
@@ -117,19 +75,61 @@ requires:
   
   version: ""
 - 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: app-admin
+  description: ""
+  license: ""
+  name: cgmanager
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: "0.110"
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-consolekit
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libudev
+  
+  version: ""
+- 
   category: x11-libs
   description: ""
   license: ""
   name: libdrm
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.40"
 uri:
 - https://github.com/ConsoleKit2/ConsoleKit2/releases/download/1.2.1/ConsoleKit2-1.2.1.tar.bz2
 use_flags:

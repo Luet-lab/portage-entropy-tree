@@ -12,10 +12,17 @@ license: GPL-2
 name: gitolite-gentoo
 requires:
 - 
-  category: dev-lang
+  category: dev-perl
   description: ""
   license: ""
-  name: perl
+  name: JSON
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: perl-File-Path
   
   version: ""
 - 
@@ -26,17 +33,17 @@ requires:
   
   version: 1.6.6
 - 
-  category: dev-perl
+  category: sec-policy
   description: ""
   license: ""
-  name: Net-SSH-AuthorizedKeysFile
+  name: selinux-gitosis
   
-  version: "0.17"
+  version: ""
 - 
-  category: virtual
+  category: dev-lang
   description: ""
   license: ""
-  name: perl-File-Path
+  name: perl
   
   version: ""
 - 
@@ -54,19 +61,12 @@ requires:
   
   version: ""
 - 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-gitosis
-  
-  version: ""
-- 
   category: dev-perl
   description: ""
   license: ""
-  name: JSON
+  name: Net-SSH-AuthorizedKeysFile
   
-  version: ""
+  version: "0.17"
 uri:
 - mirror://gentoo/gitolite-gentoo-3.6.6.1.tar.bz2
 use_flags:

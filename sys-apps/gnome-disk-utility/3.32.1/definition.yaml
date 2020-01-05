@@ -5,17 +5,31 @@ license: GPL-2+
 name: gnome-disk-utility
 requires:
 - 
-  category: app-arch
+  category: sys-fs
   description: ""
   license: ""
-  name: xz-utils
+  name: udisks
   
-  version: 5.0.5
+  version: 2.7.6
 - 
-  category: sys-apps
+  category: x11-libs
   description: ""
   license: ""
-  name: systemd
+  name: gtk+
+  
+  version: 3.16.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpwquality
+  
+  version: 1.0.0
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: elogind
   
   version: "209"
 - 
@@ -26,33 +40,12 @@ requires:
   
   version: ""
 - 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: dosfstools
-  
-  version: ""
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gnome-settings-daemon
-  
-  version: "3.8"
-- 
   category: dev-libs
   description: ""
   license: ""
   name: glib
   
   version: "2.31"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: 3.16.0
 - 
   category: app-crypt
   description: ""
@@ -64,9 +57,9 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libdvdread
+  name: libcanberra
   
-  version: 4.2.0
+  version: "0.1"
 - 
   category: x11-libs
   description: ""
@@ -75,33 +68,40 @@ requires:
   
   version: "0.7"
 - 
-  category: sys-auth
+  category: sys-apps
   description: ""
   license: ""
-  name: elogind
+  name: systemd
   
   version: "209"
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: udisks
-  
-  version: 2.7.6
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libpwquality
-  
-  version: 1.0.0
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libcanberra
+  name: libdvdread
   
-  version: "0.1"
+  version: 4.2.0
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: xz-utils
+  
+  version: 5.0.5
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gnome-settings-daemon
+  
+  version: "3.8"
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: dosfstools
+  
+  version: ""
 uri: []
 use_flags:
 - fat

@@ -5,6 +5,13 @@ license: GPL-3+
 name: gnome-calendar
 requires:
 - 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gsettings-desktop-schemas
+  
+  version: 3.21.2
+- 
   category: net-libs
   description: ""
   license: ""
@@ -12,12 +19,12 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: gtk+
+  name: glib
   
-  version: 3.22.0
+  version: 2.58.0
 - 
   category: net-libs
   description: ""
@@ -26,12 +33,19 @@ requires:
   
   version: 3.2.0
 - 
-  category: gnome-base
+  category: sci-geosciences
   description: ""
   license: ""
-  name: gsettings-desktop-schemas
+  name: geocode-glib
   
-  version: 3.21.2
+  version: "3.23"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libical
+  
+  version: 1.0.1
 - 
   category: gnome-extra
   description: ""
@@ -47,12 +61,12 @@ requires:
   
   version: 3.26.1
 - 
-  category: dev-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: glib
+  name: gtk+
   
-  version: 2.58.0
+  version: 3.22.0
 - 
   category: dev-libs
   description: ""
@@ -67,20 +81,6 @@ requires:
   name: geoclue
   
   version: "2.4"
-- 
-  category: sci-geosciences
-  description: ""
-  license: ""
-  name: geocode-glib
-  
-  version: "3.23"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libical
-  
-  version: 1.0.1
 uri: []
 use_flags:
 - gtk-doc

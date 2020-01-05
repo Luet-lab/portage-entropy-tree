@@ -12,12 +12,26 @@ license: LGPL-2.1 freedist MSttfEULA LGPL-3 libpng UoI-NCSA
 name: root
 requires:
 - 
-  category: media-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: libafterimage
+  name: gl2ps
   
   version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtgui
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: nvidia-cuda-toolkit
+  
+  version: "9.0"
 - 
   category: sys-libs
   description: ""
@@ -26,31 +40,31 @@ requires:
   
   version: ""
 - 
-  category: dev-db
+  category: app-arch
   description: ""
   license: ""
-  name: mysql-connector-c
+  name: zstd
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: cfortran
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: xxhash
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXpm
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: glew
-  
-  version: ""
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: fftw
+  name: libX11
   
   version: ""
 - 
@@ -68,17 +82,45 @@ requires:
   
   version: ""
 - 
-  category: dev-python
+  category: dev-libs
   description: ""
   license: ""
-  name: numpy
+  name: libpcre
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libX11
+  name: libXpm
+  
+  version: ""
+- 
+  category: app-editors
+  description: ""
+  license: ""
+  name: emacs
+  
+  version: "23.1"
+- 
+  category: dev-cpp
+  description: ""
+  license: ""
+  name: tbb
+  
+  version: "2018"
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: lz4
   
   version: ""
 - 
@@ -89,108 +131,10 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: sci-physics
   description: ""
   license: ""
-  name: libpcre
-  
-  version: ""
-- 
-  category: media-fonts
-  description: ""
-  license: ""
-  name: dejavu
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: ftgl
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: glu
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtgui
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtwebengine
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: xz-utils
-  
-  version: ""
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: cfortran
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: vc
-  
-  version: ""
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: nvidia-cuda-toolkit
-  
-  version: "9.0"
-- 
-  category: sci-mathematics
-  description: ""
-  license: ""
-  name: unuran
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: ncurses
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXext
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtcore
-  
-  version: ""
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: gsl
+  name: pythia
   
   version: ""
 - 
@@ -201,10 +145,45 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: media-libs
   description: ""
   license: ""
-  name: xxhash
+  name: libafterimage
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: oracle-instantclient-basic
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: ftgl
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: glew
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtwebengine
   
   version: ""
 - 
@@ -212,6 +191,62 @@ requires:
   description: ""
   license: ""
   name: libpng
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: cfitsio
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: fcgi
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: shadow
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXext
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: davix
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: fftw
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: gsl
   
   version: ""
 - 
@@ -229,10 +264,24 @@ requires:
   
   version: ""
 - 
+  category: net-libs
+  description: ""
+  license: ""
+  name: xrootd
+  
+  version: ""
+- 
   category: virtual
   description: ""
   license: ""
   name: opengl
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: glu
   
   version: ""
 - 
@@ -243,101 +292,52 @@ requires:
   
   version: ""
 - 
-  category: app-arch
+  category: sci-mathematics
   description: ""
   license: ""
-  name: lz4
+  name: unuran
   
   version: ""
 - 
-  category: x11-libs
+  category: dev-python
   description: ""
   license: ""
-  name: gl2ps
-  
-  version: ""
-- 
-  category: app-editors
-  description: ""
-  license: ""
-  name: emacs
-  
-  version: "23.1"
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: cfitsio
+  name: numpy
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: fcgi
+  name: vc
   
   version: ""
 - 
-  category: virtual
+  category: app-arch
   description: ""
   license: ""
-  name: shadow
+  name: xz-utils
   
   version: ""
 - 
-  category: net-libs
+  category: media-fonts
   description: ""
   license: ""
-  name: xrootd
+  name: dejavu
   
   version: ""
 - 
   category: sys-libs
   description: ""
   license: ""
-  name: zlib
+  name: ncurses
   
   version: ""
 - 
-  category: net-libs
+  category: dev-qt
   description: ""
   license: ""
-  name: davix
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: oracle-instantclient-basic
-  
-  version: ""
-- 
-  category: sci-physics
-  description: ""
-  license: ""
-  name: pythia
-  
-  version: ""
-- 
-  category: dev-cpp
-  description: ""
-  license: ""
-  name: tbb
-  
-  version: "2018"
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: zstd
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: freetype
+  name: qtcore
   
   version: ""
 uri: []

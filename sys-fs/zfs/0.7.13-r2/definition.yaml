@@ -1,27 +1,6 @@
 category: sys-fs
 conflicts:
 - 
-  category: <sys-kernel
-  description: ""
-  license: ""
-  name: genkernel-next
-  
-  version: "67"
-- 
-  category: =sys-apps
-  description: ""
-  license: ""
-  name: grep-2.13*
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: zfs-fuse
-  
-  version: ""
-- 
   category: <sys-boot
   description: ""
   license: ""
@@ -29,12 +8,12 @@ conflicts:
   
   version: 2.00-r2
 - 
-  category: <sys-kernel
+  category: =sys-apps
   description: ""
   license: ""
-  name: bliss-initramfs
+  name: grep-2.13*
   
-  version: 7.1.0
+  version: ""
 - 
   category: <sys-kernel
   description: ""
@@ -49,64 +28,36 @@ conflicts:
   name: genkernel
   
   version: 3.5.1.1
+- 
+  category: <sys-kernel
+  description: ""
+  license: ""
+  name: genkernel-next
+  
+  version: "67"
+- 
+  category: <sys-kernel
+  description: ""
+  license: ""
+  name: bliss-initramfs
+  
+  version: 7.1.0
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: zfs-fuse
+  
+  version: ""
 description: Userland utilities for ZFS Linux kernel module
 license: BSD-2 CDDL MIT
 name: zfs
 requires:
 - 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: lsscsi
-  
-  version: ""
-- 
   category: app-arch
   description: ""
   license: ""
   name: cpio
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libtirpc
-  
-  version: ""
-- 
-  category: sys-block
-  description: ""
-  license: ""
-  name: parted
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: mdadm
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: udev-init-scripts
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: awk
   
   version: ""
 - 
@@ -120,21 +71,21 @@ requires:
   category: sys-fs
   description: ""
   license: ""
-  name: zfs-kmod
-  
-  version: 0.7.13
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: procps
+  name: lsscsi
   
   version: ""
 - 
-  category: virtual
+  category: sys-fs
   description: ""
   license: ""
-  name: modutils
+  name: mdadm
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
   
   version: ""
 - 
@@ -145,12 +96,61 @@ requires:
   
   version: ""
 - 
+  category: virtual
+  description: ""
+  license: ""
+  name: modutils
+  
+  version: ""
+- 
+  category: sys-block
+  description: ""
+  license: ""
+  name: parted
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: procps
+  
+  version: ""
+- 
   category: app-misc
   description: ""
   license: ""
   name: pax-utils
   
   version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: udev-init-scripts
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libtirpc
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: awk
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: zfs-kmod
+  
+  version: 0.7.13
 uri:
 - https://github.com/zfsonlinux/zfs/releases/download/zfs-0.7.13/zfs-0.7.13.tar.gz
 use_flags:

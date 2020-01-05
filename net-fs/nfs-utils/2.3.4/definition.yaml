@@ -1,12 +1,12 @@
 category: net-fs
 conflicts:
 - 
-  category: <sys-apps
+  category: net-nds
   description: ""
   license: ""
-  name: openrc
+  name: portmap
   
-  version: 0.13.9
+  version: ""
 - 
   category: net-libs
   description: ""
@@ -15,37 +15,30 @@ conflicts:
   
   version: ""
 - 
-  category: net-nds
+  category: <sys-apps
   description: ""
   license: ""
-  name: portmap
+  name: openrc
   
-  version: ""
+  version: 0.13.9
 description: NFS client and server daemons
 license: GPL-2
 name: nfs-utils
 requires:
 - 
-  category: dev-db
+  category: dev-libs
   description: ""
   license: ""
-  name: sqlite
-  
-  version: "3.3"
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
+  name: libxml2
   
   version: ""
 - 
-  category: app-crypt
+  category: sys-apps
   description: ""
   license: ""
-  name: mit-krb5
+  name: keyutils
   
-  version: ""
+  version: 1.5.9
 - 
   category: sys-fs
   description: ""
@@ -61,20 +54,6 @@ requires:
   
   version: ""
 - 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-rpcbind
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: ""
-- 
   category: net-nds
   description: ""
   license: ""
@@ -82,31 +61,10 @@ requires:
   
   version: 0.2.4
 - 
-  category: sys-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libcap
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: e2fsprogs-libs
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: keyutils
-  
-  version: 1.5.9
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: tcp-wrappers
+  name: libevent
   
   version: ""
 - 
@@ -117,10 +75,38 @@ requires:
   
   version: 0.2.4-r1
 - 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: mit-krb5
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: "3.3"
+- 
   category: net-libs
   description: ""
   license: ""
   name: libtirpc
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: e2fsprogs-libs
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
   
   version: ""
 - 
@@ -131,10 +117,24 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: net-nds
   description: ""
   license: ""
-  name: libevent
+  name: openldap
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: tcp-wrappers
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-rpcbind
   
   version: ""
 uri:

@@ -5,41 +5,6 @@ license: GPL-2+
 name: cinnamon-control-center
 requires:
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libwacom
-  
-  version: "0.7"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXi
-  
-  version: "1.2"
-- 
-  category: app-admin
-  description: ""
-  license: ""
-  name: openrc-settingsd
-  
-  version: ""
-- 
-  category: gnome-extra
-  description: ""
-  license: ""
-  name: gnome-color-manager
-  
-  version: "3"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: 3.4.1
-- 
   category: gnome-extra
   description: ""
   license: ""
@@ -47,12 +12,75 @@ requires:
   
   version: "1.0"
 - 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: libgnomekbd
+  
+  version: 2.91.91
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxklavier
+  
+  version: ""
+- 
+  category: x11-themes
+  description: ""
+  license: ""
+  name: adwaita-icon-theme
+  
+  version: ""
+- 
+  category: app-admin
+  description: ""
+  license: ""
+  name: system-config-printer
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: "3.8"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.31"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
   category: media-libs
   description: ""
   license: ""
   name: fontconfig
   
   version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: modemmanager
+  
+  version: "0.7"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: 3.4.1
 - 
   category: x11-libs
   description: ""
@@ -68,19 +96,40 @@ requires:
   
   version: "31"
 - 
-  category: app-admin
+  category: gnome-extra
   description: ""
   license: ""
-  name: system-config-printer
+  name: cinnamon-settings-daemon[input_devices_wacom]
   
   version: ""
 - 
-  category: gnome-base
+  category: gnome-extra
   description: ""
   license: ""
-  name: libgnomekbd
+  name: cinnamon-desktop
   
-  version: 2.91.91
+  version: "1.0"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libwacom
+  
+  version: "0.7"
+- 
+  category: net-print
+  description: ""
+  license: ""
+  name: cups-pk-helper
+  
+  version: ""
+- 
+  category: gnome-extra
+  description: ""
+  license: ""
+  name: cinnamon-settings-daemon
+  
+  version: "1.0"
 - 
   category: net-misc
   description: ""
@@ -89,12 +138,26 @@ requires:
   
   version: 0.9.8
 - 
-  category: gnome-extra
+  category: x11-libs
   description: ""
   license: ""
-  name: cinnamon-settings-daemon
+  name: libnotify
   
-  version: "1.0"
+  version: 0.7.3
+- 
+  category: app-admin
+  description: ""
+  license: ""
+  name: openrc-settingsd
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: elogind
+  
+  version: ""
 - 
   category: gnome-extra
   description: ""
@@ -106,44 +169,23 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libxklavier
+  name: libX11
   
   version: ""
 - 
-  category: x11-libs
+  category: x11-misc
   description: ""
   license: ""
-  name: gtk+
+  name: colord
   
-  version: "3.8"
+  version: 0.1.14
 - 
-  category: x11-themes
+  category: gnome-extra
   description: ""
   license: ""
-  name: adwaita-icon-theme
+  name: gnome-color-manager
   
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.31"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libnotify
-  
-  version: 0.7.3
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: ""
+  version: "3"
 - 
   category: sys-auth
   description: ""
@@ -159,54 +201,12 @@ requires:
   
   version: "1.4"
 - 
-  category: net-print
-  description: ""
-  license: ""
-  name: cups-pk-helper
-  
-  version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: modemmanager
-  
-  version: "0.7"
-- 
-  category: x11-misc
-  description: ""
-  license: ""
-  name: colord
-  
-  version: 0.1.14
-- 
   category: x11-libs
   description: ""
   license: ""
-  name: libX11
+  name: libXi
   
-  version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: elogind
-  
-  version: ""
-- 
-  category: gnome-extra
-  description: ""
-  license: ""
-  name: cinnamon-settings-daemon[input_devices_wacom]
-  
-  version: ""
-- 
-  category: gnome-extra
-  description: ""
-  license: ""
-  name: cinnamon-desktop
-  
-  version: "1.0"
+  version: "1.2"
 uri:
 - https://github.com/linuxmint/cinnamon-control-center/archive/4.0.0.tar.gz -> cinnamon-control-center-4.0.0.tar.gz
 use_flags:

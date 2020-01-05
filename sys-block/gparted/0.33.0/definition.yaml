@@ -5,19 +5,19 @@ license: GPL-2+ FDL-1.2+
 name: gparted
 requires:
 - 
-  category: sys-fs
+  category: kde-plasma
   description: ""
   license: ""
-  name: multipath-tools
+  name: kde-cli-tools
   
-  version: ""
+  version: 5.8.6-r1
 - 
-  category: sys-apps
+  category: dev-cpp
   description: ""
   license: ""
-  name: util-linux
+  name: glibmm
   
-  version: "2.20"
+  version: 2.45.40
 - 
   category: sys-block
   description: ""
@@ -29,14 +29,14 @@ requires:
   category: sys-fs
   description: ""
   license: ""
-  name: cryptsetup
+  name: udftools
   
   version: ""
 - 
   category: sys-fs
   description: ""
   license: ""
-  name: dosfstools
+  name: cryptsetup
   
   version: ""
 - 
@@ -47,13 +47,6 @@ requires:
   
   version: ""
 - 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: udftools
-  
-  version: ""
-- 
   category: x11-apps
   description: ""
   license: ""
@@ -61,24 +54,10 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2"
-- 
   category: sys-fs
   description: ""
   license: ""
-  name: jfsutils
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: hfsutils
+  name: xfsprogs
   
   version: ""
 - 
@@ -92,16 +71,9 @@ requires:
   category: sys-fs
   description: ""
   license: ""
-  name: e2fsprogs
+  name: hfsutils
   
-  version: "1.41"
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: lvm2
-  
-  version: 2.02.45
+  version: ""
 - 
   category: sys-fs
   description: ""
@@ -113,7 +85,14 @@ requires:
   category: sys-fs
   description: ""
   license: ""
-  name: reiser4progs
+  name: e2fsprogs
+  
+  version: "1.41"
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: f2fs-tools
   
   version: ""
 - 
@@ -124,48 +103,6 @@ requires:
   
   version: ""
 - 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: polkit
-  
-  version: "0.102"
-- 
-  category: dev-cpp
-  description: ""
-  license: ""
-  name: glibmm
-  
-  version: 2.45.40
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: f2fs-tools
-  
-  version: ""
-- 
-  category: kde-plasma
-  description: ""
-  license: ""
-  name: kde-cli-tools
-  
-  version: 5.8.6-r1
-- 
-  category: dev-cpp
-  description: ""
-  license: ""
-  name: gtkmm
-  
-  version: "2.24"
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: btrfs-progs
-  
-  version: ""
-- 
   category: sys-fs
   description: ""
   license: ""
@@ -173,10 +110,45 @@ requires:
   
   version: ""
 - 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: multipath-tools
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: dosfstools
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: "0.102"
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: ntfs3g
+  
+  version: 2011.4.12
+- 
   category: virtual
   description: ""
   license: ""
   name: udev
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: jfsutils
   
   version: ""
 - 
@@ -190,16 +162,16 @@ requires:
   category: sys-fs
   description: ""
   license: ""
-  name: ntfs3g
-  
-  version: 2011.4.12
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: xfsprogs
+  name: reiser4progs
   
   version: ""
+- 
+  category: dev-cpp
+  description: ""
+  license: ""
+  name: gtkmm
+  
+  version: "2.24"
 - 
   category: dev-libs
   description: ""
@@ -207,6 +179,34 @@ requires:
   name: libsigc++
   
   version: 2.5.1
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: "2.20"
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: btrfs-progs
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2"
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lvm2
+  
+  version: 2.02.45
 uri:
 - mirror://sourceforge/gparted/gparted-0.33.0.tar.gz
 use_flags:
