@@ -4,14 +4,14 @@ conflicts:
   category: gnustep-base
   description: ""
   license: ""
-  name: gnustep-back-art
+  name: gnustep-back-xlib
   
   version: ""
 - 
   category: gnustep-base
   description: ""
   license: ""
-  name: gnustep-back-xlib
+  name: gnustep-back-art
   
   version: ""
 description: Cairo back-end component for the GNUstep GUI Library
@@ -19,17 +19,52 @@ license: LGPL-2.1
 name: gnustep-back-cairo
 requires:
 - 
-  category: virtual
+  category: x11-libs
   description: ""
   license: ""
-  name: opengl
+  name: libXt
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXi
+  name: libXft
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libICE
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libSM
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXrender
+  
+  version: ""
+- 
+  category: gnustep-base
+  description: ""
+  license: ""
+  name: gnustep-gui
+  
+  version: "0.25"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: opengl
   
   version: ""
 - 
@@ -43,21 +78,7 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXt
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXrender
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libICE
+  name: cairo-1.2.0[X]
   
   version: ""
 - 
@@ -67,20 +88,6 @@ requires:
   name: glu
   
   version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: cairo-1.2.0[X]
-  
-  version: ""
-- 
-  category: gnustep-base
-  description: ""
-  license: ""
-  name: gnustep-gui
-  
-  version: "0.25"
 - 
   category: x11-libs
   description: ""
@@ -99,7 +106,7 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXft
+  name: libXi
   
   version: ""
 - 
@@ -109,13 +116,6 @@ requires:
   name: freetype
   
   version: 2.1.9
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libSM
-  
-  version: ""
 uri:
 - ftp://ftp.gnustep.org/pub/gnustep/core/gnustep-back-0.25.0.tar.gz
 use_flags:

@@ -8,28 +8,28 @@ conflicts:
   
   version: ""
 description: Minimal image viewer designed for tiling window manager users
-license: GPL-2+
+license: MIT-with-advertising
 name: imv
 requires:
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libX11
+  name: libxcb
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxkbcommon
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: freeimage
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libjpeg-turbo
+  name: libnsgif
   
   version: ""
 - 
@@ -43,14 +43,21 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: tiff
+  name: fontconfig
   
   version: ""
 - 
-  category: dev-libs
+  category: media-libs
   description: ""
   license: ""
-  name: wayland
+  name: freeimage
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libpng
   
   version: ""
 - 
@@ -68,24 +75,38 @@ requires:
   
   version: ""
 - 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libjpeg-turbo
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: tiff
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: wayland
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
   category: x11-libs
   description: ""
   license: ""
   name: pango
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libpng
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: fontconfig
   
   version: ""
 uri: []
@@ -93,8 +114,9 @@ use_flags:
 - X
 - +freeimage
 - jpeg
+- libnsgif
 - png
-- svg
+- +svg
 - test
 - tiff
 - wayland

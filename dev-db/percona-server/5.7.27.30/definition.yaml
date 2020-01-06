@@ -4,7 +4,7 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mariadb-connector-c
+  name: mariadb-galera
   
   version: ""
 - 
@@ -18,6 +18,13 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
+  name: mysql-cluster
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
   name: mysql
   
   version: ""
@@ -25,14 +32,7 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mariadb-galera
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mysql-cluster
+  name: mariadb-connector-c
   
   version: ""
 - 
@@ -47,6 +47,13 @@ license: GPL-2
 name: percona-server
 requires:
 - 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: sed
+  
+  version: "4"
+- 
   category: sys-libs
   description: ""
   license: ""
@@ -57,7 +64,28 @@ requires:
   category: dev-libs
   description: ""
   license: ""
+  name: libaio
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
   name: libevent
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: mysql
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: mecab
   
   version: ""
 - 
@@ -68,6 +96,13 @@ requires:
   
   version: ""
 - 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
+  
+  version: ""
+- 
   category: dev-util
   description: ""
   license: ""
@@ -75,10 +110,31 @@ requires:
   
   version: ""
 - 
+  category: dev-util
+  description: ""
+  license: ""
+  name: systemtap
+  
+  version: "1.3"
+- 
   category: dev-libs
   description: ""
   license: ""
-  name: jemalloc
+  name: openssl
+  
+  version: 1.0.0
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: mysql
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-init-scripts
   
   version: ""
 - 
@@ -92,42 +148,21 @@ requires:
   category: app-arch
   description: ""
   license: ""
+  name: zstd
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
   name: xz-utils
   
   version: ""
 - 
-  category: app-arch
+  category: dev-util
   description: ""
   license: ""
-  name: snappy
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: lz4
-  
-  version: 0_p131
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: mecab
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libtirpc
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: zstd
+  name: google-perftools
   
   version: ""
 - 
@@ -145,24 +180,10 @@ requires:
   
   version: ""
 - 
-  category: dev-util
+  category: sec-policy
   description: ""
   license: ""
-  name: google-perftools
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: mysql
-  
-  version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: curl
+  name: selinux-mysql
   
   version: ""
 - 
@@ -173,33 +194,19 @@ requires:
   
   version: 4.7-r1
 - 
-  category: dev-util
-  description: ""
-  license: ""
-  name: systemtap
-  
-  version: "1.3"
-- 
   category: dev-libs
   description: ""
   license: ""
-  name: libaio
+  name: jemalloc
   
   version: ""
 - 
-  category: acct-user
+  category: net-libs
   description: ""
   license: ""
-  name: mysql
+  name: libtirpc
   
   version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: sed
-  
-  version: "4"
 - 
   category: dev-libs
   description: ""
@@ -208,12 +215,12 @@ requires:
   
   version: ""
 - 
-  category: dev-db
+  category: app-arch
   description: ""
   license: ""
-  name: mysql-init-scripts
+  name: lz4
   
-  version: ""
+  version: 0_p131
 - 
   category: sys-process
   description: ""
@@ -222,17 +229,10 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: app-arch
   description: ""
   license: ""
-  name: openssl
-  
-  version: 1.0.0
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-mysql
+  name: snappy
   
   version: ""
 uri:

@@ -1,0 +1,66 @@
+category: sys-apps
+conflicts: []
+description: PC/SC Architecture smartcard middleware library
+license: BSD ISC MIT GPL-3+ GPL-2
+name: pcsc-lite
+requires:
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: openct
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: pcscd
+  
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: pcscd
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-pcscd
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libusb
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: "0.111"
+uri:
+- https://pcsclite.apdu.fr/files/pcsc-lite-1.8.26.tar.bz2
+use_flags:
+- doc
+- embedded
+- libusb
+- policykit
+- selinux
+- systemd
+- +udev
+version: 1.8.26

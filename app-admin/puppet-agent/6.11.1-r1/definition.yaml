@@ -4,7 +4,7 @@ conflicts:
   category: dev-ruby
   description: ""
   license: ""
-  name: hiera
+  name: facter
   
   version: ""
 - 
@@ -25,41 +25,13 @@ conflicts:
   category: dev-ruby
   description: ""
   license: ""
-  name: facter
+  name: hiera
   
   version: ""
 description: general puppet client utils along with hiera and facter
 license: Apache-2.0
 name: puppet-agent
 requires:
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: glibc
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-puppet
-  
-  version: ""
-- 
-  category: app-portage
-  description: ""
-  license: ""
-  name: eix
-  
-  version: ""
 - 
   category: sys-apps
   description: ""
@@ -75,12 +47,40 @@ requires:
   
   version: ""
 - 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-puppet
+  
+  version: ""
+- 
   category: dev-ruby
   description: ""
   license: ""
   name: puppetdb-termini
   
   version: 5.0.1
+- 
+  category: app-portage
+  description: ""
+  license: ""
+  name: eix
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: glibc
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: ""
 uri: []
 use_flags:
 - puppetdb

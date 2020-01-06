@@ -9,35 +9,14 @@ requires:
   category: dev-ros
   description: ""
   license: ""
-  name: tf2_ros
+  name: rosgraph_msgs
   
   version: ""
 - 
   category: dev-ros
   description: ""
   license: ""
-  name: trajectory_msgs
-  
-  version: ""
-- 
-  category: dev-ros
-  description: ""
-  license: ""
-  name: pcl_conversions
-  
-  version: ""
-- 
-  category: dev-ros
-  description: ""
-  license: ""
-  name: roscpp
-  
-  version: ""
-- 
-  category: dev-ros
-  description: ""
-  license: ""
-  name: tf
+  name: image_transport
   
   version: ""
 - 
@@ -58,27 +37,6 @@ requires:
   category: dev-ros
   description: ""
   license: ""
-  name: gazebo_msgs
-  
-  version: ""
-- 
-  category: dev-ros
-  description: ""
-  license: ""
-  name: dynamic_reconfigure
-  
-  version: ""
-- 
-  category: dev-ros
-  description: ""
-  license: ""
-  name: camera_info_manager
-  
-  version: ""
-- 
-  category: dev-ros
-  description: ""
-  license: ""
   name: std_srvs
   
   version: ""
@@ -86,14 +44,7 @@ requires:
   category: dev-ros
   description: ""
   license: ""
-  name: geometry_msgs
-  
-  version: ""
-- 
-  category: dev-ros
-  description: ""
-  license: ""
-  name: angles
+  name: diagnostic_updater
   
   version: ""
 - 
@@ -104,10 +55,73 @@ requires:
   
   version: "7"
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: protobuf
+  
+  version: ""
+- 
   category: dev-games
   description: ""
   license: ""
   name: ogre
+  
+  version: ""
+- 
+  category: dev-ros
+  description: ""
+  license: ""
+  name: gazebo_msgs
+  
+  version: ""
+- 
+  category: dev-ros
+  description: ""
+  license: ""
+  name: geometry_msgs
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: opencv
+  
+  version: ""
+- 
+  category: dev-ros
+  description: ""
+  license: ""
+  name: roslib
+  
+  version: ""
+- 
+  category: dev-ros
+  description: ""
+  license: ""
+  name: roscpp
+  
+  version: ""
+- 
+  category: dev-ros
+  description: ""
+  license: ""
+  name: angles
+  
+  version: ""
+- 
+  category: dev-ros
+  description: ""
+  license: ""
+  name: driver_base
+  
+  version: ""
+- 
+  category: dev-ros
+  description: ""
+  license: ""
+  name: trajectory_msgs
   
   version: ""
 - 
@@ -128,55 +142,6 @@ requires:
   category: dev-ros
   description: ""
   license: ""
-  name: rosgraph_msgs
-  
-  version: ""
-- 
-  category: dev-ros
-  description: ""
-  license: ""
-  name: image_transport
-  
-  version: ""
-- 
-  category: dev-ros
-  description: ""
-  license: ""
-  name: rosconsole
-  
-  version: ""
-- 
-  category: dev-ros
-  description: ""
-  license: ""
-  name: polled_camera
-  
-  version: ""
-- 
-  category: dev-ros
-  description: ""
-  license: ""
-  name: diagnostic_updater
-  
-  version: ""
-- 
-  category: dev-ros
-  description: ""
-  license: ""
-  name: moveit_msgs
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: ""
-- 
-  category: dev-ros
-  description: ""
-  license: ""
   name: nav_msgs
   
   version: ""
@@ -184,42 +149,21 @@ requires:
   category: dev-ros
   description: ""
   license: ""
-  name: driver_base
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: protobuf
+  name: tf
   
   version: ""
 - 
   category: dev-ros
   description: ""
   license: ""
-  name: roslib
+  name: tf2_ros
   
   version: ""
 - 
   category: dev-ros
   description: ""
   license: ""
-  name: urdf
-  
-  version: ""
-- 
-  category: dev-ros
-  description: ""
-  license: ""
-  name: cv_bridge
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: opencv
+  name: dynamic_reconfigure
   
   version: ""
 - 
@@ -233,7 +177,63 @@ requires:
   category: dev-ros
   description: ""
   license: ""
+  name: polled_camera
+  
+  version: ""
+- 
+  category: dev-ros
+  description: ""
+  license: ""
+  name: camera_info_manager
+  
+  version: ""
+- 
+  category: dev-ros
+  description: ""
+  license: ""
+  name: moveit_msgs
+  
+  version: ""
+- 
+  category: dev-ros
+  description: ""
+  license: ""
   name: sensor_msgs
+  
+  version: ""
+- 
+  category: dev-ros
+  description: ""
+  license: ""
+  name: urdf
+  
+  version: ""
+- 
+  category: dev-ros
+  description: ""
+  license: ""
+  name: pcl_conversions
+  
+  version: ""
+- 
+  category: dev-ros
+  description: ""
+  license: ""
+  name: rosconsole
+  
+  version: ""
+- 
+  category: dev-ros
+  description: ""
+  license: ""
+  name: cv_bridge
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
   
   version: ""
 uri: []

@@ -5,19 +5,19 @@ license: GPL-2 LGPL-2 BSD-2
 name: qemu
 requires:
 - 
-  category: sys-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: zlib
+  name: glib
+  
+  version: "2.0"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libaio
   
   version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnutls
-  
-  version: "3.0"
 - 
   category: media-libs
   description: ""
@@ -26,12 +26,19 @@ requires:
   
   version: ""
 - 
-  category: app-emulation
+  category: media-libs
   description: ""
   license: ""
-  name: spice
+  name: libsdl2[X]
   
-  version: 0.12.0
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libssh
+  
+  version: 0.8.6
 - 
   category: net-libs
   description: ""
@@ -40,89 +47,26 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: sys-process
   description: ""
   license: ""
-  name: lzo
-  
-  version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: vde
-  
-  version: ""
-- 
-  category: sys-firmware
-  description: ""
-  license: ""
-  name: seabios
-  
-  version: 1.10.2
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pixman
-  
-  version: 0.28.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: capstone
-  
-  version: ""
-- 
-  category: sys-fabric
-  description: ""
-  license: ""
-  name: libibumad
-  
-  version: ""
-- 
-  category: sys-fabric
-  description: ""
-  license: ""
-  name: librdmacm
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: nettle
+  name: numactl
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: alsa-lib
-  
-  version: 1.0.13
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: virglrenderer
+  name: mesa
   
   version: ""
 - 
-  category: media-sound
+  category: app-emulation
   description: ""
   license: ""
-  name: pulseaudio
+  name: spice-protocol
   
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-qemu
-  
-  version: ""
+  version: 0.12.3
 - 
   category: sys-apps
   description: ""
@@ -134,42 +78,7 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libaio
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dtc
-  
-  version: 1.5.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
   name: jemalloc
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: cyrus-sasl
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: usbredir
-  
-  version: "0.6"
-- 
-  category: app-accessibility
-  description: ""
-  license: ""
-  name: brltty
   
   version: ""
 - 
@@ -180,24 +89,87 @@ requires:
   
   version: 3.4.0
 - 
-  category: media-libs
+  category: media-sound
   description: ""
   license: ""
-  name: libepoxy
+  name: pulseaudio
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libseccomp
+  
+  version: 2.1.0
+- 
+  category: app-emulation
+  description: ""
+  license: ""
+  name: libcacard
+  
+  version: 2.5.0
+- 
+  category: app-emulation
+  description: ""
+  license: ""
+  name: spice
+  
+  version: 0.12.0
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-qemu
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: mesa
+  name: virglrenderer
   
   version: ""
 - 
   category: sys-firmware
   description: ""
   license: ""
+  name: edk2-ovmf
+  
+  version: "201905"
+- 
+  category: sys-firmware
+  description: ""
+  license: ""
   name: sgabios
+  
+  version: 0.1_pre8
+- 
+  category: sys-firmware
+  description: ""
+  license: ""
+  name: edk2-ovmf
+  
+  version: ""
+- 
+  category: sys-firmware
+  description: ""
+  license: ""
+  name: seabios
+  
+  version: 1.10.2
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: libibverbs
   
   version: ""
 - 
@@ -211,37 +183,16 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: libseccomp
+  name: libcap
   
-  version: 2.1.0
+  version: ""
 - 
   category: net-libs
   description: ""
   license: ""
-  name: libssh
+  name: gnutls
   
-  version: 0.8.6
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libusb
-  
-  version: 1-r2
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.0"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libcap-ng
-  
-  version: ""
+  version: "3.0"
 - 
   category: x11-libs
   description: ""
@@ -250,136 +201,10 @@ requires:
   
   version: ""
 - 
-  category: virtual
-  description: ""
-  license: ""
-  name: jpeg
-  
-  version: ""
-- 
-  category: sys-firmware
-  description: ""
-  license: ""
-  name: ipxe
-  
-  version: 1.0.0_p20190728
-- 
-  category: sys-firmware
-  description: ""
-  license: ""
-  name: sgabios
-  
-  version: 0.1_pre8
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: ""
-- 
   category: net-misc
   description: ""
   license: ""
-  name: curl
-  
-  version: 7.15.4
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: snappy
-  
-  version: ""
-- 
-  category: app-emulation
-  description: ""
-  license: ""
-  name: spice-protocol
-  
-  version: 0.12.3
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: ""
-- 
-  category: sys-firmware
-  description: ""
-  license: ""
-  name: ipxe
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: ncurses
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: opengl
-  
-  version: ""
-- 
-  category: sys-firmware
-  description: ""
-  license: ""
-  name: edk2-ovmf
-  
-  version: "201905"
-- 
-  category: sys-fabric
-  description: ""
-  license: ""
-  name: libibverbs
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libsdl2
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxkbcommon
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: ceph
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: kvm
-  
-  version: ""
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: systemtap
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libcap
+  name: vde
   
   version: ""
 - 
@@ -390,10 +215,31 @@ requires:
   
   version: ""
 - 
-  category: sys-firmware
+  category: media-libs
   description: ""
   license: ""
-  name: edk2-ovmf
+  name: alsa-lib
+  
+  version: 1.0.13
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: bzip2
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap-ng
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: opengl
   
   version: ""
 - 
@@ -411,33 +257,187 @@ requires:
   
   version: 1.12.0
 - 
-  category: app-arch
+  category: dev-util
   description: ""
   license: ""
-  name: bzip2
+  name: systemtap
   
   version: ""
 - 
-  category: sys-process
+  category: net-misc
   description: ""
   license: ""
-  name: numactl
+  name: curl
+  
+  version: 7.15.4
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dtc
+  
+  version: 1.5.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nettle
+  
+  version: ""
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: librdmacm
+  
+  version: ""
+- 
+  category: sys-firmware
+  description: ""
+  license: ""
+  name: ipxe
+  
+  version: 1.0.0_p20190728
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: capstone
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: snappy
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: usbredir
+  
+  version: "0.6"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxkbcommon
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libsdl2[X]
+  name: libepoxy
   
   version: ""
 - 
-  category: app-emulation
+  category: dev-libs
   description: ""
   license: ""
-  name: libcacard
+  name: cyrus-sasl
   
-  version: 2.5.0
+  version: ""
+- 
+  category: sys-firmware
+  description: ""
+  license: ""
+  name: sgabios
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: ceph
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pixman
+  
+  version: 0.28.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: lzo
+  
+  version: ""
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: libibumad
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jpeg
+  
+  version: ""
+- 
+  category: sys-firmware
+  description: ""
+  license: ""
+  name: ipxe
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: kvm
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: app-accessibility
+  description: ""
+  license: ""
+  name: brltty
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libsdl2
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libusb
+  
+  version: 1-r2
 uri: []
 use_flags:
 - accessibility

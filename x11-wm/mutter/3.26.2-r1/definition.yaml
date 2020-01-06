@@ -5,66 +5,31 @@ license: GPL-2+
 name: mutter
 requires:
 - 
-  category: dev-libs
+  category: sys-power
   description: ""
   license: ""
-  name: glib
+  name: upower
   
-  version: 2.53.2
+  version: "0.99"
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: startup-notification
-  
-  version: "0.7"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXcomposite
-  
-  version: "0.4"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXext
+  name: libX11
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXrender
+  name: libXi
   
-  version: ""
-- 
-  category: x11-misc
-  description: ""
-  license: ""
-  name: xkeyboard-config
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: mesa
-  
-  version: ""
+  version: 1.7.4
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: cairo-1.14[X]
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
+  name: libXinerama
   
   version: ""
 - 
@@ -75,19 +40,82 @@ requires:
   
   version: "232"
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
   name: libinput
   
   version: "1.4"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXcomposite
+  
+  version: "0.2"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libICE
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXdamage
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXrender
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxkbfile
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: mesa
+  
+  version: "10.3"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libwacom
+  
+  version: "0.13"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libcanberra
+  
+  version: "0.26"
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: xkeyboard-config
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gobject-introspection
+  
+  version: "1.42"
 - 
   category: dev-libs
   description: ""
@@ -106,16 +134,44 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: gdk-pixbuf
+  name: startup-notification
   
-  version: "2"
+  version: "0.7"
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gsettings-desktop-schemas
+  
+  version: "3.31"
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gnome-desktop
+  
+  version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXcomposite
+  name: libxkbcommon-0.4.3[X]
   
-  version: "0.2"
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: mesa
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: wayland-protocols
+  
+  version: "1.9"
 - 
   category: x11-libs
   description: ""
@@ -127,21 +183,21 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libxcb
+  name: libXrandr
+  
+  version: "1.5"
+- 
+  category: gnome-extra
+  description: ""
+  license: ""
+  name: zenity
   
   version: ""
 - 
-  category: dev-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: libwacom
-  
-  version: "0.13"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libdrm
+  name: systemd
   
   version: ""
 - 
@@ -155,6 +211,13 @@ requires:
   category: x11-libs
   description: ""
   license: ""
+  name: gdk-pixbuf
+  
+  version: "2"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
   name: libSM
   
   version: ""
@@ -162,56 +225,14 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXrandr
+  name: libXcomposite
   
-  version: "1.5"
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gsettings-desktop-schemas
-  
-  version: "3.31"
-- 
-  category: gnome-extra
-  description: ""
-  license: ""
-  name: zenity
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: wayland-protocols
-  
-  version: "1.9"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: mesa
-  
-  version: "10.3"
+  version: "0.4"
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXi
-  
-  version: 1.7.4
-- 
-  category: sys-power
-  description: ""
-  license: ""
-  name: upower
-  
-  version: "0.99"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libICE
+  name: libXext
   
   version: ""
 - 
@@ -222,20 +243,6 @@ requires:
   
   version: "3"
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxkbcommon-0.4.3[X]
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: gobject-introspection
-  
-  version: "1.42"
-- 
   category: virtual
   description: ""
   license: ""
@@ -243,47 +250,40 @@ requires:
   
   version: "136"
 - 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gnome-desktop
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXdamage
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libcanberra
-  
-  version: "0.26"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXinerama
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxkbfile
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
   name: json-glib
   
   version: 0.12.0
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo-1.14[X]
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.53.2
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxcb
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libdrm
+  
+  version: ""
 uri:
 - https://dev.gentoo.org/~leio/distfiles/mutter-3.26.2-patchset.tar.xz
 use_flags:

@@ -5,6 +5,13 @@ license: MIT CC-BY-SA-3.0
 name: weston
 requires:
 - 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: "1.6"
+- 
   category: dev-libs
   description: ""
   license: ""
@@ -12,12 +19,68 @@ requires:
   
   version: 1.12.0
 - 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libpng
+  
+  version: ""
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: colord
+  
+  version: 0.1.27
+- 
   category: x11-libs
   description: ""
   license: ""
-  name: libdrm
+  name: cairo
   
-  version: 2.4.30
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: wayland-protocols
+  
+  version: "1.8"
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: xkeyboard-config
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pango
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxcb
+  
+  version: "1.9"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libwebp
+  
+  version: ""
 - 
   category: x11-libs
   description: ""
@@ -29,42 +92,7 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: cairo
-  
-  version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: freerdp-1.1.0_beta1_p20130710
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxcb
-  
-  version: "1.9"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: udev
-  
-  version: "136"
-- 
-  category: x11-misc
-  description: ""
-  license: ""
-  name: colord
-  
-  version: 0.1.27
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: mesa
+  name: libXcursor
   
   version: ""
 - 
@@ -78,23 +106,37 @@ requires:
   category: sys-apps
   description: ""
   license: ""
-  name: dbus
+  name: systemd
   
-  version: "1.6"
+  version: "209"
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: freerdp-1.1.0_beta1_p20130710
+  
+  version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXcursor
+  name: libdrm
   
-  version: ""
+  version: 2.4.30
 - 
-  category: dev-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: wayland-protocols
+  name: libxkbcommon
   
-  version: "1.8"
+  version: 0.5.0
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: "136"
 - 
   category: sys-auth
   description: ""
@@ -103,19 +145,12 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: dev-libs
   description: ""
   license: ""
-  name: systemd
+  name: libinput
   
-  version: "209"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pango
-  
-  version: ""
+  version: 0.8.0
 - 
   category: x11-libs
   description: ""
@@ -124,10 +159,17 @@ requires:
   
   version: 1.11.3
 - 
-  category: x11-misc
+  category: sys-libs
   description: ""
   license: ""
-  name: xkeyboard-config
+  name: libunwind
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: mesa
   
   version: ""
 - 
@@ -145,54 +187,12 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxkbcommon
-  
-  version: 0.5.0
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libunwind
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libinput
-  
-  version: 0.8.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libpng
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libwebp
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
   name: mtdev
   
   version: 1.1.0
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
 uri:
 - https://wayland.freedesktop.org/releases/weston-3.0.0.tar.xz
 use_flags:

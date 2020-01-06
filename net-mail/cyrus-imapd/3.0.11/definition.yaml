@@ -1,24 +1,10 @@
 category: net-mail
 conflicts:
 - 
-  category: app-arch
+  category: net-nntp
   description: ""
   license: ""
-  name: dump
-  
-  version: ""
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: courier-imap
-  
-  version: ""
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: uw-imap
+  name: leafnode
   
   version: ""
 - 
@@ -36,58 +22,30 @@ conflicts:
   
   version: ""
 - 
-  category: net-nntp
+  category: net-mail
   description: ""
   license: ""
-  name: leafnode
+  name: uw-imap
+  
+  version: ""
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: courier-imap
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: dump
   
   version: ""
 description: The Cyrus IMAP Server
 license: BSD-with-attribution GPL-2
 name: cyrus-imapd
 requires:
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: tcp-wrappers
-  
-  version: "7.6"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: e2fsprogs-libs
-  
-  version: ""
-- 
-  category: net-fs
-  description: ""
-  license: ""
-  name: openafs
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: 1.0.1e
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
-  
-  version: ""
-- 
-  category: net-analyzer
-  description: ""
-  license: ""
-  name: net-snmp
-  
-  version: 5.2.2-r1
 - 
   category: dev-db
   description: ""
@@ -106,7 +64,21 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: jansson
+  name: cyrus-sasl
+  
+  version: 2.1.13
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: e2fsprogs-libs
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
   
   version: ""
 - 
@@ -120,28 +92,14 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libxml2
+  name: libical
   
   version: ""
 - 
-  category: virtual
+  category: net-nds
   description: ""
   license: ""
-  name: krb5
-  
-  version: ""
-- 
-  category: net-analyzer
-  description: ""
-  license: ""
-  name: net-snmp
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: lmdb
+  name: openldap
   
   version: ""
 - 
@@ -152,45 +110,17 @@ requires:
   
   version: ""
 - 
-  category: app-antivirus
-  description: ""
-  license: ""
-  name: clamav
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
-  name: xapian
-  
-  version: 1.4.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: cyrus-sasl
-  
-  version: 2.1.13
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libical
+  name: libxml2
   
   version: ""
 - 
   category: sys-libs
   description: ""
   license: ""
-  name: libcap
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
+  name: pam
   
   version: ""
 - 
@@ -204,14 +134,84 @@ requires:
   category: dev-libs
   description: ""
   license: ""
+  name: xapian
+  
+  version: 1.4.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
   name: libpcre
+  
+  version: ""
+- 
+  category: app-antivirus
+  description: ""
+  license: ""
+  name: clamav
+  
+  version: ""
+- 
+  category: net-fs
+  description: ""
+  license: ""
+  name: openafs
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 1.0.1e
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: jansson
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: lmdb
+  
+  version: ""
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: net-snmp
+  
+  version: 5.2.2-r1
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: tcp-wrappers
+  
+  version: "7.6"
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: net-snmp
   
   version: ""
 - 
   category: sys-libs
   description: ""
   license: ""
-  name: pam
+  name: libcap
   
   version: ""
 - 

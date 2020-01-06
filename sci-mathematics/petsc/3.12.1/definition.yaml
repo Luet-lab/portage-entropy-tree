@@ -5,6 +5,20 @@ license: BSD-2
 name: petsc
 requires:
 - 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: superlu
+  
+  version: "5"
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: mumps[mpi?]
+  
+  version: ""
+- 
   category: media-libs
   description: ""
   license: ""
@@ -12,10 +26,31 @@ requires:
   
   version: ""
 - 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: hdf5[mpi?]
+  
+  version: ""
+- 
   category: virtual
   description: ""
   license: ""
   name: mpi[cxx?,fortran?]
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: scotch[mpi?]
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: blas
   
   version: ""
 - 
@@ -29,14 +64,7 @@ requires:
   category: sci-libs
   description: ""
   license: ""
-  name: hdf5[mpi?]
-  
-  version: ""
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: scotch[mpi?]
+  name: fftw
   
   version: ""
 - 
@@ -50,13 +78,6 @@ requires:
   category: sci-libs
   description: ""
   license: ""
-  name: mumps[mpi?]
-  
-  version: ""
-- 
-  category: sci-libs
-  description: ""
-  license: ""
   name: suitesparse
   
   version: ""
@@ -64,16 +85,9 @@ requires:
   category: sci-libs
   description: ""
   license: ""
-  name: superlu
+  name: cholmod
   
-  version: "5"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: blas
-  
-  version: ""
+  version: 1.7.0
 - 
   category: virtual
   description: ""
@@ -85,7 +99,7 @@ requires:
   category: sci-libs
   description: ""
   license: ""
-  name: hypre-2.18.0[mpi?]
+  name: scalapack
   
   version: ""
 - 
@@ -99,23 +113,9 @@ requires:
   category: sci-libs
   description: ""
   license: ""
-  name: fftw
+  name: hypre-2.18.0[mpi?]
   
   version: ""
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: scalapack
-  
-  version: ""
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: cholmod
-  
-  version: 1.7.0
 uri:
 - http://ftp.mcs.anl.gov/pub/petsc/release-snapshots/petsc-3.12.1.tar.gz
 use_flags:

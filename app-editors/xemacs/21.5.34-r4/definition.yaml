@@ -13,24 +13,45 @@ license: GPL-3+
 name: xemacs
 requires:
 - 
-  category: dev-db
+  category: media-libs
   description: ""
   license: ""
-  name: postgresql
+  name: audiofile
+  
+  version: 0.2.3
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: "5.2"
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: xbitmaps
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXext
+  name: neXtaw
   
   version: ""
 - 
-  category: x11-libs
+  category: media-libs
   description: ""
   license: ""
-  name: libXaw3d
+  name: compface
   
   version: ""
 - 
@@ -41,17 +62,59 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: app-i18n
   description: ""
   license: ""
-  name: zlib
+  name: canna
   
-  version: 1.1.4
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 0.9.6
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXt
+  
+  version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
   name: libXmu
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXft
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXrender
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: postgresql
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: dnd
   
   version: ""
 - 
@@ -65,9 +128,37 @@ requires:
   category: sys-libs
   description: ""
   license: ""
+  name: db
+  
+  version: "4"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
   name: gdbm-1.8.3[berkdb(+)]
   
   version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: nas
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXext
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
+  
+  version: 2.5.0
 - 
   category: app-eselect
   description: ""
@@ -76,68 +167,12 @@ requires:
   
   version: "1.15"
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXt
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXrender
-  
-  version: ""
-- 
-  category: app-i18n
-  description: ""
-  license: ""
-  name: canna
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXft
-  
-  version: ""
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: alsa-lib
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: freetype
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: compface
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
-  name: db
+  name: zlib
   
-  version: "4"
+  version: 1.1.4
 - 
   category: sys-libs
   description: ""
@@ -146,10 +181,10 @@ requires:
   
   version: 1.19.6
 - 
-  category: x11-misc
+  category: media-libs
   description: ""
   license: ""
-  name: xbitmaps
+  name: alsa-lib
   
   version: ""
 - 
@@ -163,14 +198,7 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: dnd
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: neXtaw
+  name: libXaw3d
   
   version: ""
 - 
@@ -181,10 +209,24 @@ requires:
   
   version: ""
 - 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libpng
+  
+  version: "1.2"
+- 
   category: dev-libs
   description: ""
   license: ""
   name: libressl
+  
+  version: ""
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
   
   version: ""
 - 
@@ -194,48 +236,6 @@ requires:
   name: motif
   
   version: "2.3"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: fontconfig
-  
-  version: 2.5.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libpng
-  
-  version: "1.2"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: audiofile
-  
-  version: 0.2.3
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: nas
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: ncurses
-  
-  version: "5.2"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: 0.9.6
 uri:
 - http://ftp.xemacs.org/xemacs-21.5/xemacs-21.5.34.tar.gz
 - http://www.malfunction.de/afterstep/files/NeXT_XEmacs.tar.gz

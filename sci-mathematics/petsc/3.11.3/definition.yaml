@@ -5,17 +5,10 @@ license: BSD-2
 name: petsc
 requires:
 - 
-  category: sci-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: fftw
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: mpi[cxx?,fortran?]
+  name: boost
   
   version: ""
 - 
@@ -23,6 +16,20 @@ requires:
   description: ""
   license: ""
   name: scotch[mpi?]
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: suitesparse
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
   
   version: ""
 - 
@@ -43,49 +50,21 @@ requires:
   category: sci-libs
   description: ""
   license: ""
-  name: parmetis
+  name: hdf5[mpi?]
   
-  version: "4"
+  version: ""
 - 
-  category: dev-libs
+  category: virtual
   description: ""
   license: ""
-  name: boost
+  name: mpi[cxx?,fortran?]
   
   version: ""
 - 
   category: sci-libs
   description: ""
   license: ""
-  name: hypre-2.8.0b[mpi?]
-  
-  version: ""
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: superlu
-  
-  version: "5"
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: suitesparse
-  
-  version: ""
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: cholmod
-  
-  version: 1.7.0
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
+  name: mumps[mpi?]
   
   version: ""
 - 
@@ -99,16 +78,30 @@ requires:
   category: sci-libs
   description: ""
   license: ""
-  name: hdf5[mpi?]
+  name: hypre-2.8.0b[mpi?]
   
   version: ""
 - 
   category: sci-libs
   description: ""
   license: ""
-  name: mumps[mpi?]
+  name: cholmod
+  
+  version: 1.7.0
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: fftw
   
   version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: parmetis
+  
+  version: "4"
 - 
   category: sci-libs
   description: ""
@@ -116,6 +109,13 @@ requires:
   name: scalapack
   
   version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: superlu
+  
+  version: "5"
 uri:
 - http://ftp.mcs.anl.gov/pub/petsc/release-snapshots/petsc-3.11.3.tar.gz
 use_flags:

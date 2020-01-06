@@ -4,42 +4,7 @@ conflicts:
   category: sys-fabric
   description: ""
   license: ""
-  name: libibumad
-  
-  version: ""
-- 
-  category: sys-fabric
-  description: ""
-  license: ""
-  name: libmlx4
-  
-  version: ""
-- 
-  category: sys-fabric
-  description: ""
-  license: ""
-  name: libibverbs
-  
-  version: ""
-- 
-  category: sys-fabric
-  description: ""
-  license: ""
-  name: librdmacm
-  
-  version: ""
-- 
-  category: sys-fabric
-  description: ""
-  license: ""
-  name: libibmad
-  
-  version: ""
-- 
-  category: sys-fabric
-  description: ""
-  license: ""
-  name: srptools
+  name: ibacm
   
   version: ""
 - 
@@ -60,7 +25,14 @@ conflicts:
   category: sys-fabric
   description: ""
   license: ""
-  name: libcxgb4
+  name: librdmacm
+  
+  version: ""
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: srptools
   
   version: ""
 - 
@@ -68,20 +40,6 @@ conflicts:
   description: ""
   license: ""
   name: libmthca
-  
-  version: ""
-- 
-  category: sys-fabric
-  description: ""
-  license: ""
-  name: infiniband-diags
-  
-  version: ""
-- 
-  category: sys-fabric
-  description: ""
-  license: ""
-  name: ibacm
   
   version: ""
 - 
@@ -102,7 +60,49 @@ conflicts:
   category: sys-fabric
   description: ""
   license: ""
+  name: infiniband-diags
+  
+  version: ""
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: libibverbs
+  
+  version: ""
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: libmlx4
+  
+  version: ""
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
   name: libnes
+  
+  version: ""
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: libibumad
+  
+  version: ""
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: libibmad
+  
+  version: ""
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: libcxgb4
   
   version: ""
 description: Userspace components for the Linux Kernel's drivers/infiniband subsystem
@@ -110,10 +110,10 @@ license: '|| ( GPL-2 ( CC0-1.0 MIT BSD BSD-with-attribution ) )'
 name: rdma-core
 requires:
 - 
-  category: dev-util
+  category: virtual
   description: ""
   license: ""
-  name: valgrind
+  name: libudev
   
   version: ""
 - 
@@ -131,10 +131,10 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: dev-util
   description: ""
   license: ""
-  name: libudev
+  name: valgrind
   
   version: ""
 uri:

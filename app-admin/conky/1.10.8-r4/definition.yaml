@@ -5,104 +5,6 @@ license: GPL-3 BSD LGPL-2.1 MIT
 name: conky
 requires:
 - 
-  category: virtual
-  description: ""
-  license: ""
-  name: libiconv
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libircclient
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXdamage
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXfixes
-  
-  version: ""
-- 
-  category: sys-power
-  description: ""
-  license: ""
-  name: apcupsd
-  
-  version: ""
-- 
-  category: app-editors
-  description: ""
-  license: ""
-  name: nano
-  
-  version: ""
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: librsvg
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: freetype
-  
-  version: "2"
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: moc
-  
-  version: ""
-- 
-  category: x11-drivers
-  description: ""
-  license: ""
-  name: nvidia-drivers
-  
-  version: ""
-- 
-  category: dev-lua
-  description: ""
-  license: ""
-  name: toluapp
-  
-  version: 1.0.93
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: ncurses
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: imlib2[X]
-  
-  version: ""
-- 
   category: media-sound
   description: ""
   license: ""
@@ -117,17 +19,38 @@ requires:
   
   version: ""
 - 
-  category: media-sound
+  category: net-libs
   description: ""
   license: ""
-  name: xmms2
+  name: libircclient
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXft
+  name: cairo[X]
+  
+  version: ""
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: librsvg
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXfixes
   
   version: ""
 - 
@@ -135,6 +58,34 @@ requires:
   description: ""
   license: ""
   name: libxml2
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libical
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: moc
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
+  
+  version: "2"
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c
   
   version: ""
 - 
@@ -148,35 +99,7 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: cairo[X]
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: ""
-- 
-  category: app-admin
-  description: ""
-  license: ""
-  name: hddtemp
-  
-  version: ""
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: pulseaudio
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXinerama
+  name: libXdamage
   
   version: ""
 - 
@@ -187,24 +110,38 @@ requires:
   
   version: ""
 - 
+  category: virtual
+  description: ""
+  license: ""
+  name: libiconv
+  
+  version: ""
+- 
+  category: app-admin
+  description: ""
+  license: ""
+  name: hddtemp
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: ""
+- 
   category: dev-libs
   description: ""
   license: ""
-  name: libical
+  name: glib
   
   version: ""
 - 
-  category: dev-db
+  category: sys-apps
   description: ""
   license: ""
-  name: mysql-connector-c
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libmicrohttpd
+  name: systemd
   
   version: ""
 - 
@@ -215,10 +152,73 @@ requires:
   
   version: 5.1.4-r8
 - 
+  category: x11-drivers
+  description: ""
+  license: ""
+  name: nvidia-drivers
+  
+  version: ""
+- 
   category: x11-libs
   description: ""
   license: ""
-  name: libX11
+  name: libXft
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXinerama
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: imlib2[X]
+  
+  version: ""
+- 
+  category: app-editors
+  description: ""
+  license: ""
+  name: nano
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libmicrohttpd
+  
+  version: ""
+- 
+  category: sys-power
+  description: ""
+  license: ""
+  name: apcupsd
+  
+  version: ""
+- 
+  category: dev-lua
+  description: ""
+  license: ""
+  name: toluapp
+  
+  version: 1.0.93
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: xmms2
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: pulseaudio
   
   version: ""
 uri:

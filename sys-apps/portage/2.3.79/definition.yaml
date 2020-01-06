@@ -4,9 +4,9 @@ conflicts:
   category: <app-portage
   description: ""
   license: ""
-  name: repoman
+  name: gentoolkit
   
-  version: 2.3.10
+  version: 0.4.6
 - 
   category: <app-admin
   description: ""
@@ -18,53 +18,25 @@ conflicts:
   category: <app-portage
   description: ""
   license: ""
-  name: gentoolkit
+  name: repoman
   
-  version: 0.4.6
+  version: 2.3.10
 description: Portage is the package management and distribution system for Gentoo
 license: GPL-2
 name: portage
 requires:
 - 
-  category: app-admin
+  category: app-arch
   description: ""
   license: ""
-  name: eselect
+  name: tar
   
-  version: "1.2"
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: gnupg-2.2.4-r2[ssl(-)]
-  
-  version: ""
-- 
-  category: app-misc
-  description: ""
-  license: ""
-  name: pax-utils
-  
-  version: 0.1.17
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: sed
-  
-  version: 4.0.5
+  version: "1.27"
 - 
   category: app-shells
   description: ""
   license: ""
   name: bash
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
   
   version: ""
 - 
@@ -75,6 +47,13 @@ requires:
   
   version: "20180706"
 - 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gnupg-2.2.4-r2[ssl(-)]
+  
+  version: ""
+- 
   category: sys-apps
   description: ""
   license: ""
@@ -82,12 +61,12 @@ requires:
   
   version: "2.2"
 - 
-  category: sys-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: libselinux
+  name: util-linux
   
-  version: 2.0.94
+  version: ""
 - 
   category: sys-apps
   description: ""
@@ -96,12 +75,19 @@ requires:
   
   version: "0.3"
 - 
-  category: app-arch
+  category: sys-apps
   description: ""
   license: ""
-  name: tar
+  name: sed
   
-  version: "1.27"
+  version: 4.0.5
+- 
+  category: app-admin
+  description: ""
+  license: ""
+  name: eselect
+  
+  version: "1.2"
 - 
   category: app-portage
   description: ""
@@ -109,6 +95,13 @@ requires:
   name: gemato
   
   version: "14"
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: pax-utils
+  
+  version: 0.1.17
 - 
   category: dev-lang
   description: ""
@@ -123,6 +116,13 @@ requires:
   name: freebsd-bin
   
   version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: 2.0.94
 uri: []
 use_flags:
 - build

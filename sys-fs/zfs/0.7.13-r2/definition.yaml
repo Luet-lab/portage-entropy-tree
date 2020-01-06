@@ -8,20 +8,6 @@ conflicts:
   
   version: 2.00-r2
 - 
-  category: =sys-apps
-  description: ""
-  license: ""
-  name: grep-2.13*
-  
-  version: ""
-- 
-  category: <sys-kernel
-  description: ""
-  license: ""
-  name: dracut
-  
-  version: 044-r1
-- 
   category: <sys-kernel
   description: ""
   license: ""
@@ -39,9 +25,9 @@ conflicts:
   category: <sys-kernel
   description: ""
   license: ""
-  name: bliss-initramfs
+  name: dracut
   
-  version: 7.1.0
+  version: 044-r1
 - 
   category: sys-fs
   description: ""
@@ -49,36 +35,36 @@ conflicts:
   name: zfs-fuse
   
   version: ""
+- 
+  category: <sys-kernel
+  description: ""
+  license: ""
+  name: bliss-initramfs
+  
+  version: 7.1.0
+- 
+  category: =sys-apps
+  description: ""
+  license: ""
+  name: grep-2.13*
+  
+  version: ""
 description: Userland utilities for ZFS Linux kernel module
 license: BSD-2 CDDL MIT
 name: zfs
 requires:
 - 
-  category: app-arch
+  category: sys-block
   description: ""
   license: ""
-  name: cpio
+  name: parted
   
   version: ""
 - 
-  category: virtual
+  category: net-libs
   description: ""
   license: ""
-  name: udev
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: lsscsi
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: mdadm
+  name: libtirpc
   
   version: ""
 - 
@@ -96,17 +82,10 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: sys-fs
   description: ""
   license: ""
-  name: modutils
-  
-  version: ""
-- 
-  category: sys-block
-  description: ""
-  license: ""
-  name: parted
+  name: mdadm
   
   version: ""
 - 
@@ -117,10 +96,17 @@ requires:
   
   version: ""
 - 
-  category: app-misc
+  category: sys-fs
   description: ""
   license: ""
-  name: pax-utils
+  name: zfs-kmod
+  
+  version: 0.7.13
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
   
   version: ""
 - 
@@ -131,10 +117,17 @@ requires:
   
   version: ""
 - 
-  category: net-libs
+  category: app-arch
   description: ""
   license: ""
-  name: libtirpc
+  name: cpio
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: pax-utils
   
   version: ""
 - 
@@ -145,12 +138,19 @@ requires:
   
   version: ""
 - 
+  category: virtual
+  description: ""
+  license: ""
+  name: modutils
+  
+  version: ""
+- 
   category: sys-fs
   description: ""
   license: ""
-  name: zfs-kmod
+  name: lsscsi
   
-  version: 0.7.13
+  version: ""
 uri:
 - https://github.com/zfsonlinux/zfs/releases/download/zfs-0.7.13/zfs-0.7.13.tar.gz
 use_flags:

@@ -5,19 +5,12 @@ license: Apache-2.0
 name: docker
 requires:
 - 
-  category: sys-libs
+  category: dev-db
   description: ""
   license: ""
-  name: libseccomp
+  name: sqlite
   
-  version: 2.2.1
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libapparmor
-  
-  version: ""
+  version: 3.7.9
 - 
   category: net-firewall
   description: ""
@@ -40,26 +33,19 @@ requires:
   
   version: "4.9"
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libltdl
+  
+  version: ""
+- 
   category: app-emulation
   description: ""
   license: ""
   name: containerd
   
   version: 1.2.10
-- 
-  category: app-emulation
-  description: ""
-  license: ""
-  name: docker-proxy
-  
-  version: 0.8.0_p20191011
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
-  
-  version: 3.7.9
 - 
   category: sys-fs
   description: ""
@@ -68,6 +54,20 @@ requires:
   
   version: 2.02.89
 - 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libseccomp
+  
+  version: 2.2.1
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libapparmor
+  
+  version: ""
+- 
   category: dev-vcs
   description: ""
   license: ""
@@ -75,12 +75,12 @@ requires:
   
   version: "1.7"
 - 
-  category: dev-libs
+  category: app-emulation
   description: ""
   license: ""
-  name: libltdl
+  name: docker-proxy
   
-  version: ""
+  version: 0.8.0_p20191011
 - 
   category: sys-process
   description: ""

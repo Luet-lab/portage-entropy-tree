@@ -4,6 +4,20 @@ conflicts:
   category: ~dev-python
   description: ""
   license: ""
+  name: jinja
+  
+  version: 2.9.0
+- 
+  category: ~dev-python
+  description: ""
+  license: ""
+  name: jinja
+  
+  version: 2.9.3
+- 
+  category: ~dev-python
+  description: ""
+  license: ""
   name: pbr
   
   version: 2.1.0
@@ -20,20 +34,6 @@ conflicts:
   license: ""
   name: jinja
   
-  version: 2.9.3
-- 
-  category: ~dev-python
-  description: ""
-  license: ""
-  name: jinja
-  
-  version: 2.9.4
-- 
-  category: ~dev-python
-  description: ""
-  license: ""
-  name: jinja
-  
   version: 2.9.2
 - 
   category: ~dev-python
@@ -41,12 +41,19 @@ conflicts:
   license: ""
   name: jinja
   
-  version: 2.9.0
+  version: 2.9.4
 description: Components injected into wsgi pipelines to intercept request/response
   flows.
 license: Apache-2.0
 name: oslo-middleware
 requires:
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: jinja
+  
+  version: "2.8"
 - 
   category: dev-python
   description: ""
@@ -58,9 +65,23 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: pbr
+  name: oslo-utils
   
-  version: 2.0.0
+  version: 3.33.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: webob
+  
+  version: 1.7.1
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: debtcollector
+  
+  version: 1.2.0
 - 
   category: dev-python
   description: ""
@@ -79,27 +100,6 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: oslo-utils
-  
-  version: 3.33.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: six
-  
-  version: 1.10.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: debtcollector
-  
-  version: 1.2.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
   name: stevedore
   
   version: 1.20.0
@@ -114,16 +114,16 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: jinja
+  name: pbr
   
-  version: "2.8"
+  version: 2.0.0
 - 
   category: dev-python
   description: ""
   license: ""
-  name: webob
+  name: six
   
-  version: 1.7.1
+  version: 1.10.0
 uri:
 - mirror://pypi/o/oslo.middleware/oslo.middleware-3.34.0.tar.gz
 use_flags:

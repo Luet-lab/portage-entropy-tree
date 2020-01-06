@@ -12,12 +12,12 @@ license: LGPL-2.1
 name: boinc
 requires:
 - 
-  category: dev-util
+  category: app-misc
   description: ""
   license: ""
-  name: nvidia-cuda-toolkit
+  name: ca-certificates
   
-  version: "2.1"
+  version: "20080809"
 - 
   category: x11-drivers
   description: ""
@@ -26,10 +26,10 @@ requires:
   
   version: "180.22"
 - 
-  category: sys-apps
+  category: net-misc
   description: ""
   license: ""
-  name: util-linux
+  name: curl[curl_ssl_gnutls(-)=,curl_ssl_libressl(-)=,-curl_ssl_nss(-),curl_ssl_openssl(-)=,-curl_ssl_axtls(-),-curl_ssl_cyassl(-)]
   
   version: ""
 - 
@@ -40,6 +40,27 @@ requires:
   
   version: ""
 - 
+  category: virtual
+  description: ""
+  license: ""
+  name: jpeg
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: nvidia-cuda-toolkit
+  
+  version: "2.1"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: ""
+- 
   category: dev-db
   description: ""
   license: ""
@@ -47,38 +68,10 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: wxGTK
-  
-  version: ""
-- 
-  category: app-misc
-  description: ""
-  license: ""
-  name: ca-certificates
-  
-  version: "20080809"
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: curl[curl_ssl_gnutls(-)=,curl_ssl_libressl(-)=,-curl_ssl_nss(-),curl_ssl_openssl(-)=,-curl_ssl_axtls(-),-curl_ssl_cyassl(-)]
-  
-  version: ""
-- 
   category: media-libs
   description: ""
   license: ""
   name: freeglut
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jpeg
   
   version: ""
 - 
@@ -95,6 +88,13 @@ requires:
   name: libnotify
   
   version: "0.7"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: wxGTK
+  
+  version: ""
 uri: []
 use_flags:
 - X

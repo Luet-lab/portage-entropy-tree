@@ -5,26 +5,33 @@ license: GPL-3
 name: claws-mail
 requires:
 - 
-  category: sys-devel
+  category: media-libs
   description: ""
   license: ""
-  name: gettext
+  name: libcanberra
   
-  version: "0.18"
+  version: ""
 - 
-  category: app-pda
+  category: x11-libs
   description: ""
   license: ""
-  name: jpilot
+  name: libnotify
   
-  version: "0.99"
+  version: ""
 - 
-  category: app-text
+  category: net-mail
   description: ""
   license: ""
-  name: enchant
+  name: ytnef
   
-  version: 1.0.0
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: ""
 - 
   category: x11-misc
   description: ""
@@ -33,52 +40,17 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
+  category: dev-lang
   description: ""
   license: ""
-  name: gdk-pixbuf
+  name: perl
   
   version: ""
 - 
-  category: mail-filter
+  category: sys-libs
   description: ""
   license: ""
-  name: bogofilter
-  
-  version: ""
-- 
-  category: www-client
-  description: ""
-  license: ""
-  name: dillo
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libICE
-  
-  version: ""
-- 
-  category: app-antivirus
-  description: ""
-  license: ""
-  name: clamav
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: "2.24"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libcanberra
+  name: zlib
   
   version: ""
 - 
@@ -96,12 +68,75 @@ requires:
   
   version: ""
 - 
-  category: net-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libetpan
+  name: libgdata
   
-  version: "0.57"
+  version: 0.17.2
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: startup-notification
+  
+  version: ""
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: librsvg
+  
+  version: 2.40.5
+- 
+  category: app-antivirus
+  description: ""
+  license: ""
+  name: clamav
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pango
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: poppler
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libSM
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: enchant
+  
+  version: 1.0.0
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: valgrind
+  
+  version: ""
 - 
   category: app-text
   description: ""
@@ -110,19 +145,19 @@ requires:
   
   version: ""
 - 
-  category: net-mail
+  category: dev-libs
   description: ""
   license: ""
-  name: ytnef
+  name: libxml2
   
   version: ""
 - 
-  category: x11-libs
+  category: net-misc
   description: ""
   license: ""
-  name: libX11
+  name: curl
   
-  version: ""
+  version: 7.9.7
 - 
   category: dev-libs
   description: ""
@@ -143,82 +178,19 @@ requires:
   license: ""
   name: curl
   
-  version: 7.9.7
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: poppler
-  
   version: ""
 - 
-  category: x11-libs
+  category: mail-filter
   description: ""
   license: ""
-  name: libSM
-  
-  version: ""
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: librsvg
-  
-  version: 2.40.5
-- 
-  category: app-misc
-  description: ""
-  license: ""
-  name: mime-types
-  
-  version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: networkmanager
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: cairo
+  name: bogofilter
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: glib
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: startup-notification
-  
-  version: ""
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
-  
-  version: 2.0.7
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
+  name: libindicate
   
   version: ""
 - 
@@ -232,14 +204,21 @@ requires:
   category: net-libs
   description: ""
   license: ""
-  name: gnutls
+  name: libetpan
   
-  version: "3.0"
+  version: "0.57"
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: gettext
+  
+  version: "0.18"
 - 
   category: net-misc
   description: ""
   license: ""
-  name: curl
+  name: networkmanager
   
   version: ""
 - 
@@ -250,6 +229,20 @@ requires:
   
   version: ""
 - 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gdk-pixbuf
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
   category: dev-libs
   description: ""
   license: ""
@@ -257,45 +250,52 @@ requires:
   
   version: 2.0.0
 - 
-  category: dev-lang
+  category: net-libs
   description: ""
   license: ""
-  name: perl
+  name: gnutls
+  
+  version: "3.0"
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: 2.0.7
+- 
+  category: app-pda
+  description: ""
+  license: ""
+  name: jpilot
+  
+  version: "0.99"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libICE
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: mime-types
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libnotify
+  name: gtk+
   
-  version: ""
+  version: "2.24"
 - 
-  category: dev-util
+  category: www-client
   description: ""
   license: ""
-  name: valgrind
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pango
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgdata
-  
-  version: 0.17.2
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libindicate
+  name: dillo
   
   version: ""
 uri:

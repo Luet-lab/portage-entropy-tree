@@ -5,20 +5,6 @@ license: GPL-2
 name: powerdevil
 requires:
 - 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kglobalaccel
-  
-  version: 5.64.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kservice
-  
-  version: 5.64.0
-- 
   category: kde-plasma
   description: ""
   license: ""
@@ -26,10 +12,10 @@ requires:
   
   version: ""
 - 
-  category: app-misc
+  category: kde-plasma
   description: ""
   license: ""
-  name: ddcutil
+  name: libkworkspace
   
   version: ""
 - 
@@ -43,30 +29,9 @@ requires:
   category: kde-frameworks
   description: ""
   license: ""
-  name: kdbusaddons
+  name: kauth
   
   version: 5.64.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: knotifyconfig
-  
-  version: 5.64.0
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtgui
-  
-  version: 5.12.3
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtx11extras
-  
-  version: 5.12.3
 - 
   category: kde-frameworks
   description: ""
@@ -82,24 +47,66 @@ requires:
   
   version: 5.64.0
 - 
-  category: kde-frameworks
+  category: sys-power
   description: ""
   license: ""
-  name: kconfig
+  name: upower
   
-  version: 5.64.0
+  version: 0.9.23
 - 
-  category: kde-frameworks
+  category: dev-qt
   description: ""
   license: ""
-  name: kcrash
+  name: qtdbus
   
-  version: 5.64.0
+  version: 5.12.3
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: ddcutil
+  
+  version: ""
 - 
   category: kde-frameworks
   description: ""
   license: ""
   name: kio
+  
+  version: 5.64.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: knotifyconfig
+  
+  version: 5.64.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kservice
+  
+  version: 5.64.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: solid
+  
+  version: 5.64.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kcoreaddons
+  
+  version: 5.64.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kglobalaccel
   
   version: 5.64.0
 - 
@@ -120,69 +127,6 @@ requires:
   category: kde-frameworks
   description: ""
   license: ""
-  name: kconfigwidgets
-  
-  version: 5.64.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kcoreaddons
-  
-  version: 5.64.0
-- 
-  category: kde-plasma
-  description: ""
-  license: ""
-  name: libkworkspace
-  
-  version: ""
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: solid
-  
-  version: 5.64.0
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtdbus
-  
-  version: 5.12.3
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kauth
-  
-  version: 5.64.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: ki18n
-  
-  version: 5.64.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kidletime
-  
-  version: 5.64.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: knotifications
-  
-  version: 5.64.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
   name: kwayland
   
   version: 5.64.0
@@ -190,7 +134,14 @@ requires:
   category: kde-frameworks
   description: ""
   license: ""
-  name: kxmlgui
+  name: kdbusaddons
+  
+  version: 5.64.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kidletime
   
   version: 5.64.0
 - 
@@ -204,7 +155,56 @@ requires:
   category: kde-frameworks
   description: ""
   license: ""
+  name: bluez-qt
+  
+  version: 5.64.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kconfig
+  
+  version: 5.64.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: ki18n
+  
+  version: 5.64.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kcrash
+  
+  version: 5.64.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: knotifications
+  
+  version: 5.64.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kxmlgui
+  
+  version: 5.64.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
   name: kactivities
+  
+  version: 5.64.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kconfigwidgets
   
   version: 5.64.0
 - 
@@ -215,19 +215,19 @@ requires:
   
   version: ""
 - 
-  category: kde-frameworks
+  category: dev-qt
   description: ""
   license: ""
-  name: bluez-qt
+  name: qtgui
   
-  version: 5.64.0
+  version: 5.12.3
 - 
-  category: sys-power
+  category: dev-qt
   description: ""
   license: ""
-  name: upower
+  name: qtx11extras
   
-  version: 0.9.23
+  version: 5.12.3
 uri: []
 use_flags:
 - brightness-control

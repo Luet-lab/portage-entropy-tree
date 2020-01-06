@@ -5,26 +5,33 @@ license: GPL-2+ LGPL-2+
 name: xfce4-screensaver
 requires:
 - 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxklavier
+  
+  version: "5.2"
+- 
   category: xfce-base
   description: ""
   license: ""
-  name: garcon
+  name: xfconf
   
-  version: 0.5.0
+  version: 4.12.1
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: dbus-glib
+  name: glib
   
-  version: "0.30"
+  version: "2.50"
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: gtk+
+  name: libwnck
   
-  version: "3.22"
+  version: "3.20"
 - 
   category: x11-libs
   description: ""
@@ -54,80 +61,17 @@ requires:
   
   version: "1.3"
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxklavier
-  
-  version: "5.2"
-- 
-  category: xfce-base
-  description: ""
-  license: ""
-  name: xfconf
-  
-  version: 4.12.1
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: opengl
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: ""
-- 
-  category: xfce-base
-  description: ""
-  license: ""
-  name: libxfce4util
-  
-  version: 4.12.1
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: elogind
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
-  name: glib
+  name: dbus-glib
   
-  version: "2.50"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libwnck
-  
-  version: "3.20"
+  version: "0.30"
 - 
   category: x11-libs
   description: ""
   license: ""
   name: libICE
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXxf86vm
   
   version: ""
 - 
@@ -144,6 +88,62 @@ requires:
   name: consolekit
   
   version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: opengl
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: "3.22"
+- 
+  category: xfce-base
+  description: ""
+  license: ""
+  name: garcon
+  
+  version: 0.5.0
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: elogind
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXxf86vm
+  
+  version: ""
+- 
+  category: xfce-base
+  description: ""
+  license: ""
+  name: libxfce4util
+  
+  version: 4.12.1
 uri:
 - https://archive.xfce.org/src/apps/xfce4-screensaver/0.1/xfce4-screensaver-0.1.8.tar.bz2
 use_flags:

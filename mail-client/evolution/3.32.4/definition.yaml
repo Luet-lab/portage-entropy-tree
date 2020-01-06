@@ -12,40 +12,12 @@ license: '|| ( LGPL-2 LGPL-3 ) CC-BY-SA-3.0 FDL-1.3+ OPENLDAP'
 name: evolution
 requires:
 - 
-  category: app-crypt
+  category: dev-libs
   description: ""
   license: ""
-  name: gcr
-  
-  version: "3.4"
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gnome-desktop
-  
-  version: 2.91.3
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libSM
+  name: atk
   
   version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: mx
-  
-  version: ""
-- 
-  category: x11-misc
-  description: ""
-  license: ""
-  name: shared-mime-info
-  
-  version: "0.22"
 - 
   category: media-libs
   description: ""
@@ -54,26 +26,19 @@ requires:
   
   version: "0.90"
 - 
-  category: app-text
+  category: sci-geosciences
   description: ""
   license: ""
-  name: highlight
+  name: geocode-glib
+  
+  version: 3.10.0
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: mx
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: 2.7.3
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: clutter
-  
-  version: 1.0.0
 - 
   category: dev-libs
   description: ""
@@ -81,41 +46,6 @@ requires:
   name: nspr
   
   version: 4.6.1
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: ytnef
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libsoup
-  
-  version: "2.42"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: cairo
-  
-  version: 1.9.15
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: gnome-autoar
-  
-  version: 0.1.1
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: nss
-  
-  version: "3.11"
 - 
   category: dev-libs
   description: ""
@@ -131,111 +61,6 @@ requires:
   
   version: 2.91.92
 - 
-  category: sci-geosciences
-  description: ""
-  license: ""
-  name: geocode-glib
-  
-  version: 3.10.0
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: enchant
-  
-  version: 1.6.0
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: "3.22"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: atk
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libical
-  
-  version: 3.0.2
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libchamplain
-  
-  version: "0.12"
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
-  
-  version: "2"
-- 
-  category: mail-filter
-  description: ""
-  license: ""
-  name: spamassassin
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: webkit-gtk
-  
-  version: 2.16.0
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: webkit-gtk
-  
-  version: "2.25"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libnotify
-  
-  version: "0.7"
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: dconf
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libICE
-  
-  version: ""
-- 
-  category: mail-filter
-  description: ""
-  license: ""
-  name: bogofilter
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libcanberra
-  
-  version: "0.25"
-- 
   category: x11-libs
   description: ""
   license: ""
@@ -246,9 +71,30 @@ requires:
   category: app-text
   description: ""
   license: ""
-  name: iso-codes
+  name: highlight
   
-  version: "0.49"
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gcr
+  
+  version: "3.4"
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gnome-desktop
+  
+  version: 2.91.3
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: "2"
 - 
   category: app-text
   description: ""
@@ -260,9 +106,163 @@ requires:
   category: dev-libs
   description: ""
   license: ""
+  name: nss
+  
+  version: "3.11"
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libsoup
+  
+  version: "2.42"
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: webkit-gtk
+  
+  version: "2.25"
+- 
+  category: mail-filter
+  description: ""
+  license: ""
+  name: bogofilter
+  
+  version: ""
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: dconf
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libchamplain
+  
+  version: "0.12"
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: shared-mime-info
+  
+  version: "0.22"
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: iso-codes
+  
+  version: "0.49"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: "3.22"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libical
+  
+  version: 3.0.2
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libICE
+  
+  version: ""
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: ytnef
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: enchant
+  
+  version: 1.6.0
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: webkit-gtk
+  
+  version: 2.16.0
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo
+  
+  version: 1.9.15
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libSM
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: gnome-autoar
+  
+  version: 0.1.1
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: clutter
+  
+  version: 1.0.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
   name: libgweather
   
   version: "3.10"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: 2.7.3
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libcanberra
+  
+  version: "0.25"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libnotify
+  
+  version: "0.7"
+- 
+  category: mail-filter
+  description: ""
+  license: ""
+  name: spamassassin
+  
+  version: ""
 uri: []
 use_flags:
 - archive

@@ -5,90 +5,6 @@ license: GPL-3 LGPL-3 Apache-2.0
 name: rsyslog
 requires:
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: 1.2.5
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: hiredis
-  
-  version: 0.11.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libestr
-  
-  version: 0.1.9
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: libdbi
-  
-  version: 0.8.3
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mysql-connector-c
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnutls
-  
-  version: 2.12.23
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libfastjson
-  
-  version: 0.99.8
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libmaxminddb
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: xxhash
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: czmq
-  
-  version: 3.0.2
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: curl
-  
-  version: 7.35.0
-- 
   category: dev-libs
   description: ""
   license: ""
@@ -106,23 +22,9 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: librelp
+  name: xxhash
   
-  version: 1.2.17
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: "234"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: jemalloc
-  
-  version: 3.3.1
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -131,19 +33,33 @@ requires:
   
   version: 0.9.0.99
 - 
-  category: virtual
+  category: dev-libs
   description: ""
   license: ""
-  name: krb5
+  name: libressl
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "234"
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: openssl
+  name: libmaxminddb
   
-  version: 0.9.8y
+  version: ""
 - 
   category: dev-db
   description: ""
@@ -155,9 +71,30 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libressl
+  name: librelp
   
-  version: ""
+  version: 1.2.17
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 0.9.8y
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: czmq
+  
+  version: 3.0.2
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libfastjson
+  
+  version: 0.99.8
 - 
   category: dev-libs
   description: ""
@@ -169,9 +106,44 @@ requires:
   category: dev-libs
   description: ""
   license: ""
+  name: jemalloc
+  
+  version: 3.3.1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
   name: mongo-c-driver
   
   version: 1.1.10
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: liblogging
+  
+  version: 1.0.1
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: 2.12.23
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
+  
+  version: 7.35.0
 - 
   category: net-libs
   description: ""
@@ -187,6 +159,27 @@ requires:
   
   version: 5.7.2
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libestr
+  
+  version: 0.1.9
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: 1.2.5
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: libdbi
+  
+  version: 0.8.3
+- 
   category: sys-apps
   description: ""
   license: ""
@@ -194,12 +187,19 @@ requires:
   
   version: ""
 - 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
+  
+  version: ""
+- 
   category: dev-libs
   description: ""
   license: ""
-  name: liblogging
+  name: hiredis
   
-  version: 1.0.1
+  version: 0.11.0
 uri:
 - https://www.rsyslog.com/files/download/rsyslog/rsyslog-8.1910.0.tar.gz
 - 'https://www.rsyslog.com/files/download/rsyslog/rsyslog-doc-8.1910.0.tar.gz '

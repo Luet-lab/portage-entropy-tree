@@ -1,23 +1,37 @@
 category: dev-php
 conflicts:
 - 
-  category: '>=dev-php'
-  description: ""
-  license: ""
-  name: Text_Template
-  
-  version: "2.0"
-- 
   category: <dev-php
   description: ""
   license: ""
   name: phpunit
   
   version: 5.4.0
+- 
+  category: '>=dev-php'
+  description: ""
+  license: ""
+  name: Text_Template
+  
+  version: "2.0"
 description: Mock Object library for PHPUnit
 license: BSD
 name: phpunit-mock-objects
 requires:
+- 
+  category: dev-php
+  description: ""
+  license: ""
+  name: doctrine-instantiator
+  
+  version: "2.0"
+- 
+  category: dev-php
+  description: ""
+  license: ""
+  name: sebastian-exporter
+  
+  version: "3.0"
 - 
   category: dev-lang
   description: ""
@@ -39,20 +53,6 @@ requires:
   name: Text_Template
   
   version: "1.2"
-- 
-  category: dev-php
-  description: ""
-  license: ""
-  name: doctrine-instantiator
-  
-  version: "2.0"
-- 
-  category: dev-php
-  description: ""
-  license: ""
-  name: sebastian-exporter
-  
-  version: "3.0"
 uri:
 - https://github.com/sebastianbergmann/phpunit-mock-objects/archive/3.4.3.tar.gz ->
   phpunit-mock-objects-3.4.3.tar.gz

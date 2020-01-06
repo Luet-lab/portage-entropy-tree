@@ -26,12 +26,19 @@ license: BSD
 name: openmpi
 requires:
 - 
-  category: dev-libs
+  category: sys-cluster
   description: ""
   license: ""
-  name: libevent
+  name: torque
   
-  version: 2.0.22
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: 1.2.8-r1
 - 
   category: dev-util
   description: ""
@@ -40,10 +47,10 @@ requires:
   
   version: 6.5.19-r1
 - 
-  category: sys-fabric
+  category: sys-cluster
   description: ""
   license: ""
-  name: ofed
+  name: knem
   
   version: ""
 - 
@@ -54,33 +61,12 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: dev-libs
   description: ""
   license: ""
-  name: jre
+  name: libevent
   
-  version: "1.6"
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: knem
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: torque
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: slurm
-  
-  version: ""
+  version: 2.0.22
 - 
   category: dev-libs
   description: ""
@@ -96,12 +82,19 @@ requires:
   
   version: 2.0.2
 - 
-  category: sys-libs
+  category: sys-fabric
   description: ""
   license: ""
-  name: zlib
+  name: ofed
   
-  version: 1.2.8-r1
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: slurm
+  
+  version: ""
 - 
   category: sys-fabric
   description: ""
@@ -109,6 +102,13 @@ requires:
   name: librdmacm
   
   version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jre
+  
+  version: "1.6"
 uri:
 - http://www.open-mpi.org/software/ompi/v/downloads/openmpi-4.0.1.tar.bz2
 use_flags:

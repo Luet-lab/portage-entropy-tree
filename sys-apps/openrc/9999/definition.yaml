@@ -8,12 +8,12 @@ conflicts:
   
   version: "20180302"
 - 
-  category: <sys-apps
+  category: <app-shells
   description: ""
   license: ""
-  name: baselayout
+  name: gentoo-zsh-completions
   
-  version: 2.1-r1
+  version: "20180228"
 - 
   category: <sys-fs
   description: ""
@@ -21,13 +21,6 @@ conflicts:
   name: udev-init-scripts
   
   version: "27"
-- 
-  category: <app-shells
-  description: ""
-  license: ""
-  name: gentoo-zsh-completions
-  
-  version: "20180228"
 - 
   category: sys-apps
   description: ""
@@ -42,6 +35,13 @@ conflicts:
   name: procps
   
   version: 3.3.9-r2
+- 
+  category: <sys-apps
+  description: ""
+  license: ""
+  name: baselayout
+  
+  version: 2.1-r1
 description: OpenRC manages the services, startup and shutdown of a host
 license: BSD-2
 name: openrc
@@ -61,6 +61,13 @@ requires:
   
   version: ""
 - 
+  category: sys-process
+  description: ""
+  license: ""
+  name: audit
+  
+  version: ""
+- 
   category: sys-apps
   description: ""
   license: ""
@@ -68,17 +75,10 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: libselinux
-  
-  version: "2.6"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: tmpfiles
+  name: sysvinit-2.86-r6[selinux?]
   
   version: ""
 - 
@@ -92,14 +92,21 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: ncurses
+  name: libselinux
   
-  version: ""
+  version: "2.6"
 - 
-  category: sys-process
+  category: sec-policy
   description: ""
   license: ""
-  name: audit
+  name: selinux-openrc
+  
+  version: 2.20170204-r4
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: tmpfiles
   
   version: ""
 - 
@@ -113,23 +120,16 @@ requires:
   category: sys-libs
   description: ""
   license: ""
+  name: ncurses
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
   name: pam
   
   version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: sysvinit-2.86-r6[selinux?]
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-openrc
-  
-  version: 2.20170204-r4
 uri: []
 use_flags:
 - audit

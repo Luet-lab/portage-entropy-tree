@@ -4,7 +4,7 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: percona-server
+  name: mariadb
   
   version: ""
 - 
@@ -18,34 +18,20 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mariadb-galera
+  name: percona-server
   
   version: ""
 - 
   category: dev-db
   description: ""
   license: ""
-  name: mariadb
+  name: mariadb-galera
   
   version: ""
 description: A fast, multi-threaded, multi-user SQL database server
 license: GPL-2
 name: mysql
 requires:
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: mysql
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libtirpc
-  
-  version: ""
 - 
   category: dev-libs
   description: ""
@@ -54,38 +40,10 @@ requires:
   
   version: ""
 - 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-mysql
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mysql-init-scripts
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: protobuf
-  
-  version: "3.8"
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: mecab
-  
-  version: ""
-- 
   category: sys-process
   description: ""
   license: ""
-  name: procps
+  name: numactl
   
   version: ""
 - 
@@ -96,10 +54,10 @@ requires:
   
   version: ""
 - 
-  category: acct-user
+  category: dev-libs
   description: ""
   license: ""
-  name: mysql
+  name: icu
   
   version: ""
 - 
@@ -110,10 +68,31 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: net-libs
   description: ""
   license: ""
-  name: libevent
+  name: libtirpc
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: mysql
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-init-scripts
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: procps
   
   version: ""
 - 
@@ -124,17 +103,10 @@ requires:
   
   version: 1.0.0
 - 
-  category: sys-process
+  category: acct-user
   description: ""
   license: ""
-  name: numactl
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
+  name: mysql
   
   version: ""
 - 
@@ -148,7 +120,42 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: icu
+  name: libaio
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: mecab
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-mysql
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: protobuf
+  
+  version: "3.8"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libevent
   
   version: ""
 - 
@@ -158,13 +165,6 @@ requires:
   name: zlib
   
   version: 1.2.3
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libaio
-  
-  version: ""
 uri:
 - https://cdn.mysql.com/Downloads/MySQL-8.0/mysql-boost-8.0.18.tar.gz
 - https://cdn.mysql.com/archives/mysql-8.0/mysql-boost-8.0.18.tar.gz

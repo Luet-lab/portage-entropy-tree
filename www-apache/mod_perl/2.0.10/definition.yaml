@@ -5,6 +5,13 @@ license: Apache-2.0
 name: mod_perl
 requires:
 - 
+  category: www-servers
+  description: ""
+  license: ""
+  name: apache[-apache2_mpms_event,-apache2_mpms_worker,apache2_mpms_prefork]
+  
+  version: ""
+- 
   category: dev-lang
   description: ""
   license: ""
@@ -32,13 +39,6 @@ requires:
   name: apr-util
   
   version: "1.4"
-- 
-  category: www-servers
-  description: ""
-  license: ""
-  name: apache[-apache2_mpms_event,-apache2_mpms_worker,apache2_mpms_prefork]
-  
-  version: ""
 uri:
 - mirror://apache/perl/mod_perl-2.0.10.tar.gz
 use_flags:

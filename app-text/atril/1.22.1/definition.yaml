@@ -12,12 +12,26 @@ license: GPL-2
 name: atril
 requires:
 - 
-  category: x11-libs
+  category: app-text
   description: ""
   license: ""
-  name: gdk-pixbuf
+  name: libgxps
+  
+  version: 0.2.1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: atk
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.50"
 - 
   category: x11-libs
   description: ""
@@ -29,7 +43,21 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: pango
+  name: libSM
+  
+  version: "1"
+- 
+  category: mate-base
+  description: ""
+  license: ""
+  name: caja-1.17.1[introspection?]
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: tex-base
   
   version: ""
 - 
@@ -40,89 +68,12 @@ requires:
   
   version: 2.4.3
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: atk
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libSM
-  
-  version: "1"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: djvu
-  
-  version: 3.5.17
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: mathjax
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: gobject-introspection
-  
-  version: "0.6"
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: poppler
-  
-  version: "0.22"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: t1lib
-  
-  version: "5"
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: libspectre
-  
-  version: "0.2"
-- 
   category: media-libs
   description: ""
   license: ""
   name: tiff
   
   version: "3.6"
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: libgxps
-  
-  version: 0.2.1
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: tex-base
-  
-  version: ""
 - 
   category: dev-libs
   description: ""
@@ -145,10 +96,52 @@ requires:
   
   version: 1.9.10
 - 
-  category: mate-base
+  category: x11-libs
   description: ""
   license: ""
-  name: caja-1.17.1[introspection?]
+  name: pango
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: djvu
+  
+  version: 3.5.17
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: t1lib
+  
+  version: "5"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gobject-introspection
+  
+  version: "0.6"
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: libspectre
+  
+  version: "0.2"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gdk-pixbuf
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
   
   version: ""
 - 
@@ -159,12 +152,19 @@ requires:
   
   version: "0.5"
 - 
+  category: app-text
+  description: ""
+  license: ""
+  name: poppler
+  
+  version: "0.22"
+- 
   category: dev-libs
   description: ""
   license: ""
-  name: glib
+  name: mathjax
   
-  version: "2.50"
+  version: ""
 uri: []
 use_flags:
 - caja

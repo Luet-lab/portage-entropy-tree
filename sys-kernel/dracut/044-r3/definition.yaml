@@ -5,45 +5,10 @@ license: GPL-2
 name: dracut
 requires:
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: kmod
-  
-  version: "5"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libsepol
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: udev
-  
-  version: ""
-- 
   category: virtual
   description: ""
   license: ""
   name: pkgconfig
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: cpio
   
   version: ""
 - 
@@ -54,10 +19,10 @@ requires:
   
   version: ""
 - 
-  category: sec-policy
+  category: sys-libs
   description: ""
   license: ""
-  name: selinux-dracut
+  name: libsepol
   
   version: ""
 - 
@@ -67,6 +32,13 @@ requires:
   name: systemd
   
   version: "199"
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: cpio
+  
+  version: ""
 - 
   category: app-shells
   description: ""
@@ -78,9 +50,37 @@ requires:
   category: sys-apps
   description: ""
   license: ""
+  name: kmod
+  
+  version: "5"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
   name: util-linux
   
   version: "2.21"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-dracut
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: ""
 uri:
 - https://www.kernel.org/pub/linux/utils/boot/dracut/dracut-044.tar.xz
 use_flags:

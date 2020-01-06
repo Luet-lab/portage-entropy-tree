@@ -4,21 +4,7 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mariadb[client-libs(+)]
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
   name: percona-server[client-libs(+)]
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mysql-connector-c
   
   version: ""
 - 
@@ -46,7 +32,21 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
+  name: mysql-connector-c
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
   name: mysql[client-libs(+)]
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mariadb[client-libs(+)]
   
   version: ""
 description: C client library for MariaDB/MySQL
@@ -54,10 +54,17 @@ license: LGPL-2.1
 name: mariadb-connector-c
 requires:
 - 
-  category: sys-libs
+  category: net-misc
   description: ""
   license: ""
-  name: zlib
+  name: curl
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libiconv
   
   version: ""
 - 
@@ -68,24 +75,17 @@ requires:
   
   version: ""
 - 
-  category: net-misc
-  description: ""
-  license: ""
-  name: curl
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
-  name: openssl
+  name: libressl
   
   version: ""
 - 
-  category: virtual
+  category: sys-libs
   description: ""
   license: ""
-  name: libiconv
+  name: zlib
   
   version: ""
 - 
@@ -99,7 +99,7 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libressl
+  name: openssl
   
   version: ""
 uri:

@@ -12,12 +12,26 @@ license: GPL-2
 name: dracut
 requires:
 - 
-  category: app-shells
+  category: virtual
   description: ""
   license: ""
-  name: bash
+  name: udev
   
-  version: "4.0"
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: kmod
+  
+  version: "15"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: "2.21"
 - 
   category: sys-libs
   description: ""
@@ -26,10 +40,10 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: sec-policy
   description: ""
   license: ""
-  name: udev
+  name: selinux-dracut
   
   version: ""
 - 
@@ -40,19 +54,26 @@ requires:
   
   version: ""
 - 
+  category: app-arch
+  description: ""
+  license: ""
+  name: cpio
+  
+  version: ""
+- 
+  category: app-shells
+  description: ""
+  license: ""
+  name: bash
+  
+  version: "4.0"
+- 
   category: sys-apps
   description: ""
   license: ""
   name: coreutils[xattr(-)]
   
   version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
-  
-  version: "2.21"
 - 
   category: dev-util
   description: ""
@@ -65,27 +86,6 @@ requires:
   description: ""
   license: ""
   name: libsepol
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-dracut
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: kmod
-  
-  version: "15"
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: cpio
   
   version: ""
 uri:

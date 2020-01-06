@@ -1,33 +1,12 @@
 category: sys-fs
 conflicts:
 - 
-  category: <sys-boot
-  description: ""
-  license: ""
-  name: grub
-  
-  version: 2.00-r2
-- 
   category: <sys-kernel
   description: ""
   license: ""
   name: genkernel
   
   version: 3.5.1.1
-- 
-  category: <sys-kernel
-  description: ""
-  license: ""
-  name: genkernel-next
-  
-  version: "67"
-- 
-  category: =sys-apps
-  description: ""
-  license: ""
-  name: grep-2.13*
-  
-  version: ""
 - 
   category: sys-fs
   description: ""
@@ -42,6 +21,27 @@ conflicts:
   name: bliss-initramfs
   
   version: 7.1.0
+- 
+  category: <sys-boot
+  description: ""
+  license: ""
+  name: grub
+  
+  version: 2.00-r2
+- 
+  category: =sys-apps
+  description: ""
+  license: ""
+  name: grep-2.13*
+  
+  version: ""
+- 
+  category: <sys-kernel
+  description: ""
+  license: ""
+  name: genkernel-next
+  
+  version: "67"
 - 
   category: <sys-kernel
   description: ""
@@ -61,6 +61,13 @@ requires:
   
   version: 0.8.2
 - 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: ""
+- 
   category: app-misc
   description: ""
   license: ""
@@ -75,38 +82,10 @@ requires:
   
   version: ""
 - 
-  category: virtual
-  description: ""
-  license: ""
-  name: awk
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: python-cffi
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: udev
-  
-  version: ""
-- 
   category: sys-fs
   description: ""
   license: ""
   name: mdadm
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: lsscsi
   
   version: ""
 - 
@@ -117,10 +96,17 @@ requires:
   
   version: ""
 - 
-  category: app-arch
+  category: sys-fs
   description: ""
   license: ""
-  name: cpio
+  name: udev-init-scripts
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
   
   version: ""
 - 
@@ -138,17 +124,10 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
-  
-  version: ""
-- 
   category: sys-fs
   description: ""
   license: ""
-  name: udev-init-scripts
+  name: lsscsi
   
   version: ""
 - 
@@ -162,7 +141,28 @@ requires:
   category: virtual
   description: ""
   license: ""
+  name: python-cffi
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: cpio
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
   name: modutils
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: awk
   
   version: ""
 uri:

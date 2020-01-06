@@ -23,33 +23,68 @@ license: "\n\t!gpl? ( LGPL-2.1 )\n\tgpl? ( GPL-2 )\n\tamr? (\n\t\tgpl? ( GPL-3 )
 name: ffmpeg
 requires:
 - 
-  category: app-arch
-  description: ""
-  license: ""
-  name: bzip2
-  
-  version: 1.0.6-r4
-- 
   category: media-libs
   description: ""
   license: ""
-  name: codec2
+  name: openh264
   
-  version: ""
+  version: 1.4.0-r1
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: gmp
+  name: fribidi
   
-  version: "6"
+  version: 0.19.6
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: opencl
+  
+  version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libdc1394
+  name: libvorbis
   
-  version: 2.2.1
+  version: 1.3.3-r1
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: zvbi
+  
+  version: 0.2.35
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libilbc
+  
+  version: "2"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: soxr
+  
+  version: 0.1.0
+- 
+  category: net-fs
+  description: ""
+  license: ""
+  name: samba
+  
+  version: 3.6.23-r1
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: opus
+  
+  version: 1.0.2-r2
 - 
   category: x11-libs
   description: ""
@@ -61,79 +96,58 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libogg
+  name: kvazaar
   
-  version: 1.3.0
+  version: 1.2.0
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libsdl2
+  name: libaom
   
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: 1.2.8-r1
+  version: 1.0.0-r1
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libtheora
-  
-  version: 1.1.1
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: soxr
-  
-  version: 0.1.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: lv2
+  name: raspberrypi-userland
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: zvbi
-  
-  version: 0.2.35
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: wavpack
-  
-  version: 4.60.1-r1
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: fdk-aac
-  
-  version: 0.1.3
-- 
-  category: app-accessibility
-  description: ""
-  license: ""
-  name: flite
-  
-  version: 1.4-r4
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libcaca-0.99_beta18-r1
+  name: lilv
   
   version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libmodplug
+  
+  version: 0.8.8.4-r1
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libva
+  
+  version: 1.2.1-r1
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: game-music-emu
+  
+  version: 0.6.0
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: rtmpdump
+  
+  version: 2.4_p20131018
 - 
   category: app-text
   description: ""
@@ -145,6 +159,13 @@ requires:
   category: media-libs
   description: ""
   license: ""
+  name: vidstab
+  
+  version: 1.1.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
   name: libbs2b
   
   version: 3.1.0-r1
@@ -152,44 +173,142 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libmodplug
+  name: libwebp
   
-  version: 0.8.8.4-r1
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: nv-codec-headers
-  
-  version: 9.0.18.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libvorbis
-  
-  version: 1.3.3-r1
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXv
-  
-  version: 1.0.10
+  version: 0.3.0
 - 
   category: media-sound
   description: ""
   license: ""
-  name: twolame
+  name: pulseaudio
   
-  version: 0.3.13-r1
+  version: 2.1-r1
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libwebp
+  name: dav1d
   
-  version: 0.3.0
+  version: 0.4.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: vo-amrwbenc
+  
+  version: 0.1.2-r1
+- 
+  category: app-accessibility
+  description: ""
+  license: ""
+  name: flite
+  
+  version: 1.4-r4
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: xvid
+  
+  version: 1.3.2-r1
+- 
+  category: media-plugins
+  description: ""
+  license: ""
+  name: frei0r-plugins
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgcrypt
+  
+  version: "1.6"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libcaca-0.99_beta18-r1
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libsdl2
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: lame
+  
+  version: 3.99.5-r1
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libtheora
+  
+  version: 1.1.1
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: x264
+  
+  version: 0.0.20130506
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxcb
+  
+  version: "1.4"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: 1.2.8-r1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: aribb24
+  
+  version: 1.0.3-r2
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: openal
+  
+  version: 1.15.1
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libssh
+  
+  version: 0.5.5
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libdc1394
+  
+  version: 2.2.1
 - 
   category: net-libs
   description: ""
@@ -205,12 +324,131 @@ requires:
   
   version: 0.1.3-r1
 - 
+  category: media-libs
+  description: ""
+  license: ""
+  name: chromaprint
+  
+  version: 1.2-r1
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fdk-aac
+  
+  version: 0.1.3
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libdrm
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: lv2
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: rubberband
+  
+  version: 1.8.1-r1
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: snappy
+  
+  version: 1.1.2-r1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gmp
+  
+  version: "6"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libiconv
+  
+  version: 0-r1
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libvdpau
+  
+  version: "0.7"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: 1.6.2
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXv
+  
+  version: 1.0.10
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: 2.12.23-r6
+- 
   category: media-sound
   description: ""
   license: ""
-  name: lame
+  name: gsm
   
-  version: 3.99.5-r1
+  version: 1.0.13-r1
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: librsvg
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: nv-codec-headers
+  
+  version: 9.0.18.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: zimg
+  
+  version: 2.7.4
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: alsa-lib
+  
+  version: 1.0.27.2
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libraw1394
+  
+  version: 2.1.0-r1
 - 
   category: media-libs
   description: ""
@@ -226,48 +464,6 @@ requires:
   
   version: 1.0.1h-r2
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libavc1394
-  
-  version: 0.5.4-r1
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libdrm
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: lilv
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: opengl
-  
-  version: 7.0-r1
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: alsa-lib
-  
-  version: 1.0.27.2
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libbluray
-  
-  version: 0.3.0-r1
-- 
   category: media-libs
   description: ""
   license: ""
@@ -275,26 +471,40 @@ requires:
   
   version: 2.10.92
 - 
-  category: dev-libs
+  category: media-libs
   description: ""
   license: ""
-  name: libgcrypt
+  name: openjpeg
   
-  version: "1.6"
+  version: "2"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: speex
+  
+  version: 1.2_rc1-r1
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libogg
+  
+  version: 1.3.0
 - 
   category: media-sound
   description: ""
   license: ""
-  name: gsm
+  name: wavpack
   
-  version: 1.0.13-r1
+  version: 4.60.1-r1
 - 
-  category: sys-libs
+  category: media-libs
   description: ""
   license: ""
-  name: libraw1394
+  name: libiec61883
   
-  version: 2.1.0-r1
+  version: 1.2.0-r1
 - 
   category: virtual
   description: ""
@@ -310,187 +520,33 @@ requires:
   
   version: 0.9.5
 - 
-  category: x11-libs
+  category: media-libs
   description: ""
   license: ""
-  name: libvdpau
+  name: libbluray
   
-  version: "0.7"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libcdio-paranoia
-  
-  version: 0.90_p1-r1
-- 
-  category: media-plugins
-  description: ""
-  license: ""
-  name: frei0r-plugins
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
-  
-  version: ""
+  version: 0.3.0-r1
 - 
   category: app-arch
   description: ""
   license: ""
-  name: snappy
+  name: bzip2
   
-  version: 1.1.2-r1
+  version: 1.0.6-r4
 - 
   category: media-libs
   description: ""
   license: ""
-  name: aribb24
-  
-  version: 1.0.3-r2
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: zimg
-  
-  version: 2.7.4
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: chromaprint
-  
-  version: 1.2-r1
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: vo-amrwbenc
-  
-  version: 0.1.2-r1
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libiconv
-  
-  version: 0-r1
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libiec61883
-  
-  version: 1.2.0-r1
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: openjpeg
-  
-  version: "2"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libilbc
-  
-  version: "2"
-- 
-  category: media-video
-  description: ""
-  license: ""
-  name: rtmpdump
-  
-  version: 2.4_p20131018
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: raspberrypi-userland
+  name: codec2
   
   version: ""
 - 
   category: virtual
   description: ""
   license: ""
-  name: opencl
+  name: opengl
   
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: opus
-  
-  version: 1.0.2-r2
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: 1.6.2
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: game-music-emu
-  
-  version: 0.6.0
-- 
-  category: net-fs
-  description: ""
-  license: ""
-  name: samba
-  
-  version: 3.6.23-r1
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: srt
-  
-  version: 1.3.0
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: librsvg
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: kvazaar
-  
-  version: 1.2.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: openal
-  
-  version: 1.15.1
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: pulseaudio
-  
-  version: 2.1-r1
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libssh
-  
-  version: 0.5.5
+  version: 7.0-r1
 - 
   category: media-libs
   description: ""
@@ -499,75 +555,12 @@ requires:
   
   version: 1.4.0
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxcb
-  
-  version: "1.4"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: dav1d
-  
-  version: 0.4.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: openh264
-  
-  version: 1.4.0-r1
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: x264
-  
-  version: 0.0.20130506
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: x265
-  
-  version: "1.6"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: xvid
-  
-  version: 1.3.2-r1
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: fribidi
-  
-  version: 0.19.6
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libaom
-  
-  version: 1.0.0-r1
-- 
   category: dev-libs
   description: ""
   license: ""
   name: libxml2
   
   version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libva
-  
-  version: 1.2.1-r1
 - 
   category: app-arch
   description: ""
@@ -576,19 +569,19 @@ requires:
   
   version: 5.0.5-r1
 - 
-  category: media-libs
+  category: net-libs
   description: ""
   license: ""
-  name: rubberband
+  name: srt
   
-  version: 1.8.1-r1
+  version: 1.3.0
 - 
-  category: media-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: speex
+  name: libavc1394
   
-  version: 1.2_rc1-r1
+  version: 0.5.4-r1
 - 
   category: media-libs
   description: ""
@@ -597,19 +590,26 @@ requires:
   
   version: 2.5.0.1
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libcdio-paranoia
+  
+  version: 0.90_p1-r1
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: twolame
+  
+  version: 0.3.13-r1
+- 
   category: media-libs
   description: ""
   license: ""
-  name: vidstab
+  name: x265
   
-  version: 1.1.0
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnutls
-  
-  version: 2.12.23-r6
+  version: "1.6"
 uri: []
 use_flags:
 - alsa

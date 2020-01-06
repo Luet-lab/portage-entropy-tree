@@ -5,38 +5,24 @@ license: MIT
 name: bitcoin-qt
 requires:
 - 
-  category: sys-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: db
+  name: boost
   
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtdbus
-  
-  version: ""
+  version: 1.52.0
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libevent
+  name: univalue
   
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtnetwork
-  
-  version: ""
+  version: 1.0.4
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: protobuf
+  name: openssl
   
   version: ""
 - 
@@ -47,19 +33,26 @@ requires:
   
   version: ""
 - 
-  category: net-libs
+  category: virtual
   description: ""
   license: ""
-  name: miniupnpc
+  name: bitcoin-leveldb
   
-  version: 1.9.20150916
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: db
+  
+  version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: univalue
+  name: libsecp256k1
   
-  version: 1.0.4
+  version: 0.0.0_pre20151118
 - 
   category: dev-qt
   description: ""
@@ -68,17 +61,17 @@ requires:
   
   version: ""
 - 
-  category: virtual
-  description: ""
-  license: ""
-  name: bitcoin-leveldb
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
-  name: libressl
+  name: protobuf
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtdbus
   
   version: ""
 - 
@@ -92,6 +85,13 @@ requires:
   category: dev-qt
   description: ""
   license: ""
+  name: qtnetwork
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
   name: qtwidgets
   
   version: ""
@@ -99,9 +99,23 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: openssl
+  name: libevent
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: miniupnpc
+  
+  version: 1.9.20150916
 - 
   category: net-libs
   description: ""
@@ -109,20 +123,6 @@ requires:
   name: zeromq
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: boost
-  
-  version: 1.52.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libsecp256k1
-  
-  version: 0.0.0_pre20151118
 uri:
 - https://github.com/bitcoin/bitcoin/archive/ef70f9b52b851c7997a9f1a0834714e3eebc1fd8.tar.gz
   -> bitcoin-v0.17.1.tar.gz

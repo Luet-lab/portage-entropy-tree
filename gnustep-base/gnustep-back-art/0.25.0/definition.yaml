@@ -4,14 +4,14 @@ conflicts:
   category: gnustep-base
   description: ""
   license: ""
-  name: gnustep-back-xlib
+  name: gnustep-back-cairo
   
   version: ""
 - 
   category: gnustep-base
   description: ""
   license: ""
-  name: gnustep-back-cairo
+  name: gnustep-back-xlib
   
   version: ""
 description: libart_lgpl back-end component for the GNUstep GUI Library
@@ -22,7 +22,28 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXt
+  name: libSM
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libart_lgpl
+  
+  version: "2.3"
+- 
+  category: media-fonts
+  description: ""
+  license: ""
+  name: dejavu
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXrender
   
   version: ""
 - 
@@ -36,28 +57,7 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXmu
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXft
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: opengl
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libSM
+  name: libICE
   
   version: ""
 - 
@@ -68,45 +68,24 @@ requires:
   
   version: ""
 - 
-  category: gnustep-base
-  description: ""
-  license: ""
-  name: mknfonts
-  
-  version: 0.5-r1
-- 
   category: x11-libs
   description: ""
   license: ""
-  name: libICE
+  name: libXft
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXi
+  name: libX11
   
   version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libart_lgpl
-  
-  version: "2.3"
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXrender
-  
-  version: ""
-- 
-  category: media-fonts
-  description: ""
-  license: ""
-  name: dejavu
+  name: libXt
   
   version: ""
 - 
@@ -120,6 +99,13 @@ requires:
   category: virtual
   description: ""
   license: ""
+  name: opengl
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
   name: glu
   
   version: ""
@@ -127,9 +113,23 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libX11
+  name: libXi
   
   version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXmu
+  
+  version: ""
+- 
+  category: gnustep-base
+  description: ""
+  license: ""
+  name: mknfonts
+  
+  version: 0.5-r1
 uri:
 - ftp://ftp.gnustep.org/pub/gnustep/core/gnustep-back-0.25.0.tar.gz
 use_flags:

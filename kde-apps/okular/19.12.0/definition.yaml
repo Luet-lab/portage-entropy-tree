@@ -5,17 +5,17 @@ license: GPL-2
 name: okular
 requires:
 - 
-  category: kde-frameworks
+  category: sys-libs
   description: ""
   license: ""
-  name: kpty
+  name: zlib
   
-  version: 5.63.0
+  version: ""
 - 
   category: dev-qt
   description: ""
   license: ""
-  name: qtwidgets
+  name: qtspeech
   
   version: 5.12.3
 - 
@@ -29,63 +29,14 @@ requires:
   category: kde-frameworks
   description: ""
   license: ""
-  name: kparts
+  name: kconfigwidgets
   
   version: 5.63.0
 - 
-  category: virtual
+  category: kde-apps
   description: ""
   license: ""
-  name: jpeg
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: tiff
-  
-  version: ""
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kimageformats
-  
-  version: 5.63.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kactivities
-  
-  version: 5.63.0
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: ebook-tools
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtdbus
-  
-  version: 5.12.3
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtprintsupport
-  
-  version: 5.12.3
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: chmlib
+  name: kdegraphics-mobipocket
   
   version: ""
 - 
@@ -103,59 +54,10 @@ requires:
   
   version: ""
 - 
-  category: kde-apps
-  description: ""
-  license: ""
-  name: kdegraphics-mobipocket
-  
-  version: ""
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kio
-  
-  version: 5.63.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kjs
-  
-  version: 5.63.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kcoreaddons
-  
-  version: 5.63.0
-- 
   category: app-text
   description: ""
   license: ""
-  name: djvu
-  
-  version: ""
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kconfig
-  
-  version: 5.63.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kconfigwidgets
-  
-  version: 5.63.0
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: qca
+  name: ebook-tools
   
   version: ""
 - 
@@ -169,14 +71,14 @@ requires:
   category: kde-frameworks
   description: ""
   license: ""
-  name: kcrash
+  name: kbookmarks
   
   version: 5.63.0
 - 
   category: kde-frameworks
   description: ""
   license: ""
-  name: kwallet
+  name: khtml
   
   version: 5.63.0
 - 
@@ -187,24 +89,17 @@ requires:
   
   version: 5.63.0
 - 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtgui
-  
-  version: 5.12.3
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtsvg
-  
-  version: 5.12.3
-- 
   category: media-libs
   description: ""
   license: ""
-  name: freetype
+  name: phonon[qt5(+)]
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: libspectre
   
   version: ""
 - 
@@ -225,16 +120,86 @@ requires:
   category: kde-frameworks
   description: ""
   license: ""
-  name: kbookmarks
+  name: kparts
+  
+  version: 5.63.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: chmlib
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: djvu
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: tiff
+  
+  version: ""
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kimageformats
   
   version: 5.63.0
 - 
   category: kde-frameworks
   description: ""
   license: ""
-  name: khtml
+  name: kjs
   
   version: 5.63.0
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtgui
+  
+  version: 5.12.3
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kio
+  
+  version: 5.63.0
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtprintsupport
+  
+  version: 5.12.3
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtsvg
+  
+  version: 5.12.3
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtwidgets
+  
+  version: 5.12.3
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
+  
+  version: ""
 - 
   category: app-text
   description: ""
@@ -243,12 +208,19 @@ requires:
   
   version: ""
 - 
-  category: app-text
+  category: kde-frameworks
   description: ""
   license: ""
-  name: libspectre
+  name: kcoreaddons
   
-  version: ""
+  version: 5.63.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kcrash
+  
+  version: 5.63.0
 - 
   category: kde-frameworks
   description: ""
@@ -257,24 +229,52 @@ requires:
   
   version: 5.63.0
 - 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kpty
+  
+  version: 5.63.0
+- 
   category: dev-qt
   description: ""
   license: ""
-  name: qtspeech
+  name: qtdbus
   
   version: 5.12.3
 - 
-  category: media-libs
+  category: virtual
   description: ""
   license: ""
-  name: phonon[qt5(+)]
+  name: jpeg
   
   version: ""
 - 
-  category: sys-libs
+  category: kde-frameworks
   description: ""
   license: ""
-  name: zlib
+  name: kactivities
+  
+  version: 5.63.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kconfig
+  
+  version: 5.63.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kwallet
+  
+  version: 5.63.0
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: qca
   
   version: ""
 uri: []

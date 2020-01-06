@@ -5,6 +5,20 @@ license: Apache-2.0
 name: bcc
 requires:
 - 
+  category: sys-kernel
+  description: ""
+  license: ""
+  name: linux-headers
+  
+  version: "4.14"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: elfutils
+  
+  version: "0.166"
+- 
   category: sys-devel
   description: ""
   license: ""
@@ -25,20 +39,6 @@ requires:
   name: luajit
   
   version: ""
-- 
-  category: sys-kernel
-  description: ""
-  license: ""
-  name: linux-headers
-  
-  version: "4.14"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: elfutils
-  
-  version: "0.166"
 uri:
 - https://github.com/iovisor/bcc/archive/v0.12.0.tar.gz -> bcc-0.12.0.tar.gz
 - https://github.com/libbpf/libbpf/archive/v0.0.6.tar.gz -> libbpf-0.0.6.tar.gz

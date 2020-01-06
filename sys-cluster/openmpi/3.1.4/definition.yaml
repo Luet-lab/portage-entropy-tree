@@ -4,7 +4,7 @@ conflicts:
   category: sys-cluster
   description: ""
   license: ""
-mpi
+  name: mpich2
   
   version: ""
 - 
@@ -18,7 +18,7 @@ mpi
   category: sys-cluster
   description: ""
   license: ""
-  name: mpich2
+mpi
   
   version: ""
 - 
@@ -33,52 +33,24 @@ license: BSD
 name: openmpi
 requires:
 - 
-  category: virtual
+  category: sys-fabric
   description: ""
   license: ""
-  name: jre
+  name: infinipath-psm
   
-  version: "1.6"
+  version: ""
 - 
-  category: dev-util
+  category: sys-libs
   description: ""
   license: ""
-  name: nvidia-cuda-toolkit
+  name: zlib
   
-  version: 6.5.19-r1
+  version: 1.2.8-r1
 - 
   category: sys-cluster
   description: ""
   license: ""
   name: knem
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: torque
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: slurm
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libevent
-  
-  version: 2.0.22
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libltdl
   
   version: ""
 - 
@@ -96,19 +68,47 @@ requires:
   
   version: ""
 - 
-  category: sys-fabric
+  category: dev-libs
   description: ""
   license: ""
-  name: infinipath-psm
+  name: libltdl
   
   version: ""
 - 
-  category: sys-libs
+  category: sys-cluster
   description: ""
   license: ""
-  name: zlib
+  name: torque
   
-  version: 1.2.8-r1
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: nvidia-cuda-toolkit
+  
+  version: 6.5.19-r1
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: slurm
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jre
+  
+  version: "1.6"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libevent
+  
+  version: 2.0.22
 uri:
 - http://www.open-mpi.org/software/ompi/v/downloads/openmpi-3.1.4.tar.bz2
 use_flags:

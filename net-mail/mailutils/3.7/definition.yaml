@@ -4,14 +4,14 @@ conflicts:
   category: mail-client
   description: ""
   license: ""
-  name: nail
+  name: nmh
   
   version: ""
 - 
   category: mail-client
   description: ""
   license: ""
-  name: nmh
+  name: mailx
   
   version: ""
 - 
@@ -25,13 +25,20 @@ conflicts:
   category: mail-client
   description: ""
   license: ""
-  name: mailx
+  name: nail
   
   version: ""
 description: A useful collection of mail servers, clients, and filters
 license: GPL-2 LGPL-2.1
 name: mailutils
 requires:
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libiconv
+  
+  version: ""
 - 
   category: sys-libs
   description: ""
@@ -44,48 +51,6 @@ requires:
   description: ""
   license: ""
   name: openldap
-  
-  version: ""
-- 
-  category: app-editors
-  description: ""
-  license: ""
-  name: emacs
-  
-  version: "23.1"
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: postgresql
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: gsasl
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnutls
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: mta
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: fribidi
   
   version: ""
 - 
@@ -103,17 +68,17 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: dev-db
   description: ""
   license: ""
-  name: libunistring
+  name: postgresql
   
   version: ""
 - 
-  category: sys-apps
+  category: virtual
   description: ""
   license: ""
-  name: tcp-wrappers
+  name: gsasl
   
   version: ""
 - 
@@ -131,10 +96,10 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: dev-libs
   description: ""
   license: ""
-  name: krb5
+  name: fribidi
   
   version: ""
 - 
@@ -145,17 +110,38 @@ requires:
   
   version: ""
 - 
-  category: dev-db
+  category: sys-devel
   description: ""
   license: ""
-  name: tokyocabinet
+  name: gettext
   
   version: ""
 - 
   category: virtual
   description: ""
   license: ""
-  name: libiconv
+  name: mta
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: tcp-wrappers
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: tokyocabinet
   
   version: ""
 - 
@@ -166,6 +152,13 @@ requires:
   
   version: ""
 - 
+  category: app-editors
+  description: ""
+  license: ""
+  name: emacs
+  
+  version: "23.1"
+- 
   category: sys-libs
   description: ""
   license: ""
@@ -173,10 +166,17 @@ requires:
   
   version: ""
 - 
-  category: sys-devel
+  category: virtual
   description: ""
   license: ""
-  name: gettext
+  name: krb5
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libunistring
   
   version: ""
 uri:

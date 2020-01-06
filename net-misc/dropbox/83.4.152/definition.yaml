@@ -5,17 +5,24 @@ license: BSD-2 CC-BY-ND-3.0 FTL MIT LGPL-2 openssl dropbox
 name: dropbox
 requires:
 - 
-  category: net-misc
+  category: x11-libs
   description: ""
   license: ""
-  name: wget
+  name: libX11
   
   version: ""
 - 
-  category: dev-qt
+  category: net-libs
   description: ""
   license: ""
-  name: qtgui
+  name: librsync
+  
+  version: "2"
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: bzip2
   
   version: ""
 - 
@@ -26,17 +33,10 @@ requires:
   
   version: ""
 - 
-  category: x11-themes
+  category: x11-libs
   description: ""
   license: ""
-  name: hicolor-icon-theme
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libffi-compat
+  name: libXinerama
   
   version: ""
 - 
@@ -46,6 +46,13 @@ requires:
   name: libXxf86vm
   
   version: ""
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: gcc
+  
+  version: 4.2.0
 - 
   category: sys-libs
   description: ""
@@ -64,70 +71,7 @@ requires:
   category: dev-qt
   description: ""
   license: ""
-  name: qtprintsupport
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: ncurses-compat
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jpeg
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: bzip2
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: popt
-  
-  version: ""
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: gcc
-  
-  version: 4.2.0
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtcore
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: freetype
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libSM
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXinerama
+  name: qtgui
   
   version: ""
 - 
@@ -138,24 +82,24 @@ requires:
   
   version: ""
 - 
-  category: media-libs
+  category: virtual
   description: ""
   license: ""
-  name: fontconfig
+  name: jpeg
   
   version: ""
 - 
-  category: x11-misc
+  category: net-misc
   description: ""
   license: ""
-  name: wmctrl
+  name: wget
   
   version: ""
 - 
-  category: sec-policy
+  category: dev-qt
   description: ""
   license: ""
-  name: selinux-dropbox
+  name: qtcore
   
   version: ""
 - 
@@ -166,10 +110,73 @@ requires:
   
   version: ""
 - 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-dropbox
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses-compat
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtwidgets
+  
+  version: ""
+- 
+  category: x11-themes
+  description: ""
+  license: ""
+  name: hicolor-icon-theme
+  
+  version: ""
+- 
   category: x11-libs
   description: ""
   license: ""
-  name: libX11
+  name: libSM
+  
+  version: ""
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: wmctrl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: popt
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtprintsupport
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
   
   version: ""
 - 
@@ -194,19 +201,12 @@ requires:
   
   version: ""
 - 
-  category: dev-qt
+  category: dev-libs
   description: ""
   license: ""
-  name: qtwidgets
+  name: libffi-compat
   
   version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: librsync
-  
-  version: "2"
 uri:
 - 'https://clientupdates.dropboxstatic.com/dbx-releng/client/dropbox-lnx.x86-83.4.152.tar.gz '
 - 'https://clientupdates.dropboxstatic.com/dbx-releng/client/dropbox-lnx.x86_64-83.4.152.tar.gz '

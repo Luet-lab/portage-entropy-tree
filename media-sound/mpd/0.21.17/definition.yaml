@@ -5,38 +5,17 @@ license: GPL-2
 name: mpd
 requires:
 - 
-  category: net-misc
-  description: ""
-  license: ""
-  name: curl
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libmodplug
-  
-  version: ""
-- 
-  category: net-fs
-  description: ""
-  license: ""
-  name: libnfs
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
-  name: libcdio
+  name: yajl
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libid3tag
+  name: libmad
   
   version: ""
 - 
@@ -47,62 +26,6 @@ requires:
   
   version: "2"
 - 
-  category: media-sound
-  description: ""
-  license: ""
-  name: wavpack
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: zziplib
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libupnp
-  
-  version: ""
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: wildmidi
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libmpdclient
-  
-  version: ""
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: musepack-tools
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: openal
-  
-  version: ""
-- 
   category: media-libs
   description: ""
   license: ""
@@ -110,10 +33,10 @@ requires:
   
   version: ""
 - 
-  category: media-video
+  category: media-libs
   description: ""
   license: ""
-  name: ffmpeg
+  name: chromaprint
   
   version: ""
 - 
@@ -124,108 +47,17 @@ requires:
   
   version: 0.6.0_pre20120802
 - 
-  category: net-fs
+  category: sys-apps
   description: ""
   license: ""
-  name: samba
+  name: systemd
   
   version: ""
 - 
-  category: sys-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: zlib
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libcdio-paranoia
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libshout
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-mpd
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
-  
-  version: ""
-- 
-  category: acct-user
-  description: ""
-  license: ""
-  name: mpd
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libsamplerate
-  
-  version: ""
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: mpg123
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: yajl
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: udisks
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: adplug
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: alsa-lib
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: faad2
-  
-  version: ""
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: lame
+  name: dbus
   
   version: ""
 - 
@@ -239,7 +71,14 @@ requires:
   category: media-sound
   description: ""
   license: ""
-  name: fluidsynth
+  name: twolame
+  
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: mpd
   
   version: ""
 - 
@@ -253,21 +92,7 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libmikmod
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: opus
-  
-  version: ""
-- 
-  category: media-video
-  description: ""
-  license: ""
-  name: libav
+  name: openal
   
   version: ""
 - 
@@ -278,38 +103,24 @@ requires:
   
   version: ""
 - 
-  category: media-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libvorbis
-  
-  version: ""
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: avahi
+  name: libcdio-paranoia
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libmad
+  name: flac
   
   version: ""
 - 
-  category: media-sound
+  category: media-video
   description: ""
   license: ""
-  name: alsa-utils
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libao[alsa?,pulseaudio?]
+  name: ffmpeg
   
   version: ""
 - 
@@ -323,28 +134,63 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libsidplay
-  
-  version: ""
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: twolame
+  name: libvorbis
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: chromaprint
+  name: adplug
+  
+  version: ""
+- 
+  category: net-fs
+  description: ""
+  license: ""
+  name: samba
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: expat
+  name: zziplib
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libupnp
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: wavpack
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: wildmidi
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: faad2
   
   version: ""
 - 
@@ -355,10 +201,17 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: media-libs
   description: ""
   license: ""
-  name: jack
+  name: libmodplug
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libsamplerate
   
   version: ""
 - 
@@ -369,17 +222,66 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: media-libs
   description: ""
   license: ""
-  name: systemd
+  name: alsa-lib
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: flac
+  name: opus
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jack
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libmikmod
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: mpg123
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-mpd
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: expat
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: fluidsynth
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libmpdclient
   
   version: ""
 - 
@@ -387,6 +289,104 @@ requires:
   description: ""
   license: ""
   name: pulseaudio
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: alsa-utils
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: lame
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: musepack-tools
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: udisks
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libsidplay
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: ""
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: avahi
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libao[alsa?,pulseaudio?]
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libcdio
+  
+  version: ""
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: libav
+  
+  version: ""
+- 
+  category: net-fs
+  description: ""
+  license: ""
+  name: libnfs
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libshout
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libid3tag
   
   version: ""
 uri:

@@ -5,12 +5,19 @@ license: BSD ISC MIT GPL-3+ GPL-2
 name: pcsc-lite
 requires:
 - 
-  category: sys-auth
+  category: acct-group
   description: ""
   license: ""
-  name: polkit
+  name: pcscd
   
-  version: "0.111"
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: pcscd
+  
+  version: ""
 - 
   category: sec-policy
   description: ""
@@ -32,10 +39,23 @@ requires:
   name: udev
   
   version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: "0.111"
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: openct
+  
+  version: ""
 uri:
 - https://pcsclite.apdu.fr/files/pcsc-lite-1.8.25.tar.bz2
 use_flags:
-- python
 - libusb
 - policykit
 - selinux

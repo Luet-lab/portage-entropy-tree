@@ -5,40 +5,33 @@ license: '|| ( GPL-3 LGPL-3 )'
 name: gegl
 requires:
 - 
-  category: x11-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: cairo
+  name: zlib
   
   version: ""
 - 
-  category: dev-libs
+  category: media-video
   description: ""
   license: ""
-  name: gobject-introspection
-  
-  version: "1.32"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jpeg
+  name: ffmpeg
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libopenraw
+  name: libsdl
   
-  version: 0.0.9
+  version: ""
 - 
-  category: gnome-base
+  category: media-libs
   description: ""
   license: ""
-  name: librsvg
+  name: libwebp
   
-  version: "2.14"
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -46,6 +39,13 @@ requires:
   name: glib
   
   version: "2.36"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pango
+  
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -61,31 +61,24 @@ requires:
   
   version: "2.18"
 - 
-  category: media-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: lensfun
-  
-  version: 0.2.5
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libwebp
+  name: cairo
   
   version: ""
 - 
-  category: media-libs
+  category: media-video
   description: ""
   license: ""
-  name: babl
+  name: libav
   
-  version: 0.1.12
+  version: ""
 - 
-  category: sys-libs
+  category: virtual
   description: ""
   license: ""
-  name: zlib
+  name: jpeg
   
   version: ""
 - 
@@ -96,17 +89,17 @@ requires:
   
   version: "2.2"
 - 
-  category: sci-libs
+  category: media-libs
   description: ""
   license: ""
-  name: umfpack
+  name: lensfun
   
-  version: ""
+  version: 0.2.5
 - 
-  category: x11-libs
+  category: media-libs
   description: ""
   license: ""
-  name: pango
+  name: openexr
   
   version: ""
 - 
@@ -117,10 +110,17 @@ requires:
   
   version: ""
 - 
-  category: media-libs
+  category: gnome-base
   description: ""
   license: ""
-  name: libsdl
+  name: librsvg
+  
+  version: "2.14"
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: umfpack
   
   version: ""
 - 
@@ -131,26 +131,26 @@ requires:
   
   version: 1.0.1
 - 
-  category: media-video
+  category: media-libs
   description: ""
   license: ""
-  name: libav
+  name: babl
   
-  version: ""
+  version: 0.1.12
 - 
-  category: media-video
+  category: dev-libs
   description: ""
   license: ""
-  name: ffmpeg
+  name: gobject-introspection
   
-  version: ""
+  version: "1.32"
 - 
   category: media-libs
   description: ""
   license: ""
-  name: openexr
+  name: libopenraw
   
-  version: ""
+  version: 0.0.9
 uri:
 - http://download.gimp.org/pub/gegl/0.3/gegl-0.3.0.tar.bz2
 use_flags:

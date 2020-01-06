@@ -5,45 +5,17 @@ license: Apache-2.0
 name: docker
 requires:
 - 
-  category: net-firewall
+  category: sys-fs
   description: ""
   license: ""
-  name: iptables
+  name: lvm2
   
-  version: "1.4"
+  version: 2.02.89
 - 
   category: sys-process
   description: ""
   license: ""
   name: procps
-  
-  version: ""
-- 
-  category: dev-vcs
-  description: ""
-  license: ""
-  name: git
-  
-  version: "1.7"
-- 
-  category: app-emulation
-  description: ""
-  license: ""
-  name: docker-proxy
-  
-  version: 0.8.0_p20190513
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libseccomp
-  
-  version: 2.2.1
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libapparmor
   
   version: ""
 - 
@@ -53,13 +25,6 @@ requires:
   name: xz-utils
   
   version: "4.9"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libltdl
-  
-  version: ""
 - 
   category: app-emulation
   description: ""
@@ -82,12 +47,47 @@ requires:
   
   version: 3.7.9
 - 
-  category: sys-fs
+  category: sys-libs
   description: ""
   license: ""
-  name: lvm2
+  name: libseccomp
   
-  version: 2.02.89
+  version: 2.2.1
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libapparmor
+  
+  version: ""
+- 
+  category: net-firewall
+  description: ""
+  license: ""
+  name: iptables
+  
+  version: "1.4"
+- 
+  category: dev-vcs
+  description: ""
+  license: ""
+  name: git
+  
+  version: "1.7"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libltdl
+  
+  version: ""
+- 
+  category: app-emulation
+  description: ""
+  license: ""
+  name: docker-proxy
+  
+  version: 0.8.0_p20190513
 uri:
 - https://github.com/docker/docker-ce/archive/v18.09.9.tar.gz -> docker-18.09.9.tar.gz
 use_flags:

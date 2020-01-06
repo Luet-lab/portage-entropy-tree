@@ -4,14 +4,7 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: msmtp
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: qmail-ldap
+  name: mini-qmail
   
   version: ""
 - 
@@ -32,13 +25,6 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: sendmail
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
   name: exim
   
   version: ""
@@ -46,7 +32,14 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: mini-qmail
+  name: courier
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: esmtp
   
   version: ""
 - 
@@ -67,20 +60,34 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: courier
+  name: qmail-ldap
   
   version: ""
 - 
   category: mail-mta
   description: ""
   license: ""
-  name: esmtp
+  name: sendmail
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: msmtp
   
   version: ""
 description: Simple relay-only local mail transport agent
 license: GPL-2
 mailer
 requires:
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: logger
+  
+  version: ""
 - 
   category: net-libs
   description: ""
@@ -93,13 +100,6 @@ requires:
   description: ""
   license: ""
   name: shadow
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: logger
   
   version: ""
 uri:

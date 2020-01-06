@@ -5,33 +5,26 @@ license: LGPL-2+
 name: gvfs
 requires:
 - 
-  category: app-crypt
+  category: dev-libs
   description: ""
   license: ""
-  name: gcr
+  name: libcdio
   
   version: ""
 - 
-  category: sys-fs
+  category: dev-libs
   description: ""
   license: ""
-  name: fuse
+  name: libgcrypt
   
-  version: 2.8.0
+  version: 1.2.2
 - 
-  category: net-fs
+  category: sys-auth
   description: ""
   license: ""
-  name: samba
+  name: polkit
   
-  version: "4"
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: udisks
-  
-  version: "1.97"
+  version: "0.114"
 - 
   category: sys-auth
   description: ""
@@ -43,9 +36,72 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libgphoto2
+  name: libbluray
   
-  version: 2.5.0
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gcr
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: ""
+- 
+  category: app-pda
+  description: ""
+  license: ""
+  name: libplist
+  
+  version: "1"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libusb
+  
+  version: 1.0.21
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libmtp
+  
+  version: 1.1.15
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libsoup
+  
+  version: 2.58.0
+- 
+  category: app-pda
+  description: ""
+  license: ""
+  name: libimobiledevice
+  
+  version: "1.2"
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: fuse
+  
+  version: 2.8.0
 - 
   category: net-misc
   description: ""
@@ -54,19 +110,89 @@ requires:
   
   version: ""
 - 
-  category: sys-auth
+  category: dev-libs
   description: ""
   license: ""
-  name: polkit
+  name: libcdio-paranoia
   
-  version: "0.114"
+  version: 0.78.2
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgdata
+  
+  version: 0.17.9
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libgphoto2
+  
+  version: 2.5.0
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: udisks
+  
+  version: "1.97"
+- 
+  category: net-fs
+  description: ""
+  license: ""
+  name: samba
+  
+  version: "4"
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: libarchive
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: libsecret
+  
+  version: ""
+- 
+  category: net-fs
+  description: ""
+  license: ""
+  name: libnfs
+  
+  version: 1.9.8
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.57.2
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "206"
 - 
   category: net-libs
   description: ""
   license: ""
-  name: libsoup
+  name: gnome-online-accounts
   
-  version: 2.58.0
+  version: 3.17.1
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: ""
 - 
   category: net-dns
   description: ""
@@ -81,132 +207,6 @@ requires:
   name: libgudev
   
   version: "147"
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: libsecret
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libmtp
-  
-  version: 1.1.15
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: libarchive
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: "206"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libbluray
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnome-online-accounts
-  
-  version: 3.17.1
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgcrypt
-  
-  version: 1.2.2
-- 
-  category: app-pda
-  description: ""
-  license: ""
-  name: libplist
-  
-  version: "1"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libcdio
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libcdio-paranoia
-  
-  version: 0.78.2
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: 2.57.2
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libusb
-  
-  version: 1.0.21
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgdata
-  
-  version: 0.17.9
-- 
-  category: net-fs
-  description: ""
-  license: ""
-  name: libnfs
-  
-  version: 1.9.8
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libcap
-  
-  version: ""
-- 
-  category: app-pda
-  description: ""
-  license: ""
-  name: libimobiledevice
-  
-  version: "1.2"
 uri: []
 use_flags:
 - afp

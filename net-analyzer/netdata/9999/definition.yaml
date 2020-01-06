@@ -5,17 +5,10 @@ license: GPL-3+ MIT BSD
 name: netdata
 requires:
 - 
-  category: dev-python
+  category: sys-apps
   description: ""
   license: ""
-  name: pyyaml
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: psycopg
+  name: util-linux
   
   version: ""
 - 
@@ -23,6 +16,20 @@ requires:
   description: ""
   license: ""
   name: xen-tools
+  
+  version: ""
+- 
+  category: net-firewall
+  description: ""
+  license: ""
+  name: nfacct
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: protobuf
   
   version: ""
 - 
@@ -40,24 +47,10 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: zlib
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: freeipmi
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libcap
+  name: judy
   
   version: ""
 - 
@@ -68,31 +61,17 @@ requires:
   
   version: ""
 - 
-  category: app-misc
-  description: ""
-  license: ""
-  name: jq
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
-  
-  version: ""
-- 
-  category: net-print
-  description: ""
-  license: ""
-  name: cups
-  
-  version: ""
-- 
   category: net-libs
   description: ""
   license: ""
-  name: stem
+  name: libmnl
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pyyaml
   
   version: ""
 - 
@@ -103,6 +82,13 @@ requires:
   
   version: ""
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: mongo-c-driver
+  
+  version: ""
+- 
   category: acct-user
   description: ""
   license: ""
@@ -110,10 +96,17 @@ requires:
   
   version: ""
 - 
+  category: app-misc
+  description: ""
+  license: ""
+  name: jq
+  
+  version: ""
+- 
   category: net-misc
   description: ""
   license: ""
-  name: wget
+  name: curl
   
   version: ""
 - 
@@ -127,28 +120,35 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: judy
+  name: aws-sdk-cpp
   
   version: ""
 - 
-  category: net-firewall
+  category: app-arch
   description: ""
   license: ""
-  name: nfacct
+  name: snappy
   
   version: ""
 - 
-  category: net-libs
+  category: dev-python
   description: ""
   license: ""
-  name: libmnl
+  name: psycopg
   
   version: ""
 - 
-  category: net-libs
+  category: net-print
   description: ""
   license: ""
-  name: nodejs
+  name: cups
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: json-c
   
   version: ""
 - 
@@ -162,7 +162,28 @@ requires:
   category: net-misc
   description: ""
   license: ""
-  name: curl
+  name: wget
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: freeipmi
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: nodejs
   
   version: ""
 - 
@@ -170,6 +191,20 @@ requires:
   description: ""
   license: ""
   name: yajl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: stem
   
   version: ""
 uri: []
@@ -180,10 +215,14 @@ use_flags:
 - cups
 - +dbengine
 - ipmi
+- +jsonc
+- kinesis
+- mongodb
 - mysql
 - nfacct
 - nodejs
 - postgres
+- prometheus
 - +python
 - tor
 - xen

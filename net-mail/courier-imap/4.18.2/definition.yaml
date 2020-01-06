@@ -1,6 +1,13 @@
 category: net-mail
 conflicts:
 - 
+  category: net-mail
+  description: ""
+  license: ""
+  name: bincimap
+  
+  version: ""
+- 
   category: mail-mta
   description: ""
   license: ""
@@ -21,13 +28,6 @@ conflicts:
   name: cyrus-imapd
   
   version: ""
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: bincimap
-  
-  version: ""
 description: An IMAP daemon designed specifically for maildirs
 license: GPL-3
 name: courier-imap
@@ -36,9 +36,16 @@ requires:
   category: net-libs
   description: ""
   license: ""
-  name: courier-authlib
+  name: gnutls
   
-  version: 0.66.4
+  version: ""
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: mailbase
+  
+  version: 0.00-r8
 - 
   category: virtual
   description: ""
@@ -47,10 +54,10 @@ requires:
   
   version: ""
 - 
-  category: net-libs
+  category: sec-policy
   description: ""
   license: ""
-  name: gnutls
+  name: selinux-courier
   
   version: ""
 - 
@@ -61,19 +68,12 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: net-libs
   description: ""
   license: ""
-  name: db
+  name: courier-authlib
   
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: ""
+  version: 0.66.4
 - 
   category: net-libs
   description: ""
@@ -82,13 +82,6 @@ requires:
   
   version: "2"
 - 
-  category: net-mail
-  description: ""
-  license: ""
-  name: mailbase
-  
-  version: 0.00-r8
-- 
   category: sys-libs
   description: ""
   license: ""
@@ -96,10 +89,17 @@ requires:
   
   version: 1.8.0
 - 
-  category: sec-policy
+  category: dev-libs
   description: ""
   license: ""
-  name: selinux-courier
+  name: openssl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: db
   
   version: ""
 uri:

@@ -5,31 +5,17 @@ license: '|| ( GPL-2 GPL-3 Transmission-OpenSSL-exception ) GPL-2 MIT'
 name: transmission
 requires:
 - 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtgui
-  
-  version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: curl
-  
-  version: 7.16.3
-- 
   category: dev-libs
   description: ""
   license: ""
-  name: dbus-glib
+  name: libevent
   
-  version: "0.100"
+  version: 2.0.10
 - 
-  category: dev-libs
+  category: net-libs
   description: ""
   license: ""
-  name: libressl
+  name: mbedtls
   
   version: ""
 - 
@@ -40,20 +26,6 @@ requires:
   
   version: "1.7"
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libintl
-  
-  version: ""
-- 
   category: x11-libs
   description: ""
   license: ""
@@ -61,26 +33,26 @@ requires:
   
   version: "3.4"
 - 
-  category: dev-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: libevent
+  name: systemd
   
-  version: 2.0.10
+  version: "209"
 - 
-  category: dev-libs
+  category: net-libs
   description: ""
   license: ""
-  name: openssl
+  name: libnatpmp
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libb64
+  name: dbus-glib
   
-  version: ""
+  version: "0.100"
 - 
   category: dev-libs
   description: ""
@@ -106,7 +78,35 @@ requires:
   category: dev-qt
   description: ""
   license: ""
-  name: qtwidgets
+  name: qtgui
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: transmission
+  
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: transmission
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libb64
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
   
   version: ""
 - 
@@ -124,38 +124,38 @@ requires:
   
   version: ""
 - 
-  category: net-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: mbedtls
+  name: libressl
   
   version: ""
 - 
-  category: net-libs
+  category: net-misc
   description: ""
   license: ""
-  name: libnatpmp
+  name: curl
+  
+  version: 7.16.3
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
   
   version: ""
 - 
-  category: acct-user
+  category: virtual
   description: ""
   license: ""
-  name: transmission
+  name: libintl
   
   version: ""
 - 
-  category: sys-apps
+  category: dev-qt
   description: ""
   license: ""
-  name: systemd
-  
-  version: "209"
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: transmission
+  name: qtwidgets
   
   version: ""
 uri: []

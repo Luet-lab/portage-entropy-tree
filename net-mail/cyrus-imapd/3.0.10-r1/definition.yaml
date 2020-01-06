@@ -4,21 +4,7 @@ conflicts:
   category: net-mail
   description: ""
   license: ""
-  name: bincimap
-  
-  version: ""
-- 
-  category: net-mail
-  description: ""
-  license: ""
   name: uw-imap
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: dump
   
   version: ""
 - 
@@ -29,10 +15,10 @@ conflicts:
   
   version: ""
 - 
-  category: net-nntp
+  category: app-arch
   description: ""
   license: ""
-  name: leafnode
+  name: dump
   
   version: ""
 - 
@@ -40,6 +26,20 @@ conflicts:
   description: ""
   license: ""
   name: courier
+  
+  version: ""
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: bincimap
+  
+  version: ""
+- 
+  category: net-nntp
+  description: ""
+  license: ""
+  name: leafnode
   
   version: ""
 description: The Cyrus IMAP Server
@@ -50,105 +50,7 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: cyrus-sasl
-  
-  version: 2.1.13
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: lmdb
-  
-  version: ""
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: mailbase
-  
-  version: "1"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
   name: jansson
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: ""
-- 
-  category: net-analyzer
-  description: ""
-  license: ""
-  name: net-snmp
-  
-  version: 5.2.2-r1
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: xapian
-  
-  version: 1.4.0
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libcap
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: postgresql
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libical
-  
-  version: ""
-- 
-  category: net-analyzer
-  description: ""
-  license: ""
-  name: net-snmp
-  
-  version: ""
-- 
-  category: net-fs
-  description: ""
-  license: ""
-  name: openafs
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
   
   version: ""
 - 
@@ -159,10 +61,10 @@ requires:
   
   version: ""
 - 
-  category: dev-lang
+  category: net-nds
   description: ""
   license: ""
-  name: perl
+  name: openldap
   
   version: ""
 - 
@@ -176,30 +78,16 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libpcre
+  name: xapian
   
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
-  
-  version: ""
+  version: 1.4.0
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: icu
+  name: cyrus-sasl
   
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: e2fsprogs-libs
-  
-  version: ""
+  version: 2.1.13
 - 
   category: app-antivirus
   description: ""
@@ -215,12 +103,124 @@ requires:
   
   version: ""
 - 
+  category: net-mail
+  description: ""
+  license: ""
+  name: mailbase
+  
+  version: "1"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: icu
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: e2fsprogs-libs
+  
+  version: ""
+- 
   category: dev-libs
   description: ""
   license: ""
   name: openssl
   
   version: 1.0.1e
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libical
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: perl
+  
+  version: ""
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: net-snmp
+  
+  version: 5.2.2-r1
+- 
+  category: net-fs
+  description: ""
+  license: ""
+  name: openafs
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: net-snmp
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: postgresql
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: lmdb
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpcre
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
 uri:
 - https://github.com/cyrusimap/cyrus-imapd/releases/download/cyrus-imapd-3.0.10/cyrus-imapd-3.0.10.tar.gz
 use_flags:
