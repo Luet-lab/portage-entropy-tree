@@ -5,48 +5,6 @@ license: MIT CC-BY-SA-3.0
 name: weston
 requires:
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus
-  
-  version: "1.6"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: wayland
-  
-  version: 1.12.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libpng
-  
-  version: ""
-- 
-  category: x11-misc
-  description: ""
-  license: ""
-  name: colord
-  
-  version: 0.1.27
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: cairo
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: wayland-protocols
-  
-  version: "1.8"
-- 
   category: x11-misc
   description: ""
   license: ""
@@ -54,19 +12,12 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
+  category: virtual
   description: ""
   license: ""
-  name: pango
+  name: udev
   
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxcb
-  
-  version: "1.9"
+  version: "136"
 - 
   category: x11-libs
   description: ""
@@ -74,20 +25,6 @@ requires:
   name: libX11
   
   version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libwebp
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pixman
-  
-  version: 0.25.2
 - 
   category: x11-libs
   description: ""
@@ -99,30 +36,30 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: lcms
+  name: libpng
   
   version: ""
 - 
-  category: sys-apps
+  category: sys-libs
   description: ""
   license: ""
-  name: systemd
+  name: mtdev
   
-  version: "209"
+  version: 1.1.0
 - 
-  category: net-misc
+  category: x11-misc
   description: ""
   license: ""
-  name: freerdp-1.1.0_beta1_p20130710
+  name: colord
+  
+  version: 0.1.27
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jpeg
   
   version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libdrm
-  
-  version: 2.4.30
 - 
   category: x11-libs
   description: ""
@@ -131,33 +68,19 @@ requires:
   
   version: 0.5.0
 - 
-  category: virtual
+  category: x11-libs
   description: ""
   license: ""
-  name: udev
+  name: pixman
   
-  version: "136"
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: pambase
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libinput
-  
-  version: 0.8.0
+  version: 0.25.2
 - 
   category: x11-libs
   description: ""
   license: ""
   name: cairo
   
-  version: 1.11.3
+  version: ""
 - 
   category: sys-libs
   description: ""
@@ -169,9 +92,37 @@ requires:
   category: media-libs
   description: ""
   license: ""
+  name: lcms
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo
+  
+  version: 1.11.3
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: "1.6"
+- 
+  category: media-libs
+  description: ""
+  license: ""
   name: mesa
   
   version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "209"
 - 
   category: x11-base
   description: ""
@@ -180,19 +131,68 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: dev-libs
   description: ""
   license: ""
-  name: jpeg
+  name: libinput
+  
+  version: 0.8.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: wayland
+  
+  version: 1.12.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libwebp
   
   version: ""
 - 
-  category: sys-libs
+  category: sys-auth
   description: ""
   license: ""
-  name: mtdev
+  name: pambase
   
-  version: 1.1.0
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: wayland-protocols
+  
+  version: "1.8"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libdrm
+  
+  version: 2.4.30
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pango
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: freerdp-1.1.0_beta1_p20130710
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxcb
+  
+  version: "1.9"
 uri:
 - https://wayland.freedesktop.org/releases/weston-3.0.0.tar.xz
 use_flags:

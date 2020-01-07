@@ -4,6 +4,13 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
+  name: courier
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
   name: exim
   
   version: ""
@@ -11,14 +18,14 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: netqmail
+mailer
   
   version: ""
 - 
   category: mail-mta
   description: ""
   license: ""
-mailer
+  name: mini-qmail
   
   version: ""
 - 
@@ -46,30 +53,9 @@ mailer
   category: mail-mta
   description: ""
   license: ""
-  name: courier
-  
-  version: ""
-- 
-  category: <mail-mta
-  description: ""
-  license: ""
-  name: ssmtp
-  
-  version: 2.64-r2
-- 
-  category: mail-mta
-  description: ""
-  license: ""
   name: opensmtpd
   
   version: ""
-- 
-  category: '>=mail-mta'
-  description: ""
-  license: ""
-  name: ssmtp
-  
-  version: 2.64-r2
 - 
   category: mail-mta
   description: ""
@@ -81,9 +67,23 @@ mailer
   category: mail-mta
   description: ""
   license: ""
-  name: mini-qmail
+  name: netqmail
   
   version: ""
+- 
+  category: <mail-mta
+  description: ""
+  license: ""
+  name: ssmtp
+  
+  version: 2.64-r2
+- 
+  category: '>=mail-mta'
+  description: ""
+  license: ""
+  name: ssmtp
+  
+  version: 2.64-r2
 description: An SMTP client and SMTP plugin for mail user agents such as Mutt
 license: GPL-3
 name: msmtp
@@ -93,41 +93,6 @@ requires:
   description: ""
   license: ""
   name: gsasl
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnutls[idn?]
-  
-  version: ""
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: mailbase
-  
-  version: ""
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: libidn2
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: msmtpd
-  
-  version: ""
-- 
-  category: acct-user
-  description: ""
-  license: ""
-  name: msmtpd
   
   version: ""
 - 
@@ -142,6 +107,41 @@ requires:
   description: ""
   license: ""
   name: libintl
+  
+  version: ""
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: libidn2
+  
+  version: ""
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: mailbase
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls[idn?]
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: msmtpd
+  
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: msmtpd
   
   version: ""
 uri:

@@ -1,17 +1,17 @@
 category: net-vpn
 conflicts:
 - 
-  category: net-misc
-  description: ""
-  license: ""
-  name: openswan
-  
-  version: ""
-- 
   category: net-vpn
   description: ""
   license: ""
   name: libreswan
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: openswan
   
   version: ""
 description: IPsec-based VPN solution, supporting IKEv1/IKEv2 and MOBIKE
@@ -19,45 +19,24 @@ license: GPL-2 RSA DES
 name: strongswan
 requires:
 - 
-  category: virtual
+  category: net-misc
   description: ""
   license: ""
-  name: logger
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgcrypt
+  name: networkmanager
   
   version: ""
 - 
   category: sys-libs
   description: ""
   license: ""
-  name: libcap
+  name: pam
   
   version: ""
 - 
-  category: dev-db
+  category: net-libs
   description: ""
   license: ""
-  name: mysql-connector-c
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-ipsec
+  name: ldns
   
   version: ""
 - 
@@ -68,12 +47,19 @@ requires:
   
   version: 4.1.5
 - 
-  category: net-misc
+  category: dev-db
   description: ""
   license: ""
-  name: curl
+  name: mysql-connector-c
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 0.9.8
 - 
   category: dev-db
   description: ""
@@ -82,10 +68,52 @@ requires:
   
   version: 3.3.1
 - 
+  category: net-dns
+  description: ""
+  license: ""
+  name: unbound
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: logger
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: iproute2
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-ipsec
+  
+  version: ""
+- 
   category: sys-libs
   description: ""
   license: ""
-  name: pam
+  name: libcap
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
   
   version: ""
 - 
@@ -99,35 +127,7 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: openssl
-  
-  version: 0.9.8
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: networkmanager
-  
-  version: ""
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: unbound
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: ldns
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: iproute2
+  name: libgcrypt
   
   version: ""
 uri:

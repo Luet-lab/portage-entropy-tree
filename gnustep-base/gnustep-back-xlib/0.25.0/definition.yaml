@@ -4,14 +4,14 @@ conflicts:
   category: gnustep-base
   description: ""
   license: ""
-  name: gnustep-back-art
+  name: gnustep-back-cairo
   
   version: ""
 - 
   category: gnustep-base
   description: ""
   license: ""
-  name: gnustep-back-cairo
+  name: gnustep-back-art
   
   version: ""
 description: Default X11 back-end component for the GNUstep GUI Library
@@ -19,10 +19,24 @@ license: LGPL-2.1
 name: gnustep-back-xlib
 requires:
 - 
+  category: gnustep-base
+  description: ""
+  license: ""
+  name: gnustep-gui
+  
+  version: "0.25"
+- 
   category: x11-libs
   description: ""
   license: ""
-  name: libXt
+  name: libXft
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libSM
   
   version: ""
 - 
@@ -33,26 +47,19 @@ requires:
   
   version: ""
 - 
+  category: virtual
+  description: ""
+  license: ""
+  name: glu
+  
+  version: ""
+- 
   category: x11-libs
   description: ""
   license: ""
   name: libICE
   
   version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXi
-  
-  version: ""
-- 
-  category: gnustep-base
-  description: ""
-  license: ""
-  name: gnustep-gui
-  
-  version: "0.25"
 - 
   category: x11-libs
   description: ""
@@ -68,13 +75,6 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXft
-  
-  version: ""
-- 
   category: media-libs
   description: ""
   license: ""
@@ -82,10 +82,10 @@ requires:
   
   version: 2.1.9
 - 
-  category: x11-libs
+  category: virtual
   description: ""
   license: ""
-  name: libSM
+  name: opengl
   
   version: ""
 - 
@@ -96,17 +96,17 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: x11-libs
   description: ""
   license: ""
-  name: opengl
+  name: libXi
   
   version: ""
 - 
-  category: virtual
+  category: x11-libs
   description: ""
   license: ""
-  name: glu
+  name: libXt
   
   version: ""
 uri:

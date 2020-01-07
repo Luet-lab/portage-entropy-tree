@@ -5,24 +5,52 @@ license: GPL-2
 name: ardour
 requires:
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.10.1
+- 
   category: media-libs
   description: ""
   license: ""
-  name: libart_lgpl
+  name: alsa-lib
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: liblo
+  name: aubio
   
   version: ""
 - 
-  category: sys-libs
+  category: media-libs
   description: ""
   license: ""
-  name: readline
+  name: libsamplerate
+  
+  version: "0.1"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libusb
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libsigc++
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: vamp-plugin-sdk
   
   version: ""
 - 
@@ -33,26 +61,19 @@ requires:
   
   version: ""
 - 
-  category: media-libs
+  category: net-misc
   description: ""
   license: ""
-  name: sratom
+  name: curl
   
   version: ""
-- 
-  category: dev-cpp
-  description: ""
-  license: ""
-  name: libgnomecanvasmm
-  
-  version: "2.26"
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: glib
+  name: boost
   
-  version: 2.10.1
+  version: ""
 - 
   category: media-libs
   description: ""
@@ -64,28 +85,21 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: freetype
+  name: taglib
   
-  version: ""
+  version: "1.7"
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libsamplerate
+  name: sratom
   
-  version: "0.1"
+  version: ""
 - 
-  category: x11-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: gtk+
-  
-  version: 2.8.1
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: fftw
+  name: sord
   
   version: ""
 - 
@@ -99,30 +113,9 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: boost
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
   name: libxml2
   
   version: "2.6"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: taglib
-  
-  version: "1.7"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libusb
-  
-  version: ""
 - 
   category: media-libs
   description: ""
@@ -134,9 +127,30 @@ requires:
   category: dev-cpp
   description: ""
   license: ""
-  name: glibmm
+  name: gtkmm
   
-  version: 2.32.0
+  version: "2.16"
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: libgnomecanvas
+  
+  version: "2"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: liblo
+  
+  version: ""
 - 
   category: media-libs
   description: ""
@@ -152,82 +166,12 @@ requires:
   
   version: 1.0.18
 - 
-  category: dev-cpp
-  description: ""
-  license: ""
-  name: gtkmm
-  
-  version: "2.16"
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: curl
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jack
-  
-  version: ""
-- 
   category: media-libs
   description: ""
   license: ""
-  name: vamp-plugin-sdk
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pango
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: sord
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libsigc++
-  
-  version: ""
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: libgnomecanvas
-  
-  version: "2"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: aubio
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: rubberband
+  name: libsoundtouch
   
   version: 1.6.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: lilv
-  
-  version: ""
 - 
   category: dev-libs
   description: ""
@@ -239,9 +183,9 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libsoundtouch
+  name: libart_lgpl
   
-  version: 1.6.0
+  version: ""
 - 
   category: media-libs
   description: ""
@@ -253,7 +197,63 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: alsa-lib
+  name: rubberband
+  
+  version: 1.6.0
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jack
+  
+  version: ""
+- 
+  category: dev-cpp
+  description: ""
+  license: ""
+  name: glibmm
+  
+  version: 2.32.0
+- 
+  category: dev-cpp
+  description: ""
+  license: ""
+  name: libgnomecanvasmm
+  
+  version: "2.26"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: fftw
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: 2.8.1
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pango
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: lilv
   
   version: ""
 uri: []

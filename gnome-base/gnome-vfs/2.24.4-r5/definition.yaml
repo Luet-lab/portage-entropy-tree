@@ -12,6 +12,13 @@ license: GPL-2 LGPL-2
 name: gnome-vfs
 requires:
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.34.3
+- 
   category: app-arch
   description: ""
   license: ""
@@ -19,12 +26,12 @@ requires:
   
   version: 1.0.6-r4
 - 
-  category: dev-libs
+  category: gnome-base
   description: ""
   license: ""
-  name: dbus-glib
+  name: gnome-mime-data
   
-  version: 0.100.2
+  version: ""
 - 
   category: sys-apps
   description: ""
@@ -33,12 +40,40 @@ requires:
   
   version: 2.2.52-r1
 - 
-  category: net-dns
+  category: sys-apps
   description: ""
   license: ""
-  name: avahi
+  name: attr
   
-  version: 0.6.31-r2
+  version: 2.4.47-r1
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: 2.12.23-r6
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 1.0.1h-r2
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gconf
+  
+  version: 2.32.4-r1
+- 
+  category: net-fs
+  description: ""
+  license: ""
+  name: samba
+  
+  version: 3.6.23-r1
 - 
   category: dev-libs
   description: ""
@@ -57,44 +92,16 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: openssl
-  
-  version: 1.0.1h-r2
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gconf
-  
-  version: 2.32.4-r1
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gnome-mime-data
+  name: libressl
   
   version: ""
 - 
-  category: sys-apps
+  category: net-dns
   description: ""
   license: ""
-  name: attr
+  name: avahi
   
-  version: 2.4.47-r1
-- 
-  category: net-fs
-  description: ""
-  license: ""
-  name: samba
-  
-  version: 3.6.23-r1
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: 2.34.3
+  version: 0.6.31-r2
 - 
   category: x11-misc
   description: ""
@@ -103,19 +110,12 @@ requires:
   
   version: "0.14"
 - 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnutls
-  
-  version: 2.12.23-r6
-- 
   category: dev-libs
   description: ""
   license: ""
-  name: libressl
+  name: dbus-glib
   
-  version: ""
+  version: 0.100.2
 uri: []
 use_flags:
 - acl

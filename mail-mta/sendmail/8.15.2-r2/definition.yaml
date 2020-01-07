@@ -1,59 +1,10 @@
 category: mail-mta
 conflicts:
 - 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: courier
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: exim
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: netqmail
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: opensmtpd
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: mini-qmail
-  
-  version: ""
-- 
   category: net-mail
   description: ""
   license: ""
   name: vacation
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-mailer
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: qmail-ldap
   
   version: ""
 - 
@@ -67,6 +18,34 @@ mailer
   category: mail-mta
   description: ""
   license: ""
+  name: postfix
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: opensmtpd
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: qmail-ldap
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: courier
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
   name: msmtp
   
   version: ""
@@ -74,7 +53,21 @@ mailer
   category: mail-mta
   description: ""
   license: ""
-  name: postfix
+mailer
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: mini-qmail
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: netqmail
   
   version: ""
 - 
@@ -84,6 +77,13 @@ mailer
   name: ssmtp
   
   version: 2.64-r2
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: exim
+  
+  version: ""
 - 
   category: '>=mail-mta'
   description: ""
@@ -96,17 +96,17 @@ license: Sendmail GPL-2
 name: sendmail
 requires:
 - 
-  category: sys-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: db
+  name: openssl
   
-  version: "3.2"
+  version: ""
 - 
-  category: sys-apps
+  category: dev-libs
   description: ""
   license: ""
-  name: tcp-wrappers
+  name: libressl
   
   version: ""
 - 
@@ -131,12 +131,19 @@ requires:
   
   version: ""
 - 
-  category: net-nds
+  category: sys-apps
   description: ""
   license: ""
-  name: openldap
+  name: tcp-wrappers
   
   version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: db
+  
+  version: "3.2"
 - 
   category: dev-libs
   description: ""
@@ -145,17 +152,10 @@ requires:
   
   version: 2.1.10
 - 
-  category: dev-libs
+  category: net-nds
   description: ""
   license: ""
-  name: openssl
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
+  name: openldap
   
   version: ""
 uri:

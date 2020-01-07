@@ -1,6 +1,13 @@
 category: sys-fs
 conflicts:
 - 
+  category: <sys-apps
+  description: ""
+  license: ""
+  name: openrc
+  
+  version: "0.11"
+- 
   category: '!sys-fs'
   description: ""
   license: ""
@@ -14,17 +21,24 @@ conflicts:
   name: cryptsetup
   
   version: 1.1.2
-- 
-  category: <sys-apps
-  description: ""
-  license: ""
-  name: openrc
-  
-  version: "0.11"
 description: User-land utilities for LVM2 (device-mapper) software
 license: GPL-2
 name: lvm2
 requires:
+- 
+  category: sys-block
+  description: ""
+  license: ""
+  name: thin-provisioning-tools
+  
+  version: 0.3.0
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: baselayout
+  
+  version: "2.2"
 - 
   category: sys-apps
   description: ""
@@ -40,13 +54,6 @@ requires:
   
   version: ""
 - 
-  category: sys-block
-  description: ""
-  license: ""
-  name: thin-provisioning-tools
-  
-  version: 0.3.0
-- 
   category: sys-libs
   description: ""
   license: ""
@@ -60,13 +67,6 @@ requires:
   name: libudev
   
   version: "208"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: baselayout
-  
-  version: "2.2"
 uri: []
 use_flags:
 - readline

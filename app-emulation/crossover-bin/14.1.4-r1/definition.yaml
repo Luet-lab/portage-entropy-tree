@@ -19,10 +19,10 @@ license: CROSSOVER-2
 name: crossover-bin
 requires:
 - 
-  category: sys-libs
+  category: media-sound
   description: ""
   license: ""
-  name: glibc
+  name: gsm[abi_x86_32(-)]
   
   version: ""
 - 
@@ -33,45 +33,10 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib[abi_x86_32(-)]
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: alsa-lib[abi_x86_32(-)]
-  
-  version: ""
-- 
   category: x11-libs
   description: ""
   license: ""
-  name: libXext[abi_x86_32(-)]
-  
-  version: ""
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: perl
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: unzip
-  
-  version: ""
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: mpg123-1.5.0[abi_x86_32(-)]
+  name: libXdmcp[abi_x86_32(-)]
   
   version: ""
 - 
@@ -82,17 +47,17 @@ requires:
   
   version: ""
 - 
-  category: media-gfx
-  description: ""
-  license: ""
-  name: sane-backends[abi_x86_32(-)]
-  
-  version: ""
-- 
   category: media-libs
   description: ""
   license: ""
-  name: freetype-2.0.0[abi_x86_32(-)]
+  name: mesa[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXi[abi_x86_32(-)]
   
   version: ""
 - 
@@ -103,24 +68,10 @@ requires:
   
   version: ""
 - 
-  category: dev-python
+  category: sys-libs
   description: ""
   license: ""
-  name: dbus-python
-  
-  version: ""
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: desktop-file-utils
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux[abi_x86_32(-)]
+  name: glibc
   
   version: ""
 - 
@@ -138,38 +89,24 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: dev-libs
   description: ""
   license: ""
-  name: jpeg[abi_x86_32(-)]
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: glu[abi_x86_32(-)]
+  name: openssl
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libpng
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: mesa[abi_x86_32(-)]
+  name: alsa-lib[abi_x86_32(-)]
   
   version: ""
 - 
   category: sys-libs
   description: ""
   license: ""
-  name: ncurses-compat
+  name: zlib[abi_x86_32(-)]
   
   version: ""
 - 
@@ -179,27 +116,6 @@ requires:
   name: pygtk
   
   version: "2.10"
-- 
-  category: net-print
-  description: ""
-  license: ""
-  name: cups[abi_x86_32(-)]
-  
-  version: ""
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: gsm[abi_x86_32(-)]
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libICE[abi_x86_32(-)]
-  
-  version: ""
 - 
   category: x11-libs
   description: ""
@@ -215,6 +131,34 @@ requires:
   
   version: ""
 - 
+  category: media-sound
+  description: ""
+  license: ""
+  name: mpg123-1.5.0[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: media-gfx
+  description: ""
+  license: ""
+  name: sane-backends[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXext[abi_x86_32(-)]
+  
+  version: ""
+- 
   category: x11-libs
   description: ""
   license: ""
@@ -222,10 +166,52 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
+  category: dev-lang
   description: ""
   license: ""
-  name: libXi[abi_x86_32(-)]
+  name: perl
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: unzip
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: desktop-file-utils
+  
+  version: ""
+- 
+  category: net-print
+  description: ""
+  license: ""
+  name: cups[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libpng
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype-2.0.0[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: dbus-python
   
   version: ""
 - 
@@ -239,14 +225,49 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libgphoto2[abi_x86_32(-)]
+  name: openal[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: glu[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses-compat
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXdmcp[abi_x86_32(-)]
+  name: libICE[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jpeg[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libgphoto2[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libv4l[abi_x86_32(-)]
   
   version: ""
 - 
@@ -261,27 +282,6 @@ requires:
   description: ""
   license: ""
   name: libXrandr[abi_x86_32(-)]
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: openal[abi_x86_32(-)]
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libv4l[abi_x86_32(-)]
   
   version: ""
 uri: []

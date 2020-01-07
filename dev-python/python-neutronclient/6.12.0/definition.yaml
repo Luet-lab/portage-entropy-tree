@@ -4,9 +4,9 @@ conflicts:
   category: ~dev-python
   description: ""
   license: ""
-  name: oslo-serialization
+  name: pbr
   
-  version: 2.19.1
+  version: 2.1.0
 - 
   category: ~dev-python
   description: ""
@@ -18,20 +18,41 @@ conflicts:
   category: ~dev-python
   description: ""
   license: ""
-  name: cliff
+  name: oslo-serialization
   
-  version: 2.9.0
+  version: 2.19.1
 - 
   category: ~dev-python
   description: ""
   license: ""
-  name: pbr
+  name: cliff
   
-  version: 2.1.0
+  version: 2.9.0
 description: A client for the OpenStack Quantum API
 license: Apache-2.0
 name: python-neutronclient
 requires:
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: osc-lib
+  
+  version: 1.8.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: oslo-utils
+  
+  version: 3.33.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: os-client-config
+  
+  version: 1.28.0
 - 
   category: dev-python
   description: ""
@@ -50,16 +71,9 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: requests
+  name: simplejson
   
-  version: 2.14.2
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pbr
-  
-  version: 2.0.0
+  version: 3.5.1
 - 
   category: dev-python
   description: ""
@@ -71,37 +85,16 @@ requires:
   category: dev-python
   description: ""
   license: ""
+  name: debtcollector
+  
+  version: 1.2.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
   name: iso8601
   
   version: 0.1.11
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: oslo-log
-  
-  version: 3.36.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: oslo-utils
-  
-  version: 3.33.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: simplejson
-  
-  version: 3.5.1
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: six
-  
-  version: 1.10.0
 - 
   category: dev-python
   description: ""
@@ -113,16 +106,23 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: Babel
+  name: oslo-serialization
   
-  version: 2.3.4
+  version: 1.18.0
 - 
   category: dev-python
   description: ""
   license: ""
-  name: debtcollector
+  name: pbr
   
-  version: 1.2.0
+  version: 2.0.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: requests
+  
+  version: 2.14.2
 - 
   category: dev-python
   description: ""
@@ -134,23 +134,23 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: oslo-serialization
+  name: oslo-log
   
-  version: 1.18.0
+  version: 3.36.0
 - 
   category: dev-python
   description: ""
   license: ""
-  name: os-client-config
+  name: six
   
-  version: 1.28.0
+  version: 1.10.0
 - 
   category: dev-python
   description: ""
   license: ""
-  name: osc-lib
+  name: Babel
   
-  version: 1.8.0
+  version: 2.3.4
 uri:
 - mirror://pypi/p/python-neutronclient/python-neutronclient-6.12.0.tar.gz
 use_flags:

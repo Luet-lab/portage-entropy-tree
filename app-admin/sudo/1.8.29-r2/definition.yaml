@@ -5,41 +5,6 @@ license: ISC BSD
 name: sudo
 requires:
 - 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-sudo
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: editor
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgcrypt
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
-  
-  version: ""
-- 
   category: app-misc
   description: ""
   license: ""
@@ -47,31 +12,24 @@ requires:
   
   version: "3"
 - 
-  category: sys-auth
+  category: sec-policy
   description: ""
   license: ""
-  name: pambase
+  name: selinux-sudo
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: cyrus-sasl
-  
-  version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: skey
-  
-  version: 1.1.5-r1
 - 
   category: net-nds
   description: ""
   license: ""
   name: openldap
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: sssd
   
   version: ""
 - 
@@ -85,7 +43,14 @@ requires:
   category: sys-auth
   description: ""
   license: ""
-  name: sssd
+  name: skey
+  
+  version: 1.1.5-r1
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: editor
   
   version: ""
 - 
@@ -93,6 +58,13 @@ requires:
   description: ""
   license: ""
   name: perl
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: pambase
   
   version: ""
 - 
@@ -110,12 +82,40 @@ requires:
   
   version: ""
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: cyrus-sasl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
   category: net-nds
   description: ""
   license: ""
   name: openldap
   
   version: 2.1.30-r1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgcrypt
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
 uri:
 - https://www.sudo.ws/sudo/dist/sudo-1.8.29.tar.gz
 - ftp://ftp.sudo.ws/pub/sudo/sudo-1.8.29.tar.gz

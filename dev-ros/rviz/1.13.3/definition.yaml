@@ -5,10 +5,10 @@ license: BSD
 name: rviz
 requires:
 - 
-  category: dev-ros
+  category: dev-libs
   description: ""
   license: ""
-  name: message_filters
+  name: console_bridge
   
   version: ""
 - 
@@ -22,112 +22,7 @@ requires:
   category: dev-ros
   description: ""
   license: ""
-  name: map_msgs
-  
-  version: ""
-- 
-  category: dev-ros
-  description: ""
-  license: ""
-  name: std_srvs
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: urdfdom
-  
-  version: ""
-- 
-  category: dev-ros
-  description: ""
-  license: ""
-  name: interactive_markers
-  
-  version: ""
-- 
-  category: dev-ros
-  description: ""
-  license: ""
-  name: laser_geometry
-  
-  version: ""
-- 
-  category: dev-ros
-  description: ""
-  license: ""
-  name: resource_retriever
-  
-  version: ""
-- 
-  category: dev-ros
-  description: ""
-  license: ""
-  name: media_export
-  
-  version: ""
-- 
-  category: dev-ros
-  description: ""
-  license: ""
-  name: visualization_msgs
-  
-  version: ""
-- 
-  category: dev-cpp
-  description: ""
-  license: ""
-  name: eigen
-  
-  version: ""
-- 
-  category: dev-ros
-  description: ""
-  license: ""
-  name: image_geometry
-  
-  version: ""
-- 
-  category: dev-ros
-  description: ""
-  license: ""
-  name: pluginlib
-  
-  version: ""
-- 
-  category: dev-ros
-  description: ""
-  license: ""
-  name: rosbag
-  
-  version: ""
-- 
-  category: dev-ros
-  description: ""
-  license: ""
-  name: roslib
-  
-  version: ""
-- 
-  category: dev-ros
-  description: ""
-  license: ""
-  name: geometry_msgs
-  
-  version: ""
-- 
-  category: dev-ros
-  description: ""
-  license: ""
-  name: nav_msgs
-  
-  version: ""
-- 
-  category: dev-ros
-  description: ""
-  license: ""
-  name: std_msgs
+  name: urdf
   
   version: ""
 - 
@@ -141,28 +36,56 @@ requires:
   category: dev-qt
   description: ""
   license: ""
-  name: qtcore
+  name: qtopengl
   
   version: ""
 - 
   category: dev-ros
   description: ""
   license: ""
-  name: angles
+  name: laser_geometry
   
   version: ""
 - 
-  category: dev-libs
+  category: dev-ros
   description: ""
   license: ""
-  name: boost
+  name: media_export
   
   version: ""
 - 
-  category: dev-cpp
+  category: dev-ros
   description: ""
   license: ""
-  name: yaml-cpp
+  name: geometry_msgs
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: assimp
+  
+  version: ""
+- 
+  category: dev-ros
+  description: ""
+  license: ""
+  name: message_filters
+  
+  version: ""
+- 
+  category: dev-ros
+  description: ""
+  license: ""
+  name: pluginlib
+  
+  version: ""
+- 
+  category: dev-ros
+  description: ""
+  license: ""
+  name: roscpp
   
   version: ""
 - 
@@ -176,14 +99,63 @@ requires:
   category: dev-ros
   description: ""
   license: ""
-  name: urdf
+  name: visualization_msgs
   
   version: ""
 - 
-  category: media-libs
+  category: dev-games
   description: ""
   license: ""
-  name: assimp
+  name: ogre
+  
+  version: "1.10"
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtwidgets
+  
+  version: ""
+- 
+  category: dev-ros
+  description: ""
+  license: ""
+  name: image_geometry
+  
+  version: ""
+- 
+  category: dev-ros
+  description: ""
+  license: ""
+  name: interactive_markers
+  
+  version: ""
+- 
+  category: dev-ros
+  description: ""
+  license: ""
+  name: roslib
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtcore
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: urdfdom
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: tinyxml2
   
   version: ""
 - 
@@ -204,37 +176,30 @@ requires:
   category: dev-ros
   description: ""
   license: ""
-  name: roscpp
+  name: map_msgs
   
   version: ""
 - 
-  category: dev-qt
+  category: dev-ros
   description: ""
   license: ""
-  name: qtopengl
+  name: std_srvs
   
   version: ""
 - 
-  category: dev-libs
+  category: dev-ros
   description: ""
   license: ""
-  name: tinyxml2
+  name: rosbag
   
   version: ""
 - 
-  category: dev-libs
+  category: dev-ros
   description: ""
   license: ""
-  name: console_bridge
+  name: rosconsole
   
   version: ""
-- 
-  category: dev-games
-  description: ""
-  license: ""
-  name: ogre
-  
-  version: "1.10"
 - 
   category: dev-ros
   description: ""
@@ -243,17 +208,52 @@ requires:
   
   version: ""
 - 
-  category: dev-qt
+  category: dev-libs
   description: ""
   license: ""
-  name: qtwidgets
+  name: boost
+  
+  version: ""
+- 
+  category: dev-cpp
+  description: ""
+  license: ""
+  name: eigen
+  
+  version: ""
+- 
+  category: dev-cpp
+  description: ""
+  license: ""
+  name: yaml-cpp
   
   version: ""
 - 
   category: dev-ros
   description: ""
   license: ""
-  name: rosconsole
+  name: angles
+  
+  version: ""
+- 
+  category: dev-ros
+  description: ""
+  license: ""
+  name: resource_retriever
+  
+  version: ""
+- 
+  category: dev-ros
+  description: ""
+  license: ""
+  name: nav_msgs
+  
+  version: ""
+- 
+  category: dev-ros
+  description: ""
+  license: ""
+  name: std_msgs
   
   version: ""
 uri: []

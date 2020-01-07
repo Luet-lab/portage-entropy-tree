@@ -5,6 +5,34 @@ license: MIT
 name: wlroots
 requires:
 - 
+  category: media-libs
+  description: ""
+  license: ""
+  name: mesa
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "237"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libinput
+  
+  version: 1.9.0
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libdrm
+  
+  version: ""
+- 
   category: x11-base
   description: ""
   license: ""
@@ -15,16 +43,16 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libdrm
+  name: xcb-util-image
   
   version: ""
 - 
-  category: sys-auth
+  category: dev-libs
   description: ""
   license: ""
-  name: elogind
+  name: wayland
   
-  version: "237"
+  version: 1.17.0
 - 
   category: virtual
   description: ""
@@ -36,7 +64,7 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: xcb-util-image
+  name: xcb-util-wm
   
   version: ""
 - 
@@ -47,17 +75,10 @@ requires:
   
   version: ""
 - 
-  category: media-libs
+  category: media-video
   description: ""
   license: ""
-  name: mesa
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: xcb-util-wm
+  name: ffmpeg
   
   version: ""
 - 
@@ -75,10 +96,10 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: sys-auth
   description: ""
   license: ""
-  name: systemd
+  name: elogind
   
   version: "237"
 - 
@@ -88,27 +109,6 @@ requires:
   name: libxcb
   
   version: ""
-- 
-  category: media-video
-  description: ""
-  license: ""
-  name: ffmpeg
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libinput
-  
-  version: 1.9.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: wayland
-  
-  version: 1.17.0
 uri:
 - https://github.com/swaywm/wlroots/archive/0.6.0.tar.gz -> wlroots-0.6.0.tar.gz
 use_flags:

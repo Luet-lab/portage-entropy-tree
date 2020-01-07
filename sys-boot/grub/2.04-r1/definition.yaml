@@ -20,13 +20,6 @@ license: GPL-3+ BSD MIT fonts? ( GPL-2-with-font-exception ) themes? ( CC-BY-SA-
 name: grub
 requires:
 - 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: gettext
-  
-  version: ""
-- 
   category: media-libs
   description: ""
   license: ""
@@ -37,7 +30,14 @@ requires:
   category: sys-fs
   description: ""
   license: ""
-  name: fuse
+  name: lvm2
+  
+  version: 2.02.45
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: zfs
   
   version: ""
 - 
@@ -55,6 +55,20 @@ requires:
   
   version: ""
 - 
+  category: app-arch
+  description: ""
+  license: ""
+  name: xz-utils
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: fuse
+  
+  version: ""
+- 
   category: media-libs
   description: ""
   license: ""
@@ -69,10 +83,10 @@ requires:
   
   version: ""
 - 
-  category: app-arch
+  category: sys-devel
   description: ""
   license: ""
-  name: xz-utils
+  name: gettext
   
   version: ""
 - 
@@ -82,20 +96,6 @@ requires:
   name: ncurses
   
   version: 5.2-r5
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: lvm2
-  
-  version: 2.02.45
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: zfs
-  
-  version: ""
 uri:
 - 'mirror://gnu/grub/grub-2.04.tar.xz fonts? ( mirror://gnu/unifont/unifont-12.1.02/unifont-12.1.02.pcf.gz '
 - 'mirror://sourceforge/dejavu/dejavu-sans-ttf-2.37.zip '

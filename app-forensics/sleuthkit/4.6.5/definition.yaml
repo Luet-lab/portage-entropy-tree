@@ -5,10 +5,17 @@ license: BSD CPL-1.0 GPL-2+ IBM java? ( Apache-2.0 )
 name: sleuthkit
 requires:
 - 
-  category: dev-db
+  category: app-forensics
   description: ""
   license: ""
-  name: sqlite
+  name: afflib
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
   
   version: ""
 - 
@@ -19,19 +26,33 @@ requires:
   
   version: 0.9.5
 - 
-  category: virtual
-  description: ""
-  license: ""
-  name: jdk
-  
-  version: "1.8"
-- 
   category: dev-java
   description: ""
   license: ""
   name: jdbc-postgresql
   
   version: "9.4"
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: perl
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jdk
+  
+  version: "1.8"
 - 
   category: dev-db
   description: ""
@@ -46,27 +67,6 @@ requires:
   name: jre
   
   version: "1.8"
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: perl
-  
-  version: ""
-- 
-  category: app-forensics
-  description: ""
-  license: ""
-  name: afflib
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: ""
 uri:
 - https://github.com/sleuthkit/sleuthkit/releases/download/sleuthkit-4.6.5/sleuthkit-4.6.5.tar.gz
 - 'https://dev.gentoo.org/~gokturk/distfiles/app-forensics/libewf/libewf-20130128.tar.gz '

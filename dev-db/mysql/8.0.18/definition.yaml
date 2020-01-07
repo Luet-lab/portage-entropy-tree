@@ -11,7 +11,7 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mysql-cluster
+  name: mariadb-galera
   
   version: ""
 - 
@@ -25,7 +25,7 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mariadb-galera
+  name: mysql-cluster
   
   version: ""
 description: A fast, multi-threaded, multi-user SQL database server
@@ -36,35 +36,7 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: jemalloc
-  
-  version: ""
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: numactl
-  
-  version: ""
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: google-perftools
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
   name: icu
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libedit
   
   version: ""
 - 
@@ -75,6 +47,13 @@ requires:
   
   version: ""
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
   category: acct-group
   description: ""
   license: ""
@@ -82,10 +61,31 @@ requires:
   
   version: ""
 - 
-  category: dev-db
+  category: sec-policy
   description: ""
   license: ""
-  name: mysql-init-scripts
+  name: selinux-mysql
+  
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: mysql
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: protobuf
+  
+  version: "3.8"
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: mecab
   
   version: ""
 - 
@@ -93,20 +93,6 @@ requires:
   description: ""
   license: ""
   name: procps
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: 1.0.0
-- 
-  category: acct-user
-  description: ""
-  license: ""
-  name: mysql
   
   version: ""
 - 
@@ -120,37 +106,30 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libaio
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: mecab
+  name: libedit
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libressl
+  name: jemalloc
   
   version: ""
 - 
-  category: sec-policy
+  category: dev-db
   description: ""
   license: ""
-  name: selinux-mysql
+  name: mysql-init-scripts
   
   version: ""
 - 
-  category: dev-libs
+  category: dev-util
   description: ""
   license: ""
-  name: protobuf
+  name: google-perftools
   
-  version: "3.8"
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -165,6 +144,27 @@ requires:
   name: zlib
   
   version: 1.2.3
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libaio
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 1.0.0
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: numactl
+  
+  version: ""
 uri:
 - https://cdn.mysql.com/Downloads/MySQL-8.0/mysql-boost-8.0.18.tar.gz
 - https://cdn.mysql.com/archives/mysql-8.0/mysql-boost-8.0.18.tar.gz

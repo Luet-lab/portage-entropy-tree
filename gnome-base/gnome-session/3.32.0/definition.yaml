@@ -5,26 +5,12 @@ license: GPL-2+
 name: gnome-session
 requires:
 - 
-  category: media-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libepoxy
+  name: glib
   
-  version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: elogind
-  
-  version: "239.4"
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gsettings-desktop-schemas
-  
-  version: 0.1.7
+  version: 2.46.0
 - 
   category: x11-libs
   description: ""
@@ -40,6 +26,27 @@ requires:
   
   version: ""
 - 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gnome-desktop
+  
+  version: "3.18"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: mesa[egl,gles2,X(+)]
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libepoxy
+  
+  version: ""
+- 
   category: sys-apps
   description: ""
   license: ""
@@ -47,10 +54,17 @@ requires:
   
   version: ""
 - 
-  category: sys-auth
+  category: x11-misc
   description: ""
   license: ""
-  name: consolekit
+  name: xdg-user-dirs
+  
+  version: ""
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: xdg-user-dirs-gtk
   
   version: ""
 - 
@@ -60,55 +74,6 @@ requires:
   name: gtk+
   
   version: 3.18.0
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libICE
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: json-glib
-  
-  version: "0.10"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: mesa[egl,gles2,X(+)]
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXcomposite
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: dbus-glib
-  
-  version: "0.76"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: 2.46.0
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gnome-desktop
-  
-  version: "3.18"
 - 
   category: sys-apps
   description: ""
@@ -124,19 +89,54 @@ requires:
   
   version: 3.23.2
 - 
-  category: x11-misc
+  category: gnome-base
   description: ""
   license: ""
-  name: xdg-user-dirs
+  name: gsettings-desktop-schemas
+  
+  version: 0.1.7
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: dbus-glib
+  
+  version: "0.76"
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: consolekit
   
   version: ""
 - 
-  category: x11-misc
+  category: x11-libs
   description: ""
   license: ""
-  name: xdg-user-dirs-gtk
+  name: libICE
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: json-glib
+  
+  version: "0.10"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXcomposite
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: elogind
+  
+  version: "239.4"
 uri: []
 use_flags:
 - consolekit

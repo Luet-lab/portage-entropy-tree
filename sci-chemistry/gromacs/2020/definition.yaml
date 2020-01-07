@@ -13,13 +13,6 @@ license: LGPL-2.1 UoI-NCSA !mkl? ( !fftw? ( BSD ) !blas? ( BSD ) !lapack? ( BSD 
 name: gromacs
 requires:
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libICE
-  
-  version: ""
-- 
   category: virtual
   description: ""
   license: ""
@@ -27,10 +20,24 @@ requires:
   
   version: ""
 - 
-  category: sci-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: fftw
+  name: libX11
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libSM
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: blas
   
   version: ""
 - 
@@ -55,20 +62,6 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libSM
-  
-  version: ""
-- 
   category: sci-libs
   description: ""
   license: ""
@@ -83,10 +76,10 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: x11-libs
   description: ""
   license: ""
-  name: blas
+  name: libICE
   
   version: ""
 - 
@@ -96,6 +89,13 @@ requires:
   name: nvidia-cuda-toolkit
   
   version: 6.5.14
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: fftw
+  
+  version: ""
 uri:
 - ftp://ftp.gromacs.org/pub/gromacs/gromacs-2020.tar.gz
 - 'http://gerrit.gromacs.org/download/regressiontests-2020.tar.gz '

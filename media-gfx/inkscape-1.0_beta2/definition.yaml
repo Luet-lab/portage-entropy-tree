@@ -5,6 +5,13 @@ license: GPL-2 LGPL-2.1
 name: inkscape-1.0_beta2
 requires:
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxslt
+  
+  version: 1.1.25
+- 
   category: media-libs
   description: ""
   license: ""
@@ -15,42 +22,35 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: freetype
+  name: libvisio
   
   version: ""
 - 
-  category: media-libs
+  category: dev-python
   description: ""
   license: ""
-  name: libpng
+  name: numpy
   
   version: ""
 - 
-  category: app-text
+  category: app-office
   description: ""
   license: ""
-  name: libwpg
+  name: dia
   
   version: ""
-- 
-  category: dev-cpp
-  description: ""
-  license: ""
-  name: glibmm
-  
-  version: 2.54.1
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: boehm-gc
+  name: libsigc++
   
-  version: "7.1"
+  version: "2.8"
 - 
-  category: x11-libs
+  category: media-gfx
   description: ""
   license: ""
-  name: gtk+
+  name: potrace
   
   version: ""
 - 
@@ -64,7 +64,14 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libvisio
+  name: lcms
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: aspell
   
   version: ""
 - 
@@ -82,54 +89,19 @@ requires:
   
   version: "1.12"
 - 
-  category: dev-libs
+  category: sci-libs
   description: ""
   license: ""
-  name: dbus-glib
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libexif
+  name: gsl
   
   version: ""
 - 
   category: media-gfx
   description: ""
   license: ""
-  name: graphicsmagick
+  name: imagemagick
   
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: aspell
-  
-  version: ""
-- 
-  category: app-office
-  description: ""
-  license: ""
-  name: dia
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pango
-  
-  version: 1.37.2
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: librevenge
-  
-  version: ""
+  version: "7"
 - 
   category: dev-libs
   description: ""
@@ -138,45 +110,31 @@ requires:
   
   version: ""
 - 
-  category: app-text
+  category: net-libs
   description: ""
   license: ""
-  name: gtkspell
+  name: libsoup
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: lxml
+  
+  version: ""
+- 
+  category: media-gfx
+  description: ""
+  license: ""
+  name: scour
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libxml2
-  
-  version: 2.7.4
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libsigc++
-  
-  version: "2.8"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: popt
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: dev-cpp
-  description: ""
-  license: ""
-  name: gtkmm
+  name: librevenge
   
   version: ""
 - 
@@ -190,28 +148,42 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: double-conversion
+  name: glib
+  
+  version: "2.41"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libpng
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pango
+  
+  version: 1.37.2
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: dbus-glib
+  
+  version: ""
+- 
+  category: dev-cpp
+  description: ""
+  license: ""
+  name: gtkmm
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libxslt
-  
-  version: 1.1.25
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: lxml
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libsoup
+  name: popt
   
   version: ""
 - 
@@ -222,33 +194,54 @@ requires:
   
   version: ""
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: boehm-gc
+  
+  version: "7.1"
+- 
+  category: dev-cpp
+  description: ""
+  license: ""
+  name: glibmm
+  
+  version: 2.54.1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: double-conversion
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libexif
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: gtkspell
+  
+  version: ""
+- 
   category: app-text
   description: ""
   license: ""
   name: poppler
   
   version: 0.57.0
-- 
-  category: media-gfx
-  description: ""
-  license: ""
-  name: scour
-  
-  version: ""
-- 
-  category: media-gfx
-  description: ""
-  license: ""
-  name: imagemagick
-  
-  version: "7"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: lcms
-  
-  version: ""
 - 
   category: dev-libs
   description: ""
@@ -257,33 +250,40 @@ requires:
   
   version: ""
 - 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: libwpg
+  
+  version: ""
+- 
   category: media-gfx
   description: ""
   license: ""
-  name: potrace
-  
-  version: ""
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: gsl
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: numpy
+  name: graphicsmagick
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: glib
+  name: libxml2
   
-  version: "2.41"
+  version: 2.7.4
 uri:
 - https://inkscape.org/gallery/item/16197/inkscape-1.0beta2-_2019-12-03_2b71d25d45.tar.xz
 use_flags:

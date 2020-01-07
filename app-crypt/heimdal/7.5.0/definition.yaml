@@ -4,14 +4,14 @@ conflicts:
   category: '!app-crypt'
   description: ""
   license: ""
-  name: mit-krb5-appl
+  name: mit-krb5
   
   version: ""
 - 
   category: '!app-crypt'
   description: ""
   license: ""
-  name: mit-krb5
+  name: mit-krb5-appl
   
   version: ""
 description: Kerberos 5 implementation from KTH
@@ -22,30 +22,16 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: openssl
+  name: libressl
   
-  version: 1.0.1h-r2
+  version: ""
 - 
   category: sys-libs
   description: ""
   license: ""
-  name: db
+  name: gdbm
   
-  version: 4.8.30-r1
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
-  
-  version: 3.8.2
-- 
-  category: net-fs
-  description: ""
-  license: ""
-  name: openafs
-  
-  version: ""
+  version: 1.10-r1
 - 
   category: net-nds
   description: ""
@@ -61,26 +47,40 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: libressl
+  name: libXt
   
   version: ""
 - 
-  category: sec-policy
+  category: dev-libs
   description: ""
   license: ""
-  name: selinux-kerberos
+  name: openssl
   
-  version: ""
+  version: 1.0.1h-r2
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: 3.8.2
 - 
   category: sys-libs
   description: ""
   license: ""
-  name: gdbm
+  name: readline
   
-  version: 1.10-r1
+  version: 6.2_p5-r1
+- 
+  category: net-fs
+  description: ""
+  license: ""
+  name: openafs
+  
+  version: ""
 - 
   category: sys-libs
   description: ""
@@ -96,19 +96,19 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
+  category: sec-policy
   description: ""
   license: ""
-  name: libX11
+  name: selinux-kerberos
   
   version: ""
 - 
-  category: x11-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: libXt
+  name: db
   
-  version: ""
+  version: 4.8.30-r1
 - 
   category: sys-libs
   description: ""
@@ -117,12 +117,12 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: readline
+  name: libX11
   
-  version: 6.2_p5-r1
+  version: ""
 uri:
 - https://github.com/heimdal/heimdal/releases/download/heimdal-7.5.0/heimdal-7.5.0.tar.gz
 use_flags:

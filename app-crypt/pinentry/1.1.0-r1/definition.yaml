@@ -5,26 +5,40 @@ license: GPL-2
 name: pinentry
 requires:
 - 
-  category: dev-qt
+  category: x11-libs
   description: ""
   license: ""
-  name: qtwidgets
+  name: gtk+
   
   version: ""
 - 
-  category: app-eselect
+  category: sys-libs
   description: ""
   license: ""
-  name: eselect-pinentry
+  name: ncurses
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtgui
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gcr
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libgcrypt
+  name: libassuan
   
-  version: 1.6.3
+  version: "2.1"
 - 
   category: dev-libs
   description: ""
@@ -40,13 +54,6 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: ncurses
-  
-  version: ""
-- 
   category: dev-qt
   description: ""
   license: ""
@@ -54,31 +61,10 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libassuan
-  
-  version: "2.1"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libcap
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: ""
-- 
   category: dev-qt
   description: ""
   license: ""
-  name: qtgui
+  name: qtwidgets
   
   version: ""
 - 
@@ -89,10 +75,24 @@ requires:
   
   version: 5.7-r5
 - 
-  category: app-crypt
+  category: app-eselect
   description: ""
   license: ""
-  name: gcr
+  name: eselect-pinentry
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgcrypt
+  
+  version: 1.6.3
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
   
   version: ""
 uri:

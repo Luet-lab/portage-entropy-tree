@@ -4,6 +4,13 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
+  name: mini-qmail
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
   name: esmtp
   
   version: ""
@@ -18,14 +25,14 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: sendmail
+  name: opensmtpd[mta(+)]
   
   version: ""
 - 
   category: mail-mta
   description: ""
   license: ""
-  name: opensmtpd[mta(+)]
+  name: postfix
   
   version: ""
 - 
@@ -39,7 +46,14 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: mini-qmail
+  name: sendmail
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: courier
   
   version: ""
 - 
@@ -60,20 +74,6 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: postfix
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: courier
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
   name: ssmtp[mta(+)]
   
   version: ""
@@ -81,13 +81,6 @@ description: Simple relay-only local mail transport agent
 license: GPL-2
 mailer
 requires:
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: logger
-  
-  version: ""
 - 
   category: virtual
   description: ""
@@ -100,6 +93,13 @@ requires:
   description: ""
   license: ""
   name: gnutls
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: logger
   
   version: ""
 uri:

@@ -4,14 +4,14 @@ conflicts:
   category: sys-cluster
   description: ""
   license: ""
-  name: mpich
+mpi
   
   version: ""
 - 
   category: sys-cluster
   description: ""
   license: ""
-mpi
+  name: mpich
   
   version: ""
 - 
@@ -33,24 +33,24 @@ license: BSD
 name: openmpi
 requires:
 - 
-  category: dev-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: libltdl
+  name: zlib
+  
+  version: 1.2.8-r1
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: knem
   
   version: ""
 - 
   category: sys-fabric
   description: ""
   license: ""
-  name: librdmacm
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: knem
+  name: infinipath-psm
   
   version: ""
 - 
@@ -68,12 +68,19 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: sys-fabric
   description: ""
   license: ""
-  name: zlib
+  name: librdmacm
   
-  version: 1.2.8-r1
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libevent
+  
+  version: 2.0.22
 - 
   category: dev-util
   description: ""
@@ -81,20 +88,6 @@ requires:
   name: nvidia-cuda-toolkit
   
   version: 6.5.19-r1
-- 
-  category: sys-fabric
-  description: ""
-  license: ""
-  name: ofed
-  
-  version: ""
-- 
-  category: sys-fabric
-  description: ""
-  license: ""
-  name: infinipath-psm
-  
-  version: ""
 - 
   category: virtual
   description: ""
@@ -106,9 +99,16 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libevent
+  name: libltdl
   
-  version: 2.0.22
+  version: ""
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: ofed
+  
+  version: ""
 uri:
 - http://www.open-mpi.org/software/ompi/v/downloads/openmpi-2.0.4.tar.bz2
 use_flags:

@@ -5,33 +5,19 @@ license: GPL-3 LGPL-3
 name: gimp
 requires:
 - 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
+  
+  version: ""
+- 
   category: dev-python
   description: ""
   license: ""
   name: pygtk
   
   version: 2.10.4
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: cairo
-  
-  version: 1.10.2
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: fontconfig
-  
-  version: 2.2.0
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: ""
 - 
   category: app-arch
   description: ""
@@ -43,16 +29,9 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: aalib
+  name: libwmf
   
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk-mac-integration
-  
-  version: ""
+  version: 0.2.8
 - 
   category: dev-libs
   description: ""
@@ -61,17 +40,10 @@ requires:
   
   version: ""
 - 
-  category: media-libs
+  category: gnome-base
   description: ""
   license: ""
-  name: gegl
-  
-  version: 0.2.0
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jpeg
+  name: gvfs
   
   version: ""
 - 
@@ -89,20 +61,6 @@ requires:
   
   version: 1.2.37
 - 
-  category: media-libs
-  description: ""
-  license: ""
-  name: tiff
-  
-  version: 3.5.7
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: 2.30.2
-- 
   category: dev-libs
   description: ""
   license: ""
@@ -113,21 +71,35 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libxslt
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgudev
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
   name: libxml2
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: tiff
+  
+  version: 3.5.7
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: alsa-lib
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxslt
   
   version: ""
 - 
@@ -135,34 +107,6 @@ requires:
   description: ""
   license: ""
   name: hicolor-icon-theme
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: ghostscript-gpl
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: 2.24.10
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libexif
-  
-  version: 0.6.15
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXcursor
   
   version: ""
 - 
@@ -176,49 +120,56 @@ requires:
   category: x11-libs
   description: ""
   license: ""
+  name: gtk+
+  
+  version: 2.24.10
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gdk-pixbuf
+  
+  version: 2.24.1
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo
+  
+  version: 1.10.2
+- 
+  category: x11-libs
+  description: ""
+  license: ""
   name: libXpm
   
   version: ""
 - 
-  category: media-libs
+  category: app-text
   description: ""
   license: ""
-  name: freetype
-  
-  version: 2.1.7
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: alsa-lib
+  name: ghostscript-gpl
   
   version: ""
 - 
-  category: net-misc
+  category: dev-libs
   description: ""
   license: ""
-  name: curl
+  name: libgudev
   
   version: ""
 - 
-  category: media-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: lcms
+  name: gtk-mac-integration
   
-  version: "2.2"
+  version: ""
 - 
-  category: media-libs
+  category: virtual
   description: ""
   license: ""
-  name: libwmf
-  
-  version: 0.2.8
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gvfs
+  name: jpeg
   
   version: ""
 - 
@@ -232,9 +183,51 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: gdk-pixbuf
+  name: libXcursor
   
-  version: 2.24.1
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
+  
+  version: 2.2.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libexif
+  
+  version: 0.6.15
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: lcms
+  
+  version: "2.2"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gegl
+  
+  version: 0.2.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: aalib
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.30.2
 - 
   category: x11-libs
   description: ""
@@ -242,6 +235,13 @@ requires:
   name: pango
   
   version: 1.29.4
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
+  
+  version: 2.1.7
 - 
   category: media-libs
   description: ""

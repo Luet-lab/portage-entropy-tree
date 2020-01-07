@@ -12,17 +12,10 @@ license: BSD GPL-2
 name: shadow
 requires:
 - 
-  category: sys-auth
+  category: sys-libs
   description: ""
   license: ""
-  name: skey
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: attr
+  name: pam
   
   version: ""
 - 
@@ -36,23 +29,9 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: cracklib
+  name: libselinux
   
-  version: 2.7-r3
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libintl
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: ""
+  version: "1.28"
 - 
   category: sys-libs
   description: ""
@@ -78,9 +57,30 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: libselinux
+  name: cracklib
   
-  version: "1.28"
+  version: 2.7-r3
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libintl
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: skey
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: attr
+  
+  version: ""
 uri:
 - https://github.com/shadow-maint/shadow/releases/download/4.8/shadow-4.8.tar.xz
 use_flags:

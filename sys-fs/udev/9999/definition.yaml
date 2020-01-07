@@ -1,27 +1,6 @@
 category: sys-fs
 conflicts:
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: ""
-- 
-  category: <sec-policy
-  description: ""
-  license: ""
-  name: selinux-base
-  
-  version: 2.20120725-r10
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: gentoo-systemd-integration
-  
-  version: ""
-- 
   category: <sys-libs
   description: ""
   license: ""
@@ -35,38 +14,31 @@ conflicts:
   name: lvm2
   
   version: 2.02.103
-description: Linux dynamic and persistent device naming support (aka userspace devfs)
-license: LGPL-2.1 MIT GPL-2
-name: udev
-requires:
 - 
-  category: acct-group
+  category: sys-apps
   description: ""
   license: ""
-  name: input
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: video
+  name: systemd
   
   version: ""
 - 
   category: sys-apps
   description: ""
   license: ""
-  name: util-linux
-  
-  version: "2.30"
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: kmem
+  name: gentoo-systemd-integration
   
   version: ""
+- 
+  category: <sec-policy
+  description: ""
+  license: ""
+  name: selinux-base
+  
+  version: 2.20120725-r10
+description: Linux dynamic and persistent device naming support (aka userspace devfs)
+license: LGPL-2.1 MIT GPL-2
+name: udev
+requires:
 - 
   category: acct-group
   description: ""
@@ -78,16 +50,44 @@ requires:
   category: acct-group
   description: ""
   license: ""
-  name: disk
+  name: video
   
   version: ""
 - 
   category: acct-group
   description: ""
   license: ""
-  name: lp
+  name: render
   
   version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: tape
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: acl
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: kmod
+  
+  version: "16"
 - 
   category: acct-group
   description: ""
@@ -110,40 +110,12 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libcap
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: render
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: tape
-  
-  version: ""
-- 
   category: sys-apps
   description: ""
   license: ""
-  name: acl
+  name: util-linux
   
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: kmod
-  
-  version: "16"
+  version: "2.30"
 - 
   category: sys-libs
   description: ""
@@ -151,6 +123,34 @@ requires:
   name: libselinux
   
   version: 2.1.9
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: disk
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: lp
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: kmem
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: input
+  
+  version: ""
 - 
   category: acct-group
   description: ""

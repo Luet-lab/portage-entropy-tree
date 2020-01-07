@@ -1,12 +1,12 @@
 category: net-fs
 conflicts:
 - 
-  category: net-libs
+  category: <sys-apps
   description: ""
   license: ""
-  name: libnfsidmap
+  name: openrc
   
-  version: ""
+  version: 0.13.9
 - 
   category: net-nds
   description: ""
@@ -15,21 +15,28 @@ conflicts:
   
   version: ""
 - 
-  category: <sys-apps
+  category: net-libs
   description: ""
   license: ""
-  name: openrc
+  name: libnfsidmap
   
-  version: 0.13.9
+  version: ""
 description: NFS client and server daemons
 license: GPL-2
 name: nfs-utils
 requires:
 - 
-  category: sys-libs
+  category: net-nds
   description: ""
   license: ""
-  name: libcap
+  name: rpcbind
+  
+  version: 0.2.4
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
   
   version: ""
 - 
@@ -40,31 +47,10 @@ requires:
   
   version: ""
 - 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libtirpc
-  
-  version: 0.2.4-r1
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: lvm2
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: tcp-wrappers
-  
-  version: ""
-- 
   category: sec-policy
   description: ""
   license: ""
-  name: selinux-rpcbind
+  name: selinux-rpc
   
   version: ""
 - 
@@ -79,6 +65,20 @@ requires:
   description: ""
   license: ""
   name: libxml2
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: keyutils
+  
+  version: 1.5.9
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lvm2
   
   version: ""
 - 
@@ -101,40 +101,40 @@ requires:
   license: ""
   name: libtirpc
   
-  version: ""
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: rpcbind
-  
-  version: 0.2.4
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
-  
-  version: ""
+  version: 0.2.4-r1
 - 
   category: sys-apps
   description: ""
   license: ""
-  name: keyutils
-  
-  version: 1.5.9
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: mit-krb5
+  name: tcp-wrappers
   
   version: ""
 - 
   category: sec-policy
   description: ""
   license: ""
-  name: selinux-rpc
+  name: selinux-rpcbind
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libtirpc
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: mit-krb5
   
   version: ""
 uri:

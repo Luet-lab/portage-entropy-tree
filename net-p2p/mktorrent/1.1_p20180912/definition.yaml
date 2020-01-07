@@ -1,0 +1,29 @@
+category: net-p2p
+conflicts: []
+description: Simple command line utility to create BitTorrent metainfo files
+license: GPL-2+
+name: mktorrent
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+uri:
+- https://github.com/Rudde/mktorrent/archive/4c221a05d949a3767a2671de139c6014909daf6b.tar.gz
+  -> mktorrent-4c221a05d949a3767a2671de139c6014909daf6b.tar.gz
+use_flags:
+- threads
+- +ssl
+- libressl
+- debug
+version: 1.1_p20180912

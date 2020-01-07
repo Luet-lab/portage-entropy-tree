@@ -5,6 +5,27 @@ license: GPL-2
 name: dracut
 requires:
 - 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: coreutils[xattr(-)]
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: "2.21"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: ""
+- 
   category: sec-policy
   description: ""
   license: ""
@@ -26,12 +47,12 @@ requires:
   
   version: ""
 - 
-  category: app-shells
+  category: app-arch
   description: ""
   license: ""
-  name: bash
+  name: cpio
   
-  version: "4.0"
+  version: ""
 - 
   category: sys-apps
   description: ""
@@ -47,33 +68,12 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: app-shells
   description: ""
   license: ""
-  name: udev
+  name: bash
   
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: cpio
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: coreutils[xattr(-)]
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
-  
-  version: "2.21"
+  version: "4.0"
 uri:
 - https://github.com/dracutdevs/dracut/archive/049.tar.gz -> dracut-049.tar.gz
 use_flags:

@@ -5,10 +5,17 @@ license: GPL-3
 name: asymptote
 requires:
 - 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: 4.3-r5
+- 
   category: media-libs
   description: ""
   license: ""
-  name: freeglut
+  name: glew
   
   version: ""
 - 
@@ -22,63 +29,21 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: boehm-gc
-  
-  version: "7.0"
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pycson
-  
-  version: ""
-- 
-  category: media-gfx
-  description: ""
-  license: ""
-  name: imagemagick
+  name: libsigsegv
   
   version: ""
 - 
   category: sci-libs
   description: ""
   license: ""
+  name: fftw
+  
+  version: 3.0.1
+- 
+  category: sci-libs
+  description: ""
+  license: ""
   name: gsl
-  
-  version: ""
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: librsvg
-  
-  version: "2.40"
-- 
-  category: dev-texlive
-  description: ""
-  license: ""
-  name: texlive-latexextra
-  
-  version: "2013"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: glew
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: mesa
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libsigsegv
   
   version: ""
 - 
@@ -92,7 +57,28 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: numpy
+  name: pycson
+  
+  version: ""
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: librsvg
+  
+  version: "2.40"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: mesa[X(+)]
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: mesa
   
   version: ""
 - 
@@ -110,17 +96,31 @@ requires:
   
   version: 5.4-r5
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: readline
-  
-  version: 4.3-r5
-- 
   category: media-libs
   description: ""
   license: ""
-  name: mesa[X(+)]
+  name: freeglut
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: boehm-gc
+  
+  version: "7.0"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: latex-base
+  
+  version: ""
+- 
+  category: media-gfx
+  description: ""
+  license: ""
+  name: imagemagick
   
   version: ""
 - 
@@ -131,19 +131,19 @@ requires:
   
   version: ""
 - 
-  category: sci-libs
+  category: dev-python
   description: ""
   license: ""
-  name: fftw
-  
-  version: 3.0.1
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: latex-base
+  name: numpy
   
   version: ""
+- 
+  category: dev-texlive
+  description: ""
+  license: ""
+  name: texlive-latexextra
+  
+  version: "2013"
 uri: []
 use_flags:
 - +boehm-gc

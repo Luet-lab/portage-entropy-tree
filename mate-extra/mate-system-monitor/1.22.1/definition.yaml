@@ -5,26 +5,12 @@ license: GPL-2
 name: mate-system-monitor
 requires:
 - 
-  category: x11-libs
+  category: dev-cpp
   description: ""
   license: ""
-  name: gtk+
+  name: gtkmm
   
-  version: "3.22"
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: libgtop
-  
-  version: 2.23.1
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: librsvg
-  
-  version: "2.35"
+  version: "3.8"
 - 
   category: dev-libs
   description: ""
@@ -36,16 +22,16 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libsigc++
+  name: libxml2
   
-  version: ""
+  version: "2"
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: gdk-pixbuf
+  name: gtk+
   
-  version: ""
+  version: "3.22"
 - 
   category: virtual
   description: ""
@@ -54,33 +40,12 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: ""
-- 
   category: sys-auth
   description: ""
   license: ""
-  name: polkit
+  name: elogind
   
-  version: "0.97"
-- 
-  category: dev-cpp
-  description: ""
-  license: ""
-  name: gtkmm
-  
-  version: "3.8"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: "2"
+  version: ""
 - 
   category: x11-libs
   description: ""
@@ -99,9 +64,9 @@ requires:
   category: sys-auth
   description: ""
   license: ""
-  name: elogind
+  name: polkit
   
-  version: ""
+  version: "0.97"
 - 
   category: dev-cpp
   description: ""
@@ -109,6 +74,41 @@ requires:
   name: glibmm
   
   version: "2.26"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libsigc++
+  
+  version: ""
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: libgtop
+  
+  version: 2.23.1
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gdk-pixbuf
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: librsvg
+  
+  version: "2.35"
 uri: []
 use_flags:
 - elogind

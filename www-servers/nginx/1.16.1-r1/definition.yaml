@@ -13,17 +13,31 @@ license: "BSD-2 BSD SSLeay MIT GPL-2 GPL-2+\n\tnginx_modules_http_security? ( Ap
 name: nginx
 requires:
 - 
-  category: dev-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: openssl
+  name: zlib
   
-  version: 1.0.1c
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: yajl
+  name: apr-util
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: apr
   
   version: ""
 - 
@@ -41,10 +55,10 @@ requires:
   
   version: ""
 - 
-  category: net-misc
+  category: sec-policy
   description: ""
   license: ""
-  name: curl
+  name: selinux-nginx
   
   version: ""
 - 
@@ -58,23 +72,51 @@ requires:
   category: dev-libs
   description: ""
   license: ""
+  name: openssl
+  
+  version: 1.0.1c
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: brotli
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxslt
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
   name: libmaxminddb
   
   version: ""
 - 
-  category: sys-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: zlib
+  name: libxml2
   
   version: ""
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: perl
-  
-  version: "5.8"
 - 
   category: dev-lang
   description: ""
@@ -86,21 +128,14 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: apr
+  name: yajl
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: apr-util
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-nginx
+  name: libressl
   
   version: ""
 - 
@@ -118,47 +153,12 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: dev-lang
   description: ""
   license: ""
-  name: libxml2
+  name: perl
   
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: brotli
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxslt
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: ""
+  version: "5.8"
 uri:
 - https://nginx.org/download/nginx-1.16.1.tar.gz
 - https://github.com/simpl/ngx_devel_kit/archive/v0.3.1.tar.gz -> ngx_devel_kit-0.3.1.tar.gz

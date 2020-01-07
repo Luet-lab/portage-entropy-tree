@@ -5,19 +5,54 @@ license: GPL-2+ FDL-1.1 LGPL-2.1+
 name: gnome-panel
 requires:
 - 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libwnck
+  
+  version: 3.4.6
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo-1.0.0[X,glib]
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: 3.22.0
+- 
+  category: gnome-extra
+  description: ""
+  license: ""
+  name: evolution-data-server
+  
+  version: 3.5.3
+- 
   category: sys-apps
   description: ""
   license: ""
   name: systemd
   
   version: "230"
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: dconf
-  
-  version: 0.13.4
 - 
   category: x11-libs
   description: ""
@@ -29,9 +64,9 @@ requires:
   category: sys-auth
   description: ""
   license: ""
-  name: polkit
+  name: elogind
   
-  version: ""
+  version: "230"
 - 
   category: x11-libs
   description: ""
@@ -57,65 +92,9 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libwnck
-  
-  version: 3.4.6
-- 
-  category: x11-libs
-  description: ""
-  license: ""
   name: pango
   
   version: 1.15.4
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gdm
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: elogind
-  
-  version: "230"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgweather
-  
-  version: 3.28.0
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: 3.22.0
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gnome-menus
-  
-  version: 3.7.90
-- 
-  category: gnome-extra
-  description: ""
-  license: ""
-  name: evolution-data-server
-  
-  version: 3.5.3
 - 
   category: dev-libs
   description: ""
@@ -124,10 +103,31 @@ requires:
   
   version: 2.45.3
 - 
-  category: x11-libs
+  category: gnome-base
   description: ""
   license: ""
-  name: cairo-1.0.0[X,glib]
+  name: gnome-menus
+  
+  version: 3.7.90
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgweather
+  
+  version: 3.28.0
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: dconf
+  
+  version: 0.13.4
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gdm
   
   version: ""
 uri: []

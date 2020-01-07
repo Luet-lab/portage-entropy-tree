@@ -4,42 +4,21 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
+  name: courier
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: esmtp
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
   name: exim
-  
-  version: ""
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: fastforward
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: opensmtpd
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: msmtp
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: qmail-ldap
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: mini-qmail
   
   version: ""
 - 
@@ -53,6 +32,20 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
+  name: sendmail
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: mini-qmail
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
 mailer
   
   version: ""
@@ -60,7 +53,35 @@ mailer
   category: mail-mta
   description: ""
   license: ""
-  name: sendmail
+  name: qmail-ldap
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: opensmtpd
+  
+  version: ""
+- 
+  category: '>=mail-mta'
+  description: ""
+  license: ""
+  name: ssmtp
+  
+  version: 2.64-r2
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: fastforward
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: msmtp
   
   version: ""
 - 
@@ -70,52 +91,24 @@ mailer
   name: ssmtp
   
   version: 2.64-r2
-- 
-  category: '>=mail-mta'
-  description: ""
-  license: ""
-  name: ssmtp
-  
-  version: 2.64-r2
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: courier
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: esmtp
-  
-  version: ""
 description: A fast and secure drop-in replacement for sendmail
 license: '|| ( IBM EPL-2.0 )'
 name: postfix
 requires:
 - 
-  category: acct-user
+  category: dev-db
   description: ""
   license: ""
-  name: postfix
+  name: lmdb
+  
+  version: 0.9.11
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libnsl
   
   version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-postfix
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: db
-  
-  version: "3.2"
 - 
   category: dev-libs
   description: ""
@@ -124,24 +117,10 @@ requires:
   
   version: ""
 - 
-  category: dev-db
+  category: net-nds
   description: ""
   license: ""
-  name: postgresql
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
-  
-  version: 2.9.1
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: perl
+  name: openldap
   
   version: ""
 - 
@@ -159,17 +138,10 @@ requires:
   
   version: ""
 - 
-  category: acct-group
+  category: sec-policy
   description: ""
   license: ""
-  name: postdrop
-  
-  version: ""
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
+  name: selinux-postfix
   
   version: ""
 - 
@@ -180,6 +152,13 @@ requires:
   
   version: ""
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: 2.9.1
+- 
   category: acct-group
   description: ""
   license: ""
@@ -187,26 +166,19 @@ requires:
   
   version: ""
 - 
-  category: net-libs
+  category: net-misc
   description: ""
   license: ""
-  name: libnsl
+  name: memcached
   
   version: ""
 - 
-  category: dev-db
+  category: net-mail
   description: ""
   license: ""
-  name: lmdb
+  name: mailbase
   
-  version: 0.9.11
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: cyrus-sasl
-  
-  version: "2"
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -222,17 +194,45 @@ requires:
   
   version: ""
 - 
-  category: net-misc
+  category: dev-db
   description: ""
   license: ""
-  name: memcached
+  name: postgresql
   
   version: ""
 - 
-  category: net-mail
+  category: acct-user
   description: ""
   license: ""
-  name: mailbase
+  name: postfix
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: perl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: db
+  
+  version: "3.2"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: cyrus-sasl
+  
+  version: "2"
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: postdrop
   
   version: ""
 uri:

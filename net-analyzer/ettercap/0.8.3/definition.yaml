@@ -5,17 +5,10 @@ license: GPL-2+
 name: ettercap
 requires:
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: ncurses
-  
-  version: "5.3"
-- 
   category: dev-libs
   description: ""
   license: ""
-  name: openssl
+  name: libbsd
   
   version: ""
 - 
@@ -26,17 +19,10 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: gtk+
-  
-  version: 2.2.2
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libbsd
+  name: zlib
   
   version: ""
 - 
@@ -50,23 +36,16 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: pango
-  
-  version: 1.2.3
-- 
-  category: x11-libs
-  description: ""
-  license: ""
   name: gdk-pixbuf
   
   version: ""
 - 
-  category: net-misc
+  category: x11-libs
   description: ""
   license: ""
-  name: curl
+  name: gtk+
   
-  version: 7.26.0
+  version: 2.2.2
 - 
   category: dev-libs
   description: ""
@@ -82,6 +61,13 @@ requires:
   
   version: ""
 - 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libpcap
+  
+  version: 0.8.1
+- 
   category: dev-libs
   description: ""
   license: ""
@@ -96,24 +82,24 @@ requires:
   
   version: 2.2.2
 - 
-  category: media-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: freetype
+  name: pango
   
-  version: ""
+  version: 1.2.3
 - 
-  category: net-libs
+  category: net-misc
   description: ""
   license: ""
-  name: libpcap
+  name: curl
   
-  version: 0.8.1
+  version: 7.26.0
 - 
-  category: sys-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: zlib
+  name: openssl
   
   version: ""
 - 
@@ -123,6 +109,20 @@ requires:
   name: geoip
   
   version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: "5.3"
 uri:
 - https://github.com/Ettercap/ettercap/archive/v0.8.3.tar.gz -> ettercap-0.8.3.tar.gz
 use_flags:

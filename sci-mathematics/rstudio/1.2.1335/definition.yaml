@@ -5,17 +5,66 @@ license: AGPL-3
 name: rstudio
 requires:
 - 
-  category: dev-lang
+  category: dev-libs
   description: ""
   license: ""
-  name: R
+  name: openssl
   
-  version: 2.11.1
+  version: ""
 - 
   category: dev-qt
   description: ""
   license: ""
-  name: qtsensors
+  name: qtopengl
+  
+  version: "5.4"
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtwidgets
+  
+  version: "5.4"
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: pandoc
+  
+  version: 1.19.2.1
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtprintsupport
+  
+  version: "5.4"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pango
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtcore
   
   version: "5.4"
 - 
@@ -29,9 +78,23 @@ requires:
   category: dev-qt
   description: ""
   license: ""
-  name: qtsvg
+  name: qtxml
   
   version: "5.4"
+- 
+  category: dev-haskell
+  description: ""
+  license: ""
+  name: pandoc-citeproc
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: R
+  
+  version: 2.11.1
 - 
   category: dev-libs
   description: ""
@@ -47,38 +110,17 @@ requires:
   
   version: 2.7.4
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: ""
-- 
   category: dev-qt
   description: ""
   license: ""
-  name: qtxml
-  
-  version: "5.4"
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: pandoc
-  
-  version: 1.19.2.1
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtcore
+  name: qtsvg
   
   version: "5.4"
 - 
   category: dev-qt
   description: ""
   license: ""
-  name: qtpositioning
+  name: qtwebchannel
   
   version: "5.4"
 - 
@@ -88,76 +130,6 @@ requires:
   name: qtwebengine
   
   version: "5.4"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
-  
-  version: ""
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: clang
-  
-  version: 3.5.0
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jre
-  
-  version: "1.8"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: ""
-- 
-  category: dev-haskell
-  description: ""
-  license: ""
-  name: pandoc-citeproc
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtprintsupport
-  
-  version: "5.4"
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtwidgets
-  
-  version: "5.4"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtxmlpatterns
-  
-  version: "5.4"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pango
-  
-  version: ""
 - 
   category: dev-qt
   description: ""
@@ -176,6 +148,48 @@ requires:
   category: dev-qt
   description: ""
   license: ""
+  name: qtgui
+  
+  version: "5.4"
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtsensors
+  
+  version: "5.4"
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtxmlpatterns
+  
+  version: "5.4"
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: clang
+  
+  version: 3.5.0
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jre
+  
+  version: "1.8"
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtpositioning
+  
+  version: "5.4"
+- 
+  category: dev-qt
+  description: ""
+  license: ""
   name: qtsingleapplication-2.6.1_p20150629[X,qt5(+)]
   
   version: ""
@@ -187,33 +201,19 @@ requires:
   
   version: "5.4"
 - 
-  category: dev-qt
+  category: sys-libs
   description: ""
   license: ""
-  name: qtwebchannel
+  name: pam
   
-  version: "5.4"
+  version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: openssl
+  name: libressl
   
   version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtgui
-  
-  version: "5.4"
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtopengl
-  
-  version: "5.4"
 uri:
 - https://github.com/rstudio/rstudio/archive/v1.2.1335.tar.gz -> rstudio-1.2.1335.tar.gz
 - https://s3.amazonaws.com/rstudio-buildtools/gin-2.1.2.zip

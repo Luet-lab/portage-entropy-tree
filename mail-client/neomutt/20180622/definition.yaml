@@ -5,6 +5,27 @@ license: GPL-2
 name: neomutt
 requires:
 - 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: db
+  
+  version: "6.3"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libintl
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: qdbm
+  
+  version: ""
+- 
   category: dev-libs
   description: ""
   license: ""
@@ -22,14 +43,7 @@ requires:
   category: dev-db
   description: ""
   license: ""
-  name: lmdb
-  
-  version: ""
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: libidn
+  name: kyotocabinet
   
   version: ""
 - 
@@ -40,13 +54,6 @@ requires:
   
   version: ""
 - 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: gpgme
-  
-  version: 0.9.0
-- 
   category: virtual
   description: ""
   license: ""
@@ -54,10 +61,17 @@ requires:
   
   version: ""
 - 
-  category: net-mail
+  category: dev-libs
   description: ""
   license: ""
-  name: notmuch
+  name: cyrus-sasl
+  
+  version: "2"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: slang
   
   version: ""
 - 
@@ -75,17 +89,38 @@ requires:
   
   version: ""
 - 
-  category: dev-db
+  category: net-libs
   description: ""
   license: ""
-  name: kyotocabinet
+  name: gnutls
+  
+  version: 1.0.17
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gpgme
+  
+  version: 0.9.0
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: libidn
   
   version: ""
 - 
-  category: dev-db
+  category: net-mail
   description: ""
   license: ""
-  name: qdbm
+  name: notmuch
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
   
   version: ""
 - 
@@ -96,47 +131,12 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: dev-db
   description: ""
   license: ""
-  name: slang
+  name: lmdb
   
   version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libintl
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnutls
-  
-  version: 1.0.17
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: ncurses
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: db
-  
-  version: "6.3"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: cyrus-sasl
-  
-  version: "2"
 uri:
 - https://github.com/neomutt/neomutt/archive/neomutt-20180622.tar.gz
 use_flags:

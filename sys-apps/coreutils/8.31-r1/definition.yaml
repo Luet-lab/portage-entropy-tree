@@ -1,41 +1,6 @@
 category: sys-apps
 conflicts:
 - 
-  category: app-misc
-  description: ""
-  license: ""
-  name: realpath
-  
-  version: ""
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: base64
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: mktemp
-  
-  version: ""
-- 
-  category: <sys-apps
-  description: ""
-  license: ""
-  name: util-linux
-  
-  version: "2.13"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: stat
-  
-  version: ""
-- 
   category: sys-apps
   description: ""
   license: ""
@@ -57,12 +22,40 @@ conflicts:
   
   version: 2.10-r4
 - 
-  category: <app-forensics
+  category: <sys-apps
   description: ""
   license: ""
-  name: tct
+  name: util-linux
   
-  version: 1.18-r1
+  version: "2.13"
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: base64
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: mktemp
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: stat
+  
+  version: ""
 - 
   category: <net-fs
   description: ""
@@ -71,28 +64,28 @@ conflicts:
   
   version: 2.0.3-r4
 - 
-  category: sys-apps
+  category: app-misc
   description: ""
   license: ""
-  name: util-linux
+  name: realpath
   
   version: ""
+- 
+  category: <app-forensics
+  description: ""
+  license: ""
+  name: tct
+  
+  version: 1.18-r1
 description: Standard GNU utilities (chmod, cp, dd, ls, sort, tr, head, wc, who,...)
 license: GPL-3
 name: coreutils
 requires:
 - 
-  category: sys-apps
+  category: sys-libs
   description: ""
   license: ""
-  name: attr
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: acl
+  name: libcap
   
   version: ""
 - 
@@ -103,10 +96,17 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: libcap
+  name: acl
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libintl
   
   version: ""
 - 
@@ -117,10 +117,10 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: sys-apps
   description: ""
   license: ""
-  name: libintl
+  name: attr
   
   version: ""
 uri:

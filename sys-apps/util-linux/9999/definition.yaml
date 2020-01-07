@@ -1,26 +1,12 @@
 category: sys-apps
 conflicts:
 - 
-  category: net-wireless
+  category: '>=app-admin'
   description: ""
   license: ""
-  name: rfkill
+  name: sysklogd
   
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: setarch
-  
-  version: ""
-- 
-  category: <sys-apps
-  description: ""
-  license: ""
-  name: sysvinit
-  
-  version: 2.88-r7
+  version: "2.0"
 - 
   category: <sys-apps
   description: ""
@@ -29,13 +15,6 @@ conflicts:
   
   version: 4.7-r2
 - 
-  category: sys-process
-  description: ""
-  license: ""
-  name: procps
-  
-  version: ""
-- 
   category: <sys-fs
   description: ""
   license: ""
@@ -43,10 +22,31 @@ conflicts:
   
   version: 1.41.8
 - 
-  category: app-arch
+  category: '>=sys-apps'
   description: ""
   license: ""
-  name: hardlink
+  name: shadow
+  
+  version: 4.7-r2
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: coreutils
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: procps
+  
+  version: ""
+- 
+  category: net-wireless
+  description: ""
+  license: ""
+  name: rfkill
   
   version: ""
 - 
@@ -57,26 +57,12 @@ conflicts:
   
   version: ""
 - 
-  category: sys-apps
+  category: <sys-apps
   description: ""
   license: ""
-  name: coreutils
+  name: sysvinit
   
-  version: ""
-- 
-  category: '>=sys-apps'
-  description: ""
-  license: ""
-  name: shadow
-  
-  version: 4.7-r2
-- 
-  category: <sys-libs
-  description: ""
-  license: ""
-  name: e2fsprogs-libs
-  
-  version: 1.41.8
+  version: 2.88-r7
 - 
   category: <app-shells
   description: ""
@@ -85,16 +71,51 @@ conflicts:
   
   version: 2.7-r1
 - 
-  category: '>=app-admin'
+  category: app-arch
   description: ""
   license: ""
-  name: sysklogd
+  name: hardlink
   
-  version: "2.0"
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: setarch
+  
+  version: ""
+- 
+  category: <sys-libs
+  description: ""
+  license: ""
+  name: e2fsprogs-libs
+  
+  version: 1.41.8
 description: Various useful Linux utilities
 license: GPL-2 LGPL-2.1 BSD-4 MIT public-domain
 name: util-linux
 requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
 - 
   category: sys-fs
   description: ""
@@ -106,28 +127,28 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: slang
+  name: ncurses
   
-  version: ""
+  version: 5.2-r2
 - 
-  category: sys-apps
+  category: virtual
   description: ""
   license: ""
-  name: systemd
+  name: libintl
   
   version: ""
 - 
   category: sys-libs
   description: ""
   license: ""
-  name: zlib
+  name: readline
   
   version: ""
 - 
-  category: virtual
+  category: sys-libs
   description: ""
   license: ""
-  name: libintl
+  name: slang
   
   version: ""
 - 
@@ -148,30 +169,9 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: ncurses
-  
-  version: 5.2-r2
-- 
-  category: sys-libs
-  description: ""
-  license: ""
   name: libselinux
   
   version: 2.2.2-r4
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: readline
-  
-  version: ""
 - 
   category: virtual
   description: ""

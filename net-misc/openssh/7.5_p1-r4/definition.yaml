@@ -5,10 +5,17 @@ license: BSD GPL-2
 name: openssh
 requires:
 - 
-  category: virtual
+  category: sys-process
   description: ""
   license: ""
-  name: shadow
+  name: audit
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: ldns[ecdsa,ssl(+)]
   
   version: ""
 - 
@@ -19,61 +26,12 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: krb5
-  
-  version: ""
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
   name: libselinux
   
   version: "1.28"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: 1.0.1
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: ldns[ecdsa,ssl(+)]
-  
-  version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: lksctp-tools
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: ""
 - 
   category: sys-libs
   description: ""
@@ -89,17 +47,10 @@ requires:
   
   version: ""
 - 
-  category: sys-auth
+  category: virtual
   description: ""
   license: ""
-  name: pambase
-  
-  version: "20081028"
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: audit
+  name: shadow
   
   version: ""
 - 
@@ -110,10 +61,59 @@ requires:
   
   version: ""
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
   category: net-libs
   description: ""
   license: ""
   name: ldns[-ecdsa,ssl(+)]
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: lksctp-tools
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 1.0.1
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: pambase
+  
+  version: "20081028"
+- 
+  category: x11-apps
+  description: ""
+  license: ""
+  name: xauth
   
   version: ""
 - 
@@ -124,10 +124,10 @@ requires:
   
   version: 1.1.5-r1
 - 
-  category: x11-apps
+  category: net-nds
   description: ""
   license: ""
-  name: xauth
+  name: openldap
   
   version: ""
 uri:

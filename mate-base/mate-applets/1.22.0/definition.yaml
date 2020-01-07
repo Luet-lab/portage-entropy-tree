@@ -12,38 +12,10 @@ license: GPL-2 FDL-1.1 LGPL-2
 name: mate-applets
 requires:
 - 
-  category: mate-base
+  category: dev-libs
   description: ""
   license: ""
-  name: mate-panel
-  
-  version: 1.17.0
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: "3.22"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtksourceview
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libwnck
-  
-  version: "3.0"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libintl
+  name: atk
   
   version: ""
 - 
@@ -68,47 +40,12 @@ requires:
   
   version: "3.0"
 - 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: polkit
-  
-  version: "0.97"
-- 
-  category: sys-power
-  description: ""
-  license: ""
-  name: upower
-  
-  version: 0.9.23
-- 
   category: mate-base
   description: ""
   license: ""
-  name: mate-settings-daemon
+  name: mate-panel
   
-  version: "1.6"
-- 
-  category: sys-power
-  description: ""
-  license: ""
-  name: cpupower
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gdk-pixbuf
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: "2.5"
+  version: 1.17.0
 - 
   category: net-wireless
   description: ""
@@ -116,6 +53,13 @@ requires:
   name: wireless-tools
   
   version: 28_pre9
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: 1.1.2
 - 
   category: x11-libs
   description: ""
@@ -127,23 +71,44 @@ requires:
   category: x11-libs
   description: ""
   license: ""
+  name: pango
+  
+  version: ""
+- 
+  category: sys-power
+  description: ""
+  license: ""
+  name: cpupower
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: "3.22"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtksourceview
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
   name: libX11
   
   version: ""
 - 
-  category: dev-libs
+  category: sys-auth
   description: ""
   license: ""
-  name: atk
+  name: polkit
   
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: dbus-glib
-  
-  version: "0.74"
+  version: "0.97"
 - 
   category: dev-libs
   description: ""
@@ -159,19 +124,54 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: virtual
   description: ""
   license: ""
-  name: dbus
+  name: libintl
   
-  version: 1.1.2
+  version: ""
+- 
+  category: sys-power
+  description: ""
+  license: ""
+  name: upower
+  
+  version: 0.9.23
+- 
+  category: mate-base
+  description: ""
+  license: ""
+  name: mate-settings-daemon
+  
+  version: "1.6"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: dbus-glib
+  
+  version: "0.74"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: "2.5"
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: pango
+  name: gdk-pixbuf
   
   version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libwnck
+  
+  version: "3.0"
 uri: []
 use_flags:
 - X

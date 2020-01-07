@@ -12,10 +12,24 @@ license: MPL-2.0 GPL-2 LGPL-2.1
 name: firefox-bin
 requires:
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: dbus-glib
+  
+  version: "0.72"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
+  
+  version: ""
+- 
   category: x11-libs
   description: ""
   license: ""
-  name: libXext
+  name: libXcomposite
   
   version: ""
 - 
@@ -33,20 +47,6 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus
-  
-  version: "0.60"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: dbus-glib
-  
-  version: "0.72"
-- 
   category: dev-libs
   description: ""
   license: ""
@@ -57,42 +57,21 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: gdk-pixbuf
+  name: cairo-1.10[X]
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: freetype
-  
-  version: 2.4.10
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: "2.18"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXcomposite
+  name: libXdamage
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXt
+  name: libXext
   
   version: ""
 - 
@@ -106,28 +85,21 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: fontconfig
+  name: freetype
+  
+  version: 2.4.10
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: cairo-1.10[X]
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: 3.4.0
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXdamage
+  name: libXrender
   
   version: ""
 - 
@@ -141,9 +113,37 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXrender
+  name: libXt
   
   version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: "0.60"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gdk-pixbuf
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: "2.18"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: 3.4.0
 uri:
 - 'https://archive.mozilla.org/pub/mozilla.org/firefox/releases/71.0/linux-x86_64/en-US/firefox-71.0.tar.bz2
   -> firefox-bin_x86_64-71.0.tar.bz2 '

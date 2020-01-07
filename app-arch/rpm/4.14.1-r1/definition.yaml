@@ -12,33 +12,19 @@ license: GPL-2 LGPL-2
 name: rpm
 requires:
 - 
-  category: app-arch
+  category: app-crypt
   description: ""
   license: ""
-  name: libarchive
+  name: gnupg
+  
+  version: "1.2"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nss
   
   version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: db
-  
-  version: "4.5"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: 1.2.3-r1
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: perl
-  
-  version: 5.8.8
 - 
   category: app-arch
   description: ""
@@ -46,6 +32,20 @@ requires:
   name: zstd
   
   version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: libarchive
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: bzip2
+  
+  version: 1.0.1
 - 
   category: dev-libs
   description: ""
@@ -58,13 +58,6 @@ requires:
   description: ""
   license: ""
   name: libintl
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: elfutils
   
   version: ""
 - 
@@ -85,30 +78,30 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: libcap
+  name: db
   
-  version: "2.0"
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: bzip2
-  
-  version: 1.0.1
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: gnupg
-  
-  version: "1.2"
+  version: "4.5"
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: nss
+  name: elfutils
   
   version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: perl
+  
+  version: 5.8.8
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: "2.0"
 - 
   category: sec-policy
   description: ""
@@ -116,6 +109,13 @@ requires:
   name: selinux-rpm
   
   version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: 1.2.3-r1
 uri:
 - http://ftp.rpm.org/releases/rpm-.x/rpm-4.14.1.tar.bz2
 use_flags:

@@ -18,20 +18,34 @@ conflicts:
   category: net-mail
   description: ""
   license: ""
-  name: uw-imap
+  name: cyrus-imapd
   
   version: ""
 - 
   category: net-mail
   description: ""
   license: ""
-  name: cyrus-imapd
+  name: uw-imap
   
   version: ""
 description: An IMAP daemon designed specifically for maildirs
 license: GPL-3
 name: courier-imap
 requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -43,51 +57,9 @@ requires:
   category: net-libs
   description: ""
   license: ""
-  name: courier-unicode
-  
-  version: "1.3"
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-courier
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: fam
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnutls
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
   name: courier-authlib
   
   version: "0.61"
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: courier-unicode
-  
-  version: "2"
 - 
   category: net-mail
   description: ""
@@ -99,16 +71,44 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: db
+  name: gdbm
   
-  version: ""
+  version: 1.8.0
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: courier-unicode
+  
+  version: "2"
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: courier-unicode
+  
+  version: "1.3"
 - 
   category: sys-libs
   description: ""
   license: ""
-  name: gdbm
+  name: db
   
-  version: 1.8.0
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: fam
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-courier
+  
+  version: ""
 uri:
 - mirror://sourceforge/courier/courier-imap-4.17.3.tar.bz2
 use_flags:

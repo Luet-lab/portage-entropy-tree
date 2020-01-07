@@ -5,17 +5,10 @@ license: MIT
 name: sway
 requires:
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: "239"
-- 
   category: x11-libs
   description: ""
   license: ""
-  name: libxcb
+  name: cairo
   
   version: ""
 - 
@@ -26,52 +19,17 @@ requires:
   
   version: "239"
 - 
-  category: dev-libs
+  category: gui-apps
   description: ""
   license: ""
-  name: libpcre
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxkbcommon
-  
-  version: ""
-- 
-  category: gui-libs
-  description: ""
-  license: ""
-  name: wlroots
-  
-  version: 0.7.0
-- 
-  category: x11-misc
-  description: ""
-  license: ""
-  name: xkeyboard-config
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: cairo
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pixman
+  name: swayidle
   
   version: ""
 - 
   category: gui-apps
   description: ""
   license: ""
-  name: swayidle
+  name: swaylock
   
   version: ""
 - 
@@ -89,17 +47,17 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: pango
+  name: systemd
   
-  version: ""
+  version: "239"
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: gdk-pixbuf
+  name: pixman
   
   version: ""
 - 
@@ -110,12 +68,33 @@ requires:
   
   version: ""
 - 
-  category: gui-apps
+  category: x11-libs
   description: ""
   license: ""
-  name: swaylock
+  name: libxkbcommon
   
   version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gdk-pixbuf
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxcb
+  
+  version: ""
+- 
+  category: gui-libs
+  description: ""
+  license: ""
+  name: wlroots
+  
+  version: 0.7.0
 - 
   category: dev-libs
   description: ""
@@ -123,6 +102,27 @@ requires:
   name: libinput
   
   version: 1.6.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpcre
+  
+  version: ""
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: xkeyboard-config
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pango
+  
+  version: ""
 uri:
 - https://github.com/swaywm/sway/archive/1.2.tar.gz -> sway-1.2.tar.gz
 use_flags:

@@ -12,31 +12,38 @@ license: MPL-2.0 GPL-2 LGPL-2.1
 name: firefox-bin
 requires:
 - 
-  category: x11-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libXext
+  name: atk
   
   version: ""
 - 
-  category: x11-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libXfixes
+  name: glib
   
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: freetype
-  
-  version: 2.4.10
+  version: "2.26"
 - 
   category: x11-libs
   description: ""
   license: ""
   name: gdk-pixbuf
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: "2.18"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXext
   
   version: ""
 - 
@@ -50,6 +57,13 @@ requires:
   category: x11-libs
   description: ""
   license: ""
+  name: cairo-1.10[X]
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
   name: gtk+
   
   version: 3.4.0
@@ -57,14 +71,21 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libX11
+  name: libXdamage
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXdamage
+  name: libXrender
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: freedesktop-icon-theme
   
   version: ""
 - 
@@ -82,12 +103,12 @@ requires:
   
   version: "0.72"
 - 
-  category: dev-libs
+  category: media-libs
   description: ""
   license: ""
-  name: glib
+  name: freetype
   
-  version: "2.26"
+  version: 2.4.10
 - 
   category: x11-libs
   description: ""
@@ -99,7 +120,14 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXrender
+  name: libXfixes
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
   
   version: ""
 - 
@@ -116,34 +144,6 @@ requires:
   name: pango
   
   version: 1.22.0
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: freedesktop-icon-theme
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: atk
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: cairo-1.10[X]
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: "2.18"
 uri:
 - 'https://archive.mozilla.org/pub/mozilla.org/firefox/releases/68.3.0esr/linux-x86_64/en-US/firefox-68.3.0esr.tar.bz2
   -> firefox-bin_x86_64-68.3.0.tar.bz2 '

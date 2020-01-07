@@ -1,19 +1,26 @@
 category: mail-mta
 conflicts:
 - 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: opensmtpd
-  
-  version: ""
-- 
   category: '>=mail-mta'
   description: ""
   license: ""
   name: ssmtp
   
   version: 2.64-r2
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: courier
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: qmail-ldap
+  
+  version: ""
 - 
   category: mail-mta
   description: ""
@@ -32,42 +39,7 @@ mailer
   category: mail-mta
   description: ""
   license: ""
-  name: netqmail
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
   name: postfix
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: qmail-ldap
-  
-  version: ""
-- 
-  category: <mail-mta
-  description: ""
-  license: ""
-  name: ssmtp
-  
-  version: 2.64-r2
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: courier
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: mini-qmail
   
   version: ""
 - 
@@ -81,9 +53,37 @@ mailer
   category: mail-mta
   description: ""
   license: ""
+  name: opensmtpd
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
   name: esmtp
   
   version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: mini-qmail
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: netqmail
+  
+  version: ""
+- 
+  category: <mail-mta
+  description: ""
+  license: ""
+  name: ssmtp
+  
+  version: 2.64-r2
 description: An SMTP client and SMTP plugin for mail user agents such as Mutt
 license: GPL-3
 name: msmtp
@@ -96,10 +96,10 @@ requires:
   
   version: ""
 - 
-  category: net-libs
+  category: net-mail
   description: ""
   license: ""
-  name: gnutls[idn?]
+  name: mailbase
   
   version: ""
 - 
@@ -110,17 +110,10 @@ requires:
   
   version: ""
 - 
-  category: net-mail
+  category: net-libs
   description: ""
   license: ""
-  name: mailbase
-  
-  version: ""
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: libsecret
+  name: gnutls[idn?]
   
   version: ""
 - 
@@ -128,6 +121,13 @@ requires:
   description: ""
   license: ""
   name: libidn2
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: libsecret
   
   version: ""
 uri:

@@ -5,10 +5,10 @@ license: Apache-2.0 BSD BSD-2 CC-BY-SA-4.0 ISC MIT MPL-2.0
 name: cri-o
 requires:
 - 
-  category: sys-fs
+  category: net-firewall
   description: ""
   license: ""
-  name: btrfs-progs
+  name: iptables
   
   version: ""
 - 
@@ -16,6 +16,27 @@ requires:
   description: ""
   license: ""
   name: lvm2
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libseccomp
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: ostree
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
   
   version: ""
 - 
@@ -29,56 +50,21 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libgpg-error
-  
-  version: ""
-- 
-  category: net-firewall
-  description: ""
-  license: ""
-  name: conntrack-tools
-  
-  version: ""
-- 
-  category: net-firewall
-  description: ""
-  license: ""
-  name: iptables
-  
-  version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: socat
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: iproute2
-  
-  version: ""
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: ostree
-  
-  version: ""
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: gpgme
+  name: glib
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: glib
+  name: libassuan
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgpg-error
   
   version: ""
 - 
@@ -89,24 +75,38 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: app-crypt
   description: ""
   license: ""
-  name: libseccomp
+  name: gpgme
   
   version: ""
 - 
-  category: sys-libs
+  category: net-firewall
   description: ""
   license: ""
-  name: libselinux
+  name: conntrack-tools
   
   version: ""
 - 
-  category: dev-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: libassuan
+  name: iproute2
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: socat
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: btrfs-progs
   
   version: ""
 uri:

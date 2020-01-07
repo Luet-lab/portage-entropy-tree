@@ -5,20 +5,6 @@ license: Apache-2.0
 name: docker
 requires:
 - 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
-  
-  version: 3.7.9
-- 
-  category: net-firewall
-  description: ""
-  license: ""
-  name: iptables
-  
-  version: "1.4"
-- 
   category: sys-process
   description: ""
   license: ""
@@ -33,19 +19,19 @@ requires:
   
   version: "4.9"
 - 
-  category: dev-libs
+  category: sys-process
   description: ""
   license: ""
-  name: libltdl
+  name: tini
   
-  version: ""
+  version: 0.18.0
 - 
-  category: app-emulation
+  category: dev-db
   description: ""
   license: ""
-  name: containerd
+  name: sqlite
   
-  version: 1.2.10
+  version: 3.7.9
 - 
   category: sys-fs
   description: ""
@@ -61,6 +47,20 @@ requires:
   
   version: 2.2.1
 - 
+  category: net-firewall
+  description: ""
+  license: ""
+  name: iptables
+  
+  version: "1.4"
+- 
+  category: app-emulation
+  description: ""
+  license: ""
+  name: docker-proxy
+  
+  version: 0.8.0_p20191011
+- 
   category: sys-libs
   description: ""
   license: ""
@@ -75,19 +75,19 @@ requires:
   
   version: "1.7"
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libltdl
+  
+  version: ""
+- 
   category: app-emulation
   description: ""
   license: ""
-  name: docker-proxy
+  name: containerd
   
-  version: 0.8.0_p20191011
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: tini
-  
-  version: 0.18.0
+  version: 1.2.10
 uri:
 - https://github.com/docker/docker-ce/archive/v19.03.4.tar.gz -> docker-19.03.4.tar.gz
 use_flags:

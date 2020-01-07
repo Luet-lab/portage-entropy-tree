@@ -5,17 +5,10 @@ license: GPL-2
 name: ktp-call-ui
 requires:
 - 
-  category: kde-frameworks
+  category: dev-libs
   description: ""
   license: ""
-  name: knotifications
-  
-  version: 5.63.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: qt-gstreamer[qt5(+)]
+  name: glib
   
   version: ""
 - 
@@ -25,6 +18,27 @@ requires:
   name: qtdbus
   
   version: 5.12.3
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kconfig
+  
+  version: 5.63.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kconfigwidgets
+  
+  version: 5.63.0
+- 
+  category: kde-apps
+  description: ""
+  license: ""
+  name: ktp-common-internals
+  
+  version: ""
 - 
   category: dev-qt
   description: ""
@@ -36,16 +50,23 @@ requires:
   category: kde-frameworks
   description: ""
   license: ""
-  name: kconfigwidgets
+  name: kiconthemes
   
   version: 5.63.0
 - 
   category: kde-frameworks
   description: ""
   license: ""
-  name: kcoreaddons
+  name: knotifications
   
   version: 5.63.0
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtdeclarative
+  
+  version: 5.12.3
 - 
   category: kde-frameworks
   description: ""
@@ -61,10 +82,10 @@ requires:
   
   version: 5.63.0
 - 
-  category: kde-apps
+  category: media-libs
   description: ""
   license: ""
-  name: ktp-common-internals
+  name: qt-gstreamer[qt5(+)]
   
   version: ""
 - 
@@ -75,19 +96,12 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: net-libs
   description: ""
   license: ""
-  name: glib
+  name: telepathy-qt[farstream,qt5(+)]
   
   version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtdeclarative
-  
-  version: 5.12.3
 - 
   category: dev-qt
   description: ""
@@ -95,27 +109,6 @@ requires:
   name: qtgui
   
   version: 5.12.3
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: telepathy-farstream
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: phonon[qt5(+)]
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: telepathy-qt[farstream,qt5(+)]
-  
-  version: ""
 - 
   category: kde-frameworks
   description: ""
@@ -127,14 +120,7 @@ requires:
   category: kde-frameworks
   description: ""
   license: ""
-  name: kconfig
-  
-  version: 5.63.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kiconthemes
+  name: kcoreaddons
   
   version: 5.63.0
 - 
@@ -151,6 +137,20 @@ requires:
   name: kwidgetsaddons
   
   version: 5.63.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: phonon[qt5(+)]
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: telepathy-farstream
+  
+  version: ""
 uri: []
 use_flags:
 - ""

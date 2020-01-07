@@ -1,27 +1,6 @@
 category: sys-apps
 conflicts:
 - 
-  category: <app-shells
-  description: ""
-  license: ""
-  name: gentoo-zsh-completions
-  
-  version: "20180228"
-- 
-  category: <sys-process
-  description: ""
-  license: ""
-  name: procps
-  
-  version: 3.3.9-r2
-- 
-  category: <sys-apps
-  description: ""
-  license: ""
-  name: baselayout
-  
-  version: 2.1-r1
-- 
   category: <sys-fs
   description: ""
   license: ""
@@ -36,6 +15,27 @@ conflicts:
   
   version: ""
 - 
+  category: <sys-apps
+  description: ""
+  license: ""
+  name: baselayout
+  
+  version: 2.1-r1
+- 
+  category: <sys-process
+  description: ""
+  license: ""
+  name: procps
+  
+  version: 3.3.9-r2
+- 
+  category: <app-shells
+  description: ""
+  license: ""
+  name: gentoo-zsh-completions
+  
+  version: "20180228"
+- 
   category: <app-shells
   description: ""
   license: ""
@@ -47,17 +47,24 @@ license: BSD-2
 name: openrc
 requires:
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: ""
-- 
   category: app-shells
   description: ""
   license: ""
   name: bash
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: sysvinit-2.86-r6[selinux?]
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: audit
   
   version: ""
 - 
@@ -71,16 +78,16 @@ requires:
   category: sys-libs
   description: ""
   license: ""
+  name: ncurses
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
   name: libselinux
   
   version: "2.6"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: sysvinit-2.86-r6[selinux?]
-  
-  version: ""
 - 
   category: virtual
   description: ""
@@ -89,19 +96,12 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: sec-policy
   description: ""
   license: ""
-  name: ncurses
+  name: selinux-base-policy
   
-  version: ""
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: psmisc
-  
-  version: ""
+  version: 2.20170204-r4
 - 
   category: sec-policy
   description: ""
@@ -117,19 +117,19 @@ requires:
   
   version: ""
 - 
-  category: sys-process
+  category: sys-libs
   description: ""
   license: ""
-  name: audit
+  name: pam
   
   version: ""
 - 
-  category: sec-policy
+  category: sys-process
   description: ""
   license: ""
-  name: selinux-base-policy
+  name: psmisc
   
-  version: 2.20170204-r4
+  version: ""
 uri:
 - https://github.com/openrc/openrc/archive/0.42.1.tar.gz -> openrc-0.42.1.tar.gz
 use_flags:

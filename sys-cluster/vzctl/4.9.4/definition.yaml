@@ -5,31 +5,10 @@ license: GPL-2
 name: vzctl
 requires:
 - 
-  category: app-arch
-  description: ""
-  license: ""
-  name: tar
-  
-  version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: bridge-utils
-  
-  version: ""
-- 
   category: sys-apps
   description: ""
   license: ""
-  name: attr
-  
-  version: ""
-- 
-  category: sys-block
-  description: ""
-  license: ""
-  name: parted
+  name: ed
   
   version: ""
 - 
@@ -43,14 +22,35 @@ requires:
   category: net-misc
   description: ""
   license: ""
-  name: openssh
+  name: bridge-utils
   
   version: ""
 - 
-  category: sys-apps
+  category: net-firewall
   description: ""
   license: ""
-  name: ed
+  name: iptables
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libcgroup
+  
+  version: "0.38"
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: openssh
   
   version: ""
 - 
@@ -60,13 +60,6 @@ requires:
   name: ploop
   
   version: "1.13"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: ""
 - 
   category: net-misc
   description: ""
@@ -82,26 +75,12 @@ requires:
   
   version: ""
 - 
-  category: net-firewall
+  category: sys-apps
   description: ""
   license: ""
-  name: iptables
+  name: attr
   
   version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: vzquota
-  
-  version: "3.1"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libcgroup
-  
-  version: "0.38"
 - 
   category: virtual
   description: ""
@@ -116,6 +95,27 @@ requires:
   name: iproute2
   
   version: 3.3.0
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: vzquota
+  
+  version: "3.1"
+- 
+  category: sys-block
+  description: ""
+  license: ""
+  name: parted
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: tar
+  
+  version: ""
 uri:
 - http://download.openvz.org/utils/vzctl/4.9.4/src/vzctl-4.9.4.tar.bz2
 use_flags:
