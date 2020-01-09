@@ -4,14 +4,14 @@ conflicts:
   category: dev-util
   description: ""
   license: ""
-  name: kdevelop-clang-tidy
+  name: kdevplatform
   
   version: ""
 - 
   category: dev-util
   description: ""
   license: ""
-  name: kdevplatform
+  name: kdevelop-clang-tidy
   
   version: ""
 description: Integrated Development Environment, supporting KF5/Qt, C/C++ and much
@@ -20,19 +20,26 @@ license: GPL-2 LGPL-2
 name: kdevelop
 requires:
 - 
-  category: dev-vcs
-  description: ""
-  license: ""
-  name: subversion
-  
-  version: ""
-- 
   category: dev-qt
   description: ""
   license: ""
   name: qtwebkit
   
   version: 5.212.0_pre20180120
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: ninja
+  
+  version: ""
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: gdb
+  
+  version: "7.0"
 - 
   category: app-editors
   description: ""
@@ -62,10 +69,10 @@ requires:
   
   version: ""
 - 
-  category: dev-util
+  category: dev-vcs
   description: ""
   license: ""
-  name: ninja
+  name: subversion
   
   version: ""
 - 
@@ -89,13 +96,6 @@ requires:
   name: clang
   
   version: 3.8.0
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: gdb
-  
-  version: "7.0"
 uri: []
 use_flags:
 - +gdbui

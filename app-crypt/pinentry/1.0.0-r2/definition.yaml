@@ -5,17 +5,24 @@ license: GPL-2
 name: pinentry
 requires:
 - 
-  category: app-crypt
+  category: app-eselect
   description: ""
   license: ""
-  name: libsecret
+  name: eselect-pinentry
   
   version: ""
 - 
-  category: x11-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: gtk+
+  name: libassuan
+  
+  version: "2.1"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
   
   version: ""
 - 
@@ -29,7 +36,7 @@ requires:
   category: dev-qt
   description: ""
   license: ""
-  name: qtgui
+  name: qtwidgets
   
   version: ""
 - 
@@ -39,20 +46,6 @@ requires:
   name: ncurses
   
   version: 5.7-r5
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: gcr
-  
-  version: ""
-- 
-  category: app-eselect
-  description: ""
-  license: ""
-  name: eselect-pinentry
-  
-  version: ""
 - 
   category: dev-libs
   description: ""
@@ -68,10 +61,17 @@ requires:
   
   version: "1.17"
 - 
-  category: sys-libs
+  category: app-crypt
   description: ""
   license: ""
-  name: libcap
+  name: libsecret
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
   
   version: ""
 - 
@@ -85,16 +85,16 @@ requires:
   category: dev-qt
   description: ""
   license: ""
-  name: qtwidgets
+  name: qtgui
   
   version: ""
 - 
-  category: dev-libs
+  category: app-crypt
   description: ""
   license: ""
-  name: libassuan
+  name: gcr
   
-  version: "2.1"
+  version: ""
 uri:
 - mirror://gnupg/pinentry/pinentry-1.0.0.tar.bz2
 use_flags:

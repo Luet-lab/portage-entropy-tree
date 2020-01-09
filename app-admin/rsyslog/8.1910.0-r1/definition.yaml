@@ -5,12 +5,19 @@ license: GPL-3 LGPL-3 Apache-2.0
 name: rsyslog
 requires:
 - 
-  category: dev-libs
+  category: net-analyzer
   description: ""
   license: ""
-  name: hiredis
+  name: net-snmp
   
-  version: 0.11.0
+  version: 5.7.2
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: postgresql
+  
+  version: 8.4.20
 - 
   category: dev-libs
   description: ""
@@ -19,19 +26,26 @@ requires:
   
   version: 0.9.8y
 - 
-  category: net-analyzer
+  category: dev-libs
   description: ""
   license: ""
-  name: net-snmp
+  name: openssl
   
-  version: 5.7.2
+  version: ""
 - 
-  category: net-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: gnutls
+  name: xxhash
   
-  version: 2.12.23
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libfastjson
+  
+  version: 0.99.8
 - 
   category: net-misc
   description: ""
@@ -43,9 +57,9 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: librelp
+  name: jemalloc
   
-  version: 1.2.17
+  version: 3.3.1
 - 
   category: dev-libs
   description: ""
@@ -54,47 +68,12 @@ requires:
   
   version: 2.0.3
 - 
-  category: dev-db
+  category: sys-apps
   description: ""
   license: ""
-  name: postgresql
+  name: systemd
   
-  version: 8.4.20
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: rabbitmq-c
-  
-  version: 0.3.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: xxhash
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: czmq
-  
-  version: 3.0.2
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libfastjson
-  
-  version: 0.99.8
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libestr
-  
-  version: 0.1.9
+  version: "234"
 - 
   category: sys-libs
   description: ""
@@ -103,33 +82,12 @@ requires:
   
   version: 1.2.5
 - 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mysql-connector-c
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: "234"
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: libdbi
-  
-  version: 0.8.3
-- 
   category: dev-libs
   description: ""
   license: ""
-  name: libgcrypt
+  name: libmaxminddb
   
-  version: 1.5.3
+  version: ""
 - 
   category: net-libs
   description: ""
@@ -141,23 +99,16 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libressl
+  name: hiredis
   
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: krb5
-  
-  version: ""
+  version: 0.11.0
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: mongo-c-driver
+  name: librelp
   
-  version: 1.1.10
+  version: 1.2.17
 - 
   category: sys-apps
   description: ""
@@ -173,19 +124,75 @@ requires:
   
   version: 0.9.0.99
 - 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: 2.12.23
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: libdbi
+  
+  version: 0.8.3
+- 
   category: dev-libs
   description: ""
   license: ""
-  name: libmaxminddb
+  name: libressl
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: czmq
+  
+  version: 3.0.2
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libestr
+  
+  version: 0.1.9
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgcrypt
+  
+  version: 1.5.3
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: jemalloc
+  name: mongo-c-driver
   
-  version: 3.3.1
+  version: 1.1.10
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: rabbitmq-c
+  
+  version: 0.3.0
 - 
   category: dev-libs
   description: ""
@@ -193,13 +200,6 @@ requires:
   name: liblogging
   
   version: 1.0.1
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: ""
 uri:
 - https://www.rsyslog.com/files/download/rsyslog/rsyslog-8.1910.0.tar.gz
 - 'https://www.rsyslog.com/files/download/rsyslog/rsyslog-doc-8.1910.0.tar.gz '

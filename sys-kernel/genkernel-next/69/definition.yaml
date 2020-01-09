@@ -1,10 +1,10 @@
 category: sys-kernel
 conflicts:
 - 
-  category: sys-kernel
+  category: sys-fs
   description: ""
   license: ""
-  name: genkernel
+  name: eudev
   
   version: ""
 - 
@@ -15,10 +15,10 @@ conflicts:
   
   version: 0.9.9
 - 
-  category: sys-fs
+  category: sys-kernel
   description: ""
   license: ""
-  name: eudev
+  name: genkernel
   
   version: ""
 description: Gentoo automatic kernel building scripts, reloaded
@@ -33,33 +33,12 @@ requires:
   
   version: ""
 - 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: mdadm
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
   name: libselinux
   
   version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: cryptsetup
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: dmraid
-  
-  version: 1.0.0_rc16
 - 
   category: sys-block
   description: ""
@@ -68,10 +47,10 @@ requires:
   
   version: ""
 - 
-  category: app-portage
+  category: sys-block
   description: ""
   license: ""
-  name: portage-utils
+  name: thin-provisioning-tools
   
   version: ""
 - 
@@ -85,7 +64,21 @@ requires:
   category: sys-fs
   description: ""
   license: ""
-  name: e2fsprogs
+  name: cryptsetup
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: mdadm
+  
+  version: ""
+- 
+  category: app-portage
+  description: ""
+  license: ""
+  name: portage-utils
   
   version: ""
 - 
@@ -96,24 +89,10 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: app-crypt
   description: ""
   license: ""
-  name: util-linux
-  
-  version: ""
-- 
-  category: sys-block
-  description: ""
-  license: ""
-  name: thin-provisioning-tools
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: asciidoc
+  name: gnupg
   
   version: ""
 - 
@@ -124,12 +103,33 @@ requires:
   
   version: ""
 - 
-  category: app-crypt
+  category: sys-apps
   description: ""
   license: ""
-  name: gnupg
+  name: util-linux
   
   version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: asciidoc
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: e2fsprogs
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: dmraid
+  
+  version: 1.0.0_rc16
 uri:
 - https://github.com/Sabayon/genkernel-next/archive/v69.tar.gz -> genkernel-next-69.tar.gz
 use_flags:

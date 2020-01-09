@@ -11,14 +11,14 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: percona-server
+  name: mariadb
   
   version: ""
 - 
   category: dev-db
   description: ""
   license: ""
-  name: mysql
+  name: percona-server
   
   version: ""
 - 
@@ -32,7 +32,7 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mariadb
+  name: mysql
   
   version: ""
 description: An enhanced, drop-in replacement for MySQL
@@ -40,10 +40,17 @@ license: GPL-2
 name: mysql-cluster
 requires:
 - 
-  category: virtual
+  category: dev-libs
   description: ""
   license: ""
-  name: perl-Term-ANSIColor
+  name: jemalloc
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: procps
   
   version: ""
 - 
@@ -57,51 +64,37 @@ requires:
   category: sys-apps
   description: ""
   license: ""
-  name: texinfo
-  
-  version: 4.7-r1
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: 1.0.0
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: perl-Getopt-Long
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-mysql
-  
-  version: ""
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: procps
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
   name: sed
   
   version: "4"
 - 
-  category: sys-process
+  category: dev-libs
   description: ""
   license: ""
-  name: numactl
+  name: libressl
   
   version: ""
+- 
+  category: dev-perl
+  description: ""
+  license: ""
+  name: TermReadKey
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-init-scripts
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: 1.2.3
 - 
   category: virtual
   description: ""
@@ -110,10 +103,31 @@ requires:
   
   version: "1.6"
 - 
-  category: dev-db
+  category: virtual
   description: ""
   license: ""
-  name: mysql-init-scripts
+  name: perl-Getopt-Long
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: perl-Term-ANSIColor
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: perl-Time-HiRes
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-mysql
   
   version: ""
 - 
@@ -127,44 +141,9 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libressl
+  name: openssl
   
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: ncurses
-  
-  version: ""
-- 
-  category: dev-perl
-  description: ""
-  license: ""
-  name: TermReadKey
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: perl-Time-HiRes
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libevent
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: jemalloc
-  
-  version: ""
+  version: 1.0.0
 - 
   category: dev-util
   description: ""
@@ -176,9 +155,30 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: zlib
+  name: ncurses
   
-  version: 1.2.3
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libevent
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: texinfo
+  
+  version: 4.7-r1
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: numactl
+  
+  version: ""
 uri:
 - https://cdn.mysql.com/Downloads/MySQL-Cluster-7.4/mysql-cluster-gpl-7.4.21.tar.gz
 - https://downloads.mysql.com/archives/MySQL-Cluster-7.4/mysql-cluster-gpl-7.4.21.tar.gz

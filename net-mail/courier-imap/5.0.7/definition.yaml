@@ -11,6 +11,13 @@ conflicts:
   category: net-mail
   description: ""
   license: ""
+  name: bincimap
+  
+  version: ""
+- 
+  category: net-mail
+  description: ""
+  license: ""
   name: cyrus-imapd
   
   version: ""
@@ -21,17 +28,52 @@ conflicts:
   name: uw-imap
   
   version: ""
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: bincimap
-  
-  version: ""
 description: An IMAP daemon designed specifically for maildirs
 license: GPL-3
 name: courier-imap
 requires:
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: courier-authlib
+  
+  version: 0.66.4
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: libidn
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: courier-unicode
+  
+  version: "2"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: fam
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: db
+  
+  version: ""
 - 
   category: sys-libs
   description: ""
@@ -39,6 +81,13 @@ requires:
   name: gdbm
   
   version: 1.8.0
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-courier
+  
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -60,55 +109,6 @@ requires:
   name: mailbase
   
   version: 0.00-r8
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: fam
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnutls
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: courier-authlib
-  
-  version: 0.66.4
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: db
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-courier
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: courier-unicode
-  
-  version: "2"
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: libidn
-  
-  version: ""
 uri:
 - mirror://sourceforge/courier/courier-imap-5.0.7.tar.bz2
 use_flags:

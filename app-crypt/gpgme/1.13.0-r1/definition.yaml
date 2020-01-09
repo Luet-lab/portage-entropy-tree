@@ -4,20 +4,6 @@ conflicts:
   category: <kde-apps
   description: ""
   license: ""
-  name: kdepimlibs
-  
-  version: 4.14.10_p20160611
-- 
-  category: =kde-apps
-  description: ""
-  license: ""
-  name: kdepimlibs-4.14.11_pre20160211*
-  
-  version: ""
-- 
-  category: <kde-apps
-  description: ""
-  license: ""
   name: gpgmepp
   
   version: 4.14.11_pre20160611
@@ -28,10 +14,31 @@ conflicts:
   name: gpgmepp
   
   version: ""
+- 
+  category: <kde-apps
+  description: ""
+  license: ""
+  name: kdepimlibs
+  
+  version: 4.14.10_p20160611
+- 
+  category: =kde-apps
+  description: ""
+  license: ""
+  name: kdepimlibs-4.14.11_pre20160211*
+  
+  version: ""
 description: GnuPG Made Easy is a library for making GnuPG easier to use
 license: GPL-2 LGPL-2.1
 name: gpgme
 requires:
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtcore
+  
+  version: ""
 - 
   category: app-crypt
   description: ""
@@ -53,13 +60,6 @@ requires:
   name: libgpg-error
   
   version: "1.29"
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtcore
-  
-  version: ""
 uri:
 - mirror://gnupg/gpgme/gpgme-1.13.0.tar.bz2
 use_flags:

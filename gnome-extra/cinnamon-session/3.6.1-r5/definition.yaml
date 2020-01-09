@@ -5,17 +5,45 @@ license: GPL-2+ FDL-1.1+ LGPL-2+
 name: cinnamon-session
 requires:
 - 
-  category: sys-apps
+  category: dev-libs
   description: ""
   license: ""
-  name: systemd
+  name: dbus-glib
   
-  version: "183"
+  version: "0.88"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libSM
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXext
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: ""
 - 
   category: gnome-extra
   description: ""
   license: ""
   name: cinnamon-desktop-2.6[systemd=]
+  
+  version: ""
+- 
+  category: sys-power
+  description: ""
+  license: ""
+  name: upower
   
   version: ""
 - 
@@ -29,7 +57,7 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libSM
+  name: cairo
   
   version: ""
 - 
@@ -40,13 +68,6 @@ requires:
   
   version: ""
 - 
-  category: virtual
-  description: ""
-  license: ""
-  name: opengl
-  
-  version: ""
-- 
   category: x11-libs
   description: ""
   license: ""
@@ -54,73 +75,10 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: dbus-glib
-  
-  version: "0.88"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gdk-pixbuf
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: cairo
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXcomposite
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: "3"
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: polkit
-  
-  version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: elogind
-  
-  version: ""
-- 
   category: x11-libs
   description: ""
   license: ""
   name: libXtst
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pango[X]
-  
-  version: ""
-- 
-  category: sys-power
-  description: ""
-  license: ""
-  name: upower
   
   version: ""
 - 
@@ -134,13 +92,6 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libICE
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
   name: libX11
   
   version: ""
@@ -148,7 +99,56 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXext
+  name: libXcomposite
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: elogind
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "183"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gdk-pixbuf
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: "3"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libICE
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pango[X]
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: opengl
   
   version: ""
 uri:

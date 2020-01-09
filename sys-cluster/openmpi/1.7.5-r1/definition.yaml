@@ -11,14 +11,14 @@ conflicts:
   category: sys-cluster
   description: ""
   license: ""
-  name: pmix
+  name: mpich2
   
   version: ""
 - 
   category: sys-cluster
   description: ""
   license: ""
-  name: mpich2
+  name: pmix
   
   version: ""
 description: A high-performance message passing library (MPI)
@@ -26,10 +26,24 @@ license: BSD
 name: openmpi
 requires:
 - 
-  category: dev-util
+  category: sys-apps
   description: ""
   license: ""
-  name: nvidia-cuda-toolkit
+  name: hwloc
+  
+  version: "2"
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: ofed
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: slurm
   
   version: ""
 - 
@@ -44,27 +58,6 @@ requires:
   description: ""
   license: ""
   name: infinipath-psm
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: slurm
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: hwloc
-  
-  version: "2"
-- 
-  category: sys-fabric
-  description: ""
-  license: ""
-  name: ofed
   
   version: ""
 - 
@@ -93,6 +86,13 @@ requires:
   description: ""
   license: ""
   name: libltdl
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: nvidia-cuda-toolkit
   
   version: ""
 uri:

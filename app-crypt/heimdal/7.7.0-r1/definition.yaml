@@ -19,31 +19,24 @@ license: BSD
 name: heimdal
 requires:
 - 
-  category: dev-db
+  category: dev-libs
   description: ""
   license: ""
-  name: lmdb
+  name: openssl
+  
+  version: 1.0.1h-r2
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
   
   version: ""
 - 
-  category: sys-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: e2fsprogs-libs
-  
-  version: 1.42.9
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: readline
-  
-  version: 6.2_p5-r1
-- 
-  category: net-fs
-  description: ""
-  license: ""
-  name: openafs
+  name: libX11
   
   version: ""
 - 
@@ -57,23 +50,9 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: db
+  name: readline
   
-  version: 4.8.30-r1
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: gdbm
-  
-  version: 1.10-r1
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: 1.0.1h-r2
+  version: 6.2_p5-r1
 - 
   category: net-nds
   description: ""
@@ -96,24 +75,17 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
-  name: ncurses
+  name: db
   
-  version: ""
+  version: 4.8.30-r1
 - 
-  category: x11-libs
+  category: dev-db
   description: ""
   license: ""
-  name: libXt
+  name: lmdb
   
   version: ""
 - 
@@ -124,12 +96,40 @@ requires:
   
   version: ""
 - 
+  category: net-fs
+  description: ""
+  license: ""
+  name: openafs
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: gdbm
+  
+  version: 1.10-r1
+- 
   category: dev-db
   description: ""
   license: ""
   name: sqlite
   
   version: 3.8.2
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: e2fsprogs-libs
+  
+  version: 1.42.9
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXt
+  
+  version: ""
 uri:
 - https://github.com/heimdal/heimdal/releases/download/heimdal-7.7.0/heimdal-7.7.0.tar.gz
 use_flags:

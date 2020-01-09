@@ -8,7 +8,49 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: opt-einsum
+  name: protobuf-python
+  
+  version: 3.6.1
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: six
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: re2
+  
+  version: 0.2018.04.01
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: nvidia-cuda-toolkit
+  
+  version: "9.1"
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: keras-applications
+  
+  version: 1.0.8
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: keras-preprocessing
+  
+  version: 1.0.5
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: termcolor
   
   version: ""
 - 
@@ -19,40 +61,12 @@ requires:
   
   version: 1.22.0
 - 
-  category: dev-libs
+  category: dev-db
   description: ""
   license: ""
-  name: jsoncpp
-  
-  version: 1.9.1
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: giflib
+  name: lmdb
   
   version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: hwloc
-  
-  version: "2"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: mpi
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: google-cloud-cpp
-  
-  version: 0.10.0
 - 
   category: dev-libs
   description: ""
@@ -68,61 +82,12 @@ requires:
   
   version: 3.6.1
 - 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libpng
-  
-  version: ""
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: nvidia-cuda-toolkit
-  
-  version: "9.1"
-- 
   category: dev-python
   description: ""
   license: ""
-  name: protobuf-python
+  name: numpy
   
-  version: 3.6.1
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: nsync
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: re2
-  
-  version: 0.2018.04.01
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: flatbuffers
-  
-  version: 1.8.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: absl-py
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: ""
+  version: "1.16"
 - 
   category: dev-python
   description: ""
@@ -131,17 +96,73 @@ requires:
   
   version: ""
 - 
-  category: sci-libs
+  category: sci-visualization
   description: ""
   license: ""
-  name: keras-applications
+  name: tensorboard
   
-  version: 1.0.8
+  version: "1"
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: grpc
+  
+  version: 1.22.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: gast
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: opt-einsum
+  
+  version: ""
 - 
   category: dev-db
   description: ""
   license: ""
-  name: lmdb
+  name: sqlite
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: icu
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: jsoncpp
+  
+  version: 1.9.1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libpng
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libjpeg-turbo
   
   version: ""
 - 
@@ -152,31 +173,73 @@ requires:
   
   version: ""
 - 
-  category: dev-python
+  category: sys-apps
   description: ""
   license: ""
-  name: astor
+  name: hwloc
   
-  version: 0.7.1
+  version: "2"
 - 
   category: dev-python
   description: ""
   license: ""
-  name: numpy
+  name: wrapt
   
-  version: "1.16"
+  version: 1.11.1
 - 
-  category: sci-visualization
+  category: net-libs
   description: ""
   license: ""
-  name: tensorboard
+  name: google-cloud-cpp
   
-  version: "1"
+  version: 0.10.0
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: icu
+  name: nsync
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: giflib
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: cudnn
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: mpi
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: flatbuffers
+  
+  version: 1.8.0
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: snappy
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: double-conversion
   
   version: ""
 - 
@@ -190,79 +253,16 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: gast
+  name: absl-py
   
   version: ""
 - 
   category: dev-python
   description: ""
   license: ""
-  name: termcolor
+  name: astor
   
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: six
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: wrapt
-  
-  version: 1.11.1
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: keras-preprocessing
-  
-  version: 1.0.5
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: double-conversion
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libjpeg-turbo
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: cudnn
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: snappy
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: grpc
-  
-  version: 1.22.0
+  version: 0.7.1
 uri:
 - https://github.com/tensorflow/tensorflow/archive/v1.15.0.tar.gz -> tensorflow-1.15.0.tar.gz
 - https://bitbucket.org/eigen/eigen/get/49177915a14a.tar.gz -> eigen-49177915a14a.tar.gz

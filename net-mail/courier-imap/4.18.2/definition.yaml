@@ -1,6 +1,13 @@
 category: net-mail
 conflicts:
 - 
+  category: net-mail
+  description: ""
+  license: ""
+  name: cyrus-imapd
+  
+  version: ""
+- 
   category: mail-mta
   description: ""
   license: ""
@@ -21,17 +28,17 @@ conflicts:
   name: uw-imap
   
   version: ""
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: cyrus-imapd
-  
-  version: ""
 description: An IMAP daemon designed specifically for maildirs
 license: GPL-3
 name: courier-imap
 requires:
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -54,20 +61,6 @@ requires:
   
   version: 0.66.4
 - 
-  category: net-mail
-  description: ""
-  license: ""
-  name: mailbase
-  
-  version: 0.00-r8
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: db
-  
-  version: ""
-- 
   category: sec-policy
   description: ""
   license: ""
@@ -78,16 +71,16 @@ requires:
   category: net-libs
   description: ""
   license: ""
-  name: gnutls
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
   name: courier-unicode
   
   version: "2"
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: mailbase
+  
+  version: 0.00-r8
 - 
   category: virtual
   description: ""
@@ -102,6 +95,13 @@ requires:
   name: gdbm
   
   version: 1.8.0
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: db
+  
+  version: ""
 uri:
 - mirror://sourceforge/courier/courier-imap-4.18.2.tar.bz2
 use_flags:

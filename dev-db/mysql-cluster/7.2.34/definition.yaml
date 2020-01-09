@@ -4,14 +4,7 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mariadb
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: percona-server
+  name: mysql
   
   version: ""
 - 
@@ -25,7 +18,21 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mysql
+  name: mytop
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: percona-server
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mariadb
   
   version: ""
 - 
@@ -35,50 +42,36 @@ conflicts:
   name: mariadb-galera
   
   version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mytop
-  
-  version: ""
 description: An enhanced, drop-in replacement for MySQL
 license: GPL-2
 name: mysql-cluster
 requires:
 - 
-  category: dev-util
+  category: virtual
   description: ""
   license: ""
-  name: google-perftools
+  name: perl-Getopt-Long
   
   version: ""
 - 
-  category: dev-util
+  category: virtual
   description: ""
   license: ""
-  name: systemtap
+  name: perl-Time-HiRes
   
-  version: "1.3"
+  version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: openssl
+  name: libevent
   
   version: ""
 - 
-  category: dev-db
+  category: dev-libs
   description: ""
   license: ""
-  name: mysql-init-scripts
-  
-  version: ""
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: procps
+  name: libaio
   
   version: ""
 - 
@@ -96,45 +89,10 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: dev-perl
   description: ""
   license: ""
-  name: readline
-  
-  version: "4.1"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: perl-Term-ANSIColor
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libevent
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: sed
-  
-  version: "4"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jre
-  
-  version: "1.6"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: perl-Getopt-Long
+  name: TermReadKey
   
   version: ""
 - 
@@ -145,19 +103,12 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: dev-util
   description: ""
   license: ""
-  name: libaio
+  name: systemtap
   
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: jemalloc
-  
-  version: ""
+  version: "1.3"
 - 
   category: dev-libs
   description: ""
@@ -173,19 +124,68 @@ requires:
   
   version: 1.2.3
 - 
-  category: dev-perl
+  category: virtual
   description: ""
   license: ""
-  name: TermReadKey
+  name: perl-Term-ANSIColor
   
   version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: sed
+  
+  version: "4"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: jemalloc
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-init-scripts
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: procps
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: google-perftools
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: "4.1"
 - 
   category: virtual
   description: ""
   license: ""
-  name: perl-Time-HiRes
+  name: jre
   
-  version: ""
+  version: "1.6"
 uri:
 - https://cdn.mysql.com/Downloads/MySQL-Cluster-7.2/mysql-cluster-gpl-7.2.34.tar.gz
 - https://downloads.mysql.com/archives/MySQL-Cluster-7.2/mysql-cluster-gpl-7.2.34.tar.gz

@@ -12,41 +12,6 @@ requires:
   
   version: "4.9"
 - 
-  category: app-emulation
-  description: ""
-  license: ""
-  name: containerd
-  
-  version: 1.2.6
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
-  
-  version: 3.7.9
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libseccomp
-  
-  version: 2.2.1
-- 
-  category: dev-vcs
-  description: ""
-  license: ""
-  name: git
-  
-  version: "1.7"
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: procps
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
@@ -57,9 +22,9 @@ requires:
   category: app-emulation
   description: ""
   license: ""
-  name: docker-proxy
+  name: containerd
   
-  version: 0.8.0_p20190513
+  version: 1.2.6
 - 
   category: sys-process
   description: ""
@@ -67,6 +32,13 @@ requires:
   name: tini
   
   version: 0.18.0
+- 
+  category: net-firewall
+  description: ""
+  license: ""
+  name: iptables
+  
+  version: "1.4"
 - 
   category: sys-fs
   description: ""
@@ -78,16 +50,44 @@ requires:
   category: sys-libs
   description: ""
   license: ""
+  name: libseccomp
+  
+  version: 2.2.1
+- 
+  category: sys-libs
+  description: ""
+  license: ""
   name: libapparmor
   
   version: ""
 - 
-  category: net-firewall
+  category: sys-process
   description: ""
   license: ""
-  name: iptables
+  name: procps
   
-  version: "1.4"
+  version: ""
+- 
+  category: dev-vcs
+  description: ""
+  license: ""
+  name: git
+  
+  version: "1.7"
+- 
+  category: app-emulation
+  description: ""
+  license: ""
+  name: docker-proxy
+  
+  version: 0.8.0_p20190513
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: 3.7.9
 uri:
 - https://github.com/docker/docker-ce/archive/v18.09.9.tar.gz -> docker-18.09.9.tar.gz
 use_flags:

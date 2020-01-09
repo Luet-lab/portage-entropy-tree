@@ -1,6 +1,13 @@
 category: net-mail
 conflicts:
 - 
+  category: mail-client
+  description: ""
+  license: ""
+  name: nmh
+  
+  version: ""
+- 
   category: mail-filter
   description: ""
   license: ""
@@ -11,7 +18,7 @@ conflicts:
   category: mail-client
   description: ""
   license: ""
-  name: nmh
+  name: nail
   
   version: ""
 - 
@@ -21,22 +28,71 @@ conflicts:
   name: mailx
   
   version: ""
-- 
-  category: mail-client
-  description: ""
-  license: ""
-  name: nail
-  
-  version: ""
 description: A useful collection of mail servers, clients, and filters
 license: GPL-2 LGPL-2.1
 name: mailutils
 requires:
 - 
-  category: virtual
+  category: dev-db
   description: ""
   license: ""
-  name: krb5
+  name: postgresql
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: tcp-wrappers
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: fribidi
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libltdl
+  
+  version: ""
+- 
+  category: app-editors
+  description: ""
+  license: ""
+  name: emacs
+  
+  version: "23.1"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: gdbm
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: kyotocabinet
   
   version: ""
 - 
@@ -54,10 +110,38 @@ requires:
   
   version: ""
 - 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: ""
+- 
   category: sys-libs
   description: ""
   license: ""
-  name: gdbm
+  name: db
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: mysql
   
   version: ""
 - 
@@ -75,96 +159,12 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libltdl
-  
-  version: ""
-- 
   category: virtual
   description: ""
   license: ""
   name: mta
   
   version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: db
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: fribidi
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: kyotocabinet
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: mysql
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnutls
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: readline
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: tcp-wrappers
-  
-  version: ""
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: postgresql
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: ncurses
-  
-  version: ""
-- 
-  category: app-editors
-  description: ""
-  license: ""
-  name: emacs
-  
-  version: "23.1"
 uri:
 - mirror://gnu/mailutils/mailutils-3.4.tar.xz
 use_flags:

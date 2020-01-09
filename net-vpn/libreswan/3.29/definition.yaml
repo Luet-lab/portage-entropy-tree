@@ -19,10 +19,17 @@ license: GPL-2 BSD-4 RSA DES
 name: libreswan
 requires:
 - 
-  category: dev-libs
+  category: net-libs
   description: ""
   license: ""
-  name: nss[utils(+)]
+  name: ldns
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libseccomp
   
   version: ""
 - 
@@ -33,12 +40,19 @@ requires:
   
   version: ""
 - 
-  category: sec-policy
+  category: dev-libs
   description: ""
   license: ""
-  name: selinux-ipsec
+  name: nspr
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nss
+  
+  version: "3.42"
 - 
   category: net-misc
   description: ""
@@ -54,26 +68,12 @@ requires:
   
   version: 1.9.1-r1
 - 
-  category: net-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: ldns
+  name: systemd
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libevent
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: nss
-  
-  version: "3.42"
 - 
   category: sys-libs
   description: ""
@@ -85,14 +85,28 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: nspr
+  name: nss[utils(+)]
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gmp
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libevent
   
   version: ""
 - 
   category: sys-libs
   description: ""
   license: ""
-  name: pam
+  name: libcap-ng
   
   version: ""
 - 
@@ -106,28 +120,14 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: libseccomp
+  name: pam
   
   version: ""
 - 
-  category: sys-apps
+  category: sec-policy
   description: ""
   license: ""
-  name: systemd
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: gmp
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libcap-ng
+  name: selinux-ipsec
   
   version: ""
 uri:

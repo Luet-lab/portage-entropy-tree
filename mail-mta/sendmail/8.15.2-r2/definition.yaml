@@ -1,17 +1,10 @@
 category: mail-mta
 conflicts:
 - 
-  category: net-mail
-  description: ""
-  license: ""
-  name: vacation
-  
-  version: ""
-- 
   category: mail-mta
   description: ""
   license: ""
-  name: esmtp
+mailer
   
   version: ""
 - 
@@ -26,6 +19,34 @@ conflicts:
   description: ""
   license: ""
   name: opensmtpd
+  
+  version: ""
+- 
+  category: '>=mail-mta'
+  description: ""
+  license: ""
+  name: ssmtp
+  
+  version: 2.64-r2
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: exim
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: esmtp
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: netqmail
   
   version: ""
 - 
@@ -46,20 +67,6 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: msmtp
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-mailer
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
   name: mini-qmail
   
   version: ""
@@ -67,7 +74,7 @@ mailer
   category: mail-mta
   description: ""
   license: ""
-  name: netqmail
+  name: msmtp
   
   version: ""
 - 
@@ -78,19 +85,12 @@ mailer
   
   version: 2.64-r2
 - 
-  category: mail-mta
+  category: net-mail
   description: ""
   license: ""
-  name: exim
+  name: vacation
   
   version: ""
-- 
-  category: '>=mail-mta'
-  description: ""
-  license: ""
-  name: ssmtp
-  
-  version: 2.64-r2
 description: Widely-used Mail Transport Agent (MTA)
 license: Sendmail GPL-2
 name: sendmail
@@ -103,10 +103,10 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: net-nds
   description: ""
   license: ""
-  name: libressl
+  name: openldap
   
   version: ""
 - 
@@ -116,6 +116,13 @@ requires:
   name: mailbase
   
   version: "0.00"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
 - 
   category: net-mail
   description: ""
@@ -131,6 +138,13 @@ requires:
   
   version: ""
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: cyrus-sasl
+  
+  version: 2.1.10
+- 
   category: sys-apps
   description: ""
   license: ""
@@ -144,20 +158,6 @@ requires:
   name: db
   
   version: "3.2"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: cyrus-sasl
-  
-  version: 2.1.10
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
-  
-  version: ""
 uri:
 - ftp://ftp.sendmail.org/pub/sendmail/sendmail.8.15.2.tar.gz
 use_flags:

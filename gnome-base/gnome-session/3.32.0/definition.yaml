@@ -12,55 +12,6 @@ requires:
   
   version: 2.46.0
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libSM
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gnome-desktop
-  
-  version: "3.18"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: mesa[egl,gles2,X(+)]
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libepoxy
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus[X]
-  
-  version: ""
-- 
-  category: x11-misc
-  description: ""
-  license: ""
-  name: xdg-user-dirs
-  
-  version: ""
-- 
   category: x11-misc
   description: ""
   license: ""
@@ -71,23 +22,44 @@ requires:
   category: x11-libs
   description: ""
   license: ""
+  name: libX11
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: mesa[egl,gles2,X(+)]
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXcomposite
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
   name: gtk+
   
   version: 3.18.0
 - 
-  category: sys-apps
+  category: x11-libs
   description: ""
   license: ""
-  name: systemd
+  name: libSM
   
-  version: "183"
+  version: ""
 - 
   category: gnome-base
   description: ""
   license: ""
-  name: gnome-settings-daemon
+  name: gnome-desktop
   
-  version: 3.23.2
+  version: "3.18"
 - 
   category: gnome-base
   description: ""
@@ -96,12 +68,12 @@ requires:
   
   version: 0.1.7
 - 
-  category: dev-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: dbus-glib
+  name: dbus[X]
   
-  version: "0.76"
+  version: ""
 - 
   category: sys-auth
   description: ""
@@ -124,12 +96,19 @@ requires:
   
   version: "0.10"
 - 
-  category: x11-libs
+  category: media-libs
   description: ""
   license: ""
-  name: libXcomposite
+  name: libepoxy
   
   version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "183"
 - 
   category: sys-auth
   description: ""
@@ -137,6 +116,27 @@ requires:
   name: elogind
   
   version: "239.4"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: dbus-glib
+  
+  version: "0.76"
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gnome-settings-daemon
+  
+  version: 3.23.2
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: xdg-user-dirs
+  
+  version: ""
 uri: []
 use_flags:
 - consolekit

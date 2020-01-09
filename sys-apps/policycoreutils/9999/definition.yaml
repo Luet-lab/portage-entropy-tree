@@ -5,26 +5,12 @@ license: GPL-2
 name: policycoreutils
 requires:
 - 
-  category: app-misc
-  description: ""
-  license: ""
-  name: pax-utils
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
-  name: libselinux
+  name: libcap
   
-  version: "9999"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libsepol
-  
-  version: "9999"
+  version: 1.10-r10
 - 
   category: sys-devel
   description: ""
@@ -47,19 +33,26 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: sys-process
   description: ""
   license: ""
-  name: pam
+  name: audit
+  
+  version: 1.5.1
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: pax-utils
   
   version: ""
 - 
   category: sys-libs
   description: ""
   license: ""
-  name: libcap
+  name: libselinux
   
-  version: 1.10-r10
+  version: "9999"
 - 
   category: sys-libs
   description: ""
@@ -75,6 +68,13 @@ requires:
   
   version: ""
 - 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libsepol
+  
+  version: "9999"
+- 
   category: app-admin
   description: ""
   license: ""
@@ -89,12 +89,12 @@ requires:
   
   version: ""
 - 
-  category: sys-process
+  category: sys-libs
   description: ""
   license: ""
-  name: audit
+  name: pam
   
-  version: 1.5.1
+  version: ""
 uri:
 - https://dev.gentoo.org/~perfinion/distfiles/policycoreutils-extra-1.36.tar.bz2
 use_flags:

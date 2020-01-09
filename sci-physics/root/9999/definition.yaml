@@ -12,47 +12,12 @@ license: LGPL-2.1 freedist MSttfEULA LGPL-3 libpng UoI-NCSA
 name: root
 requires:
 - 
-  category: sci-libs
+  category: dev-util
   description: ""
   license: ""
-  name: gsl
+  name: nvidia-cuda-toolkit
   
-  version: ""
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: R
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: zstd
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXext
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtcore
-  
-  version: ""
+  version: "9.0"
 - 
   category: net-libs
   description: ""
@@ -68,10 +33,17 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: virtual
   description: ""
   license: ""
-  name: vc
+  name: shadow
+  
+  version: ""
+- 
+  category: media-fonts
+  description: ""
+  license: ""
+  name: dejavu
   
   version: ""
 - 
@@ -82,24 +54,17 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: media-libs
   description: ""
   license: ""
-  name: opengl
+  name: glew
   
   version: ""
 - 
-  category: dev-qt
+  category: dev-db
   description: ""
   license: ""
-  name: qtwebengine
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: shadow
+  name: sqlite
   
   version: ""
 - 
@@ -110,31 +75,31 @@ requires:
   
   version: "2018"
 - 
-  category: sys-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: ncurses
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
+  name: vc
   
   version: ""
 - 
   category: sci-libs
   description: ""
   license: ""
-  name: fftw
+  name: gsl
   
   version: ""
 - 
   category: dev-db
   description: ""
   license: ""
-  name: oracle-instantclient-basic
+  name: postgresql
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXext
   
   version: ""
 - 
@@ -152,10 +117,17 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: fcgi
+  name: ncurses
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: fftw
   
   version: ""
 - 
@@ -166,6 +138,104 @@ requires:
   
   version: ""
 - 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: cfitsio
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: zstd
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpcre
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gl2ps
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXft
+  
+  version: ""
+- 
+  category: media-gfx
+  description: ""
+  license: ""
+  name: graphviz
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: fcgi
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: R
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: xrootd
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: lz4
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: xz-utils
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: xxhash
+  
+  version: ""
+- 
   category: dev-lang
   description: ""
   license: ""
@@ -173,31 +243,17 @@ requires:
   
   version: ""
 - 
-  category: media-fonts
-  description: ""
-  license: ""
-  name: dejavu
-  
-  version: ""
-- 
   category: media-libs
   description: ""
   license: ""
-  name: libpng
+  name: freetype
   
   version: ""
 - 
-  category: x11-libs
+  category: dev-db
   description: ""
   license: ""
-  name: libXpm
-  
-  version: ""
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: cfitsio
+  name: mysql-connector-c
   
   version: ""
 - 
@@ -211,28 +267,42 @@ requires:
   category: dev-db
   description: ""
   license: ""
-  name: mysql-connector-c
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: lz4
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: freetype
+  name: oracle-instantclient-basic
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: gl2ps
+  name: libX11
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXpm
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: opengl
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtwebengine
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libafterimage
   
   version: ""
 - 
@@ -250,31 +320,10 @@ requires:
   
   version: ""
 - 
-  category: dev-db
+  category: media-libs
   description: ""
   license: ""
-  name: postgresql
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: xz-utils
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libpcre
+  name: libpng
   
   version: ""
 - 
@@ -285,59 +334,10 @@ requires:
   
   version: ""
 - 
-  category: dev-util
+  category: dev-qt
   description: ""
   license: ""
-  name: nvidia-cuda-toolkit
-  
-  version: "9.0"
-- 
-  category: media-gfx
-  description: ""
-  license: ""
-  name: graphviz
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: xrootd
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: xxhash
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXft
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: glew
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libafterimage
+  name: qtcore
   
   version: ""
 uri: []

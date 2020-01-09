@@ -8,6 +8,13 @@ conflicts:
   
   version: "27"
 - 
+  category: <sys-apps
+  description: ""
+  license: ""
+  name: baselayout
+  
+  version: 2.1-r1
+- 
   category: sys-apps
   description: ""
   license: ""
@@ -15,12 +22,12 @@ conflicts:
   
   version: ""
 - 
-  category: <sys-apps
+  category: <app-shells
   description: ""
   license: ""
-  name: baselayout
+  name: gentoo-zsh-completions
   
-  version: 2.1-r1
+  version: "20180228"
 - 
   category: <sys-process
   description: ""
@@ -32,13 +39,6 @@ conflicts:
   category: <app-shells
   description: ""
   license: ""
-  name: gentoo-zsh-completions
-  
-  version: "20180228"
-- 
-  category: <app-shells
-  description: ""
-  license: ""
   name: gentoo-bashcomp
   
   version: "20180302"
@@ -46,48 +46,6 @@ description: OpenRC manages the services, startup and shutdown of a host
 license: BSD-2
 name: openrc
 requires:
-- 
-  category: app-shells
-  description: ""
-  license: ""
-  name: bash
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: sysvinit-2.86-r6[selinux?]
-  
-  version: ""
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: audit
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: policycoreutils
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: ncurses
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: "2.6"
 - 
   category: virtual
   description: ""
@@ -103,17 +61,10 @@ requires:
   
   version: 2.20170204-r4
 - 
-  category: sec-policy
+  category: sys-libs
   description: ""
   license: ""
-  name: selinux-openrc
-  
-  version: 2.20170204-r4
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: pambase
+  name: ncurses
   
   version: ""
 - 
@@ -127,7 +78,56 @@ requires:
   category: sys-process
   description: ""
   license: ""
+  name: audit
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: "2.6"
+- 
+  category: app-shells
+  description: ""
+  license: ""
+  name: bash
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
   name: psmisc
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: pambase
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-openrc
+  
+  version: 2.20170204-r4
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: policycoreutils
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: sysvinit-2.86-r6[selinux?]
   
   version: ""
 uri:

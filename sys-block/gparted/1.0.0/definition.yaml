@@ -5,26 +5,54 @@ license: GPL-2+ FDL-1.2+
 name: gparted
 requires:
 - 
-  category: sys-fs
+  category: sys-block
   description: ""
   license: ""
-  name: dosfstools
+  name: parted
   
-  version: ""
+  version: "3.2"
 - 
   category: sys-fs
   description: ""
   license: ""
-  name: mtools
+  name: e2fsprogs
+  
+  version: 1.44.5
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: jfsutils
   
   version: ""
 - 
-  category: sys-auth
+  category: x11-apps
   description: ""
   license: ""
-  name: polkit
+  name: xhost
   
-  version: "0.102"
+  version: ""
+- 
+  category: kde-plasma
+  description: ""
+  license: ""
+  name: kde-cli-tools
+  
+  version: 5.8.6-r1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.58.3-r1
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: xfsprogs
+  
+  version: ""
 - 
   category: dev-cpp
   description: ""
@@ -40,33 +68,19 @@ requires:
   
   version: "3.24"
 - 
-  category: sys-block
+  category: sys-fs
   description: ""
   license: ""
-  name: parted
+  name: reiser4progs
   
-  version: "3.2"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
-  
-  version: 2.33.2
+  version: ""
 - 
   category: sys-fs
   description: ""
   license: ""
-  name: udftools
+  name: btrfs-progs
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: 2.58.3-r1
 - 
   category: sys-fs
   description: ""
@@ -78,21 +92,14 @@ requires:
   category: sys-fs
   description: ""
   license: ""
-  name: xfsdump
+  name: multipath-tools
   
   version: ""
-- 
-  category: kde-plasma
-  description: ""
-  license: ""
-  name: kde-cli-tools
-  
-  version: 5.8.6-r1
 - 
   category: sys-fs
   description: ""
   license: ""
-  name: dmraid
+  name: mtools
   
   version: ""
 - 
@@ -103,17 +110,45 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: sys-fs
   description: ""
   license: ""
-  name: udev
+  name: udftools
   
   version: ""
 - 
   category: sys-fs
   description: ""
   license: ""
-  name: jfsutils
+  name: xfsdump
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: "0.102"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libsigc++
+  
+  version: 2.10.1
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lvm2
+  
+  version: 2.02.116
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: dosfstools
   
   version: ""
 - 
@@ -131,52 +166,17 @@ requires:
   
   version: ""
 - 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: 2.33.2
+- 
   category: sys-fs
   description: ""
   license: ""
   name: cryptsetup
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: reiser4progs
-  
-  version: ""
-- 
-  category: x11-apps
-  description: ""
-  license: ""
-  name: xhost
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: e2fsprogs
-  
-  version: 1.44.5
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: btrfs-progs
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: lvm2
-  
-  version: 2.02.116
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: multipath-tools
   
   version: ""
 - 
@@ -194,17 +194,17 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libsigc++
-  
-  version: 2.10.1
-- 
   category: sys-fs
   description: ""
   license: ""
-  name: xfsprogs
+  name: dmraid
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
   
   version: ""
 uri:

@@ -6,12 +6,40 @@ license: GPL-2
 name: openvpn
 requires:
 - 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
   category: dev-libs
   description: ""
   license: ""
-  name: pkcs11-helper
+  name: openssl
   
-  version: "1.11"
+  version: 0.9.8
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: lzo
+  
+  version: "1.07"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
 - 
   category: sec-policy
   description: ""
@@ -34,38 +62,10 @@ requires:
   
   version: 1.60_p20160215155418
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: ""
-- 
   category: net-libs
   description: ""
   license: ""
   name: mbedtls
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: 0.9.8
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
   
   version: ""
 - 
@@ -79,9 +79,9 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: lzo
+  name: pkcs11-helper
   
-  version: "1.07"
+  version: "1.11"
 uri:
 - https://swupdate.openvpn.net/community/releases/openvpn-2.4.6.tar.gz
 use_flags:

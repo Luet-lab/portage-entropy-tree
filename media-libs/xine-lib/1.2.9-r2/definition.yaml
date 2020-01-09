@@ -5,10 +5,10 @@ license: GPL-2
 name: xine-lib
 requires:
 - 
-  category: media-video
+  category: media-libs
   description: ""
   license: ""
-  name: ffmpeg
+  name: alsa-lib
   
   version: ""
 - 
@@ -22,49 +22,35 @@ requires:
   category: media-sound
   description: ""
   license: ""
-  name: pulseaudio
+  name: wavpack
   
   version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libvdpau
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXvMC
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libdvdcss
-  
-  version: 1.2.10
 - 
   category: virtual
   description: ""
   license: ""
-  name: jack
+  name: imagemagick-tools
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libv4l
+  name: libpostproc
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libsdl
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXv
+  name: libXext
   
   version: ""
 - 
@@ -75,52 +61,38 @@ requires:
   
   version: ""
 - 
-  category: media-video
+  category: x11-libs
   description: ""
   license: ""
-  name: vcdimager
+  name: libva
   
-  version: 0.7.23
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libiconv
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libbluray
+  
+  version: 0.2.1
 - 
   category: media-sound
   description: ""
   license: ""
-  name: wavpack
+  name: musepack-tools
   
-  version: ""
+  version: "444"
 - 
-  category: x11-libs
+  category: media-sound
   description: ""
   license: ""
-  name: libxcb
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: faad2
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libcaca
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libdca
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libfame
+  name: pulseaudio
   
   version: ""
 - 
@@ -138,10 +110,80 @@ requires:
   
   version: ""
 - 
+  category: media-video
+  description: ""
+  license: ""
+  name: vcdimager
+  
+  version: 0.7.23
+- 
   category: media-libs
   description: ""
   license: ""
-  name: freetype
+  name: libvpx
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXv
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXvMC
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libintl
+  
+  version: ""
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: libav
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libcaca
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libmodplug
+  
+  version: 0.8.8.1
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libogg
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxcb
   
   version: ""
 - 
@@ -159,82 +201,12 @@ requires:
   
   version: ""
 - 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libmng
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libmodplug
-  
-  version: 0.8.8.1
-- 
   category: virtual
   description: ""
   license: ""
-  name: opengl
+  name: jack
   
   version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libvorbis
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXinerama
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: flac
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: imagemagick-tools
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jpeg
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libpostproc
-  
-  version: ""
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: musepack-tools
-  
-  version: "444"
 - 
   category: media-libs
   description: ""
@@ -243,59 +215,31 @@ requires:
   
   version: ""
 - 
-  category: media-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: libvpx
+  name: libvdpau
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libbluray
+  name: faad2
   
-  version: 0.2.1
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libdca
+  
+  version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
   name: gdk-pixbuf
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libsdl
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libva
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXext
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxdg-basedir
   
   version: ""
 - 
@@ -309,6 +253,20 @@ requires:
   category: media-libs
   description: ""
   license: ""
+  name: freetype
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxdg-basedir
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
   name: a52dec
   
   version: ""
@@ -316,21 +274,14 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: alsa-lib
+  name: libfame
   
   version: ""
 - 
-  category: media-video
+  category: virtual
   description: ""
   license: ""
-  name: libav
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libogg
+  name: jpeg
   
   version: ""
 - 
@@ -341,17 +292,66 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: media-libs
   description: ""
   license: ""
-  name: libintl
+  name: libv4l
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libvorbis
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libdvdcss
+  
+  version: 1.2.10
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: flac
+  
+  version: ""
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: ffmpeg
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libmng
   
   version: ""
 - 
   category: virtual
   description: ""
   license: ""
-  name: libiconv
+  name: opengl
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXinerama
   
   version: ""
 uri:

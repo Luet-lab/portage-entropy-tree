@@ -1,20 +1,6 @@
 category: sys-fs
 conflicts:
 - 
-  category: <sys-kernel
-  description: ""
-  license: ""
-  name: genkernel-next
-  
-  version: "67"
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: zfs-fuse
-  
-  version: ""
-- 
   category: =sys-apps
   description: ""
   license: ""
@@ -22,19 +8,12 @@ conflicts:
   
   version: ""
 - 
-  category: <sys-kernel
+  category: sys-fs
   description: ""
   license: ""
-  name: bliss-initramfs
+  name: zfs-fuse
   
-  version: 7.1.0
-- 
-  category: <sys-kernel
-  description: ""
-  license: ""
-  name: dracut
-  
-  version: 044-r1
+  version: ""
 - 
   category: <sys-boot
   description: ""
@@ -46,76 +25,34 @@ conflicts:
   category: <sys-kernel
   description: ""
   license: ""
+  name: genkernel-next
+  
+  version: "67"
+- 
+  category: <sys-kernel
+  description: ""
+  license: ""
+  name: bliss-initramfs
+  
+  version: 7.1.0
+- 
+  category: <sys-kernel
+  description: ""
+  license: ""
   name: genkernel
   
   version: 3.5.1.1
+- 
+  category: <sys-kernel
+  description: ""
+  license: ""
+  name: dracut
+  
+  version: 044-r1
 description: Userland utilities for ZFS Linux kernel module
 license: BSD-2 CDDL MIT
 name: zfs
 requires:
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: zfs-kmod
-  
-  version: 0.7.13
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: awk
-  
-  version: ""
-- 
-  category: app-misc
-  description: ""
-  license: ""
-  name: pax-utils
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: udev
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
-  
-  version: ""
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: bc
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: mdadm
-  
-  version: ""
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: procps
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: modutils
-  
-  version: ""
 - 
   category: app-arch
   description: ""
@@ -124,10 +61,17 @@ requires:
   
   version: ""
 - 
-  category: sys-fs
+  category: net-libs
   description: ""
   license: ""
-  name: udev-init-scripts
+  name: libtirpc
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: awk
   
   version: ""
 - 
@@ -145,10 +89,66 @@ requires:
   
   version: ""
 - 
-  category: net-libs
+  category: sys-fs
   description: ""
   license: ""
-  name: libtirpc
+  name: mdadm
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: zfs-kmod
+  
+  version: 0.7.13
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: bc
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: pax-utils
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: udev-init-scripts
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: procps
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: modutils
   
   version: ""
 uri:

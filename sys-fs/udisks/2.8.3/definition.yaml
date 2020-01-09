@@ -5,54 +5,19 @@ license: LGPL-2+ GPL-2+
 name: udisks
 requires:
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libatasmart
-  
-  version: "0.19"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: "209"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.50"
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: lvm2
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: eject
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-devicekit
-  
-  version: ""
-- 
   category: sys-auth
   description: ""
   license: ""
   name: polkit
   
   version: "0.110"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: ""
 - 
   category: sys-auth
   description: ""
@@ -71,16 +36,51 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libgudev
+  name: libatasmart
   
-  version: "165"
+  version: "0.19"
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lvm2
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "209"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: "2.30"
 - 
   category: virtual
   description: ""
   license: ""
-  name: udev
+  name: eject
   
   version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-devicekit
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.50"
 - 
   category: virtual
   description: ""
@@ -96,12 +96,12 @@ requires:
   
   version: "1.30"
 - 
-  category: sys-apps
+  category: dev-libs
   description: ""
   license: ""
-  name: util-linux
+  name: libgudev
   
-  version: "2.30"
+  version: "165"
 uri:
 - https://github.com/storaged-project/udisks/releases/download/udisks-2.8.3/udisks-2.8.3.tar.bz2
 use_flags:

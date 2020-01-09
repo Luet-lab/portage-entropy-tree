@@ -5,12 +5,26 @@ license: '|| ( LGPL-2 LGPL-3 ) BSD Sleepycat'
 name: evolution-data-server
 requires:
 - 
-  category: app-crypt
+  category: net-libs
   description: ""
   license: ""
-  name: libsecret
+  name: webkit-gtk
   
-  version: "0.5"
+  version: 2.11.91
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgdata
+  
+  version: 0.17.7
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nspr
+  
+  version: "4.4"
 - 
   category: dev-libs
   description: ""
@@ -18,6 +32,13 @@ requires:
   name: nss
   
   version: "3.9"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: icu
+  
+  version: ""
 - 
   category: sys-libs
   description: ""
@@ -33,40 +54,12 @@ requires:
   
   version: 1.0.4
 - 
-  category: virtual
-  description: ""
-  license: ""
-  name: krb5
-  
-  version: ""
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
-  
-  version: "2"
-- 
   category: dev-libs
   description: ""
   license: ""
-  name: libxml2
+  name: libical
   
-  version: "2"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: nspr
-  
-  version: "4.4"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: icu
-  
-  version: ""
+  version: 3.0.2
 - 
   category: virtual
   description: ""
@@ -78,9 +71,16 @@ requires:
   category: net-libs
   description: ""
   license: ""
-  name: webkit-gtk
+  name: gnome-online-accounts
   
-  version: 2.11.91
+  version: "3.8"
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: "2"
 - 
   category: dev-libs
   description: ""
@@ -89,19 +89,26 @@ requires:
   
   version: "3.10"
 - 
-  category: net-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: libsoup
+  name: zlib
   
-  version: "2.42"
+  version: ""
 - 
-  category: dev-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: libgdata
+  name: gtk+
   
-  version: 0.17.7
+  version: "3.10"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libcanberra
+  
+  version: "0.25"
 - 
   category: app-crypt
   description: ""
@@ -127,37 +134,23 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libical
+  name: libxml2
   
-  version: 3.0.2
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: "3.10"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libcanberra
-  
-  version: "0.25"
+  version: "2"
 - 
   category: net-libs
   description: ""
   license: ""
-  name: gnome-online-accounts
+  name: libsoup
   
-  version: "3.8"
+  version: "2.42"
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: libsecret
+  
+  version: "0.5"
 - 
   category: dev-libs
   description: ""
@@ -165,6 +158,13 @@ requires:
   name: gobject-introspection
   
   version: 0.9.12
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
+  
+  version: ""
 uri: []
 use_flags:
 - berkdb

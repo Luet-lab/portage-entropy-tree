@@ -5,26 +5,33 @@ license: GPL-2
 name: mutt
 requires:
 - 
-  category: dev-db
+  category: sys-libs
   description: ""
   license: ""
-  name: lmdb
+  name: gdbm
   
   version: ""
 - 
-  category: dev-db
+  category: net-libs
   description: ""
   license: ""
-  name: qdbm
+  name: gnutls
+  
+  version: 1.0.17
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
   
   version: ""
 - 
-  category: dev-db
+  category: sys-libs
   description: ""
   license: ""
-  name: tokyocabinet
+  name: db
   
-  version: ""
+  version: "4"
 - 
   category: dev-libs
   description: ""
@@ -37,55 +44,6 @@ requires:
   description: ""
   license: ""
   name: libidn2
-  
-  version: ""
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: gpgme
-  
-  version: 0.9.0
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: gnupg
-  
-  version: ""
-- 
-  category: app-misc
-  description: ""
-  license: ""
-  name: mime-types
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libiconv
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: 0.9.6
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libintl
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: krb5
   
   version: ""
 - 
@@ -103,33 +61,12 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: app-crypt
   description: ""
   license: ""
-  name: db
-  
-  version: "4"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: gdbm
+  name: gnupg
   
   version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnutls
-  
-  version: 1.0.17
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: cyrus-sasl
-  
-  version: "2"
 - 
   category: net-mail
   description: ""
@@ -144,6 +81,69 @@ requires:
   name: ncurses
   
   version: "5.2"
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: mime-types
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libiconv
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: tokyocabinet
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 0.9.6
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libintl
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gpgme
+  
+  version: 0.9.0
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: lmdb
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: qdbm
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: cyrus-sasl
+  
+  version: "2"
 uri:
 - ftp://ftp.mutt.org/pub/mutt/mutt-1.12.2.tar.gz
 - https://bitbucket.org/mutt/mutt/downloads/mutt-1.12.2.tar.gz

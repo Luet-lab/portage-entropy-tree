@@ -18,14 +18,14 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: percona-server
+  name: mysql-cluster
   
   version: ""
 - 
   category: dev-db
   description: ""
   license: ""
-  name: mysql-cluster
+  name: percona-server
   
   version: ""
 description: A fast, multi-threaded, multi-user SQL database server
@@ -33,12 +33,12 @@ license: GPL-2
 name: mysql
 requires:
 - 
-  category: dev-libs
+  category: app-arch
   description: ""
   license: ""
-  name: icu
+  name: lz4
   
-  version: ""
+  version: 0_p131
 - 
   category: net-libs
   description: ""
@@ -50,21 +50,7 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libressl
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: mysql
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-mysql
+  name: jemalloc
   
   version: ""
 - 
@@ -72,6 +58,13 @@ requires:
   description: ""
   license: ""
   name: mysql
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libedit
   
   version: ""
 - 
@@ -89,38 +82,24 @@ requires:
   
   version: ""
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 1.0.0
+- 
   category: sys-process
   description: ""
   license: ""
-  name: procps
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: lz4
-  
-  version: 0_p131
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libedit
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: jemalloc
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mysql-init-scripts
+  name: numactl
   
   version: ""
 - 
@@ -128,6 +107,13 @@ requires:
   description: ""
   license: ""
   name: google-perftools
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: icu
   
   version: ""
 - 
@@ -152,17 +138,31 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: 1.0.0
-- 
   category: sys-process
   description: ""
   license: ""
-  name: numactl
+  name: procps
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-mysql
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: mysql
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-init-scripts
   
   version: ""
 uri:

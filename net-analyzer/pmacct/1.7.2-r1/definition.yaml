@@ -5,10 +5,10 @@ license: GPL-2
 name: pmacct
 requires:
 - 
-  category: net-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libpcap
+  name: librdkafka
   
   version: ""
 - 
@@ -22,16 +22,30 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: geoip
+  name: libmaxminddb
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: librdkafka
+  name: jansson
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: mongo-c-driver
+  
+  version: 0.8.1-r1
 - 
   category: net-libs
   description: ""
@@ -50,30 +64,23 @@ requires:
   category: dev-db
   description: ""
   license: ""
-  name: sqlite
-  
-  version: "3"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libmaxminddb
+  name: postgresql
   
   version: ""
 - 
-  category: dev-libs
+  category: net-libs
   description: ""
   license: ""
-  name: jansson
+  name: zeromq
   
-  version: ""
+  version: 4.2.0
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: mongo-c-driver
+  name: geoip
   
-  version: 0.8.1-r1
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -85,23 +92,16 @@ requires:
   category: dev-db
   description: ""
   license: ""
-  name: mysql-connector-c
+  name: sqlite
   
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: postgresql
-  
-  version: ""
+  version: "3"
 - 
   category: net-libs
   description: ""
   license: ""
-  name: zeromq
+  name: libpcap
   
-  version: 4.2.0
+  version: ""
 uri:
 - http://www.pmacct.net/pmacct-1.7.2.tar.gz
 use_flags:

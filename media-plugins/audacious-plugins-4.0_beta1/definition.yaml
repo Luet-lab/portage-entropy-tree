@@ -5,47 +5,40 @@ license: GPL-2
 name: audacious-plugins-4.0_beta1
 requires:
 - 
-  category: dev-qt
+  category: net-misc
   description: ""
   license: ""
-  name: qtmultimedia
+  name: curl
   
   version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libsidplayfp
-  
-  version: 1.0.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: faad2
-  
-  version: "2.7"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libcdio
-  
-  version: ""
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: mpg123
-  
-  version: 1.12.1
 - 
   category: media-libs
   description: ""
   license: ""
   name: libvorbis
   
-  version: "1.0"
+  version: 1.2.0
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: wavpack
+  
+  version: 4.50.1-r1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: alsa-lib
+  
+  version: 1.0.16
 - 
   category: net-libs
   description: ""
@@ -57,23 +50,9 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: soxr
+  name: bio2jack
   
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libsamplerate
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libmodplug
-  
-  version: ""
+  version: "0.4"
 - 
   category: media-libs
   description: ""
@@ -82,150 +61,10 @@ requires:
   
   version: 1.0.17-r1
 - 
-  category: media-sound
-  description: ""
-  license: ""
-  name: wavpack
-  
-  version: 4.50.1-r1
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtwidgets
-  
-  version: ""
-- 
   category: media-libs
   description: ""
   license: ""
-  name: bio2jack
-  
-  version: "0.4"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jack
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtcore
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: ffmpeg
-  
-  version: 0.7.3
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: fluidsynth
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libnotify
-  
-  version: ""
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: pulseaudio
-  
-  version: 0.9.3
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtopengl
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: dbus-glib
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libcdio-paranoia
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: ampache_browser
-  
-  version: "1"
-- 
-  category: app-misc
-  description: ""
-  license: ""
-  name: lirc
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libogg
-  
-  version: 1.1.3
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: ""
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: audacious
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: adplug
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libcue
-  
-  version: ""
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: lame
+  name: soxr
   
   version: ""
 - 
@@ -239,14 +78,70 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: alsa-lib
+  name: libcddb
   
-  version: 1.0.16
+  version: 1.2.1
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: pulseaudio
+  
+  version: 0.9.3
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libcdio
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: lirc
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libsidplayfp
+  
+  version: 1.0.0
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: audacious
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: faad2
+  
+  version: "2.7"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: adplug
+  
+  version: ""
 - 
   category: media-libs
   description: ""
   license: ""
   name: libbs2b
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libnotify
   
   version: ""
 - 
@@ -257,10 +152,66 @@ requires:
   
   version: "0.3"
 - 
-  category: net-misc
+  category: media-libs
   description: ""
   license: ""
-  name: curl
+  name: libmodplug
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: dbus-glib
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtcore
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jack
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: lame
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtwidgets
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: flac
+  
+  version: 1.2.1-r1
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtopengl
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtmultimedia
   
   version: ""
 - 
@@ -274,9 +225,9 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libvorbis
+  name: libogg
   
-  version: 1.2.0
+  version: 1.1.3
 - 
   category: app-arch
   description: ""
@@ -285,19 +236,68 @@ requires:
   
   version: ""
 - 
-  category: media-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libcddb
+  name: libcdio-paranoia
   
-  version: 1.2.1
+  version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: flac
+  name: libcue
   
-  version: 1.2.1-r1
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: ffmpeg
+  
+  version: 0.7.3
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libsamplerate
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: mpg123
+  
+  version: 1.12.1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: ampache_browser
+  
+  version: "1"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libvorbis
+  
+  version: "1.0"
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: fluidsynth
+  
+  version: ""
 uri:
 - https://distfiles.audacious-media-player.org/audacious-plugins-4.0-beta1-.tar.bz2
 use_flags:

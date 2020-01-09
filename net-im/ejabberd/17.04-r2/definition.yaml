@@ -5,12 +5,12 @@ license: GPL-2
 name: ejabberd
 requires:
 - 
-  category: dev-erlang
+  category: dev-db
   description: ""
   license: ""
-  name: riakc
+  name: unixODBC
   
-  version: 2.4.1
+  version: ""
 - 
   category: dev-erlang
   description: ""
@@ -18,55 +18,6 @@ requires:
   name: ezlib
   
   version: 1.0.2
-- 
-  category: media-gfx
-  description: ""
-  license: ""
-  name: imagemagick
-  
-  version: ""
-- 
-  category: dev-erlang
-  description: ""
-  license: ""
-  name: luerl
-  
-  version: "0.2"
-- 
-  category: dev-erlang
-  description: ""
-  license: ""
-  name: stringprep
-  
-  version: 1.0.8
-- 
-  category: dev-erlang
-  description: ""
-  license: ""
-  name: iconv
-  
-  version: 1.0.4
-- 
-  category: dev-erlang
-  description: ""
-  license: ""
-  name: hamcrest
-  
-  version: 0.1.0_p20150103
-- 
-  category: dev-erlang
-  description: ""
-  license: ""
-  name: cache_tab
-  
-  version: 1.0.7
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: unixODBC
-  
-  version: ""
 - 
   category: dev-erlang
   description: ""
@@ -78,16 +29,65 @@ requires:
   category: dev-erlang
   description: ""
   license: ""
-  name: jiffy
+  name: lager
   
-  version: 0.14.8
+  version: 3.2.1
 - 
   category: dev-erlang
   description: ""
   license: ""
-  name: xmpp
+  name: p1_pgsql
   
-  version: 1.1.9
+  version: 1.1.2
+- 
+  category: media-gfx
+  description: ""
+  license: ""
+  name: imagemagick
+  
+  version: ""
+- 
+  category: dev-erlang
+  description: ""
+  license: ""
+  name: fast_xml
+  
+  version: 1.1.21
+- 
+  category: dev-erlang
+  description: ""
+  license: ""
+  name: p1_oauth2
+  
+  version: 0.6.1
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: "2"
+- 
+  category: dev-erlang
+  description: ""
+  license: ""
+  name: iconv
+  
+  version: 1.0.4
+- 
+  category: dev-erlang
+  description: ""
+  license: ""
+  name: esip
+  
+  version: 1.0.11
+- 
+  category: dev-erlang
+  description: ""
+  license: ""
+  name: sqlite3
+  
+  version: 1.1.5
 - 
   category: dev-erlang
   description: ""
@@ -113,58 +113,9 @@ requires:
   category: dev-erlang
   description: ""
   license: ""
-  name: p1_pgsql
-  
-  version: 1.1.2
-- 
-  category: dev-erlang
-  description: ""
-  license: ""
-  name: sqlite3
-  
-  version: 1.1.5
-- 
-  category: dev-erlang
-  description: ""
-  license: ""
-  name: esip
-  
-  version: 1.0.11
-- 
-  category: dev-erlang
-  description: ""
-  license: ""
-  name: p1_mysql
-  
-  version: 1.0.2
-- 
-  category: net-im
-  description: ""
-  license: ""
-  name: jabber-base
-  
-  version: "0.01"
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
-  
-  version: "2"
-- 
-  category: dev-erlang
-  description: ""
-  license: ""
   name: epam
   
   version: 1.0.2
-- 
-  category: dev-erlang
-  description: ""
-  license: ""
-  name: eredis
-  
-  version: 1.0.8
 - 
   category: dev-erlang
   description: ""
@@ -176,23 +127,72 @@ requires:
   category: dev-erlang
   description: ""
   license: ""
-  name: fast_xml
+  name: luerl
   
-  version: 1.1.21
+  version: "0.2"
 - 
   category: dev-erlang
   description: ""
   license: ""
-  name: lager
+  name: xmpp
   
-  version: 3.2.1
+  version: 1.1.9
 - 
   category: dev-erlang
   description: ""
   license: ""
-  name: p1_oauth2
+  name: eredis
   
-  version: 0.6.1
+  version: 1.0.8
+- 
+  category: dev-erlang
+  description: ""
+  license: ""
+  name: hamcrest
+  
+  version: 0.1.0_p20150103
+- 
+  category: dev-erlang
+  description: ""
+  license: ""
+  name: cache_tab
+  
+  version: 1.0.7
+- 
+  category: dev-erlang
+  description: ""
+  license: ""
+  name: jiffy
+  
+  version: 0.14.8
+- 
+  category: dev-erlang
+  description: ""
+  license: ""
+  name: stringprep
+  
+  version: 1.0.8
+- 
+  category: net-im
+  description: ""
+  license: ""
+  name: jabber-base
+  
+  version: "0.01"
+- 
+  category: dev-erlang
+  description: ""
+  license: ""
+  name: p1_mysql
+  
+  version: 1.0.2
+- 
+  category: dev-erlang
+  description: ""
+  license: ""
+  name: riakc
+  
+  version: 2.4.1
 uri:
 - -> ejabberd-17.04.tar.gz
 use_flags:

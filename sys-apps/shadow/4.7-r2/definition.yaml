@@ -12,20 +12,6 @@ license: BSD GPL-2
 name: shadow
 requires:
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: acl
-  
-  version: ""
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: audit
-  
-  version: "2.6"
-- 
   category: sys-libs
   description: ""
   license: ""
@@ -40,12 +26,19 @@ requires:
   
   version: "1.28"
 - 
-  category: sys-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: libsemanage
+  name: attr
   
   version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: audit
+  
+  version: "2.6"
 - 
   category: sys-libs
   description: ""
@@ -54,13 +47,6 @@ requires:
   
   version: 2.7-r3
 - 
-  category: virtual
-  description: ""
-  license: ""
-  name: libintl
-  
-  version: ""
-- 
   category: sys-auth
   description: ""
   license: ""
@@ -68,10 +54,10 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: sys-libs
   description: ""
   license: ""
-  name: attr
+  name: libsemanage
   
   version: ""
 - 
@@ -81,6 +67,20 @@ requires:
   name: pambase
   
   version: "20150213"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: acl
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libintl
+  
+  version: ""
 uri:
 - https://github.com/shadow-maint/shadow/releases/download/4.7/shadow-4.7.tar.gz
 use_flags:

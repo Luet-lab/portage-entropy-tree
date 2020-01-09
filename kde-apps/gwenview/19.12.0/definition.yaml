@@ -5,31 +5,31 @@ license: GPL-2+ handbook? ( FDL-1.2 )
 name: gwenview
 requires:
 - 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtopengl
-  
-  version: 5.12.3
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libpng
-  
-  version: ""
-- 
   category: kde-frameworks
   description: ""
   license: ""
-  name: kcompletion
+  name: purpose
   
   version: 5.63.0
 - 
   category: kde-frameworks
   description: ""
   license: ""
-  name: kitemmodels
+  name: kparts
+  
+  version: 5.63.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: lcms
+  
+  version: ""
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kimageformats
   
   version: 5.63.0
 - 
@@ -40,38 +40,17 @@ requires:
   
   version: 5.63.0
 - 
-  category: virtual
-  description: ""
-  license: ""
-  name: jpeg
-  
-  version: ""
-- 
-  category: kde-apps
-  description: ""
-  license: ""
-  name: libkipi
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtgui
-  
-  version: 5.12.3
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: lcms
-  
-  version: ""
-- 
   category: kde-apps
   description: ""
   license: ""
   name: libkdcraw
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: cfitsio
   
   version: ""
 - 
@@ -85,23 +64,23 @@ requires:
   category: kde-frameworks
   description: ""
   license: ""
-  name: kconfig
+  name: kcompletion
   
   version: 5.63.0
 - 
   category: kde-frameworks
   description: ""
   license: ""
-  name: kcoreaddons
+  name: ki18n
   
   version: 5.63.0
 - 
-  category: kde-frameworks
+  category: dev-qt
   description: ""
   license: ""
-  name: kxmlgui
+  name: qtgui
   
-  version: 5.63.0
+  version: 5.12.3
 - 
   category: dev-qt
   description: ""
@@ -110,45 +89,10 @@ requires:
   
   version: 5.12.3
 - 
-  category: dev-qt
+  category: virtual
   description: ""
   license: ""
-  name: qtsvg
-  
-  version: 5.12.3
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kconfigwidgets
-  
-  version: 5.63.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kiconthemes
-  
-  version: 5.63.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kitemviews
-  
-  version: 5.63.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kjobwidgets
-  
-  version: 5.63.0
-- 
-  category: media-gfx
-  description: ""
-  license: ""
-  name: exiv2
+  name: jpeg
   
   version: ""
 - 
@@ -169,21 +113,42 @@ requires:
   category: kde-frameworks
   description: ""
   license: ""
-  name: kimageformats
+  name: kconfigwidgets
   
   version: 5.63.0
 - 
   category: kde-frameworks
   description: ""
   license: ""
-  name: kio
+  name: kiconthemes
   
   version: 5.63.0
 - 
-  category: x11-libs
+  category: kde-frameworks
   description: ""
   license: ""
-  name: libX11
+  name: kservice
+  
+  version: 5.63.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kxmlgui
+  
+  version: 5.63.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: solid
+  
+  version: 5.63.0
+- 
+  category: kde-apps
+  description: ""
+  license: ""
+  name: libkipi
   
   version: ""
 - 
@@ -197,37 +162,23 @@ requires:
   category: kde-frameworks
   description: ""
   license: ""
-  name: ki18n
+  name: kcoreaddons
   
   version: 5.63.0
 - 
   category: kde-frameworks
   description: ""
   license: ""
-  name: knotifications
+  name: kio
   
   version: 5.63.0
 - 
-  category: kde-frameworks
+  category: media-gfx
   description: ""
   license: ""
-  name: kparts
+  name: exiv2
   
-  version: 5.63.0
-- 
-  category: kde-frameworks
-  description: ""
-  license: ""
-  name: kservice
-  
-  version: 5.63.0
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtwidgets
-  
-  version: 5.12.3
+  version: ""
 - 
   category: media-libs
   description: ""
@@ -242,13 +193,6 @@ requires:
   name: kactivities
   
   version: 5.63.0
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: cfitsio
-  
-  version: ""
 - 
   category: dev-qt
   description: ""
@@ -267,16 +211,72 @@ requires:
   category: kde-frameworks
   description: ""
   license: ""
-  name: solid
+  name: knotifications
+  
+  version: 5.63.0
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtsvg
+  
+  version: 5.12.3
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kitemviews
+  
+  version: 5.63.0
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtopengl
+  
+  version: 5.12.3
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtwidgets
+  
+  version: 5.12.3
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libpng
+  
+  version: ""
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kconfig
   
   version: 5.63.0
 - 
   category: kde-frameworks
   description: ""
   license: ""
-  name: purpose
+  name: kitemmodels
   
   version: 5.63.0
+- 
+  category: kde-frameworks
+  description: ""
+  license: ""
+  name: kjobwidgets
+  
+  version: 5.63.0
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
 uri: []
 use_flags:
 - activities

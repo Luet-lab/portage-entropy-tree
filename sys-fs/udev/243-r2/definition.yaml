@@ -1,6 +1,20 @@
 category: sys-fs
 conflicts:
 - 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: gentoo-systemd-integration
+  
+  version: ""
+- 
   category: <sys-fs
   description: ""
   license: ""
@@ -15,20 +29,6 @@ conflicts:
   
   version: "2.11"
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: gentoo-systemd-integration
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: ""
-- 
   category: <sec-policy
   description: ""
   license: ""
@@ -40,24 +40,24 @@ license: LGPL-2.1 MIT GPL-2
 name: udev
 requires:
 - 
-  category: acct-group
+  category: sys-apps
   description: ""
   license: ""
-  name: kmem
+  name: acl
   
   version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: 2.1.9
 - 
   category: acct-group
   description: ""
   license: ""
-  name: dialout
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: tape
+  name: video
   
   version: ""
 - 
@@ -71,7 +71,7 @@ requires:
   category: acct-group
   description: ""
   license: ""
-  name: disk
+  name: dialout
   
   version: ""
 - 
@@ -79,6 +79,34 @@ requires:
   description: ""
   license: ""
   name: lp
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: "2.30"
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: audio
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: input
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: render
   
   version: ""
 - 
@@ -99,28 +127,7 @@ requires:
   category: acct-group
   description: ""
   license: ""
-  name: input
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: render
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: video
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: acl
+  name: kmem
   
   version: ""
 - 
@@ -134,7 +141,7 @@ requires:
   category: acct-group
   description: ""
   license: ""
-  name: audio
+  name: disk
   
   version: ""
 - 
@@ -145,19 +152,12 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: acct-group
   description: ""
   license: ""
-  name: util-linux
+  name: tape
   
-  version: "2.30"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: 2.1.9
+  version: ""
 uri:
 - https://github.com/systemd/systemd/archive/v243/systemd-243.tar.gz
 use_flags:

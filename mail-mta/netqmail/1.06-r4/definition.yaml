@@ -8,17 +8,17 @@ conflicts:
   
   version: ""
 - 
-  category: '>=mail-mta'
+  category: mail-mta
   description: ""
   license: ""
-  name: ssmtp
+  name: qmail
   
-  version: 2.64-r2
+  version: ""
 - 
   category: mail-mta
   description: ""
   license: ""
-  name: msmtp
+mailer
   
   version: ""
 - 
@@ -39,14 +39,7 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: qmail
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: courier
+  name: esmtp
   
   version: ""
 - 
@@ -60,7 +53,7 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: esmtp
+  name: courier
   
   version: ""
 - 
@@ -74,7 +67,7 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-mailer
+  name: msmtp
   
   version: ""
 - 
@@ -84,6 +77,13 @@ mailer
   name: postfix
   
   version: ""
+- 
+  category: '>=mail-mta'
+  description: ""
+  license: ""
+  name: ssmtp
+  
+  version: 2.64-r2
 description: qmail -- a secure, reliable, efficient, simple message transfer agent
 license: public-domain
 name: netqmail
@@ -96,38 +96,17 @@ requires:
   
   version: "0.30"
 - 
-  category: acct-user
+  category: acct-group
   description: ""
   license: ""
-  name: qmaill
-  
-  version: ""
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: dot-forward
-  
-  version: 0.71-r3
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: queue-repair
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: groff
+  name: nofiles
   
   version: ""
 - 
   category: acct-user
   description: ""
   license: ""
-  name: qmailp
+  name: qmaild
   
   version: ""
 - 
@@ -145,33 +124,12 @@ requires:
   
   version: ""
 - 
-  category: acct-group
-  description: ""
-  license: ""
-  name: qmail
-  
-  version: ""
-- 
-  category: acct-user
-  description: ""
-  license: ""
-  name: qmaild
-  
-  version: ""
-- 
-  category: acct-user
-  description: ""
-  license: ""
-  name: qmailq
-  
-  version: ""
-- 
   category: sys-apps
   description: ""
   license: ""
-  name: gentoo-functions
+  name: ucspi-ssl
   
-  version: ""
+  version: 0.70-r1
 - 
   category: virtual
   description: ""
@@ -187,10 +145,38 @@ requires:
   
   version: ""
 - 
+  category: acct-user
+  description: ""
+  license: ""
+  name: qmaill
+  
+  version: ""
+- 
   category: virtual
   description: ""
   license: ""
   name: daemontools
+  
+  version: ""
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: dot-forward
+  
+  version: 0.71-r3
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: qmail
+  
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: qmailq
   
   version: ""
 - 
@@ -208,17 +194,17 @@ requires:
   
   version: 0.88-r17
 - 
-  category: sys-apps
+  category: acct-user
   description: ""
   license: ""
-  name: ucspi-ssl
+  name: qmailp
   
-  version: 0.70-r1
+  version: ""
 - 
-  category: acct-group
+  category: net-mail
   description: ""
   license: ""
-  name: nofiles
+  name: queue-repair
   
   version: ""
 - 
@@ -226,6 +212,20 @@ requires:
   description: ""
   license: ""
   name: libressl
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: gentoo-functions
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: groff
   
   version: ""
 uri:

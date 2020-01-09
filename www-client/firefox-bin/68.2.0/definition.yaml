@@ -12,6 +12,13 @@ license: MPL-2.0 GPL-2 LGPL-2.1
 name: firefox-bin
 requires:
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: atk
+  
+  version: ""
+- 
   category: x11-libs
   description: ""
   license: ""
@@ -22,9 +29,16 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: pango
+  name: libXfixes
   
-  version: 1.22.0
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXt
+  
+  version: ""
 - 
   category: virtual
   description: ""
@@ -33,19 +47,12 @@ requires:
   
   version: ""
 - 
-  category: media-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: fontconfig
+  name: dbus
   
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: dbus-glib
-  
-  version: "0.72"
+  version: "0.60"
 - 
   category: dev-libs
   description: ""
@@ -53,6 +60,20 @@ requires:
   name: glib
   
   version: "2.26"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo-1.10[X]
+  
+  version: ""
 - 
   category: x11-libs
   description: ""
@@ -71,9 +92,16 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libX11
+  name: libXdamage
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: dbus-glib
+  
+  version: "0.72"
 - 
   category: x11-libs
   description: ""
@@ -82,38 +110,10 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus
-  
-  version: "0.60"
-- 
   category: x11-libs
   description: ""
   license: ""
-  name: cairo-1.10[X]
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXcomposite
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXfixes
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXt
+  name: libXrender
   
   version: ""
 - 
@@ -127,23 +127,23 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXdamage
+  name: libX11
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXrender
+  name: libXcomposite
   
   version: ""
 - 
-  category: dev-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: atk
+  name: pango
   
-  version: ""
+  version: 1.22.0
 uri:
 - 'https://archive.mozilla.org/pub/mozilla.org/firefox/releases/68.2.0esr/linux-x86_64/en-US/firefox-68.2.0esr.tar.bz2
   -> firefox-bin_x86_64-68.2.0.tar.bz2 '

@@ -5,10 +5,17 @@ license: GPL-3 BSD LGPL-2.1 MIT
 name: conky
 requires:
 - 
-  category: dev-libs
+  category: media-sound
   description: ""
   license: ""
-  name: libical
+  name: xmms2
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
   
   version: ""
 - 
@@ -19,139 +26,6 @@ requires:
   
   version: ""
 - 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: lua
-  
-  version: 5.1.4-r8
-- 
-  category: app-editors
-  description: ""
-  license: ""
-  name: nano
-  
-  version: ""
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: librsvg
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: freetype
-  
-  version: "2"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXinerama
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libircclient
-  
-  version: ""
-- 
-  category: net-wireless
-  description: ""
-  license: ""
-  name: wireless-tools
-  
-  version: ""
-- 
-  category: dev-lua
-  description: ""
-  license: ""
-  name: toluapp
-  
-  version: 1.0.93
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXfixes
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXdamage
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXext
-  
-  version: ""
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: xmms2
-  
-  version: ""
-- 
-  category: app-admin
-  description: ""
-  license: ""
-  name: hddtemp
-  
-  version: ""
-- 
-  category: x11-drivers
-  description: ""
-  license: ""
-  name: nvidia-drivers
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: ""
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: pulseaudio
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: ""
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: moc
-  
-  version: ""
-- 
   category: media-libs
   description: ""
   license: ""
@@ -159,17 +33,17 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: ncurses
+  name: cairo[X]
   
   version: ""
 - 
-  category: sys-power
+  category: x11-libs
   description: ""
   license: ""
-  name: apcupsd
+  name: libX11
   
   version: ""
 - 
@@ -183,7 +57,126 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libX11
+  name: libXinerama
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libmicrohttpd
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: pulseaudio
+  
+  version: ""
+- 
+  category: sys-power
+  description: ""
+  license: ""
+  name: apcupsd
+  
+  version: ""
+- 
+  category: app-admin
+  description: ""
+  license: ""
+  name: hddtemp
+  
+  version: ""
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: librsvg
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libical
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: moc
+  
+  version: ""
+- 
+  category: app-editors
+  description: ""
+  license: ""
+  name: nano
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: lua
+  
+  version: 5.1.4-r8
+- 
+  category: dev-lua
+  description: ""
+  license: ""
+  name: toluapp
+  
+  version: 1.0.93
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
+  
+  version: "2"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXdamage
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libircclient
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXext
   
   version: ""
 - 
@@ -201,24 +194,31 @@ requires:
   
   version: ""
 - 
+  category: net-wireless
+  description: ""
+  license: ""
+  name: wireless-tools
+  
+  version: ""
+- 
+  category: x11-drivers
+  description: ""
+  license: ""
+  name: nvidia-drivers
+  
+  version: ""
+- 
   category: x11-libs
   description: ""
   license: ""
-  name: cairo[X]
+  name: libXfixes
   
   version: ""
 - 
-  category: net-misc
+  category: sys-apps
   description: ""
   license: ""
-  name: curl
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libmicrohttpd
+  name: systemd
   
   version: ""
 uri:

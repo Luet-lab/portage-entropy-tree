@@ -12,24 +12,31 @@ license: LGPL-2.1
 name: wine-staging
 requires:
 - 
-  category: net-fs
+  category: app-emulation
   description: ""
   license: ""
-  name: samba
-  
-  version: 3.0.25
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: alsa-lib
+  name: wine-mono
   
   version: ""
 - 
-  category: net-nds
+  category: x11-libs
   description: ""
   license: ""
-  name: openldap
+  name: libXrandr
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libudev
+  
+  version: ""
+- 
+  category: net-fs
+  description: ""
+  license: ""
+  name: samba[netapi(+),]
   
   version: ""
 - 
@@ -40,41 +47,6 @@ requires:
   
   version: ""
 - 
-  category: media-libs
-  description: ""
-  license: ""
-  name: freetype
-  
-  version: 2.0.0
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-wine
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libcapi
-  
-  version: ""
-- 
-  category: media-plugins
-  description: ""
-  license: ""
-  name: gst-plugins-meta
-  
-  version: ""
-- 
-  category: app-eselect
-  description: ""
-  license: ""
-  name: eselect-wine
-  
-  version: "0.3"
-- 
   category: dev-perl
   description: ""
   license: ""
@@ -82,52 +54,10 @@ requires:
   
   version: ""
 - 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libgphoto2
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnutls
-  
-  version: ""
-- 
   category: x11-libs
   description: ""
   license: ""
-  name: libva[X,]
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXi
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: gstreamer
-  
-  version: ""
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: mpg123
-  
-  version: 1.5.0
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: udisks
+  name: libXcomposite
   
   version: ""
 - 
@@ -135,55 +65,6 @@ requires:
   description: ""
   license: ""
   name: libxslt
-  
-  version: ""
-- 
-  category: app-emulation
-  description: ""
-  license: ""
-  name: wine-desktop-common
-  
-  version: ""
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: gsm
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: krb5
-  
-  version: ""
-- 
-  category: media-gfx
-  description: ""
-  license: ""
-  name: sane-backends
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: attr
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXcursor
   
   version: ""
 - 
@@ -197,35 +78,35 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: mesa
+  name: freetype
   
-  version: "13"
+  version: 2.0.0
 - 
-  category: media-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: vulkan-loader
+  name: libxml2
+  
+  version: ""
+- 
+  category: app-eselect
+  description: ""
+  license: ""
+  name: eselect-wine
+  
+  version: "0.3"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXcursor
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: lcms
-  
-  version: ""
-- 
-  category: app-emulation
-  description: ""
-  license: ""
-  name: wine-gecko
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: unixODBC
+  name: gstreamer
   
   version: ""
 - 
@@ -239,84 +120,21 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libpng
+  name: mesa
   
-  version: ""
+  version: "13"
 - 
-  category: app-emulation
+  category: media-libs
   description: ""
   license: ""
-  name: wine-mono
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jpeg
-  
-  version: ""
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: gettext
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: cairo
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus
+  name: alsa-lib
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libv4l
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: fontconfig
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: opengl
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXcomposite
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXfixes
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXrandr
+  name: lcms
   
   version: ""
 - 
@@ -330,28 +148,35 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXinerama
+  name: gtk+
   
   version: ""
 - 
-  category: virtual
+  category: sys-apps
   description: ""
   license: ""
-  name: libudev
+  name: dbus
   
   version: ""
 - 
-  category: games-emulation
+  category: x11-libs
   description: ""
   license: ""
-  name: dosbox
+  name: libva[X,]
   
-  version: 0.74_p20160629
+  version: ""
 - 
-  category: dev-lang
+  category: sys-fs
   description: ""
   license: ""
-  name: perl
+  name: udisks
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXi
   
   version: ""
 - 
@@ -362,59 +187,17 @@ requires:
   
   version: ""
 - 
-  category: net-fs
+  category: virtual
   description: ""
   license: ""
-  name: samba[netapi(+),]
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libsdl2
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: ""
-- 
-  category: app-emulation
-  description: ""
-  license: ""
-  name: faudio
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXext
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXxf86vm
+  name: opengl
   
   version: ""
 - 
   category: net-libs
   description: ""
   license: ""
-  name: libpcap
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
+  name: libcapi
   
   version: ""
 - 
@@ -425,6 +208,76 @@ requires:
   
   version: "5.2"
 - 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXinerama
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jpeg
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libpcap
+  
+  version: ""
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: unixODBC
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: perl
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXext
+  
+  version: ""
+- 
+  category: app-emulation
+  description: ""
+  license: ""
+  name: faudio
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: ""
+- 
   category: app-emulation
   description: ""
   license: ""
@@ -432,10 +285,157 @@ requires:
   
   version: ""
 - 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: attr
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libv4l
+  
+  version: ""
+- 
+  category: games-emulation
+  description: ""
+  license: ""
+  name: dosbox
+  
+  version: 0.74_p20160629
+- 
   category: sys-auth
   description: ""
   license: ""
   name: rtkit
+  
+  version: ""
+- 
+  category: media-plugins
+  description: ""
+  license: ""
+  name: gst-plugins-meta
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: vulkan-loader
+  
+  version: ""
+- 
+  category: app-emulation
+  description: ""
+  license: ""
+  name: wine-desktop-common
+  
+  version: ""
+- 
+  category: net-fs
+  description: ""
+  license: ""
+  name: samba
+  
+  version: 3.0.25
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: gettext
+  
+  version: ""
+- 
+  category: media-gfx
+  description: ""
+  license: ""
+  name: sane-backends
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: gsm
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libpng
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-wine
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXfixes
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXxf86vm
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: mpg123
+  
+  version: 1.5.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libsdl2
+  
+  version: ""
+- 
+  category: app-emulation
+  description: ""
+  license: ""
+  name: wine-gecko
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libgphoto2
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
   
   version: ""
 uri:

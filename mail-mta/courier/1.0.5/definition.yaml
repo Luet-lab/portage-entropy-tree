@@ -1,17 +1,45 @@
 category: mail-mta
 conflicts:
 - 
-  category: net-mail
+  category: mail-filter
   description: ""
   license: ""
-  name: uw-imap
+  name: maildrop
   
   version: ""
 - 
   category: net-mail
   description: ""
   license: ""
-  name: dot-forward
+  name: cyrus-imapd
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: msmtp
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: qmail-ldap
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: opensmtpd
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+mailer
   
   version: ""
 - 
@@ -25,28 +53,35 @@ conflicts:
   category: net-mail
   description: ""
   license: ""
-  name: cyrus-imapd
+  name: dot-forward
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: esmtp
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: sendmail
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: ssmtp
   
   version: ""
 - 
   category: net-mail
   description: ""
   license: ""
-  name: courier-imap
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: mini-qmail
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: qmail-ldap
+  name: bincimap
   
   version: ""
 - 
@@ -64,45 +99,17 @@ conflicts:
   
   version: ""
 - 
-  category: mail-mta
-  description: ""
-  license: ""
-mailer
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: ssmtp
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: opensmtpd
-  
-  version: ""
-- 
-  category: mail-filter
-  description: ""
-  license: ""
-  name: maildrop
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: sendmail
-  
-  version: ""
-- 
   category: net-mail
   description: ""
   license: ""
-  name: bincimap
+  name: uw-imap
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: mini-qmail
   
   version: ""
 - 
@@ -113,17 +120,10 @@ mailer
   
   version: ""
 - 
-  category: mail-mta
+  category: net-mail
   description: ""
   license: ""
-  name: esmtp
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: msmtp
+  name: courier-imap
   
   version: ""
 description: An MTA designed specifically for maildirs
@@ -131,17 +131,52 @@ license: GPL-2
 name: courier
 requires:
 - 
-  category: net-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: courier-unicode
+  name: pam
   
-  version: "2.1"
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: perl
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: procps
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: gdbm
+  
+  version: 1.8.0
 - 
   category: app-text
   description: ""
   license: ""
   name: ghostscript-gpl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
   
   version: ""
 - 
@@ -159,82 +194,12 @@ requires:
   
   version: ""
 - 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: perl
-  
-  version: ""
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
-  
-  version: 1.2.11
-- 
   category: net-libs
   description: ""
   license: ""
   name: courier-authlib
   
   version: 0.69.0-r1
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: libidn
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: fam
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: netpbm
-  
-  version: "9.12"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: gdbm
-  
-  version: 1.8.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libpcre
-  
-  version: ""
-- 
-  category: app-misc
-  description: ""
-  license: ""
-  name: mime-types
-  
-  version: ""
 - 
   category: net-dialup
   description: ""
@@ -250,6 +215,13 @@ requires:
   
   version: ""
 - 
+  category: app-misc
+  description: ""
+  license: ""
+  name: mime-types
+  
+  version: ""
+- 
   category: dev-db
   description: ""
   license: ""
@@ -257,19 +229,47 @@ requires:
   
   version: ""
 - 
-  category: sys-process
+  category: net-nds
   description: ""
   license: ""
-  name: procps
+  name: openldap
+  
+  version: 1.2.11
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: fam
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: courier-unicode
+  
+  version: "2.1"
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: libidn
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: openssl
+  name: libpcre
   
   version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: netpbm
+  
+  version: "9.12"
 uri:
 - mirror://sourceforge/courier/courier-1.0.5.tar.bz2
 use_flags:

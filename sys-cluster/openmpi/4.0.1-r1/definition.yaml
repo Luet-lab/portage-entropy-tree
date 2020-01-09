@@ -4,6 +4,13 @@ conflicts:
   category: sys-cluster
   description: ""
   license: ""
+mpi
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
   name: mpich
   
   version: ""
@@ -14,13 +21,6 @@ conflicts:
   name: mpich2
   
   version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-mpi
-  
-  version: ""
 description: A high-performance message passing library (MPI)
 license: BSD
 name: openmpi
@@ -29,9 +29,16 @@ requires:
   category: sys-cluster
   description: ""
   license: ""
-  name: slurm
+  name: knem
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libevent
+  
+  version: 2.0.22
 - 
   category: sys-apps
   description: ""
@@ -40,12 +47,19 @@ requires:
   
   version: 2.0.2
 - 
-  category: dev-util
+  category: sys-fabric
   description: ""
   license: ""
-  name: nvidia-cuda-toolkit
+  name: ofed
   
-  version: 6.5.19-r1
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libltdl
+  
+  version: ""
 - 
   category: sys-fabric
   description: ""
@@ -54,10 +68,10 @@ requires:
   
   version: ""
 - 
-  category: sys-cluster
+  category: sys-fabric
   description: ""
   license: ""
-  name: torque
+  name: librdmacm
   
   version: ""
 - 
@@ -68,20 +82,6 @@ requires:
   
   version: "1.6"
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libevent
-  
-  version: 2.0.22
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libltdl
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
@@ -89,24 +89,24 @@ requires:
   
   version: 1.2.8-r1
 - 
-  category: sys-fabric
+  category: dev-util
   description: ""
   license: ""
-  name: ofed
+  name: nvidia-cuda-toolkit
+  
+  version: 6.5.19-r1
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: torque
   
   version: ""
 - 
   category: sys-cluster
   description: ""
   license: ""
-  name: knem
-  
-  version: ""
-- 
-  category: sys-fabric
-  description: ""
-  license: ""
-  name: librdmacm
+  name: slurm
   
   version: ""
 uri:

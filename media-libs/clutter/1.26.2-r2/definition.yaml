@@ -5,26 +5,33 @@ license: LGPL-2.1+ FDL-1.1+
 name: clutter
 requires:
 - 
-  category: dev-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: libinput
+  name: libXcomposite
   
-  version: 0.19.0
+  version: "0.4"
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libgudev
+  name: glib
   
-  version: "136"
+  version: 2.44.0
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libxkbcommon
+  name: libXext
   
   version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: 3.22.6
 - 
   category: dev-libs
   description: ""
@@ -36,16 +43,30 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libdrm
+  name: libXdamage
   
   version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: cogl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgudev
+  
+  version: "136"
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXdamage
+  name: libX11
   
-  version: ""
+  version: 1.3.1
 - 
   category: x11-libs
   description: ""
@@ -53,6 +74,27 @@ requires:
   name: libXi
   
   version: "1.3"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libdrm
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libinput
+  
+  version: 0.19.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
+  
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -78,49 +120,7 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: gtk+
-  
-  version: 3.22.6
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: fontconfig
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: 1.3.1
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXext
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXcomposite
-  
-  version: "0.4"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: 2.44.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: cogl
+  name: libxkbcommon
   
   version: ""
 uri:

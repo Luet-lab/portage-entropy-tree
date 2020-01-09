@@ -12,33 +12,26 @@ license: GPL-2 CC-BY-SA-3.0 FDL-1.3 LGPL-2.1
 name: empathy
 requires:
 - 
+  category: app-text
+  description: ""
+  license: ""
+  name: iso-codes
+  
+  version: "0.35"
+- 
+  category: net-im
+  description: ""
+  license: ""
+  name: telepathy-connection-managers
+  
+  version: ""
+- 
   category: x11-libs
   description: ""
   license: ""
   name: gtk+
   
   version: 3.9.4
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: webkit-gtk
-  
-  version: "2.10"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: clutter
-  
-  version: 1.10.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: clutter-gtk
-  
-  version: 1.1.2
 - 
   category: media-libs
   description: ""
@@ -47,10 +40,17 @@ requires:
   
   version: ""
 - 
-  category: gnome-base
+  category: media-sound
   description: ""
   license: ""
-  name: gsettings-desktop-schemas
+  name: pulseaudio
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libsoup
   
   version: ""
 - 
@@ -61,12 +61,82 @@ requires:
   
   version: "2.1"
 - 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: libsecret
+  
+  version: "0.5"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libnotify
+  
+  version: "0.7"
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gsettings-desktop-schemas
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: clutter
+  
+  version: 1.7.14
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gst-plugins-base
+  
+  version: ""
+- 
+  category: x11-themes
+  description: ""
+  license: ""
+  name: adwaita-icon-theme
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gdk-pixbuf
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: dbus-glib
+  
+  version: "0.51"
+- 
   category: media-libs
   description: ""
   license: ""
   name: clutter-gtk
   
-  version: 0.90.3
+  version: 1.1.2
+- 
+  category: net-im
+  description: ""
+  license: ""
+  name: telepathy-logger
+  
+  version: 0.8.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgudev
+  
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -75,12 +145,26 @@ requires:
   
   version: "2.48"
 - 
-  category: dev-libs
+  category: media-libs
   description: ""
   license: ""
-  name: dbus-glib
+  name: clutter
   
-  version: "0.51"
+  version: 1.10.0
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: enchant
+  
+  version: "1.2"
+- 
+  category: media-plugins
+  description: ""
+  license: ""
+  name: gst-plugins-v4l2
+  
+  version: ""
 - 
   category: media-libs
   description: ""
@@ -103,19 +187,12 @@ requires:
   
   version: 0.23.2
 - 
-  category: app-crypt
+  category: sci-geosciences
   description: ""
   license: ""
-  name: gcr
+  name: geocode-glib
   
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
+  version: "3.10"
 - 
   category: dev-libs
   description: ""
@@ -124,12 +201,40 @@ requires:
   
   version: ""
 - 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gcr
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnome-online-accounts
+  
+  version: 3.5.1
+- 
   category: media-libs
   description: ""
   license: ""
   name: libchamplain
   
   version: 0.12.1
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: cheese
+  
+  version: "3.4"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pango
+  
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -138,33 +243,26 @@ requires:
   
   version: 0.9.5
 - 
-  category: app-text
+  category: net-libs
   description: ""
   license: ""
-  name: enchant
+  name: webkit-gtk
   
-  version: "1.2"
+  version: "2.10"
 - 
-  category: app-text
+  category: net-libs
   description: ""
   license: ""
-  name: iso-codes
+  name: telepathy-farstream
   
-  version: "0.35"
+  version: 0.6.0
 - 
   category: media-libs
   description: ""
   license: ""
-  name: gst-plugins-base
+  name: clutter-gtk
   
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libnotify
-  
-  version: "0.7"
+  version: 0.90.3
 - 
   category: media-libs
   description: ""
@@ -180,48 +278,6 @@ requires:
   
   version: ""
 - 
-  category: net-libs
-  description: ""
-  license: ""
-  name: telepathy-farstream
-  
-  version: 0.6.0
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: pulseaudio
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: clutter
-  
-  version: 1.7.14
-- 
-  category: media-video
-  description: ""
-  license: ""
-  name: cheese
-  
-  version: "3.4"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gdk-pixbuf
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pango
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
@@ -229,68 +285,12 @@ requires:
   
   version: ""
 - 
-  category: sci-geosciences
+  category: x11-libs
   description: ""
   license: ""
-  name: geocode-glib
-  
-  version: "3.10"
-- 
-  category: media-plugins
-  description: ""
-  license: ""
-  name: gst-plugins-v4l2
+  name: libX11
   
   version: ""
-- 
-  category: x11-themes
-  description: ""
-  license: ""
-  name: adwaita-icon-theme
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libsoup
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnome-online-accounts
-  
-  version: 3.5.1
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgudev
-  
-  version: ""
-- 
-  category: net-im
-  description: ""
-  license: ""
-  name: telepathy-connection-managers
-  
-  version: ""
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: libsecret
-  
-  version: "0.5"
-- 
-  category: net-im
-  description: ""
-  license: ""
-  name: telepathy-logger
-  
-  version: 0.8.0
 - 
   category: gnome-extra
   description: ""

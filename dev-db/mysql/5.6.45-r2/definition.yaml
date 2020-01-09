@@ -4,20 +4,6 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mysql-cluster
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mariadb-connector-c
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
   name: mariadb
   
   version: ""
@@ -32,14 +18,28 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mysql-connector-c
+  name: percona-server
   
   version: ""
 - 
   category: dev-db
   description: ""
   license: ""
-  name: percona-server
+  name: mysql-cluster
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mariadb-connector-c
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c
   
   version: ""
 description: A fast, multi-threaded, multi-user SQL database server
@@ -47,24 +47,17 @@ license: GPL-2
 name: mysql
 requires:
 - 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c[,static-libs?]
+  
+  version: ""
+- 
   category: sec-policy
   description: ""
   license: ""
   name: selinux-mysql
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: mysql
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: jemalloc
   
   version: ""
 - 
@@ -75,17 +68,31 @@ requires:
   
   version: 1.2.3
 - 
-  category: dev-db
+  category: sys-process
   description: ""
   license: ""
-  name: mysql-connector-c[,static-libs?]
+  name: numactl
   
   version: ""
 - 
-  category: net-misc
+  category: dev-libs
   description: ""
   license: ""
-  name: curl
+  name: libressl-2.6.5*
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: mysql
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: procps
   
   version: ""
 - 
@@ -99,13 +106,6 @@ requires:
   category: dev-util
   description: ""
   license: ""
-  name: google-perftools
-  
-  version: ""
-- 
-  category: dev-util
-  description: ""
-  license: ""
   name: systemtap
   
   version: "1.3"
@@ -113,35 +113,14 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libressl-2.6.5*
+  name: openssl
   
-  version: ""
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: numactl
-  
-  version: ""
-- 
-  category: acct-user
-  description: ""
-  license: ""
-  name: mysql
-  
-  version: ""
+  version: 1.0.0
 - 
   category: dev-db
   description: ""
   license: ""
   name: mysql-init-scripts
-  
-  version: ""
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: procps
   
   version: ""
 - 
@@ -152,6 +131,27 @@ requires:
   
   version: ""
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: jemalloc
+  
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: mysql
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
+  
+  version: ""
+- 
   category: sys-apps
   description: ""
   license: ""
@@ -159,12 +159,12 @@ requires:
   
   version: "4"
 - 
-  category: dev-libs
+  category: dev-util
   description: ""
   license: ""
-  name: openssl
+  name: google-perftools
   
-  version: 1.0.0
+  version: ""
 - 
   category: sys-libs
   description: ""

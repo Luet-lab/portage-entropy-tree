@@ -5,17 +5,24 @@ license: GPL-2
 name: consolekit
 requires:
 - 
-  category: dev-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: glib
+  name: dbus
   
-  version: "2.40"
+  version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
   name: libX11
+  
+  version: ""
+- 
+  category: app-admin
+  description: ""
+  license: ""
+  name: cgmanager
   
   version: ""
 - 
@@ -26,19 +33,12 @@ requires:
   
   version: ""
 - 
-  category: sys-auth
+  category: sec-policy
   description: ""
   license: ""
-  name: polkit
+  name: selinux-consolekit
   
-  version: "0.110"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: udev
-  
-  version: "200"
+  version: ""
 - 
   category: sys-libs
   description: ""
@@ -47,12 +47,40 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: dev-libs
   description: ""
   license: ""
-  name: coreutils[acl?]
+  name: glib
+  
+  version: "2.40"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
   
   version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: "200"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libevdev
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: "0.110"
 - 
   category: sys-devel
   description: ""
@@ -64,44 +92,16 @@ requires:
   category: sys-apps
   description: ""
   license: ""
-  name: dbus
+  name: acl
   
   version: ""
 - 
   category: sys-libs
   description: ""
   license: ""
-  name: zlib
+  name: libnih
   
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: acl
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-consolekit
-  
-  version: ""
-- 
-  category: app-admin
-  description: ""
-  license: ""
-  name: cgmanager
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libevdev
-  
-  version: ""
+  version: 1.0.2
 - 
   category: virtual
   description: ""
@@ -117,12 +117,12 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: libnih
+  name: coreutils[acl?]
   
-  version: 1.0.2
+  version: ""
 - 
   category: sys-power
   description: ""

@@ -11,14 +11,14 @@ conflicts:
   category: sys-cluster
   description: ""
   license: ""
-  name: mpich2
+  name: pmix
   
   version: ""
 - 
   category: sys-cluster
   description: ""
   license: ""
-  name: pmix
+  name: mpich2
   
   version: ""
 - 
@@ -33,12 +33,33 @@ license: BSD
 name: openmpi
 requires:
 - 
-  category: virtual
+  category: dev-util
   description: ""
   license: ""
-  name: jre
+  name: nvidia-cuda-toolkit
   
-  version: "1.6"
+  version: 6.5.19-r1
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: infinipath-psm
+  
+  version: ""
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: librdmacm
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libltdl
+  
+  version: ""
 - 
   category: sys-fabric
   description: ""
@@ -46,13 +67,6 @@ requires:
   name: ofed
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libevent
-  
-  version: 2.0.22
 - 
   category: sys-cluster
   description: ""
@@ -68,6 +82,20 @@ requires:
   
   version: ""
 - 
+  category: virtual
+  description: ""
+  license: ""
+  name: jre
+  
+  version: "1.6"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libevent
+  
+  version: 2.0.22
+- 
   category: sys-libs
   description: ""
   license: ""
@@ -75,38 +103,10 @@ requires:
   
   version: 1.2.8-r1
 - 
-  category: dev-util
-  description: ""
-  license: ""
-  name: nvidia-cuda-toolkit
-  
-  version: 6.5.19-r1
-- 
   category: sys-cluster
   description: ""
   license: ""
   name: torque
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libltdl
-  
-  version: ""
-- 
-  category: sys-fabric
-  description: ""
-  license: ""
-  name: infinipath-psm
-  
-  version: ""
-- 
-  category: sys-fabric
-  description: ""
-  license: ""
-  name: librdmacm
   
   version: ""
 uri:

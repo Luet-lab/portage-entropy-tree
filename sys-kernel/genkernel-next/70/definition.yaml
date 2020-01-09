@@ -1,6 +1,13 @@
 category: sys-kernel
 conflicts:
 - 
+  category: <sys-apps
+  description: ""
+  license: ""
+  name: openrc
+  
+  version: 0.9.9
+- 
   category: sys-fs
   description: ""
   license: ""
@@ -14,24 +21,10 @@ conflicts:
   name: genkernel
   
   version: ""
-- 
-  category: <sys-apps
-  description: ""
-  license: ""
-  name: openrc
-  
-  version: 0.9.9
 description: Gentoo automatic kernel building scripts, reloaded
 license: GPL-2
 name: genkernel-next
 requires:
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: cpio
-  
-  version: ""
 - 
   category: sys-libs
   description: ""
@@ -43,7 +36,21 @@ requires:
   category: sys-fs
   description: ""
   license: ""
-  name: cryptsetup
+  name: dmraid
+  
+  version: 1.0.0_rc16
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: e2fsprogs
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gnupg
   
   version: ""
 - 
@@ -75,17 +82,10 @@ requires:
   
   version: ""
 - 
-  category: sys-boot
+  category: sys-fs
   description: ""
   license: ""
-  name: plymouth
-  
-  version: ""
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: gnupg
+  name: cryptsetup
   
   version: ""
 - 
@@ -110,19 +110,19 @@ requires:
   
   version: ""
 - 
-  category: sys-fs
+  category: sys-boot
   description: ""
   license: ""
-  name: e2fsprogs
+  name: plymouth
   
   version: ""
 - 
-  category: sys-fs
+  category: app-arch
   description: ""
   license: ""
-  name: dmraid
+  name: cpio
   
-  version: 1.0.0_rc16
+  version: ""
 - 
   category: sys-fs
   description: ""

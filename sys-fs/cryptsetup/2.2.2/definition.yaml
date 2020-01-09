@@ -5,17 +5,38 @@ license: GPL-2+
 name: cryptsetup
 requires:
 - 
-  category: dev-libs
+  category: app-crypt
   description: ""
   license: ""
-  name: openssl
+  name: argon2
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libpwquality[static-libs(+)]
+  name: nettle
+  
+  version: "2.4"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: json-c
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux-2.31-r1[static-libs(+)]
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpwquality
   
   version: ""
 - 
@@ -29,14 +50,56 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: json-c
+  name: popt[static-libs(+)]
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lvm2[static-libs(+)]
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: 2.31-r1
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lvm2
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libgcrypt
+  name: libgpg-error[static-libs(+)]
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpwquality[static-libs(+)]
   
   version: ""
 - 
@@ -57,42 +120,14 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libpwquality
+  name: popt
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libressl
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: lvm2[static-libs(+)]
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: lvm2
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgpg-error[static-libs(+)]
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: popt[static-libs(+)]
+  name: libgcrypt
   
   version: ""
 - 
@@ -100,41 +135,6 @@ requires:
   description: ""
   license: ""
   name: nettle-2.4[static-libs(+)]
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: popt
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
-  
-  version: 2.31-r1
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: nettle
-  
-  version: "2.4"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux-2.31-r1[static-libs(+)]
-  
-  version: ""
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: argon2
   
   version: ""
 uri:

@@ -4,14 +4,14 @@ conflicts:
   category: sys-cluster
   description: ""
   license: ""
-mpi
+  name: pmix
   
   version: ""
 - 
   category: sys-cluster
   description: ""
   license: ""
-  name: pmix
+mpi
   
   version: ""
 - 
@@ -33,26 +33,26 @@ license: BSD
 name: openmpi
 requires:
 - 
-  category: dev-libs
+  category: sys-cluster
   description: ""
   license: ""
-  name: libltdl
+  name: slurm
+  
+  version: ""
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: librdmacm
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libevent
+  name: libltdl
   
-  version: 2.0.22
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: 1.2.8-r1
+  version: ""
 - 
   category: dev-util
   description: ""
@@ -64,14 +64,35 @@ requires:
   category: sys-cluster
   description: ""
   license: ""
-  name: knem
+  name: torque
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libevent
+  
+  version: 2.0.22
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jre
+  
+  version: "1.6"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: 1.2.8-r1
 - 
   category: sys-cluster
   description: ""
   license: ""
-  name: torque
+  name: knem
   
   version: ""
 - 
@@ -88,27 +109,6 @@ requires:
   name: ofed
   
   version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: slurm
-  
-  version: ""
-- 
-  category: sys-fabric
-  description: ""
-  license: ""
-  name: librdmacm
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jre
-  
-  version: "1.6"
 uri:
 - http://www.open-mpi.org/software/ompi/v/downloads/openmpi-2.1.6.tar.bz2
 use_flags:

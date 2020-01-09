@@ -5,45 +5,24 @@ license: GPL-3 LGPL-3
 name: gimp
 requires:
 - 
-  category: net-misc
+  category: sys-libs
   description: ""
   license: ""
-  name: curl
+  name: zlib
   
   version: ""
 - 
-  category: dev-python
+  category: x11-libs
   description: ""
   license: ""
-  name: pygtk
-  
-  version: 2.10.4
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: bzip2
+  name: gtk-mac-integration
   
   version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libwmf
-  
-  version: 0.2.8
 - 
   category: dev-libs
   description: ""
   license: ""
   name: dbus-glib
-  
-  version: ""
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gvfs
   
   version: ""
 - 
@@ -57,16 +36,93 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libpng
+  name: babl
   
-  version: 1.2.37
+  version: 0.1.10
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: lcms
+  
+  version: "2.2"
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: bzip2
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: 2.24.10
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
+  
+  version: 2.2.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gegl
+  
+  version: 0.2.0
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: atk
+  name: libgudev
   
-  version: 2.2.0
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
+  
+  version: ""
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gvfs
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pygtk
+  
+  version: 2.10.4
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: ghostscript-gpl
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gdk-pixbuf
+  
+  version: 2.24.1
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pango
+  
+  version: 1.29.4
 - 
   category: dev-libs
   description: ""
@@ -78,23 +134,16 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: tiff
-  
-  version: 3.5.7
-- 
-  category: media-libs
-  description: ""
-  license: ""
   name: alsa-lib
   
   version: ""
 - 
-  category: sys-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: zlib
+  name: atk
   
-  version: ""
+  version: 2.2.0
 - 
   category: dev-libs
   description: ""
@@ -110,26 +159,40 @@ requires:
   
   version: ""
 - 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: librsvg
-  
-  version: 2.36.0
-- 
   category: x11-libs
   description: ""
   license: ""
-  name: gtk+
+  name: libXcursor
   
-  version: 2.24.10
+  version: ""
 - 
-  category: x11-libs
+  category: media-libs
   description: ""
   license: ""
-  name: gdk-pixbuf
+  name: aalib
   
-  version: 2.24.1
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libpng
+  
+  version: 1.2.37
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: tiff
+  
+  version: 3.5.7
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.30.2
 - 
   category: x11-libs
   description: ""
@@ -145,26 +208,12 @@ requires:
   
   version: ""
 - 
-  category: app-text
+  category: media-libs
   description: ""
   license: ""
-  name: ghostscript-gpl
+  name: freetype
   
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgudev
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk-mac-integration
-  
-  version: ""
+  version: 2.1.7
 - 
   category: virtual
   description: ""
@@ -180,19 +229,12 @@ requires:
   
   version: 0.12.4
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXcursor
-  
-  version: ""
-- 
   category: media-libs
   description: ""
   license: ""
-  name: fontconfig
+  name: libwmf
   
-  version: 2.2.0
+  version: 0.2.8
 - 
   category: media-libs
   description: ""
@@ -201,54 +243,12 @@ requires:
   
   version: 0.6.15
 - 
-  category: media-libs
+  category: gnome-base
   description: ""
   license: ""
-  name: lcms
+  name: librsvg
   
-  version: "2.2"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: gegl
-  
-  version: 0.2.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: aalib
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: 2.30.2
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pango
-  
-  version: 1.29.4
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: freetype
-  
-  version: 2.1.7
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: babl
-  
-  version: 0.1.10
+  version: 2.36.0
 uri:
 - mirror://gimp/v/gimp-2.8.22.tar.bz2
 use_flags:

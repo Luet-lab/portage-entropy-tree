@@ -5,12 +5,19 @@ license: GPL-2+ LGPL-2.1+
 name: tracker-miners
 requires:
 - 
-  category: app-misc
+  category: sys-power
   description: ""
   license: ""
-  name: tracker
+  name: upower
   
-  version: 2.2.0
+  version: 0.9.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gst-plugins-base
+  
+  version: ""
 - 
   category: sys-apps
   description: ""
@@ -22,9 +29,23 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libexif
+  name: gexiv2
   
-  version: "0.6"
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jpeg
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libseccomp
+  
+  version: "2.0"
 - 
   category: media-libs
   description: ""
@@ -33,118 +54,6 @@ requires:
   
   version: "1.6"
 - 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libgrss
-  
-  version: "0.7"
-- 
-  category: media-plugins
-  description: ""
-  license: ""
-  name: gst-plugins-meta
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libiptcdata
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: tiff
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: "2.6"
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: poppler
-  
-  version: 0.16.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: giflib
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: gst-plugins-base
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: gstreamer
-  
-  version: ""
-- 
-  category: media-video
-  description: ""
-  license: ""
-  name: libav
-  
-  version: ""
-- 
-  category: media-video
-  description: ""
-  license: ""
-  name: ffmpeg
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: exempi
-  
-  version: 2.1.0
-- 
-  category: gnome-extra
-  description: ""
-  license: ""
-  name: libgsf
-  
-  version: 1.14.24
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libpng
-  
-  version: "1.2"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: totem-pl-parser
-  
-  version: "3"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
@@ -152,10 +61,10 @@ requires:
   
   version: "2.46"
 - 
-  category: media-libs
+  category: media-video
   description: ""
   license: ""
-  name: gexiv2
+  name: ffmpeg
   
   version: ""
 - 
@@ -169,23 +78,100 @@ requires:
   category: media-libs
   description: ""
   license: ""
+  name: libexif
+  
+  version: "0.6"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: exempi
+  
+  version: 2.1.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: totem-pl-parser
+  
+  version: "3"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: giflib
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gstreamer
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: tiff
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: poppler
+  
+  version: 0.16.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libiptcdata
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: "2.6"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: media-plugins
+  description: ""
+  license: ""
+  name: gst-plugins-meta
+  
+  version: ""
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: libav
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
   name: libcue
   
   version: ""
 - 
-  category: virtual
+  category: media-libs
   description: ""
   license: ""
-  name: jpeg
+  name: libpng
   
-  version: ""
-- 
-  category: sys-power
-  description: ""
-  license: ""
-  name: upower
-  
-  version: 0.9.0
+  version: "1.2"
 - 
   category: app-arch
   description: ""
@@ -193,6 +179,13 @@ requires:
   name: gzip
   
   version: ""
+- 
+  category: gnome-extra
+  description: ""
+  license: ""
+  name: libgsf
+  
+  version: 1.14.24
 - 
   category: app-text
   description: ""
@@ -208,12 +201,19 @@ requires:
   
   version: 0.2.10
 - 
-  category: sys-libs
+  category: app-misc
   description: ""
   license: ""
-  name: libseccomp
+  name: tracker
   
-  version: "2.0"
+  version: 2.2.0
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libgrss
+  
+  version: "0.7"
 uri: []
 use_flags:
 - cue

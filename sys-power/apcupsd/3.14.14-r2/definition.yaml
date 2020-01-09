@@ -5,10 +5,17 @@ license: GPL-2
 name: apcupsd
 requires:
 - 
-  category: virtual
+  category: sys-apps
   description: ""
   license: ""
-  name: mailx
+  name: util-linux-2.23[tty-helpers(-)]
+  
+  version: ""
+- 
+  category: sys-freebsd
+  description: ""
+  license: ""
+  name: freebsd-ubin
   
   version: ""
 - 
@@ -40,20 +47,6 @@ requires:
   
   version: "2.0"
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux-2.23[tty-helpers(-)]
-  
-  version: ""
-- 
-  category: sys-freebsd
-  description: ""
-  license: ""
-  name: freebsd-ubin
-  
-  version: ""
-- 
   category: virtual
   description: ""
   license: ""
@@ -67,6 +60,13 @@ requires:
   name: gd
   
   version: 1.8.4
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: mailx
+  
+  version: ""
 uri:
 - mirror://sourceforge/apcupsd/apcupsd-3.14.14.tar.gz
 use_flags:
