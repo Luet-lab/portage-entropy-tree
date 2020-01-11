@@ -8,44 +8,58 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: lcms
+  name: mesa
   
-  version: ""
+  version: "17.1"
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: pixman
+  name: pango
   
-  version: 0.25.2
+  version: ""
 - 
-  category: media-video
+  category: media-libs
   description: ""
   license: ""
-  name: pipewire
+  name: mesa
   
-  version: "0.2"
+  version: ""
 - 
   category: sys-apps
   description: ""
   license: ""
-  name: dbus
+  name: systemd
   
-  version: "1.6"
+  version: "209"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libwebp
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: "136"
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libxcb
-  
-  version: "1.9"
-- 
-  category: x11-base
-  description: ""
-  license: ""
-  name: xorg-server
+  name: libX11
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: wayland-protocols
+  
+  version: "1.18"
 - 
   category: x11-libs
   description: ""
@@ -54,24 +68,10 @@ requires:
   
   version: ""
 - 
-  category: x11-misc
+  category: virtual
   description: ""
   license: ""
-  name: xkeyboard-config
-  
-  version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: freerdp
-  
-  version: 2.0.0_rc2
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: pambase
+  name: jpeg
   
   version: ""
 - 
@@ -92,84 +92,7 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: mesa
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jpeg
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libdrm
-  
-  version: 2.4.68
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: "209"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libinput
-  
-  version: 0.8.0
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: cairo
-  
-  version: 1.11.3
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: mesa
-  
-  version: "17.1"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: wayland
-  
-  version: 1.17.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: wayland-protocols
-  
-  version: "1.18"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxkbcommon
-  
-  version: 0.5.0
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pango
+  name: gstreamer
   
   version: ""
 - 
@@ -180,6 +103,41 @@ requires:
   
   version: ""
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libinput
+  
+  version: 0.8.0
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: pipewire
+  
+  version: "0.2"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxcb
+  
+  version: "1.9"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXcursor
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: wayland
+  
+  version: 1.17.0
+- 
   category: media-libs
   description: ""
   license: ""
@@ -187,31 +145,73 @@ requires:
   
   version: ""
 - 
-  category: media-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: gstreamer
+  name: libdrm
   
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libwebp
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: udev
-  
-  version: "136"
+  version: 2.4.68
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXcursor
+  name: libxkbcommon
+  
+  version: 0.5.0
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: pambase
+  
+  version: ""
+- 
+  category: x11-base
+  description: ""
+  license: ""
+  name: xorg-server
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: lcms
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pixman
+  
+  version: 0.25.2
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: freerdp
+  
+  version: 2.0.0_rc2
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: "1.6"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo
+  
+  version: 1.11.3
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: xkeyboard-config
   
   version: ""
 uri:

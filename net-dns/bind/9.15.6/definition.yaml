@@ -5,10 +5,17 @@ license: Apache-2.0 BSD BSD-2 GPL-2 HPND ISC MPL-2.0
 name: bind
 requires:
 - 
-  category: sec-policy
+  category: dev-db
   description: ""
   license: ""
-  name: selinux-bind
+  name: mysql-connector-c
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: fstrm
   
   version: ""
 - 
@@ -26,13 +33,6 @@ requires:
   
   version: ""
 - 
-  category: dev-db
-  description: ""
-  license: ""
-  name: lmdb
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
@@ -47,47 +47,12 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: sec-policy
   description: ""
   license: ""
-  name: libcap
-  
-  version: 2.1.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: protobuf-c
+  name: selinux-bind
   
   version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mysql-connector-c
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: unixODBC
-  
-  version: 2.2.6
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: postgresql
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: geoip
-  
-  version: 1.4.6
 - 
   category: sys-process
   description: ""
@@ -96,12 +61,12 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: openssl
+  name: libcap
   
-  version: ""
+  version: 2.1.0
 - 
   category: net-nds
   description: ""
@@ -113,9 +78,9 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libxml2
+  name: geoip
   
-  version: ""
+  version: 1.4.6
 - 
   category: virtual
   description: ""
@@ -127,9 +92,44 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: fstrm
+  name: openssl
   
   version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: postgresql
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: lmdb
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: protobuf-c
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: unixODBC
+  
+  version: 2.2.6
 uri:
 - https://downloads.isc.org/isc/bind9/9.15.6/bind-9.15.6.tar.gz
 use_flags:

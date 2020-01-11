@@ -6,19 +6,12 @@ license: GPL-2 LGPL-2.1
 name: xmms2
 requires:
 - 
-  category: media-sound
-  description: ""
-  license: ""
-  name: mac
-  
-  version: ""
-- 
   category: media-libs
   description: ""
   license: ""
-  name: libofa
+  name: faad2
   
-  version: ""
+  version: "2.0"
 - 
   category: net-misc
   description: ""
@@ -27,10 +20,66 @@ requires:
   
   version: 7.15.1
 - 
-  category: virtual
+  category: media-sound
   description: ""
   license: ""
-  name: ffmpeg
+  name: pulseaudio
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: flac
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libogg
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: mac
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: musepack-tools
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: sidplay
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libsamplerate
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: alsa-lib
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libcdio-paranoia
   
   version: ""
 - 
@@ -51,6 +100,20 @@ requires:
   category: media-libs
   description: ""
   license: ""
+  name: libshout
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libmodplug
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
   name: libsndfile
   
   version: ""
@@ -62,68 +125,12 @@ requires:
   
   version: ""
 - 
-  category: media-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: faad2
+  name: boost
   
-  version: "2.0"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: alsa-lib
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: opus
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libogg
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libshout
-  
-  version: ""
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: musepack-tools
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: opusfile
-  
-  version: ""
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: fftw
-  
-  version: ""
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: avahi
-  
-  version: ""
+  version: "1.32"
 - 
   category: dev-db
   description: ""
@@ -131,69 +138,6 @@ requires:
   name: sqlite
   
   version: 3.3.4
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: cdparanoia
-  
-  version: 3.9.8
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: pulseaudio
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libsamplerate
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: ""
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: perl
-  
-  version: 5.8.8
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jack
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libmodplug
-  
-  version: ""
-- 
-  category: net-fs
-  description: ""
-  license: ""
-  name: samba
-  
-  version: "4.2"
 - 
   category: media-libs
   description: ""
@@ -205,30 +149,9 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libmms
-  
-  version: "0.3"
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: sidplay
+  name: libvorbis
   
   version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: flac
-  
-  version: ""
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: mpg123
-  
-  version: 1.5.1
 - 
   category: media-libs
   description: ""
@@ -244,6 +167,62 @@ requires:
   
   version: ""
 - 
+  category: virtual
+  description: ""
+  license: ""
+  name: ffmpeg
+  
+  version: ""
+- 
+  category: net-fs
+  description: ""
+  license: ""
+  name: samba
+  
+  version: "4.2"
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: cdparanoia
+  
+  version: 3.9.8
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: opus
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jack
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libmms
+  
+  version: "0.3"
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: mpg123
+  
+  version: 1.5.1
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: opusfile
+  
+  version: ""
+- 
   category: media-libs
   description: ""
   license: ""
@@ -254,30 +233,51 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: glib
+  name: libxml2
   
-  version: 2.12.9
+  version: ""
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: avahi
+  
+  version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: boost
-  
-  version: "1.32"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libcdio-paranoia
+  name: openssl
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libvorbis
+  name: libofa
   
   version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: fftw
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.12.9
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: perl
+  
+  version: 5.8.8
 uri:
 - https://dev.gentoo.org/~slyfox/distfiles/xmms2-0.8DrO_o-949-gca15e830.tar.bz2
 use_flags:

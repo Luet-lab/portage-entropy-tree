@@ -1,0 +1,124 @@
+category: net-mail
+conflicts:
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: bincimap
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: courier
+  
+  version: ""
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: cyrus-imapd
+  
+  version: ""
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: uw-imap
+  
+  version: ""
+description: An IMAP daemon designed specifically for maildirs
+license: GPL-3
+name: courier-imap
+requires:
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: courier-unicode
+  
+  version: "2"
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-courier
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: courier-authlib
+  
+  version: 0.66.4
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: libidn
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: db
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: fam
+  
+  version: ""
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: mailbase
+  
+  version: 0.00-r8
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: gdbm
+  
+  version: 1.8.0
+uri:
+- mirror://sourceforge/courier/courier-imap-5.0.8.tar.bz2
+use_flags:
+- berkdb
+- debug
+- fam
+- +gdbm
+- gnutls
+- ipv6
+- libressl
+- selinux
+- trashquota
+version: 5.0.8

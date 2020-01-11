@@ -1,13 +1,6 @@
 category: net-fs
 conflicts:
 - 
-  category: net-nds
-  description: ""
-  license: ""
-  name: portmap
-  
-  version: ""
-- 
   category: <sys-apps
   description: ""
   license: ""
@@ -21,36 +14,22 @@ conflicts:
   name: libnfsidmap
   
   version: ""
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: portmap
+  
+  version: ""
 description: NFS client and server daemons
 license: GPL-2
 name: nfs-utils
 requires:
 - 
-  category: sec-policy
+  category: sys-apps
   description: ""
   license: ""
-  name: selinux-rpc
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
-  
-  version: "3.3"
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: rpcbind
-  
-  version: 0.2.4
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libevent
+  name: util-linux
   
   version: ""
 - 
@@ -66,6 +45,34 @@ requires:
   license: ""
   name: libtirpc
   
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: e2fsprogs-libs
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libevent
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libtirpc
+  
   version: 0.2.4-r1
 - 
   category: app-crypt
@@ -75,12 +82,26 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: sec-policy
   description: ""
   license: ""
-  name: tcp-wrappers
+  name: selinux-rpcbind
   
   version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-rpc
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: "3.3"
 - 
   category: dev-libs
   description: ""
@@ -92,21 +113,14 @@ requires:
   category: net-nds
   description: ""
   license: ""
+  name: rpcbind
+  
+  version: 0.2.4
+- 
+  category: net-nds
+  description: ""
+  license: ""
   name: openldap
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-rpcbind
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: e2fsprogs-libs
   
   version: ""
 - 
@@ -117,24 +131,10 @@ requires:
   
   version: ""
 - 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libtirpc
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libcap
-  
-  version: ""
-- 
   category: sys-apps
   description: ""
   license: ""
-  name: util-linux
+  name: tcp-wrappers
   
   version: ""
 uri:

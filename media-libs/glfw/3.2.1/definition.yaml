@@ -5,38 +5,10 @@ license: ZLIB
 name: glfw
 requires:
 - 
-  category: x11-libs
+  category: virtual
   description: ""
   license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXrandr
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXxf86vm
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: mesa
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxkbcommon
+  name: opengl
   
   version: ""
 - 
@@ -54,6 +26,34 @@ requires:
   
   version: ""
 - 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXrandr
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXxf86vm
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxkbcommon
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
   category: dev-libs
   description: ""
   license: ""
@@ -61,14 +61,14 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: media-libs
   description: ""
   license: ""
-  name: opengl
+  name: mesa
   
   version: ""
 uri:
-- mirror://sourceforge/glfw/glfw-3.2.1.tar.bz2
+- https://github.com/glfw/glfw/archive/3.2.1.tar.gz -> glfw-3.2.1.tar.gz
 use_flags:
 - examples
 - wayland

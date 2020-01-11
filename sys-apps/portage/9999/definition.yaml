@@ -12,6 +12,34 @@ license: GPL-2
 name: portage
 requires:
 - 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gnupg-2.2.4-r2[ssl(-)]
+  
+  version: ""
+- 
+  category: sys-freebsd
+  description: ""
+  license: ""
+  name: freebsd-bin
+  
+  version: ""
+- 
+  category: app-shells
+  description: ""
+  license: ""
+  name: bash
+  
+  version: ""
+- 
+  category: app-portage
+  description: ""
+  license: ""
+  name: gemato
+  
+  version: "14"
+- 
   category: sys-apps
   description: ""
   license: ""
@@ -26,19 +54,26 @@ requires:
   
   version: "20180706"
 - 
-  category: app-misc
-  description: ""
-  license: ""
-  name: pax-utils
-  
-  version: 0.1.17
-- 
   category: sys-apps
   description: ""
   license: ""
-  name: install-xattr
+  name: sandbox
   
-  version: "0.3"
+  version: "2.2"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: 2.0.94
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: tar
+  
+  version: "1.27"
 - 
   category: dev-lang
   description: ""
@@ -54,48 +89,6 @@ requires:
   
   version: "1.2"
 - 
-  category: sys-freebsd
-  description: ""
-  license: ""
-  name: freebsd-bin
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: tar
-  
-  version: "1.27"
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: gnupg-2.2.4-r2[ssl(-)]
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: 2.0.94
-- 
-  category: app-shells
-  description: ""
-  license: ""
-  name: bash
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: sandbox
-  
-  version: "2.2"
-- 
   category: sys-apps
   description: ""
   license: ""
@@ -103,12 +96,19 @@ requires:
   
   version: ""
 - 
-  category: app-portage
+  category: app-misc
   description: ""
   license: ""
-  name: gemato
+  name: pax-utils
   
-  version: "14"
+  version: 0.1.17
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: install-xattr
+  
+  version: "0.3"
 uri: []
 use_flags:
 - build

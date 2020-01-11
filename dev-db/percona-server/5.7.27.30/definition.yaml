@@ -11,7 +11,7 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mariadb-galera
+  name: mysql-cluster
   
   version: ""
 - 
@@ -32,14 +32,14 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mysql-cluster
+  name: mariadb
   
   version: ""
 - 
   category: dev-db
   description: ""
   license: ""
-  name: mariadb
+  name: mariadb-galera
   
   version: ""
 description: A fast, multi-threaded, multi-user SQL database server
@@ -47,10 +47,66 @@ license: GPL-2
 name: percona-server
 requires:
 - 
-  category: app-arch
+  category: dev-libs
   description: ""
   license: ""
-  name: snappy
+  name: jemalloc
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: systemtap
+  
+  version: "1.3"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 1.0.0
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-mysql
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libaio
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libevent
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-init-scripts
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
   
   version: ""
 - 
@@ -64,70 +120,14 @@ requires:
   category: app-arch
   description: ""
   license: ""
-  name: lz4
-  
-  version: 0_p131
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: numactl
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: sed
-  
-  version: "4"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libevent
+  name: snappy
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: jemalloc
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libtirpc
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: 1.0.0
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mysql-init-scripts
+  name: protobuf
   
   version: ""
 - 
@@ -145,13 +145,6 @@ requires:
   
   version: 4.7-r1
 - 
-  category: dev-util
-  description: ""
-  license: ""
-  name: google-perftools
-  
-  version: ""
-- 
   category: acct-group
   description: ""
   license: ""
@@ -159,10 +152,31 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: libaio
+  name: sed
+  
+  version: "4"
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: zstd
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: google-perftools
+  
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: mysql
   
   version: ""
 - 
@@ -173,24 +187,17 @@ requires:
   
   version: ""
 - 
-  category: dev-util
+  category: app-arch
   description: ""
   license: ""
-  name: systemtap
+  name: lz4
   
-  version: "1.3"
+  version: 0_p131
 - 
-  category: acct-user
+  category: net-libs
   description: ""
   license: ""
-  name: mysql
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: mecab
+  name: libtirpc
   
   version: ""
 - 
@@ -201,10 +208,24 @@ requires:
   
   version: ""
 - 
-  category: app-arch
+  category: dev-libs
   description: ""
   license: ""
-  name: zstd
+  name: libressl
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: mecab
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: numactl
   
   version: ""
 - 
@@ -212,27 +233,6 @@ requires:
   description: ""
   license: ""
   name: xz-utils
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-mysql
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: ncurses
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: protobuf
   
   version: ""
 uri:

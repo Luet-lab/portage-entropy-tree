@@ -1,13 +1,6 @@
 category: sys-fs
 conflicts:
 - 
-  category: <sys-fs
-  description: ""
-  license: ""
-  name: cryptsetup
-  
-  version: 1.1.2
-- 
   category: <sys-apps
   description: ""
   license: ""
@@ -21,17 +14,24 @@ conflicts:
   name: lvm-user
   
   version: ""
+- 
+  category: <sys-fs
+  description: ""
+  license: ""
+  name: cryptsetup
+  
+  version: 1.1.2
 description: User-land utilities for LVM2 (device-mapper) software
 license: GPL-2
 name: lvm2
 requires:
 - 
-  category: dev-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: libaio
+  name: util-linux
   
-  version: ""
+  version: "2.16"
 - 
   category: dev-libs
   description: ""
@@ -47,19 +47,33 @@ requires:
   
   version: ""
 - 
-  category: virtual
-  description: ""
-  license: ""
-  name: libudev
-  
-  version: "208"
-- 
   category: sys-apps
   description: ""
   license: ""
   name: baselayout
   
   version: "2.2"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: makedev
+  
+  version: ""
+- 
+  category: sys-block
+  description: ""
+  license: ""
+  name: thin-provisioning-tools
+  
+  version: 0.3.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libaio
+  
+  version: ""
 - 
   category: sys-cluster
   description: ""
@@ -75,26 +89,12 @@ requires:
   
   version: "205"
 - 
-  category: sys-apps
+  category: virtual
   description: ""
   license: ""
-  name: util-linux
+  name: libudev
   
-  version: "2.16"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: makedev
-  
-  version: ""
-- 
-  category: sys-block
-  description: ""
-  license: ""
-  name: thin-provisioning-tools
-  
-  version: 0.3.0
+  version: "208"
 uri: []
 use_flags:
 - readline

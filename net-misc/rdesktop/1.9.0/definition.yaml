@@ -5,24 +5,10 @@ license: GPL-3
 name: rdesktop
 requires:
 - 
-  category: x11-libs
+  category: media-sound
   description: ""
   license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libao
-  
-  version: 0.8.6
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXrandr
+  name: pulseaudio
   
   version: ""
 - 
@@ -33,17 +19,31 @@ requires:
   
   version: ""
 - 
-  category: net-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: gnutls
+  name: libX11
   
-  version: 3.2.0
+  version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXext
+  name: libXcursor
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXau
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
   
   version: ""
 - 
@@ -61,31 +61,31 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: media-libs
   description: ""
   license: ""
-  name: krb5
-  
-  version: ""
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: pulseaudio
+  name: libsamplerate
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXcursor
+  name: libXrandr
   
   version: ""
 - 
-  category: media-libs
+  category: net-libs
   description: ""
   license: ""
-  name: libsamplerate
+  name: gnutls
+  
+  version: 3.2.0
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXext
   
   version: ""
 - 
@@ -96,12 +96,12 @@ requires:
   
   version: 1.6.6
 - 
-  category: x11-libs
+  category: media-libs
   description: ""
   license: ""
-  name: libXau
+  name: libao
   
-  version: ""
+  version: 0.8.6
 uri:
 - https://github.com/rdesktop/rdesktop/releases/download/v1.9.0/rdesktop-1.9.0.tar.gz
 use_flags:

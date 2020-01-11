@@ -5,87 +5,10 @@ license: GPL-2
 name: scribus
 requires:
 - 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtprintsupport
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtxml
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: boost
-  
-  version: "1.67"
-- 
-  category: media-gfx
-  description: ""
-  license: ""
-  name: graphicsmagick
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: hyphen
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libcdr
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libpagemaker
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libpng
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: lcms
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libfreehand
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: tiff
-  
-  version: ""
-- 
   category: app-text
   description: ""
   license: ""
-  name: hunspell
+  name: poppler
   
   version: ""
 - 
@@ -99,63 +22,28 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: icu
-  
-  version: "58.2"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: librevenge
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtwidgets
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: libmspub
+  name: hyphen
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: fontconfig
-  
-  version: ""
-- 
-  category: net-print
-  description: ""
-  license: ""
-  name: cups
+  name: libzmf
   
   version: ""
 - 
   category: app-text
   description: ""
   license: ""
-  name: ghostscript-gpl
+  name: hunspell
   
   version: ""
 - 
-  category: app-text
+  category: media-gfx
   description: ""
   license: ""
-  name: podofo
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: poppler
+  name: graphicsmagick
   
   version: ""
 - 
@@ -163,6 +51,13 @@ requires:
   description: ""
   license: ""
   name: qtopengl
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: tiff
   
   version: ""
 - 
@@ -183,28 +78,70 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libxml2
+  name: boost
+  
+  version: "1.67"
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: libmspub
   
   version: ""
 - 
   category: dev-qt
   description: ""
   license: ""
-  name: qtcore
+  name: qtprintsupport
   
   version: ""
 - 
-  category: dev-games
+  category: media-libs
   description: ""
   license: ""
-  name: openscenegraph
+  name: libpagemaker
   
   version: ""
 - 
-  category: dev-python
+  category: media-libs
   description: ""
   license: ""
-  name: pillow[tk?,]
+  name: libpng
+  
+  version: ""
+- 
+  category: net-print
+  description: ""
+  license: ""
+  name: cups
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: podofo
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: ghostscript-gpl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: icu
+  
+  version: "58.2"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: librevenge
   
   version: ""
 - 
@@ -215,20 +152,6 @@ requires:
   
   version: ""
 - 
-  category: media-libs
-  description: ""
-  license: ""
-  name: freetype
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libzmf
-  
-  version: ""
-- 
   category: x11-libs
   description: ""
   license: ""
@@ -236,10 +159,45 @@ requires:
   
   version: ""
 - 
+  category: dev-games
+  description: ""
+  license: ""
+  name: openscenegraph
+  
+  version: ""
+- 
   category: dev-qt
   description: ""
   license: ""
-  name: qtnetwork
+  name: qtcore
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtxml
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: lcms
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtwidgets
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
   
   version: ""
 - 
@@ -254,6 +212,48 @@ requires:
   description: ""
   license: ""
   name: libvisio
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pillow[tk?,]
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtnetwork
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libcdr
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libfreehand
   
   version: ""
 uri:

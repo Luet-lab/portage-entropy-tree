@@ -4,7 +4,7 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mariadb-galera
+  name: mysql-cluster
   
   version: ""
 - 
@@ -25,7 +25,7 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mysql-cluster
+  name: mariadb-galera
   
   version: ""
 description: Fully compatible, enhanced and open source drop-in replacement for MySQL
@@ -33,10 +33,10 @@ license: GPL-2
 name: percona-server
 requires:
 - 
-  category: net-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libtirpc
+  name: icu
   
   version: ""
 - 
@@ -50,28 +50,14 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libaio
+  name: jemalloc
   
   version: ""
 - 
   category: sys-process
   description: ""
   license: ""
-  name: procps
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: icu
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libedit
+  name: numactl
   
   version: ""
 - 
@@ -89,13 +75,6 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: 1.0.0
-- 
   category: acct-group
   description: ""
   license: ""
@@ -103,10 +82,31 @@ requires:
   
   version: ""
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libedit
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: protobuf
+  
+  version: "3.8"
+- 
   category: app-text
   description: ""
   license: ""
   name: mecab
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
   
   version: ""
 - 
@@ -120,37 +120,9 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: protobuf
+  name: openssl
   
-  version: "3.8"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: jemalloc
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
-  
-  version: ""
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: numactl
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: ""
+  version: 1.0.0
 - 
   category: dev-db
   description: ""
@@ -170,6 +142,34 @@ requires:
   description: ""
   license: ""
   name: libevent
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libtirpc
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libaio
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: procps
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
   
   version: ""
 uri:

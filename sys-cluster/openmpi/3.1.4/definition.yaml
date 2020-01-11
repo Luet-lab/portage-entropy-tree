@@ -11,6 +11,13 @@ conflicts:
   category: sys-cluster
   description: ""
   license: ""
+  name: mpich2
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
 mpi
   
   version: ""
@@ -21,17 +28,38 @@ mpi
   name: pmix
   
   version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: mpich2
-  
-  version: ""
 description: A high-performance message passing library (MPI)
 license: BSD
 name: openmpi
 requires:
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jre
+  
+  version: "1.6"
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: torque
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: slurm
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: 1.2.8-r1
 - 
   category: dev-libs
   description: ""
@@ -43,7 +71,7 @@ requires:
   category: sys-cluster
   description: ""
   license: ""
-  name: slurm
+  name: knem
   
   version: ""
 - 
@@ -61,10 +89,10 @@ requires:
   
   version: ""
 - 
-  category: sys-cluster
+  category: sys-fabric
   description: ""
   license: ""
-  name: torque
+  name: librdmacm
   
   version: ""
 - 
@@ -81,34 +109,6 @@ requires:
   name: nvidia-cuda-toolkit
   
   version: 6.5.19-r1
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: knem
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: 1.2.8-r1
-- 
-  category: sys-fabric
-  description: ""
-  license: ""
-  name: librdmacm
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jre
-  
-  version: "1.6"
 uri:
 - http://www.open-mpi.org/software/ompi/v/downloads/openmpi-3.1.4.tar.bz2
 use_flags:

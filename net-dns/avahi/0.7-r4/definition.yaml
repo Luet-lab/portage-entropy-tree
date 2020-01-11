@@ -4,14 +4,14 @@ conflicts:
   category: net-misc
   description: ""
   license: ""
-  name: mDNSResponder
+  name: howl
   
   version: ""
 - 
   category: net-misc
   description: ""
   license: ""
-  name: howl
+  name: mDNSResponder
   
   version: ""
 description: System which facilitates service discovery on a local network
@@ -26,52 +26,10 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: expat
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtcore
-  
-  version: ""
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: mono
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: dbus-python
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-avahi
-  
-  version: ""
-- 
-  category: acct-user
+  category: acct-group
   description: ""
   license: ""
   name: avahi-autoipd
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libdaemon
   
   version: ""
 - 
@@ -85,28 +43,7 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: gdbm
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus
-  
-  version: ""
-- 
-  category: dev-dotnet
-  description: ""
-  license: ""
-  name: gtk-sharp
-  
-  version: ""
-- 
-  category: acct-user
-  description: ""
-  license: ""
-  name: avahi
+  name: libcap
   
   version: ""
 - 
@@ -114,6 +51,13 @@ requires:
   description: ""
   license: ""
   name: avahi
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
   
   version: ""
 - 
@@ -131,10 +75,59 @@ requires:
   
   version: ""
 - 
-  category: acct-group
+  category: sec-policy
   description: ""
   license: ""
-  name: avahi-autoipd
+  name: selinux-avahi
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: gdbm
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libdaemon
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: expat
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtcore
+  
+  version: ""
+- 
+  category: dev-dotnet
+  description: ""
+  license: ""
+  name: gtk-sharp
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: dbus-python
+  
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: avahi
   
   version: ""
 - 
@@ -145,10 +138,10 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: dev-lang
   description: ""
   license: ""
-  name: libcap
+  name: mono
   
   version: ""
 - 
@@ -158,6 +151,13 @@ requires:
   name: twisted
   
   version: 16.0.0
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: avahi-autoipd
+  
+  version: ""
 uri:
 - https://github.com/lathiat/avahi/archive/v0.7.tar.gz -> avahi-0.7.tar.gz
 use_flags:

@@ -5,33 +5,12 @@ license: GPL-2
 name: zabbix
 requires:
 - 
-  category: dev-java
-  description: ""
-  license: ""
-  name: slf4j-api
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: mysql
-  
-  version: 5.0.3
-- 
   category: dev-db
   description: ""
   license: ""
-  name: oracle-instantclient-basic
+  name: postgresql
   
-  version: 10.0.0.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: iksemel
-  
-  version: ""
+  version: "8.1"
 - 
   category: net-analyzer
   description: ""
@@ -40,19 +19,12 @@ requires:
   
   version: ""
 - 
-  category: app-admin
+  category: dev-libs
   description: ""
   license: ""
-  name: webapp-config
+  name: libevent
   
   version: ""
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: php
-  
-  version: 5.4.0
 - 
   category: net-analyzer
   description: ""
@@ -68,41 +40,6 @@ requires:
   
   version: 3.3.5
 - 
-  category: dev-db
-  description: ""
-  license: ""
-  name: postgresql
-  
-  version: "8.1"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jre
-  
-  version: "1.4"
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: cyrus-sasl
-  
-  version: "2"
-- 
   category: sys-libs
   description: ""
   license: ""
@@ -110,10 +47,10 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: zlib
+  name: openssl
   
   version: ""
 - 
@@ -124,26 +61,33 @@ requires:
   
   version: ""
 - 
-  category: dev-db
+  category: virtual
   description: ""
   license: ""
-  name: unixODBC
+  name: jre
+  
+  version: "1.4"
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: php
+  
+  version: 5.4.0
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
   
   version: ""
 - 
-  category: dev-libs
+  category: virtual
   description: ""
   license: ""
-  name: libevent
+  name: mysql
   
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnutls
-  
-  version: ""
+  version: 5.0.3
 - 
   category: dev-libs
   description: ""
@@ -159,6 +103,48 @@ requires:
   
   version: ""
 - 
+  category: virtual
+  description: ""
+  license: ""
+  name: jdk
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: app-admin
+  description: ""
+  license: ""
+  name: webapp-config
+  
+  version: ""
+- 
+  category: dev-java
+  description: ""
+  license: ""
+  name: slf4j-api
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: cyrus-sasl
+  
+  version: "2"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: iksemel
+  
+  version: ""
+- 
   category: net-libs
   description: ""
   license: ""
@@ -166,12 +152,26 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: dev-db
   description: ""
   license: ""
-  name: jdk
+  name: unixODBC
   
   version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: oracle-instantclient-basic
+  
+  version: 10.0.0.0
 uri:
 - https://downloads.sourceforge.net/project/zabbix/ZABBIX%20Latest%20Stable/4.0.13/zabbix-4.0.13.tar.gz
 use_flags:

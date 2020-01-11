@@ -5,24 +5,17 @@ license: GPL-2
 name: mixxx
 requires:
 - 
-  category: virtual
+  category: dev-qt
   description: ""
   license: ""
-  name: opengl
+  name: qtopengl
   
   version: ""
 - 
-  category: x11-libs
+  category: dev-qt
   description: ""
   license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: faad2
+  name: qtx11extras
   
   version: ""
 - 
@@ -43,7 +36,35 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libvorbis
+  name: portmidi
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: opengl
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtconcurrent
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtnetwork
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libshout
   
   version: ""
 - 
@@ -57,42 +78,28 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: vamp-plugin-sdk
+  name: libid3tag
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libshout
+  name: libvorbis
   
   version: ""
 - 
-  category: media-libs
+  category: sci-libs
   description: ""
   license: ""
-  name: chromaprint
+  name: fftw
   
   version: ""
 - 
-  category: media-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: libogg
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: rubberband
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
+  name: libX11
   
   version: ""
 - 
@@ -106,21 +113,70 @@ requires:
   category: dev-qt
   description: ""
   license: ""
-  name: qtsvg
+  name: qtsql
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: lilv
+  name: libmp4v2
   
-  version: 0.24.2-r3
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: chromaprint
+  
+  version: ""
+- 
+  category: sys-power
+  description: ""
+  license: ""
+  name: upower
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: taglib
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: hidapi
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: rubberband
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libmad
+  
+  version: ""
 - 
   category: media-sound
   description: ""
   license: ""
   name: wavpack
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
   
   version: ""
 - 
@@ -131,10 +187,52 @@ requires:
   
   version: ""
 - 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libogg
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libsndfile
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: lilv
+  
+  version: 0.24.2-r3
+- 
+  category: "(\tmedia-libs"
+  description: ""
+  license: ""
+  name: opusfile
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: protobuf
+  
+  version: ""
+- 
   category: dev-qt
   description: ""
   license: ""
-  name: qtnetwork
+  name: qtscript
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtsvg
   
   version: ""
 - 
@@ -155,77 +253,14 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libmad
-  
-  version: ""
-- 
-  category: "(\tmedia-libs"
-  description: ""
-  license: ""
-  name: opusfile
+  name: faad2
   
   version: ""
 - 
   category: dev-qt
   description: ""
   license: ""
-  name: qtsql
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: portmidi
-  
-  version: ""
-- 
-  category: sys-power
-  description: ""
-  license: ""
-  name: upower
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: taglib
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libmp4v2
-  
-  version: ""
-- 
-  category: media-video
-  description: ""
-  license: ""
-  name: ffmpeg
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtopengl
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtscript
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libsndfile
+  name: qtcore
   
   version: ""
 - 
@@ -236,17 +271,10 @@ requires:
   
   version: ""
 - 
-  category: dev-qt
+  category: media-video
   description: ""
   license: ""
-  name: qtx11extras
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libid3tag
+  name: ffmpeg
   
   version: ""
 - 
@@ -257,38 +285,10 @@ requires:
   
   version: 19_pre
 - 
-  category: sci-libs
+  category: media-libs
   description: ""
   license: ""
-  name: fftw
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: hidapi
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: protobuf
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtconcurrent
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtcore
+  name: vamp-plugin-sdk
   
   version: ""
 uri:

@@ -6,31 +6,17 @@ license: GPL-2 LGPL-2
 name: libguestfs
 requires:
 - 
-  category: dev-perl
+  category: sys-apps
   description: ""
   license: ""
-  name: libintl-perl
+  name: dbus
   
   version: ""
 - 
-  category: dev-libs
+  category: app-arch
   description: ""
   license: ""
-  name: glib
-  
-  version: "2.26"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libcap
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libtirpc
+  name: cpio
   
   version: ""
 - 
@@ -41,129 +27,10 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: file
-  
-  version: ""
-- 
-  category: app-admin
-  description: ""
-  license: ""
-  name: augeas
-  
-  version: 1.8.0
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: readline
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
-  name: yajl
-  
-  version: 2.0.4
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: gettext
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: perl-Getopt-Long
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: perl-Data-Dumper
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: ""
-- 
-  category: app-emulation
-  description: ""
-  license: ""
-  name: libguestfs-appliance
-  
-  version: ""
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: perl
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: xz-utils
-  
-  version: ""
-- 
-  category: dev-perl
-  description: ""
-  license: ""
-  name: String-ShellQuote
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: netpbm
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: perl-ExtUtils-MakeMaker
-  
-  version: ""
-- 
-  category: media-gfx
-  description: ""
-  license: ""
-  name: icoutils
-  
-  version: ""
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: lua
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libpcre
-  
-  version: ""
-- 
-  category: app-emulation
-  description: ""
-  license: ""
-  name: libvirt
+  name: libxml2
   
   version: ""
 - 
@@ -174,66 +41,10 @@ requires:
   
   version: ""
 - 
-  category: app-arch
+  category: media-gfx
   description: ""
   license: ""
-  name: lzma
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: db
-  
-  version: "4.6"
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: systemtap
-  
-  version: ""
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: ocaml
-  
-  version: "4.03"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus
-  
-  version: ""
-- 
-  category: app-misc
-  description: ""
-  license: ""
-  name: hivex
-  
-  version: 1.3.1
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: cpio
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: fakechroot
-  
-  version: "2.8"
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: squashfs-tools
+  name: icoutils
   
   version: ""
 - 
@@ -244,12 +55,33 @@ requires:
   
   version: ""
 - 
-  category: dev-perl
+  category: app-emulation
   description: ""
   license: ""
-  name: Sys-Virt
+  name: libguestfs-appliance
   
-  version: 0.2.4
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: hivex
+  
+  version: 1.3.1
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: file
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: unzip
+  
+  version: ""
 - 
   category: sys-fs
   description: ""
@@ -258,12 +90,54 @@ requires:
   
   version: ""
 - 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gnupg
+  
+  version: ""
+- 
+  category: dev-perl
+  description: ""
+  license: ""
+  name: Sys-Virt
+  
+  version: 0.2.4
+- 
   category: dev-libs
   description: ""
   license: ""
-  name: gobject-introspection
+  name: glib
   
-  version: 1.30.0
+  version: "2.26"
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: lua
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: perl-Getopt-Long
+  
+  version: ""
+- 
+  category: dev-perl
+  description: ""
+  license: ""
+  name: libintl-perl
+  
+  version: ""
 - 
   category: dev-lang
   description: ""
@@ -272,24 +146,45 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: x11-libs
   description: ""
   license: ""
-  name: fakeroot
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
+  name: gtk+
   
   version: ""
 - 
   category: sys-libs
   description: ""
   license: ""
-  name: libsemanage
+  name: libcap
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpcre
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: squashfs-tools
+  
+  version: ""
+- 
+  category: dev-perl
+  description: ""
+  license: ""
+  name: String-ShellQuote
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: systemtap
   
   version: ""
 - 
@@ -303,28 +198,133 @@ requires:
   category: sys-libs
   description: ""
   license: ""
+  name: readline
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: db
+  
+  version: "4.6"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gobject-introspection
+  
+  version: 1.30.0
+- 
+  category: sys-libs
+  description: ""
+  license: ""
   name: ncurses
   
   version: ""
 - 
-  category: app-crypt
+  category: sys-devel
   description: ""
   license: ""
-  name: gnupg
+  name: gettext
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: perl
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: fakeroot
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: fakechroot
+  
+  version: "2.8"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libsemanage
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libtirpc
+  
+  version: ""
+- 
+  category: app-admin
+  description: ""
+  license: ""
+  name: augeas
+  
+  version: 1.8.0
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: perl-ExtUtils-MakeMaker
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: perl-Data-Dumper
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: ocaml
+  
+  version: "4.03"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: yajl
+  
+  version: 2.0.4
+- 
+  category: app-emulation
+  description: ""
+  license: ""
+  name: libvirt
   
   version: ""
 - 
   category: app-arch
   description: ""
   license: ""
-  name: unzip
+  name: xz-utils
   
   version: ""
 - 
-  category: x11-libs
+  category: app-arch
   description: ""
   license: ""
-  name: gtk+
+  name: lzma
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: netpbm
   
   version: ""
 uri:

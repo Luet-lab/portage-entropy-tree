@@ -1,27 +1,6 @@
 category: sys-apps
 conflicts:
 - 
-  category: <sys-process
-  description: ""
-  license: ""
-  name: procps
-  
-  version: 3.3.9-r2
-- 
-  category: <app-shells
-  description: ""
-  license: ""
-  name: gentoo-zsh-completions
-  
-  version: "20180228"
-- 
-  category: <sys-fs
-  description: ""
-  license: ""
-  name: udev-init-scripts
-  
-  version: "27"
-- 
   category: <sys-apps
   description: ""
   license: ""
@@ -36,28 +15,49 @@ conflicts:
   
   version: ""
 - 
+  category: <sys-process
+  description: ""
+  license: ""
+  name: procps
+  
+  version: 3.3.9-r2
+- 
+  category: <sys-fs
+  description: ""
+  license: ""
+  name: udev-init-scripts
+  
+  version: "27"
+- 
   category: <app-shells
   description: ""
   license: ""
   name: gentoo-bashcomp
   
   version: "20180302"
+- 
+  category: <app-shells
+  description: ""
+  license: ""
+  name: gentoo-zsh-completions
+  
+  version: "20180228"
 description: OpenRC manages the services, startup and shutdown of a host
 license: BSD-2
 name: openrc
 requires:
 - 
-  category: sys-apps
+  category: sys-process
   description: ""
   license: ""
-  name: policycoreutils
+  name: psmisc
   
   version: ""
 - 
   category: sys-apps
   description: ""
   license: ""
-  name: sysvinit-2.86-r6[selinux?]
+  name: policycoreutils
   
   version: ""
 - 
@@ -67,6 +67,27 @@ requires:
   name: ncurses
   
   version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: audit
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-openrc
+  
+  version: 2.20170204-r4
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: "2.6"
 - 
   category: virtual
   description: ""
@@ -92,28 +113,7 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: libselinux
-  
-  version: "2.6"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
   name: pam
-  
-  version: ""
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: audit
-  
-  version: ""
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: psmisc
   
   version: ""
 - 
@@ -124,12 +124,12 @@ requires:
   
   version: ""
 - 
-  category: sec-policy
+  category: sys-apps
   description: ""
   license: ""
-  name: selinux-openrc
+  name: sysvinit-2.86-r6[selinux?]
   
-  version: 2.20170204-r4
+  version: ""
 uri: []
 use_flags:
 - audit

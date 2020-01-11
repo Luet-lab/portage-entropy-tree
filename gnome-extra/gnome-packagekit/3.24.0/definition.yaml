@@ -5,34 +5,6 @@ license: GPL-2
 name: gnome-packagekit
 requires:
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pango
-  
-  version: ""
-- 
-  category: app-admin
-  description: ""
-  license: ""
-  name: packagekit-base
-  
-  version: 0.9.1
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libcanberra
-  
-  version: "0.10"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus
-  
-  version: 1.1.2
-- 
   category: media-libs
   description: ""
   license: ""
@@ -40,12 +12,19 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: x11-libs
   description: ""
   license: ""
-  name: systemd
+  name: libX11
   
-  version: "42"
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgudev
+  
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -64,6 +43,34 @@ requires:
   category: x11-libs
   description: ""
   license: ""
+  name: pango
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: 1.1.2
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "42"
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: consolekit
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
   name: gtk+
   
   version: 3.15.3
@@ -75,26 +82,19 @@ requires:
   
   version: 0.7.0
 - 
-  category: x11-libs
+  category: app-admin
   description: ""
   license: ""
-  name: libX11
+  name: packagekit-base
   
-  version: ""
+  version: 0.9.1
 - 
-  category: sys-auth
+  category: media-libs
   description: ""
   license: ""
-  name: consolekit
+  name: libcanberra
   
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgudev
-  
-  version: ""
+  version: "0.10"
 uri: []
 use_flags:
 - systemd

@@ -5,26 +5,12 @@ license: GPL-2 LGPL-2.1
 name: mate-settings-daemon
 requires:
 - 
-  category: x11-libs
+  category: media-libs
   description: ""
   license: ""
-  name: libnotify
+  name: libmatemixer
   
-  version: "0.7"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus
-  
-  version: 1.1.2
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: pulseaudio
-  
-  version: 0.9.15
+  version: "1.10"
 - 
   category: dev-libs
   description: ""
@@ -33,47 +19,47 @@ requires:
   
   version: "2.50"
 - 
-  category: mate-base
+  category: x11-libs
   description: ""
   license: ""
-  name: libmatekbd
-  
-  version: 1.17.0
-- 
-  category: mate-base
-  description: ""
-  license: ""
-  name: mate-desktop
-  
-  version: 1.21.1
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libintl
+  name: cairo
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXext
+  name: libXi
   
   version: ""
 - 
-  category: x11-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: libxklavier
+  name: dbus
   
-  version: "5.2"
+  version: 1.1.2
 - 
-  category: media-libs
+  category: sys-auth
   description: ""
   license: ""
-  name: libmatemixer
+  name: polkit
   
-  version: "1.10"
+  version: "0.97"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nss
+  
+  version: 3.11.2
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: dbus-glib
+  
+  version: "0.74"
 - 
   category: gnome-base
   description: ""
@@ -89,19 +75,47 @@ requires:
   
   version: "3.22"
 - 
-  category: x11-libs
+  category: virtual
   description: ""
   license: ""
-  name: libX11
+  name: libintl
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: dbus-glib
+  
+  version: "0.71"
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXi
+  name: libnotify
+  
+  version: "0.7"
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: pulseaudio
+  
+  version: 0.9.15
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libcanberra
   
   version: ""
+- 
+  category: mate-base
+  description: ""
+  license: ""
+  name: libmatekbd
+  
+  version: 1.17.0
 - 
   category: media-libs
   description: ""
@@ -113,42 +127,14 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: cairo
+  name: gdk-pixbuf
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: nss
-  
-  version: 3.11.2
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libcanberra
-  
-  version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: polkit
-  
-  version: "0.97"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: dbus-glib
-  
-  version: "0.74"
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: gdk-pixbuf
+  name: libX11
   
   version: ""
 - 
@@ -159,12 +145,26 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: mate-base
   description: ""
   license: ""
-  name: dbus-glib
+  name: mate-desktop
   
-  version: "0.71"
+  version: 1.21.1
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXext
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxklavier
+  
+  version: "5.2"
 uri: []
 use_flags:
 - X

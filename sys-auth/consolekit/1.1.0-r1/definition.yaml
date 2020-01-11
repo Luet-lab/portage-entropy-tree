@@ -5,12 +5,12 @@ license: GPL-2
 name: consolekit
 requires:
 - 
-  category: virtual
+  category: x11-libs
   description: ""
   license: ""
-  name: udev
+  name: libX11
   
-  version: "200"
+  version: ""
 - 
   category: sys-libs
   description: ""
@@ -19,6 +19,13 @@ requires:
   
   version: 1.0.2
 - 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
   category: sys-auth
   description: ""
   license: ""
@@ -26,10 +33,10 @@ requires:
   
   version: "0.110"
 - 
-  category: sec-policy
+  category: sys-power
   description: ""
   license: ""
-  name: selinux-consolekit
+  name: pm-utils
   
   version: ""
 - 
@@ -40,10 +47,17 @@ requires:
   
   version: "2.40"
 - 
-  category: sys-apps
+  category: sys-devel
   description: ""
   license: ""
-  name: dbus
+  name: gettext
+  
+  version: "0.19"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
   
   version: ""
 - 
@@ -57,21 +71,7 @@ requires:
   category: sys-apps
   description: ""
   license: ""
-  name: coreutils[acl?]
-  
-  version: ""
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: gettext
-  
-  version: "0.19"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
+  name: dbus
   
   version: ""
 - 
@@ -82,24 +82,24 @@ requires:
   
   version: ""
 - 
-  category: sys-power
+  category: virtual
   description: ""
   license: ""
-  name: pm-utils
+  name: udev
+  
+  version: "200"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: coreutils[acl?]
   
   version: ""
 - 
-  category: sys-libs
+  category: sec-policy
   description: ""
   license: ""
-  name: zlib
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
+  name: selinux-consolekit
   
   version: ""
 uri:

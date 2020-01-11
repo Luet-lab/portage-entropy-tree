@@ -1,13 +1,6 @@
 category: sys-fs
 conflicts:
 - 
-  category: <sys-kernel
-  description: ""
-  license: ""
-  name: bliss-initramfs
-  
-  version: 7.1.0
-- 
   category: =sys-apps
   description: ""
   license: ""
@@ -15,12 +8,19 @@ conflicts:
   
   version: ""
 - 
-  category: sys-fs
+  category: <sys-boot
   description: ""
   license: ""
-  name: zfs-fuse
+  name: grub
   
-  version: ""
+  version: 2.00-r2
+- 
+  category: <sys-kernel
+  description: ""
+  license: ""
+  name: dracut
+  
+  version: 044-r1
 - 
   category: <sys-kernel
   description: ""
@@ -32,16 +32,16 @@ conflicts:
   category: <sys-kernel
   description: ""
   license: ""
-  name: dracut
+  name: bliss-initramfs
   
-  version: 044-r1
+  version: 7.1.0
 - 
-  category: <sys-boot
+  category: sys-fs
   description: ""
   license: ""
-  name: grub
+  name: zfs-fuse
   
-  version: 2.00-r2
+  version: ""
 - 
   category: <sys-kernel
   description: ""
@@ -54,38 +54,17 @@ license: BSD-2 CDDL MIT
 name: zfs
 requires:
 - 
-  category: virtual
+  category: sys-fs
   description: ""
   license: ""
-  name: modutils
+  name: zfs-kmod
   
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: python-cffi
-  
-  version: ""
+  version: "9999"
 - 
   category: sys-fs
   description: ""
   license: ""
   name: udev-init-scripts
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
   
   version: ""
 - 
@@ -96,13 +75,6 @@ requires:
   
   version: ""
 - 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: mdadm
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
@@ -110,17 +82,24 @@ requires:
   
   version: ""
 - 
-  category: sys-fs
+  category: dev-libs
   description: ""
   license: ""
-  name: zfs-kmod
+  name: openssl
   
-  version: "9999"
+  version: ""
 - 
-  category: app-arch
+  category: sys-apps
   description: ""
   license: ""
-  name: cpio
+  name: util-linux
+  
+  version: ""
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: bc
   
   version: ""
 - 
@@ -159,10 +138,31 @@ requires:
   
   version: ""
 - 
-  category: sys-devel
+  category: virtual
   description: ""
   license: ""
-  name: bc
+  name: modutils
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: python-cffi
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: mdadm
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: cpio
   
   version: ""
 uri: []

@@ -5,12 +5,12 @@ license: GPL-2
 name: connman
 requires:
 - 
-  category: dev-libs
+  category: net-libs
   description: ""
   license: ""
-  name: glib
+  name: gnutls
   
-  version: "2.16"
+  version: ""
 - 
   category: sys-apps
   description: ""
@@ -22,9 +22,23 @@ requires:
   category: net-wireless
   description: ""
   license: ""
-  name: bluez
+  name: wpa_supplicant
+  
+  version: "2.0"
+- 
+  category: net-wireless
+  description: ""
+  license: ""
+  name: iwd
   
   version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libmnl
+  
+  version: 1.0.0
 - 
   category: net-vpn
   description: ""
@@ -39,27 +53,6 @@ requires:
   name: polkit
   
   version: ""
-- 
-  category: net-wireless
-  description: ""
-  license: ""
-  name: wpa_supplicant
-  
-  version: "2.0"
-- 
-  category: net-firewall
-  description: ""
-  license: ""
-  name: iptables
-  
-  version: 1.4.8
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libmnl
-  
-  version: 1.0.0
 - 
   category: net-dialup
   description: ""
@@ -82,19 +75,12 @@ requires:
   
   version: ""
 - 
-  category: net-wireless
+  category: net-firewall
   description: ""
   license: ""
-  name: iwd
+  name: iptables
   
-  version: ""
-- 
-  category: net-dialup
-  description: ""
-  license: ""
-  name: xl2tpd
-  
-  version: ""
+  version: 1.4.8
 - 
   category: net-libs
   description: ""
@@ -103,10 +89,17 @@ requires:
   
   version: 1.0.4
 - 
-  category: net-misc
+  category: dev-libs
   description: ""
   license: ""
-  name: ofono
+  name: glib
+  
+  version: "2.16"
+- 
+  category: net-wireless
+  description: ""
+  license: ""
+  name: bluez
   
   version: ""
 - 
@@ -117,10 +110,17 @@ requires:
   
   version: ""
 - 
-  category: net-libs
+  category: net-dialup
   description: ""
   license: ""
-  name: gnutls
+  name: xl2tpd
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: ofono
   
   version: ""
 uri:

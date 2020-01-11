@@ -5,38 +5,24 @@ license: GPL-2+
 name: gnome-session
 requires:
 - 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "183"
+- 
   category: dev-libs
   description: ""
   license: ""
-  name: glib
+  name: dbus-glib
   
-  version: 2.46.0
+  version: "0.76"
 - 
-  category: x11-misc
+  category: sys-apps
   description: ""
   license: ""
-  name: xdg-user-dirs-gtk
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: mesa[egl,gles2,X(+)]
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXcomposite
+  name: dbus[X]
   
   version: ""
 - 
@@ -54,38 +40,17 @@ requires:
   
   version: ""
 - 
-  category: gnome-base
+  category: media-libs
   description: ""
   license: ""
-  name: gnome-desktop
-  
-  version: "3.18"
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gsettings-desktop-schemas
-  
-  version: 0.1.7
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus[X]
-  
-  version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: consolekit
+  name: libepoxy
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libICE
+  name: libX11
   
   version: ""
 - 
@@ -96,19 +61,33 @@ requires:
   
   version: "0.10"
 - 
-  category: media-libs
+  category: x11-misc
   description: ""
   license: ""
-  name: libepoxy
+  name: xdg-user-dirs-gtk
   
   version: ""
 - 
-  category: sys-apps
+  category: dev-libs
   description: ""
   license: ""
-  name: systemd
+  name: glib
   
-  version: "183"
+  version: 2.46.0
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libICE
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: consolekit
+  
+  version: ""
 - 
   category: sys-auth
   description: ""
@@ -117,13 +96,6 @@ requires:
   
   version: "239.4"
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: dbus-glib
-  
-  version: "0.76"
-- 
   category: gnome-base
   description: ""
   license: ""
@@ -131,10 +103,38 @@ requires:
   
   version: 3.23.2
 - 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gsettings-desktop-schemas
+  
+  version: 0.1.7
+- 
   category: x11-misc
   description: ""
   license: ""
   name: xdg-user-dirs
+  
+  version: ""
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gnome-desktop
+  
+  version: "3.18"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: mesa[egl,gles2,X(+)]
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXcomposite
   
   version: ""
 uri: []

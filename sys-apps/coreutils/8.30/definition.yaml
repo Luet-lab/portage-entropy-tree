@@ -1,31 +1,24 @@
 category: sys-apps
 conflicts:
 - 
-  category: sys-process
+  category: sys-apps
   description: ""
   license: ""
-  name: procps
+  name: net-tools
   
   version: ""
 - 
   category: <sys-apps
   description: ""
   license: ""
-  name: util-linux
+  name: sandbox
   
-  version: "2.13"
+  version: 2.10-r4
 - 
   category: sys-apps
   description: ""
   license: ""
-  name: mktemp
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
+  name: stat
   
   version: ""
 - 
@@ -46,14 +39,7 @@ conflicts:
   category: sys-apps
   description: ""
   license: ""
-  name: net-tools
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: stat
+  name: util-linux
   
   version: ""
 - 
@@ -64,17 +50,31 @@ conflicts:
   
   version: 1.18-r1
 - 
-  category: <sys-apps
-  description: ""
-  license: ""
-  name: sandbox
-  
-  version: 2.10-r4
-- 
   category: app-misc
   description: ""
   license: ""
   name: realpath
+  
+  version: ""
+- 
+  category: <sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: "2.13"
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: procps
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: mktemp
   
   version: ""
 description: Standard GNU utilities (chmod, cp, dd, ls, sort, tr, head, wc, who,...)
@@ -82,31 +82,17 @@ license: GPL-3
 name: coreutils
 requires:
 - 
-  category: dev-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: gmp
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libintl
+  name: attr
   
   version: ""
 - 
   category: sys-libs
   description: ""
   license: ""
-  name: libcap
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: attr
+  name: libselinux
   
   version: ""
 - 
@@ -120,7 +106,21 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: libselinux
+  name: libcap
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gmp
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libintl
   
   version: ""
 uri:

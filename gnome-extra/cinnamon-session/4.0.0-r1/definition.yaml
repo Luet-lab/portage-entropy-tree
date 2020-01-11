@@ -5,38 +5,45 @@ license: GPL-2+ FDL-1.1+ LGPL-2+
 name: cinnamon-session
 requires:
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.37.3
+- 
   category: x11-libs
   description: ""
   license: ""
-  name: libSM
+  name: libICE
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libX11
+  name: libXcomposite
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXext
+  name: libXrender
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: xapps
+  name: pango[X]
   
-  version: 1.0.4
+  version: ""
 - 
-  category: x11-libs
+  category: virtual
   description: ""
   license: ""
-  name: gdk-pixbuf
+  name: opengl
   
   version: ""
 - 
@@ -50,51 +57,23 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: cairo
-  
-  version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: elogind
+  name: libSM
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libICE
+  name: libXext
   
   version: ""
 - 
-  category: x11-libs
+  category: sys-power
   description: ""
   license: ""
-  name: libXau
+  name: upower
   
   version: ""
-- 
-  category: gnome-extra
-  description: ""
-  license: ""
-  name: cinnamon-desktop-2.6[systemd=]
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXtst
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: 2.37.3
 - 
   category: media-libs
   description: ""
@@ -106,16 +85,16 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXcomposite
+  name: cairo
   
   version: ""
 - 
-  category: virtual
+  category: x11-libs
   description: ""
   license: ""
-  name: opengl
+  name: xapps
   
-  version: ""
+  version: 1.0.4
 - 
   category: sys-apps
   description: ""
@@ -124,17 +103,10 @@ requires:
   
   version: "183"
 - 
-  category: sys-auth
+  category: gnome-extra
   description: ""
   license: ""
-  name: polkit
-  
-  version: ""
-- 
-  category: sys-power
-  description: ""
-  license: ""
-  name: upower
+  name: cinnamon-desktop-2.6[systemd=]
   
   version: ""
 - 
@@ -148,14 +120,42 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXrender
+  name: gdk-pixbuf
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: pango[X]
+  name: libX11
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXau
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXtst
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: elogind
   
   version: ""
 uri:

@@ -11,13 +11,6 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: qmail-ldap
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
   name: ssmtp
   
   version: ""
@@ -32,7 +25,14 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-mailer
+  name: netqmail
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: qmail-ldap
   
   version: ""
 - 
@@ -67,7 +67,7 @@ mailer
   category: mail-mta
   description: ""
   license: ""
-  name: netqmail
+mailer
   
   version: ""
 - 
@@ -81,27 +81,6 @@ description: Lightweight but featured SMTP daemon from OpenBSD
 license: ISC BSD BSD-1 BSD-2 BSD-4
 name: opensmtpd
 requires:
-- 
-  category: app-misc
-  description: ""
-  license: ""
-  name: ca-certificates
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: fts-standalone
-  
-  version: ""
 - 
   category: net-libs
   description: ""
@@ -117,10 +96,31 @@ requires:
   
   version: ""
 - 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: db
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: ca-certificates
+  
+  version: ""
+- 
   category: dev-libs
   description: ""
   license: ""
-  name: libevent
+  name: openssl
   
   version: ""
 - 
@@ -134,7 +134,14 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: zlib
+  name: fts-standalone
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libevent
   
   version: ""
 - 
@@ -142,13 +149,6 @@ requires:
   description: ""
   license: ""
   name: pam
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: db
   
   version: ""
 uri:

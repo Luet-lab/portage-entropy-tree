@@ -5,6 +5,48 @@ license: Apache-2.0
 name: docker
 requires:
 - 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lvm2
+  
+  version: 2.02.89
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libseccomp
+  
+  version: 2.2.1
+- 
+  category: dev-vcs
+  description: ""
+  license: ""
+  name: git
+  
+  version: "1.7"
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: xz-utils
+  
+  version: "4.9"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libltdl
+  
+  version: ""
+- 
+  category: app-emulation
+  description: ""
+  license: ""
+  name: docker-proxy
+  
+  version: 0.8.0_p20191011
+- 
   category: dev-db
   description: ""
   license: ""
@@ -15,51 +57,9 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: libseccomp
-  
-  version: 2.2.1
-- 
-  category: sys-libs
-  description: ""
-  license: ""
   name: libapparmor
   
   version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: xz-utils
-  
-  version: "4.9"
-- 
-  category: app-emulation
-  description: ""
-  license: ""
-  name: containerd
-  
-  version: 1.2.10
-- 
-  category: app-emulation
-  description: ""
-  license: ""
-  name: docker-proxy
-  
-  version: 0.8.0_p20191011
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: tini
-  
-  version: 0.18.0
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: lvm2
-  
-  version: 2.02.89
 - 
   category: net-firewall
   description: ""
@@ -75,19 +75,19 @@ requires:
   
   version: ""
 - 
-  category: dev-vcs
+  category: app-emulation
   description: ""
   license: ""
-  name: git
+  name: containerd
   
-  version: "1.7"
+  version: 1.2.10
 - 
-  category: dev-libs
+  category: sys-process
   description: ""
   license: ""
-  name: libltdl
+  name: tini
   
-  version: ""
+  version: 0.18.0
 uri:
 - https://github.com/docker/docker-ce/archive/v19.03.4.tar.gz -> docker-19.03.4.tar.gz
 use_flags:

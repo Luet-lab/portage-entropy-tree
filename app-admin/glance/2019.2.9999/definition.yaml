@@ -4,13 +4,6 @@ conflicts:
   category: ~dev-python
   description: ""
   license: ""
-  name: sqlalchemy
-  
-  version: 1.1.6
-- 
-  category: ~dev-python
-  description: ""
-  license: ""
   name: retrying
   
   version: 1.3.0
@@ -18,9 +11,9 @@ conflicts:
   category: ~dev-python
   description: ""
   license: ""
-  name: eventlet
+  name: sqlalchemy
   
-  version: 0.25.0
+  version: 1.1.6
 - 
   category: ~dev-python
   description: ""
@@ -32,9 +25,23 @@ conflicts:
   category: ~dev-python
   description: ""
   license: ""
+  name: sqlalchemy
+  
+  version: 1.1.5
+- 
+  category: ~dev-python
+  description: ""
+  license: ""
   name: pbr
   
   version: 2.1.0
+- 
+  category: ~dev-python
+  description: ""
+  license: ""
+  name: pymysql
+  
+  version: 0.7.7
 - 
   category: ~dev-python
   description: ""
@@ -46,9 +53,9 @@ conflicts:
   category: ~dev-python
   description: ""
   license: ""
-  name: sqlalchemy
+  name: eventlet
   
-  version: 1.1.5
+  version: 0.25.0
 - 
   category: ~dev-python
   description: ""
@@ -63,13 +70,6 @@ conflicts:
   name: oslo-messaging
   
   version: 9.0.0
-- 
-  category: ~dev-python
-  description: ""
-  license: ""
-  name: pymysql
-  
-  version: 0.7.7
 description: Services for discovering, registering, and retrieving VM images
 license: Apache-2.0
 name: glance
@@ -78,37 +78,16 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: oslo-middleware
+  name: defusedxml
   
-  version: 3.31.0
+  version: 0.5.0
 - 
   category: dev-python
   description: ""
   license: ""
-  name: taskflow
+  name: oslo-policy
   
-  version: 2.16.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: oslo-i18n
-  
-  version: 3.15.3
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: python-keystoneclient
-  
-  version: 3.8.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: retrying
-  
-  version: 1.2.3
+  version: 1.30.0
 - 
   category: dev-python
   description: ""
@@ -116,62 +95,6 @@ requires:
   name: cryptography
   
   version: "2.1"
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: webob
-  
-  version: 1.8.1
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: python-sqlparse
-  
-  version: 0.2.2
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: oslo-utils
-  
-  version: 3.33.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: paste
-  
-  version: 2.0.2
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: six
-  
-  version: 1.10.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pbr
-  
-  version: 2.0.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: iso8601
-  
-  version: 0.1.11
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: futurist
-  
-  version: 1.2.0
 - 
   category: dev-python
   description: ""
@@ -190,9 +113,107 @@ requires:
   category: dev-python
   description: ""
   license: ""
+  name: futurist
+  
+  version: 1.2.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: glance_store
+  
+  version: 1.0.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
   name: sqlalchemy
   
   version: 1.0.10
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: python-sqlparse
+  
+  version: 0.2.2
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: cursive
+  
+  version: 0.2.1
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: sqlalchemy-migrate
+  
+  version: 0.11.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: httplib2
+  
+  version: 0.9.1
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: paste
+  
+  version: 2.0.2
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: oslo-db
+  
+  version: 4.27.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: six
+  
+  version: 1.10.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: oslo-i18n
+  
+  version: 3.15.3
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: oslo-reports
+  
+  version: 1.18.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pbr
+  
+  version: 2.0.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: eventlet
+  
+  version: 0.22.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pyopenssl
+  
+  version: 17.1.0
 - 
   category: dev-python
   description: ""
@@ -211,51 +232,37 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: oslo-messaging
+  name: pymysql
   
-  version: 5.29.0
+  version: 0.7.6
 - 
   category: dev-python
   description: ""
   license: ""
-  name: stevedore
+  name: oslo-upgradecheck
   
-  version: 1.20.0
+  version: 0.1.0
 - 
   category: dev-python
   description: ""
   license: ""
-  name: oslo-reports
+  name: iso8601
   
-  version: 1.18.0
+  version: 0.1.11
 - 
   category: dev-python
   description: ""
   license: ""
-  name: debtcollector
+  name: oslo-middleware
   
-  version: 1.2.0
+  version: 3.31.0
 - 
   category: dev-python
   description: ""
   license: ""
-  name: os-win
+  name: keystonemiddleware
   
-  version: 3.0.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: httplib2
-  
-  version: 0.9.1
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: prettytable
-  
-  version: 0.7.0
+  version: 4.17.0
 - 
   category: dev-python
   description: ""
@@ -263,41 +270,6 @@ requires:
   name: jsonschema
   
   version: 2.6.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pyopenssl
-  
-  version: 17.1.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: glance_store
-  
-  version: 1.0.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: eventlet
-  
-  version: 0.22.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: sqlalchemy-migrate
-  
-  version: 0.11.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: psycopg
-  
-  version: 2.5.0
 - 
   category: dev-python
   description: ""
@@ -316,72 +288,9 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: oslo-concurrency
-  
-  version: 3.26.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: oslo-context
-  
-  version: 2.19.2
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: oslo-upgradecheck
-  
-  version: 0.1.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: oslo-policy
-  
-  version: 1.30.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: cursive
-  
-  version: 0.2.1
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: alembic
-  
-  version: 0.8.10
-- 
-  category: dev-python
-  description: ""
-  license: ""
   name: keystoneauth
   
   version: 3.4.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: defusedxml
-  
-  version: 0.5.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pymysql
-  
-  version: 0.7.6
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: oslo-db
-  
-  version: 4.27.0
 - 
   category: dev-python
   description: ""
@@ -393,6 +302,90 @@ requires:
   category: dev-python
   description: ""
   license: ""
+  name: retrying
+  
+  version: 1.2.3
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: taskflow
+  
+  version: 2.16.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: oslo-messaging
+  
+  version: 5.29.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: webob
+  
+  version: 1.8.1
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: alembic
+  
+  version: 0.8.10
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: os-win
+  
+  version: 3.0.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: oslo-context
+  
+  version: 2.19.2
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: debtcollector
+  
+  version: 1.2.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: oslo-utils
+  
+  version: 3.33.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: stevedore
+  
+  version: 1.20.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: prettytable
+  
+  version: 0.7.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: python-keystoneclient
+  
+  version: 3.8.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
   name: castellan
   
   version: 0.17.0
@@ -400,9 +393,16 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: keystonemiddleware
+  name: psycopg
   
-  version: 4.17.0
+  version: 2.5.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: oslo-concurrency
+  
+  version: 3.26.0
 uri: []
 use_flags:
 - doc

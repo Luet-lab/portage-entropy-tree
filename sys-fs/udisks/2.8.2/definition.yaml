@@ -5,12 +5,33 @@ license: LGPL-2+ GPL-2+
 name: udisks
 requires:
 - 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-devicekit
+  
+  version: ""
+- 
   category: dev-libs
   description: ""
   license: ""
-  name: libatasmart
+  name: gobject-introspection
   
-  version: "0.19"
+  version: "1.30"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: eject
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: "2.30"
 - 
   category: dev-libs
   description: ""
@@ -22,37 +43,9 @@ requires:
   category: virtual
   description: ""
   license: ""
-  name: udev
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
   name: acl
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: gobject-introspection
-  
-  version: "1.30"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: "209"
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: elogind
-  
-  version: "219"
 - 
   category: sys-fs
   description: ""
@@ -61,26 +54,19 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: sys-block
   description: ""
   license: ""
-  name: util-linux
+  name: parted
   
-  version: "2.30"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: eject
-  
-  version: ""
+  version: "3"
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: glib
+  name: libatasmart
   
-  version: "2.50"
+  version: "0.19"
 - 
   category: sys-auth
   description: ""
@@ -89,19 +75,33 @@ requires:
   
   version: "0.110"
 - 
-  category: sys-block
+  category: virtual
   description: ""
   license: ""
-  name: parted
-  
-  version: "3"
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-devicekit
+  name: udev
   
   version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: elogind
+  
+  version: "219"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "209"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.50"
 uri:
 - https://github.com/storaged-project/udisks/releases/download/udisks-2.8.2/udisks-2.8.2.tar.bz2
 use_flags:

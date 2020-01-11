@@ -4,21 +4,7 @@ conflicts:
   category: sys-cluster
   description: ""
   license: ""
-  name: mpich
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
   name: pmix
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: mpich2
   
   version: ""
 - 
@@ -28,15 +14,29 @@ conflicts:
 mpi
   
   version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: mpich
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: mpich2
+  
+  version: ""
 description: A high-performance message passing library (MPI)
 license: BSD
 name: openmpi
 requires:
 - 
-  category: sys-fabric
+  category: dev-libs
   description: ""
   license: ""
-  name: librdmacm
+  name: libltdl
   
   version: ""
 - 
@@ -47,12 +47,40 @@ requires:
   
   version: 1.2.8-r1
 - 
+  category: virtual
+  description: ""
+  license: ""
+  name: jre
+  
+  version: "1.6"
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: ofed
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: knem
+  
+  version: ""
+- 
   category: sys-fabric
   description: ""
   license: ""
   name: infinipath-psm
   
   version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: nvidia-cuda-toolkit
+  
+  version: 6.5.19-r1
 - 
   category: sys-cluster
   description: ""
@@ -68,33 +96,12 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: sys-fabric
   description: ""
   license: ""
-  name: libltdl
+  name: librdmacm
   
   version: ""
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: nvidia-cuda-toolkit
-  
-  version: 6.5.19-r1
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: knem
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jre
-  
-  version: "1.6"
 - 
   category: dev-libs
   description: ""
@@ -102,13 +109,6 @@ requires:
   name: libevent
   
   version: 2.0.22
-- 
-  category: sys-fabric
-  description: ""
-  license: ""
-  name: ofed
-  
-  version: ""
 uri:
 - http://www.open-mpi.org/software/ompi/v/downloads/openmpi-2.0.4.tar.bz2
 use_flags:

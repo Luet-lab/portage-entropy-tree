@@ -5,26 +5,12 @@ license: GPL-2+
 name: gnome-disk-utility
 requires:
 - 
-  category: media-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: libcanberra
-  
-  version: "0.1"
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: elogind
+  name: systemd
   
   version: "209"
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: dosfstools
-  
-  version: ""
 - 
   category: dev-libs
   description: ""
@@ -33,33 +19,12 @@ requires:
   
   version: "2.31"
 - 
-  category: x11-libs
+  category: sys-fs
   description: ""
   license: ""
-  name: gtk+
+  name: udisks
   
-  version: 3.16.0
-- 
-  category: x11-themes
-  description: ""
-  license: ""
-  name: adwaita-icon-theme
-  
-  version: ""
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gnome-settings-daemon
-  
-  version: "3.8"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libpwquality
-  
-  version: 1.0.0
+  version: 2.7.6
 - 
   category: media-libs
   description: ""
@@ -75,6 +40,13 @@ requires:
   
   version: "0.7"
 - 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libcanberra
+  
+  version: "0.1"
+- 
   category: app-arch
   description: ""
   license: ""
@@ -82,19 +54,19 @@ requires:
   
   version: 5.0.5
 - 
-  category: sys-apps
+  category: sys-auth
   description: ""
   license: ""
-  name: systemd
+  name: elogind
   
   version: "209"
 - 
-  category: sys-fs
+  category: x11-themes
   description: ""
   license: ""
-  name: udisks
+  name: adwaita-icon-theme
   
-  version: 2.7.6
+  version: ""
 - 
   category: app-crypt
   description: ""
@@ -102,6 +74,34 @@ requires:
   name: libsecret
   
   version: "0.7"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpwquality
+  
+  version: 1.0.0
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gnome-settings-daemon
+  
+  version: "3.8"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: 3.16.0
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: dosfstools
+  
+  version: ""
 uri: []
 use_flags:
 - fat

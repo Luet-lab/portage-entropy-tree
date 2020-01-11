@@ -5,40 +5,47 @@ license: GPL-2
 name: pdns
 requires:
 - 
-  category: dev-libs
+  category: dev-db
   description: ""
   license: ""
-  name: libsodium
+  name: mysql-connector-c
   
   version: ""
 - 
-  category: dev-libs
+  category: net-nds
   description: ""
   license: ""
-  name: boost
+  name: openldap
   
-  version: "1.35"
+  version: 2.0.27-r4
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: ""
 - 
   category: dev-lang
   description: ""
   license: ""
-  name: lua
+  name: luajit
   
   version: ""
 - 
-  category: net-misc
+  category: dev-libs
   description: ""
   license: ""
-  name: curl
-  
-  version: 7.21.3
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: mit-krb5
+  name: geoip
   
   version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: tinycdb
+  
+  version: "0.77"
 - 
   category: dev-cpp
   description: ""
@@ -64,37 +71,9 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: openssl
+  name: boost
   
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: postgresql
-  
-  version: ""
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
-  
-  version: 2.0.27-r4
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mysql-connector-c
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
-  
-  version: ""
+  version: "1.35"
 - 
   category: dev-db
   description: ""
@@ -106,23 +85,44 @@ requires:
   category: dev-db
   description: ""
   license: ""
-  name: tinycdb
+  name: postgresql
   
-  version: "0.77"
+  version: ""
 - 
-  category: dev-lang
+  category: app-crypt
   description: ""
   license: ""
-  name: luajit
+  name: mit-krb5
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: geoip
+  name: libsodium
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: lua
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
+  
+  version: 7.21.3
 uri:
 - https://downloads.powerdns.com/releases/pdns-4.2.0.tar.bz2
 use_flags:

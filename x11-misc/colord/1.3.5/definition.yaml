@@ -1,44 +1,30 @@
 category: x11-misc
 conflicts:
 - 
-  category: media-gfx
-  description: ""
-  license: ""
-  name: shared-color-profiles
-  
-  version: ""
-- 
   category: <=media-gfx
   description: ""
   license: ""
   name: colorhug-client
   
   version: 0.1.13
+- 
+  category: media-gfx
+  description: ""
+  license: ""
+  name: shared-color-profiles
+  
+  version: ""
 description: System service to accurately color manage input and output devices
 license: GPL-2+
 name: colord
 requires:
 - 
-  category: sys-apps
+  category: virtual
   description: ""
   license: ""
-  name: systemd
-  
-  version: "44"
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
+  name: libudev
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: 2.44.0
 - 
   category: media-libs
   description: ""
@@ -60,6 +46,20 @@ requires:
   name: gobject-introspection
   
   version: 0.9.8
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: ""
 - 
   category: sys-apps
   description: ""
@@ -89,12 +89,12 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: sys-apps
   description: ""
   license: ""
-  name: udev
+  name: systemd
   
-  version: ""
+  version: "44"
 - 
   category: dev-libs
   description: ""
@@ -103,12 +103,12 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: dev-libs
   description: ""
   license: ""
-  name: libudev
+  name: glib
   
-  version: ""
+  version: 2.44.0
 uri:
 - https://www.freedesktop.org/software/colord/releases/colord-1.3.5.tar.xz
 use_flags:

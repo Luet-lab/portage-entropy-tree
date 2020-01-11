@@ -5,19 +5,26 @@ license: AGPL-3 GPL-1 GPL-2 GPL-3 BitstreamVera public-domain
 name: pokerth
 requires:
 - 
-  category: dev-qt
+  category: dev-db
   description: ""
   license: ""
-  name: qtnetwork
+  name: sqlite
   
   version: ""
 - 
-  category: dev-qt
+  category: dev-libs
   description: ""
   license: ""
-  name: qtwidgets
+  name: protobuf
   
   version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
+  
+  version: "7.16"
 - 
   category: media-libs
   description: ""
@@ -29,7 +36,7 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: tinyxml
+  name: libgcrypt
   
   version: ""
 - 
@@ -40,12 +47,19 @@ requires:
   
   version: ""
 - 
-  category: net-misc
+  category: dev-qt
   description: ""
   license: ""
-  name: curl
+  name: qtnetwork
   
-  version: "7.16"
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: gsasl
+  
+  version: ""
 - 
   category: dev-qt
   description: ""
@@ -54,26 +68,12 @@ requires:
   
   version: ""
 - 
-  category: dev-db
+  category: dev-qt
   description: ""
   license: ""
-  name: sqlite
+  name: qtwidgets
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgcrypt
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libircclient
-  
-  version: 1.6-r2
 - 
   category: media-libs
   description: ""
@@ -92,16 +92,16 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: protobuf
+  name: tinyxml
   
   version: ""
 - 
-  category: virtual
+  category: net-libs
   description: ""
   license: ""
-  name: gsasl
+  name: libircclient
   
-  version: ""
+  version: 1.6-r2
 uri:
 - mirror://sourceforge/pokerth/pokerth-1.1.2.tar.gz
 use_flags:

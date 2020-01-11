@@ -5,19 +5,12 @@ license: GPL-3
 name: sssd
 requires:
 - 
-  category: sys-libs
+  category: virtual
   description: ""
   license: ""
-  name: pam
+  name: libintl
   
-  version: 0-r1
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libpcre
-  
-  version: "8.30"
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -26,19 +19,40 @@ requires:
   
   version: "1.16"
 - 
-  category: sys-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: talloc
+  name: libpcre
   
-  version: 2.0.7
+  version: "8.30"
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: mit-krb5
+  
+  version: 1.10.3
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: c-ares
+  
+  version: 1.7.4
 - 
   category: sys-libs
   description: ""
   license: ""
-  name: tevent
+  name: glibc
   
-  version: 0.9.16
+  version: "2.17"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: ding-libs
+  
+  version: "0.2"
 - 
   category: sys-libs
   description: ""
@@ -47,19 +61,26 @@ requires:
   
   version: 1.1.17-r1
 - 
-  category: net-libs
-  description: ""
-  license: ""
-  name: http-parser
-  
-  version: ""
-- 
   category: app-crypt
   description: ""
   license: ""
   name: mit-krb5
   
   version: 1.12.2
+- 
+  category: net-fs
+  description: ""
+  license: ""
+  name: cifs-utils
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
+  
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -71,16 +92,23 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: jansson
+  name: cyrus-sasl
   
-  version: ""
+  version: 2.1.25-r3
 - 
-  category: net-dns
+  category: sys-libs
   description: ""
   license: ""
-  name: c-ares
+  name: pam
   
-  version: 1.10.0-r1
+  version: 0-r1
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: tdb
+  
+  version: 1.2.9
 - 
   category: sys-apps
   description: ""
@@ -96,26 +124,19 @@ requires:
   
   version: "0.18"
 - 
-  category: sec-policy
+  category: net-fs
   description: ""
   license: ""
-  name: selinux-sssd
+  name: samba
   
-  version: 2.20120725-r9
+  version: 4.10.2
 - 
-  category: dev-libs
+  category: net-dns
   description: ""
   license: ""
-  name: ding-libs
+  name: c-ares
   
-  version: "0.2"
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: curl
-  
-  version: ""
+  version: 1.10.0-r1
 - 
   category: net-dns
   description: ""
@@ -124,19 +145,40 @@ requires:
   
   version: "9.9"
 - 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: mit-krb5
-  
-  version: 1.10.3
-- 
   category: sys-libs
   description: ""
   license: ""
-  name: libselinux
+  name: talloc
   
-  version: 2.1.9
+  version: 2.0.7
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: 2.4.30
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: http-parser
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: jansson
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: ""
 - 
   category: sys-libs
   description: ""
@@ -152,75 +194,33 @@ requires:
   
   version: "1.6"
 - 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-sssd
+  
+  version: 2.20120725-r9
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: tevent
+  
+  version: 0.9.16
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: 2.1.9
+- 
   category: dev-libs
   description: ""
   license: ""
   name: libnl
   
   version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: glibc
-  
-  version: "2.17"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: ""
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: c-ares
-  
-  version: 1.7.4
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: cyrus-sasl
-  
-  version: 2.1.25-r3
-- 
-  category: net-fs
-  description: ""
-  license: ""
-  name: cifs-utils
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libintl
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: tdb
-  
-  version: 1.2.9
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
-  
-  version: 2.4.30
-- 
-  category: net-fs
-  description: ""
-  license: ""
-  name: samba
-  
-  version: 4.10.2
 uri:
 - http://releases.pagure.org/SSSD/sssd/sssd-2.2.0.tar.gz
 use_flags:

@@ -1,6 +1,27 @@
 category: sys-fs
 conflicts:
 - 
+  category: <sec-policy
+  description: ""
+  license: ""
+  name: selinux-base
+  
+  version: 2.20120725-r10
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+- 
+  category: <sys-libs
+  description: ""
+  license: ""
+  name: glibc
+  
+  version: "2.11"
+- 
   category: sys-apps
   description: ""
   license: ""
@@ -14,31 +35,38 @@ conflicts:
   name: lvm2
   
   version: 2.02.103
-- 
-  category: <sys-libs
-  description: ""
-  license: ""
-  name: glibc
-  
-  version: "2.11"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: ""
-- 
-  category: <sec-policy
-  description: ""
-  license: ""
-  name: selinux-base
-  
-  version: 2.20120725-r10
 description: Linux dynamic and persistent device naming support (aka userspace devfs)
 license: LGPL-2.1 MIT GPL-2
 name: udev
 requires:
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: dialout
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: disk
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: audio
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: acl
+  
+  version: ""
 - 
   category: sys-apps
   description: ""
@@ -51,6 +79,20 @@ requires:
   description: ""
   license: ""
   name: tty
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: "2.30"
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: cdrom
   
   version: ""
 - 
@@ -71,16 +113,9 @@ requires:
   category: acct-group
   description: ""
   license: ""
-  name: tape
+  name: kmem
   
   version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
-  
-  version: "2.30"
 - 
   category: sys-libs
   description: ""
@@ -92,14 +127,7 @@ requires:
   category: acct-group
   description: ""
   license: ""
-  name: cdrom
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: disk
+  name: input
   
   version: ""
 - 
@@ -113,7 +141,7 @@ requires:
   category: acct-group
   description: ""
   license: ""
-  name: dialout
+  name: tape
   
   version: ""
 - 
@@ -128,34 +156,6 @@ requires:
   description: ""
   license: ""
   name: libcap
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: acl
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: kmem
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: audio
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: input
   
   version: ""
 uri:

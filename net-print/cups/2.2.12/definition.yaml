@@ -12,31 +12,45 @@ license: GPL-2
 name: cups
 requires:
 - 
-  category: x11-misc
+  category: sys-libs
   description: ""
   license: ""
-  name: xdg-utils
+  name: zlib
   
   version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jre
+  
+  version: "1.6"
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: 2.12.23-r6
 - 
   category: sys-apps
   description: ""
   license: ""
-  name: xinetd
+  name: systemd
   
   version: ""
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: avahi
-  
-  version: 0.6.31-r2
 - 
   category: acct-group
   description: ""
   license: ""
   name: lp
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-cups
   
   version: ""
 - 
@@ -61,24 +75,17 @@ requires:
   
   version: 0-r1
 - 
-  category: virtual
+  category: x11-misc
   description: ""
   license: ""
-  name: libusb
+  name: xdg-utils
   
   version: ""
 - 
-  category: sec-policy
+  category: sys-apps
   description: ""
   license: ""
-  name: selinux-cups
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
+  name: xinetd
   
   version: ""
 - 
@@ -96,33 +103,26 @@ requires:
   
   version: 1.6.18-r1
 - 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnutls
-  
-  version: 2.12.23-r6
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jre
-  
-  version: "1.6"
-- 
   category: sys-libs
   description: ""
   license: ""
   name: pam
   
   version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libusb
+  
+  version: ""
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: avahi
+  
+  version: 0.6.31-r2
 uri:
 - https://github.com/apple/cups/releases/download/v2.2.12/cups-2.2.12-source.tar.gz
 use_flags:

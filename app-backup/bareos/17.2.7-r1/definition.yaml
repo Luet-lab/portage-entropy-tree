@@ -12,6 +12,13 @@ license: AGPL-3
 name: bareos
 requires:
 - 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: ceph
+  
+  version: 0.94.2
+- 
   category: dev-libs
   description: ""
   license: ""
@@ -22,7 +29,21 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: lzo
+  name: bareos-fastlzlib
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
   
   version: ""
 - 
@@ -36,14 +57,7 @@ requires:
   category: dev-db
   description: ""
   license: ""
-  name: mysql-connector-c
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: mta
+  name: postgresql
   
   version: ""
 - 
@@ -61,17 +75,10 @@ requires:
   
   version: ""
 - 
-  category: dev-db
+  category: sys-cluster
   description: ""
   license: ""
-  name: postgresql
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
+  name: ceph
   
   version: ""
 - 
@@ -89,10 +96,45 @@ requires:
   
   version: ""
 - 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: mta
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: acl
+  
+  version: ""
+- 
   category: dev-libs
   description: ""
   license: ""
-  name: bareos-fastlzlib
+  name: libressl
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: glusterfs
   
   version: ""
 - 
@@ -113,42 +155,7 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libressl
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: ceph
-  
-  version: 0.94.2
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnutls
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: readline
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: acl
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: ncurses
+  name: lzo
   
   version: ""
 - 
@@ -159,17 +166,10 @@ requires:
   
   version: ""
 - 
-  category: sys-cluster
+  category: net-libs
   description: ""
   license: ""
-  name: ceph
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: glusterfs
+  name: gnutls
   
   version: ""
 uri:

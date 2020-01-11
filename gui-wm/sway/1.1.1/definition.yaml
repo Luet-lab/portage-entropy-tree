@@ -5,10 +5,24 @@ license: MIT
 name: sway
 requires:
 - 
-  category: dev-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: wayland
+  name: systemd
+  
+  version: "239"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxkbcommon
   
   version: ""
 - 
@@ -19,10 +33,10 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
+  category: gui-apps
   description: ""
   license: ""
-  name: pixman
+  name: swaybg
   
   version: ""
 - 
@@ -33,10 +47,10 @@ requires:
   
   version: "239"
 - 
-  category: x11-libs
+  category: gui-apps
   description: ""
   license: ""
-  name: gdk-pixbuf
+  name: swayidle
   
   version: ""
 - 
@@ -54,62 +68,6 @@ requires:
   
   version: ""
 - 
-  category: x11-misc
-  description: ""
-  license: ""
-  name: xkeyboard-config
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: cairo
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libpcre
-  
-  version: ""
-- 
-  category: gui-apps
-  description: ""
-  license: ""
-  name: swayidle
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: "239"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: json-c
-  
-  version: "0.13"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxkbcommon
-  
-  version: ""
-- 
-  category: gui-apps
-  description: ""
-  license: ""
-  name: swaybg
-  
-  version: ""
-- 
   category: gui-libs
   description: ""
   license: ""
@@ -123,6 +81,48 @@ requires:
   name: libinput
   
   version: 1.6.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpcre
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pixman
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gdk-pixbuf
+  
+  version: ""
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: xkeyboard-config
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: json-c
+  
+  version: "0.13"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: wayland
+  
+  version: ""
 uri:
 - https://github.com/swaywm/sway/archive/1.1.1.tar.gz -> sway-1.1.1.tar.gz
 use_flags:

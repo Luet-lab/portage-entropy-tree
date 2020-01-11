@@ -5,6 +5,27 @@ license: GPL-2
 name: handbrake
 requires:
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: jansson
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libvpx
+  
+  version: ""
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: ffmpeg
+  
+  version: "4.1"
+- 
   category: media-libs
   description: ""
   license: ""
@@ -12,24 +33,10 @@ requires:
   
   version: "2.9"
 - 
-  category: media-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libass
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libvorbis
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gdk-pixbuf
+  name: libgudev
   
   version: ""
 - 
@@ -37,6 +44,13 @@ requires:
   description: ""
   license: ""
   name: fdk-aac
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: x264
   
   version: ""
 - 
@@ -54,6 +68,27 @@ requires:
   
   version: ""
 - 
+  category: media-plugins
+  description: ""
+  license: ""
+  name: gst-plugins-x264
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gst-plugins-base
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: "3.10"
+- 
   category: media-libs
   description: ""
   license: ""
@@ -61,33 +96,26 @@ requires:
   
   version: ""
 - 
-  category: media-libs
+  category: media-plugins
   description: ""
   license: ""
-  name: libtheora
+  name: gst-plugins-libav
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pango
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libvpx
+  name: libbluray
   
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: nv-codec-headers
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: dbus-glib
-  
-  version: ""
+  version: "1.0"
 - 
   category: media-libs
   description: ""
@@ -96,17 +124,17 @@ requires:
   
   version: ""
 - 
-  category: media-video
+  category: media-libs
   description: ""
   license: ""
-  name: ffmpeg
+  name: libvorbis
   
-  version: "4.1"
+  version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: gstreamer
+  name: gst-plugins-ugly
   
   version: ""
 - 
@@ -124,17 +152,31 @@ requires:
   
   version: ""
 - 
+  category: media-sound
+  description: ""
+  license: ""
+  name: lame
+  
+  version: ""
+- 
   category: media-libs
   description: ""
   license: ""
-  name: libdvdnav
+  name: gst-plugins-bad
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: jansson
+  name: dbus-glib
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
   
   version: ""
 - 
@@ -148,37 +190,16 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: gst-plugins-base
+  name: libass
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: gst-plugins-bad
+  name: libdvdnav
   
   version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: gst-plugins-ugly
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: "3.10"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libbluray
-  
-  version: "1.0"
 - 
   category: media-libs
   description: ""
@@ -190,35 +211,21 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: x264
-  
-  version: ""
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: lame
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgudev
+  name: gstreamer
   
   version: ""
 - 
   category: media-plugins
   description: ""
   license: ""
-  name: gst-plugins-x264
+  name: gst-plugins-a52dec
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gdk-pixbuf
   
   version: ""
 - 
@@ -229,17 +236,24 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
+  category: media-libs
   description: ""
   license: ""
-  name: pango
+  name: speex
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: speex
+  name: libtheora
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: nv-codec-headers
   
   version: ""
 - 
@@ -249,20 +263,6 @@ requires:
   name: libav
   
   version: "12.2"
-- 
-  category: media-plugins
-  description: ""
-  license: ""
-  name: gst-plugins-a52dec
-  
-  version: ""
-- 
-  category: media-plugins
-  description: ""
-  license: ""
-  name: gst-plugins-libav
-  
-  version: ""
 uri:
 - https://download2.handbrake.fr/1.2.2/HandBrake-1.2.2-source.tar.bz2 -> handbrake-1.2.2.tar.bz2
 use_flags:

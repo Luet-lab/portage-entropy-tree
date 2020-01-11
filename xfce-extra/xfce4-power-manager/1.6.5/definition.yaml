@@ -5,12 +5,19 @@ license: GPL-2+
 name: xfce4-power-manager
 requires:
 - 
+  category: sys-power
+  description: ""
+  license: ""
+  name: upower
+  
+  version: 0.99.0
+- 
   category: x11-libs
   description: ""
   license: ""
-  name: libXrandr
+  name: libnotify
   
-  version: "1.2"
+  version: "0.7"
 - 
   category: x11-libs
   description: ""
@@ -26,12 +33,12 @@ requires:
   
   version: "4.12"
 - 
-  category: net-misc
+  category: xfce-base
   description: ""
   license: ""
-  name: networkmanager
+  name: xfce4-panel
   
-  version: ""
+  version: "4.12"
 - 
   category: dev-libs
   description: ""
@@ -43,9 +50,9 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXtst
+  name: gtk+
   
-  version: ""
+  version: "3.14"
 - 
   category: xfce-base
   description: ""
@@ -54,47 +61,12 @@ requires:
   
   version: "4.12"
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: "3.14"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libnotify
-  
-  version: "0.7"
-- 
   category: xfce-base
   description: ""
   license: ""
   name: libxfce4util
   
   version: "4.12"
-- 
-  category: xfce-base
-  description: ""
-  license: ""
-  name: xfce4-panel
-  
-  version: "4.12"
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: polkit
-  
-  version: "0.112"
-- 
-  category: sys-power
-  description: ""
-  license: ""
-  name: upower
-  
-  version: 0.99.0
 - 
   category: sys-power
   description: ""
@@ -107,6 +79,34 @@ requires:
   description: ""
   license: ""
   name: libX11
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: "0.112"
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: networkmanager
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXrandr
+  
+  version: "1.2"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXtst
   
   version: ""
 uri:

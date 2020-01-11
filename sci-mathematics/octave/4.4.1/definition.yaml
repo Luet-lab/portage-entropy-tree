@@ -5,6 +5,13 @@ license: GPL-3
 name: octave
 requires:
 - 
+  category: virtual
+  description: ""
+  license: ""
+  name: blas
+  
+  version: ""
+- 
   category: dev-qt
   description: ""
   license: ""
@@ -12,31 +19,38 @@ requires:
   
   version: ""
 - 
-  category: media-gfx
+  category: dev-qt
   description: ""
   license: ""
-  name: graphicsmagick
+  name: qtwidgets
   
   version: ""
 - 
-  category: x11-libs
+  category: media-libs
   description: ""
   license: ""
-  name: gl2ps
+  name: freetype
   
   version: ""
 - 
-  category: media-gfx
+  category: sci-libs
   description: ""
   license: ""
-  name: transfig
+  name: qrupdate
   
   version: ""
 - 
-  category: app-text
+  category: sci-libs
   description: ""
   license: ""
-  name: ghostscript-gpl
+  name: cxsparse
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: umfpack
   
   version: ""
 - 
@@ -44,6 +58,48 @@ requires:
   description: ""
   license: ""
   name: libpcre
+  
+  version: ""
+- 
+  category: sci-visualization
+  description: ""
+  license: ""
+  name: gnuplot
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtgui
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jre
+  
+  version: 1.6.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: epstool
+  
+  version: ""
+- 
+  category: media-gfx
+  description: ""
+  license: ""
+  name: pstoedit
   
   version: ""
 - 
@@ -61,38 +117,31 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: openssl
+  name: readline
   
   version: ""
 - 
   category: sci-libs
   description: ""
   license: ""
-  name: qrupdate
+  name: arpack
   
   version: ""
 - 
-  category: sci-visualization
+  category: sys-libs
   description: ""
   license: ""
-  name: gnuplot
+  name: zlib
   
   version: ""
 - 
-  category: dev-qt
+  category: x11-libs
   description: ""
   license: ""
-  name: qtopengl
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtwidgets
+  name: qscintilla
   
   version: ""
 - 
@@ -106,91 +155,35 @@ requires:
   category: sci-libs
   description: ""
   license: ""
+  name: cholmod
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtopengl
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
   name: hdf5
   
   version: ""
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: fltk
-  
-  version: "1.3"
-- 
   category: media-gfx
   description: ""
   license: ""
-  name: pstoedit
+  name: imagemagick
   
-  version: ""
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: arpack
-  
-  version: ""
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: ccolamd
-  
-  version: ""
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: umfpack
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtgui
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qthelp
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtnetwork
-  
-  version: ""
+  version: "7"
 - 
   category: media-libs
   description: ""
   license: ""
-  name: freetype
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jre
-  
-  version: 1.6.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: portaudio
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: epstool
+  name: qhull
   
   version: ""
 - 
@@ -201,10 +194,10 @@ requires:
   
   version: ""
 - 
-  category: app-arch
+  category: net-misc
   description: ""
   license: ""
-  name: bzip2
+  name: curl
   
   version: ""
 - 
@@ -215,38 +208,24 @@ requires:
   
   version: ""
 - 
-  category: net-misc
+  category: sci-mathematics
   description: ""
   license: ""
-  name: curl
+  name: glpk
   
   version: ""
 - 
-  category: x11-libs
+  category: dev-qt
   description: ""
   license: ""
-  name: qscintilla
+  name: qtnetwork
   
   version: ""
 - 
-  category: x11-libs
+  category: app-arch
   description: ""
   license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: fontconfig
+  name: bzip2
   
   version: ""
 - 
@@ -260,14 +239,21 @@ requires:
   category: sci-libs
   description: ""
   license: ""
-  name: cholmod
+  name: colamd
   
   version: ""
 - 
-  category: sci-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: colamd
+  name: libX11
+  
+  version: ""
+- 
+  category: media-gfx
+  description: ""
+  license: ""
+  name: transfig
   
   version: ""
 - 
@@ -278,10 +264,38 @@ requires:
   
   version: ""
 - 
-  category: sci-mathematics
+  category: dev-qt
   description: ""
   license: ""
-  name: glpk
+  name: qthelp
+  
+  version: ""
+- 
+  category: media-gfx
+  description: ""
+  license: ""
+  name: graphicsmagick
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: fltk
+  
+  version: "1.3"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gl2ps
   
   version: ""
 - 
@@ -292,38 +306,24 @@ requires:
   
   version: ""
 - 
-  category: media-libs
+  category: app-text
   description: ""
   license: ""
-  name: qhull
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: blas
-  
-  version: ""
-- 
-  category: media-gfx
-  description: ""
-  license: ""
-  name: imagemagick
-  
-  version: "7"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: readline
+  name: ghostscript-gpl
   
   version: ""
 - 
   category: sci-libs
   description: ""
   license: ""
-  name: cxsparse
+  name: ccolamd
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: portaudio
   
   version: ""
 uri:

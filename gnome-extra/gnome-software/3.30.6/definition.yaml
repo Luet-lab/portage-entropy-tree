@@ -5,17 +5,52 @@ license: GPL-2+
 name: gnome-software
 requires:
 - 
-  category: app-admin
+  category: dev-libs
   description: ""
   license: ""
-  name: packagekit-base
+  name: json-glib
   
-  version: 1.1.0
+  version: 1.2.0
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: fwupd
+  
+  version: 1.0.3
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: appstream-glib
+  
+  version: 0.7.14
 - 
   category: dev-libs
   description: ""
   license: ""
   name: libgudev
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: libsecret
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: gspell
   
   version: ""
 - 
@@ -26,40 +61,12 @@ requires:
   
   version: 2.32.0
 - 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: libsecret
-  
-  version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: polkit
-  
-  version: ""
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gsettings-desktop-schemas
-  
-  version: 3.11.5
-- 
   category: x11-libs
   description: ""
   license: ""
   name: gtk+
   
   version: 3.22.4
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: json-glib
-  
-  version: 1.2.0
 - 
   category: net-libs
   description: ""
@@ -75,12 +82,19 @@ requires:
   
   version: 3.18.0
 - 
-  category: dev-libs
+  category: app-admin
   description: ""
   license: ""
-  name: appstream-glib
+  name: packagekit-base
   
-  version: 0.7.14
+  version: 1.1.0
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gsettings-desktop-schemas
+  
+  version: 3.11.5
 - 
   category: dev-libs
   description: ""
@@ -88,20 +102,6 @@ requires:
   name: glib
   
   version: "2.56"
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: gspell
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: fwupd
-  
-  version: 1.0.3
 uri: []
 use_flags:
 - +firmware

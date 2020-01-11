@@ -1,0 +1,38 @@
+category: net-libs
+conflicts: []
+description: A system-independent library for user-level network packet capture
+license: BSD
+name: libpcap
+requires:
+- 
+  category: net-wireless
+  description: ""
+  license: ""
+  name: bluez
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libnl
+  
+  version: ""
+uri:
+- https://github.com/the-tcpdump-group/libpcap/archive/libpcap-1.9.1.tar.gz
+use_flags:
+- bluetooth
+- dbus
+- netlink
+- -remote
+- static-libs
+- usb
+- -yydebug
+version: 1.9.1-r1

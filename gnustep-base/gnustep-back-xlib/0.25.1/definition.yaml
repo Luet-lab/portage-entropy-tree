@@ -4,14 +4,14 @@ conflicts:
   category: gnustep-base
   description: ""
   license: ""
-  name: gnustep-back-art
+  name: gnustep-back-cairo
   
   version: ""
 - 
   category: gnustep-base
   description: ""
   license: ""
-  name: gnustep-back-cairo
+  name: gnustep-back-art
   
   version: ""
 description: Default X11 back-end component for the GNUstep GUI Library
@@ -19,26 +19,19 @@ license: LGPL-2.1
 name: gnustep-back-xlib
 requires:
 - 
-  category: virtual
-  description: ""
-  license: ""
-  name: opengl
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXt
-  
-  version: ""
-- 
   category: gnustep-base
   description: ""
   license: ""
   name: gnustep-gui
   
   version: "0.25"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: opengl
+  
+  version: ""
 - 
   category: virtual
   description: ""
@@ -54,12 +47,40 @@ requires:
   
   version: ""
 - 
-  category: media-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: freetype
+  name: libSM
   
-  version: 2.1.9
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXmu
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXt
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXrender
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libICE
+  
+  version: ""
 - 
   category: x11-libs
   description: ""
@@ -82,33 +103,12 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
+  category: media-libs
   description: ""
   license: ""
-  name: libICE
+  name: freetype
   
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libSM
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXmu
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXrender
-  
-  version: ""
+  version: 2.1.9
 uri:
 - ftp://ftp.gnustep.org/pub/gnustep/core/gnustep-back-0.25.1.tar.gz
 use_flags:

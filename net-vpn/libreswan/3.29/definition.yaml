@@ -1,17 +1,17 @@
 category: net-vpn
 conflicts:
 - 
-  category: net-vpn
-  description: ""
-  license: ""
-  name: strongswan
-  
-  version: ""
-- 
   category: net-misc
   description: ""
   license: ""
   name: openswan
+  
+  version: ""
+- 
+  category: net-vpn
+  description: ""
+  license: ""
+  name: strongswan
   
   version: ""
 description: IPsec implementation for Linux, fork of Openswan
@@ -19,24 +19,24 @@ license: GPL-2 BSD-4 RSA DES
 name: libreswan
 requires:
 - 
-  category: net-libs
+  category: net-dns
   description: ""
   license: ""
-  name: ldns
+  name: unbound
+  
+  version: 1.9.1-r1
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
   
   version: ""
 - 
-  category: sys-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libseccomp
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: iproute2
+  name: nss[utils(+)]
   
   version: ""
 - 
@@ -61,17 +61,17 @@ requires:
   
   version: ""
 - 
-  category: net-dns
+  category: net-libs
   description: ""
   license: ""
-  name: unbound
+  name: ldns
   
-  version: 1.9.1-r1
+  version: ""
 - 
-  category: sys-apps
+  category: sys-libs
   description: ""
   license: ""
-  name: systemd
+  name: pam
   
   version: ""
 - 
@@ -85,14 +85,35 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: nss[utils(+)]
+  name: gmp
   
   version: ""
 - 
-  category: dev-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: gmp
+  name: libseccomp
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: iproute2
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-ipsec
   
   version: ""
 - 
@@ -107,27 +128,6 @@ requires:
   description: ""
   license: ""
   name: libcap-ng
-  
-  version: ""
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-ipsec
   
   version: ""
 uri:

@@ -1,6 +1,13 @@
 category: net-mail
 conflicts:
 - 
+  category: net-mail
+  description: ""
+  license: ""
+  name: cyrus-imapd
+  
+  version: ""
+- 
   category: mail-mta
   description: ""
   license: ""
@@ -18,13 +25,6 @@ conflicts:
   category: net-mail
   description: ""
   license: ""
-  name: cyrus-imapd
-  
-  version: ""
-- 
-  category: net-mail
-  description: ""
-  license: ""
   name: uw-imap
   
   version: ""
@@ -36,35 +36,7 @@ requires:
   category: net-libs
   description: ""
   license: ""
-  name: courier-authlib
-  
-  version: 0.66.4
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: libidn
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
   name: gnutls
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: courier-unicode
-  
-  version: "2"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: fam
   
   version: ""
 - 
@@ -74,6 +46,20 @@ requires:
   name: db
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: courier-authlib
+  
+  version: 0.66.4
 - 
   category: sys-libs
   description: ""
@@ -89,10 +75,24 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: net-libs
   description: ""
   license: ""
-  name: openssl
+  name: courier-unicode
+  
+  version: "2"
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: mailbase
+  
+  version: 0.00-r8
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: fam
   
   version: ""
 - 
@@ -103,12 +103,12 @@ requires:
   
   version: ""
 - 
-  category: net-mail
+  category: net-dns
   description: ""
   license: ""
-  name: mailbase
+  name: libidn
   
-  version: 0.00-r8
+  version: ""
 uri:
 - mirror://sourceforge/courier/courier-imap-5.0.7.tar.bz2
 use_flags:

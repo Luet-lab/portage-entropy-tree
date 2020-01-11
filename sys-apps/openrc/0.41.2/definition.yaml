@@ -1,12 +1,12 @@
 category: sys-apps
 conflicts:
 - 
-  category: <app-shells
+  category: <sys-fs
   description: ""
   license: ""
-  name: gentoo-bashcomp
+  name: udev-init-scripts
   
-  version: "20180302"
+  version: "27"
 - 
   category: <app-shells
   description: ""
@@ -29,16 +29,23 @@ conflicts:
   
   version: 3.3.9-r2
 - 
-  category: <sys-fs
+  category: <app-shells
   description: ""
   license: ""
-  name: udev-init-scripts
+  name: gentoo-bashcomp
   
-  version: "27"
+  version: "20180302"
 description: OpenRC manages the services, startup and shutdown of a host
 license: BSD-2
 name: openrc
 requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: ""
 - 
   category: sys-auth
   description: ""
@@ -51,34 +58,6 @@ requires:
   description: ""
   license: ""
   name: pam
-  
-  version: ""
-- 
-  category: app-shells
-  description: ""
-  license: ""
-  name: bash
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: policycoreutils
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-openrc
-  
-  version: 2.20170204-r4
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: ncurses
   
   version: ""
 - 
@@ -103,10 +82,10 @@ requires:
   
   version: "2.6"
 - 
-  category: virtual
+  category: app-shells
   description: ""
   license: ""
-  name: tmpfiles
+  name: bash
   
   version: ""
 - 
@@ -116,6 +95,27 @@ requires:
   name: selinux-base-policy
   
   version: 2.20170204-r4
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-openrc
+  
+  version: 2.20170204-r4
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: policycoreutils
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: tmpfiles
+  
+  version: ""
 uri:
 - https://github.com/openrc/openrc/archive/0.41.2.tar.gz -> openrc-0.41.2.tar.gz
 use_flags:

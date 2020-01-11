@@ -5,33 +5,12 @@ license: GPL-3
 name: qt-creator
 requires:
 - 
-  category: dev-qt
+  category: dev-vcs
   description: ""
   license: ""
-  name: qtxml
-  
-  version: 5.9.0
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qthelp
-  
-  version: 5.9.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: botan-2.9*
+  name: subversion
   
   version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtquickcontrols
-  
-  version: 5.9.0
 - 
   category: dev-qt
   description: ""
@@ -40,19 +19,19 @@ requires:
   
   version: 5.9.0
 - 
-  category: dev-vcs
+  category: dev-qt
   description: ""
   license: ""
-  name: bzr
+  name: qtx11extras
   
-  version: ""
+  version: 5.9.0
 - 
-  category: dev-util
+  category: dev-qt
   description: ""
   license: ""
-  name: cmake[server(+)]
+  name: designer
   
-  version: ""
+  version: 5.9.0
 - 
   category: dev-vcs
   description: ""
@@ -64,16 +43,16 @@ requires:
   category: dev-qt
   description: ""
   license: ""
-  name: qtgui
+  name: qtconcurrent
   
   version: 5.9.0
 - 
-  category: dev-qt
+  category: sys-devel
   description: ""
   license: ""
-  name: qtx11extras
+  name: autoconf
   
-  version: 5.9.0
+  version: ""
 - 
   category: sys-devel
   description: ""
@@ -82,47 +61,19 @@ requires:
   
   version: "6"
 - 
-  category: dev-util
-  description: ""
-  license: ""
-  name: qbs
-  
-  version: 1.12.2
-- 
   category: dev-qt
   description: ""
   license: ""
-  name: qtnetwork
+  name: qthelp
   
   version: 5.9.0
 - 
   category: dev-qt
   description: ""
   license: ""
-  name: qtprintsupport
+  name: qtserialport
   
   version: 5.9.0
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtscript
-  
-  version: 5.9.0
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtwidgets
-  
-  version: 5.9.0
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: cppcheck
-  
-  version: ""
 - 
   category: dev-vcs
   description: ""
@@ -141,63 +92,14 @@ requires:
   category: dev-qt
   description: ""
   license: ""
-  name: qtsql
+  name: qttranslations
   
   version: 5.9.0
 - 
-  category: dev-qt
+  category: dev-libs
   description: ""
   license: ""
-  name: qtwebengine
-  
-  version: 5.9.0
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: autoconf
-  
-  version: ""
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: valgrind
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtconcurrent
-  
-  version: 5.9.0
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: designer
-  
-  version: 5.9.0
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: ""
-- 
-  category: dev-vcs
-  description: ""
-  license: ""
-  name: mercurial
-  
-  version: ""
-- 
-  category: dev-vcs
-  description: ""
-  license: ""
-  name: subversion
+  name: botan-2.9*
   
   version: ""
 - 
@@ -211,14 +113,7 @@ requires:
   category: dev-qt
   description: ""
   license: ""
-  name: qtdeclarative
-  
-  version: 5.9.0
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtserialport
+  name: qtscript
   
   version: 5.9.0
 - 
@@ -229,12 +124,117 @@ requires:
   
   version: ""
 - 
+  category: dev-vcs
+  description: ""
+  license: ""
+  name: bzr
+  
+  version: ""
+- 
   category: dev-qt
   description: ""
   license: ""
-  name: qttranslations
+  name: qtdeclarative
   
   version: 5.9.0
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtgui
+  
+  version: 5.9.0
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtnetwork
+  
+  version: 5.9.0
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: cppcheck
+  
+  version: ""
+- 
+  category: dev-vcs
+  description: ""
+  license: ""
+  name: mercurial
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: valgrind
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtwidgets
+  
+  version: 5.9.0
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtxml
+  
+  version: 5.9.0
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtwebengine
+  
+  version: 5.9.0
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: qbs
+  
+  version: 1.12.2
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtprintsupport
+  
+  version: 5.9.0
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtquickcontrols
+  
+  version: 5.9.0
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtsql
+  
+  version: 5.9.0
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: cmake[server(+)]
+  
+  version: ""
 uri:
 - https://download.qt.io/official_releases/qtcreator/4.8/4.8.2/qt-creator-opensource-src-4.8.2.tar.xz
 use_flags:

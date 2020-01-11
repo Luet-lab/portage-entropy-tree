@@ -19,19 +19,26 @@ license: GPL-2+ LGPL-2+
 name: gnome-settings-daemon
 requires:
 - 
-  category: media-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: fontconfig
+  name: glib
   
-  version: ""
+  version: "2.56"
 - 
-  category: sys-apps
+  category: sys-auth
   description: ""
   license: ""
-  name: systemd
+  name: polkit
   
-  version: ""
+  version: "0.114"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libwacom
+  
+  version: "0.7"
 - 
   category: dev-libs
   description: ""
@@ -47,26 +54,19 @@ requires:
   
   version: "2"
 - 
-  category: dev-libs
+  category: sys-auth
   description: ""
   license: ""
-  name: libgudev
+  name: elogind
   
   version: ""
 - 
-  category: x11-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: pango
+  name: systemd
   
-  version: 1.20.0
-- 
-  category: net-print
-  description: ""
-  license: ""
-  name: cups
-  
-  version: "1.4"
+  version: ""
 - 
   category: gnome-base
   description: ""
@@ -78,42 +78,21 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libcanberra
+  name: fontconfig
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: nss
-  
-  version: 3.11.2
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.56"
-- 
-  category: sys-power
-  description: ""
-  license: ""
-  name: upower
-  
-  version: "0.99"
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libX11
+  name: pango
   
-  version: ""
+  version: 1.20.0
 - 
-  category: sys-auth
+  category: x11-libs
   description: ""
   license: ""
-  name: elogind
+  name: libXi
   
   version: ""
 - 
@@ -124,61 +103,12 @@ requires:
   
   version: 3.27.90
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: wayland
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXi
-  
-  version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: polkit
-  
-  version: "0.114"
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: dconf
-  
-  version: ""
-- 
-  category: x11-misc
-  description: ""
-  license: ""
-  name: colord
-  
-  version: 1.0.2
-- 
   category: media-libs
   description: ""
   license: ""
   name: lcms
   
   version: "2.2"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXext
-  
-  version: ""
-- 
-  category: sci-geosciences
-  description: ""
-  license: ""
-  name: geocode-glib
-  
-  version: "3.10"
 - 
   category: app-misc
   description: ""
@@ -194,17 +124,87 @@ requires:
   
   version: 0.7.3
 - 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libcanberra
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: dconf
+  
+  version: ""
+- 
+  category: sys-power
+  description: ""
+  license: ""
+  name: upower
+  
+  version: "0.99"
+- 
   category: dev-libs
   description: ""
   license: ""
-  name: libwacom
+  name: wayland
   
-  version: "0.7"
+  version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
   name: gdk-pixbuf
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nss
+  
+  version: 3.11.2
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: colord
+  
+  version: 1.0.2
+- 
+  category: net-print
+  description: ""
+  license: ""
+  name: cups
+  
+  version: "1.4"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXext
+  
+  version: ""
+- 
+  category: sci-geosciences
+  description: ""
+  license: ""
+  name: geocode-glib
+  
+  version: "3.10"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgudev
   
   version: ""
 - 

@@ -5,45 +5,17 @@ license: LGPL-2.1+
 name: fwupd
 requires:
 - 
-  category: dev-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: libgpg-error
+  name: cairo
   
   version: ""
 - 
-  category: sys-libs
+  category: dev-db
   description: ""
   license: ""
-  name: libsmbios
-  
-  version: 2.4.0
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: gcab
-  
-  version: ""
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: gpgme
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: "211"
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pillow
+  name: sqlite
   
   version: ""
 - 
@@ -54,26 +26,12 @@ requires:
   
   version: 0.1.7
 - 
-  category: sys-auth
+  category: dev-python
   description: ""
   license: ""
-  name: consolekit
-  
-  version: 1.0.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: json-glib
+  name: pillow
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: 2.45.8
 - 
   category: dev-python
   description: ""
@@ -87,28 +45,14 @@ requires:
   license: ""
   name: efivar
   
-  version: "33"
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
-  
   version: ""
 - 
-  category: dev-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: libgusb
+  name: systemd
   
-  version: 0.2.9
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libsoup
-  
-  version: 2.51.92
+  version: "211"
 - 
   category: media-libs
   description: ""
@@ -120,23 +64,51 @@ requires:
   category: dev-libs
   description: ""
   license: ""
+  name: glib
+  
+  version: 2.45.8
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgpg-error
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
   name: libgudev
   
   version: ""
 - 
-  category: virtual
+  category: app-arch
   description: ""
   license: ""
-  name: libelf
+  name: libarchive
   
   version: ""
 - 
-  category: sys-libs
+  category: net-libs
   description: ""
   license: ""
-  name: efivar
+  name: libsoup
   
-  version: ""
+  version: 2.51.92
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgusb
+  
+  version: 0.2.9
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: colord
+  
+  version: 1.2.12
 - 
   category: net-libs
   description: ""
@@ -145,13 +117,6 @@ requires:
   
   version: 3.4.4.1
 - 
-  category: media-libs
-  description: ""
-  license: ""
-  name: freetype
-  
-  version: ""
-- 
   category: sys-boot
   description: ""
   license: ""
@@ -159,10 +124,10 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: cairo
+  name: json-glib
   
   version: ""
 - 
@@ -173,19 +138,19 @@ requires:
   
   version: ""
 - 
-  category: x11-misc
+  category: sys-auth
   description: ""
   license: ""
-  name: colord
+  name: polkit
   
-  version: 1.2.12
+  version: "0.103"
 - 
-  category: app-arch
+  category: sys-libs
   description: ""
   license: ""
-  name: libarchive
+  name: libsmbios
   
-  version: ""
+  version: 2.4.0
 - 
   category: sys-auth
   description: ""
@@ -194,6 +159,34 @@ requires:
   
   version: ""
 - 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gpgme
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: gcab
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libelf
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: consolekit
+  
+  version: 1.0.0
+- 
   category: sys-apps
   description: ""
   license: ""
@@ -201,12 +194,19 @@ requires:
   
   version: ""
 - 
-  category: sys-auth
+  category: media-libs
   description: ""
   license: ""
-  name: polkit
+  name: freetype
   
-  version: "0.103"
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: efivar
+  
+  version: "33"
 uri:
 - https://github.com/hughsie/fwupd/archive/1.2.11.tar.gz -> fwupd-1.2.11.tar.gz
 use_flags:

@@ -1,23 +1,30 @@
 category: sys-cluster
 conflicts:
 - 
-  category: '!games-util'
-  description: ""
-  license: ""
-  name: qstat
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
   name: uthash
   
   version: ""
+- 
+  category: '!games-util'
+  description: ""
+  license: ""
+  name: qstat
+  
+  version: ""
 description: Resource manager and queuing system based on OpenPBS
 license: torque-2.5
 name: torque
 requires:
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: hwloc
+  
+  version: ""
 - 
   category: sys-libs
   description: ""
@@ -36,37 +43,9 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libressl
+  name: openssl
   
   version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: munge
-  
-  version: ""
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: tk
-  
-  version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: netkit-rsh
-  
-  version: ""
-- 
-  category: x11-drivers
-  description: ""
-  license: ""
-  name: nvidia-drivers
-  
-  version: "275"
 - 
   category: dev-lang
   description: ""
@@ -82,13 +61,6 @@ requires:
   
   version: ""
 - 
-  category: net-misc
-  description: ""
-  license: ""
-  name: openssh
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
@@ -96,19 +68,47 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: dev-lang
   description: ""
   license: ""
-  name: openssl
+  name: tk
   
   version: ""
 - 
-  category: sys-apps
+  category: net-misc
   description: ""
   license: ""
-  name: hwloc
+  name: openssh
   
   version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: netkit-rsh
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: munge
+  
+  version: ""
+- 
+  category: x11-drivers
+  description: ""
+  license: ""
+  name: nvidia-drivers
+  
+  version: "275"
 uri:
 - https://github.com/adaptivecomputing/torque/archive/ddf5c4f40091b6157164a8846e5b60f42a5ae7f6.tar.gz
   -> torque-4.2.10-gh-20150517.tar.gz

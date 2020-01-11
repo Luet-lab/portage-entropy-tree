@@ -1,17 +1,17 @@
 category: net-vpn
 conflicts:
 - 
-  category: net-misc
-  description: ""
-  license: ""
-  name: openswan
-  
-  version: ""
-- 
   category: net-vpn
   description: ""
   license: ""
   name: libreswan
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: openswan
   
   version: ""
 description: IPsec-based VPN solution, supporting IKEv1/IKEv2 and MOBIKE
@@ -19,45 +19,10 @@ license: GPL-2 RSA DES
 name: strongswan
 requires:
 - 
-  category: dev-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: libgcrypt
-  
-  version: ""
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: ""
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: unbound
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: 0.9.8
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mysql-connector-c
+  name: libcap
   
   version: ""
 - 
@@ -67,27 +32,6 @@ requires:
   name: sqlite
   
   version: 3.3.1
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: networkmanager
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: iproute2
-  
-  version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: curl
-  
-  version: ""
 - 
   category: net-libs
   description: ""
@@ -103,10 +47,17 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libcap
+  name: libgcrypt
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
   
   version: ""
 - 
@@ -114,6 +65,20 @@ requires:
   description: ""
   license: ""
   name: pam
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: networkmanager
+  
+  version: ""
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: unbound
   
   version: ""
 - 
@@ -127,9 +92,44 @@ requires:
   category: dev-libs
   description: ""
   license: ""
+  name: openssl
+  
+  version: 0.9.8
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: iproute2
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
   name: gmp
   
   version: 4.1.5
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c
+  
+  version: ""
 uri:
 - https://download.strongswan.org/strongswan-5.8.2.tar.bz2
 use_flags:

@@ -5,10 +5,17 @@ license: GPL-2+
 name: system-config-printer
 requires:
 - 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: "172"
+- 
   category: dev-python
   description: ""
   license: ""
-  name: dbus-python
+  name: pygobject
   
   version: ""
 - 
@@ -19,20 +26,6 @@ requires:
   
   version: ""
 - 
-  category: net-print
-  description: ""
-  license: ""
-  name: cups-pk-helper
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: ""
-- 
   category: x11-libs
   description: ""
   license: ""
@@ -40,17 +33,24 @@ requires:
   
   version: ""
 - 
-  category: dev-python
+  category: x11-libs
   description: ""
   license: ""
-  name: pygobject
+  name: pango
   
   version: ""
 - 
   category: dev-python
   description: ""
   license: ""
-  name: urllib3
+  name: dbus-python
+  
+  version: ""
+- 
+  category: net-print
+  description: ""
+  license: ""
+  name: cups-pk-helper
   
   version: ""
 - 
@@ -64,14 +64,7 @@ requires:
   category: virtual
   description: ""
   license: ""
-  name: udev
-  
-  version: "172"
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pycairo
+  name: libusb
   
   version: ""
 - 
@@ -82,10 +75,17 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: dev-python
   description: ""
   license: ""
-  name: libusb
+  name: urllib3
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
   
   version: ""
 - 
@@ -96,10 +96,10 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
+  category: dev-python
   description: ""
   license: ""
-  name: pango
+  name: pycairo
   
   version: ""
 - 

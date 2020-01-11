@@ -5,12 +5,26 @@ license: LGPL-2.1+
 name: fwupd
 requires:
 - 
-  category: app-arch
+  category: virtual
   description: ""
   license: ""
-  name: gcab
+  name: udev
   
-  version: "1.0"
+  version: ""
+- 
+  category: sys-boot
+  description: ""
+  license: ""
+  name: gnu-efi
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -26,150 +40,10 @@ requires:
   
   version: ""
 - 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: polkit
-  
-  version: "0.103"
-- 
-  category: sys-boot
-  description: ""
-  license: ""
-  name: efibootmgr
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: udev
-  
-  version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: elogind
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: "211"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxmlb
-  
-  version: 0.1.13
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: thunderbolt-software-user-space
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libelf
-  
-  version: ""
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: gpgme
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pillow
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libsmbios
-  
-  version: 2.4.0
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnutls
-  
-  version: 3.4.4.1
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: fontconfig
-  
-  version: ""
-- 
-  category: sys-boot
-  description: ""
-  license: ""
-  name: gnu-efi
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: json-glib
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgudev
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: efivar
-  
-  version: ""
-- 
   category: app-crypt
   description: ""
   license: ""
   name: tpm2-tss
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: cairo
   
   version: ""
 - 
@@ -183,14 +57,126 @@ requires:
   category: dev-libs
   description: ""
   license: ""
+  name: libgudev
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
   name: glib
   
   version: 2.45.8
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: json-glib
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libsmbios
+  
+  version: 2.4.0
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gpgme
+  
+  version: ""
+- 
+  category: sys-boot
+  description: ""
+  license: ""
+  name: efibootmgr
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libelf
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: efivar
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: thunderbolt-software-user-space
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: efivar
+  
+  version: "33"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: gcab
+  
+  version: "1.0"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "211"
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: elogind
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: "0.103"
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: 3.4.4.1
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: ""
+- 
   category: dev-python
   description: ""
   license: ""
-  name: pycairo
+  name: pillow
   
   version: ""
 - 
@@ -204,16 +190,30 @@ requires:
   category: media-libs
   description: ""
   license: ""
+  name: fontconfig
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
   name: freetype
   
   version: ""
 - 
-  category: sys-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: efivar
+  name: libxmlb
   
-  version: "33"
+  version: 0.1.13
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pycairo
+  
+  version: ""
 uri:
 - https://github.com/hughsie/fwupd/archive/1.3.5.tar.gz -> fwupd-1.3.5.tar.gz
 use_flags:

@@ -1,10 +1,10 @@
 category: dev-lang
 conflicts:
 - 
-  category: dev-lang
+  category: dev-util
   description: ""
   license: ""
-  name: rust
+  name: rustfmt
   
   version: ""
 - 
@@ -15,16 +15,23 @@ conflicts:
   
   version: ""
 - 
-  category: dev-util
+  category: dev-lang
   description: ""
   license: ""
-  name: rustfmt
+  name: rust
   
   version: ""
 description: Systems programming language from Mozilla
 license: '|| ( MIT Apache-2.0 ) BSD-1 BSD-2 BSD-4 UoI-NCSA'
 name: rust-bin
 requires:
+- 
+  category: app-eselect
+  description: ""
+  license: ""
+  name: eselect-rust
+  
+  version: "20190311"
 - 
   category: sys-libs
   description: ""
@@ -46,13 +53,6 @@ requires:
   name: libressl
   
   version: ""
-- 
-  category: app-eselect
-  description: ""
-  license: ""
-  name: eselect-rust
-  
-  version: "20190311"
 - 
   category: net-libs
   description: ""

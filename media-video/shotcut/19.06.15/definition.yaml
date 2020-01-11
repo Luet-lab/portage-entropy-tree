@@ -5,17 +5,10 @@ license: GPL-3
 name: shotcut
 requires:
 - 
-  category: dev-qt
+  category: media-video
   description: ""
   license: ""
-  name: qtcore
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtdeclarative
+  name: ffmpeg
   
   version: ""
 - 
@@ -23,6 +16,13 @@ requires:
   description: ""
   license: ""
   name: qtquickcontrols
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtwebkit
   
   version: ""
 - 
@@ -36,70 +36,21 @@ requires:
   category: media-libs
   description: ""
   license: ""
+  name: libvpx
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
   name: mlt
   
   version: 6.16.0-r1
 - 
-  category: media-sound
-  description: ""
-  license: ""
-  name: lame
-  
-  version: ""
-- 
   category: dev-qt
   description: ""
   license: ""
-  name: qtmultimedia
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtnetwork
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtwebsockets
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtwidgets
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtxml
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jack
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtgraphicaleffects
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtgui
+  name: qtdeclarative
   
   version: ""
 - 
@@ -120,14 +71,7 @@ requires:
   category: dev-qt
   description: ""
   license: ""
-  name: qtwebkit
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libsdl
+  name: qtwidgets
   
   version: ""
 - 
@@ -138,20 +82,6 @@ requires:
   
   version: ""
 - 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtprintsupport
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libvpx
-  
-  version: ""
-- 
   category: media-libs
   description: ""
   license: ""
@@ -159,10 +89,80 @@ requires:
   
   version: ""
 - 
-  category: media-video
+  category: virtual
   description: ""
   license: ""
-  name: ffmpeg
+  name: jack
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtcore
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtgraphicaleffects
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtmultimedia
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtprintsupport
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtxml
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtgui
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtnetwork
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtwebsockets
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libsdl
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: lame
   
   version: ""
 uri:

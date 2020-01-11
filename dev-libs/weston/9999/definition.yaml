@@ -5,26 +5,26 @@ license: MIT CC-BY-SA-3.0
 name: weston
 requires:
 - 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libwebp
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxkbcommon
-  
-  version: 0.5.0
-- 
   category: dev-libs
   description: ""
   license: ""
   name: libinput
   
   version: 0.8.0
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pixman
+  
+  version: 0.25.2
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: "136"
 - 
   category: dev-libs
   description: ""
@@ -33,12 +33,12 @@ requires:
   
   version: "1.18"
 - 
-  category: x11-libs
+  category: media-libs
   description: ""
   license: ""
-  name: pixman
+  name: libpng
   
-  version: 0.25.2
+  version: ""
 - 
   category: media-libs
   description: ""
@@ -50,44 +50,16 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: pango
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
   name: libxcb
   
   version: "1.9"
 - 
-  category: x11-libs
+  category: media-video
   description: ""
   license: ""
-  name: cairo
+  name: pipewire
   
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: wayland
-  
-  version: 1.17.0
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: cairo
-  
-  version: 1.11.3
-- 
-  category: x11-misc
-  description: ""
-  license: ""
-  name: colord
-  
-  version: 0.1.27
+  version: "0.2"
 - 
   category: media-libs
   description: ""
@@ -99,7 +71,7 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXcursor
+  name: libX11
   
   version: ""
 - 
@@ -110,40 +82,12 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: "209"
-- 
   category: x11-misc
   description: ""
   license: ""
-  name: xkeyboard-config
+  name: colord
   
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jpeg
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libdrm
-  
-  version: 2.4.68
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: udev
-  
-  version: "136"
+  version: 0.1.27
 - 
   category: media-libs
   description: ""
@@ -155,30 +99,23 @@ requires:
   category: sys-apps
   description: ""
   license: ""
-  name: dbus
+  name: systemd
   
-  version: "1.6"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
+  version: "209"
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libpng
+  name: libwebp
   
   version: ""
 - 
-  category: media-video
+  category: sys-libs
   description: ""
   license: ""
-  name: pipewire
+  name: mtdev
   
-  version: "0.2"
+  version: 1.1.0
 - 
   category: net-misc
   description: ""
@@ -194,10 +131,24 @@ requires:
   
   version: ""
 - 
-  category: media-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: mesa
+  name: wayland
+  
+  version: 1.17.0
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jpeg
+  
+  version: ""
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: xkeyboard-config
   
   version: ""
 - 
@@ -208,12 +159,61 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: mtdev
+  name: cairo
   
-  version: 1.1.0
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libdrm
+  
+  version: 2.4.68
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxkbcommon
+  
+  version: 0.5.0
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pango
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: mesa
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo
+  
+  version: 1.11.3
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: "1.6"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXcursor
+  
+  version: ""
 uri: []
 use_flags:
 - colord

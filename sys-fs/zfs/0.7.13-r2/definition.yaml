@@ -1,13 +1,6 @@
 category: sys-fs
 conflicts:
 - 
-  category: =sys-apps
-  description: ""
-  license: ""
-  name: grep-2.13*
-  
-  version: ""
-- 
   category: sys-fs
   description: ""
   license: ""
@@ -32,9 +25,9 @@ conflicts:
   category: <sys-kernel
   description: ""
   license: ""
-  name: bliss-initramfs
+  name: dracut
   
-  version: 7.1.0
+  version: 044-r1
 - 
   category: <sys-kernel
   description: ""
@@ -43,16 +36,37 @@ conflicts:
   
   version: 3.5.1.1
 - 
+  category: =sys-apps
+  description: ""
+  license: ""
+  name: grep-2.13*
+  
+  version: ""
+- 
   category: <sys-kernel
   description: ""
   license: ""
-  name: dracut
+  name: bliss-initramfs
   
-  version: 044-r1
+  version: 7.1.0
 description: Userland utilities for ZFS Linux kernel module
 license: BSD-2 CDDL MIT
 name: zfs
 requires:
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: bc
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: mdadm
+  
+  version: ""
 - 
   category: app-arch
   description: ""
@@ -71,7 +85,14 @@ requires:
   category: virtual
   description: ""
   license: ""
-  name: awk
+  name: udev
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
   
   version: ""
 - 
@@ -89,10 +110,17 @@ requires:
   
   version: ""
 - 
-  category: sys-fs
+  category: virtual
   description: ""
   license: ""
-  name: mdadm
+  name: modutils
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: awk
   
   version: ""
 - 
@@ -103,10 +131,10 @@ requires:
   
   version: 0.7.13
 - 
-  category: sys-devel
+  category: sys-process
   description: ""
   license: ""
-  name: bc
+  name: procps
   
   version: ""
 - 
@@ -121,34 +149,6 @@ requires:
   description: ""
   license: ""
   name: udev-init-scripts
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: udev
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
-  
-  version: ""
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: procps
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: modutils
   
   version: ""
 uri:

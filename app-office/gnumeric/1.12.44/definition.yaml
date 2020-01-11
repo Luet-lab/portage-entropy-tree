@@ -8,23 +8,23 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: glib
+  name: gobject-introspection
   
-  version: 2.40.0
+  version: "1"
 - 
-  category: x11-libs
+  category: gnome-extra
   description: ""
   license: ""
-  name: goffice
+  name: libgda
   
-  version: 0.10.42
+  version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libxml2
+  name: glib
   
-  version: 2.4.12
+  version: 2.40.0
 - 
   category: x11-libs
   description: ""
@@ -36,6 +36,13 @@ requires:
   category: x11-libs
   description: ""
   license: ""
+  name: gtk+
+  
+  version: 3.8.7
+- 
+  category: x11-libs
+  description: ""
+  license: ""
   name: cairo
   
   version: ""
@@ -43,21 +50,14 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: gobject-introspection
+  name: libxml2
   
-  version: "1"
+  version: 2.4.12
 - 
   category: dev-lang
   description: ""
   license: ""
   name: perl
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: bzip2
   
   version: ""
 - 
@@ -67,6 +67,20 @@ requires:
   name: pygobject
   
   version: "3"
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: bzip2
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
 - 
   category: gnome-extra
   description: ""
@@ -78,23 +92,9 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: gtk+
+  name: goffice
   
-  version: 3.8.7
-- 
-  category: gnome-extra
-  description: ""
-  license: ""
-  name: libgda
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: ""
+  version: 0.10.42
 uri: []
 use_flags:
 - +introspection

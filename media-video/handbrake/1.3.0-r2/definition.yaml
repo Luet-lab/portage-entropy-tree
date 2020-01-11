@@ -8,16 +8,23 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libass
+  name: a52dec
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: nv-codec-headers
+  name: libass
   
   version: ""
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: libav
+  
+  version: "12.2"
 - 
   category: x11-libs
   description: ""
@@ -26,31 +33,31 @@ requires:
   
   version: "3.10"
 - 
-  category: dev-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: dbus-glib
+  name: cairo
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: speex
+  name: libdvdnav
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libvorbis
+  name: gstreamer
   
   version: ""
 - 
-  category: media-sound
+  category: media-plugins
   description: ""
   license: ""
-  name: lame
+  name: gst-plugins-libav
   
   version: ""
 - 
@@ -68,115 +75,10 @@ requires:
   
   version: ""
 - 
-  category: app-arch
-  description: ""
-  license: ""
-  name: xz-utils
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libtheora
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libvpx
-  
-  version: "1.8"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: ""
-- 
-  category: media-video
-  description: ""
-  license: ""
-  name: libav
-  
-  version: "12.2"
-- 
-  category: media-plugins
-  description: ""
-  license: ""
-  name: gst-plugins-x264
-  
-  version: ""
-- 
   category: x11-libs
   description: ""
   license: ""
-  name: cairo
-  
-  version: ""
-- 
-  category: media-plugins
-  description: ""
-  license: ""
-  name: gst-plugins-libav
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libbluray
-  
-  version: "1.0"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: dav1d
-  
-  version: 0.5.1
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: opus
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: x264
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: gstreamer
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: gst-plugins-bad
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: gst-plugins-ugly
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pango
+  name: libnotify
   
   version: ""
 - 
@@ -190,7 +92,21 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libsamplerate
+  name: dav1d
+  
+  version: 0.5.1
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: ffmpeg
+  
+  version: 4.2.1
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gst-plugins-ugly
   
   version: ""
 - 
@@ -201,10 +117,38 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: media-libs
   description: ""
   license: ""
-  name: jansson
+  name: libvorbis
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: nv-codec-headers
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: x264
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pango
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: speex
   
   version: ""
 - 
@@ -218,7 +162,7 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libdvdread
+  name: libsamplerate
   
   version: ""
 - 
@@ -236,24 +180,38 @@ requires:
   
   version: ""
 - 
-  category: media-plugins
+  category: media-libs
   description: ""
   license: ""
-  name: gst-plugins-gdkpixbuf
+  name: libbluray
   
-  version: ""
+  version: "1.0"
 - 
-  category: x11-libs
+  category: media-libs
   description: ""
   license: ""
-  name: libnotify
+  name: libtheora
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libdvdnav
+  name: opus
+  
+  version: ""
+- 
+  category: media-plugins
+  description: ""
+  license: ""
+  name: gst-plugins-a52dec
+  
+  version: ""
+- 
+  category: media-plugins
+  description: ""
+  license: ""
+  name: gst-plugins-gdkpixbuf
   
   version: ""
 - 
@@ -264,24 +222,66 @@ requires:
   
   version: ""
 - 
-  category: media-libs
+  category: app-arch
   description: ""
   license: ""
-  name: a52dec
+  name: xz-utils
   
   version: ""
 - 
-  category: media-video
+  category: dev-libs
   description: ""
   license: ""
-  name: ffmpeg
+  name: jansson
   
-  version: 4.2.1
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libdvdread
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libvpx
+  
+  version: "1.8"
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: lame
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gst-plugins-bad
+  
+  version: ""
 - 
   category: media-plugins
   description: ""
   license: ""
-  name: gst-plugins-a52dec
+  name: gst-plugins-x264
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: dbus-glib
   
   version: ""
 uri:

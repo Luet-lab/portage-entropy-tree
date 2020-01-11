@@ -4,55 +4,6 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: msmtp
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-mailer
-  
-  version: ""
-- 
-  category: <mail-mta
-  description: ""
-  license: ""
-  name: ssmtp
-  
-  version: 2.64-r2
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: fastforward
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: qmail-ldap
-  
-  version: ""
-- 
-  category: '>=mail-mta'
-  description: ""
-  license: ""
-  name: ssmtp
-  
-  version: 2.64-r2
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: courier
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
   name: esmtp
   
   version: ""
@@ -67,7 +18,35 @@ mailer
   category: mail-mta
   description: ""
   license: ""
+  name: qmail-ldap
+  
+  version: ""
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: fastforward
+  
+  version: ""
+- 
+  category: <mail-mta
+  description: ""
+  license: ""
+  name: ssmtp
+  
+  version: 2.64-r2
+- 
+  category: mail-mta
+  description: ""
+  license: ""
   name: mini-qmail
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: opensmtpd
   
   version: ""
 - 
@@ -81,6 +60,13 @@ mailer
   category: mail-mta
   description: ""
   license: ""
+mailer
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
   name: sendmail
   
   version: ""
@@ -88,13 +74,41 @@ mailer
   category: mail-mta
   description: ""
   license: ""
-  name: opensmtpd
+  name: courier
   
   version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: msmtp
+  
+  version: ""
+- 
+  category: '>=mail-mta'
+  description: ""
+  license: ""
+  name: ssmtp
+  
+  version: 2.64-r2
 description: A fast and secure drop-in replacement for sendmail
 license: '|| ( IBM EPL-2.0 )'
 name: postfix
 requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: icu
+  
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -103,20 +117,6 @@ requires:
   
   version: ""
 - 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mysql-connector-c
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: cyrus-sasl
-  
-  version: "2"
-- 
   category: dev-libs
   description: ""
   license: ""
@@ -124,26 +124,12 @@ requires:
   
   version: 2.9.1
 - 
-  category: net-misc
-  description: ""
-  license: ""
-  name: memcached
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-postfix
-  
-  version: ""
-- 
   category: dev-db
   description: ""
   license: ""
-  name: lmdb
+  name: postgresql
   
-  version: 0.9.11
+  version: ""
 - 
   category: net-mail
   description: ""
@@ -159,17 +145,10 @@ requires:
   
   version: "3.4"
 - 
-  category: sys-libs
+  category: dev-lang
   description: ""
   license: ""
-  name: db
-  
-  version: "3.2"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: icu
+  name: perl
   
   version: ""
 - 
@@ -180,17 +159,45 @@ requires:
   
   version: ""
 - 
-  category: dev-db
+  category: sec-policy
   description: ""
   license: ""
-  name: postgresql
+  name: selinux-postfix
   
   version: ""
 - 
-  category: dev-lang
+  category: sys-libs
   description: ""
   license: ""
-  name: perl
+  name: db
+  
+  version: "3.2"
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: lmdb
+  
+  version: 0.9.11
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: cyrus-sasl
+  
+  version: "2"
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
   
   version: ""
 - 
@@ -201,17 +208,10 @@ requires:
   
   version: ""
 - 
-  category: net-nds
+  category: net-misc
   description: ""
   license: ""
-  name: openldap
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
+  name: memcached
   
   version: ""
 uri:

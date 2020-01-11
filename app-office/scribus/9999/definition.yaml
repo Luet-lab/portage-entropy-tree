@@ -5,52 +5,24 @@ license: GPL-2
 name: scribus
 requires:
 - 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtnetwork
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: harfbuzz
-  
-  version: 0.9.42
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libzmf
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: tiff
-  
-  version: ""
-- 
-  category: net-print
-  description: ""
-  license: ""
-  name: cups
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
-  name: boost
+  name: hyphen
   
-  version: "1.67"
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtopengl
+  
+  version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libvisio
+  name: lcms
   
   version: ""
 - 
@@ -61,10 +33,38 @@ requires:
   
   version: ""
 - 
+  category: app-text
+  description: ""
+  license: ""
+  name: podofo
+  
+  version: ""
+- 
   category: dev-games
   description: ""
   license: ""
   name: openscenegraph
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: libmspub
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: poppler
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
   
   version: ""
 - 
@@ -75,55 +75,6 @@ requires:
   
   version: ""
 - 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libfreehand
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtcore
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libpng
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: cairo-1.10.0[X,svg]
-  
-  version: ""
-- 
-  category: media-gfx
-  description: ""
-  license: ""
-  name: graphicsmagick
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtgui
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: fontconfig
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
@@ -131,17 +82,10 @@ requires:
   
   version: ""
 - 
-  category: app-text
+  category: dev-qt
   description: ""
   license: ""
-  name: podofo
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: libqxp
+  name: qtgui
   
   version: ""
 - 
@@ -155,63 +99,14 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: lcms
+  name: harfbuzz
   
-  version: ""
+  version: 0.9.42
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libpagemaker
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pillow[tk?,]
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: libmspub
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: hyphen
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: librevenge
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtopengl
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtprintsupport
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jpeg
+  name: libpng
   
   version: ""
 - 
@@ -225,16 +120,9 @@ requires:
   category: app-text
   description: ""
   license: ""
-  name: poppler
+  name: libqxp
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: icu
-  
-  version: "58.2"
 - 
   category: dev-libs
   description: ""
@@ -253,7 +141,119 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: freetype
+  name: libfreehand
+  
+  version: ""
+- 
+  category: media-gfx
+  description: ""
+  license: ""
+  name: graphicsmagick
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtcore
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtprintsupport
+  
+  version: ""
+- 
+  category: net-print
+  description: ""
+  license: ""
+  name: cups
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jpeg
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: boost
+  
+  version: "1.67"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: icu
+  
+  version: "58.2"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: librevenge
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libpagemaker
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libzmf
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: tiff
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtnetwork
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libvisio
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo-1.10.0[X,svg]
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pillow[tk?,]
   
   version: ""
 uri: []

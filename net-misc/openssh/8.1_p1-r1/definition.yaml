@@ -12,19 +12,33 @@ requires:
   
   version: ""
 - 
-  category: net-libs
-  description: ""
-  license: ""
-  name: ldns[ecdsa,ssl(+)]
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
-  name: openssl
+  name: libressl
   
-  version: 1.1.0g
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: pambase
+  
+  version: "20081028"
+- 
+  category: x11-apps
+  description: ""
+  license: ""
+  name: xauth
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: shadow
+  
+  version: ""
 - 
   category: net-libs
   description: ""
@@ -36,7 +50,42 @@ requires:
   category: net-libs
   description: ""
   license: ""
+  name: ldns[ecdsa,ssl(+)]
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
   name: ldns[-ecdsa,ssl(+)]
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: 1.2.3
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libedit
   
   version: ""
 - 
@@ -50,27 +99,6 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: zlib
-  
-  version: 1.2.3
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: krb5
-  
-  version: ""
-- 
-  category: x11-apps
-  description: ""
-  license: ""
-  name: xauth
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
   name: libselinux
   
   version: "1.28"
@@ -78,23 +106,9 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libressl
+  name: openssl
   
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: shadow
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libedit
-  
-  version: ""
+  version: 1.1.0g
 - 
   category: dev-libs
   description: ""
@@ -102,20 +116,6 @@ requires:
   name: openssl
   
   version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: pambase
-  
-  version: "20081028"
 uri:
 - mirror://openbsd/OpenSSH/portable/openssh-8.1.tar.gz
 - 'https://roumenpetrov.info/openssh/x509-12.3/openssh-8.1+x509-12.3.diff.gz '

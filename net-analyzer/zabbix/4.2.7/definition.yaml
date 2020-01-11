@@ -5,26 +5,33 @@ license: GPL-2
 name: zabbix
 requires:
 - 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: ""
+- 
   category: dev-db
   description: ""
   license: ""
-  name: unixODBC
+  name: postgresql
+  
+  version: "8.1"
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libssh2
   
   version: ""
 - 
-  category: app-admin
+  category: virtual
   description: ""
   license: ""
-  name: webapp-config
+  name: jre
   
-  version: ""
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: php
-  
-  version: 5.4.0
+  version: "1.4"
 - 
   category: net-nds
   description: ""
@@ -33,19 +40,12 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: dev-libs
   description: ""
   license: ""
-  name: mysql
+  name: cyrus-sasl
   
-  version: 5.0.3
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: postgresql
-  
-  version: "8.1"
+  version: "2"
 - 
   category: sys-libs
   description: ""
@@ -75,38 +75,17 @@ requires:
   
   version: ""
 - 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: net-snmp
+  
+  version: ""
+- 
   category: dev-libs
   description: ""
   license: ""
-  name: cyrus-sasl
-  
-  version: "2"
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnutls
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
-  
-  version: 3.3.5
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: curl
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libssh2
+  name: libxml2
   
   version: ""
 - 
@@ -117,6 +96,13 @@ requires:
   
   version: ""
 - 
+  category: dev-db
+  description: ""
+  license: ""
+  name: unixODBC
+  
+  version: ""
+- 
   category: dev-libs
   description: ""
   license: ""
@@ -124,26 +110,12 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: dev-lang
   description: ""
   license: ""
-  name: jre
+  name: php
   
-  version: "1.4"
-- 
-  category: net-analyzer
-  description: ""
-  license: ""
-  name: net-snmp
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: oracle-instantclient-basic
-  
-  version: 10.0.0.0
+  version: 5.4.0
 - 
   category: dev-libs
   description: ""
@@ -152,10 +124,24 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: dev-db
   description: ""
   license: ""
-  name: libxml2
+  name: sqlite
+  
+  version: 3.3.5
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: oracle-instantclient-basic
+  
+  version: 10.0.0.0
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
   
   version: ""
 - 
@@ -172,6 +158,20 @@ requires:
   name: openssl
   
   version: ""
+- 
+  category: app-admin
+  description: ""
+  license: ""
+  name: webapp-config
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: mysql
+  
+  version: 5.0.3
 uri:
 - https://downloads.sourceforge.net/project/zabbix/ZABBIX%20Latest%20Stable/4.2.7/zabbix-4.2.7.tar.gz
 use_flags:

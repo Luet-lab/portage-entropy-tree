@@ -1,10 +1,10 @@
 category: dev-lang
 conflicts:
 - 
-  category: dev-util
+  category: dev-lang
   description: ""
   license: ""
-  name: cargo
+  name: rust
   
   version: ""
 - 
@@ -15,10 +15,10 @@ conflicts:
   
   version: ""
 - 
-  category: dev-lang
+  category: dev-util
   description: ""
   license: ""
-  name: rust
+  name: cargo
   
   version: ""
 description: Systems programming language from Mozilla
@@ -26,17 +26,10 @@ license: '|| ( MIT Apache-2.0 ) BSD-1 BSD-2 BSD-4 UoI-NCSA'
 name: rust-bin
 requires:
 - 
-  category: app-eselect
+  category: sys-libs
   description: ""
   license: ""
-  name: eselect-rust
-  
-  version: "20190311"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
+  name: zlib
   
   version: ""
 - 
@@ -54,10 +47,17 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: app-eselect
   description: ""
   license: ""
-  name: zlib
+  name: eselect-rust
+  
+  version: "20190311"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
   
   version: ""
 - 

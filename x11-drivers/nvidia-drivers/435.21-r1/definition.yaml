@@ -1,23 +1,51 @@
 category: x11-drivers
 conflicts:
 - 
-  category: app-eselect
-  description: ""
-  license: ""
-  name: eselect-opengl
-  
-  version: ""
-- 
   category: media-video
   description: ""
   license: ""
   name: nvidia-settings
   
   version: ""
+- 
+  category: app-eselect
+  description: ""
+  license: ""
+  name: eselect-opengl
+  
+  version: ""
 description: NVIDIA Accelerated Graphics Driver
 license: GPL-2 NVIDIA-r2
 name: nvidia-drivers
 requires:
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
+  category: x11-base
+  description: ""
+  license: ""
+  name: xorg-server
+  
+  version: 1.20.99
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libvdpau
+  
+  version: "1.0"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: glibc
+  
+  version: 2.6.1
 - 
   category: dev-libs
   description: ""
@@ -30,6 +58,41 @@ requires:
   description: ""
   license: ""
   name: gtk+
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXrandr
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXv
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: pax-utils
+  
+  version: ""
+- 
+  category: sys-power
+  description: ""
+  license: ""
+  name: acpid
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: wayland
   
   version: ""
 - 
@@ -54,12 +117,12 @@ requires:
   
   version: ""
 - 
-  category: app-misc
+  category: x11-libs
   description: ""
   license: ""
-  name: pax-utils
+  name: libX11
   
-  version: ""
+  version: 1.6.2
 - 
   category: x11-libs
   description: ""
@@ -68,34 +131,6 @@ requires:
   
   version: 1.3.2
 - 
-  category: app-eselect
-  description: ""
-  license: ""
-  name: eselect-opencl
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXxf86vm
-  
-  version: ""
-- 
-  category: x11-base
-  description: ""
-  license: ""
-  name: xorg-server
-  
-  version: 1.20.99
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libvdpau
-  
-  version: "1.0"
-- 
   category: sys-libs
   description: ""
   license: ""
@@ -103,24 +138,24 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
+  category: media-libs
   description: ""
   license: ""
-  name: libXv
+  name: libglvnd
+  
+  version: ""
+- 
+  category: app-eselect
+  description: ""
+  license: ""
+  name: eselect-opencl
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: glib
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pango[X]
+  name: atk
   
   version: ""
 - 
@@ -134,58 +169,23 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: wayland
+  name: glib
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libX11
-  
-  version: 1.6.2
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: atk
+  name: libXxf86vm
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libX11
+  name: pango[X]
   
   version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXrandr
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libglvnd
-  
-  version: ""
-- 
-  category: sys-power
-  description: ""
-  license: ""
-  name: acpid
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: glibc
-  
-  version: 2.6.1
 uri:
 - 'https://us.download.nvidia.com/XFree86/FreeBSD-x86_64/435.21/NVIDIA-FreeBSD-x86_64-435.21.tar.gz '
 - 'https://us.download.nvidia.com/XFree86/Linux-x86_64/435.21/NVIDIA-Linux-x86_64-435.21.run '

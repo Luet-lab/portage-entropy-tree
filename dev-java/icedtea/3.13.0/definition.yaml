@@ -4,14 +4,14 @@ conflicts:
   category: dev-java
   description: ""
   license: ""
-  name: icedtea-web
+  name: icedtea
   
   version: ""
 - 
   category: dev-java
   description: ""
   license: ""
-  name: icedtea
+  name: icedtea-web
   
   version: ""
 description: A harness to build OpenJDK using Free Software build tools and dependencies
@@ -20,6 +20,13 @@ license: Apache-1.1 Apache-2.0 GPL-1 GPL-2 GPL-2-with-linking-exception LGPL-2 M
 name: icedtea
 requires:
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.26"
+- 
   category: x11-libs
   description: ""
   license: ""
@@ -27,12 +34,40 @@ requires:
   
   version: 1.1.3
 - 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: baselayout-java
+  
+  version: 0.1.0-r1
+- 
+  category: net-print
+  description: ""
+  license: ""
+  name: cups
+  
+  version: 1.2.12
+- 
   category: x11-libs
   description: ""
   license: ""
   name: libXext
   
   version: 1.1.1
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: systemtap
+  
+  version: "1"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: 1.2.3
 - 
   category: virtual
   description: ""
@@ -44,37 +79,9 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: freetype
+  name: giflib
   
-  version: 2.5.3
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gsettings-desktop-schemas
-  
-  version: 3.12.2
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libpng
-  
-  version: "1.2"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.26"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: 1.2.3
+  version: 4.1.6
 - 
   category: net-misc
   description: ""
@@ -83,115 +90,17 @@ requires:
   
   version: ""
 - 
-  category: media-libs
-  description: ""
-  license: ""
-  name: lcms
-  
-  version: "2.9"
-- 
   category: x11-libs
   description: ""
   license: ""
-  name: cairo
+  name: libXrender
   
-  version: 1.8.8
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: "2.8"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: giflib
-  
-  version: 4.1.6
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXcomposite
-  
-  version: ""
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: systemtap
-  
-  version: "1"
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-java
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: baselayout-java
-  
-  version: 0.1.0-r1
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXtst
-  
-  version: 1.0.3
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: krb5
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXi
-  
-  version: 1.1.3
+  version: 0.9.4
 - 
   category: media-libs
   description: ""
   license: ""
   name: fontconfig
-  
-  version: ""
-- 
-  category: net-print
-  description: ""
-  license: ""
-  name: cups
-  
-  version: 1.2.12
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: atk
-  
-  version: 1.30.0
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pango
-  
-  version: 1.24.5
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: pcsc-lite
   
   version: ""
 - 
@@ -205,6 +114,20 @@ requires:
   category: x11-libs
   description: ""
   license: ""
+  name: cairo
+  
+  version: 1.8.8
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
   name: gdk-pixbuf
   
   version: ""
@@ -212,9 +135,51 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXrender
+  name: pango
   
-  version: 0.9.4
+  version: 1.24.5
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXi
+  
+  version: 1.1.3
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXtst
+  
+  version: 1.0.3
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXcomposite
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: pcsc-lite
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: lcms
+  
+  version: "2.9"
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gsettings-desktop-schemas
+  
+  version: 3.12.2
 - 
   category: virtual
   description: ""
@@ -222,6 +187,41 @@ requires:
   name: ttf-fonts
   
   version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-java
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
+  
+  version: 2.5.3
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: atk
+  
+  version: 1.30.0
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: "2.8"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libpng
+  
+  version: "1.2"
 uri:
 - https://icedtea.classpath.org/download/source/icedtea-.tar.xz
 - https://icedtea.classpath.org/download/drops/icedtea8//openjdk.tar.xz -> icedtea--openjdk-c8f86954855a.tar.xz

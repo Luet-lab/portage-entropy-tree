@@ -18,14 +18,14 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mysql-cluster
+  name: percona-server
   
   version: ""
 - 
   category: dev-db
   description: ""
   license: ""
-  name: percona-server
+  name: mysql-cluster
   
   version: ""
 description: A fast, multi-threaded, multi-user SQL database server
@@ -33,47 +33,19 @@ license: GPL-2
 name: mysql
 requires:
 - 
-  category: app-arch
-  description: ""
-  license: ""
-  name: lz4
-  
-  version: 0_p131
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libtirpc
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
-  name: jemalloc
+  name: libressl
   
   version: ""
 - 
-  category: acct-user
+  category: dev-util
   description: ""
   license: ""
-  name: mysql
+  name: google-perftools
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libedit
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: protobuf
-  
-  version: "3.8"
 - 
   category: app-text
   description: ""
@@ -85,42 +57,35 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libressl
+  name: libevent
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: 1.0.0
 - 
   category: sys-process
   description: ""
   license: ""
-  name: numactl
+  name: procps
   
   version: ""
 - 
-  category: dev-util
+  category: app-arch
   description: ""
   license: ""
-  name: google-perftools
+  name: lz4
   
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: icu
-  
-  version: ""
+  version: 0_p131
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libevent
+  name: protobuf
+  
+  version: "3.8"
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libtirpc
   
   version: ""
 - 
@@ -134,6 +99,13 @@ requires:
   category: dev-libs
   description: ""
   license: ""
+  name: jemalloc
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
   name: libaio
   
   version: ""
@@ -141,9 +113,37 @@ requires:
   category: sys-process
   description: ""
   license: ""
-  name: procps
+  name: numactl
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libedit
+  
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: mysql
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-init-scripts
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 1.0.0
 - 
   category: sec-policy
   description: ""
@@ -159,10 +159,10 @@ requires:
   
   version: ""
 - 
-  category: dev-db
+  category: dev-libs
   description: ""
   license: ""
-  name: mysql-init-scripts
+  name: icu
   
   version: ""
 uri:

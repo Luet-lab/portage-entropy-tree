@@ -4,9 +4,9 @@ conflicts:
   category: <app-portage
   description: ""
   license: ""
-  name: repoman
+  name: gentoolkit
   
-  version: 2.3.10
+  version: 0.4.6
 - 
   category: <app-admin
   description: ""
@@ -18,9 +18,9 @@ conflicts:
   category: <app-portage
   description: ""
   license: ""
-  name: gentoolkit
+  name: repoman
   
-  version: 0.4.6
+  version: 2.3.10
 description: Portage is the package management and distribution system for Gentoo
 license: GPL-2
 name: portage
@@ -29,9 +29,9 @@ requires:
   category: app-crypt
   description: ""
   license: ""
-  name: openpgp-keys-gentoo-release
+  name: gnupg-2.2.4-r2[ssl(-)]
   
-  version: "20180706"
+  version: ""
 - 
   category: sys-apps
   description: ""
@@ -40,12 +40,12 @@ requires:
   
   version: "0.3"
 - 
-  category: sys-apps
+  category: app-crypt
   description: ""
   license: ""
-  name: sandbox
+  name: openpgp-keys-gentoo-release
   
-  version: "2.2"
+  version: "20180706"
 - 
   category: app-misc
   description: ""
@@ -54,20 +54,6 @@ requires:
   
   version: 0.1.17
 - 
-  category: app-arch
-  description: ""
-  license: ""
-  name: tar
-  
-  version: "1.27"
-- 
-  category: sys-freebsd
-  description: ""
-  license: ""
-  name: freebsd-bin
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
@@ -75,17 +61,24 @@ requires:
   
   version: 2.0.94
 - 
-  category: dev-lang
+  category: sys-apps
   description: ""
   license: ""
-  name: python-exec
+  name: sandbox
+  
+  version: "2.2"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
   
   version: ""
 - 
-  category: app-crypt
+  category: app-shells
   description: ""
   license: ""
-  name: gnupg-2.2.4-r2[ssl(-)]
+  name: bash
   
   version: ""
 - 
@@ -103,10 +96,24 @@ requires:
   
   version: "14"
 - 
-  category: sys-apps
+  category: sys-freebsd
   description: ""
   license: ""
-  name: util-linux
+  name: freebsd-bin
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: tar
+  
+  version: "1.27"
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: python-exec
   
   version: ""
 - 
@@ -116,13 +123,6 @@ requires:
   name: sed
   
   version: 4.0.5
-- 
-  category: app-shells
-  description: ""
-  license: ""
-  name: bash
-  
-  version: ""
 uri: []
 use_flags:
 - build
