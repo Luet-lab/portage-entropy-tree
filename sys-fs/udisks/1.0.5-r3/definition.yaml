@@ -5,26 +5,12 @@ license: GPL-2
 name: udisks
 requires:
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libatasmart
-  
-  version: "0.19"
-- 
   category: sys-block
   description: ""
   license: ""
   name: parted
   
   version: "3"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.30"
 - 
   category: sys-fs
   description: ""
@@ -33,10 +19,38 @@ requires:
   
   version: 2.02.66
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.30"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgudev
+  
+  version: ""
+- 
   category: virtual
   description: ""
   license: ""
   name: libudev
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: 2.20.1-r2
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: eject
   
   version: ""
 - 
@@ -47,12 +61,19 @@ requires:
   
   version: "0.100"
 - 
-  category: sys-apps
+  category: dev-libs
   description: ""
   license: ""
-  name: dbus
+  name: libatasmart
   
-  version: "1.6"
+  version: "0.19"
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: "0.110"
 - 
   category: sec-policy
   description: ""
@@ -61,33 +82,12 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: sys-apps
   description: ""
   license: ""
-  name: eject
+  name: dbus
   
-  version: ""
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: avahi
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgudev
-  
-  version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: polkit
-  
-  version: "0.110"
+  version: "1.6"
 - 
   category: sys-apps
   description: ""
@@ -110,12 +110,12 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: net-dns
   description: ""
   license: ""
-  name: util-linux
+  name: avahi
   
-  version: 2.20.1-r2
+  version: ""
 uri:
 - https://hal.freedesktop.org/releases/udisks-1.0.5.tar.gz
 use_flags:

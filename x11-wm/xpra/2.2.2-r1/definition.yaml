@@ -9,42 +9,49 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libX11
+  name: libXcomposite
+  
+  version: ""
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: libav
   
   version: ""
 - 
   category: dev-python
   description: ""
   license: ""
-  name: pygtkglext
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: gst-plugins-base
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libvpx
+  name: netifaces
   
   version: ""
 - 
   category: dev-python
   description: ""
   license: ""
-  name: lz4
+  name: rencode
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pygobject
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXfixes
+  name: gtk+
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: x265
   
   version: ""
 - 
@@ -55,17 +62,10 @@ requires:
   
   version: ""
 - 
-  category: dev-python
+  category: virtual
   description: ""
   license: ""
-  name: pillow
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxkbfile
+  name: ffmpeg
   
   version: ""
 - 
@@ -76,10 +76,24 @@ requires:
   
   version: ""
 - 
+  category: x11-apps
+  description: ""
+  license: ""
+  name: xmodmap
+  
+  version: ""
+- 
   category: dev-python
   description: ""
   license: ""
   name: pyinotify
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxkbfile
   
   version: ""
 - 
@@ -88,7 +102,49 @@ requires:
   license: ""
   name: ffmpeg
   
-  version: 1.2.2
+  version: 1.0.4
+- 
+  category: x11-base
+  description: ""
+  license: ""
+  name: xorg-server
+  
+  version: ""
+- 
+  category: x11-drivers
+  description: ""
+  license: ""
+  name: xf86-input-void
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: opencv
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: ssh
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: dbus-python
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXrandr
+  
+  version: ""
 - 
   category: media-video
   description: ""
@@ -111,41 +167,6 @@ requires:
   
   version: ""
 - 
-  category: dev-python
-  description: ""
-  license: ""
-  name: rencode
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: numpy
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pygobject
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXdamage
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXrandr
-  
-  version: ""
-- 
   category: media-sound
   description: ""
   license: ""
@@ -153,45 +174,24 @@ requires:
   
   version: ""
 - 
-  category: media-libs
-  description: ""
-  license: ""
-  name: gstreamer
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: ffmpeg
-  
-  version: ""
-- 
   category: dev-python
   description: ""
   license: ""
-  name: netifaces
+  name: lz4
   
   version: ""
 - 
-  category: media-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: x264
+  name: libX11
   
   version: ""
 - 
-  category: media-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: x265
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: ssh
+  name: libXdamage
   
   version: ""
 - 
@@ -205,35 +205,14 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: pyopengl_accelerate
+  name: pygtkglext
   
   version: ""
 - 
-  category: x11-libs
+  category: media-libs
   description: ""
   license: ""
-  name: libXtst
-  
-  version: ""
-- 
-  category: media-video
-  description: ""
-  license: ""
-  name: libav
-  
-  version: ""
-- 
-  category: media-video
-  description: ""
-  license: ""
-  name: ffmpeg
-  
-  version: 1.0.4
-- 
-  category: x11-apps
-  description: ""
-  license: ""
-  name: xmodmap
+  name: gst-plugins-base
   
   version: ""
 - 
@@ -244,17 +223,38 @@ requires:
   
   version: ""
 - 
-  category: x11-drivers
+  category: dev-python
   description: ""
   license: ""
-  name: xf86-input-void
+  name: pillow
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXtst
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: opencv
+  name: x264
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libvpx
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pyopengl_accelerate
   
   version: ""
 - 
@@ -268,28 +268,28 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: gtk+
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXcomposite
+  name: libXfixes
   
   version: ""
 - 
   category: dev-python
   description: ""
   license: ""
-  name: dbus-python
+  name: numpy
   
   version: ""
 - 
-  category: x11-base
+  category: media-video
   description: ""
   license: ""
-  name: xorg-server
+  name: ffmpeg
+  
+  version: 1.2.2
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gstreamer
   
   version: ""
 uri:

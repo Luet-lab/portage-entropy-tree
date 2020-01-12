@@ -4,6 +4,13 @@ conflicts:
   category: <app-portage
   description: ""
   license: ""
+  name: repoman
+  
+  version: 2.3.10
+- 
+  category: <app-portage
+  description: ""
+  license: ""
   name: gentoolkit
   
   version: 0.4.6
@@ -14,22 +21,43 @@ conflicts:
   name: logrotate
   
   version: 3.8.0
-- 
-  category: <app-portage
-  description: ""
-  license: ""
-  name: repoman
-  
-  version: 2.3.10
 description: Portage is the package management and distribution system for Gentoo
 license: GPL-2
 name: portage
 requires:
 - 
-  category: app-crypt
+  category: app-misc
   description: ""
   license: ""
-  name: gnupg-2.2.4-r2[ssl(-)]
+  name: pax-utils
+  
+  version: 0.1.17
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: sed
+  
+  version: 4.0.5
+- 
+  category: app-shells
+  description: ""
+  license: ""
+  name: bash
+  
+  version: ""
+- 
+  category: app-admin
+  description: ""
+  license: ""
+  name: eselect
+  
+  version: "1.2"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
   
   version: ""
 - 
@@ -47,19 +75,19 @@ requires:
   
   version: "20180706"
 - 
-  category: app-misc
+  category: app-crypt
   description: ""
   license: ""
-  name: pax-utils
+  name: gnupg-2.2.4-r2[ssl(-)]
   
-  version: 0.1.17
+  version: ""
 - 
-  category: sys-libs
+  category: sys-freebsd
   description: ""
   license: ""
-  name: libselinux
+  name: freebsd-bin
   
-  version: 2.0.94
+  version: ""
 - 
   category: sys-apps
   description: ""
@@ -68,40 +96,12 @@ requires:
   
   version: "2.2"
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
-  
-  version: ""
-- 
-  category: app-shells
-  description: ""
-  license: ""
-  name: bash
-  
-  version: ""
-- 
-  category: app-admin
-  description: ""
-  license: ""
-  name: eselect
-  
-  version: "1.2"
-- 
   category: app-portage
   description: ""
   license: ""
   name: gemato
   
   version: "14"
-- 
-  category: sys-freebsd
-  description: ""
-  license: ""
-  name: freebsd-bin
-  
-  version: ""
 - 
   category: app-arch
   description: ""
@@ -117,12 +117,12 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: sys-libs
   description: ""
   license: ""
-  name: sed
+  name: libselinux
   
-  version: 4.0.5
+  version: 2.0.94
 uri: []
 use_flags:
 - build

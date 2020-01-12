@@ -1,12 +1,12 @@
 category: gnome-base
 conflicts:
 - 
-  category: <gnome-base
+  category: <net-wireless
   description: ""
   license: ""
-  name: gdm
+  name: gnome-bluetooth
   
-  version: 2.91.94
+  version: 3.3.2
 - 
   category: <gnome-extra
   description: ""
@@ -15,35 +15,147 @@ conflicts:
   
   version: 2.32.0-r300
 - 
-  category: <net-wireless
-  description: ""
-  license: ""
-  name: gnome-bluetooth
-  
-  version: 3.3.2
-- 
   category: gnome-extra
   description: ""
   license: ""
   name: gnome-media
   
   version: ""
+- 
+  category: <gnome-base
+  description: ""
+  license: ""
+  name: gdm
+  
+  version: 2.91.94
 description: GNOME's main interface to configure various aspects of the desktop
 license: GPL-2+
 name: gnome-control-center
 requires:
 - 
-  category: net-wireless
+  category: sys-apps
   description: ""
   license: ""
-  name: gnome-bluetooth
+  name: systemd
   
-  version: 3.18.2
+  version: "31"
+- 
+  category: x11-drivers
+  description: ""
+  license: ""
+  name: xf86-input-libinput
+  
+  version: 0.19.0
+- 
+  category: net-print
+  description: ""
+  license: ""
+  name: cups
+  
+  version: "1.7"
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: "0.114"
+- 
+  category: sys-power
+  description: ""
+  license: ""
+  name: upower
+  
+  version: 0.99.8
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libwacom
+  
+  version: "0.27"
+- 
+  category: x11-drivers
+  description: ""
+  license: ""
+  name: xf86-input-wacom
+  
+  version: 0.33.0
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnome-online-accounts
+  
+  version: 3.25.3
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgudev
+  
+  version: ""
+- 
+  category: gnome-extra
+  description: ""
+  license: ""
+  name: nm-applet
+  
+  version: 1.8.0
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: colord-gtk
+  
+  version: 0.1.24
+- 
+  category: gnome-extra
+  description: ""
+  license: ""
+  name: gnome-color-manager
+  
+  version: 3.1.2
+- 
+  category: app-admin
+  description: ""
+  license: ""
+  name: system-config-printer
+  
+  version: ""
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gsettings-desktop-schemas
+  
+  version: 3.31.0
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: 3.22.0
 - 
   category: app-crypt
   description: ""
   license: ""
   name: mit-krb5
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
   
   version: ""
 - 
@@ -54,164 +166,10 @@ requires:
   
   version: 2.1.8
 - 
-  category: app-admin
-  description: ""
-  license: ""
-  name: system-config-printer
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: net-print
-  description: ""
-  license: ""
-  name: cups
-  
-  version: "1.7"
-- 
-  category: app-i18n
-  description: ""
-  license: ""
-  name: ibus
-  
-  version: 1.5.2
-- 
-  category: x11-drivers
-  description: ""
-  license: ""
-  name: xf86-input-wacom
-  
-  version: 0.33.0
-- 
-  category: media-video
-  description: ""
-  license: ""
-  name: cheese
-  
-  version: 3.28.0
-- 
-  category: gnome-extra
-  description: ""
-  license: ""
-  name: nm-applet
-  
-  version: 1.8.0
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libsoup
-  
-  version: ""
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: libgtop
-  
-  version: ""
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: pulseaudio
-  
-  version: "2.0"
-- 
-  category: x11-misc
-  description: ""
-  license: ""
-  name: colord
-  
-  version: 0.1.34
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: 2.53.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: grilo
-  
-  version: 0.3.0
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: libsecret
-  
-  version: ""
-- 
-  category: gnome-extra
-  description: ""
-  license: ""
-  name: gnome-color-manager
-  
-  version: 3.1.2
-- 
-  category: x11-drivers
-  description: ""
-  license: ""
-  name: xf86-input-libinput
-  
-  version: 0.19.0
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gsettings-desktop-schemas
-  
-  version: 3.31.0
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: modemmanager
-  
-  version: 0.7.990
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: gsound
-  
-  version: ""
-- 
   category: sys-auth
   description: ""
   license: ""
   name: elogind
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: 3.22.0
-- 
-  category: x11-themes
-  description: ""
-  license: ""
-  name: adwaita-icon-theme
   
   version: ""
 - 
@@ -222,96 +180,19 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: x11-misc
   description: ""
   license: ""
-  name: accountsservice
+  name: colord
   
-  version: 0.6.39
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: polkit
-  
-  version: "0.114"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: colord-gtk
-  
-  version: 0.1.24
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libpwquality
-  
-  version: 1.2.2
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libinput
-  
-  version: ""
-- 
-  category: sys-power
-  description: ""
-  license: ""
-  name: upower
-  
-  version: 0.99.8
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXi
-  
-  version: "1.2"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libwacom
-  
-  version: "0.27"
+  version: 0.1.34
 - 
   category: gnome-base
   description: ""
   license: ""
-  name: libgnomekbd
+  name: gnome-desktop
   
-  version: "3"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: fontconfig
-  
-  version: ""
-- 
-  category: app-admin
-  description: ""
-  license: ""
-  name: openrc-settingsd
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gdk-pixbuf
-  
-  version: 2.23.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgudev
-  
-  version: ""
+  version: 3.27.90
 - 
   category: net-misc
   description: ""
@@ -320,19 +201,68 @@ requires:
   
   version: 1.10.0
 - 
+  category: net-wireless
+  description: ""
+  license: ""
+  name: gnome-bluetooth
+  
+  version: 3.18.2
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpwquality
+  
+  version: 1.2.2
+- 
   category: x11-libs
   description: ""
   license: ""
-  name: cairo
+  name: gdk-pixbuf
   
-  version: ""
+  version: 2.23.0
 - 
-  category: sys-apps
+  category: media-sound
   description: ""
   license: ""
-  name: systemd
+  name: pulseaudio
   
-  version: "31"
+  version: "2.0"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.53.0
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXi
+  
+  version: "1.2"
+- 
+  category: net-fs
+  description: ""
+  license: ""
+  name: samba
+  
+  version: 4.0.0
+- 
+  category: app-i18n
+  description: ""
+  license: ""
+  name: ibus
+  
+  version: 1.5.2
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: libgtop
+  
+  version: ""
 - 
   category: net-print
   description: ""
@@ -348,26 +278,96 @@ requires:
   
   version: 0.0.9
 - 
-  category: net-libs
+  category: app-crypt
   description: ""
   license: ""
-  name: gnome-online-accounts
+  name: libsecret
   
-  version: 3.25.3
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gsound
+  
+  version: ""
+- 
+  category: app-admin
+  description: ""
+  license: ""
+  name: openrc-settingsd
+  
+  version: ""
 - 
   category: gnome-base
   description: ""
   license: ""
-  name: gnome-desktop
+  name: libgnomekbd
   
-  version: 3.27.90
+  version: "3"
 - 
-  category: net-fs
+  category: dev-libs
   description: ""
   license: ""
-  name: samba
+  name: libinput
   
-  version: 4.0.0
+  version: ""
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: cheese
+  
+  version: 3.28.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: grilo
+  
+  version: 0.3.0
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: modemmanager
+  
+  version: 0.7.990
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libsoup
+  
+  version: ""
+- 
+  category: x11-themes
+  description: ""
+  license: ""
+  name: adwaita-icon-theme
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: accountsservice
+  
+  version: 0.6.39
 uri:
 - https://dev.gentoo.org/~leio/distfiles/gnome-control-center-3.32.2-patchset.tar.xz
 use_flags:

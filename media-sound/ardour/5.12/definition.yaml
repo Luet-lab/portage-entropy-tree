@@ -5,33 +5,33 @@ license: GPL-2
 name: ardour
 requires:
 - 
-  category: dev-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: boost
+  name: gtk+
   
-  version: ""
+  version: 2.8.1
 - 
-  category: dev-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: libxslt
+  name: pango
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: taglib
-  
-  version: "1.7"
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: curl
+  name: aubio
   
   version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: liblrdf
+  
+  version: 0.4.0-r20
 - 
   category: sci-libs
   description: ""
@@ -43,28 +43,7 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: lv2
-  
-  version: 1.4.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: rubberband
-  
-  version: 1.6.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libsoundtouch
-  
-  version: 1.6.0
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libusb
+  name: sratom
   
   version: ""
 - 
@@ -82,6 +61,13 @@ requires:
   
   version: ""
 - 
+  category: media-libs
+  description: ""
+  license: ""
+  name: rubberband
+  
+  version: 1.6.0
+- 
   category: dev-libs
   description: ""
   license: ""
@@ -89,47 +75,12 @@ requires:
   
   version: "2.6"
 - 
-  category: media-libs
+  category: gnome-base
   description: ""
   license: ""
-  name: flac
+  name: libgnomecanvas
   
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: freetype
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: liblo
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: readline
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: sratom
-  
-  version: ""
-- 
-  category: dev-cpp
-  description: ""
-  license: ""
-  name: gtkmm
-  
-  version: "2.16"
+  version: "2"
 - 
   category: media-libs
   description: ""
@@ -138,17 +89,10 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
+  category: net-misc
   description: ""
   license: ""
-  name: pango
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jack
+  name: curl
   
   version: ""
 - 
@@ -158,6 +102,62 @@ requires:
   name: libgnomecanvasmm
   
   version: "2.26"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.10.1
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: readline
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: sord
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: lv2
+  
+  version: 1.4.0
+- 
+  category: dev-cpp
+  description: ""
+  license: ""
+  name: glibmm
+  
+  version: 2.32.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: liblo
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: taglib
+  
+  version: "1.7"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo
+  
+  version: ""
 - 
   category: media-libs
   description: ""
@@ -176,72 +176,9 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: vamp-plugin-sdk
+  name: libsoundtouch
   
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: sord
-  
-  version: ""
-- 
-  category: dev-cpp
-  description: ""
-  license: ""
-  name: glibmm
-  
-  version: 2.32.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: 2.10.1
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: libgnomecanvas
-  
-  version: "2"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libsndfile
-  
-  version: 1.0.18
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: cairo
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: 2.8.1
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: aubio
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: liblrdf
-  
-  version: 0.4.0-r20
+  version: 1.6.0
 - 
   category: media-libs
   description: ""
@@ -250,10 +187,73 @@ requires:
   
   version: ""
 - 
+  category: virtual
+  description: ""
+  license: ""
+  name: libusb
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jack
+  
+  version: ""
+- 
+  category: dev-cpp
+  description: ""
+  license: ""
+  name: gtkmm
+  
+  version: "2.16"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: boost
+  
+  version: ""
+- 
   category: media-libs
   description: ""
   license: ""
   name: lilv
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxslt
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libsndfile
+  
+  version: 1.0.18
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: vamp-plugin-sdk
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: flac
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
   
   version: ""
 uri:

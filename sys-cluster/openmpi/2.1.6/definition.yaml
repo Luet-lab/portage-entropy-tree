@@ -11,13 +11,6 @@ conflicts:
   category: sys-cluster
   description: ""
   license: ""
-  name: mpich2
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
 mpi
   
   version: ""
@@ -28,17 +21,38 @@ mpi
   name: pmix
   
   version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: mpich2
+  
+  version: ""
 description: A high-performance message passing library (MPI)
 license: BSD
 name: openmpi
 requires:
 - 
-  category: dev-libs
+  category: virtual
   description: ""
   license: ""
-  name: libevent
+  name: jre
   
-  version: 2.0.22
+  version: "1.6"
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: nvidia-cuda-toolkit
+  
+  version: 6.5.19-r1
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: librdmacm
+  
+  version: ""
 - 
   category: sys-cluster
   description: ""
@@ -47,12 +61,33 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: sys-fabric
   description: ""
   license: ""
-  name: jre
+  name: infinipath-psm
   
-  version: "1.6"
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libevent
+  
+  version: 2.0.22
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libltdl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: 1.2.8-r1
 - 
   category: sys-fabric
   description: ""
@@ -68,45 +103,10 @@ requires:
   
   version: ""
 - 
-  category: sys-fabric
-  description: ""
-  license: ""
-  name: librdmacm
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libltdl
-  
-  version: ""
-- 
   category: sys-cluster
   description: ""
   license: ""
   name: slurm
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: 1.2.8-r1
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: nvidia-cuda-toolkit
-  
-  version: 6.5.19-r1
-- 
-  category: sys-fabric
-  description: ""
-  license: ""
-  name: infinipath-psm
   
   version: ""
 uri:

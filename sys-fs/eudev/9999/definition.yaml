@@ -1,27 +1,6 @@
 category: sys-fs
 conflicts:
 - 
-  category: <sys-libs
-  description: ""
-  license: ""
-  name: glibc
-  
-  version: "2.11"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: ""
-- 
-  category: <sec-policy
-  description: ""
-  license: ""
-  name: selinux-base
-  
-  version: 2.20120725-r10
-- 
   category: sys-apps
   description: ""
   license: ""
@@ -42,22 +21,50 @@ conflicts:
   name: udev
   
   version: ""
+- 
+  category: <sys-libs
+  description: ""
+  license: ""
+  name: glibc
+  
+  version: "2.11"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+- 
+  category: <sec-policy
+  description: ""
+  license: ""
+  name: selinux-base
+  
+  version: 2.20120725-r10
 description: Linux dynamic and persistent device naming support (aka userspace devfs)
 license: LGPL-2.1 MIT GPL-2
 name: eudev
 requires:
 - 
-  category: acct-group
+  category: dev-libs
   description: ""
   license: ""
-  name: input
+  name: gobject-introspection
   
-  version: ""
+  version: "1.38"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: kmod
+  
+  version: "16"
 - 
   category: acct-group
   description: ""
   license: ""
-  name: render
+  name: input
   
   version: ""
 - 
@@ -67,13 +74,6 @@ requires:
   name: util-linux
   
   version: "2.20"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: kmod
-  
-  version: "16"
 - 
   category: sys-libs
   description: ""
@@ -89,12 +89,12 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: acct-group
   description: ""
   license: ""
-  name: gobject-introspection
+  name: render
   
-  version: "1.38"
+  version: ""
 uri: []
 use_flags:
 - +hwdb

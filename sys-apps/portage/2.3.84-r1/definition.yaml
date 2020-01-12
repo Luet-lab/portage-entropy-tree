@@ -1,19 +1,19 @@
 category: sys-apps
 conflicts:
 - 
-  category: <app-portage
-  description: ""
-  license: ""
-  name: gentoolkit
-  
-  version: 0.4.6
-- 
   category: <app-admin
   description: ""
   license: ""
   name: logrotate
   
   version: 3.8.0
+- 
+  category: <app-portage
+  description: ""
+  license: ""
+  name: gentoolkit
+  
+  version: 0.4.6
 - 
   category: <app-portage
   description: ""
@@ -26,19 +26,12 @@ license: GPL-2
 name: portage
 requires:
 - 
-  category: app-shells
+  category: sys-apps
   description: ""
   license: ""
-  name: bash
+  name: sandbox
   
-  version: ""
-- 
-  category: app-portage
-  description: ""
-  license: ""
-  name: gemato
-  
-  version: "14"
+  version: "2.2"
 - 
   category: sys-apps
   description: ""
@@ -47,6 +40,27 @@ requires:
   
   version: ""
 - 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: install-xattr
+  
+  version: "0.3"
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: pax-utils
+  
+  version: 0.1.17
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: 2.0.94
+- 
   category: dev-lang
   description: ""
   license: ""
@@ -54,19 +68,12 @@ requires:
   
   version: ""
 - 
-  category: app-admin
+  category: app-shells
   description: ""
   license: ""
-  name: eselect
+  name: bash
   
-  version: "1.2"
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: openpgp-keys-gentoo-release
-  
-  version: "20180706"
+  version: ""
 - 
   category: app-crypt
   description: ""
@@ -85,23 +92,23 @@ requires:
   category: sys-apps
   description: ""
   license: ""
-  name: sandbox
+  name: sed
   
-  version: "2.2"
+  version: 4.0.5
 - 
-  category: app-misc
+  category: app-admin
   description: ""
   license: ""
-  name: pax-utils
+  name: eselect
   
-  version: 0.1.17
+  version: "1.2"
 - 
-  category: sys-libs
+  category: app-portage
   description: ""
   license: ""
-  name: libselinux
+  name: gemato
   
-  version: 2.0.94
+  version: "14"
 - 
   category: app-arch
   description: ""
@@ -110,19 +117,12 @@ requires:
   
   version: "1.27"
 - 
-  category: sys-apps
+  category: app-crypt
   description: ""
   license: ""
-  name: sed
+  name: openpgp-keys-gentoo-release
   
-  version: 4.0.5
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: install-xattr
-  
-  version: "0.3"
+  version: "20180706"
 uri: []
 use_flags:
 - build

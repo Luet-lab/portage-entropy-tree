@@ -4,7 +4,14 @@ conflicts:
   category: <dev-qt
   description: ""
   license: ""
-  name: qtimageformats
+  name: qtsvg
+  
+  version: 5.14.0
+- 
+  category: <dev-qt
+  description: ""
+  license: ""
+  name: qtwayland
   
   version: 5.14.0
 - 
@@ -18,14 +25,7 @@ conflicts:
   category: <dev-qt
   description: ""
   license: ""
-  name: qtsvg
-  
-  version: 5.14.0
-- 
-  category: <dev-qt
-  description: ""
-  license: ""
-  name: qtwayland
+  name: qtimageformats
   
   version: 5.14.0
 description: The GUI module and platform plugins for the Qt5 framework
@@ -33,10 +33,115 @@ license: ""
 name: qtgui
 requires:
 - 
+  category: virtual
+  description: ""
+  license: ""
+  name: opengl
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtdbus
+  
+  version: 5.14.0
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jpeg
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: ""
+- 
   category: x11-libs
   description: ""
   license: ""
-  name: libdrm
+  name: xcb-util-renderutil
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libudev
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: xcb-util-wm
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libICE
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
+  
+  version: 2.6.1
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libpng
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtnetwork
+  
+  version: 5.14.0
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxcb
+  
+  version: "1.12"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: xcb-util-image
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtcore
+  
+  version: 5.14.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: mesa
   
   version: ""
 - 
@@ -64,7 +169,7 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libICE
+  name: libSM
   
   version: ""
 - 
@@ -78,21 +183,7 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: mesa
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxkbcommon-0.5.0[X]
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: xcb-util-wm
+  name: fontconfig
   
   version: ""
 - 
@@ -103,20 +194,6 @@ requires:
   
   version: 1.6.0
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libSM
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: xcb-util-renderutil
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
@@ -124,17 +201,10 @@ requires:
   
   version: ""
 - 
-  category: dev-qt
+  category: x11-libs
   description: ""
   license: ""
-  name: qtdbus
-  
-  version: 5.14.0
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: opengl
+  name: libdrm
   
   version: ""
 - 
@@ -148,35 +218,7 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: fontconfig
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: freetype
-  
-  version: 2.6.1
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxcb
-  
-  version: "1.12"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: xcb-util-image
+  name: libxkbcommon-0.5.0[X]
   
   version: ""
 - 
@@ -184,48 +226,6 @@ requires:
   description: ""
   license: ""
   name: xcb-util-keysyms
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtcore
-  
-  version: 5.14.0
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtnetwork
-  
-  version: 5.14.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libpng
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libudev
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jpeg
   
   version: ""
 uri: []

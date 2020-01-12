@@ -5,17 +5,10 @@ license: GPL-2+
 name: cryptsetup
 requires:
 - 
-  category: virtual
+  category: app-crypt
   description: ""
   license: ""
-  name: libudev
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: json-c
+  name: argon2
   
   version: ""
 - 
@@ -29,21 +22,21 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: openssl
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libpwquality[static-libs(+)]
+  name: popt
   
   version: ""
 - 
   category: virtual
   description: ""
   license: ""
-  name: libudev[static-libs(-)]
+  name: libudev
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: popt[static-libs(+)]
   
   version: ""
 - 
@@ -57,9 +50,9 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: popt[static-libs(+)]
+  name: nettle
   
-  version: ""
+  version: "2.4"
 - 
   category: dev-libs
   description: ""
@@ -78,28 +71,7 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libgpg-error
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libpwquality
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux-2.31-r1[static-libs(+)]
-  
-  version: ""
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: argon2
+  name: libpwquality[static-libs(+)]
   
   version: ""
 - 
@@ -109,13 +81,6 @@ requires:
   name: lvm2[static-libs(+)]
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: nettle
-  
-  version: "2.4"
 - 
   category: sys-fs
   description: ""
@@ -127,14 +92,49 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libgpg-error[static-libs(+)]
+  name: libgpg-error
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: popt
+  name: libpwquality
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: json-c
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgpg-error[static-libs(+)]
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux-2.31-r1[static-libs(+)]
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libudev[static-libs(-)]
   
   version: ""
 uri:

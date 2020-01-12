@@ -5,12 +5,33 @@ license: GPL-2+ FDL-1.1
 name: gnome-applets
 requires:
 - 
-  category: sys-auth
+  category: x11-libs
   description: ""
   license: ""
-  name: polkit
+  name: libnotify
   
-  version: "0.97"
+  version: "0.7"
+- 
+  category: sys-power
+  description: ""
+  license: ""
+  name: upower
+  
+  version: 0.9.4
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: 1.1.2
+- 
+  category: gnome-extra
+  description: ""
+  license: ""
+  name: gucharmap
+  
+  version: 2.33.0
 - 
   category: gnome-base
   description: ""
@@ -19,12 +40,12 @@ requires:
   
   version: 3.24.1
 - 
-  category: sys-apps
+  category: gnome-base
   description: ""
   license: ""
-  name: dbus
+  name: libgtop
   
-  version: 1.1.2
+  version: 2.11.92
 - 
   category: x11-themes
   description: ""
@@ -40,12 +61,12 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: gtk+
+  name: glib
   
-  version: 3.20.0
+  version: 2.44.0
 - 
   category: x11-libs
   description: ""
@@ -54,13 +75,6 @@ requires:
   
   version: 3.14.1
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libnotify
-  
-  version: "0.7"
-- 
   category: dev-libs
   description: ""
   license: ""
@@ -68,26 +82,19 @@ requires:
   
   version: 2.5.0
 - 
-  category: dev-libs
+  category: sys-auth
   description: ""
   license: ""
-  name: libgweather
+  name: polkit
   
-  version: 3.28.0
+  version: "0.97"
 - 
-  category: dev-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: glib
+  name: gtk+
   
-  version: 2.44.0
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: libgtop
-  
-  version: 2.11.92
+  version: 3.20.0
 - 
   category: dev-libs
   description: ""
@@ -96,19 +103,12 @@ requires:
   
   version: "0.74"
 - 
-  category: sys-power
+  category: dev-libs
   description: ""
   license: ""
-  name: upower
+  name: libgweather
   
-  version: 0.9.4
-- 
-  category: gnome-extra
-  description: ""
-  license: ""
-  name: gucharmap
-  
-  version: 2.33.0
+  version: 3.28.0
 uri: []
 use_flags:
 - ipv6

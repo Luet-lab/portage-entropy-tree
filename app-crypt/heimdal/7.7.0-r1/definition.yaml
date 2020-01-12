@@ -4,14 +4,14 @@ conflicts:
   category: '!app-crypt'
   description: ""
   license: ""
-  name: mit-krb5
+  name: mit-krb5-appl
   
   version: ""
 - 
   category: '!app-crypt'
   description: ""
   license: ""
-  name: mit-krb5-appl
+  name: mit-krb5
   
   version: ""
 description: Kerberos 5 implementation from KTH
@@ -19,19 +19,40 @@ license: BSD
 name: heimdal
 requires:
 - 
-  category: sys-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: db
+  name: openssl
   
-  version: 4.8.30-r1
+  version: 1.0.1h-r2
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
 - 
   category: sys-libs
   description: ""
   license: ""
-  name: readline
+  name: e2fsprogs-libs
   
-  version: 6.2_p5-r1
+  version: 1.42.9
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: ncurses
+  
+  version: ""
+- 
+  category: net-fs
+  description: ""
+  license: ""
+  name: openafs
+  
+  version: ""
 - 
   category: sec-policy
   description: ""
@@ -47,24 +68,10 @@ requires:
   
   version: 1.10-r1
 - 
-  category: sys-libs
+  category: dev-db
   description: ""
   license: ""
-  name: e2fsprogs-libs
-  
-  version: 1.42.9
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
-  
-  version: 2.3.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
+  name: lmdb
   
   version: ""
 - 
@@ -75,19 +82,12 @@ requires:
   
   version: 3.8.2
 - 
-  category: net-fs
+  category: sys-libs
   description: ""
   license: ""
-  name: openafs
+  name: readline
   
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXt
-  
-  version: ""
+  version: 6.2_p5-r1
 - 
   category: x11-libs
   description: ""
@@ -99,23 +99,16 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXau
+  name: libXt
   
   version: ""
 - 
-  category: dev-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: openssl
+  name: db
   
-  version: 1.0.1h-r2
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: lmdb
-  
-  version: ""
+  version: 4.8.30-r1
 - 
   category: sys-libs
   description: ""
@@ -124,10 +117,17 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: net-nds
   description: ""
   license: ""
-  name: ncurses
+  name: openldap
+  
+  version: 2.3.0
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXau
   
   version: ""
 uri:

@@ -20,61 +20,12 @@ license: Apache-1.1 Apache-2.0 GPL-1 GPL-2 GPL-2-with-linking-exception LGPL-2 M
 name: icedtea
 requires:
 - 
-  category: virtual
-  description: ""
-  license: ""
-  name: ttf-fonts
-  
-  version: ""
-- 
-  category: net-print
-  description: ""
-  license: ""
-  name: cups
-  
-  version: 1.2.12
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: 1.1.3
-- 
   category: dev-util
   description: ""
   license: ""
   name: systemtap
   
   version: "1"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jpeg
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: krb5
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: pcsc-lite
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: 1.2.3
 - 
   category: media-libs
   description: ""
@@ -83,31 +34,17 @@ requires:
   
   version: "2.9"
 - 
-  category: x11-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: pango
+  name: atk
   
-  version: 1.24.5
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: giflib
-  
-  version: 4.1.6
+  version: 1.30.0
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXext
-  
-  version: 1.1.1
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXcomposite
+  name: gdk-pixbuf
   
   version: ""
 - 
@@ -118,24 +55,17 @@ requires:
   
   version: "2.26"
 - 
-  category: media-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: alsa-lib
+  name: zlib
   
-  version: "1.0"
+  version: 1.2.3
 - 
-  category: x11-libs
+  category: virtual
   description: ""
   license: ""
-  name: gtk+
-  
-  version: "2.8"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gdk-pixbuf
+  name: krb5
   
   version: ""
 - 
@@ -146,26 +76,19 @@ requires:
   
   version: 3.12.2
 - 
-  category: dev-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: atk
+  name: pango
   
-  version: 1.30.0
+  version: 1.24.5
 - 
-  category: sys-apps
+  category: x11-libs
   description: ""
   license: ""
-  name: baselayout-java
+  name: libXi
   
-  version: 0.1.0-r1
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libpng
-  
-  version: "1.2"
+  version: 1.1.3
 - 
   category: media-libs
   description: ""
@@ -177,16 +100,23 @@ requires:
   category: x11-libs
   description: ""
   license: ""
+  name: gtk+
+  
+  version: "2.8"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: 1.1.3
+- 
+  category: x11-libs
+  description: ""
+  license: ""
   name: libXrender
   
   version: 0.9.4
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-java
-  
-  version: ""
 - 
   category: x11-libs
   description: ""
@@ -202,10 +132,80 @@ requires:
   
   version: 2.5.3
 - 
+  category: virtual
+  description: ""
+  license: ""
+  name: jpeg
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: baselayout-java
+  
+  version: 0.1.0-r1
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: ttf-fonts
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: giflib
+  
+  version: 4.1.6
+- 
   category: net-misc
   description: ""
   license: ""
   name: lksctp-tools
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: alsa-lib
+  
+  version: "1.0"
+- 
+  category: net-print
+  description: ""
+  license: ""
+  name: cups
+  
+  version: 1.2.12
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libpng
+  
+  version: "1.2"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXcomposite
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-java
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: pcsc-lite
   
   version: ""
 - 
@@ -219,9 +219,9 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXi
+  name: libXext
   
-  version: 1.1.3
+  version: 1.1.1
 uri:
 - https://icedtea.classpath.org/download/source/icedtea-.tar.xz
 - https://icedtea.classpath.org/download/drops/icedtea8//openjdk.tar.xz -> icedtea--openjdk-454c6cbb8073.tar.xz

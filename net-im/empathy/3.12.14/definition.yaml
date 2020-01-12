@@ -12,33 +12,12 @@ license: GPL-2 CC-BY-SA-3.0 FDL-1.3 LGPL-2.1
 name: empathy
 requires:
 - 
-  category: media-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: clutter-gtk
+  name: libnotify
   
-  version: 0.90.3
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: dbus-glib
-  
-  version: "0.51"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libcanberra
-  
-  version: "0.25"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libchamplain
-  
-  version: 0.12.1
+  version: "0.7"
 - 
   category: media-libs
   description: ""
@@ -47,12 +26,61 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
+  category: net-libs
   description: ""
   license: ""
-  name: libnotify
+  name: telepathy-farstream
   
-  version: "0.7"
+  version: 0.6.0
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnome-online-accounts
+  
+  version: 3.5.1
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: iso-codes
+  
+  version: "0.35"
+- 
+  category: media-plugins
+  description: ""
+  license: ""
+  name: gst-plugins-v4l2
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: dbus-glib
+  
+  version: "0.51"
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: libsecret
+  
+  version: "0.5"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: cogl
+  
+  version: "1.14"
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gcr
+  
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -68,80 +96,17 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: media-sound
   description: ""
   license: ""
-  name: libgudev
+  name: pulseaudio
   
   version: ""
-- 
-  category: sci-geosciences
-  description: ""
-  license: ""
-  name: geocode-glib
-  
-  version: "3.10"
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnome-online-accounts
-  
-  version: 3.5.1
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: webkit-gtk
-  
-  version: "2.10"
-- 
-  category: net-im
-  description: ""
-  license: ""
-  name: telepathy-logger
-  
-  version: 0.8.0
 - 
   category: x11-libs
   description: ""
   license: ""
   name: libX11
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: iso-codes
-  
-  version: "0.35"
-- 
-  category: gnome-extra
-  description: ""
-  license: ""
-  name: gnome-contacts
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: telepathy-farstream
-  
-  version: 0.6.0
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: telepathy-glib
-  
-  version: 0.23.2
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: pulseaudio
   
   version: ""
 - 
@@ -152,12 +117,54 @@ requires:
   
   version: "2.48"
 - 
-  category: app-crypt
+  category: x11-libs
   description: ""
   license: ""
-  name: libsecret
+  name: gdk-pixbuf
   
-  version: "0.5"
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: 3.9.4
+- 
+  category: net-im
+  description: ""
+  license: ""
+  name: telepathy-connection-managers
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: farstream
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: geoclue
+  
+  version: "2.1"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libchamplain
+  
+  version: 0.12.1
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: cheese
+  
+  version: "3.4"
 - 
   category: media-libs
   description: ""
@@ -180,19 +187,40 @@ requires:
   
   version: ""
 - 
-  category: net-libs
+  category: media-libs
   description: ""
   license: ""
-  name: libsoup
+  name: clutter
+  
+  version: 1.7.14
+- 
+  category: gnome-extra
+  description: ""
+  license: ""
+  name: gnome-contacts
   
   version: ""
 - 
-  category: app-text
+  category: media-libs
   description: ""
   license: ""
-  name: enchant
+  name: libcanberra
   
-  version: "1.2"
+  version: "0.25"
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: webkit-gtk
+  
+  version: "2.10"
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: telepathy-glib
+  
+  version: 0.23.2
 - 
   category: x11-themes
   description: ""
@@ -201,66 +229,38 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: gtk+
-  
-  version: 3.9.4
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pango
-  
-  version: ""
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: gcr
-  
-  version: ""
-- 
-  category: app-misc
-  description: ""
-  license: ""
-  name: geoclue
-  
-  version: "2.1"
-- 
-  category: net-im
-  description: ""
-  license: ""
-  name: telepathy-connection-managers
+  name: libgee
   
   version: ""
 - 
   category: net-libs
   description: ""
   license: ""
-  name: farstream
+  name: libsoup
   
   version: ""
 - 
-  category: media-libs
+  category: sci-geosciences
   description: ""
   license: ""
-  name: clutter
+  name: geocode-glib
   
-  version: 1.7.14
+  version: "3.10"
 - 
-  category: media-plugins
+  category: dev-libs
   description: ""
   license: ""
-  name: gst-plugins-v4l2
+  name: libgudev
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: gdk-pixbuf
+  name: pango
   
   version: ""
 - 
@@ -271,13 +271,6 @@ requires:
   
   version: 0.9.5
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgee
-  
-  version: ""
-- 
   category: media-libs
   description: ""
   license: ""
@@ -285,19 +278,26 @@ requires:
   
   version: ""
 - 
+  category: net-im
+  description: ""
+  license: ""
+  name: telepathy-logger
+  
+  version: 0.8.0
+- 
   category: media-libs
   description: ""
   license: ""
-  name: cogl
+  name: clutter-gtk
   
-  version: "1.14"
+  version: 0.90.3
 - 
-  category: media-video
+  category: app-text
   description: ""
   license: ""
-  name: cheese
+  name: enchant
   
-  version: "3.4"
+  version: "1.2"
 uri: []
 use_flags:
 - debug

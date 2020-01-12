@@ -5,31 +5,24 @@ license: GPL-2
 name: zabbix
 requires:
 - 
-  category: dev-db
-  description: ""
-  license: ""
-  name: postgresql
-  
-  version: "8.1"
-- 
-  category: net-analyzer
-  description: ""
-  license: ""
-  name: fping
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libevent
-  
-  version: ""
-- 
   category: net-analyzer
   description: ""
   license: ""
   name: net-snmp
+  
+  version: ""
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
   
   version: ""
 - 
@@ -40,10 +33,31 @@ requires:
   
   version: 3.3.5
 - 
+  category: dev-db
+  description: ""
+  license: ""
+  name: postgresql
+  
+  version: "8.1"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libssh2
+  
+  version: ""
+- 
   category: sys-libs
   description: ""
   license: ""
-  name: openipmi
+  name: zlib
   
   version: ""
 - 
@@ -57,7 +71,7 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libpcre
+  name: libevent
   
   version: ""
 - 
@@ -68,38 +82,24 @@ requires:
   
   version: "1.4"
 - 
-  category: dev-lang
+  category: dev-libs
   description: ""
   license: ""
-  name: php
+  name: cyrus-sasl
   
-  version: 5.4.0
+  version: "2"
 - 
-  category: net-nds
+  category: dev-db
   description: ""
   license: ""
-  name: openldap
+  name: oracle-instantclient-basic
   
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: mysql
-  
-  version: 5.0.3
+  version: 10.0.0.0
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libxml2
-  
-  version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: curl
+  name: iksemel
   
   version: ""
 - 
@@ -110,10 +110,17 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: virtual
   description: ""
   license: ""
-  name: zlib
+  name: mysql
+  
+  version: 5.0.3
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: unixODBC
   
   version: ""
 - 
@@ -131,47 +138,40 @@ requires:
   
   version: ""
 - 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: openipmi
+  
+  version: ""
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: fping
+  
+  version: ""
+- 
   category: dev-libs
   description: ""
   license: ""
-  name: cyrus-sasl
-  
-  version: "2"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: iksemel
+  name: libpcre
   
   version: ""
 - 
-  category: net-libs
+  category: dev-lang
   description: ""
   license: ""
-  name: libssh2
+  name: php
   
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: unixODBC
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnutls
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: oracle-instantclient-basic
-  
-  version: 10.0.0.0
+  version: 5.4.0
 uri:
 - https://downloads.sourceforge.net/project/zabbix/ZABBIX%20Latest%20Stable/4.0.13/zabbix-4.0.13.tar.gz
 use_flags:

@@ -6,19 +6,19 @@ license: GPL-2
 name: openvpn
 requires:
 - 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: net-tools
+  
+  version: 1.60_p20160215155418
+- 
   category: dev-libs
   description: ""
   license: ""
-  name: libressl
+  name: openssl
   
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: mbedtls
-  
-  version: ""
+  version: 0.9.8
 - 
   category: app-arch
   description: ""
@@ -26,6 +26,20 @@ requires:
   name: lz4
   
   version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-openvpn
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: lzo
+  
+  version: "1.07"
 - 
   category: dev-libs
   description: ""
@@ -48,13 +62,6 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: net-tools
-  
-  version: 1.60_p20160215155418
-- 
   category: sys-libs
   description: ""
   license: ""
@@ -62,26 +69,19 @@ requires:
   
   version: ""
 - 
-  category: sec-policy
+  category: dev-libs
   description: ""
   license: ""
-  name: selinux-openvpn
+  name: libressl
   
   version: ""
 - 
-  category: dev-libs
+  category: net-libs
   description: ""
   license: ""
-  name: openssl
+  name: mbedtls
   
-  version: 0.9.8
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: lzo
-  
-  version: "1.07"
+  version: ""
 uri:
 - https://swupdate.openvpn.net/community/releases/openvpn-2.4.6.tar.gz
 use_flags:

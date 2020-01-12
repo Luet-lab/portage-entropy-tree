@@ -5,12 +5,47 @@ license: GPL-2
 name: nut
 requires:
 - 
-  category: sec-policy
+  category: virtual
   description: ""
   license: ""
-  name: selinux-nut
+  name: udev
   
   version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gd
+  
+  version: "2"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: freeipmi
+  
+  version: ""
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: net-snmp
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: tcp-wrappers
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: neon
+  
+  version: 0.25.0
 - 
   category: dev-libs
   description: ""
@@ -26,52 +61,17 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: net-dns
   description: ""
   license: ""
-  name: udev
+  name: avahi
   
   version: ""
 - 
-  category: net-analyzer
+  category: sec-policy
   description: ""
   license: ""
-  name: net-snmp
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: "1"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: tcp-wrappers
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: gd
-  
-  version: "2"
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pygtk
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: freeipmi
+  name: selinux-nut
   
   version: ""
 - 
@@ -82,19 +82,19 @@ requires:
   
   version: ""
 - 
-  category: net-libs
+  category: dev-python
   description: ""
   license: ""
-  name: neon
-  
-  version: 0.25.0
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: avahi
+  name: pygtk
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: "1"
 uri:
 - https://networkupstools.org/source/2.7/nut-2.7.4.tar.gz
 use_flags:

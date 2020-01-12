@@ -8,28 +8,35 @@ conflicts:
   
   version: "0.11"
 - 
-  category: '!sys-fs'
-  description: ""
-  license: ""
-  name: lvm-user
-  
-  version: ""
-- 
   category: <sys-fs
   description: ""
   license: ""
   name: cryptsetup
   
   version: 1.1.2
+- 
+  category: '!sys-fs'
+  description: ""
+  license: ""
+  name: lvm-user
+  
+  version: ""
 description: User-land utilities for LVM2 (device-mapper) software
 license: GPL-2
 name: lvm2
 requires:
 - 
-  category: sys-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: readline
+  name: util-linux
+  
+  version: "2.16"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: makedev
   
   version: ""
 - 
@@ -50,9 +57,9 @@ requires:
   category: sys-apps
   description: ""
   license: ""
-  name: util-linux
+  name: baselayout
   
-  version: "2.16"
+  version: "2.2"
 - 
   category: sys-block
   description: ""
@@ -61,17 +68,10 @@ requires:
   
   version: 0.3.0
 - 
-  category: sys-apps
+  category: sys-libs
   description: ""
   license: ""
-  name: baselayout
-  
-  version: "2.2"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: makedev
+  name: readline
   
   version: ""
 uri: []

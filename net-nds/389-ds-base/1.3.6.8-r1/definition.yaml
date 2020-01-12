@@ -5,6 +5,13 @@ license: GPL-3+
 name: 389-ds-base
 requires:
 - 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: db
+  
+  version: ""
+- 
   category: dev-libs
   description: ""
   license: ""
@@ -15,9 +22,9 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: nss
+  name: svrcore
   
-  version: "3.22"
+  version: 4.1.2
 - 
   category: dev-perl
   description: ""
@@ -26,10 +33,59 @@ requires:
   
   version: 1.5.3
 - 
+  category: virtual
+  description: ""
+  license: ""
+  name: perl-MIME-Base64
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: mit-krb5
+  
+  version: 1.7-r100
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: perl-Time-Local
+  
+  version: ""
+- 
+  category: net-analyzer
+  description: ""
+  license: ""
+  name: net-snmp
+  
+  version: 5.1.2
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nspr
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
   category: dev-perl
   description: ""
   license: ""
   name: NetAddr-IP
+  
+  version: ""
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
   
   version: ""
 - 
@@ -50,7 +106,14 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: openssl
+  name: nss
+  
+  version: "3.22"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libpcre
   
   version: ""
 - 
@@ -61,75 +124,12 @@ requires:
   
   version: ""
 - 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: mit-krb5
-  
-  version: 1.7-r100
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: perl-MIME-Base64
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: svrcore
-  
-  version: 4.1.2
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: nspr
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libpcre
-  
-  version: ""
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
-  
-  version: ""
-- 
   category: sec-policy
   description: ""
   license: ""
   name: selinux-dirsrv
   
   version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: perl-Time-Local
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: db
-  
-  version: ""
-- 
-  category: net-analyzer
-  description: ""
-  license: ""
-  name: net-snmp
-  
-  version: 5.1.2
 uri:
 - http://www.port389.org/sources/389-ds-base-1.3.6.8.tar.bz2
 use_flags:

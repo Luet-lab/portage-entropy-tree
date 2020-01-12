@@ -5,10 +5,17 @@ license: GPL-2
 name: mixxx
 requires:
 - 
-  category: dev-db
+  category: dev-qt
   description: ""
   license: ""
-  name: sqlite
+  name: qtsvg
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtxml
   
   version: ""
 - 
@@ -22,91 +29,21 @@ requires:
   category: dev-qt
   description: ""
   license: ""
-  name: qtconcurrent
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtgui
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtxml
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtdbus
+  name: qtcore
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: lilv
-  
-  version: 0.24.2-r3
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: wavpack
+  name: taglib
   
   version: ""
 - 
-  category: dev-qt
+  category: sci-libs
   description: ""
   license: ""
-  name: qtsql
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: chromaprint
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libid3tag
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libsoundtouch
-  
-  version: "1.5"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: faad2
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: vamp-plugin-sdk
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libmad
+  name: fftw
   
   version: ""
 - 
@@ -117,17 +54,10 @@ requires:
   
   version: ""
 - 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtsvg
-  
-  version: ""
-- 
   category: media-libs
   description: ""
   license: ""
-  name: flac
+  name: libsndfile
   
   version: ""
 - 
@@ -145,31 +75,24 @@ requires:
   
   version: ""
 - 
-  category: dev-qt
+  category: media-libs
   description: ""
   license: ""
-  name: qtcore
+  name: libmp4v2
   
   version: ""
 - 
-  category: dev-qt
+  category: media-libs
   description: ""
   license: ""
-  name: qtopengl
+  name: libmad
   
   version: ""
 - 
-  category: dev-qt
+  category: media-sound
   description: ""
   license: ""
-  name: qtnetwork
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: hidapi
+  name: wavpack
   
   version: ""
 - 
@@ -180,24 +103,17 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: dev-db
   description: ""
   license: ""
-  name: opengl
+  name: sqlite
   
   version: ""
 - 
-  category: "(\tmedia-libs"
+  category: dev-qt
   description: ""
   license: ""
-  name: opusfile
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libshout
+  name: qtgui
   
   version: ""
 - 
@@ -208,24 +124,17 @@ requires:
   
   version: ""
 - 
-  category: dev-qt
+  category: media-libs
   description: ""
   license: ""
-  name: qtwidgets
+  name: libid3tag
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libogg
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: taglib
+  name: vamp-plugin-sdk
   
   version: ""
 - 
@@ -233,6 +142,20 @@ requires:
   description: ""
   license: ""
   name: libusb
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtdbus
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtwidgets
   
   version: ""
 - 
@@ -253,7 +176,56 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libmp4v2
+  name: lilv
+  
+  version: 0.24.2-r3
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtconcurrent
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: chromaprint
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: flac
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libogg
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libsoundtouch
+  
+  version: "1.5"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: hidapi
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libshout
   
   version: ""
 - 
@@ -264,10 +236,31 @@ requires:
   
   version: ""
 - 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtsql
+  
+  version: ""
+- 
   category: media-libs
   description: ""
   license: ""
-  name: libsndfile
+  name: faad2
+  
+  version: ""
+- 
+  category: "(\tmedia-libs"
+  description: ""
+  license: ""
+  name: opusfile
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtopengl
   
   version: ""
 - 
@@ -285,10 +278,17 @@ requires:
   
   version: ""
 - 
-  category: sci-libs
+  category: virtual
   description: ""
   license: ""
-  name: fftw
+  name: opengl
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtnetwork
   
   version: ""
 uri: []

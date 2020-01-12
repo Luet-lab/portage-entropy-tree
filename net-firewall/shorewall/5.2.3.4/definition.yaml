@@ -4,7 +4,21 @@ conflicts:
   category: net-firewall
   description: ""
   license: ""
+  name: shorewall-core
+  
+  version: ""
+- 
+  category: net-firewall
+  description: ""
+  license: ""
   name: shorewall6
+  
+  version: ""
+- 
+  category: net-firewall
+  description: ""
+  license: ""
+  name: shorewall-lite
   
   version: ""
 - 
@@ -15,20 +29,6 @@ conflicts:
   
   version: ""
 - 
-  category: <sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: "214"
-- 
-  category: net-firewall
-  description: ""
-  license: ""
-  name: shorewall-core
-  
-  version: ""
-- 
   category: net-firewall
   description: ""
   license: ""
@@ -36,16 +36,23 @@ conflicts:
   
   version: ""
 - 
-  category: net-firewall
+  category: <sys-apps
   description: ""
   license: ""
-  name: shorewall-lite
+  name: systemd
   
-  version: ""
+  version: "214"
 description: A high-level tool for configuring Netfilter
 license: GPL-2
 name: shorewall
 requires:
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: iproute2
+  
+  version: 3.8.0
 - 
   category: sec-policy
   description: ""
@@ -61,12 +68,19 @@ requires:
   
   version: 1.4.20
 - 
-  category: sys-apps
+  category: dev-perl
   description: ""
   license: ""
-  name: iproute2
+  name: Socket6
   
-  version: 3.8.0
+  version: 0.230.0
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: bc
+  
+  version: 1.06.95
 - 
   category: dev-lang
   description: ""
@@ -81,20 +95,6 @@ requires:
   name: perl-Digest-SHA
   
   version: ""
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: bc
-  
-  version: 1.06.95
-- 
-  category: dev-perl
-  description: ""
-  license: ""
-  name: Socket6
-  
-  version: 0.230.0
 - 
   category: sys-apps
   description: ""

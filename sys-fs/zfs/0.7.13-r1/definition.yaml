@@ -4,23 +4,23 @@ conflicts:
   category: <sys-kernel
   description: ""
   license: ""
-  name: dracut
+  name: genkernel
   
-  version: 044-r1
+  version: 3.5.1.1
 - 
-  category: =sys-apps
+  category: sys-fs
   description: ""
   license: ""
-  name: grep-2.13*
+  name: zfs-fuse
   
   version: ""
 - 
-  category: <sys-boot
+  category: <sys-kernel
   description: ""
   license: ""
-  name: grub
+  name: dracut
   
-  version: 2.00-r2
+  version: 044-r1
 - 
   category: <sys-kernel
   description: ""
@@ -29,12 +29,12 @@ conflicts:
   
   version: 7.1.0
 - 
-  category: <sys-kernel
+  category: =sys-apps
   description: ""
   license: ""
-  name: genkernel
+  name: grep-2.13*
   
-  version: 3.5.1.1
+  version: ""
 - 
   category: <sys-kernel
   description: ""
@@ -43,42 +43,21 @@ conflicts:
   
   version: "67"
 - 
-  category: sys-fs
+  category: <sys-boot
   description: ""
   license: ""
-  name: zfs-fuse
+  name: grub
   
-  version: ""
+  version: 2.00-r2
 description: Userland utilities for ZFS Linux kernel module
 license: BSD-2 CDDL MIT
 name: zfs
 requires:
 - 
-  category: app-misc
-  description: ""
-  license: ""
-  name: pax-utils
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: udev-init-scripts
-  
-  version: ""
-- 
   category: virtual
   description: ""
   license: ""
   name: modutils
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: mdadm
   
   version: ""
 - 
@@ -89,31 +68,10 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: sys-fs
   description: ""
   license: ""
-  name: awk
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: udev
-  
-  version: ""
-- 
-  category: sys-block
-  description: ""
-  license: ""
-  name: parted
+  name: mdadm
   
   version: ""
 - 
@@ -124,6 +82,48 @@ requires:
   
   version: ""
 - 
+  category: app-misc
+  description: ""
+  license: ""
+  name: pax-utils
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: awk
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: ""
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: bc
+  
+  version: ""
+- 
+  category: sys-block
+  description: ""
+  license: ""
+  name: parted
+  
+  version: ""
+- 
   category: sys-process
   description: ""
   license: ""
@@ -131,10 +131,10 @@ requires:
   
   version: ""
 - 
-  category: net-libs
+  category: sys-fs
   description: ""
   license: ""
-  name: libtirpc
+  name: udev-init-scripts
   
   version: ""
 - 
@@ -145,10 +145,10 @@ requires:
   
   version: 0.7.13
 - 
-  category: sys-devel
+  category: net-libs
   description: ""
   license: ""
-  name: bc
+  name: libtirpc
   
   version: ""
 uri:

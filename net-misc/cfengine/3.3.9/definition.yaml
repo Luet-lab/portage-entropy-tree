@@ -7,17 +7,17 @@ license: GPL-3
 name: cfengine
 requires:
 - 
-  category: dev-db
+  category: virtual
   description: ""
   license: ""
-  name: tokyocabinet
+  name: mysql
   
   version: ""
 - 
   category: dev-db
   description: ""
   license: ""
-  name: qdbm
+  name: postgresql
   
   version: ""
 - 
@@ -35,31 +35,24 @@ requires:
   
   version: ""
 - 
-  category: net-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: libnsl
+  name: db
   
-  version: ""
+  version: "4"
 - 
-  category: virtual
+  category: dev-db
   description: ""
   license: ""
-  name: mysql
+  name: tokyocabinet
   
   version: ""
 - 
   category: dev-db
   description: ""
   license: ""
-  name: postgresql
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
+  name: qdbm
   
   version: ""
 - 
@@ -70,12 +63,19 @@ requires:
   
   version: 0.9.7
 - 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libnsl
+  
+  version: ""
+- 
   category: sys-libs
   description: ""
   license: ""
-  name: db
+  name: libselinux
   
-  version: "4"
+  version: ""
 uri:
 - http://cfengine.com/source-code/download?file=cfengine-3.3.9.tar.gz -> cfengine-3.3.9.tar.gz
 use_flags:

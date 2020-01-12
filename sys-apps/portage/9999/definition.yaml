@@ -12,13 +12,6 @@ license: GPL-2
 name: portage
 requires:
 - 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: gnupg-2.2.4-r2[ssl(-)]
-  
-  version: ""
-- 
   category: sys-freebsd
   description: ""
   license: ""
@@ -26,10 +19,31 @@ requires:
   
   version: ""
 - 
-  category: app-shells
+  category: sys-apps
   description: ""
   license: ""
-  name: bash
+  name: sandbox
+  
+  version: "2.2"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: 2.0.94
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gnupg-2.2.4-r2[ssl(-)]
   
   version: ""
 - 
@@ -40,33 +54,19 @@ requires:
   
   version: "14"
 - 
-  category: sys-apps
+  category: dev-lang
   description: ""
   license: ""
-  name: sed
+  name: python-exec
   
-  version: 4.0.5
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: openpgp-keys-gentoo-release
-  
-  version: "20180706"
+  version: ""
 - 
   category: sys-apps
   description: ""
   license: ""
-  name: sandbox
+  name: install-xattr
   
-  version: "2.2"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: 2.0.94
+  version: "0.3"
 - 
   category: app-arch
   description: ""
@@ -75,10 +75,10 @@ requires:
   
   version: "1.27"
 - 
-  category: dev-lang
+  category: app-shells
   description: ""
   license: ""
-  name: python-exec
+  name: bash
   
   version: ""
 - 
@@ -89,12 +89,12 @@ requires:
   
   version: "1.2"
 - 
-  category: sys-apps
+  category: app-crypt
   description: ""
   license: ""
-  name: util-linux
+  name: openpgp-keys-gentoo-release
   
-  version: ""
+  version: "20180706"
 - 
   category: app-misc
   description: ""
@@ -106,9 +106,9 @@ requires:
   category: sys-apps
   description: ""
   license: ""
-  name: install-xattr
+  name: sed
   
-  version: "0.3"
+  version: 4.0.5
 uri: []
 use_flags:
 - build

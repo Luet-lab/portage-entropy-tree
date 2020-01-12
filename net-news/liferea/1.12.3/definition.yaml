@@ -5,12 +5,19 @@ license: GPL-2+
 name: liferea
 requires:
 - 
-  category: x11-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: gtk+
+  name: gobject-introspection
   
   version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libsoup
+  
+  version: "2.42"
 - 
   category: x11-libs
   description: ""
@@ -22,30 +29,9 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: glib
+  name: libxml2
   
-  version: 2.28.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: gobject-introspection
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: json-glib
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libpeas
-  
-  version: 1.0.0
+  version: 2.6.27
 - 
   category: dev-libs
   description: ""
@@ -53,6 +39,13 @@ requires:
   name: libxslt
   
   version: 1.1.19
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gsettings-desktop-schemas
+  
+  version: ""
 - 
   category: net-libs
   description: ""
@@ -71,23 +64,30 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libxml2
+  name: glib
   
-  version: 2.6.27
+  version: 2.28.0
 - 
-  category: gnome-base
+  category: dev-libs
   description: ""
   license: ""
-  name: gsettings-desktop-schemas
+  name: json-glib
   
   version: ""
 - 
-  category: net-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libsoup
+  name: libpeas
   
-  version: "2.42"
+  version: 1.0.0
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: ""
 uri:
 - https://github.com/lwindolf/liferea/releases/download/v1.12.3/liferea-1.12.3.tar.bz2
 use_flags:

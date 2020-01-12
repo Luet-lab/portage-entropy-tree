@@ -4,7 +4,7 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mysql-connector-c
+  name: mysql[client-libs(+)]
   
   version: ""
 - 
@@ -18,21 +18,7 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mysql[client-libs(+)]
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mariadb[client-libs(+)]
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mysql-cluster[client-libs(+)]
+  name: mariadb-galera[client-libs(+)]
   
   version: ""
 - 
@@ -46,7 +32,21 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mariadb-galera[client-libs(+)]
+  name: mariadb[client-libs(+)]
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-cluster[client-libs(+)]
   
   version: ""
 description: C client library for MariaDB/MySQL
@@ -54,10 +54,10 @@ license: LGPL-2.1
 name: mariadb-connector-c
 requires:
 - 
-  category: sys-libs
+  category: virtual
   description: ""
   license: ""
-  name: zlib
+  name: libiconv
   
   version: ""
 - 
@@ -75,20 +75,6 @@ requires:
   
   version: ""
 - 
-  category: virtual
-  description: ""
-  license: ""
-  name: libiconv
-  
-  version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: curl
-  
-  version: ""
-- 
   category: app-crypt
   description: ""
   license: ""
@@ -102,6 +88,20 @@ requires:
   name: gnutls
   
   version: 3.3.24
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
+  
+  version: ""
 uri:
 - https://downloads.mariadb.org/f/connector-c-3.0.6/mariadb-connector-c-3.0.6-src.tar.gz?serve
   -> mariadb-connector-c-3.0.6-src.tar.gz

@@ -1,6 +1,13 @@
 category: sys-apps
 conflicts:
 - 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: nss-myhostname
+  
+  version: ""
+- 
   category: sys-fs
   description: ""
   license: ""
@@ -22,13 +29,6 @@ conflicts:
   
   version: ""
 - 
-  category: <sys-kernel
-  description: ""
-  license: ""
-  name: dracut
-  
-  version: "044"
-- 
   category: <sys-libs
   description: ""
   license: ""
@@ -36,21 +36,28 @@ conflicts:
   
   version: "2.16"
 - 
-  category: sys-auth
+  category: <sys-kernel
   description: ""
   license: ""
-  name: nss-myhostname
+  name: dracut
   
-  version: ""
+  version: "044"
 description: System and service manager for Linux
 license: GPL-2 LGPL-2.1 MIT public-domain
 name: systemd
 requires:
 - 
-  category: sys-libs
+  category: net-firewall
   description: ""
   license: ""
-  name: libapparmor
+  name: iptables
+  
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: systemd-timesync
   
   version: ""
 - 
@@ -61,45 +68,80 @@ requires:
   
   version: "2.30"
 - 
+  category: media-gfx
+  description: ""
+  license: ""
+  name: qrencode
+  
+  version: ""
+- 
   category: acct-group
   description: ""
   license: ""
-  name: dialout
+  name: input
   
   version: ""
 - 
-  category: net-firewall
+  category: acct-user
   description: ""
   license: ""
-  name: iptables
+  name: systemd-network
   
   version: ""
 - 
-  category: sys-fs
+  category: net-libs
   description: ""
   license: ""
-  name: cryptsetup
+  name: gnutls
   
-  version: 2.0.1
+  version: 3.1.4
 - 
-  category: app-arch
+  category: sys-apps
   description: ""
   license: ""
-  name: lz4
+  name: kmod
   
-  version: 0_p131
+  version: "15"
 - 
-  category: dev-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: libpcre2
+  name: libseccomp
   
-  version: ""
+  version: 2.3.3
 - 
   category: acct-group
   description: ""
   license: ""
   name: kmem
+  
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: systemd-coredump
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-base-policy
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libmicrohttpd
+  
+  version: 0.9.33
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: tty
   
   version: ""
 - 
@@ -113,7 +155,28 @@ requires:
   category: acct-group
   description: ""
   license: ""
-  name: tape
+  name: dialout
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux[kill(-)]
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: systemd-journal
+  
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: systemd-journal-remote
   
   version: ""
 - 
@@ -124,12 +187,19 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: sys-fs
   description: ""
   license: ""
-  name: libseccomp
+  name: cryptsetup
   
-  version: 2.3.3
+  version: 2.0.1
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: libidn2
+  
+  version: ""
 - 
   category: sys-libs
   description: ""
@@ -145,97 +215,6 @@ requires:
   
   version: ""
 - 
-  category: acct-user
-  description: ""
-  license: ""
-  name: systemd-journal-remote
-  
-  version: ""
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: libidn2
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: video
-  
-  version: ""
-- 
-  category: acct-user
-  description: ""
-  license: ""
-  name: systemd-timesync
-  
-  version: ""
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: audit
-  
-  version: "2"
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: bzip2
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxkbcommon
-  
-  version: 0.4.1
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: kmod
-  
-  version: "15"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: elfutils
-  
-  version: "0.158"
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnutls
-  
-  version: 3.1.4
-- 
-  category: acct-user
-  description: ""
-  license: ""
-  name: systemd-resolve
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: baselayout
-  
-  version: "2.2"
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: input
-  
-  version: ""
-- 
   category: acct-group
   description: ""
   license: ""
@@ -246,56 +225,7 @@ requires:
   category: sys-apps
   description: ""
   license: ""
-  name: coreutils[kill(-)]
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
   name: acl
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: xz-utils
-  
-  version: 5.0.5-r1
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: sysvinit
-  
-  version: ""
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: procps[kill(+)]
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libmicrohttpd
-  
-  version: 0.9.33
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: kvm
   
   version: ""
 - 
@@ -306,26 +236,47 @@ requires:
   
   version: ""
 - 
-  category: acct-user
+  category: acct-group
   description: ""
   license: ""
-  name: systemd-coredump
+  name: tape
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgcrypt
+  
+  version: 1.4.5
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxkbcommon
+  
+  version: 0.4.1
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: kvm
   
   version: ""
 - 
   category: acct-group
   description: ""
   license: ""
-  name: systemd-journal
+  name: video
   
   version: ""
 - 
-  category: acct-group
+  category: sys-process
   description: ""
   license: ""
-  name: utmp
+  name: audit
   
-  version: ""
+  version: "2"
 - 
   category: sys-libs
   description: ""
@@ -334,33 +285,19 @@ requires:
   
   version: ""
 - 
-  category: acct-group
+  category: sys-process
   description: ""
   license: ""
-  name: tty
+  name: procps[kill(+)]
   
   version: ""
 - 
-  category: media-gfx
+  category: app-arch
   description: ""
   license: ""
-  name: qrencode
+  name: xz-utils
   
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: wheel
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnutls
-  
-  version: 3.5.3
+  version: 5.0.5-r1
 - 
   category: acct-group
   description: ""
@@ -372,37 +309,100 @@ requires:
   category: acct-group
   description: ""
   license: ""
-  name: disk
-  
-  version: ""
-- 
-  category: acct-user
-  description: ""
-  license: ""
-  name: systemd-network
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-base-policy
+  name: wheel
   
   version: ""
 - 
   category: sys-apps
   description: ""
   license: ""
-  name: util-linux[kill(-)]
+  name: baselayout
+  
+  version: "2.2"
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: lz4
+  
+  version: 0_p131
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libapparmor
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: 3.5.3
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: bzip2
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libgcrypt
+  name: libpcre2
   
-  version: 1.4.5
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: disk
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: sysvinit
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: utmp
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: elfutils
+  
+  version: "0.158"
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: systemd-resolve
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: coreutils[kill(-)]
+  
+  version: ""
 uri:
 - https://github.com/systemd/systemd/archive/v244/systemd-244.tar.gz
 use_flags:

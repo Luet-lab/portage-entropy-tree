@@ -5,26 +5,12 @@ license: GPL-2+
 name: cinnamon-settings-daemon
 requires:
 - 
-  category: gnome-base
+  category: dev-libs
   description: ""
   license: ""
-  name: librsvg
+  name: libwacom
   
-  version: 2.36.2
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: fontconfig
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxklavier
-  
-  version: ""
+  version: "0.7"
 - 
   category: x11-drivers
   description: ""
@@ -33,12 +19,12 @@ requires:
   
   version: ""
 - 
-  category: gnome-base
+  category: x11-misc
   description: ""
   license: ""
-  name: libgnomekbd
+  name: colord
   
-  version: "3.6"
+  version: 0.1.27
 - 
   category: x11-libs
   description: ""
@@ -50,58 +36,23 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libgudev
+  name: glib
   
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXi
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libwacom
-  
-  version: "0.7"
+  version: "2.38"
 - 
   category: sys-apps
   description: ""
   license: ""
-  name: systemd
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: nss
-  
-  version: 3.11.2
-- 
-  category: "(\tsys-auth"
-  description: ""
-  license: ""
-  name: elogind
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libcanberra
+  name: dbus
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libX11
+  name: libnotify
   
-  version: ""
+  version: 0.7.3
 - 
   category: x11-libs
   description: ""
@@ -110,10 +61,52 @@ requires:
   
   version: ""
 - 
+  category: media-libs
+  description: ""
+  license: ""
+  name: lcms
+  
+  version: "2.2"
+- 
   category: x11-libs
   description: ""
   license: ""
-  name: libXfixes
+  name: libXi
+  
+  version: ""
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: librsvg
+  
+  version: 2.36.2
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gdk-pixbuf
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: 3.9.10
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgudev
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
   
   version: ""
 - 
@@ -131,6 +124,13 @@ requires:
   
   version: "1.4"
 - 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: libgnomekbd
+  
+  version: "3.6"
+- 
   category: gnome-extra
   description: ""
   license: ""
@@ -138,31 +138,31 @@ requires:
   
   version: 2.8.0
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gdk-pixbuf
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.38"
-- 
   category: media-libs
   description: ""
   license: ""
-  name: lcms
+  name: libcanberra
   
-  version: "2.2"
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXfixes
+  
+  version: ""
 - 
   category: sys-apps
   description: ""
   license: ""
-  name: dbus
+  name: systemd
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
   
   version: ""
 - 
@@ -176,23 +176,23 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libnotify
+  name: libxklavier
   
-  version: 0.7.3
+  version: ""
 - 
-  category: x11-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: gtk+
+  name: nss
   
-  version: 3.9.10
+  version: 3.11.2
 - 
-  category: x11-misc
+  category: "(\tsys-auth"
   description: ""
   license: ""
-  name: colord
+  name: elogind
   
-  version: 0.1.27
+  version: ""
 uri:
 - https://github.com/linuxmint/cinnamon-settings-daemon/archive/4.0.2.tar.gz -> cinnamon-settings-daemon-4.0.2.tar.gz
 use_flags:

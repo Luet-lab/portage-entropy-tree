@@ -5,6 +5,20 @@ license: GPL-2+
 name: cryptsetup
 requires:
 - 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lvm2
+  
+  version: ""
+- 
   category: dev-libs
   description: ""
   license: ""
@@ -12,10 +26,17 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: virtual
   description: ""
   license: ""
-  name: openssl
+  name: libudev[static-libs(-)]
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lvm2[static-libs(+)]
   
   version: ""
 - 
@@ -36,20 +57,6 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: nettle
-  
-  version: "2.4"
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: lvm2
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
   name: libgpg-error[static-libs(+)]
   
   version: ""
@@ -57,56 +64,28 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: popt[static-libs(+)]
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libudev
+  name: openssl
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libressl
+  name: libpwquality[static-libs(+)]
   
   version: ""
 - 
-  category: virtual
+  category: dev-libs
   description: ""
   license: ""
-  name: libudev[static-libs(-)]
+  name: nettle
   
-  version: ""
+  version: "2.4"
 - 
   category: dev-libs
   description: ""
   license: ""
   name: libpwquality
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgcrypt
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: lvm2[static-libs(+)]
   
   version: ""
 - 
@@ -120,7 +99,28 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libpwquality[static-libs(+)]
+  name: libgcrypt
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libudev
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: popt[static-libs(+)]
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
   
   version: ""
 uri:

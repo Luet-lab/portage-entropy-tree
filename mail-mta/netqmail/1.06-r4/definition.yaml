@@ -4,9 +4,23 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
+  name: sendmail
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
   name: postfix
   
   version: ""
+- 
+  category: <mail-mta
+  description: ""
+  license: ""
+  name: ssmtp
+  
+  version: 2.64-r2
 - 
   category: mail-mta
   description: ""
@@ -29,40 +43,12 @@ conflicts:
   
   version: ""
 - 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: courier
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: msmtp
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: sendmail
-  
-  version: ""
-- 
   category: '>=mail-mta'
   description: ""
   license: ""
   name: ssmtp
   
   version: 2.64-r2
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: esmtp
-  
-  version: ""
 - 
   category: mail-mta
   description: ""
@@ -74,25 +60,46 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
+  name: courier
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
 mailer
   
   version: ""
 - 
-  category: <mail-mta
+  category: mail-mta
   description: ""
   license: ""
-  name: ssmtp
+  name: esmtp
   
-  version: 2.64-r2
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: msmtp
+  
+  version: ""
 description: qmail -- a secure, reliable, efficient, simple message transfer agent
 license: public-domain
 name: netqmail
 requires:
 - 
-  category: sys-apps
+  category: net-mail
   description: ""
   license: ""
-  name: groff
+  name: dot-forward
+  
+  version: 0.71-r3
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
   
   version: ""
 - 
@@ -103,20 +110,6 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: gentoo-functions
-  
-  version: ""
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: dot-forward
-  
-  version: 0.71-r3
-- 
   category: net-mail
   description: ""
   license: ""
@@ -124,10 +117,10 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: acct-user
   description: ""
   license: ""
-  name: libressl
+  name: qmails
   
   version: ""
 - 
@@ -138,33 +131,33 @@ requires:
   
   version: 0.70-r1
 - 
+  category: virtual
+  description: ""
+  license: ""
+  name: daemontools
+  
+  version: ""
+- 
   category: acct-user
   description: ""
   license: ""
-  name: qmails
+  name: qmailq
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: openssl
+  name: libressl
   
   version: ""
 - 
-  category: virtual
+  category: net-mail
   description: ""
   license: ""
-  name: checkpassword
+  name: cmd5checkpw
   
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: qmail
-  
-  version: ""
+  version: "0.30"
 - 
   category: acct-group
   description: ""
@@ -180,27 +173,6 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: ucspi-tcp
-  
-  version: 0.88-r17
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: cmd5checkpw
-  
-  version: "0.30"
-- 
-  category: acct-user
-  description: ""
-  license: ""
-  name: qmaill
-  
-  version: ""
-- 
   category: acct-user
   description: ""
   license: ""
@@ -208,10 +180,10 @@ requires:
   
   version: ""
 - 
-  category: acct-user
+  category: acct-group
   description: ""
   license: ""
-  name: qmailq
+  name: qmail
   
   version: ""
 - 
@@ -225,7 +197,35 @@ requires:
   category: virtual
   description: ""
   license: ""
-  name: daemontools
+  name: checkpassword
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: gentoo-functions
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: ucspi-tcp
+  
+  version: 0.88-r17
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: qmaill
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: groff
   
   version: ""
 uri:

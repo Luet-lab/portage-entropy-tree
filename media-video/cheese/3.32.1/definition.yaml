@@ -5,40 +5,33 @@ license: GPL-2+
 name: cheese
 requires:
 - 
-  category: media-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: clutter-gst
+  name: libX11
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXtst
   
   version: ""
 - 
   category: media-plugins
   description: ""
   license: ""
-  name: gst-plugins-vpx
+  name: gst-plugins-v4l2
   
   version: "1.4"
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: gobject-introspection
+  name: glib
   
-  version: 0.6.7
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gnome-desktop
-  
-  version: 2.91.6
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libcanberra
-  
-  version: "0.26"
+  version: 2.39.90
 - 
   category: media-libs
   description: ""
@@ -54,26 +47,33 @@ requires:
   
   version: "1.4"
 - 
-  category: dev-libs
+  category: media-plugins
   description: ""
   license: ""
-  name: glib
+  name: gst-plugins-vpx
   
-  version: 2.39.90
+  version: "1.4"
 - 
-  category: x11-libs
+  category: media-libs
   description: ""
   license: ""
-  name: libX11
+  name: clutter-gst
   
   version: ""
 - 
-  category: x11-libs
+  category: media-video
   description: ""
   license: ""
-  name: libXtst
+  name: gnome-video-effects
   
   version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libcanberra
+  
+  version: "0.26"
 - 
   category: media-libs
   description: ""
@@ -89,19 +89,19 @@ requires:
   
   version: "1.4"
 - 
-  category: media-plugins
+  category: gnome-base
   description: ""
   license: ""
-  name: gst-plugins-v4l2
+  name: gnome-desktop
   
-  version: "1.4"
+  version: 2.91.6
 - 
-  category: media-video
+  category: dev-libs
   description: ""
   license: ""
-  name: gnome-video-effects
+  name: gobject-introspection
   
-  version: ""
+  version: 0.6.7
 uri: []
 use_flags:
 - +introspection

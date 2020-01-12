@@ -5,38 +5,31 @@ license: GPL-2
 name: consolekit
 requires:
 - 
-  category: dev-libs
+  category: virtual
   description: ""
   license: ""
-  name: glib
+  name: udev
   
-  version: "2.40"
+  version: "200"
 - 
   category: sys-libs
   description: ""
   license: ""
-  name: zlib
+  name: libnih
+  
+  version: 1.0.2
+- 
+  category: sys-power
+  description: ""
+  license: ""
+  name: pm-utils
   
   version: ""
 - 
-  category: sys-auth
+  category: app-admin
   description: ""
   license: ""
-  name: polkit
-  
-  version: "0.110"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: coreutils[acl?]
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
+  name: cgmanager
   
   version: ""
 - 
@@ -47,10 +40,38 @@ requires:
   
   version: "0.19"
 - 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
   category: sys-apps
   description: ""
   license: ""
   name: acl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libevdev
   
   version: ""
 - 
@@ -68,12 +89,26 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: sys-auth
   description: ""
   license: ""
-  name: pam
+  name: polkit
+  
+  version: "0.110"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: coreutils[acl?]
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.40"
 - 
   category: sys-apps
   description: ""
@@ -82,45 +117,10 @@ requires:
   
   version: ""
 - 
-  category: app-admin
-  description: ""
-  license: ""
-  name: cgmanager
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
-  name: libnih
-  
-  version: 1.0.2
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: udev
-  
-  version: "200"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libevdev
-  
-  version: ""
-- 
-  category: sys-power
-  description: ""
-  license: ""
-  name: pm-utils
+  name: zlib
   
   version: ""
 - 

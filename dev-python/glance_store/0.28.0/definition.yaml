@@ -12,19 +12,40 @@ license: Apache-2.0
 name: glance_store
 requires:
 - 
-  category: dev-python
+  category: virtual
   description: ""
   license: ""
-  name: pbr
+  name: python-enum34
   
-  version: "1.8"
+  version: ""
 - 
   category: dev-python
   description: ""
   license: ""
-  name: oslo-i18n
+  name: eventlet
   
-  version: 3.15.3
+  version: 0.18.4
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: jsonschema
+  
+  version: 3.0.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: python-keystoneclient
+  
+  version: 3.8.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: python-cinderclient
+  
+  version: 3.3.0
 - 
   category: dev-python
   description: ""
@@ -36,6 +57,20 @@ requires:
   category: dev-python
   description: ""
   license: ""
+  name: oslo-concurrency
+  
+  version: 3.26.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: keystoneauth
+  
+  version: 3.4.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
   name: httplib2
   
   version: 0.9.1
@@ -43,9 +78,9 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: oslo-config
+  name: oslo-serialization
   
-  version: 5.2.0
+  version: 1.18.0
 - 
   category: dev-python
   description: ""
@@ -71,16 +106,23 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: jsonschema
+  name: python-swiftclient
   
-  version: 3.0.0
+  version: 3.2.0
 - 
   category: dev-python
   description: ""
   license: ""
-  name: keystoneauth
+  name: pbr
   
-  version: 3.4.0
+  version: "1.8"
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: oslo-i18n
+  
+  version: 3.15.3
 - 
   category: dev-python
   description: ""
@@ -92,20 +134,6 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: oslo-concurrency
-  
-  version: 3.26.0
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: python-enum34
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
   name: six
   
   version: 1.10.0
@@ -113,9 +141,9 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: python-cinderclient
+  name: requests
   
-  version: 3.3.0
+  version: 2.14.2
 - 
   category: dev-python
   description: ""
@@ -134,44 +162,16 @@ requires:
   category: dev-python
   description: ""
   license: ""
-  name: python-swiftclient
-  
-  version: 3.2.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: oslo-serialization
-  
-  version: 1.18.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: eventlet
-  
-  version: 0.18.4
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: python-keystoneclient
-  
-  version: 3.8.0
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: requests
-  
-  version: 2.14.2
-- 
-  category: dev-python
-  description: ""
-  license: ""
   name: oslo-vmware
   
   version: 2.17.0
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: oslo-config
+  
+  version: 5.2.0
 uri:
 - mirror://pypi/g/glance_store/glance_store-0.28.0.tar.gz
 use_flags:

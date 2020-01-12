@@ -5,13 +5,6 @@ license: Apache-2.0
 name: docker
 requires:
 - 
-  category: app-emulation
-  description: ""
-  license: ""
-  name: containerd
-  
-  version: 1.2.10
-- 
   category: sys-libs
   description: ""
   license: ""
@@ -19,12 +12,19 @@ requires:
   
   version: 2.2.1
 - 
-  category: sys-process
+  category: sys-libs
   description: ""
   license: ""
-  name: procps
+  name: libapparmor
   
   version: ""
+- 
+  category: net-firewall
+  description: ""
+  license: ""
+  name: iptables
+  
+  version: "1.4"
 - 
   category: dev-vcs
   description: ""
@@ -47,13 +47,6 @@ requires:
   
   version: ""
 - 
-  category: app-emulation
-  description: ""
-  license: ""
-  name: docker-proxy
-  
-  version: 0.8.0_p20191011
-- 
   category: sys-process
   description: ""
   license: ""
@@ -75,19 +68,26 @@ requires:
   
   version: 2.02.89
 - 
-  category: sys-libs
+  category: sys-process
   description: ""
   license: ""
-  name: libapparmor
+  name: procps
   
   version: ""
 - 
-  category: net-firewall
+  category: app-emulation
   description: ""
   license: ""
-  name: iptables
+  name: containerd
   
-  version: "1.4"
+  version: 1.2.10
+- 
+  category: app-emulation
+  description: ""
+  license: ""
+  name: docker-proxy
+  
+  version: 0.8.0_p20191011
 uri:
 - https://github.com/docker/docker-ce/archive/v19.03.5.tar.gz -> docker-19.03.5.tar.gz
 use_flags:

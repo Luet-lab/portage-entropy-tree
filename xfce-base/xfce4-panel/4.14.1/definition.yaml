@@ -5,12 +5,19 @@ license: GPL-2+ LGPL-2.1+
 name: xfce4-panel
 requires:
 - 
+  category: xfce-base
+  description: ""
+  license: ""
+  name: xfconf
+  
+  version: "4.13"
+- 
   category: x11-libs
   description: ""
   license: ""
-  name: cairo
+  name: gtk+
   
-  version: "1"
+  version: "2.20"
 - 
   category: x11-libs
   description: ""
@@ -36,23 +43,9 @@ requires:
   category: xfce-base
   description: ""
   license: ""
-  name: xfconf
+  name: libxfce4ui
   
   version: "4.13"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: "2.20"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: gobject-introspection
-  
-  version: ""
 - 
   category: dev-libs
   description: ""
@@ -61,6 +54,13 @@ requires:
   
   version: "2.42"
 - 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo
+  
+  version: "1"
+- 
   category: xfce-base
   description: ""
   license: ""
@@ -68,12 +68,12 @@ requires:
   
   version: "0.5"
 - 
-  category: xfce-base
+  category: dev-libs
   description: ""
   license: ""
-  name: libxfce4ui
+  name: gobject-introspection
   
-  version: "4.13"
+  version: ""
 uri:
 - https://archive.xfce.org/src/xfce/xfce4-panel/4.14/xfce4-panel-4.14.1.tar.bz2
 use_flags:

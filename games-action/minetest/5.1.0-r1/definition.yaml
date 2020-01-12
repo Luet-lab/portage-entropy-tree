@@ -5,17 +5,10 @@ license: LGPL-2.1+ CC-BY-SA-3.0 OFL-1.1 Apache-2.0
 name: minetest
 requires:
 - 
-  category: sys-libs
+  category: acct-user
   description: ""
   license: ""
-  name: zlib
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libpng
+  name: minetest
   
   version: ""
 - 
@@ -26,6 +19,13 @@ requires:
   
   version: ""
 - 
+  category: media-libs
+  description: ""
+  license: ""
+  name: openal
+  
+  version: ""
+- 
   category: sys-libs
   description: ""
   license: ""
@@ -33,31 +33,17 @@ requires:
   
   version: ""
 - 
-  category: sci-libs
+  category: media-libs
   description: ""
   license: ""
-  name: libspatialindex
+  name: libpng
   
   version: ""
 - 
-  category: acct-group
+  category: virtual
   description: ""
   license: ""
-  name: minetest
-  
-  version: ""
-- 
-  category: acct-user
-  description: ""
-  license: ""
-  name: minetest
-  
-  version: ""
-- 
-  category: dev-games
-  description: ""
-  license: ""
-  name: irrlicht
+  name: jpeg
   
   version: ""
 - 
@@ -65,69 +51,6 @@ requires:
   description: ""
   license: ""
   name: opengl
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXxf86vm
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libvorbis
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: leveldb
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: hiredis
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
-  
-  version: ""
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: luajit
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: jsoncpp
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: bzip2
   
   version: ""
 - 
@@ -152,17 +75,17 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: dev-libs
   description: ""
   license: ""
-  name: jpeg
+  name: jsoncpp
   
   version: ""
 - 
-  category: media-libs
+  category: app-arch
   description: ""
   license: ""
-  name: openal
+  name: bzip2
   
   version: ""
 - 
@@ -179,6 +102,83 @@ requires:
   name: postgresql
   
   version: "9.5"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: hiredis
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXxf86vm
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libvorbis
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: libspatialindex
+  
+  version: ""
+- 
+  category: dev-games
+  description: ""
+  license: ""
+  name: irrlicht
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: luajit
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: minetest
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: leveldb
+  
+  version: ""
 uri:
 - https://github.com/minetest/minetest/archive/5.1.0.tar.gz -> minetest-5.1.0.tar.gz
 use_flags:

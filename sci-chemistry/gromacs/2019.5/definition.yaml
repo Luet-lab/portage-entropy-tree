@@ -6,17 +6,17 @@ license: LGPL-2.1 UoI-NCSA !mkl? ( !fftw? ( BSD ) !blas? ( BSD ) !lapack? ( BSD 
 name: gromacs
 requires:
 - 
-  category: dev-util
+  category: virtual
   description: ""
   license: ""
-  name: nvidia-cuda-toolkit
+  name: blas
   
-  version: 6.5.14
+  version: ""
 - 
-  category: sci-libs
+  category: virtual
   description: ""
   license: ""
-  name: fftw
+  name: opencl
   
   version: ""
 - 
@@ -31,6 +31,20 @@ requires:
   description: ""
   license: ""
   name: lapack
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: mpi
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: lmfit
   
   version: ""
 - 
@@ -55,27 +69,6 @@ requires:
   
   version: ""
 - 
-  category: virtual
-  description: ""
-  license: ""
-  name: opencl
-  
-  version: ""
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: lmfit
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: mpi
-  
-  version: ""
-- 
   category: x11-libs
   description: ""
   license: ""
@@ -83,10 +76,17 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: dev-util
   description: ""
   license: ""
-  name: blas
+  name: nvidia-cuda-toolkit
+  
+  version: 6.5.14
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: fftw
   
   version: ""
 uri:

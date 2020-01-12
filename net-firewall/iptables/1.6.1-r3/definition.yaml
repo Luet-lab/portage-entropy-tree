@@ -1,37 +1,23 @@
 category: net-firewall
 conflicts:
 - 
-  category: <net-firewall
-  description: ""
-  license: ""
-  name: ebtables
-  
-  version: 2.0.10.4-r2
-- 
   category: net-misc
   description: ""
   license: ""
   name: ethertypes
   
   version: ""
+- 
+  category: <net-firewall
+  description: ""
+  license: ""
+  name: ebtables
+  
+  version: 2.0.10.4-r2
 description: Linux kernel (2.4+) firewall, NAT and packet mangling tools
 license: GPL-2
 name: iptables
 requires:
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libnftnl
-  
-  version: 1.0.5
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libpcap
-  
-  version: ""
 - 
   category: net-libs
   description: ""
@@ -53,6 +39,20 @@ requires:
   name: libmnl
   
   version: "1.0"
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libnftnl
+  
+  version: 1.0.5
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libpcap
+  
+  version: ""
 uri:
 - https://www.netfilter.org/projects/iptables/files/iptables-1.6.1.tar.bz2
 use_flags:

@@ -1,17 +1,17 @@
 category: net-vpn
 conflicts:
 - 
-  category: net-misc
-  description: ""
-  license: ""
-  name: openswan
-  
-  version: ""
-- 
   category: net-vpn
   description: ""
   license: ""
   name: strongswan
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: openswan
   
   version: ""
 description: IPsec implementation for Linux, fork of Openswan
@@ -19,24 +19,10 @@ license: GPL-2 BSD-4 RSA DES
 name: libreswan
 requires:
 - 
-  category: net-dns
-  description: ""
-  license: ""
-  name: unbound
-  
-  version: 1.9.1-r1
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
-  name: nss[utils(+)]
+  name: libevent
   
   version: ""
 - 
@@ -44,6 +30,20 @@ requires:
   description: ""
   license: ""
   name: nspr
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: ldns
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
   
   version: ""
 - 
@@ -61,34 +61,6 @@ requires:
   
   version: ""
 - 
-  category: net-libs
-  description: ""
-  license: ""
-  name: ldns
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: gmp
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
@@ -100,6 +72,13 @@ requires:
   description: ""
   license: ""
   name: systemd
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nss[utils(+)]
   
   version: ""
 - 
@@ -120,7 +99,7 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libevent
+  name: gmp
   
   version: ""
 - 
@@ -128,6 +107,27 @@ requires:
   description: ""
   license: ""
   name: libcap-ng
+  
+  version: ""
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: unbound
+  
+  version: 1.9.1-r1
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
   
   version: ""
 uri:

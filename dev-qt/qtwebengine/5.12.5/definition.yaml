@@ -8,93 +8,23 @@ requires:
   category: dev-qt
   description: ""
   license: ""
-  name: qtdeclarative
-  
-  version: 5.12.5
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: fontconfig
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: harfbuzz
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXcomposite
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXrender
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXScrnSaver
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
   name: qtprintsupport
   
   version: 5.12.5
 - 
-  category: dev-libs
+  category: media-libs
   description: ""
   license: ""
-  name: libevent
+  name: freetype
   
   version: ""
 - 
-  category: dev-libs
+  category: media-libs
   description: ""
   license: ""
-  name: libxslt
+  name: libvpx
   
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: pciutils
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: designer
-  
-  version: 5.12.5
+  version: "1.5"
 - 
   category: media-sound
   description: ""
@@ -106,72 +36,44 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: nss
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtwebchannel
-  
-  version: 5.12.5
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libjpeg-turbo
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXi
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: snappy
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: re2
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: freetype
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXdamage
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
   name: icu
   
   version: "60.2"
 - 
+  category: media-libs
+  description: ""
+  license: ""
+  name: opus
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXcursor
+  
+  version: ""
+- 
   category: dev-qt
   description: ""
   license: ""
-  name: qtcore
+  name: designer
   
   version: 5.12.5
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: pciutils
+  
+  version: ""
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: ffmpeg
+  
+  version: ""
 - 
   category: dev-qt
   description: ""
@@ -183,70 +85,28 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: lcms
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXext
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtwidgets
-  
-  version: 5.12.5
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: nspr
+  name: harfbuzz
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libpng
+  name: libjpeg-turbo
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libvpx
-  
-  version: "1.5"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: opus
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libudev
+  name: mesa[egl,X(+)]
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXcursor
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXrandr
+  name: libXfixes
   
   version: ""
 - 
@@ -264,31 +124,94 @@ requires:
   
   version: ""
 - 
-  category: media-video
+  category: dev-libs
   description: ""
   license: ""
-  name: ffmpeg
+  name: re2
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: lcms
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libpng
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxslt
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libudev
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXcomposite
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXScrnSaver
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: snappy
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nspr
   
   version: ""
 - 
   category: dev-qt
   description: ""
   license: ""
-  name: qtgui
+  name: qtdeclarative
   
   version: 5.12.5
 - 
-  category: media-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libwebp
+  name: libevent
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: mesa[egl,X(+)]
+  name: libwebp
   
   version: ""
 - 
@@ -316,14 +239,21 @@ requires:
   category: dev-qt
   description: ""
   license: ""
+  name: qtgui
+  
+  version: 5.12.5
+- 
+  category: dev-qt
+  description: ""
+  license: ""
   name: qtnetwork
   
   version: 5.12.5
 - 
-  category: dev-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: expat
+  name: libXi
   
   version: ""
 - 
@@ -337,7 +267,77 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXfixes
+  name: libXdamage
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXext
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtwidgets
+  
+  version: 5.12.5
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtcore
+  
+  version: 5.12.5
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtwebchannel
+  
+  version: 5.12.5
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: expat
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXrender
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nss
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXrandr
   
   version: ""
 uri: []

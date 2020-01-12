@@ -5,19 +5,12 @@ license: LGPL-2.1+
 name: fwupd
 requires:
 - 
-  category: sys-libs
+  category: dev-db
   description: ""
   license: ""
-  name: libsmbios
+  name: sqlite
   
-  version: 2.4.0
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: efivar
-  
-  version: "33"
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -26,73 +19,17 @@ requires:
   
   version: 0.1.13
 - 
-  category: virtual
+  category: sys-apps
   description: ""
   license: ""
-  name: udev
+  name: thunderbolt-software-user-space
   
   version: ""
 - 
-  category: sys-auth
+  category: x11-libs
   description: ""
   license: ""
-  name: consolekit
-  
-  version: 1.0.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: freetype
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgpg-error
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgudev
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: efivar
-  
-  version: ""
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: tpm2-tss
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: libarchive
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pygobject
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: json-glib
+  name: cairo
   
   version: ""
 - 
@@ -103,12 +40,26 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: media-libs
   description: ""
   license: ""
-  name: libelf
+  name: fontconfig
   
   version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: libarchive
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libsmbios
+  
+  version: 2.4.0
 - 
   category: sys-auth
   description: ""
@@ -120,70 +71,21 @@ requires:
   category: sys-apps
   description: ""
   license: ""
-  name: dbus
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: 2.45.8
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: gpgme
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: cairo
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
   name: systemd
   
   version: "211"
 - 
-  category: media-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: fontconfig
+  name: efivar
   
-  version: ""
+  version: "33"
 - 
-  category: sys-boot
+  category: virtual
   description: ""
   license: ""
-  name: gnu-efi
-  
-  version: ""
-- 
-  category: sys-boot
-  description: ""
-  license: ""
-  name: efibootmgr
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pillow
+  name: udev
   
   version: ""
 - 
@@ -197,7 +99,35 @@ requires:
   category: sys-apps
   description: ""
   license: ""
-  name: thunderbolt-software-user-space
+  name: dbus
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.45.8
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgpg-error
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pillow
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: efivar
   
   version: ""
 - 
@@ -208,12 +138,82 @@ requires:
   
   version: "1.0"
 - 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pygobject
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libelf
+  
+  version: ""
+- 
   category: sys-auth
   description: ""
   license: ""
   name: polkit
   
   version: "0.103"
+- 
+  category: sys-boot
+  description: ""
+  license: ""
+  name: efibootmgr
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: json-glib
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: tpm2-tss
+  
+  version: ""
+- 
+  category: sys-boot
+  description: ""
+  license: ""
+  name: gnu-efi
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgudev
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: consolekit
+  
+  version: 1.0.0
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gpgme
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
+  
+  version: ""
 uri:
 - https://github.com/hughsie/fwupd/archive/1.3.6.tar.gz -> fwupd-1.3.6.tar.gz
 use_flags:

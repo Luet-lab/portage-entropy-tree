@@ -5,26 +5,19 @@ license: LGPL-2+ GPL-2+
 name: udisks
 requires:
 - 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-devicekit
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
-  name: gobject-introspection
+  name: glib
   
-  version: "1.30"
+  version: "2.50"
 - 
-  category: virtual
+  category: sys-auth
   description: ""
   license: ""
-  name: eject
+  name: elogind
   
-  version: ""
+  version: "219"
 - 
   category: sys-apps
   description: ""
@@ -36,23 +29,9 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libgudev
+  name: gobject-introspection
   
-  version: "165"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: acl
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: lvm2
-  
-  version: ""
+  version: "1.30"
 - 
   category: sys-block
   description: ""
@@ -61,12 +40,26 @@ requires:
   
   version: "3"
 - 
+  category: virtual
+  description: ""
+  license: ""
+  name: eject
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-devicekit
+  
+  version: ""
+- 
   category: dev-libs
   description: ""
   license: ""
-  name: libatasmart
+  name: libgudev
   
-  version: "0.19"
+  version: "165"
 - 
   category: sys-auth
   description: ""
@@ -82,13 +75,6 @@ requires:
   
   version: ""
 - 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: elogind
-  
-  version: "219"
-- 
   category: sys-apps
   description: ""
   license: ""
@@ -99,9 +85,23 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: glib
+  name: libatasmart
   
-  version: "2.50"
+  version: "0.19"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: acl
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lvm2
+  
+  version: ""
 uri:
 - https://github.com/storaged-project/udisks/releases/download/udisks-2.8.2/udisks-2.8.2.tar.bz2
 use_flags:

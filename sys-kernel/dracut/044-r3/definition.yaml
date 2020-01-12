@@ -5,17 +5,10 @@ license: GPL-2
 name: dracut
 requires:
 - 
-  category: dev-util
-  description: ""
-  license: ""
-  name: strace
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
-  name: libselinux
+  name: libsepol
   
   version: ""
 - 
@@ -26,12 +19,26 @@ requires:
   
   version: "199"
 - 
+  category: virtual
+  description: ""
+  license: ""
+  name: pkgconfig
+  
+  version: ""
+- 
   category: app-arch
   description: ""
   license: ""
   name: cpio
   
   version: ""
+- 
+  category: app-shells
+  description: ""
+  license: ""
+  name: bash
+  
+  version: "4.0"
 - 
   category: sys-apps
   description: ""
@@ -50,14 +57,7 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: libsepol
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-dracut
+  name: libselinux
   
   version: ""
 - 
@@ -68,19 +68,19 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: dev-util
   description: ""
   license: ""
-  name: pkgconfig
+  name: strace
   
   version: ""
 - 
-  category: app-shells
+  category: sec-policy
   description: ""
   license: ""
-  name: bash
+  name: selinux-dracut
   
-  version: "4.0"
+  version: ""
 uri:
 - https://www.kernel.org/pub/linux/utils/boot/dracut/dracut-044.tar.xz
 use_flags:

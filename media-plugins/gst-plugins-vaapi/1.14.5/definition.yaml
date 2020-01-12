@@ -5,12 +5,33 @@ license: LGPL-2.1+
 name: gst-plugins-vaapi
 requires:
 - 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXrandr
+  
+  version: 1.4.2
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXrender
+  
+  version: ""
+- 
   category: dev-libs
   description: ""
   license: ""
   name: glib
   
   version: "2.40"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gstreamer
+  
+  version: 1.14.5
 - 
   category: media-libs
   description: ""
@@ -26,26 +47,12 @@ requires:
   
   version: 2.4.46
 - 
-  category: x11-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libX11
+  name: wayland
   
-  version: 1.6.2
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXrender
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: gstreamer
-  
-  version: 1.14.5
+  version: 1.0.6
 - 
   category: media-libs
   description: ""
@@ -61,19 +68,12 @@ requires:
   
   version: "208"
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: wayland
-  
-  version: 1.0.6
-- 
   category: x11-libs
   description: ""
   license: ""
-  name: libXrandr
+  name: libX11
   
-  version: 1.4.2
+  version: 1.6.2
 uri:
 - https://gstreamer.freedesktop.org/src/gstreamer-vaapi/gstreamer-vaapi-1.14.5.tar.xz
 use_flags:

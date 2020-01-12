@@ -8,19 +8,19 @@ conflicts:
   
   version: 2.20120725-r10
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: ""
-- 
   category: <sys-libs
   description: ""
   license: ""
   name: glibc
   
   version: "2.11"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: gentoo-systemd-integration
+  
+  version: ""
 - 
   category: <sys-fs
   description: ""
@@ -32,7 +32,7 @@ conflicts:
   category: sys-apps
   description: ""
   license: ""
-  name: gentoo-systemd-integration
+  name: systemd
   
   version: ""
 description: Linux dynamic and persistent device naming support (aka userspace devfs)
@@ -40,17 +40,38 @@ license: LGPL-2.1 MIT GPL-2
 name: udev
 requires:
 - 
-  category: sys-apps
+  category: acct-group
   description: ""
   license: ""
-  name: kmod
+  name: audio
   
-  version: "16"
+  version: ""
 - 
   category: acct-group
   description: ""
   license: ""
-  name: disk
+  name: tape
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: dialout
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: render
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: video
   
   version: ""
 - 
@@ -65,48 +86,6 @@ requires:
   description: ""
   license: ""
   name: libcap
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: audio
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: cdrom
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: input
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: tape
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: video
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: acl
   
   version: ""
 - 
@@ -127,6 +106,20 @@ requires:
   category: acct-group
   description: ""
   license: ""
+  name: tty
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: input
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
   name: kvm
   
   version: ""
@@ -138,24 +131,31 @@ requires:
   
   version: "2.30"
 - 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: acl
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: kmod
+  
+  version: "16"
+- 
   category: acct-group
   description: ""
   license: ""
-  name: tty
+  name: cdrom
   
   version: ""
 - 
   category: acct-group
   description: ""
   license: ""
-  name: dialout
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: render
+  name: disk
   
   version: ""
 uri: []

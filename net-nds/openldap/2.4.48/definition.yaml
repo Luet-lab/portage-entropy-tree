@@ -12,17 +12,10 @@ license: OPENLDAP GPL-2
 name: openldap
 requires:
 - 
-  category: dev-libs
+  category: dev-db
   description: ""
   license: ""
-  name: libgcrypt
-  
-  version: 1.5.3
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: libtool
+  name: unixODBC
   
   version: ""
 - 
@@ -33,10 +26,24 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: net-libs
   description: ""
   license: ""
-  name: krb5
+  name: gnutls
+  
+  version: 2.12.23-r6
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: cyrus-sasl
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-ldap
   
   version: ""
 - 
@@ -50,14 +57,42 @@ requires:
   category: net-libs
   description: ""
   license: ""
-  name: gnutls
+  name: openslp
   
-  version: 2.12.23-r6
+  version: ""
 - 
-  category: sec-policy
+  category: sys-libs
   description: ""
   license: ""
-  name: selinux-ldap
+  name: db
+  
+  version: "6.0"
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: libtool
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: e2fsprogs-libs
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: lmdb
+  
+  version: 0.9.18
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: tcp-wrappers
   
   version: ""
 - 
@@ -75,12 +110,12 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: virtual
   description: ""
   license: ""
-  name: db
+  name: krb5
   
-  version: "6.0"
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -89,47 +124,12 @@ requires:
   
   version: 1.0.1h-r2
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: e2fsprogs-libs
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: tcp-wrappers
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: unixODBC
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: openslp
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
-  name: cyrus-sasl
+  name: libgcrypt
   
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: lmdb
-  
-  version: 0.9.18
+  version: 1.5.3
 uri: []
 use_flags:
 - crypt

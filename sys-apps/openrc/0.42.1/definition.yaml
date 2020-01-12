@@ -1,6 +1,13 @@
 category: sys-apps
 conflicts:
 - 
+  category: <app-shells
+  description: ""
+  license: ""
+  name: gentoo-bashcomp
+  
+  version: "20180302"
+- 
   category: <sys-process
   description: ""
   license: ""
@@ -8,12 +15,12 @@ conflicts:
   
   version: 3.3.9-r2
 - 
-  category: <sys-apps
+  category: <sys-fs
   description: ""
   license: ""
-  name: baselayout
+  name: udev-init-scripts
   
-  version: 2.1-r1
+  version: "27"
 - 
   category: sys-apps
   description: ""
@@ -29,44 +36,16 @@ conflicts:
   
   version: "20180228"
 - 
-  category: <app-shells
+  category: <sys-apps
   description: ""
   license: ""
-  name: gentoo-bashcomp
+  name: baselayout
   
-  version: "20180302"
-- 
-  category: <sys-fs
-  description: ""
-  license: ""
-  name: udev-init-scripts
-  
-  version: "27"
+  version: 2.1-r1
 description: OpenRC manages the services, startup and shutdown of a host
 license: BSD-2
 name: openrc
 requires:
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: policycoreutils
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-openrc
-  
-  version: 2.20170204-r4
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: pambase
-  
-  version: ""
 - 
   category: sys-process
   description: ""
@@ -75,10 +54,17 @@ requires:
   
   version: ""
 - 
+  category: sys-process
+  description: ""
+  license: ""
+  name: psmisc
+  
+  version: ""
+- 
   category: sys-apps
   description: ""
   license: ""
-  name: sysvinit-2.86-r6[selinux?]
+  name: policycoreutils
   
   version: ""
 - 
@@ -88,20 +74,6 @@ requires:
   name: tmpfiles
   
   version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: "2.6"
 - 
   category: sec-policy
   description: ""
@@ -117,10 +89,38 @@ requires:
   
   version: ""
 - 
-  category: sys-process
+  category: sys-auth
   description: ""
   license: ""
-  name: psmisc
+  name: pambase
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: "2.6"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: sysvinit-2.86-r6[selinux?]
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-openrc
+  
+  version: 2.20170204-r4
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
   
   version: ""
 - 

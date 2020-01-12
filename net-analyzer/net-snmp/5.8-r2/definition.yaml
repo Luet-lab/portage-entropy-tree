@@ -5,17 +5,10 @@ license: HPND BSD GPL-2
 name: net-snmp
 requires:
 - 
-  category: dev-perl
+  category: sec-policy
   description: ""
   license: ""
-  name: TermReadKey
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
+  name: selinux-snmp
   
   version: ""
 - 
@@ -25,6 +18,13 @@ requires:
   name: zlib
   
   version: 1.1.4
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: tcp-wrappers
+  
+  version: "7.6"
 - 
   category: dev-libs
   description: ""
@@ -40,10 +40,59 @@ requires:
   
   version: ""
 - 
+  category: dev-perl
+  description: ""
+  license: ""
+  name: Tk
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: rpm
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: bzip2
+  
+  version: ""
+- 
   category: dev-lang
   description: ""
   license: ""
   name: perl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 0.9.6d
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: setuptools
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: pciutils
   
   version: ""
 - 
@@ -64,49 +113,7 @@ requires:
   category: dev-perl
   description: ""
   license: ""
-  name: Tk
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-snmp
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: 0.9.6d
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: tcp-wrappers
-  
-  version: "7.6"
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: bzip2
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: pciutils
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: rpm
+  name: TermReadKey
   
   version: ""
 - 
@@ -114,13 +121,6 @@ requires:
   description: ""
   license: ""
   name: popt
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: setuptools
   
   version: ""
 uri:

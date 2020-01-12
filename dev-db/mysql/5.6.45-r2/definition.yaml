@@ -4,6 +4,27 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
+  name: mariadb
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: percona-server
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mariadb-galera
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
   name: mariadb-connector-c
   
   version: ""
@@ -18,28 +39,7 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mariadb
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mariadb-galera
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
   name: mysql-cluster
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: percona-server
   
   version: ""
 description: A fast, multi-threaded, multi-user SQL database server
@@ -47,17 +47,17 @@ license: GPL-2
 name: mysql
 requires:
 - 
-  category: dev-db
+  category: sys-apps
   description: ""
   license: ""
-  name: mysql-init-scripts
+  name: sed
   
-  version: ""
+  version: "4"
 - 
-  category: dev-libs
+  category: dev-util
   description: ""
   license: ""
-  name: libaio
+  name: google-perftools
   
   version: ""
 - 
@@ -68,24 +68,10 @@ requires:
   
   version: ""
 - 
-  category: sys-process
-  description: ""
-  license: ""
-  name: numactl
-  
-  version: ""
-- 
   category: dev-db
   description: ""
   license: ""
   name: mysql-connector-c[,static-libs?]
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: mysql
   
   version: ""
 - 
@@ -96,12 +82,47 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: dev-util
   description: ""
   license: ""
-  name: sed
+  name: systemtap
   
-  version: "4"
+  version: "1.3"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl-2.6.5*
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-init-scripts
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  license: ""
+  name: procps
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libaio
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
+  
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -110,17 +131,17 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: sec-policy
   description: ""
   license: ""
-  name: openssl
+  name: selinux-mysql
   
-  version: 1.0.0
+  version: ""
 - 
-  category: dev-libs
+  category: acct-group
   description: ""
   license: ""
-  name: libressl-2.6.5*
+  name: mysql
   
   version: ""
 - 
@@ -130,6 +151,13 @@ requires:
   name: texinfo
   
   version: 4.7-r1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 1.0.0
 - 
   category: sys-libs
   description: ""
@@ -141,37 +169,9 @@ requires:
   category: sys-process
   description: ""
   license: ""
-  name: procps
+  name: numactl
   
   version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: curl
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-mysql
-  
-  version: ""
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: google-perftools
-  
-  version: ""
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: systemtap
-  
-  version: "1.3"
 uri:
 - http://cdn.mysql.com/Downloads/MySQL-5.6/mysql-5.6.45.tar.gz
 - https://cdn.mysql.com/archives/mysql-5.6/mysql-5.6.45.tar.gz

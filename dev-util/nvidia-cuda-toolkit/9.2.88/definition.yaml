@@ -5,6 +5,20 @@ license: NVIDIA-CUDA
 name: nvidia-cuda-toolkit
 requires:
 - 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: gcc
+  
+  version: "8"
+- 
+  category: x11-drivers
+  description: ""
+  license: ""
+  name: nvidia-drivers-396.24[X,uvm]
+  
+  version: ""
+- 
   category: sys-libs
   description: ""
   license: ""
@@ -25,20 +39,6 @@ requires:
   name: jre
   
   version: "1.6"
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: gcc
-  
-  version: "8"
-- 
-  category: x11-drivers
-  description: ""
-  license: ""
-  name: nvidia-drivers-396.24[X,uvm]
-  
-  version: ""
 uri:
 - https://developer.nvidia.com/compute/cuda//Prod/local_installers/cuda_9.2.88_396.26_linux
   -> cuda_9.2.88_396.26_linux.run

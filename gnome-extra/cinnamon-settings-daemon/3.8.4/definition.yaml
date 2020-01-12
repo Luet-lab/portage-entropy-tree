@@ -5,26 +5,26 @@ license: GPL-2+
 name: cinnamon-settings-daemon
 requires:
 - 
-  category: sys-apps
+  category: media-libs
   description: ""
   license: ""
-  name: dbus
+  name: lcms
   
-  version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: polkit
-  
-  version: "0.97"
+  version: "2.2"
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: glib
+  name: libwacom
   
-  version: "2.38"
+  version: "0.7"
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: libgnomekbd
+  
+  version: "3.6"
 - 
   category: gnome-base
   description: ""
@@ -33,12 +33,33 @@ requires:
   
   version: 2.36.2
 - 
-  category: media-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: fontconfig
+  name: gdk-pixbuf
   
   version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXfixes
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxklavier
+  
+  version: ""
+- 
+  category: net-print
+  description: ""
+  license: ""
+  name: cups
+  
+  version: "1.4"
 - 
   category: gnome-extra
   description: ""
@@ -57,105 +78,14 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: libwacom
+  name: glib
   
-  version: "0.7"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: nss
-  
-  version: 3.11.2
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: 3.9.10
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXfixes
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxklavier
-  
-  version: ""
+  version: "2.38"
 - 
   category: dev-libs
   description: ""
   license: ""
   name: libgudev
-  
-  version: ""
-- 
-  category: "(\tsys-auth"
-  description: ""
-  license: ""
-  name: elogind
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXext
-  
-  version: ""
-- 
-  category: x11-misc
-  description: ""
-  license: ""
-  name: colord
-  
-  version: 0.1.27
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libcanberra
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: ""
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: libgnomekbd
-  
-  version: "3.6"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXi
-  
-  version: ""
-- 
-  category: net-print
-  description: ""
-  license: ""
-  name: cups
-  
-  version: "1.4"
-- 
-  category: x11-drivers
-  description: ""
-  license: ""
-  name: xf86-input-wacom
   
   version: ""
 - 
@@ -166,17 +96,17 @@ requires:
   
   version: 0.9.11
 - 
-  category: media-libs
+  category: x11-misc
   description: ""
   license: ""
-  name: lcms
+  name: colord
   
-  version: "2.2"
+  version: 0.1.27
 - 
-  category: x11-libs
+  category: x11-drivers
   description: ""
   license: ""
-  name: gdk-pixbuf
+  name: xf86-input-wacom
   
   version: ""
 - 
@@ -190,7 +120,77 @@ requires:
   category: x11-libs
   description: ""
   license: ""
+  name: libXext
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXi
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libcanberra
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: 3.9.10
+- 
+  category: x11-libs
+  description: ""
+  license: ""
   name: libXtst
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nss
+  
+  version: 3.11.2
+- 
+  category: "(\tsys-auth"
+  description: ""
+  license: ""
+  name: elogind
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: "0.97"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
   
   version: ""
 uri:

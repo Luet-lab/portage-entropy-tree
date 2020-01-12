@@ -5,10 +5,17 @@ license: HPND BSD GPL-2
 name: net-snmp
 requires:
 - 
-  category: dev-db
+  category: sys-apps
   description: ""
   license: ""
-  name: mysql-connector-c
+  name: lm-sensors
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libnl
   
   version: ""
 - 
@@ -26,20 +33,6 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: popt
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: 1.1.4
-- 
   category: dev-perl
   description: ""
   license: ""
@@ -47,17 +40,10 @@ requires:
   
   version: ""
 - 
-  category: dev-perl
+  category: sec-policy
   description: ""
   license: ""
-  name: TermReadKey
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: bzip2
+  name: selinux-snmp
   
   version: ""
 - 
@@ -68,45 +54,10 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libnl
-  
-  version: ""
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: perl
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: tcp-wrappers
-  
-  version: "7.6"
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-snmp
-  
-  version: ""
-- 
   category: sys-apps
   description: ""
   license: ""
   name: pciutils
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: setuptools
   
   version: ""
 - 
@@ -120,7 +71,49 @@ requires:
   category: sys-apps
   description: ""
   license: ""
-  name: lm-sensors
+  name: tcp-wrappers
+  
+  version: "7.6"
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: bzip2
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: perl
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: setuptools
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: popt
+  
+  version: ""
+- 
+  category: dev-perl
+  description: ""
+  license: ""
+  name: TermReadKey
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql-connector-c
   
   version: ""
 - 
@@ -130,6 +123,13 @@ requires:
   name: libressl
   
   version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: 1.1.4
 uri:
 - https://dev.gentoo.org/~jer/net-snmp-5.7.3-patches-3.tar.xz
 use_flags:

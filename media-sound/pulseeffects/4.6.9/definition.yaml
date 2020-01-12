@@ -6,17 +6,59 @@ license: GPL-3
 name: pulseeffects
 requires:
 - 
-  category: dev-libs
+  category: media-libs
   description: ""
   license: ""
-  name: glib
+  name: lsp-plugins
   
-  version: "2.56"
+  version: 1.1.7
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gst-plugins-good
+  
+  version: 1.12.0
 - 
   category: media-libs
   description: ""
   license: ""
   name: gst-plugins-bad
+  
+  version: 1.12.0
+- 
+  category: media-plugins
+  description: ""
+  license: ""
+  name: gst-plugins-ladspa
+  
+  version: 1.12.0
+- 
+  category: media-plugins
+  description: ""
+  license: ""
+  name: calf
+  
+  version: 0.90.0
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: "3.18"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gstreamer
   
   version: 1.12.0
 - 
@@ -34,47 +76,19 @@ requires:
   
   version: 1.12.0
 - 
-  category: dev-cpp
+  category: media-plugins
   description: ""
   license: ""
-  name: glibmm
+  name: mda-lv2
   
-  version: 2.56.0
+  version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: gstreamer
+  name: zita-convolver
   
-  version: 1.12.0
-- 
-  category: media-plugins
-  description: ""
-  license: ""
-  name: gst-plugins-bs2b
-  
-  version: 1.12.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: lsp-plugins
-  
-  version: 1.1.7
-- 
-  category: media-plugins
-  description: ""
-  license: ""
-  name: gst-plugins-ladspa
-  
-  version: 1.12.0
-- 
-  category: media-plugins
-  description: ""
-  license: ""
-  name: calf
-  
-  version: 0.90.0
+  version: 3.0.0
 - 
   category: dev-libs
   description: ""
@@ -97,33 +111,12 @@ requires:
   
   version: "2.10"
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: "3.18"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: lilv
-  
-  version: 0.24.2-r1
-- 
   category: media-plugins
   description: ""
   license: ""
-  name: mda-lv2
+  name: gst-plugins-bs2b
   
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: zita-convolver
-  
-  version: 3.0.0
+  version: 1.12.0
 - 
   category: media-libs
   description: ""
@@ -132,19 +125,19 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: dev-cpp
   description: ""
   license: ""
-  name: dbus
+  name: glibmm
   
-  version: ""
+  version: 2.56.0
 - 
   category: media-libs
   description: ""
   license: ""
-  name: gst-plugins-good
+  name: lilv
   
-  version: 1.12.0
+  version: 0.24.2-r1
 - 
   category: media-libs
   description: ""
@@ -159,6 +152,13 @@ requires:
   name: pulseaudio
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.56"
 uri:
 - https://github.com/wwmm/pulseeffects/archive/v4.6.9.tar.gz -> pulseeffects-4.6.9.tar.gz
 use_flags:

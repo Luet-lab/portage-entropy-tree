@@ -4,13 +4,6 @@ conflicts:
   category: sys-cluster
   description: ""
   license: ""
-  name: pmix
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
   name: mpich2
   
   version: ""
@@ -21,15 +14,29 @@ conflicts:
   name: mpich
   
   version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: pmix
+  
+  version: ""
 description: A high-performance message passing library (MPI)
 license: BSD
 name: openmpi
 requires:
 - 
-  category: dev-libs
+  category: virtual
   description: ""
   license: ""
-  name: libltdl
+  name: jre
+  
+  version: "1.6"
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
   
   version: ""
 - 
@@ -43,7 +50,7 @@ requires:
   category: sys-fabric
   description: ""
   license: ""
-  name: ofed
+  name: infinipath-psm
   
   version: ""
 - 
@@ -54,38 +61,10 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libevent
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: slurm
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: knem
-  
-  version: ""
-- 
   category: sys-fabric
   description: ""
   license: ""
-  name: infinipath-psm
+  name: ofed
   
   version: ""
 - 
@@ -96,12 +75,33 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: dev-libs
   description: ""
   license: ""
-  name: jre
+  name: libevent
   
-  version: "1.6"
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libltdl
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: knem
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: slurm
+  
+  version: ""
 uri:
 - http://www.open-mpi.org/software/ompi/v/downloads/openmpi-1.8.8.tar.bz2
 use_flags:

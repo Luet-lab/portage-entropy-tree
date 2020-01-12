@@ -5,6 +5,34 @@ license: MPL-2.0 GPL-2 LGPL-2.1
 name: firefox
 requires:
 - 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gdk-pixbuf
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
+  
+  version: 2.4.10
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
+  
+  version: 3.28.0
+- 
   category: sec-policy
   description: ""
   license: ""
@@ -12,12 +40,19 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
+  category: media-sound
   description: ""
   license: ""
-  name: gtk+
+  name: apulse
   
-  version: "2.18"
+  version: 0.1.9
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libpng
+  
+  version: 1.6.35
 - 
   category: x11-libs
   description: ""
@@ -29,44 +64,16 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXdamage
+  name: libXrender
   
   version: ""
 - 
-  category: x11-libs
+  category: media-libs
   description: ""
   license: ""
-  name: libXfixes
+  name: alsa-lib
   
   version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXt
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jack
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: expat
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pango
-  
-  version: 1.22.0
 - 
   category: sys-apps
   description: ""
@@ -85,13 +92,6 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXrender
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
   name: libX11
   
   version: ""
@@ -106,133 +106,14 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: nspr
+  name: nss
   
-  version: "4.21"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: mesa
-  
-  version: "10.2"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: fontconfig
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: alsa-lib
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libffi
-  
-  version: 3.0.10
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: ffmpeg
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libjpeg-turbo
-  
-  version: 1.2.1
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libvpx-1.7*
-  
-  version: ""
+  version: 3.44.3
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: atk
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libpng
-  
-  version: 1.6.35
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: freetype
-  
-  version: 2.4.10
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pixman
-  
-  version: 0.19.2
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.26"
-- 
-  category: media-gfx
-  description: ""
-  license: ""
-  name: graphite2
-  
-  version: 1.3.13
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gdk-pixbuf
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: freedesktop-icon-theme
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: startup-notification
-  
-  version: "0.8"
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
-  
-  version: 3.28.0
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: networkmanager
+  name: expat
   
   version: ""
 - 
@@ -243,47 +124,12 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: dbus-glib
-  
-  version: "0.72"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXext
-  
-  version: ""
-- 
   category: media-libs
   description: ""
   license: ""
   name: dav1d
   
   version: 0.3.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: icu
-  
-  version: "63.1"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: nss
-  
-  version: 3.44.3
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: 3.4.0
 - 
   category: media-libs
   description: ""
@@ -299,6 +145,83 @@ requires:
   
   version: 2.4.0
 - 
+  category: virtual
+  description: ""
+  license: ""
+  name: jack
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nspr
+  
+  version: "4.21"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: "2.18"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: freedesktop-icon-theme
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pixman
+  
+  version: 0.19.2
+- 
+  category: media-gfx
+  description: ""
+  license: ""
+  name: graphite2
+  
+  version: 1.3.13
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libjpeg-turbo
+  
+  version: 1.2.1
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: 3.4.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: mesa
+  
+  version: "10.2"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: startup-notification
+  
+  version: "0.8"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXt
+  
+  version: ""
+- 
   category: media-libs
   description: ""
   license: ""
@@ -306,12 +229,89 @@ requires:
   
   version: 1.0.2
 - 
-  category: media-sound
+  category: net-misc
   description: ""
   license: ""
-  name: apulse
+  name: networkmanager
   
-  version: 0.1.9
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.26"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXdamage
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXfixes
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libffi
+  
+  version: 3.0.10
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: icu
+  
+  version: "63.1"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: atk
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pango
+  
+  version: 1.22.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: dbus-glib
+  
+  version: "0.72"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: ffmpeg
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXext
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libvpx-1.7*
+  
+  version: ""
 uri:
 - https://archive.mozilla.org/pub/firefox/releases/68.3.0esr/source/firefox-68.3.0esr.source.tar.xz
 - https://dev.gentoo.org/~{anarchy,axs,polynomial-c,whissi}/mozilla/patchsets/firefox-68.0-patches-12.tar.xz

@@ -4,21 +4,14 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: exim
+  name: esmtp
   
   version: ""
 - 
   category: mail-mta
   description: ""
   license: ""
-  name: ssmtp
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: mini-qmail
+  name: msmtp
   
   version: ""
 - 
@@ -46,21 +39,21 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: courier
+  name: postfix
   
   version: ""
 - 
   category: mail-mta
   description: ""
   license: ""
-  name: esmtp
+  name: exim
   
   version: ""
 - 
   category: mail-mta
   description: ""
   license: ""
-  name: msmtp
+  name: mini-qmail
   
   version: ""
 - 
@@ -74,7 +67,14 @@ mailer
   category: mail-mta
   description: ""
   license: ""
-  name: postfix
+  name: courier
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: ssmtp
   
   version: ""
 description: Lightweight but featured SMTP daemon from OpenBSD
@@ -82,17 +82,17 @@ license: ISC BSD BSD-1 BSD-2 BSD-4
 name: opensmtpd
 requires:
 - 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libasr
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
-  name: libressl
+  name: openssl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: fts-standalone
   
   version: ""
 - 
@@ -110,17 +110,24 @@ requires:
   
   version: ""
 - 
-  category: app-misc
+  category: dev-libs
   description: ""
   license: ""
-  name: ca-certificates
+  name: libressl
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: openssl
+  name: libevent
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  license: ""
+  name: ca-certificates
   
   version: ""
 - 
@@ -134,21 +141,14 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: fts-standalone
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libevent
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
   name: pam
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libasr
   
   version: ""
 uri:

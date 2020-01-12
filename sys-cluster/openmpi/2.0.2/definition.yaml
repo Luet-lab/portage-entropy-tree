@@ -11,6 +11,13 @@ conflicts:
   category: sys-cluster
   description: ""
   license: ""
+  name: pmix
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
   name: mpich
   
   version: ""
@@ -21,17 +28,17 @@ conflicts:
 mpi
   
   version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: pmix
-  
-  version: ""
 description: A high-performance message passing library (MPI)
 license: BSD
 name: openmpi
 requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: 1.2.8-r1
 - 
   category: dev-util
   description: ""
@@ -40,52 +47,10 @@ requires:
   
   version: 6.5.19-r1
 - 
-  category: virtual
-  description: ""
-  license: ""
-  name: jre
-  
-  version: "1.6"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libevent
-  
-  version: 2.0.22
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libltdl
-  
-  version: ""
-- 
-  category: sys-fabric
-  description: ""
-  license: ""
-  name: ofed
-  
-  version: ""
-- 
   category: sys-fabric
   description: ""
   license: ""
   name: infinipath-psm
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: knem
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: torque
   
   version: ""
 - 
@@ -103,12 +68,47 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: zlib
+  name: libevent
   
-  version: 1.2.8-r1
+  version: 2.0.22
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: torque
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jre
+  
+  version: "1.6"
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: knem
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libltdl
+  
+  version: ""
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: ofed
+  
+  version: ""
 uri:
 - http://www.open-mpi.org/software/ompi/v/downloads/openmpi-2.0.2.tar.bz2
 use_flags:

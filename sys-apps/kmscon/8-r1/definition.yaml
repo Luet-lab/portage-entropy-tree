@@ -5,31 +5,31 @@ license: MIT LGPL-2.1 BSD-2
 name: kmscon
 requires:
 - 
-  category: media-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: mesa[X(+)]
+  name: pixman
+  
+  version: ""
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: xkeyboard-config
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libdrm
+  name: libxkbcommon
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: mesa
-  
-  version: 8.0.3
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
+  name: mesa[X(+)]
   
   version: ""
 - 
@@ -47,26 +47,19 @@ requires:
   
   version: ""
 - 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+- 
   category: virtual
   description: ""
   license: ""
   name: udev
   
   version: "172"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxkbcommon
-  
-  version: ""
-- 
-  category: x11-misc
-  description: ""
-  license: ""
-  name: xkeyboard-config
-  
-  version: ""
 - 
   category: dev-libs
   description: ""
@@ -78,9 +71,16 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: pixman
+  name: libdrm
   
   version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: mesa
+  
+  version: 8.0.3
 uri:
 - https://www.freedesktop.org/software/kmscon/releases/kmscon-8.tar.xz
 use_flags:

@@ -5,19 +5,12 @@ license: BSD-2
 name: audacious
 requires:
 - 
-  category: x11-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: cairo
+  name: dbus-glib
   
-  version: 1.2.6
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pango
-  
-  version: 1.8.0
+  version: "0.60"
 - 
   category: virtual
   description: ""
@@ -36,21 +29,14 @@ requires:
   category: dev-qt
   description: ""
   license: ""
-  name: qtgui
+  name: qtcore
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.28"
 - 
   category: dev-qt
   description: ""
   license: ""
-  name: qtcore
+  name: qtgui
   
   version: ""
 - 
@@ -64,9 +50,23 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: dbus-glib
+  name: glib
   
-  version: "0.60"
+  version: "2.28"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo
+  
+  version: 1.2.6
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: pango
+  
+  version: 1.8.0
 uri:
 - mirror://gentoo/gentoo_ice-xmms-0.2.tar.bz2
 use_flags:

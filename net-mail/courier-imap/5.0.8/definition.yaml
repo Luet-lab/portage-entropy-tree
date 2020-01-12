@@ -18,14 +18,14 @@ conflicts:
   category: net-mail
   description: ""
   license: ""
-  name: cyrus-imapd
+  name: uw-imap
   
   version: ""
 - 
   category: net-mail
   description: ""
   license: ""
-  name: uw-imap
+  name: cyrus-imapd
   
   version: ""
 description: An IMAP daemon designed specifically for maildirs
@@ -33,10 +33,17 @@ license: GPL-3
 name: courier-imap
 requires:
 - 
-  category: net-libs
+  category: virtual
   description: ""
   license: ""
-  name: gnutls
+  name: fam
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
   
   version: ""
 - 
@@ -50,9 +57,9 @@ requires:
   category: net-libs
   description: ""
   license: ""
-  name: courier-unicode
+  name: courier-authlib
   
-  version: "2"
+  version: 0.66.4
 - 
   category: sec-policy
   description: ""
@@ -64,9 +71,9 @@ requires:
   category: net-libs
   description: ""
   license: ""
-  name: courier-authlib
+  name: gnutls
   
-  version: 0.66.4
+  version: ""
 - 
   category: net-dns
   description: ""
@@ -75,26 +82,12 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
-  name: db
+  name: gdbm
   
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: fam
-  
-  version: ""
+  version: 1.8.0
 - 
   category: net-mail
   description: ""
@@ -106,9 +99,16 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: gdbm
+  name: db
   
-  version: 1.8.0
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: courier-unicode
+  
+  version: "2"
 uri:
 - mirror://sourceforge/courier/courier-imap-5.0.8.tar.bz2
 use_flags:
