@@ -1,19 +1,12 @@
 category: sys-apps
 conflicts:
 - 
-  category: <app-shells
+  category: <sys-apps
   description: ""
   license: ""
-  name: gentoo-bashcomp
+  name: baselayout
   
-  version: "20180302"
-- 
-  category: <sys-process
-  description: ""
-  license: ""
-  name: procps
-  
-  version: 3.3.9-r2
+  version: 2.1-r1
 - 
   category: <sys-fs
   description: ""
@@ -32,27 +25,27 @@ conflicts:
   category: <app-shells
   description: ""
   license: ""
+  name: gentoo-bashcomp
+  
+  version: "20180302"
+- 
+  category: <app-shells
+  description: ""
+  license: ""
   name: gentoo-zsh-completions
   
   version: "20180228"
 - 
-  category: <sys-apps
+  category: <sys-process
   description: ""
   license: ""
-  name: baselayout
+  name: procps
   
-  version: 2.1-r1
+  version: 3.3.9-r2
 description: OpenRC manages the services, startup and shutdown of a host
 license: BSD-2
 name: openrc
 requires:
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: audit
-  
-  version: ""
 - 
   category: sys-libs
   description: ""
@@ -61,12 +54,19 @@ requires:
   
   version: "2.6"
 - 
-  category: sys-apps
+  category: app-shells
   description: ""
   license: ""
-  name: sysvinit-2.86-r6[selinux?]
+  name: bash
   
   version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-base-policy
+  
+  version: 2.20170204-r4
 - 
   category: sys-libs
   description: ""
@@ -82,12 +82,12 @@ requires:
   
   version: ""
 - 
-  category: sec-policy
+  category: sys-apps
   description: ""
   license: ""
-  name: selinux-base-policy
+  name: sysvinit-2.86-r6[selinux?]
   
-  version: 2.20170204-r4
+  version: ""
 - 
   category: sys-auth
   description: ""
@@ -96,10 +96,17 @@ requires:
   
   version: ""
 - 
-  category: app-shells
+  category: sec-policy
   description: ""
   license: ""
-  name: bash
+  name: selinux-openrc
+  
+  version: 2.20170204-r4
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: tmpfiles
   
   version: ""
 - 
@@ -110,26 +117,19 @@ requires:
   
   version: ""
 - 
+  category: sys-process
+  description: ""
+  license: ""
+  name: audit
+  
+  version: ""
+- 
   category: sys-apps
   description: ""
   license: ""
   name: policycoreutils
   
   version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: tmpfiles
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-openrc
-  
-  version: 2.20170204-r4
 uri: []
 use_flags:
 - audit

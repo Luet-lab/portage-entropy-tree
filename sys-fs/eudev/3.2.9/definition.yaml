@@ -1,13 +1,6 @@
 category: sys-fs
 conflicts:
 - 
-  category: <sys-fs
-  description: ""
-  license: ""
-  name: lvm2
-  
-  version: 2.02.103
-- 
   category: <sec-policy
   description: ""
   license: ""
@@ -15,17 +8,24 @@ conflicts:
   
   version: 2.20120725-r10
 - 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: udev
-  
-  version: ""
-- 
   category: sys-apps
   description: ""
   license: ""
   name: systemd
+  
+  version: ""
+- 
+  category: <sys-fs
+  description: ""
+  license: ""
+  name: lvm2
+  
+  version: 2.02.103
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: udev
   
   version: ""
 - 
@@ -50,21 +50,28 @@ requires:
   category: sys-apps
   description: ""
   license: ""
-  name: kmod
+  name: util-linux
   
-  version: "16"
+  version: "2.20"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gobject-introspection
+  
+  version: "1.38"
 - 
   category: acct-group
   description: ""
   license: ""
-  name: kvm
+  name: input
   
   version: ""
 - 
   category: acct-group
   description: ""
   license: ""
-  name: input
+  name: kvm
   
   version: ""
 - 
@@ -78,16 +85,9 @@ requires:
   category: sys-apps
   description: ""
   license: ""
-  name: util-linux
+  name: kmod
   
-  version: "2.20"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: gobject-introspection
-  
-  version: "1.38"
+  version: "16"
 - 
   category: sys-libs
   description: ""

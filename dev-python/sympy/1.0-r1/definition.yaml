@@ -5,17 +5,17 @@ license: BSD
 name: sympy
 requires:
 - 
-  category: dev-texlive
+  category: dev-libs
   description: ""
   license: ""
-  name: texlive-fontsextra
+  name: libxml2
   
   version: ""
 - 
-  category: app-text
+  category: x11-libs
   description: ""
   license: ""
-  name: dvipng
+  name: gtkmathview
   
   version: ""
 - 
@@ -47,24 +47,17 @@ requires:
   
   version: ""
 - 
+  category: dev-texlive
+  description: ""
+  license: ""
+  name: texlive-fontsextra
+  
+  version: ""
+- 
   category: app-text
   description: ""
   license: ""
   name: ghostscript-gpl
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtkmathview
   
   version: ""
 - 
@@ -74,10 +67,16 @@ requires:
   name: texmacs
   
   version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: dvipng
+  
+  version: ""
 uri:
 - https://github.com/sympy/sympy/releases/download/sympy-1.0/sympy-1.0.tar.gz
 use_flags:
-- doc
 - examples
 - gtk
 - imaging
@@ -87,8 +86,6 @@ use_flags:
 - opengl
 - pdf
 - png
-- pyglet
 - test
 - texmacs
-- theano
 version: 1.0-r1

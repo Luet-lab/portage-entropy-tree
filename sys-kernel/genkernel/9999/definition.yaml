@@ -5,10 +5,10 @@ license: GPL-2
 name: genkernel
 requires:
 - 
-  category: sys-apps
+  category: sys-devel
   description: ""
   license: ""
-  name: sandbox
+  name: autoconf
   
   version: ""
 - 
@@ -26,10 +26,10 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: sys-devel
   description: ""
   license: ""
-  name: pkgconfig
+  name: libtool
   
   version: ""
 - 
@@ -40,12 +40,26 @@ requires:
   
   version: ""
 - 
+  category: app-arch
+  description: ""
+  license: ""
+  name: cpio
+  
+  version: ""
+- 
   category: app-misc
   description: ""
   license: ""
   name: pax-utils
   
   version: 1.2.2
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: pkgconfig
+  
+  version: ""
 - 
   category: app-portage
   description: ""
@@ -54,35 +68,21 @@ requires:
   
   version: ""
 - 
-  category: sys-devel
+  category: sys-apps
   description: ""
   license: ""
-  name: libtool
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: cpio
-  
-  version: ""
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: autoconf
+  name: sandbox
   
   version: ""
 uri:
 - https://dl.bintray.com/boostorg/release/1.72.0/source/boost_1_72_0.tar.bz2
-- https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v5.4.tar.xz
+- https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v5.4.1.tar.xz
 - https://www.busybox.net/downloads/busybox-1.31.1.tar.bz2
 - https://www.kernel.org/pub/linux/utils/cryptsetup/v/cryptsetup-2.2.2.tar.xz
 - https://people.redhat.com/~heinzm/sw/dmraid/src/dmraid-1.0.0.rc16-3.tar.bz2
 - https://matt.ucc.asn.au/dropbear/releases/dropbear-2019.78.tar.bz2
 - https://github.com/libexpat/libexpat/releases/download/R_2_2_8/expat-2.2.8.tar.xz
-- https://www.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/v1.45.4/e2fsprogs-1.45.4.tar.xz
+- https://www.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/v1.45.5/e2fsprogs-1.45.5.tar.xz
 - https://github.com/libfuse/libfuse/releases/download/fuse-2.9.9/fuse-2.9.9.tar.gz
 - mirror://gnupg/gnupg/gnupg-1.4.23.tar.bz2
 - https://github.com/open-iscsi/open-iscsi/archive/2.0.878.tar.gz -> open-iscsi-2.0.878.tar.gz
@@ -98,7 +98,7 @@ uri:
 - https://github.com/jthornber/thin-provisioning-tools/archive/v0.8.5.tar.gz -> thin-provisioning-tools-0.8.5.tar.gz
 - https://github.com/rpodgorny/unionfs-fuse/archive/v2.0.tar.gz -> unionfs-fuse-2.0.tar.gz
 - https://www.kernel.org/pub/linux/utils/util-linux/v2.34/util-linux-2.34.tar.xz
-- https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-5.3.0.tar.xz
+- https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-5.4.0.tar.xz
 - https://zlib.net/zlib-1.2.11.tar.gz
 - https://github.com/facebook/zstd/archive/v1.4.4.tar.gz -> zstd-1.4.4.tar.gz
 use_flags:

@@ -1,13 +1,6 @@
 category: sys-kernel
 conflicts:
 - 
-  category: <sys-apps
-  description: ""
-  license: ""
-  name: openrc
-  
-  version: 0.9.9
-- 
   category: sys-kernel
   description: ""
   license: ""
@@ -21,10 +14,38 @@ conflicts:
   name: eudev
   
   version: ""
+- 
+  category: <sys-apps
+  description: ""
+  license: ""
+  name: openrc
+  
+  version: 0.9.9
 description: Gentoo automatic kernel building scripts, reloaded
 license: GPL-2
 name: genkernel-next
 requires:
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: cryptsetup
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: dmraid
+  
+  version: 1.0.0_rc16
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: cpio
+  
+  version: ""
 - 
   category: app-misc
   description: ""
@@ -32,6 +53,20 @@ requires:
   name: pax-utils
   
   version: "0.6"
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: mdadm
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lvm2
+  
+  version: ""
 - 
   category: sys-apps
   description: ""
@@ -43,14 +78,42 @@ requires:
   category: sys-fs
   description: ""
   license: ""
-  name: dmraid
+  name: e2fsprogs
   
-  version: 1.0.0_rc16
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gnupg
+  
+  version: ""
 - 
   category: sys-boot
   description: ""
   license: ""
   name: plymouth
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: asciidoc
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: ""
+- 
+  category: sys-block
+  description: ""
+  license: ""
+  name: open-iscsi
   
   version: ""
 - 
@@ -64,70 +127,7 @@ requires:
   category: sys-block
   description: ""
   license: ""
-  name: open-iscsi
-  
-  version: ""
-- 
-  category: sys-block
-  description: ""
-  license: ""
   name: thin-provisioning-tools
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: cpio
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: lvm2
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: cryptsetup
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: mdadm
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: ""
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: gnupg
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: asciidoc
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: e2fsprogs
   
   version: ""
 uri:

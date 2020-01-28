@@ -4,14 +4,14 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: msmtp
+  name: esmtp
   
   version: ""
 - 
   category: mail-mta
   description: ""
   license: ""
-mailer
+  name: exim
   
   version: ""
 - 
@@ -25,9 +25,51 @@ mailer
   category: mail-mta
   description: ""
   license: ""
+  name: msmtp
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: netqmail
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
   name: opensmtpd
   
   version: ""
+- 
+  category: '>=mail-mta'
+  description: ""
+  license: ""
+  name: ssmtp
+  
+  version: 2.64-r2
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: vacation
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+mailer
+  
+  version: ""
+- 
+  category: <mail-mta
+  description: ""
+  license: ""
+  name: ssmtp
+  
+  version: 2.64-r2
 - 
   category: mail-mta
   description: ""
@@ -49,57 +91,22 @@ mailer
   name: mini-qmail
   
   version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: netqmail
-  
-  version: ""
-- 
-  category: <mail-mta
-  description: ""
-  license: ""
-  name: ssmtp
-  
-  version: 2.64-r2
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: vacation
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: esmtp
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: exim
-  
-  version: ""
-- 
-  category: '>=mail-mta'
-  description: ""
-  license: ""
-  name: ssmtp
-  
-  version: 2.64-r2
 description: Widely-used Mail Transport Agent (MTA)
 license: Sendmail GPL-2
 name: sendmail
 requires:
 - 
-  category: net-mail
+  category: net-nds
   description: ""
   license: ""
-  name: mailbase
+  name: openldap
+  
+  version: ""
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: m4
   
   version: ""
 - 
@@ -110,10 +117,10 @@ requires:
   
   version: 2.1.10
 - 
-  category: net-nds
+  category: dev-libs
   description: ""
   license: ""
-  name: openldap
+  name: openssl
   
   version: ""
 - 
@@ -124,20 +131,6 @@ requires:
   
   version: "0.00"
 - 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: m4
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: tcp-wrappers
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
@@ -145,10 +138,17 @@ requires:
   
   version: "3.2"
 - 
-  category: dev-libs
+  category: net-mail
   description: ""
   license: ""
-  name: openssl
+  name: mailbase
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: tcp-wrappers
   
   version: ""
 uri:

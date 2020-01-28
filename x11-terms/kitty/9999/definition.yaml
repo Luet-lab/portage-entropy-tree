@@ -5,17 +5,31 @@ license: GPL-3
 name: kitty
 requires:
 - 
-  category: x11-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libxkbcommon[X]
+  name: wayland
   
   version: ""
 - 
-  category: sys-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: zlib
+  name: wayland-protocols
+  
+  version: "1.17"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libcanberra
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libpng
   
   version: ""
 - 
@@ -40,38 +54,10 @@ requires:
   
   version: ""
 - 
-  category: virtual
-  description: ""
-  license: ""
-  name: imagemagick-tools
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: wayland
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: harfbuzz
-  
-  version: 1.5.0
-- 
   category: sys-apps
   description: ""
   license: ""
   name: dbus
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: fontconfig
   
   version: ""
 - 
@@ -85,16 +71,9 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libcanberra
+  name: harfbuzz
   
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libpng
-  
-  version: ""
+  version: 1.5.0
 - 
   category: x11-libs
   description: ""
@@ -110,15 +89,35 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: wayland-protocols
+  name: zlib
   
-  version: "1.17"
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: imagemagick-tools
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxkbcommon[X]
+  
+  version: ""
 uri: []
 use_flags:
 - debug
-- imagemagick
 - wayland
 version: "9999"

@@ -6,40 +6,19 @@ license: GPL-3
 name: gnome-dvb-daemon
 requires:
 - 
-  category: dev-python
+  category: dev-db
   description: ""
   license: ""
-  name: pygobject
+  name: sqlite
   
-  version: 3.2.1
+  version: "3.4"
 - 
-  category: media-libs
+  category: media-video
   description: ""
   license: ""
-  name: gst-rtsp-server
-  
-  version: 1.4.5
-- 
-  category: media-plugins
-  description: ""
-  license: ""
-  name: gst-plugins-dvb
+  name: totem
   
   version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: gstreamer
-  
-  version: 1.4.0
 - 
   category: media-libs
   description: ""
@@ -48,24 +27,10 @@ requires:
   
   version: 1.4.0
 - 
-  category: dev-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: libgee
-  
-  version: "0.8"
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
-  
-  version: "3.4"
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: gst-python
+  name: gtk+
   
   version: ""
 - 
@@ -83,12 +48,26 @@ requires:
   
   version: 1.4.0
 - 
-  category: media-video
+  category: media-libs
   description: ""
   license: ""
-  name: totem
+  name: gst-rtsp-server
+  
+  version: 1.4.5
+- 
+  category: media-plugins
+  description: ""
+  license: ""
+  name: gst-plugins-dvb
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: gobject-introspection
+  
+  version: 1.44.0
 - 
   category: dev-libs
   description: ""
@@ -97,12 +76,33 @@ requires:
   
   version: 2.32.0
 - 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gstreamer
+  
+  version: 1.4.0
+- 
   category: dev-libs
   description: ""
   license: ""
-  name: gobject-introspection
+  name: libgee
   
-  version: 1.44.0
+  version: "0.8"
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: gst-python
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pygobject
+  
+  version: 3.2.1
 uri: []
 use_flags:
 - nls

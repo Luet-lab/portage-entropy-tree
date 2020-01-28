@@ -5,17 +5,24 @@ license: GPL-2
 name: goffice
 requires:
 - 
-  category: dev-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: glib
+  name: gdk-pixbuf
   
-  version: 2.40.0
+  version: "2.22"
 - 
-  category: dev-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: libxslt
+  name: pango
+  
+  version: "1.24"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXrender
   
   version: ""
 - 
@@ -26,40 +33,12 @@ requires:
   
   version: "2.22"
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: cairo
-  
-  version: "1.10"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: pango
-  
-  version: "1.24"
-- 
   category: dev-libs
   description: ""
   license: ""
-  name: gobject-introspection
+  name: glib
   
-  version: "1"
-- 
-  category: gnome-extra
-  description: ""
-  license: ""
-  name: libgsf
-  
-  version: 1.14.23
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: libspectre
-  
-  version: 0.2.6
+  version: 2.40.0
 - 
   category: dev-libs
   description: ""
@@ -68,12 +47,19 @@ requires:
   
   version: 2.4.12
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxslt
+  
+  version: ""
+- 
   category: x11-libs
   description: ""
   license: ""
-  name: gdk-pixbuf
+  name: cairo
   
-  version: "2.22"
+  version: "1.10"
 - 
   category: x11-libs
   description: ""
@@ -89,12 +75,26 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libXrender
+  name: gobject-introspection
   
-  version: ""
+  version: "1"
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: libspectre
+  
+  version: 0.2.6
+- 
+  category: gnome-extra
+  description: ""
+  license: ""
+  name: libgsf
+  
+  version: 1.14.23
 uri: []
 use_flags:
 - +introspection

@@ -5,24 +5,10 @@ license: ""
 name: xdm
 requires:
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXft
-  
-  version: ""
-- 
   category: x11-apps
   description: ""
   license: ""
-  name: xconsole
+  name: xsm
   
   version: ""
 - 
@@ -33,10 +19,24 @@ requires:
   
   version: ""
 - 
-  category: sys-auth
+  category: sys-libs
   description: ""
   license: ""
-  name: consolekit
+  name: pam
+  
+  version: ""
+- 
+  category: x11-apps
+  description: ""
+  license: ""
+  name: xconsole
+  
+  version: ""
+- 
+  category: x11-apps
+  description: ""
+  license: ""
+  name: xinit
   
   version: ""
 - 
@@ -44,41 +44,6 @@ requires:
   description: ""
   license: ""
   name: sessreg
-  
-  version: ""
-- 
-  category: x11-apps
-  description: ""
-  license: ""
-  name: xrdb
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXt
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: "209"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXrender
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXinerama
   
   version: ""
 - 
@@ -92,6 +57,13 @@ requires:
   category: x11-libs
   description: ""
   license: ""
+  name: libXft
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
   name: libXaw
   
   version: ""
@@ -99,7 +71,35 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXdmcp
+  name: libXrender
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXt
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: consolekit
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "209"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXinerama
   
   version: ""
 - 
@@ -120,14 +120,14 @@ requires:
   category: x11-apps
   description: ""
   license: ""
-  name: xinit
+  name: xrdb
   
   version: ""
 - 
-  category: x11-apps
+  category: x11-libs
   description: ""
   license: ""
-  name: xsm
+  name: libXdmcp
   
   version: ""
 uri: []

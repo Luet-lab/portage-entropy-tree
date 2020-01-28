@@ -1,0 +1,41 @@
+category: www-apps
+conflicts: []
+description: A painless self-hosted Git service
+license: Apache-2.0 BSD BSD-2 ISC MIT MPL-2.0
+name: gitea
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: git
+  
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  license: ""
+  name: git
+  
+  version: ""
+- 
+  category: dev-vcs
+  description: ""
+  license: ""
+  name: git
+  
+  version: ""
+uri:
+- https://github.com/go-gitea/gitea/archive/v1.10.3.tar.gz -> gitea-1.10.3.tar.gz
+use_flags:
+- +acct
+- pam
+- sqlite
+version: 1.10.3

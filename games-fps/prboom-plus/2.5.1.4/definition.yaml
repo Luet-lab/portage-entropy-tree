@@ -1,7 +1,7 @@
 category: games-fps
 conflicts: []
 description: A Doom source port developed from the original PrBoom project
-license: "GPL-2+\n\tnonfree? ( freedist )\n\t!nonfree? ( BSD )"
+license: "GPL-2+\n\tnon-free? ( freedist )\n\t!non-free? ( BSD )"
 name: prboom-plus
 requires:
 - 
@@ -9,20 +9,6 @@ requires:
   description: ""
   license: ""
   name: portmidi
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libvorbis
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libpng
   
   version: ""
 - 
@@ -74,6 +60,20 @@ requires:
   name: libpcre
   
   version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libpng
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libvorbis
+  
+  version: ""
 uri:
 - https://github.com/coelckers/prboom-plus/archive/f96f891d068dcc5ec52ed91056b46d27e9a8462d.tar.gz
   -> prboom-plus-2.5.1.4.tar.gz
@@ -82,7 +82,7 @@ use_flags:
 - fluidsynth
 - mad
 - net
-- nonfree
+- non-free
 - +opengl
 - pcre
 - +png

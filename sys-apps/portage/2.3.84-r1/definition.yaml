@@ -26,12 +26,26 @@ license: GPL-2
 name: portage
 requires:
 - 
-  category: sys-apps
+  category: app-misc
   description: ""
   license: ""
-  name: sandbox
+  name: pax-utils
   
-  version: "2.2"
+  version: 0.1.17
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: python-exec
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: 2.0.94
 - 
   category: sys-apps
   description: ""
@@ -43,37 +57,30 @@ requires:
   category: sys-apps
   description: ""
   license: ""
-  name: install-xattr
+  name: sed
   
-  version: "0.3"
+  version: 4.0.5
 - 
-  category: app-misc
+  category: app-portage
   description: ""
   license: ""
-  name: pax-utils
+  name: gemato
   
-  version: 0.1.17
+  version: "14"
 - 
-  category: sys-libs
+  category: app-admin
   description: ""
   license: ""
-  name: libselinux
+  name: eselect
   
-  version: 2.0.94
+  version: "1.2"
 - 
-  category: dev-lang
+  category: app-crypt
   description: ""
   license: ""
-  name: python-exec
+  name: openpgp-keys-gentoo-release
   
-  version: ""
-- 
-  category: app-shells
-  description: ""
-  license: ""
-  name: bash
-  
-  version: ""
+  version: "20180706"
 - 
   category: app-crypt
   description: ""
@@ -92,23 +99,16 @@ requires:
   category: sys-apps
   description: ""
   license: ""
-  name: sed
+  name: sandbox
   
-  version: 4.0.5
+  version: "2.2"
 - 
-  category: app-admin
+  category: sys-apps
   description: ""
   license: ""
-  name: eselect
+  name: install-xattr
   
-  version: "1.2"
-- 
-  category: app-portage
-  description: ""
-  license: ""
-  name: gemato
-  
-  version: "14"
+  version: "0.3"
 - 
   category: app-arch
   description: ""
@@ -117,12 +117,12 @@ requires:
   
   version: "1.27"
 - 
-  category: app-crypt
+  category: app-shells
   description: ""
   license: ""
-  name: openpgp-keys-gentoo-release
+  name: bash
   
-  version: "20180706"
+  version: ""
 uri: []
 use_flags:
 - build

@@ -33,12 +33,19 @@ license: GPL-3
 name: courier-imap
 requires:
 - 
-  category: net-libs
+  category: net-dns
   description: ""
   license: ""
-  name: courier-authlib
+  name: libidn
   
-  version: 0.66.4
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
 - 
   category: dev-libs
   description: ""
@@ -50,9 +57,16 @@ requires:
   category: sys-libs
   description: ""
   license: ""
-  name: db
+  name: gdbm
   
-  version: ""
+  version: 1.8.0
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: mailbase
+  
+  version: 0.00-r8
 - 
   category: virtual
   description: ""
@@ -64,14 +78,28 @@ requires:
   category: net-libs
   description: ""
   license: ""
+  name: gnutls
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: courier-authlib
+  
+  version: 0.66.4
+- 
+  category: net-libs
+  description: ""
+  license: ""
   name: courier-unicode
   
   version: "2"
 - 
-  category: net-dns
+  category: sys-libs
   description: ""
   license: ""
-  name: libidn
+  name: db
   
   version: ""
 - 
@@ -81,34 +109,6 @@ requires:
   name: selinux-courier
   
   version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnutls
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: ""
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: mailbase
-  
-  version: 0.00-r8
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: gdbm
-  
-  version: 1.8.0
 uri:
 - mirror://sourceforge/courier/courier-imap-5.0.7.tar.bz2
 use_flags:

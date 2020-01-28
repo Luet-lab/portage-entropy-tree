@@ -4,21 +4,28 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
+  name: exim
+  
+  version: ""
+- 
+  category: <mail-mta
+  description: ""
+  license: ""
+  name: ssmtp
+  
+  version: 2.64-r2
+- 
+  category: '>=mail-mta'
+  description: ""
+  license: ""
+  name: ssmtp
+  
+  version: 2.64-r2
+- 
+  category: mail-mta
+  description: ""
+  license: ""
   name: qmail-ldap
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: sendmail
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: opensmtpd
   
   version: ""
 - 
@@ -32,28 +39,7 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: esmtp
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: exim
-  
-  version: ""
-- 
-  category: <mail-mta
-  description: ""
-  license: ""
-  name: ssmtp
-  
-  version: 2.64-r2
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: netqmail
+  name: mini-qmail
   
   version: ""
 - 
@@ -71,17 +57,31 @@ mailer
   
   version: ""
 - 
-  category: '>=mail-mta'
+  category: mail-mta
   description: ""
   license: ""
-  name: ssmtp
+  name: sendmail
   
-  version: 2.64-r2
+  version: ""
 - 
   category: mail-mta
   description: ""
   license: ""
-  name: mini-qmail
+  name: esmtp
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: netqmail
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: opensmtpd
   
   version: ""
 description: An SMTP client and SMTP plugin for mail user agents such as Mutt
@@ -89,10 +89,10 @@ license: GPL-3
 name: msmtp
 requires:
 - 
-  category: net-dns
+  category: acct-group
   description: ""
   license: ""
-  name: libidn2
+  name: msmtpd
   
   version: ""
 - 
@@ -106,7 +106,7 @@ requires:
   category: virtual
   description: ""
   license: ""
-  name: libintl
+  name: gsasl
   
   version: ""
 - 
@@ -120,7 +120,7 @@ requires:
   category: virtual
   description: ""
   license: ""
-  name: gsasl
+  name: libintl
   
   version: ""
 - 
@@ -138,10 +138,10 @@ requires:
   
   version: ""
 - 
-  category: acct-group
+  category: net-dns
   description: ""
   license: ""
-  name: msmtpd
+  name: libidn2
   
   version: ""
 uri:

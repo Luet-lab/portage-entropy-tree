@@ -1,0 +1,57 @@
+category: sys-apps
+conflicts: []
+description: Various utilities dealing with the PCI bus
+license: GPL-2
+name: pciutils
+requires:
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: hwids
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: kmod
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib-1.2.8-r1[static-libs(+),]
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libudev-208[static-libs(-),]
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: 1.2.8-r1
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libudev
+  
+  version: "208"
+uri:
+- https://git.kernel.org/pub/scm/utils/pciutils/pciutils.git/snapshot/pciutils-3.6.4.tar.gz
+use_flags:
+- dns
+- +kmod
+- static-libs
+- +udev
+- zlib
+version: 3.6.4

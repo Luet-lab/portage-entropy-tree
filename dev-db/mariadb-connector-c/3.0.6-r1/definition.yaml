@@ -4,34 +4,6 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
-  name: mysql[client-libs(+)]
-  
-  version: ""
-- 
-  category: '>=dev-db'
-  description: ""
-  license: ""
-  name: mariadb-10.2.0[client-libs(+)]
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: mariadb-galera[client-libs(+)]
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: percona-server[client-libs(+)]
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
   name: mariadb[client-libs(+)]
   
   version: ""
@@ -46,7 +18,35 @@ conflicts:
   category: dev-db
   description: ""
   license: ""
+  name: percona-server[client-libs(+)]
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mysql[client-libs(+)]
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: mariadb-galera[client-libs(+)]
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
   name: mysql-cluster[client-libs(+)]
+  
+  version: ""
+- 
+  category: '>=dev-db'
+  description: ""
+  license: ""
+  name: mariadb-10.2.0[client-libs(+)]
   
   version: ""
 description: C client library for MariaDB/MySQL
@@ -54,24 +54,10 @@ license: LGPL-2.1
 name: mariadb-connector-c
 requires:
 - 
-  category: virtual
+  category: sys-libs
   description: ""
   license: ""
-  name: libiconv
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
+  name: zlib
   
   version: ""
 - 
@@ -89,10 +75,24 @@ requires:
   
   version: 3.3.24
 - 
-  category: sys-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: zlib
+  name: libressl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libiconv
   
   version: ""
 - 

@@ -1,12 +1,12 @@
 category: sys-fs
 conflicts:
 - 
-  category: <sec-policy
+  category: <sys-fs
   description: ""
   license: ""
-  name: selinux-base
+  name: lvm2
   
-  version: 2.20120725-r10
+  version: 2.02.103
 - 
   category: <sys-libs
   description: ""
@@ -22,35 +22,35 @@ conflicts:
   
   version: ""
 - 
-  category: <sys-fs
-  description: ""
-  license: ""
-  name: lvm2
-  
-  version: 2.02.103
-- 
   category: sys-apps
   description: ""
   license: ""
   name: systemd
   
   version: ""
+- 
+  category: <sec-policy
+  description: ""
+  license: ""
+  name: selinux-base
+  
+  version: 2.20120725-r10
 description: Linux dynamic and persistent device naming support (aka userspace devfs)
 license: LGPL-2.1 MIT GPL-2
 name: udev
 requires:
 - 
-  category: acct-group
+  category: sys-apps
   description: ""
   license: ""
-  name: audio
+  name: acl
   
   version: ""
 - 
   category: acct-group
   description: ""
   license: ""
-  name: tape
+  name: cdrom
   
   version: ""
 - 
@@ -64,14 +64,7 @@ requires:
   category: acct-group
   description: ""
   license: ""
-  name: render
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: video
+  name: kvm
   
   version: ""
 - 
@@ -82,10 +75,10 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: acct-group
   description: ""
   license: ""
-  name: libcap
+  name: video
   
   version: ""
 - 
@@ -113,14 +106,21 @@ requires:
   category: acct-group
   description: ""
   license: ""
-  name: input
+  name: disk
   
   version: ""
 - 
   category: acct-group
   description: ""
   license: ""
-  name: kvm
+  name: render
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: tape
   
   version: ""
 - 
@@ -131,10 +131,24 @@ requires:
   
   version: "2.30"
 - 
-  category: sys-apps
+  category: acct-group
   description: ""
   license: ""
-  name: acl
+  name: audio
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: input
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap
   
   version: ""
 - 
@@ -144,20 +158,6 @@ requires:
   name: kmod
   
   version: "16"
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: cdrom
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: disk
-  
-  version: ""
 uri: []
 use_flags:
 - acl

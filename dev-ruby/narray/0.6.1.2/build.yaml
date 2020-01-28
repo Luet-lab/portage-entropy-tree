@@ -1,5 +1,5 @@
 steps:
-- emerge -j 3 -t --nospinner -b =${PACKAGE_CATEGORY}/${PACKAGE_NAME}-${PACKAGE_VERSION}
+- source /etc/profile && emerge -j 3 -t --nospinner -b =${PACKAGE_CATEGORY}/${PACKAGE_NAME}-${PACKAGE_VERSION}
 requires:
 - category: "layer"
   version:  "0.1"

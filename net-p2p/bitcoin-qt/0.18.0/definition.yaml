@@ -5,10 +5,10 @@ license: MIT
 name: bitcoin-qt
 requires:
 - 
-  category: sys-libs
+  category: dev-qt
   description: ""
   license: ""
-  name: db
+  name: qtgui
   
   version: ""
 - 
@@ -26,12 +26,40 @@ requires:
   
   version: ""
 - 
+  category: virtual
+  description: ""
+  license: ""
+  name: bitcoin-leveldb
+  
+  version: ""
+- 
   category: dev-libs
   description: ""
   license: ""
   name: protobuf
   
   version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: db
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: univalue
+  
+  version: 1.0.4
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: miniupnpc
+  
+  version: 1.9.20150916
 - 
   category: dev-libs
   description: ""
@@ -40,26 +68,19 @@ requires:
   
   version: ""
 - 
-  category: dev-qt
+  category: media-gfx
   description: ""
   license: ""
-  name: qtdbus
+  name: qrencode
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: openssl
+  name: boost
   
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: zeromq
-  
-  version: ""
+  version: 1.52.0
 - 
   category: dev-libs
   description: ""
@@ -78,30 +99,9 @@ requires:
   category: dev-qt
   description: ""
   license: ""
-  name: qtgui
+  name: qtdbus
   
   version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: bitcoin-leveldb
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: boost
-  
-  version: 1.52.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: univalue
-  
-  version: 1.0.4
 - 
   category: dev-libs
   description: ""
@@ -110,19 +110,19 @@ requires:
   
   version: ""
 - 
-  category: media-gfx
+  category: dev-libs
   description: ""
   license: ""
-  name: qrencode
+  name: openssl
   
   version: ""
 - 
   category: net-libs
   description: ""
   license: ""
-  name: miniupnpc
+  name: zeromq
   
-  version: 1.9.20150916
+  version: ""
 uri:
 - https://github.com/bitcoin/bitcoin/archive/2472733a24a9364e4c6233ccd04166a26a68cc65.tar.gz
   -> bitcoin-v0.18.0.tar.gz

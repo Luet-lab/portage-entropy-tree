@@ -5,10 +5,10 @@ license: BSD
 name: libpcap
 requires:
 - 
-  category: dev-libs
+  category: sys-cluster
   description: ""
   license: ""
-  name: libnl
+  name: rdma-core
   
   version: ""
 - 
@@ -32,11 +32,19 @@ requires:
   name: dbus
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libnl
+  
+  version: ""
 uri: []
 use_flags:
 - bluetooth
 - dbus
 - netlink
+- rdma
 - -remote
 - static-libs
 - usb

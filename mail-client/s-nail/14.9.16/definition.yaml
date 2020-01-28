@@ -1,10 +1,10 @@
 category: mail-client
 conflicts:
 - 
-  category: net-mail
+  category: mail-client
   description: ""
   license: ""
-  name: mailutils
+  name: mailx
   
   version: ""
 - 
@@ -15,16 +15,23 @@ conflicts:
   
   version: ""
 - 
-  category: mail-client
+  category: net-mail
   description: ""
   license: ""
-  name: mailx
+  name: mailutils
   
   version: ""
 description: Enhanced mailx-compatible mail client based on Hierloom mailx (nail)
 license: BSD BSD-4 ISC RSA
 name: s-nail
 requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
 - 
   category: virtual
   description: ""
@@ -40,10 +47,10 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: virtual
   description: ""
   license: ""
-  name: openssl
+  name: krb5
   
   version: ""
 - 
@@ -58,13 +65,6 @@ requires:
   description: ""
   license: ""
   name: libressl
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: krb5
   
   version: ""
 uri:

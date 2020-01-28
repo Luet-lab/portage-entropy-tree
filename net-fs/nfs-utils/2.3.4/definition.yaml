@@ -8,23 +8,51 @@ conflicts:
   
   version: ""
 - 
-  category: <sys-apps
-  description: ""
-  license: ""
-  name: openrc
-  
-  version: 0.13.9
-- 
   category: net-nds
   description: ""
   license: ""
   name: portmap
   
   version: ""
+- 
+  category: <sys-apps
+  description: ""
+  license: ""
+  name: openrc
+  
+  version: 0.13.9
 description: NFS client and server daemons
 license: GPL-2
 name: nfs-utils
 requires:
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libtirpc
+  
+  version: 0.2.4-r1
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-rpcbind
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: e2fsprogs-libs
+  
+  version: ""
 - 
   category: net-nds
   description: ""
@@ -33,10 +61,17 @@ requires:
   
   version: 0.2.4
 - 
-  category: sys-apps
+  category: net-nds
   description: ""
   license: ""
-  name: util-linux
+  name: openldap
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libtirpc
   
   version: ""
 - 
@@ -53,6 +88,27 @@ requires:
   name: lvm2
   
   version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: tcp-wrappers
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-rpc
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: keyutils
+  
+  version: 1.5.9
 - 
   category: dev-libs
   description: ""
@@ -75,68 +131,12 @@ requires:
   
   version: ""
 - 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-rpc
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-rpcbind
-  
-  version: ""
-- 
   category: dev-db
   description: ""
   license: ""
   name: sqlite
   
   version: "3.3"
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libtirpc
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: e2fsprogs-libs
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: keyutils
-  
-  version: 1.5.9
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libtirpc
-  
-  version: 0.2.4-r1
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: tcp-wrappers
-  
-  version: ""
 uri:
 - mirror://sourceforge/nfs/nfs-utils-2.3.4.tar.bz2
 use_flags:

@@ -5,34 +5,6 @@ license: LGPL-2+
 name: libblockdev
 requires:
 - 
-  category: sys-block
-  description: ""
-  license: ""
-  name: parted
-  
-  version: "3.1"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: udev
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libyaml
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: 2.42.2
-- 
   category: sys-apps
   description: ""
   license: ""
@@ -40,12 +12,12 @@ requires:
   
   version: "19"
 - 
-  category: dev-libs
+  category: sys-block
   description: ""
   license: ""
-  name: nss
+  name: parted
   
-  version: 3.18.0
+  version: "3.1"
 - 
   category: dev-libs
   description: ""
@@ -68,12 +40,19 @@ requires:
   
   version: ""
 - 
-  category: sys-fs
+  category: dev-libs
   description: ""
   license: ""
-  name: dmraid
+  name: libyaml
   
   version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.42.2
 - 
   category: dev-libs
   description: ""
@@ -88,6 +67,27 @@ requires:
   name: util-linux
   
   version: "2.27"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nss
+  
+  version: 3.18.0
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: dmraid
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: ""
 uri: []
 use_flags:
 - bcache

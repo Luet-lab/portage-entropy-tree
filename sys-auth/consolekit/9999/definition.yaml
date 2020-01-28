@@ -5,19 +5,47 @@ license: GPL-2
 name: consolekit
 requires:
 - 
-  category: virtual
+  category: sys-libs
   description: ""
   license: ""
-  name: udev
+  name: pam
   
-  version: "200"
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: "0.110"
 - 
   category: sys-libs
   description: ""
   license: ""
-  name: libnih
+  name: libselinux
   
-  version: 1.0.2
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-consolekit
+  
+  version: ""
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: gettext
+  
+  version: "0.19"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: acl
+  
+  version: ""
 - 
   category: sys-power
   description: ""
@@ -33,40 +61,12 @@ requires:
   
   version: ""
 - 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: gettext
-  
-  version: "0.19"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: acl
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
-  name: pam
+  name: libnih
   
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: ""
+  version: 1.0.2
 - 
   category: dev-libs
   description: ""
@@ -79,27 +79,6 @@ requires:
   description: ""
   license: ""
   name: libudev
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libdrm
-  
-  version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: polkit
-  
-  version: "0.110"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: coreutils[acl?]
   
   version: ""
 - 
@@ -124,12 +103,33 @@ requires:
   
   version: ""
 - 
-  category: sec-policy
+  category: x11-libs
   description: ""
   license: ""
-  name: selinux-consolekit
+  name: libX11
   
   version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libdrm
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: coreutils[acl?]
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: "200"
 uri: []
 use_flags:
 - acl

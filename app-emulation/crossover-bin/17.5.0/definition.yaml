@@ -4,20 +4,27 @@ conflicts:
   category: app-emulation
   description: ""
   license: ""
-  name: crossover-office-pro-bin
+  name: crossover-office-bin
   
   version: ""
 - 
   category: app-emulation
   description: ""
   license: ""
-  name: crossover-office-bin
+  name: crossover-office-pro-bin
   
   version: ""
 description: Commercial version of app-emulation/wine with paid support.
 license: CROSSOVER-3
 name: crossover-bin
 requires:
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXxf86vm[abi_x86_32(-)]
+  
+  version: ""
 - 
   category: sys-libs
   description: ""
@@ -26,17 +33,10 @@ requires:
   
   version: ""
 - 
-  category: virtual
-  description: ""
-  license: ""
-  name: opencl[abi_x86_32(-)]
-  
-  version: ""
-- 
   category: media-libs
   description: ""
   license: ""
-  name: libv4l[abi_x86_32(-)]
+  name: libpng
   
   version: ""
 - 
@@ -50,147 +50,7 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXext[abi_x86_32(-)]
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: unzip
-  
-  version: ""
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: desktop-file-utils
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libcapi[abi_x86_32(-)]
-  
-  version: ""
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: gettext[abi_x86_32(-)]
-  
-  version: ""
-- 
-  category: media-gfx
-  description: ""
-  license: ""
-  name: sane-backends[abi_x86_32(-)]
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxcb[abi_x86_32(-)]
-  
-  version: ""
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: mpg123-1.5.0[abi_x86_32(-)]
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib[abi_x86_32(-)]
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libICE[abi_x86_32(-)]
-  
-  version: ""
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap[abi_x86_32(-)]
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: mesa[abi_x86_32(-)]
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux[abi_x86_32(-)]
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libSM[abi_x86_32(-)]
-  
-  version: ""
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: perl
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXdmcp[abi_x86_32(-)]
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXrandr[abi_x86_32(-)]
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pygtk
-  
-  version: "2.10"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: lcms
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libgphoto2[abi_x86_32(-)]
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: freetype-2.0.0[abi_x86_32(-)]
+  name: libX11[abi_x86_32(-)]
   
   version: ""
 - 
@@ -201,31 +61,24 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: x11-libs
   description: ""
   license: ""
-  name: opengl[abi_x86_32(-)]
+  name: libXrandr[abi_x86_32(-)]
   
   version: ""
 - 
-  category: dev-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: openssl
+  name: libXext[abi_x86_32(-)]
   
   version: ""
 - 
-  category: sys-libs
+  category: dev-lang
   description: ""
   license: ""
-  name: ncurses-compat
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: dbus-python
+  name: perl
   
   version: ""
 - 
@@ -246,14 +99,42 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: openal[abi_x86_32(-)]
+  name: lcms
   
   version: ""
 - 
-  category: virtual
+  category: sys-libs
   description: ""
   license: ""
-  name: glu[abi_x86_32(-)]
+  name: ncurses-compat
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype-2.0.0[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libICE[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libSM[abi_x86_32(-)]
   
   version: ""
 - 
@@ -264,6 +145,125 @@ requires:
   
   version: ""
 - 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libgphoto2[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: opengl[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libv4l[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: mesa[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXdmcp[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: gettext[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: glu[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: media-gfx
+  description: ""
+  license: ""
+  name: sane-backends[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pygtk
+  
+  version: "2.10"
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: dbus-python
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: desktop-file-utils
+  
+  version: ""
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: opencl[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: unzip
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libcapi[abi_x86_32(-)]
+  
+  version: ""
+- 
   category: net-print
   description: ""
   license: ""
@@ -271,24 +271,24 @@ requires:
   
   version: ""
 - 
+  category: media-sound
+  description: ""
+  license: ""
+  name: mpg123-1.5.0[abi_x86_32(-)]
+  
+  version: ""
+- 
   category: media-libs
   description: ""
   license: ""
-  name: libpng
+  name: openal[abi_x86_32(-)]
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libX11[abi_x86_32(-)]
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXxf86vm[abi_x86_32(-)]
+  name: libxcb[abi_x86_32(-)]
   
   version: ""
 uri: []

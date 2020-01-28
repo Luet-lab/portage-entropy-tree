@@ -8,13 +8,6 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: glib
-  
-  version: 2.45.8
-- 
-  category: dev-libs
-  description: ""
-  license: ""
   name: libgudev
   
   version: ""
@@ -22,21 +15,21 @@ requires:
   category: sys-auth
   description: ""
   license: ""
-  name: polkit
-  
-  version: "0.103"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libelf
+  name: elogind
   
   version: ""
 - 
-  category: dev-db
+  category: app-crypt
   description: ""
   license: ""
-  name: sqlite
+  name: gpgme
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
   
   version: ""
 - 
@@ -47,41 +40,6 @@ requires:
   
   version: "33"
 - 
-  category: app-arch
-  description: ""
-  license: ""
-  name: gcab
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: json-glib
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pygobject
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: thunderbolt-software-user-space
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: libarchive
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
@@ -89,19 +47,19 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: dev-db
   description: ""
   license: ""
-  name: systemd
-  
-  version: "211"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: freetype
+  name: sqlite
   
   version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libsoup
+  
+  version: 2.51.92
 - 
   category: sys-auth
   description: ""
@@ -109,13 +67,6 @@ requires:
   name: consolekit
   
   version: 1.0.0
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: elogind
-  
-  version: ""
 - 
   category: media-libs
   description: ""
@@ -131,31 +82,10 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: app-arch
   description: ""
   license: ""
-  name: libsmbios
-  
-  version: 2.4.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgusb
-  
-  version: 0.2.9
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pillow
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pycairo
+  name: gcab
   
   version: ""
 - 
@@ -165,6 +95,27 @@ requires:
   name: efivar
   
   version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: thunderbolt-software-user-space
+  
+  version: ""
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: colord
+  
+  version: 1.2.12
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libsmbios
+  
+  version: 2.4.0
 - 
   category: net-libs
   description: ""
@@ -187,26 +138,75 @@ requires:
   
   version: 0.1.7
 - 
-  category: net-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libsoup
-  
-  version: 2.51.92
-- 
-  category: x11-misc
-  description: ""
-  license: ""
-  name: colord
-  
-  version: 1.2.12
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: gpgme
+  name: json-glib
   
   version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pillow
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: 2.45.8
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pycairo
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: "0.103"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libelf
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "211"
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: libarchive
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pygobject
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgusb
+  
+  version: 0.2.9
 uri:
 - https://github.com/hughsie/fwupd/archive/1.2.11.tar.gz -> fwupd-1.2.11.tar.gz
 use_flags:

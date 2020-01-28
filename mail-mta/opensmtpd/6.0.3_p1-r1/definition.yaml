@@ -4,21 +4,14 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: esmtp
+  name: postfix
   
   version: ""
 - 
   category: mail-mta
   description: ""
   license: ""
-  name: msmtp
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: netqmail
+  name: exim
   
   version: ""
 - 
@@ -39,14 +32,14 @@ conflicts:
   category: mail-mta
   description: ""
   license: ""
-  name: postfix
+  name: ssmtp
   
   version: ""
 - 
   category: mail-mta
   description: ""
   license: ""
-  name: exim
+  name: esmtp
   
   version: ""
 - 
@@ -54,6 +47,20 @@ conflicts:
   description: ""
   license: ""
   name: mini-qmail
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: msmtp
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  license: ""
+  name: netqmail
   
   version: ""
 - 
@@ -68,13 +75,6 @@ mailer
   description: ""
   license: ""
   name: courier
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: ssmtp
   
   version: ""
 description: Lightweight but featured SMTP daemon from OpenBSD
@@ -92,7 +92,21 @@ requires:
   category: sys-libs
   description: ""
   license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
   name: fts-standalone
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libasr
   
   version: ""
 - 
@@ -103,10 +117,10 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: net-mail
   description: ""
   license: ""
-  name: db
+  name: mailbase
   
   version: ""
 - 
@@ -114,6 +128,13 @@ requires:
   description: ""
   license: ""
   name: libressl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: db
   
   version: ""
 - 
@@ -128,27 +149,6 @@ requires:
   description: ""
   license: ""
   name: ca-certificates
-  
-  version: ""
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: mailbase
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libasr
   
   version: ""
 uri:

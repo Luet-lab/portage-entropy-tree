@@ -5,24 +5,31 @@ license: BSD-2 GPL-2 LGPL-2.1 ZLIB
 name: efl
 requires:
 - 
-  category: media-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libsndfile
+  name: fribidi
   
   version: ""
 - 
-  category: x11-libs
+  category: virtual
   description: ""
   license: ""
-  name: libX11
+  name: opengl
   
   version: ""
 - 
-  category: x11-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: libxkbcommon[X]
+  name: libressl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: hyphen
   
   version: ""
 - 
@@ -33,17 +40,10 @@ requires:
   
   version: ""
 - 
-  category: sci-physics
+  category: x11-libs
   description: ""
   license: ""
-  name: bullet
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus
+  name: libXdmcp
   
   version: ""
 - 
@@ -64,77 +64,21 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libwebp
+  name: mesa
   
   version: ""
 - 
-  category: virtual
+  category: app-arch
   description: ""
   license: ""
-  name: opengl
+  name: lz4
   
   version: ""
 - 
-  category: x11-libs
+  category: net-libs
   description: ""
   license: ""
-  name: libXrandr
-  
-  version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: connman
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxkbcommon
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libudev
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: tiff
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXcursor
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: wayland
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: fontconfig
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
+  name: libvncserver
   
   version: ""
 - 
@@ -145,34 +89,6 @@ requires:
   
   version: ""
 - 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnutls
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXpm
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXpresent
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: xine-lib
-  
-  version: ""
-- 
   category: virtual
   description: ""
   license: ""
@@ -180,17 +96,17 @@ requires:
   
   version: ""
 - 
-  category: sys-auth
+  category: dev-libs
   description: ""
   license: ""
-  name: elogind
+  name: wayland
   
   version: ""
 - 
-  category: dev-lang
+  category: net-libs
   description: ""
   license: ""
-  name: mono
+  name: gnutls
   
   version: ""
 - 
@@ -201,38 +117,17 @@ requires:
   
   version: ""
 - 
-  category: media-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: openjpeg
+  name: libXrandr
   
   version: ""
 - 
-  category: dev-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: openssl
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libunwind
-  
-  version: ""
-- 
-  category: media-video
-  description: ""
-  license: ""
-  name: vlc
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libpng
+  name: libXrender
   
   version: ""
 - 
@@ -250,17 +145,94 @@ requires:
   
   version: ""
 - 
-  category: app-i18n
+  category: dev-lang
   description: ""
   license: ""
-  name: ibus
+  name: mono
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libraw
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: xine-lib
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: tslib
+  name: libXcursor
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXinerama
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXpresent
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxkbcommon
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: rlottie
+  
+  version: 0.0.1_pre20191101
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: avahi
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: curl
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxkbcommon[X]
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libunwind
   
   version: ""
 - 
@@ -274,6 +246,97 @@ requires:
   category: x11-libs
   description: ""
   license: ""
+  name: libXtst
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libudev
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: tslib
+  
+  version: ""
+- 
+  category: app-i18n
+  description: ""
+  license: ""
+  name: ibus
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: tiff
+  
+  version: ""
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: vlc
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gst-plugins-base
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: connman
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libdrm
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: lua
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: libspectre
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
   name: libXext
   
   version: ""
@@ -281,21 +344,42 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: rlottie
+  name: libsdl2
   
-  version: 0.0.1_pre20191101
+  version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: libressl
+  name: openssl
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: gstreamer
+  name: libpng
+  
+  version: ""
+- 
+  category: sci-physics
+  description: ""
+  license: ""
+  name: bullet
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXdamage
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: openjpeg
   
   version: ""
 - 
@@ -313,73 +397,10 @@ requires:
   
   version: ""
 - 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: lua
-  
-  version: ""
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: pulseaudio
-  
-  version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: curl
-  
-  version: ""
-- 
   category: media-libs
   description: ""
   license: ""
-  name: freetype
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXdamage
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: fribidi
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: lz4
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXinerama
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXrender
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: gst-plugins-base
+  name: libsndfile
   
   version: ""
 - 
@@ -393,70 +414,35 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libraw
+  name: libwebp
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXdmcp
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXi
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXtst
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libdrm
-  
-  version: ""
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: avahi
+  name: libX11
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: mesa
+  name: gstreamer
   
   version: ""
 - 
-  category: dev-libs
+  category: media-sound
   description: ""
   license: ""
-  name: hyphen
+  name: pulseaudio
   
   version: ""
 - 
-  category: media-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: libsdl2
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libvncserver
+  name: libXpm
   
   version: ""
 - 
@@ -467,6 +453,20 @@ requires:
   
   version: ""
 - 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: elogind
+  
+  version: ""
+- 
   category: x11-libs
   description: ""
   license: ""
@@ -474,10 +474,10 @@ requires:
   
   version: ""
 - 
-  category: app-text
+  category: x11-libs
   description: ""
   license: ""
-  name: libspectre
+  name: libXi
   
   version: ""
 uri:

@@ -1,0 +1,69 @@
+category: net-misc
+conflicts: []
+description: ISC Dynamic Host Configuration Protocol (DHCP) client/server
+license: MPL-2.0 BSD SSLeay GPL-2
+name: dhcp
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-dhcp
+  
+  version: ""
+- 
+  category: app-vim
+  description: ""
+  license: ""
+  name: dhcpd-syntax
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: iproute2
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: net-tools
+  
+  version: ""
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+uri:
+- ftp://ftp.isc.org/isc/dhcp/dhcp-4.4.2.tar.gz
+- ftp://ftp.isc.org/isc/dhcp/4.4.2/dhcp-4.4.2.tar.gz
+use_flags:
+- +client
+- ipv6
+- kernel_linux
+- ldap
+- libressl
+- selinux
+- +server
+- ssl
+- vim-syntax
+version: 4.4.2

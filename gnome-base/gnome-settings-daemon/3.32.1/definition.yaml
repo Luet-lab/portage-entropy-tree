@@ -19,12 +19,19 @@ license: GPL-2+ LGPL-2+
 name: gnome-settings-daemon
 requires:
 - 
-  category: sci-geosciences
+  category: media-libs
   description: ""
   license: ""
-  name: geocode-glib
+  name: lcms
   
-  version: "3.10"
+  version: "2.2"
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gnome-desktop
+  
+  version: 3.11.1
 - 
   category: x11-libs
   description: ""
@@ -33,17 +40,10 @@ requires:
   
   version: 0.7.3
 - 
-  category: media-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: alsa-lib
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXext
+  name: libgudev
   
   version: ""
 - 
@@ -54,54 +54,19 @@ requires:
   
   version: ""
 - 
-  category: media-libs
+  category: sci-geosciences
   description: ""
   license: ""
-  name: libcanberra
+  name: geocode-glib
   
-  version: ""
+  version: "3.10"
 - 
-  category: sys-power
+  category: x11-misc
   description: ""
   license: ""
-  name: upower
+  name: colord
   
-  version: "0.99"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gdk-pixbuf
-  
-  version: ""
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gsettings-desktop-schemas
-  
-  version: 3.27.90
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: pulseaudio
-  
-  version: "2"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.56"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: wayland
-  
-  version: ""
+  version: 1.0.2
 - 
   category: dev-libs
   description: ""
@@ -109,69 +74,6 @@ requires:
   name: libwacom
   
   version: "0.7"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: lcms
-  
-  version: "2.2"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: nss
-  
-  version: 3.11.2
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: networkmanager
-  
-  version: "1.0"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: fontconfig
-  
-  version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: elogind
-  
-  version: ""
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: gnome-desktop
-  
-  version: 3.11.1
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: polkit
-  
-  version: "0.114"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgudev
-  
-  version: ""
 - 
   category: x11-libs
   description: ""
@@ -187,19 +89,26 @@ requires:
   
   version: ""
 - 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
   category: dev-libs
   description: ""
   license: ""
-  name: libgweather
+  name: wayland
   
-  version: 3.9.5
+  version: ""
 - 
-  category: x11-misc
+  category: dev-libs
   description: ""
   license: ""
-  name: colord
+  name: nss
   
-  version: 1.0.2
+  version: 3.11.2
 - 
   category: app-misc
   description: ""
@@ -218,9 +127,100 @@ requires:
   category: x11-libs
   description: ""
   license: ""
+  name: libXext
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libcanberra
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: pulseaudio
+  
+  version: "2"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: alsa-lib
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.56"
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gsettings-desktop-schemas
+  
+  version: 3.27.90
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: "0.114"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
   name: libXi
   
   version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: elogind
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libgweather
+  
+  version: 3.9.5
+- 
+  category: sys-power
+  description: ""
+  license: ""
+  name: upower
+  
+  version: "0.99"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gdk-pixbuf
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: networkmanager
+  
+  version: "1.0"
 uri:
 - https://dev.gentoo.org/~leio/distfiles/gnome-settings-daemon-3.32.1-patchset.tar.xz
 use_flags:

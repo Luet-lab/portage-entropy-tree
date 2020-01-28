@@ -1,0 +1,27 @@
+category: app-admin
+conflicts:
+- 
+  category: <sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: 2.34-r3
+- 
+  category: '>=sys-apps'
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: 2.34-r3
+description: Standard log daemons
+license: BSD
+name: sysklogd
+requires: []
+uri:
+- https://github.com/troglobit/sysklogd/releases/download/v2.1.1/sysklogd-2.1.1.tar.gz
+use_flags:
+- logger
+- logrotate
+- systemd
+version: 2.1.1

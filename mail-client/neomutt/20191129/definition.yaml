@@ -5,19 +5,40 @@ license: GPL-2
 name: neomutt
 requires:
 - 
-  category: dev-db
+  category: sec-policy
   description: ""
   license: ""
-  name: qdbm
+  name: selinux-mutt
   
   version: ""
 - 
-  category: net-libs
+  category: app-misc
   description: ""
   license: ""
-  name: gnutls
+  name: mime-types
   
-  version: 1.0.17
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: kyotocabinet
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libintl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 0.9.6
 - 
   category: dev-libs
   description: ""
@@ -30,20 +51,6 @@ requires:
   description: ""
   license: ""
   name: slang
-  
-  version: ""
-- 
-  category: sec-policy
-  description: ""
-  license: ""
-  name: selinux-mutt
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: kyotocabinet
   
   version: ""
 - 
@@ -61,10 +68,10 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: net-mail
   description: ""
   license: ""
-  name: libressl
+  name: notmuch
   
   version: ""
 - 
@@ -75,10 +82,31 @@ requires:
   
   version: ""
 - 
-  category: app-misc
+  category: net-libs
   description: ""
   license: ""
-  name: mime-types
+  name: gnutls
+  
+  version: 1.0.17
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gpgme
+  
+  version: 0.9.0
+- 
+  category: net-dns
+  description: ""
+  license: ""
+  name: libidn
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
   
   version: ""
 - 
@@ -99,44 +127,16 @@ requires:
   category: dev-db
   description: ""
   license: ""
+  name: qdbm
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
   name: tokyocabinet
   
   version: ""
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: gpgme
-  
-  version: 0.9.0
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: notmuch
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libintl
-  
-  version: ""
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: libidn
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: 0.9.6
 uri:
 - https://github.com/neomutt/neomutt/archive/20191129.tar.gz -> neomutt-20191129.tar.gz
 use_flags:

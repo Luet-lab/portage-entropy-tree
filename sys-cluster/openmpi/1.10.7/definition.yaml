@@ -4,7 +4,7 @@ conflicts:
   category: sys-cluster
   description: ""
   license: ""
-  name: mpich2
+  name: mpich
   
   version: ""
 - 
@@ -18,7 +18,7 @@ conflicts:
   category: sys-cluster
   description: ""
   license: ""
-  name: mpich
+  name: mpich2
   
   version: ""
 - 
@@ -33,6 +33,13 @@ license: BSD
 name: openmpi
 requires:
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libltdl
+  
+  version: ""
+- 
   category: sys-fabric
   description: ""
   license: ""
@@ -43,35 +50,7 @@ requires:
   category: sys-cluster
   description: ""
   license: ""
-  name: torque
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: 1.2.8-r1
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: nvidia-cuda-toolkit
-  
-  version: 6.5.19-r1
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
   name: knem
-  
-  version: ""
-- 
-  category: sys-fabric
-  description: ""
-  license: ""
-  name: infinipath-psm
   
   version: ""
 - 
@@ -82,10 +61,17 @@ requires:
   
   version: 2.0.21
 - 
-  category: dev-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: libltdl
+  name: zlib
+  
+  version: 1.2.8-r1
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: torque
   
   version: ""
 - 
@@ -102,6 +88,20 @@ requires:
   name: jre
   
   version: "1.6"
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: infinipath-psm
+  
+  version: ""
+- 
+  category: dev-util
+  description: ""
+  license: ""
+  name: nvidia-cuda-toolkit
+  
+  version: 6.5.19-r1
 - 
   category: sys-fabric
   description: ""

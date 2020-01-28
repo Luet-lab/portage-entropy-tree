@@ -5,10 +5,31 @@ license: BSD GPL-2
 name: openssh
 requires:
 - 
+  category: sys-process
+  description: ""
+  license: ""
+  name: audit
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: 1.2.3
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: shadow
+  
+  version: ""
+- 
   category: net-libs
   description: ""
   license: ""
-  name: ldns[-ecdsa,ssl(+)]
+  name: ldns[ecdsa,ssl(+)]
   
   version: ""
 - 
@@ -16,41 +37,6 @@ requires:
   description: ""
   license: ""
   name: libressl
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: pam
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: 1.1.0g
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: krb5
-  
-  version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: pambase
-  
-  version: "20081028"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: shadow
   
   version: ""
 - 
@@ -64,14 +50,7 @@ requires:
   category: net-libs
   description: ""
   license: ""
-  name: ldns[ecdsa,ssl(+)]
-  
-  version: ""
-- 
-  category: net-misc
-  description: ""
-  license: ""
-  name: lksctp-tools
+  name: ldns[-ecdsa,ssl(+)]
   
   version: ""
 - 
@@ -82,13 +61,6 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: 1.2.3
-- 
   category: x11-apps
   description: ""
   license: ""
@@ -96,17 +68,24 @@ requires:
   
   version: ""
 - 
-  category: sys-process
+  category: sys-auth
   description: ""
   license: ""
-  name: audit
+  name: pambase
   
-  version: ""
+  version: "20081028"
 - 
   category: dev-libs
   description: ""
   license: ""
   name: libedit
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  license: ""
+  name: lksctp-tools
   
   version: ""
 - 
@@ -116,6 +95,27 @@ requires:
   name: libselinux
   
   version: "1.28"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 1.1.0g
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: krb5
+  
+  version: ""
 uri:
 - mirror://openbsd/OpenSSH/portable/openssh-8.0.tar.gz
 - 'https://dev.gentoo.org/~whissi/dist/openssh/openssh-8.0+x509-12.1-gentoo.diff.gz '

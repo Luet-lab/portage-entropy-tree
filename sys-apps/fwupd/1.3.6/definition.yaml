@@ -5,10 +5,10 @@ license: LGPL-2.1+
 name: fwupd
 requires:
 - 
-  category: dev-db
+  category: dev-libs
   description: ""
   license: ""
-  name: sqlite
+  name: libgpg-error
   
   version: ""
 - 
@@ -19,20 +19,6 @@ requires:
   
   version: 0.1.13
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: thunderbolt-software-user-space
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: cairo
-  
-  version: ""
-- 
   category: dev-python
   description: ""
   license: ""
@@ -40,80 +26,31 @@ requires:
   
   version: ""
 - 
-  category: media-libs
+  category: dev-db
   description: ""
   license: ""
-  name: fontconfig
+  name: sqlite
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: thunderbolt-software-user-space
   
   version: ""
 - 
   category: app-arch
   description: ""
   license: ""
-  name: libarchive
+  name: gcab
   
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libsmbios
-  
-  version: 2.4.0
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: elogind
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: "211"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: efivar
-  
-  version: "33"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: udev
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: gnutls
-  
-  version: 3.4.4.1
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: dbus
-  
-  version: ""
+  version: "1.0"
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: glib
-  
-  version: 2.45.8
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgpg-error
+  name: libgudev
   
   version: ""
 - 
@@ -131,38 +68,24 @@ requires:
   
   version: ""
 - 
-  category: app-arch
+  category: sys-libs
   description: ""
   license: ""
-  name: gcab
+  name: libsmbios
   
-  version: "1.0"
+  version: 2.4.0
 - 
-  category: dev-python
+  category: sys-libs
   description: ""
   license: ""
-  name: pygobject
+  name: efivar
   
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: libelf
-  
-  version: ""
+  version: "33"
 - 
   category: sys-auth
   description: ""
   license: ""
-  name: polkit
-  
-  version: "0.103"
-- 
-  category: sys-boot
-  description: ""
-  license: ""
-  name: efibootmgr
+  name: elogind
   
   version: ""
 - 
@@ -176,7 +99,21 @@ requires:
   category: app-crypt
   description: ""
   license: ""
-  name: tpm2-tss
+  name: gpgme
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "211"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: fontconfig
   
   version: ""
 - 
@@ -187,10 +124,31 @@ requires:
   
   version: ""
 - 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: dbus
+  
+  version: ""
+- 
   category: dev-libs
   description: ""
   license: ""
-  name: libgudev
+  name: glib
+  
+  version: 2.45.8
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libelf
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
   
   version: ""
 - 
@@ -201,17 +159,59 @@ requires:
   
   version: 1.0.0
 - 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: gpgme
-  
-  version: ""
-- 
   category: media-libs
   description: ""
   license: ""
   name: freetype
+  
+  version: ""
+- 
+  category: sys-boot
+  description: ""
+  license: ""
+  name: efibootmgr
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  license: ""
+  name: polkit
+  
+  version: "0.103"
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: gnutls
+  
+  version: 3.4.4.1
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: libarchive
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: pygobject
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: tpm2-tss
   
   version: ""
 uri:

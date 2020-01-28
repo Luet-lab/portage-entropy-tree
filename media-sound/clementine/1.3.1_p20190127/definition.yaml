@@ -5,6 +5,13 @@ license: GPL-3
 name: clementine
 requires:
 - 
+  category: media-libs
+  description: ""
+  license: ""
+  name: gstreamer
+  
+  version: ""
+- 
   category: sys-libs
   description: ""
   license: ""
@@ -12,52 +19,10 @@ requires:
   
   version: ""
 - 
-  category: dev-qt
+  category: x11-libs
   description: ""
   license: ""
-  name: qtdbus
-  
-  version: ""
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: fftw
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libprojectm
-  
-  version: 1.2.0
-- 
-  category: media-plugins
-  description: ""
-  license: ""
-  name: gst-plugins-soup
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtcore
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: protobuf
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: chromaprint
+  name: libX11
   
   version: ""
 - 
@@ -75,24 +40,10 @@ requires:
   
   version: 1.0.0
 - 
-  category: gnome-base
+  category: virtual
   description: ""
   license: ""
-  name: gvfs
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libmygpo-qt-1.0.9[qt5(+)]
+  name: opengl
   
   version: ""
 - 
@@ -103,24 +54,10 @@ requires:
   
   version: ""
 - 
-  category: dev-db
+  category: media-plugins
   description: ""
   license: ""
-  name: sqlite
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: glew
-  
-  version: ""
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: qca
+  name: gst-plugins-libmms
   
   version: ""
 - 
@@ -131,52 +68,73 @@ requires:
   
   version: ""
 - 
-  category: virtual
-  description: ""
-  license: ""
-  name: glu
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: opengl
-  
-  version: ""
-- 
-  category: media-plugins
-  description: ""
-  license: ""
-  name: gst-plugins-libmms
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: udisks
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
-  name: glib
+  name: libxml2
   
   version: ""
 - 
   category: dev-qt
   description: ""
   license: ""
-  name: qtgui
+  name: qtconcurrent
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtcore
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: chromaprint
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libcdio
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: fftw
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: crypto++
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtdbus
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: liblastfm
+  
+  version: 1.1.0_pre20150206
+- 
+  category: media-plugins
+  description: ""
+  license: ""
+  name: gst-plugins-taglib
   
   version: ""
 - 
@@ -190,7 +148,49 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: gstreamer
+  name: taglib
+  
+  version: 1.11.1_p20181028
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libprojectm
+  
+  version: 1.2.0
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: udisks
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: qca
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libmygpo-qt-1.0.9[qt5(+)]
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: glu
+  
+  version: ""
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gvfs
   
   version: ""
 - 
@@ -201,31 +201,17 @@ requires:
   
   version: ""
 - 
-  category: media-libs
-  description: ""
-  license: ""
-  name: taglib
-  
-  version: 1.11.1_p20181028
-- 
   category: dev-qt
   description: ""
   license: ""
-  name: qtconcurrent
+  name: qtgui
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: liblastfm
-  
-  version: 1.1.0_pre20150206
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libcdio
+  name: glew
   
   version: ""
 - 
@@ -236,17 +222,31 @@ requires:
   
   version: ""
 - 
-  category: media-plugins
+  category: dev-libs
   description: ""
   license: ""
-  name: gst-plugins-taglib
+  name: protobuf
   
   version: ""
 - 
   category: dev-libs
   description: ""
   license: ""
-  name: crypto++
+  name: glib
+  
+  version: ""
+- 
+  category: media-plugins
+  description: ""
+  license: ""
+  name: gst-plugins-soup
+  
+  version: ""
+- 
+  category: dev-db
+  description: ""
+  license: ""
+  name: sqlite
   
   version: ""
 uri:

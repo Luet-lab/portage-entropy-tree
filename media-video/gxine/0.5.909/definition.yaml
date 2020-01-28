@@ -5,38 +5,17 @@ license: GPL-2
 name: gxine
 requires:
 - 
-  category: media-libs
+  category: dev-libs
   description: ""
   license: ""
-  name: xine-lib
+  name: glib
   
-  version: 1.1.20
+  version: "2"
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXt
-  
-  version: ""
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: spidermonkey
-  
-  version: 1.8.2.15
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXext
+  name: libXrender
   
   version: ""
 - 
@@ -50,7 +29,21 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: nspr
+  name: libgudev
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: xine-lib
+  
+  version: 1.1.20
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxcb
   
   version: ""
 - 
@@ -75,31 +68,38 @@ requires:
   
   version: ""
 - 
-  category: dev-libs
+  category: dev-lang
   description: ""
   license: ""
-  name: glib
+  name: spidermonkey
   
-  version: "2"
+  version: 1.8.2.15
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libXrender
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libgudev
+  name: libX11
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
-  name: libxcb
+  name: libXt
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXext
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nspr
   
   version: ""
 - 
@@ -118,6 +118,5 @@ use_flags:
 - nls
 - nsplugin
 - udev
-- +xcb
 - xinerama
 version: 0.5.909

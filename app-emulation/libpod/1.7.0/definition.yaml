@@ -1,0 +1,28 @@
+category: app-emulation
+conflicts: []
+description: Library and podman tool for running OCI-based containers in Pods
+license: Apache-2.0 BSD BSD-2 CC-BY-SA-4.0 ISC MIT MPL-2.0
+name: libpod
+requires:
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gpgme
+  
+  version: ""
+- 
+  category: app-emulation
+  description: ""
+  license: ""
+  name: conmon
+  
+  version: 2.0.0
+uri:
+- https://github.com/containers/libpod/archive/v1.7.0.tar.gz -> libpod-1.7.0.tar.gz
+use_flags:
+- apparmor
+- btrfs
+- +rootless
+- selinux
+version: 1.7.0

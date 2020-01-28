@@ -5,10 +5,38 @@ license: GPL-2+ FDL-1.1+ LGPL-2+
 name: cinnamon-session
 requires:
 - 
-  category: sys-auth
+  category: x11-libs
   description: ""
   license: ""
-  name: elogind
+  name: libXext
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "183"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libSM
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXcomposite
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo
   
   version: ""
 - 
@@ -22,7 +50,14 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXtst
+  name: libX11
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXrender
   
   version: ""
 - 
@@ -33,12 +68,12 @@ requires:
   
   version: ""
 - 
-  category: sys-apps
+  category: sys-auth
   description: ""
   license: ""
-  name: systemd
+  name: polkit
   
-  version: "183"
+  version: ""
 - 
   category: media-libs
   description: ""
@@ -54,17 +89,17 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
+  category: sys-auth
   description: ""
   license: ""
-  name: libXext
+  name: elogind
   
   version: ""
 - 
-  category: gnome-extra
+  category: x11-libs
   description: ""
   license: ""
-  name: cinnamon-desktop-2.6[systemd=]
+  name: libXtst
   
   version: ""
 - 
@@ -82,6 +117,13 @@ requires:
   
   version: ""
 - 
+  category: gnome-extra
+  description: ""
+  license: ""
+  name: cinnamon-desktop-2.6[systemd=]
+  
+  version: ""
+- 
   category: x11-libs
   description: ""
   license: ""
@@ -92,35 +134,7 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: cairo
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
   name: libXau
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXrender
-  
-  version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: polkit
   
   version: ""
 - 
@@ -137,20 +151,6 @@ requires:
   name: glib
   
   version: 2.37.3
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libSM
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXcomposite
-  
-  version: ""
 uri:
 - https://github.com/linuxmint/cinnamon-session/archive/3.6.1.tar.gz -> cinnamon-session-3.6.1.tar.gz
 use_flags:

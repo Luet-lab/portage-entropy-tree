@@ -1,0 +1,50 @@
+category: gui-apps
+conflicts: []
+description: Screen locker for Wayland
+license: MIT
+name: swaylock
+requires:
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: wayland
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: cairo
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libxkbcommon
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gdk-pixbuf
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: pam
+  
+  version: ""
+uri:
+- https://github.com/swaywm/swaylock/archive/1.5.tar.gz -> swaylock-1.5.tar.gz
+use_flags:
+- fish-completion
+- +gdk-pixbuf
+- +man
+- +pam
+- zsh-completion
+version: "1.5"

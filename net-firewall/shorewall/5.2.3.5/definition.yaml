@@ -1,0 +1,121 @@
+category: net-firewall
+conflicts:
+- 
+  category: net-firewall
+  description: ""
+  license: ""
+  name: shorewall-core
+  
+  version: ""
+- 
+  category: net-firewall
+  description: ""
+  license: ""
+  name: shorewall-lite
+  
+  version: ""
+- 
+  category: net-firewall
+  description: ""
+  license: ""
+  name: shorewall6
+  
+  version: ""
+- 
+  category: net-firewall
+  description: ""
+  license: ""
+  name: shorewall-init
+  
+  version: ""
+- 
+  category: <sys-apps
+  description: ""
+  license: ""
+  name: systemd
+  
+  version: "214"
+- 
+  category: net-firewall
+  description: ""
+  license: ""
+  name: shorewall6-lite
+  
+  version: ""
+description: A high-level tool for configuring Netfilter
+license: GPL-2
+name: shorewall
+requires:
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: perl
+  
+  version: "5.16"
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: perl-Digest-SHA
+  
+  version: ""
+- 
+  category: net-firewall
+  description: ""
+  license: ""
+  name: iptables
+  
+  version: 1.4.20
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: bc
+  
+  version: 1.06.95
+- 
+  category: sec-policy
+  description: ""
+  license: ""
+  name: selinux-shorewall
+  
+  version: 2.20161023-r3
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: iproute2
+  
+  version: 3.8.0
+- 
+  category: dev-perl
+  description: ""
+  license: ""
+  name: Socket6
+  
+  version: 0.230.0
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: coreutils
+  
+  version: "8.20"
+uri:
+- https://shorewall.org/pub/shorewall//shorewall-/shorewall-core-5.2.3.5.tar.bz2
+- 'https://shorewall.org/pub/shorewall//shorewall-/shorewall-5.2.3.5.tar.bz2 '
+- 'https://shorewall.org/pub/shorewall//shorewall-/shorewall6-5.2.3.5.tar.bz2 '
+- 'https://shorewall.org/pub/shorewall//shorewall-/shorewall-lite-5.2.3.5.tar.bz2 '
+- 'https://shorewall.org/pub/shorewall//shorewall-/shorewall6-lite-5.2.3.5.tar.bz2 '
+- 'https://shorewall.org/pub/shorewall//shorewall-/shorewall-init-5.2.3.5.tar.bz2 '
+- 'https://shorewall.org/pub/shorewall//shorewall-/Shorewall-docs-html-5.2.3.5.tar.bz2 '
+use_flags:
+- doc
+- +init
+- +ipv4
+- ipv6
+- lite4
+- lite6
+- selinux
+version: 5.2.3.5

@@ -1,0 +1,52 @@
+category: net-analyzer
+conflicts: []
+description: A Tool for network monitoring and data acquisition
+license: BSD
+name: tcpdump
+requires:
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libcap-ng
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libpcap
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libsmi
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: 0.9.6m
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+uri:
+- https://www.tcpdump.org/release/tcpdump-4.9.3.tar.gz
+use_flags:
+- +drop-root
+- libressl
+- smi
+- ssl
+- samba
+- suid
+- test
+version: 4.9.3-r1

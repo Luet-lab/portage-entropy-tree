@@ -5,12 +5,19 @@ license: Apache-2.0 SSPL-1
 name: mongodb
 requires:
 - 
-  category: dev-cpp
+  category: dev-libs
   description: ""
   license: ""
-  name: yaml-cpp
+  name: libpcre
   
-  version: 0.5.3
+  version: "8.41"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: snowball-stemmer
+  
+  version: ""
 - 
   category: net-libs
   description: ""
@@ -26,13 +33,6 @@ requires:
   
   version: 1.2.11
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: cyrus-sasl
-  
-  version: ""
-- 
   category: app-admin
   description: ""
   license: ""
@@ -47,38 +47,24 @@ requires:
   
   version: 1.0.1g
 - 
-  category: acct-group
+  category: dev-libs
   description: ""
   license: ""
-  name: mongodb
+  name: libressl
   
   version: ""
+- 
+  category: dev-cpp
+  description: ""
+  license: ""
+  name: yaml-cpp
+  
+  version: 0.5.3
 - 
   category: acct-user
   description: ""
   license: ""
   name: mongodb
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libpcre
-  
-  version: "8.41"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: snowball-stemmer
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
   
   version: ""
 - 
@@ -95,6 +81,20 @@ requires:
   name: boost
   
   version: "1.60"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: cyrus-sasl
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  license: ""
+  name: mongodb
+  
+  version: ""
 uri:
 - https://fastdl.mongodb.org/src/mongodb-src-r4.0.13.tar.gz
 use_flags:

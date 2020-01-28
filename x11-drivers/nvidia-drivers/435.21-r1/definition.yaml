@@ -1,17 +1,17 @@
 category: x11-drivers
 conflicts:
 - 
-  category: media-video
-  description: ""
-  license: ""
-  name: nvidia-settings
-  
-  version: ""
-- 
   category: app-eselect
   description: ""
   license: ""
   name: eselect-opengl
+  
+  version: ""
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: nvidia-settings
   
   version: ""
 description: NVIDIA Accelerated Graphics Driver
@@ -19,47 +19,40 @@ license: GPL-2 NVIDIA-r2
 name: nvidia-drivers
 requires:
 - 
-  category: sys-power
+  category: x11-libs
   description: ""
   license: ""
-  name: acpid
+  name: gtk+
   
   version: ""
 - 
-  category: dev-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: wayland
+  name: libXxf86vm
   
   version: ""
 - 
-  category: app-eselect
+  category: media-libs
   description: ""
   license: ""
-  name: eselect-opencl
+  name: libglvnd
   
   version: ""
 - 
-  category: dev-libs
+  category: x11-base
   description: ""
   license: ""
-  name: atk
+  name: xorg-server
   
-  version: ""
+  version: 1.20.99
 - 
   category: x11-libs
   description: ""
   license: ""
   name: libX11
   
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXrandr
-  
-  version: ""
+  version: 1.6.2
 - 
   category: x11-libs
   description: ""
@@ -85,7 +78,7 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: glib
+  name: atk
   
   version: ""
 - 
@@ -99,21 +92,77 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libvdpau
-  
-  version: "1.0"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
+  name: libX11
   
   version: ""
 - 
   category: x11-libs
   description: ""
   license: ""
+  name: libXrandr
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXv
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libvdpau
+  
+  version: "1.0"
+- 
+  category: x11-libs
+  description: ""
+  license: ""
   name: cairo
+  
+  version: ""
+- 
+  category: sys-power
+  description: ""
+  license: ""
+  name: acpid
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: wayland
+  
+  version: ""
+- 
+  category: app-eselect
+  description: ""
+  license: ""
+  name: eselect-opengl
+  
+  version: 1.0.9
+- 
+  category: app-eselect
+  description: ""
+  license: ""
+  name: eselect-opencl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: glibc
+  
+  version: 2.6.1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
   
   version: ""
 - 
@@ -131,61 +180,12 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXv
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXxf86vm
-  
-  version: ""
-- 
-  category: app-eselect
-  description: ""
-  license: ""
-  name: eselect-opengl
-  
-  version: 1.0.9
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libglvnd
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
   license: ""
-  name: glibc
-  
-  version: 2.6.1
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
+  name: zlib
   
   version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
-  
-  version: 1.6.2
-- 
-  category: x11-base
-  description: ""
-  license: ""
-  name: xorg-server
-  
-  version: 1.20.99
 uri:
 - 'https://us.download.nvidia.com/XFree86/FreeBSD-x86_64/435.21/NVIDIA-FreeBSD-x86_64-435.21.tar.gz '
 - 'https://us.download.nvidia.com/XFree86/Linux-x86_64/435.21/NVIDIA-Linux-x86_64-435.21.run '

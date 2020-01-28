@@ -4,7 +4,7 @@ conflicts:
   category: sys-cluster
   description: ""
   license: ""
-  name: mpich
+  name: mpich2
   
   version: ""
 - 
@@ -18,14 +18,14 @@ mpi
   category: sys-cluster
   description: ""
   license: ""
-  name: pmix
+  name: mpich
   
   version: ""
 - 
   category: sys-cluster
   description: ""
   license: ""
-  name: mpich2
+  name: pmix
   
   version: ""
 description: A high-performance message passing library (MPI)
@@ -33,12 +33,26 @@ license: BSD
 name: openmpi
 requires:
 - 
-  category: virtual
+  category: sys-cluster
   description: ""
   license: ""
-  name: jre
+  name: slurm
   
-  version: "1.6"
+  version: ""
+- 
+  category: sys-fabric
+  description: ""
+  license: ""
+  name: librdmacm
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libevent
+  
+  version: 2.0.22
 - 
   category: dev-util
   description: ""
@@ -50,37 +64,16 @@ requires:
   category: sys-fabric
   description: ""
   license: ""
-  name: librdmacm
+  name: ofed
   
   version: ""
 - 
-  category: sys-cluster
+  category: virtual
   description: ""
   license: ""
-  name: knem
+  name: jre
   
-  version: ""
-- 
-  category: sys-fabric
-  description: ""
-  license: ""
-  name: infinipath-psm
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libevent
-  
-  version: 2.0.22
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libltdl
-  
-  version: ""
+  version: "1.6"
 - 
   category: sys-libs
   description: ""
@@ -92,7 +85,21 @@ requires:
   category: sys-fabric
   description: ""
   license: ""
-  name: ofed
+  name: infinipath-psm
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libltdl
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: knem
   
   version: ""
 - 
@@ -100,13 +107,6 @@ requires:
   description: ""
   license: ""
   name: torque
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: slurm
   
   version: ""
 uri:

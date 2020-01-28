@@ -5,13 +5,6 @@ license: GPL-3
 name: sed
 requires:
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: ""
-- 
   category: virtual
   description: ""
   license: ""
@@ -25,11 +18,17 @@ requires:
   name: libintl
   
   version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libselinux
+  
+  version: ""
 uri:
 - mirror://gnu/sed/sed-4.5.tar.xz
 use_flags:
 - acl
-- forced-sandbox
 - nls
 - selinux
 - static

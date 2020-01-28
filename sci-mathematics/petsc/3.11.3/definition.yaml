@@ -5,24 +5,24 @@ license: BSD-2
 name: petsc
 requires:
 - 
-  category: media-libs
+  category: sci-libs
   description: ""
   license: ""
-  name: libafterimage
+  name: scotch[mpi?]
   
   version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: superlu
+  
+  version: "5"
 - 
   category: x11-libs
   description: ""
   license: ""
   name: libX11
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: boost
   
   version: ""
 - 
@@ -36,42 +36,42 @@ requires:
   category: sci-libs
   description: ""
   license: ""
-  name: hypre-2.8.0b[mpi?]
+  name: mumps[mpi?]
   
   version: ""
 - 
   category: sci-libs
   description: ""
   license: ""
-  name: parmetis
-  
-  version: "4"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: mpi[cxx?,fortran?]
+  name: scalapack
   
   version: ""
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: scotch[mpi?]
-  
-  version: ""
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: cholmod
-  
-  version: 1.7.0
 - 
   category: virtual
   description: ""
   license: ""
   name: blas
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: lapack
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libafterimage
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: boost
   
   version: ""
 - 
@@ -85,7 +85,21 @@ requires:
   category: sci-libs
   description: ""
   license: ""
-  name: scalapack
+  name: parmetis
+  
+  version: "4"
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: hypre-2.8.0b[mpi?]
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: mpi[cxx?,fortran?]
   
   version: ""
 - 
@@ -99,23 +113,9 @@ requires:
   category: sci-libs
   description: ""
   license: ""
-  name: superlu
+  name: cholmod
   
-  version: "5"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: lapack
-  
-  version: ""
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: mumps[mpi?]
-  
-  version: ""
+  version: 1.7.0
 uri:
 - http://ftp.mcs.anl.gov/pub/petsc/release-snapshots/petsc-3.11.3.tar.gz
 use_flags:

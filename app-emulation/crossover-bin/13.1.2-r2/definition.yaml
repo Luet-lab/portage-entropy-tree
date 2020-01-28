@@ -19,17 +19,10 @@ license: CROSSOVER-2
 name: crossover-bin
 requires:
 - 
-  category: media-libs
+  category: sys-libs
   description: ""
   license: ""
-  name: libpng
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libv4l[abi_x86_32(-)]
+  name: ncurses-compat
   
   version: ""
 - 
@@ -40,101 +33,10 @@ requires:
   
   version: ""
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXi[abi_x86_32(-)]
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: unzip
-  
-  version: ""
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: gsm[abi_x86_32(-)]
-  
-  version: ""
-- 
   category: sys-devel
   description: ""
   license: ""
   name: gettext[abi_x86_32(-)]
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: freetype-2.0.0[abi_x86_32(-)]
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libICE[abi_x86_32(-)]
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXrandr[abi_x86_32(-)]
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pygtk
-  
-  version: "2.10"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: openal[abi_x86_32(-)]
-  
-  version: ""
-- 
-  category: media-gfx
-  description: ""
-  license: ""
-  name: sane-backends[abi_x86_32(-)]
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux[abi_x86_32(-)]
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: ncurses-compat
-  
-  version: ""
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: perl
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: dbus-python
   
   version: ""
 - 
@@ -148,70 +50,21 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: lcms
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
   name: libgphoto2[abi_x86_32(-)]
   
   version: ""
 - 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11[abi_x86_32(-)]
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXext[abi_x86_32(-)]
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXxf86vm[abi_x86_32(-)]
-  
-  version: ""
-- 
-  category: net-print
-  description: ""
-  license: ""
-  name: cups[abi_x86_32(-)]
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jpeg[abi_x86_32(-)]
-  
-  version: ""
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap[abi_x86_32(-)]
-  
-  version: ""
-- 
   category: media-libs
   description: ""
   license: ""
-  name: alsa-lib[abi_x86_32(-)]
+  name: libpng
   
   version: ""
 - 
-  category: media-libs
+  category: sys-apps
   description: ""
   license: ""
-  name: mesa[abi_x86_32(-)]
+  name: util-linux[abi_x86_32(-)]
   
   version: ""
 - 
@@ -229,10 +82,80 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: dev-python
   description: ""
   license: ""
-  name: glibc
+  name: pygtk
+  
+  version: "2.10"
+- 
+  category: net-print
+  description: ""
+  license: ""
+  name: cups[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libv4l[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype-2.0.0[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: dbus-python
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: jpeg[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXxf86vm[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXrandr[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXi[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: lcms
+  
+  version: ""
+- 
+  category: net-nds
+  description: ""
+  license: ""
+  name: openldap[abi_x86_32(-)]
   
   version: ""
 - 
@@ -250,10 +173,52 @@ requires:
   
   version: ""
 - 
+  category: virtual
+  description: ""
+  license: ""
+  name: opengl[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libX11[abi_x86_32(-)]
+  
+  version: ""
+- 
   category: x11-libs
   description: ""
   license: ""
   name: libxcb[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: unzip
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: openal[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: alsa-lib[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib[abi_x86_32(-)]
   
   version: ""
 - 
@@ -264,10 +229,24 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: sys-libs
   description: ""
   license: ""
-  name: opengl[abi_x86_32(-)]
+  name: glibc
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: gsm[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: media-gfx
+  description: ""
+  license: ""
+  name: sane-backends[abi_x86_32(-)]
   
   version: ""
 - 
@@ -278,10 +257,31 @@ requires:
   
   version: ""
 - 
-  category: sys-libs
+  category: media-libs
   description: ""
   license: ""
-  name: zlib[abi_x86_32(-)]
+  name: mesa[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libICE[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXext[abi_x86_32(-)]
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: perl
   
   version: ""
 uri: []

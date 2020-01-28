@@ -4,14 +4,7 @@ conflicts:
   category: sys-cluster
   description: ""
   license: ""
-  name: mpich
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: mpich2
+mpi
   
   version: ""
 - 
@@ -25,7 +18,14 @@ conflicts:
   category: sys-cluster
   description: ""
   license: ""
-mpi
+  name: mpich
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: mpich2
   
   version: ""
 description: A high-performance message passing library (MPI)
@@ -33,24 +33,17 @@ license: BSD
 name: openmpi
 requires:
 - 
-  category: dev-libs
+  category: virtual
   description: ""
   license: ""
-  name: libevent
+  name: jre
   
-  version: 2.0.22
+  version: "1.6"
 - 
-  category: sys-cluster
+  category: sys-fabric
   description: ""
   license: ""
-  name: knem
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: slurm
+  name: librdmacm
   
   version: ""
 - 
@@ -75,10 +68,31 @@ requires:
   
   version: ""
 - 
-  category: sys-fabric
+  category: sys-cluster
   description: ""
   license: ""
-  name: librdmacm
+  name: torque
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: slurm
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libevent
+  
+  version: 2.0.22
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libltdl
   
   version: ""
 - 
@@ -92,23 +106,9 @@ requires:
   category: sys-cluster
   description: ""
   license: ""
-  name: torque
+  name: knem
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libltdl
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jre
-  
-  version: "1.6"
 uri:
 - http://www.open-mpi.org/software/ompi/v/downloads/openmpi-2.0.4.tar.bz2
 use_flags:

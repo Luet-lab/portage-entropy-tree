@@ -4,14 +4,14 @@ conflicts:
   category: sys-boot
   description: ""
   license: ""
-  name: grub-static
+  name: grub
   
   version: ""
 - 
   category: sys-boot
   description: ""
   license: ""
-  name: grub
+  name: grub-static
   
   version: ""
 description: GNU GRUB boot loader
@@ -20,17 +20,24 @@ license: GPL-3+ BSD MIT fonts? ( GPL-2-with-font-exception ) themes? ( CC-BY-SA-
 name: grub
 requires:
 - 
-  category: media-libs
+  category: sys-fs
   description: ""
   license: ""
-  name: libsdl
+  name: lvm2
   
-  version: ""
+  version: 2.02.45
 - 
   category: sys-fs
   description: ""
   license: ""
   name: zfs
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
   
   version: ""
 - 
@@ -48,17 +55,17 @@ requires:
   
   version: ""
 - 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libsdl
+  
+  version: ""
+- 
   category: sys-devel
   description: ""
   license: ""
   name: gettext
-  
-  version: ""
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: xz-utils
   
   version: ""
 - 
@@ -72,21 +79,14 @@ requires:
   category: sys-fs
   description: ""
   license: ""
-  name: lvm2
-  
-  version: 2.02.45
-- 
-  category: sys-fs
-  description: ""
-  license: ""
   name: fuse
   
   version: ""
 - 
-  category: media-libs
+  category: app-arch
   description: ""
   license: ""
-  name: freetype
+  name: xz-utils
   
   version: ""
 uri:

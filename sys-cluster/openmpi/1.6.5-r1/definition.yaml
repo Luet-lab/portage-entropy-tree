@@ -1,20 +1,6 @@
 category: sys-cluster
 conflicts:
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libotf
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: lcdf-typetools
-  
-  version: ""
-- 
   category: sys-cluster
   description: ""
   license: ""
@@ -29,10 +15,24 @@ conflicts:
   
   version: ""
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libotf
+  
+  version: ""
+- 
   category: sys-cluster
   description: ""
   license: ""
   name: mpich2
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: lcdf-typetools
   
   version: ""
 description: A high-performance message passing library (MPI)
@@ -40,12 +40,12 @@ license: BSD
 name: openmpi
 requires:
 - 
-  category: sys-apps
+  category: dev-libs
   description: ""
   license: ""
-  name: hwloc
+  name: libltdl
   
-  version: "2"
+  version: ""
 - 
   category: sys-cluster
   description: ""
@@ -54,17 +54,10 @@ requires:
   
   version: ""
 - 
-  category: sys-cluster
+  category: sys-fabric
   description: ""
   license: ""
-  name: torque
-  
-  version: ""
-- 
-  category: sys-cluster
-  description: ""
-  license: ""
-  name: slurm
+  name: librdmacm
   
   version: ""
 - 
@@ -92,21 +85,28 @@ requires:
   category: sys-fabric
   description: ""
   license: ""
-  name: librdmacm
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libltdl
-  
-  version: ""
-- 
-  category: sys-fabric
-  description: ""
-  license: ""
   name: dapl
+  
+  version: ""
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: torque
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: hwloc
+  
+  version: "2"
+- 
+  category: sys-cluster
+  description: ""
+  license: ""
+  name: slurm
   
   version: ""
 uri:

@@ -4,42 +4,7 @@ conflicts:
   category: media-plugins
   description: ""
   license: ""
-  name: mythzmserver
-  
-  version: ""
-- 
-  category: media-plugins
-  description: ""
-  license: ""
-  name: mythzoneminder
-  
-  version: ""
-- 
-  category: media-plugins
-  description: ""
-  license: ""
-  name: mythgame
-  
-  version: ""
-- 
-  category: media-plugins
-  description: ""
-  license: ""
-  name: mytharchive
-  
-  version: ""
-- 
-  category: media-plugins
-  description: ""
-  license: ""
-  name: mythweather
-  
-  version: ""
-- 
-  category: media-plugins
-  description: ""
-  license: ""
-  name: mythnews
+  name: mythgallery
   
   version: ""
 - 
@@ -53,14 +18,28 @@ conflicts:
   category: media-plugins
   description: ""
   license: ""
-  name: mythmovies
+  name: mytharchive
   
   version: ""
 - 
   category: media-plugins
   description: ""
   license: ""
-  name: mythgallery
+  name: mythnetvision
+  
+  version: ""
+- 
+  category: media-plugins
+  description: ""
+  license: ""
+  name: mythnews
+  
+  version: ""
+- 
+  category: media-plugins
+  description: ""
+  license: ""
+  name: mythgame
   
   version: ""
 - 
@@ -74,7 +53,28 @@ conflicts:
   category: media-plugins
   description: ""
   license: ""
-  name: mythnetvision
+  name: mythmovies
+  
+  version: ""
+- 
+  category: media-plugins
+  description: ""
+  license: ""
+  name: mythzoneminder
+  
+  version: ""
+- 
+  category: media-plugins
+  description: ""
+  license: ""
+  name: mythweather
+  
+  version: ""
+- 
+  category: media-plugins
+  description: ""
+  license: ""
+  name: mythzmserver
   
   version: ""
 description: Official WMythTV plugins
@@ -82,31 +82,73 @@ license: GPL-2+
 name: mythplugins
 requires:
 - 
-  category: dev-qt
+  category: dev-python
   description: ""
   license: ""
-  name: qtopengl
+  name: pycurl
   
   version: ""
 - 
-  category: media-video
+  category: dev-perl
   description: ""
   license: ""
-  name: dvdauthor
+  name: DateTime-Format-ISO8601
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtsql
+  
+  version: ""
+- 
+  category: dev-perl
+  description: ""
+  license: ""
+  name: DateTime
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: lxml
   
   version: ""
 - 
   category: media-libs
   description: ""
   license: ""
-  name: libvorbis
+  name: xvid
   
-  version: "1.0"
+  version: 1.1.0
 - 
   category: dev-qt
   description: ""
   license: ""
   name: qtgui
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libpng
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libass
+  
+  version: 0.9.11
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: fftw
   
   version: ""
 - 
@@ -124,17 +166,17 @@ requires:
   
   version: ""
 - 
-  category: dev-python
+  category: dev-libs
   description: ""
   license: ""
-  name: lxml
+  name: openssl
   
   version: ""
 - 
-  category: dev-perl
+  category: media-video
   description: ""
   license: ""
-  name: XML-XPath
+  name: transcode
   
   version: ""
 - 
@@ -148,112 +190,14 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: libass
+  name: taglib
   
-  version: 0.9.11
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: pycurl
-  
-  version: ""
+  version: "1.6"
 - 
   category: dev-perl
   description: ""
   license: ""
-  name: DateTime
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtcore
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: faac
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: x264
-  
-  version: 0.0.20111220
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libavc1394
-  
-  version: 0.5.3
-- 
-  category: media-video
-  description: ""
-  license: ""
-  name: transcode
-  
-  version: ""
-- 
-  category: dev-perl
-  description: ""
-  license: ""
-  name: XML-Simple
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXrandr
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: cdrtools
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: xvid
-  
-  version: 1.1.0
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXext
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXxf86vm
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtwebkit
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: opengl
+  name: Date-Manip
   
   version: ""
 - 
@@ -274,7 +218,14 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libXinerama
+  name: libXext
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: faac
   
   version: ""
 - 
@@ -288,16 +239,184 @@ requires:
   category: media-video
   description: ""
   license: ""
-  name: mjpegtools
+  name: dvdauthor
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libvorbis
+  
+  version: "1.0"
+- 
+  category: dev-perl
+  description: ""
+  license: ""
+  name: XML-Simple
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: freetype
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXrandr
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: alsa-lib
+  
+  version: 1.0.24
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: libavc1394
+  
+  version: 0.5.3
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: mysql-python
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: libudev
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: x264
+  
+  version: 0.0.20111220
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: tiff
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: opengl
   
   version: ""
 - 
   category: dev-perl
   description: ""
   license: ""
-  name: DateTime-Format-ISO8601
+  name: XML-XPath
   
   version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libtheora
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtopengl
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: ""
+- 
+  category: app-cdr
+  description: ""
+  license: ""
+  name: dvd+rw-tools
+  
+  version: ""
+- 
+  category: dev-python
+  description: ""
+  license: ""
+  name: oauth
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  license: ""
+  name: qtcore
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXv
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: 2.6.0
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: flac
+  
+  version: 1.1.2
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libcdio
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libvpx
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  license: ""
+  name: lame
+  
+  version: 3.93.1
 - 
   category: sys-libs
   description: ""
@@ -309,7 +428,14 @@ requires:
   category: media-libs
   description: ""
   license: ""
-  name: tiff
+  name: libexif
+  
+  version: 0.6.9
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: libXxf86vm
   
   version: ""
 - 
@@ -320,17 +446,17 @@ requires:
   
   version: ""
 - 
-  category: dev-python
-  description: ""
-  license: ""
-  name: mysql-python
-  
-  version: ""
-- 
   category: dev-perl
   description: ""
   license: ""
   name: Image-Size
+  
+  version: ""
+- 
+  category: media-video
+  description: ""
+  license: ""
+  name: mjpegtools
   
   version: ""
 - 
@@ -341,152 +467,26 @@ requires:
   
   version: ""
 - 
-  category: media-libs
-  description: ""
-  license: ""
-  name: freetype
-  
-  version: ""
-- 
-  category: dev-perl
-  description: ""
-  license: ""
-  name: Date-Manip
-  
-  version: ""
-- 
   category: x11-libs
   description: ""
   license: ""
-  name: libXv
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: alsa-lib
-  
-  version: 1.0.24
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: fftw
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtsql
+  name: libXinerama
   
   version: ""
 - 
   category: virtual
   description: ""
   license: ""
-  name: libudev
+  name: cdrtools
   
   version: ""
 - 
-  category: dev-libs
+  category: dev-qt
   description: ""
   license: ""
-  name: libcdio
+  name: qtwebkit
   
   version: ""
-- 
-  category: app-cdr
-  description: ""
-  license: ""
-  name: dvd+rw-tools
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: taglib
-  
-  version: "1.6"
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: oauth
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libexif
-  
-  version: 0.6.9
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libpng
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libvpx
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
-  
-  version: ""
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: lame
-  
-  version: 3.93.1
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: flac
-  
-  version: 1.1.2
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libtheora
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: 2.6.0
 uri:
 - https://github.com/MythTV/mythtv/archive/v30.0.tar.gz -> mythplugins-30.0.tar.gz
 use_flags:

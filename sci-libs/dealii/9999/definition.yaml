@@ -5,17 +5,17 @@ license: LGPL-2.1+
 name: dealii
 requires:
 - 
-  category: sci-libs
+  category: sci-mathematics
   description: ""
   license: ""
-  name: arpack[mpi=]
+  name: petsc[mpi=]
   
   version: ""
 - 
-  category: dev-cpp
+  category: sci-libs
   description: ""
   license: ""
-  name: muParser
+  name: umfpack
   
   version: ""
 - 
@@ -25,27 +25,6 @@ requires:
   name: symengine
   
   version: "0.4"
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: bzip2
-  
-  version: ""
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: adolc
-  
-  version: ""
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: parmetis
-  
-  version: "4"
 - 
   category: sci-libs
   description: ""
@@ -57,44 +36,9 @@ requires:
   category: sci-libs
   description: ""
   license: ""
-  name: p4est
+  name: sundials
   
-  version: ""
-- 
-  category: sci-mathematics
-  description: ""
-  license: ""
-  name: petsc[mpi=]
-  
-  version: ""
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: scalapack
-  
-  version: ""
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: umfpack
-  
-  version: ""
-- 
-  category: dev-util
-  description: ""
-  license: ""
-  name: nvidia-cuda-sdk
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: lapack
-  
-  version: ""
+  version: "4"
 - 
   category: dev-cpp
   description: ""
@@ -103,24 +47,17 @@ requires:
   
   version: ""
 - 
+  category: app-arch
+  description: ""
+  license: ""
+  name: bzip2
+  
+  version: ""
+- 
   category: sci-libs
   description: ""
   license: ""
-  name: trilinos
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: boost
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: zlib
+  name: gmsh
   
   version: ""
 - 
@@ -134,9 +71,9 @@ requires:
   category: sci-libs
   description: ""
   license: ""
-  name: hdf5[mpi=]
+  name: parmetis
   
-  version: ""
+  version: "4"
 - 
   category: virtual
   description: ""
@@ -155,7 +92,7 @@ requires:
   category: sci-libs
   description: ""
   license: ""
-  name: netcdf-cxx
+  name: scalapack
   
   version: ""
 - 
@@ -166,6 +103,13 @@ requires:
   
   version: ""
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: boost
+  
+  version: ""
+- 
   category: media-libs
   description: ""
   license: ""
@@ -173,19 +117,75 @@ requires:
   
   version: ""
 - 
-  category: sci-libs
+  category: dev-util
   description: ""
   license: ""
-  name: gmsh
+  name: nvidia-cuda-sdk
   
   version: ""
 - 
   category: sci-libs
   description: ""
   license: ""
-  name: sundials
+  name: hdf5[mpi=]
   
-  version: "4"
+  version: ""
+- 
+  category: dev-cpp
+  description: ""
+  license: ""
+  name: muParser
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: trilinos
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: p4est
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: adolc
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: arpack[mpi=]
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: lapack
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  license: ""
+  name: netcdf-cxx
+  
+  version: ""
 uri: []
 use_flags:
 - adolc

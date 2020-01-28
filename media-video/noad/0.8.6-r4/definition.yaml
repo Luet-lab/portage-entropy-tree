@@ -1,0 +1,34 @@
+category: media-video
+conflicts: []
+description: Mark commercial breaks in VDR recordings
+license: GPL-2+
+name: noad
+requires:
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: libmpeg2
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: ffmpeg
+  
+  version: ""
+- 
+  category: media-gfx
+  description: ""
+  license: ""
+  name: imagemagick
+  
+  version: ""
+uri:
+- https://github.com/madmartin/noad/archive/v0.8.6.tar.gz -> noad-0.8.6.tar.gz
+use_flags:
+- +ffmpeg
+- imagemagick
+- libmpeg2
+version: 0.8.6-r4

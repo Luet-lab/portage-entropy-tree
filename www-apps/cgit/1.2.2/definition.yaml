@@ -1,0 +1,65 @@
+category: www-apps
+conflicts: []
+description: a fast web-interface for git repositories
+license: GPL-2
+name: cgit
+requires:
+- 
+  category: dev-vcs
+  description: ""
+  license: ""
+  name: git
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: httpd-cgi
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: luajit
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  license: ""
+  name: lua
+  
+  version: ""
+uri:
+- https://www.kernel.org/pub/software/scm/git/git-2.25.0.tar.xz
+- https://git.zx2c4.com/cgit/snapshot/cgit-1.2.2.tar.xz
+use_flags:
+- doc
+- +highlight
+- libressl
+- +lua
+- +jit
+version: 1.2.2

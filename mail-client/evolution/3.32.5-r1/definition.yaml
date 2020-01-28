@@ -12,6 +12,69 @@ license: '|| ( LGPL-2 LGPL-3 ) CC-BY-SA-3.0 FDL-1.3+ OPENLDAP'
 name: evolution
 requires:
 - 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nspr
+  
+  version: 4.6.1
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: nss
+  
+  version: "3.11"
+- 
+  category: mail-filter
+  description: ""
+  license: ""
+  name: bogofilter
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
+  name: gtk+
+  
+  version: "3.22"
+- 
+  category: app-arch
+  description: ""
+  license: ""
+  name: gnome-autoar
+  
+  version: 0.1.1
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: gtkspell
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: atk
+  
+  version: ""
+- 
+  category: sci-geosciences
+  description: ""
+  license: ""
+  name: geocode-glib
+  
+  version: 3.10.0
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: glib
+  
+  version: "2.46"
+- 
   category: net-libs
   description: ""
   license: ""
@@ -29,16 +92,23 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libnotify
+  name: libSM
   
-  version: "0.7"
+  version: ""
 - 
-  category: dev-libs
+  category: x11-libs
   description: ""
   license: ""
-  name: nss
+  name: mx
   
-  version: "3.11"
+  version: ""
+- 
+  category: net-mail
+  description: ""
+  license: ""
+  name: ytnef
+  
+  version: ""
 - 
   category: app-text
   description: ""
@@ -54,12 +124,12 @@ requires:
   
   version: 2.91.3
 - 
-  category: x11-misc
+  category: x11-libs
   description: ""
   license: ""
-  name: shared-mime-info
+  name: libnotify
   
-  version: "0.22"
+  version: "0.7"
 - 
   category: gnome-base
   description: ""
@@ -71,58 +141,9 @@ requires:
   category: x11-libs
   description: ""
   license: ""
-  name: libSM
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
   name: libICE
   
   version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: gtkspell
-  
-  version: ""
-- 
-  category: mail-filter
-  description: ""
-  license: ""
-  name: bogofilter
-  
-  version: ""
-- 
-  category: app-text
-  description: ""
-  license: ""
-  name: enchant
-  
-  version: 1.6.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.46"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libxml2
-  
-  version: 2.7.3
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libsoup
-  
-  version: "2.42"
 - 
   category: media-libs
   description: ""
@@ -134,37 +155,9 @@ requires:
   category: dev-libs
   description: ""
   license: ""
-  name: atk
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
   name: libgweather
   
   version: "3.10"
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: gcr
-  
-  version: "3.4"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libical
-  
-  version: 3.0.2
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
-  
-  version: "2"
 - 
   category: x11-libs
   description: ""
@@ -173,40 +166,40 @@ requires:
   
   version: 1.9.15
 - 
-  category: media-libs
+  category: mail-filter
   description: ""
   license: ""
-  name: clutter
-  
-  version: 1.0.0
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: clutter-gtk
-  
-  version: "0.90"
-- 
-  category: sci-geosciences
-  description: ""
-  license: ""
-  name: geocode-glib
-  
-  version: 3.10.0
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: ytnef
+  name: spamassassin
   
   version: ""
 - 
-  category: gnome-base
+  category: app-crypt
   description: ""
   license: ""
-  name: gsettings-desktop-schemas
+  name: gcr
   
-  version: 2.91.92
+  version: "3.4"
+- 
+  category: app-text
+  description: ""
+  license: ""
+  name: enchant
+  
+  version: 1.6.0
+- 
+  category: net-libs
+  description: ""
+  license: ""
+  name: libsoup
+  
+  version: "2.42"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: libxml2
+  
+  version: 2.7.3
 - 
   category: media-libs
   description: ""
@@ -215,12 +208,33 @@ requires:
   
   version: "0.25"
 - 
-  category: x11-libs
+  category: net-nds
   description: ""
   license: ""
-  name: gtk+
+  name: openldap
   
-  version: "3.22"
+  version: "2"
+- 
+  category: gnome-base
+  description: ""
+  license: ""
+  name: gsettings-desktop-schemas
+  
+  version: 2.91.92
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: shared-mime-info
+  
+  version: "0.22"
+- 
+  category: media-libs
+  description: ""
+  license: ""
+  name: clutter-gtk
+  
+  version: "0.90"
 - 
   category: app-text
   description: ""
@@ -229,33 +243,19 @@ requires:
   
   version: "0.49"
 - 
-  category: app-arch
-  description: ""
-  license: ""
-  name: gnome-autoar
-  
-  version: 0.1.1
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: mx
-  
-  version: ""
-- 
   category: dev-libs
   description: ""
   license: ""
-  name: nspr
+  name: libical
   
-  version: 4.6.1
+  version: 3.0.2
 - 
-  category: mail-filter
+  category: media-libs
   description: ""
   license: ""
-  name: spamassassin
+  name: clutter
   
-  version: ""
+  version: 1.0.0
 uri: []
 use_flags:
 - archive

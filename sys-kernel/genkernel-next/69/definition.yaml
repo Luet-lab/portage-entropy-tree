@@ -26,17 +26,24 @@ license: GPL-2
 name: genkernel-next
 requires:
 - 
-  category: app-crypt
+  category: app-misc
   description: ""
   license: ""
-  name: gnupg
+  name: pax-utils
+  
+  version: "0.6"
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lvm2
   
   version: ""
 - 
-  category: sys-boot
+  category: sys-fs
   description: ""
   license: ""
-  name: plymouth
+  name: e2fsprogs
   
   version: ""
 - 
@@ -50,7 +57,7 @@ requires:
   category: sys-block
   description: ""
   license: ""
-  name: thin-provisioning-tools
+  name: open-iscsi
   
   version: ""
 - 
@@ -61,38 +68,10 @@ requires:
   
   version: ""
 - 
-  category: sys-fs
+  category: app-arch
   description: ""
   license: ""
-  name: e2fsprogs
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: ""
-- 
-  category: sys-block
-  description: ""
-  license: ""
-  name: open-iscsi
-  
-  version: ""
-- 
-  category: app-misc
-  description: ""
-  license: ""
-  name: pax-utils
-  
-  version: "0.6"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
+  name: cpio
   
   version: ""
 - 
@@ -106,28 +85,49 @@ requires:
   category: sys-fs
   description: ""
   license: ""
+  name: cryptsetup
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  license: ""
+  name: gnupg
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  license: ""
+  name: util-linux
+  
+  version: ""
+- 
+  category: sys-block
+  description: ""
+  license: ""
+  name: thin-provisioning-tools
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
   name: dmraid
   
   version: 1.0.0_rc16
 - 
-  category: app-arch
+  category: sys-boot
   description: ""
   license: ""
-  name: cpio
+  name: plymouth
   
   version: ""
 - 
-  category: sys-fs
+  category: sys-libs
   description: ""
   license: ""
-  name: lvm2
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: cryptsetup
+  name: libselinux
   
   version: ""
 uri:

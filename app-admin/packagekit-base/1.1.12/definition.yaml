@@ -6,26 +6,12 @@ license: GPL-2
 name: packagekit-base
 requires:
 - 
-  category: sys-apps
+  category: dev-db
   description: ""
   license: ""
-  name: portage
-  
-  version: "2.2"
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: consolekit
+  name: sqlite
   
   version: ""
-- 
-  category: app-shells
-  description: ""
-  license: ""
-  name: bash-completion
-  
-  version: "2"
 - 
   category: dev-libs
   description: ""
@@ -65,23 +51,30 @@ requires:
   category: sys-apps
   description: ""
   license: ""
+  name: portage
+  
+  version: "2.2"
+- 
+  category: app-shells
+  description: ""
+  license: ""
+  name: bash-completion
+  
+  version: "2"
+- 
+  category: sys-apps
+  description: ""
+  license: ""
   name: entropy
   
   version: "234"
 - 
-  category: dev-db
+  category: sys-auth
   description: ""
   license: ""
-  name: sqlite
+  name: consolekit
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: dbus-glib
-  
-  version: "0.74"
 - 
   category: sys-apps
   description: ""
@@ -96,6 +89,13 @@ requires:
   name: elogind
   
   version: "229.4"
+- 
+  category: dev-libs
+  description: ""
+  license: ""
+  name: dbus-glib
+  
+  version: "0.74"
 uri:
 - https://www.freedesktop.org/software/PackageKit/releases/PackageKit-1.1.12.tar.xz
 use_flags:

@@ -1,6 +1,13 @@
 category: sys-fs
 conflicts:
 - 
+  category: <sys-boot
+  description: ""
+  license: ""
+  name: grub
+  
+  version: 2.00-r2
+- 
   category: <sys-kernel
   description: ""
   license: ""
@@ -14,6 +21,13 @@ conflicts:
   name: zfs-fuse
   
   version: ""
+- 
+  category: <sys-kernel
+  description: ""
+  license: ""
+  name: genkernel-next
+  
+  version: "67"
 - 
   category: <sys-kernel
   description: ""
@@ -35,29 +49,15 @@ conflicts:
   name: grep-2.13*
   
   version: ""
-- 
-  category: <sys-kernel
-  description: ""
-  license: ""
-  name: genkernel-next
-  
-  version: "67"
-- 
-  category: <sys-boot
-  description: ""
-  license: ""
-  name: grub
-  
-  version: 2.00-r2
 description: Userland utilities for ZFS Linux kernel module
 license: BSD-2 CDDL MIT
 name: zfs
 requires:
 - 
-  category: virtual
+  category: sys-apps
   description: ""
   license: ""
-  name: modutils
+  name: util-linux
   
   version: ""
 - 
@@ -68,20 +68,6 @@ requires:
   
   version: ""
 - 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: mdadm
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: lsscsi
-  
-  version: ""
-- 
   category: app-misc
   description: ""
   license: ""
@@ -89,31 +75,17 @@ requires:
   
   version: ""
 - 
-  category: virtual
+  category: sys-fs
   description: ""
   license: ""
-  name: awk
+  name: udev-init-scripts
   
   version: ""
 - 
-  category: virtual
+  category: net-libs
   description: ""
   license: ""
-  name: udev
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
-  
-  version: ""
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: bc
+  name: libtirpc
   
   version: ""
 - 
@@ -121,6 +93,13 @@ requires:
   description: ""
   license: ""
   name: parted
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  license: ""
+  name: lsscsi
   
   version: ""
 - 
@@ -134,21 +113,42 @@ requires:
   category: sys-fs
   description: ""
   license: ""
-  name: udev-init-scripts
+  name: zfs-kmod
+  
+  version: 0.7.13
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: udev
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: modutils
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  license: ""
+  name: awk
+  
+  version: ""
+- 
+  category: sys-devel
+  description: ""
+  license: ""
+  name: bc
   
   version: ""
 - 
   category: sys-fs
   description: ""
   license: ""
-  name: zfs-kmod
-  
-  version: 0.7.13
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: libtirpc
+  name: mdadm
   
   version: ""
 uri:

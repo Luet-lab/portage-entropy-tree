@@ -5,19 +5,19 @@ license: GPL-2+
 name: xfce4-session
 requires:
 - 
-  category: x11-libs
+  category: x11-misc
   description: ""
   license: ""
-  name: libSM
+  name: slock
   
   version: ""
 - 
-  category: x11-apps
+  category: dev-libs
   description: ""
   license: ""
-  name: iceauth
+  name: glib
   
-  version: ""
+  version: "2.42"
 - 
   category: x11-libs
   description: ""
@@ -26,12 +26,12 @@ requires:
   
   version: "3.22"
 - 
-  category: xfce-base
+  category: x11-libs
   description: ""
   license: ""
-  name: libxfce4util
+  name: libX11
   
-  version: "4.12"
+  version: ""
 - 
   category: xfce-base
   description: ""
@@ -47,45 +47,10 @@ requires:
   
   version: ""
 - 
-  category: x11-misc
+  category: x11-apps
   description: ""
   license: ""
-  name: xscreensaver
-  
-  version: "5.26"
-- 
-  category: x11-misc
-  description: ""
-  license: ""
-  name: slock
-  
-  version: ""
-- 
-  category: x11-misc
-  description: ""
-  license: ""
-  name: alock
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.42"
-- 
-  category: xfce-base
-  description: ""
-  license: ""
-  name: libxfce4ui
-  
-  version: 4.12.1
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libX11
+  name: iceauth
   
   version: ""
 - 
@@ -96,10 +61,10 @@ requires:
   
   version: "0.102"
 - 
-  category: x11-apps
+  category: x11-misc
   description: ""
   license: ""
-  name: xrdb
+  name: alock
   
   version: ""
 - 
@@ -120,9 +85,44 @@ requires:
   category: x11-libs
   description: ""
   license: ""
+  name: libSM
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  license: ""
   name: libwnck
   
   version: ""
+- 
+  category: xfce-base
+  description: ""
+  license: ""
+  name: libxfce4util
+  
+  version: "4.12"
+- 
+  category: xfce-base
+  description: ""
+  license: ""
+  name: libxfce4ui
+  
+  version: 4.12.1
+- 
+  category: x11-apps
+  description: ""
+  license: ""
+  name: xrdb
+  
+  version: ""
+- 
+  category: x11-misc
+  description: ""
+  license: ""
+  name: xscreensaver
+  
+  version: "5.26"
 uri:
 - https://archive.xfce.org/src/xfce/xfce4-session/4.14/xfce4-session-4.14.1.tar.bz2
 use_flags:
