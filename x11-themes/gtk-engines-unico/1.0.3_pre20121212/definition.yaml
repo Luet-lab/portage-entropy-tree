@@ -1,12 +1,22 @@
 category: x11-themes
 conflicts: []
 description: The Unico GTK+ 3.x theming engine
+id: 0
 license: LGPL-2.1+
 name: gtk-engines-unico
 requires:
 - 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: glib
+  
+  version: "2.26"
+- 
   category: x11-libs
   description: ""
+  id: 0
   license: ""
   name: cairo
   
@@ -14,17 +24,11 @@ requires:
 - 
   category: x11-libs
   description: ""
+  id: 0
   license: ""
   name: gtk+
   
   version: 3.5.2
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.26"
 uri:
 - https://dev.gentoo.org/~tetromino/distfiles/gtk-engines-unico/unico-1.0.3.tar.bz2
 use_flags:

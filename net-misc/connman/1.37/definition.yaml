@@ -1,26 +1,46 @@
 category: net-misc
 conflicts: []
 description: Provides a daemon for managing internet connections
+id: 0
 license: GPL-2
 name: connman
 requires:
 - 
+  category: net-vpn
+  description: ""
+  id: 0
+  license: ""
+  name: openvpn
+  
+  version: ""
+- 
+  category: net-vpn
+  description: ""
+  id: 0
+  license: ""
+  name: vpnc
+  
+  version: ""
+- 
+  category: net-wireless
+  description: ""
+  id: 0
+  license: ""
+  name: wpa_supplicant
+  
+  version: "2.0"
+- 
   category: net-firewall
   description: ""
+  id: 0
   license: ""
   name: iptables
   
   version: 1.4.8
 - 
-  category: net-wireless
-  description: ""
-  license: ""
-  name: iwd
-  
-  version: ""
-- 
   category: net-dialup
   description: ""
+  id: 0
   license: ""
   name: xl2tpd
   
@@ -28,34 +48,39 @@ requires:
 - 
   category: net-vpn
   description: ""
+  id: 0
   license: ""
   name: openconnect
   
   version: ""
 - 
-  category: net-vpn
-  description: ""
-  license: ""
-  name: openvpn
-  
-  version: ""
-- 
   category: sys-auth
   description: ""
+  id: 0
   license: ""
   name: polkit
   
   version: ""
 - 
-  category: net-vpn
+  category: net-libs
   description: ""
+  id: 0
   license: ""
-  name: vpnc
+  name: gnutls
   
   version: ""
 - 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: glib
+  
+  version: "2.16"
+- 
   category: sys-libs
   description: ""
+  id: 0
   license: ""
   name: readline
   
@@ -63,66 +88,59 @@ requires:
 - 
   category: net-wireless
   description: ""
+  id: 0
   license: ""
   name: bluez
   
   version: ""
 - 
-  category: net-libs
+  category: net-wireless
   description: ""
+  id: 0
   license: ""
-  name: libnftnl
+  name: iwd
   
-  version: 1.0.4
+  version: ""
 - 
   category: net-libs
   description: ""
+  id: 0
   license: ""
   name: libmnl
   
   version: 1.0.0
 - 
-  category: net-dialup
+  category: sys-apps
   description: ""
+  id: 0
   license: ""
-  name: pptpclient
+  name: dbus
   
-  version: ""
-- 
-  category: net-wireless
-  description: ""
-  license: ""
-  name: wpa_supplicant
-  
-  version: "2.0"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.16"
+  version: 1.2.24
 - 
   category: net-libs
   description: ""
+  id: 0
   license: ""
-  name: gnutls
+  name: libnftnl
   
-  version: ""
+  version: 1.0.4
 - 
   category: net-misc
   description: ""
+  id: 0
   license: ""
   name: ofono
   
   version: ""
 - 
-  category: sys-apps
+  category: net-dialup
   description: ""
+  id: 0
   license: ""
-  name: dbus
+  name: pptpclient
   
-  version: 1.2.24
+  version: ""
 uri:
 - https://www.kernel.org/pub/linux/network/connman/connman-1.37.tar.xz
 use_flags:

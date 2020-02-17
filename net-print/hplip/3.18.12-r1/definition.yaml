@@ -1,0 +1,125 @@
+category: net-print
+conflicts: []
+description: HP Linux Imaging and Printing - Print, scan, fax drivers and service
+  tools
+id: 0
+license: GPL-2
+name: hplip
+requires:
+- 
+  category: net-print
+  description: ""
+  id: 0
+  license: ""
+  name: cups
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  id: 0
+  license: ""
+  name: jpeg
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: net-analyzer
+  description: ""
+  id: 0
+  license: ""
+  name: net-snmp
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  id: 0
+  license: ""
+  name: udev
+  
+  version: ""
+- 
+  category: sys-auth
+  description: ""
+  id: 0
+  license: ""
+  name: polkit
+  
+  version: ""
+- 
+  category: net-print
+  description: ""
+  id: 0
+  license: ""
+  name: cups-filters
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  id: 0
+  license: ""
+  name: dbus
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  id: 0
+  license: ""
+  name: libusb
+  
+  version: ""
+- 
+  category: media-gfx
+  description: ""
+  id: 0
+  license: ""
+  name: sane-backends
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: app-text
+  description: ""
+  id: 0
+  license: ""
+  name: ghostscript-gpl
+  
+  version: ""
+uri:
+- mirror://sourceforge/hplip/hplip-3.18.12.tar.gz
+- https://dev.gentoo.org/~billie/distfiles/hplip-3.18.12-patches-1.tar.xz
+use_flags:
+- doc
+- fax
+- +hpcups
+- hpijs
+- kde
+- libnotify
+- libressl
+- -libusb0
+- minimal
+- parport
+- policykit
+- qt5
+- scanner
+- +snmp
+- static-ppds
+- X
+version: 3.18.12-r1

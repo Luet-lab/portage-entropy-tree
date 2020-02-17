@@ -1,12 +1,14 @@
 category: net-p2p
 conflicts: []
 description: Original Bitcoin crypto-currency wallet for automated services
+id: 0
 license: MIT
 name: bitcoind
 requires:
 - 
   category: dev-libs
   description: ""
+  id: 0
   license: ""
   name: libsecp256k1
   
@@ -14,6 +16,7 @@ requires:
 - 
   category: dev-libs
   description: ""
+  id: 0
   license: ""
   name: univalue
   
@@ -21,34 +24,23 @@ requires:
 - 
   category: virtual
   description: ""
+  id: 0
   license: ""
   name: bitcoin-leveldb
   
   version: ""
 - 
-  category: dev-libs
+  category: sys-libs
   description: ""
+  id: 0
   license: ""
-  name: openssl
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libressl
+  name: db
   
   version: ""
 - 
   category: net-libs
   description: ""
-  license: ""
-  name: miniupnpc
-  
-  version: 1.9.20150916
-- 
-  category: net-libs
-  description: ""
+  id: 0
   license: ""
   name: zeromq
   
@@ -56,24 +48,43 @@ requires:
 - 
   category: dev-libs
   description: ""
+  id: 0
+  license: ""
+  name: boost
+  
+  version: 1.52.0
+- 
+  category: dev-libs
+  description: ""
+  id: 0
   license: ""
   name: libevent
   
   version: ""
 - 
-  category: sys-libs
+  category: net-libs
   description: ""
+  id: 0
   license: ""
-  name: db
+  name: miniupnpc
+  
+  version: 1.9.20150916
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: openssl
   
   version: ""
 - 
   category: dev-libs
   description: ""
+  id: 0
   license: ""
-  name: boost
+  name: libressl
   
-  version: 1.52.0
+  version: ""
 uri:
 - https://github.com/bitcoin/bitcoin/archive/49e34e288005a5b144a642e197b628396f5a0765.tar.gz
   -> bitcoin-v0.16.3.tar.gz

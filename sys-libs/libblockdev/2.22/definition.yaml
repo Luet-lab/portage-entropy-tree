@@ -1,19 +1,22 @@
 category: sys-libs
 conflicts: []
 description: A library for manipulating block devices
+id: 0
 license: LGPL-2+
 name: libblockdev
 requires:
 - 
-  category: sys-fs
+  category: dev-libs
   description: ""
+  id: 0
   license: ""
-  name: dmraid
+  name: nss
   
-  version: ""
+  version: 3.18.0
 - 
   category: virtual
   description: ""
+  id: 0
   license: ""
   name: udev
   
@@ -21,41 +24,39 @@ requires:
 - 
   category: dev-libs
   description: ""
+  id: 0
   license: ""
   name: libyaml
   
   version: ""
 - 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: glib
+  
+  version: 2.42.2
+- 
   category: sys-apps
   description: ""
+  id: 0
   license: ""
   name: kmod
   
   version: "19"
 - 
-  category: sys-apps
+  category: sys-block
   description: ""
+  id: 0
   license: ""
-  name: util-linux
+  name: parted
   
-  version: "2.27"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: nss
-  
-  version: 3.18.0
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: volume_key
-  
-  version: ""
+  version: "3.1"
 - 
   category: sys-fs
   description: ""
+  id: 0
   license: ""
   name: cryptsetup
   
@@ -63,31 +64,43 @@ requires:
 - 
   category: sys-fs
   description: ""
+  id: 0
   license: ""
   name: lvm2
   
   version: ""
 - 
-  category: dev-libs
+  category: sys-fs
   description: ""
+  id: 0
   license: ""
-  name: glib
+  name: dmraid
   
-  version: 2.42.2
+  version: ""
 - 
   category: dev-libs
   description: ""
+  id: 0
   license: ""
   name: libbytesize
   
   version: ""
 - 
-  category: sys-block
+  category: sys-apps
   description: ""
+  id: 0
   license: ""
-  name: parted
+  name: util-linux
   
-  version: "3.1"
+  version: "2.27"
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: volume_key
+  
+  version: ""
 uri:
 - https://github.com/storaged-project/libblockdev/releases/download/2.22-1/libblockdev-2.22.tar.gz
 use_flags:

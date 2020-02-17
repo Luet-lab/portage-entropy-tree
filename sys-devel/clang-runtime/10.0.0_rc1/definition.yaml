@@ -1,0 +1,46 @@
+category: sys-devel
+conflicts: []
+description: Meta-ebuild for clang runtime libraries
+id: 0
+license: metapackage
+name: clang-runtime
+requires:
+- 
+  category: sys-libs
+  description: ""
+  id: 0
+  license: ""
+  name: compiler-rt
+  
+  version: 10.0.0
+- 
+  category: sys-libs
+  description: ""
+  id: 0
+  license: ""
+  name: compiler-rt-sanitizers
+  
+  version: 10.0.0
+- 
+  category: sys-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libcxx
+  
+  version: 10.0.0
+- 
+  category: sys-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libomp
+  
+  version: 10.0.0
+uri: []
+use_flags:
+- +compiler-rt
+- libcxx
+- openmp
+- +sanitize
+version: 10.0.0_rc1

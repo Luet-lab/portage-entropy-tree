@@ -1,0 +1,155 @@
+category: sys-fs
+conflicts:
+- 
+  category: <sys-kernel
+  description: ""
+  id: 0
+  license: ""
+  name: genkernel
+  
+  version: 3.5.1.1
+description: Userland utilities for ZFS Linux kernel module
+id: 0
+license: BSD-2 CDDL MIT
+name: zfs
+requires:
+- 
+  category: virtual
+  description: ""
+  id: 0
+  license: ""
+  name: awk
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: sys-block
+  description: ""
+  id: 0
+  license: ""
+  name: parted
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  id: 0
+  license: ""
+  name: modutils
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  id: 0
+  license: ""
+  name: mdadm
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  id: 0
+  license: ""
+  name: procps
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  id: 0
+  license: ""
+  name: python-cffi
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  id: 0
+  license: ""
+  name: zfs-kmod
+  
+  version: 0.8.3
+- 
+  category: sys-fs
+  description: ""
+  id: 0
+  license: ""
+  name: lsscsi
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  id: 0
+  license: ""
+  name: udev
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  id: 0
+  license: ""
+  name: udev-init-scripts
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  id: 0
+  license: ""
+  name: cpio
+  
+  version: ""
+- 
+  category: sys-devel
+  description: ""
+  id: 0
+  license: ""
+  name: bc
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  id: 0
+  license: ""
+  name: pax-utils
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  id: 0
+  license: ""
+  name: util-linux
+  
+  version: ""
+uri:
+- https://github.com/zfsonlinux/zfs/releases/download/zfs-0.8.3/zfs-0.8.3.tar.gz
+use_flags:
+- custom-cflags
+- debug
+- kernel-builtin
+- libressl
+- python
+- +rootfs
+- test-suite
+- static-libs
+version: 0.8.3-r1

@@ -2,12 +2,22 @@ category: net-misc
 conflicts: []
 description: Port multiplexer - accept both HTTPS and SSH connections on the same
   port
+id: 0
 license: GPL-2
 name: sslh
 requires:
 - 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libconfig
+  
+  version: "1.5"
+- 
   category: sys-libs
   description: ""
+  id: 0
   license: ""
   name: libcap
   
@@ -15,6 +25,7 @@ requires:
 - 
   category: sys-apps
   description: ""
+  id: 0
   license: ""
   name: systemd
   
@@ -22,17 +33,11 @@ requires:
 - 
   category: sys-apps
   description: ""
+  id: 0
   license: ""
   name: tcp-wrappers
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libconfig
-  
-  version: "1.5"
 uri: []
 use_flags:
 - caps

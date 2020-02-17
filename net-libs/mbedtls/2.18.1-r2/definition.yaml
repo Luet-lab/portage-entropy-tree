@@ -1,0 +1,45 @@
+category: net-libs
+conflicts: []
+description: Cryptographic library for embedded systems
+id: 0
+license: Apache-2.0
+name: mbedtls
+requires:
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  id: 0
+  license: ""
+  name: zlib
+  
+  version: 1.2.8-r1
+uri:
+- https://github.com/ARMmbed/mbedtls/archive/mbedtls-2.18.1.tar.gz
+- https://github.com/ARMmbed/mbed-crypto/archive/mbedcrypto-1.1.0d0.tar.gz
+use_flags:
+- cpu_flags_x86_sse2
+- doc
+- havege
+- libressl
+- programs
+- -static-libs
+- test
+- threads
+- zlib
+version: 2.18.1-r2

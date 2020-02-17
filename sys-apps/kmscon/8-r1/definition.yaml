@@ -1,19 +1,38 @@
 category: sys-apps
 conflicts: []
 description: KMS/DRM based virtual Console Emulator
+id: 0
 license: MIT LGPL-2.1 BSD-2
 name: kmscon
 requires:
 - 
-  category: x11-libs
+  category: virtual
   description: ""
+  id: 0
   license: ""
-  name: libdrm
+  name: udev
+  
+  version: "172"
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libtsm
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  id: 0
+  license: ""
+  name: mesa[X(+)]
   
   version: ""
 - 
   category: x11-libs
   description: ""
+  id: 0
   license: ""
   name: pango
   
@@ -21,6 +40,7 @@ requires:
 - 
   category: dev-libs
   description: ""
+  id: 0
   license: ""
   name: glib
   
@@ -28,6 +48,7 @@ requires:
 - 
   category: x11-libs
   description: ""
+  id: 0
   license: ""
   name: pixman
   
@@ -35,27 +56,31 @@ requires:
 - 
   category: x11-misc
   description: ""
+  id: 0
   license: ""
   name: xkeyboard-config
   
   version: ""
 - 
-  category: virtual
+  category: x11-libs
   description: ""
+  id: 0
   license: ""
-  name: udev
+  name: libxkbcommon
   
-  version: "172"
+  version: ""
 - 
-  category: media-libs
+  category: x11-libs
   description: ""
+  id: 0
   license: ""
-  name: mesa[X(+)]
+  name: libdrm
   
   version: ""
 - 
   category: media-libs
   description: ""
+  id: 0
   license: ""
   name: mesa
   
@@ -63,22 +88,9 @@ requires:
 - 
   category: sys-apps
   description: ""
+  id: 0
   license: ""
   name: systemd
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libxkbcommon
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libtsm
   
   version: ""
 uri:

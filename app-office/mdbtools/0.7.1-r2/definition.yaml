@@ -2,12 +2,22 @@ category: app-office
 conflicts: []
 description: Set of libraries and utilities for reading Microsoft Access database
   (MDB) files
+id: 0
 license: GPL-2 LGPL-2.1
 name: mdbtools
 requires:
 - 
+  category: dev-db
+  description: ""
+  id: 0
+  license: ""
+  name: unixODBC
+  
+  version: "2.0"
+- 
   category: dev-libs
   description: ""
+  id: 0
   license: ""
   name: glib
   
@@ -15,6 +25,7 @@ requires:
 - 
   category: sys-libs
   description: ""
+  id: 0
   license: ""
   name: ncurses
   
@@ -22,17 +33,11 @@ requires:
 - 
   category: sys-libs
   description: ""
+  id: 0
   license: ""
   name: readline
   
   version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: unixODBC
-  
-  version: "2.0"
 uri:
 - https://github.com/brianb/mdbtools/archive/0.7.1.tar.gz -> mdbtools-0.7.1.tar.gz
 use_flags:

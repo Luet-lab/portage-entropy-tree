@@ -1,12 +1,22 @@
 category: app-shells
 conflicts: []
 description: Friendly Interactive SHell
+id: 0
 license: GPL-2
 name: fish
 requires:
 - 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libpcre2
+  
+  version: "10.21"
+- 
   category: sys-devel
   description: ""
+  id: 0
   license: ""
   name: bc
   
@@ -14,17 +24,11 @@ requires:
 - 
   category: sys-libs
   description: ""
+  id: 0
   license: ""
   name: ncurses
   
   version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libpcre2
-  
-  version: "10.21"
 uri:
 - https://github.com/fish-shell/fish-shell/releases/download/3.0.2/fish-3.0.2.tar.gz
 use_flags:

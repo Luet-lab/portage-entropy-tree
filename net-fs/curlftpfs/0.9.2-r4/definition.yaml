@@ -1,12 +1,22 @@
 category: net-fs
 conflicts: []
 description: File system for accessing ftp hosts based on FUSE
+id: 0
 license: GPL-2
 name: curlftpfs
 requires:
 - 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: glib
+  
+  version: "2.0"
+- 
   category: net-misc
   description: ""
+  id: 0
   license: ""
   name: curl
   
@@ -14,17 +24,11 @@ requires:
 - 
   category: sys-fs
   description: ""
+  id: 0
   license: ""
   name: fuse
   
   version: "2.2"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: "2.0"
 uri:
 - mirror://sourceforge/curlftpfs/curlftpfs-0.9.2.tar.gz
 use_flags:

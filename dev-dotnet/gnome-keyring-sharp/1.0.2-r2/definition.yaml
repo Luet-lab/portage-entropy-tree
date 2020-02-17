@@ -1,12 +1,22 @@
 category: dev-dotnet
 conflicts: []
 description: C# implementation of gnome-keyring
+id: 0
 license: MIT
 name: gnome-keyring-sharp
 requires:
 - 
+  category: gnome-base
+  description: ""
+  id: 0
+  license: ""
+  name: libgnome-keyring
+  
+  version: 2.30.0
+- 
   category: dev-dotnet
   description: ""
+  id: 0
   license: ""
   name: gtk-sharp
   
@@ -14,17 +24,11 @@ requires:
 - 
   category: dev-lang
   description: ""
+  id: 0
   license: ""
   name: mono
   
   version: "2.0"
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: libgnome-keyring
-  
-  version: 2.30.0
 uri:
 - http://www.go-mono.com/archive/gnome-keyring-sharp/gnome-keyring-sharp-1.0.2.tar.gz
 use_flags:

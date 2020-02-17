@@ -1,12 +1,22 @@
 category: dev-libs
 conflicts: []
 description: Elementary OS library that extends GTK+
+id: 0
 license: LGPL-3+
 name: granite
 requires:
 - 
+  category: x11-libs
+  description: ""
+  id: 0
+  license: ""
+  name: gtk+
+  
+  version: "3.22"
+- 
   category: dev-libs
   description: ""
+  id: 0
   license: ""
   name: glib
   
@@ -14,17 +24,11 @@ requires:
 - 
   category: dev-libs
   description: ""
+  id: 0
   license: ""
   name: libgee
   
   version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: "3.22"
 uri:
 - https://github.com/elementary/granite/archive/5.2.5.tar.gz -> granite-5.2.5.tar.gz
 use_flags:

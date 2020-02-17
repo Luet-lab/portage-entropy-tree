@@ -1,26 +1,22 @@
 category: dev-lang
 conflicts: []
 description: Systems programming language from Mozilla
+id: 0
 license: '|| ( MIT Apache-2.0 ) BSD-1 BSD-2 BSD-4 UoI-NCSA'
 name: rust
 requires:
 - 
-  category: sys-devel
+  category: sys-libs
   description: ""
+  id: 0
   license: ""
-  name: llvm
+  name: libunwind
   
-  version: "10"
-- 
-  category: app-eselect
-  description: ""
-  license: ""
-  name: eselect-rust
-  
-  version: "20190311"
+  version: ""
 - 
   category: sys-libs
   description: ""
+  id: 0
   license: ""
   name: zlib
   
@@ -28,6 +24,7 @@ requires:
 - 
   category: dev-libs
   description: ""
+  id: 0
   license: ""
   name: openssl
   
@@ -35,6 +32,7 @@ requires:
 - 
   category: dev-libs
   description: ""
+  id: 0
   license: ""
   name: libressl
   
@@ -42,24 +40,43 @@ requires:
 - 
   category: net-libs
   description: ""
+  id: 0
   license: ""
   name: libssh2
   
   version: ""
 - 
+  category: net-misc
+  description: ""
+  id: 0
+  license: ""
+  name: curl
+  
+  version: ""
+- 
   category: net-libs
   description: ""
+  id: 0
   license: ""
   name: http-parser
   
   version: ""
 - 
-  category: net-misc
+  category: sys-devel
   description: ""
+  id: 0
   license: ""
-  name: curl
+  name: llvm
   
-  version: ""
+  version: "10"
+- 
+  category: app-eselect
+  description: ""
+  id: 0
+  license: ""
+  name: eselect-rust
+  
+  version: "20190311"
 uri:
 - https://static.rust-lang.org/dist/rustc-1.40.0-src.tar.xz -> rustc-1.40.0-src.tar.xz
 use_flags:

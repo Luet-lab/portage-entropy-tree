@@ -1,0 +1,31 @@
+category: dev-vcs
+conflicts: []
+description: Simple, high-reliability, source control management, and more
+id: 0
+license: BSD-2
+name: fossil
+requires:
+- 
+  category: sys-libs
+  description: ""
+  id: 0
+  license: ""
+  name: zlib
+  
+  version: ""
+uri:
+- http://www.fossil-scm.org/index.html/uv/fossil-src-2.10.tar.gz
+use_flags:
+- debug
+- fusefs
+- json
+- -legacy-mv-rm
+- -miniz
+- system-sqlite
+- +ssl
+- "static\n\ttcl"
+- tcl-stubs
+- tcl-private-stubs
+- th1-docs
+- th1-hooks
+version: "2.10"

@@ -1,19 +1,14 @@
 category: x11-libs
 conflicts: []
 description: HW video decode support for Intel integrated graphics
+id: 0
 license: MIT
 name: libva-intel-driver
 requires:
 - 
-  category: media-libs
-  description: ""
-  license: ""
-  name: mesa
-  
-  version: 9.1.6
-- 
   category: x11-libs
   description: ""
+  id: 0
   license: ""
   name: libdrm-2.4.52[video_cards_intel,]
   
@@ -21,10 +16,19 @@ requires:
 - 
   category: dev-libs
   description: ""
+  id: 0
   license: ""
   name: wayland
   
   version: "1.11"
+- 
+  category: media-libs
+  description: ""
+  id: 0
+  license: ""
+  name: mesa
+  
+  version: 9.1.6
 uri:
 - https://github.com/intel/intel-vaapi-driver/releases/download/2.4.0/intel-vaapi-driver-2.4.0.tar.bz2
 use_flags:

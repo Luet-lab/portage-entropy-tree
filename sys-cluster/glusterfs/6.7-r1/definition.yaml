@@ -1,0 +1,145 @@
+category: sys-cluster
+conflicts: []
+description: GlusterFS is a powerful network/cluster filesystem
+id: 0
+license: '|| ( GPL-2 LGPL-3+ )'
+name: glusterfs
+requires:
+- 
+  category: sys-apps
+  description: ""
+  id: 0
+  license: ""
+  name: util-linux
+  
+  version: ""
+- 
+  category: app-editors
+  description: ""
+  id: 0
+  license: ""
+  name: emacs
+  
+  version: "23.1"
+- 
+  category: sys-fabric
+  description: ""
+  id: 0
+  license: ""
+  name: libibverbs
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  id: 0
+  license: ""
+  name: glibc[rpc(-)]
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: userspace-rcu
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libxml2
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libaio
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libtirpc
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  id: 0
+  license: ""
+  name: readline
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  id: 0
+  license: ""
+  name: argp-standalone
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  id: 0
+  license: ""
+  name: fuse
+  
+  version: 2.7.0
+- 
+  category: sys-fabric
+  description: ""
+  id: 0
+  license: ""
+  name: librdmacm
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  id: 0
+  license: ""
+  name: rpcsvc-proto
+  
+  version: ""
+uri:
+- https://download.gluster.org/pub/gluster/glusterfs//6.7/glusterfs-6.7.tar.gz
+use_flags:
+- debug
+- emacs
+- +fuse
+- +georeplication
+- infiniband
+- ipv6
+- libressl
+- +libtirpc
+- rsyslog
+- static-libs
+- +syslog
+- test
+- vim-syntax
+- +xml
+version: 6.7-r1

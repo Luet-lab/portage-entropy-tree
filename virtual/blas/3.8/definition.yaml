@@ -1,12 +1,22 @@
 category: virtual
 conflicts: []
 description: Virtual for FORTRAN 77 BLAS implementation
+id: 0
 license: ""
 name: blas
 requires:
 - 
   category: sci-libs
   description: ""
+  id: 0
+  license: ""
+  name: lapack
+  
+  version: "3.8"
+- 
+  category: sci-libs
+  description: ""
+  id: 0
   license: ""
   name: openblas
   
@@ -14,17 +24,11 @@ requires:
 - 
   category: sci-libs
   description: ""
+  id: 0
   license: ""
   name: blis
   
   version: ""
-- 
-  category: sci-libs
-  description: ""
-  license: ""
-  name: lapack
-  
-  version: "3.8"
 uri: []
 use_flags:
 - eselect-ldso

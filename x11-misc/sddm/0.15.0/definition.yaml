@@ -1,19 +1,30 @@
 category: x11-misc
 conflicts: []
 description: Simple Desktop Display Manager
+id: 0
 license: GPL-2+ MIT CC-BY-3.0 CC-BY-SA-3.0 public-domain
 name: sddm
 requires:
 - 
-  category: dev-qt
+  category: x11-base
   description: ""
+  id: 0
   license: ""
-  name: qtcore
+  name: xorg-server
   
-  version: "5.6"
+  version: 1.15.1
+- 
+  category: sys-auth
+  description: ""
+  id: 0
+  license: ""
+  name: elogind
+  
+  version: ""
 - 
   category: sys-libs
   description: ""
+  id: 0
   license: ""
   name: pam
   
@@ -21,6 +32,7 @@ requires:
 - 
   category: sys-apps
   description: ""
+  id: 0
   license: ""
   name: systemd
   
@@ -28,27 +40,23 @@ requires:
 - 
   category: sys-power
   description: ""
+  id: 0
   license: ""
   name: upower
   
   version: ""
 - 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: elogind
-  
-  version: ""
-- 
   category: dev-qt
   description: ""
+  id: 0
   license: ""
-  name: qtdbus
+  name: qtcore
   
   version: "5.6"
 - 
   category: dev-qt
   description: ""
+  id: 0
   license: ""
   name: qtgui
   
@@ -56,27 +64,15 @@ requires:
 - 
   category: dev-qt
   description: ""
-  license: ""
-  name: qtdeclarative
-  
-  version: "5.6"
-- 
-  category: dev-qt
-  description: ""
+  id: 0
   license: ""
   name: qtnetwork
   
   version: "5.6"
 - 
-  category: x11-base
-  description: ""
-  license: ""
-  name: xorg-server
-  
-  version: 1.15.1
-- 
   category: x11-libs
   description: ""
+  id: 0
   license: ""
   name: libxcb
   
@@ -84,10 +80,27 @@ requires:
 - 
   category: sys-auth
   description: ""
+  id: 0
   license: ""
   name: consolekit
   
   version: 0.9.4
+- 
+  category: dev-qt
+  description: ""
+  id: 0
+  license: ""
+  name: qtdbus
+  
+  version: "5.6"
+- 
+  category: dev-qt
+  description: ""
+  id: 0
+  license: ""
+  name: qtdeclarative
+  
+  version: "5.6"
 uri:
 - https://github.com/sddm/sddm/releases/download/v0.15.0/sddm-0.15.0.tar.gz
 use_flags:

@@ -1,19 +1,14 @@
 category: dev-util
 conflicts: []
 description: NVIDIA CUDA Toolkit (compiler and friends)
+id: 0
 license: NVIDIA-CUDA
 name: nvidia-cuda-toolkit
 requires:
 - 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: gcc
-  
-  version: "8"
-- 
   category: x11-drivers
   description: ""
+  id: 0
   license: ""
   name: nvidia-drivers-396.24[X,uvm]
   
@@ -21,6 +16,7 @@ requires:
 - 
   category: sys-libs
   description: ""
+  id: 0
   license: ""
   name: libtermcap-compat
   
@@ -28,6 +24,7 @@ requires:
 - 
   category: sys-libs
   description: ""
+  id: 0
   license: ""
   name: ncurses-compat
   
@@ -35,10 +32,19 @@ requires:
 - 
   category: virtual
   description: ""
+  id: 0
   license: ""
   name: jre
   
   version: "1.6"
+- 
+  category: sys-devel
+  description: ""
+  id: 0
+  license: ""
+  name: gcc
+  
+  version: "8"
 uri:
 - https://developer.nvidia.com/compute/cuda//Prod/local_installers/cuda_10.0.130_410.48_linux
   -> cuda_10.0.130_410.48_linux.run

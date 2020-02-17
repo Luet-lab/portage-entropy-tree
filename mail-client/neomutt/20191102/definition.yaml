@@ -1,40 +1,54 @@
 category: mail-client
 conflicts: []
 description: A small but very powerful text-based mail client
+id: 0
 license: GPL-2
 name: neomutt
 requires:
 - 
-  category: sys-libs
+  category: sec-policy
   description: ""
+  id: 0
   license: ""
-  name: db
-  
-  version: "6.3"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: gdbm
+  name: selinux-mutt
   
   version: ""
 - 
-  category: virtual
+  category: dev-db
   description: ""
+  id: 0
   license: ""
-  name: libintl
+  name: kyotocabinet
   
   version: ""
 - 
-  category: net-mail
+  category: net-dns
   description: ""
+  id: 0
   license: ""
-  name: notmuch
+  name: libidn
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: cyrus-sasl
+  
+  version: "2"
+- 
+  category: sys-libs
+  description: ""
+  id: 0
+  license: ""
+  name: ncurses
   
   version: ""
 - 
   category: sys-libs
   description: ""
+  id: 0
   license: ""
   name: slang
   
@@ -42,34 +56,23 @@ requires:
 - 
   category: dev-libs
   description: ""
+  id: 0
   license: ""
-  name: libressl
+  name: openssl
   
-  version: ""
+  version: 0.9.6
 - 
-  category: sec-policy
+  category: virtual
   description: ""
+  id: 0
   license: ""
-  name: selinux-mutt
-  
-  version: ""
-- 
-  category: app-misc
-  description: ""
-  license: ""
-  name: mime-types
+  name: libintl
   
   version: ""
 - 
   category: dev-db
   description: ""
-  license: ""
-  name: lmdb
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
+  id: 0
   license: ""
   name: tokyocabinet
   
@@ -77,41 +80,39 @@ requires:
 - 
   category: app-crypt
   description: ""
+  id: 0
   license: ""
   name: gpgme
   
   version: 0.9.0
 - 
-  category: sys-libs
+  category: virtual
   description: ""
+  id: 0
   license: ""
-  name: ncurses
+  name: krb5
   
   version: ""
 - 
-  category: dev-libs
+  category: net-mail
   description: ""
+  id: 0
   license: ""
-  name: openssl
-  
-  version: 0.9.6
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: libidn
+  name: notmuch
   
   version: ""
 - 
   category: dev-db
   description: ""
+  id: 0
   license: ""
-  name: kyotocabinet
+  name: lmdb
   
   version: ""
 - 
   category: dev-db
   description: ""
+  id: 0
   license: ""
   name: qdbm
   
@@ -119,24 +120,43 @@ requires:
 - 
   category: net-libs
   description: ""
+  id: 0
   license: ""
   name: gnutls
   
   version: 1.0.17
 - 
-  category: virtual
+  category: dev-libs
   description: ""
+  id: 0
   license: ""
-  name: krb5
+  name: libressl
   
   version: ""
 - 
-  category: dev-libs
+  category: app-misc
   description: ""
+  id: 0
   license: ""
-  name: cyrus-sasl
+  name: mime-types
   
-  version: "2"
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  id: 0
+  license: ""
+  name: db
+  
+  version: "6.3"
+- 
+  category: sys-libs
+  description: ""
+  id: 0
+  license: ""
+  name: gdbm
+  
+  version: ""
 uri:
 - https://github.com/neomutt/neomutt/archive/20191102.tar.gz -> neomutt-20191102.tar.gz
 use_flags:

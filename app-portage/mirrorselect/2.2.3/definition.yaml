@@ -1,12 +1,22 @@
 category: app-portage
 conflicts: []
 description: Tool to help select distfiles mirrors for Gentoo
+id: 0
 license: GPL-2
 name: mirrorselect
 requires:
 - 
+  category: dev-python
+  description: ""
+  id: 0
+  license: ""
+  name: ssl-fetch
+  
+  version: "0.3"
+- 
   category: dev-util
   description: ""
+  id: 0
   license: ""
   name: dialog
   
@@ -14,17 +24,11 @@ requires:
 - 
   category: net-analyzer
   description: ""
+  id: 0
   license: ""
   name: netselect
   
   version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: ssl-fetch
-  
-  version: "0.3"
 uri:
 - https://dev.gentoo.org/~dolsen/releases/mirrorselect/mirrorselect-2.2.3.tar.gz
 use_flags:

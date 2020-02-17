@@ -1,0 +1,60 @@
+category: net-libs
+conflicts:
+- 
+  category: net-p2p
+  description: ""
+  id: 0
+  license: ""
+  name: mldonkey
+  
+  version: ""
+description: C++ BitTorrent implementation focusing on efficiency and scalability
+id: 0
+license: BSD
+name: libtorrent-rasterbar
+requires:
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: boost
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  id: 0
+  license: ""
+  name: libiconv
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: openssl
+  
+  version: ""
+uri:
+- https://github.com/arvidn/libtorrent/archive/libtorrent-.tar.gz -> libtorrent-rasterbar-1.2.4.tar.gz
+use_flags:
+- debug
+- +dht
+- doc
+- examples
+- libressl
+- python
+- +ssl
+- static-libs
+- test
+version: 1.2.4

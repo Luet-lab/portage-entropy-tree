@@ -1,12 +1,22 @@
 category: sys-fs
 conflicts: []
 description: Standard EXT2/EXT3/EXT4 filesystem utilities
+id: 0
 license: GPL-2 BSD
 name: e2fsprogs
 requires:
 - 
+  category: sys-libs
+  description: ""
+  id: 0
+  license: ""
+  name: e2fsprogs-libs
+  
+  version: 1.45.5
+- 
   category: sys-apps
   description: ""
+  id: 0
   license: ""
   name: util-linux
   
@@ -14,6 +24,7 @@ requires:
 - 
   category: sys-fs
   description: ""
+  id: 0
   license: ""
   name: lvm2[-device-mapper-only(-)]
   
@@ -21,6 +32,7 @@ requires:
 - 
   category: sys-fs
   description: ""
+  id: 0
   license: ""
   name: fuse
   
@@ -28,17 +40,11 @@ requires:
 - 
   category: virtual
   description: ""
+  id: 0
   license: ""
   name: libintl
   
   version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: e2fsprogs-libs
-  
-  version: 1.45.5
 uri:
 - mirror://sourceforge/e2fsprogs/e2fsprogs-1.45.5.tar.xz
 - https://www.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/v1.45.5/e2fsprogs-1.45.5.tar.xz

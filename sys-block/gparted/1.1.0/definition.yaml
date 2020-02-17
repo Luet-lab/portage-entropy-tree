@@ -1,26 +1,22 @@
 category: sys-block
 conflicts: []
 description: Gnome Partition Editor
+id: 0
 license: GPL-2+ FDL-1.2+
 name: gparted
 requires:
 - 
-  category: sys-block
+  category: dev-cpp
   description: ""
+  id: 0
   license: ""
-  name: parted
+  name: gtkmm
   
-  version: "3.2"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libsigc++
-  
-  version: 2.10.1
+  version: "3.24"
 - 
   category: sys-apps
   description: ""
+  id: 0
   license: ""
   name: util-linux
   
@@ -28,55 +24,7 @@ requires:
 - 
   category: sys-fs
   description: ""
-  license: ""
-  name: dmraid
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: multipath-tools
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: xfsprogs
-  
-  version: ""
-- 
-  category: dev-cpp
-  description: ""
-  license: ""
-  name: glibmm
-  
-  version: 2.56.1
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: hfsutils
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: mdadm
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: reiserfsprogs
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
+  id: 0
   license: ""
   name: lvm2
   
@@ -84,6 +32,7 @@ requires:
 - 
   category: sys-fs
   description: ""
+  id: 0
   license: ""
   name: diskdev_cmds
   
@@ -91,48 +40,7 @@ requires:
 - 
   category: sys-fs
   description: ""
-  license: ""
-  name: jfsutils
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: ntfs3g
-  
-  version: 2016.2.22-r2
-- 
-  category: x11-apps
-  description: ""
-  license: ""
-  name: xhost
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: mtools
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: glib
-  
-  version: 2.58.3-r1
-- 
-  category: dev-cpp
-  description: ""
-  license: ""
-  name: gtkmm
-  
-  version: "3.24"
-- 
-  category: sys-fs
-  description: ""
+  id: 0
   license: ""
   name: btrfs-progs
   
@@ -140,6 +48,31 @@ requires:
 - 
   category: sys-fs
   description: ""
+  id: 0
+  license: ""
+  name: jfsutils
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  id: 0
+  license: ""
+  name: xfsprogs
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: glib
+  
+  version: 2.58.3-r1
+- 
+  category: sys-fs
+  description: ""
+  id: 0
   license: ""
   name: cryptsetup
   
@@ -147,6 +80,7 @@ requires:
 - 
   category: sys-fs
   description: ""
+  id: 0
   license: ""
   name: f2fs-tools
   
@@ -154,20 +88,71 @@ requires:
 - 
   category: sys-fs
   description: ""
+  id: 0
   license: ""
-  name: reiser4progs
+  name: dosfstools
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  id: 0
+  license: ""
+  name: xfsdump
   
   version: ""
 - 
   category: kde-plasma
   description: ""
+  id: 0
   license: ""
   name: kde-cli-tools
   
   version: 5.8.6-r1
 - 
+  category: sys-block
+  description: ""
+  id: 0
+  license: ""
+  name: parted
+  
+  version: "3.2"
+- 
   category: sys-fs
   description: ""
+  id: 0
+  license: ""
+  name: multipath-tools
+  
+  version: ""
+- 
+  category: dev-cpp
+  description: ""
+  id: 0
+  license: ""
+  name: glibmm
+  
+  version: 2.56.1
+- 
+  category: sys-fs
+  description: ""
+  id: 0
+  license: ""
+  name: ntfs3g
+  
+  version: 2016.2.22-r2
+- 
+  category: sys-fs
+  description: ""
+  id: 0
+  license: ""
+  name: udftools
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  id: 0
   license: ""
   name: e2fsprogs
   
@@ -175,36 +160,81 @@ requires:
 - 
   category: sys-fs
   description: ""
+  id: 0
   license: ""
-  name: dosfstools
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: udev
+  name: mtools
   
   version: ""
 - 
   category: sys-fs
   description: ""
+  id: 0
   license: ""
-  name: xfsdump
+  name: hfsutils
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  id: 0
+  license: ""
+  name: mdadm
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  id: 0
+  license: ""
+  name: reiserfsprogs
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  id: 0
+  license: ""
+  name: reiser4progs
+  
+  version: ""
+- 
+  category: x11-apps
+  description: ""
+  id: 0
+  license: ""
+  name: xhost
   
   version: ""
 - 
   category: sys-auth
   description: ""
+  id: 0
   license: ""
   name: polkit
   
   version: "0.102"
 - 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libsigc++
+  
+  version: 2.10.1
+- 
   category: sys-fs
   description: ""
+  id: 0
   license: ""
-  name: udftools
+  name: dmraid
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  id: 0
+  license: ""
+  name: udev
   
   version: ""
 uri:

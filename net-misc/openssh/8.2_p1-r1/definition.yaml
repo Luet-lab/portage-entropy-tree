@@ -1,0 +1,194 @@
+category: net-misc
+conflicts: []
+description: Port of OpenBSD's free SSH release
+id: 0
+license: BSD GPL-2
+name: openssh
+requires:
+- 
+  category: net-libs
+  description: ""
+  id: 0
+  license: ""
+  name: ldns[ecdsa,ssl(+)]
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  id: 0
+  license: ""
+  name: pam
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  id: 0
+  license: ""
+  name: audit
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libedit
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libfido2
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libselinux
+  
+  version: "1.28"
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: openssl
+  
+  version: 1.1.0g
+- 
+  category: virtual
+  description: ""
+  id: 0
+  license: ""
+  name: libcrypt
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  id: 0
+  license: ""
+  name: zlib
+  
+  version: 1.2.3
+- 
+  category: sys-auth
+  description: ""
+  id: 0
+  license: ""
+  name: pambase
+  
+  version: "20081028"
+- 
+  category: acct-group
+  description: ""
+  id: 0
+  license: ""
+  name: sshd
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  id: 0
+  license: ""
+  name: lksctp-tools
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  id: 0
+  license: ""
+  name: krb5
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  id: 0
+  license: ""
+  name: shadow
+  
+  version: ""
+- 
+  category: x11-apps
+  description: ""
+  id: 0
+  license: ""
+  name: xauth
+  
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  id: 0
+  license: ""
+  name: sshd
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  id: 0
+  license: ""
+  name: ldns
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  id: 0
+  license: ""
+  name: ldns[-ecdsa,ssl(+)]
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libressl
+  
+  version: ""
+uri:
+- mirror://openbsd/OpenSSH/portable/openssh-8.2.tar.gz
+- 'https://roumenpetrov.info/openssh/x509-12.4/openssh-8.2+x509-12.4.diff.gz '
+use_flags:
+- abi_mips_n32
+- audit
+- bindist
+- debug
+- hpn
+- kerberos
+- kernel_linux
+- ldns
+- libedit
+- libressl
+- livecd
+- pam
+- +pie
+- sctp
+- security-key
+- selinux
+- +ssl
+- static
+- test
+- X
+- X509
+- xmss
+version: 8.2_p1-r1

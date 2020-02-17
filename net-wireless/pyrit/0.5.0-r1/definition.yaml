@@ -1,0 +1,38 @@
+category: net-wireless
+conflicts: []
+description: GPU-accelerated attack against WPA-PSK authentication
+id: 0
+license: GPL-3+
+name: pyrit
+requires:
+- 
+  category: net-wireless
+  description: ""
+  id: 0
+  license: ""
+  name: cpyrit-cuda
+  
+  version: ""
+- 
+  category: net-analyzer
+  description: ""
+  id: 0
+  license: ""
+  name: scapy
+  
+  version: "2"
+- 
+  category: net-wireless
+  description: ""
+  id: 0
+  license: ""
+  name: cpyrit-opencl
+  
+  version: ""
+uri:
+- https://github.com/JPaulMora/Pyrit/archive/v0.5.0.tar.gz -> pyrit-0.5.0.tar.gz
+use_flags:
+- cuda
+- opencl
+- test
+version: 0.5.0-r1

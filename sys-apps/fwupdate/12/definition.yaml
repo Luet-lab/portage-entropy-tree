@@ -1,12 +1,22 @@
 category: sys-apps
 conflicts: []
 description: Tools for using the ESRT and UpdateCapsule() to apply firmware updates
+id: 0
 license: GPL-2+
 name: fwupdate
 requires:
 - 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: popt
+  
+  version: ""
+- 
   category: sys-libs
   description: ""
+  id: 0
   license: ""
   name: efivar
   
@@ -14,17 +24,11 @@ requires:
 - 
   category: sys-libs
   description: ""
+  id: 0
   license: ""
   name: libsmbios
   
   version: 2.3.3
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: popt
-  
-  version: ""
 uri:
 - https://github.com/rhinstaller/fwupdate/archive/12.tar.gz -> fwupdate-12.tar.gz
 use_flags:

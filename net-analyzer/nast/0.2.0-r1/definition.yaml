@@ -1,12 +1,22 @@
 category: net-analyzer
 conflicts: []
 description: NAST - Network Analyzer Sniffer Tool
+id: 0
 license: GPL-2
 name: nast
 requires:
 - 
+  category: sys-libs
+  description: ""
+  id: 0
+  license: ""
+  name: ncurses
+  
+  version: "5.4"
+- 
   category: net-libs
   description: ""
+  id: 0
   license: ""
   name: libnet
   
@@ -14,17 +24,11 @@ requires:
 - 
   category: net-libs
   description: ""
+  id: 0
   license: ""
   name: libpcap
   
   version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: ncurses
-  
-  version: "5.4"
 uri:
 - mirror://sourceforge/nast.berlios/nast-0.2.0.tar.gz
 use_flags:

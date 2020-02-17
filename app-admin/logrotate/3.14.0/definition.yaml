@@ -1,19 +1,14 @@
 category: app-admin
 conflicts: []
 description: Rotates, compresses, and mails system logs
+id: 0
 license: GPL-2
 name: logrotate
 requires:
 - 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: ""
-- 
   category: virtual
   description: ""
+  id: 0
   license: ""
   name: acl
   
@@ -21,6 +16,7 @@ requires:
 - 
   category: sec-policy
   description: ""
+  id: 0
   license: ""
   name: selinux-logrotate
   
@@ -28,6 +24,7 @@ requires:
 - 
   category: virtual
   description: ""
+  id: 0
   license: ""
   name: cron
   
@@ -35,10 +32,19 @@ requires:
 - 
   category: dev-libs
   description: ""
+  id: 0
   license: ""
   name: popt
   
   version: "1.5"
+- 
+  category: sys-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libselinux
+  
+  version: ""
 uri:
 - https://github.com/logrotate/logrotate/releases/download/3.14.0/logrotate-3.14.0.tar.gz
 use_flags:

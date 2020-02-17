@@ -1,12 +1,22 @@
 category: sys-libs
 conflicts: []
 description: SELinux kernel and policy management library
+id: 0
 license: GPL-2
 name: libsemanage
 requires:
 - 
   category: sys-libs
   description: ""
+  id: 0
+  license: ""
+  name: libsepol
+  
+  version: "2.9"
+- 
+  category: sys-libs
+  description: ""
+  id: 0
   license: ""
   name: libselinux
   
@@ -14,6 +24,7 @@ requires:
 - 
   category: sys-process
   description: ""
+  id: 0
   license: ""
   name: audit
   
@@ -21,17 +32,11 @@ requires:
 - 
   category: dev-libs
   description: ""
+  id: 0
   license: ""
   name: ustr
   
   version: 1.0.4-r2
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libsepol
-  
-  version: "2.9"
 uri:
 - https://github.com/SELinuxProject/selinux/releases/download/20190315/libsemanage-2.9.tar.gz
 use_flags:

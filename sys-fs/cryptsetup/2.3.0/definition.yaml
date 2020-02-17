@@ -1,0 +1,177 @@
+category: sys-fs
+conflicts: []
+description: Tool to setup encrypted devices with dm-crypt
+id: 0
+license: GPL-2+
+name: cryptsetup
+requires:
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libgpg-error
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: popt
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  id: 0
+  license: ""
+  name: libudev
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libgpg-error[static-libs(+)]
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  id: 0
+  license: ""
+  name: util-linux-2.31-r1[static-libs(+)]
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libpwquality[static-libs(+)]
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  id: 0
+  license: ""
+  name: util-linux
+  
+  version: 2.31-r1
+- 
+  category: sys-fs
+  description: ""
+  id: 0
+  license: ""
+  name: lvm2
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  id: 0
+  license: ""
+  name: argon2
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: nettle-2.4[static-libs(+)]
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  id: 0
+  license: ""
+  name: lvm2[static-libs(+)]
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  id: 0
+  license: ""
+  name: libudev[static-libs(-)]
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libpwquality
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: json-c
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: popt[static-libs(+)]
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libgcrypt
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: nettle
+  
+  version: "2.4"
+uri:
+- https://www.kernel.org/pub/linux/utils/cryptsetup/v/cryptsetup-2.3.0.tar.xz
+use_flags:
+- gcrypt
+- kernel
+- nettle
+- +openssl
+- +argon2
+- libressl
+- luks1_default
+- nls
+- pwquality
+- reencrypt
+- static
+- static-libs
+- +udev
+- urandom
+version: 2.3.0

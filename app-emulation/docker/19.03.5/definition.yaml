@@ -3,24 +3,20 @@ conflicts:
 - 
   category: sys-apps
   description: ""
+  id: 0
   license: ""
   name: systemd[-cgroup-hybrid(+)]
   
   version: ""
 description: The core functions you need to create Docker images and run Docker containers
+id: 0
 license: Apache-2.0
 name: docker
 requires:
 - 
   category: sys-libs
   description: ""
-  license: ""
-  name: libseccomp
-  
-  version: 2.2.1
-- 
-  category: sys-libs
-  description: ""
+  id: 0
   license: ""
   name: libapparmor
   
@@ -28,80 +24,99 @@ requires:
 - 
   category: net-firewall
   description: ""
+  id: 0
   license: ""
   name: iptables
   
   version: "1.4"
 - 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: lvm2
-  
-  version: 2.02.89
-- 
-  category: app-emulation
-  description: ""
-  license: ""
-  name: docker-proxy
-  
-  version: 0.8.0_p20191011
-- 
-  category: acct-group
-  description: ""
-  license: ""
-  name: docker
-  
-  version: ""
-- 
-  category: dev-db
-  description: ""
-  license: ""
-  name: sqlite
-  
-  version: 3.7.9
-- 
-  category: app-arch
-  description: ""
-  license: ""
-  name: xz-utils
-  
-  version: "4.9"
-- 
-  category: sys-process
-  description: ""
-  license: ""
-  name: procps
-  
-  version: ""
-- 
   category: dev-vcs
   description: ""
+  id: 0
   license: ""
   name: git
   
   version: "1.7"
 - 
-  category: dev-libs
+  category: acct-group
   description: ""
+  id: 0
   license: ""
-  name: libltdl
+  name: docker
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  id: 0
+  license: ""
+  name: lvm2
+  
+  version: 2.02.89
+- 
+  category: sys-process
+  description: ""
+  id: 0
+  license: ""
+  name: procps
   
   version: ""
 - 
   category: app-emulation
   description: ""
+  id: 0
   license: ""
   name: containerd
   
   version: 1.2.10
 - 
+  category: app-emulation
+  description: ""
+  id: 0
+  license: ""
+  name: docker-proxy
+  
+  version: 0.8.0_p20191011
+- 
   category: sys-process
   description: ""
+  id: 0
   license: ""
   name: tini
   
   version: 0.18.0
+- 
+  category: dev-db
+  description: ""
+  id: 0
+  license: ""
+  name: sqlite
+  
+  version: 3.7.9
+- 
+  category: sys-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libseccomp
+  
+  version: 2.2.1
+- 
+  category: app-arch
+  description: ""
+  id: 0
+  license: ""
+  name: xz-utils
+  
+  version: "4.9"
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libltdl
+  
+  version: ""
 uri:
 - https://github.com/docker/docker-ce/archive/v19.03.5.tar.gz -> docker-19.03.5.tar.gz
 use_flags:

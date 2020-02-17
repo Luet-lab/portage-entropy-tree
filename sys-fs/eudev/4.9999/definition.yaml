@@ -1,15 +1,17 @@
 category: sys-fs
 conflicts:
 - 
-  category: sys-fs
+  category: sys-apps
   description: ""
+  id: 0
   license: ""
-  name: udev
+  name: systemd
   
   version: ""
 - 
   category: <sys-fs
   description: ""
+  id: 0
   license: ""
   name: lvm2
   
@@ -17,6 +19,7 @@ conflicts:
 - 
   category: <sec-policy
   description: ""
+  id: 0
   license: ""
   name: selinux-base
   
@@ -24,6 +27,7 @@ conflicts:
 - 
   category: <sys-libs
   description: ""
+  id: 0
   license: ""
   name: glibc
   
@@ -31,31 +35,36 @@ conflicts:
 - 
   category: sys-apps
   description: ""
+  id: 0
   license: ""
   name: gentoo-systemd-integration
   
   version: ""
 - 
-  category: sys-apps
+  category: sys-fs
   description: ""
+  id: 0
   license: ""
-  name: systemd
+  name: udev
   
   version: ""
 description: Linux dynamic and persistent device naming support (aka userspace devfs)
+id: 0
 license: LGPL-2.1 GPL-2
 name: eudev
 requires:
 - 
-  category: sys-apps
+  category: sys-libs
   description: ""
+  id: 0
   license: ""
-  name: util-linux
+  name: libselinux
   
-  version: "2.20"
+  version: 2.1.9
 - 
   category: acct-group
   description: ""
+  id: 0
   license: ""
   name: input
   
@@ -63,13 +72,7 @@ requires:
 - 
   category: acct-group
   description: ""
-  license: ""
-  name: kvm
-  
-  version: ""
-- 
-  category: acct-group
-  description: ""
+  id: 0
   license: ""
   name: render
   
@@ -77,17 +80,27 @@ requires:
 - 
   category: sys-apps
   description: ""
+  id: 0
+  license: ""
+  name: util-linux
+  
+  version: "2.20"
+- 
+  category: sys-apps
+  description: ""
+  id: 0
   license: ""
   name: kmod
   
   version: "16"
 - 
-  category: sys-libs
+  category: acct-group
   description: ""
+  id: 0
   license: ""
-  name: libselinux
+  name: kvm
   
-  version: 2.1.9
+  version: ""
 uri: []
 use_flags:
 - +blkid

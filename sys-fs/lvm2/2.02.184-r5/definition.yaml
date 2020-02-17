@@ -1,47 +1,46 @@
 category: sys-fs
 conflicts:
 - 
-  category: <sys-apps
+  category: '!sys-fs'
   description: ""
+  id: 0
   license: ""
-  name: openrc
+  name: lvm-user
   
-  version: "0.11"
+  version: ""
 - 
   category: <sys-fs
   description: ""
+  id: 0
   license: ""
   name: cryptsetup
   
   version: 1.1.2
 - 
-  category: '!sys-fs'
+  category: <sys-apps
   description: ""
+  id: 0
   license: ""
-  name: lvm-user
+  name: openrc
   
-  version: ""
+  version: "0.11"
 description: User-land utilities for LVM2 (device-mapper) software
+id: 0
 license: GPL-2
 name: lvm2
 requires:
 - 
   category: sys-apps
   description: ""
+  id: 0
   license: ""
-  name: baselayout
+  name: makedev
   
-  version: "2.2"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
-  
-  version: "2.16"
+  version: ""
 - 
   category: dev-libs
   description: ""
+  id: 0
   license: ""
   name: libaio
   
@@ -49,6 +48,7 @@ requires:
 - 
   category: dev-libs
   description: ""
+  id: 0
   license: ""
   name: libaio[static-libs?]
   
@@ -56,6 +56,7 @@ requires:
 - 
   category: virtual
   description: ""
+  id: 0
   license: ""
   name: libudev
   
@@ -63,13 +64,15 @@ requires:
 - 
   category: sys-apps
   description: ""
+  id: 0
   license: ""
-  name: makedev
+  name: util-linux
   
-  version: ""
+  version: "2.16"
 - 
   category: sys-block
   description: ""
+  id: 0
   license: ""
   name: thin-provisioning-tools
   
@@ -77,6 +80,7 @@ requires:
 - 
   category: sys-libs
   description: ""
+  id: 0
   license: ""
   name: readline
   
@@ -84,6 +88,7 @@ requires:
 - 
   category: sys-cluster
   description: ""
+  id: 0
   license: ""
   name: sanlock
   
@@ -91,10 +96,19 @@ requires:
 - 
   category: sys-apps
   description: ""
+  id: 0
   license: ""
   name: systemd
   
   version: "205"
+- 
+  category: sys-apps
+  description: ""
+  id: 0
+  license: ""
+  name: baselayout
+  
+  version: "2.2"
 uri: []
 use_flags:
 - readline

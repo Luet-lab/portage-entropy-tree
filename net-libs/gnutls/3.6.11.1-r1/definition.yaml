@@ -1,26 +1,22 @@
 category: net-libs
 conflicts: []
 description: A TLS 1.2 and SSL 3.0 implementation for the GNU project
+id: 0
 license: GPL-3 LGPL-2.1+
 name: gnutls
 requires:
 - 
-  category: virtual
+  category: net-dns
   description: ""
+  id: 0
   license: ""
-  name: libintl
+  name: libidn2
   
-  version: 0-r1
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: p11-kit
-  
-  version: 0.23.1
+  version: 0.16-r1
 - 
   category: dev-libs
   description: ""
+  id: 0
   license: ""
   name: libunistring
   
@@ -28,6 +24,7 @@ requires:
 - 
   category: dev-libs
   description: ""
+  id: 0
   license: ""
   name: nettle
   
@@ -35,6 +32,7 @@ requires:
 - 
   category: dev-libs
   description: ""
+  id: 0
   license: ""
   name: gmp
   
@@ -42,6 +40,7 @@ requires:
 - 
   category: sys-devel
   description: ""
+  id: 0
   license: ""
   name: autogen
   
@@ -49,6 +48,7 @@ requires:
 - 
   category: net-dns
   description: ""
+  id: 0
   license: ""
   name: unbound
   
@@ -56,24 +56,35 @@ requires:
 - 
   category: dev-scheme
   description: ""
+  id: 0
   license: ""
   name: guile
   
   version: "2"
 - 
+  category: virtual
+  description: ""
+  id: 0
+  license: ""
+  name: libintl
+  
+  version: 0-r1
+- 
+  category: app-crypt
+  description: ""
+  id: 0
+  license: ""
+  name: p11-kit
+  
+  version: 0.23.1
+- 
   category: dev-libs
   description: ""
+  id: 0
   license: ""
   name: libtasn1
   
   version: "4.9"
-- 
-  category: net-dns
-  description: ""
-  license: ""
-  name: libidn2
-  
-  version: 0.16-r1
 uri:
 - mirror://gnupg/gnutls/v/gnutls-3.6.11.1.tar.xz
 use_flags:

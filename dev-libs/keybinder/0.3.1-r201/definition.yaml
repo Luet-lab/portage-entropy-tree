@@ -1,12 +1,22 @@
 category: dev-libs
 conflicts: []
 description: A library for registering global keyboard shortcuts
+id: 0
 license: GPL-2
 name: keybinder
 requires:
 - 
   category: x11-libs
   description: ""
+  id: 0
+  license: ""
+  name: gtk+
+  
+  version: "2.20"
+- 
+  category: x11-libs
+  description: ""
+  id: 0
   license: ""
   name: libX11
   
@@ -14,6 +24,7 @@ requires:
 - 
   category: x11-libs
   description: ""
+  id: 0
   license: ""
   name: libXext
   
@@ -21,6 +32,7 @@ requires:
 - 
   category: x11-libs
   description: ""
+  id: 0
   license: ""
   name: libXrender
   
@@ -28,6 +40,7 @@ requires:
 - 
   category: dev-libs
   description: ""
+  id: 0
   license: ""
   name: gobject-introspection
   
@@ -35,21 +48,14 @@ requires:
 - 
   category: dev-lang
   description: ""
+  id: 0
   license: ""
   name: lua
   
   version: "5.1"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: gtk+
-  
-  version: "2.20"
 uri:
 - https://github.com/kupferlauncher/keybinder/releases/download/v0.3.1/keybinder-0.3.1.tar.gz
 use_flags:
 - +introspection
 - lua
-- python
 version: 0.3.1-r201

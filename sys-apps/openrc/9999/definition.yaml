@@ -1,22 +1,9 @@
 category: sys-apps
 conflicts:
 - 
-  category: <sys-apps
-  description: ""
-  license: ""
-  name: baselayout
-  
-  version: 2.1-r1
-- 
-  category: <sys-fs
-  description: ""
-  license: ""
-  name: udev-init-scripts
-  
-  version: "27"
-- 
   category: sys-apps
   description: ""
+  id: 0
   license: ""
   name: sysvinit
   
@@ -24,59 +11,92 @@ conflicts:
 - 
   category: <app-shells
   description: ""
+  id: 0
   license: ""
   name: gentoo-bashcomp
   
   version: "20180302"
 - 
-  category: <app-shells
-  description: ""
-  license: ""
-  name: gentoo-zsh-completions
-  
-  version: "20180228"
-- 
   category: <sys-process
   description: ""
+  id: 0
   license: ""
   name: procps
   
   version: 3.3.9-r2
+- 
+  category: <sys-fs
+  description: ""
+  id: 0
+  license: ""
+  name: udev-init-scripts
+  
+  version: "27"
+- 
+  category: <sys-apps
+  description: ""
+  id: 0
+  license: ""
+  name: baselayout
+  
+  version: 2.1-r1
+- 
+  category: <app-shells
+  description: ""
+  id: 0
+  license: ""
+  name: gentoo-zsh-completions
+  
+  version: "20180228"
 description: OpenRC manages the services, startup and shutdown of a host
+id: 0
 license: BSD-2
 name: openrc
 requires:
 - 
-  category: sys-libs
+  category: virtual
   description: ""
+  id: 0
   license: ""
-  name: libselinux
-  
-  version: "2.6"
-- 
-  category: app-shells
-  description: ""
-  license: ""
-  name: bash
+  name: tmpfiles
   
   version: ""
 - 
-  category: sec-policy
+  category: sys-auth
   description: ""
+  id: 0
   license: ""
-  name: selinux-base-policy
+  name: pambase
   
-  version: 2.20170204-r4
+  version: ""
 - 
   category: sys-libs
   description: ""
+  id: 0
   license: ""
   name: pam
   
   version: ""
 - 
+  category: sys-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libselinux
+  
+  version: "2.6"
+- 
   category: sys-process
   description: ""
+  id: 0
+  license: ""
+  name: audit
+  
+  version: ""
+- 
+  category: sys-process
+  description: ""
+  id: 0
   license: ""
   name: psmisc
   
@@ -84,52 +104,51 @@ requires:
 - 
   category: sys-apps
   description: ""
+  id: 0
   license: ""
-  name: sysvinit-2.86-r6[selinux?]
-  
-  version: ""
-- 
-  category: sys-auth
-  description: ""
-  license: ""
-  name: pambase
+  name: policycoreutils
   
   version: ""
 - 
   category: sec-policy
   description: ""
+  id: 0
   license: ""
   name: selinux-openrc
   
   version: 2.20170204-r4
 - 
-  category: virtual
-  description: ""
-  license: ""
-  name: tmpfiles
-  
-  version: ""
-- 
   category: sys-libs
   description: ""
+  id: 0
   license: ""
   name: ncurses
   
   version: ""
 - 
-  category: sys-process
+  category: app-shells
   description: ""
+  id: 0
   license: ""
-  name: audit
+  name: bash
   
   version: ""
 - 
   category: sys-apps
   description: ""
+  id: 0
   license: ""
-  name: policycoreutils
+  name: sysvinit-2.86-r6[selinux?]
   
   version: ""
+- 
+  category: sec-policy
+  description: ""
+  id: 0
+  license: ""
+  name: selinux-base-policy
+  
+  version: 2.20170204-r4
 uri: []
 use_flags:
 - audit

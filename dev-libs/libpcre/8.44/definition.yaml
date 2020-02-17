@@ -1,0 +1,55 @@
+category: dev-libs
+conflicts: []
+description: Perl-compatible regular expression library
+id: 0
+license: BSD
+name: libpcre
+requires:
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libedit
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  id: 0
+  license: ""
+  name: readline
+  
+  version: ""
+- 
+  category: app-arch
+  description: ""
+  id: 0
+  license: ""
+  name: bzip2
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  id: 0
+  license: ""
+  name: zlib
+  
+  version: ""
+uri:
+- mirror://sourceforge/pcre/pcre-8.44.tar.bz2
+- ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.44.tar.bz2
+use_flags:
+- bzip2
+- +cxx
+- +jit
+- libedit
+- pcre16
+- pcre32
+- +readline
+- +recursion-limit
+- static-libs
+- unicode
+- zlib
+version: "8.44"

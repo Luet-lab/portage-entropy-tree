@@ -2,33 +2,38 @@ category: x11-wm
 conflicts: []
 description: An extremely powerful ICCCM-compliant multiple virtual desktop window
   manager
+id: 0
 license: GPL-2 FVWM
 name: fvwm
 requires:
 - 
-  category: x11-misc
+  category: sys-libs
   description: ""
+  id: 0
   license: ""
-  name: xlockmore
+  name: readline
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libXext
   
   version: ""
 - 
   category: sys-libs
   description: ""
+  id: 0
   license: ""
-  name: zlib
+  name: ncurses
   
   version: ""
 - 
   category: x11-libs
   description: ""
-  license: ""
-  name: libSM
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
+  id: 0
   license: ""
   name: libX11
   
@@ -36,13 +41,15 @@ requires:
 - 
   category: x11-libs
   description: ""
+  id: 0
   license: ""
-  name: libxcb
+  name: libXrender
   
   version: ""
 - 
   category: media-libs
   description: ""
+  id: 0
   license: ""
   name: fontconfig
   
@@ -50,90 +57,23 @@ requires:
 - 
   category: x11-libs
   description: ""
+  id: 0
   license: ""
   name: libXinerama
   
   version: ""
 - 
-  category: dev-perl
+  category: x11-misc
   description: ""
+  id: 0
   license: ""
-  name: Tk
+  name: xlockmore
   
   version: ""
 - 
   category: x11-libs
   description: ""
-  license: ""
-  name: libXcursor
-  
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: debianutils
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libstroke
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXft
-  
-  version: ""
-- 
-  category: dev-perl
-  description: ""
-  license: ""
-  name: X11-Protocol
-  
-  version: "0.56"
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXdmcp
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libXrender
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: ncurses
-  
-  version: ""
-- 
-  category: gnome-base
-  description: ""
-  license: ""
-  name: librsvg
-  
-  version: ""
-- 
-  category: dev-perl
-  description: ""
-  license: ""
-  name: Gtk2
-  
-  version: ""
-- 
-  category: x11-libs
-  description: ""
+  id: 0
   license: ""
   name: libXau
   
@@ -141,27 +81,63 @@ requires:
 - 
   category: x11-libs
   description: ""
+  id: 0
   license: ""
-  name: libXfixes
+  name: libXcursor
   
   version: ""
 - 
-  category: x11-libs
+  category: dev-perl
   description: ""
+  id: 0
   license: ""
-  name: libXrandr
+  name: Tk
   
   version: ""
 - 
-  category: sys-libs
+  category: dev-perl
   description: ""
+  id: 0
   license: ""
-  name: readline
+  name: X11-Protocol
+  
+  version: "0.56"
+- 
+  category: media-sound
+  description: ""
+  id: 0
+  license: ""
+  name: rplay
+  
+  version: ""
+- 
+  category: gnome-base
+  description: ""
+  id: 0
+  license: ""
+  name: librsvg
   
   version: ""
 - 
   category: dev-lang
   description: ""
+  id: 0
+  license: ""
+  name: perl
+  
+  version: ""
+- 
+  category: dev-perl
+  description: ""
+  id: 0
+  license: ""
+  name: Gtk2
+  
+  version: ""
+- 
+  category: dev-lang
+  description: ""
+  id: 0
   license: ""
   name: tk
   
@@ -169,13 +145,15 @@ requires:
 - 
   category: x11-libs
   description: ""
+  id: 0
   license: ""
-  name: libXext
+  name: libXfixes
   
   version: ""
 - 
   category: x11-libs
   description: ""
+  id: 0
   license: ""
   name: libXpm
   
@@ -183,43 +161,97 @@ requires:
 - 
   category: dev-libs
   description: ""
+  id: 0
   license: ""
-  name: fribidi
+  name: libstroke
   
   version: ""
 - 
-  category: media-libs
+  category: sys-apps
   description: ""
+  id: 0
   license: ""
-  name: libpng
-  
-  version: ""
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: rplay
+  name: debianutils
   
   version: ""
 - 
   category: x11-libs
   description: ""
+  id: 0
   license: ""
-  name: libICE
+  name: libxcb
   
   version: ""
 - 
-  category: dev-lang
+  category: x11-libs
   description: ""
+  id: 0
   license: ""
-  name: perl
+  name: libXdmcp
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libXrandr
   
   version: ""
 - 
   category: media-libs
   description: ""
+  id: 0
   license: ""
   name: netpbm
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  id: 0
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libSM
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libpng
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libXft
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libICE
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: fribidi
   
   version: ""
 uri:

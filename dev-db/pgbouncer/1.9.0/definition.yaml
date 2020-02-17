@@ -1,12 +1,22 @@
 category: dev-db
 conflicts: []
 description: Lightweight connection pooler for PostgreSQL
+id: 0
 license: BSD
 name: pgbouncer
 requires:
 - 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libevent
+  
+  version: "2.0"
+- 
   category: sys-libs
   description: ""
+  id: 0
   license: ""
   name: glibc
   
@@ -14,6 +24,7 @@ requires:
 - 
   category: net-dns
   description: ""
+  id: 0
   license: ""
   name: c-ares
   
@@ -21,6 +32,7 @@ requires:
 - 
   category: dev-libs
   description: ""
+  id: 0
   license: ""
   name: openssl
   
@@ -28,17 +40,11 @@ requires:
 - 
   category: net-libs
   description: ""
+  id: 0
   license: ""
   name: udns
   
   version: "0.1"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libevent
-  
-  version: "2.0"
 uri:
 - https://pgbouncer.github.io/downloads/files/1.9.0/pgbouncer-1.9.0.tar.gz
 use_flags:

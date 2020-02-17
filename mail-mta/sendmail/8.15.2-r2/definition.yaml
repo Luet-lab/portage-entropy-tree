@@ -3,13 +3,23 @@ conflicts:
 - 
   category: mail-mta
   description: ""
+  id: 0
   license: ""
-  name: courier
+  name: netqmail
   
   version: ""
 - 
+  category: '>=mail-mta'
+  description: ""
+  id: 0
+  license: ""
+  name: ssmtp
+  
+  version: 2.64-r2
+- 
   category: mail-mta
   description: ""
+  id: 0
   license: ""
   name: exim
   
@@ -17,48 +27,7 @@ conflicts:
 - 
   category: mail-mta
   description: ""
-  license: ""
-  name: netqmail
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: postfix
-  
-  version: ""
-- 
-  category: <mail-mta
-  description: ""
-  license: ""
-  name: ssmtp
-  
-  version: 2.64-r2
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: vacation
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: esmtp
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
-  license: ""
-  name: mini-qmail
-  
-  version: ""
-- 
-  category: mail-mta
-  description: ""
+  id: 0
   license: ""
   name: msmtp
   
@@ -66,6 +35,47 @@ conflicts:
 - 
   category: mail-mta
   description: ""
+  id: 0
+  license: ""
+  name: qmail-ldap
+  
+  version: ""
+- 
+  category: <mail-mta
+  description: ""
+  id: 0
+  license: ""
+  name: ssmtp
+  
+  version: 2.64-r2
+- 
+  category: mail-mta
+  description: ""
+  id: 0
+  license: ""
+  name: courier
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  id: 0
+  license: ""
+  name: esmtp
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  id: 0
+  license: ""
+  name: mini-qmail
+  
+  version: ""
+- 
+  category: mail-mta
+  description: ""
+  id: 0
   license: ""
 mailer
   
@@ -73,38 +83,68 @@ mailer
 - 
   category: mail-mta
   description: ""
+  id: 0
   license: ""
-  name: qmail-ldap
+  name: postfix
+  
+  version: ""
+- 
+  category: net-mail
+  description: ""
+  id: 0
+  license: ""
+  name: vacation
   
   version: ""
 - 
   category: mail-mta
   description: ""
+  id: 0
   license: ""
   name: opensmtpd
   
   version: ""
-- 
-  category: '>=mail-mta'
-  description: ""
-  license: ""
-  name: ssmtp
-  
-  version: 2.64-r2
 description: Widely-used Mail Transport Agent (MTA)
+id: 0
 license: Sendmail GPL-2
 name: sendmail
 requires:
 - 
   category: dev-libs
   description: ""
+  id: 0
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  id: 0
   license: ""
   name: libressl
   
   version: ""
 - 
+  category: net-nds
+  description: ""
+  id: 0
+  license: ""
+  name: openldap
+  
+  version: ""
+- 
   category: net-mail
   description: ""
+  id: 0
+  license: ""
+  name: mailbase
+  
+  version: "0.00"
+- 
+  category: net-mail
+  description: ""
+  id: 0
   license: ""
   name: mailbase
   
@@ -112,20 +152,23 @@ requires:
 - 
   category: sys-apps
   description: ""
+  id: 0
   license: ""
   name: tcp-wrappers
   
   version: ""
 - 
-  category: dev-libs
+  category: sys-libs
   description: ""
+  id: 0
   license: ""
-  name: openssl
+  name: db
   
-  version: ""
+  version: "3.2"
 - 
   category: sys-devel
   description: ""
+  id: 0
   license: ""
   name: m4
   
@@ -133,31 +176,11 @@ requires:
 - 
   category: dev-libs
   description: ""
+  id: 0
   license: ""
   name: cyrus-sasl
   
   version: 2.1.10
-- 
-  category: net-mail
-  description: ""
-  license: ""
-  name: mailbase
-  
-  version: "0.00"
-- 
-  category: net-nds
-  description: ""
-  license: ""
-  name: openldap
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: db
-  
-  version: "3.2"
 uri:
 - ftp://ftp.sendmail.org/pub/sendmail/sendmail.8.15.2.tar.gz
 use_flags:

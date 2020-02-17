@@ -1,15 +1,9 @@
 category: sys-kernel
 conflicts:
 - 
-  category: sys-kernel
-  description: ""
-  license: ""
-  name: genkernel
-  
-  version: ""
-- 
   category: sys-fs
   description: ""
+  id: 0
   license: ""
   name: eudev
   
@@ -17,59 +11,60 @@ conflicts:
 - 
   category: <sys-apps
   description: ""
+  id: 0
   license: ""
   name: openrc
   
   version: 0.9.9
+- 
+  category: sys-kernel
+  description: ""
+  id: 0
+  license: ""
+  name: genkernel
+  
+  version: ""
 description: Gentoo automatic kernel building scripts, reloaded
+id: 0
 license: GPL-2
 name: genkernel-next
 requires:
 - 
-  category: sys-fs
+  category: sys-block
   description: ""
+  id: 0
   license: ""
-  name: cryptsetup
+  name: open-iscsi
   
   version: ""
 - 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: dmraid
-  
-  version: 1.0.0_rc16
-- 
   category: app-arch
   description: ""
+  id: 0
   license: ""
   name: cpio
   
   version: ""
 - 
-  category: app-misc
-  description: ""
-  license: ""
-  name: pax-utils
-  
-  version: "0.6"
-- 
   category: sys-fs
   description: ""
+  id: 0
   license: ""
-  name: mdadm
+  name: cryptsetup
   
   version: ""
 - 
-  category: sys-fs
+  category: app-portage
   description: ""
+  id: 0
   license: ""
-  name: lvm2
+  name: portage-utils
   
   version: ""
 - 
   category: sys-apps
   description: ""
+  id: 0
   license: ""
   name: util-linux
   
@@ -77,34 +72,55 @@ requires:
 - 
   category: sys-fs
   description: ""
+  id: 0
   license: ""
-  name: e2fsprogs
-  
-  version: ""
-- 
-  category: app-crypt
-  description: ""
-  license: ""
-  name: gnupg
-  
-  version: ""
-- 
-  category: sys-boot
-  description: ""
-  license: ""
-  name: plymouth
+  name: lvm2
   
   version: ""
 - 
   category: app-text
   description: ""
+  id: 0
   license: ""
   name: asciidoc
   
   version: ""
 - 
+  category: sys-fs
+  description: ""
+  id: 0
+  license: ""
+  name: dmraid
+  
+  version: 1.0.0_rc16
+- 
+  category: app-crypt
+  description: ""
+  id: 0
+  license: ""
+  name: gnupg
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  id: 0
+  license: ""
+  name: mdadm
+  
+  version: ""
+- 
+  category: sys-fs
+  description: ""
+  id: 0
+  license: ""
+  name: e2fsprogs
+  
+  version: ""
+- 
   category: sys-libs
   description: ""
+  id: 0
   license: ""
   name: libselinux
   
@@ -112,24 +128,27 @@ requires:
 - 
   category: sys-block
   description: ""
-  license: ""
-  name: open-iscsi
-  
-  version: ""
-- 
-  category: app-portage
-  description: ""
-  license: ""
-  name: portage-utils
-  
-  version: ""
-- 
-  category: sys-block
-  description: ""
+  id: 0
   license: ""
   name: thin-provisioning-tools
   
   version: ""
+- 
+  category: sys-boot
+  description: ""
+  id: 0
+  license: ""
+  name: plymouth
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  id: 0
+  license: ""
+  name: pax-utils
+  
+  version: "0.6"
 uri:
 - https://github.com/Sabayon/genkernel-next/archive/v70.tar.gz -> genkernel-next-70.tar.gz
 use_flags:

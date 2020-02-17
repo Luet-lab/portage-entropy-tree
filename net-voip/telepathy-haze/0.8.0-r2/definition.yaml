@@ -1,12 +1,22 @@
 category: net-voip
 conflicts: []
 description: Telepathy connection manager providing libpurple supported protocols
+id: 0
 license: GPL-2
 name: telepathy-haze
 requires:
 - 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: dbus-glib
+  
+  version: "0.73"
+- 
   category: net-im
   description: ""
+  id: 0
   license: ""
   name: pidgin
   
@@ -14,6 +24,7 @@ requires:
 - 
   category: net-libs
   description: ""
+  id: 0
   license: ""
   name: telepathy-glib
   
@@ -21,17 +32,11 @@ requires:
 - 
   category: dev-libs
   description: ""
+  id: 0
   license: ""
   name: glib
   
   version: "2.30"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: dbus-glib
-  
-  version: "0.73"
 uri:
 - https://telepathy.freedesktop.org/releases/telepathy-haze/telepathy-haze-0.8.0.tar.gz
 use_flags:

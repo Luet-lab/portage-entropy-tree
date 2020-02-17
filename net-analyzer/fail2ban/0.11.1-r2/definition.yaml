@@ -1,0 +1,37 @@
+category: net-analyzer
+conflicts: []
+description: scans log files and bans IPs that show malicious signs
+id: 0
+license: GPL-2
+name: fail2ban
+requires:
+- 
+  category: virtual
+  description: ""
+  id: 0
+  license: ""
+  name: logger
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  id: 0
+  license: ""
+  name: mta
+  
+  version: ""
+- 
+  category: sec-policy
+  description: ""
+  id: 0
+  license: ""
+  name: selinux-fail2ban
+  
+  version: ""
+uri:
+- https://github.com/fail2ban/fail2ban/archive/0.11.1.tar.gz -> fail2ban-0.11.1.tar.gz
+use_flags:
+- selinux
+- systemd
+version: 0.11.1-r2

@@ -1,12 +1,22 @@
 category: media-sound
 conflicts: []
 description: PulseAudio system tray
+id: 0
 license: LGPL-2.1+
 name: pasystray
 requires:
 - 
+  category: x11-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libnotify
+  
+  version: "0.7"
+- 
   category: dev-libs
   description: ""
+  id: 0
   license: ""
   name: glib
   
@@ -14,6 +24,7 @@ requires:
 - 
   category: net-dns
   description: ""
+  id: 0
   license: ""
   name: avahi
   
@@ -21,6 +32,7 @@ requires:
 - 
   category: x11-libs
   description: ""
+  id: 0
   license: ""
   name: gtk+
   
@@ -28,17 +40,11 @@ requires:
 - 
   category: x11-libs
   description: ""
+  id: 0
   license: ""
   name: libX11
   
   version: ""
-- 
-  category: x11-libs
-  description: ""
-  license: ""
-  name: libnotify
-  
-  version: "0.7"
 uri:
 - https://github.com/christophgysin/pasystray/archive/pasystray-0.6.0.tar.gz
 use_flags:

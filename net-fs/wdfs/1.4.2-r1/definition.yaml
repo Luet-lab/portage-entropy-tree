@@ -1,12 +1,22 @@
 category: net-fs
 conflicts: []
 description: WebDAV filesystem with special features for accessing subversion repositories
+id: 0
 license: GPL-2
 name: wdfs
 requires:
 - 
+  category: net-libs
+  description: ""
+  id: 0
+  license: ""
+  name: neon
+  
+  version: 0.24.7
+- 
   category: sys-fs
   description: ""
+  id: 0
   license: ""
   name: fuse
   
@@ -14,17 +24,11 @@ requires:
 - 
   category: dev-libs
   description: ""
+  id: 0
   license: ""
   name: glib
   
   version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: neon
-  
-  version: 0.24.7
 uri:
 - http://noedler.de/projekte/wdfs/wdfs-1.4.2.tar.gz
 use_flags:

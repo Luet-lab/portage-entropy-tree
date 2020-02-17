@@ -3,6 +3,7 @@ conflicts:
 - 
   category: <app-portage
   description: ""
+  id: 0
   license: ""
   name: repoman
   
@@ -10,6 +11,7 @@ conflicts:
 - 
   category: <app-admin
   description: ""
+  id: 0
   license: ""
   name: logrotate
   
@@ -17,66 +19,52 @@ conflicts:
 - 
   category: <app-portage
   description: ""
+  id: 0
   license: ""
   name: gentoolkit
   
   version: 0.4.6
 description: Portage is the package management and distribution system for Gentoo
+id: 0
 license: GPL-2
 name: portage
 requires:
 - 
-  category: app-arch
+  category: app-admin
   description: ""
+  id: 0
   license: ""
-  name: tar
+  name: eselect
   
-  version: "1.27"
+  version: "1.2"
 - 
   category: app-portage
   description: ""
+  id: 0
   license: ""
   name: gemato
   
   version: "14"
 - 
+  category: app-crypt
+  description: ""
+  id: 0
+  license: ""
+  name: gnupg-2.2.4-r2[ssl(-)]
+  
+  version: ""
+- 
   category: sys-freebsd
   description: ""
+  id: 0
   license: ""
   name: freebsd-bin
   
   version: ""
 - 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: sandbox
-  
-  version: "2.2"
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: 2.0.94
-- 
-  category: dev-lang
-  description: ""
-  license: ""
-  name: python-exec
-  
-  version: ""
-- 
-  category: app-shells
-  description: ""
-  license: ""
-  name: bash
-  
-  version: ""
-- 
   category: app-crypt
   description: ""
+  id: 0
   license: ""
   name: openpgp-keys-gentoo-release
   
@@ -84,45 +72,75 @@ requires:
 - 
   category: app-misc
   description: ""
+  id: 0
   license: ""
   name: pax-utils
   
   version: 0.1.17
 - 
-  category: app-admin
+  category: sys-libs
   description: ""
+  id: 0
   license: ""
-  name: eselect
+  name: libselinux
   
-  version: "1.2"
+  version: 2.0.94
 - 
-  category: app-crypt
+  category: app-arch
   description: ""
+  id: 0
   license: ""
-  name: gnupg-2.2.4-r2[ssl(-)]
+  name: tar
   
-  version: ""
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: util-linux
-  
-  version: ""
+  version: "1.27"
 - 
   category: sys-apps
   description: ""
+  id: 0
   license: ""
   name: sed
   
   version: 4.0.5
 - 
+  category: app-shells
+  description: ""
+  id: 0
+  license: ""
+  name: bash
+  
+  version: ""
+- 
   category: sys-apps
   description: ""
+  id: 0
+  license: ""
+  name: sandbox
+  
+  version: "2.2"
+- 
+  category: sys-apps
+  description: ""
+  id: 0
   license: ""
   name: install-xattr
   
   version: "0.3"
+- 
+  category: dev-lang
+  description: ""
+  id: 0
+  license: ""
+  name: python-exec
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  id: 0
+  license: ""
+  name: util-linux
+  
+  version: ""
 uri: []
 use_flags:
 - build

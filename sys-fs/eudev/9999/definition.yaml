@@ -1,15 +1,25 @@
 category: sys-fs
 conflicts:
 - 
-  category: <sys-fs
+  category: sys-fs
   description: ""
+  id: 0
   license: ""
-  name: lvm2
+  name: udev
   
-  version: 2.02.103
+  version: ""
+- 
+  category: <sys-libs
+  description: ""
+  id: 0
+  license: ""
+  name: glibc
+  
+  version: "2.11"
 - 
   category: sys-apps
   description: ""
+  id: 0
   license: ""
   name: gentoo-systemd-integration
   
@@ -17,52 +27,44 @@ conflicts:
 - 
   category: sys-apps
   description: ""
+  id: 0
   license: ""
   name: systemd
   
   version: ""
 - 
-  category: <sys-libs
+  category: <sys-fs
   description: ""
+  id: 0
   license: ""
-  name: glibc
+  name: lvm2
   
-  version: "2.11"
+  version: 2.02.103
 - 
   category: <sec-policy
   description: ""
+  id: 0
   license: ""
   name: selinux-base
   
   version: 2.20120725-r10
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: udev
-  
-  version: ""
 description: Linux dynamic and persistent device naming support (aka userspace devfs)
+id: 0
 license: LGPL-2.1 MIT GPL-2
 name: eudev
 requires:
 - 
-  category: acct-group
+  category: dev-libs
   description: ""
+  id: 0
   license: ""
-  name: render
+  name: gobject-introspection
   
-  version: ""
-- 
-  category: sys-libs
-  description: ""
-  license: ""
-  name: libselinux
-  
-  version: 2.1.9
+  version: "1.38"
 - 
   category: acct-group
   description: ""
+  id: 0
   license: ""
   name: input
   
@@ -70,31 +72,43 @@ requires:
 - 
   category: acct-group
   description: ""
+  id: 0
   license: ""
   name: kvm
   
   version: ""
 - 
+  category: acct-group
+  description: ""
+  id: 0
+  license: ""
+  name: render
+  
+  version: ""
+- 
   category: sys-apps
   description: ""
+  id: 0
   license: ""
   name: util-linux
   
   version: "2.20"
 - 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: gobject-introspection
-  
-  version: "1.38"
-- 
   category: sys-apps
   description: ""
+  id: 0
   license: ""
   name: kmod
   
   version: "16"
+- 
+  category: sys-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libselinux
+  
+  version: 2.1.9
 uri: []
 use_flags:
 - +hwdb

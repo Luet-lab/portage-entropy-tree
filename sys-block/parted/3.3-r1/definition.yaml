@@ -1,12 +1,22 @@
 category: sys-block
 conflicts: []
 description: Create, destroy, resize, check, copy partitions and file systems
+id: 0
 license: GPL-3
 name: parted
 requires:
 - 
+  category: sys-fs
+  description: ""
+  id: 0
+  license: ""
+  name: lvm2
+  
+  version: 2.02.45
+- 
   category: sys-libs
   description: ""
+  id: 0
   license: ""
   name: readline
   
@@ -14,6 +24,7 @@ requires:
 - 
   category: sys-libs
   description: ""
+  id: 0
   license: ""
   name: ncurses
   
@@ -21,6 +32,7 @@ requires:
 - 
   category: sys-libs
   description: ""
+  id: 0
   license: ""
   name: libselinux
   
@@ -28,6 +40,7 @@ requires:
 - 
   category: dev-libs
   description: ""
+  id: 0
   license: ""
   name: libiconv
   
@@ -35,17 +48,11 @@ requires:
 - 
   category: sys-fs
   description: ""
+  id: 0
   license: ""
   name: e2fsprogs
   
   version: "1.27"
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: lvm2
-  
-  version: 2.02.45
 uri:
 - mirror://gnu/parted/parted-3.3.tar.xz
 use_flags:

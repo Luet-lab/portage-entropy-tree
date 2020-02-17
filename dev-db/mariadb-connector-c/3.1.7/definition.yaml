@@ -1,0 +1,75 @@
+category: dev-db
+conflicts: []
+description: C client library for MariaDB/MySQL
+id: 0
+license: LGPL-2.1
+name: mariadb-connector-c
+requires:
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  id: 0
+  license: ""
+  name: zlib
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  id: 0
+  license: ""
+  name: libiconv
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  id: 0
+  license: ""
+  name: curl
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  id: 0
+  license: ""
+  name: heimdal
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  id: 0
+  license: ""
+  name: gnutls
+  
+  version: 3.3.24
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libressl
+  
+  version: ""
+uri:
+- https://downloads.mariadb.org/f/connector-c-3.1.7/mariadb-connector-c-3.1.7-src.tar.gz?serve
+  -> mariadb-connector-c-3.1.7-src.tar.gz
+use_flags:
+- +curl
+- gnutls
+- kerberos
+- libressl
+- +ssl
+- static-libs
+- test
+version: 3.1.7

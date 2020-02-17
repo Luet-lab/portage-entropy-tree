@@ -1,0 +1,56 @@
+category: dev-util
+conflicts:
+- 
+  category: <sys-devel
+  description: ""
+  id: 0
+  license: ""
+  name: llvm
+  
+  version: "4.0"
+description: The LLVM debugger
+id: 0
+license: UoI-NCSA
+name: lldb
+requires:
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libedit
+  
+  version: ""
+- 
+  category: sys-libs
+  description: ""
+  id: 0
+  license: ""
+  name: ncurses
+  
+  version: 5.9-r3
+- 
+  category: sys-devel
+  description: ""
+  id: 0
+  license: ""
+  name: clang
+  
+  version: 8.0.1
+- 
+  category: sys-devel
+  description: ""
+  id: 0
+  license: ""
+  name: llvm
+  
+  version: 8.0.1
+uri:
+- https://github.com/llvm/llvm-project/releases/download/llvmorg-8.0.1/lldb-8.0.1.src.tar.xz
+- 'https://github.com/llvm/llvm-project/releases/download/llvmorg-8.0.1/llvm-8.0.1.src.tar.xz '
+use_flags:
+- libedit
+- ncurses
+- +python
+- test
+version: 8.0.1-r1

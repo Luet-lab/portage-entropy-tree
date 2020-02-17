@@ -1,54 +1,30 @@
 category: sys-kernel
 conflicts: []
 description: Generic initramfs generation tool
+id: 0
 license: GPL-2
 name: dracut
 requires:
 - 
-  category: sys-apps
+  category: sec-policy
   description: ""
+  id: 0
   license: ""
-  name: kmod
-  
-  version: "23"
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: pkgconfig
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: udev
+  name: selinux-dracut
   
   version: ""
 - 
   category: sys-libs
   description: ""
-  license: ""
-  name: libselinux
-  
-  version: ""
-- 
-  category: sys-libs
-  description: ""
+  id: 0
   license: ""
   name: libsepol
   
   version: ""
 - 
-  category: app-arch
-  description: ""
-  license: ""
-  name: cpio
-  
-  version: ""
-- 
   category: app-shells
   description: ""
+  id: 0
   license: ""
   name: bash
   
@@ -56,6 +32,7 @@ requires:
 - 
   category: sys-apps
   description: ""
+  id: 0
   license: ""
   name: coreutils[xattr(-)]
   
@@ -63,22 +40,57 @@ requires:
 - 
   category: sys-apps
   description: ""
+  id: 0
   license: ""
   name: util-linux
   
   version: "2.21"
 - 
+  category: app-arch
+  description: ""
+  id: 0
+  license: ""
+  name: cpio
+  
+  version: ""
+- 
   category: dev-util
   description: ""
+  id: 0
   license: ""
   name: strace
   
   version: ""
 - 
-  category: sec-policy
+  category: sys-libs
   description: ""
+  id: 0
   license: ""
-  name: selinux-dracut
+  name: libselinux
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  id: 0
+  license: ""
+  name: kmod
+  
+  version: "23"
+- 
+  category: virtual
+  description: ""
+  id: 0
+  license: ""
+  name: pkgconfig
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  id: 0
+  license: ""
+  name: udev
   
   version: ""
 uri:

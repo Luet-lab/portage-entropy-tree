@@ -1,0 +1,82 @@
+category: net-irc
+conflicts: []
+description: An advanced Internet Relay Chat daemon
+id: 0
+license: GPL-2
+name: unrealircd
+requires:
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: openssl
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: net-misc
+  description: ""
+  id: 0
+  license: ""
+  name: curl
+  
+  version: ""
+- 
+  category: acct-group
+  description: ""
+  id: 0
+  license: ""
+  name: unrealircd
+  
+  version: ""
+- 
+  category: acct-user
+  description: ""
+  id: 0
+  license: ""
+  name: unrealircd
+  
+  version: ""
+- 
+  category: app-crypt
+  description: ""
+  id: 0
+  license: ""
+  name: argon2
+  
+  version: 20171227-r1
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libpcre2
+  
+  version: ""
+- 
+  category: net-dns
+  description: ""
+  id: 0
+  license: ""
+  name: c-ares
+  
+  version: "1.7"
+uri:
+- https://www.unrealircd.org/downloads/unrealircd-5.0.3.tar.gz
+use_flags:
+- class-nofakelag
+- curl
+- libressl
+- +operoverride
+- operoverride-verify
+- +prefixaq
+- showlistmodes
+version: 5.0.3

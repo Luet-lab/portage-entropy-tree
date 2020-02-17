@@ -1,33 +1,22 @@
 category: net-p2p
 conflicts: []
 description: An end-user Qt GUI for the Bitcoin crypto-currency
+id: 0
 license: MIT
 name: bitcoin-qt
 requires:
 - 
-  category: dev-qt
+  category: dev-libs
   description: ""
+  id: 0
   license: ""
-  name: qtnetwork
-  
-  version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtdbus
-  
-  version: ""
-- 
-  category: media-gfx
-  description: ""
-  license: ""
-  name: qrencode
+  name: openssl
   
   version: ""
 - 
   category: dev-libs
   description: ""
+  id: 0
   license: ""
   name: univalue
   
@@ -35,6 +24,7 @@ requires:
 - 
   category: dev-qt
   description: ""
+  id: 0
   license: ""
   name: qtgui
   
@@ -42,20 +32,23 @@ requires:
 - 
   category: dev-libs
   description: ""
+  id: 0
   license: ""
-  name: protobuf
+  name: libevent
   
   version: ""
 - 
-  category: dev-libs
+  category: net-libs
   description: ""
+  id: 0
   license: ""
-  name: libressl
+  name: miniupnpc
   
-  version: ""
+  version: 1.9.20150916
 - 
   category: sys-libs
   description: ""
+  id: 0
   license: ""
   name: db
   
@@ -63,13 +56,71 @@ requires:
 - 
   category: dev-libs
   description: ""
+  id: 0
+  license: ""
+  name: boost
+  
+  version: 1.52.0
+- 
+  category: dev-libs
+  description: ""
+  id: 0
   license: ""
   name: libsecp256k1
   
   version: 0.0.0_pre20151118
 - 
+  category: dev-qt
+  description: ""
+  id: 0
+  license: ""
+  name: qtcore
+  
+  version: ""
+- 
+  category: media-gfx
+  description: ""
+  id: 0
+  license: ""
+  name: qrencode
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  id: 0
+  license: ""
+  name: qtnetwork
+  
+  version: ""
+- 
+  category: dev-qt
+  description: ""
+  id: 0
+  license: ""
+  name: qtwidgets
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: net-libs
+  description: ""
+  id: 0
+  license: ""
+  name: zeromq
+  
+  version: ""
+- 
   category: virtual
   description: ""
+  id: 0
   license: ""
   name: bitcoin-leveldb
   
@@ -77,52 +128,19 @@ requires:
 - 
   category: dev-libs
   description: ""
+  id: 0
   license: ""
-  name: libevent
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: openssl
+  name: protobuf
   
   version: ""
 - 
   category: dev-qt
   description: ""
+  id: 0
   license: ""
-  name: qtcore
+  name: qtdbus
   
   version: ""
-- 
-  category: dev-qt
-  description: ""
-  license: ""
-  name: qtwidgets
-  
-  version: ""
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: miniupnpc
-  
-  version: 1.9.20150916
-- 
-  category: net-libs
-  description: ""
-  license: ""
-  name: zeromq
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: boost
-  
-  version: 1.52.0
 uri:
 - https://github.com/bitcoin/bitcoin/archive/49e34e288005a5b144a642e197b628396f5a0765.tar.gz
   -> bitcoin-v0.16.3.tar.gz

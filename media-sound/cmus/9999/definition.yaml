@@ -1,110 +1,22 @@
 category: media-sound
 conflicts: []
 description: Ncurses based music player with plugin support for many formats
+id: 0
 license: GPL-2
 name: cmus
 requires:
 - 
   category: media-libs
   description: ""
+  id: 0
   license: ""
-  name: libmp4v2
+  name: alsa-lib
   
-  version: "1.9"
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: musepack-tools
-  
-  version: "444"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: tremor
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libvorbis
-  
-  version: "1.0"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libao
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libcue
-  
-  version: ""
-- 
-  category: media-video
-  description: ""
-  license: ""
-  name: ffmpeg
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libmad
-  
-  version: "0.14"
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libmikmod
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libmodplug
-  
-  version: "0.7"
-- 
-  category: sys-apps
-  description: ""
-  license: ""
-  name: systemd
-  
-  version: ""
-- 
-  category: media-sound
-  description: ""
-  license: ""
-  name: wavpack
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libcddb
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
-  license: ""
-  name: libdiscid
-  
-  version: ""
+  version: 1.0.11
 - 
   category: sys-auth
   description: ""
+  id: 0
   license: ""
   name: elogind
   
@@ -112,55 +24,39 @@ requires:
 - 
   category: media-libs
   description: ""
-  license: ""
-  name: libsamplerate
-  
-  version: ""
-- 
-  category: media-libs
-  description: ""
+  id: 0
   license: ""
   name: opusfile
   
   version: ""
 - 
-  category: media-sound
+  category: sys-apps
   description: ""
+  id: 0
   license: ""
-  name: pulseaudio
-  
-  version: ""
-- 
-  category: dev-python
-  description: ""
-  license: ""
-  name: dbus-python
-  
-  version: ""
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: libcdio-paranoia
+  name: systemd
   
   version: ""
 - 
   category: media-libs
   description: ""
+  id: 0
   license: ""
-  name: flac
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: jack
+  name: tremor
   
   version: ""
 - 
   category: media-libs
   description: ""
+  id: 0
+  license: ""
+  name: libvorbis
+  
+  version: "1.0"
+- 
+  category: media-libs
+  description: ""
+  id: 0
   license: ""
   name: faad2
   
@@ -168,17 +64,139 @@ requires:
 - 
   category: media-libs
   description: ""
+  id: 0
   license: ""
-  name: alsa-lib
+  name: libcddb
   
-  version: 1.0.11
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  id: 0
+  license: ""
+  name: pulseaudio
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  id: 0
+  license: ""
+  name: wavpack
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libao
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libdiscid
+  
+  version: ""
+- 
+  category: media-video
+  description: ""
+  id: 0
+  license: ""
+  name: ffmpeg
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  id: 0
+  license: ""
+  name: flac
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libsamplerate
+  
+  version: ""
 - 
   category: net-im
   description: ""
+  id: 0
   license: ""
   name: pidgin
   
   version: ""
+- 
+  category: media-sound
+  description: ""
+  id: 0
+  license: ""
+  name: musepack-tools
+  
+  version: "444"
+- 
+  category: dev-python
+  description: ""
+  id: 0
+  license: ""
+  name: dbus-python
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libcdio-paranoia
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  id: 0
+  license: ""
+  name: jack
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libmad
+  
+  version: "0.14"
+- 
+  category: media-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libmikmod
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libmodplug
+  
+  version: "0.7"
+- 
+  category: media-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libmp4v2
+  
+  version: "1.9"
 uri: []
 use_flags:
 - aac
@@ -186,7 +204,6 @@ use_flags:
 - ao
 - cddb
 - cdio
-- cue
 - debug
 - discid
 - elogind

@@ -1,12 +1,22 @@
 category: dev-util
 conflicts: []
 description: Tools for BPF-based Linux IO analysis, networking, monitoring, and more
+id: 0
 license: Apache-2.0
 name: bcc
 requires:
 - 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: elfutils
+  
+  version: "0.166"
+- 
   category: sys-devel
   description: ""
+  id: 0
   license: ""
   name: clang
   
@@ -14,6 +24,7 @@ requires:
 - 
   category: sys-devel
   description: ""
+  id: 0
   license: ""
   name: llvm
   
@@ -21,6 +32,7 @@ requires:
 - 
   category: dev-lang
   description: ""
+  id: 0
   license: ""
   name: luajit
   
@@ -28,17 +40,11 @@ requires:
 - 
   category: sys-kernel
   description: ""
+  id: 0
   license: ""
   name: linux-headers
   
   version: "4.14"
-- 
-  category: dev-libs
-  description: ""
-  license: ""
-  name: elfutils
-  
-  version: "0.166"
 uri:
 - https://github.com/iovisor/bcc/archive/v0.12.0.tar.gz -> bcc-0.12.0.tar.gz
 - https://github.com/libbpf/libbpf/archive/v0.0.6.tar.gz -> libbpf-0.0.6.tar.gz

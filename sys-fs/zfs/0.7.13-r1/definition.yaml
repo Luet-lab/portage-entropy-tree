@@ -1,29 +1,25 @@
 category: sys-fs
 conflicts:
 - 
-  category: <sys-boot
-  description: ""
-  license: ""
-  name: grub
-  
-  version: 2.00-r2
-- 
   category: <sys-kernel
   description: ""
+  id: 0
   license: ""
-  name: genkernel
+  name: dracut
   
-  version: 3.5.1.1
+  version: 044-r1
 - 
-  category: sys-fs
+  category: =sys-apps
   description: ""
+  id: 0
   license: ""
-  name: zfs-fuse
+  name: grep-2.13*
   
   version: ""
 - 
   category: <sys-kernel
   description: ""
+  id: 0
   license: ""
   name: genkernel-next
   
@@ -31,31 +27,60 @@ conflicts:
 - 
   category: <sys-kernel
   description: ""
+  id: 0
   license: ""
-  name: dracut
+  name: genkernel
   
-  version: 044-r1
+  version: 3.5.1.1
+- 
+  category: <sys-boot
+  description: ""
+  id: 0
+  license: ""
+  name: grub
+  
+  version: 2.00-r2
+- 
+  category: sys-fs
+  description: ""
+  id: 0
+  license: ""
+  name: zfs-fuse
+  
+  version: ""
 - 
   category: <sys-kernel
   description: ""
+  id: 0
   license: ""
   name: bliss-initramfs
   
   version: 7.1.0
-- 
-  category: =sys-apps
-  description: ""
-  license: ""
-  name: grep-2.13*
-  
-  version: ""
 description: Userland utilities for ZFS Linux kernel module
+id: 0
 license: BSD-2 CDDL MIT
 name: zfs
 requires:
 - 
+  category: virtual
+  description: ""
+  id: 0
+  license: ""
+  name: awk
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  id: 0
+  license: ""
+  name: udev
+  
+  version: ""
+- 
   category: sys-apps
   description: ""
+  id: 0
   license: ""
   name: util-linux
   
@@ -63,20 +88,15 @@ requires:
 - 
   category: app-arch
   description: ""
+  id: 0
   license: ""
   name: cpio
   
   version: ""
 - 
-  category: app-misc
-  description: ""
-  license: ""
-  name: pax-utils
-  
-  version: ""
-- 
   category: sys-fs
   description: ""
+  id: 0
   license: ""
   name: udev-init-scripts
   
@@ -84,13 +104,31 @@ requires:
 - 
   category: net-libs
   description: ""
+  id: 0
   license: ""
   name: libtirpc
   
   version: ""
 - 
+  category: sys-fs
+  description: ""
+  id: 0
+  license: ""
+  name: zfs-kmod
+  
+  version: 0.7.13
+- 
+  category: sys-devel
+  description: ""
+  id: 0
+  license: ""
+  name: bc
+  
+  version: ""
+- 
   category: sys-block
   description: ""
+  id: 0
   license: ""
   name: parted
   
@@ -98,57 +136,41 @@ requires:
 - 
   category: sys-fs
   description: ""
+  id: 0
   license: ""
   name: lsscsi
   
   version: ""
 - 
+  category: sys-fs
+  description: ""
+  id: 0
+  license: ""
+  name: mdadm
+  
+  version: ""
+- 
+  category: app-misc
+  description: ""
+  id: 0
+  license: ""
+  name: pax-utils
+  
+  version: ""
+- 
   category: sys-process
   description: ""
+  id: 0
   license: ""
   name: procps
   
   version: ""
 - 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: zfs-kmod
-  
-  version: 0.7.13
-- 
   category: virtual
   description: ""
-  license: ""
-  name: udev
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
+  id: 0
   license: ""
   name: modutils
-  
-  version: ""
-- 
-  category: virtual
-  description: ""
-  license: ""
-  name: awk
-  
-  version: ""
-- 
-  category: sys-devel
-  description: ""
-  license: ""
-  name: bc
-  
-  version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: mdadm
   
   version: ""
 uri:

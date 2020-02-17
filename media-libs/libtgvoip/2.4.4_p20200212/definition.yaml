@@ -1,0 +1,56 @@
+category: media-libs
+conflicts: []
+description: VoIP library for Telegram clients
+id: 0
+license: Unlicense
+name: libtgvoip
+requires:
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libressl
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  id: 0
+  license: ""
+  name: opus
+  
+  version: ""
+- 
+  category: media-libs
+  description: ""
+  id: 0
+  license: ""
+  name: alsa-lib
+  
+  version: ""
+- 
+  category: media-sound
+  description: ""
+  id: 0
+  license: ""
+  name: pulseaudio
+  
+  version: ""
+- 
+  category: dev-libs
+  description: ""
+  id: 0
+  license: ""
+  name: openssl
+  
+  version: ""
+uri:
+- https://github.com/telegramdesktop/libtgvoip/archive/c5651ffc728336e56d8567f5c6c179e8a5d4fe55.tar.gz
+  -> libtgvoip-2.4.4.tar.gz
+use_flags:
+- alsa
+- +dsp
+- libressl
+- pulseaudio
+version: 2.4.4_p20200212

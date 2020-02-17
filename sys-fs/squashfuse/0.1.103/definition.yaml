@@ -1,12 +1,22 @@
 category: sys-fs
 conflicts: []
 description: FUSE filesystem to mount squashfs archives
+id: 0
 license: BSD-2
 name: squashfuse
 requires:
 - 
+  category: sys-fs
+  description: ""
+  id: 0
+  license: ""
+  name: fuse
+  
+  version: 2.8.6
+- 
   category: app-arch
   description: ""
+  id: 0
   license: ""
   name: xz-utils
   
@@ -14,6 +24,7 @@ requires:
 - 
   category: sys-libs
   description: ""
+  id: 0
   license: ""
   name: zlib
   
@@ -21,6 +32,7 @@ requires:
 - 
   category: dev-libs
   description: ""
+  id: 0
   license: ""
   name: lzo
   
@@ -28,6 +40,7 @@ requires:
 - 
   category: app-arch
   description: ""
+  id: 0
   license: ""
   name: lz4
   
@@ -35,17 +48,11 @@ requires:
 - 
   category: app-arch
   description: ""
+  id: 0
   license: ""
   name: zstd
   
   version: ""
-- 
-  category: sys-fs
-  description: ""
-  license: ""
-  name: fuse
-  
-  version: 2.8.6
 uri:
 - https://github.com/vasi/squashfuse/releases/download/0.1.103/squashfuse-0.1.103.tar.gz
 use_flags:

@@ -1,0 +1,133 @@
+category: sci-chemistry
+conflicts: []
+description: The ultimate molecular dynamics simulation package
+id: 0
+license: LGPL-2.1 UoI-NCSA !mkl? ( !fftw? ( BSD ) !blas? ( BSD ) !lapack? ( BSD )
+  ) cuda? ( LGPL-3 ) threads? ( BSD )
+name: gromacs
+requires:
+- 
+  category: dev-util
+  description: ""
+  id: 0
+  license: ""
+  name: nvidia-cuda-toolkit
+  
+  version: 6.5.14
+- 
+  category: virtual
+  description: ""
+  id: 0
+  license: ""
+  name: opencl
+  
+  version: ""
+- 
+  category: sys-apps
+  description: ""
+  id: 0
+  license: ""
+  name: hwloc
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  id: 0
+  license: ""
+  name: lapack
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  id: 0
+  license: ""
+  name: mkl
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libICE
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  id: 0
+  license: ""
+  name: blas
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  id: 0
+  license: ""
+  name: fftw
+  
+  version: ""
+- 
+  category: sci-libs
+  description: ""
+  id: 0
+  license: ""
+  name: lmfit
+  
+  version: ""
+- 
+  category: virtual
+  description: ""
+  id: 0
+  license: ""
+  name: mpi
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libX11
+  
+  version: ""
+- 
+  category: x11-libs
+  description: ""
+  id: 0
+  license: ""
+  name: libSM
+  
+  version: ""
+uri:
+- ftp://ftp.gromacs.org/pub/gromacs/gromacs-2019.5.tar.gz
+- 'http://gerrit.gromacs.org/download/regressiontests-2019.5.tar.gz '
+use_flags:
+- X
+- blas
+- cuda
+- +doc
+- -double-precision
+- +fftw
+- +gmxapi
+- +hwloc
+- lapack
+- +lmfit
+- mkl
+- mpi
+- +offensive
+- opencl
+- openmp
+- +single-precision
+- test
+- +threads
+- +tng
+- cpu_flags_x86_sse2
+- cpu_flags_x86_sse4_1
+- cpu_flags_x86_fma4
+- cpu_flags_x86_avx
+- cpu_flags_x86_avx2
+version: 2019.5-r1
