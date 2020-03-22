@@ -1,0 +1,148 @@
+category: net-misc
+conflicts: []
+description: Port of OpenBSD's free SSH release
+id: 0
+license: BSD GPL-2
+name: openssh
+requires:
+  
+  category: sys-libs
+  id: 0
+  name: zlib
+  
+  version: 1.2.3
+  
+  category: sys-apps
+  id: 0
+  name: shadow
+  
+  version: ""
+  
+  category: net-libs
+  id: 0
+  name: ldns
+  
+  version: ""
+  
+  category: net-libs
+  id: 0
+  name: ldns[ecdsa,ssl(+)]
+  
+  version: ""
+  
+  category: net-misc
+  id: 0
+  name: lksctp-tools
+  
+  version: ""
+  
+  category: sys-libs
+  id: 0
+  name: libselinux
+  
+  version: "1.28"
+  
+  category: dev-libs
+  id: 0
+  name: openssl
+  
+  version: 1.1.0g
+  
+  category: virtual
+  id: 0
+  name: libcrypt
+  
+  version: ""
+  
+  category: x11-apps
+  id: 0
+  name: xauth
+  
+  version: ""
+  
+  category: acct-group
+  id: 0
+  name: sshd
+  
+  version: ""
+  
+  category: net-libs
+  id: 0
+  name: ldns[-ecdsa,ssl(+)]
+  
+  version: ""
+  
+  category: sys-libs
+  id: 0
+  name: pam
+  
+  version: ""
+  
+  category: virtual
+  id: 0
+  name: krb5
+  
+  version: ""
+  
+  category: acct-user
+  id: 0
+  name: sshd
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: libressl
+  
+  version: ""
+  
+  category: sys-auth
+  id: 0
+  name: pambase
+  
+  version: "20081028"
+  
+  category: sys-process
+  id: 0
+  name: audit
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: libedit
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: openssl
+  
+  version: ""
+uri:
+- mirror://openbsd/OpenSSH/portable/openssh-8.1.tar.gz
+- https://dev.gentoo.org/~chutzpah/dist/openssh/openssh-8.1-glibc-2.31-patches.tar.xz
+- 'https://roumenpetrov.info/openssh/x509-12.3/openssh-8.1+x509-12.3.diff.gz '
+use_flags:
+- abi_mips_n32
+- audit
+- bindist
+- debug
+- hpn
+- kerberos
+- kernel_linux
+- ldns
+- libedit
+- libressl
+- livecd
+- pam
+- +pie
+- sctp
+- selinux
+- +ssl
+- static
+- test
+- X
+- X509
+- xmss
+version: 8.1_p1-r3

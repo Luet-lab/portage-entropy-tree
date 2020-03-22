@@ -1,0 +1,391 @@
+category: dev-lang
+conflicts: []
+description: The PHP language runtime engine
+id: 0
+license: "PHP-3.01\n\tBSD\n\tZend-2.0\n\tbcmath? ( LGPL-2.1+ )\n\tfpm? ( BSD-2 )\n\tgd?
+  ( gd )\n\tunicode? ( BSD-2 LGPL-2.1 )"
+name: php
+requires:
+  
+  category: app-text
+  id: 0
+  name: enchant
+  
+  version: "2.0"
+  
+  category: dev-db
+  id: 0
+  name: sqlite
+  
+  version: 3.7.6.3
+  
+  category: virtual
+  id: 0
+  name: krb5
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: libedit
+  
+  version: ""
+  
+  category: dev-db
+  id: 0
+  name: freetds
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: openssl
+  
+  version: ""
+  
+  category: dev-db
+  id: 0
+  name: tokyocabinet
+  
+  version: ""
+  
+  category: media-libs
+  id: 0
+  name: libwebp
+  
+  version: ""
+  
+  category: app-crypt
+  id: 0
+  name: argon2
+  
+  version: ""
+  
+  category: dev-db
+  id: 0
+  name: firebird
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: gmp
+  
+  version: ""
+  
+  category: dev-db
+  id: 0
+  name: libiodbc
+  
+  version: ""
+  
+  category: sys-devel
+  id: 0
+  name: gettext
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: libxml2
+  
+  version: 2.6.8
+  
+  category: media-libs
+  id: 0
+  name: freetype
+  
+  version: "2"
+  
+  category: dev-libs
+  id: 0
+  name: oniguruma
+  
+  version: ""
+  
+  category: sys-libs
+  id: 0
+  name: zlib
+  
+  version: ""
+  
+  category: sys-libs
+  id: 0
+  name: gdbm
+  
+  version: 1.8.0
+  
+  category: dev-libs
+  id: 0
+  name: libxslt
+  
+  version: ""
+  
+  category: virtual
+  id: 0
+  name: mta
+  
+  version: ""
+  
+  category: virtual
+  id: 0
+  name: imap-c-client-2[kerberos=,ssl=]
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: icu
+  
+  version: ""
+  
+  category: net-nds
+  id: 0
+  name: openldap
+  
+  version: 1.2.11
+  
+  category: dev-libs
+  id: 0
+  name: cyrus-sasl
+  
+  version: ""
+  
+  category: dev-db
+  id: 0
+  name: postgresql
+  
+  version: ""
+  
+  category: dev-db
+  id: 0
+  name: qdbm
+  
+  version: ""
+  
+  category: sys-libs
+  id: 0
+  name: db
+  
+  version: ""
+  
+  category: dev-util
+  id: 0
+  name: lcov
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: libressl
+  
+  version: ""
+  
+  category: sys-apps
+  id: 0
+  name: systemd
+  
+  version: ""
+  
+  category: net-misc
+  id: 0
+  name: curl
+  
+  version: 7.10.5
+  
+  category: dev-db
+  id: 0
+  name: lmdb
+  
+  version: ""
+  
+  category: dev-db
+  id: 0
+  name: oracle-instantclient-basic
+  
+  version: ""
+  
+  category: sys-libs
+  id: 0
+  name: readline
+  
+  version: ""
+  
+  category: app-text
+  id: 0
+  name: recode
+  
+  version: ""
+  
+  category: app-text
+  id: 0
+  name: aspell
+  
+  version: "0.50"
+  
+  category: x11-libs
+  id: 0
+  name: libXpm
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: libpcre
+  
+  version: "8.32"
+  
+  category: virtual
+  id: 0
+  name: jpeg
+  
+  version: ""
+  
+  category: virtual
+  id: 0
+  name: libiconv
+  
+  version: ""
+  
+  category: dev-db
+  id: 0
+  name: unixODBC
+  
+  version: 1.8.13
+  
+  category: sec-policy
+  id: 0
+  name: selinux-phpfpm
+  
+  version: ""
+  
+  category: sys-apps
+  id: 0
+  name: acl
+  
+  version: ""
+  
+  category: media-libs
+  id: 0
+  name: libpng
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: mm
+  
+  version: ""
+  
+  category: net-analyzer
+  id: 0
+  name: net-snmp
+  
+  version: "5.2"
+  
+  category: dev-libs
+  id: 0
+  name: libsodium
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: libzip
+  
+  version: 1.2.0
+  
+  category: www-servers
+  id: 0
+  name: apache[apache2_modules_unixd(+),threads=]
+  
+  version: ""
+  
+  category: app-arch
+  id: 0
+  name: bzip2
+  
+  version: ""
+uri:
+- https://www.php.net/distributions/php-7.2.29.tar.xz
+use_flags:
+- embed
+- +cli
+- cgi
+- fpm
+- apache2
+- "phpdbg\n\tthreads"
+- acl
+- argon2
+- bcmath
+- berkdb
+- bzip2
+- calendar
+- cdb
+- "cjk\n\tcoverage"
+- +ctype
+- curl
+- "debug\n\tenchant"
+- exif
+- +fileinfo
+- +filter
+- "firebird\n\t+flatfile"
+- ftp
+- gd
+- gdbm
+- gmp
+- +hash
+- +iconv
+- imap
+- "inifile\n\tintl"
+- iodbc
+- ipv6
+- +json
+- kerberos
+- ldap
+- ldap-sasl
+- libedit
+- libressl
+- "lmdb\n\tmhash"
+- mssql
+- mysql
+- mysqli
+- "nls\n\toci8-instant-client"
+- odbc
+- +opcache
+- pcntl
+- pdo
+- +phar
+- +posix
+- postgres
+- "qdbm\n\treadline"
+- recode
+- selinux
+- +session
+- session-mm
+- "sharedmem\n\t+simplexml"
+- snmp
+- soap
+- sockets
+- sodium
+- spell
+- sqlite
+- "ssl\n\tsysvipc"
+- systemd
+- test
+- tidy
+- +tokenizer
+- tokyocabinet
+- truetype
+- unicode
+- wddx
+- "webp\n\t+xml"
+- xmlreader
+- xmlwriter
+- xmlrpc
+- xpm
+- xslt
+- zip
+- zip-encryption
+- zlib
+version: 7.2.29

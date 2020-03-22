@@ -1,0 +1,31 @@
+category: sys-apps
+conflicts: []
+description: Unprivileged sandboxing tool, namespaces-powered chroot-like solution
+id: 0
+license: LGPL-2+
+name: bubblewrap
+requires:
+  
+  category: sys-libs
+  id: 0
+  name: libseccomp
+  
+  version: ""
+  
+  category: sys-libs
+  id: 0
+  name: libcap
+  
+  version: ""
+  
+  category: sys-libs
+  id: 0
+  name: libselinux
+  
+  version: 2.1.9
+uri:
+- https://github.com/projectatomic/bubblewrap/releases/download/v0.3.1/bubblewrap-0.3.1.tar.xz
+use_flags:
+- selinux
+- +suid
+version: 0.3.1-r2

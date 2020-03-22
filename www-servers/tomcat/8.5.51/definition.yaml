@@ -1,0 +1,30 @@
+category: www-servers
+conflicts: []
+description: Tomcat Servlet-3.1/JSP-2.3/EL-3.0/WebSocket-1.1/JASPIC-1.1 Container
+id: 0
+license: Apache-2.0
+name: tomcat
+requires:
+  
+  category: dev-java
+  id: 0
+  name: eclipse-ecj
+  
+  version: ""
+  
+  category: dev-java
+  id: 0
+  name: tomcat-servlet-api
+  
+  version: 8.5.51
+  
+  category: virtual
+  id: 0
+  name: jre
+  
+  version: ""
+uri:
+- mirror://apache/tomcat/tomcat-8/v8.5.51/src/apache-tomcat-8.5.51-src.tar.gz
+use_flags:
+- extra-webapps
+version: 8.5.51

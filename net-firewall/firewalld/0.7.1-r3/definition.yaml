@@ -1,0 +1,50 @@
+category: net-firewall
+conflicts:
+  
+  category: '!net-firewall'
+  id: 0
+  name: gshield
+  
+  version: ""
+description: A firewall daemon with D-BUS interface providing a dynamic firewall
+id: 0
+license: GPL-2+
+name: firewalld
+requires:
+  
+  category: net-firewall
+  id: 0
+  name: nftables
+  
+  version: ""
+  
+  category: net-firewall
+  id: 0
+  name: iptables
+  
+  version: ""
+  
+  category: net-firewall
+  id: 0
+  name: ebtables
+  
+  version: ""
+  
+  category: net-firewall
+  id: 0
+  name: ipset
+  
+  version: ""
+  
+  category: net-firewall
+  id: 0
+  name: nftables[xtables(+)]
+  
+  version: ""
+uri:
+- https://github.com/firewalld/firewalld/archive/v0.7.1.tar.gz -> firewalld-0.7.1.tar.gz
+use_flags:
+- gui
+- +nftables
+- +iptables
+version: 0.7.1-r3

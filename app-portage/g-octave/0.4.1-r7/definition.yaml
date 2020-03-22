@@ -1,0 +1,23 @@
+category: app-portage
+conflicts: []
+description: A tool that generates and installs ebuilds for Octave-Forge
+id: 0
+license: GPL-2
+name: g-octave
+requires:
+  
+  category: sys-apps
+  id: 0
+  name: portage
+  
+  version: ""
+uri:
+- https://github.com/downloads/rafaelmartins/g-octave/g-octave-0.4.1.tar.gz
+- https://github.com/rafaelmartins/g-octave-db/archive/bdf02cbf0a8d017c6c1bddeffd6f03d5d90695ed.tar.gz
+  ->
+- g-octave-db-bdf02cb.tar.gz
+- https://dev.gentoo.org/~rafaelmartins/distfiles/g-octave-patches-0.4.1-r7.tar.xz
+use_flags:
+- doc
+- test
+version: 0.4.1-r7

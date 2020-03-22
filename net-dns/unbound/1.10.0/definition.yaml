@@ -1,0 +1,91 @@
+category: net-dns
+conflicts: []
+description: A validating, recursive and caching DNS resolver
+id: 0
+license: BSD GPL-2
+name: unbound
+requires:
+  
+  category: dev-libs
+  id: 0
+  name: openssl
+  
+  version: 1.0.1h-r2
+  
+  category: dev-libs
+  id: 0
+  name: protobuf-c
+  
+  version: 1.0.2-r1
+  
+  category: dev-libs
+  id: 0
+  name: openssl
+  
+  version: ""
+  
+  category: net-dns
+  id: 0
+  name: dnssec-root
+  
+  version: ""
+  
+  category: sec-policy
+  id: 0
+  name: selinux-bind
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: expat
+  
+  version: 2.1.0-r3
+  
+  category: dev-libs
+  id: 0
+  name: libevent
+  
+  version: 2.0.21
+  
+  category: dev-libs
+  id: 0
+  name: libressl
+  
+  version: 2.2.4
+  
+  category: dev-libs
+  id: 0
+  name: libsodium
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: fstrm
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: hiredis
+  
+  version: ""
+uri:
+- https://nlnetlabs.nl/downloads/unbound/unbound-1.10.0.tar.gz
+use_flags:
+- debug
+- dnscrypt
+- dnstap
+- +ecdsa
+- ecs
+- gost
+- libressl
+- python
+- redis
+- selinux
+- static-libs
+- systemd
+- test
+- threads
+version: 1.10.0

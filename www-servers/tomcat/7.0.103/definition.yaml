@@ -1,0 +1,31 @@
+category: www-servers
+conflicts: []
+description: Tomcat Servlet-3.0/JSP-2.2 Container
+id: 0
+license: Apache-2.0
+name: tomcat
+requires:
+  
+  category: dev-java
+  id: 0
+  name: eclipse-ecj
+  
+  version: ""
+  
+  category: dev-java
+  id: 0
+  name: tomcat-servlet-api
+  
+  version: 7.0.103
+  
+  category: virtual
+  id: 0
+  name: jre
+  
+  version: ""
+uri:
+- mirror://apache/tomcat/tomcat-7/v7.0.103/src/apache-tomcat-7.0.103-src.tar.gz
+use_flags:
+- extra-webapps
+- websockets
+version: 7.0.103

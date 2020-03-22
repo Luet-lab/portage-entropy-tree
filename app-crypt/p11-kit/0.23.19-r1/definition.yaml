@@ -1,0 +1,33 @@
+category: app-crypt
+conflicts: []
+description: Provides a standard configuration setup for installing PKCS#11
+id: 0
+license: MIT
+name: p11-kit
+requires:
+  
+  category: dev-libs
+  id: 0
+  name: libtasn1
+  
+  version: "3.4"
+  
+  category: dev-libs
+  id: 0
+  name: libffi
+  
+  version: ""
+  
+  category: app-misc
+  id: 0
+  name: ca-certificates
+  
+  version: ""
+uri:
+- https://github.com/p11-glue/p11-kit/releases/download/0.23.19/p11-kit-0.23.19.tar.xz
+use_flags:
+- +asn1
+- debug
+- +libffi
+- +trust
+version: 0.23.19-r1

@@ -1,0 +1,37 @@
+category: net-libs
+conflicts: []
+description: Transport Independent RPC library for nfs-ganesha
+id: 0
+license: BSD
+name: ntirpc
+requires:
+  
+  category: dev-libs
+  id: 0
+  name: userspace-rcu
+  
+  version: ""
+  
+  category: net-libs
+  id: 0
+  name: libnsl
+  
+  version: ""
+  
+  category: sys-fabric
+  id: 0
+  name: librdmacm
+  
+  version: ""
+  
+  category: app-crypt
+  id: 0
+  name: mit-krb5
+  
+  version: ""
+uri:
+- https://github.com/nfs-ganesha/ntirpc/archive/v3.2.tar.gz -> ntirpc-3.2.tar.gz
+use_flags:
+- gssapi
+- rdma
+version: "3.2"

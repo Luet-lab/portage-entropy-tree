@@ -1,0 +1,295 @@
+category: sys-cluster
+conflicts: []
+description: Ceph distributed filesystem
+id: 0
+license: LGPL-2.1 CC-BY-SA-3.0 GPL-2 GPL-2+ LGPL-2+ BSD Boost-1.0 MIT public-domain
+name: ceph
+requires:
+  
+  category: virtual
+  id: 0
+  name: awk
+  
+  version: ""
+  
+  category: dev-python
+  id: 0
+  name: prettytable
+  
+  version: ""
+  
+  category: dev-python
+  id: 0
+  name: pyjwt
+  
+  version: ""
+  
+  category: dev-util
+  id: 0
+  name: babeltrace
+  
+  version: ""
+  
+  category: net-libs
+  id: 0
+  name: rabbitmq-c
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: libressl
+  
+  version: ""
+  
+  category: dev-util
+  id: 0
+  name: google-perftools
+  
+  version: "2.4"
+  
+  category: sys-block
+  id: 0
+  name: parted
+  
+  version: ""
+  
+  category: acct-user
+  id: 0
+  name: ceph
+  
+  version: ""
+  
+  category: sys-auth
+  id: 0
+  name: oath-toolkit
+  
+  version: ""
+  
+  category: sys-apps
+  id: 0
+  name: coreutils
+  
+  version: ""
+  
+  category: sys-fs
+  id: 0
+  name: cryptsetup
+  
+  version: ""
+  
+  category: dev-python
+  id: 0
+  name: flask
+  
+  version: ""
+  
+  category: dev-python
+  id: 0
+  name: jinja
+  
+  version: ""
+  
+  category: sys-apps
+  id: 0
+  name: util-linux
+  
+  version: ""
+  
+  category: sys-fs
+  id: 0
+  name: lvm2[-device-mapper-only(-)]
+  
+  version: ""
+  
+  category: dev-python
+  id: 0
+  name: bcrypt
+  
+  version: ""
+  
+  category: dev-util
+  id: 0
+  name: lttng-ust
+  
+  version: ""
+  
+  category: dev-python
+  id: 0
+  name: pyopenssl
+  
+  version: ""
+  
+  category: dev-python
+  id: 0
+  name: werkzeug
+  
+  version: ""
+  
+  category: sys-fs
+  id: 0
+  name: zfs
+  
+  version: ""
+  
+  category: sys-apps
+  id: 0
+  name: gptfdisk
+  
+  version: ""
+  
+  category: dev-python
+  id: 0
+  name: pecan
+  
+  version: ""
+  
+  category: dev-python
+  id: 0
+  name: pyyaml
+  
+  version: ""
+  
+  category: virtual
+  id: 0
+  name: libudev
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: nss
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: openssl
+  
+  version: ""
+  
+  category: dev-python
+  id: 0
+  name: routes
+  
+  version: ""
+  
+  category: acct-group
+  id: 0
+  name: ceph
+  
+  version: ""
+  
+  category: sys-fs
+  id: 0
+  name: xfsprogs
+  
+  version: ""
+  
+  category: dev-python
+  id: 0
+  name: cherrypy
+  
+  version: ""
+  
+  category: dev-python
+  id: 0
+  name: requests
+  
+  version: ""
+  
+  category: dev-python
+  id: 0
+  name: six
+  
+  version: ""
+  
+  category: sys-apps
+  id: 0
+  name: sed
+  
+  version: ""
+  
+  category: sys-fs
+  id: 0
+  name: fuse
+  
+  version: ""
+  
+  category: sys-fs
+  id: 0
+  name: lsscsi
+  
+  version: ""
+  
+  category: virtual
+  id: 0
+  name: krb5
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: jemalloc
+  
+  version: ""
+  
+  category: net-misc
+  id: 0
+  name: socat
+  
+  version: ""
+  
+  category: dev-python
+  id: 0
+  name: more-itertools
+  
+  version: ""
+  
+  category: app-shells
+  id: 0
+  name: bash
+  
+  version: ""
+  
+  category: sys-apps
+  id: 0
+  name: grep
+  
+  version: ""
+  
+  category: net-nds
+  id: 0
+  name: openldap
+  
+  version: ""
+uri:
+- https://download.ceph.com/tarballs/ceph-14.2.7.tar.gz
+use_flags:
+- babeltrace
+- +cephfs
+- dpdk
+- fuse
+- grafana
+- jemalloc
+- kerberos
+- ldap
+- libressl
+- lttng
+- +mgr
+- numa
+- rabbitmq
+- +radosgw
+- +ssl
+- spdk
+- static-libs
+- system-boost
+- systemd
+- +tcmalloc
+- test
+- xfs
+- zfs
+- |-
+  cpu_flags_x86_sse{,2,3,4_1,4_2}
+  cpu_flags_x86_ssse3
+version: 14.2.7-r1

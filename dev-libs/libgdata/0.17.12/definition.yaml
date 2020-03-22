@@ -1,0 +1,46 @@
+category: dev-libs
+conflicts: []
+description: GLib-based library for accessing online service APIs using the GData
+  protocol
+id: 0
+license: LGPL-2.1+
+name: libgdata
+requires:
+  
+  category: dev-libs
+  id: 0
+  name: libxml2
+  
+  version: "2"
+  
+  category: app-crypt
+  id: 0
+  name: gcr
+  
+  version: ""
+  
+  category: net-libs
+  id: 0
+  name: gnome-online-accounts
+  
+  version: "3.8"
+  
+  category: dev-libs
+  id: 0
+  name: gobject-introspection
+  
+  version: "1.54"
+  
+  category: dev-libs
+  id: 0
+  name: glib
+  
+  version: 2.44.0
+use_flags:
+- +crypt
+- gnome-online-accounts
+- gtk-doc
+- +introspection
+- test
+- vala
+version: 0.17.12

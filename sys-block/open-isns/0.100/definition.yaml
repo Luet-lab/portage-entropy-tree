@@ -1,0 +1,27 @@
+category: sys-block
+conflicts: []
+description: iSNS server and client for Linux
+id: 0
+license: LGPL-2.1
+name: open-isns
+requires:
+  
+  category: dev-libs
+  id: 0
+  name: openssl
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: libressl
+  
+  version: ""
+uri:
+- https://github.com/open-iscsi/open-isns/archive/v0.100.tar.gz -> open-isns-0.100.tar.gz
+use_flags:
+- debug
+- libressl
+- ssl
+- static
+version: "0.100"

@@ -1,0 +1,63 @@
+category: net-dialup
+conflicts:
+  
+  category: <net-misc
+  id: 0
+  name: netifrc
+  
+  version: 0.7.1
+description: Point-to-Point Protocol (PPP)
+id: 0
+license: BSD GPL-2
+name: ppp
+requires:
+  
+  category: sys-libs
+  id: 0
+  name: pam
+  
+  version: ""
+  
+  category: x11-libs
+  id: 0
+  name: gtk+
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: openssl
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: libressl
+  
+  version: ""
+  
+  category: net-libs
+  id: 0
+  name: libpcap
+  
+  version: ""
+  
+  category: net-dialup
+  id: 0
+  name: linux-atm
+  
+  version: ""
+uri:
+- https://github.com/paulusmack/ppp/archive/ppp-2.4.8.tar.gz
+- https://dev.gentoo.org/~polynomial-c/ppp-2.4.8-patches-02.tar.xz
+use_flags:
+- activefilter
+- atm
+- dhcp
+- eap-tls
+- gtk
+- ipv6
+- libressl
+- pam
+- radius
+version: 2.4.8

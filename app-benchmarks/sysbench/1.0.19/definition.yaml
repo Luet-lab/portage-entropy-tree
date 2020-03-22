@@ -1,0 +1,39 @@
+category: app-benchmarks
+conflicts: []
+description: System performance benchmark
+id: 0
+license: GPL-2+
+name: sysbench
+requires:
+  
+  category: dev-libs
+  id: 0
+  name: libaio
+  
+  version: ""
+  
+  category: dev-db
+  id: 0
+  name: mysql-connector-c
+  
+  version: ""
+  
+  category: dev-db
+  id: 0
+  name: postgresql
+  
+  version: ""
+  
+  category: dev-lang
+  id: 0
+  name: luajit
+  
+  version: ""
+uri:
+- https://github.com/akopytov/sysbench/archive/1.0.19.tar.gz -> sysbench-1.0.19.tar.gz
+use_flags:
+- aio
+- mysql
+- postgres
+- test
+version: 1.0.19

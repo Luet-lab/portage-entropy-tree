@@ -1,0 +1,69 @@
+category: net-vpn
+conflicts: []
+description: tinc is an easy to configure VPN implementation
+id: 0
+license: GPL-2
+name: tinc
+requires:
+  
+  category: dev-libs
+  id: 0
+  name: lzo
+  
+  version: ""
+  
+  category: sys-libs
+  id: 0
+  name: ncurses
+  
+  version: ""
+  
+  category: sys-libs
+  id: 0
+  name: readline
+  
+  version: ""
+  
+  category: net-libs
+  id: 0
+  name: miniupnpc
+  
+  version: ""
+  
+  category: sys-libs
+  id: 0
+  name: zlib
+  
+  version: ""
+  
+  category: net-misc
+  id: 0
+  name: vde
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: openssl
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: libressl
+  
+  version: ""
+uri:
+- http://www.tinc-vpn.org/packages/tinc-1.1.tar.gz
+- https://dev.gentoo.org/~dlan/distfiles/tinc-1.1-upstream-patches-2.tar.xz
+use_flags:
+- +lzo
+- +ncurses
+- libressl
+- +readline
+- +ssl
+- uml
+- vde
+- upnp
+- +zlib
+version: 1.1_pre17-r1

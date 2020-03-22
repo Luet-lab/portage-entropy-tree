@@ -1,0 +1,43 @@
+category: dev-libs
+conflicts: []
+description: An implementation of basic iCAL protocols
+id: 0
+license: '|| ( MPL-2.0 LGPL-2.1 )'
+name: libical
+requires:
+  
+  category: dev-libs
+  id: 0
+  name: icu
+  
+  version: ""
+  
+  category: sys-libs
+  id: 0
+  name: db
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: glib
+  
+  version: ""
+  
+  category: sys-libs
+  id: 0
+  name: timezone-data
+  
+  version: ""
+uri:
+- https://github.com/libical/libical/releases/download/v3.0.8/libical-3.0.8.tar.gz
+use_flags:
+- berkdb
+- doc
+- examples
+- +glib
+- +introspection
+- static-libs
+- test
+- vala
+version: 3.0.8

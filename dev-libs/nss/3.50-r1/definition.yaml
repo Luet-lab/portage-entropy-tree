@@ -1,0 +1,31 @@
+category: dev-libs
+conflicts: []
+description: Mozilla's Network Security Services library that implements PKI support
+id: 0
+license: '|| ( MPL-2.0 GPL-2 LGPL-2.1 )'
+name: nss
+requires:
+  
+  category: dev-libs
+  id: 0
+  name: nspr
+  
+  version: "4.25"
+  
+  category: dev-db
+  id: 0
+  name: sqlite
+  
+  version: 3.8.2
+  
+  category: sys-libs
+  id: 0
+  name: zlib
+  
+  version: 1.2.8-r1
+uri:
+- https://archive.mozilla.org/pub/security/nss/releases/NSS_3_50_RTM/src/nss-3.50.tar.gz
+use_flags:
+- cacert
+- utils
+version: 3.50-r1

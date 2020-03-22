@@ -1,0 +1,55 @@
+category: sci-libs
+conflicts: []
+description: A set of encoding/decoding APIs and tools for WMO GRIB, BUFR, and GTS
+  messages
+id: 0
+license: Apache-2.0
+name: eccodes
+requires:
+  
+  category: media-libs
+  id: 0
+  name: libpng
+  
+  version: ""
+  
+  category: sys-libs
+  id: 0
+  name: zlib
+  
+  version: ""
+  
+  category: sci-libs
+  id: 0
+  name: szip
+  
+  version: ""
+  
+  category: sci-libs
+  id: 0
+  name: netcdf
+  
+  version: "4.2"
+  
+  category: media-libs
+  id: 0
+  name: openjpeg
+  
+  version: "2"
+uri:
+- https://confluence.ecmwf.int/download/attachments/45757960/eccodes-2.16.0-Source.tar.gz
+- 'http://download.ecmwf.org/test-data/eccodes/eccodes_test_data.tar.gz '
+use_flags:
+- defs
+- examples
+- extra-test
+- -fortran
+- memfs
+- netcdf
+- jpeg2k
+- png
+- python
+- szip
+- test
+- threads
+version: 2.16.0

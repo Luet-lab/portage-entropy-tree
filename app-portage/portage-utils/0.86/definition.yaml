@@ -1,0 +1,47 @@
+category: app-portage
+conflicts: []
+description: Small and fast Portage helper tools written in C
+id: 0
+license: GPL-2
+name: portage-utils
+requires:
+  
+  category: app-crypt
+  id: 0
+  name: libb2
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: openssl
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: libressl
+  
+  version: ""
+  
+  category: sys-libs
+  id: 0
+  name: zlib
+  
+  version: ""
+  
+  category: app-crypt
+  id: 0
+  name: gpgme
+  
+  version: ""
+uri:
+- https://dev.gentoo.org/~grobian/distfiles/portage-utils-0.86.tar.xz
+use_flags:
+- nls
+- static
+- openmp
+- +qmanifest
+- +qtegrity
+- libressl
+version: "0.86"

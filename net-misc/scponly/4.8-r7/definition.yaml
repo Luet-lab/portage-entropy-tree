@@ -1,0 +1,69 @@
+category: net-misc
+conflicts: []
+description: A tiny pseudoshell which only permits scp and sftp
+id: 0
+license: BSD-2
+name: scponly
+requires:
+  
+  category: acct-user
+  id: 0
+  name: scponly
+  
+  version: ""
+  
+  category: acct-group
+  id: 0
+  name: scponly
+  
+  version: ""
+  
+  category: sys-fs
+  id: 0
+  name: quota
+  
+  version: ""
+  
+  category: net-misc
+  id: 0
+  name: rsync
+  
+  version: ""
+  
+  category: dev-vcs
+  id: 0
+  name: subversion
+  
+  version: ""
+  
+  category: net-misc
+  id: 0
+  name: unison
+  
+  version: ""
+  
+  category: sys-apps
+  id: 0
+  name: sed
+  
+  version: ""
+  
+  category: net-misc
+  id: 0
+  name: openssh
+  
+  version: ""
+use_flags:
+- chroot
+- +sftp
+- scp
+- winscp
+- gftp
+- rsync
+- unison
+- subversion
+- wildcards
+- quota
+- passwd
+- logging
+version: 4.8-r7

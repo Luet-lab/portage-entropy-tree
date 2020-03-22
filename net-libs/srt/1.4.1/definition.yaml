@@ -1,0 +1,38 @@
+category: net-libs
+conflicts: []
+description: Open-source implementation of the Secure Real-time Transport Protocol
+  (SRTP)
+id: 0
+license: MPL-2.0
+name: srt
+requires:
+  
+  category: dev-libs
+  id: 0
+  name: nettle
+  
+  version: ""
+  
+  category: net-libs
+  id: 0
+  name: gnutls
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: openssl
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: libressl
+  
+  version: ""
+uri:
+- https://github.com/Haivision/srt/archive/v1.4.1.tar.gz -> srt-1.4.1.tar.gz
+use_flags:
+- gnutls
+- libressl
+version: 1.4.1

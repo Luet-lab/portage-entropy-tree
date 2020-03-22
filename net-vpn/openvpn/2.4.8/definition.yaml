@@ -1,0 +1,106 @@
+category: net-vpn
+conflicts: []
+description: Robust and highly flexible tunneling application compatible with many
+  OSes
+id: 0
+license: GPL-2
+name: openvpn
+requires:
+  
+  category: net-libs
+  id: 0
+  name: mbedtls
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: lzo
+  
+  version: "1.07"
+  
+  category: sec-policy
+  id: 0
+  name: selinux-openvpn
+  
+  version: ""
+  
+  category: sys-apps
+  id: 0
+  name: net-tools
+  
+  version: 1.60_p20160215155418
+  
+  category: sys-libs
+  id: 0
+  name: pam
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: openssl
+  
+  version: 0.9.8
+  
+  category: dev-libs
+  id: 0
+  name: pkcs11-helper
+  
+  version: "1.11"
+  
+  category: sys-apps
+  id: 0
+  name: systemd
+  
+  version: ""
+  
+  category: acct-group
+  id: 0
+  name: openvpn
+  
+  version: ""
+  
+  category: acct-user
+  id: 0
+  name: openvpn
+  
+  version: ""
+  
+  category: sys-apps
+  id: 0
+  name: iproute2
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: libressl
+  
+  version: ""
+  
+  category: app-arch
+  id: 0
+  name: lz4
+  
+  version: ""
+uri:
+- https://github.com/OpenVPN/openvpn/archive/v2.4.8.tar.gz -> openvpn-2.4.8.tar.gz
+use_flags:
+- down-root
+- examples
+- inotify
+- iproute2
+- libressl
+- lz4
+- +lzo
+- mbedtls
+- pam
+- pkcs11
+- +plugins
+- selinux
+- +ssl
+- systemd
+- test
+- userland_BSD
+version: 2.4.8

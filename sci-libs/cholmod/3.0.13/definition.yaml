@@ -1,0 +1,60 @@
+category: sci-libs
+conflicts: []
+description: Sparse Cholesky factorization and update/downdate library
+id: 0
+license: LGPL-2.1+ modify? ( GPL-2+ ) matrixops? ( GPL-2+ )
+name: cholmod
+requires:
+  
+  category: sci-libs
+  id: 0
+  name: ccolamd
+  
+  version: "2.9"
+  
+  category: sci-libs
+  id: 0
+  name: amd
+  
+  version: "2.4"
+  
+  category: sci-libs
+  id: 0
+  name: colamd
+  
+  version: "2.9"
+  
+  category: x11-drivers
+  id: 0
+  name: nvidia-drivers
+  
+  version: ""
+  
+  category: dev-util
+  id: 0
+  name: nvidia-cuda-toolkit
+  
+  version: ""
+  
+  category: virtual
+  id: 0
+  name: lapack
+  
+  version: ""
+  
+  category: sci-libs
+  id: 0
+  name: camd
+  
+  version: "2.4"
+uri:
+- http://202.36.178.9/sage/cholmod-3.0.13.tar.bz2
+use_flags:
+- cuda
+- doc
+- +lapack
+- +matrixops
+- +modify
+- +partition
+- static-libs
+version: 3.0.13

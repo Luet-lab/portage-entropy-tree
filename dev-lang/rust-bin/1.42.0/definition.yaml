@@ -1,0 +1,50 @@
+category: dev-lang
+conflicts: []
+description: Systems programming language from Mozilla
+id: 0
+license: '|| ( MIT Apache-2.0 ) BSD-1 BSD-2 BSD-4 UoI-NCSA'
+name: rust-bin
+requires:
+  
+  category: dev-libs
+  id: 0
+  name: libressl
+  
+  version: ""
+  
+  category: net-libs
+  id: 0
+  name: libssh2
+  
+  version: ""
+  
+  category: net-misc
+  id: 0
+  name: curl
+  
+  version: ""
+  
+  category: app-eselect
+  id: 0
+  name: eselect-rust
+  
+  version: "20190311"
+  
+  category: sys-libs
+  id: 0
+  name: zlib
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: openssl
+  
+  version: ""
+use_flags:
+- clippy
+- cpu_flags_x86_sse2
+- doc
+- libressl
+- rustfmt
+version: 1.42.0

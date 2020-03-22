@@ -1,0 +1,109 @@
+category: net-vpn
+conflicts: []
+description: Anonymizing overlay network for TCP
+id: 0
+license: BSD GPL-2
+name: tor
+requires:
+  
+  category: acct-group
+  id: 0
+  name: tor
+  
+  version: ""
+  
+  category: sys-libs
+  id: 0
+  name: libseccomp
+  
+  version: 2.4.1
+  
+  category: sys-apps
+  id: 0
+  name: systemd
+  
+  version: ""
+  
+  category: app-arch
+  id: 0
+  name: zstd
+  
+  version: ""
+  
+  category: sec-policy
+  id: 0
+  name: selinux-tor
+  
+  version: ""
+  
+  category: acct-user
+  id: 0
+  name: tor
+  
+  version: ""
+  
+  category: sys-libs
+  id: 0
+  name: libcap
+  
+  version: ""
+  
+  category: app-text
+  id: 0
+  name: asciidoc
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: openssl
+  
+  version: ""
+  
+  category: app-crypt
+  id: 0
+  name: libscrypt
+  
+  version: ""
+  
+  category: sys-libs
+  id: 0
+  name: zlib
+  
+  version: ""
+  
+  category: app-arch
+  id: 0
+  name: xz-utils
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: libevent
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: libressl
+  
+  version: ""
+uri:
+- https://www.torproject.org/dist/tor-.tar.gz
+- https://archive.torproject.org/tor-package-archive/tor-.tar.gz
+use_flags:
+- caps
+- doc
+- libressl
+- lzma
+- +man
+- scrypt
+- seccomp
+- selinux
+- +server
+- systemd
+- tor-hardening
+- test
+- zstd
+version: 0.4.3.2_alpha

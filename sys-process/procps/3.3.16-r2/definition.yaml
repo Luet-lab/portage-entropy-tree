@@ -1,0 +1,69 @@
+category: sys-process
+conflicts:
+  
+  category: sys-apps
+  id: 0
+  name: util-linux
+  
+  version: ""
+  
+  category: <app-i18n
+  id: 0
+  name: man-pages-de
+  
+  version: 2.12-r1
+  
+  category: <app-i18n
+  id: 0
+  name: man-pages-pl
+  
+  version: 0.7-r1
+  
+  category: sys-apps
+  id: 0
+  name: coreutils
+  
+  version: ""
+description: standard informational utilities and process-handling tools
+id: 0
+license: GPL-2
+name: procps
+requires:
+  
+  category: sys-auth
+  id: 0
+  name: elogind
+  
+  version: ""
+  
+  category: sys-libs
+  id: 0
+  name: ncurses
+  
+  version: 5.7-r7
+  
+  category: sys-libs
+  id: 0
+  name: libselinux
+  
+  version: ""
+  
+  category: sys-apps
+  id: 0
+  name: systemd
+  
+  version: ""
+uri:
+- mirror://sourceforge/procps-ng/procps-ng-3.3.16.tar.xz
+use_flags:
+- elogind
+- +kill
+- modern-top
+- +ncurses
+- nls
+- selinux
+- static-libs
+- systemd
+- test
+- unicode
+version: 3.3.16-r2

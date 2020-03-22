@@ -1,0 +1,18 @@
+category: games-board
+conflicts: []
+description: Free UCI chess engine, claimed to be the strongest in the world
+id: 0
+license: GPL-3
+name: stockfish
+requires: []
+uri:
+- https://github.com/official-stockfish/Stockfish/archive/sf_11.tar.gz -> stockfish-11.tar.gz
+use_flags:
+- cpu_flags_arm_v7
+- cpu_flags_x86_avx2
+- cpu_flags_x86_popcnt
+- cpu_flags_x86_sse
+- "debug\n\tgeneral-32"
+- general-64
+- +optimize
+version: "11"

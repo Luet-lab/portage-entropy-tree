@@ -1,0 +1,51 @@
+category: net-vpn
+conflicts: []
+description: NetworkManager WireGuard plugin
+id: 0
+license: GPL-2+
+name: networkmanager-wireguard
+requires:
+  
+  category: x11-libs
+  id: 0
+  name: gtk+
+  
+  version: ""
+  
+  category: net-misc
+  id: 0
+  name: networkmanager
+  
+  version: ""
+  
+  category: net-vpn
+  id: 0
+  name: wireguard-tools
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: glib
+  
+  version: ""
+  
+  category: app-crypt
+  id: 0
+  name: libsecret
+  
+  version: ""
+  
+  category: gnome-extra
+  id: 0
+  name: nm-applet
+  
+  version: ""
+uri:
+- https://github.com/max-moser/network-manager-wireguard/archive/0e1124df9e97129c5e0d9996a2c3876ae18f01c4.tar.gz
+  -> networkmanager-wireguard-0.tar.gz
+use_flags:
+- +glib
+- +gtk
+- +nls
+version: 0_pre20191128-r3

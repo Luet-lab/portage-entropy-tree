@@ -1,0 +1,48 @@
+category: sys-cluster
+conflicts: []
+description: A Highly Scalable Resource Manager
+id: 0
+license: GPL-2
+name: slurm
+requires:
+  
+  category: acct-user
+  id: 0
+  name: slurm
+  
+  version: ""
+  
+  category: acct-group
+  id: 0
+  name: slurm
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: libcgroup
+  
+  version: ""
+uri:
+- https://github.com/SchedMD/slurm/archive/slurm-.tar.gz
+use_flags:
+- debug
+- hdf5
+- html
+- ipmi
+- json
+- lua
+- multiple-slurmd
+- +munge
+- mysql
+- netloc
+- numa
+- ofed
+- pam
+- perl
+- slurmdbd
+- static-libs
+- ucx
+- torque
+- X
+version: 20.02.0.1

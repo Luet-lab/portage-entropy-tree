@@ -1,0 +1,47 @@
+category: media-sound
+conflicts: []
+description: Advanced Linux Sound Architecture Utils (alsactl, alsamixer, etc.)
+id: 0
+license: GPL-2
+name: alsa-utils
+requires:
+  
+  category: media-libs
+  id: 0
+  name: alsa-lib
+  
+  version: 1.2.2
+  
+  category: media-libs
+  id: 0
+  name: libsamplerate
+  
+  version: ""
+  
+  category: sys-libs
+  id: 0
+  name: ncurses
+  
+  version: 5.7-r7
+  
+  category: sci-libs
+  id: 0
+  name: fftw
+  
+  version: ""
+  
+  category: sec-policy
+  id: 0
+  name: selinux-alsa
+  
+  version: ""
+uri:
+- https://www.alsa-project.org/files/pub/utils/alsa-utils-1.2.2.tar.bz2
+use_flags:
+- bat
+- doc
+- +libsamplerate
+- +ncurses
+- nls
+- selinux
+version: 1.2.2

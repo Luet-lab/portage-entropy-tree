@@ -1,0 +1,34 @@
+category: dev-util
+conflicts: []
+description: trace library calls made at runtime
+id: 0
+license: GPL-2
+name: ltrace
+requires:
+  
+  category: virtual
+  id: 0
+  name: libelf
+  
+  version: ""
+  
+  category: sys-libs
+  id: 0
+  name: libselinux
+  
+  version: ""
+  
+  category: sys-libs
+  id: 0
+  name: libunwind
+  
+  version: ""
+uri:
+- mirror://debian/pool/main/l/ltrace/ltrace_0.7.3.orig.tar.bz2
+- mirror://debian/pool/main/l/ltrace/ltrace_0.7.3-0.7.3.debian.tar.gz
+use_flags:
+- debug
+- selinux
+- test
+- unwind
+version: 0.7.3_p4-r1

@@ -1,0 +1,43 @@
+category: app-crypt
+conflicts: []
+description: TPM2 Access Broker & Resource Manager
+id: 0
+license: BSD
+name: tpm2-abrmd
+requires:
+  
+  category: acct-user
+  id: 0
+  name: tss
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: glib
+  
+  version: ""
+  
+  category: app-crypt
+  id: 0
+  name: tpm2-tss
+  
+  version: ""
+  
+  category: sys-apps
+  id: 0
+  name: dbus
+  
+  version: ""
+  
+  category: acct-group
+  id: 0
+  name: tss
+  
+  version: ""
+uri:
+- https://github.com/tpm2-software/tpm2-abrmd/releases/download/2.1.1/tpm2-abrmd-2.1.1.tar.gz
+use_flags:
+- static-libs
+- test
+version: 2.1.1-r2

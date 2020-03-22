@@ -1,0 +1,26 @@
+category: app-arch
+conflicts: []
+description: zstd fast compression library
+id: 0
+license: '|| ( BSD GPL-2 )'
+name: zstd
+requires:
+  
+  category: app-arch
+  id: 0
+  name: xz-utils
+  
+  version: ""
+  
+  category: app-arch
+  id: 0
+  name: lz4
+  
+  version: ""
+uri:
+- https://github.com/facebook/zstd/archive/v1.4.4.tar.gz -> zstd-1.4.4.tar.gz
+use_flags:
+- lz4
+- static-libs
+- +threads
+version: 1.4.4-r3

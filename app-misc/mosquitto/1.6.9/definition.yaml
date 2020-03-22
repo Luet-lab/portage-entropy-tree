@@ -1,0 +1,56 @@
+category: app-misc
+conflicts: []
+description: An Open Source MQTT v3 Broker
+id: 0
+license: EPL-1.0
+name: mosquitto
+requires:
+  
+  category: acct-user
+  id: 0
+  name: mosquitto
+  
+  version: ""
+  
+  category: acct-group
+  id: 0
+  name: mosquitto
+  
+  version: ""
+  
+  category: net-dns
+  id: 0
+  name: c-ares
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: openssl
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: libressl
+  
+  version: ""
+  
+  category: sys-apps
+  id: 0
+  name: tcp-wrappers
+  
+  version: ""
+uri:
+- https://mosquitto.org/files/source/mosquitto-1.6.9.tar.gz
+use_flags:
+- bridge
+- examples
+- libressl
+- +persistence
+- +srv
+- ssl
+- tcpd
+- test
+- websockets
+version: 1.6.9

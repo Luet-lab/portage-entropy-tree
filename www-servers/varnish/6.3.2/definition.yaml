@@ -1,0 +1,48 @@
+category: www-servers
+conflicts: []
+description: Varnish is a state-of-the-art, high-performance HTTP accelerator
+id: 0
+license: BSD-2 GPL-2
+name: varnish
+requires:
+  
+  category: acct-group
+  id: 0
+  name: varnish
+  
+  version: ""
+  
+  category: sys-devel
+  id: 0
+  name: gcc
+  
+  version: ""
+  
+  category: sys-libs
+  id: 0
+  name: readline
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: jemalloc
+  
+  version: ""
+  
+  category: sys-libs
+  id: 0
+  name: ncurses
+  
+  version: ""
+  
+  category: acct-user
+  id: 0
+  name: varnish
+  
+  version: ""
+use_flags:
+- jemalloc
+- jit
+- static-libs
+version: 6.3.2

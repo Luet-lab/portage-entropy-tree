@@ -1,0 +1,128 @@
+category: net-p2p
+conflicts: []
+description: An end-user Qt GUI for the Bitcoin crypto-currency
+id: 0
+license: MIT
+name: bitcoin-qt
+requires:
+  
+  category: dev-libs
+  id: 0
+  name: libsecp256k1
+  
+  version: 0.1_pre20170321
+  
+  category: net-libs
+  id: 0
+  name: miniupnpc
+  
+  version: 1.9.20150916
+  
+  category: dev-libs
+  id: 0
+  name: openssl
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: univalue
+  
+  version: 1.0.4
+  
+  category: dev-qt
+  id: 0
+  name: qtcore
+  
+  version: ""
+  
+  category: dev-qt
+  id: 0
+  name: qtwidgets
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: protobuf
+  
+  version: ""
+  
+  category: dev-qt
+  id: 0
+  name: qtdbus
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: boost
+  
+  version: 1.52.0
+  
+  category: dev-qt
+  id: 0
+  name: qtnetwork
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: libevent
+  
+  version: ""
+  
+  category: sys-libs
+  id: 0
+  name: db
+  
+  version: ""
+  
+  category: net-libs
+  id: 0
+  name: zeromq
+  
+  version: ""
+  
+  category: dev-qt
+  id: 0
+  name: qtgui
+  
+  version: ""
+  
+  category: virtual
+  id: 0
+  name: bitcoin-leveldb
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: libressl
+  
+  version: ""
+  
+  category: media-gfx
+  id: 0
+  name: qrencode
+  
+  version: ""
+uri:
+- https://github.com/bitcoin/bitcoin/archive/58ba7c314d552cea8cb024960a8504577aee586f.tar.gz
+  -> bitcoin-v0.19.1.tar.gz
+- https://bitcoinknots.org/files/0.19.x/0.19.1.knots20200304/bitcoin-0.19.1.knots20200304.patches.txz
+  -> bitcoin-0.19.1.knots20200304.patches.tar.xz
+use_flags:
+- +asm
+- bip70
+- dbus
+- kde
+- knots
+- libressl
+- +qrcode
+- +system-leveldb
+- test
+- upnp
+- +wallet
+- zeromq
+version: 0.19.1

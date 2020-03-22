@@ -1,91 +1,70 @@
 category: sys-fs
 conflicts:
-- 
+  
   category: <sys-apps
-  description: ""
   id: 0
-  license: ""
   name: openrc
   
   version: "0.11"
-- 
-  category: '!sys-fs'
-  description: ""
-  id: 0
-  license: ""
-  name: lvm-user
   
-  version: ""
-- 
   category: <sys-fs
-  description: ""
   id: 0
-  license: ""
   name: cryptsetup
   
   version: 1.1.2
+  
+  category: '!sys-fs'
+  id: 0
+  name: lvm-user
+  
+  version: ""
 description: User-land utilities for LVM2 (device-mapper) software
 id: 0
 license: GPL-2
 name: lvm2
 requires:
-- 
-  category: sys-apps
-  description: ""
-  id: 0
-  license: ""
-  name: baselayout
   
-  version: "2.2"
-- 
-  category: sys-block
-  description: ""
-  id: 0
-  license: ""
-  name: thin-provisioning-tools
-  
-  version: 0.3.0
-- 
-  category: sys-apps
-  description: ""
-  id: 0
-  license: ""
-  name: systemd
-  
-  version: "205"
-- 
   category: virtual
-  description: ""
   id: 0
-  license: ""
   name: libudev
   
   version: "208"
-- 
+  
   category: sys-apps
-  description: ""
   id: 0
-  license: ""
+  name: baselayout
+  
+  version: "2.2"
+  
+  category: sys-apps
+  id: 0
   name: util-linux
   
   version: "2.16"
-- 
+  
   category: sys-apps
-  description: ""
   id: 0
-  license: ""
   name: makedev
   
   version: ""
-- 
-  category: sys-libs
-  description: ""
+  
+  category: sys-apps
   id: 0
-  license: ""
+  name: systemd
+  
+  version: "205"
+  
+  category: sys-block
+  id: 0
+  name: thin-provisioning-tools
+  
+  version: 0.3.0
+  
+  category: sys-libs
+  id: 0
   name: readline
   
   version: ""
-uri: []
 use_flags:
 - readline
 - static

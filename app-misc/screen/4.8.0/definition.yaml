@@ -1,0 +1,40 @@
+category: app-misc
+conflicts: []
+description: screen manager with VT100/ANSI terminal emulation
+id: 0
+license: GPL-2
+name: screen
+requires:
+  
+  category: sys-libs
+  id: 0
+  name: pam
+  
+  version: ""
+  
+  category: acct-group
+  id: 0
+  name: utmp
+  
+  version: ""
+  
+  category: sec-policy
+  id: 0
+  name: selinux-screen
+  
+  version: ""
+  
+  category: sys-libs
+  id: 0
+  name: ncurses
+  
+  version: "5.2"
+uri:
+- mirror://gnu/screen/screen-4.8.0.tar.gz
+use_flags:
+- debug
+- nethack
+- pam
+- selinux
+- multiuser
+version: 4.8.0

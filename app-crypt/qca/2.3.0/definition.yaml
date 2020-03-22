@@ -1,0 +1,72 @@
+category: app-crypt
+conflicts: []
+description: Qt Cryptographic Architecture (QCA)
+id: 0
+license: LGPL-2.1
+name: qca
+requires:
+  
+  category: dev-libs
+  id: 0
+  name: openssl
+  
+  version: "1.1"
+  
+  category: dev-libs
+  id: 0
+  name: pkcs11-helper
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: cyrus-sasl
+  
+  version: ""
+  
+  category: dev-qt
+  id: 0
+  name: qtcore
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: botan
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: libgcrypt
+  
+  version: ""
+  
+  category: app-crypt
+  id: 0
+  name: gnupg
+  
+  version: ""
+  
+  category: dev-libs
+  id: 0
+  name: nss
+  
+  version: ""
+uri:
+- mirror://kde/stable/qca/2.3.0/qca-2.3.0.tar.xz
+use_flags:
+- botan
+- debug
+- doc
+- examples
+- gcrypt
+- gpg
+- logger
+- nss
+- pkcs11
+- sasl
+- softstore
+- +ssl
+- test
+version: 2.3.0

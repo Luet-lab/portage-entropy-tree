@@ -1,0 +1,44 @@
+category: www-apache
+conflicts: []
+description: An embedded Perl interpreter for Apache2
+id: 0
+license: Apache-2.0
+name: mod_perl
+requires:
+  
+  category: dev-lang
+  id: 0
+  name: perl[ithreads=]
+  
+  version: ""
+  
+  category: dev-perl
+  id: 0
+  name: Apache-Test
+  
+  version: 1.420.0
+  
+  category: www-servers
+  id: 0
+  name: apache
+  
+  version: 2.0.47
+  
+  category: dev-libs
+  id: 0
+  name: apr-util
+  
+  version: "1.4"
+  
+  category: www-servers
+  id: 0
+  name: apache[-apache2_mpms_event,-apache2_mpms_worker,apache2_mpms_prefork]
+  
+  version: ""
+uri:
+- mirror://apache/perl/mod_perl-2.0.11.tar.gz
+use_flags:
+- debug
+- ithreads
+- test
+version: 2.0.11
