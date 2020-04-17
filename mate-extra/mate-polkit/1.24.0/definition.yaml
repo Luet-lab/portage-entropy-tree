@@ -1,0 +1,40 @@
+category: mate-extra
+conflicts: []
+description: A MATE specific DBUS service that is used to bring up authentication
+  dialogs
+id: 0
+license: LGPL-2+
+name: mate-polkit
+requires:
+  category: sys-apps
+  id: 0
+  name: accountsservice
+  version: ""
+  category: virtual
+  id: 0
+  name: libintl
+  version: ""
+  category: dev-libs
+  id: 0
+  name: glib
+  version: "2.50"
+  category: sys-auth
+  id: 0
+  name: polkit
+  version: "0.102"
+  category: x11-libs
+  id: 0
+  name: gdk-pixbuf
+  version: ""
+  category: x11-libs
+  id: 0
+  name: gtk+
+  version: 3.22.0
+  category: dev-libs
+  id: 0
+  name: libappindicator
+  version: ""
+use_flags:
+- accountsservice
+- appindicator
+version: 1.24.0

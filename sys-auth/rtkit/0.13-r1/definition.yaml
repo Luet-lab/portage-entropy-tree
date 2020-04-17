@@ -1,0 +1,36 @@
+category: sys-auth
+conflicts: []
+description: Realtime Policy and Watchdog Daemon
+id: 0
+license: GPL-3 BSD
+name: rtkit
+requires:
+  category: acct-group
+  id: 0
+  name: rtkit
+  version: ""
+  category: acct-user
+  id: 0
+  name: rtkit
+  version: ""
+  category: sys-apps
+  id: 0
+  name: dbus
+  version: ""
+  category: sys-auth
+  id: 0
+  name: polkit
+  version: ""
+  category: sys-libs
+  id: 0
+  name: libcap
+  version: ""
+  category: sys-apps
+  id: 0
+  name: systemd
+  version: ""
+uri:
+- https://github.com/heftig/rtkit/releases/download/v0.13/rtkit-0.13.tar.xz
+use_flags:
+- systemd
+version: 0.13-r1

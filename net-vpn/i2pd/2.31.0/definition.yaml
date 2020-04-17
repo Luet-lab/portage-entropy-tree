@@ -1,0 +1,41 @@
+category: net-vpn
+conflicts: []
+description: A C++ daemon for accessing the I2P anonymous network
+id: 0
+license: BSD
+name: i2pd
+requires:
+  category: acct-user
+  id: 0
+  name: i2pd
+  version: ""
+  category: acct-group
+  id: 0
+  name: i2pd
+  version: ""
+  category: dev-libs
+  id: 0
+  name: boost
+  version: ""
+  category: dev-libs
+  id: 0
+  name: openssl
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libressl
+  version: ""
+  category: net-libs
+  id: 0
+  name: miniupnpc
+  version: ""
+uri:
+- https://github.com/PurpleI2P/i2pd/archive/2.31.0.tar.gz -> i2pd-2.31.0.tar.gz
+use_flags:
+- cpu_flags_x86_aes
+- cpu_flags_x86_avx
+- i2p-hardening
+- libressl
+- static
+- +upnp
+version: 2.31.0

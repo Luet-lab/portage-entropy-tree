@@ -1,10 +1,8 @@
 category: net-libs
 conflicts:
-  
   category: <net-libs
   id: 0
   name: gupnp-vala
-  
   version: 0.10.3
 description: A GObject-based API for handling resource discovery and announcement
   over SSDP
@@ -12,24 +10,18 @@ id: 0
 license: LGPL-2
 name: gssdp
 requires:
-  
-  category: x11-libs
-  id: 0
-  name: gtk+
-  
-  version: "3.0"
-  
-  category: dev-libs
-  id: 0
-  name: gobject-introspection
-  
-  version: "1.36"
-  
   category: dev-libs
   id: 0
   name: glib
-  
   version: 2.34.3
+  category: x11-libs
+  id: 0
+  name: gtk+
+  version: "3.0"
+  category: dev-libs
+  id: 0
+  name: gobject-introspection
+  version: "1.36"
 use_flags:
 - +introspection
 - gtk

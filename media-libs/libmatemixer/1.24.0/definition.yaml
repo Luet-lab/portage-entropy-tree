@@ -1,0 +1,32 @@
+category: media-libs
+conflicts: []
+description: Mixer library for MATE Desktop
+id: 0
+license: LGPL-2+
+name: libmatemixer
+requires:
+  category: dev-libs
+  id: 0
+  name: glib
+  version: "2.50"
+  category: sys-devel
+  id: 0
+  name: gettext
+  version: 0.19.8
+  category: media-libs
+  id: 0
+  name: alsa-lib
+  version: 1.0.5
+  category: media-sound
+  id: 0
+  name: pulseaudio
+  version: 5.0.0
+  category: virtual
+  id: 0
+  name: libintl
+  version: ""
+use_flags:
+- +alsa
+- oss
+- pulseaudio
+version: 1.24.0

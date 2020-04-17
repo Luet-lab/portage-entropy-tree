@@ -1,0 +1,47 @@
+category: net-firewall
+conflicts: []
+description: Connection tracking userspace tools
+id: 0
+license: GPL-2
+name: conntrack-tools
+requires:
+  category: net-libs
+  id: 0
+  name: libnetfilter_cttimeout
+  version: 1.0.0
+  category: sys-apps
+  id: 0
+  name: systemd
+  version: "227"
+  category: net-libs
+  id: 0
+  name: libmnl
+  version: 1.0.3
+  category: net-libs
+  id: 0
+  name: libnetfilter_conntrack
+  version: 1.0.8
+  category: net-libs
+  id: 0
+  name: libnetfilter_queue
+  version: 1.0.2
+  category: net-libs
+  id: 0
+  name: libnfnetlink
+  version: 1.0.1
+  category: net-libs
+  id: 0
+  name: libtirpc
+  version: ""
+  category: net-libs
+  id: 0
+  name: libnetfilter_cthelper
+  version: 1.0.0
+uri:
+- http://www.netfilter.org/projects/conntrack-tools/files/conntrack-tools-1.4.6.tar.bz2
+use_flags:
+- doc
+- +cthelper
+- +cttimeout
+- systemd
+version: 1.4.6

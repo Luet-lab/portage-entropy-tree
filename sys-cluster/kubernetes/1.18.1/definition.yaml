@@ -1,0 +1,75 @@
+category: sys-cluster
+conflicts:
+  category: sys-cluster
+  id: 0
+  name: kube-apiserver
+  version: ""
+  category: sys-cluster
+  id: 0
+  name: kube-proxy
+  version: ""
+  category: sys-cluster
+  id: 0
+  name: kubeadm
+  version: ""
+  category: sys-cluster
+  id: 0
+  name: kube-controller-manager
+  version: ""
+  category: sys-cluster
+  id: 0
+  name: kubectl
+  version: ""
+  category: sys-cluster
+  id: 0
+  name: kubelet
+  version: ""
+  category: sys-cluster
+  id: 0
+  name: kube-scheduler
+  version: ""
+description: production-grade container orchestration
+id: 0
+license: Apache-2.0
+name: kubernetes
+requires:
+  category: net-firewall
+  id: 0
+  name: conntrack-tools
+  version: ""
+  category: acct-group
+  id: 0
+  name: kube-controller-manager
+  version: ""
+  category: acct-group
+  id: 0
+  name: kube-scheduler
+  version: ""
+  category: acct-group
+  id: 0
+  name: kube-apiserver
+  version: ""
+  category: acct-user
+  id: 0
+  name: kube-controller-manager
+  version: ""
+  category: acct-user
+  id: 0
+  name: kube-scheduler
+  version: ""
+  category: acct-user
+  id: 0
+  name: kube-apiserver
+  version: ""
+uri:
+- https://github.com/kubernetes/kubernetes/archive/v1.18.1.tar.gz -> kubernetes-1.18.1.tar.gz
+use_flags:
+- hardened
+- +kubelet
+- +kubeadm
+- +kubectl
+- +kube-apiserver
+- +kube-controller-manager
+- +kube-proxy
+- +kube-scheduler
+version: 1.18.1

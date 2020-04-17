@@ -1,0 +1,33 @@
+category: app-pda
+conflicts: []
+description: USB multiplex daemon for use with Apple iPhone/iPod Touch devices
+id: 0
+license: GPL-2 GPL-3 LGPL-2.1+
+name: usbmuxd
+requires:
+  category: app-pda
+  id: 0
+  name: libplist
+  version: "1.11"
+  category: virtual
+  id: 0
+  name: libusb
+  version: ""
+  category: virtual
+  id: 0
+  name: udev
+  version: ""
+  category: acct-user
+  id: 0
+  name: usbmux
+  version: ""
+  category: app-pda
+  id: 0
+  name: libimobiledevice
+  version: 1.2.1_pre0
+uri:
+- https://cgit.libimobiledevice.org/usbmuxd.git/snapshot/usbmuxd-8a69f1a78a58476f77b66916091d2405d0cd815f.tar.bz2
+  -> usbmuxd-1.1.1.tar.bz2
+use_flags:
+- systemd
+version: 1.1.1_pre20200121

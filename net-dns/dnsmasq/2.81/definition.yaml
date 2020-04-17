@@ -1,0 +1,69 @@
+category: net-dns
+conflicts: []
+description: Small forwarding DNS server
+id: 0
+license: '|| ( GPL-2 GPL-3 )'
+name: dnsmasq
+requires:
+  category: net-libs
+  id: 0
+  name: libnetfilter_conntrack
+  version: ""
+  category: dev-libs
+  id: 0
+  name: nettle
+  version: "3.4"
+  category: sec-policy
+  id: 0
+  name: selinux-dnsmasq
+  version: ""
+  category: sys-apps
+  id: 0
+  name: dbus
+  version: ""
+  category: acct-user
+  id: 0
+  name: dnsmasq
+  version: ""
+  category: net-dns
+  id: 0
+  name: libidn
+  version: ""
+  category: net-dns
+  id: 0
+  name: libidn2
+  version: "2.0"
+  category: dev-lang
+  id: 0
+  name: lua
+  version: ""
+  category: sys-devel
+  id: 0
+  name: gettext
+  version: ""
+  category: acct-group
+  id: 0
+  name: dnsmasq
+  version: ""
+uri:
+- http://www.thekelleys.org.uk/dnsmasq/dnsmasq-2.81.tar.xz
+use_flags:
+- auth-dns
+- conntrack
+- dbus
+- +dhcp
+- dhcp-tools
+- dnssec
+- +dumpfile
+- id
+- idn
+- libidn2
+- +inotify
+- ipv6
+- lua
+- nls
+- script
+- selinux
+- static
+- tftp
+version: "2.81"

@@ -1,0 +1,50 @@
+category: media-sound
+conflicts: []
+description: PulseAudio modules for LDAC, aptX, aptX HD, and AAC for Bluetooth (alongside
+  SBC and native+ofono headset)
+id: 0
+license: GPL-3
+name: pulseaudio-modules-bt
+requires:
+  category: media-libs
+  id: 0
+  name: sbc
+  version: ""
+  category: media-libs
+  id: 0
+  name: libldac
+  version: ""
+  category: net-wireless
+  id: 0
+  name: bluez
+  version: "5"
+  category: sys-apps
+  id: 0
+  name: dbus
+  version: 1.0.0
+  category: net-misc
+  id: 0
+  name: ofono
+  version: "1.13"
+  category: media-sound
+  id: 0
+  name: pulseaudio
+  version: "13.0"
+  category: media-libs
+  id: 0
+  name: fdk-aac
+  version: ""
+  category: virtual
+  id: 0
+  name: ffmpeg
+  version: ""
+uri:
+- https://github.com/EHfive/pulseaudio-modules-bt/archive/v1.3.tar.gz -> pulseaudio-modules-bt-1.3.tar.gz
+- https://freedesktop.org/software/pulseaudio/releases/pulseaudio-13.0.tar.xz
+use_flags:
+- fdk
+- +ffmpeg
+- +ldac
+- +native-headset
+- ofono-headset
+version: 1.3-r1

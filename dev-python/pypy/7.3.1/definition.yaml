@@ -1,0 +1,47 @@
+category: dev-python
+conflicts:
+  category: <dev-python
+  id: 0
+  name: pypy-bin
+  version: 7.3.0
+description: A fast, compliant alternative implementation of the Python language
+id: 0
+license: MIT
+name: pypy
+requires:
+  category: dev-db
+  id: 0
+  name: sqlite
+  version: ""
+  category: dev-lang
+  id: 0
+  name: tk
+  version: ""
+  category: dev-tcltk
+  id: 0
+  name: tix
+  version: ""
+  category: dev-libs
+  id: 0
+  name: openssl
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libressl
+  version: ""
+  category: sys-libs
+  id: 0
+  name: gdbm
+  version: ""
+uri:
+- https://bitbucket.org/pypy/pypy/downloads/pypy2.7-v7.3.1-src.tar.bz2
+- https://dev.gentoo.org/~mgorny/dist/python/python-gentoo-patches-2.7.17-r1.tar.xz
+use_flags:
+- bzip2
+- gdbm
+- +jit
+- libressl
+- ncurses
+- sqlite
+- tk
+version: 7.3.1

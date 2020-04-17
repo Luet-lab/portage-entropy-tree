@@ -1,0 +1,27 @@
+category: sci-libs
+conflicts: []
+description: Automatic differentiation system for C/C++
+id: 0
+license: '|| ( EPL-1.0 GPL-2 )'
+name: adolc
+requires:
+  category: dev-libs
+  id: 0
+  name: boost
+  version: ""
+  category: sys-cluster
+  id: 0
+  name: ampi
+  version: ""
+  category: sci-libs
+  id: 0
+  name: colpack
+  version: ""
+uri:
+- https://github.com/coin-or/ADOL-C/archive/releases/2.7.2.tar.gz -> adolc-2.7.2.tar.gz
+use_flags:
+- +boost
+- mpi
+- sparse
+- static-libs
+version: 2.7.2

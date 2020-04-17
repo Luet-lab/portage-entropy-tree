@@ -1,0 +1,41 @@
+category: app-admin
+conflicts: []
+description: Useful Apache tools - htdigest, htpasswd, ab, htdbm
+id: 0
+license: Apache-2.0
+name: apache-tools
+requires:
+  category: dev-libs
+  id: 0
+  name: apr
+  version: 1.5.0
+  category: dev-libs
+  id: 0
+  name: apr-util
+  version: ""
+  category: dev-libs
+  id: 0
+  name: expat
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libpcre
+  version: ""
+  category: sys-apps
+  id: 0
+  name: util-linux
+  version: ""
+  category: dev-libs
+  id: 0
+  name: openssl
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libressl
+  version: ""
+uri:
+- mirror://apache/httpd/httpd-2.4.43.tar.bz2
+use_flags:
+- libressl
+- ssl
+version: 2.4.43

@@ -5,39 +5,29 @@ id: 0
 license: GPL-2
 name: chrony
 requires:
-  
-  category: sys-libs
-  id: 0
-  name: readline
-  
-  version: 4.1-r4
-  
-  category: sys-libs
-  id: 0
-  name: libseccomp
-  
-  version: ""
-  
-  category: sec-policy
-  id: 0
-  name: selinux-chronyd
-  
-  version: ""
-  
-  category: sys-libs
-  id: 0
-  name: libcap
-  
-  version: ""
-  
   category: dev-libs
   id: 0
   name: libedit
-  
+  version: ""
+  category: sys-libs
+  id: 0
+  name: readline
+  version: 4.1-r4
+  category: sys-libs
+  id: 0
+  name: libseccomp
+  version: ""
+  category: sec-policy
+  id: 0
+  name: selinux-chronyd
+  version: ""
+  category: sys-libs
+  id: 0
+  name: libcap
   version: ""
 use_flags:
 - +adns
-- caps
+- +caps
 - +cmdmon
 - html
 - ipv6
@@ -47,6 +37,6 @@ use_flags:
 - pps
 - readline
 - +refclock
-- "+rtc\n\tseccomp"
+- "+rtc\n\t+seccomp"
 - selinux
 version: "9999"

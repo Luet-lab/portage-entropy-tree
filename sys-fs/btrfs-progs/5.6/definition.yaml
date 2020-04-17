@@ -1,0 +1,42 @@
+category: sys-fs
+conflicts: []
+description: Btrfs filesystem utilities
+id: 0
+license: GPL-2
+name: btrfs-progs
+requires:
+  category: sys-libs
+  id: 0
+  name: e2fsprogs-libs
+  version: ""
+  category: sys-fs
+  id: 0
+  name: reiserfsprogs
+  version: 3.6.27
+  category: app-arch
+  id: 0
+  name: zstd
+  version: ""
+  category: dev-libs
+  id: 0
+  name: lzo
+  version: ""
+  category: sys-libs
+  id: 0
+  name: zlib
+  version: ""
+  category: sys-fs
+  id: 0
+  name: e2fsprogs
+  version: ""
+uri:
+- https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v5.6.tar.xz
+use_flags:
+- +convert
+- doc
+- python
+- reiserfs
+- static
+- static-libs
+- +zstd
+version: "5.6"

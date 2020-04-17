@@ -1,0 +1,173 @@
+category: net-analyzer
+conflicts: []
+description: A network protocol analyzer formerly known as ethereal
+id: 0
+license: GPL-2
+name: wireshark
+requires:
+  category: net-dns
+  id: 0
+  name: c-ares
+  version: "1.5"
+  category: virtual
+  id: 0
+  name: krb5
+  version: ""
+  category: dev-qt
+  id: 0
+  name: qtcore
+  version: ""
+  category: x11-misc
+  id: 0
+  name: xdg-utils
+  version: ""
+  category: media-libs
+  id: 0
+  name: sbc
+  version: ""
+  category: net-libs
+  id: 0
+  name: libsmi
+  version: ""
+  category: virtual
+  id: 0
+  name: freedesktop-icon-theme
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libgcrypt
+  version: ""
+  category: dev-lang
+  id: 0
+  name: lua
+  version: "5.1"
+  category: net-libs
+  id: 0
+  name: libpcap
+  version: ""
+  category: sec-policy
+  id: 0
+  name: selinux-wireshark
+  version: ""
+  category: app-arch
+  id: 0
+  name: brotli
+  version: ""
+  category: sys-libs
+  id: 0
+  name: libcap
+  version: ""
+  category: sys-apps
+  id: 0
+  name: systemd
+  version: ""
+  category: sys-libs
+  id: 0
+  name: zlib
+  version: ""
+  category: app-arch
+  id: 0
+  name: zstd
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libxml2
+  version: ""
+  category: app-arch
+  id: 0
+  name: lz4
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libmaxminddb
+  version: ""
+  category: dev-qt
+  id: 0
+  name: qtgui
+  version: ""
+  category: dev-qt
+  id: 0
+  name: qtwidgets
+  version: ""
+  category: media-libs
+  id: 0
+  name: spandsp
+  version: ""
+  category: dev-libs
+  id: 0
+  name: glib
+  version: "2.32"
+  category: net-libs
+  id: 0
+  name: libssh
+  version: "0.6"
+  category: net-libs
+  id: 0
+  name: nghttp2
+  version: ""
+  category: dev-qt
+  id: 0
+  name: qtprintsupport
+  version: ""
+  category: app-arch
+  id: 0
+  name: snappy
+  version: ""
+  category: media-libs
+  id: 0
+  name: bcg729
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libnl
+  version: ""
+  category: dev-qt
+  id: 0
+  name: qtmultimedia
+  version: ""
+  category: net-libs
+  id: 0
+  name: gnutls
+  version: ""
+uri:
+- https://www.wireshark.org/download/src/all-versions/wireshark-3.2.3.tar.xz
+use_flags:
+- androiddump
+- bcg729
+- brotli
+- +capinfos
+- +captype
+- ciscodump
+- +dftest
+- doc
+- "dpauxmon\n\t+dumpcap"
+- +editcap
+- http2
+- kerberos
+- libxml2
+- lua
+- lz4
+- maxminddb
+- "+mergecap\n\t+minizip"
+- +netlink
+- +plugins
+- plugin-ifdemo
+- +pcap
+- +qt5
+- +randpkt
+- "+randpktdump\n\t+reordercap"
+- sbc
+- selinux
+- +sharkd
+- smi
+- snappy
+- spandsp
+- sshdump
+- ssl
+- "sdjournal\n\t+text2pcap"
+- tfshark
+- +tshark
+- +udpdump
+- zlib
+- +zstd
+version: 3.2.3

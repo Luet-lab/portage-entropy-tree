@@ -1,0 +1,21 @@
+category: sys-libs
+conflicts: []
+description: Portable and efficient API to determine the call-chain of a program
+id: 0
+license: MIT
+name: libunwind
+requires:
+  category: app-arch
+  id: 0
+  name: xz-utils[static-libs?,]
+  version: ""
+uri:
+- mirror://nongnu/libunwind/libunwind-1.4.0.tar.gz
+use_flags:
+- debug
+- debug-frame
+- doc
+- libatomic
+- lzma
+- +static-libs
+version: 1.4.0

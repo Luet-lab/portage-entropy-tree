@@ -1,0 +1,95 @@
+category: net-misc
+conflicts: []
+description: Dropbox daemon (pretends to be GUI-less)
+id: 0
+license: BSD-2 CC-BY-ND-3.0 FTL MIT LGPL-2 openssl dropbox
+name: dropbox
+requires:
+  category: sec-policy
+  id: 0
+  name: selinux-dropbox
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libffi-compat
+  version: ""
+  category: net-misc
+  id: 0
+  name: wget
+  version: ""
+  category: dev-libs
+  id: 0
+  name: glib
+  version: ""
+  category: x11-libs
+  id: 0
+  name: libXxf86vm
+  version: ""
+  category: x11-themes
+  id: 0
+  name: hicolor-icon-theme
+  version: ""
+  category: app-arch
+  id: 0
+  name: bzip2
+  version: ""
+  category: virtual
+  id: 0
+  name: jpeg
+  version: ""
+  category: x11-libs
+  id: 0
+  name: libXinerama
+  version: ""
+  category: x11-misc
+  id: 0
+  name: wmctrl
+  version: ""
+  category: sys-devel
+  id: 0
+  name: gcc
+  version: 4.2.0
+  category: sys-libs
+  id: 0
+  name: ncurses-compat
+  version: ""
+  category: x11-libs
+  id: 0
+  name: libSM
+  version: ""
+  category: x11-libs
+  id: 0
+  name: pango[X]
+  version: ""
+  category: dev-libs
+  id: 0
+  name: popt
+  version: ""
+  category: net-libs
+  id: 0
+  name: librsync
+  version: "2"
+  category: sys-libs
+  id: 0
+  name: zlib
+  version: ""
+  category: media-libs
+  id: 0
+  name: fontconfig
+  version: ""
+  category: media-libs
+  id: 0
+  name: freetype
+  version: ""
+  category: x11-libs
+  id: 0
+  name: libX11
+  version: ""
+uri:
+- 'https://clientupdates.dropboxstatic.com/dbx-releng/client/dropbox-lnx.x86_64-94.4.384.tar.gz '
+- 'https://clientupdates.dropboxstatic.com/dbx-releng/client/dropbox-lnx.x86-94.4.384.tar.gz '
+use_flags:
+- +librsync-bundled
+- selinux
+- X
+version: 94.4.384

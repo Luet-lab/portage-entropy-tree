@@ -1,118 +1,82 @@
 category: sys-apps
 conflicts:
-  
-  category: sys-apps
-  id: 0
-  name: sysvinit
-  
-  version: ""
-  
-  category: <app-shells
-  id: 0
-  name: gentoo-bashcomp
-  
-  version: "20180302"
-  
-  category: <sys-apps
-  id: 0
-  name: baselayout
-  
-  version: 2.1-r1
-  
-  category: <sys-process
-  id: 0
-  name: procps
-  
-  version: 3.3.9-r2
-  
-  category: <sys-fs
-  id: 0
-  name: udev-init-scripts
-  
-  version: "27"
-  
   category: <app-shells
   id: 0
   name: gentoo-zsh-completions
-  
   version: "20180228"
+  category: <sys-apps
+  id: 0
+  name: baselayout
+  version: 2.1-r1
+  category: <app-shells
+  id: 0
+  name: gentoo-bashcomp
+  version: "20180302"
+  category: sys-apps
+  id: 0
+  name: sysvinit
+  version: ""
+  category: <sys-process
+  id: 0
+  name: procps
+  version: 3.3.9-r2
+  category: <sys-fs
+  id: 0
+  name: udev-init-scripts
+  version: "27"
 description: OpenRC manages the services, startup and shutdown of a host
 id: 0
 license: BSD-2
 name: openrc
 requires:
-  
-  category: virtual
-  id: 0
-  name: tmpfiles
-  
-  version: ""
-  
-  category: sys-libs
-  id: 0
-  name: libselinux
-  
-  version: "2.6"
-  
-  category: sec-policy
-  id: 0
-  name: selinux-base-policy
-  
-  version: 2.20170204-r4
-  
-  category: sys-libs
-  id: 0
-  name: ncurses
-  
-  version: ""
-  
-  category: sys-process
-  id: 0
-  name: audit
-  
-  version: ""
-  
-  category: sys-process
-  id: 0
-  name: psmisc
-  
-  version: ""
-  
-  category: sys-apps
-  id: 0
-  name: policycoreutils
-  
-  version: ""
-  
-  category: app-shells
-  id: 0
-  name: bash
-  
-  version: ""
-  
-  category: sys-apps
-  id: 0
-  name: sysvinit-2.86-r6[selinux?]
-  
-  version: ""
-  
-  category: sec-policy
-  id: 0
-  name: selinux-openrc
-  
-  version: 2.20170204-r4
-  
   category: sys-auth
   id: 0
   name: pambase
-  
   version: ""
-  
   category: sys-libs
   id: 0
   name: pam
-  
   version: ""
+  category: sys-process
+  id: 0
+  name: audit
+  version: ""
+  category: app-shells
+  id: 0
+  name: bash
+  version: ""
+  category: sys-apps
+  id: 0
+  name: sysvinit-2.86-r6[selinux?]
+  version: ""
+  category: sys-apps
+  id: 0
+  name: policycoreutils
+  version: ""
+  category: virtual
+  id: 0
+  name: tmpfiles
+  version: ""
+  category: sec-policy
+  id: 0
+  name: selinux-base-policy
+  version: 2.20170204-r4
+  category: sec-policy
+  id: 0
+  name: selinux-openrc
+  version: 2.20170204-r4
+  category: sys-libs
+  id: 0
+  name: ncurses
+  version: ""
+  category: sys-process
+  id: 0
+  name: psmisc
+  version: ""
+  category: sys-libs
+  id: 0
+  name: libselinux
+  version: "2.6"
 uri:
 - https://github.com/openrc/openrc/archive/0.42.1.tar.gz -> openrc-0.42.1.tar.gz
 use_flags:

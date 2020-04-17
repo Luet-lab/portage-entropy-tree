@@ -1,0 +1,58 @@
+category: net-misc
+conflicts: []
+description: NTP client and server programs
+id: 0
+license: GPL-2
+name: chrony
+requires:
+  category: sec-policy
+  id: 0
+  name: selinux-chronyd
+  version: ""
+  category: acct-group
+  id: 0
+  name: ntp
+  version: ""
+  category: acct-user
+  id: 0
+  name: ntp
+  version: ""
+  category: sys-libs
+  id: 0
+  name: libcap
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libedit
+  version: ""
+  category: dev-libs
+  id: 0
+  name: nettle
+  version: ""
+  category: sys-libs
+  id: 0
+  name: readline
+  version: 4.1-r4
+  category: sys-libs
+  id: 0
+  name: libseccomp
+  version: ""
+uri:
+- https://download.tuxfamily.org/chrony/chrony-4.0.tar.gz
+use_flags:
+- +adns
+- +caps
+- +cmdmon
+- html
+- ipv6
+- libedit
+- +nettle
+- +ntp
+- +phc
+- pps
+- readline
+- +refclock
+- "+rtc\n\t+seccomp"
+- +sechash
+- selinux
+version: 4.0_pre1-r2

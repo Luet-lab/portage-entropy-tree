@@ -1,0 +1,31 @@
+category: dev-libs
+conflicts:
+  category: dev-libs
+  id: 0
+  name: libelf
+  version: ""
+description: Libraries/utilities to handle ELF objects (drop in replacement for libelf)
+id: 0
+license: '|| ( GPL-2+ LGPL-3+ ) utils? ( GPL-3+ )'
+name: elfutils
+requires:
+  category: app-arch
+  id: 0
+  name: bzip2-1.0.6-r4[static-libs?,]
+  version: ""
+  category: app-arch
+  id: 0
+  name: xz-utils-5.0.5-r1[static-libs?,]
+  version: ""
+uri:
+- https://sourceware.org/elfutils/ftp/0.179/elfutils-0.179.tar.bz2
+use_flags:
+- bzip2
+- lzma
+- nls
+- static-libs
+- test
+- +threads
+- +utils
+- valgrind
+version: "0.179"

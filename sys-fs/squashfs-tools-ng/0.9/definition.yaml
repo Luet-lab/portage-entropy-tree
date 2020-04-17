@@ -1,0 +1,41 @@
+category: sys-fs
+conflicts: []
+description: A new set of tools for working with SquashFS images
+id: 0
+license: LGPL-3+ tools? ( GPL-3+ )
+name: squashfs-tools-ng
+requires:
+  category: sys-libs
+  id: 0
+  name: zlib
+  version: ""
+  category: app-arch
+  id: 0
+  name: lz4
+  version: ""
+  category: dev-libs
+  id: 0
+  name: lzo
+  version: ""
+  category: app-arch
+  id: 0
+  name: xz-utils
+  version: ""
+  category: sys-libs
+  id: 0
+  name: libselinux
+  version: ""
+  category: app-arch
+  id: 0
+  name: zstd
+  version: ""
+uri:
+- https://infraroot.at/pub/squashfs/squashfs-tools-ng-0.9.tar.xz
+use_flags:
+- lz4
+- lzo
+- selinux
+- +tools
+- +xz
+- zstd
+version: "0.9"

@@ -1,0 +1,44 @@
+category: sci-libs
+conflicts: []
+description: Library for dense linear algebra over word-size finite fields
+id: 0
+license: LGPL-2.1+
+name: fflas-ffpack
+requires:
+  category: virtual
+  id: 0
+  name: cblas
+  version: ""
+  category: virtual
+  id: 0
+  name: blas
+  version: ""
+  category: virtual
+  id: 0
+  name: lapack
+  version: ""
+  category: dev-libs
+  id: 0
+  name: gmp
+  version: ""
+  category: sci-libs
+  id: 0
+  name: givaro
+  version: "4.1"
+uri:
+- https://github.com/linbox-team/fflas-ffpack/releases/download/2.4.3/fflas-ffpack-2.4.3.tar.gz
+use_flags:
+- static-libs
+- openmp
+- cpu_flags_x86_fma3
+- cpu_flags_x86_fma4
+- cpu_flags_x86_sse3
+- cpu_flags_x86_ssse3
+- cpu_flags_x86_sse4_1
+- cpu_flags_x86_sse4_2
+- cpu_flags_x86_avx
+- cpu_flags_x86_avx2
+- cpu_flags_x86_avx512f
+- cpu_flags_x86_avx512dq
+- cpu_flags_x86_avx512vl
+version: 2.4.3

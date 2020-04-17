@@ -1,0 +1,40 @@
+category: app-backup
+conflicts:
+  category: '!app-office'
+  id: 0
+  name: borg
+  version: ""
+description: Deduplicating backup program with compression and authenticated encryption
+id: 0
+license: BSD
+name: borgbackup
+requires:
+  category: app-arch
+  id: 0
+  name: lz4
+  version: ""
+  category: virtual
+  id: 0
+  name: acl
+  version: ""
+  category: dev-python
+  id: 0
+  name: llfuse
+  version: ""
+  category: dev-python
+  id: 0
+  name: pyzmq
+  version: ""
+  category: dev-libs
+  id: 0
+  name: openssl
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libressl
+  version: ""
+uri:
+- mirror://pypi/b/borgbackup/borgbackup-1.1.11.tar.gz
+use_flags:
+- libressl
+version: 1.1.11-r2

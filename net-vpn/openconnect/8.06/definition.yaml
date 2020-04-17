@@ -1,0 +1,69 @@
+category: net-vpn
+conflicts: []
+description: Free client for Cisco AnyConnect SSL VPN software
+id: 0
+license: LGPL-2.1 GPL-2
+name: openconnect
+requires:
+  category: virtual
+  id: 0
+  name: krb5
+  version: ""
+  category: net-libs
+  id: 0
+  name: libproxy
+  version: ""
+  category: sys-apps
+  id: 0
+  name: pcsc-lite
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libxml2
+  version: ""
+  category: sys-libs
+  id: 0
+  name: zlib
+  version: ""
+  category: app-crypt
+  id: 0
+  name: trousers
+  version: ""
+  category: app-misc
+  id: 0
+  name: ca-certificates
+  version: ""
+  category: dev-libs
+  id: 0
+  name: nettle
+  version: ""
+  category: app-arch
+  id: 0
+  name: lz4
+  version: ""
+  category: virtual
+  id: 0
+  name: libintl
+  version: ""
+  category: app-crypt
+  id: 0
+  name: stoken
+  version: ""
+  category: sys-apps
+  id: 0
+  name: iproute2
+  version: ""
+uri:
+- ftp://ftp.infradead.org/pub/openconnect/openconnect-8.06.tar.gz
+- ftp://ftp.infradead.org/pub/vpnc-scripts/vpnc-scripts-20200226.tar.gz
+use_flags:
+- doc
+- +gnutls
+- gssapi
+- libproxy
+- lz4
+- nls
+- smartcard
+- static-libs
+- stoken
+version: "8.06"

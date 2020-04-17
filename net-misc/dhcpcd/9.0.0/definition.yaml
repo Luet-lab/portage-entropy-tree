@@ -1,0 +1,30 @@
+category: net-misc
+conflicts: []
+description: A fully featured, yet light weight RFC2131 compliant DHCP client
+id: 0
+license: BSD-2
+name: dhcpcd
+requires:
+  category: virtual
+  id: 0
+  name: udev
+  version: ""
+  category: acct-group
+  id: 0
+  name: dhcpcd
+  version: ""
+  category: acct-user
+  id: 0
+  name: dhcpcd
+  version: ""
+uri:
+- https://roy.marples.name/downloads/dhcpcd/dhcpcd-9.0.0.tar.xz
+use_flags:
+- debug
+- elibc_glibc
+- +embedded
+- ipv6
+- kernel_linux
+- +privsep
+- +udev
+version: 9.0.0

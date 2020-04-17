@@ -1,0 +1,33 @@
+category: dev-util
+conflicts: []
+description: Intel's implementation of the OpenCL standard
+id: 0
+license: Intel-SDP
+name: intel-ocl-sdk
+requires:
+  category: virtual
+  id: 0
+  name: opencl
+  version: "3"
+  category: sys-process
+  id: 0
+  name: numactl
+  version: ""
+  category: dev-cpp
+  id: 0
+  name: tbb
+  version: 4.2.20131118
+  category: sys-devel
+  id: 0
+  name: clang
+  version: "3.4"
+  category: dev-libs
+  id: 0
+  name: boost
+  version: 1.52.0
+use_flags:
+- android
+- +system-tbb
+- system-clang
+- +system-boost
+version: 4.4.0.117-r2

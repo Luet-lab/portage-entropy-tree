@@ -1,0 +1,81 @@
+category: sys-cluster
+conflicts:
+  category: sys-cluster
+  id: 0
+  name: mpich
+  version: ""
+  category: sys-cluster
+  id: 0
+  name: mpich2
+  version: ""
+  category: sys-cluster
+  id: 0
+mpi
+  version: ""
+description: A high-performance message passing library (MPI)
+id: 0
+license: BSD
+name: openmpi
+requires:
+  category: dev-libs
+  id: 0
+  name: libltdl
+  version: ""
+  category: sys-apps
+  id: 0
+  name: hwloc
+  version: 2.0.2
+  category: virtual
+  id: 0
+  name: jre
+  version: "1.6"
+  category: dev-libs
+  id: 0
+  name: libevent
+  version: 2.0.22
+  category: sys-libs
+  id: 0
+  name: zlib
+  version: 1.2.8-r1
+  category: sys-fabric
+  id: 0
+  name: ofed
+  version: ""
+  category: sys-cluster
+  id: 0
+  name: knem
+  version: ""
+  category: sys-cluster
+  id: 0
+  name: slurm
+  version: ""
+  category: dev-util
+  id: 0
+  name: nvidia-cuda-toolkit
+  version: 6.5.19-r1
+  category: sys-fabric
+  id: 0
+  name: infinipath-psm
+  version: ""
+  category: sys-cluster
+  id: 0
+  name: torque
+  version: ""
+  category: sys-fabric
+  id: 0
+  name: librdmacm
+  version: ""
+uri:
+- http://www.open-mpi.org/software/ompi/v/downloads/openmpi-4.0.3.tar.bz2
+use_flags:
+- cma
+- cuda
+- cxx
+- fortran
+- heterogeneous
+- ipv6
+- java
+- "romio\n\t\n\topenmpi_fabrics_ofed\n\topenmpi_fabrics_knem\n\topenmpi_fabrics_psm"
+- "\n\topenmpi_rm_pbs\n\topenmpi_rm_slurm"
+- "\n\topenmpi_ofed_features_control-hdr-padding\n\topenmpi_ofed_features_udcm\n\topenmpi_ofed_features_rdmacm\n\topenmpi_ofed_features_dynamic-sl"
+version: 4.0.3

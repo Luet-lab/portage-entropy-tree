@@ -1,0 +1,34 @@
+category: net-libs
+conflicts: []
+description: Data Acquisition library, for packet I/O
+id: 0
+license: GPL-2
+name: daq
+requires:
+  category: net-libs
+  id: 0
+  name: libpcap
+  version: 1.0.0
+  category: net-firewall
+  id: 0
+  name: iptables
+  version: 1.4.10
+  category: dev-libs
+  id: 0
+  name: libdnet
+  version: ""
+  category: net-libs
+  id: 0
+  name: libnetfilter_queue
+  version: ""
+uri:
+- https://www.snort.org/downloads/snort/daq-2.0.7.tar.gz
+use_flags:
+- ipv6
+- +afpacket
+- +dump
+- +pcap
+- nfq
+- ipq
+- static-libs
+version: 2.0.7

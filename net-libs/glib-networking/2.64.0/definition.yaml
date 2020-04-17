@@ -1,0 +1,33 @@
+category: net-libs
+conflicts: []
+description: Network-related giomodules for glib
+id: 0
+license: LGPL-2.1+
+name: glib-networking
+requires:
+  category: gnome-base
+  id: 0
+  name: gsettings-desktop-schemas
+  version: ""
+  category: dev-libs
+  id: 0
+  name: glib
+  version: 2.64.0
+  category: net-libs
+  id: 0
+  name: libproxy
+  version: 0.4.11-r1
+  category: net-libs
+  id: 0
+  name: gnutls
+  version: 3.6.5
+  category: app-misc
+  id: 0
+  name: ca-certificates
+  version: ""
+use_flags:
+- +gnome
+- +libproxy
+- +ssl
+- test
+version: 2.64.0

@@ -1,0 +1,35 @@
+category: sys-fs
+conflicts:
+  category: <sys-fs
+  id: 0
+  name: xfsdump
+  version: "3"
+description: xfs filesystem utilities
+id: 0
+license: LGPL-2.1
+name: xfsprogs
+requires:
+  category: sys-apps
+  id: 0
+  name: util-linux
+  version: 2.17.2
+  category: dev-libs
+  id: 0
+  name: icu
+  version: ""
+  category: sys-libs
+  id: 0
+  name: readline
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libedit
+  version: ""
+uri:
+- https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-5.6.0.tar.xz
+use_flags:
+- icu
+- libedit
+- nls
+- readline
+version: 5.6.0

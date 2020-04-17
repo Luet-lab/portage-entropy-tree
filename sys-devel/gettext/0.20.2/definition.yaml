@@ -1,0 +1,62 @@
+category: sys-devel
+conflicts: []
+description: GNU locale utilities
+id: 0
+license: GPL-3+ cxx? ( LGPL-2.1+ )
+name: gettext
+requires:
+  category: dev-libs
+  id: 0
+  name: libxml2
+  version: 2.9.3
+  category: dev-vcs
+  id: 0
+  name: cvs
+  version: ""
+  category: virtual
+  id: 0
+  name: libiconv
+  version: 0-r1
+  category: virtual
+  id: 0
+  name: libintl
+  version: 0-r2
+  category: sys-libs
+  id: 0
+  name: ncurses
+  version: ""
+  category: virtual
+  id: 0
+  name: jdk
+  version: "1.4"
+  category: dev-vcs
+  id: 0
+  name: git
+  version: ""
+  category: virtual
+  id: 0
+  name: jre
+  version: "1.4"
+  category: dev-libs
+  id: 0
+  name: expat
+  version: ""
+  category: virtual
+  id: 0
+  name: acl
+  version: ""
+uri:
+- mirror://gnu/gettext/gettext-0.20.2.tar.gz
+use_flags:
+- acl
+- -cvs
+- +cxx
+- doc
+- emacs
+- git
+- java
+- ncurses
+- nls
+- openmp
+- static-libs
+version: 0.20.2

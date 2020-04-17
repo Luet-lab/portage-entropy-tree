@@ -1,0 +1,22 @@
+category: sys-cluster
+conflicts: []
+description: Application containers for Linux
+id: 0
+license: BSD
+name: singularity
+requires:
+  category: sys-libs
+  id: 0
+  name: libseccomp
+  version: ""
+  category: sys-fs
+  id: 0
+  name: squashfs-tools
+  version: ""
+uri:
+- https://github.com/sylabs/singularity/releases/download/v3.5.3/singularity-3.5.3.tar.gz
+use_flags:
+- examples
+- +network
+- +suid
+version: 3.5.3

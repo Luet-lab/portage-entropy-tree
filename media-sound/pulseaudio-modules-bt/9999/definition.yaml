@@ -6,54 +6,42 @@ id: 0
 license: GPL-3
 name: pulseaudio-modules-bt
 requires:
-  
-  category: net-misc
-  id: 0
-  name: ofono
-  
-  version: "1.13"
-  
-  category: media-sound
-  id: 0
-  name: pulseaudio
-  
-  version: "13"
-  
-  category: media-libs
-  id: 0
-  name: fdk-aac
-  
-  version: ""
-  
-  category: virtual
-  id: 0
-  name: ffmpeg
-  
-  version: ""
-  
-  category: media-libs
-  id: 0
-  name: sbc
-  
-  version: ""
-  
-  category: media-libs
-  id: 0
-  name: libldac
-  
-  version: ""
-  
   category: net-wireless
   id: 0
   name: bluez
-  
   version: "5"
-  
   category: sys-apps
   id: 0
   name: dbus
-  
   version: 1.0.0
+  category: net-misc
+  id: 0
+  name: ofono
+  version: "1.13"
+  category: media-sound
+  id: 0
+  name: pulseaudio
+  version: "13"
+  category: media-libs
+  id: 0
+  name: fdk-aac
+  version: ""
+  category: virtual
+  id: 0
+  name: ffmpeg
+  version: ""
+  category: media-libs
+  id: 0
+  name: sbc
+  version: ""
+  category: media-libs
+  id: 0
+  name: libldac
+  version: ""
 use_flags:
-- ""
+- fdk
+- +ffmpeg
+- +ldac
+- +native-headset
+- ofono-headset
 version: "9999"

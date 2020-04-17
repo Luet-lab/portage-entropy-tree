@@ -1,0 +1,32 @@
+category: dev-lang
+conflicts: []
+description: SpiderMonkey is Mozilla's JavaScript engine written in C and C++
+id: 0
+license: MPL-2.0
+name: spidermonkey
+requires:
+  category: dev-libs
+  id: 0
+  name: nspr
+  version: "4.21"
+  category: sys-libs
+  id: 0
+  name: readline
+  version: ""
+  category: sys-libs
+  id: 0
+  name: zlib
+  version: 1.2.3
+  category: dev-libs
+  id: 0
+  name: icu
+  version: "63.1"
+uri:
+- https://archive.mozilla.org/pub/firefox/releases/68.7.0esr/source/firefox-68.7.0esr.source.tar.xz
+- https://dev.gentoo.org/~{anarchy,whissi,polynomial-c,axs}/mozilla/patchsets/firefox-68.0-patches-12.tar.xz
+  https://dev.gentoo.org/~{whissi,polynomial-c,axs}/mozilla/patchsets/spidermonkey-68.6.0-patches-03.tar.xz
+use_flags:
+- debug
+- +jit
+- test
+version: 68.7.0

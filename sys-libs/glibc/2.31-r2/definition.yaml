@@ -1,0 +1,65 @@
+category: sys-libs
+conflicts:
+  category: sys-libs
+  id: 0
+  name: timezone-data
+  version: ""
+description: GNU libc C library
+id: 0
+license: LGPL-2.1+ BSD HPND ISC inner-net rc PCRE
+name: glibc
+requires:
+  category: media-libs
+  id: 0
+  name: gd
+  version: ""
+  category: sys-process
+  id: 0
+  name: audit
+  version: ""
+  category: sys-libs
+  id: 0
+  name: libcap
+  version: ""
+  category: sys-libs
+  id: 0
+  name: libselinux
+  version: ""
+  category: dev-util
+  id: 0
+  name: systemtap
+  version: ""
+  category: sys-apps
+  id: 0
+  name: gentoo-functions
+  version: ""
+  category: net-dns
+  id: 0
+  name: libidn2
+  version: 2.3.0
+uri:
+- 'mirror://gnu/glibc/glibc-2.31.tar.xz https://dev.gentoo.org/~dilfridge/distfiles/glibc-2.31-patches-4.tar.xz
+  multilib? ( https://dev.gentoo.org/~dilfridge/distfiles/gcc-multilib-bootstrap-20180511.tar.xz '
+use_flags:
+- audit
+- caps
+- cet
+- compile-locales
+- +crypt
+- custom-cflags
+- doc
+- gd
+- headers-only
+- +multiarch
+- multilib
+- nscd
+- profile
+- selinux
+- +ssp
+- +static-libs
+- static-pie
+- suid
+- systemtap
+- test
+- vanilla
+version: 2.31-r2

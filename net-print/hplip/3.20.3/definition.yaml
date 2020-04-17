@@ -1,0 +1,77 @@
+category: net-print
+conflicts: []
+description: HP Linux Imaging and Printing - Print, scan, fax drivers and service
+  tools
+id: 0
+license: GPL-2
+name: hplip
+requires:
+  category: net-print
+  id: 0
+  name: cups-filters
+  version: ""
+  category: sys-apps
+  id: 0
+  name: dbus
+  version: ""
+  category: dev-libs
+  id: 0
+  name: openssl
+  version: ""
+  category: net-analyzer
+  id: 0
+  name: net-snmp
+  version: ""
+  category: virtual
+  id: 0
+  name: udev
+  version: ""
+  category: net-print
+  id: 0
+  name: cups
+  version: ""
+  category: virtual
+  id: 0
+  name: jpeg
+  version: ""
+  category: virtual
+  id: 0
+  name: libusb
+  version: ""
+  category: media-gfx
+  id: 0
+  name: sane-backends
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libressl
+  version: ""
+  category: app-text
+  id: 0
+  name: ghostscript-gpl
+  version: ""
+  category: sys-auth
+  id: 0
+  name: polkit
+  version: ""
+uri:
+- mirror://sourceforge/hplip/hplip-3.20.3.tar.gz
+- https://dev.gentoo.org/~billie/distfiles/hplip-3.18.12-patches-1.tar.xz
+use_flags:
+- doc
+- fax
+- +hpcups
+- hpijs
+- kde
+- libnotify
+- libressl
+- -libusb0
+- minimal
+- parport
+- policykit
+- qt5
+- scanner
+- +snmp
+- static-ppds
+- X
+version: 3.20.3

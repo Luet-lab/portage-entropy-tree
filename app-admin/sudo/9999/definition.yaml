@@ -5,101 +5,69 @@ id: 0
 license: ISC BSD
 name: sudo
 requires:
-  
-  category: sys-libs
-  id: 0
-  name: pam
-  
-  version: ""
-  
-  category: sys-auth
-  id: 0
-  name: sssd
-  
-  version: ""
-  
-  category: virtual
-  id: 0
-  name: editor
-  
-  version: ""
-  
-  category: sys-auth
-  id: 0
-  name: pambase
-  
-  version: ""
-  
-  category: net-nds
-  id: 0
-  name: openldap
-  
-  version: ""
-  
-  category: sys-libs
-  id: 0
-  name: zlib
-  
-  version: ""
-  
-  category: dev-libs
-  id: 0
-  name: libgcrypt
-  
-  version: ""
-  
   category: dev-libs
   id: 0
   name: openssl
-  
   version: ""
-  
+  category: sys-auth
+  id: 0
+  name: sssd
+  version: ""
   category: sec-policy
   id: 0
   name: selinux-sudo
-  
   version: ""
-  
-  category: net-nds
-  id: 0
-  name: openldap
-  
-  version: 2.1.30-r1
-  
   category: dev-libs
   id: 0
   name: cyrus-sasl
-  
   version: ""
-  
-  category: sys-auth
+  category: virtual
   id: 0
-  name: skey
-  
-  version: 1.1.5-r1
-  
-  category: dev-libs
-  id: 0
-  name: libressl
-  
+  name: editor
   version: ""
-  
-  category: app-misc
-  id: 0
-  name: editor-wrapper
-  
-  version: "3"
-  
-  category: dev-lang
-  id: 0
-  name: perl
-  
-  version: ""
-  
   category: virtual
   id: 0
   name: mta
-  
+  version: ""
+  category: sys-libs
+  id: 0
+  name: zlib
+  version: ""
+  category: net-nds
+  id: 0
+  name: openldap
+  version: 2.1.30-r1
+  category: net-nds
+  id: 0
+  name: openldap
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libressl
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libgcrypt
+  version: ""
+  category: sys-libs
+  id: 0
+  name: pam
+  version: ""
+  category: sys-auth
+  id: 0
+  name: skey
+  version: 1.1.5-r1
+  category: app-misc
+  id: 0
+  name: editor-wrapper
+  version: "3"
+  category: dev-lang
+  id: 0
+  name: perl
+  version: ""
+  category: sys-auth
+  id: 0
+  name: pambase
   version: ""
 use_flags:
 - gcrypt
@@ -113,6 +81,6 @@ use_flags:
 - selinux
 - +sendmail
 - skey
+- ssl
 - sssd
-- system-digest
 version: "9999"

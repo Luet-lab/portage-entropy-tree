@@ -1,0 +1,28 @@
+category: sci-libs
+conflicts:
+  category: app-eselect
+  id: 0
+  name: eselect-cblas
+  version: ""
+description: Optimized BLAS library based on GotoBLAS2
+id: 0
+license: BSD
+name: openblas
+requires:
+  category: app-eselect
+  id: 0
+  name: eselect-blas
+  version: "0.2"
+  category: app-eselect
+  id: 0
+  name: eselect-lapack
+  version: "0.2"
+uri:
+- https://github.com/xianyi/OpenBLAS/tarball/v0.3.9 -> openblas-0.3.9.tar.gz
+use_flags:
+- dynamic
+- eselect-ldso
+- index-64bit
+- openmp
+- pthread
+version: 0.3.9

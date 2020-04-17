@@ -1,0 +1,38 @@
+category: net-misc
+conflicts: []
+description: High-performance, distributed memory object caching system
+id: 0
+license: BSD
+name: memcached
+requires:
+  category: dev-libs
+  id: 0
+  name: libevent
+  version: "1.4"
+  category: dev-lang
+  id: 0
+  name: perl
+  version: ""
+  category: dev-libs
+  id: 0
+  name: cyrus-sasl
+  version: ""
+  category: sys-libs
+  id: 0
+  name: libseccomp
+  version: ""
+  category: sec-policy
+  id: 0
+  name: selinux-memcached
+  version: ""
+uri:
+- https://www.memcached.org/files/memcached-1.6.5.tar.gz
+- https://www.memcached.org/files/old/memcached-1.6.5.tar.gz
+use_flags:
+- debug
+- sasl
+- seccomp
+- selinux
+- slabs-reassign
+- test
+version: 1.6.5

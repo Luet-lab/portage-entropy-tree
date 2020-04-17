@@ -1,0 +1,93 @@
+category: net-vpn
+conflicts: []
+description: Openconnect SSL VPN server
+id: 0
+license: GPL-2
+name: ocserv
+requires:
+  category: dev-libs
+  id: 0
+  name: pcl
+  version: ""
+  category: sys-libs
+  id: 0
+  name: talloc
+  version: ""
+  category: dev-libs
+  id: 0
+  name: geoip
+  version: ""
+  category: net-dialup
+  id: 0
+  name: freeradius-client
+  version: ""
+  category: sys-apps
+  id: 0
+  name: tcp-wrappers
+  version: ""
+  category: sys-apps
+  id: 0
+  name: systemd
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libev
+  version: ""
+  category: dev-libs
+  id: 0
+  name: protobuf-c
+  version: ""
+  category: net-libs
+  id: 0
+  name: http-parser
+  version: ""
+  category: sys-auth
+  id: 0
+  name: oath-toolkit
+  version: ""
+  category: sys-libs
+  id: 0
+  name: pam
+  version: ""
+  category: dev-libs
+  id: 0
+  name: nettle
+  version: "2.7"
+  category: sys-libs
+  id: 0
+  name: readline
+  version: ""
+  category: virtual
+  id: 0
+  name: krb5
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libnl
+  version: ""
+  category: net-libs
+  id: 0
+  name: gnutls
+  version: 3.3.0
+  category: app-arch
+  id: 0
+  name: lz4
+  version: ""
+  category: sys-libs
+  id: 0
+  name: libseccomp
+  version: ""
+uri:
+- ftp://ftp.infradead.org/pub/ocserv/ocserv-1.0.0.tar.xz
+use_flags:
+- geoip
+- kerberos
+- +lz4
+- otp
+- pam
+- radius
+- +seccomp
+- systemd
+- tcpd
+- test
+version: 1.0.0

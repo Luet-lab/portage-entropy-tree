@@ -1,0 +1,77 @@
+category: dev-lang
+conflicts: []
+description: Erlang programming language, runtime environment and libraries (OTP)
+id: 0
+license: Apache-2.0
+name: erlang
+requires:
+  category: sys-libs
+  id: 0
+  name: ncurses
+  version: ""
+  category: sys-libs
+  id: 0
+  name: zlib
+  version: ""
+  category: app-editors
+  id: 0
+  name: emacs
+  version: "23.1"
+  category: virtual
+  id: 0
+  name: jdk
+  version: "1.8"
+  category: dev-db
+  id: 0
+  name: unixODBC
+  version: ""
+  category: dev-libs
+  id: 0
+  name: openssl
+  version: 0.9.7d
+  category: acct-group
+  id: 0
+  name: epmd
+  version: ""
+  category: acct-user
+  id: 0
+  name: epmd
+  version: ""
+  category: x11-libs
+  id: 0
+  name: wxGTK
+  version: ""
+  category: sys-apps
+  id: 0
+  name: systemd
+  version: ""
+  category: dev-lang
+  id: 0
+  name: tk
+  version: ""
+  category: net-misc
+  id: 0
+  name: lksctp-tools
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libressl
+  version: ""
+uri:
+- https://github.com/erlang/otp/archive/OTP-22.3.2.tar.gz -> erlang-22.3.2.tar.gz
+- http://erlang.org/download/otp_doc_man_.tar.gz -> erlang_doc_man_.tar.gz
+- 'http://erlang.org/download/otp_doc_html_.tar.gz -> erlang_doc_html_.tar.gz '
+use_flags:
+- doc
+- emacs
+- +hipe
+- java
+- +kpoll
+- libressl
+- odbc
+- sctp
+- ssl
+- systemd
+- tk
+- wxwidgets
+version: 22.3.2
