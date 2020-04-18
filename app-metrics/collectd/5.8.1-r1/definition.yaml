@@ -9,69 +9,17 @@ id: 0
 license: MIT GPL-2 GPL-2+ GPL-3 GPL-3+
 name: collectd
 requires:
-  category: dev-libs
+  category: sys-libs
   id: 0
-  name: yajl
-  version: ""
-  category: dev-db
-  id: 0
-  name: libdbi
-  version: ""
-  category: net-libs
-  id: 0
-  name: libpcap
-  version: ""
-  category: dev-lang
-  id: 0
-  name: lua
-  version: ""
-  category: dev-libs
-  id: 0
-  name: glib
-  version: ""
-  category: net-nds
-  id: 0
-  name: openldap
-  version: ""
-  category: net-misc
-  id: 0
-  name: tokyotyrant
-  version: ""
-  category: dev-libs
-  id: 0
-  name: librdkafka
-  version: 0.9.0.99
-  category: dev-libs
-  id: 0
-  name: mongo-c-driver
-  version: 1.8.2
+  name: openipmi
+  version: 2.0.16-r1
   category: virtual
   id: 0
   name: jre
   version: "1.6"
-  category: net-misc
+  category: virtual
   id: 0
-  name: curl
-  version: ""
-  category: net-firewall
-  id: 0
-  name: iptables
-  version: 1.4.13
-  category: net-libs
-  id: 0
-  name: liboping
-  version: ""
-  category: dev-libs
-  id: 0
-  name: hiredis
-  version: ""
-  category: www-servers
-  id: 0
-  name: varnish
-  version: ""
-  category: net-libs
-  id: 0
-  name: rabbitmq-c
+  name: logger
   version: ""
   category: sys-fs
   id: 0
@@ -81,57 +29,89 @@ requires:
   id: 0
   name: mosquitto
   version: ""
-  category: app-emulation
-  id: 0
-  name: xen-tools
-  version: ""
-  category: virtual
-  id: 0
-  name: logger
-  version: ""
-  category: sci-libs
-  id: 0
-  name: libsigrok
-  version: "0.4"
-  category: dev-libs
-  id: 0
-  name: libatasmart
-  version: ""
-  category: sec-policy
-  id: 0
-  name: selinux-collectd
-  version: ""
-  category: dev-libs
-  id: 0
-  name: libltdl
-  version: ""
-  category: sys-fs
-  id: 0
-  name: xfsprogs
-  version: ""
-  category: sys-cluster
-  id: 0
-  name: ganglia
-  version: ""
-  category: sci-geosciences
-  id: 0
-  name: gpsd
-  version: ""
   category: net-libs
   id: 0
-  name: librouteros
+  name: libesmtp
+  version: ""
+  category: net-analyzer
+  id: 0
+  name: rrdtool
   version: ""
   category: sys-libs
   id: 0
   name: libstatgrab
   version: ""
+  category: sys-fs
+  id: 0
+  name: xfsprogs
+  version: ""
   category: dev-libs
   id: 0
-  name: libgcrypt
+  name: libxml2
+  version: ""
+  category: dev-libs
+  id: 0
+  name: yajl
+  version: ""
+  category: dev-db
+  id: 0
+  name: postgresql
+  version: ""
+  category: dev-libs
+  id: 0
+  name: hiredis
+  version: ""
+  category: dev-libs
+  id: 0
+  name: protobuf-c
+  version: 1.2.1-r1
+  category: sci-geosciences
+  id: 0
+  name: gpsd
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libmemcached
+  version: ""
+  category: sys-power
+  id: 0
+  name: nut
+  version: 2.7.2-r2
+  category: app-emulation
+  id: 0
+  name: xen-tools
+  version: ""
+  category: dev-db
+  id: 0
+  name: mysql-connector-c
+  version: ""
+  category: sys-fs
+  id: 0
+  name: owfs
+  version: "3.1"
+  category: dev-libs
+  id: 0
+  name: glib
   version: ""
   category: net-libs
   id: 0
-  name: libesmtp
+  name: liboping
+  version: ""
+  category: net-libs
+  id: 0
+  name: librouteros
+  version: ""
+  category: sci-libs
+  id: 0
+  name: libsigrok
+  version: "0.4"
+  category: net-firewall
+  id: 0
+  name: iptables
+  version: 1.4.13
+  category: x11-libs
+  id: 0
+  name: libnotify
   version: ""
   category: dev-db
   id: 0
@@ -139,15 +119,47 @@ requires:
   version: ""
   category: dev-db
   id: 0
-  name: postgresql
-  version: ""
-  category: net-libs
-  id: 0
-  name: libmicrohttpd
+  name: libdbi
   version: ""
   category: net-analyzer
   id: 0
   name: net-snmp
+  version: ""
+  category: net-misc
+  id: 0
+  name: tokyotyrant
+  version: ""
+  category: dev-libs
+  id: 0
+  name: mongo-c-driver
+  version: 1.8.2
+  category: sec-policy
+  id: 0
+  name: selinux-collectd
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libgcrypt
+  version: ""
+  category: dev-lang
+  id: 0
+  name: perl
+  version: ""
+  category: net-libs
+  id: 0
+  name: rabbitmq-c
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libmodbus
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libatasmart
+  version: ""
+  category: www-servers
+  id: 0
+  name: varnish
   version: ""
   category: app-emulation
   id: 0
@@ -155,60 +167,48 @@ requires:
   version: ""
   category: dev-libs
   id: 0
-  name: protobuf-c
-  version: 1.2.1-r1
+  name: librdkafka
+  version: 0.9.0.99
+  category: virtual
+  id: 0
+  name: udev
+  version: ""
+  category: net-misc
+  id: 0
+  name: curl
+  version: ""
   category: dev-lang
   id: 0
-  name: perl
-  version: ""
-  category: dev-libs
-  id: 0
-  name: libxml2
-  version: ""
-  category: sys-libs
-  id: 0
-  name: openipmi
-  version: 2.0.16-r1
-  category: dev-libs
-  id: 0
-  name: libmodbus
+  name: lua
   version: ""
   category: net-libs
   id: 0
   name: libmnl
   version: ""
-  category: sys-fs
+  category: net-nds
   id: 0
-  name: owfs
-  version: "3.1"
-  category: net-analyzer
-  id: 0
-  name: rrdtool
+  name: openldap
   version: ""
   category: sys-apps
   id: 0
   name: lm-sensors
   version: ""
-  category: virtual
+  category: net-libs
   id: 0
-  name: udev
+  name: libmicrohttpd
   version: ""
   category: dev-libs
   id: 0
-  name: libmemcached
+  name: libltdl
   version: ""
-  category: dev-db
+  category: net-libs
   id: 0
-  name: mysql-connector-c
+  name: libpcap
   version: ""
-  category: x11-libs
+  category: sys-cluster
   id: 0
-  name: libnotify
+  name: ganglia
   version: ""
-  category: sys-power
-  id: 0
-  name: nut
-  version: 2.7.2-r2
 uri:
 - https://collectd.org/files/collectd-5.8.1.tar.bz2
 use_flags:

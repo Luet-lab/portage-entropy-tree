@@ -9,29 +9,17 @@ id: 0
 license: LGPL-2.1
 name: wine-vanilla
 requires:
-  category: net-print
+  category: app-emulation
   id: 0
-  name: cups
-  version: ""
-  category: dev-lang
-  id: 0
-  name: perl
+  name: faudio
   version: ""
   category: media-libs
   id: 0
-  name: freetype
-  version: 2.0.0
+  name: lcms
+  version: ""
   category: media-libs
   id: 0
-  name: libv4l
-  version: ""
-  category: sys-fs
-  id: 0
-  name: udisks
-  version: ""
-  category: net-libs
-  id: 0
-  name: libcapi
+  name: openal
   version: ""
   category: virtual
   id: 0
@@ -41,18 +29,46 @@ requires:
   id: 0
   name: opengl
   version: ""
+  category: media-libs
+  id: 0
+  name: libsdl2
+  version: ""
   category: x11-libs
   id: 0
-  name: libXi
+  name: libXrandr
   version: ""
   category: media-libs
   id: 0
-  name: vulkan-loader
+  name: fontconfig
+  version: ""
+  category: sys-fs
+  id: 0
+  name: udisks
+  version: ""
+  category: media-libs
+  id: 0
+  name: freetype
+  version: 2.0.0
+  category: x11-libs
+  id: 0
+  name: libXxf86vm
+  version: ""
+  category: net-nds
+  id: 0
+  name: openldap
+  version: ""
+  category: app-emulation
+  id: 0
+  name: wine-desktop-common
+  version: ""
+  category: sec-policy
+  id: 0
+  name: selinux-wine
   version: ""
   category: net-fs
   id: 0
-  name: samba
-  version: 3.0.25
+  name: samba[netapi(+),]
+  version: ""
   category: media-libs
   id: 0
   name: libpng
@@ -61,29 +77,21 @@ requires:
   id: 0
   name: vkd3d
   version: ""
-  category: x11-libs
-  id: 0
-  name: libXcomposite
-  version: ""
-  category: media-gfx
-  id: 0
-  name: sane-backends
-  version: ""
-  category: app-emulation
-  id: 0
-  name: wine-mono
-  version: ""
-  category: sys-auth
-  id: 0
-  name: rtkit
-  version: ""
-  category: x11-libs
-  id: 0
-  name: libXxf86vm
-  version: ""
   category: media-libs
   id: 0
-  name: alsa-lib
+  name: vulkan-loader
+  version: ""
+  category: dev-db
+  id: 0
+  name: unixODBC
+  version: ""
+  category: net-fs
+  id: 0
+  name: samba
+  version: 3.0.25
+  category: net-libs
+  id: 0
+  name: libcapi
   version: ""
   category: media-libs
   id: 0
@@ -91,63 +99,87 @@ requires:
   version: ""
   category: sys-libs
   id: 0
-  name: libunwind
-  version: ""
-  category: x11-libs
-  id: 0
-  name: libXext
-  version: ""
-  category: x11-libs
-  id: 0
-  name: libXrandr
-  version: ""
-  category: media-plugins
-  id: 0
-  name: gst-plugins-meta
-  version: ""
+  name: ncurses
+  version: "5.2"
   category: net-libs
   id: 0
   name: gnutls
   version: ""
-  category: x11-libs
-  id: 0
-  name: libXfixes
-  version: ""
-  category: app-emulation
-  id: 0
-  name: faudio
-  version: ""
-  category: net-nds
-  id: 0
-  name: openldap
-  version: ""
-  category: dev-db
-  id: 0
-  name: unixODBC
-  version: ""
-  category: net-libs
-  id: 0
-  name: libpcap
-  version: ""
-  category: sys-apps
-  id: 0
-  name: dbus
-  version: ""
   category: virtual
   id: 0
-  name: krb5
+  name: libudev
+  version: ""
+  category: sys-libs
+  id: 0
+  name: libunwind
   version: ""
   category: app-emulation
   id: 0
   name: wine-gecko
   version: ""
-  category: sec-policy
+  category: app-emulation
   id: 0
-  name: selinux-wine
+  name: wine-mono
   version: ""
-  category: media-libs
+  category: x11-libs
   id: 0
-  name: libgphoto2
+  name: libXext
+  version: ""
+  category: media-sound
+  id: 0
+  name: mpg123
+  version: 1.5.0
+  category: sys-apps
+  id: 0
+  name: dbus
+  version: ""
+  category: media-gfx
+  id: 0
+  name: sane-backends
+  version: ""
+  category: x11-libs
+  id: 0
+  name: libXinerama
+  version: ""
+  category: dev-perl
+  id: 0
+  name: XML-Simple
+  version: ""
+  category: sys-auth
+  id: 0
+  name: rtkit
+  version: ""
+  category: media-sound
+  id: 0
+  name: gsm
+  version: ""
+  category: x11-libs
+  id: 0
+  name: libXi
+  version: ""
+  category: virtual
+  id: 0
+  name: jpeg
+  version: ""
+  category: media-sound
+  id: 0
+  name: pulseaudio
+  version: ""
+  category: app-eselect
+  id: 0
+  name: eselect-wine
+  version: "0.3"
+  category: x11-libs
+  id: 0
+  name: libXfixes
+  version: ""
+  category: media-plugins
+  id: 0
+  name: gst-plugins-meta
+  version: ""
+  category: virtual
+  id: 0
+  name: krb5
   version: ""
   category: virtual
   id: 0
@@ -155,88 +187,56 @@ requires:
   version: ""
   category: media-libs
   id: 0
-  name: libsdl2
+  name: mesa
+  version: "13"
+  category: x11-libs
+  id: 0
+  name: libXcursor
+  version: ""
+  category: net-print
+  id: 0
+  name: cups
   version: ""
   category: media-libs
   id: 0
-  name: openal
+  name: libv4l
   version: ""
   category: dev-libs
   id: 0
   name: libxml2
   version: ""
-  category: sys-libs
+  category: dev-libs
   id: 0
-  name: ncurses
-  version: "5.2"
-  category: media-libs
-  id: 0
-  name: mesa
-  version: "13"
-  category: virtual
-  id: 0
-  name: libudev
+  name: libxslt
   version: ""
-  category: media-sound
-  id: 0
-  name: gsm
-  version: ""
-  category: media-libs
-  id: 0
-  name: lcms
-  version: ""
-  category: media-sound
-  id: 0
-  name: mpg123
-  version: 1.5.0
   category: games-emulation
   id: 0
   name: dosbox
   version: 0.74_p20160629
-  category: dev-perl
+  category: dev-lang
   id: 0
-  name: XML-Simple
+  name: perl
+  version: ""
+  category: media-libs
+  id: 0
+  name: alsa-lib
+  version: ""
+  category: media-libs
+  id: 0
+  name: libgphoto2
   version: ""
   category: sys-devel
   id: 0
   name: gettext
   version: ""
-  category: x11-libs
+  category: net-libs
   id: 0
-  name: libXinerama
-  version: ""
-  category: app-emulation
-  id: 0
-  name: wine-desktop-common
-  version: ""
-  category: media-sound
-  id: 0
-  name: pulseaudio
-  version: ""
-  category: dev-libs
-  id: 0
-  name: libxslt
+  name: libpcap
   version: ""
   category: x11-libs
   id: 0
-  name: libXcursor
+  name: libXcomposite
   version: ""
-  category: media-libs
-  id: 0
-  name: fontconfig
-  version: ""
-  category: virtual
-  id: 0
-  name: jpeg
-  version: ""
-  category: net-fs
-  id: 0
-  name: samba[netapi(+),]
-  version: ""
-  category: app-eselect
-  id: 0
-  name: eselect-wine
-  version: "0.3"
 uri:
 - https://dl.winehq.org/wine/source/.x/wine-5.5.tar.xz
 - https://dev.gentoo.org/~sarnex/distfiles/wine/gentoo-wine-patches-20191222.tar.xz

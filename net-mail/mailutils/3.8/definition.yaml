@@ -1,8 +1,8 @@
 category: net-mail
 conflicts:
-  category: mail-filter
+  category: mail-client
   id: 0
-  name: libsieve
+  name: mailx
   version: ""
   category: mail-client
   id: 0
@@ -12,50 +12,38 @@ conflicts:
   id: 0
   name: nmh
   version: ""
-  category: mail-client
+  category: mail-filter
   id: 0
-  name: mailx
+  name: libsieve
   version: ""
 description: A useful collection of mail servers, clients, and filters
 id: 0
 license: GPL-2 LGPL-2.1
 name: mailutils
 requires:
-  category: dev-libs
-  id: 0
-  name: libltdl
-  version: ""
   category: virtual
   id: 0
   name: krb5
   version: ""
-  category: sys-libs
+  category: dev-db
   id: 0
-  name: pam
-  version: ""
-  category: sys-libs
-  id: 0
-  name: db
-  version: ""
-  category: app-editors
-  id: 0
-  name: emacs
-  version: "23.1"
-  category: sys-libs
-  id: 0
-  name: gdbm
-  version: ""
-  category: sys-apps
-  id: 0
-  name: tcp-wrappers
-  version: ""
-  category: sys-libs
-  id: 0
-  name: ncurses
+  name: kyotocabinet
   version: ""
   category: dev-db
   id: 0
   name: postgresql
+  version: ""
+  category: dev-db
+  id: 0
+  name: tokyocabinet
+  version: ""
+  category: net-nds
+  id: 0
+  name: openldap
+  version: ""
+  category: virtual
+  id: 0
+  name: libiconv
   version: ""
   category: dev-libs
   id: 0
@@ -67,43 +55,55 @@ requires:
   version: ""
   category: sys-libs
   id: 0
-  name: readline
-  version: ""
-  category: dev-libs
-  id: 0
-  name: fribidi
-  version: ""
-  category: net-nds
-  id: 0
-  name: openldap
-  version: ""
-  category: dev-db
-  id: 0
-  name: kyotocabinet
-  version: ""
-  category: dev-db
-  id: 0
-  name: mysql-connector-c
+  name: gdbm
   version: ""
   category: sys-devel
   id: 0
   name: gettext
   version: ""
-  category: virtual
+  category: sys-libs
   id: 0
-  name: gsasl
+  name: ncurses
   version: ""
-  category: virtual
+  category: sys-libs
   id: 0
-  name: libiconv
+  name: readline
   version: ""
   category: virtual
   id: 0
   name: mta
   version: ""
+  category: dev-libs
+  id: 0
+  name: fribidi
+  version: ""
+  category: app-editors
+  id: 0
+  name: emacs
+  version: "23.1"
   category: dev-db
   id: 0
-  name: tokyocabinet
+  name: mysql-connector-c
+  version: ""
+  category: sys-libs
+  id: 0
+  name: pam
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libltdl
+  version: ""
+  category: sys-libs
+  id: 0
+  name: db
+  version: ""
+  category: virtual
+  id: 0
+  name: gsasl
+  version: ""
+  category: sys-apps
+  id: 0
+  name: tcp-wrappers
   version: ""
 uri:
 - mirror://gnu/mailutils/mailutils-3.8.tar.xz

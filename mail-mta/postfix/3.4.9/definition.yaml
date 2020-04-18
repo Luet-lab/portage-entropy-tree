@@ -2,24 +2,36 @@ category: mail-mta
 conflicts:
   category: mail-mta
   id: 0
-  name: exim
+  name: mini-qmail
   version: ""
   category: mail-mta
   id: 0
-  name: mini-qmail
+  name: esmtp
   version: ""
-  category: <mail-mta
+  category: mail-mta
   id: 0
-  name: ssmtp
-  version: 2.64-r2
+  name: netqmail
+  version: ""
   category: mail-mta
   id: 0
   name: qmail-ldap
   version: ""
   category: mail-mta
   id: 0
+  name: exim
+  version: ""
+  category: mail-mta
+  id: 0
   name: msmtp
   version: ""
+  category: mail-mta
+  id: 0
+  name: sendmail
+  version: ""
+  category: <mail-mta
+  id: 0
+  name: ssmtp
+  version: 2.64-r2
   category: mail-mta
   id: 0
   name: courier
@@ -28,86 +40,46 @@ conflicts:
   id: 0
 mailer
   version: ""
-  category: mail-mta
+  category: '>=mail-mta'
   id: 0
-  name: sendmail
-  version: ""
-  category: mail-mta
-  id: 0
-  name: opensmtpd
-  version: ""
-  category: mail-mta
-  id: 0
-  name: esmtp
-  version: ""
+  name: ssmtp
+  version: 2.64-r2
   category: net-mail
   id: 0
   name: fastforward
   version: ""
   category: mail-mta
   id: 0
-  name: netqmail
+  name: opensmtpd
   version: ""
-  category: '>=mail-mta'
-  id: 0
-  name: ssmtp
-  version: 2.64-r2
 description: A fast and secure drop-in replacement for sendmail
 id: 0
 license: '|| ( IBM EPL-2.0 )'
 name: postfix
 requires:
-  category: dev-db
-  id: 0
-  name: mysql-connector-c
-  version: ""
-  category: net-libs
-  id: 0
-  name: libnsl
-  version: ""
-  category: acct-group
+  category: acct-user
   id: 0
   name: postfix
   version: ""
-  category: dev-libs
+  category: net-mail
   id: 0
-  name: libpcre
-  version: "3.4"
+  name: mailbase
+  version: ""
   category: dev-db
   id: 0
-  name: postgresql
-  version: ""
-  category: dev-lang
+  name: lmdb
+  version: 0.9.11
+  category: net-libs
   id: 0
-  name: perl
-  version: ""
-  category: dev-libs
-  id: 0
-  name: icu
+  name: libnsl
   version: ""
   category: net-nds
   id: 0
   name: openldap
   version: ""
-  category: dev-libs
+  category: dev-db
   id: 0
-  name: cyrus-sasl
-  version: "2"
-  category: acct-group
-  id: 0
-  name: postdrop
-  version: ""
-  category: dev-libs
-  id: 0
-  name: libressl
-  version: 2.9.1
-  category: net-misc
-  id: 0
-  name: memcached
-  version: ""
-  category: net-mail
-  id: 0
-  name: mailbase
+  name: mysql-connector-c
   version: ""
   category: sec-policy
   id: 0
@@ -117,25 +89,53 @@ requires:
   id: 0
   name: db
   version: "3.2"
+  category: dev-libs
+  id: 0
+  name: openssl
+  version: ""
+  category: acct-group
+  id: 0
+  name: postfix
+  version: ""
+  category: acct-group
+  id: 0
+  name: postdrop
+  version: ""
+  category: dev-libs
+  id: 0
+  name: cyrus-sasl
+  version: "2"
+  category: net-misc
+  id: 0
+  name: memcached
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libpcre
+  version: "3.4"
+  category: sys-libs
+  id: 0
+  name: pam
+  version: ""
+  category: dev-db
+  id: 0
+  name: postgresql
+  version: ""
   category: dev-db
   id: 0
   name: sqlite
   version: ""
   category: dev-libs
   id: 0
-  name: openssl
+  name: libressl
+  version: 2.9.1
+  category: dev-lang
+  id: 0
+  name: perl
   version: ""
-  category: dev-db
+  category: dev-libs
   id: 0
-  name: lmdb
-  version: 0.9.11
-  category: sys-libs
-  id: 0
-  name: pam
-  version: ""
-  category: acct-user
-  id: 0
-  name: postfix
+  name: icu
   version: ""
 uri:
 - ftp://ftp.porcupine.org/mirrors/postfix-release/official/postfix-3.4.9.tar.gz

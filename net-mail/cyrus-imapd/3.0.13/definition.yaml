@@ -1,12 +1,20 @@
 category: net-mail
 conflicts:
+  category: mail-mta
+  id: 0
+  name: courier
+  version: ""
   category: net-nntp
   id: 0
   name: leafnode
   version: ""
+  category: app-arch
+  id: 0
+  name: dump
+  version: ""
   category: net-mail
   id: 0
-  name: bincimap
+  name: courier-imap
   version: ""
   category: net-mail
   id: 0
@@ -14,32 +22,40 @@ conflicts:
   version: ""
   category: net-mail
   id: 0
-  name: courier-imap
-  version: ""
-  category: app-arch
-  id: 0
-  name: dump
-  version: ""
-  category: mail-mta
-  id: 0
-  name: courier
+  name: bincimap
   version: ""
 description: The Cyrus IMAP Server
 id: 0
 license: BSD-with-attribution GPL-2
 name: cyrus-imapd
 requires:
-  category: dev-libs
+  category: sys-libs
   id: 0
-  name: cyrus-sasl
-  version: 2.1.13
+  name: zlib
+  version: ""
+  category: sys-apps
+  id: 0
+  name: tcp-wrappers
+  version: "7.6"
+  category: sys-libs
+  id: 0
+  name: e2fsprogs-libs
+  version: ""
   category: dev-libs
   id: 0
   name: libical
   version: ""
-  category: virtual
+  category: net-analyzer
   id: 0
-  name: krb5
+  name: net-snmp
+  version: 5.2.2-r1
+  category: net-analyzer
+  id: 0
+  name: net-snmp
+  version: ""
+  category: dev-libs
+  id: 0
+  name: jansson
   version: ""
   category: dev-lang
   id: 0
@@ -47,35 +63,47 @@ requires:
   version: ""
   category: dev-db
   id: 0
-  name: sqlite
+  name: lmdb
   version: ""
-  category: sys-libs
+  category: net-fs
   id: 0
-  name: zlib
+  name: openafs
   version: ""
-  category: app-antivirus
+  category: virtual
   id: 0
-  name: clamav
+  name: krb5
   version: ""
-  category: sys-apps
+  category: net-mail
   id: 0
-  name: tcp-wrappers
-  version: "7.6"
-  category: acct-group
-  id: 0
-  name: mail
-  version: ""
+  name: mailbase
+  version: "1"
   category: acct-user
   id: 0
   name: cyrus
   version: ""
   category: dev-libs
   id: 0
-  name: jansson
+  name: icu
+  version: ""
+  category: dev-db
+  id: 0
+  name: sqlite
+  version: ""
+  category: acct-group
+  id: 0
+  name: mail
+  version: ""
+  category: sys-libs
+  id: 0
+  name: pam
+  version: ""
+  category: app-antivirus
+  id: 0
+  name: clamav
   version: ""
   category: dev-libs
   id: 0
-  name: icu
+  name: libxml2
   version: ""
   category: net-libs
   id: 0
@@ -89,30 +117,18 @@ requires:
   id: 0
   name: mysql-connector-c
   version: ""
-  category: net-analyzer
-  id: 0
-  name: net-snmp
-  version: 5.2.2-r1
-  category: sys-libs
-  id: 0
-  name: pam
-  version: ""
   category: dev-libs
   id: 0
   name: xapian
   version: 1.4.0
-  category: net-fs
+  category: dev-libs
   id: 0
-  name: openafs
+  name: libpcre
   version: ""
   category: sys-libs
   id: 0
   name: libcap
   version: ""
-  category: net-mail
-  id: 0
-  name: mailbase
-  version: "1"
   category: dev-db
   id: 0
   name: postgresql
@@ -123,24 +139,8 @@ requires:
   version: 1.0.1e
   category: dev-libs
   id: 0
-  name: libpcre
-  version: ""
-  category: sys-libs
-  id: 0
-  name: e2fsprogs-libs
-  version: ""
-  category: dev-libs
-  id: 0
-  name: libxml2
-  version: ""
-  category: dev-db
-  id: 0
-  name: lmdb
-  version: ""
-  category: net-analyzer
-  id: 0
-  name: net-snmp
-  version: ""
+  name: cyrus-sasl
+  version: 2.1.13
 uri:
 - https://github.com/cyrusimap/cyrus-imapd/releases/download/cyrus-imapd-3.0.13/cyrus-imapd-3.0.13.tar.gz
 use_flags:

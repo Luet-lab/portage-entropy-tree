@@ -2,21 +2,37 @@ category: app-crypt
 conflicts:
   category: '!app-crypt'
   id: 0
-  name: mit-krb5
+  name: mit-krb5-appl
   version: ""
   category: '!app-crypt'
   id: 0
-  name: mit-krb5-appl
+  name: mit-krb5
   version: ""
 description: Kerberos 5 implementation from KTH
 id: 0
 license: BSD
 name: heimdal
 requires:
+  category: sys-libs
+  id: 0
+  name: libcap-ng
+  version: ""
+  category: dev-db
+  id: 0
+  name: sqlite
+  version: 3.8.2
+  category: net-fs
+  id: 0
+  name: openafs
+  version: ""
   category: dev-libs
   id: 0
   name: openssl
   version: 1.0.1h-r2
+  category: sys-libs
+  id: 0
+  name: gdbm
+  version: 1.10-r1
   category: sys-libs
   id: 0
   name: e2fsprogs-libs
@@ -25,14 +41,22 @@ requires:
   id: 0
   name: ncurses
   version: ""
-  category: net-fs
+  category: dev-libs
   id: 0
-  name: openafs
+  name: libressl
   version: ""
+  category: sys-libs
+  id: 0
+  name: readline
+  version: 6.2_p5-r1
   category: net-nds
   id: 0
   name: openldap
   version: 2.3.0
+  category: x11-libs
+  id: 0
+  name: libX11
+  version: ""
   category: x11-libs
   id: 0
   name: libXau
@@ -40,34 +64,6 @@ requires:
   category: dev-db
   id: 0
   name: lmdb
-  version: ""
-  category: sys-libs
-  id: 0
-  name: libcap-ng
-  version: ""
-  category: dev-libs
-  id: 0
-  name: libressl
-  version: ""
-  category: sys-libs
-  id: 0
-  name: db
-  version: 4.8.30-r1
-  category: sys-libs
-  id: 0
-  name: gdbm
-  version: 1.10-r1
-  category: dev-db
-  id: 0
-  name: sqlite
-  version: 3.8.2
-  category: sys-libs
-  id: 0
-  name: readline
-  version: 6.2_p5-r1
-  category: x11-libs
-  id: 0
-  name: libX11
   version: ""
   category: x11-libs
   id: 0
@@ -77,6 +73,10 @@ requires:
   id: 0
   name: selinux-kerberos
   version: ""
+  category: sys-libs
+  id: 0
+  name: db
+  version: 4.8.30-r1
 uri:
 - https://github.com/heimdal/heimdal/releases/download/heimdal-7.7.0/heimdal-7.7.0.tar.gz
 use_flags:

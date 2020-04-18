@@ -5,38 +5,54 @@ id: 0
 license: GPL-2+
 name: gnome-disk-utility
 requires:
-  category: app-crypt
+  category: media-libs
   id: 0
-  name: libsecret
-  version: "0.7"
-  category: sys-fs
-  id: 0
-  name: udisks
-  version: 2.7.6
-  category: sys-fs
-  id: 0
-  name: dosfstools
-  version: ""
+  name: libcanberra
+  version: "0.1"
   category: gnome-base
   id: 0
   name: gnome-settings-daemon
   version: "3.8"
+  category: sys-fs
+  id: 0
+  name: dosfstools
+  version: ""
   category: media-libs
   id: 0
   name: libdvdread
   version: 4.2.0
-  category: dev-libs
+  category: x11-libs
   id: 0
-  name: glib
-  version: "2.31"
+  name: gtk+
+  version: 3.16.0
+  category: x11-libs
+  id: 0
+  name: libnotify
+  version: "0.7"
   category: dev-libs
   id: 0
   name: libpwquality
   version: 1.0.0
+  category: sys-fs
+  id: 0
+  name: udisks
+  version: 2.7.6
+  category: dev-libs
+  id: 0
+  name: glib
+  version: "2.31"
   category: sys-auth
   id: 0
   name: elogind
   version: "209"
+  category: app-arch
+  id: 0
+  name: xz-utils
+  version: 5.0.5
+  category: app-crypt
+  id: 0
+  name: libsecret
+  version: "0.7"
   category: sys-apps
   id: 0
   name: systemd
@@ -45,22 +61,6 @@ requires:
   id: 0
   name: adwaita-icon-theme
   version: ""
-  category: x11-libs
-  id: 0
-  name: gtk+
-  version: 3.16.0
-  category: media-libs
-  id: 0
-  name: libcanberra
-  version: "0.1"
-  category: app-arch
-  id: 0
-  name: xz-utils
-  version: 5.0.5
-  category: x11-libs
-  id: 0
-  name: libnotify
-  version: "0.7"
 use_flags:
 - fat
 - elogind

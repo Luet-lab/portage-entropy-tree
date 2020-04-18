@@ -2,11 +2,11 @@ category: sys-apps
 conflicts:
   category: sys-fs
   id: 0
-  name: udev
+  name: eudev
   version: ""
   category: sys-fs
   id: 0
-  name: eudev
+  name: udev
   version: ""
   category: net-dns
   id: 0
@@ -21,21 +21,81 @@ id: 0
 license: GPL-2 LGPL-2.1 MIT public-domain
 name: systemd
 requires:
+  category: x11-libs
+  id: 0
+  name: libxkbcommon
+  version: 0.4.1
+  category: acct-group
+  id: 0
+  name: cdrom
+  version: ""
+  category: sec-policy
+  id: 0
+  name: selinux-base-policy
+  version: ""
+  category: sys-process
+  id: 0
+  name: audit
+  version: "2"
+  category: acct-user
+  id: 0
+  name: systemd-resolve
+  version: ""
+  category: sys-libs
+  id: 0
+  name: libcap
+  version: ""
+  category: net-libs
+  id: 0
+  name: gnutls
+  version: 3.6.0
+  category: net-libs
+  id: 0
+  name: gnutls
+  version: 3.1.4
+  category: sys-apps
+  id: 0
+  name: util-linux[kill(-)]
+  version: ""
+  category: acct-group
+  id: 0
+  name: adm
+  version: ""
+  category: acct-group
+  id: 0
+  name: tty
+  version: ""
+  category: sys-apps
+  id: 0
+  name: coreutils[kill(-)]
+  version: ""
+  category: sys-apps
+  id: 0
+  name: acl
+  version: ""
   category: app-arch
   id: 0
-  name: xz-utils
-  version: 5.0.5-r1
-  category: dev-libs
+  name: lz4
+  version: 0_p131
+  category: acct-user
   id: 0
-  name: elfutils
-  version: "0.158"
+  name: systemd-coredump
+  version: ""
   category: net-dns
   id: 0
   name: libidn2
   version: ""
+  category: app-arch
+  id: 0
+  name: xz-utils
+  version: 5.0.5-r1
+  category: net-libs
+  id: 0
+  name: libmicrohttpd
+  version: 0.9.33
   category: acct-group
   id: 0
-  name: kmem
+  name: tape
   version: ""
   category: acct-group
   id: 0
@@ -43,12 +103,40 @@ requires:
   version: ""
   category: acct-user
   id: 0
-  name: systemd-resolve
+  name: systemd-timesync
   version: ""
-  category: net-firewall
+  category: acct-group
   id: 0
-  name: iptables
+  name: disk
   version: ""
+  category: acct-group
+  id: 0
+  name: kvm
+  version: ""
+  category: sys-process
+  id: 0
+  name: procps[kill(+)]
+  version: ""
+  category: sys-libs
+  id: 0
+  name: libapparmor
+  version: ""
+  category: net-misc
+  id: 0
+  name: curl
+  version: ""
+  category: dev-libs
+  id: 0
+  name: openssl
+  version: 1.1.0
+  category: dev-libs
+  id: 0
+  name: libpwquality
+  version: ""
+  category: sys-apps
+  id: 0
+  name: kmod
+  version: "15"
   category: media-gfx
   id: 0
   name: qrencode
@@ -57,177 +145,45 @@ requires:
   id: 0
   name: dialout
   version: ""
-  category: acct-group
-  id: 0
-  name: input
-  version: ""
-  category: sys-apps
-  id: 0
-  name: kmod
-  version: "15"
-  category: app-crypt
-  id: 0
-  name: p11-kit
-  version: ""
-  category: acct-group
-  id: 0
-  name: utmp
-  version: ""
-  category: acct-user
-  id: 0
-  name: systemd-timesync
-  version: ""
-  category: acct-group
-  id: 0
-  name: adm
-  version: ""
-  category: sys-apps
-  id: 0
-  name: util-linux[kill(-)]
-  version: ""
-  category: dev-libs
-  id: 0
-  name: libpwquality
-  version: ""
-  category: sys-libs
-  id: 0
-  name: libselinux
-  version: ""
-  category: sys-apps
-  id: 0
-  name: util-linux
-  version: "2.30"
-  category: dev-libs
-  id: 0
-  name: libgcrypt
-  version: 1.4.5
-  category: net-libs
-  id: 0
-  name: gnutls
-  version: 3.6.0
-  category: dev-libs
-  id: 0
-  name: openssl
-  version: 1.1.0
-  category: net-libs
-  id: 0
-  name: gnutls
-  version: 3.1.4
-  category: net-misc
-  id: 0
-  name: curl
-  version: ""
-  category: app-arch
-  id: 0
-  name: lz4
-  version: 0_p131
-  category: acct-group
-  id: 0
-  name: render
-  version: ""
-  category: sys-apps
-  id: 0
-  name: sysvinit
-  version: ""
-  category: sys-apps
-  id: 0
-  name: acl
-  version: ""
-  category: sys-process
-  id: 0
-  name: audit
-  version: "2"
-  category: acct-group
-  id: 0
-  name: tty
-  version: ""
-  category: acct-user
-  id: 0
-  name: systemd-network
-  version: ""
-  category: sys-libs
-  id: 0
-  name: pam
-  version: ""
-  category: acct-group
-  id: 0
-  name: disk
-  version: ""
-  category: acct-group
-  id: 0
-  name: video
-  version: ""
-  category: acct-user
-  id: 0
-  name: systemd-coredump
-  version: ""
   category: sys-libs
   id: 0
   name: libseccomp
   version: 2.3.3
   category: acct-group
   id: 0
+  name: wheel
+  version: ""
+  category: acct-group
+  id: 0
   name: audio
   version: ""
-  category: sys-apps
+  category: acct-user
   id: 0
-  name: baselayout
-  version: "2.2"
-  category: sys-process
-  id: 0
-  name: procps[kill(+)]
+  name: systemd-network
   version: ""
   category: dev-libs
   id: 0
-  name: libpcre2
-  version: ""
-  category: x11-libs
-  id: 0
-  name: libxkbcommon
-  version: 0.4.1
-  category: acct-group
-  id: 0
-  name: tape
-  version: ""
-  category: sec-policy
-  id: 0
-  name: selinux-base-policy
-  version: ""
-  category: sys-libs
-  id: 0
-  name: libapparmor
-  version: ""
-  category: sys-fs
-  id: 0
-  name: cryptsetup
-  version: 2.0.1
-  category: net-libs
-  id: 0
-  name: libmicrohttpd
-  version: 0.9.33
-  category: app-arch
-  id: 0
-  name: bzip2
-  version: ""
-  category: sys-libs
-  id: 0
-  name: libcap
-  version: ""
-  category: acct-group
-  id: 0
-  name: cdrom
-  version: ""
-  category: acct-group
-  id: 0
-  name: kvm
-  version: ""
+  name: libgcrypt
+  version: 1.4.5
   category: sys-libs
   id: 0
   name: zlib
   version: ""
+  category: net-firewall
+  id: 0
+  name: iptables
+  version: ""
+  category: app-crypt
+  id: 0
+  name: p11-kit
+  version: ""
   category: acct-group
   id: 0
-  name: wheel
+  name: kmem
+  version: ""
+  category: acct-group
+  id: 0
+  name: render
   version: ""
   category: acct-user
   id: 0
@@ -235,7 +191,51 @@ requires:
   version: ""
   category: sys-apps
   id: 0
-  name: coreutils[kill(-)]
+  name: baselayout
+  version: "2.2"
+  category: dev-libs
+  id: 0
+  name: elfutils
+  version: "0.158"
+  category: app-arch
+  id: 0
+  name: bzip2
+  version: ""
+  category: sys-libs
+  id: 0
+  name: libselinux
+  version: ""
+  category: acct-group
+  id: 0
+  name: video
+  version: ""
+  category: sys-fs
+  id: 0
+  name: cryptsetup
+  version: 2.0.1
+  category: sys-libs
+  id: 0
+  name: pam
+  version: ""
+  category: acct-group
+  id: 0
+  name: input
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libpcre2
+  version: ""
+  category: sys-apps
+  id: 0
+  name: util-linux
+  version: "2.30"
+  category: acct-group
+  id: 0
+  name: utmp
+  version: ""
+  category: sys-apps
+  id: 0
+  name: sysvinit
   version: ""
 use_flags:
 - acl

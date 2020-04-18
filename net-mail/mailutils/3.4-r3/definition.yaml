@@ -1,8 +1,8 @@
 category: net-mail
 conflicts:
-  category: mail-filter
+  category: mail-client
   id: 0
-  name: libsieve
+  name: mailx
   version: ""
   category: mail-client
   id: 0
@@ -12,46 +12,30 @@ conflicts:
   id: 0
   name: nmh
   version: ""
-  category: mail-client
+  category: mail-filter
   id: 0
-  name: mailx
+  name: libsieve
   version: ""
 description: A useful collection of mail servers, clients, and filters
 id: 0
 license: GPL-2 LGPL-2.1
 name: mailutils
 requires:
-  category: virtual
+  category: dev-libs
   id: 0
-  name: mta
-  version: ""
-  category: net-libs
-  id: 0
-  name: gnutls
-  version: ""
-  category: sys-libs
-  id: 0
-  name: ncurses
+  name: libltdl
   version: ""
   category: dev-libs
   id: 0
   name: fribidi
   version: ""
+  category: app-editors
+  id: 0
+  name: emacs
+  version: "23.1"
   category: virtual
   id: 0
   name: krb5
-  version: ""
-  category: net-nds
-  id: 0
-  name: openldap
-  version: ""
-  category: virtual
-  id: 0
-  name: mysql
-  version: ""
-  category: sys-devel
-  id: 0
-  name: gettext
   version: ""
   category: dev-db
   id: 0
@@ -61,41 +45,57 @@ requires:
   id: 0
   name: tcp-wrappers
   version: ""
-  category: dev-db
+  category: sys-libs
   id: 0
-  name: tokyocabinet
+  name: ncurses
   version: ""
   category: sys-libs
   id: 0
   name: readline
   version: ""
-  category: dev-libs
-  id: 0
-  name: libltdl
-  version: ""
   category: sys-libs
   id: 0
-  name: gdbm
+  name: db
   version: ""
   category: dev-db
   id: 0
   name: kyotocabinet
   version: ""
+  category: virtual
+  id: 0
+  name: mysql
+  version: ""
+  category: net-libs
+  id: 0
+  name: gnutls
+  version: ""
+  category: dev-db
+  id: 0
+  name: tokyocabinet
+  version: ""
+  category: net-nds
+  id: 0
+  name: openldap
+  version: ""
   category: sys-libs
   id: 0
   name: pam
   version: ""
-  category: sys-libs
-  id: 0
-  name: db
-  version: ""
-  category: app-editors
-  id: 0
-  name: emacs
-  version: "23.1"
   category: virtual
   id: 0
   name: gsasl
+  version: ""
+  category: virtual
+  id: 0
+  name: mta
+  version: ""
+  category: sys-libs
+  id: 0
+  name: gdbm
+  version: ""
+  category: sys-devel
+  id: 0
+  name: gettext
   version: ""
 uri:
 - mirror://gnu/mailutils/mailutils-3.4.tar.xz

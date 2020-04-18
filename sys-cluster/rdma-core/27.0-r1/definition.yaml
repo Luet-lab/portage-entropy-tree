@@ -2,39 +2,11 @@ category: sys-cluster
 conflicts:
   category: sys-fabric
   id: 0
-  name: libmlx4
-  version: ""
-  category: sys-fabric
-  id: 0
-  name: librdmacm
-  version: ""
-  category: sys-fabric
-  id: 0
-  name: ibacm
-  version: ""
-  category: sys-fabric
-  id: 0
-  name: infinipath-psm
-  version: ""
-  category: sys-fabric
-  id: 0
   name: libcxgb3
   version: ""
   category: sys-fabric
   id: 0
-  name: libmlx5
-  version: ""
-  category: sys-fabric
-  id: 0
-  name: infiniband-diags
-  version: ""
-  category: sys-fabric
-  id: 0
-  name: libibverbs
-  version: ""
-  category: sys-fabric
-  id: 0
-  name: libibumad
+  name: libcxgb4
   version: ""
   category: sys-fabric
   id: 0
@@ -46,7 +18,27 @@ conflicts:
   version: ""
   category: sys-fabric
   id: 0
-  name: libibmad
+  name: ibacm
+  version: ""
+  category: sys-fabric
+  id: 0
+  name: libmlx4
+  version: ""
+  category: sys-fabric
+  id: 0
+  name: libmlx5
+  version: ""
+  category: sys-fabric
+  id: 0
+  name: libocrdma
+  version: ""
+  category: sys-fabric
+  id: 0
+  name: infiniband-diags
+  version: ""
+  category: sys-fabric
+  id: 0
+  name: librdmacm
   version: ""
   category: sys-fabric
   id: 0
@@ -54,17 +46,29 @@ conflicts:
   version: ""
   category: sys-fabric
   id: 0
-  name: libcxgb4
+  name: infinipath-psm
   version: ""
   category: sys-fabric
   id: 0
-  name: libocrdma
+  name: libibverbs
+  version: ""
+  category: sys-fabric
+  id: 0
+  name: libibumad
+  version: ""
+  category: sys-fabric
+  id: 0
+  name: libibmad
   version: ""
 description: Userspace components for the Linux Kernel's drivers/infiniband subsystem
 id: 0
 license: '|| ( GPL-2 ( CC0-1.0 MIT BSD BSD-with-attribution ) )'
 name: rdma-core
 requires:
+  category: virtual
+  id: 0
+  name: libudev
+  version: ""
   category: dev-libs
   id: 0
   name: libnl
@@ -72,10 +76,6 @@ requires:
   category: dev-util
   id: 0
   name: valgrind
-  version: ""
-  category: virtual
-  id: 0
-  name: libudev
   version: ""
   category: sys-apps
   id: 0

@@ -2,17 +2,33 @@ category: net-misc
 conflicts:
   category: net-misc
   id: 0
-  name: ntp
+  name: openntpd
   version: ""
   category: net-misc
   id: 0
-  name: openntpd
+  name: ntp
   version: ""
 description: The NTP reference implementation, refactored
 id: 0
 license: HPND MIT BSD-2 BSD CC-BY-SA-4.0
 name: ntpsec
 requires:
+  category: sys-libs
+  id: 0
+  name: libcap
+  version: ""
+  category: sci-visualization
+  id: 0
+  name: gnuplot
+  version: ""
+  category: sys-libs
+  id: 0
+  name: libseccomp
+  version: ""
+  category: media-fonts
+  id: 0
+  name: liberation-fonts
+  version: ""
   category: dev-python
   id: 0
   name: psutil
@@ -21,25 +37,9 @@ requires:
   id: 0
   name: libbsd
   version: ""
-  category: sci-visualization
-  id: 0
-  name: gnuplot
-  version: ""
-  category: media-fonts
-  id: 0
-  name: liberation-fonts
-  version: ""
-  category: sys-libs
-  id: 0
-  name: libcap
-  version: ""
   category: dev-libs
   id: 0
   name: openssl
-  version: ""
-  category: sys-libs
-  id: 0
-  name: libseccomp
   version: ""
 uri:
 - ftp://ftp.ntpsec.org/pub/releases/ntpsec-1.1.6.tar.gz

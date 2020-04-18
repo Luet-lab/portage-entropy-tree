@@ -7,47 +7,11 @@ name: ceph
 requires:
   category: sys-apps
   id: 0
-  name: sed
-  version: ""
-  category: sys-fs
-  id: 0
-  name: fuse
-  version: ""
-  category: virtual
-  id: 0
-  name: libudev
-  version: ""
-  category: dev-util
-  id: 0
-  name: babeltrace
-  version: ""
-  category: net-nds
-  id: 0
-  name: openldap
-  version: ""
-  category: dev-python
-  id: 0
-  name: prettytable
+  name: util-linux
   version: ""
   category: sys-apps
   id: 0
-  name: util-linux
-  version: ""
-  category: dev-util
-  id: 0
-  name: lttng-ust
-  version: ""
-  category: net-libs
-  id: 0
-  name: rabbitmq-c
-  version: ""
-  category: sys-block
-  id: 0
-  name: parted
-  version: ""
-  category: dev-python
-  id: 0
-  name: jinja
+  name: gptfdisk
   version: ""
   category: dev-python
   id: 0
@@ -55,47 +19,47 @@ requires:
   version: ""
   category: dev-python
   id: 0
-  name: flask
-  version: ""
-  category: dev-python
-  id: 0
-  name: pecan
-  version: ""
-  category: app-shells
-  id: 0
-  name: bash
+  name: cherrypy
   version: ""
   category: sys-apps
   id: 0
   name: coreutils
   version: ""
-  category: virtual
+  category: sys-fs
   id: 0
-  name: krb5
+  name: xfsprogs
   version: ""
   category: sys-fs
   id: 0
-  name: cryptsetup
+  name: lsscsi
   version: ""
   category: virtual
   id: 0
   name: awk
   version: ""
-  category: dev-python
+  category: dev-libs
   id: 0
-  name: pyjwt
+  name: openssl
   version: ""
   category: dev-python
   id: 0
-  name: routes
+  name: werkzeug
   version: ""
-  category: acct-user
+  category: sys-fs
   id: 0
-  name: ceph
+  name: lvm2[-device-mapper-only(-)]
+  version: ""
+  category: dev-python
+  id: 0
+  name: more-itertools
+  version: ""
+  category: virtual
+  id: 0
+  name: libudev
   version: ""
   category: sys-apps
   id: 0
-  name: grep
+  name: sed
   version: ""
   category: dev-libs
   id: 0
@@ -103,11 +67,63 @@ requires:
   version: ""
   category: sys-fs
   id: 0
-  name: xfsprogs
+  name: zfs
+  version: ""
+  category: dev-util
+  id: 0
+  name: google-perftools
+  version: 2.6.1
+  category: dev-python
+  id: 0
+  name: prettytable
+  version: ""
+  category: acct-group
+  id: 0
+  name: ceph
+  version: ""
+  category: sys-apps
+  id: 0
+  name: grep
+  version: ""
+  category: net-nds
+  id: 0
+  name: openldap
+  version: ""
+  category: virtual
+  id: 0
+  name: krb5
   version: ""
   category: dev-python
   id: 0
-  name: pyopenssl
+  name: pecan
+  version: ""
+  category: dev-python
+  id: 0
+  name: pyjwt
+  version: ""
+  category: dev-util
+  id: 0
+  name: lttng-ust
+  version: ""
+  category: dev-libs
+  id: 0
+  name: boost-1.72*[threads,context,python,static-libs?,]
+  version: ""
+  category: dev-libs
+  id: 0
+  name: jemalloc
+  version: ""
+  category: sys-block
+  id: 0
+  name: parted
+  version: ""
+  category: sys-fs
+  id: 0
+  name: cryptsetup
+  version: ""
+  category: net-misc
+  id: 0
+  name: socat
   version: ""
   category: dev-python
   id: 0
@@ -115,71 +131,55 @@ requires:
   version: ""
   category: dev-python
   id: 0
-  name: more-itertools
-  version: ""
-  category: dev-libs
-  id: 0
-  name: nss
-  version: ""
-  category: sys-fs
-  id: 0
-  name: zfs
-  version: ""
-  category: dev-libs
-  id: 0
-  name: boost-1.72*[threads,context,python,static-libs?,]
-  version: ""
-  category: sys-apps
-  id: 0
-  name: gptfdisk
-  version: ""
-  category: sys-fs
-  id: 0
-  name: lvm2[-device-mapper-only(-)]
-  version: ""
-  category: acct-group
-  id: 0
-  name: ceph
-  version: ""
-  category: dev-python
-  id: 0
-  name: werkzeug
-  version: ""
-  category: dev-python
-  id: 0
   name: pyyaml
   version: ""
-  category: dev-python
+  category: acct-user
   id: 0
-  name: six
-  version: ""
-  category: sys-fs
-  id: 0
-  name: lsscsi
-  version: ""
-  category: dev-python
-  id: 0
-  name: cherrypy
+  name: ceph
   version: ""
   category: sys-auth
   id: 0
   name: oath-toolkit
   version: ""
-  category: dev-libs
-  id: 0
-  name: openssl
-  version: ""
-  category: dev-libs
-  id: 0
-  name: jemalloc
-  version: ""
   category: dev-util
   id: 0
-  name: google-perftools
-  version: 2.6.1
-  category: net-misc
+  name: babeltrace
+  version: ""
+  category: sys-fs
   id: 0
-  name: socat
+  name: fuse
+  version: ""
+  category: net-libs
+  id: 0
+  name: rabbitmq-c
+  version: ""
+  category: dev-python
+  id: 0
+  name: routes
+  version: ""
+  category: dev-python
+  id: 0
+  name: six
+  version: ""
+  category: app-shells
+  id: 0
+  name: bash
+  version: ""
+  category: dev-libs
+  id: 0
+  name: nss
+  version: ""
+  category: dev-python
+  id: 0
+  name: flask
+  version: ""
+  category: dev-python
+  id: 0
+  name: jinja
+  version: ""
+  category: dev-python
+  id: 0
+  name: pyopenssl
   version: ""
 uri:
 - https://download.ceph.com/tarballs/ceph-14.2.8.tar.gz

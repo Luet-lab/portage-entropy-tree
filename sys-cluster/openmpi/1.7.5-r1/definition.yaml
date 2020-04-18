@@ -2,32 +2,36 @@ category: sys-cluster
 conflicts:
   category: sys-cluster
   id: 0
+  name: pmix
+  version: ""
+  category: sys-cluster
+  id: 0
   name: mpich
   version: ""
   category: sys-cluster
   id: 0
   name: mpich2
   version: ""
-  category: sys-cluster
-  id: 0
-  name: pmix
-  version: ""
 description: A high-performance message passing library (MPI)
 id: 0
 license: BSD
 name: openmpi
 requires:
-  category: dev-util
+  category: dev-libs
   id: 0
-  name: nvidia-cuda-toolkit
+  name: libevent
   version: ""
   category: sys-fabric
   id: 0
   name: ofed
   version: ""
-  category: sys-fabric
+  category: sys-cluster
   id: 0
-  name: infinipath-psm
+  name: torque
+  version: ""
+  category: sys-cluster
+  id: 0
+  name: slurm
   version: ""
   category: dev-libs
   id: 0
@@ -37,25 +41,21 @@ requires:
   id: 0
   name: hwloc
   version: "2"
-  category: sys-fabric
+  category: dev-util
   id: 0
-  name: librdmacm
-  version: ""
-  category: dev-libs
-  id: 0
-  name: libevent
+  name: nvidia-cuda-toolkit
   version: ""
   category: sys-cluster
   id: 0
   name: knem
   version: ""
-  category: sys-cluster
+  category: sys-fabric
   id: 0
-  name: torque
+  name: infinipath-psm
   version: ""
-  category: sys-cluster
+  category: sys-fabric
   id: 0
-  name: slurm
+  name: librdmacm
   version: ""
 uri:
 - http://www.open-mpi.org/software/ompi/v/downloads/openmpi-1.7.5.tar.bz2

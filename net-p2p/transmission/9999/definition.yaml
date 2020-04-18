@@ -5,34 +5,22 @@ id: 0
 license: '|| ( GPL-2 GPL-3 Transmission-OpenSSL-exception ) GPL-2 MIT'
 name: transmission
 requires:
-  category: sys-libs
+  category: dev-qt
   id: 0
-  name: zlib
+  name: qtnetwork
   version: ""
-  category: dev-libs
+  category: dev-qt
   id: 0
-  name: glib
-  version: "2.32"
-  category: x11-libs
-  id: 0
-  name: gtk+
-  version: "3.4"
-  category: dev-libs
-  id: 0
-  name: libappindicator
-  version: 0.4.30
-  category: acct-group
-  id: 0
-  name: transmission
+  name: qtdbus
   version: ""
   category: net-libs
   id: 0
   name: mbedtls
   version: ""
-  category: virtual
+  category: net-misc
   id: 0
-  name: libintl
-  version: ""
+  name: curl
+  version: 7.16.3
   category: dev-qt
   id: 0
   name: qtcore
@@ -41,9 +29,41 @@ requires:
   id: 0
   name: qtgui
   version: ""
-  category: dev-qt
+  category: acct-group
   id: 0
-  name: qtnetwork
+  name: transmission
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libevent
+  version: 2.0.10
+  category: x11-libs
+  id: 0
+  name: gtk+
+  version: "3.4"
+  category: dev-libs
+  id: 0
+  name: libappindicator
+  version: 0.4.30
+  category: net-libs
+  id: 0
+  name: miniupnpc
+  version: "1.7"
+  category: dev-libs
+  id: 0
+  name: glib
+  version: "2.32"
+  category: dev-libs
+  id: 0
+  name: libb64
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libressl
+  version: ""
+  category: net-libs
+  id: 0
+  name: libnatpmp
   version: ""
   category: dev-libs
   id: 0
@@ -51,32 +71,12 @@ requires:
   version: "0.100"
   category: dev-qt
   id: 0
-  name: qtdbus
+  name: qtwidgets
   version: ""
   category: sys-apps
   id: 0
   name: systemd
   version: "209"
-  category: dev-libs
-  id: 0
-  name: libb64
-  version: ""
-  category: dev-libs
-  id: 0
-  name: libevent
-  version: 2.0.10
-  category: net-libs
-  id: 0
-  name: libnatpmp
-  version: ""
-  category: net-libs
-  id: 0
-  name: miniupnpc
-  version: "1.7"
-  category: net-misc
-  id: 0
-  name: curl
-  version: 7.16.3
   category: acct-user
   id: 0
   name: transmission
@@ -85,13 +85,13 @@ requires:
   id: 0
   name: openssl
   version: ""
-  category: dev-libs
+  category: sys-libs
   id: 0
-  name: libressl
+  name: zlib
   version: ""
-  category: dev-qt
+  category: virtual
   id: 0
-  name: qtwidgets
+  name: libintl
   version: ""
 use_flags:
 - ayatana

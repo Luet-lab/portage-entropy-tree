@@ -7,43 +7,27 @@ name: glusterfs
 requires:
   category: net-libs
   id: 0
-  name: rpcsvc-proto
+  name: libtirpc
   version: ""
   category: sys-apps
   id: 0
   name: util-linux
   version: ""
-  category: sys-fabric
-  id: 0
-  name: librdmacm
-  version: ""
-  category: dev-libs
-  id: 0
-  name: libaio
-  version: ""
-  category: dev-libs
-  id: 0
-  name: libressl
-  version: ""
-  category: dev-libs
-  id: 0
-  name: userspace-rcu
-  version: ""
-  category: net-libs
-  id: 0
-  name: libtirpc
-  version: ""
   category: sys-libs
   id: 0
   name: argp-standalone
   version: ""
-  category: sys-fs
+  category: sys-fabric
   id: 0
-  name: fuse
-  version: 2.7.0
+  name: librdmacm
+  version: ""
   category: sys-libs
   id: 0
-  name: readline
+  name: glibc[rpc(-)]
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libaio
   version: ""
   category: dev-libs
   id: 0
@@ -57,13 +41,29 @@ requires:
   id: 0
   name: libibverbs
   version: ""
-  category: sys-libs
+  category: dev-libs
   id: 0
-  name: glibc[rpc(-)]
+  name: libressl
   version: ""
+  category: net-libs
+  id: 0
+  name: rpcsvc-proto
+  version: ""
+  category: sys-fs
+  id: 0
+  name: fuse
+  version: 2.7.0
   category: dev-libs
   id: 0
   name: libxml2
+  version: ""
+  category: sys-libs
+  id: 0
+  name: readline
+  version: ""
+  category: dev-libs
+  id: 0
+  name: userspace-rcu
   version: ""
 uri:
 - https://download.gluster.org/pub/gluster/glusterfs//7.2/glusterfs-7.2.tar.gz

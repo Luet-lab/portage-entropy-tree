@@ -1,17 +1,9 @@
 category: sys-fs
 conflicts:
-  category: <sys-fs
+  category: <sec-policy
   id: 0
-  name: lvm2
-  version: 2.02.103
-  category: sys-fs
-  id: 0
-  name: udev
-  version: ""
-  category: sys-apps
-  id: 0
-  name: systemd
-  version: ""
+  name: selinux-base
+  version: 2.20120725-r10
   category: <sys-libs
   id: 0
   name: glibc
@@ -20,19 +12,27 @@ conflicts:
   id: 0
   name: gentoo-systemd-integration
   version: ""
-  category: <sec-policy
+  category: sys-apps
   id: 0
-  name: selinux-base
-  version: 2.20120725-r10
+  name: systemd
+  version: ""
+  category: <sys-fs
+  id: 0
+  name: lvm2
+  version: 2.02.103
+  category: sys-fs
+  id: 0
+  name: udev
+  version: ""
 description: Linux dynamic and persistent device naming support (aka userspace devfs)
 id: 0
 license: LGPL-2.1 MIT GPL-2
 name: eudev
 requires:
-  category: sys-apps
+  category: acct-group
   id: 0
-  name: util-linux
-  version: "2.20"
+  name: render
+  version: ""
   category: dev-libs
   id: 0
   name: gobject-introspection
@@ -47,12 +47,12 @@ requires:
   version: 2.1.9
   category: acct-group
   id: 0
-  name: render
-  version: ""
-  category: acct-group
-  id: 0
   name: input
   version: ""
+  category: sys-apps
+  id: 0
+  name: util-linux
+  version: "2.20"
   category: acct-group
   id: 0
   name: kvm

@@ -7,11 +7,19 @@ name: cryptsetup
 requires:
   category: dev-libs
   id: 0
-  name: openssl
+  name: libgpg-error[static-libs(+)]
   version: ""
-  category: sys-fs
+  category: dev-libs
   id: 0
-  name: lvm2[static-libs(+)]
+  name: popt
+  version: ""
+  category: sys-apps
+  id: 0
+  name: util-linux
+  version: 2.31-r1
+  category: dev-libs
+  id: 0
+  name: libgpg-error
   version: ""
   category: dev-libs
   id: 0
@@ -23,19 +31,23 @@ requires:
   version: ""
   category: dev-libs
   id: 0
-  name: libgcrypt
+  name: popt[static-libs(+)]
+  version: ""
+  category: sys-apps
+  id: 0
+  name: util-linux-2.31-r1[static-libs(+)]
+  version: ""
+  category: dev-libs
+  id: 0
+  name: openssl
   version: ""
   category: dev-libs
   id: 0
   name: libpwquality[static-libs(+)]
   version: ""
-  category: dev-libs
+  category: sys-fs
   id: 0
-  name: libpwquality
-  version: ""
-  category: dev-libs
-  id: 0
-  name: popt
+  name: lvm2[static-libs(+)]
   version: ""
   category: app-crypt
   id: 0
@@ -49,37 +61,25 @@ requires:
   id: 0
   name: libudev[static-libs(-)]
   version: ""
-  category: dev-libs
-  id: 0
-  name: libgpg-error
-  version: ""
-  category: sys-apps
-  id: 0
-  name: util-linux
-  version: 2.31-r1
-  category: sys-fs
-  id: 0
-  name: lvm2
-  version: ""
   category: virtual
   id: 0
   name: libudev
   version: ""
   category: dev-libs
   id: 0
-  name: libgpg-error[static-libs(+)]
-  version: ""
-  category: dev-libs
-  id: 0
-  name: popt[static-libs(+)]
-  version: ""
-  category: sys-apps
-  id: 0
-  name: util-linux-2.31-r1[static-libs(+)]
+  name: libgcrypt
   version: ""
   category: dev-libs
   id: 0
   name: libressl
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libpwquality
+  version: ""
+  category: sys-fs
+  id: 0
+  name: lvm2
   version: ""
 uri:
 - https://www.kernel.org/pub/linux/utils/cryptsetup/v/cryptsetup-2.2.2.tar.xz

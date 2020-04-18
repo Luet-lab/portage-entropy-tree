@@ -2,11 +2,7 @@ category: net-mail
 conflicts:
   category: mail-client
   id: 0
-  name: mailx
-  version: ""
-  category: mail-client
-  id: 0
-  name: nail
+  name: nmh
   version: ""
   category: mail-filter
   id: 0
@@ -14,7 +10,11 @@ conflicts:
   version: ""
   category: mail-client
   id: 0
-  name: nmh
+  name: mailx
+  version: ""
+  category: mail-client
+  id: 0
+  name: nail
   version: ""
 description: A useful collection of mail servers, clients, and filters
 id: 0
@@ -23,27 +23,11 @@ name: mailutils
 requires:
   category: sys-libs
   id: 0
-  name: readline
+  name: pam
   version: ""
-  category: sys-libs
+  category: dev-libs
   id: 0
-  name: db
-  version: ""
-  category: dev-db
-  id: 0
-  name: kyotocabinet
-  version: ""
-  category: dev-db
-  id: 0
-  name: postgresql
-  version: ""
-  category: virtual
-  id: 0
-  name: libiconv
-  version: ""
-  category: dev-db
-  id: 0
-  name: tokyocabinet
+  name: libunistring
   version: ""
   category: sys-libs
   id: 0
@@ -51,23 +35,51 @@ requires:
   version: ""
   category: virtual
   id: 0
-  name: krb5
+  name: mta
   version: ""
   category: net-nds
   id: 0
   name: openldap
   version: ""
-  category: dev-libs
+  category: sys-devel
   id: 0
-  name: libunistring
+  name: gettext
+  version: ""
+  category: sys-libs
+  id: 0
+  name: db
+  version: ""
+  category: virtual
+  id: 0
+  name: krb5
+  version: ""
+  category: virtual
+  id: 0
+  name: libiconv
+  version: ""
+  category: dev-db
+  id: 0
+  name: mysql-connector-c
+  version: ""
+  category: dev-db
+  id: 0
+  name: postgresql
   version: ""
   category: net-libs
   id: 0
   name: gnutls
   version: ""
-  category: virtual
+  category: dev-db
   id: 0
-  name: mta
+  name: tokyocabinet
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libltdl
+  version: ""
+  category: dev-db
+  id: 0
+  name: kyotocabinet
   version: ""
   category: sys-libs
   id: 0
@@ -81,9 +93,9 @@ requires:
   id: 0
   name: tcp-wrappers
   version: ""
-  category: dev-libs
+  category: sys-libs
   id: 0
-  name: libltdl
+  name: readline
   version: ""
   category: dev-libs
   id: 0
@@ -93,18 +105,6 @@ requires:
   id: 0
   name: emacs
   version: "23.1"
-  category: dev-db
-  id: 0
-  name: mysql-connector-c
-  version: ""
-  category: sys-devel
-  id: 0
-  name: gettext
-  version: ""
-  category: sys-libs
-  id: 0
-  name: pam
-  version: ""
 uri:
 - mirror://gnu/mailutils/mailutils-3.9.tar.xz
 use_flags:

@@ -2,16 +2,16 @@ category: sys-fs
 conflicts:
   category: sys-apps
   id: 0
+  name: gentoo-systemd-integration
+  version: ""
+  category: sys-apps
+  id: 0
   name: systemd
   version: ""
   category: <sys-libs
   id: 0
   name: glibc
   version: "2.11"
-  category: sys-apps
-  id: 0
-  name: gentoo-systemd-integration
-  version: ""
   category: <sys-fs
   id: 0
   name: lvm2
@@ -25,13 +25,25 @@ id: 0
 license: LGPL-2.1 MIT GPL-2
 name: udev
 requires:
+  category: sys-apps
+  id: 0
+  name: util-linux
+  version: "2.30"
   category: acct-group
   id: 0
-  name: tape
+  name: render
   version: ""
   category: acct-group
   id: 0
   name: video
+  version: ""
+  category: sys-apps
+  id: 0
+  name: acl
+  version: ""
+  category: acct-group
+  id: 0
+  name: kmem
   version: ""
   category: acct-group
   id: 0
@@ -49,26 +61,6 @@ requires:
   id: 0
   name: lp
   version: ""
-  category: acct-group
-  id: 0
-  name: dialout
-  version: ""
-  category: sys-apps
-  id: 0
-  name: util-linux
-  version: "2.30"
-  category: sys-apps
-  id: 0
-  name: acl
-  version: ""
-  category: acct-group
-  id: 0
-  name: tty
-  version: ""
-  category: acct-group
-  id: 0
-  name: input
-  version: ""
   category: sys-libs
   id: 0
   name: libcap
@@ -83,7 +75,15 @@ requires:
   version: 2.1.9
   category: acct-group
   id: 0
-  name: kmem
+  name: tty
+  version: ""
+  category: acct-group
+  id: 0
+  name: dialout
+  version: ""
+  category: acct-group
+  id: 0
+  name: input
   version: ""
   category: acct-group
   id: 0
@@ -91,7 +91,7 @@ requires:
   version: ""
   category: acct-group
   id: 0
-  name: render
+  name: tape
   version: ""
 uri:
 - https://github.com/systemd/systemd/archive/v243/systemd-243.tar.gz

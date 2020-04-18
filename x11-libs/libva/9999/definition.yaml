@@ -5,6 +5,14 @@ id: 0
 license: MIT
 name: libva
 requires:
+  category: dev-libs
+  id: 0
+  name: wayland
+  version: "1.11"
+  category: x11-libs
+  id: 0
+  name: libX11
+  version: 1.6.2
   category: x11-libs
   id: 0
   name: libXext
@@ -21,14 +29,6 @@ requires:
   id: 0
   name: opengl
   version: 7.0-r1
-  category: dev-libs
-  id: 0
-  name: wayland
-  version: "1.11"
-  category: x11-libs
-  id: 0
-  name: libX11
-  version: 1.6.2
 use_flags:
 - +drm
 - opengl

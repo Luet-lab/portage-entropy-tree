@@ -6,9 +6,9 @@ license: Apache-2.0 Boost-1.0 BSD BSD-1 BSD-2 CC0-1.0 LGPL-3 MIT public-domain u
   ZLIB
 name: rspamd
 requires:
-  category: dev-lua
+  category: dev-libs
   id: 0
-  name: LuaBitOp
+  name: libpcre[jit=]
   version: ""
   category: app-arch
   id: 0
@@ -20,47 +20,15 @@ requires:
   version: ""
   category: dev-libs
   id: 0
-  name: snowball-stemmer
+  name: icu
   version: ""
   category: net-libs
   id: 0
   name: libnsl
   version: ""
-  category: sys-apps
-  id: 0
-  name: file
-  version: ""
-  category: dev-libs
-  id: 0
-  name: jemalloc
-  version: ""
-  category: dev-libs
-  id: 0
-  name: libsodium
-  version: ""
   category: dev-lua
   id: 0
   name: lpeg
-  version: ""
-  category: dev-libs
-  id: 0
-  name: glib
-  version: ""
-  category: dev-libs
-  id: 0
-  name: icu
-  version: ""
-  category: dev-libs
-  id: 0
-  name: libev
-  version: ""
-  category: sci-libs
-  id: 0
-  name: openblas
-  version: ""
-  category: dev-libs
-  id: 0
-  name: hyperscan
   version: ""
   category: dev-lang
   id: 0
@@ -68,7 +36,23 @@ requires:
   version: ""
   category: dev-libs
   id: 0
-  name: libpcre[jit=]
+  name: snowball-stemmer
+  version: ""
+  category: sys-apps
+  id: 0
+  name: file
+  version: ""
+  category: sci-libs
+  id: 0
+  name: openblas
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libressl
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libpcre2[jit=]
   version: ""
   category: acct-group
   id: 0
@@ -78,9 +62,17 @@ requires:
   id: 0
   name: rspamd
   version: ""
-  category: dev-lang
+  category: dev-libs
   id: 0
-  name: luajit
+  name: libev
+  version: ""
+  category: dev-libs
+  id: 0
+  name: hyperscan
+  version: ""
+  category: dev-lua
+  id: 0
+  name: LuaBitOp
   version: ""
   category: dev-libs
   id: 0
@@ -88,11 +80,19 @@ requires:
   version: ""
   category: dev-libs
   id: 0
-  name: libressl
+  name: glib
   version: ""
   category: dev-libs
   id: 0
-  name: libpcre2[jit=]
+  name: libsodium
+  version: ""
+  category: dev-libs
+  id: 0
+  name: jemalloc
+  version: ""
+  category: dev-lang
+  id: 0
+  name: luajit
   version: ""
 uri:
 - https://github.com/rspamd/rspamd/archive/2.5.tar.gz -> rspamd-2.5.tar.gz

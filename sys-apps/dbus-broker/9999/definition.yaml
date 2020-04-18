@@ -5,6 +5,14 @@ id: 0
 license: Apache-2.0
 name: dbus-broker
 requires:
+  category: sys-libs
+  id: 0
+  name: libcap-ng
+  version: "0.6"
+  category: dev-libs
+  id: 0
+  name: expat
+  version: "2.2"
   category: sys-apps
   id: 0
   name: systemd
@@ -21,14 +29,6 @@ requires:
   id: 0
   name: audit
   version: "2.7"
-  category: sys-libs
-  id: 0
-  name: libcap-ng
-  version: "0.6"
-  category: dev-libs
-  id: 0
-  name: expat
-  version: "2.2"
 use_flags:
 - audit
 - doc

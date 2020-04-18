@@ -5,82 +5,42 @@ id: 0
 license: GPL-2+ LGPL-2+
 name: gnome-shell
 requires:
-  category: gnome-extra
+  category: dev-libs
   id: 0
-  name: evolution-data-server
-  version: "3.33"
+  name: libxml2
+  version: ""
+  category: gnome-base
+  id: 0
+  name: gnome-session
+  version: 2.91.91
+  category: net-misc
+  id: 0
+  name: mobile-broadband-provider-info
+  version: ""
   category: dev-libs
   id: 0
   name: glib
   version: 2.53.0
   category: dev-libs
   id: 0
-  name: gobject-introspection
-  version: 1.49.1
+  name: gjs
+  version: "1.53"
   category: x11-libs
   id: 0
   name: gtk+
   version: 3.15.0
   category: media-libs
   id: 0
-  name: gstreamer
-  version: 0.11.92
-  category: net-misc
-  id: 0
-  name: mobile-broadband-provider-info
-  version: ""
-  category: x11-libs
-  id: 0
-  name: pango
-  version: ""
-  category: dev-libs
-  id: 0
-  name: libcroco
-  version: 0.6.8
-  category: gnome-extra
-  id: 0
-  name: evolution-data-server
-  version: 3.17.2
-  category: gnome-extra
-  id: 0
-  name: nm-applet
-  version: 0.9.8
-  category: sys-auth
-  id: 0
-  name: elogind
-  version: "237"
-  category: media-libs
-  id: 0
   name: libcanberra
   version: ""
-  category: x11-libs
-  id: 0
-  name: libXfixes
-  version: "5.0"
-  category: sys-apps
-  id: 0
-  name: accountsservice
-  version: 0.6.14
-  category: gnome-base
-  id: 0
-  name: librsvg
-  version: ""
-  category: net-im
-  id: 0
-  name: telepathy-logger
-  version: 0.2.4
-  category: gnome-base
-  id: 0
-  name: gnome-desktop
-  version: 3.7.90
   category: dev-libs
   id: 0
-  name: dbus-glib
+  name: libical
   version: ""
-  category: gnome-base
+  category: app-misc
   id: 0
-  name: gnome-session
-  version: 2.91.91
+  name: geoclue
+  version: ""
   category: x11-themes
   id: 0
   name: adwaita-icon-theme
@@ -89,78 +49,22 @@ requires:
   id: 0
   name: telepathy-glib
   version: "0.19"
-  category: app-crypt
+  category: gnome-extra
   id: 0
-  name: gcr
-  version: 3.7.5
-  category: sys-apps
-  id: 0
-  name: systemd
-  version: "31"
-  category: x11-libs
-  id: 0
-  name: gdk-pixbuf
-  version: ""
-  category: x11-misc
-  id: 0
-  name: xdg-utils
-  version: ""
-  category: x11-libs
-  id: 0
-  name: startup-notification
-  version: "0.11"
-  category: app-crypt
-  id: 0
-  name: libsecret
-  version: "0.18"
-  category: media-libs
-  id: 0
-  name: mesa[X(+)]
-  version: ""
-  category: gnome-base
-  id: 0
-  name: gnome-settings-daemon
-  version: 3.8.3
-  category: dev-libs
-  id: 0
-  name: json-glib
-  version: 0.13.2
+  name: evolution-data-server
+  version: 3.17.2
   category: sys-auth
   id: 0
   name: polkit
   version: "0.100"
-  category: net-misc
+  category: net-wireless
   id: 0
-  name: networkmanager
-  version: 0.9.8
-  category: app-accessibility
+  name: gnome-bluetooth
+  version: "3.9"
+  category: x11-libs
   id: 0
-  name: at-spi2-atk
-  version: 2.5.3
-  category: sys-power
-  id: 0
-  name: upower
-  version: "0.99"
-  category: sys-libs
-  id: 0
-  name: timezone-data
+  name: gdk-pixbuf
   version: ""
-  category: app-i18n
-  id: 0
-  name: ibus-1.4.99[dconf(+),gtk,introspection]
-  version: ""
-  category: dev-libs
-  id: 0
-  name: libxml2
-  version: ""
-  category: net-libs
-  id: 0
-  name: libsoup
-  version: "2.40"
-  category: media-sound
-  id: 0
-  name: pulseaudio
-  version: "2"
   category: dev-libs
   id: 0
   name: atk
@@ -169,41 +73,137 @@ requires:
   id: 0
   name: caribou
   version: 0.4.8
-  category: app-misc
+  category: sys-power
   id: 0
-  name: geoclue
+  name: upower
+  version: "0.99"
+  category: x11-misc
+  id: 0
+  name: xdg-utils
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libcroco
+  version: 0.6.8
+  category: media-libs
+  id: 0
+  name: gstreamer
+  version: 0.11.92
+  category: gnome-extra
+  id: 0
+  name: nm-applet
+  version: 0.9.8
+  category: net-im
+  id: 0
+  name: telepathy-logger
+  version: 0.2.4
+  category: gnome-base
+  id: 0
+  name: gnome-desktop
+  version: 3.7.90
+  category: sys-apps
+  id: 0
+  name: systemd
+  version: "31"
+  category: app-accessibility
+  id: 0
+  name: at-spi2-atk
+  version: 2.5.3
+  category: gnome-base
+  id: 0
+  name: gsettings-desktop-schemas
+  version: 3.21.3
+  category: x11-libs
+  id: 0
+  name: libX11
+  version: ""
+  category: net-libs
+  id: 0
+  name: libsoup
+  version: "2.40"
+  category: app-accessibility
+  id: 0
+  name: at-spi2-core
+  version: ""
+  category: x11-libs
+  id: 0
+  name: pango
+  version: ""
+  category: gnome-base
+  id: 0
+  name: librsvg
+  version: ""
+  category: app-crypt
+  id: 0
+  name: gcr
+  version: 3.7.5
+  category: dev-libs
+  id: 0
+  name: json-glib
+  version: 0.13.2
+  category: app-crypt
+  id: 0
+  name: libsecret
+  version: "0.18"
+  category: sys-auth
+  id: 0
+  name: elogind
+  version: "237"
+  category: sys-apps
+  id: 0
+  name: accountsservice
+  version: 0.6.14
+  category: gnome-base
+  id: 0
+  name: gnome-settings-daemon
+  version: 3.8.3
+  category: x11-libs
+  id: 0
+  name: startup-notification
+  version: "0.11"
+  category: net-misc
+  id: 0
+  name: networkmanager
+  version: 0.9.8
+  category: dev-libs
+  id: 0
+  name: dbus-glib
+  version: ""
+  category: media-sound
+  id: 0
+  name: pulseaudio
+  version: "2"
+  category: x11-libs
+  id: 0
+  name: libXfixes
+  version: "5.0"
+  category: gnome-extra
+  id: 0
+  name: evolution-data-server
+  version: "3.33"
+  category: dev-libs
+  id: 0
+  name: gobject-introspection
+  version: 1.49.1
+  category: dev-libs
+  id: 0
+  name: gjs
+  version: 1.47.0
+  category: app-i18n
+  id: 0
+  name: ibus-1.4.99[dconf(+),gtk,introspection]
+  version: ""
+  category: media-libs
+  id: 0
+  name: mesa[X(+)]
   version: ""
   category: dev-libs
   id: 0
   name: libgweather
   version: "3.26"
-  category: dev-libs
+  category: sys-libs
   id: 0
-  name: gjs
-  version: 1.47.0
-  category: dev-libs
-  id: 0
-  name: gjs
-  version: "1.53"
-  category: gnome-base
-  id: 0
-  name: gsettings-desktop-schemas
-  version: 3.21.3
-  category: net-wireless
-  id: 0
-  name: gnome-bluetooth
-  version: "3.9"
-  category: x11-libs
-  id: 0
-  name: libX11
-  version: ""
-  category: dev-libs
-  id: 0
-  name: libical
-  version: ""
-  category: app-accessibility
-  id: 0
-  name: at-spi2-core
+  name: timezone-data
   version: ""
 uri:
 - https://dev.gentoo.org/~leio/distfiles/gnome-shell-3.26.2-patchset.tar.xz

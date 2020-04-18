@@ -5,33 +5,21 @@ id: 0
 license: GPL-2
 name: consolekit
 requires:
-  category: virtual
+  category: sys-libs
   id: 0
-  name: udev
-  version: "200"
+  name: zlib
+  version: ""
+  category: sys-apps
+  id: 0
+  name: acl
+  version: ""
   category: sys-libs
   id: 0
   name: libnih
   version: 1.0.2
-  category: sys-libs
-  id: 0
-  name: libselinux
-  version: ""
-  category: sys-power
-  id: 0
-  name: pm-utils
-  version: ""
   category: dev-libs
   id: 0
-  name: glib
-  version: "2.40"
-  category: sys-apps
-  id: 0
-  name: dbus
-  version: ""
-  category: x11-libs
-  id: 0
-  name: libX11
+  name: libevdev
   version: ""
   category: x11-libs
   id: 0
@@ -41,9 +29,21 @@ requires:
   id: 0
   name: polkit
   version: "0.110"
-  category: sec-policy
+  category: sys-power
   id: 0
-  name: selinux-consolekit
+  name: pm-utils
+  version: ""
+  category: sys-devel
+  id: 0
+  name: gettext
+  version: "0.19"
+  category: sys-apps
+  id: 0
+  name: dbus
+  version: ""
+  category: app-admin
+  id: 0
+  name: cgmanager
   version: ""
   category: sys-libs
   id: 0
@@ -53,29 +53,29 @@ requires:
   id: 0
   name: coreutils[acl?]
   version: ""
-  category: sys-devel
+  category: sec-policy
   id: 0
-  name: gettext
-  version: "0.19"
+  name: selinux-consolekit
+  version: ""
   category: dev-libs
   id: 0
-  name: libevdev
+  name: glib
+  version: "2.40"
+  category: x11-libs
+  id: 0
+  name: libX11
   version: ""
+  category: virtual
+  id: 0
+  name: udev
+  version: "200"
   category: virtual
   id: 0
   name: libudev
   version: ""
   category: sys-libs
   id: 0
-  name: zlib
-  version: ""
-  category: sys-apps
-  id: 0
-  name: acl
-  version: ""
-  category: app-admin
-  id: 0
-  name: cgmanager
+  name: libselinux
   version: ""
 uri:
 - https://github.com/ConsoleKit2/ConsoleKit2/releases/download/1.1.2/ConsoleKit2-1.1.2.tar.bz2

@@ -2,27 +2,23 @@ category: mail-mta
 conflicts:
   category: mail-mta
   id: 0
-  name: qmail-ldap
-  version: ""
-  category: mail-mta
-  id: 0
-  name: exim
-  version: ""
-  category: mail-mta
-  id: 0
-  name: postfix
-  version: ""
-  category: mail-mta
-  id: 0
   name: netqmail
   version: ""
   category: mail-mta
   id: 0
-  name: courier
+  name: qmail-ldap
   version: ""
+  category: <mail-mta
+  id: 0
+  name: ssmtp
+  version: 2.64-r2
+  category: '>=mail-mta'
+  id: 0
+  name: ssmtp
+  version: 2.64-r2
   category: mail-mta
   id: 0
-  name: mini-qmail
+  name: courier
   version: ""
   category: net-mail
   id: 0
@@ -30,20 +26,24 @@ conflicts:
   version: ""
   category: mail-mta
   id: 0
-  name: esmtp
+  name: postfix
+  version: ""
+  category: mail-mta
+  id: 0
+  name: exim
   version: ""
   category: mail-mta
   id: 0
   name: msmtp
   version: ""
-  category: '>=mail-mta'
+  category: mail-mta
   id: 0
-  name: ssmtp
-  version: 2.64-r2
-  category: <mail-mta
+  name: esmtp
+  version: ""
+  category: mail-mta
   id: 0
-  name: ssmtp
-  version: 2.64-r2
+  name: mini-qmail
+  version: ""
   category: mail-mta
   id: 0
 mailer
@@ -61,22 +61,22 @@ requires:
   id: 0
   name: m4
   version: ""
-  category: sys-apps
+  category: net-nds
   id: 0
-  name: tcp-wrappers
+  name: openldap
+  version: ""
+  category: dev-libs
+  id: 0
+  name: cyrus-sasl
+  version: 2.1.10
+  category: dev-libs
+  id: 0
+  name: libressl
   version: ""
   category: sys-libs
   id: 0
   name: db
   version: "3.2"
-  category: dev-libs
-  id: 0
-  name: cyrus-sasl
-  version: 2.1.10
-  category: net-nds
-  id: 0
-  name: openldap
-  version: ""
   category: net-mail
   id: 0
   name: mailbase
@@ -85,13 +85,13 @@ requires:
   id: 0
   name: mailbase
   version: ""
-  category: dev-libs
+  category: sys-apps
   id: 0
-  name: openssl
+  name: tcp-wrappers
   version: ""
   category: dev-libs
   id: 0
-  name: libressl
+  name: openssl
   version: ""
 uri:
 - ftp://ftp.sendmail.org/pub/sendmail/sendmail.8.15.2.tar.gz

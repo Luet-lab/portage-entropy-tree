@@ -9,17 +9,29 @@ id: 0
 license: GPL-2+ GPL-3+ HPND LGPL-2+ LGPL-2.1+
 name: mate-session-manager
 requires:
+  category: x11-libs
+  id: 0
+  name: gtk+
+  version: "3.22"
+  category: sys-auth
+  id: 0
+  name: consolekit
+  version: 0.9.2
   category: x11-misc
   id: 0
   name: xdg-user-dirs
   version: ""
-  category: x11-libs
+  category: x11-misc
   id: 0
-  name: libICE
+  name: xdg-user-dirs-gtk
   version: ""
+  category: dev-libs
+  id: 0
+  name: dbus-glib
+  version: "0.76"
   category: x11-libs
   id: 0
-  name: libSM
+  name: libX11
   version: ""
   category: x11-libs
   id: 0
@@ -27,7 +39,7 @@ requires:
   version: ""
   category: x11-libs
   id: 0
-  name: libXrender
+  name: pango
   version: ""
   category: sys-apps
   id: 0
@@ -35,23 +47,19 @@ requires:
   version: ""
   category: x11-libs
   id: 0
-  name: libXtst
+  name: xtrans
+  version: ""
+  category: x11-apps
+  id: 0
+  name: xdpyinfo
+  version: ""
+  category: sys-apps
+  id: 0
+  name: dbus
   version: ""
   category: x11-libs
   id: 0
-  name: pango
-  version: ""
-  category: gnome-base
-  id: 0
-  name: gnome-keyring
-  version: ""
-  category: dev-libs
-  id: 0
-  name: glib
-  version: "2.50"
-  category: x11-libs
-  id: 0
-  name: libX11
+  name: libICE
   version: ""
   category: x11-libs
   id: 0
@@ -61,21 +69,29 @@ requires:
   id: 0
   name: libintl
   version: ""
+  category: x11-libs
+  id: 0
+  name: libXrender
+  version: ""
+  category: x11-libs
+  id: 0
+  name: libXtst
+  version: ""
   category: sys-auth
   id: 0
   name: elogind
   version: ""
+  category: gnome-base
+  id: 0
+  name: gnome-keyring
+  version: ""
   category: dev-libs
   id: 0
-  name: dbus-glib
-  version: "0.76"
+  name: glib
+  version: "2.50"
   category: dev-libs
   id: 0
   name: libxslt
-  version: ""
-  category: sys-apps
-  id: 0
-  name: dbus
   version: ""
   category: x11-libs
   id: 0
@@ -83,23 +99,7 @@ requires:
   version: ""
   category: x11-libs
   id: 0
-  name: gtk+
-  version: "3.22"
-  category: sys-auth
-  id: 0
-  name: consolekit
-  version: 0.9.2
-  category: x11-libs
-  id: 0
-  name: xtrans
-  version: ""
-  category: x11-apps
-  id: 0
-  name: xdpyinfo
-  version: ""
-  category: x11-misc
-  id: 0
-  name: xdg-user-dirs-gtk
+  name: libSM
   version: ""
 use_flags:
 - debug

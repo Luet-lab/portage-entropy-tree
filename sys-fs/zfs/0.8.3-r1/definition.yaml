@@ -9,21 +9,25 @@ id: 0
 license: BSD-2 CDDL MIT
 name: zfs
 requires:
-  category: app-arch
+  category: app-misc
   id: 0
-  name: cpio
+  name: pax-utils
   version: ""
-  category: sys-apps
+  category: sys-block
   id: 0
-  name: util-linux
+  name: parted
   version: ""
+  category: sys-fs
+  id: 0
+  name: zfs-kmod
+  version: 0.8.3
   category: virtual
   id: 0
   name: modutils
   version: ""
   category: dev-libs
   id: 0
-  name: openssl
+  name: libressl
   version: ""
   category: virtual
   id: 0
@@ -31,31 +35,11 @@ requires:
   version: ""
   category: sys-fs
   id: 0
-  name: zfs-kmod
-  version: 0.8.3
-  category: dev-libs
-  id: 0
-  name: libressl
-  version: ""
-  category: sys-block
-  id: 0
-  name: parted
-  version: ""
-  category: sys-process
-  id: 0
-  name: procps
-  version: ""
-  category: virtual
-  id: 0
-  name: udev
-  version: ""
-  category: sys-fs
-  id: 0
   name: udev-init-scripts
   version: ""
-  category: app-misc
+  category: app-arch
   id: 0
-  name: pax-utils
+  name: cpio
   version: ""
   category: sys-fs
   id: 0
@@ -65,6 +49,14 @@ requires:
   id: 0
   name: awk
   version: ""
+  category: virtual
+  id: 0
+  name: udev
+  version: ""
+  category: sys-apps
+  id: 0
+  name: util-linux
+  version: ""
   category: sys-devel
   id: 0
   name: bc
@@ -72,6 +64,14 @@ requires:
   category: sys-fs
   id: 0
   name: lsscsi
+  version: ""
+  category: sys-process
+  id: 0
+  name: procps
+  version: ""
+  category: dev-libs
+  id: 0
+  name: openssl
   version: ""
 uri:
 - https://github.com/zfsonlinux/zfs/releases/download/zfs-0.8.3/zfs-0.8.3.tar.gz

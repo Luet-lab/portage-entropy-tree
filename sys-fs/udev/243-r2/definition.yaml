@@ -4,14 +4,6 @@ conflicts:
   id: 0
   name: glibc
   version: "2.11"
-  category: <sys-fs
-  id: 0
-  name: lvm2
-  version: 2.02.103
-  category: <sec-policy
-  id: 0
-  name: selinux-base
-  version: 2.20120725-r10
   category: sys-apps
   id: 0
   name: gentoo-systemd-integration
@@ -20,6 +12,14 @@ conflicts:
   id: 0
   name: systemd
   version: ""
+  category: <sec-policy
+  id: 0
+  name: selinux-base
+  version: 2.20120725-r10
+  category: <sys-fs
+  id: 0
+  name: lvm2
+  version: 2.02.103
 description: Linux dynamic and persistent device naming support (aka userspace devfs)
 id: 0
 license: LGPL-2.1 MIT GPL-2
@@ -27,55 +27,7 @@ name: udev
 requires:
   category: acct-group
   id: 0
-  name: cdrom
-  version: ""
-  category: acct-group
-  id: 0
-  name: render
-  version: ""
-  category: sys-libs
-  id: 0
-  name: libcap
-  version: ""
-  category: acct-group
-  id: 0
-  name: tty
-  version: ""
-  category: acct-group
-  id: 0
-  name: kmem
-  version: ""
-  category: acct-group
-  id: 0
-  name: dialout
-  version: ""
-  category: acct-group
-  id: 0
-  name: disk
-  version: ""
-  category: acct-group
-  id: 0
-  name: input
-  version: ""
-  category: acct-group
-  id: 0
   name: lp
-  version: ""
-  category: sys-apps
-  id: 0
-  name: util-linux
-  version: "2.30"
-  category: sys-apps
-  id: 0
-  name: kmod
-  version: "16"
-  category: sys-libs
-  id: 0
-  name: libselinux
-  version: 2.1.9
-  category: acct-group
-  id: 0
-  name: tape
   version: ""
   category: sys-apps
   id: 0
@@ -83,12 +35,60 @@ requires:
   version: ""
   category: acct-group
   id: 0
+  name: kmem
+  version: ""
+  category: acct-group
+  id: 0
+  name: cdrom
+  version: ""
+  category: acct-group
+  id: 0
+  name: disk
+  version: ""
+  category: acct-group
+  id: 0
+  name: render
+  version: ""
+  category: sys-apps
+  id: 0
+  name: kmod
+  version: "16"
+  category: acct-group
+  id: 0
+  name: tty
+  version: ""
+  category: acct-group
+  id: 0
   name: kvm
+  version: ""
+  category: sys-libs
+  id: 0
+  name: libcap
+  version: ""
+  category: acct-group
+  id: 0
+  name: dialout
+  version: ""
+  category: acct-group
+  id: 0
+  name: input
+  version: ""
+  category: acct-group
+  id: 0
+  name: tape
   version: ""
   category: acct-group
   id: 0
   name: video
   version: ""
+  category: sys-apps
+  id: 0
+  name: util-linux
+  version: "2.30"
+  category: sys-libs
+  id: 0
+  name: libselinux
+  version: 2.1.9
   category: acct-group
   id: 0
   name: audio

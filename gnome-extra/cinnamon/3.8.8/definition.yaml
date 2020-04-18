@@ -5,6 +5,34 @@ id: 0
 license: GPL-2+
 name: cinnamon
 requires:
+  category: dev-libs
+  id: 0
+  name: glib
+  version: 2.35.0
+  category: x11-libs
+  id: 0
+  name: pango
+  version: ""
+  category: x11-libs
+  id: 0
+  name: startup-notification
+  version: "0.11"
+  category: gnome-extra
+  id: 0
+  name: cinnamon-session
+  version: "3.8"
+  category: app-misc
+  id: 0
+  name: ca-certificates
+  version: ""
+  category: x11-libs
+  id: 0
+  name: gtk+
+  version: 3.12.0
+  category: dev-python
+  id: 0
+  name: dbus-python
+  version: ""
   category: gnome-extra
   id: 0
   name: cinnamon-control-center
@@ -13,113 +41,37 @@ requires:
   id: 0
   name: cinnamon-screensaver
   version: "3.8"
-  category: app-misc
-  id: 0
-  name: ca-certificates
-  version: ""
-  category: dev-libs
-  id: 0
-  name: json-glib
-  version: 0.13.2
   category: media-libs
   id: 0
   name: clutter
   version: "1.10"
   category: x11-libs
   id: 0
-  name: gtk+
-  version: 3.12.0
-  category: x11-libs
-  id: 0
-  name: libX11
+  name: gdk-pixbuf
   version: ""
-  category: dev-libs
-  id: 0
-  name: dbus-glib
-  version: ""
-  category: sys-power
-  id: 0
-  name: upower
-  version: ""
-  category: dev-python
-  id: 0
-  name: pygobject
-  version: ""
-  category: gnome-base
-  id: 0
-  name: gconf
-  version: ""
-  category: gnome-extra
-  id: 0
-  name: cjs
-  version: 3.8.0
   category: gnome-base
   id: 0
   name: libgnomekbd
   version: 2.91.4
-  category: dev-python
-  id: 0
-  name: dbus-python
-  version: ""
-  category: x11-themes
-  id: 0
-  name: adwaita-icon-theme
-  version: ""
   category: x11-libs
   id: 0
-  name: libXfixes
-  version: "5.0"
+  name: xapps
+  version: ""
   category: x11-themes
   id: 0
   name: gnome-themes-standard
   version: ""
   category: gnome-extra
   id: 0
-  name: polkit-gnome
-  version: ""
-  category: x11-libs
-  id: 0
-  name: xapps
-  version: ""
-  category: dev-libs
-  id: 0
-  name: libcroco
-  version: 0.6.2
-  category: gnome-base
-  id: 0
-  name: gsettings-desktop-schemas
-  version: 2.91.91
-  category: x11-wm
-  id: 0
-  name: muffin
-  version: 3.8.0
-  category: gnome-extra
-  id: 0
-  name: cinnamon-session
+  name: nemo
   version: "3.8"
   category: gnome-extra
   id: 0
-  name: cinnamon-settings-daemon
+  name: cinnamon-translations
   version: "3.8"
-  category: net-libs
-  id: 0
-  name: libsoup
-  version: ""
-  category: sys-auth
-  id: 0
-  name: polkit
-  version: "0.100"
-  category: x11-libs
-  id: 0
-  name: startup-notification
-  version: "0.11"
-  category: dev-libs
-  id: 0
-  name: gobject-introspection
-  version: 0.10.1
   category: gnome-base
   id: 0
-  name: librsvg
+  name: gconf
   version: ""
   category: gnome-extra
   id: 0
@@ -127,59 +79,107 @@ requires:
   version: "3.6"
   category: gnome-extra
   id: 0
-  name: cinnamon-menus
-  version: "3.6"
+  name: cjs
+  version: 3.8.0
+  category: x11-libs
+  id: 0
+  name: libXfixes
+  version: "5.0"
+  category: dev-libs
+  id: 0
+  name: libcroco
+  version: 0.6.2
   category: media-libs
   id: 0
   name: gst-plugins-base
   version: ""
-  category: gnome-extra
+  category: sys-auth
   id: 0
-  name: nemo
-  version: "3.8"
-  category: dev-libs
+  name: polkit
+  version: "0.100"
+  category: x11-themes
   id: 0
-  name: libxml2
-  version: ""
-  category: x11-libs
-  id: 0
-  name: gdk-pixbuf
-  version: ""
-  category: gnome-base
-  id: 0
-  name: dconf
-  version: 0.4.1
-  category: app-accessibility
-  id: 0
-  name: caribou
-  version: "0.3"
-  category: gnome-extra
-  id: 0
-  name: cinnamon-translations
-  version: "3.8"
-  category: x11-misc
-  id: 0
-  name: xdg-utils
+  name: adwaita-icon-theme
   version: ""
   category: app-accessibility
   id: 0
   name: at-spi2-atk
   version: ""
-  category: dev-libs
+  category: gnome-base
   id: 0
-  name: glib
-  version: 2.35.0
-  category: media-libs
-  id: 0
-  name: cogl
+  name: librsvg
   version: ""
+  category: gnome-base
+  id: 0
+  name: dconf
+  version: 0.4.1
+  category: gnome-extra
+  id: 0
+  name: cinnamon-settings-daemon
+  version: "3.8"
   category: media-libs
   id: 0
   name: gstreamer
   version: ""
+  category: x11-wm
+  id: 0
+  name: muffin
+  version: 3.8.0
+  category: x11-misc
+  id: 0
+  name: xdg-utils
+  version: ""
+  category: dev-python
+  id: 0
+  name: pygobject
+  version: ""
+  category: dev-libs
+  id: 0
+  name: dbus-glib
+  version: ""
+  category: dev-libs
+  id: 0
+  name: gobject-introspection
+  version: 0.10.1
+  category: dev-libs
+  id: 0
+  name: libxml2
+  version: ""
+  category: gnome-base
+  id: 0
+  name: gsettings-desktop-schemas
+  version: 2.91.91
+  category: gnome-extra
+  id: 0
+  name: polkit-gnome
+  version: ""
   category: x11-libs
   id: 0
-  name: pango
+  name: libX11
+  version: ""
+  category: sys-power
+  id: 0
+  name: upower
+  version: ""
+  category: app-accessibility
+  id: 0
+  name: caribou
+  version: "0.3"
+  category: dev-libs
+  id: 0
+  name: json-glib
+  version: 0.13.2
+  category: gnome-extra
+  id: 0
+  name: cinnamon-menus
+  version: "3.6"
+  category: media-libs
+  id: 0
+  name: cogl
+  version: ""
+  category: net-libs
+  id: 0
+  name: libsoup
   version: ""
 uri:
 - https://github.com/linuxmint/Cinnamon/archive/3.8.8.tar.gz -> cinnamon-3.8.8.tar.gz

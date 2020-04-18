@@ -1,17 +1,13 @@
 category: dev-db
 conflicts:
-  category: dev-db
-  id: 0
-  name: mysql
-  version: ""
-  category: dev-db
-  id: 0
-  name: mysql-cluster
-  version: ""
   category: '>=dev-libs'
   id: 0
   name: openssl
-  version: 1.1.0
+  version: "1.1"
+  category: dev-db
+  id: 0
+  name: mariadb-connector-c
+  version: ""
   category: dev-db
   id: 0
   name: mariadb-galera
@@ -22,7 +18,15 @@ conflicts:
   version: ""
   category: dev-db
   id: 0
-  name: mariadb-connector-c
+  name: mysql-cluster
+  version: ""
+  category: dev-db
+  id: 0
+  name: mytop
+  version: ""
+  category: dev-db
+  id: 0
+  name: mysql
   version: ""
   category: dev-db
   id: 0
@@ -31,51 +35,31 @@ conflicts:
   category: '>=dev-libs'
   id: 0
   name: openssl
-  version: "1.1"
-  category: dev-db
-  id: 0
-  name: mytop
-  version: ""
+  version: 1.1.0
 description: An enhanced, drop-in replacement for MySQL
 id: 0
 license: GPL-2
 name: mariadb
 requires:
-  category: dev-db
+  category: sys-libs
   id: 0
-  name: mysql-connector-c[,static-libs?]
+  name: binutils-libs
   version: ""
-  category: sys-process
+  category: dev-libs
   id: 0
-  name: procps
+  name: libpcre
+  version: 8.41-r1
+  category: net-misc
+  id: 0
+  name: socat
+  version: ""
+  category: dev-libs
+  id: 0
+  name: openssl
   version: ""
   category: dev-libs
   id: 0
   name: libressl
-  version: ""
-  category: dev-libs
-  id: 0
-  name: boost
-  version: 1.40.0
-  category: app-arch
-  id: 0
-  name: snappy
-  version: ""
-  category: sys-apps
-  id: 0
-  name: systemd
-  version: ""
-  category: sys-cluster
-  id: 0
-  name: galera
-  version: "25"
-  category: virtual
-  id: 0
-  name: jre
-  version: "1.6"
-  category: dev-perl
-  id: 0
-  name: TermReadKey
   version: ""
   category: sec-policy
   id: 0
@@ -83,32 +67,20 @@ requires:
   version: ""
   category: dev-libs
   id: 0
-  name: jemalloc
-  version: ""
-  category: dev-util
-  id: 0
-  name: google-perftools
+  name: libaio
   version: ""
   category: sys-libs
   id: 0
-  name: readline
-  version: "4.1"
-  category: sys-apps
-  id: 0
-  name: iproute2
+  name: cracklib
   version: ""
-  category: app-text
+  category: app-arch
   id: 0
-  name: groonga
-  version: 7.0.4
-  category: sys-process
-  id: 0
-  name: numactl
+  name: lz4
   version: ""
   category: sys-libs
   id: 0
-  name: zlib
-  version: 1.2.3
+  name: pam
+  version: ""
   category: dev-libs
   id: 0
   name: libxml2
@@ -119,56 +91,24 @@ requires:
   version: ""
   category: sys-process
   id: 0
-  name: lsof
-  version: ""
-  category: net-misc
-  id: 0
-  name: socat
-  version: ""
-  category: sys-libs
-  id: 0
-  name: binutils-libs
-  version: ""
-  category: sys-libs
-  id: 0
-  name: pam
-  version: ""
-  category: virtual
-  id: 0
-  name: perl-Getopt-Long
+  name: numactl
   version: ""
   category: dev-libs
   id: 0
-  name: libaio
-  version: ""
-  category: sys-apps
+  name: boost
+  version: 1.40.0
+  category: dev-perl
   id: 0
-  name: texinfo
-  version: 4.7-r1
-  category: dev-libs
-  id: 0
-  name: openssl
+  name: TermReadKey
   version: ""
   category: virtual
   id: 0
   name: perl-Term-ANSIColor
   version: ""
-  category: virtual
+  category: dev-util
   id: 0
-  name: krb5
+  name: google-perftools
   version: ""
-  category: app-text
-  id: 0
-  name: groonga-normalizer-mysql
-  version: ""
-  category: dev-db
-  id: 0
-  name: mysql-init-scripts
-  version: ""
-  category: sys-apps
-  id: 0
-  name: sed
-  version: "4"
   category: dev-util
   id: 0
   name: systemtap
@@ -177,37 +117,97 @@ requires:
   id: 0
   name: ncurses
   version: ""
+  category: app-text
+  id: 0
+  name: groonga
+  version: 7.0.4
+  category: virtual
+  id: 0
+  name: perl-Getopt-Long
+  version: ""
+  category: virtual
+  id: 0
+  name: jre
+  version: "1.6"
+  category: sys-libs
+  id: 0
+  name: readline
+  version: "4.1"
   category: app-arch
   id: 0
   name: libarchive
   version: ""
+  category: dev-db
+  id: 0
+  name: unixODBC
+  version: ""
+  category: app-arch
+  id: 0
+  name: snappy
+  version: ""
+  category: sys-apps
+  id: 0
+  name: iproute2
+  version: ""
+  category: sys-cluster
+  id: 0
+  name: galera
+  version: "25"
+  category: sys-process
+  id: 0
+  name: lsof
+  version: ""
+  category: dev-db
+  id: 0
+  name: mysql-init-scripts
+  version: ""
   category: sys-libs
   id: 0
-  name: cracklib
+  name: zlib
+  version: 1.2.3
+  category: virtual
+  id: 0
+  name: krb5
   version: ""
   category: dev-libs
   id: 0
-  name: libpcre
-  version: 8.41-r1
+  name: judy
+  version: ""
   category: virtual
   id: 0
   name: perl-Time-HiRes
   version: ""
   category: dev-db
   id: 0
-  name: unixODBC
+  name: mysql-connector-c[,static-libs?]
   version: ""
+  category: sys-apps
+  id: 0
+  name: sed
+  version: "4"
+  category: sys-apps
+  id: 0
+  name: texinfo
+  version: 4.7-r1
   category: sys-libs
   id: 0
   name: zlib
   version: ""
-  category: app-arch
+  category: sys-process
   id: 0
-  name: lz4
+  name: procps
   version: ""
   category: dev-libs
   id: 0
-  name: judy
+  name: jemalloc
+  version: ""
+  category: app-text
+  id: 0
+  name: groonga-normalizer-mysql
+  version: ""
+  category: sys-apps
+  id: 0
+  name: systemd
   version: ""
 uri:
 - https://downloads.mariadb.org/interstitial/mariadb-10.1.43/source/mariadb-10.1.43.tar.gz

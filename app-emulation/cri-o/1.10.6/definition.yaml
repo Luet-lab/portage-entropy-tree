@@ -5,17 +5,25 @@ id: 0
 license: Apache-2.0 BSD BSD-2 CC-BY-SA-4.0 ISC MIT MPL-2.0
 name: cri-o
 requires:
-  category: dev-libs
+  category: app-emulation
   id: 0
-  name: libassuan
+  name: runc
   version: ""
-  category: dev-util
+  category: sys-apps
   id: 0
-  name: ostree
+  name: iproute2
+  version: ""
+  category: net-misc
+  id: 0
+  name: cni-plugins
   version: ""
   category: sys-libs
   id: 0
   name: libseccomp
+  version: ""
+  category: app-crypt
+  id: 0
+  name: gpgme
   version: ""
   category: dev-libs
   id: 0
@@ -25,13 +33,13 @@ requires:
   id: 0
   name: btrfs-progs
   version: ""
-  category: app-crypt
+  category: dev-util
   id: 0
-  name: gpgme
+  name: ostree
   version: ""
-  category: net-firewall
+  category: dev-libs
   id: 0
-  name: conntrack-tools
+  name: libassuan
   version: ""
   category: net-firewall
   id: 0
@@ -39,7 +47,7 @@ requires:
   version: ""
   category: net-misc
   id: 0
-  name: cni-plugins
+  name: socat
   version: ""
   category: sys-fs
   id: 0
@@ -53,17 +61,9 @@ requires:
   id: 0
   name: libgpg-error
   version: ""
-  category: net-misc
+  category: net-firewall
   id: 0
-  name: socat
-  version: ""
-  category: sys-apps
-  id: 0
-  name: iproute2
-  version: ""
-  category: app-emulation
-  id: 0
-  name: runc
+  name: conntrack-tools
   version: ""
 uri:
 - https://github.com/kubernetes-incubator/cri-o/archive/v1.10.6.tar.gz -> cri-o-1.10.6.tar.gz

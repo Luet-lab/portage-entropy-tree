@@ -9,30 +9,22 @@ id: 0
 license: GPL-2+ LGPL-2.1+ FDL-1.1
 name: libcryptui
 requires:
-  category: x11-libs
+  category: dev-libs
   id: 0
-  name: libICE
-  version: ""
+  name: glib
+  version: "2.32"
   category: x11-libs
   id: 0
   name: libSM
   version: ""
   category: app-crypt
   id: 0
-  name: gnupg
-  version: "1.4"
+  name: gpgme
+  version: "1"
   category: dev-libs
   id: 0
   name: gobject-introspection
   version: 0.6.4
-  category: x11-libs
-  id: 0
-  name: libnotify
-  version: "0.7"
-  category: dev-libs
-  id: 0
-  name: glib
-  version: "2.32"
   category: dev-libs
   id: 0
   name: dbus-glib
@@ -41,10 +33,18 @@ requires:
   id: 0
   name: gcr
   version: "3"
+  category: x11-libs
+  id: 0
+  name: libICE
+  version: ""
   category: app-crypt
   id: 0
-  name: gpgme
-  version: "1"
+  name: gnupg
+  version: "1.4"
+  category: x11-libs
+  id: 0
+  name: libnotify
+  version: "0.7"
 use_flags:
 - debug
 - +introspection

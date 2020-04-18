@@ -11,31 +11,27 @@ name: cups
 requires:
   category: sys-apps
   id: 0
-  name: dbus
-  version: 1.6.18-r1
-  category: net-libs
-  id: 0
-  name: gnutls
-  version: 2.12.23-r6
-  category: sys-libs
-  id: 0
-  name: pam
-  version: ""
-  category: sys-apps
-  id: 0
   name: systemd
   version: ""
   category: virtual
   id: 0
   name: libusb
   version: ""
-  category: sys-apps
+  category: sys-libs
   id: 0
-  name: xinetd
+  name: pam
   version: ""
-  category: acct-group
+  category: net-libs
   id: 0
-  name: lp
+  name: gnutls
+  version: 2.12.23-r6
+  category: virtual
+  id: 0
+  name: krb5
+  version: 0-r1
+  category: sec-policy
+  id: 0
+  name: selinux-cups
   version: ""
   category: sys-apps
   id: 0
@@ -43,7 +39,15 @@ requires:
   version: ""
   category: sys-apps
   id: 0
-  name: attr
+  name: dbus
+  version: 1.6.18-r1
+  category: x11-misc
+  id: 0
+  name: xdg-utils
+  version: ""
+  category: sys-apps
+  id: 0
+  name: xinetd
   version: ""
   category: app-text
   id: 0
@@ -53,22 +57,18 @@ requires:
   id: 0
   name: zlib
   version: ""
-  category: virtual
+  category: acct-group
   id: 0
-  name: krb5
-  version: 0-r1
-  category: x11-misc
+  name: lp
+  version: ""
+  category: sys-apps
   id: 0
-  name: xdg-utils
+  name: attr
   version: ""
   category: net-dns
   id: 0
   name: avahi
   version: 0.6.31-r2
-  category: sec-policy
-  id: 0
-  name: selinux-cups
-  version: ""
 uri:
 - https://github.com/apple/cups/releases/download/v2.3.1/cups-2.3.1-source.tar.gz
 use_flags:

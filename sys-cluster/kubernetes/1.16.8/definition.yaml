@@ -2,7 +2,11 @@ category: sys-cluster
 conflicts:
   category: sys-cluster
   id: 0
-  name: kube-proxy
+  name: kubectl
+  version: ""
+  category: sys-cluster
+  id: 0
+  name: kube-controller-manager
   version: ""
   category: sys-cluster
   id: 0
@@ -14,15 +18,11 @@ conflicts:
   version: ""
   category: sys-cluster
   id: 0
-  name: kubectl
-  version: ""
-  category: sys-cluster
-  id: 0
   name: kube-apiserver
   version: ""
   category: sys-cluster
   id: 0
-  name: kube-controller-manager
+  name: kube-proxy
   version: ""
   category: sys-cluster
   id: 0
@@ -35,31 +35,31 @@ name: kubernetes
 requires:
   category: acct-group
   id: 0
+  name: kube-apiserver
+  version: ""
+  category: acct-group
+  id: 0
   name: kube-scheduler
+  version: ""
+  category: acct-user
+  id: 0
+  name: kube-scheduler
+  version: ""
+  category: acct-user
+  id: 0
+  name: kube-apiserver
+  version: ""
+  category: acct-group
+  id: 0
+  name: kube-controller-manager
+  version: ""
+  category: acct-user
+  id: 0
+  name: kube-controller-manager
   version: ""
   category: net-firewall
   id: 0
   name: conntrack-tools
-  version: ""
-  category: acct-group
-  id: 0
-  name: kube-apiserver
-  version: ""
-  category: acct-user
-  id: 0
-  name: kube-apiserver
-  version: ""
-  category: acct-user
-  id: 0
-  name: kube-scheduler
-  version: ""
-  category: acct-group
-  id: 0
-  name: kube-controller-manager
-  version: ""
-  category: acct-user
-  id: 0
-  name: kube-controller-manager
   version: ""
 uri:
 - https://github.com/kubernetes/kubernetes/archive/v1.16.8.tar.gz -> kubernetes-1.16.8.tar.gz

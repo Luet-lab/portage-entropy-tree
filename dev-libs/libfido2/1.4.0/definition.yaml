@@ -1,0 +1,29 @@
+category: dev-libs
+conflicts: []
+description: Provides library functionality for FIDO 2.0
+id: 0
+license: BSD-2
+name: libfido2
+requires:
+  category: dev-libs
+  id: 0
+  name: libressl
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libcbor
+  version: ""
+  category: virtual
+  id: 0
+  name: libudev
+  version: ""
+  category: dev-libs
+  id: 0
+  name: openssl
+  version: ""
+uri:
+- https://github.com/Yubico/libfido2/archive/1.4.0.tar.gz -> libfido2-1.4.0.tar.gz
+use_flags:
+- libressl
+- +static-libs
+version: 1.4.0

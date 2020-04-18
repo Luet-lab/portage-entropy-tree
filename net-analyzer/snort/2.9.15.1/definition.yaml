@@ -5,13 +5,9 @@ id: 0
 license: GPL-2
 name: snort
 requires:
-  category: dev-libs
+  category: dev-lang
   id: 0
-  name: libpcre
-  version: "8.33"
-  category: dev-libs
-  id: 0
-  name: libdnet
+  name: luajit
   version: ""
   category: net-libs
   id: 0
@@ -19,15 +15,23 @@ requires:
   version: ""
   category: sys-libs
   id: 0
-  name: zlib
+  name: glibc[rpc(-)]
   version: ""
   category: net-libs
   id: 0
   name: libtirpc
   version: ""
-  category: dev-lang
+  category: dev-libs
   id: 0
-  name: luajit
+  name: libdnet
+  version: ""
+  category: sys-libs
+  id: 0
+  name: zlib
+  version: ""
+  category: sec-policy
+  id: 0
+  name: selinux-snort
   version: ""
   category: net-libs
   id: 0
@@ -37,14 +41,10 @@ requires:
   id: 0
   name: daq
   version: 2.0.2
-  category: sys-libs
+  category: dev-libs
   id: 0
-  name: glibc[rpc(-)]
-  version: ""
-  category: sec-policy
-  id: 0
-  name: selinux-snort
-  version: ""
+  name: libpcre
+  version: "8.33"
 uri:
 - https://www.snort.org/downloads/archive/snort/snort-2.9.15.1.tar.gz
 use_flags:

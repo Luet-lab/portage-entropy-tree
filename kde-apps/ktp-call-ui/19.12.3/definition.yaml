@@ -5,10 +5,18 @@ id: 0
 license: GPL-2
 name: ktp-call-ui
 requires:
-  category: dev-qt
+  category: kde-frameworks
   id: 0
-  name: qtdbus
-  version: 5.12.3
+  name: kxmlgui
+  version: 5.63.0
+  category: media-libs
+  id: 0
+  name: phonon[qt5(+)]
+  version: ""
+  category: net-libs
+  id: 0
+  name: telepathy-farstream
+  version: ""
   category: dev-qt
   id: 0
   name: qtdeclarative
@@ -19,15 +27,19 @@ requires:
   version: 5.63.0
   category: kde-frameworks
   id: 0
+  name: kcoreaddons
+  version: 5.63.0
+  category: kde-frameworks
+  id: 0
   name: kwidgetsaddons
   version: 5.63.0
   category: kde-apps
   id: 0
   name: ktp-common-internals
   version: ""
-  category: net-libs
+  category: dev-libs
   id: 0
-  name: telepathy-qt[farstream,qt5(+)]
+  name: glib
   version: ""
   category: dev-qt
   id: 0
@@ -39,39 +51,27 @@ requires:
   version: 5.12.3
   category: kde-frameworks
   id: 0
-  name: ki18n
-  version: 5.63.0
-  category: net-libs
-  id: 0
-  name: farstream
-  version: ""
-  category: dev-libs
-  id: 0
-  name: glib
-  version: ""
-  category: kde-frameworks
-  id: 0
-  name: kconfigwidgets
-  version: 5.63.0
-  category: kde-frameworks
-  id: 0
   name: kiconthemes
   version: 5.63.0
   category: media-libs
   id: 0
-  name: phonon[qt5(+)]
+  name: qt-gstreamer[qt5(+)]
   version: ""
   category: net-libs
   id: 0
-  name: telepathy-farstream
+  name: farstream
   version: ""
+  category: net-libs
+  id: 0
+  name: telepathy-qt[farstream,qt5(+)]
+  version: ""
+  category: dev-qt
+  id: 0
+  name: qtdbus
+  version: 5.12.3
   category: kde-frameworks
   id: 0
   name: kconfig
-  version: 5.63.0
-  category: kde-frameworks
-  id: 0
-  name: kcoreaddons
   version: 5.63.0
   category: kde-frameworks
   id: 0
@@ -79,16 +79,16 @@ requires:
   version: 5.63.0
   category: kde-frameworks
   id: 0
-  name: knotifications
+  name: kconfigwidgets
   version: 5.63.0
   category: kde-frameworks
   id: 0
-  name: kxmlgui
+  name: ki18n
   version: 5.63.0
-  category: media-libs
+  category: kde-frameworks
   id: 0
-  name: qt-gstreamer[qt5(+)]
-  version: ""
+  name: knotifications
+  version: 5.63.0
 use_flags:
 - ""
 version: 19.12.3

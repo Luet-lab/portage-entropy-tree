@@ -7,20 +7,32 @@ name: gnome-session
 requires:
   category: dev-libs
   id: 0
-  name: json-glib
-  version: "0.10"
-  category: sys-apps
-  id: 0
-  name: dbus[X]
-  version: ""
-  category: sys-auth
-  id: 0
-  name: consolekit
-  version: ""
+  name: glib
+  version: 2.46.0
   category: x11-libs
   id: 0
   name: gtk+
   version: 3.18.0
+  category: media-libs
+  id: 0
+  name: libepoxy
+  version: ""
+  category: x11-misc
+  id: 0
+  name: xdg-user-dirs
+  version: ""
+  category: gnome-base
+  id: 0
+  name: gsettings-desktop-schemas
+  version: 0.1.7
+  category: sys-apps
+  id: 0
+  name: dbus[X]
+  version: ""
+  category: x11-libs
+  id: 0
+  name: libICE
+  version: ""
   category: x11-libs
   id: 0
   name: libSM
@@ -29,25 +41,9 @@ requires:
   id: 0
   name: libX11
   version: ""
-  category: media-libs
+  category: x11-libs
   id: 0
-  name: libepoxy
-  version: ""
-  category: sys-apps
-  id: 0
-  name: systemd
-  version: "183"
-  category: gnome-base
-  id: 0
-  name: gnome-settings-daemon
-  version: 3.23.2
-  category: x11-misc
-  id: 0
-  name: xdg-user-dirs
-  version: ""
-  category: x11-misc
-  id: 0
-  name: xdg-user-dirs-gtk
+  name: libXcomposite
   version: ""
   category: dev-libs
   id: 0
@@ -55,32 +51,36 @@ requires:
   version: "0.76"
   category: gnome-base
   id: 0
-  name: gsettings-desktop-schemas
-  version: 0.1.7
+  name: gnome-settings-daemon
+  version: 3.23.2
   category: dev-libs
   id: 0
-  name: glib
-  version: 2.46.0
-  category: x11-libs
+  name: json-glib
+  version: "0.10"
+  category: media-libs
   id: 0
-  name: libICE
+  name: mesa[egl,gles2,X(+)]
+  version: ""
+  category: sys-apps
+  id: 0
+  name: systemd
+  version: "183"
+  category: sys-auth
+  id: 0
+  name: elogind
+  version: "239.4"
+  category: x11-misc
+  id: 0
+  name: xdg-user-dirs-gtk
   version: ""
   category: gnome-base
   id: 0
   name: gnome-desktop
   version: 3.34.2
-  category: media-libs
-  id: 0
-  name: mesa[egl,gles2,X(+)]
-  version: ""
-  category: x11-libs
-  id: 0
-  name: libXcomposite
-  version: ""
   category: sys-auth
   id: 0
-  name: elogind
-  version: "239.4"
+  name: consolekit
+  version: ""
 uri:
 - https://dev.gentoo.org/~leio/distfiles/-patchset.tar.xz
 use_flags:

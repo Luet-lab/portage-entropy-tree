@@ -4,6 +4,10 @@ description: Wayland platform plugin for Qt
 id: 0
 name: qtwayland
 requires:
+  category: x11-libs
+  id: 0
+  name: libXcomposite
+  version: ""
   category: dev-libs
   id: 0
   name: wayland
@@ -14,12 +18,16 @@ requires:
   version: 5.14.2
   category: dev-qt
   id: 0
+  name: qtdeclarative
+  version: 5.14.2
+  category: dev-qt
+  id: 0
   name: qtgui-5.14.2[egl,libinput,vulkan=]
   version: ""
-  category: media-libs
+  category: x11-libs
   id: 0
-  name: mesa
-  version: ""
+  name: libxkbcommon
+  version: 0.2.0
   category: dev-util
   id: 0
   name: vulkan-headers
@@ -28,22 +36,14 @@ requires:
   id: 0
   name: libX11
   version: ""
-  category: dev-qt
+  category: media-libs
   id: 0
-  name: qtdeclarative
-  version: 5.14.2
-  category: x11-libs
-  id: 0
-  name: libxkbcommon
-  version: 0.2.0
+  name: mesa
+  version: ""
   category: dev-qt
   id: 0
   name: qtgui
   version: 5.14.2
-  category: x11-libs
-  id: 0
-  name: libXcomposite
-  version: ""
 use_flags:
 - vulkan
 - X

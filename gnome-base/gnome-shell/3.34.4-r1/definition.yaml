@@ -5,14 +5,26 @@ id: 0
 license: GPL-2+ LGPL-2+
 name: gnome-shell
 requires:
-  category: media-sound
+  category: x11-libs
   id: 0
-  name: pulseaudio
-  version: "2"
-  category: app-misc
+  name: gtk+
+  version: 3.15.0
+  category: app-arch
   id: 0
-  name: geoclue
+  name: gnome-autoar
   version: ""
+  category: dev-libs
+  id: 0
+  name: libxml2
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libgweather
+  version: "3.26"
+  category: dev-libs
+  id: 0
+  name: glib
+  version: 2.57.2
   category: sys-power
   id: 0
   name: upower
@@ -21,65 +33,21 @@ requires:
   id: 0
   name: librsvg
   version: ""
-  category: gnome-extra
-  id: 0
-  name: evolution-data-server
-  version: 3.33.1
-  category: app-crypt
-  id: 0
-  name: gcr
-  version: 3.7.5
-  category: gnome-base
-  id: 0
-  name: gnome-desktop
-  version: "3.32"
-  category: gnome-base
-  id: 0
-  name: gnome-desktop
-  version: 3.34.2
   category: net-misc
   id: 0
   name: mobile-broadband-provider-info
   version: ""
-  category: sys-apps
+  category: sys-libs
   id: 0
-  name: accountsservice
-  version: 0.6.14
-  category: x11-misc
-  id: 0
-  name: xdg-utils
-  version: ""
-  category: dev-libs
-  id: 0
-  name: glib
-  version: 2.57.2
-  category: dev-libs
-  id: 0
-  name: gjs
-  version: 1.57.3
-  category: x11-libs
-  id: 0
-  name: libX11
-  version: ""
-  category: dev-libs
-  id: 0
-  name: atk
-  version: "2"
-  category: net-misc
-  id: 0
-  name: networkmanager
-  version: 1.10.4
-  category: x11-libs
-  id: 0
-  name: gdk-pixbuf
+  name: timezone-data
   version: ""
   category: app-accessibility
   id: 0
-  name: at-spi2-core
-  version: ""
-  category: app-i18n
+  name: at-spi2-atk
+  version: 2.5.3
+  category: app-misc
   id: 0
-  name: ibus-1.4.99[dconf(+),gtk,introspection]
+  name: geoclue
   version: ""
   category: dev-libs
   id: 0
@@ -87,24 +55,64 @@ requires:
   version: 0.6.8
   category: dev-libs
   id: 0
-  name: gobject-introspection
-  version: 1.49.1
+  name: gjs
+  version: 1.57.3
   category: x11-libs
   id: 0
   name: startup-notification
   version: "0.11"
-  category: app-i18n
+  category: gnome-base
   id: 0
-  name: ibus
-  version: 1.5.2
-  category: net-im
+  name: gnome-desktop
+  version: "3.32"
+  category: media-libs
   id: 0
-  name: telepathy-logger
-  version: 0.2.4
+  name: gst-plugins-base
+  version: ""
   category: gnome-base
   id: 0
   name: gsettings-desktop-schemas
   version: 3.33.1
+  category: net-misc
+  id: 0
+  name: networkmanager
+  version: 1.10.4
+  category: dev-libs
+  id: 0
+  name: dbus-glib
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libical
+  version: ""
+  category: media-libs
+  id: 0
+  name: mesa[X(+)]
+  version: ""
+  category: app-accessibility
+  id: 0
+  name: at-spi2-core
+  version: ""
+  category: gnome-extra
+  id: 0
+  name: evolution-data-server
+  version: 3.33.1
+  category: net-wireless
+  id: 0
+  name: gnome-bluetooth
+  version: "3.9"
+  category: gnome-base
+  id: 0
+  name: gnome-desktop
+  version: 3.34.2
+  category: sys-auth
+  id: 0
+  name: elogind
+  version: "237"
+  category: dev-libs
+  id: 0
+  name: json-glib
+  version: ""
   category: x11-libs
   id: 0
   name: pango
@@ -113,22 +121,70 @@ requires:
   id: 0
   name: gnome-settings-daemon
   version: 3.8.3
+  category: x11-themes
+  id: 0
+  name: adwaita-icon-theme
+  version: "3.26"
+  category: net-libs
+  id: 0
+  name: telepathy-glib
+  version: "0.19"
+  category: media-fonts
+  id: 0
+  name: cantarell
+  version: ""
+  category: sys-auth
+  id: 0
+  name: polkit
+  version: "0.100"
+  category: media-libs
+  id: 0
+  name: gstreamer
+  version: 0.11.92
+  category: gnome-base
+  id: 0
+  name: gnome-session
+  version: 2.91.91
+  category: x11-misc
+  id: 0
+  name: xdg-utils
+  version: ""
+  category: app-i18n
+  id: 0
+  name: ibus-1.4.99[dconf(+),gtk,introspection]
+  version: ""
+  category: app-crypt
+  id: 0
+  name: gcr
+  version: 3.7.5
+  category: media-sound
+  id: 0
+  name: pulseaudio
+  version: "2"
+  category: net-im
+  id: 0
+  name: telepathy-logger
+  version: 0.2.4
+  category: x11-libs
+  id: 0
+  name: libX11
+  version: ""
   category: dev-libs
   id: 0
-  name: json-glib
-  version: ""
+  name: atk
+  version: "2"
   category: x11-libs
   id: 0
   name: libXfixes
   version: "5.0"
   category: dev-libs
   id: 0
-  name: libgweather
-  version: "3.26"
-  category: sys-auth
+  name: gobject-introspection
+  version: 1.49.1
+  category: app-i18n
   id: 0
-  name: polkit
-  version: "0.100"
+  name: ibus
+  version: 1.5.2
   category: app-crypt
   id: 0
   name: libsecret
@@ -137,70 +193,14 @@ requires:
   id: 0
   name: systemd
   version: "31"
-  category: sys-auth
-  id: 0
-  name: elogind
-  version: "237"
-  category: net-wireless
-  id: 0
-  name: gnome-bluetooth
-  version: "3.9"
-  category: media-libs
-  id: 0
-  name: gstreamer
-  version: 0.11.92
-  category: x11-themes
-  id: 0
-  name: adwaita-icon-theme
-  version: "3.26"
-  category: dev-libs
-  id: 0
-  name: libxml2
-  version: ""
-  category: dev-libs
-  id: 0
-  name: libical
-  version: ""
-  category: gnome-base
-  id: 0
-  name: gnome-session
-  version: 2.91.91
-  category: media-fonts
-  id: 0
-  name: cantarell
-  version: ""
   category: x11-libs
   id: 0
-  name: gtk+
-  version: 3.15.0
-  category: media-libs
-  id: 0
-  name: gst-plugins-base
+  name: gdk-pixbuf
   version: ""
-  category: dev-libs
+  category: sys-apps
   id: 0
-  name: dbus-glib
-  version: ""
-  category: app-arch
-  id: 0
-  name: gnome-autoar
-  version: ""
-  category: app-accessibility
-  id: 0
-  name: at-spi2-atk
-  version: 2.5.3
-  category: media-libs
-  id: 0
-  name: mesa[X(+)]
-  version: ""
-  category: sys-libs
-  id: 0
-  name: timezone-data
-  version: ""
-  category: net-libs
-  id: 0
-  name: telepathy-glib
-  version: "0.19"
+  name: accountsservice
+  version: 0.6.14
 uri:
 - https://dev.gentoo.org/~leio/distfiles/gnome-shell-3.34.4-patchset.tar.xz
 use_flags:

@@ -5,37 +5,9 @@ id: 0
 license: LGPL-2.1 CC-BY-SA-3.0 GPL-2 GPL-2+ LGPL-2+ BSD Boost-1.0 MIT public-domain
 name: ceph
 requires:
-  category: dev-python
+  category: acct-user
   id: 0
-  name: six
-  version: ""
-  category: dev-libs
-  id: 0
-  name: libressl
-  version: ""
-  category: virtual
-  id: 0
-  name: awk
-  version: ""
-  category: dev-python
-  id: 0
-  name: pecan
-  version: ""
-  category: dev-python
-  id: 0
-  name: pyyaml
-  version: ""
-  category: sys-fs
-  id: 0
-  name: lsscsi
-  version: ""
-  category: dev-python
-  id: 0
-  name: prettytable
-  version: ""
-  category: dev-python
-  id: 0
-  name: requests
+  name: ceph
   version: ""
   category: sys-apps
   id: 0
@@ -43,27 +15,7 @@ requires:
   version: ""
   category: sys-apps
   id: 0
-  name: util-linux
-  version: ""
-  category: sys-fs
-  id: 0
-  name: fuse
-  version: ""
-  category: sys-apps
-  id: 0
-  name: gptfdisk
-  version: ""
-  category: sys-auth
-  id: 0
-  name: oath-toolkit
-  version: ""
-  category: dev-util
-  id: 0
-  name: lttng-ust
-  version: ""
-  category: dev-libs
-  id: 0
-  name: jemalloc
+  name: sed
   version: ""
   category: sys-block
   id: 0
@@ -71,55 +23,11 @@ requires:
   version: ""
   category: dev-python
   id: 0
-  name: jinja
-  version: ""
-  category: dev-python
-  id: 0
-  name: pyjwt
-  version: ""
-  category: acct-user
-  id: 0
-  name: ceph
-  version: ""
-  category: virtual
-  id: 0
-  name: libudev
-  version: ""
-  category: sys-fs
-  id: 0
-  name: zfs
-  version: ""
-  category: dev-libs
-  id: 0
-  name: boost-1.72*[threads,context,python,static-libs?,]
-  version: ""
-  category: dev-libs
-  id: 0
-  name: openssl
-  version: ""
-  category: sys-fs
-  id: 0
-  name: xfsprogs
-  version: ""
-  category: dev-python
-  id: 0
   name: cherrypy
   version: ""
   category: dev-python
   id: 0
-  name: pyopenssl
-  version: ""
-  category: dev-libs
-  id: 0
-  name: nss
-  version: ""
-  category: sys-apps
-  id: 0
-  name: sed
-  version: ""
-  category: dev-util
-  id: 0
-  name: babeltrace
+  name: werkzeug
   version: ""
   category: virtual
   id: 0
@@ -129,45 +37,77 @@ requires:
   id: 0
   name: rabbitmq-c
   version: ""
-  category: sys-fs
+  category: dev-python
   id: 0
-  name: cryptsetup
+  name: pyopenssl
   version: ""
   category: dev-python
   id: 0
   name: routes
   version: ""
-  category: acct-group
+  category: app-shells
   id: 0
-  name: ceph
+  name: bash
   version: ""
   category: sys-apps
   id: 0
   name: coreutils
   version: ""
-  category: net-nds
+  category: dev-libs
   id: 0
-  name: openldap
+  name: boost-1.72*[threads,context,python,static-libs?,]
   version: ""
-  category: dev-python
+  category: sys-fs
   id: 0
-  name: flask
+  name: lvm2[-device-mapper-only(-)]
   version: ""
-  category: dev-python
+  category: sys-fs
   id: 0
-  name: bcrypt
-  version: ""
-  category: dev-python
-  id: 0
-  name: werkzeug
+  name: lsscsi
   version: ""
   category: dev-python
   id: 0
   name: more-itertools
   version: ""
-  category: app-shells
+  category: virtual
   id: 0
-  name: bash
+  name: libudev
+  version: ""
+  category: net-nds
+  id: 0
+  name: openldap
+  version: ""
+  category: sys-fs
+  id: 0
+  name: fuse
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libressl
+  version: ""
+  category: sys-fs
+  id: 0
+  name: xfsprogs
+  version: ""
+  category: virtual
+  id: 0
+  name: awk
+  version: ""
+  category: dev-python
+  id: 0
+  name: pyyaml
+  version: ""
+  category: dev-libs
+  id: 0
+  name: nss
+  version: ""
+  category: sys-apps
+  id: 0
+  name: util-linux
+  version: ""
+  category: dev-libs
+  id: 0
+  name: openssl
   version: ""
   category: dev-util
   id: 0
@@ -177,9 +117,69 @@ requires:
   id: 0
   name: socat
   version: ""
+  category: dev-python
+  id: 0
+  name: requests
+  version: ""
+  category: sys-auth
+  id: 0
+  name: oath-toolkit
+  version: ""
   category: sys-fs
   id: 0
-  name: lvm2[-device-mapper-only(-)]
+  name: zfs
+  version: ""
+  category: dev-libs
+  id: 0
+  name: jemalloc
+  version: ""
+  category: dev-python
+  id: 0
+  name: prettytable
+  version: ""
+  category: acct-group
+  id: 0
+  name: ceph
+  version: ""
+  category: dev-util
+  id: 0
+  name: lttng-ust
+  version: ""
+  category: dev-python
+  id: 0
+  name: pecan
+  version: ""
+  category: dev-python
+  id: 0
+  name: pyjwt
+  version: ""
+  category: dev-python
+  id: 0
+  name: six
+  version: ""
+  category: dev-util
+  id: 0
+  name: babeltrace
+  version: ""
+  category: sys-apps
+  id: 0
+  name: gptfdisk
+  version: ""
+  category: sys-fs
+  id: 0
+  name: cryptsetup
+  version: ""
+  category: dev-python
+  id: 0
+  name: bcrypt
+  version: ""
+  category: dev-python
+  id: 0
+  name: flask
+  version: ""
+  category: dev-python
+  id: 0
+  name: jinja
   version: ""
 uri:
 - https://download.ceph.com/tarballs/ceph-14.2.9.tar.gz

@@ -5,45 +5,53 @@ id: 0
 license: GPL-2
 name: handbrake
 requires:
-  category: media-video
-  id: 0
-  name: ffmpeg
-  version: 4.2.1
-  category: media-plugins
-  id: 0
-  name: gst-plugins-gdkpixbuf
-  version: ""
-  category: media-libs
-  id: 0
-  name: speex
-  version: ""
-  category: media-libs
-  id: 0
-  name: libdvdread
-  version: ""
-  category: media-libs
-  id: 0
-  name: opus
-  version: ""
-  category: x11-libs
-  id: 0
-  name: gdk-pixbuf
-  version: ""
-  category: media-libs
-  id: 0
-  name: libdvdnav
-  version: ""
   category: media-libs
   id: 0
   name: libvorbis
+  version: ""
+  category: sys-libs
+  id: 0
+  name: zlib
+  version: ""
+  category: media-libs
+  id: 0
+  name: gst-plugins-bad
+  version: ""
+  category: media-plugins
+  id: 0
+  name: gst-plugins-libav
+  version: ""
+  category: x11-libs
+  id: 0
+  name: cairo
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libxml2
+  version: ""
+  category: media-libs
+  id: 0
+  name: libass
   version: ""
   category: media-libs
   id: 0
   name: gst-plugins-good
   version: ""
+  category: media-video
+  id: 0
+  name: libav
+  version: "12.2"
+  category: media-plugins
+  id: 0
+  name: gst-plugins-x264
+  version: ""
   category: media-libs
   id: 0
-  name: x264
+  name: dav1d
+  version: 0.5.1
+  category: media-libs
+  id: 0
+  name: libdvdread
   version: ""
   category: media-sound
   id: 0
@@ -55,99 +63,7 @@ requires:
   version: ""
   category: dev-libs
   id: 0
-  name: glib
-  version: ""
-  category: media-libs
-  id: 0
-  name: dav1d
-  version: 0.5.1
-  category: media-libs
-  id: 0
-  name: libtheora
-  version: ""
-  category: media-libs
-  id: 0
-  name: libvpx
-  version: "1.8"
-  category: x11-libs
-  id: 0
-  name: libnotify
-  version: ""
-  category: media-libs
-  id: 0
-  name: fdk-aac
-  version: ""
-  category: media-libs
-  id: 0
-  name: gst-plugins-bad
-  version: ""
-  category: media-plugins
-  id: 0
-  name: gst-plugins-x264
-  version: ""
-  category: x11-libs
-  id: 0
-  name: cairo
-  version: ""
-  category: media-libs
-  id: 0
-  name: a52dec
-  version: ""
-  category: media-libs
-  id: 0
-  name: libbluray
-  version: "1.0"
-  category: x11-libs
-  id: 0
-  name: gtk+
-  version: "3.10"
-  category: media-plugins
-  id: 0
-  name: gst-plugins-a52dec
-  version: ""
-  category: media-plugins
-  id: 0
-  name: gst-plugins-libav
-  version: ""
-  category: dev-libs
-  id: 0
   name: libgudev
-  version: ""
-  category: dev-libs
-  id: 0
-  name: jansson
-  version: ""
-  category: media-libs
-  id: 0
-  name: libsamplerate
-  version: ""
-  category: media-libs
-  id: 0
-  name: gst-plugins-base
-  version: ""
-  category: media-libs
-  id: 0
-  name: x265
-  version: "3.2"
-  category: app-arch
-  id: 0
-  name: xz-utils
-  version: ""
-  category: dev-libs
-  id: 0
-  name: libxml2
-  version: ""
-  category: media-libs
-  id: 0
-  name: nv-codec-headers
-  version: ""
-  category: media-libs
-  id: 0
-  name: gstreamer
-  version: ""
-  category: dev-libs
-  id: 0
-  name: dbus-glib
   version: ""
   category: x11-libs
   id: 0
@@ -155,16 +71,100 @@ requires:
   version: ""
   category: media-libs
   id: 0
-  name: libass
+  name: libdvdnav
   version: ""
-  category: sys-libs
+  category: media-libs
   id: 0
-  name: zlib
+  name: libtheora
+  version: ""
+  category: media-libs
+  id: 0
+  name: gst-plugins-base
+  version: ""
+  category: x11-libs
+  id: 0
+  name: gtk+
+  version: "3.10"
+  category: dev-libs
+  id: 0
+  name: jansson
+  version: ""
+  category: media-libs
+  id: 0
+  name: libbluray
+  version: "1.0"
+  category: media-libs
+  id: 0
+  name: libsamplerate
+  version: ""
+  category: media-libs
+  id: 0
+  name: gstreamer
+  version: ""
+  category: x11-libs
+  id: 0
+  name: libnotify
+  version: ""
+  category: media-libs
+  id: 0
+  name: x265
+  version: "3.2"
+  category: media-libs
+  id: 0
+  name: a52dec
+  version: ""
+  category: media-libs
+  id: 0
+  name: libvpx
+  version: "1.8"
+  category: media-libs
+  id: 0
+  name: x264
+  version: ""
+  category: media-plugins
+  id: 0
+  name: gst-plugins-gdkpixbuf
+  version: ""
+  category: media-libs
+  id: 0
+  name: fdk-aac
+  version: ""
+  category: app-arch
+  id: 0
+  name: xz-utils
   version: ""
   category: media-video
   id: 0
-  name: libav
-  version: "12.2"
+  name: ffmpeg
+  version: 4.2.1
+  category: media-plugins
+  id: 0
+  name: gst-plugins-a52dec
+  version: ""
+  category: dev-libs
+  id: 0
+  name: dbus-glib
+  version: ""
+  category: dev-libs
+  id: 0
+  name: glib
+  version: ""
+  category: x11-libs
+  id: 0
+  name: gdk-pixbuf
+  version: ""
+  category: media-libs
+  id: 0
+  name: speex
+  version: ""
+  category: media-libs
+  id: 0
+  name: nv-codec-headers
+  version: ""
+  category: media-libs
+  id: 0
+  name: opus
+  version: ""
 uri:
 - https://download2.handbrake.fr/1.3.0/HandBrake-1.3.0-source.tar.bz2 -> handbrake-1.3.0.tar.bz2
 use_flags:

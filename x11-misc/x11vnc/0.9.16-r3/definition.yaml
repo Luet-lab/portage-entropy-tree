@@ -5,17 +5,25 @@ id: 0
 license: GPL-2+-with-openssl-exception
 name: x11vnc
 requires:
-  category: net-libs
+  category: net-dns
   id: 0
-  name: libvncserver-0.9.8[ssl=]
+  name: avahi
+  version: 0.6.4
+  category: dev-lang
+  id: 0
+  name: tk
+  version: ""
+  category: x11-libs
+  id: 0
+  name: libX11
   version: ""
   category: dev-libs
   id: 0
   name: openssl
   version: ""
-  category: dev-lang
+  category: x11-libs
   id: 0
-  name: tk
+  name: libXinerama
   version: ""
   category: x11-libs
   id: 0
@@ -23,23 +31,15 @@ requires:
   version: ""
   category: x11-libs
   id: 0
-  name: libX11
-  version: ""
-  category: x11-libs
-  id: 0
-  name: libXcursor
-  version: ""
-  category: x11-libs
-  id: 0
   name: libXext
   version: ""
-  category: x11-libs
-  id: 0
-  name: libXtst
-  version: 1.1.0
   category: dev-libs
   id: 0
   name: libressl
+  version: ""
+  category: x11-libs
+  id: 0
+  name: libXdamage
   version: ""
   category: x11-libs
   id: 0
@@ -49,18 +49,18 @@ requires:
   id: 0
   name: libXfixes
   version: ""
-  category: x11-libs
+  category: net-libs
   id: 0
-  name: libXdamage
+  name: libvncserver-0.9.8[ssl=]
   version: ""
   category: x11-libs
   id: 0
-  name: libXinerama
+  name: libXcursor
   version: ""
-  category: net-dns
+  category: x11-libs
   id: 0
-  name: avahi
-  version: 0.6.4
+  name: libXtst
+  version: 1.1.0
 uri:
 - https://github.com/LibVNC/x11vnc/archive/0.9.16.tar.gz -> x11vnc-0.9.16.tar.gz
 use_flags:

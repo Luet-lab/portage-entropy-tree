@@ -1,13 +1,5 @@
 category: sys-cluster
 conflicts:
-  category: dev-libs
-  id: 0
-  name: libotf
-  version: ""
-  category: sys-cluster
-  id: 0
-  name: mpich
-  version: ""
   category: sys-cluster
   id: 0
   name: mpich2
@@ -20,14 +12,34 @@ conflicts:
   id: 0
   name: pmix
   version: ""
+  category: sys-cluster
+  id: 0
+  name: mpich
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libotf
+  version: ""
 description: A high-performance message passing library (MPI)
 id: 0
 license: BSD
 name: openmpi
 requires:
+  category: sys-apps
+  id: 0
+  name: hwloc
+  version: "2"
+  category: sys-cluster
+  id: 0
+  name: slurm
+  version: ""
   category: sys-fabric
   id: 0
   name: librdmacm
+  version: ""
+  category: sys-fabric
+  id: 0
+  name: ofed
   version: ""
   category: dev-libs
   id: 0
@@ -35,35 +47,23 @@ requires:
   version: ""
   category: sys-fabric
   id: 0
-  name: ofed
+  name: dapl
+  version: ""
+  category: sys-cluster
+  id: 0
+  name: knem
   version: ""
   category: sys-cluster
   id: 0
   name: torque
   version: ""
-  category: sys-cluster
-  id: 0
-  name: slurm
-  version: ""
   category: sys-fabric
   id: 0
-  name: dapl
+  name: infinipath-psm
   version: ""
   category: net-misc
   id: 0
   name: lksctp-tools
-  version: ""
-  category: sys-apps
-  id: 0
-  name: hwloc
-  version: "2"
-  category: sys-cluster
-  id: 0
-  name: knem
-  version: ""
-  category: sys-fabric
-  id: 0
-  name: infinipath-psm
   version: ""
 uri:
 - http://www.open-mpi.org/software/ompi/v/downloads/openmpi-1.6.5.tar.bz2

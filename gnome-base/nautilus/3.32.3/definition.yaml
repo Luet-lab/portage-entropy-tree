@@ -1,22 +1,22 @@
 category: gnome-base
 conflicts:
-  category: <media-video
-  id: 0
-  name: totem
-  version: 3.31.91
   category: <gnome-extra
   id: 0
   name: nautilus-sendto
   version: 3.0.1
+  category: <media-video
+  id: 0
+  name: totem
+  version: 3.31.91
 description: Default file manager for the GNOME desktop
 id: 0
 license: GPL-3+ LGPL-2.1+
 name: nautilus
 requires:
-  category: gnome-base
+  category: app-misc
   id: 0
-  name: gsettings-desktop-schemas
-  version: ""
+  name: tracker-miners
+  version: "2.0"
   category: dev-libs
   id: 0
   name: gobject-introspection
@@ -25,22 +25,50 @@ requires:
   id: 0
   name: packagekit-base
   version: ""
-  category: app-misc
+  category: sys-apps
   id: 0
-  name: tracker-miners
-  version: "2.0"
+  name: bubblewrap
+  version: 0.3.1
   category: media-libs
   id: 0
-  name: gstreamer
-  version: ""
+  name: gexiv2
+  version: 0.10.0
   category: media-libs
   id: 0
   name: gst-plugins-base
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libxml2
+  version: 2.7.8
+  category: gnome-base
+  id: 0
+  name: gsettings-desktop-schemas
+  version: ""
+  category: sys-libs
+  id: 0
+  name: libselinux
+  version: "2.0"
+  category: dev-libs
+  id: 0
+  name: glib
+  version: 2.58.1
+  category: media-libs
+  id: 0
+  name: gstreamer
   version: ""
   category: app-arch
   id: 0
   name: gnome-autoar
   version: 0.2.1
+  category: x11-libs
+  id: 0
+  name: libX11
+  version: ""
+  category: sys-libs
+  id: 0
+  name: libseccomp
+  version: ""
   category: x11-libs
   id: 0
   name: pango
@@ -49,34 +77,6 @@ requires:
   id: 0
   name: tracker
   version: "2.0"
-  category: media-libs
-  id: 0
-  name: gexiv2
-  version: 0.10.0
-  category: sys-libs
-  id: 0
-  name: libseccomp
-  version: ""
-  category: x11-libs
-  id: 0
-  name: libX11
-  version: ""
-  category: sys-apps
-  id: 0
-  name: bubblewrap
-  version: 0.3.1
-  category: dev-libs
-  id: 0
-  name: glib
-  version: 2.58.1
-  category: sys-libs
-  id: 0
-  name: libselinux
-  version: "2.0"
-  category: dev-libs
-  id: 0
-  name: libxml2
-  version: 2.7.8
 use_flags:
 - gnome
 - +gstreamer

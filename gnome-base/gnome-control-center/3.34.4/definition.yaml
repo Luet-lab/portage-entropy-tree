@@ -1,13 +1,5 @@
 category: gnome-base
 conflicts:
-  category: gnome-extra
-  id: 0
-  name: gnome-media
-  version: ""
-  category: <gnome-extra
-  id: 0
-  name: gnome-media
-  version: 2.32.0-r300
   category: <net-wireless
   id: 0
   name: gnome-bluetooth
@@ -16,11 +8,51 @@ conflicts:
   id: 0
   name: gdm
   version: 2.91.94
+  category: <gnome-extra
+  id: 0
+  name: gnome-media
+  version: 2.32.0-r300
+  category: gnome-extra
+  id: 0
+  name: gnome-media
+  version: ""
 description: GNOME's main interface to configure various aspects of the desktop
 id: 0
 license: GPL-2+
 name: gnome-control-center
 requires:
+  category: dev-libs
+  id: 0
+  name: libgudev
+  version: ""
+  category: x11-libs
+  id: 0
+  name: libXi
+  version: "1.2"
+  category: net-fs
+  id: 0
+  name: samba
+  version: 4.0.0
+  category: app-i18n
+  id: 0
+  name: ibus
+  version: 1.5.2
+  category: net-wireless
+  id: 0
+  name: gnome-bluetooth
+  version: 3.18.2
+  category: net-libs
+  id: 0
+  name: libsoup
+  version: ""
+  category: sys-apps
+  id: 0
+  name: systemd
+  version: "31"
+  category: app-admin
+  id: 0
+  name: system-config-printer
+  version: ""
   category: sys-apps
   id: 0
   name: accountsservice
@@ -29,14 +61,66 @@ requires:
   id: 0
   name: gdk-pixbuf
   version: 2.23.0
-  category: sys-auth
+  category: gnome-extra
   id: 0
-  name: polkit
-  version: "0.114"
-  category: sys-power
+  name: nm-applet
+  version: 1.8.0
+  category: gnome-base
   id: 0
-  name: upower
-  version: 0.99.8
+  name: libgtop
+  version: ""
+  category: sys-fs
+  id: 0
+  name: udisks
+  version: 2.1.8
+  category: dev-libs
+  id: 0
+  name: libinput
+  version: ""
+  category: x11-drivers
+  id: 0
+  name: xf86-input-wacom
+  version: 0.33.0
+  category: x11-libs
+  id: 0
+  name: gtk+
+  version: 3.22.0
+  category: net-misc
+  id: 0
+  name: networkmanager
+  version: 1.12.0
+  category: dev-libs
+  id: 0
+  name: libwacom
+  version: "0.27"
+  category: gnome-base
+  id: 0
+  name: libgnomekbd
+  version: "3"
+  category: gui-libs
+  id: 0
+  name: libhandy
+  version: 0.0.9
+  category: net-misc
+  id: 0
+  name: modemmanager
+  version: 0.7.990
+  category: media-sound
+  id: 0
+  name: pulseaudio
+  version: "2.0"
+  category: gnome-base
+  id: 0
+  name: gnome-desktop
+  version: 3.27.90
+  category: net-print
+  id: 0
+  name: cups
+  version: "1.7"
+  category: media-video
+  id: 0
+  name: cheese
+  version: 3.28.0
   category: media-libs
   id: 0
   name: gsound
@@ -45,9 +129,81 @@ requires:
   id: 0
   name: openrc-settingsd
   version: ""
+  category: gnome-extra
+  id: 0
+  name: gnome-color-manager
+  version: 3.1.2
+  category: dev-libs
+  id: 0
+  name: glib
+  version: 2.53.0
+  category: sys-auth
+  id: 0
+  name: polkit
+  version: "0.114"
+  category: media-libs
+  id: 0
+  name: grilo
+  version: 0.3.0
+  category: x11-libs
+  id: 0
+  name: colord-gtk
+  version: 0.1.24
+  category: net-libs
+  id: 0
+  name: gnome-online-accounts
+  version: 3.25.3
+  category: gnome-base
+  id: 0
+  name: gsettings-desktop-schemas
+  version: 3.31.0
+  category: sys-power
+  id: 0
+  name: upower
+  version: 0.99.8
+  category: x11-libs
+  id: 0
+  name: libX11
+  version: ""
+  category: media-libs
+  id: 0
+  name: fontconfig
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libpwquality
+  version: 1.2.2
   category: x11-themes
   id: 0
   name: adwaita-icon-theme
+  version: ""
+  category: media-plugins
+  id: 0
+  name: grilo-plugins
+  version: ""
+  category: x11-misc
+  id: 0
+  name: colord
+  version: 0.1.34
+  category: dev-libs
+  id: 0
+  name: libxml2
+  version: ""
+  category: app-crypt
+  id: 0
+  name: mit-krb5
+  version: ""
+  category: x11-libs
+  id: 0
+  name: cairo
+  version: ""
+  category: app-crypt
+  id: 0
+  name: libsecret
+  version: ""
+  category: sys-auth
+  id: 0
+  name: elogind
   version: ""
   category: net-print
   id: 0
@@ -57,162 +213,6 @@ requires:
   id: 0
   name: xf86-input-libinput
   version: 0.19.0
-  category: media-plugins
-  id: 0
-  name: grilo-plugins
-  version: ""
-  category: dev-libs
-  id: 0
-  name: libgudev
-  version: ""
-  category: x11-libs
-  id: 0
-  name: libX11
-  version: ""
-  category: net-libs
-  id: 0
-  name: libsoup
-  version: ""
-  category: x11-misc
-  id: 0
-  name: colord
-  version: 0.1.34
-  category: dev-libs
-  id: 0
-  name: glib
-  version: 2.53.0
-  category: media-video
-  id: 0
-  name: cheese
-  version: 3.28.0
-  category: sys-fs
-  id: 0
-  name: udisks
-  version: 2.1.8
-  category: gnome-extra
-  id: 0
-  name: nm-applet
-  version: 1.8.0
-  category: net-wireless
-  id: 0
-  name: gnome-bluetooth
-  version: 3.18.2
-  category: gnome-base
-  id: 0
-  name: libgtop
-  version: ""
-  category: app-crypt
-  id: 0
-  name: libsecret
-  version: ""
-  category: dev-libs
-  id: 0
-  name: libpwquality
-  version: 1.2.2
-  category: app-admin
-  id: 0
-  name: system-config-printer
-  version: ""
-  category: dev-libs
-  id: 0
-  name: libinput
-  version: ""
-  category: x11-drivers
-  id: 0
-  name: xf86-input-wacom
-  version: 0.33.0
-  category: net-libs
-  id: 0
-  name: gnome-online-accounts
-  version: 3.25.3
-  category: net-misc
-  id: 0
-  name: modemmanager
-  version: 0.7.990
-  category: app-crypt
-  id: 0
-  name: mit-krb5
-  version: ""
-  category: x11-libs
-  id: 0
-  name: colord-gtk
-  version: 0.1.24
-  category: media-libs
-  id: 0
-  name: fontconfig
-  version: ""
-  category: gnome-extra
-  id: 0
-  name: gnome-color-manager
-  version: 3.1.2
-  category: gnome-base
-  id: 0
-  name: libgnomekbd
-  version: "3"
-  category: media-sound
-  id: 0
-  name: pulseaudio
-  version: "2.0"
-  category: media-libs
-  id: 0
-  name: grilo
-  version: 0.3.0
-  category: net-print
-  id: 0
-  name: cups
-  version: "1.7"
-  category: net-fs
-  id: 0
-  name: samba
-  version: 4.0.0
-  category: net-misc
-  id: 0
-  name: networkmanager
-  version: 1.12.0
-  category: dev-libs
-  id: 0
-  name: libwacom
-  version: "0.27"
-  category: sys-apps
-  id: 0
-  name: systemd
-  version: "31"
-  category: gui-libs
-  id: 0
-  name: libhandy
-  version: 0.0.9
-  category: x11-libs
-  id: 0
-  name: gtk+
-  version: 3.22.0
-  category: sys-auth
-  id: 0
-  name: elogind
-  version: ""
-  category: gnome-base
-  id: 0
-  name: gnome-desktop
-  version: 3.27.90
-  category: gnome-base
-  id: 0
-  name: gsettings-desktop-schemas
-  version: 3.31.0
-  category: dev-libs
-  id: 0
-  name: libxml2
-  version: ""
-  category: x11-libs
-  id: 0
-  name: libXi
-  version: "1.2"
-  category: app-i18n
-  id: 0
-  name: ibus
-  version: 1.5.2
-  category: x11-libs
-  id: 0
-  name: cairo
-  version: ""
 uri:
 - https://dev.gentoo.org/~leio/distfiles/gnome-control-center-3.34.4-patchset.tar.xz
 use_flags:

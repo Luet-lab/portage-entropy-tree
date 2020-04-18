@@ -1,17 +1,9 @@
 category: sys-fs
 conflicts:
-  category: <sys-libs
-  id: 0
-  name: glibc
-  version: "2.11"
   category: <sec-policy
   id: 0
   name: selinux-base
   version: 2.20120725-r10
-  category: sys-apps
-  id: 0
-  name: gentoo-systemd-integration
-  version: ""
   category: sys-apps
   id: 0
   name: systemd
@@ -20,11 +12,59 @@ conflicts:
   id: 0
   name: lvm2
   version: 2.02.103
+  category: <sys-libs
+  id: 0
+  name: glibc
+  version: "2.11"
+  category: sys-apps
+  id: 0
+  name: gentoo-systemd-integration
+  version: ""
 description: Linux dynamic and persistent device naming support (aka userspace devfs)
 id: 0
 license: LGPL-2.1 MIT GPL-2
 name: udev
 requires:
+  category: acct-group
+  id: 0
+  name: kmem
+  version: ""
+  category: acct-group
+  id: 0
+  name: tty
+  version: ""
+  category: acct-group
+  id: 0
+  name: lp
+  version: ""
+  category: acct-group
+  id: 0
+  name: disk
+  version: ""
+  category: acct-group
+  id: 0
+  name: render
+  version: ""
+  category: acct-group
+  id: 0
+  name: tape
+  version: ""
+  category: sys-apps
+  id: 0
+  name: util-linux
+  version: "2.30"
+  category: sys-libs
+  id: 0
+  name: libselinux
+  version: 2.1.9
+  category: acct-group
+  id: 0
+  name: audio
+  version: ""
+  category: acct-group
+  id: 0
+  name: cdrom
+  version: ""
   category: sys-libs
   id: 0
   name: libcap
@@ -33,21 +73,13 @@ requires:
   id: 0
   name: acl
   version: ""
-  category: sys-libs
+  category: sys-apps
   id: 0
-  name: libselinux
-  version: 2.1.9
+  name: kmod
+  version: "16"
   category: acct-group
   id: 0
-  name: kvm
-  version: ""
-  category: acct-group
-  id: 0
-  name: render
-  version: ""
-  category: acct-group
-  id: 0
-  name: cdrom
+  name: video
   version: ""
   category: acct-group
   id: 0
@@ -55,43 +87,11 @@ requires:
   version: ""
   category: acct-group
   id: 0
-  name: tape
-  version: ""
-  category: acct-group
-  id: 0
-  name: video
-  version: ""
-  category: sys-apps
-  id: 0
-  name: kmod
-  version: "16"
-  category: acct-group
-  id: 0
-  name: kmem
-  version: ""
-  category: acct-group
-  id: 0
-  name: audio
-  version: ""
-  category: acct-group
-  id: 0
-  name: disk
-  version: ""
-  category: acct-group
-  id: 0
   name: input
   version: ""
-  category: sys-apps
-  id: 0
-  name: util-linux
-  version: "2.30"
   category: acct-group
   id: 0
-  name: tty
-  version: ""
-  category: acct-group
-  id: 0
-  name: lp
+  name: kvm
   version: ""
 uri:
 - https://github.com/systemd/systemd/archive/v242/systemd-242.tar.gz

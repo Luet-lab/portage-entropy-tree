@@ -1,13 +1,17 @@
 category: sys-fs
 conflicts:
+  category: <sys-libs
+  id: 0
+  name: glibc
+  version: "2.11"
   category: sys-apps
   id: 0
   name: gentoo-systemd-integration
   version: ""
-  category: <sys-fs
+  category: sys-apps
   id: 0
-  name: lvm2
-  version: 2.02.103
+  name: systemd
+  version: ""
   category: <sec-policy
   id: 0
   name: selinux-base
@@ -16,23 +20,15 @@ conflicts:
   id: 0
   name: udev
   version: ""
-  category: sys-apps
+  category: <sys-fs
   id: 0
-  name: systemd
-  version: ""
-  category: <sys-libs
-  id: 0
-  name: glibc
-  version: "2.11"
+  name: lvm2
+  version: 2.02.103
 description: Linux dynamic and persistent device naming support (aka userspace devfs)
 id: 0
 license: LGPL-2.1 MIT GPL-2
 name: eudev
 requires:
-  category: sys-libs
-  id: 0
-  name: libselinux
-  version: 2.1.9
   category: acct-group
   id: 0
   name: kvm
@@ -43,20 +39,24 @@ requires:
   version: ""
   category: sys-apps
   id: 0
-  name: util-linux
-  version: "2.20"
-  category: dev-libs
+  name: kmod
+  version: "16"
+  category: sys-libs
   id: 0
-  name: gobject-introspection
-  version: "1.38"
+  name: libselinux
+  version: 2.1.9
   category: acct-group
   id: 0
   name: input
   version: ""
   category: sys-apps
   id: 0
-  name: kmod
-  version: "16"
+  name: util-linux
+  version: "2.20"
+  category: dev-libs
+  id: 0
+  name: gobject-introspection
+  version: "1.38"
 uri:
 - https://dev.gentoo.org/~blueness/eudev/eudev-3.2.5.tar.gz
 use_flags:

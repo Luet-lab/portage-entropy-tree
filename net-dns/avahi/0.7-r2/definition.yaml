@@ -2,40 +2,20 @@ category: net-dns
 conflicts:
   category: net-misc
   id: 0
-  name: mDNSResponder
+  name: howl
   version: ""
   category: net-misc
   id: 0
-  name: howl
+  name: mDNSResponder
   version: ""
 description: System which facilitates service discovery on a local network
 id: 0
 license: LGPL-2.1
 name: avahi
 requires:
-  category: dev-libs
+  category: sec-policy
   id: 0
-  name: libdaemon
-  version: ""
-  category: dev-libs
-  id: 0
-  name: glib
-  version: ""
-  category: dev-qt
-  id: 0
-  name: qtcore
-  version: ""
-  category: sys-libs
-  id: 0
-  name: libcap
-  version: ""
-  category: dev-python
-  id: 0
-  name: pygobject
-  version: ""
-  category: dev-libs
-  id: 0
-  name: expat
+  name: selinux-avahi
   version: ""
   category: sys-libs
   id: 0
@@ -45,6 +25,34 @@ requires:
   id: 0
   name: dbus
   version: ""
+  category: sys-libs
+  id: 0
+  name: libcap
+  version: ""
+  category: dev-libs
+  id: 0
+  name: gobject-introspection
+  version: ""
+  category: dev-python
+  id: 0
+  name: pygobject
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libdaemon
+  version: ""
+  category: dev-qt
+  id: 0
+  name: qtcore
+  version: ""
+  category: x11-libs
+  id: 0
+  name: gtk+
+  version: ""
+  category: dev-python
+  id: 0
+  name: twisted
+  version: 16.0.0
   category: dev-lang
   id: 0
   name: mono
@@ -53,26 +61,18 @@ requires:
   id: 0
   name: gtk-sharp
   version: ""
-  category: x11-libs
+  category: dev-libs
   id: 0
-  name: gtk+
+  name: expat
+  version: ""
+  category: dev-libs
+  id: 0
+  name: glib
   version: ""
   category: dev-python
   id: 0
   name: dbus-python
   version: ""
-  category: sec-policy
-  id: 0
-  name: selinux-avahi
-  version: ""
-  category: dev-libs
-  id: 0
-  name: gobject-introspection
-  version: ""
-  category: dev-python
-  id: 0
-  name: twisted
-  version: 16.0.0
 uri:
 - https://github.com/lathiat/avahi/archive/v0.7.tar.gz -> avahi-0.7.tar.gz
 use_flags:

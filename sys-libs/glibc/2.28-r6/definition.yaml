@@ -9,6 +9,10 @@ id: 0
 license: LGPL-2.1+ BSD HPND ISC inner-net rc PCRE
 name: glibc
 requires:
+  category: sys-process
+  id: 0
+  name: audit
+  version: ""
   category: sys-libs
   id: 0
   name: libcap
@@ -29,10 +33,6 @@ requires:
   id: 0
   name: libidn2
   version: 2.0.5
-  category: sys-process
-  id: 0
-  name: audit
-  version: ""
 uri:
 - 'mirror://gnu/glibc/glibc-2.28.tar.xz https://dev.gentoo.org/~dilfridge/distfiles/glibc-2.28-patches-9.tar.xz
   multilib? ( https://dev.gentoo.org/~dilfridge/distfiles/gcc-multilib-bootstrap-20180511.tar.xz '

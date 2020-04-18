@@ -6,37 +6,13 @@ license: Apache-2.0 Boost-1.0 BSD BSD-1 BSD-2 CC0-1.0 LGPL-3 MIT public-domain u
   ZLIB
 name: rspamd
 requires:
-  category: dev-libs
-  id: 0
-  name: glib
-  version: ""
-  category: dev-lang
-  id: 0
-  name: lua
-  version: ""
-  category: dev-lang
-  id: 0
-  name: luajit
-  version: ""
   category: dev-lua
   id: 0
-  name: lpeg
+  name: LuaBitOp
   version: ""
   category: dev-libs
   id: 0
   name: libressl
-  version: ""
-  category: acct-user
-  id: 0
-  name: rspamd
-  version: ""
-  category: app-arch
-  id: 0
-  name: zstd
-  version: ""
-  category: dev-libs
-  id: 0
-  name: libev
   version: ""
   category: dev-libs
   id: 0
@@ -46,13 +22,25 @@ requires:
   id: 0
   name: libnsl
   version: ""
+  category: sci-libs
+  id: 0
+  name: openblas
+  version: ""
+  category: dev-libs
+  id: 0
+  name: jemalloc
+  version: ""
   category: dev-lua
   id: 0
-  name: LuaBitOp
+  name: lpeg
   version: ""
-  category: acct-group
+  category: dev-lang
   id: 0
-  name: rspamd
+  name: lua
+  version: ""
+  category: dev-db
+  id: 0
+  name: sqlite
   version: ""
   category: dev-libs
   id: 0
@@ -60,19 +48,7 @@ requires:
   version: ""
   category: dev-libs
   id: 0
-  name: libsodium
-  version: ""
-  category: dev-libs
-  id: 0
-  name: hyperscan
-  version: ""
-  category: dev-libs
-  id: 0
-  name: jemalloc
-  version: ""
-  category: dev-libs
-  id: 0
-  name: openssl
+  name: libev
   version: ""
   category: dev-libs
   id: 0
@@ -82,17 +58,41 @@ requires:
   id: 0
   name: libpcre[jit=]
   version: ""
-  category: dev-db
+  category: app-arch
   id: 0
-  name: sqlite
+  name: zstd
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libsodium
   version: ""
   category: sys-apps
   id: 0
   name: file
   version: ""
-  category: sci-libs
+  category: dev-libs
   id: 0
-  name: openblas
+  name: hyperscan
+  version: ""
+  category: dev-lang
+  id: 0
+  name: luajit
+  version: ""
+  category: dev-libs
+  id: 0
+  name: openssl
+  version: ""
+  category: acct-group
+  id: 0
+  name: rspamd
+  version: ""
+  category: acct-user
+  id: 0
+  name: rspamd
+  version: ""
+  category: dev-libs
+  id: 0
+  name: glib
   version: ""
 use_flags:
 - blas

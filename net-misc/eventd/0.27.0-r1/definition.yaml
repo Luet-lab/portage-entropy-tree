@@ -5,21 +5,17 @@ id: 0
 license: GPL-3+ LGPL-3+ ISC MIT
 name: eventd
 requires:
+  category: sys-apps
+  id: 0
+  name: util-linux
+  version: ""
   category: media-libs
   id: 0
   name: libcanberra
   version: ""
   category: x11-libs
   id: 0
-  name: xcb-util
-  version: ""
-  category: x11-libs
-  id: 0
-  name: cairo
-  version: ""
-  category: x11-libs
-  id: 0
-  name: libxcb
+  name: cairo[X,xcb(+)]
   version: ""
   category: media-libs
   id: 0
@@ -29,17 +25,13 @@ requires:
   id: 0
   name: systemd
   version: ""
-  category: net-dns
+  category: dev-libs
   id: 0
-  name: avahi
+  name: wayland
   version: ""
-  category: net-libs
+  category: dev-libs
   id: 0
-  name: glib-networking
-  version: ""
-  category: sys-apps
-  id: 0
-  name: util-linux
+  name: glib
   version: ""
   category: gnome-base
   id: 0
@@ -47,15 +39,7 @@ requires:
   version: ""
   category: x11-libs
   id: 0
-  name: cairo[X,xcb(+)]
-  version: ""
-  category: x11-libs
-  id: 0
-  name: xcb-util-wm
-  version: ""
-  category: app-accessibility
-  id: 0
-  name: speech-dispatcher
+  name: libxcb
   version: ""
   category: media-sound
   id: 0
@@ -65,17 +49,29 @@ requires:
   id: 0
   name: pidgin
   version: ""
-  category: net-libs
-  id: 0
-  name: gssdp
-  version: "1.2"
-  category: dev-libs
-  id: 0
-  name: glib
-  version: ""
   category: x11-libs
   id: 0
   name: libxkbcommon
+  version: ""
+  category: x11-libs
+  id: 0
+  name: cairo
+  version: ""
+  category: x11-libs
+  id: 0
+  name: xcb-util-wm
+  version: ""
+  category: app-accessibility
+  id: 0
+  name: speech-dispatcher
+  version: ""
+  category: net-dns
+  id: 0
+  name: avahi
+  version: ""
+  category: net-libs
+  id: 0
+  name: glib-networking
   version: ""
   category: dev-libs
   id: 0
@@ -89,10 +85,14 @@ requires:
   id: 0
   name: pango
   version: ""
-  category: dev-libs
+  category: x11-libs
   id: 0
-  name: wayland
+  name: xcb-util
   version: ""
+  category: net-libs
+  id: 0
+  name: gssdp
+  version: "1.2"
   category: net-libs
   id: 0
   name: libsoup

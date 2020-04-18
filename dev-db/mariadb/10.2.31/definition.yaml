@@ -2,19 +2,11 @@ category: dev-db
 conflicts:
   category: dev-db
   id: 0
-  name: mysql-cluster
-  version: ""
-  category: <virtual
-  id: 0
   name: mysql
-  version: 5.6-r11
+  version: ""
   category: dev-db
   id: 0
   name: mariadb-galera
-  version: ""
-  category: dev-db
-  id: 0
-  name: mysql
   version: ""
   category: dev-db
   id: 0
@@ -24,86 +16,110 @@ conflicts:
   id: 0
   name: mytop
   version: ""
+  category: <virtual
+  id: 0
+  name: mysql
+  version: 5.6-r11
+  category: dev-db
+  id: 0
+  name: mysql-cluster
+  version: ""
 description: An enhanced, drop-in replacement for MySQL
 id: 0
 license: GPL-2 LGPL-2.1+
 name: mariadb
 requires:
-  category: app-arch
+  category: virtual
   id: 0
-  name: libarchive
+  name: perl-Term-ANSIColor
   version: ""
-  category: app-text
+  category: virtual
   id: 0
-  name: groonga-normalizer-mysql
+  name: perl-Time-HiRes
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libxml2
   version: ""
   category: app-text
   id: 0
   name: groonga
   version: 7.0.4
-  category: dev-libs
-  id: 0
-  name: judy
-  version: ""
-  category: dev-libs
-  id: 0
-  name: jemalloc
-  version: ""
-  category: sys-libs
-  id: 0
-  name: binutils-libs
-  version: ""
-  category: sys-libs
-  id: 0
-  name: readline
-  version: "4.1"
-  category: net-misc
-  id: 0
-  name: socat
-  version: ""
-  category: dev-util
-  id: 0
-  name: systemtap
-  version: "1.3"
-  category: dev-libs
-  id: 0
-  name: boost
-  version: 1.40.0
   category: sys-apps
   id: 0
-  name: systemd
+  name: iproute2
   version: ""
-  category: dev-libs
+  category: app-arch
   id: 0
-  name: libpcre
-  version: 8.41-r1
-  category: sys-process
-  id: 0
-  name: numactl
-  version: ""
-  category: sys-libs
-  id: 0
-  name: pam
-  version: ""
-  category: virtual
-  id: 0
-  name: jre
-  version: "1.6"
-  category: net-libs
-  id: 0
-  name: gnutls
-  version: ""
-  category: dev-libs
-  id: 0
-  name: libressl
+  name: lz4
   version: ""
   category: dev-libs
   id: 0
   name: lzo
   version: ""
+  category: app-text
+  id: 0
+  name: groonga-normalizer-mysql
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libaio
+  version: ""
+  category: dev-util
+  id: 0
+  name: google-perftools
+  version: ""
+  category: sys-libs
+  id: 0
+  name: zlib
+  version: 1.2.3
+  category: dev-libs
+  id: 0
+  name: openssl
+  version: 1.0.0
+  category: sys-libs
+  id: 0
+  name: binutils-libs
+  version: ""
+  category: sec-policy
+  id: 0
+  name: selinux-mysql
+  version: ""
+  category: sys-process
+  id: 0
+  name: lsof
+  version: ""
+  category: dev-perl
+  id: 0
+  name: TermReadKey
+  version: ""
+  category: dev-libs
+  id: 0
+  name: judy
+  version: ""
+  category: sys-libs
+  id: 0
+  name: pam
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libpcre
+  version: 8.41-r1
   category: virtual
   id: 0
-  name: krb5
+  name: perl-Getopt-Long
+  version: ""
+  category: dev-libs
+  id: 0
+  name: jemalloc
+  version: ""
+  category: dev-util
+  id: 0
+  name: systemtap
+  version: "1.3"
+  category: sys-libs
+  id: 0
+  name: ncurses
   version: ""
   category: sys-libs
   id: 0
@@ -113,86 +129,70 @@ requires:
   id: 0
   name: galera
   version: "25"
-  category: dev-libs
-  id: 0
-  name: libxml2
-  version: ""
-  category: sys-process
-  id: 0
-  name: lsof
-  version: ""
   category: sys-apps
   id: 0
   name: sed
   version: "4"
-  category: dev-util
+  category: sys-apps
   id: 0
-  name: google-perftools
-  version: ""
+  name: texinfo
+  version: 4.7-r1
   category: dev-libs
   id: 0
-  name: openssl
-  version: 1.0.0
-  category: sys-libs
-  id: 0
-  name: ncurses
+  name: libressl
   version: ""
-  category: sec-policy
+  category: sys-apps
   id: 0
-  name: selinux-mysql
+  name: systemd
   version: ""
+  category: net-misc
+  id: 0
+  name: socat
+  version: ""
+  category: virtual
+  id: 0
+  name: jre
+  version: "1.6"
   category: dev-db
   id: 0
   name: mysql-init-scripts
   version: ""
+  category: dev-db
+  id: 0
+  name: unixODBC
+  version: ""
+  category: net-libs
+  id: 0
+  name: gnutls
+  version: ""
+  category: app-arch
+  id: 0
+  name: libarchive
+  version: ""
   category: sys-process
   id: 0
-  name: procps
-  version: ""
-  category: dev-libs
-  id: 0
-  name: libaio
-  version: ""
-  category: virtual
-  id: 0
-  name: perl-Getopt-Long
-  version: ""
-  category: virtual
-  id: 0
-  name: perl-Term-ANSIColor
+  name: numactl
   version: ""
   category: app-arch
   id: 0
   name: snappy
   version: ""
-  category: sys-apps
+  category: dev-libs
   id: 0
-  name: iproute2
-  version: ""
-  category: sys-apps
+  name: boost
+  version: 1.40.0
+  category: sys-process
   id: 0
-  name: texinfo
-  version: 4.7-r1
-  category: dev-db
-  id: 0
-  name: unixODBC
+  name: procps
   version: ""
   category: virtual
   id: 0
-  name: perl-Time-HiRes
+  name: krb5
   version: ""
   category: sys-libs
   id: 0
-  name: zlib
-  version: 1.2.3
-  category: app-arch
-  id: 0
-  name: lz4
-  version: ""
-  category: dev-perl
-  id: 0
-  name: TermReadKey
-  version: ""
+  name: readline
+  version: "4.1"
 uri:
 - https://downloads.mariadb.org/interstitial/mariadb-10.2.31/source/mariadb-10.2.31.tar.gz
 - mirror://gentoo/mysql-extras-20200203-1749Z.tar.bz2

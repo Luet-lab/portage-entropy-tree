@@ -6,11 +6,19 @@ conflicts:
   version: ""
   category: sys-cluster
   id: 0
+  name: kubectl
+  version: ""
+  category: sys-cluster
+  id: 0
+  name: kube-apiserver
+  version: ""
+  category: sys-cluster
+  id: 0
   name: kube-proxy
   version: ""
   category: sys-cluster
   id: 0
-  name: kubectl
+  name: kubeadm
   version: ""
   category: sys-cluster
   id: 0
@@ -19,32 +27,24 @@ conflicts:
   category: sys-cluster
   id: 0
   name: kube-scheduler
-  version: ""
-  category: sys-cluster
-  id: 0
-  name: kube-apiserver
-  version: ""
-  category: sys-cluster
-  id: 0
-  name: kubeadm
   version: ""
 description: production-grade container orchestration
 id: 0
 license: Apache-2.0
 name: kubernetes
 requires:
-  category: acct-user
-  id: 0
-  name: kube-scheduler
-  version: ""
-  category: acct-group
-  id: 0
-  name: kube-apiserver
-  version: ""
   category: net-firewall
   id: 0
   name: conntrack-tools
   version: ""
+  category: acct-group
+  id: 0
+  name: kube-scheduler
+  version: ""
+  category: acct-user
+  id: 0
+  name: kube-scheduler
+  version: ""
   category: acct-user
   id: 0
   name: kube-apiserver
@@ -59,7 +59,7 @@ requires:
   version: ""
   category: acct-group
   id: 0
-  name: kube-scheduler
+  name: kube-apiserver
   version: ""
 uri:
 - https://github.com/kubernetes/kubernetes/archive/v1.17.4.tar.gz -> kubernetes-1.17.4.tar.gz

@@ -2,17 +2,21 @@ category: net-misc
 conflicts:
   category: net-misc
   id: 0
-  name: openntpd
+  name: ntpsec
   version: ""
   category: net-misc
   id: 0
-  name: ntpsec
+  name: openntpd
   version: ""
 description: Network Time Protocol suite/programs
 id: 0
 license: HPND BSD ISC
 name: ntp
 requires:
+  category: sys-libs
+  id: 0
+  name: readline
+  version: "4.1"
   category: sys-libs
   id: 0
   name: libcap
@@ -25,22 +29,6 @@ requires:
   id: 0
   name: net-snmp
   version: ""
-  category: acct-user
-  id: 0
-  name: ntp
-  version: ""
-  category: app-vim
-  id: 0
-  name: ntp-syntax
-  version: ""
-  category: sys-libs
-  id: 0
-  name: readline
-  version: "4.1"
-  category: dev-libs
-  id: 0
-  name: openssl
-  version: ""
   category: dev-libs
   id: 0
   name: libressl
@@ -49,13 +37,25 @@ requires:
   id: 0
   name: pps-tools
   version: ""
+  category: sec-policy
+  id: 0
+  name: selinux-ntp
+  version: ""
+  category: app-vim
+  id: 0
+  name: ntp-syntax
+  version: ""
+  category: dev-libs
+  id: 0
+  name: openssl
+  version: ""
   category: acct-group
   id: 0
   name: ntp
   version: ""
-  category: sec-policy
+  category: acct-user
   id: 0
-  name: selinux-ntp
+  name: ntp
   version: ""
 uri:
 - http://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8.tar.gz

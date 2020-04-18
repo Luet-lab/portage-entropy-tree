@@ -2,26 +2,42 @@ category: dev-db
 conflicts:
   category: dev-db
   id: 0
-  name: mariadb
-  version: ""
-  category: dev-db
-  id: 0
   name: mysql-cluster
   version: ""
   category: dev-db
   id: 0
-  name: mariadb-galera
+  name: mariadb
   version: ""
   category: dev-db
   id: 0
   name: percona-server
+  version: ""
+  category: dev-db
+  id: 0
+  name: mariadb-galera
   version: ""
 description: A fast, multi-threaded, multi-user SQL database server
 id: 0
 license: GPL-2
 name: mysql
 requires:
-  category: acct-group
+  category: sys-libs
+  id: 0
+  name: ncurses
+  version: ""
+  category: dev-libs
+  id: 0
+  name: libressl
+  version: ""
+  category: sys-libs
+  id: 0
+  name: zlib
+  version: 1.2.3
+  category: sys-process
+  id: 0
+  name: procps
+  version: ""
+  category: acct-user
   id: 0
   name: mysql
   version: ""
@@ -29,30 +45,26 @@ requires:
   id: 0
   name: lz4
   version: 0_p131
-  category: sys-libs
+  category: dev-libs
   id: 0
-  name: ncurses
+  name: icu
   version: ""
-  category: sys-libs
+  category: dev-libs
   id: 0
-  name: zlib
-  version: 1.2.3
+  name: libevent
+  version: ""
+  category: dev-libs
+  id: 0
+  name: jemalloc
+  version: ""
   category: dev-util
   id: 0
   name: google-perftools
   version: ""
   category: dev-libs
   id: 0
-  name: jemalloc
-  version: ""
-  category: sec-policy
-  id: 0
-  name: selinux-mysql
-  version: ""
-  category: dev-libs
-  id: 0
-  name: icu
-  version: ""
+  name: openssl
+  version: 1.0.0
   category: dev-libs
   id: 0
   name: protobuf
@@ -65,37 +77,25 @@ requires:
   id: 0
   name: mecab
   version: ""
-  category: dev-db
-  id: 0
-  name: mysql-init-scripts
-  version: ""
-  category: sys-process
-  id: 0
-  name: numactl
-  version: ""
-  category: acct-user
-  id: 0
-  name: mysql
-  version: ""
-  category: dev-libs
-  id: 0
-  name: libressl
-  version: ""
-  category: dev-libs
-  id: 0
-  name: openssl
-  version: 1.0.0
-  category: dev-libs
-  id: 0
-  name: libevent
-  version: ""
   category: dev-libs
   id: 0
   name: libaio
   version: ""
   category: sys-process
   id: 0
-  name: procps
+  name: numactl
+  version: ""
+  category: sec-policy
+  id: 0
+  name: selinux-mysql
+  version: ""
+  category: acct-group
+  id: 0
+  name: mysql
+  version: ""
+  category: dev-db
+  id: 0
+  name: mysql-init-scripts
   version: ""
 uri:
 - https://cdn.mysql.com/Downloads/MySQL-8.0/mysql-boost-8.0.19.tar.gz

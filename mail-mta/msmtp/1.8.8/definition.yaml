@@ -2,15 +2,7 @@ category: mail-mta
 conflicts:
   category: mail-mta
   id: 0
-  name: mini-qmail
-  version: ""
-  category: mail-mta
-  id: 0
-  name: sendmail
-  version: ""
-  category: mail-mta
-  id: 0
-  name: esmtp
+  name: exim
   version: ""
   category: mail-mta
   id: 0
@@ -38,15 +30,23 @@ mailer
   version: ""
   category: mail-mta
   id: 0
-  name: postfix
-  version: ""
-  category: mail-mta
-  id: 0
   name: courier
   version: ""
   category: mail-mta
   id: 0
-  name: exim
+  name: esmtp
+  version: ""
+  category: mail-mta
+  id: 0
+  name: mini-qmail
+  version: ""
+  category: mail-mta
+  id: 0
+  name: postfix
+  version: ""
+  category: mail-mta
+  id: 0
+  name: sendmail
   version: ""
 description: An SMTP client and SMTP plugin for mail user agents such as Mutt
 id: 0
@@ -57,33 +57,33 @@ requires:
   id: 0
   name: gsasl
   version: ""
-  category: app-crypt
-  id: 0
-  name: libsecret
-  version: ""
   category: net-mail
   id: 0
   name: mailbase
-  version: ""
-  category: acct-group
-  id: 0
-  name: msmtpd
   version: ""
   category: acct-user
   id: 0
   name: msmtpd
   version: ""
-  category: net-libs
+  category: app-crypt
   id: 0
-  name: gnutls[idn?]
+  name: libsecret
+  version: ""
+  category: acct-group
+  id: 0
+  name: msmtpd
+  version: ""
+  category: net-dns
+  id: 0
+  name: libidn2
   version: ""
   category: virtual
   id: 0
   name: libintl
   version: ""
-  category: net-dns
+  category: net-libs
   id: 0
-  name: libidn2
+  name: gnutls[idn?]
   version: ""
 uri:
 - https://marlam.de/msmtp/releases/msmtp-1.8.8.tar.xz

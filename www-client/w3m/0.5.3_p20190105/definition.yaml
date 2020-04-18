@@ -5,9 +5,17 @@ id: 0
 license: w3m
 name: w3m
 requires:
-  category: sys-libs
+  category: media-libs
   id: 0
-  name: ncurses
+  name: imlib2[X?]
+  version: ""
+  category: dev-libs
+  id: 0
+  name: openssl
+  version: ""
+  category: media-libs
+  id: 0
+  name: compface
   version: ""
   category: x11-libs
   id: 0
@@ -15,15 +23,7 @@ requires:
   version: ""
   category: x11-libs
   id: 0
-  name: libXext
-  version: ""
-  category: media-libs
-  id: 0
-  name: compface
-  version: ""
-  category: dev-libs
-  id: 0
-  name: boehm-gc
+  name: gdk-pixbuf[X?]
   version: ""
   category: sys-libs
   id: 0
@@ -31,11 +31,7 @@ requires:
   version: ""
   category: x11-libs
   id: 0
-  name: gdk-pixbuf[X?]
-  version: ""
-  category: media-libs
-  id: 0
-  name: imlib2[X?]
+  name: libXext
   version: ""
   category: sys-libs
   id: 0
@@ -43,11 +39,15 @@ requires:
   version: ""
   category: dev-libs
   id: 0
-  name: openssl
+  name: libressl
   version: ""
   category: dev-libs
   id: 0
-  name: libressl
+  name: boehm-gc
+  version: ""
+  category: sys-libs
+  id: 0
+  name: ncurses
   version: ""
 uri:
 - https://github.com/tats/w3m/archive/v0.5.3.tar.gz -> w3m-0.5.3.tar.gz

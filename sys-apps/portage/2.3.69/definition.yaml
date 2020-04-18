@@ -1,26 +1,22 @@
 category: sys-apps
 conflicts:
-  category: <app-portage
-  id: 0
-  name: repoman
-  version: 2.3.10
   category: <app-admin
   id: 0
   name: logrotate
   version: 3.8.0
+  category: <app-portage
+  id: 0
+  name: repoman
+  version: 2.3.10
 description: Portage is the package management and distribution system for Gentoo
 id: 0
 license: GPL-2
 name: portage
 requires:
-  category: sys-apps
+  category: app-shells
   id: 0
-  name: sed
-  version: 4.0.5
-  category: app-portage
-  id: 0
-  name: gemato
-  version: "14"
+  name: bash
+  version: ""
   category: app-crypt
   id: 0
   name: openpgp-keys-gentoo-release
@@ -29,10 +25,14 @@ requires:
   id: 0
   name: gnupg-2.2.4-r2[ssl(-)]
   version: ""
-  category: sys-libs
+  category: sys-apps
   id: 0
-  name: libselinux
-  version: 2.0.94
+  name: util-linux
+  version: ""
+  category: sys-apps
+  id: 0
+  name: install-xattr
+  version: "0.3"
   category: app-arch
   id: 0
   name: tar
@@ -41,18 +41,6 @@ requires:
   id: 0
   name: eselect
   version: "1.2"
-  category: sys-apps
-  id: 0
-  name: sandbox
-  version: "2.2"
-  category: app-shells
-  id: 0
-  name: bash
-  version: ""
-  category: sys-apps
-  id: 0
-  name: util-linux
-  version: ""
   category: app-misc
   id: 0
   name: pax-utils
@@ -61,14 +49,26 @@ requires:
   id: 0
   name: python-exec
   version: ""
-  category: sys-apps
-  id: 0
-  name: install-xattr
-  version: "0.3"
   category: sys-freebsd
   id: 0
   name: freebsd-bin
   version: ""
+  category: sys-apps
+  id: 0
+  name: sandbox
+  version: "2.2"
+  category: sys-libs
+  id: 0
+  name: libselinux
+  version: 2.0.94
+  category: sys-apps
+  id: 0
+  name: sed
+  version: 4.0.5
+  category: app-portage
+  id: 0
+  name: gemato
+  version: "14"
 use_flags:
 - build
 - doc
